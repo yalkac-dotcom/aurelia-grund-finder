@@ -18,13 +18,10 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b border-border">
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-9 h-9 bg-primary rounded-sm flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-lg leading-none">A</span>
-          </div>
+        <Link to="/" className="flex items-center">
           <div className="leading-tight">
-            <span className="text-foreground font-bold text-base tracking-tight">Aurelia</span>
-            <span className="block text-muted-foreground text-xs tracking-wide">Grundbesitz GmbH</span>
+            <span className="text-foreground font-bold text-lg tracking-wide uppercase">Aurelia</span>
+            <span className="block text-muted-foreground text-[10px] tracking-[0.2em] uppercase">Grundbesitz GmbH</span>
           </div>
         </Link>
 
