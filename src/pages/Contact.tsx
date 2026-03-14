@@ -191,7 +191,7 @@ const Contact = () => {
                         className="mt-1 h-4 w-4 border-border text-primary rounded focus:ring-accent"
                       />
                       <span className="text-sm text-muted-foreground leading-relaxed">
-                        Ich wuensche einen telefonischen Rueckruf.
+                        Ich wünsche einen telefonischen Rückruf.
                       </span>
                     </label>
                   </div>
