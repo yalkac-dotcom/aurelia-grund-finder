@@ -7,7 +7,7 @@ const betreffOptions = [
   "Allgemeine Anfrage",
   "Ankaufangebot",
   "Kooperationsanfrage",
-  "Rueckrufwunsch",
+  "Rückrufwunsch",
 ];
 
 const Contact = () => {
@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="container max-w-3xl text-center">
           <p className="text-muted-foreground text-lg leading-relaxed">
             Sie haben Fragen zu unseren Leistungen, ein konkretes Ankaufangebot oder
-            wuenschen einen persoenlichen Rueckruf? Wir freuen uns auf Ihre Nachricht und
+            wünschen einen persönlichen Rückruf? Wir freuen uns auf Ihre Nachricht und
             melden uns zeitnah bei Ihnen.
           </p>
         </div>
@@ -57,7 +57,7 @@ const Contact = () => {
                 <div className="bg-secondary border border-border p-10 text-center">
                   <h3 className="text-xl font-bold text-foreground mb-2">Vielen Dank!</h3>
                   <p className="text-muted-foreground">
-                    Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kuerze bei Ihnen.
+                    Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.
                   </p>
                 </div>
               ) : (
@@ -167,7 +167,7 @@ const Contact = () => {
                       rows={6}
                       required
                       className="w-full border border-border bg-card px-4 py-3 text-sm text-foreground rounded focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent resize-none"
-                      placeholder="Wie koennen wir Ihnen helfen?"
+                      placeholder="Wie können wir Ihnen helfen?"
                     />
                   </div>
 
@@ -191,7 +191,7 @@ const Contact = () => {
                         className="mt-1 h-4 w-4 border-border text-primary rounded focus:ring-accent"
                       />
                       <span className="text-sm text-muted-foreground leading-relaxed">
-                        Ich wuensche einen telefonischen Rueckruf.
+                        Ich wünsche einen telefonischen Rückruf.
                       </span>
                     </label>
                   </div>
@@ -221,7 +221,7 @@ const Contact = () => {
                   <address className="not-italic text-muted-foreground text-sm leading-relaxed">
                     <p className="font-medium text-foreground">Aurelia Grundbesitz GmbH</p>
                     <p>Grevenbroicher Weg 2</p>
-                    <p>40547 Duesseldorf, Germany</p>
+                    <p>40547 Düsseldorf, Germany</p>
                   </address>
                 </div>
                 <div className="flex items-start gap-4">
@@ -246,7 +246,7 @@ const Contact = () => {
               <div className="w-full h-px bg-border my-8" />
 
               <div className="text-sm text-muted-foreground leading-relaxed">
-                <p className="font-medium text-foreground mb-2">Geschaeftsfuehrer</p>
+                <p className="font-medium text-foreground mb-2">Geschäftsführer</p>
                 <p>Yasar Alkac</p>
               </div>
             </aside>

@@ -7,10 +7,10 @@ import portfolioImg from "@/assets/portfolio.jpg";
 import { Building2, TrendingUp, Shield, ArrowRight, CheckCircle } from "lucide-react";
 
 const bulletpoints = [
-  "Spezialisierung auf Immobilien aus Zwangsversteigerungen, Nachlaessen und Insolvenzen.",
+  "Spezialisierung auf Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen.",
   "Zwei klare Strategien: Bestand halten & vermieten oder sanieren & verkaufen.",
-  "Ueber 20 Jahre Erfahrung von Geschaeftsfuehrer Yasar Alkac in Immobilien und Kapitalanlagen.",
-  "Diskrete, strukturierte Abwicklung von der Analyse bis zur Uebergabe.",
+  "Über 30 Jahre gebündelte Erfahrung von Geschäftsführer Yasar Alkac in Immobilien und Kapitalanlagen.",
+  "Diskrete, strukturierte Abwicklung von der Analyse bis zur Übergabe.",
 ];
 
 const Index = () => (
@@ -29,7 +29,7 @@ const Index = () => (
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
             Aurelia Grundbesitz GmbH identifiziert und entwickelt Immobilien aus
-            Zwangsversteigerungen, Nachlaessen und Insolvenzen – professionell,
+            Zwangsversteigerungen, Nachlässen und Insolvenzen – professionell,
             diskret und mit langfristiger Perspektive.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -44,7 +44,7 @@ const Index = () => (
               to="/ueber-uns"
               className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-6 py-3 text-sm font-medium tracking-wide rounded hover:bg-primary-foreground/10 transition-colors"
             >
-              Mehr ueber Aurelia
+              Mehr über Aurelia
             </Link>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Index = () => (
             {
               icon: Building2,
               title: "Besondere Objekte",
-              text: "Wohn- und Mischobjekte aus Zwangsversteigerungen, Nachlaessen und Insolvenzen.",
+              text: "Wohn- und Mischobjekte aus Zwangsversteigerungen, Nachlässen und Insolvenzen.",
             },
             {
               icon: Shield,
