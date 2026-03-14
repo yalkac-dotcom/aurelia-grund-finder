@@ -254,14 +254,14 @@ const Contact = () => {
               {/* Geschäftsführer */}
               <div className="bg-primary text-primary-foreground rounded-sm p-8 mb-8">
                 <h3 className="text-xs font-semibold uppercase tracking-widest text-accent mb-4">
-                  Ihr Ansprechpartner
+                  Persönlicher Kontakt
                 </h3>
-                <p className="text-xl font-bold mb-1">Yasar Alkac</p>
-                <p className="text-primary-foreground/60 text-sm">Geschäftsführer</p>
+                <p className="text-xl font-bold mb-1">Unsere freundlichen Mitarbeiter</p>
+                <p className="text-primary-foreground/60 text-sm">beraten Sie gerne</p>
                 <div className="w-10 h-px bg-accent/40 my-5" />
                 <p className="text-primary-foreground/70 text-sm leading-relaxed">
-                  Über 30 Jahre gebündelte Erfahrung in Immobilien und Kapitalanlagen.
-                  Persönliche Beratung und individuelle Lösungen.
+                  Unser erfahrenes Team steht Ihnen für alle Fragen rund um Immobilien
+                  und Kapitalanlagen zur Verfügung – persönlich, kompetent und diskret.
                 </p>
               </div>
 
