@@ -47,7 +47,7 @@ const About = () => (
       </div>
     </section>
 
-    {/* CEO */}
+    {/* Team & Erfahrung */}
     <section className="py-24">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
@@ -55,13 +55,16 @@ const About = () => (
             <img src={ceoImg} alt="Geschäftsführung" className="w-full h-96 object-cover" />
           </div>
           <div>
-            <SectionHeading title="Geschäftsführung" subtitle="Yasar Alkac" />
+            <SectionHeading title="Erfahrung trifft Strategie" />
             <div className="space-y-4 text-muted-foreground text-sm leading-relaxed">
               <p>
-                Er ist seit über 20 Jahren in der Immobilien- und Kapitalanlagewelt tätig und hat in dieser Zeit zahlreiche mittelgroße und größere Projekte erfolgreich begleitet. Seine Erfahrung reicht von klassischen Wohnimmobilien über renditeorientierte Kapitalanlagen bis hin zu komplexen Transaktionen aus Zwangsversteigerungen und Sondersituationen.
+                Über 30 Jahre gebündelte Erfahrung in der Immobilien- und Kapitalanlagewelt bilden die Grundlage unserer Arbeit. Wir arbeiten mit einem belastbaren Netzwerk aus Banken, Investoren, Maklern und spezialisierten Dienstleistern.
               </p>
               <p>
-                Yasar Alkac steht für eine Kombination aus Marktkenntnis, Verhandlungssicherheit und einem ausgeprägten Gespür für werthaltige Chancen. Sein Ansatz ist klar: solide kalkulieren, strukturiert umsetzen und Projekte so entwickeln, dass sie sowohl wirtschaftlich überzeugen als auch langfristig Bestand haben.
+                Unser Geschäftsführer bringt mehr als zwei Jahrzehnte operative Erfahrung mit – von klassischen Wohnimmobilien über renditeorientierte Kapitalanlagen bis hin zu komplexen Transaktionen aus Zwangsversteigerungen und Sondersituationen. Er steht für Marktkenntnis, Verhandlungssicherheit und ein ausgeprägtes Gespür für werthaltige Chancen.
+              </p>
+              <p>
+                Gemeinsam mit einem eingespielten Team aus Analysten, Projektentwicklern und Branchenexperten entstehen fundierte Strategien, die sowohl wirtschaftlich überzeugen als auch langfristig Bestand haben. Jedes Projekt wird ganzheitlich gedacht – von der Akquise über die Strukturierung bis zur Umsetzung.
               </p>
             </div>
           </div>
