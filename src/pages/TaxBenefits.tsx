@@ -106,6 +106,10 @@ const topics = [
     icon: Banknote,
     title: "BAFA – Zuschüsse",
     shortDesc: "Direkte Reduzierung der Investitionskosten",
+    links: [
+      { label: "BAFA", url: "https://www.bafa.de" },
+      { label: "BAFA – Förderübersicht", url: "https://www.bafa.de/DE/Energie/Energieeffizienz/energieeffizienz_node.html" },
+    ],
     content: {
       intro:
         "Das Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) fördert Einzelmaßnahmen zur energetischen Sanierung mit direkten Zuschüssen – ohne Kreditverpflichtung.",
