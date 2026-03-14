@@ -7,6 +7,7 @@ const navItems = [
   { label: "Über Aurelia", path: "/ueber-uns" },
   { label: "Leistungen", path: "/leistungen" },
   { label: "Steuervorteile", path: "/steuervorteile" },
+  { label: "Für Investoren", path: "/investoren" },
   { label: "Kontakt", path: "/kontakt" },
 ];
 

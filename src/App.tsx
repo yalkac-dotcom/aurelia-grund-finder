@@ -8,6 +8,9 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import TaxBenefits from "./pages/TaxBenefits";
 import Contact from "./pages/Contact";
+import Investors from "./pages/Investors";
+import Privacy from "./pages/Privacy";
+import Impressum from "./pages/Impressum";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/leistungen" element={<Services />} />
           <Route path="/steuervorteile" element={<TaxBenefits />} />
           <Route path="/kontakt" element={<Contact />} />
+          <Route path="/investoren" element={<Investors />} />
+          <Route path="/datenschutz" element={<Privacy />} />
+          <Route path="/impressum" element={<Impressum />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
