@@ -7,10 +7,10 @@ import portfolioImg from "@/assets/portfolio.jpg";
 import { Building2, TrendingUp, Shield, ArrowRight, CheckCircle } from "lucide-react";
 
 const bulletpoints = [
-  "Spezialisierung auf Immobilien aus Zwangsversteigerungen, Nachlaessen und Insolvenzen.",
+  "Spezialisierung auf Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen.",
   "Zwei klare Strategien: Bestand halten & vermieten oder sanieren & verkaufen.",
-  "Ueber 20 Jahre Erfahrung von Geschaeftsfuehrer Yasar Alkac in Immobilien und Kapitalanlagen.",
-  "Diskrete, strukturierte Abwicklung von der Analyse bis zur Uebergabe.",
+  "Über 30 Jahre gebündelte Erfahrung von Geschäftsführer Yasar Alkac in Immobilien und Kapitalanlagen.",
+  "Diskrete, strukturierte Abwicklung von der Analyse bis zur Übergabe.",
 ];
 
 const Index = () => (
