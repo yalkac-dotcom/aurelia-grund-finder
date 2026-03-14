@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import portfolioImg from "@/assets/portfolio.jpg";
-import { Landmark, Leaf, Banknote, BadgePercent, BookOpen, ChevronRight } from "lucide-react";
+import { Landmark, Leaf, Banknote, BadgePercent, BookOpen, ChevronRight, ExternalLink } from "lucide-react";
 
 const topics = [
   {
