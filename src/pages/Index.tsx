@@ -4,15 +4,22 @@ import SectionHeading from "@/components/SectionHeading";
 import heroImg from "@/assets/hero-building.jpg";
 import renovationImg from "@/assets/renovation.jpg";
 import portfolioImg from "@/assets/portfolio.jpg";
-import { Building2, TrendingUp, Shield, ArrowRight } from "lucide-react";
+import { Building2, TrendingUp, Shield, ArrowRight, CheckCircle } from "lucide-react";
+
+const bulletpoints = [
+  "Spezialisierung auf Immobilien aus Zwangsversteigerungen, Nachlaessen und Insolvenzen.",
+  "Zwei klare Strategien: Bestand halten & vermieten oder sanieren & verkaufen.",
+  "Ueber 20 Jahre Erfahrung von Geschaeftsfuehrer Yasar Alkac in Immobilien und Kapitalanlagen.",
+  "Diskrete, strukturierte Abwicklung von der Analyse bis zur Uebergabe.",
+];
 
 const Index = () => (
   <Layout>
     {/* Hero */}
-    <section className="relative h-[70vh] min-h-[500px] flex items-center">
+    <section className="relative h-[75vh] min-h-[540px] flex items-center">
       <div className="absolute inset-0">
         <img src={heroImg} alt="Immobilie Fassade" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-primary/60" />
+        <div className="absolute inset-0 bg-primary/65" />
       </div>
       <div className="relative container">
         <div className="max-w-2xl">
@@ -21,29 +28,41 @@ const Index = () => (
             Werte schaffen aus besonderen Situationen
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
-            Immobilieninvestments aus Zwangsversteigerungen, Nachlässen und Insolvenzen – mit Erfahrung, Sorgfalt und Weitblick.
+            Aurelia Grundbesitz GmbH identifiziert und entwickelt Immobilien aus
+            Zwangsversteigerungen, Nachlaessen und Insolvenzen – professionell,
+            diskret und mit langfristiger Perspektive.
           </p>
-          <Link
-            to="/ueber-uns"
-            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
-          >
-            Mehr erfahren
-            <ArrowRight size={16} />
-          </Link>
+          <div className="flex flex-wrap gap-4">
+            <Link
+              to="/kontakt"
+              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 text-sm font-medium tracking-wide rounded hover:opacity-90 transition-opacity"
+            >
+              Ankaufanfrage stellen
+              <ArrowRight size={16} />
+            </Link>
+            <Link
+              to="/ueber-uns"
+              className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-6 py-3 text-sm font-medium tracking-wide rounded hover:bg-primary-foreground/10 transition-colors"
+            >
+              Mehr ueber Aurelia
+            </Link>
+          </div>
         </div>
       </div>
     </section>
 
-    {/* Intro */}
-    <section className="py-24">
-      <div className="container">
-        <div className="max-w-3xl mx-auto text-center">
-          <SectionHeading
-            title="Aurelia Grundbesitz GmbH"
-            subtitle="Seit 2023 verfolgt Aurelia Grundbesitz einen klaren, langfristigen Ansatz: Wertschöpfung durch intelligente Ankaufsstrategien, solide Strukturierung und hochwertige Entwicklung."
-            align="center"
-          />
-        </div>
+    {/* Bulletpoints */}
+    <section className="py-20">
+      <div className="container max-w-4xl">
+        <SectionHeading title="Warum Aurelia Grundbesitz" align="center" />
+        <ul className="grid sm:grid-cols-2 gap-6 mt-8">
+          {bulletpoints.map((bp) => (
+            <li key={bp} className="flex items-start gap-3">
+              <CheckCircle className="text-accent shrink-0 mt-0.5" size={20} />
+              <span className="text-muted-foreground leading-relaxed">{bp}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
 
@@ -56,7 +75,7 @@ const Index = () => (
             {
               icon: Building2,
               title: "Besondere Objekte",
-              text: "Wohn- und Mischobjekte aus Zwangsversteigerungen, Nachlässen und Insolvenzen.",
+              text: "Wohn- und Mischobjekte aus Zwangsversteigerungen, Nachlaessen und Insolvenzen.",
             },
             {
               icon: Shield,
@@ -66,7 +85,7 @@ const Index = () => (
             {
               icon: TrendingUp,
               title: "Sanierung & Verkauf",
-              text: "Umfassende Renovierung und werthaltige Veräußerung mit klarem Entwicklungskonzept.",
+              text: "Umfassende Renovierung und werthaltige Veraeusserung mit klarem Entwicklungskonzept.",
             },
           ].map((item) => (
             <div key={item.title} className="bg-card p-8 border border-border">
@@ -84,12 +103,12 @@ const Index = () => (
       <div className="container">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <img src={renovationImg} alt="Sanierte Wohnung" className="w-full h-80 object-cover" />
+            <img src={renovationImg} alt="Sanierte Wohnung" className="w-full h-80 object-cover rounded" />
           </div>
           <div>
             <SectionHeading
               title="Intelligente Ankaufsstrategien"
-              subtitle="Wir konzentrieren uns auf Immobilien, die unter Zeitdruck oder in komplexen Konstellationen veräußert werden. Mit einem klaren Blick für Potenziale entwickeln wir passende Konzepte."
+              subtitle="Wir konzentrieren uns auf Immobilien, die unter Zeitdruck oder in komplexen Konstellationen veraeussert werden. Mit einem klaren Blick fuer Potenziale entwickeln wir passende Konzepte."
             />
             <Link
               to="/leistungen"
@@ -116,11 +135,12 @@ const Index = () => (
             Standortfokus Deutschland
           </h2>
           <p className="text-primary-foreground/80 text-lg leading-relaxed mb-8">
-            Wir investieren an wertstabilen Standorten in ganz Deutschland – mit besonderem Augenmerk auf Lagen mit nachhaltigem Entwicklungspotenzial.
+            Wir investieren an wertstabilen Standorten in ganz Deutschland – mit besonderem
+            Augenmerk auf Lagen mit nachhaltigem Entwicklungspotenzial.
           </p>
           <Link
             to="/kontakt"
-            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 text-sm font-medium tracking-wide rounded hover:opacity-90 transition-opacity"
           >
             Kontakt aufnehmen
             <ArrowRight size={16} />
