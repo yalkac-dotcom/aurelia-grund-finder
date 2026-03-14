@@ -57,7 +57,7 @@ const Contact = () => {
                 <div className="bg-secondary border border-border p-10 text-center">
                   <h3 className="text-xl font-bold text-foreground mb-2">Vielen Dank!</h3>
                   <p className="text-muted-foreground">
-                    Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kuerze bei Ihnen.
+                    Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns in Kürze bei Ihnen.
                   </p>
                 </div>
               ) : (
