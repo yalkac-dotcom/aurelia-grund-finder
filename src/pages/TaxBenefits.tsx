@@ -236,6 +236,29 @@ const TaxBenefits = () => {
                       </div>
                     ))}
                   </div>
+                  {/* Links zu Ämtern */}
+                  {t.links && t.links.length > 0 && (
+                    <div className="mt-12 p-6 bg-secondary border border-border rounded">
+                      <h4 className="text-sm font-bold text-foreground mb-3">Weiterführende Links</h4>
+                      <div className="flex flex-wrap gap-4">
+                        {t.links.map((link) => (
+                          <a
+                            key={link.url}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 underline underline-offset-4 transition-colors"
+                          >
+                            <ExternalLink size={14} />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                      <p className="text-xs text-muted-foreground mt-4 italic">
+                        Haftungsausschluss: Die vorstehenden Links führen zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
+                      </p>
+                    </div>
+                  )}
                 </div>
               ))}
           </div>
