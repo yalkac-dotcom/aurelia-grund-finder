@@ -49,9 +49,19 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center">
-        <p className="text-primary-foreground/50 text-xs">
-          © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. Alle Rechte vorbehalten.
+      <div className="border-t border-primary-foreground/10 mt-12 pt-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-primary-foreground/50 text-xs">
+            © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. Alle Rechte vorbehalten.
+          </p>
+          <div className="flex items-center gap-4">
+            <Link to="/impressum" className="text-primary-foreground/50 text-xs hover:text-accent transition-colors">Impressum</Link>
+            <Link to="/datenschutz" className="text-primary-foreground/50 text-xs hover:text-accent transition-colors">Datenschutz</Link>
+          </div>
+        </div>
+        <p className="text-primary-foreground/40 text-[10px] mt-4 text-center leading-relaxed">
+          Hinweis: Die Inhalte dieser Website dienen ausschließlich allgemeinen Informationszwecken
+          und stellen keine rechtliche, steuerliche oder finanzielle Beratung dar.
         </p>
       </div>
     </div>
