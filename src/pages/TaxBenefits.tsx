@@ -98,6 +98,16 @@ const TaxBenefits = () => (
         </div>
       </div>
     </section>
+    {/* Disclaimer */}
+    <section className="pb-24">
+      <div className="container max-w-4xl">
+        <p className="text-xs text-muted-foreground italic leading-relaxed bg-secondary p-6 border border-border rounded">
+          Steuerliche Auswirkungen hängen stark vom Einzelfall ab. Die hier dargestellten Informationen
+          ersetzen keine individuelle Beratung durch einen Steuerberater. Eine qualifizierte steuerliche
+          Beratung ist vor jeder Investitionsentscheidung unerlässlich.
+        </p>
+      </div>
+    </section>
   </Layout>
 );
 
