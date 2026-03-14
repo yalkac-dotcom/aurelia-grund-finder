@@ -73,6 +73,10 @@ const topics = [
     icon: Landmark,
     title: "KfW – Kredite & Zuschüsse",
     shortDesc: "Niedrigere Finanzierungskosten",
+    links: [
+      { label: "KfW-Förderbank", url: "https://www.kfw.de" },
+      { label: "KfW-Produktfinder", url: "https://www.kfw.de/inlandsfoerderung/Privatpersonen/" },
+    ],
     content: {
       intro:
         "Die KfW (Kreditanstalt für Wiederaufbau) bietet zinsgünstige Kredite und Zuschüsse für energieeffizientes Bauen und Sanieren. Die Programme sind ein zentraler Baustein der staatlichen Förderung im Immobilienbereich.",
