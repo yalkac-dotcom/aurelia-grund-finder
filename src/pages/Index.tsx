@@ -29,7 +29,7 @@ const Index = () => (
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
             Aurelia Grundbesitz GmbH identifiziert und entwickelt Immobilien aus
-            Zwangsversteigerungen, Nachlaessen und Insolvenzen – professionell,
+            Zwangsversteigerungen, Nachlässen und Insolvenzen – professionell,
             diskret und mit langfristiger Perspektive.
           </p>
           <div className="flex flex-wrap gap-4">
