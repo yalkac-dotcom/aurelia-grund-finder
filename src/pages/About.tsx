@@ -2,6 +2,34 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import ceoImg from "@/assets/about-ceo.jpg";
 import heroImg from "@/assets/hero-building.jpg";
+import { Gem, Shield, Building } from "lucide-react";
+
+const logoKonzepte = [
+  {
+    icon: Gem,
+    name: "Konzept 1 – „A-Dach"",
+    beschreibung:
+      "Ein großes, stilisiertes „A" bildet das Kernzeichen. Die beiden Schenkel des A laufen nach oben spitz zu und formen ein abstraktes Hausdach – eine Doppeldeutung aus Buchstabe und Architektur. Die Spitze wird durch eine feine Gold-Linie (#C8A75A) akzentuiert, der Körper des Buchstabens ist in Marineblau (#101E4A) gehalten. Der Querbalken des A ist bewusst tiefer gesetzt und leicht verlängert, sodass er wie ein Türsturz wirkt.",
+    schriftzug:
+      "Rechts neben dem Icon steht der Name zweizeilig: „Aurelia" in Zeile 1 (Ubuntu Medium, Versalien, Marineblau, weit gesperrt), „Grundbesitz GmbH" in Zeile 2 (Ubuntu Light, kleiner, Marineblau). Auf kleinen Bildschirmen wird das Icon zentriert über dem Schriftzug platziert.",
+  },
+  {
+    icon: Shield,
+    name: "Konzept 2 – „Schutzrahmen"",
+    beschreibung:
+      "Ein schlanker, rechteckiger Rahmen in Marineblau (#101E4A) mit abgerundeten Ecken (Radius ca. 4 px) umschließt den Schriftzug „A" oder das Wort „Aurelia". Der Rahmen symbolisiert Werterhalt, Sicherheit und Seriosität – wie ein Wappen oder Siegel. Die obere und untere Rahmenkante werden durch eine hauchdünne Gold-Linie (#C8A75A) verstärkt, die dem Zeichen eine edle Note verleiht.",
+    schriftzug:
+      "Innerhalb des Rahmens: „AURELIA" in Ubuntu Medium, Versalien, Marineblau, eng gesetzt. Unterhalb des Rahmens: „Grundbesitz GmbH" in Ubuntu Light, reguläre Groß-/Kleinschreibung, etwas kleiner, gleiche Farbe. Auf dunklem Hintergrund invertiert: Rahmen und Schrift in Weiß, Gold-Linie bleibt.",
+  },
+  {
+    icon: Building,
+    name: "Konzept 3 – „Geometrische Skyline"",
+    beschreibung:
+      "Drei bis vier sehr reduzierte, unterschiedlich hohe Rechtecke (Gebäudesilhouetten) in Marineblau (#101E4A) stehen nebeneinander. In eines der Gebäude ist ein dezentes „A" negativ eingestanzt oder als feine Gold-Kontur (#C8A75A) integriert. Die Formen sind streng geometrisch, ohne Rundungen – vermitteln Urbanität, Modernität und Struktur.",
+    schriftzug:
+      "Rechts neben der Skyline: „Aurelia" in Ubuntu Medium, Marineblau, normale Schreibweise. Darunter: „Grundbesitz GmbH" in Ubuntu Light, kleiner. Alternativ kann die Skyline auch über dem Schriftzug stehen (gestapeltes Logo für Social Media, Favicon etc.).",
+  },
+];
 
 const About = () => (
   <Layout>
@@ -65,6 +93,36 @@ const About = () => (
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Logo-Konzepte */}
+    <section className="py-20 bg-secondary">
+      <div className="container max-w-4xl">
+        <SectionHeading
+          title="Logo-Konzepte"
+          subtitle="Drei Entwurfsrichtungen für die visuelle Identität von Aurelia Grundbesitz – Farbwelt: Marineblau #101E4A, Gold #C8A75A, Weiß."
+        />
+        <div className="space-y-10">
+          {logoKonzepte.map((k) => (
+            <article key={k.name} className="bg-card border border-border p-8 md:p-10">
+              <div className="flex items-center gap-3 mb-4">
+                <k.icon className="text-accent shrink-0" size={24} />
+                <h3 className="text-lg font-bold text-foreground">{k.name}</h3>
+              </div>
+              <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+                <div>
+                  <h4 className="font-medium text-foreground mb-1">Icon-Beschreibung</h4>
+                  <p>{k.beschreibung}</p>
+                </div>
+                <div>
+                  <h4 className="font-medium text-foreground mb-1">Schriftzug-Setzung</h4>
+                  <p>{k.schriftzug}</p>
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

@@ -31,12 +31,12 @@ const Services = () => (
       </div>
     </section>
 
-    {/* Two strategies */}
+    {/* Two strategies cards */}
     <section className="py-20 bg-secondary">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Bestand */}
-          <div className="bg-card p-10 border border-border">
+          <div className="bg-card p-8 md:p-10 border border-border">
             <Building2 className="text-accent mb-4" size={32} />
             <h3 className="text-xl font-bold text-foreground mb-4">Bestand halten & Vermieten</h3>
             <ul className="space-y-3 text-muted-foreground text-sm">
@@ -56,7 +56,7 @@ const Services = () => (
           </div>
 
           {/* Sanieren */}
-          <div className="bg-card p-10 border border-border">
+          <div className="bg-card p-8 md:p-10 border border-border">
             <Hammer className="text-accent mb-4" size={32} />
             <h3 className="text-xl font-bold text-foreground mb-4">Sanieren & Verkaufen</h3>
             <ul className="space-y-3 text-muted-foreground text-sm">
@@ -74,6 +74,39 @@ const Services = () => (
               ))}
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Comparison Table */}
+    <section className="py-24">
+      <div className="container max-w-4xl">
+        <SectionHeading title="Bestand halten vs. Sanieren & Verkaufen" />
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b-2 border-accent">
+                <th className="text-left py-3 pr-6 font-medium text-foreground">Kriterium</th>
+                <th className="text-left py-3 pr-6 font-medium text-foreground">Bestand halten</th>
+                <th className="text-left py-3 font-medium text-foreground">Sanieren & Verkaufen</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Zeithorizont", "Langfristig (Jahre bis Jahrzehnte)", "Kurz- bis mittelfristig (1–3 J.)"],
+                ["Ertrag", "Stetige Mieteinnahmen", "Einmaliger, hoher Wertzuwachs"],
+                ["Risiko", "Eher gering", "Mittel (Markt-, Bau- und Vermarktungsrisiken)"],
+                ["Kapitalbindung", "Langfristig im Objekt", "Kapitalfreisetzung nach Verkauf"],
+                ["Geeignet für", "Solide Lagen, stabile Mieterstrukturen", "Immobilien mit hohem Entwicklungspotenzial"],
+              ].map(([kriterium, bestand, sanieren]) => (
+                <tr key={kriterium} className="border-b border-border">
+                  <td className="py-3 pr-6 font-medium text-foreground">{kriterium}</td>
+                  <td className="py-3 pr-6 text-muted-foreground">{bestand}</td>
+                  <td className="py-3 text-muted-foreground">{sanieren}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
