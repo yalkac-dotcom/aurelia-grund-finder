@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="container max-w-3xl text-center">
           <p className="text-muted-foreground text-lg leading-relaxed">
             Sie haben Fragen zu unseren Leistungen, ein konkretes Ankaufangebot oder
-            wuenschen einen persoenlichen Rueckruf? Wir freuen uns auf Ihre Nachricht und
+            wünschen einen persönlichen Rückruf? Wir freuen uns auf Ihre Nachricht und
             melden uns zeitnah bei Ihnen.
           </p>
         </div>
