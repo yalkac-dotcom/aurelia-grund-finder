@@ -8,6 +8,9 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import TaxBenefits from "./pages/TaxBenefits";
 import Contact from "./pages/Contact";
+import Investors from "./pages/Investors";
+import Privacy from "./pages/Privacy";
+import Impressum from "./pages/Impressum";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
