@@ -75,7 +75,7 @@ const Index = () => (
             {
               icon: Building2,
               title: "Besondere Objekte",
-              text: "Wohn- und Mischobjekte aus Zwangsversteigerungen, Nachlaessen und Insolvenzen.",
+              text: "Wohn- und Mischobjekte aus Zwangsversteigerungen, Nachlässen und Insolvenzen.",
             },
             {
               icon: Shield,

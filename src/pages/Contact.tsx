@@ -221,7 +221,7 @@ const Contact = () => {
                   <address className="not-italic text-muted-foreground text-sm leading-relaxed">
                     <p className="font-medium text-foreground">Aurelia Grundbesitz GmbH</p>
                     <p>Grevenbroicher Weg 2</p>
-                    <p>40547 Duesseldorf, Germany</p>
+                    <p>40547 Düsseldorf, Germany</p>
                   </address>
                 </div>
                 <div className="flex items-start gap-4">
