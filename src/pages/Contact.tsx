@@ -167,7 +167,7 @@ const Contact = () => {
                       rows={6}
                       required
                       className="w-full border border-border bg-card px-4 py-3 text-sm text-foreground rounded focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent resize-none"
-                      placeholder="Wie koennen wir Ihnen helfen?"
+                      placeholder="Wie können wir Ihnen helfen?"
                     />
                   </div>
 
