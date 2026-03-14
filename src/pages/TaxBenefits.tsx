@@ -44,6 +44,10 @@ const topics = [
     icon: Leaf,
     title: "Steuerermäßigungen bei energetischen Maßnahmen",
     shortDesc: "Zusätzliche Entlastung",
+    links: [
+      { label: "Bundesfinanzministerium", url: "https://www.bundesfinanzministerium.de" },
+      { label: "BMWi – Energieeffizienz", url: "https://www.energiewechsel.de" },
+    ],
     content: {
       intro:
         "Seit 2020 können Eigentümer, die ihr selbstgenutztes Wohngebäude energetisch sanieren, erhebliche Steuerermäßigungen nach § 35c EStG in Anspruch nehmen.",
