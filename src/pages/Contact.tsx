@@ -248,8 +248,6 @@ const Contact = () => {
               <div className="text-sm text-muted-foreground leading-relaxed">
                 <p className="font-medium text-foreground mb-2">Geschaeftsfuehrer</p>
                 <p>Yasar Alkac</p>
-                <p className="mt-4 font-medium text-foreground mb-2">Gruendung</p>
-                <p>2023</p>
               </div>
             </aside>
           </div>

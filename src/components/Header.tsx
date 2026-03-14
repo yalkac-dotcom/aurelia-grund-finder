@@ -18,8 +18,14 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b border-border">
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
-          <div className="leading-tight font-ubuntu">
+        <Link to="/" className="flex items-center gap-3">
+          {/* A-Dach Icon */}
+          <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
+            <path d="M20 4L4 32H12L16 24H24L28 32H36L20 4Z" fill="hsl(var(--primary))" />
+            <path d="M20 4L4 32H12L16 24H24L28 32H36L20 4Z" fill="none" stroke="hsl(var(--accent))" strokeWidth="1" />
+            <line x1="14" y1="28" x2="26" y2="28" stroke="hsl(var(--accent))" strokeWidth="1.5" />
+          </svg>
+          <div className="leading-tight">
             <span className="text-foreground font-bold text-lg tracking-wide uppercase">Aurelia</span>
             <span className="block text-muted-foreground text-[10px] tracking-[0.2em] uppercase font-light">Grundbesitz GmbH</span>
           </div>
