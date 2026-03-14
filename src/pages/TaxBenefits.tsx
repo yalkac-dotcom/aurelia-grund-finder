@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import portfolioImg from "@/assets/portfolio.jpg";
-import { Landmark, Leaf, Banknote, BadgePercent, BookOpen, ChevronRight } from "lucide-react";
+import { Landmark, Leaf, Banknote, BadgePercent, BookOpen, ChevronRight, ExternalLink } from "lucide-react";
 
 const topics = [
   {
@@ -11,6 +11,10 @@ const topics = [
     icon: BadgePercent,
     title: "AfA & Erhaltungsaufwand",
     shortDesc: "Laufende Steuerersparnis bei Vermietung",
+    links: [
+      { label: "Bundesfinanzministerium", url: "https://www.bundesfinanzministerium.de" },
+      { label: "Finanzamt (Elster)", url: "https://www.elster.de" },
+    ],
     content: {
       intro:
         "Die Absetzung für Abnutzung (AfA) und der Erhaltungsaufwand sind zentrale steuerliche Instrumente für Immobilieneigentümer, die ihre Steuerlast nachhaltig senken möchten.",
@@ -40,6 +44,10 @@ const topics = [
     icon: Leaf,
     title: "Steuerermäßigungen bei energetischen Maßnahmen",
     shortDesc: "Zusätzliche Entlastung",
+    links: [
+      { label: "Bundesfinanzministerium", url: "https://www.bundesfinanzministerium.de" },
+      { label: "BMWi – Energieeffizienz", url: "https://www.energiewechsel.de" },
+    ],
     content: {
       intro:
         "Seit 2020 können Eigentümer, die ihr selbstgenutztes Wohngebäude energetisch sanieren, erhebliche Steuerermäßigungen nach § 35c EStG in Anspruch nehmen.",
@@ -65,6 +73,10 @@ const topics = [
     icon: Landmark,
     title: "KfW – Kredite & Zuschüsse",
     shortDesc: "Niedrigere Finanzierungskosten",
+    links: [
+      { label: "KfW-Förderbank", url: "https://www.kfw.de" },
+      { label: "KfW-Produktfinder", url: "https://www.kfw.de/inlandsfoerderung/Privatpersonen/" },
+    ],
     content: {
       intro:
         "Die KfW (Kreditanstalt für Wiederaufbau) bietet zinsgünstige Kredite und Zuschüsse für energieeffizientes Bauen und Sanieren. Die Programme sind ein zentraler Baustein der staatlichen Förderung im Immobilienbereich.",
@@ -94,6 +106,10 @@ const topics = [
     icon: Banknote,
     title: "BAFA – Zuschüsse",
     shortDesc: "Direkte Reduzierung der Investitionskosten",
+    links: [
+      { label: "BAFA", url: "https://www.bafa.de" },
+      { label: "BAFA – Förderübersicht", url: "https://www.bafa.de/DE/Energie/Energieeffizienz/energieeffizienz_node.html" },
+    ],
     content: {
       intro:
         "Das Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA) fördert Einzelmaßnahmen zur energetischen Sanierung mit direkten Zuschüssen – ohne Kreditverpflichtung.",
@@ -220,6 +236,29 @@ const TaxBenefits = () => {
                       </div>
                     ))}
                   </div>
+                  {/* Links zu Ämtern */}
+                  {t.links && t.links.length > 0 && (
+                    <div className="mt-12 p-6 bg-secondary border border-border rounded">
+                      <h4 className="text-sm font-bold text-foreground mb-3">Weiterführende Links</h4>
+                      <div className="flex flex-wrap gap-4">
+                        {t.links.map((link) => (
+                          <a
+                            key={link.url}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 underline underline-offset-4 transition-colors"
+                          >
+                            <ExternalLink size={14} />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                      <p className="text-xs text-muted-foreground mt-4 italic">
+                        Haftungsausschluss: Die vorstehenden Links führen zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
+                      </p>
+                    </div>
+                  )}
                 </div>
               ))}
           </div>
@@ -282,11 +321,14 @@ const TaxBenefits = () => {
 
       {/* Disclaimer */}
       <section className="pb-24">
-        <div className="container max-w-4xl">
+        <div className="container max-w-4xl space-y-4">
           <p className="text-xs text-muted-foreground italic leading-relaxed bg-secondary p-6 border border-border rounded">
             Steuerliche Auswirkungen hängen stark vom Einzelfall ab. Die hier dargestellten Informationen
             ersetzen keine individuelle Beratung durch einen Steuerberater. Eine qualifizierte steuerliche
             Beratung ist vor jeder Investitionsentscheidung unerlässlich.
+          </p>
+          <p className="text-xs text-muted-foreground italic leading-relaxed bg-secondary p-6 border border-border rounded">
+            <strong className="text-foreground">Haftungsausschluss für externe Links:</strong> Diese Website enthält Verknüpfungen zu Websites Dritter (externe Links). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Bei der erstmaligen Verknüpfung wurden die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige externe Links unverzüglich entfernt.
           </p>
         </div>
       </section>
