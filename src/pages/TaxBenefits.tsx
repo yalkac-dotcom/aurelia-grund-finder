@@ -321,11 +321,14 @@ const TaxBenefits = () => {
 
       {/* Disclaimer */}
       <section className="pb-24">
-        <div className="container max-w-4xl">
+        <div className="container max-w-4xl space-y-4">
           <p className="text-xs text-muted-foreground italic leading-relaxed bg-secondary p-6 border border-border rounded">
             Steuerliche Auswirkungen hängen stark vom Einzelfall ab. Die hier dargestellten Informationen
             ersetzen keine individuelle Beratung durch einen Steuerberater. Eine qualifizierte steuerliche
             Beratung ist vor jeder Investitionsentscheidung unerlässlich.
+          </p>
+          <p className="text-xs text-muted-foreground italic leading-relaxed bg-secondary p-6 border border-border rounded">
+            <strong className="text-foreground">Haftungsausschluss für externe Links:</strong> Diese Website enthält Verknüpfungen zu Websites Dritter (externe Links). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Bei der erstmaligen Verknüpfung wurden die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige externe Links unverzüglich entfernt.
           </p>
         </div>
       </section>
