@@ -119,7 +119,7 @@ const Services = () => (
           <div>
             <SectionHeading title="Erfahrung trifft Strategie" />
             <p className="text-muted-foreground leading-relaxed">
-              Über 20 Jahre Erfahrung in der Immobilien- und Kapitalanlagewelt bilden die Grundlage unserer Arbeit. Wir arbeiten mit einem belastbaren Netzwerk aus Banken, Investoren, Maklern und spezialisierten Dienstleistern.
+              Über 30 Jahre gebündelte Erfahrung in der Immobilien- und Kapitalanlagewelt bilden die Grundlage unserer Arbeit. Wir arbeiten mit einem belastbaren Netzwerk aus Banken, Investoren, Maklern und spezialisierten Dienstleistern.
             </p>
           </div>
         </div>
