@@ -44,7 +44,7 @@ const Index = () => (
               to="/ueber-uns"
               className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-6 py-3 text-sm font-medium tracking-wide rounded hover:bg-primary-foreground/10 transition-colors"
             >
-              Mehr ueber Aurelia
+              Mehr über Aurelia
             </Link>
           </div>
         </div>

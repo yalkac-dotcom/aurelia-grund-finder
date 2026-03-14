@@ -246,7 +246,7 @@ const Contact = () => {
               <div className="w-full h-px bg-border my-8" />
 
               <div className="text-sm text-muted-foreground leading-relaxed">
-                <p className="font-medium text-foreground mb-2">Geschaeftsfuehrer</p>
+                <p className="font-medium text-foreground mb-2">Geschäftsführer</p>
                 <p>Yasar Alkac</p>
               </div>
             </aside>
