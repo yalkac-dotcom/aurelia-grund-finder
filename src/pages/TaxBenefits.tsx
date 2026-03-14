@@ -11,6 +11,10 @@ const topics = [
     icon: BadgePercent,
     title: "AfA & Erhaltungsaufwand",
     shortDesc: "Laufende Steuerersparnis bei Vermietung",
+    links: [
+      { label: "Bundesfinanzministerium", url: "https://www.bundesfinanzministerium.de" },
+      { label: "Finanzamt (Elster)", url: "https://www.elster.de" },
+    ],
     content: {
       intro:
         "Die Absetzung für Abnutzung (AfA) und der Erhaltungsaufwand sind zentrale steuerliche Instrumente für Immobilieneigentümer, die ihre Steuerlast nachhaltig senken möchten.",
