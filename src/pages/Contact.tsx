@@ -7,7 +7,7 @@ const betreffOptions = [
   "Allgemeine Anfrage",
   "Ankaufangebot",
   "Kooperationsanfrage",
-  "Rueckrufwunsch",
+  "Rückrufwunsch",
 ];
 
 const Contact = () => {
