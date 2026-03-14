@@ -19,9 +19,9 @@ const Header = () => {
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <div className="leading-tight">
+          <div className="leading-tight font-ubuntu">
             <span className="text-foreground font-bold text-lg tracking-wide uppercase">Aurelia</span>
-            <span className="block text-muted-foreground text-[10px] tracking-[0.2em] uppercase">Grundbesitz GmbH</span>
+            <span className="block text-muted-foreground text-[10px] tracking-[0.2em] uppercase font-light">Grundbesitz GmbH</span>
           </div>
         </Link>
 
