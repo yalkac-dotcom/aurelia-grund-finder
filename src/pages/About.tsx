@@ -7,27 +7,27 @@ import { Gem, Shield, Building } from "lucide-react";
 const logoKonzepte = [
   {
     icon: Gem,
-    name: "Konzept 1 – „A-Dach"",
+    name: 'Konzept 1 \u2013 \u201EA-Dach\u201C',
     beschreibung:
-      "Ein großes, stilisiertes „A" bildet das Kernzeichen. Die beiden Schenkel des A laufen nach oben spitz zu und formen ein abstraktes Hausdach – eine Doppeldeutung aus Buchstabe und Architektur. Die Spitze wird durch eine feine Gold-Linie (#C8A75A) akzentuiert, der Körper des Buchstabens ist in Marineblau (#101E4A) gehalten. Der Querbalken des A ist bewusst tiefer gesetzt und leicht verlängert, sodass er wie ein Türsturz wirkt.",
+      'Ein gro\u00dfes, stilisiertes \u201EA\u201C bildet das Kernzeichen. Die beiden Schenkel des A laufen nach oben spitz zu und formen ein abstraktes Hausdach \u2013 eine Doppeldeutung aus Buchstabe und Architektur. Die Spitze wird durch eine feine Gold-Linie (#C8A75A) akzentuiert, der K\u00f6rper des Buchstabens ist in Marineblau (#101E4A) gehalten. Der Querbalken des A ist bewusst tiefer gesetzt und leicht verl\u00e4ngert, sodass er wie ein T\u00fcrsturz wirkt.',
     schriftzug:
-      "Rechts neben dem Icon steht der Name zweizeilig: „Aurelia" in Zeile 1 (Ubuntu Medium, Versalien, Marineblau, weit gesperrt), „Grundbesitz GmbH" in Zeile 2 (Ubuntu Light, kleiner, Marineblau). Auf kleinen Bildschirmen wird das Icon zentriert über dem Schriftzug platziert.",
+      'Rechts neben dem Icon steht der Name zweizeilig: \u201EAurelia\u201C in Zeile 1 (Ubuntu Medium, Versalien, Marineblau, weit gesperrt), \u201EGrundbesitz GmbH\u201C in Zeile 2 (Ubuntu Light, kleiner, Marineblau). Auf kleinen Bildschirmen wird das Icon zentriert \u00fcber dem Schriftzug platziert.',
   },
   {
     icon: Shield,
-    name: "Konzept 2 – „Schutzrahmen"",
+    name: 'Konzept 2 \u2013 \u201ESchutzrahmen\u201C',
     beschreibung:
-      "Ein schlanker, rechteckiger Rahmen in Marineblau (#101E4A) mit abgerundeten Ecken (Radius ca. 4 px) umschließt den Schriftzug „A" oder das Wort „Aurelia". Der Rahmen symbolisiert Werterhalt, Sicherheit und Seriosität – wie ein Wappen oder Siegel. Die obere und untere Rahmenkante werden durch eine hauchdünne Gold-Linie (#C8A75A) verstärkt, die dem Zeichen eine edle Note verleiht.",
+      'Ein schlanker, rechteckiger Rahmen in Marineblau (#101E4A) mit abgerundeten Ecken (Radius ca. 4 px) umschlie\u00dft den Schriftzug \u201EA\u201C oder das Wort \u201EAurelia\u201C. Der Rahmen symbolisiert Werterhalt, Sicherheit und Seriosit\u00e4t \u2013 wie ein Wappen oder Siegel. Die obere und untere Rahmenkante werden durch eine hauchd\u00fcnne Gold-Linie (#C8A75A) verst\u00e4rkt, die dem Zeichen eine edle Note verleiht.',
     schriftzug:
-      "Innerhalb des Rahmens: „AURELIA" in Ubuntu Medium, Versalien, Marineblau, eng gesetzt. Unterhalb des Rahmens: „Grundbesitz GmbH" in Ubuntu Light, reguläre Groß-/Kleinschreibung, etwas kleiner, gleiche Farbe. Auf dunklem Hintergrund invertiert: Rahmen und Schrift in Weiß, Gold-Linie bleibt.",
+      'Innerhalb des Rahmens: \u201EAURELIA\u201C in Ubuntu Medium, Versalien, Marineblau, eng gesetzt. Unterhalb des Rahmens: \u201EGrundbesitz GmbH\u201C in Ubuntu Light, regul\u00e4re Gro\u00df-/Kleinschreibung, etwas kleiner, gleiche Farbe. Auf dunklem Hintergrund invertiert: Rahmen und Schrift in Wei\u00df, Gold-Linie bleibt.',
   },
   {
     icon: Building,
-    name: "Konzept 3 – „Geometrische Skyline"",
+    name: 'Konzept 3 \u2013 \u201EGeometrische Skyline\u201C',
     beschreibung:
-      "Drei bis vier sehr reduzierte, unterschiedlich hohe Rechtecke (Gebäudesilhouetten) in Marineblau (#101E4A) stehen nebeneinander. In eines der Gebäude ist ein dezentes „A" negativ eingestanzt oder als feine Gold-Kontur (#C8A75A) integriert. Die Formen sind streng geometrisch, ohne Rundungen – vermitteln Urbanität, Modernität und Struktur.",
+      'Drei bis vier sehr reduzierte, unterschiedlich hohe Rechtecke (Geb\u00e4udesilhouetten) in Marineblau (#101E4A) stehen nebeneinander. In eines der Geb\u00e4ude ist ein dezentes \u201EA\u201C negativ eingestanzt oder als feine Gold-Kontur (#C8A75A) integriert. Die Formen sind streng geometrisch, ohne Rundungen \u2013 vermitteln Urbanit\u00e4t, Modernit\u00e4t und Struktur.',
     schriftzug:
-      "Rechts neben der Skyline: „Aurelia" in Ubuntu Medium, Marineblau, normale Schreibweise. Darunter: „Grundbesitz GmbH" in Ubuntu Light, kleiner. Alternativ kann die Skyline auch über dem Schriftzug stehen (gestapeltes Logo für Social Media, Favicon etc.).",
+      'Rechts neben der Skyline: \u201EAurelia\u201C in Ubuntu Medium, Marineblau, normale Schreibweise. Darunter: \u201EGrundbesitz GmbH\u201C in Ubuntu Light, kleiner. Alternativ kann die Skyline auch \u00fcber dem Schriftzug stehen (gestapeltes Logo f\u00fcr Social Media, Favicon etc.).',
   },
 ];
 
