@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import renovationImg from "@/assets/renovation.jpg";
-import heroImg from "@/assets/hero-building.jpg";
+import heroImg from "@/assets/hero-services.jpg";
 import { Building2, Hammer, CheckCircle } from "lucide-react";
 
 const Services = () => (
@@ -9,7 +9,7 @@ const Services = () => (
     {/* Page Hero */}
     <section className="relative py-28">
       <div className="absolute inset-0">
-        <img src={renovationImg} alt="Sanierung" className="w-full h-full object-cover" />
+        <img src={heroImg} alt="Investment-Strategien" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-primary/70" />
       </div>
       <div className="relative container">
