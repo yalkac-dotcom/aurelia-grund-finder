@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoImg from "@/assets/logo-aurelia.png";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground">
@@ -6,10 +7,9 @@ const Footer = () => (
       <div className="grid md:grid-cols-3 gap-12">
         {/* Brand */}
         <div>
-          <div className="leading-tight mb-4">
-            <span className="text-primary-foreground font-bold text-xl tracking-[0.15em] uppercase">Aurelia</span>
-            <span className="block text-primary-foreground/50 text-[10px] tracking-[0.25em] uppercase font-light">Grundbesitz GmbH</span>
-          </div>
+          <Link to="/" className="inline-block mb-4">
+            <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-10 w-auto object-contain brightness-0 invert" />
+          </Link>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
             Werte schaffen aus besonderen Situationen – Ihr Partner für Immobilieninvestments in Deutschland.
           </p>
