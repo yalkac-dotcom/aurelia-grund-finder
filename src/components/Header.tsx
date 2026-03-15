@@ -21,8 +21,11 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <div className="leading-tight">
-            <span className="text-foreground font-bold text-lg tracking-wide uppercase">Aurelia</span>
-            <span className="block text-muted-foreground text-[10px] tracking-[0.2em] uppercase font-light">Grundbesitz GmbH</span>
+            <span className="text-lg tracking-wide uppercase font-bold">
+              <span className="text-accent">A</span>
+              <span className="text-primary">URELIA</span>
+            </span>
+            <span className="block text-accent text-[10px] tracking-[0.2em] uppercase font-light">Grundbesitz GmbH</span>
           </div>
         </Link>
 
