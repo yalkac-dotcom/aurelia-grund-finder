@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import portfolioImg from "@/assets/portfolio.jpg";
+import heroImg from "@/assets/hero-steuervorteile.jpg";
 import { Landmark, Leaf, Banknote, BadgePercent, BookOpen, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
