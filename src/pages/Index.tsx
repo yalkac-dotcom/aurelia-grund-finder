@@ -9,7 +9,7 @@ import { Building2, TrendingUp, Shield, ArrowRight, CheckCircle } from "lucide-r
 const bulletpoints = [
   "Spezialisierung auf Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen.",
   "Zwei klare Strategien: Bestand halten & vermieten oder sanieren & verkaufen.",
-  "Über 30 Jahre gebündelte Erfahrung von Geschäftsführer Yasar Alkac in Immobilien und Kapitalanlagen.",
+  "Über 20 Jahre gebündelte Erfahrung von Geschäftsführer Yasar Alkac in Immobilien und Kapitalanlagen.",
   "Diskrete, strukturierte Abwicklung von der Analyse bis zur Übergabe.",
 ];
 
@@ -28,9 +28,8 @@ const Index = () => (
             Werte schaffen aus besonderen Situationen
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
-            Aurelia Grundbesitz GmbH identifiziert und entwickelt Immobilien aus
-            Zwangsversteigerungen, Nachlässen und Insolvenzen – professionell,
-            diskret und mit langfristiger Perspektive.
+            Aurelia Grundbesitz GmbH identifiziert und entwickelt Immobilien aus Zwangsversteigerungen, Nachlässen und
+            Insolvenzen – professionell, diskret und mit langfristiger Perspektive.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -131,12 +130,10 @@ const Index = () => (
       <div className="relative container text-center">
         <div className="max-w-2xl mx-auto">
           <div className="w-12 h-0.5 bg-accent mb-6 mx-auto" />
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-            Standortfokus Deutschland
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">Standortfokus Deutschland</h2>
           <p className="text-primary-foreground/80 text-lg leading-relaxed mb-8">
-            Wir investieren an wertstabilen Standorten in ganz Deutschland – mit besonderem
-            Augenmerk auf Lagen mit nachhaltigem Entwicklungspotenzial.
+            Wir investieren an wertstabilen Standorten in ganz Deutschland – mit besonderem Augenmerk auf Lagen mit
+            nachhaltigem Entwicklungspotenzial.
           </p>
           <Link
             to="/kontakt"
