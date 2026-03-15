@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import renovationImg from "@/assets/renovation.jpg";
-import heroImg from "@/assets/hero-building.jpg";
+import heroImg from "@/assets/hero-services.jpg";
 import { Building2, Hammer, CheckCircle } from "lucide-react";
 
 const Services = () => (
