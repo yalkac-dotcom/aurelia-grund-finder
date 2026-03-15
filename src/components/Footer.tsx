@@ -8,7 +8,7 @@ const Footer = () => (
         {/* Brand */}
         <div>
           <Link to="/" className="inline-block mb-4">
-            <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-16 w-auto object-contain brightness-0 invert" />
+            <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-[6.5rem] w-auto object-contain brightness-0 invert" />
           </Link>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
             Werte schaffen aus besonderen Situationen – Ihr Partner für Immobilieninvestments in Deutschland.
