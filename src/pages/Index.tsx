@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroImg from "@/assets/hero-building.jpg";
 import renovationImg from "@/assets/renovation.jpg";
+import ankaufImg from "@/assets/ankauf-strategie.jpg";
 import portfolioImg from "@/assets/portfolio.jpg";
 import { Building2, TrendingUp, Shield, ArrowRight, CheckCircle } from "lucide-react";
 
@@ -101,7 +102,7 @@ const Index = () => (
       <div className="container">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <img src={renovationImg} alt="Sanierte Wohnung" className="w-full h-80 object-cover rounded" />
+            <img src={ankaufImg} alt="Intelligente Ankaufsstrategien" className="w-full h-80 object-cover rounded" />
           </div>
           <div>
             <SectionHeading
