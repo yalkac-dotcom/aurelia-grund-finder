@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logoImg from "@/assets/logo.png";
+import logoImg from "@/assets/logo-aurelia.png";
 
 const navItems = [
   { label: "Startseite", path: "/" },
@@ -20,12 +20,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b border-border">
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3">
-          <img src={logoImg} alt="Aurelia Logo" className="h-10 w-10 object-contain" />
-          <div className="leading-tight">
-            <span className="text-primary font-bold text-xl tracking-[0.15em] uppercase">Aurelia</span>
-            <span className="block text-accent text-[10px] tracking-[0.25em] uppercase font-light">Grundbesitz GmbH</span>
-          </div>
+        <Link to="/" className="flex items-center">
+          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-10 md:h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav */}
