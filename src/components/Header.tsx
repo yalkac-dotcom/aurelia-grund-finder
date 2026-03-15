@@ -20,10 +20,11 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b border-border">
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center gap-3">
+          <img src={logoImg} alt="Aurelia Logo" className="h-10 w-10 object-contain" />
           <div className="leading-tight">
             <span className="text-primary font-bold text-xl tracking-[0.15em] uppercase">Aurelia</span>
-            <span className="block text-primary/60 text-[10px] tracking-[0.25em] uppercase font-light">Grundbesitz GmbH</span>
+            <span className="block text-accent text-[10px] tracking-[0.25em] uppercase font-light">Grundbesitz GmbH</span>
           </div>
         </Link>
 
