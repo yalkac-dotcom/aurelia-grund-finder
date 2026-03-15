@@ -3,120 +3,109 @@ import SectionHeading from "@/components/SectionHeading";
 import heroImg from "@/assets/hero-steuervorteile.jpg";
 import { Landmark, Leaf, Banknote, BadgePercent, BookOpen, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const topics = [
-  {
-    id: "afa",
-    category: "Steuern",
-    icon: BadgePercent,
-    title: "AfA & Erhaltungsaufwand",
-    shortDesc: "Laufende Steuerersparnis bei Vermietung",
-    path: "/steuervorteile/afa",
-  },
-  {
-    id: "energetisch",
-    category: "Steuern",
-    icon: Leaf,
-    title: "Steuerermäßigungen bei energetischen Maßnahmen",
-    shortDesc: "Zusätzliche Entlastung",
-    path: "/steuervorteile/energetisch",
-  },
-  {
-    id: "kfw",
-    category: "Förderung",
-    icon: Landmark,
-    title: "KfW – Kredite & Zuschüsse",
-    shortDesc: "Niedrigere Finanzierungskosten",
-    path: "/steuervorteile/kfw",
-  },
-  {
-    id: "bafa",
-    category: "Förderung",
-    icon: Banknote,
-    title: "BAFA – Zuschüsse",
-    shortDesc: "Direkte Reduzierung der Investitionskosten",
-    path: "/steuervorteile/bafa",
-  },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const TaxBenefits = () => {
+  const { t } = useLanguage();
+
+  const topics = [
+    {
+      id: "afa",
+      category: t.tax.categoryTax,
+      icon: BadgePercent,
+      title: t.tax.afaTitle,
+      shortDesc: t.tax.afaShortDesc,
+      path: "/steuervorteile/afa",
+    },
+    {
+      id: "energetisch",
+      category: t.tax.categoryTax,
+      icon: Leaf,
+      title: t.tax.energetischTitle,
+      shortDesc: t.tax.energetischShortDesc,
+      path: "/steuervorteile/energetisch",
+    },
+    {
+      id: "kfw",
+      category: t.tax.categoryFunding,
+      icon: Landmark,
+      title: t.tax.kfwTitle,
+      shortDesc: t.tax.kfwShortDesc,
+      path: "/steuervorteile/kfw",
+    },
+    {
+      id: "bafa",
+      category: t.tax.categoryFunding,
+      icon: Banknote,
+      title: t.tax.bafaTitle,
+      shortDesc: t.tax.bafaShortDesc,
+      path: "/steuervorteile/bafa",
+    },
+  ];
+
   return (
     <Layout>
-      {/* Page Hero */}
       <section className="relative py-28">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Steuervorteile" className="w-full h-full object-cover" />
+          <img src={heroImg} alt={t.tax.heroTitle} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/70" />
         </div>
         <div className="relative container">
           <div className="w-12 h-0.5 bg-accent mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground">Steuervorteile & Förderungen</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground">{t.tax.heroTitle}</h1>
         </div>
       </section>
 
-      {/* Intro */}
       <section className="py-24">
         <div className="container max-w-4xl">
-          <SectionHeading
-            title="Vorteile für Investoren"
-            subtitle="Immobilieninvestments bieten in Deutschland zahlreiche steuerliche und förderungstechnische Vorteile, die bei strategischer Planung erhebliche Renditevorteile ermöglichen."
-          />
+          <SectionHeading title={t.tax.introTitle} subtitle={t.tax.introSubtitle} />
         </div>
       </section>
 
-      {/* Topic Cards */}
       <section className="py-20 bg-secondary">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-8">
-            {topics.map((t) => (
+            {topics.map((tp) => (
               <Link
-                key={t.id}
-                to={t.path}
+                key={tp.id}
+                to={tp.path}
                 className="text-left bg-card p-8 border border-border hover:border-accent/50 transition-all group"
               >
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3 mb-4">
-                    <t.icon className="text-accent" size={24} />
-                    <span className="text-xs font-medium uppercase tracking-widest text-accent">
-                      {t.category}
-                    </span>
+                    <tp.icon className="text-accent" size={24} />
+                    <span className="text-xs font-medium uppercase tracking-widest text-accent">{tp.category}</span>
                   </div>
-                  <ChevronRight
-                    className="text-accent transition-transform group-hover:translate-x-1"
-                    size={18}
-                  />
+                  <ChevronRight className="text-accent transition-transform group-hover:translate-x-1" size={18} />
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{t.title}</h3>
-                <p className="text-muted-foreground text-sm">{t.shortDesc}</p>
+                <h3 className="text-lg font-bold text-foreground mb-2">{tp.title}</h3>
+                <p className="text-muted-foreground text-sm">{tp.shortDesc}</p>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Overview Table */}
       <section className="py-24 bg-secondary">
         <div className="container max-w-4xl">
-          <SectionHeading title="Übersicht" />
+          <SectionHeading title={t.tax.overviewTitle} />
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b-2 border-accent">
-                  <th className="text-left py-3 pr-4 font-medium text-foreground">Bereich</th>
-                  <th className="text-left py-3 pr-4 font-medium text-foreground">Instrument</th>
-                  <th className="text-left py-3 font-medium text-foreground">Nutzen für Investoren</th>
+                  {t.tax.overviewHeaders.map((h, i) => (
+                    <th key={i} className="text-left py-3 pr-4 font-medium text-foreground">{h}</th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
-                {topics.map((t) => (
-                  <tr key={t.id} className="border-b border-border">
-                    <td className="py-3 pr-4 text-muted-foreground">{t.category}</td>
+                {topics.map((tp) => (
+                  <tr key={tp.id} className="border-b border-border">
+                    <td className="py-3 pr-4 text-muted-foreground">{tp.category}</td>
                     <td className="py-3 pr-4">
-                      <Link to={t.path} className="text-foreground font-medium hover:text-accent transition-colors">
-                        {t.title}
-                      </Link>
+                      <Link to={tp.path} className="text-foreground font-medium hover:text-accent transition-colors">{tp.title}</Link>
                     </td>
-                    <td className="py-3 text-muted-foreground">{t.shortDesc}</td>
+                    <td className="py-3 text-muted-foreground">{tp.shortDesc}</td>
                   </tr>
                 ))}
               </tbody>
@@ -125,7 +114,6 @@ const TaxBenefits = () => {
         </div>
       </section>
 
-      {/* Glossar Link */}
       <section className="py-24">
         <div className="container max-w-4xl">
           <Link
@@ -135,8 +123,8 @@ const TaxBenefits = () => {
             <div className="flex items-center gap-4">
               <BookOpen className="text-accent" size={28} />
               <div>
-                <h3 className="text-lg font-bold text-foreground">Glossar</h3>
-                <p className="text-muted-foreground text-sm">Wichtige Begriffe rund um Steuervorteile und Förderungen im Immobilienbereich.</p>
+                <h3 className="text-lg font-bold text-foreground">{t.tax.glossarTitle}</h3>
+                <p className="text-muted-foreground text-sm">{t.tax.glossarDesc}</p>
               </div>
             </div>
             <ChevronRight className="text-accent transition-transform group-hover:translate-x-1" size={18} />
@@ -144,16 +132,13 @@ const TaxBenefits = () => {
         </div>
       </section>
 
-      {/* Disclaimer */}
       <section className="pb-24">
         <div className="container max-w-4xl space-y-4">
           <p className="text-xs text-muted-foreground italic leading-relaxed bg-secondary p-6 border border-border rounded">
-            Steuerliche Auswirkungen hängen stark vom Einzelfall ab. Die hier dargestellten Informationen
-            ersetzen keine individuelle Beratung durch einen Steuerberater. Eine qualifizierte steuerliche
-            Beratung ist vor jeder Investitionsentscheidung unerlässlich.
+            {t.tax.disclaimer}
           </p>
           <p className="text-xs text-muted-foreground italic leading-relaxed bg-secondary p-6 border border-border rounded">
-            <strong className="text-foreground">Haftungsausschluss für externe Links:</strong> Diese Website enthält Verknüpfungen zu Websites Dritter (externe Links). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Bei der erstmaligen Verknüpfung wurden die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen. Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige externe Links unverzüglich entfernt.
+            <strong className="text-foreground">{t.tax.externalLinksDisclaimer.split(":")[0]}:</strong> {t.tax.externalLinksDisclaimer.substring(t.tax.externalLinksDisclaimer.indexOf(":") + 2)}
           </p>
         </div>
       </section>
