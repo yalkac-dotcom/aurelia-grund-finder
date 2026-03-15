@@ -45,7 +45,7 @@ const TaxBenefits = () => {
       {/* Page Hero */}
       <section className="relative py-28">
         <div className="absolute inset-0">
-          <img src={portfolioImg} alt="Standort" className="w-full h-full object-cover" />
+          <img src={heroImg} alt="Steuervorteile" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/70" />
         </div>
         <div className="relative container">
