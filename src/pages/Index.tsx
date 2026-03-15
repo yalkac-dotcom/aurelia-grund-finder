@@ -25,7 +25,7 @@ const Index = () => (
         <div className="max-w-2xl">
           <div className="w-12 h-0.5 bg-accent mb-6" />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-            Immobilien, die andere übersehen
+            Die leisen Deals. Die großen Chancen.
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
             Wir kennen die Wege zu Objekten, die nie auf dem freien Markt erscheinen – und machen daraus nachhaltige Werte. Diskret, schnell und mit dem richtigen Netzwerk.
