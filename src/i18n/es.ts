@@ -296,6 +296,17 @@ const es: Translations = {
   },
   impressum: {
     title: "Aviso legal",
+    tmbTitle: "Información conforme al § 5 TMG",
+    representedByTitle: "Representado por",
+    representedByText: "Director general: Yasar Alkac",
+    contactTitle: "Contacto",
+    contactText: "Correo electrónico: info@aurelia-grundbesitz.de\nTeléfono: +49 (0) 211 – XXX XXXX",
+    registerTitle: "Inscripción registral",
+    registerText: "Inscripción en el registro mercantil\nJuzgado registral: Amtsgericht Düsseldorf\nNúmero de registro: HRB XXXXX",
+    disclaimerTitle: "Exención de responsabilidad",
+    disclaimerText: "Los contenidos de este sitio web han sido elaborados con el mayor cuidado posible. Sin embargo, no podemos garantizar la exactitud, integridad y actualidad de los contenidos. Como proveedor de servicios, somos responsables de nuestros propios contenidos en estas páginas conforme a la legislación general de acuerdo con el § 7, apartado 1 TMG.",
+    copyrightTitle: "Derechos de autor",
+    copyrightText: "Los contenidos y obras creados por los operadores del sitio en estas páginas están sujetos al derecho de autor alemán. La reproducción, edición, distribución y cualquier forma de utilización fuera de los límites del derecho de autor requieren el consentimiento escrito del respectivo autor o creador.",
   },
 };
 
