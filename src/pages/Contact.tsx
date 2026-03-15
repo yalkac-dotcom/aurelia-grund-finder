@@ -36,11 +36,11 @@ const Contact = () => {
             Kontakt
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight">
-            Kontaktieren Sie uns
+            Wir sind für Sie da
           </h1>
           <div className="w-20 h-0.5 bg-accent mx-auto mt-8" />
           <p className="text-primary-foreground/70 text-lg mt-6 max-w-xl mx-auto">
-            Wir freuen uns auf Ihre Nachricht
+            Persönlich, kompetent und immer ein offenes Ohr für Ihre Anliegen
           </p>
         </div>
       </section>
