@@ -130,6 +130,54 @@ export interface Translations {
     company: string;
     messagePlaceholder: string;
   };
+  tax: {
+    heroTitle: string;
+    introTitle: string;
+    introSubtitle: string;
+    categoryTax: string;
+    categoryFunding: string;
+    categoryKnowledge: string;
+    overviewTitle: string;
+    overviewHeaders: string[];
+    areaColumn: string;
+    instrumentColumn: string;
+    benefitColumn: string;
+    glossarTitle: string;
+    glossarDesc: string;
+    disclaimer: string;
+    externalLinksDisclaimer: string;
+    backToOverview: string;
+    furtherLinks: string;
+    taxDisclaimer: string;
+    // AfA
+    afaTitle: string;
+    afaShortDesc: string;
+    afaSectionTitle: string;
+    afaIntro: string;
+    afaSections: { heading: string; text: string }[];
+    // Energetisch
+    energetischTitle: string;
+    energetischShortDesc: string;
+    energetischSectionTitle: string;
+    energetischIntro: string;
+    energetischSections: { heading: string; text: string }[];
+    // KfW
+    kfwTitle: string;
+    kfwShortDesc: string;
+    kfwSectionTitle: string;
+    kfwIntro: string;
+    kfwSections: { heading: string; text: string }[];
+    // BAFA
+    bafaTitle: string;
+    bafaShortDesc: string;
+    bafaSectionTitle: string;
+    bafaIntro: string;
+    bafaSections: { heading: string; text: string }[];
+    // Glossar
+    glossarSectionTitle: string;
+    glossarSectionSubtitle: string;
+    glossarItems: { term: string; definition: string }[];
+  };
   privacy: {
     title: string;
   };
