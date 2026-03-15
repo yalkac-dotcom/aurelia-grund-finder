@@ -7,11 +7,8 @@ const Footer = () => (
         {/* Brand */}
         <div>
           <div className="leading-tight mb-4">
-            <span className="text-lg tracking-wide uppercase font-bold">
-              <span className="text-accent">A</span>
-              <span className="text-primary-foreground">URELIA</span>
-            </span>
-            <span className="block text-accent text-[10px] tracking-[0.2em] uppercase font-light">Grundbesitz GmbH</span>
+            <span className="text-primary-foreground font-bold text-xl tracking-[0.15em] uppercase">Aurelia</span>
+            <span className="block text-primary-foreground/50 text-[10px] tracking-[0.25em] uppercase font-light">Grundbesitz GmbH</span>
           </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
             Werte schaffen aus besonderen Situationen – Ihr Partner für Immobilieninvestments in Deutschland.
