@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import heroImg from "@/assets/hero-building.jpg";
+import heroImg from "@/assets/hero-contact.jpg";
 import { MapPin, Mail, Phone, Send, Clock, CheckCircle } from "lucide-react";
 
 const betreffOptions = [
