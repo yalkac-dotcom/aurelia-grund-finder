@@ -76,7 +76,7 @@ const it: Translations = {
   about: {
     heroTitle: "Chi siamo",
     companyTitle: "La nostra azienda",
-    companyP1: "Aurelia Grundbesitz GmbH, con sede in Grevenbroicher Weg 2, 40547 Düsseldorf, è specializzata nello sviluppo e nella gestione professionale di immobili provenienti da situazioni particolari. L'attenzione è rivolta a immobili da aste giudiziarie, successioni e procedure concorsuali, selezionati con grande esperienza, cura e lungimiranza.",
+    companyP1: "Aurelia Grundbesitz GmbH è specializzata nello sviluppo e nella gestione professionale di immobili provenienti da situazioni particolari. L'attenzione è rivolta a immobili da aste giudiziarie, successioni e procedure concorsuali, selezionati con grande esperienza, cura e lungimiranza.",
     companyP2: "Aurelia Grundbesitz persegue un approccio chiaro e a lungo termine: creazione di valore attraverso strategie di acquisizione intelligenti, strutturazione solida e sviluppo di alta qualità. A seconda dell'immobile, le proprietà vengono mantenute in portafoglio e affittate in modo sostenibile, oppure completamente ristrutturate o restaurate e successivamente vendute a valore.",
     philosophyTitle: "Filosofia e valori",
     philosophyP1: "Aurelia Grundbesitz unisce il pensiero imprenditoriale a un approccio responsabile verso immobili, inquilini, eredi e investitori. Ogni immobile non è semplicemente un numero nel portafoglio, ma un progetto individuale con una propria storia e un proprio potenziale di sviluppo.",

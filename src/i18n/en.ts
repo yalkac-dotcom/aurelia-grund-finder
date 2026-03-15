@@ -76,7 +76,7 @@ const en: Translations = {
   about: {
     heroTitle: "About Aurelia",
     companyTitle: "Our Company",
-    companyP1: "Aurelia Grundbesitz GmbH, based at Grevenbroicher Weg 2 in 40547 Düsseldorf, specialises in the professional development and management of properties from special situations. The focus is on properties from foreclosures, estates, and insolvencies, selected with extensive experience, care, and foresight.",
+    companyP1: "Aurelia Grundbesitz GmbH specialises in the professional development and management of properties from special situations. The focus is on properties from foreclosures, estates, and insolvencies, selected with extensive experience, care, and foresight.",
     companyP2: "Aurelia Grundbesitz pursues a clear, long-term approach: value creation through intelligent acquisition strategies, sound structuring, and high-quality development. Depending on the property, real estate is either held in the portfolio and let sustainably, or comprehensively renovated or restored and subsequently sold at value.",
     philosophyTitle: "Philosophy & Values",
     philosophyP1: "Aurelia Grundbesitz combines entrepreneurial thinking with responsible treatment of properties, tenants, estate stakeholders, and investors. Each property is not merely seen as a figure in the portfolio, but as an individual project with its own history and development potential.",
