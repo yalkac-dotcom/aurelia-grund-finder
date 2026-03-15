@@ -102,7 +102,7 @@ const Index = () => (
       <div className="container">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <img src={renovationImg} alt="Sanierte Wohnung" className="w-full h-80 object-cover rounded" />
+            <img src={ankaufImg} alt="Intelligente Ankaufsstrategien" className="w-full h-80 object-cover rounded" />
           </div>
           <div>
             <SectionHeading
