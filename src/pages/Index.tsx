@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import heroImg from "@/assets/hero-building.jpg";
 import renovationImg from "@/assets/renovation.jpg";
+import ankaufImg from "@/assets/ankauf-strategie.jpg";
 import portfolioImg from "@/assets/portfolio.jpg";
 import { Building2, TrendingUp, Shield, ArrowRight, CheckCircle } from "lucide-react";
 
