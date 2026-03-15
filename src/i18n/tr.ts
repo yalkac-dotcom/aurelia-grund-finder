@@ -296,6 +296,17 @@ const tr: Translations = {
   },
   impressum: {
     title: "Yasal Bilgiler",
+    tmbTitle: "§ 5 TMG uyarınca bilgiler",
+    representedByTitle: "Temsil eden",
+    representedByText: "Genel Müdür: Yasar Alkac",
+    contactTitle: "İletişim",
+    contactText: "E-posta: info@aurelia-grundbesitz.de\nTelefon: +49 (0) 211 – XXX XXXX",
+    registerTitle: "Sicil kaydı",
+    registerText: "Ticaret siciline kayıt\nSicil mahkemesi: Amtsgericht Düsseldorf\nSicil numarası: HRB XXXXX",
+    disclaimerTitle: "Sorumluluk reddi",
+    disclaimerText: "Bu web sitesinin içerikleri mümkün olan en büyük özenle oluşturulmuştur. Ancak içeriklerin doğruluğu, eksiksizliği ve güncelliği konusunda garanti veremeyiz. Hizmet sağlayıcı olarak, § 7 paragraf 1 TMG uyarınca bu sayfalardaki kendi içeriklerimizden genel yasalar çerçevesinde sorumluyuz.",
+    copyrightTitle: "Telif hakkı",
+    copyrightText: "Site işletmecileri tarafından bu sayfalarda oluşturulan içerik ve eserler Alman telif hakkı yasasına tabidir. Telif hakkı sınırları dışında çoğaltma, düzenleme, dağıtım ve her türlü kullanım, ilgili yazar veya oluşturucunun yazılı onayını gerektirir.",
   },
 };
 
