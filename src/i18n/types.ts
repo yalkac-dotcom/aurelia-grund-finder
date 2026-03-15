@@ -216,6 +216,17 @@ export interface Translations {
   };
   impressum: {
     title: string;
+    tmbTitle: string;
+    representedByTitle: string;
+    representedByText: string;
+    contactTitle: string;
+    contactText: string;
+    registerTitle: string;
+    registerText: string;
+    disclaimerTitle: string;
+    disclaimerText: string;
+    copyrightTitle: string;
+    copyrightText: string;
   };
 }
 
