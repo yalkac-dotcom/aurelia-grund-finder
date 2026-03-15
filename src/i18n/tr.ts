@@ -76,7 +76,7 @@ const tr: Translations = {
   about: {
     heroTitle: "Hakkımızda",
     companyTitle: "Şirketimiz",
-    companyP1: "Grevenbroicher Weg 2, 40547 Düsseldorf adresinde bulunan Aurelia Grundbesitz GmbH, özel durumlardan kaynaklanan gayrimenkullerin profesyonel geliştirilmesi ve yönetimi konusunda uzmanlaşmıştır.",
+    companyP1: "Aurelia Grundbesitz GmbH, özel durumlardan kaynaklanan gayrimenkullerin profesyonel geliştirilmesi ve yönetimi konusunda uzmanlaşmıştır.",
     companyP2: "Aurelia Grundbesitz net ve uzun vadeli bir yaklaşım izlemektedir: akıllı satın alma stratejileri, sağlam yapılandırma ve yüksek kaliteli geliştirme yoluyla değer yaratma.",
     philosophyTitle: "Felsefe ve değerler",
     philosophyP1: "Aurelia Grundbesitz girişimci düşünceyi gayrimenkullere, kiracılara, miras paydaşlarına ve yatırımcılara karşı sorumluluk bilinciyle birleştirir.",

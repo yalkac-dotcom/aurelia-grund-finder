@@ -77,7 +77,7 @@ const de: Translations = {
   about: {
     heroTitle: "Über Aurelia",
     companyTitle: "Unser Unternehmen",
-    companyP1: "Die Aurelia Grundbesitz GmbH mit Sitz am Grevenbroicher Weg 2 in 40547 Düsseldorf ist auf die professionelle Entwicklung und Bewirtschaftung von Immobilien aus besonderen Situationen spezialisiert. Im Fokus stehen Objekte aus Zwangsversteigerungen, Nachlässen und Insolvenzen, die mit viel Erfahrung, Sorgfalt und Weitblick ausgewählt werden.",
+    companyP1: "Die Aurelia Grundbesitz GmbH ist auf die professionelle Entwicklung und Bewirtschaftung von Immobilien aus besonderen Situationen spezialisiert. Im Fokus stehen Objekte aus Zwangsversteigerungen, Nachlässen und Insolvenzen, die mit viel Erfahrung, Sorgfalt und Weitblick ausgewählt werden.",
     companyP2: "Aurelia Grundbesitz verfolgt einen klaren, langfristigen Ansatz: Wertschöpfung durch intelligente Ankaufsstrategien, solide Strukturierung und hochwertige Entwicklung. Je nach Objekt werden Immobilien entweder im Bestand gehalten und nachhaltig vermietet oder umfassend renoviert beziehungsweise restauriert und anschließend werthaltig veräußert.",
     philosophyTitle: "Philosophie & Werte",
     philosophyP1: "Aurelia Grundbesitz verbindet unternehmerisches Denken mit einem verantwortungsvollen Umgang gegenüber Immobilien, Mietern, Nachlassbeteiligten und Investoren. Jede Immobilie wird nicht nur als Zahl im Portfolio betrachtet, sondern als individuelles Projekt mit eigener Geschichte und eigenem Entwicklungspotenzial.",
