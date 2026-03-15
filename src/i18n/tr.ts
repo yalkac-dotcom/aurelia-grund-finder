@@ -84,7 +84,7 @@ const tr: Translations = {
     experienceTitle: "İnançla gelen yetkinlik",
     experienceP1: "Sektörde 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Ekibimiz gayrimenkul, sermaye yatırımı, proje geliştirme ve işlem danışmanlığı alanlarındaki uzmanlığı bir araya getirmektedir – değer odaklı yatırımlara net bir odaklanmayla.",
     experienceP2: "Bankalar, yatırımcılar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güvenilir bir ağla çalışıyoruz. Klasik konut gayrimenkulleri, getiri odaklı yatırımlar veya cebri icra ve özel durumlardan kaynaklanan karmaşık işlemler olsun – ekibimiz gerekli piyasa bilgisini ve müzakere güvenliğini sunmaktadır.",
-    experienceP3: "Analistler, proje geliştiriciler ve sektör uzmanlarından oluşan uyumlu bir ekiple birlikte hem ekonomik olarak ikna edici hem de uzun vadede kalıcı olan sağlam stratejiler oluşturuyoruz. Her proje bütüncül olarak düşünülmektedir – satın almadan yapılandırmaya ve uygulamaya kadar.",
+    experienceP3: "Her proje bütüncül olarak düşünülmektedir: satın almadan yapılandırmaya ve uygulamaya kadar. Sonuç, hem ekonomik olarak ikna edici hem de uzun vadede kalıcı olan sağlam stratejilerdir.",
   },
   services: {
     heroTitle: "Hizmetler ve stratejiler",

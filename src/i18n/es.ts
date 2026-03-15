@@ -84,7 +84,7 @@ const es: Translations = {
     experienceTitle: "Competencia por convicción",
     experienceP1: "Más de 30 años de experiencia combinada en el sector constituyen la base de nuestro trabajo. Nuestro equipo reúne conocimientos en inmobiliaria, inversión de capital, desarrollo de proyectos y asesoramiento en transacciones – con un claro enfoque en inversiones de valor.",
     experienceP2: "Operamos con una red fiable de bancos, inversores, agentes y proveedores de servicios especializados. Ya sea inmuebles residenciales clásicos, inversiones orientadas al rendimiento o transacciones complejas de subastas judiciales y situaciones especiales – nuestro equipo aporta el conocimiento de mercado y la seguridad negociadora necesarios.",
-    experienceP3: "Junto con un equipo coordinado de analistas, promotores de proyectos y expertos del sector, elaboramos estrategias fundamentadas que convencen económicamente y perduran en el tiempo. Cada proyecto se concibe de forma integral – desde la adquisición, pasando por la estructuración, hasta la ejecución.",
+    experienceP3: "Cada proyecto se concibe de forma integral: desde la adquisición, pasando por la estructuración, hasta la ejecución. El resultado son estrategias fundamentadas que convencen económicamente y perduran en el tiempo.",
   },
   services: {
     heroTitle: "Servicios y estrategias",
