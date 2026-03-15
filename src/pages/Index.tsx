@@ -25,11 +25,10 @@ const Index = () => (
         <div className="max-w-2xl">
           <div className="w-12 h-0.5 bg-accent mb-6" />
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-            Werte schaffen aus besonderen Situationen
+            Immobilien, die andere übersehen
           </h1>
           <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
-            Aurelia Grundbesitz GmbH identifiziert und entwickelt Immobilien aus Zwangsversteigerungen, Nachlässen und
-            Insolvenzen – professionell, diskret und mit langfristiger Perspektive.
+            Wir kennen die Wege zu Objekten, die nie auf dem freien Markt erscheinen – und machen daraus nachhaltige Werte. Diskret, schnell und mit dem richtigen Netzwerk.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
