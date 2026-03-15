@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import SectionHeading from "@/components/SectionHeading";
-import heroImg from "@/assets/hero-building.jpg";
+import heroImg from "@/assets/hero-investors.jpg";
 import { Handshake, Building, TrendingUp, ShieldCheck, AlertTriangle } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Translations } from "@/i18n/types";
