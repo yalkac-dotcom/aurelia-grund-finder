@@ -22,6 +22,7 @@ export interface Translations {
     slogan: string;
     subtitle: string;
     cta: string;
+    ctaSecondary: string;
   };
   common: {
     learnMore: string;
@@ -31,12 +32,79 @@ export interface Translations {
     privacyCheckbox: string;
     yes: string;
     no: string;
+    requiredFields: string;
+    pleaseSelect: string;
+    salutationOptions: string[];
+    callbackRequest: string;
+    personalContact: string;
+    ourTeam: string;
+    teamDescription: string;
+    availability: string;
+    monFri: string;
+    saturday: string;
+    sunday: string;
+    byAppointment: string;
+    closed: string;
+    emailOutsideHours: string;
+    ourLocation: string;
+    address: string;
+  };
+  index: {
+    bulletTitle: string;
+    bullets: string[];
+    approachTitle: string;
+    pillars: { title: string; text: string }[];
+    strategyTitle: string;
+    strategySubtitle: string;
+    ourServices: string;
+    locationTitle: string;
+    locationText: string;
+    contactCta: string;
+  };
+  about: {
+    heroTitle: string;
+    companyTitle: string;
+    companyP1: string;
+    companyP2: string;
+    philosophyTitle: string;
+    philosophyP1: string;
+    philosophyP2: string;
+    experienceTitle: string;
+    experienceP1: string;
+    experienceP2: string;
+    experienceP3: string;
+  };
+  services: {
+    heroTitle: string;
+    introTitle: string;
+    introSubtitle: string;
+    introText: string;
+    holdTitle: string;
+    holdItems: string[];
+    renovateTitle: string;
+    renovateItems: string[];
+    comparisonTitle: string;
+    comparisonHeaders: string[];
+    comparisonRows: string[][];
+    experienceTitle: string;
+    experienceText: string;
   };
   investor: {
     disclaimerTitle: string;
     disclaimerText: string;
     acceptButton: string;
     declineButton: string;
+    heroTitle: string;
+    heroSubtitle: string;
+    whyTitle: string;
+    whyP1: string;
+    whyP2: string;
+    whyDisclaimer: string;
+    cooperationTitle: string;
+    cooperationModels: { title: string; text: string }[];
+    cooperationDisclaimer: string;
+    transparencyTitle: string;
+    transparencyText: string;
     formTitle: string;
     formSubtitle: string;
     sendInquiry: string;
@@ -47,6 +115,7 @@ export interface Translations {
   contact: {
     title: string;
     subtitle: string;
+    introText: string;
     salutation: string;
     firstName: string;
     lastName: string;
@@ -59,10 +128,10 @@ export interface Translations {
     successText: string;
     subjectOptions: string[];
     company: string;
+    messagePlaceholder: string;
   };
   privacy: {
     title: string;
-    // Full privacy content will be added in Step 2
   };
   impressum: {
     title: string;
