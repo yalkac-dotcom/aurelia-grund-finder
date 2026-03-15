@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" fill="none">
+  <!-- Triangle/AG Symbol -->
+  <g transform="translate(10, 5)">
+    <!-- Outer triangle -->
+    <path d="M45 5 L5 85 L85 85 Z" stroke="#1B2A4A" stroke-width="6" fill="none" stroke-linejoin="round"/>
+    <!-- Inner triangle lines forming A -->
+    <path d="M45 5 L25 50 L65 50" stroke="#1B2A4A" stroke-width="5" fill="none" stroke-linejoin="round"/>
+    <!-- G crossbar -->
+    <path d="M50 50 L70 50 L70 68 L55 68" stroke="#1B2A4A" stroke-width="5" fill="none" stroke-linejoin="round"/>
+    <!-- Second parallel line of triangle -->
+    <path d="M15 70 L75 70" stroke="#1B2A4A" stroke-width="4" fill="none"/>
+    <path d="M45 18 L20 65 L70 65 Z" stroke="#1B2A4A" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- AURELIA text -->
+  <text x="110" y="52" font-family="'Montserrat', 'Arial', sans-serif" font-weight="700" font-size="38" fill="#1B2A4A" letter-spacing="4">AURELIA</text>
+  
+  <!-- GRUNDBESITZ GMBH text -->
+  <text x="110" y="78" font-family="'Montserrat', 'Arial', sans-serif" font-weight="500" font-size="16" fill="#C8A75A" letter-spacing="5">GRUNDBESITZ GMBH</text>
+</svg>
