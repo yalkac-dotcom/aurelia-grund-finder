@@ -87,12 +87,15 @@ export interface Translations {
   };
   about: {
     heroTitle: string;
+    companyLabel: string;
     companyTitle: string;
     companyP1: string;
     companyP2: string;
+    philosophyLabel: string;
     philosophyTitle: string;
     philosophyP1: string;
     philosophyP2: string;
+    experienceLabel: string;
     experienceTitle: string;
     experienceP1: string;
     experienceP2: string;
