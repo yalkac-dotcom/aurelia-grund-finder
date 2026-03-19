@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
-import SectionHeading from "@/components/SectionHeading";
+import Reveal from "@/components/Reveal";
 import heroImg from "@/assets/hero-services.jpg";
-import { Building2, Hammer, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Services = () => {
@@ -9,94 +9,126 @@ const Services = () => {
 
   return (
     <Layout>
-      {/* Page Hero */}
-      <section className="relative py-28">
+      {/* Hero */}
+      <section className="relative h-[60vh] min-h-[420px] flex items-end">
         <div className="absolute inset-0">
           <img src={heroImg} alt={t.services.heroTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
-        <div className="relative container">
-          <div className="w-12 h-0.5 bg-accent mb-6" />
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground">{t.services.heroTitle}</h1>
+        <div className="relative container pb-20 md:pb-28">
+          <Reveal>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-5">{t.nav.services}</p>
+            <h1 className="text-[2.5rem] md:text-[3.25rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
+              {t.services.heroTitle}
+            </h1>
+          </Reveal>
         </div>
       </section>
 
       {/* Intro */}
-      <section className="py-24">
+      <section className="py-32 md:py-44">
         <div className="container max-w-4xl">
-          <SectionHeading title={t.services.introTitle} subtitle={t.services.introSubtitle} />
-          <p className="text-muted-foreground leading-relaxed">{t.services.introText}</p>
+          <Reveal>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.services.introTitle}</p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+              {t.services.introTitle}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl">{t.services.introSubtitle}</p>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl mt-6">{t.services.introText}</p>
+          </Reveal>
         </div>
       </section>
 
-      {/* Two strategies cards */}
-      <section className="py-20 bg-secondary">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-card p-8 md:p-10 border border-border">
-              <Building2 className="text-accent mb-4" size={32} />
-              <h3 className="text-xl font-bold text-foreground mb-4">{t.services.holdTitle}</h3>
-              <ul className="space-y-3 text-muted-foreground text-sm">
-                {t.services.holdItems.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <CheckCircle className="text-accent shrink-0 mt-0.5" size={16} />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-card p-8 md:p-10 border border-border">
-              <Hammer className="text-accent mb-4" size={32} />
-              <h3 className="text-xl font-bold text-foreground mb-4">{t.services.renovateTitle}</h3>
-              <ul className="space-y-3 text-muted-foreground text-sm">
-                {t.services.renovateItems.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <CheckCircle className="text-accent shrink-0 mt-0.5" size={16} />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Comparison Table */}
-      <section className="py-24">
+      {/* Strategy Cards */}
+      <section className="py-32 md:py-44 border-t border-border/60">
         <div className="container max-w-4xl">
-          <SectionHeading title={t.services.comparisonTitle} />
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b-2 border-accent">
-                  {t.services.comparisonHeaders.map((h) => (
-                    <th key={h} className="text-left py-3 pr-6 font-medium text-foreground">{h}</th>
+          <div className="grid md:grid-cols-2 gap-16 md:gap-20">
+            <Reveal>
+              <div>
+                <h3 className="text-[1.05rem] font-heading font-semibold text-foreground mb-6">{t.services.holdTitle}</h3>
+                <ul className="space-y-4">
+                  {t.services.holdItems.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <CheckCircle className="text-accent shrink-0 mt-0.5" size={15} />
+                      <span className="text-muted-foreground text-[0.9rem] leading-[1.85]">{item}</span>
+                    </li>
                   ))}
-                </tr>
-              </thead>
-              <tbody>
-                {t.services.comparisonRows.map((row) => (
-                  <tr key={row[0]} className="border-b border-border">
-                    <td className="py-3 pr-6 font-medium text-foreground">{row[0]}</td>
-                    <td className="py-3 pr-6 text-muted-foreground">{row[1]}</td>
-                    <td className="py-3 text-muted-foreground">{row[2]}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+                </ul>
+              </div>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <div>
+                <h3 className="text-[1.05rem] font-heading font-semibold text-foreground mb-6">{t.services.renovateTitle}</h3>
+                <ul className="space-y-4">
+                  {t.services.renovateItems.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <CheckCircle className="text-accent shrink-0 mt-0.5" size={15} />
+                      <span className="text-muted-foreground text-[0.9rem] leading-[1.85]">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
 
-      {/* Image */}
-      <section className="py-24">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <img src={heroImg} alt={t.services.experienceTitle} className="w-full h-80 object-cover" />
-            <div>
-              <SectionHeading title={t.services.experienceTitle} />
-              <p className="text-muted-foreground leading-relaxed">{t.services.experienceText}</p>
+      {/* Comparison */}
+      <section className="py-32 md:py-44 bg-secondary/50">
+        <div className="container max-w-4xl">
+          <Reveal>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.services.comparisonTitle}</p>
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-14 max-w-2xl text-balance">
+              {t.services.comparisonTitle}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="overflow-x-auto">
+              <table className="w-full text-[0.9rem]">
+                <thead>
+                  <tr className="border-b border-accent/40">
+                    {t.services.comparisonHeaders.map((h) => (
+                      <th key={h} className="text-left py-4 pr-6 font-heading font-semibold text-foreground text-[0.85rem]">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {t.services.comparisonRows.map((row) => (
+                    <tr key={row[0]} className="border-b border-border/60">
+                      <td className="py-4 pr-6 font-medium text-foreground">{row[0]}</td>
+                      <td className="py-4 pr-6 text-muted-foreground">{row[1]}</td>
+                      <td className="py-4 text-muted-foreground">{row[2]}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Experience */}
+      <section className="py-32 md:py-44">
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center max-w-5xl mx-auto">
+            <Reveal>
+              <img src={heroImg} alt={t.services.experienceTitle} className="w-full h-80 object-cover" />
+            </Reveal>
+            <Reveal delay={0.1}>
+              <div>
+                <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.services.experienceTitle}</p>
+                <h2 className="text-[1.75rem] md:text-[2.25rem] font-heading font-semibold text-foreground leading-[1.2] mb-8 text-balance">
+                  {t.services.experienceTitle}
+                </h2>
+                <p className="text-muted-foreground text-[1.05rem] leading-[1.95]">{t.services.experienceText}</p>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
