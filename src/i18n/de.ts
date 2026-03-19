@@ -108,7 +108,7 @@ const de: Translations = {
     ],
     ctaLabel: "Kontakt",
     ctaTitle: "Lassen Sie uns ins Gespräch kommen.",
-    ctaText: "Ob Ankaufangebot, Kooperationsanfrage oder erste Orientierung – wir freuen uns auf den persönlichen Austausch.",
+    ctaText: "Gerne besprechen wir Ihre Situation und mögliche Ansätze – persönlich, diskret und unverbindlich.",
     ctaButton: "Kontakt aufnehmen",
   },
   about: {
