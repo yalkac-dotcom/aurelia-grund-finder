@@ -15,14 +15,14 @@ const Index = () => {
       <section className="relative h-[92vh] min-h-[660px] flex items-end">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Architektur" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/80 via-[#0F1113]/30 to-transparent" />
         </div>
         <div className="relative container pb-28 md:pb-36">
           <div className="max-w-xl">
             <h1 className="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-heading font-semibold text-white leading-[1.08] mb-8 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-white/55 text-[1.05rem] leading-[1.85] mb-14 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] mb-14 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
             <Link
@@ -105,7 +105,7 @@ const Index = () => {
       <section className="relative py-36 md:py-52">
         <div className="absolute inset-0">
           <img src={trustImg} alt={t.landing.projectsTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black/75" />
+          <div className="absolute inset-0 bg-[#0F1113]/80" />
         </div>
         <div className="relative container max-w-3xl text-center">
           <Reveal>
@@ -114,12 +114,12 @@ const Index = () => {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-white leading-[1.2] mb-8 text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-[#E5E5E5] leading-[1.2] mb-8 text-balance">
               {t.landing.projectsTitle}
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-white/50 text-[1.05rem] leading-[1.85] max-w-xl mx-auto">
+            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] max-w-xl mx-auto">
               {t.landing.projectsText}
             </p>
           </Reveal>
