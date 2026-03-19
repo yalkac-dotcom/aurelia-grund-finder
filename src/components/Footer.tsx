@@ -16,24 +16,24 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-foreground text-white/80">
+    <footer className="bg-[#0F1113] text-[#B0B0B0]">
       <div className="container py-20 md:py-24">
         <div className="grid md:grid-cols-3 gap-16">
           <div>
             <Link to="/" className="inline-block mb-5">
               <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-12 w-auto object-contain brightness-0 invert" />
             </Link>
-            <p className="text-white/45 text-[13px] leading-relaxed max-w-xs">
+            <p className="text-[#8A8A8A] text-[13px] leading-relaxed max-w-xs">
               {t.footer.brandLine}
             </p>
           </div>
 
           <div>
-            <h4 className="text-[11px] font-sans uppercase tracking-widest text-accent mb-5">{t.footer.navigation}</h4>
+            <h4 className="text-[11px] font-sans uppercase tracking-widest text-[#F5F5F5] mb-5">{t.footer.navigation}</h4>
             <ul className="space-y-2.5">
               {navItems.map((item) => (
                 <li key={item.path}>
-                  <Link to={item.path} className="text-white/50 text-[13px] hover:text-accent transition-colors">
+                  <Link to={item.path} className="text-[#B0B0B0] text-[13px] hover:text-accent transition-colors">
                     {item.label}
                   </Link>
                 </li>
@@ -42,8 +42,8 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-[11px] font-sans uppercase tracking-widest text-accent mb-5">{t.footer.contact}</h4>
-            <address className="not-italic text-white/50 text-[13px] leading-relaxed space-y-1">
+            <h4 className="text-[11px] font-sans uppercase tracking-widest text-[#F5F5F5] mb-5">{t.footer.contact}</h4>
+            <address className="not-italic text-[#B0B0B0] text-[13px] leading-relaxed space-y-1">
               <p>Aurelia Grundbesitz GmbH</p>
               <p>Grevenbroicher Weg 2</p>
               <p>40547 Düsseldorf, Germany</p>
@@ -51,14 +51,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/8 mt-16 pt-8">
+        <div className="border-t border-white/[0.12] mt-16 pt-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-white/30 text-[11px]">
+            <p className="text-[#8A8A8A] text-[11px]">
               © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
             </p>
             <div className="flex items-center gap-5">
-              <Link to="/impressum" className="text-white/30 text-[11px] hover:text-accent transition-colors">{t.footer.imprint}</Link>
-              <Link to="/datenschutz" className="text-white/30 text-[11px] hover:text-accent transition-colors">{t.footer.privacy}</Link>
+              <Link to="/impressum" className="text-[#8A8A8A] text-[11px] hover:text-accent transition-colors">{t.footer.imprint}</Link>
+              <Link to="/datenschutz" className="text-[#8A8A8A] text-[11px] hover:text-accent transition-colors">{t.footer.privacy}</Link>
             </div>
           </div>
 
@@ -68,17 +68,17 @@ const Footer = () => {
                 <button
                   onClick={() => setLanguage(code)}
                   className={`text-[11px] transition-colors ${
-                    code === language ? "text-accent font-medium" : "text-white/30 hover:text-accent"
+                    code === language ? "text-accent font-medium" : "text-[#8A8A8A] hover:text-accent"
                   }`}
                 >
                   {code.toUpperCase()}
                 </button>
-                {i < languageCodes.length - 1 && <span className="text-white/15 ml-3">|</span>}
+                {i < languageCodes.length - 1 && <span className="text-white/[0.12] ml-3">|</span>}
               </span>
             ))}
           </div>
 
-          <p className="text-white/20 text-[10px] mt-5 text-center leading-relaxed max-w-3xl mx-auto">
+          <p className="text-[#8A8A8A] text-[10px] mt-5 text-center leading-relaxed max-w-3xl mx-auto">
             {t.footer.disclaimer}
           </p>
         </div>
