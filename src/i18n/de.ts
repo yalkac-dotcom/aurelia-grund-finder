@@ -189,7 +189,7 @@ const de: Translations = {
   contact: {
     title: "Kontakt",
     subtitle: "Wir sind für Sie da",
-    introText: "Sie haben Fragen zu unseren Leistungen, ein konkretes Ankaufangebot oder wünschen einen persönlichen Rückruf? Wir freuen uns auf Ihre Nachricht und melden uns zeitnah bei Ihnen.",
+    introText: "Fragen zu unseren Leistungen oder ein konkretes Ankaufangebot? Wir melden uns zeitnah bei Ihnen.",
     salutation: "Anrede",
     firstName: "Vorname",
     lastName: "Nachname",
