@@ -28,7 +28,7 @@ const About = () => {
       </section>
 
       {/* Company */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.companyTitle}</p>
@@ -56,7 +56,7 @@ const About = () => {
       </section>
 
       {/* Philosophy */}
-      <section className="py-32 md:py-44 border-t border-border/60 bg-secondary/50">
+      <section className="py-40 md:py-56 border-t border-border/60 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.philosophyTitle}</p>
@@ -78,7 +78,7 @@ const About = () => {
       </section>
 
       {/* Team & Experience */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center max-w-5xl mx-auto">
             <Reveal>

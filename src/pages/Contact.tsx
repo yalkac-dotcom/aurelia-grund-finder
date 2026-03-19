@@ -38,7 +38,7 @@ const Contact = () => {
       </section>
 
       {/* Intro */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl">
@@ -104,7 +104,7 @@ const Contact = () => {
       </section>
 
       {/* Form */}
-      <section className="py-32 md:py-44 bg-secondary/50">
+      <section className="py-40 md:py-56 bg-secondary/50">
         <div className="container max-w-3xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.contact.send}</p>
@@ -212,7 +212,7 @@ const Contact = () => {
       </section>
 
       {/* Map */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.common.ourLocation}</p>

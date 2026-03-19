@@ -34,7 +34,7 @@ const TaxBenefits = () => {
       </section>
 
       {/* Intro */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.introTitle}</p>
@@ -51,7 +51,7 @@ const TaxBenefits = () => {
       </section>
 
       {/* Topics */}
-      <section className="py-32 md:py-44 border-t border-border/60">
+      <section className="py-40 md:py-56 border-t border-border/60">
         <div className="container max-w-4xl">
           <div className="divide-y divide-border/60">
             {topics.map((tp, i) => (
@@ -74,7 +74,7 @@ const TaxBenefits = () => {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-32 md:py-44 bg-secondary/50">
+      <section className="py-40 md:py-56 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.overviewTitle}</p>
@@ -110,7 +110,7 @@ const TaxBenefits = () => {
       </section>
 
       {/* Glossar Link */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
             <Link to="/steuervorteile/glossar" className="group grid md:grid-cols-[1fr_2fr_auto] gap-4 md:gap-16 items-center">
