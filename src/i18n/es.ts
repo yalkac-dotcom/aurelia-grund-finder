@@ -169,6 +169,7 @@ const es: Translations = {
     declineButton: "Volver a la página de inicio",
     heroTitle: "Para inversores",
     heroSubtitle: "Asociación con Aurelia – desarrollar responsablemente inmuebles de situaciones especiales y crear valor a largo plazo juntos.",
+    whyLabel: "Colaboración",
     whyTitle: "¿Por qué colaborar con Aurelia?",
     whyP1: "Aurelia Grundbesitz GmbH está especializada en la adquisición y el desarrollo de inmuebles de situaciones especiales. Nuestro enfoque disciplinado de inversión, análisis de mercado exhaustivos y una sólida red de bancos, agentes y proveedores de servicios constituyen la base para una colaboración profesional y transparente.",
     whyP2: "Apostamos por la calidad sobre la cantidad: cada inmueble es evaluado cuidadosamente, calculado de forma realista y desarrollado con una estrategia clara. Nuestros inversores se benefician de una comunicación regular, decisiones transparentes y una relación de iguales.",

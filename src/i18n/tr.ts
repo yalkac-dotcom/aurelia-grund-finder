@@ -169,6 +169,7 @@ const tr: Translations = {
     declineButton: "Ana sayfaya dön",
     heroTitle: "Yatırımcılar İçin",
     heroSubtitle: "Aurelia ile ortaklık – özel durumlardan kaynaklanan gayrimenkulleri sorumlu bir şekilde geliştirmek ve birlikte uzun vadeli değer yaratmak.",
+    whyLabel: "Ortaklık",
     whyTitle: "Neden Aurelia ile çalışmalısınız?",
     whyP1: "Aurelia Grundbesitz GmbH, özel durumlardan kaynaklanan gayrimenkullerin satın alınması ve geliştirilmesinde uzmanlaşmıştır. Disiplinli yatırım yaklaşımımız, kapsamlı piyasa analizlerimiz ve bankalar, emlakçılar ve hizmet sağlayıcılardan oluşan güçlü ağımız, profesyonel ve şeffaf bir iş birliğinin temelini oluşturmaktadır.",
     whyP2: "Nicelik yerine niteliğe önem veriyoruz: her gayrimenkul dikkatle değerlendirilir, gerçekçi biçimde hesaplanır ve net bir stratejiyle geliştirilir. Yatırımcılarımız düzenli iletişimden, şeffaf kararlardan ve eşit düzeyde bir ortaklık ilişkisinden faydalanmaktadır.",
