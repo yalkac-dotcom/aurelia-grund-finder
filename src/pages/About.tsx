@@ -45,6 +45,12 @@ const About = () => {
               <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl">{t.about.companyP2}</p>
             </Reveal>
           </div>
+          <Reveal delay={0.3}>
+            <Link to="/leistungen" className="inline-flex items-center gap-3 border border-foreground/15 text-foreground px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-foreground/40 transition-colors duration-300 mt-12">
+              {t.nav.services}
+              <ArrowRight size={13} />
+            </Link>
+          </Reveal>
         </div>
       </section>
 
