@@ -128,6 +128,10 @@ const Services = () => {
                   {t.services.experienceTitle}
                 </h2>
                 <p className="text-muted-foreground text-[1.05rem] leading-[1.95]">{t.services.experienceText}</p>
+                <Link to="/kontakt" className="inline-flex items-center gap-3 bg-accent text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-10">
+                  {t.landing.heroCta}
+                  <ArrowRight size={13} />
+                </Link>
               </div>
             </Reveal>
           </div>
