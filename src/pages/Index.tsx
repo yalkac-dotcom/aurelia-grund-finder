@@ -22,7 +22,7 @@ const Index = () => {
             <h1 className="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-heading font-semibold text-white leading-[1.08] mb-8 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] mb-14 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] mb-20 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
             <Link
@@ -59,7 +59,7 @@ const Index = () => {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.landing.aboutTitle}
             </h2>
           </Reveal>

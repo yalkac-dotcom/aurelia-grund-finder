@@ -108,7 +108,7 @@ const Contact = () => {
         <div className="container max-w-3xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.contact.send}</p>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-16 text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 text-balance">
               {t.contact.send}
             </h2>
           </Reveal>
@@ -216,7 +216,7 @@ const Contact = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.common.ourLocation}</p>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-14 text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 text-balance">
               {t.common.ourLocation}
             </h2>
           </Reveal>

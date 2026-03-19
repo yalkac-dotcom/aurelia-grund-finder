@@ -132,7 +132,7 @@ const Investors = () => {
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.whyTitle}</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.investor.whyTitle}
             </h2>
           </Reveal>
@@ -182,7 +182,7 @@ const Investors = () => {
               <ShieldCheck className="text-accent" size={20} />
               <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase">{t.investor.transparencyTitle}</p>
             </div>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.investor.transparencyTitle}
             </h2>
             <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl">{t.investor.transparencyText}</p>

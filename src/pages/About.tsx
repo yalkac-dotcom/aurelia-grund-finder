@@ -34,7 +34,7 @@ const About = () => {
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.companyTitle}</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.about.companyTitle}
             </h2>
           </Reveal>
@@ -62,7 +62,7 @@ const About = () => {
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.philosophyTitle}</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.about.philosophyTitle}
             </h2>
           </Reveal>
@@ -87,7 +87,7 @@ const About = () => {
             <div>
               <Reveal delay={0.1}>
                 <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.experienceTitle}</p>
-                <h2 className="text-[1.75rem] md:text-[2.25rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 text-balance">
+                <h2 className="text-[1.75rem] md:text-[2.25rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 text-balance">
                   {t.about.experienceTitle}
                 </h2>
               </Reveal>
