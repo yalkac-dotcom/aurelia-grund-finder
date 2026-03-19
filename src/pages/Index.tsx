@@ -27,7 +27,7 @@ const Index = () => {
             </p>
             <Link
               to="/kontakt"
-              className="inline-flex items-center gap-3 border border-white/30 text-white px-8 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-white/60 transition-colors duration-300 animate-fade-in-up"
+              className="inline-flex items-center gap-3 border border-white/30 text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-white/60 transition-colors duration-300 animate-fade-in-up"
               style={{ animationDelay: "0.3s" }}
             >
               {t.landing.heroCta}
