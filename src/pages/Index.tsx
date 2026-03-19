@@ -72,7 +72,7 @@ const Index = () => {
       </section>
 
       {/* ── Fokusbereiche ── */}
-      <section className="py-36 md:py-52 border-t border-border/60">
+      <section className="py-32 md:py-44 border-t border-border/60">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
