@@ -207,7 +207,7 @@ const de: Translations = {
   tax: {
     heroTitle: "Steuervorteile & Förderungen",
     introTitle: "Vorteile für Investoren",
-    introSubtitle: "Immobilieninvestments bieten in Deutschland zahlreiche steuerliche und förderungstechnische Vorteile, die bei strategischer Planung erhebliche Renditevorteile ermöglichen.",
+    introSubtitle: "Steuerliche und förderungstechnische Vorteile, die bei strategischer Planung erhebliche Renditevorteile ermöglichen.",
     categoryTax: "Steuern",
     categoryFunding: "Förderung",
     categoryKnowledge: "Wissen",
