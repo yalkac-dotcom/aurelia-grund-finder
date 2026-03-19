@@ -101,6 +101,12 @@ const About = () => {
                   <p className="text-muted-foreground text-[0.95rem] leading-[1.85]">{t.about.experienceP3}</p>
                 </Reveal>
               </div>
+              <Reveal delay={0.35}>
+                <Link to="/kontakt" className="inline-flex items-center gap-3 bg-accent text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-8">
+                  {t.landing.heroCta}
+                  <ArrowRight size={13} />
+                </Link>
+              </Reveal>
             </div>
           </div>
         </div>
