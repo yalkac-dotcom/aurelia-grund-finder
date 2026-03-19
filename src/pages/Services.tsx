@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import heroImg from "@/assets/hero-services.jpg";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Services = () => {
@@ -127,6 +128,10 @@ const Services = () => {
                   {t.services.experienceTitle}
                 </h2>
                 <p className="text-muted-foreground text-[1.05rem] leading-[1.95]">{t.services.experienceText}</p>
+                <Link to="/kontakt" className="inline-flex items-center gap-3 bg-accent text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-10">
+                  {t.landing.heroCta}
+                  <ArrowRight size={13} />
+                </Link>
               </div>
             </Reveal>
           </div>

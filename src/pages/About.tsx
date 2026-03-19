@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import { ArrowRight } from "lucide-react";
 import ceoImg from "@/assets/about-ceo.jpg";
 import heroImg from "@/assets/hero-building.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -44,6 +46,12 @@ const About = () => {
               <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl">{t.about.companyP2}</p>
             </Reveal>
           </div>
+          <Reveal delay={0.3}>
+            <Link to="/leistungen" className="inline-flex items-center gap-3 border border-foreground/15 text-foreground px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-foreground/40 transition-colors duration-300 mt-12">
+              {t.nav.services}
+              <ArrowRight size={13} />
+            </Link>
+          </Reveal>
         </div>
       </section>
 
@@ -94,6 +102,12 @@ const About = () => {
                   <p className="text-muted-foreground text-[0.95rem] leading-[1.85]">{t.about.experienceP3}</p>
                 </Reveal>
               </div>
+              <Reveal delay={0.35}>
+                <Link to="/kontakt" className="inline-flex items-center gap-3 bg-accent text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-8">
+                  {t.landing.heroCta}
+                  <ArrowRight size={13} />
+                </Link>
+              </Reveal>
             </div>
           </div>
         </div>
