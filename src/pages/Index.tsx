@@ -140,7 +140,7 @@ const Index = () => {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-36 md:py-52">
+      <section className="py-32 md:py-44">
         <div className="container max-w-xl text-center">
           <Reveal>
             <div className="w-8 h-px bg-accent mx-auto mb-14" />
