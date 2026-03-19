@@ -33,6 +33,7 @@ const Index = () => {
               {t.landing.heroCta}
               <ArrowRight size={13} />
             </Link>
+            <p className="text-white/40 text-[11px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>Unverbindlich · Persönlich · Diskret</p>
 
             {/* Scroll indicator */}
             <button
