@@ -177,7 +177,7 @@ const de: Translations = {
     ],
     cooperationDisclaimer: "Ob und in welcher Form eine Zusammenarbeit möglich ist, wird stets individuell geprüft und vertraglich geregelt.",
     transparencyTitle: "Transparenz & Risiken",
-    transparencyText: "Investitionen in unternehmerische Projekte und immobiliennahe Finanzierungen sind mit wirtschaftlichen Risiken verbunden, die im ungünstigsten Fall zu einem teilweisen oder vollständigen Verlust des eingesetzten Kapitals führen können. Allgemeine Informationen auf dieser Website berücksichtigen nicht die persönliche Situation einzelner Anleger und stellen weder eine Anlageberatung noch eine Empfehlung oder Aufforderung zum Abschluss bestimmter Geschäfte dar.",
+    transparencyText: "Investitionen in Immobilienprojekte sind mit Risiken verbunden – bis hin zum vollständigen Kapitalverlust. Lassen Sie sich vor einer Entscheidung individuell beraten.",
     formTitle: "Investorenanfrage",
     formSubtitle: "Nehmen Sie unverbindlich Kontakt mit uns auf, um mögliche Formen der Zusammenarbeit zu besprechen.",
     sendInquiry: "Investorenanfrage senden",
