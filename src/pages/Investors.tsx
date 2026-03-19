@@ -151,7 +151,7 @@ const Investors = () => {
       <section className="py-40 md:py-56 border-t border-border/60">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.cooperationTitle}</p>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.cooperationLabel}</p>
           </Reveal>
           <div className="divide-y divide-border/60">
             {t.investor.cooperationModels.map((model, i) => {
