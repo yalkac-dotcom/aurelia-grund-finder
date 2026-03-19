@@ -75,7 +75,7 @@ export interface Translations {
     serviceCards: { title: string; text: string }[];
     valuesLabel: string;
     valuesTitle: string;
-    valuePoints: string[];
+    valuePoints: { title: string; text: string }[];
     projectsLabel: string;
     projectsTitle: string;
     projectsText: string;
