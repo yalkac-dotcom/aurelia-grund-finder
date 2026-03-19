@@ -15,7 +15,7 @@ const InvestorDisclaimer = ({ t, onAccept, onDecline }: { t: Translations; onAcc
       </div>
       <p className="text-muted-foreground text-[0.9rem] leading-[1.85] mb-10">{t.investor.disclaimerText}</p>
       <div className="flex flex-col sm:flex-row gap-4">
-        <button onClick={onAccept} className="inline-flex items-center gap-3 border border-foreground/15 text-foreground px-8 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-foreground/60 transition-colors duration-300">
+        <button onClick={onAccept} className="inline-flex items-center gap-3 bg-accent text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
           {t.investor.acceptButton}
         </button>
         <button onClick={onDecline} className="inline-flex items-center gap-3 border border-border text-muted-foreground px-8 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-foreground/30 transition-colors duration-300">
