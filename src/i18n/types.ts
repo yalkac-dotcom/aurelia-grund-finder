@@ -103,6 +103,7 @@ export interface Translations {
   };
   services: {
     heroTitle: string;
+    introLabel: string;
     introTitle: string;
     introSubtitle: string;
     introText: string;
@@ -113,6 +114,7 @@ export interface Translations {
     comparisonTitle: string;
     comparisonHeaders: string[];
     comparisonRows: string[][];
+    experienceLabel: string;
     experienceTitle: string;
     experienceText: string;
   };
