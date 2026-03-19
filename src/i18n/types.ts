@@ -24,28 +24,6 @@ export interface Translations {
     cta: string;
     ctaSecondary: string;
   };
-  landing: {
-    problemTitle: string;
-    problemText: string;
-    problemPoints: string[];
-    solutionTitle: string;
-    solutionSubtitle: string;
-    solutionItems: { title: string; text: string }[];
-    trustTitle: string;
-    trustItems: { label: string; text: string }[];
-    offerTitle: string;
-    offerSubtitle: string;
-    offerModels: { title: string; text: string }[];
-    ctaTitle: string;
-    ctaSubtitle: string;
-    ctaButton: string;
-    formName: string;
-    formEmail: string;
-    formPhone: string;
-    formSubmit: string;
-    formSuccess: string;
-    inlineCta: string;
-  };
   common: {
     learnMore: string;
     sendMessage: string;
