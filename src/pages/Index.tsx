@@ -37,10 +37,11 @@ const Index = () => {
             {/* Scroll indicator */}
             <button
               onClick={() => {
-                const next = document.querySelector('section:nth-of-type(2)');
+                const hero = document.getElementById('hero');
+                const next = hero?.nextElementSibling as HTMLElement | null;
                 next?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="absolute left-1/2 -translate-x-1/2 bottom-8 h-10 w-10 flex items-center justify-center rounded-full border border-white/20 bg-white/[0.06] backdrop-blur-sm text-white/70 hover:border-white/40 hover:bg-white/[0.1] transition-all duration-300 animate-[gentle-bounce_2s_ease-in-out_infinite]"
+              className="absolute left-1/2 -translate-x-1/2 bottom-8 h-10 w-10 flex items-center justify-center rounded-full border border-white/25 bg-white/[0.05] text-white/60 hover:border-white/40 hover:bg-white/[0.09] transition-all duration-300"
               aria-label="Weiter scrollen"
             >
               <ChevronDown size={18} />
