@@ -79,9 +79,10 @@ const de: Translations = {
     heroSubtitle: "Wir identifizieren Immobilien mit Substanz und Perspektive – abseits des offenen Marktes. Diskret, strukturiert und mit Weitblick.",
     heroCta: "Gespräch vereinbaren",
     heroCtaSecondary: "Über Aurelia",
-    aboutLabel: "Positionierung",
-    aboutTitle: "Substanz entsteht dort, wo andere nur Risiko sehen.",
-    aboutText: "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen – Zwangsversteigerungen, Nachlassregelungen, Insolvenzen. Wir verbinden analytische Tiefe mit einem klaren Gespür für werthaltige Investments und schaffen Perspektiven, die über den Moment hinausgehen.",
+    aboutLabel: "Über Aurelia",
+    aboutTitle: "Über Aurelia",
+    aboutText: "Aurelia steht für einen strukturierten und nachhaltigen Umgang mit Immobilienwerten. Als inhabergeführte Gesellschaft mit Sitz in Düsseldorf entwickeln wir Objekte aus Zwangsversteigerungen, Nachlässen und Insolvenzen – mit einem klaren Fokus auf Substanz, Weitblick und wirtschaftliche Tragfähigkeit.",
+    aboutText2: "Unser Anspruch ist es, Immobilien nicht als kurzfristige Gelegenheit zu betrachten, sondern als langfristige Werte mit echtem Entwicklungspotenzial. Jedes Projekt wird sorgfältig analysiert, strukturiert und mit der nötigen Erfahrung umgesetzt.",
     servicesLabel: "Fokusbereiche",
     servicesTitle: "Klare Strategien. Messbare Ergebnisse.",
     serviceCards: [

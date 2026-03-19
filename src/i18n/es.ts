@@ -78,9 +78,10 @@ const es: Translations = {
     heroSubtitle: "Identificamos inmuebles con sustancia y perspectiva – lejos del mercado abierto. Con discreción, estructura y visión de futuro.",
     heroCta: "Concertar una conversación",
     heroCtaSecondary: "Sobre Aurelia",
-    aboutLabel: "Posicionamiento",
-    aboutTitle: "La sustancia surge donde otros solo ven riesgo.",
-    aboutText: "Aurelia Grundbesitz desarrolla inmuebles a partir de situaciones especiales – subastas judiciales, herencias, insolvencias. Combinamos profundidad analítica con un claro sentido para inversiones de valor y creamos perspectivas que van más allá del momento.",
+    aboutLabel: "Sobre Aurelia",
+    aboutTitle: "Sobre Aurelia",
+    aboutText: "Aurelia representa un enfoque estructurado y sostenible de los valores inmobiliarios. Como sociedad con sede en Düsseldorf, desarrollamos inmuebles procedentes de subastas judiciales, herencias e insolvencias – con un claro enfoque en sustancia, visión de futuro y viabilidad económica.",
+    aboutText2: "Nuestra ambición es considerar los inmuebles no como oportunidades a corto plazo, sino como valores a largo plazo con un potencial de desarrollo real. Cada proyecto se analiza cuidadosamente, se estructura y se ejecuta con la experiencia necesaria.",
     servicesLabel: "Áreas de enfoque",
     servicesTitle: "Estrategias claras. Resultados medibles.",
     serviceCards: [

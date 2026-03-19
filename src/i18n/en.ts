@@ -78,9 +78,10 @@ const en: Translations = {
     heroSubtitle: "We identify real estate with substance and perspective – away from the open market. Discreet, structured, and with foresight.",
     heroCta: "Schedule a conversation",
     heroCtaSecondary: "About Aurelia",
-    aboutLabel: "Positioning",
-    aboutTitle: "Substance emerges where others only see risk.",
-    aboutText: "Aurelia Grundbesitz develops properties from special situations – foreclosures, estate settlements, insolvencies. We combine analytical depth with a clear sense for value-driven investments and create perspectives that extend beyond the moment.",
+    aboutLabel: "About Aurelia",
+    aboutTitle: "About Aurelia",
+    aboutText: "Aurelia stands for a structured and sustainable approach to real estate values. As an owner-managed company based in Düsseldorf, we develop properties from foreclosures, estates, and insolvencies – with a clear focus on substance, foresight, and economic viability.",
+    aboutText2: "Our ambition is to see real estate not as a short-term opportunity, but as long-term assets with genuine development potential. Every project is carefully analysed, structured, and executed with the necessary experience.",
     servicesLabel: "Focus Areas",
     servicesTitle: "Clear Strategies. Measurable Results.",
     serviceCards: [

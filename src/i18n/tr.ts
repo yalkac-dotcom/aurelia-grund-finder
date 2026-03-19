@@ -78,9 +78,10 @@ const tr: Translations = {
     heroSubtitle: "Özü ve perspektifi olan gayrimenkulleri tespit ediyoruz – açık piyasanın dışında. Gizlilikle, yapılandırılmış ve ileri görüşlü bir şekilde.",
     heroCta: "Görüşme ayarlayın",
     heroCtaSecondary: "Aurelia hakkında",
-    aboutLabel: "Konumlandırma",
-    aboutTitle: "Öz, başkalarının yalnızca risk gördüğü yerde ortaya çıkar.",
-    aboutText: "Aurelia Grundbesitz, özel durumlardan kaynaklanan gayrimenkulleri geliştirir – cebri icra, miras düzenlemeleri, iflaslar. Analitik derinliği, değer odaklı yatırımlar için net bir sezgiyle birleştiriyor ve anın ötesine geçen perspektifler yaratıyoruz.",
+    aboutLabel: "Aurelia Hakkında",
+    aboutTitle: "Aurelia Hakkında",
+    aboutText: "Aurelia, gayrimenkul değerlerine yapılandırılmış ve sürdürülebilir bir yaklaşımı temsil eder. Düsseldorf merkezli bir şirket olarak cebri icra, miras ve iflas süreçlerinden gayrimenkulleri geliştiriyoruz – öz, ileri görüşlülük ve ekonomik sağlamlık odağıyla.",
+    aboutText2: "Amacımız gayrimenkulleri kısa vadeli fırsatlar olarak değil, gerçek geliştirme potansiyeli taşıyan uzun vadeli değerler olarak görmektir. Her proje dikkatle analiz edilir, yapılandırılır ve gerekli deneyimle hayata geçirilir.",
     servicesLabel: "Odak alanları",
     servicesTitle: "Net stratejiler. Ölçülebilir sonuçlar.",
     serviceCards: [
