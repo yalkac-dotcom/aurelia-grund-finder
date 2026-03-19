@@ -144,7 +144,7 @@ const Index = () => {
               {t.landing.trustTitle}
             </h2>
           </Reveal>
-          <div className="grid grid-cols-3 gap-8 max-w-xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-8 max-w-xl mx-auto">
             {t.landing.trustPoints.map((stat, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div>
