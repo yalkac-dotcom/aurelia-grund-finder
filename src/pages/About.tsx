@@ -28,13 +28,13 @@ const About = () => {
       </section>
 
       {/* Company */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.companyTitle}</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.about.companyTitle}
             </h2>
           </Reveal>
@@ -56,13 +56,13 @@ const About = () => {
       </section>
 
       {/* Philosophy */}
-      <section className="py-32 md:py-44 border-t border-border/60 bg-secondary/50">
+      <section className="py-40 md:py-56 border-t border-border/60 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.philosophyTitle}</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.about.philosophyTitle}
             </h2>
           </Reveal>
@@ -78,7 +78,7 @@ const About = () => {
       </section>
 
       {/* Team & Experience */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center max-w-5xl mx-auto">
             <Reveal>
@@ -87,7 +87,7 @@ const About = () => {
             <div>
               <Reveal delay={0.1}>
                 <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.experienceTitle}</p>
-                <h2 className="text-[1.75rem] md:text-[2.25rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 text-balance">
+                <h2 className="text-[1.75rem] md:text-[2.25rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 text-balance">
                   {t.about.experienceTitle}
                 </h2>
               </Reveal>

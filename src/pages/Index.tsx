@@ -22,7 +22,7 @@ const Index = () => {
             <h1 className="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-heading font-semibold text-white leading-[1.08] mb-8 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] mb-14 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] mb-20 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
             <Link
@@ -51,7 +51,7 @@ const Index = () => {
       </section>
 
       {/* ── Über Aurelia ── */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
@@ -59,7 +59,7 @@ const Index = () => {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.landing.aboutTitle}
             </h2>
           </Reveal>
@@ -72,7 +72,7 @@ const Index = () => {
       </section>
 
       {/* ── Fokusbereiche ── */}
-      <section className="py-32 md:py-44 border-t border-border/60">
+      <section className="py-40 md:py-56 border-t border-border/60">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
@@ -93,7 +93,7 @@ const Index = () => {
       </section>
 
       {/* ── Wofür Aurelia steht ── */}
-      <section className="py-32 md:py-44 bg-secondary/50">
+      <section className="py-40 md:py-56 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
@@ -115,7 +115,7 @@ const Index = () => {
       </section>
 
       {/* ── Investmentfokus ── */}
-      <section className="relative py-32 md:py-44">
+      <section className="relative py-40 md:py-56">
         <div className="absolute inset-0">
           <img src={trustImg} alt={t.landing.projectsTitle} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0F1113]/80" />
@@ -140,7 +140,7 @@ const Index = () => {
       </section>
 
       {/* ── CTA ── */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-xl text-center">
           <Reveal>
             <div className="w-8 h-px bg-accent mx-auto mb-14" />

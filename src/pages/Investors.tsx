@@ -126,13 +126,13 @@ const Investors = () => {
       </section>
 
       {/* Why */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.whyTitle}</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.investor.whyTitle}
             </h2>
           </Reveal>
@@ -147,7 +147,7 @@ const Investors = () => {
       </section>
 
       {/* Cooperation */}
-      <section className="py-32 md:py-44 border-t border-border/60">
+      <section className="py-40 md:py-56 border-t border-border/60">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.cooperationTitle}</p>
@@ -175,14 +175,14 @@ const Investors = () => {
       </section>
 
       {/* Transparency */}
-      <section className="py-32 md:py-44 bg-secondary/50">
+      <section className="py-40 md:py-56 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
             <div className="flex items-center gap-3 mb-8">
               <ShieldCheck className="text-accent" size={20} />
               <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase">{t.investor.transparencyTitle}</p>
             </div>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.investor.transparencyTitle}
             </h2>
             <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl">{t.investor.transparencyText}</p>
@@ -191,7 +191,7 @@ const Investors = () => {
       </section>
 
       {/* Form */}
-      <section className="py-32 md:py-44">
+      <section className="py-40 md:py-56">
         <div className="container max-w-3xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.formTitle}</p>
