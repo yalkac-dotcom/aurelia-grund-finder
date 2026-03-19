@@ -87,12 +87,15 @@ export interface Translations {
   };
   about: {
     heroTitle: string;
+    companyLabel: string;
     companyTitle: string;
     companyP1: string;
     companyP2: string;
+    philosophyLabel: string;
     philosophyTitle: string;
     philosophyP1: string;
     philosophyP2: string;
+    experienceLabel: string;
     experienceTitle: string;
     experienceP1: string;
     experienceP2: string;
@@ -100,6 +103,7 @@ export interface Translations {
   };
   services: {
     heroTitle: string;
+    introLabel: string;
     introTitle: string;
     introSubtitle: string;
     introText: string;
@@ -110,6 +114,7 @@ export interface Translations {
     comparisonTitle: string;
     comparisonHeaders: string[];
     comparisonRows: string[][];
+    experienceLabel: string;
     experienceTitle: string;
     experienceText: string;
   };
@@ -120,15 +125,19 @@ export interface Translations {
     declineButton: string;
     heroTitle: string;
     heroSubtitle: string;
+    whyLabel: string;
     whyTitle: string;
     whyP1: string;
     whyP2: string;
     whyDisclaimer: string;
+    cooperationLabel: string;
     cooperationTitle: string;
     cooperationModels: { title: string; text: string }[];
     cooperationDisclaimer: string;
+    transparencyLabel: string;
     transparencyTitle: string;
     transparencyText: string;
+    formLabel: string;
     formTitle: string;
     formSubtitle: string;
     sendInquiry: string;

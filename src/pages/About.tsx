@@ -31,7 +31,7 @@ const About = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.companyTitle}</p>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.companyLabel}</p>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
@@ -59,7 +59,7 @@ const About = () => {
       <section className="py-40 md:py-56 border-t border-border/60 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.philosophyTitle}</p>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.about.philosophyLabel}</p>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
