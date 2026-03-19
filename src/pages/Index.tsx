@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
-import valuesImg from "@/assets/section-values.jpg";
-import portfolioImg from "@/assets/portfolio.jpg";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -13,33 +11,33 @@ const Index = () => {
   return (
     <Layout>
       {/* ── Hero ── */}
-      <section className="relative h-[85vh] min-h-[600px] flex items-end">
+      <section className="relative h-[90vh] min-h-[640px] flex items-end">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Premium Architektur" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
         </div>
-        <div className="relative container pb-20 md:pb-28">
+        <div className="relative container pb-24 md:pb-32">
           <div className="max-w-2xl">
-            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-6 animate-fade-in">
+            <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-8 animate-fade-in">
               {t.landing.heroLabel}
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold text-primary-foreground leading-[1.15] mb-6 animate-fade-in-up text-balance">
+            <h1 className="text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-heading font-semibold text-white leading-[1.1] mb-7 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-primary-foreground/70 text-lg md:text-xl leading-relaxed mb-10 max-w-xl animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-white/65 text-lg md:text-[1.2rem] leading-[1.8] mb-12 max-w-lg animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <div className="flex flex-wrap gap-5 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-3 bg-accent text-accent-foreground px-7 py-3.5 text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-3 bg-accent text-white px-8 py-4 text-[13px] font-medium tracking-wider uppercase hover:opacity-90 transition-opacity"
               >
                 {t.landing.heroCta}
-                <ArrowRight size={15} />
+                <ArrowRight size={14} />
               </Link>
               <Link
                 to="/ueber-uns"
-                className="inline-flex items-center gap-3 border border-primary-foreground/30 text-primary-foreground px-7 py-3.5 text-sm font-medium tracking-wide hover:bg-primary-foreground/5 transition-colors"
+                className="inline-flex items-center gap-3 border border-white/25 text-white px-8 py-4 text-[13px] font-medium tracking-wider uppercase hover:border-white/50 transition-colors"
               >
                 {t.landing.heroCtaSecondary}
               </Link>
@@ -48,23 +46,23 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── Über Aurelia / Positionierung ── */}
-      <section className="py-28 md:py-40">
+      {/* ── Über Aurelia ── */}
+      <section className="py-32 md:py-44">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-20 lg:gap-28 items-start max-w-5xl mx-auto">
             <div>
-              <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+              <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-6">
                 {t.landing.aboutLabel}
               </p>
-              <h2 className="text-3xl md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.2] text-balance">
+              <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.15] text-balance">
                 {t.landing.aboutTitle}
               </h2>
             </div>
-            <div className="md:pt-2">
-              <p className="text-muted-foreground text-[1.05rem] leading-[1.85] mb-8">
+            <div className="md:pt-3">
+              <p className="text-muted-foreground text-[1.1rem] leading-[1.9] mb-8">
                 {t.landing.aboutText}
               </p>
-              <p className="text-muted-foreground text-[1.05rem] leading-[1.85]">
+              <p className="text-muted-foreground text-[1.1rem] leading-[1.9]">
                 {t.landing.aboutText2}
               </p>
             </div>
@@ -73,22 +71,22 @@ const Index = () => {
       </section>
 
       {/* ── Fokusbereiche ── */}
-      <section className="py-28 md:py-40 border-t border-border">
+      <section className="py-32 md:py-44 border-t border-border">
         <div className="container max-w-5xl">
-          <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+          <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-6">
             {t.landing.servicesLabel}
           </p>
-          <h2 className="text-3xl md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 max-w-lg">
+          <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.15] mb-24 max-w-md">
             {t.landing.servicesTitle}
           </h2>
-          <div className="space-y-0 divide-y divide-border">
+          <div className="divide-y divide-border">
             {t.landing.serviceCards.map((card, i) => (
-              <div key={i} className="grid md:grid-cols-[4rem_1fr_2fr] gap-6 md:gap-10 items-baseline py-10 first:pt-0 last:pb-0">
-                <span className="text-accent/60 font-sans text-sm tracking-widest tabular-nums hidden md:block">
+              <div key={i} className="grid md:grid-cols-[3.5rem_1fr_2.5fr] gap-6 md:gap-12 items-baseline py-12 first:pt-0 last:pb-0">
+                <span className="text-accent/50 font-sans text-[13px] tracking-widest tabular-nums hidden md:block">
                   0{i + 1}
                 </span>
-                <h3 className="text-lg font-heading font-semibold text-foreground">{card.title}</h3>
-                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{card.text}</p>
+                <h3 className="text-[1.05rem] font-heading font-semibold text-foreground">{card.title}</h3>
+                <p className="text-muted-foreground text-[1rem] leading-[1.8]">{card.text}</p>
               </div>
             ))}
           </div>
@@ -96,22 +94,22 @@ const Index = () => {
       </section>
 
       {/* ── Wofür Aurelia steht ── */}
-      <section className="py-28 md:py-40 bg-secondary">
+      <section className="py-32 md:py-44 bg-secondary">
         <div className="container max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
+          <div className="grid md:grid-cols-2 gap-20 lg:gap-28">
             <div>
-              <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+              <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-6">
                 {t.landing.valuesLabel}
               </p>
-              <h2 className="text-3xl md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.2] text-balance">
+              <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.15] text-balance">
                 {t.landing.valuesTitle}
               </h2>
             </div>
-            <div className="space-y-10 md:pt-2">
+            <div className="space-y-12 md:pt-3">
               {t.landing.valuePoints.map((point, i) => (
                 <div key={i}>
-                  <h3 className="text-base font-heading font-semibold text-foreground mb-2">{point.title}</h3>
-                  <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{point.text}</p>
+                  <h3 className="text-[1rem] font-heading font-semibold text-foreground mb-2.5">{point.title}</h3>
+                  <p className="text-muted-foreground text-[0.95rem] leading-[1.8]">{point.text}</p>
                 </div>
               ))}
             </div>
@@ -119,28 +117,28 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── Projekte / Investmentfokus ── */}
-      <section className="relative py-28 md:py-36">
+      {/* ── Investmentfokus ── */}
+      <section className="relative py-32 md:py-44">
         <div className="absolute inset-0">
           <img src={trustImg} alt={t.landing.projectsTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/75" />
+          <div className="absolute inset-0 bg-black/70" />
         </div>
         <div className="relative container">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+            <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-6">
               {t.landing.projectsLabel}
             </p>
-            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-primary-foreground leading-tight mb-8 text-balance">
+            <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-white leading-[1.15] mb-8 text-balance">
               {t.landing.projectsTitle}
             </h2>
-            <p className="text-primary-foreground/70 text-lg leading-relaxed mb-6">
+            <p className="text-white/60 text-[1.1rem] leading-[1.8] max-w-2xl mx-auto">
               {t.landing.projectsText}
             </p>
-            <div className="grid sm:grid-cols-3 gap-px mt-14">
+            <div className="grid sm:grid-cols-3 gap-px mt-20">
               {t.landing.stats.map((stat, i) => (
-                <div key={i} className="text-center py-6">
-                  <span className="text-3xl md:text-4xl font-heading font-semibold text-accent">{stat.value}</span>
-                  <p className="text-primary-foreground/60 text-sm mt-2">{stat.label}</p>
+                <div key={i} className="text-center py-8">
+                  <span className="text-[2.5rem] md:text-[3rem] font-heading font-semibold text-accent">{stat.value}</span>
+                  <p className="text-white/50 text-[13px] tracking-wide mt-3 uppercase">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -149,22 +147,22 @@ const Index = () => {
       </section>
 
       {/* ── Kontakt / CTA ── */}
-      <section className="py-28 md:py-40 border-t border-border">
-        <div className="container max-w-3xl">
+      <section className="py-32 md:py-44">
+        <div className="container max-w-2xl">
           <div className="text-center">
-            <div className="w-10 h-px bg-accent mx-auto mb-10" />
-            <h2 className="text-3xl md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.2] mb-6 text-balance">
+            <div className="w-10 h-px bg-accent mx-auto mb-12" />
+            <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.15] mb-7 text-balance">
               {t.landing.ctaTitle}
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-12 max-w-xl mx-auto">
+            <p className="text-muted-foreground text-[1.1rem] leading-[1.8] mb-14 max-w-lg mx-auto">
               {t.landing.ctaText}
             </p>
             <Link
               to="/kontakt"
-              className="inline-flex items-center gap-3 border border-foreground text-foreground px-8 py-4 text-sm font-medium tracking-wide hover:bg-foreground hover:text-background transition-colors duration-300"
+              className="inline-flex items-center gap-3 border border-foreground/20 text-foreground px-9 py-4 text-[13px] font-medium tracking-wider uppercase hover:border-foreground hover:bg-foreground hover:text-background transition-all duration-300"
             >
               {t.landing.ctaButton}
-              <ArrowRight size={15} />
+              <ArrowRight size={14} />
             </Link>
           </div>
         </div>
