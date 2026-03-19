@@ -206,6 +206,7 @@ const Contact = () => {
                   <ArrowRight size={13} />
                 </button>
               </div>
+              <p className="text-muted-foreground/50 text-[11px] text-right mt-3">Ihre Daten werden vertraulich behandelt · Antwort innerhalb von 24 h</p>
             </form>
           )}
         </div>

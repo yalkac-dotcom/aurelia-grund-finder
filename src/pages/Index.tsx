@@ -164,6 +164,7 @@ const Index = () => {
               {t.landing.ctaButton}
               <ArrowRight size={13} />
             </Link>
+            <p className="text-muted-foreground/60 text-[11px] mt-4">Keine Verpflichtung · Antwort innerhalb von 24 h</p>
           </Reveal>
         </div>
       </section>
