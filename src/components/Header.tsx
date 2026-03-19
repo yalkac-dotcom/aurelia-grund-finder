@@ -20,21 +20,21 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b border-border">
-      <div className="container flex items-center justify-between h-32">
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/60">
+      <div className="container flex items-center justify-between h-20 md:h-24">
         <Link to="/" className="flex items-center">
-          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-[6.5rem] md:h-28 w-auto object-contain" />
+          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-12 md:h-14 w-auto object-contain" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           <nav className="flex items-center gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm tracking-wide transition-colors hover:text-accent ${
+                className={`text-[13px] tracking-wide transition-colors hover:text-accent ${
                   location.pathname === item.path
-                    ? "text-foreground font-medium border-b-2 border-accent pb-0.5"
+                    ? "text-foreground font-medium"
                     : "text-muted-foreground"
                 }`}
               >
@@ -52,21 +52,21 @@ const Header = () => {
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Navigation öffnen"
           >
-            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
 
       {mobileOpen && (
-        <nav className="md:hidden bg-card border-t border-border">
+        <nav className="md:hidden bg-background border-t border-border/60">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
               onClick={() => setMobileOpen(false)}
-              className={`block px-6 py-3 text-sm border-b border-border transition-colors hover:bg-secondary ${
+              className={`block px-6 py-3.5 text-[13px] tracking-wide border-b border-border/40 transition-colors hover:bg-secondary ${
                 location.pathname === item.path
-                  ? "text-foreground font-medium bg-secondary"
+                  ? "text-foreground font-medium"
                   : "text-muted-foreground"
               }`}
             >
