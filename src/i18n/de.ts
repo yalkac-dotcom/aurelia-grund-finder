@@ -155,7 +155,7 @@ const de: Translations = {
       ["Geeignet für", "Solide Lagen, stabile Mieterstrukturen", "Immobilien mit hohem Entwicklungspotenzial"],
     ],
     experienceTitle: "Erfahrung trifft Strategie",
-    experienceText: "Über 30 Jahre gebündelte Erfahrung in der Immobilien- und Kapitalanlagewelt bilden die Grundlage unserer Arbeit. Wir arbeiten mit einem belastbaren Netzwerk aus Banken, Investoren, Maklern und spezialisierten Dienstleistern.",
+    experienceText: "Über 30 Jahre Erfahrung in der Immobilien- und Kapitalanlagewelt – mit einem belastbaren Netzwerk aus Banken, Investoren und spezialisierten Dienstleistern.",
   },
   investor: {
     disclaimerTitle: "Wichtiger Hinweis für Interessenten",
