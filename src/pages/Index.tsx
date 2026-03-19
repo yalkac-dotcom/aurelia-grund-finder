@@ -115,7 +115,7 @@ const Index = () => {
       </section>
 
       {/* ── Investmentfokus ── */}
-      <section className="relative py-36 md:py-52">
+      <section className="relative py-32 md:py-44">
         <div className="absolute inset-0">
           <img src={trustImg} alt={t.landing.projectsTitle} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0F1113]/80" />
