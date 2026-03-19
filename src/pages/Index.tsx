@@ -93,7 +93,7 @@ const Index = () => {
       </section>
 
       {/* ── Wofür Aurelia steht ── */}
-      <section className="py-36 md:py-52 bg-secondary/50">
+      <section className="py-32 md:py-44 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
