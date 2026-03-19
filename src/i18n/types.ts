@@ -66,6 +66,16 @@ export interface Translations {
     heroSubtitle: string;
     heroCta: string;
     heroCtaSecondary: string;
+    trustLine: string;
+    problemLabel: string;
+    problemTitle: string;
+    problemPoints: { title: string; text: string }[];
+    solutionLabel: string;
+    solutionTitle: string;
+    solutionPoints: { title: string; text: string }[];
+    trustLabel: string;
+    trustTitle: string;
+    trustPoints: { value: string; label: string }[];
     aboutLabel: string;
     aboutTitle: string;
     aboutText: string;
