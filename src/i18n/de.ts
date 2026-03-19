@@ -100,7 +100,7 @@ const de: Translations = {
     ],
     projectsLabel: "Investmentfokus",
     projectsTitle: "Standorte mit Substanz.",
-    projectsText: "Wertstabile Lagen in Deutschland – mit Augenmerk auf nachhaltige Entwicklung und langfristiges Potenzial.",
+    projectsText: "Wertstabile Lagen in Deutschland – mit Fokus auf nachhaltige Entwicklung.",
     stats: [
       { value: "30+", label: "Jahre Erfahrung" },
       { value: "100%", label: "Eigenkapital-basiert" },
