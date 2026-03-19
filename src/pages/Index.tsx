@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import SectionHeading from "@/components/SectionHeading";
-import heroImg from "@/assets/hero-building.jpg";
-import ankaufImg from "@/assets/ankauf-strategie.jpg";
+import heroImg from "@/assets/hero-premium.jpg";
+import trustImg from "@/assets/section-trust.jpg";
+import valuesImg from "@/assets/section-values.jpg";
 import portfolioImg from "@/assets/portfolio.jpg";
-import { Building2, TrendingUp, Shield, ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
@@ -12,111 +12,159 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Hero */}
-      <section className="relative h-[75vh] min-h-[540px] flex items-center">
+      {/* ── Hero ── */}
+      <section className="relative h-[85vh] min-h-[600px] flex items-end">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Immobilie Fassade" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/65" />
+          <img src={heroImg} alt="Premium Architektur" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/40 to-transparent" />
         </div>
-        <div className="relative container">
+        <div className="relative container pb-20 md:pb-28">
           <div className="max-w-2xl">
-            <div className="w-12 h-0.5 bg-accent mb-6" />
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
+            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-6 animate-fade-in">
+              {t.landing.heroLabel}
+            </p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-semibold text-primary-foreground leading-[1.15] mb-6 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8">
-              {t.hero.subtitle}
+            <p className="text-primary-foreground/70 text-lg md:text-xl leading-relaxed mb-10 max-w-xl animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+              {t.landing.heroSubtitle}
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 text-sm font-medium tracking-wide rounded hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-3 bg-accent text-accent-foreground px-7 py-3.5 text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
               >
-                {t.hero.cta}
-                <ArrowRight size={16} />
+                {t.landing.heroCta}
+                <ArrowRight size={15} />
               </Link>
               <Link
                 to="/ueber-uns"
-                className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-6 py-3 text-sm font-medium tracking-wide rounded hover:bg-primary-foreground/10 transition-colors"
+                className="inline-flex items-center gap-3 border border-primary-foreground/30 text-primary-foreground px-7 py-3.5 text-sm font-medium tracking-wide hover:bg-primary-foreground/5 transition-colors"
               >
-                {t.hero.ctaSecondary}
+                {t.landing.heroCtaSecondary}
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Bulletpoints */}
-      <section className="py-20">
-        <div className="container max-w-4xl">
-          <SectionHeading title={t.index.bulletTitle} align="center" />
-          <ul className="grid sm:grid-cols-2 gap-6 mt-8">
-            {t.index.bullets.map((bp) => (
-              <li key={bp} className="flex items-start gap-3">
-                <CheckCircle className="text-accent shrink-0 mt-0.5" size={20} />
-                <span className="text-muted-foreground leading-relaxed">{bp}</span>
-              </li>
-            ))}
-          </ul>
+      {/* ── Über Aurelia / Positionierung ── */}
+      <section className="py-28 md:py-36">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+              {t.landing.aboutLabel}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-foreground leading-tight mb-8 text-balance">
+              {t.landing.aboutTitle}
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {t.landing.aboutText}
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Three pillars */}
-      <section className="py-20 bg-secondary">
+      {/* ── Leistungen / Fokusbereiche ── */}
+      <section className="py-24 md:py-32 bg-secondary">
         <div className="container">
-          <SectionHeading title={t.index.approachTitle} align="center" />
-          <div className="grid md:grid-cols-3 gap-8 mt-4">
-            {[Building2, Shield, TrendingUp].map((Icon, i) => (
-              <div key={t.index.pillars[i].title} className="bg-card p-8 border border-border">
-                <Icon className="text-accent mb-4" size={28} />
-                <h3 className="text-lg font-bold text-foreground mb-2">{t.index.pillars[i].title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{t.index.pillars[i].text}</p>
+          <div className="text-center mb-16">
+            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+              {t.landing.servicesLabel}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-foreground leading-tight text-balance">
+              {t.landing.servicesTitle}
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-px bg-border">
+            {t.landing.serviceCards.map((card, i) => (
+              <div key={i} className="bg-card p-10 md:p-12">
+                <span className="text-accent font-heading text-2xl font-semibold mb-1 block">
+                  0{i + 1}
+                </span>
+                <h3 className="text-lg font-heading font-semibold text-foreground mt-3 mb-4">{card.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{card.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Image + Text split */}
-      <section className="py-24">
+      {/* ── Vertrauen / Werte ── */}
+      <section className="py-28 md:py-36">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
-              <img src={ankaufImg} alt={t.index.strategyTitle} className="w-full h-80 object-cover rounded" />
+              <img src={valuesImg} alt={t.landing.valuesTitle} className="w-full aspect-[4/5] object-cover" />
             </div>
             <div>
-              <SectionHeading title={t.index.strategyTitle} subtitle={t.index.strategySubtitle} />
-              <Link
-                to="/leistungen"
-                className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline"
-              >
-                {t.index.ourServices}
-                <ArrowRight size={14} />
-              </Link>
+              <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+                {t.landing.valuesLabel}
+              </p>
+              <h2 className="text-3xl md:text-4xl font-heading font-semibold text-foreground leading-tight mb-8 text-balance">
+                {t.landing.valuesTitle}
+              </h2>
+              <div className="space-y-5">
+                {t.landing.valuePoints.map((point, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <span className="w-px h-5 bg-accent shrink-0 mt-1" />
+                    <p className="text-muted-foreground leading-relaxed">{point}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Portfolio teaser */}
-      <section className="relative py-24">
+      {/* ── Projekte / Investmentfokus ── */}
+      <section className="relative py-28 md:py-36">
         <div className="absolute inset-0">
-          <img src={portfolioImg} alt={t.index.locationTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/70" />
+          <img src={trustImg} alt={t.landing.projectsTitle} className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/75" />
         </div>
-        <div className="relative container text-center">
-          <div className="max-w-2xl mx-auto">
-            <div className="w-12 h-0.5 bg-accent mb-6 mx-auto" />
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">{t.index.locationTitle}</h2>
-            <p className="text-primary-foreground/80 text-lg leading-relaxed mb-8">
-              {t.index.locationText}
+        <div className="relative container">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+              {t.landing.projectsLabel}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-primary-foreground leading-tight mb-8 text-balance">
+              {t.landing.projectsTitle}
+            </h2>
+            <p className="text-primary-foreground/70 text-lg leading-relaxed mb-6">
+              {t.landing.projectsText}
+            </p>
+            <div className="grid sm:grid-cols-3 gap-px mt-14">
+              {t.landing.stats.map((stat, i) => (
+                <div key={i} className="text-center py-6">
+                  <span className="text-3xl md:text-4xl font-heading font-semibold text-accent">{stat.value}</span>
+                  <p className="text-primary-foreground/60 text-sm mt-2">{stat.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Kontakt / CTA ── */}
+      <section className="py-28 md:py-36">
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+              {t.landing.ctaLabel}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-foreground leading-tight mb-6 text-balance">
+              {t.landing.ctaTitle}
+            </h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+              {t.landing.ctaText}
             </p>
             <Link
               to="/kontakt"
-              className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 text-sm font-medium tracking-wide rounded hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
             >
-              {t.index.contactCta}
-              <ArrowRight size={16} />
+              {t.landing.ctaButton}
+              <ArrowRight size={15} />
             </Link>
           </div>
         </div>
