@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import SectionHeading from "@/components/SectionHeading";
+import Reveal from "@/components/Reveal";
 import heroImg from "@/assets/hero-kfw.jpg";
 import { Landmark, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -15,63 +15,74 @@ const KfwPage = () => {
 
   return (
     <Layout>
-      <section className="relative py-28">
+      <section className="relative h-[50vh] min-h-[360px] flex items-end">
         <div className="absolute inset-0">
           <img src={heroImg} alt={t.tax.kfwTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
-        <div className="relative container">
-          <div className="w-12 h-0.5 bg-accent mb-6" />
-          <div className="flex items-center gap-3 mb-4">
-            <Landmark className="text-accent" size={32} />
-            <span className="text-xs font-medium uppercase tracking-widest text-accent">{t.tax.categoryFunding}</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground">{t.tax.kfwTitle}</h1>
+        <div className="relative container pb-16 md:pb-24">
+          <Reveal>
+            <div className="flex items-center gap-3 mb-5">
+              <Landmark className="text-accent" size={20} />
+              <span className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase">{t.tax.categoryFunding}</span>
+            </div>
+            <h1 className="text-[2.25rem] md:text-[3rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
+              {t.tax.kfwTitle}
+            </h1>
+          </Reveal>
         </div>
       </section>
 
-      <section className="py-6">
+      <section className="py-8">
         <div className="container max-w-4xl">
-          <Link to="/steuervorteile" className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors">
-            <ArrowLeft size={16} />
+          <Link to="/steuervorteile" className="inline-flex items-center gap-2 text-[0.85rem] text-accent hover:text-accent/80 transition-colors">
+            <ArrowLeft size={14} />
             {t.tax.backToOverview}
           </Link>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-28 md:py-36">
         <div className="container max-w-4xl">
-          <SectionHeading title={t.tax.kfwSectionTitle} />
-          <p className="text-muted-foreground leading-relaxed mb-12 text-lg">{t.tax.kfwIntro}</p>
-          <div className="space-y-10">
-            {t.tax.kfwSections.map((s) => (
-              <div key={s.heading} className="border-l-2 border-accent pl-6">
-                <h3 className="text-base font-bold text-foreground mb-2">{s.heading}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{s.text}</p>
-              </div>
+          <Reveal>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.kfwSectionTitle}</p>
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+              {t.tax.kfwSectionTitle}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl mb-16">{t.tax.kfwIntro}</p>
+          </Reveal>
+          <div className="divide-y divide-border/60">
+            {t.tax.kfwSections.map((s, i) => (
+              <Reveal key={s.heading} delay={i * 0.08}>
+                <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-16 py-14 first:pt-0 last:pb-0">
+                  <h3 className="text-[1.05rem] font-heading font-semibold text-foreground">{s.heading}</h3>
+                  <p className="text-muted-foreground text-[0.95rem] leading-[1.85]">{s.text}</p>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-secondary">
+      <section className="py-28 md:py-36 bg-secondary/50">
         <div className="container max-w-4xl">
-          <h3 className="text-sm font-bold text-foreground mb-4">{t.tax.furtherLinks}</h3>
-          <div className="flex flex-wrap gap-4 mb-6">
-            {links.map((link) => (
-              <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 underline underline-offset-4 transition-colors">
-                <ExternalLink size={14} />
-                {link.label}
-              </a>
-            ))}
-          </div>
-          <p className="text-xs text-muted-foreground italic leading-relaxed">{t.tax.taxDisclaimer}</p>
-        </div>
-      </section>
-
-      <section className="pb-16">
-        <div className="container max-w-4xl">
-          <p className="text-xs text-muted-foreground italic leading-relaxed bg-secondary p-6 border border-border rounded mt-16">{t.tax.disclaimer}</p>
+          <Reveal>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.furtherLinks}</p>
+            <div className="flex flex-wrap gap-6 mb-10">
+              {links.map((link) => (
+                <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[0.9rem] text-accent hover:text-accent/80 transition-colors">
+                  <ExternalLink size={13} />
+                  {link.label}
+                </a>
+              ))}
+            </div>
+            <p className="text-[0.8rem] text-muted-foreground italic leading-relaxed">{t.tax.taxDisclaimer}</p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="text-[0.8rem] text-muted-foreground italic leading-relaxed mt-8">{t.tax.disclaimer}</p>
+          </Reveal>
         </div>
       </section>
     </Layout>

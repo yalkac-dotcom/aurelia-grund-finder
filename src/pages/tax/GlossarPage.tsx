@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import SectionHeading from "@/components/SectionHeading";
+import Reveal from "@/components/Reveal";
 import heroImg from "@/assets/hero-glossar.jpg";
 import { BookOpen, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -10,44 +10,52 @@ const GlossarPage = () => {
 
   return (
     <Layout>
-      <section className="relative py-28">
+      <section className="relative h-[50vh] min-h-[360px] flex items-end">
         <div className="absolute inset-0">
           <img src={heroImg} alt={t.tax.glossarTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
-        <div className="relative container">
-          <div className="w-12 h-0.5 bg-accent mb-6" />
-          <div className="flex items-center gap-3 mb-4">
-            <BookOpen className="text-accent" size={32} />
-            <span className="text-xs font-medium uppercase tracking-widest text-accent">{t.tax.categoryKnowledge}</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground">{t.tax.glossarTitle}</h1>
+        <div className="relative container pb-16 md:pb-24">
+          <Reveal>
+            <div className="flex items-center gap-3 mb-5">
+              <BookOpen className="text-accent" size={20} />
+              <span className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase">{t.tax.categoryKnowledge}</span>
+            </div>
+            <h1 className="text-[2.25rem] md:text-[3rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
+              {t.tax.glossarTitle}
+            </h1>
+          </Reveal>
         </div>
       </section>
 
-      <section className="py-6">
+      <section className="py-8">
         <div className="container max-w-4xl">
-          <Link to="/steuervorteile" className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors">
-            <ArrowLeft size={16} />
+          <Link to="/steuervorteile" className="inline-flex items-center gap-2 text-[0.85rem] text-accent hover:text-accent/80 transition-colors">
+            <ArrowLeft size={14} />
             {t.tax.backToOverview}
           </Link>
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-28 md:py-36">
         <div className="container max-w-4xl">
-          <SectionHeading title={t.tax.glossarSectionTitle} subtitle={t.tax.glossarSectionSubtitle} />
-          <div className="space-y-0 mt-12">
+          <Reveal>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.glossarSectionTitle}</p>
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+              {t.tax.glossarSectionTitle}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl mb-16">{t.tax.glossarSectionSubtitle}</p>
+          </Reveal>
+          <div className="divide-y divide-border/60">
             {t.tax.glossarItems.map((g, i) => (
-              <div
-                key={g.term}
-                className={`grid grid-cols-[140px_1fr] md:grid-cols-[180px_1fr] gap-4 py-4 ${
-                  i < t.tax.glossarItems.length - 1 ? "border-b border-border" : ""
-                }`}
-              >
-                <dt className="font-bold text-foreground text-sm">{g.term}</dt>
-                <dd className="text-muted-foreground text-sm leading-relaxed">{g.definition}</dd>
-              </div>
+              <Reveal key={g.term} delay={i * 0.05}>
+                <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-16 py-10 first:pt-0 last:pb-0">
+                  <dt className="text-[0.95rem] font-heading font-semibold text-foreground">{g.term}</dt>
+                  <dd className="text-muted-foreground text-[0.9rem] leading-[1.85]">{g.definition}</dd>
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
