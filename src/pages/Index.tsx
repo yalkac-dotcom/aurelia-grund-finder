@@ -11,82 +11,57 @@ const Index = () => {
   return (
     <Layout>
       {/* ── Hero ── */}
-      <section className="relative h-[90vh] min-h-[640px] flex items-end">
+      <section className="relative h-[92vh] min-h-[660px] flex items-end">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Premium Architektur" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
+          <img src={heroImg} alt="Architektur" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
         </div>
-        <div className="relative container pb-24 md:pb-32">
-          <div className="max-w-2xl">
-            <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-8 animate-fade-in">
-              {t.landing.heroLabel}
-            </p>
-            <h1 className="text-[2.5rem] md:text-[3.25rem] lg:text-[3.75rem] font-heading font-semibold text-white leading-[1.1] mb-7 animate-fade-in-up text-balance">
+        <div className="relative container pb-28 md:pb-36">
+          <div className="max-w-xl">
+            <h1 className="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-heading font-semibold text-white leading-[1.08] mb-8 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-white/65 text-lg md:text-[1.2rem] leading-[1.8] mb-12 max-w-lg animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-white/55 text-[1.05rem] leading-[1.85] mb-14 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
-            <div className="flex flex-wrap gap-5 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center gap-3 bg-accent text-white px-8 py-4 text-[13px] font-medium tracking-wider uppercase hover:opacity-90 transition-opacity"
-              >
-                {t.landing.heroCta}
-                <ArrowRight size={14} />
-              </Link>
-              <Link
-                to="/ueber-uns"
-                className="inline-flex items-center gap-3 border border-white/25 text-white px-8 py-4 text-[13px] font-medium tracking-wider uppercase hover:border-white/50 transition-colors"
-              >
-                {t.landing.heroCtaSecondary}
-              </Link>
-            </div>
+            <Link
+              to="/kontakt"
+              className="inline-flex items-center gap-3 border border-white/30 text-white px-8 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-white/60 transition-colors duration-300 animate-fade-in-up"
+              style={{ animationDelay: "0.3s" }}
+            >
+              {t.landing.heroCta}
+              <ArrowRight size={13} />
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ── Über Aurelia ── */}
-      <section className="py-32 md:py-44">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-20 lg:gap-28 items-start max-w-5xl mx-auto">
-            <div>
-              <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-6">
-                {t.landing.aboutLabel}
-              </p>
-              <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.15] text-balance">
-                {t.landing.aboutTitle}
-              </h2>
-            </div>
-            <div className="md:pt-3">
-              <p className="text-muted-foreground text-[1.1rem] leading-[1.9] mb-8">
-                {t.landing.aboutText}
-              </p>
-              <p className="text-muted-foreground text-[1.1rem] leading-[1.9]">
-                {t.landing.aboutText2}
-              </p>
-            </div>
-          </div>
+      <section className="py-36 md:py-52">
+        <div className="container max-w-4xl">
+          <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            {t.landing.aboutLabel}
+          </p>
+          <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
+            {t.landing.aboutTitle}
+          </h2>
+          <p className="text-muted-foreground text-[1.05rem] leading-[1.95] max-w-2xl">
+            {t.landing.aboutText}
+          </p>
         </div>
       </section>
 
       {/* ── Fokusbereiche ── */}
-      <section className="py-32 md:py-44 border-t border-border">
-        <div className="container max-w-5xl">
-          <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-6">
+      <section className="py-36 md:py-52 border-t border-border/60">
+        <div className="container max-w-4xl">
+          <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
             {t.landing.servicesLabel}
           </p>
-          <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.15] mb-24 max-w-md">
-            {t.landing.servicesTitle}
-          </h2>
-          <div className="divide-y divide-border">
+          <div className="divide-y divide-border/60">
             {t.landing.serviceCards.map((card, i) => (
-              <div key={i} className="grid md:grid-cols-[3.5rem_1fr_2.5fr] gap-6 md:gap-12 items-baseline py-12 first:pt-0 last:pb-0">
-                <span className="text-accent/50 font-sans text-[13px] tracking-widest tabular-nums hidden md:block">
-                  0{i + 1}
-                </span>
+              <div key={i} className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-16 py-14 first:pt-0 last:pb-0">
                 <h3 className="text-[1.05rem] font-heading font-semibold text-foreground">{card.title}</h3>
-                <p className="text-muted-foreground text-[1rem] leading-[1.8]">{card.text}</p>
+                <p className="text-muted-foreground text-[0.95rem] leading-[1.85]">{card.text}</p>
               </div>
             ))}
           </div>
@@ -94,77 +69,61 @@ const Index = () => {
       </section>
 
       {/* ── Wofür Aurelia steht ── */}
-      <section className="py-32 md:py-44 bg-secondary">
-        <div className="container max-w-5xl">
-          <div className="grid md:grid-cols-2 gap-20 lg:gap-28">
-            <div>
-              <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-6">
-                {t.landing.valuesLabel}
-              </p>
-              <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.15] text-balance">
-                {t.landing.valuesTitle}
-              </h2>
-            </div>
-            <div className="space-y-12 md:pt-3">
-              {t.landing.valuePoints.map((point, i) => (
-                <div key={i}>
-                  <h3 className="text-[1rem] font-heading font-semibold text-foreground mb-2.5">{point.title}</h3>
-                  <p className="text-muted-foreground text-[0.95rem] leading-[1.8]">{point.text}</p>
-                </div>
-              ))}
-            </div>
+      <section className="py-36 md:py-52 bg-secondary/50">
+        <div className="container max-w-4xl">
+          <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            {t.landing.valuesLabel}
+          </p>
+          <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 max-w-lg text-balance">
+            {t.landing.valuesTitle}
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-x-20 gap-y-16">
+            {t.landing.valuePoints.map((point, i) => (
+              <div key={i}>
+                <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-3">{point.title}</h3>
+                <p className="text-muted-foreground text-[0.9rem] leading-[1.85]">{point.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ── Investmentfokus ── */}
-      <section className="relative py-32 md:py-44">
+      <section className="relative py-36 md:py-52">
         <div className="absolute inset-0">
           <img src={trustImg} alt={t.landing.projectsTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-0 bg-black/75" />
         </div>
-        <div className="relative container">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-accent font-sans text-[11px] tracking-widest-plus uppercase mb-6">
-              {t.landing.projectsLabel}
-            </p>
-            <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-white leading-[1.15] mb-8 text-balance">
-              {t.landing.projectsTitle}
-            </h2>
-            <p className="text-white/60 text-[1.1rem] leading-[1.8] max-w-2xl mx-auto">
-              {t.landing.projectsText}
-            </p>
-            <div className="grid sm:grid-cols-3 gap-px mt-20">
-              {t.landing.stats.map((stat, i) => (
-                <div key={i} className="text-center py-8">
-                  <span className="text-[2.5rem] md:text-[3rem] font-heading font-semibold text-accent">{stat.value}</span>
-                  <p className="text-white/50 text-[13px] tracking-wide mt-3 uppercase">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="relative container max-w-3xl text-center">
+          <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            {t.landing.projectsLabel}
+          </p>
+          <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-white leading-[1.2] mb-8 text-balance">
+            {t.landing.projectsTitle}
+          </h2>
+          <p className="text-white/50 text-[1.05rem] leading-[1.85] max-w-xl mx-auto">
+            {t.landing.projectsText}
+          </p>
         </div>
       </section>
 
-      {/* ── Kontakt / CTA ── */}
-      <section className="py-32 md:py-44">
-        <div className="container max-w-2xl">
-          <div className="text-center">
-            <div className="w-10 h-px bg-accent mx-auto mb-12" />
-            <h2 className="text-[2rem] md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.15] mb-7 text-balance">
-              {t.landing.ctaTitle}
-            </h2>
-            <p className="text-muted-foreground text-[1.1rem] leading-[1.8] mb-14 max-w-lg mx-auto">
-              {t.landing.ctaText}
-            </p>
-            <Link
-              to="/kontakt"
-              className="inline-flex items-center gap-3 border border-foreground/20 text-foreground px-9 py-4 text-[13px] font-medium tracking-wider uppercase hover:border-foreground hover:bg-foreground hover:text-background transition-all duration-300"
-            >
-              {t.landing.ctaButton}
-              <ArrowRight size={14} />
-            </Link>
-          </div>
+      {/* ── CTA ── */}
+      <section className="py-36 md:py-52">
+        <div className="container max-w-xl text-center">
+          <div className="w-8 h-px bg-accent mx-auto mb-14" />
+          <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-7 text-balance">
+            {t.landing.ctaTitle}
+          </h2>
+          <p className="text-muted-foreground text-[1.05rem] leading-[1.85] mb-16">
+            {t.landing.ctaText}
+          </p>
+          <Link
+            to="/kontakt"
+            className="inline-flex items-center gap-3 border border-foreground/15 text-foreground px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-foreground/60 transition-colors duration-300"
+          >
+            {t.landing.ctaButton}
+            <ArrowRight size={13} />
+          </Link>
         </div>
       </section>
     </Layout>
