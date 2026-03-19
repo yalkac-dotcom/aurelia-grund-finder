@@ -119,7 +119,7 @@ const Index = () => {
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-white/50 text-[1.05rem] leading-[1.85] max-w-xl mx-auto">
+            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] max-w-xl mx-auto">
               {t.landing.projectsText}
             </p>
           </Reveal>
