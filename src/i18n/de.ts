@@ -127,8 +127,8 @@ const de: Translations = {
   services: {
     heroTitle: "Leistungen & Strategien",
     introTitle: "Investment-Strategien",
-    introSubtitle: "Wir konzentrieren uns auf Immobilien, die oft unter Zeitdruck oder in komplexen Konstellationen veräußert werden – etwa im Rahmen von Zwangsversteigerungen, Nachlassregelungen oder Insolvenzverfahren.",
-    introText: "Mit einem klaren Blick für Potenziale entwickeln wir passende Konzepte: von der Stabilisierung der Mietsituation über technische und energetische Verbesserungen bis hin zur vollständigen Neupositionierung am Markt.",
+    introSubtitle: "Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen – mit klarem Blick für Potenziale.",
+    introText: "Von der Stabilisierung der Mietsituation bis zur vollständigen Neupositionierung am Markt.",
     holdTitle: "Bestand halten & Vermieten",
     holdItems: [
       "Zeithorizont: Langfristig (Jahre bis Jahrzehnte)",
