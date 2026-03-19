@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <Layout>
       {/* ── Hero ── */}
-      <section className="relative h-[92vh] min-h-[660px] flex items-end">
+      <section id="hero" className="relative h-[92vh] min-h-[660px] flex items-end">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Architektur" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/80 via-[#0F1113]/30 to-transparent" />
