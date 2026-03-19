@@ -20,25 +20,25 @@ const Index = () => {
   return (
     <Layout>
       {/* ── Hero ── */}
-      <section className="relative h-[85vh] min-h-[640px] flex items-end pb-24">
+      <section className="relative min-h-[90vh] flex items-center">
         <div className="absolute inset-0">
           <img src={heroImg} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/75" />
+          <div className="absolute inset-0 bg-primary/80" />
         </div>
-        <div className="relative container">
-          <div className="max-w-xl">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-[1.2] mb-5 tracking-tight">
+        <div className="relative container py-32 md:py-40">
+          <div className="max-w-2xl">
+            <h1 className="text-2xl md:text-3xl lg:text-[2.5rem] font-bold text-primary-foreground leading-[1.35] tracking-tight">
               {t.hero.slogan}
             </h1>
-            <p className="text-primary-foreground/60 text-base md:text-lg leading-relaxed mb-10">
+            <p className="text-primary-foreground/45 text-sm md:text-base leading-relaxed mt-8 max-w-lg">
               {t.hero.subtitle}
             </p>
             <a
               href="#cta"
-              className="inline-flex items-center gap-3 border border-primary-foreground/30 text-primary-foreground px-7 py-3.5 text-xs font-medium tracking-[0.2em] uppercase hover:bg-primary-foreground/5 transition-colors"
+              className="inline-flex items-center gap-3 border border-primary-foreground/20 text-primary-foreground/80 px-7 py-3.5 text-xs tracking-[0.2em] uppercase mt-14 hover:border-primary-foreground/40 transition-colors"
             >
               {t.hero.cta}
-              <ArrowRight size={14} />
+              <ArrowRight size={13} />
             </a>
           </div>
         </div>

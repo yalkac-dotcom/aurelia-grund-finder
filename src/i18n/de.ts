@@ -21,9 +21,9 @@ const de: Translations = {
       "Werte schaffen aus besonderen Situationen – Ihr Partner für Immobilieninvestments in Deutschland.",
   },
   hero: {
-    slogan: "Immobilienwerte. Strukturiert erschlossen.",
+    slogan: "Strukturierte Compliance-Prozesse für Kanzleien – klar, nachvollziehbar und rechtssicher.",
     subtitle:
-      "Wir identifizieren, bewerten und entwickeln Immobilien aus besonderen Situationen – mit klaren Prozessen und nachvollziehbarer Dokumentation.",
+      "Kycero unterstützt Sie bei der strukturierten Umsetzung gesetzlicher Anforderungen und sorgt für klare, dokumentierte Prüfprozesse im Kanzleialltag.",
     cta: "Erstgespräch vereinbaren",
     ctaSecondary: "Unser Ansatz",
   },

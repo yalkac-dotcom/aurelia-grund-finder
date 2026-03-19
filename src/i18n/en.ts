@@ -21,9 +21,9 @@ const en: Translations = {
       "Creating value from special situations – Your partner for real estate investments in Germany.",
   },
   hero: {
-    slogan: "Real Estate Value. Structurally Unlocked.",
+    slogan: "Structured compliance processes for law firms – clear, traceable and legally sound.",
     subtitle:
-      "We identify, evaluate, and develop properties from special situations – with clear processes and transparent documentation.",
+      "Kycero supports you in the structured implementation of regulatory requirements and ensures clear, documented review processes in daily practice.",
     cta: "Schedule a consultation",
     ctaSecondary: "Our approach",
   },
