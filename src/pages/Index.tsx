@@ -33,6 +33,7 @@ const Index = () => {
               {t.landing.heroCta}
               <ArrowRight size={13} />
             </Link>
+            <p className="text-white/40 text-[11px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>Unverbindlich · Persönlich · Diskret</p>
 
             {/* Scroll indicator */}
             <button
@@ -163,6 +164,7 @@ const Index = () => {
               {t.landing.ctaButton}
               <ArrowRight size={13} />
             </Link>
+            <p className="text-muted-foreground/60 text-[11px] mt-4">Keine Verpflichtung · Antwort innerhalb von 24 h</p>
           </Reveal>
         </div>
       </section>

@@ -88,6 +88,7 @@ const InvestorForm = ({ t }: { t: Translations }) => {
       <button type="submit" className="inline-flex items-center gap-3 bg-accent text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
         {t.investor.sendInquiry}
       </button>
+      <p className="text-muted-foreground/50 text-[11px] mt-3">Unverbindlich · Vertraulich · Persönliche Rückmeldung</p>
     </form>
   );
 };
