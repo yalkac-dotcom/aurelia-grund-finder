@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import Reveal from "@/components/Reveal";
 import { ArrowRight } from "lucide-react";
 import ceoImg from "@/assets/about-ceo.jpg";
 import heroImg from "@/assets/hero-building.jpg";
