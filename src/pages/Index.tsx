@@ -114,7 +114,7 @@ const Index = () => {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-white leading-[1.2] mb-8 text-balance">
+            <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-[#E5E5E5] leading-[1.2] mb-8 text-balance">
               {t.landing.projectsTitle}
             </h2>
           </Reveal>
