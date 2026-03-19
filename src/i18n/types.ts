@@ -69,6 +69,7 @@ export interface Translations {
     aboutLabel: string;
     aboutTitle: string;
     aboutText: string;
+    aboutText2: string;
     servicesLabel: string;
     servicesTitle: string;
     serviceCards: { title: string; text: string }[];
