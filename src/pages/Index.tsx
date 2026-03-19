@@ -72,25 +72,23 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── Leistungen / Fokusbereiche ── */}
-      <section className="py-24 md:py-32 bg-secondary">
-        <div className="container">
-          <div className="text-center mb-16">
-            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
-              {t.landing.servicesLabel}
-            </p>
-            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-foreground leading-tight text-balance">
-              {t.landing.servicesTitle}
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-px bg-border">
+      {/* ── Fokusbereiche ── */}
+      <section className="py-28 md:py-40 border-t border-border">
+        <div className="container max-w-5xl">
+          <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+            {t.landing.servicesLabel}
+          </p>
+          <h2 className="text-3xl md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 max-w-lg">
+            {t.landing.servicesTitle}
+          </h2>
+          <div className="space-y-0 divide-y divide-border">
             {t.landing.serviceCards.map((card, i) => (
-              <div key={i} className="bg-card p-10 md:p-12">
-                <span className="text-accent font-heading text-2xl font-semibold mb-1 block">
+              <div key={i} className="grid md:grid-cols-[4rem_1fr_2fr] gap-6 md:gap-10 items-baseline py-10 first:pt-0 last:pb-0">
+                <span className="text-accent/60 font-sans text-sm tracking-widest tabular-nums hidden md:block">
                   0{i + 1}
                 </span>
-                <h3 className="text-lg font-heading font-semibold text-foreground mt-3 mb-4">{card.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{card.text}</p>
+                <h3 className="text-lg font-heading font-semibold text-foreground">{card.title}</h3>
+                <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{card.text}</p>
               </div>
             ))}
           </div>
