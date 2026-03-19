@@ -149,21 +149,19 @@ const Index = () => {
       </section>
 
       {/* ── Kontakt / CTA ── */}
-      <section className="py-28 md:py-36">
-        <div className="container">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
-              {t.landing.ctaLabel}
-            </p>
-            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-foreground leading-tight mb-6 text-balance">
+      <section className="py-28 md:py-40 border-t border-border">
+        <div className="container max-w-3xl">
+          <div className="text-center">
+            <div className="w-10 h-px bg-accent mx-auto mb-10" />
+            <h2 className="text-3xl md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.2] mb-6 text-balance">
               {t.landing.ctaTitle}
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-12 max-w-xl mx-auto">
               {t.landing.ctaText}
             </p>
             <Link
               to="/kontakt"
-              className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 text-sm font-medium tracking-wide hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-3 border border-foreground text-foreground px-8 py-4 text-sm font-medium tracking-wide hover:bg-foreground hover:text-background transition-colors duration-300"
             >
               {t.landing.ctaButton}
               <ArrowRight size={15} />
