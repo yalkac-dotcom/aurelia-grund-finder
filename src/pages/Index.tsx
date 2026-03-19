@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
@@ -33,6 +33,18 @@ const Index = () => {
               {t.landing.heroCta}
               <ArrowRight size={13} />
             </Link>
+
+            {/* Scroll indicator */}
+            <button
+              onClick={() => {
+                const next = document.querySelector('section:nth-of-type(2)');
+                next?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="absolute left-1/2 -translate-x-1/2 bottom-8 h-10 w-10 flex items-center justify-center rounded-full border border-white/20 bg-white/[0.06] backdrop-blur-sm text-white/70 hover:border-white/40 hover:bg-white/[0.1] transition-all duration-300 animate-[gentle-bounce_2s_ease-in-out_infinite]"
+              aria-label="Weiter scrollen"
+            >
+              <ChevronDown size={18} />
+            </button>
           </div>
         </div>
       </section>
