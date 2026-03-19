@@ -95,28 +95,25 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── Vertrauen / Werte ── */}
-      <section className="py-28 md:py-36">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
-            <div>
-              <img src={valuesImg} alt={t.landing.valuesTitle} className="w-full aspect-[4/5] object-cover" />
-            </div>
+      {/* ── Wofür Aurelia steht ── */}
+      <section className="py-28 md:py-40 bg-secondary">
+        <div className="container max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
             <div>
               <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
                 {t.landing.valuesLabel}
               </p>
-              <h2 className="text-3xl md:text-4xl font-heading font-semibold text-foreground leading-tight mb-8 text-balance">
+              <h2 className="text-3xl md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.2] text-balance">
                 {t.landing.valuesTitle}
               </h2>
-              <div className="space-y-5">
-                {t.landing.valuePoints.map((point, i) => (
-                  <div key={i} className="flex items-start gap-4">
-                    <span className="w-px h-5 bg-accent shrink-0 mt-1" />
-                    <p className="text-muted-foreground leading-relaxed">{point}</p>
-                  </div>
-                ))}
-              </div>
+            </div>
+            <div className="space-y-10 md:pt-2">
+              {t.landing.valuePoints.map((point, i) => (
+                <div key={i}>
+                  <h3 className="text-base font-heading font-semibold text-foreground mb-2">{point.title}</h3>
+                  <p className="text-muted-foreground text-[0.95rem] leading-relaxed">{point.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
