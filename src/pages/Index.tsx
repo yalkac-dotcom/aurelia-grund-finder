@@ -15,7 +15,7 @@ const Index = () => {
       <section className="relative h-[92vh] min-h-[660px] flex items-end">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Architektur" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/80 via-[#0F1113]/30 to-transparent" />
         </div>
         <div className="relative container pb-28 md:pb-36">
           <div className="max-w-xl">
