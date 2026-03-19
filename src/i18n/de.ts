@@ -158,8 +158,9 @@ const de: Translations = {
       ["Kapitalbindung", "Langfristig im Objekt", "Kapitalfreisetzung nach Verkauf"],
       ["Geeignet für", "Solide Lagen, stabile Mieterstrukturen", "Immobilien mit hohem Entwicklungspotenzial"],
     ],
+    experienceLabel: "Fundament",
     experienceTitle: "Erfahrung trifft Strategie",
-    experienceText: "Über 30 Jahre Erfahrung in der Immobilien- und Kapitalanlagewelt – mit einem belastbaren Netzwerk aus Banken, Investoren und spezialisierten Dienstleistern.",
+    experienceText: "30+ Jahre Erfahrung und ein starkes Netzwerk – die Basis jeder Entscheidung.",
   },
   investor: {
     disclaimerTitle: "Wichtiger Hinweis für Interessenten",
