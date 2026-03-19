@@ -2,20 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import heroImg from "@/assets/hero-building.jpg";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
-
-const InlineCta = ({ label }: { label: string }) => (
-  <div className="mt-16 text-center">
-    <Link
-      to="/kontakt"
-      className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:underline tracking-wide"
-    >
-      {label}
-      <ArrowRight size={14} />
-    </Link>
-  </div>
-);
 
 const Index = () => {
   const { t } = useLanguage();
@@ -32,182 +20,179 @@ const Index = () => {
   return (
     <Layout>
       {/* ── Hero ── */}
-      <section className="relative h-[80vh] min-h-[600px] flex items-center">
+      <section className="relative h-[85vh] min-h-[640px] flex items-end pb-24">
         <div className="absolute inset-0">
           <img src={heroImg} alt="" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/70" />
+          <div className="absolute inset-0 bg-primary/75" />
         </div>
         <div className="relative container">
-          <div className="max-w-2xl">
-            <div className="w-16 h-px bg-accent mb-8" />
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-primary-foreground leading-[1.15] mb-6 tracking-tight">
+          <div className="max-w-xl">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-[1.2] mb-5 tracking-tight">
               {t.hero.slogan}
             </h1>
-            <p className="text-primary-foreground/75 text-lg md:text-xl leading-relaxed mb-10 max-w-xl">
+            <p className="text-primary-foreground/60 text-base md:text-lg leading-relaxed mb-10">
               {t.hero.subtitle}
             </p>
-            <Link
-              to="#cta"
-              className="inline-flex items-center gap-3 bg-accent text-accent-foreground px-8 py-4 text-sm font-medium tracking-widest uppercase hover:opacity-90 transition-opacity"
+            <a
+              href="#cta"
+              className="inline-flex items-center gap-3 border border-primary-foreground/30 text-primary-foreground px-7 py-3.5 text-xs font-medium tracking-[0.2em] uppercase hover:bg-primary-foreground/5 transition-colors"
             >
               {t.hero.cta}
-              <ArrowRight size={16} />
-            </Link>
+              <ArrowRight size={14} />
+            </a>
           </div>
         </div>
       </section>
 
       {/* ── Problem ── */}
-      <section className="py-24 md:py-32">
-        <div className="container max-w-3xl">
-          <div className="w-12 h-px bg-accent mb-6" />
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground leading-tight mb-6">
+      <section className="py-28 md:py-40">
+        <div className="container max-w-2xl">
+          <p className="text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground mb-8">
+            Ausgangslage
+          </p>
+          <h2 className="text-xl md:text-2xl font-bold text-foreground leading-snug mb-8">
             {l.problemTitle}
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+          <p className="text-muted-foreground leading-relaxed mb-12">
             {l.problemText}
           </p>
-          <ul className="space-y-4">
+          <div className="space-y-5 border-l border-border pl-8">
             {l.problemPoints.map((point) => (
-              <li key={point} className="flex items-start gap-3 text-muted-foreground">
-                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
-                <span className="leading-relaxed">{point}</span>
-              </li>
+              <p key={point} className="text-sm text-muted-foreground leading-relaxed">
+                {point}
+              </p>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
+
+      {/* ── Thin divider ── */}
+      <div className="container max-w-2xl"><div className="h-px bg-border" /></div>
 
       {/* ── Solution ── */}
-      <section className="py-24 md:py-32 bg-secondary">
-        <div className="container max-w-5xl">
-          <div className="text-center mb-16">
-            <div className="w-12 h-px bg-accent mb-6 mx-auto" />
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              {l.solutionTitle}
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              {l.solutionSubtitle}
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-12">
+      <section className="py-28 md:py-40">
+        <div className="container max-w-4xl">
+          <p className="text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground mb-8">
+            Methodik
+          </p>
+          <h2 className="text-xl md:text-2xl font-bold text-foreground leading-snug mb-6">
+            {l.solutionTitle}
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-16 max-w-2xl">
+            {l.solutionSubtitle}
+          </p>
+          <div className="grid md:grid-cols-3 gap-16">
             {l.solutionItems.map((item, i) => (
               <div key={item.title}>
-                <span className="text-accent text-sm font-medium tracking-widest uppercase mb-3 block">
-                  0{i + 1}
+                <span className="text-xs text-muted-foreground/50 tracking-[0.2em] block mb-4">
+                  {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="text-lg font-bold text-foreground mb-3">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
+                <h3 className="text-sm font-bold text-foreground mb-3 tracking-wide">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
-          <InlineCta label={l.inlineCta} />
         </div>
       </section>
+
+      {/* ── Thin divider ── */}
+      <div className="container max-w-2xl"><div className="h-px bg-border" /></div>
 
       {/* ── Trust ── */}
-      <section className="py-24 md:py-32">
-        <div className="container max-w-4xl">
-          <div className="text-center mb-16">
-            <div className="w-12 h-px bg-accent mb-6 mx-auto" />
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-              {l.trustTitle}
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-10">
+      <section className="py-28 md:py-40">
+        <div className="container max-w-3xl">
+          <p className="text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground mb-8">
+            Qualitätsstandard
+          </p>
+          <h2 className="text-xl md:text-2xl font-bold text-foreground leading-snug mb-16">
+            {l.trustTitle}
+          </h2>
+          <div className="space-y-12">
             {l.trustItems.map((item) => (
-              <div key={item.label} className="text-center">
-                <div className="w-10 h-10 rounded-full border border-accent flex items-center justify-center mx-auto mb-5">
-                  <Check className="text-accent" size={18} />
-                </div>
-                <h3 className="text-sm font-bold text-foreground uppercase tracking-wider mb-3">
+              <div key={item.label} className="grid md:grid-cols-[200px_1fr] gap-4">
+                <h3 className="text-sm font-bold text-foreground tracking-wide">
                   {item.label}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.text}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* ── Thin divider ── */}
+      <div className="container max-w-2xl"><div className="h-px bg-border" /></div>
+
       {/* ── Offer / Models ── */}
-      <section className="py-24 md:py-32 bg-secondary">
-        <div className="container max-w-4xl">
-          <div className="text-center mb-16">
-            <div className="w-12 h-px bg-accent mb-6 mx-auto" />
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              {l.offerTitle}
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              {l.offerSubtitle}
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
+      <section className="py-28 md:py-40">
+        <div className="container max-w-3xl">
+          <p className="text-xs font-medium tracking-[0.25em] uppercase text-muted-foreground mb-8">
+            Modelle
+          </p>
+          <h2 className="text-xl md:text-2xl font-bold text-foreground leading-snug mb-6">
+            {l.offerTitle}
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-16 max-w-xl">
+            {l.offerSubtitle}
+          </p>
+          <div className="space-y-10">
             {l.offerModels.map((model) => (
-              <div
-                key={model.title}
-                className="bg-card p-10 border border-border"
-              >
-                <h3 className="text-lg font-bold text-foreground mb-4">{model.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{model.text}</p>
+              <div key={model.title} className="border-l-2 border-accent pl-8">
+                <h3 className="text-sm font-bold text-foreground mb-2 tracking-wide">
+                  {model.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{model.text}</p>
               </div>
             ))}
           </div>
-          <InlineCta label={l.inlineCta} />
         </div>
       </section>
 
       {/* ── CTA + Form ── */}
-      <section id="cta" className="py-24 md:py-32">
-        <div className="container max-w-2xl text-center">
-          <div className="w-12 h-px bg-accent mb-6 mx-auto" />
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+      <section id="cta" className="py-28 md:py-40 bg-primary">
+        <div className="container max-w-md text-center">
+          <h2 className="text-xl md:text-2xl font-bold text-primary-foreground leading-snug mb-4">
             {l.ctaTitle}
           </h2>
-          <p className="text-muted-foreground text-lg mb-12">
+          <p className="text-primary-foreground/50 text-sm leading-relaxed mb-14">
             {l.ctaSubtitle}
           </p>
 
           {submitted ? (
-            <div className="bg-secondary p-10 border border-border">
-              <Check className="text-accent mx-auto mb-4" size={28} />
-              <p className="text-foreground font-medium">{l.formSuccess}</p>
-            </div>
+            <p className="text-primary-foreground/80 text-sm">{l.formSuccess}</p>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-5 text-left max-w-md mx-auto">
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-1.5">{l.formName} *</label>
-                <input
-                  required
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="w-full border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-accent"
-                />
+            <form onSubmit={handleSubmit} className="space-y-5 text-left">
+              <input
+                required
+                placeholder={l.formName}
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                className="w-full bg-transparent border-b border-primary-foreground/20 text-primary-foreground text-sm py-3 placeholder:text-primary-foreground/30 focus:outline-none focus:border-accent transition-colors"
+              />
+              <input
+                required
+                type="email"
+                placeholder={l.formEmail}
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                className="w-full bg-transparent border-b border-primary-foreground/20 text-primary-foreground text-sm py-3 placeholder:text-primary-foreground/30 focus:outline-none focus:border-accent transition-colors"
+              />
+              <input
+                placeholder={l.formPhone}
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                className="w-full bg-transparent border-b border-primary-foreground/20 text-primary-foreground text-sm py-3 placeholder:text-primary-foreground/30 focus:outline-none focus:border-accent transition-colors"
+              />
+              <div className="pt-6">
+                <button
+                  type="submit"
+                  className="w-full border border-accent text-accent py-3.5 text-xs font-medium tracking-[0.2em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors"
+                >
+                  {l.ctaButton}
+                </button>
               </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-1.5">{l.formEmail} *</label>
-                <input
-                  required
-                  type="email"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="w-full border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-accent"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-1.5">{l.formPhone}</label>
-                <input
-                  value={form.phone}
-                  onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                  className="w-full border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-accent"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-accent text-accent-foreground py-4 text-sm font-medium tracking-widest uppercase hover:opacity-90 transition-opacity"
-              >
-                {l.ctaButton}
-              </button>
             </form>
           )}
         </div>
