@@ -158,7 +158,7 @@ const Index = () => {
           <Reveal delay={0.3}>
             <Link
               to="/kontakt"
-              className="inline-flex items-center gap-3 border border-foreground/15 text-foreground px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-foreground/60 transition-colors duration-300"
+              className="inline-flex items-center gap-3 border border-foreground/15 text-foreground px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-foreground/40 transition-colors duration-300"
             >
               {t.landing.ctaButton}
               <ArrowRight size={13} />

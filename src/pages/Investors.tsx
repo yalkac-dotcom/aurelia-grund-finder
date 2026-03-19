@@ -85,7 +85,7 @@ const InvestorForm = ({ t }: { t: Translations }) => {
         </span>
       </label>
       <p className="text-[11px] text-muted-foreground"><span className="text-accent">*</span> {t.common.requiredFields}</p>
-      <button type="submit" className="inline-flex items-center gap-3 border border-foreground/15 text-foreground px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-foreground/60 transition-colors duration-300">
+      <button type="submit" className="inline-flex items-center gap-3 bg-accent text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
         {t.investor.sendInquiry}
       </button>
     </form>
