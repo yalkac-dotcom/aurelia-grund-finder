@@ -129,9 +129,10 @@ const de: Translations = {
   },
   services: {
     heroTitle: "Leistungen & Strategien",
-    introTitle: "Investment-Strategien",
-    introSubtitle: "Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen – mit klarem Blick für Potenziale.",
-    introText: "Von der Stabilisierung der Mietsituation bis zur vollständigen Neupositionierung am Markt.",
+    introLabel: "Unser Fokus",
+    introTitle: "Strategien mit System",
+    introSubtitle: "Immobilien aus Sondersituationen – mit klarem Blick für Potenziale.",
+    introText: "Von der Mietstabilisierung bis zur vollständigen Neupositionierung.",
     holdTitle: "Bestand halten & Vermieten",
     holdItems: [
       "Zeithorizont: Langfristig (Jahre bis Jahrzehnte)",
