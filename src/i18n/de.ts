@@ -166,8 +166,8 @@ const de: Translations = {
     heroTitle: "Für Investoren",
     heroSubtitle: "Partnerschaft mit Aurelia – gemeinsam Immobilien aus besonderen Situationen verantwortungsvoll entwickeln und langfristig Werte schaffen.",
     whyTitle: "Warum mit Aurelia zusammenarbeiten?",
-    whyP1: "Die Aurelia Grundbesitz GmbH ist auf den Ankauf und die Entwicklung von Immobilien aus Sondersituationen spezialisiert. Unser disziplinierter Investmentansatz, fundierte Marktanalysen und ein belastbares Netzwerk aus Banken, Maklern und Dienstleistern bilden die Grundlage für eine professionelle und transparente Zusammenarbeit.",
-    whyP2: "Wir setzen auf Qualität statt Quantität: Jedes Objekt wird sorgfältig geprüft, realistisch kalkuliert und mit klarer Strategie entwickelt. Unsere Investoren profitieren von regelmäßiger Kommunikation, nachvollziehbaren Entscheidungen und einem partnerschaftlichen Umgang auf Augenhöhe.",
+    whyP1: "Disziplinierter Investmentansatz, fundierte Marktanalysen und ein starkes Netzwerk – die Basis für professionelle Zusammenarbeit.",
+    whyP2: "Qualität statt Quantität: Jedes Objekt wird sorgfältig geprüft, realistisch kalkuliert und mit klarer Strategie entwickelt.",
     whyDisclaimer: "Diese Informationen sind allgemeiner Natur und ersetzen keine individuelle Anlageberatung.",
     cooperationTitle: "Mögliche Formen der Zusammenarbeit",
     cooperationModels: [
