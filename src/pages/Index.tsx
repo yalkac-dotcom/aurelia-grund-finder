@@ -49,18 +49,25 @@ const Index = () => {
       </section>
 
       {/* ── Über Aurelia / Positionierung ── */}
-      <section className="py-28 md:py-36">
+      <section className="py-28 md:py-40">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
-              {t.landing.aboutLabel}
-            </p>
-            <h2 className="text-3xl md:text-4xl font-heading font-semibold text-foreground leading-tight mb-8 text-balance">
-              {t.landing.aboutTitle}
-            </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
-              {t.landing.aboutText}
-            </p>
+          <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-start max-w-5xl mx-auto">
+            <div>
+              <p className="text-accent font-sans text-xs tracking-widest-plus uppercase mb-5">
+                {t.landing.aboutLabel}
+              </p>
+              <h2 className="text-3xl md:text-[2.75rem] font-heading font-semibold text-foreground leading-[1.2] text-balance">
+                {t.landing.aboutTitle}
+              </h2>
+            </div>
+            <div className="md:pt-2">
+              <p className="text-muted-foreground text-[1.05rem] leading-[1.85] mb-8">
+                {t.landing.aboutText}
+              </p>
+              <p className="text-muted-foreground text-[1.05rem] leading-[1.85]">
+                {t.landing.aboutText2}
+              </p>
+            </div>
           </div>
         </div>
       </section>
