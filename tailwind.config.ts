@@ -94,6 +94,9 @@ export default {
         "fade-in": {
           from: { opacity: "0" },
           to: { opacity: "1" },
+        "gentle-bounce": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(5px)" },
         },
       },
       animation: {
