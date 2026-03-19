@@ -61,6 +61,29 @@ export interface Translations {
     locationText: string;
     contactCta: string;
   };
+  landing: {
+    heroLabel: string;
+    heroSubtitle: string;
+    heroCta: string;
+    heroCtaSecondary: string;
+    aboutLabel: string;
+    aboutTitle: string;
+    aboutText: string;
+    servicesLabel: string;
+    servicesTitle: string;
+    serviceCards: { title: string; text: string }[];
+    valuesLabel: string;
+    valuesTitle: string;
+    valuePoints: string[];
+    projectsLabel: string;
+    projectsTitle: string;
+    projectsText: string;
+    stats: { value: string; label: string }[];
+    ctaLabel: string;
+    ctaTitle: string;
+    ctaText: string;
+    ctaButton: string;
+  };
   about: {
     heroTitle: string;
     companyTitle: string;
