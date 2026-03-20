@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
 import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle } from "lucide-react";
@@ -14,7 +15,7 @@ const Index = () => {
       {/* ── 1. HERO ── */}
       <section id="hero" className="relative h-[92vh] min-h-[660px] flex items-end">
         <div className="absolute inset-0">
-          <img src={heroImg} alt="Architektur" className="w-full h-full object-cover" />
+          <OptimizedImg src={heroImg} alt="Architektur" className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/80 via-[#0F1113]/30 to-transparent" />
         </div>
         <div className="relative container pb-28 md:pb-36">
@@ -130,7 +131,7 @@ const Index = () => {
       {/* ── 4. TRUST / Zahlen ── */}
       <section className="relative py-40 md:py-56">
         <div className="absolute inset-0">
-          <img src={trustImg} alt={t.landing.trustTitle} className="w-full h-full object-cover" />
+          <OptimizedImg src={trustImg} alt={t.landing.trustTitle} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0F1113]/85" />
         </div>
         <div className="relative container max-w-4xl text-center">
