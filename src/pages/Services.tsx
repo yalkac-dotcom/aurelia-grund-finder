@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-services.jpg";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
