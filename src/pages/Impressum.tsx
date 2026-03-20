@@ -12,7 +12,7 @@ const Impressum = () => {
     <Layout>
       <section className="relative h-[45vh] min-h-[320px] flex items-end">
         <div className="absolute inset-0">
-          <img src={heroImg} alt={imp.title} className="w-full h-full object-cover" />
+          <OptimizedImg src={heroImg} alt={imp.title} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
         <div className="relative container pb-16 md:pb-24">

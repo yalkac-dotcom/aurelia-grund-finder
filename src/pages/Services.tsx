@@ -120,7 +120,7 @@ const Services = () => {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center max-w-5xl mx-auto">
             <Reveal>
-              <img src={heroImg} alt={t.services.experienceTitle} className="w-full h-80 object-cover" />
+              <OptimizedImg src={heroImg} alt={t.services.experienceTitle} className="w-full h-80 object-cover" />
             </Reveal>
             <Reveal delay={0.1}>
               <div>
