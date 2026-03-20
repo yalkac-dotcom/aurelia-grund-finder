@@ -131,7 +131,7 @@ const Index = () => {
       {/* ── 4. TRUST / Zahlen ── */}
       <section className="relative py-40 md:py-56">
         <div className="absolute inset-0">
-          <img src={trustImg} alt={t.landing.trustTitle} className="w-full h-full object-cover" />
+          <OptimizedImg src={trustImg} alt={t.landing.trustTitle} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0F1113]/85" />
         </div>
         <div className="relative container max-w-4xl text-center">

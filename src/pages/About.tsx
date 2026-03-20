@@ -83,7 +83,7 @@ const About = () => {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center max-w-5xl mx-auto">
             <Reveal>
-              <img src={ceoImg} alt={t.about.experienceTitle} className="w-full h-[480px] object-cover" />
+              <OptimizedImg src={ceoImg} alt={t.about.experienceTitle} className="w-full h-[480px] object-cover" />
             </Reveal>
             <div>
               <Reveal delay={0.1}>
