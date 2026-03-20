@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-bafa.jpg";
 import { Banknote, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
