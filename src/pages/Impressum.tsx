@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-building.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 
