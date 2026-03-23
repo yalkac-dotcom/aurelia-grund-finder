@@ -50,7 +50,7 @@ const Header = () => {
           <button
             className="p-2 text-foreground"
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Navigation öffnen"
+            aria-label={t.common.navigationOpenAria}
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
           </button>

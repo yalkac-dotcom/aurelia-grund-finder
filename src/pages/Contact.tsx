@@ -63,7 +63,7 @@ const Contact = () => {
                   Aurelia Grundbesitz GmbH<br />
                   Grevenbroicher Weg 2<br />
                   40547 Düsseldorf<br />
-                  Deutschland
+                  {t.common.country}
                 </address>
               </div>
             </Reveal>
@@ -84,7 +84,7 @@ const Contact = () => {
                   <Phone className="text-accent" size={16} />
                   <h3 className="text-[0.95rem] font-heading font-semibold text-foreground">{t.contact.phone}</h3>
                 </div>
-                <p className="text-muted-foreground text-[0.9rem]">Telefonnummer folgt nach finaler Freigabe</p>
+                <p className="text-muted-foreground text-[0.9rem]">{t.contact.phonePending}</p>
               </div>
             </Reveal>
             <Reveal delay={0.15}>
@@ -108,9 +108,9 @@ const Contact = () => {
       <section className="py-40 md:py-56 bg-secondary/50">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.contact.send}</p>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.contact.formLabel}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 text-balance">
-              {t.contact.send}
+              {t.contact.formTitle}
             </h2>
           </Reveal>
 
@@ -207,7 +207,7 @@ const Contact = () => {
                   <ArrowRight size={13} />
                 </button>
               </div>
-              <p className="text-muted-foreground/50 text-[11px] text-right mt-3">Ihre Daten werden vertraulich behandelt · Persönliche Rückmeldung nach Prüfung</p>
+              <p className="text-muted-foreground/50 text-[11px] text-right mt-3">{t.contact.privacyNote}</p>
             </form>
           )}
         </div>

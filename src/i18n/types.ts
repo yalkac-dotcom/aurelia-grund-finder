@@ -17,6 +17,7 @@ export interface Translations {
     privacy: string;
     disclaimer: string;
     brandLine: string;
+    subline: string;
   };
   hero: {
     slogan: string;
@@ -48,6 +49,12 @@ export interface Translations {
     emailOutsideHours: string;
     ourLocation: string;
     address: string;
+    country: string;
+    languageAria: string;
+    navigationOpenAria: string;
+    scrollDownAria: string;
+    heroMeta: string;
+    initialAssessmentNote: string;
   };
   index: {
     bulletTitle: string;
@@ -154,6 +161,9 @@ export interface Translations {
     messageLabel: string;
     messagePlaceholder: string;
     liabilityNotice: string;
+    successTitle: string;
+    successText: string;
+    formNote: string;
   };
   contact: {
     title: string;
@@ -172,6 +182,10 @@ export interface Translations {
     subjectOptions: string[];
     company: string;
     messagePlaceholder: string;
+    formLabel: string;
+    formTitle: string;
+    phonePending: string;
+    privacyNote: string;
   };
   tax: {
     heroTitle: string;

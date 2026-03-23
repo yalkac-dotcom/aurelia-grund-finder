@@ -28,12 +28,10 @@ const Footer = () => {
               />
             </Link>
             <p className="text-[#E5E5E5] text-[14px] leading-[1.8] max-w-xs mb-4">
-              Werte schaffen aus besonderen Situationen.
-              <br />
-              Ihr Partner für strukturierte Immobilieninvestments.
+              {t.footer.brandLine}
             </p>
             <p className="text-[#9A9A9A] text-[12px] tracking-wide">
-              Diskret · Substanzorientiert · Langfristig
+              {t.footer.subline}
             </p>
           </div>
 
@@ -65,7 +63,7 @@ const Footer = () => {
               <p className="text-[#F5F5F5] font-medium">Aurelia Grundbesitz GmbH</p>
               <p>Grevenbroicher Weg 2</p>
               <p>40547 Düsseldorf</p>
-              <p>Deutschland</p>
+              <p>{t.common.country}</p>
             </address>
           </div>
         </div>

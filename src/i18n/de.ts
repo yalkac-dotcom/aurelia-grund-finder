@@ -19,6 +19,7 @@ const de: Translations = {
       "Hinweis: Die Inhalte dieser Website dienen ausschließlich allgemeinen Informationszwecken und stellen keine rechtliche, steuerliche oder finanzielle Beratung dar.",
     brandLine:
       "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen – diskret, strukturiert und mit klarem Blick für Substanz.",
+    subline: "Diskret · Substanzorientiert · Langfristig",
   },
   hero: {
     slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
@@ -52,6 +53,12 @@ const de: Translations = {
     emailOutsideHours: "Anfragen per E-Mail werden auch außerhalb der Geschäftszeiten entgegengenommen und zeitnah bearbeitet.",
     ourLocation: "Unser Standort",
     address: "Adresse",
+    country: "Deutschland",
+    languageAria: "Sprache wählen",
+    navigationOpenAria: "Navigation öffnen",
+    scrollDownAria: "Weiter scrollen",
+    heroMeta: "Persönlich · Diskret · Klar eingeordnet",
+    initialAssessmentNote: "Keine Verpflichtung · Persönliche Rückmeldung nach erster Prüfung",
   },
   index: {
     bulletTitle: "Warum Aurelia Grundbesitz",
@@ -218,6 +225,9 @@ const de: Translations = {
     messagePlaceholder: "In welcher Form stellen Sie sich eine mögliche Zusammenarbeit vor?",
     liabilityNotice:
       "Dieses Formular dient ausschließlich der unverbindlichen ersten Kontaktaufnahme. Es stellt keine Anlageberatung, keine Empfehlung und kein Angebot dar.",
+    successTitle: "Vielen Dank für Ihr Interesse.",
+    successText: "Wir haben Ihre Anfrage erhalten und melden uns so zeitnah wie möglich persönlich bei Ihnen zurück.",
+    formNote: "Unverbindlich · Diskret · Persönliche Rückmeldung",
   },
   contact: {
     title: "Kontakt",
@@ -236,6 +246,10 @@ const de: Translations = {
     subjectOptions: ["Allgemeine Anfrage", "Ankaufangebot", "Kooperationsanfrage", "Rückrufwunsch"],
     company: "Firma / Institution",
     messagePlaceholder: "Wie können wir Ihnen weiterhelfen?",
+    formLabel: "Kontaktformular",
+    formTitle: "Schreiben Sie uns",
+    phonePending: "Telefonnummer folgt nach finaler Freigabe",
+    privacyNote: "Ihre Daten werden vertraulich behandelt · Persönliche Rückmeldung nach Prüfung",
   },
   tax: {
     heroTitle: "Steuervorteile und Fördermöglichkeiten",
@@ -314,7 +328,7 @@ const de: Translations = {
   privacy: {
     title: "Datenschutzerklärung",
     controllerTitle: "1. Verantwortlicher",
-    controllerText: "Aurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf, Germany\nE-Mail: info@aurelia-grundbesitz.de",
+    controllerText: "Aurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf, Deutschland\nE-Mail: info@aurelia-grundbesitz.de",
     controllerCeo: "Geschäftsführer: Yasar Alkac",
     generalTitle: "2. Allgemeines zur Datenverarbeitung",
     generalText: "Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung erfolgt auf Grundlage der",
@@ -371,9 +385,9 @@ const de: Translations = {
     representedByTitle: "Vertreten durch",
     representedByText: "Geschäftsführer: Yasar Alkac",
     contactTitle: "Kontakt",
-    contactText: "E-Mail: info@aurelia-grundbesitz.de\nTelefon: +49 (0) 211 – XXX XXXX",
+    contactText: "E-Mail: info@aurelia-grundbesitz.de\nTelefon: Telefonnummer folgt",
     registerTitle: "Registereintrag",
-    registerText: "Eintragung im Handelsregister\nRegistergericht: Amtsgericht Düsseldorf\nRegisternummer: HRB XXXXX",
+    registerText: "Eintragung im Handelsregister\nRegistergericht: Amtsgericht Düsseldorf\nRegisternummer: HRB folgt",
     disclaimerTitle: "Haftungsausschluss",
     disclaimerText: "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.",
     copyrightTitle: "Urheberrecht",
