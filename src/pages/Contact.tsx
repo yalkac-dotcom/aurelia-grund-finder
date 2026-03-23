@@ -225,7 +225,7 @@ const Contact = () => {
           <Reveal delay={0.1}>
             <div className="overflow-hidden border border-border/60">
               <iframe
-                title="Standort Aurelia Grundbesitz GmbH"
+                title={`${t.common.ourLocation} – Aurelia Grundbesitz GmbH`}
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5!2d6.7367!3d51.2467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ca1b0b7e1b0d%3A0x0!2sGrevenbroicher+Weg+2%2C+40547+D%C3%BCsseldorf!5e0!3m2!1sde!2sde!4v1700000000000"
                 width="100%" height="400" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
               />
