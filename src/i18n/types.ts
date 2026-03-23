@@ -271,6 +271,11 @@ export interface Translations {
     externalLinksDisclaimer: string;
     lastUpdated: string;
   };
+  notFound: {
+    title: string;
+    text: string;
+    link: string;
+  };
   impressum: {
     title: string;
     tmbTitle: string;

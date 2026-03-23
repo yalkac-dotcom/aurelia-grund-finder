@@ -182,7 +182,7 @@ const Investors = () => {
           <Reveal>
             <div className="flex items-center gap-3 mb-8">
               <ShieldCheck className="text-accent" size={20} />
-              <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase">{t.investor.transparencyTitle}</p>
+              <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase">{t.investor.transparencyLabel}</p>
             </div>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.investor.transparencyTitle}

@@ -378,6 +378,11 @@ const es: Translations = {
     externalLinksDisclaimer: "Esta página contiene enlaces a sitios web de terceros (entre otros dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). No tenemos influencia sobre su contenido. El proveedor u operador respectivo es siempre responsable del contenido de las páginas enlazadas. Las páginas enlazadas fueron verificadas en el momento de su vinculación en busca de posibles infracciones legales. Un control permanente del contenido de las páginas enlazadas no es razonable sin indicios concretos de una infracción legal. En caso de tener conocimiento de infracciones legales, eliminaremos dichos enlaces de inmediato.",
     lastUpdated: "Última actualización: marzo de 2026",
   },
+  notFound: {
+    title: "Página no encontrada",
+    text: "La página solicitada no existe.",
+    link: "Volver al inicio",
+  },
   impressum: {
     title: "Aviso legal",
     tmbTitle: "Información conforme al § 5 TMG",

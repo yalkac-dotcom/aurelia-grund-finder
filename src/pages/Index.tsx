@@ -150,7 +150,7 @@ const Index = () => {
               <Reveal key={i} delay={i * 0.1}>
                 <div>
                   <p className="text-[2.5rem] md:text-[3rem] font-heading font-semibold text-accent leading-none mb-3">{stat.value}</p>
-                  <p className="text-[#9A9A9A] text-[11px] tracking-[0.1em] uppercase">{stat.label}</p>
+                  <p className="text-[#B0B0B0] text-[11px] tracking-[0.1em] uppercase">{stat.label}</p>
                 </div>
               </Reveal>
             ))}
