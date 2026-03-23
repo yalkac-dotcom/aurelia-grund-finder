@@ -188,7 +188,7 @@ const es: Translations = {
       ["Compromiso de capital", "A largo plazo en el inmueble", "Liberación tras la venta"],
       ["Adecuado para", "Ubicaciones sólidas, inquilinos estables", "Inmuebles con alto potencial de desarrollo"],
     ],
-    experienceLabel: "Foundation",
+    experienceLabel: "Fundamento",
     experienceTitle: "Experiencia y estrategia",
     experienceText: "Más de 30 años de experiencia combinada en el mundo inmobiliario y de inversiones constituyen la base de nuestro trabajo. Operamos con una sólida red de bancos, inversores, agentes y proveedores de servicios especializados.",
   },
