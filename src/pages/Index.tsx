@@ -50,7 +50,7 @@ const Index = () => {
                 {t.landing.heroCtaSecondary}
               </button>
             </div>
-            <p className="text-white/58 text-[12px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+            <p className="text-white/70 text-[12px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
               {t.common.heroMeta}
             </p>
           </div>
