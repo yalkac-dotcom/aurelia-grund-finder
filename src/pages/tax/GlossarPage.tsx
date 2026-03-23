@@ -20,7 +20,7 @@ const GlossarPage = () => {
           <Reveal>
             <div className="flex items-center gap-3 mb-5">
               <BookOpen className="text-accent" size={20} />
-              <span className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase">{t.tax.categoryKnowledge}</span>
+              <span className="text-white/80 font-sans text-[12px] font-medium tracking-[0.16em] uppercase">{t.tax.categoryKnowledge}</span>
             </div>
             <h1 className="text-[2.25rem] md:text-[3rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.tax.glossarTitle}
@@ -41,7 +41,7 @@ const GlossarPage = () => {
       <section className="py-28 md:py-36">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.glossarSectionTitle}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.16em] uppercase mb-8">{t.tax.glossarSectionTitle}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
               {t.tax.glossarSectionTitle}
             </h2>

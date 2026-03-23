@@ -23,10 +23,10 @@ const Index = () => {
             <h1 className="text-[2.75rem] md:text-[3.5rem] lg:text-[4rem] font-heading font-semibold text-white leading-[1.08] mb-6 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] mb-8 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-white/80 text-[1.05rem] leading-[1.85] mb-8 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
-            <p className="text-white/30 text-[11px] tracking-[0.12em] uppercase mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            <p className="text-white/68 text-[12px] font-medium tracking-[0.14em] uppercase mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
               {t.landing.trustLine}
             </p>
 
@@ -45,12 +45,12 @@ const Index = () => {
                   const next = hero?.nextElementSibling as HTMLElement | null;
                   next?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="inline-flex items-center gap-3 border border-white/20 text-white/70 px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:border-white/40 hover:text-white transition-colors duration-300"
+                className="inline-flex items-center gap-3 border border-white/40 bg-black/10 backdrop-blur-sm text-white/92 px-9 py-4 text-[12px] font-medium tracking-[0.14em] uppercase hover:border-white/60 hover:bg-black/20 hover:text-white transition-colors duration-300"
               >
                 {t.landing.heroCtaSecondary}
               </button>
             </div>
-            <p className="text-white/25 text-[11px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+            <p className="text-white/58 text-[12px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
               {t.common.heroMeta}
             </p>
           </div>
@@ -62,7 +62,7 @@ const Index = () => {
               const next = hero?.nextElementSibling as HTMLElement | null;
               next?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="absolute left-1/2 -translate-x-1/2 bottom-8 h-10 w-10 flex items-center justify-center rounded-full border border-white/25 bg-white/[0.05] text-white/60 hover:border-white/40 hover:bg-white/[0.09] transition-all duration-300"
+            className="absolute left-1/2 -translate-x-1/2 bottom-8 h-10 w-10 flex items-center justify-center rounded-full border border-white/25 bg-black/20 text-white/85 hover:border-white/55 hover:bg-black/30 transition-all duration-300"
             aria-label={t.common.scrollDownAria}
           >
             <ChevronDown size={18} />
@@ -74,7 +74,7 @@ const Index = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">
               {t.landing.problemLabel}
             </p>
           </Reveal>
@@ -103,7 +103,7 @@ const Index = () => {
       <section className="py-40 md:py-56 border-t border-border/60 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">
               {t.landing.solutionLabel}
             </p>
           </Reveal>
@@ -136,7 +136,7 @@ const Index = () => {
         </div>
         <div className="relative container max-w-4xl text-center">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">
               {t.landing.trustLabel}
             </p>
           </Reveal>
@@ -162,7 +162,7 @@ const Index = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">
               {t.landing.servicesLabel}
             </p>
           </Reveal>
@@ -189,7 +189,7 @@ const Index = () => {
       <section className="py-40 md:py-56 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">
               {t.landing.valuesLabel}
             </p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 max-w-lg text-balance">
@@ -214,7 +214,7 @@ const Index = () => {
             <div className="w-8 h-px bg-accent mx-auto mb-16" />
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">
               {t.landing.ctaLabel}
             </p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-7 text-balance">

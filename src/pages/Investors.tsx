@@ -118,11 +118,11 @@ const Investors = () => {
         </div>
         <div className="relative container pb-20 md:pb-28">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-5">{t.nav.investors}</p>
+            <p className="text-white/80 font-sans text-[12px] font-medium tracking-[0.16em] uppercase mb-5">{t.nav.investors}</p>
             <h1 className="text-[2.5rem] md:text-[3.25rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.investor.heroTitle}
             </h1>
-            <p className="text-[#B0B0B0] text-[1.05rem] leading-[1.85] mt-6 max-w-md">{t.investor.heroSubtitle}</p>
+            <p className="text-white/80 text-[1.05rem] leading-[1.85] mt-6 max-w-md">{t.investor.heroSubtitle}</p>
           </Reveal>
         </div>
       </section>
@@ -131,7 +131,7 @@ const Investors = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.whyLabel}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.investor.whyLabel}</p>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
@@ -152,7 +152,7 @@ const Investors = () => {
       <section className="py-40 md:py-56 border-t border-border/60">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.cooperationLabel}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.investor.cooperationLabel}</p>
           </Reveal>
           <div className="divide-y divide-border/60">
             {t.investor.cooperationModels.map((model, i) => {
@@ -182,7 +182,7 @@ const Investors = () => {
           <Reveal>
             <div className="flex items-center gap-3 mb-8">
               <ShieldCheck className="text-accent" size={20} />
-              <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase">{t.investor.transparencyTitle}</p>
+              <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase">{t.investor.transparencyTitle}</p>
             </div>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
               {t.investor.transparencyTitle}
@@ -196,7 +196,7 @@ const Investors = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.formLabel}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.investor.formLabel}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-6 text-balance">
               {t.investor.formTitle}
             </h2>

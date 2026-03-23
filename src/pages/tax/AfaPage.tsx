@@ -25,7 +25,7 @@ const AfaPage = () => {
           <Reveal>
             <div className="flex items-center gap-3 mb-5">
               <BadgePercent className="text-accent" size={20} />
-              <span className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase">{t.tax.categoryTax}</span>
+              <span className="text-white/80 font-sans text-[12px] font-medium tracking-[0.16em] uppercase">{t.tax.categoryTax}</span>
             </div>
             <h1 className="text-[2.25rem] md:text-[3rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.tax.afaTitle}
@@ -46,7 +46,7 @@ const AfaPage = () => {
       <section className="py-28 md:py-36">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.afaSectionTitle}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.16em] uppercase mb-8">{t.tax.afaSectionTitle}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
               {t.tax.afaSectionTitle}
             </h2>
@@ -70,7 +70,7 @@ const AfaPage = () => {
       <section className="py-28 md:py-36 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.furtherLinks}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.16em] uppercase mb-8">{t.tax.furtherLinks}</p>
             <div className="flex flex-wrap gap-6 mb-10">
               {links.map((link) => (
                 <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[0.9rem] text-accent hover:text-accent/80 transition-colors">
