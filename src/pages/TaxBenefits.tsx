@@ -38,7 +38,7 @@ const TaxBenefits = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.tax.introTitle}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.nav.taxBenefits}</p>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
@@ -78,7 +78,7 @@ const TaxBenefits = () => {
       <section className="py-40 md:py-56 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.tax.overviewTitle}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.tax.categoryKnowledge}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 max-w-2xl text-balance">
               {t.tax.overviewTitle}
             </h2>

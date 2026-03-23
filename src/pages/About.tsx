@@ -87,7 +87,7 @@ const About = () => {
             </Reveal>
             <div>
               <Reveal delay={0.1}>
-                <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.about.experienceTitle}</p>
+                <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.about.experienceLabel}</p>
                 <h2 className="text-[1.75rem] md:text-[2.25rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 text-balance">
                   {t.about.experienceTitle}
                 </h2>

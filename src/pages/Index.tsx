@@ -26,7 +26,7 @@ const Index = () => {
             <p className="text-white/80 text-[1.05rem] leading-[1.85] mb-8 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
-            <p className="text-white/68 text-[12px] font-medium tracking-[0.14em] uppercase mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            <p className="text-white/75 text-[12px] font-medium tracking-[0.14em] uppercase mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
               {t.landing.trustLine}
             </p>
 
@@ -50,7 +50,7 @@ const Index = () => {
                 {t.landing.heroCtaSecondary}
               </button>
             </div>
-            <p className="text-white/58 text-[12px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+            <p className="text-white/70 text-[12px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
               {t.common.heroMeta}
             </p>
           </div>
@@ -234,7 +234,7 @@ const Index = () => {
               {t.landing.ctaButton}
               <ArrowRight size={13} />
             </Link>
-            <p className="text-muted-foreground/50 text-[11px] mt-4">{t.common.initialAssessmentNote}</p>
+            <p className="text-muted-foreground/70 text-[11px] mt-4">{t.common.initialAssessmentNote}</p>
           </Reveal>
         </div>
       </section>
