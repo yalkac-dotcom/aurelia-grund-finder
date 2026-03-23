@@ -52,7 +52,7 @@ const Privacy = () => {
                     {p.generalBdsgLabel} <ExternalLink size={11} />
                   </a>.
                 </p>
-                <p className="text-[0.75rem] text-muted-foreground/60 mt-2">{p.generalLinkHint}</p>
+                <p className="text-[0.75rem] text-muted-foreground/70 mt-2">{p.generalLinkHint}</p>
               </div>
             </Reveal>
 
