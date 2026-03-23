@@ -51,7 +51,7 @@ const Index = () => {
               </button>
             </div>
             <p className="text-white/25 text-[11px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-              Persönlich · Diskret · Klar eingeordnet
+              {t.common.heroMeta}
             </p>
           </div>
 
@@ -63,7 +63,7 @@ const Index = () => {
               next?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="absolute left-1/2 -translate-x-1/2 bottom-8 h-10 w-10 flex items-center justify-center rounded-full border border-white/25 bg-white/[0.05] text-white/60 hover:border-white/40 hover:bg-white/[0.09] transition-all duration-300"
-            aria-label="Weiter scrollen"
+            aria-label={t.common.scrollDownAria}
           >
             <ChevronDown size={18} />
           </button>
@@ -234,7 +234,7 @@ const Index = () => {
               {t.landing.ctaButton}
               <ArrowRight size={13} />
             </Link>
-            <p className="text-muted-foreground/50 text-[11px] mt-4">Keine Verpflichtung · Persönliche Rückmeldung nach erster Prüfung</p>
+            <p className="text-muted-foreground/50 text-[11px] mt-4">{t.common.initialAssessmentNote}</p>
           </Reveal>
         </div>
       </section>

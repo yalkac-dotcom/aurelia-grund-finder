@@ -33,8 +33,8 @@ const InvestorForm = ({ t }: { t: Translations }) => {
   if (submitted) {
     return (
       <div className="py-16 text-center">
-        <h3 className="text-[1.25rem] font-heading font-semibold text-foreground mb-3">{t.contact.successTitle}</h3>
-        <p className="text-muted-foreground text-[0.95rem] leading-[1.85]">{t.contact.successText}</p>
+        <h3 className="text-[1.25rem] font-heading font-semibold text-foreground mb-3">{t.investor.successTitle}</h3>
+        <p className="text-muted-foreground text-[0.95rem] leading-[1.85]">{t.investor.successText}</p>
       </div>
     );
   }
@@ -89,7 +89,7 @@ const InvestorForm = ({ t }: { t: Translations }) => {
       <button type="submit" className="inline-flex items-center gap-3 bg-accent text-white px-9 py-4 text-[12px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
         {t.investor.sendInquiry}
       </button>
-      <p className="text-muted-foreground/50 text-[11px] mt-3">Unverbindlich · Diskret · Persönliche Rückmeldung</p>
+      <p className="text-muted-foreground/50 text-[11px] mt-3">{t.investor.formNote}</p>
     </form>
   );
 };
@@ -196,7 +196,7 @@ const Investors = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.formTitle}</p>
+            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.investor.formLabel}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-6 text-balance">
               {t.investor.formTitle}
             </h2>
