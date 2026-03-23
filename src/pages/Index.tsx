@@ -234,7 +234,7 @@ const Index = () => {
               {t.landing.ctaButton}
               <ArrowRight size={13} />
             </Link>
-            <p className="text-muted-foreground/50 text-[11px] mt-4">{t.common.initialAssessmentNote}</p>
+            <p className="text-muted-foreground/70 text-[11px] mt-4">{t.common.initialAssessmentNote}</p>
           </Reveal>
         </div>
       </section>
