@@ -188,7 +188,7 @@ const tr: Translations = {
       ["Sermaye bağlılığı", "Gayrimenkulde uzun vadeli", "Satış sonrası serbest bırakma"],
       ["Uygun", "Sağlam lokasyonlar, istikrarlı kiracılar", "Yüksek geliştirme potansiyeli olan gayrimenkuller"],
     ],
-    experienceLabel: "Foundation",
+    experienceLabel: "Temel",
     experienceTitle: "Deneyim stratejiyle buluşuyor",
     experienceText: "Gayrimenkul ve yatırım dünyasında 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Bankalar, yatırımcılar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güçlü bir ağla çalışıyoruz.",
   },
