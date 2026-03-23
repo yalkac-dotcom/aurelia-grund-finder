@@ -26,7 +26,7 @@ const TaxBenefits = () => {
         </div>
         <div className="relative container pb-20 md:pb-28">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-5">{t.nav.taxBenefits}</p>
+            <p className="text-white/80 font-sans text-[12px] font-medium tracking-[0.16em] uppercase mb-5">{t.nav.taxBenefits}</p>
             <h1 className="text-[2.5rem] md:text-[3.25rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.tax.heroTitle}
             </h1>
@@ -38,7 +38,7 @@ const TaxBenefits = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.introTitle}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.tax.introTitle}</p>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-12 max-w-2xl text-balance">
@@ -60,7 +60,7 @@ const TaxBenefits = () => {
                 <Link to={tp.path} className="group grid md:grid-cols-[1fr_2fr_auto] gap-4 md:gap-16 py-14 first:pt-0 last:pb-0 items-center">
                   <div className="flex items-center gap-3">
                     <tp.icon className="text-accent" size={18} />
-                    <span className="text-accent font-sans text-[11px] tracking-[0.15em] uppercase">{tp.category}</span>
+                    <span className="text-accent font-sans text-[12px] font-medium tracking-[0.14em] uppercase">{tp.category}</span>
                   </div>
                   <div>
                     <h3 className="text-[1.05rem] font-heading font-semibold text-foreground mb-2">{tp.title}</h3>
@@ -78,7 +78,7 @@ const TaxBenefits = () => {
       <section className="py-40 md:py-56 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] tracking-[0.2em] uppercase mb-8">{t.tax.overviewTitle}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.tax.overviewTitle}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 max-w-2xl text-balance">
               {t.tax.overviewTitle}
             </h2>
@@ -117,7 +117,7 @@ const TaxBenefits = () => {
             <Link to="/steuervorteile/glossar" className="group grid md:grid-cols-[1fr_2fr_auto] gap-4 md:gap-16 items-center">
               <div className="flex items-center gap-3">
                 <BookOpen className="text-accent" size={18} />
-                <span className="text-accent font-sans text-[11px] tracking-[0.15em] uppercase">{t.tax.categoryKnowledge}</span>
+                <span className="text-accent font-sans text-[12px] font-medium tracking-[0.14em] uppercase">{t.tax.categoryKnowledge}</span>
               </div>
               <div>
                 <h3 className="text-[1.05rem] font-heading font-semibold text-foreground mb-2">{t.tax.glossarTitle}</h3>

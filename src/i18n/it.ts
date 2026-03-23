@@ -195,7 +195,7 @@ const it: Translations = {
   investor: {
     disclaimerTitle: "Avviso importante per i potenziali investitori",
     disclaimerText:
-      'Le informazioni presenti nella sezione "Per investitori" sono fornite esclusivamente a scopo informativo generale e sono rivolte a persone che desiderano valutare in linea di principio opportunità e rischi degli investimenti imprenditoriali nel settore immobiliare. Non costituiscono consulenza in materia di investimenti, raccomandazione o offerta per l\'acquisizione di specifici investimenti. Gli investimenti in progetti imprenditoriali e nelle relative strutture immobiliari comportano rischi fino alla perdita totale del capitale investito. Prima di qualsiasi decisione, consultate consulenti legali, fiscali e finanziari indipendenti.',
+      "Le informazioni presenti nella sezione "Per investitori" sono fornite esclusivamente a scopo informativo generale e sono rivolte a persone che desiderano valutare in linea di principio opportunità e rischi degli investimenti imprenditoriali nel settore immobiliare. Non costituiscono consulenza in materia di investimenti, raccomandazione o offerta per l'acquisizione di specifici investimenti. Gli investimenti in progetti imprenditoriali e nelle relative strutture immobiliari comportano rischi fino alla perdita totale del capitale investito. Prima di qualsiasi decisione, consultate consulenti legali, fiscali e finanziari indipendenti.",
     acceptButton: "Ho compreso – continua",
     declineButton: "Torna alla home",
     heroTitle: "Per investitori",

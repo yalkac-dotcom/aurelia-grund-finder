@@ -22,9 +22,9 @@
     --secondary-foreground: 0 0% 7%;
 
     --muted: 40 8% 95%;
-    --muted-foreground: 0 0% 40%;
+    --muted-foreground: 0 0% 34%;
 
-    --accent: 33 42% 60%;
+    --accent: 33 45% 46%;
     --accent-foreground: 0 0% 7%;
 
     --destructive: 0 84.2% 60.2%;
@@ -36,7 +36,7 @@
 
     --radius: 0.125rem;
 
-    --gold: 33 42% 60%;
+    --gold: 33 45% 46%;
     --gold-light: 33 35% 75%;
     --navy-light: 0 0% 20%;
 

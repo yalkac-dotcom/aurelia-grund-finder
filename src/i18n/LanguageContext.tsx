@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback, ReactNode } from "react";
+import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from "react";
 import { Language, Translations } from "./types";
 import de from "./de";
 import en from "./en";
@@ -31,6 +31,10 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     localStorage.setItem("aurelia-lang", lang);
     document.documentElement.lang = lang;
   }, []);
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t: translationsMap[language] }}>

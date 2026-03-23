@@ -4,7 +4,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { languageNames, languageCodes, Language } from "@/i18n/types";
 
 const LanguageSwitcher = () => {
-  const { language, setLanguage } = useLanguage();
+  const { language, setLanguage, t } = useLanguage();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -21,7 +21,7 @@ const LanguageSwitcher = () => {
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors text-sm"
-        aria-label="Sprache wählen"
+        aria-label={t.common.languageAria}
       >
         <Globe size={18} />
         <span className="uppercase font-medium tracking-wide">{language}</span>

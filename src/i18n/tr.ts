@@ -195,7 +195,7 @@ const tr: Translations = {
   investor: {
     disclaimerTitle: "Potansiyel yatırımcılar için önemli bilgi",
     disclaimerText:
-      '"Yatırımcılar İçin" bölümündeki bilgiler yalnızca genel bilgilendirme amacıyla sunulmaktadır ve girişimci gayrimenkul yatırımlarının fırsat ve risklerini temel olarak değerlendirmek isteyen kişilere yöneliktir. Bu bilgiler yatırım danışmanlığı, tavsiye veya belirli yatırımların edinimi için bir teklif oluşturmaz. Girişimci projelere ve gayrimenkule bağlı finansman yapılarına yapılan yatırımlar, yatırılan sermayenin tamamen kaybedilmesine kadar uzanan riskler taşır. Herhangi bir karar vermeden önce bağımsız hukuki, vergisel ve finansal danışmanlardan bireysel danışmanlık alınız.',
+      ""Yatırımcılar İçin" bölümündeki bilgiler yalnızca genel bilgilendirme amacıyla sunulmaktadır ve girişimci gayrimenkul yatırımlarının fırsat ve risklerini temel olarak değerlendirmek isteyen kişilere yöneliktir. Bu bilgiler yatırım danışmanlığı, tavsiye veya belirli yatırımların edinimi için bir teklif oluşturmaz. Girişimci projelere ve gayrimenkule bağlı finansman yapılarına yapılan yatırımlar, yatırılan sermayenin tamamen kaybedilmesine kadar uzanan riskler taşır. Herhangi bir karar vermeden önce bağımsız hukuki, vergisel ve finansal danışmanlardan bireysel danışmanlık alınız.",
     acceptButton: "Anladım – devam et",
     declineButton: "Ana sayfaya dön",
     heroTitle: "Yatırımcılar İçin",
