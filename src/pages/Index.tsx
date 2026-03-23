@@ -15,7 +15,7 @@ const Index = () => {
       {/* ── 1. HERO ── */}
       <section id="hero" className="relative h-[92vh] min-h-[660px] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroImg} alt="Architektur" className="w-full h-full object-cover" priority />
+          <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/80 via-[#0F1113]/30 to-transparent" />
         </div>
         <div className="relative container pb-28 md:pb-36">
