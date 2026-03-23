@@ -378,6 +378,11 @@ const tr: Translations = {
     externalLinksDisclaimer: "Bu sayfa üçüncü taraf web sitelerine bağlantılar içermektedir (aralarında dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). İçerikleri üzerinde hiçbir etkimiz yoktur. Bağlantılı sayfaların içeriğinden her zaman ilgili sağlayıcı veya işletmeci sorumludur. Bağlantılı sayfalar, bağlantı kurulduğu sırada olası hukuki ihlaller açısından kontrol edilmiştir. Bağlantılı sayfaların sürekli içerik kontrolü, somut hukuki ihlal belirtileri olmaksızın makul değildir. Hukuki ihlallerin tespit edilmesi halinde bu tür bağlantılar derhal kaldırılacaktır.",
     lastUpdated: "Son güncelleme: Mart 2026",
   },
+  notFound: {
+    title: "Sayfa bulunamadı",
+    text: "İstenen sayfa mevcut değildir.",
+    link: "Ana sayfaya dön",
+  },
   impressum: {
     title: "Yasal Bilgiler",
     tmbTitle: "§ 5 TMG uyarınca bilgiler",

@@ -379,6 +379,11 @@ const de: Translations = {
     externalLinksDisclaimer: "Diese Seite enthält Links zu externen Websites Dritter (u. a. dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). Auf deren Inhalte haben wir keinen Einfluss. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
     lastUpdated: "Stand: März 2026",
   },
+  notFound: {
+    title: "Seite nicht gefunden",
+    text: "Die angeforderte Seite existiert leider nicht.",
+    link: "Zur Startseite",
+  },
   impressum: {
     title: "Impressum",
     tmbTitle: "Angaben gemäß § 5 TMG",

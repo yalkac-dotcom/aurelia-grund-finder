@@ -378,6 +378,11 @@ const en: Translations = {
     externalLinksDisclaimer: "This page contains links to third-party websites (including dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). We have no influence over their content. The respective provider or operator is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Permanent content monitoring of the linked pages is not reasonable without concrete evidence of a legal violation. Upon becoming aware of legal violations, we will remove such links immediately.",
     lastUpdated: "Last updated: March 2026",
   },
+  notFound: {
+    title: "Page not found",
+    text: "The requested page does not exist.",
+    link: "Return to Home",
+  },
   impressum: {
     title: "Legal Notice",
     tmbTitle: "Information pursuant to § 5 TMG",

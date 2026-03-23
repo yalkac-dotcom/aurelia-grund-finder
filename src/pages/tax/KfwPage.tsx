@@ -46,7 +46,7 @@ const KfwPage = () => {
       <section className="py-28 md:py-36">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.16em] uppercase mb-8">{t.tax.kfwSectionTitle}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.16em] uppercase mb-8">{t.tax.categoryFunding}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-10 max-w-2xl text-balance">
               {t.tax.kfwSectionTitle}
             </h2>
