@@ -179,6 +179,7 @@ const es: Translations = {
       "Compromiso de capital: liberación de capital tras la venta",
       "Adecuado para: inmuebles con alto potencial de desarrollo",
     ],
+    comparisonLabel: "Comparación de estrategias",
     comparisonTitle: "Mantener vs. Renovar y vender",
     comparisonHeaders: ["Criterio", "Mantener", "Renovar y vender"],
     comparisonRows: [
