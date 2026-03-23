@@ -69,7 +69,7 @@ const Privacy = () => {
                     </li>
                   ))}
                 </ul>
-                <p className="text-[0.75rem] text-muted-foreground/60 mt-2">{p.legalLinkHint}</p>
+                <p className="text-[0.75rem] text-muted-foreground/70 mt-2">{p.legalLinkHint}</p>
               </div>
             </Reveal>
 
