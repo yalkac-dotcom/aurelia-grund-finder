@@ -207,7 +207,7 @@ const Contact = () => {
                   <ArrowRight size={13} />
                 </button>
               </div>
-              <p className="text-muted-foreground/50 text-[11px] text-right mt-3">{t.contact.privacyNote}</p>
+              <p className="text-muted-foreground/70 text-[11px] text-right mt-3">{t.contact.privacyNote}</p>
             </form>
           )}
         </div>
