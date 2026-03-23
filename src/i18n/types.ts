@@ -128,6 +128,7 @@ export interface Translations {
     holdItems: string[];
     renovateTitle: string;
     renovateItems: string[];
+    comparisonLabel: string;
     comparisonTitle: string;
     comparisonHeaders: string[];
     comparisonRows: string[][];
