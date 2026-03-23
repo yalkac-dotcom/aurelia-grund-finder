@@ -151,7 +151,7 @@ const tr: Translations = {
     philosophyTitle: "Felsefe ve değerler",
     philosophyP1: "Aurelia Grundbesitz girişimci düşünceyi gayrimenkullere, kiracılara, miras paydaşlarına ve yatırımcılara karşı sorumluluk bilinciyle birleştirir. Her gayrimenkul portföyde yalnızca bir rakam olarak değil, kendi tarihi ve gelişim potansiyeli olan bireysel bir proje olarak görülmektedir.",
     philosophyP2: "Gayrimenkulleri titizlikle analiz ediyor, deneyimli partnerlerle çalışıyor ve sağlam piyasa bilgisine ve gerçekçi senaryolara dayanan kararlar alıyoruz. Sonuç, istikrar, kalite ve uzun vadeli değer korumasına odaklanan bir portföydür – kısa vadeli spekülasyondan uzak.",
-    experienceLabel: "Team",
+    experienceLabel: "Ekip",
     experienceTitle: "İnançla gelen yetkinlik",
     experienceP1: "Sektörde 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Ekibimiz gayrimenkul, sermaye yatırımı, proje geliştirme ve işlem danışmanlığı alanlarındaki uzmanlığı bir araya getirmektedir – değer odaklı yatırımlara net bir odaklanmayla.",
     experienceP2: "Bankalar, yatırımcılar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güvenilir bir ağla çalışıyoruz. Klasik konut gayrimenkulleri, getiri odaklı yatırımlar veya cebri icra ve özel durumlardan kaynaklanan karmaşık işlemler olsun – ekibimiz gerekli piyasa bilgisini ve müzakere güvenliğini sunmaktadır.",

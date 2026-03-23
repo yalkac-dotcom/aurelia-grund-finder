@@ -26,7 +26,7 @@ const Index = () => {
             <p className="text-white/80 text-[1.05rem] leading-[1.85] mb-8 max-w-md animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
-            <p className="text-white/68 text-[12px] font-medium tracking-[0.14em] uppercase mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            <p className="text-white/75 text-[12px] font-medium tracking-[0.14em] uppercase mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
               {t.landing.trustLine}
             </p>
 

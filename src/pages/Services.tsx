@@ -124,7 +124,7 @@ const Services = () => {
             </Reveal>
             <Reveal delay={0.1}>
               <div>
-                <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.services.experienceTitle}</p>
+                <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.services.experienceLabel}</p>
                 <h2 className="text-[1.75rem] md:text-[2.25rem] font-heading font-semibold text-foreground leading-[1.2] mb-8 text-balance">
                   {t.services.experienceTitle}
                 </h2>
