@@ -179,6 +179,7 @@ const tr: Translations = {
       "Sermaye bağlılığı: Satış sonrası sermaye serbest bırakılması",
       "Uygun: Yüksek geliştirme potansiyeline sahip gayrimenkuller",
     ],
+    comparisonLabel: "Strateji karşılaştırması",
     comparisonTitle: "Portföyde tutma vs. Yenileme ve satış",
     comparisonHeaders: ["Kriter", "Portföyde tutma", "Yenileme ve satış"],
     comparisonRows: [

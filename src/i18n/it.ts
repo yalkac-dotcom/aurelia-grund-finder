@@ -179,6 +179,7 @@ const it: Translations = {
       "Impegno di capitale: liberazione del capitale dopo la vendita",
       "Adatto per: immobili con alto potenziale di sviluppo",
     ],
+    comparisonLabel: "Confronto strategie",
     comparisonTitle: "Mantenere vs. Ristrutturare e vendere",
     comparisonHeaders: ["Criterio", "Mantenere", "Ristrutturare e vendere"],
     comparisonRows: [

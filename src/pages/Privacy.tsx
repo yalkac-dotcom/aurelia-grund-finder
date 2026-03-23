@@ -131,7 +131,7 @@ const Privacy = () => {
                 <p className="text-muted-foreground text-[0.9rem] leading-[1.85] mt-3">
                   {p.rightsSupervisory}
                 </p>
-                <p className="text-[0.75rem] text-muted-foreground/60 mt-2">{p.rightsSupervisoryLinkHint}</p>
+                <p className="text-[0.75rem] text-muted-foreground/70 mt-2">{p.rightsSupervisoryLinkHint}</p>
               </div>
             </Reveal>
 

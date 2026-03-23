@@ -179,6 +179,7 @@ const en: Translations = {
       "Capital commitment: until disposal",
       "Suitable for: properties with a clear development perspective",
     ],
+    comparisonLabel: "Strategy comparison",
     comparisonTitle: "Hold or develop and sell — which strategy fits the property?",
     comparisonHeaders: ["Criterion", "Hold", "Renovate & Sell"],
     comparisonRows: [

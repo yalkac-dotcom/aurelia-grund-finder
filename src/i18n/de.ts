@@ -180,6 +180,7 @@ const de: Translations = {
       "Kapitalbindung: bis zur Veräußerung",
       "Geeignet für: Objekte mit klarer Entwicklungsperspektive",
     ],
+    comparisonLabel: "Strategievergleich",
     comparisonTitle: "Bestand halten oder entwickeln und veräußern – welche Strategie passt zum Objekt?",
     comparisonHeaders: ["Kriterium", "Bestand halten", "Sanieren & Verkaufen"],
     comparisonRows: [
