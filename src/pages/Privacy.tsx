@@ -52,7 +52,7 @@ const Privacy = () => {
                     {p.generalBdsgLabel} <ExternalLink size={11} />
                   </a>.
                 </p>
-                <p className="text-[0.75rem] text-muted-foreground/60 mt-2">{p.generalLinkHint}</p>
+                <p className="text-[0.75rem] text-muted-foreground/70 mt-2">{p.generalLinkHint}</p>
               </div>
             </Reveal>
 
@@ -69,7 +69,7 @@ const Privacy = () => {
                     </li>
                   ))}
                 </ul>
-                <p className="text-[0.75rem] text-muted-foreground/60 mt-2">{p.legalLinkHint}</p>
+                <p className="text-[0.75rem] text-muted-foreground/70 mt-2">{p.legalLinkHint}</p>
               </div>
             </Reveal>
 
@@ -102,7 +102,7 @@ const Privacy = () => {
                 <h2 className="text-[1.1rem] font-heading font-semibold text-foreground mb-4">{p.googleMapsTitle}</h2>
                 <p className="text-muted-foreground text-[0.9rem] leading-[1.85]">{p.googleMapsText}</p>
                 <p className="text-muted-foreground text-[0.9rem] leading-[1.85] mt-3">{p.googleMapsLegal}</p>
-                <p className="text-[0.75rem] text-muted-foreground/60 mt-2">{p.googleMapsLinkHint}</p>
+                <p className="text-[0.75rem] text-muted-foreground/70 mt-2">{p.googleMapsLinkHint}</p>
               </div>
             </Reveal>
 

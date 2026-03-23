@@ -207,7 +207,7 @@ const Contact = () => {
                   <ArrowRight size={13} />
                 </button>
               </div>
-              <p className="text-muted-foreground/50 text-[11px] text-right mt-3">{t.contact.privacyNote}</p>
+              <p className="text-muted-foreground/70 text-[11px] text-right mt-3">{t.contact.privacyNote}</p>
             </form>
           )}
         </div>
@@ -217,7 +217,7 @@ const Contact = () => {
       <section className="py-40 md:py-56">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.common.ourLocation}</p>
+            <p className="text-accent font-sans text-[12px] font-medium tracking-[0.18em] uppercase mb-8">{t.common.address}</p>
             <h2 className="text-[1.75rem] md:text-[2.5rem] font-heading font-semibold text-foreground leading-[1.2] mb-20 text-balance">
               {t.common.ourLocation}
             </h2>
