@@ -84,7 +84,7 @@ const Contact = () => {
                   <Phone className="text-accent" size={16} />
                   <h3 className="text-[0.95rem] font-heading font-semibold text-foreground">{t.contact.phone}</h3>
                 </div>
-                <p className="text-muted-foreground text-[0.9rem]">+49 (0) 211 – XXX XXXX</p>
+                <p className="text-muted-foreground text-[0.9rem]">Telefonnummer folgt nach finaler Freigabe</p>
               </div>
             </Reveal>
             <Reveal delay={0.15}>
@@ -207,7 +207,7 @@ const Contact = () => {
                   <ArrowRight size={13} />
                 </button>
               </div>
-              <p className="text-muted-foreground/50 text-[11px] text-right mt-3">Ihre Daten werden vertraulich behandelt · Antwort innerhalb von 24 h</p>
+              <p className="text-muted-foreground/50 text-[11px] text-right mt-3">Ihre Daten werden vertraulich behandelt · Persönliche Rückmeldung nach Prüfung</p>
             </form>
           )}
         </div>

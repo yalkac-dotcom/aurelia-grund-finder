@@ -33,7 +33,7 @@ const Impressum = () => {
                 <p className="text-muted-foreground text-[0.9rem] leading-[1.85]">
                   Aurelia Grundbesitz GmbH<br />
                   Grevenbroicher Weg 2<br />
-                  40547 Düsseldorf, Germany
+                  40547 Düsseldorf, Deutschland
                 </p>
               </div>
             </Reveal>

@@ -51,7 +51,7 @@ const Index = () => {
               </button>
             </div>
             <p className="text-white/25 text-[11px] mt-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-              Unverbindlich · Persönlich · Diskret
+              Persönlich · Diskret · Klar eingeordnet
             </p>
           </div>
 
@@ -234,7 +234,7 @@ const Index = () => {
               {t.landing.ctaButton}
               <ArrowRight size={13} />
             </Link>
-            <p className="text-muted-foreground/50 text-[11px] mt-4">Keine Verpflichtung · Antwort innerhalb von 24 h</p>
+            <p className="text-muted-foreground/50 text-[11px] mt-4">Keine Verpflichtung · Persönliche Rückmeldung nach erster Prüfung</p>
           </Reveal>
         </div>
       </section>
