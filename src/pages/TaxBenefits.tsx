@@ -37,39 +37,43 @@ const TaxBenefits = () => {
       {/* Intro */}
       <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
-          <Reveal>
-            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.nav.taxBenefits}</p>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
-              {t.tax.introTitle}
-            </h2>
-          </Reveal>
-          <Reveal delay={0.15}>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl">{t.tax.introSubtitle}</p>
-          </Reveal>
+          <div className="section-shell">
+            <Reveal>
+              <div className="section-shell-accent">
+                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.nav.taxBenefits}</p>
+                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                  {t.tax.introTitle}
+                </h2>
+              </div>
+            </Reveal>
+            <Reveal delay={0.15}>
+              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl mt-4">{t.tax.introSubtitle}</p>
+            </Reveal>
+          </div>
         </div>
       </section>
 
       {/* Topics */}
       <section className="py-10 md:py-14 border-t border-border/60">
         <div className="container max-w-3xl">
-          <div className="divide-y divide-border/60">
-            {topics.map((tp, i) => (
-              <Reveal key={tp.id} delay={i * 0.08}>
-                <Link to={tp.path} className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0 items-center">
-                  <div className="flex items-center gap-2.5">
-                    <tp.icon className="text-accent" size={14} />
-                    <span className="text-accent font-sans text-[10px] font-medium tracking-[0.14em] uppercase">{tp.category}</span>
-                  </div>
-                  <div>
-                    <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{tp.title}</h3>
-                    <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{tp.shortDesc}</p>
-                  </div>
-                  <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
-                </Link>
-              </Reveal>
-            ))}
+          <div className="section-shell">
+            <div className="divide-y divide-border/60">
+              {topics.map((tp, i) => (
+                <Reveal key={tp.id} delay={i * 0.08}>
+                  <Link to={tp.path} className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0 items-center">
+                    <div className="flex items-center gap-2.5">
+                      <tp.icon className="text-accent" size={14} />
+                      <span className="text-accent font-sans text-[10px] font-medium tracking-[0.14em] uppercase">{tp.category}</span>
+                    </div>
+                    <div>
+                      <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{tp.title}</h3>
+                      <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{tp.shortDesc}</p>
+                    </div>
+                    <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -77,55 +81,61 @@ const TaxBenefits = () => {
       {/* Comparison Table */}
       <section className="py-10 md:py-14 bg-secondary/50">
         <div className="container max-w-3xl">
-          <Reveal>
-            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-5 max-w-xl text-balance">
-              {t.tax.overviewTitle}
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div className="overflow-x-auto">
-              <table className="w-full text-[0.8rem]">
-                <thead>
-                  <tr className="border-b border-accent/40">
-                    {t.tax.overviewHeaders.map((h, i) => (
-                      <th key={i} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-[0.78rem]">{h}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {topics.map((tp) => (
-                    <tr key={tp.id} className="border-b border-border/60">
-                      <td className="py-2 pr-4 text-muted-foreground">{tp.category}</td>
-                      <td className="py-2 pr-4">
-                        <Link to={tp.path} className="text-foreground font-medium hover:text-accent transition-colors">{tp.title}</Link>
-                      </td>
-                      <td className="py-2 text-muted-foreground">{tp.shortDesc}</td>
+          <div className="section-shell" style={{ borderColor: 'hsl(var(--border) / 0.3)', background: 'hsl(var(--background) / 0.5)' }}>
+            <Reveal>
+              <div className="section-shell-accent">
+                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
+                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                  {t.tax.overviewTitle}
+                </h2>
+              </div>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <div className="overflow-x-auto mt-5">
+                <table className="w-full text-[0.8rem]">
+                  <thead>
+                    <tr className="border-b border-accent/40">
+                      {t.tax.overviewHeaders.map((h, i) => (
+                        <th key={i} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-[0.78rem]">{h}</th>
+                      ))}
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </Reveal>
+                  </thead>
+                  <tbody>
+                    {topics.map((tp) => (
+                      <tr key={tp.id} className="border-b border-border/60">
+                        <td className="py-2 pr-4 text-muted-foreground">{tp.category}</td>
+                        <td className="py-2 pr-4">
+                          <Link to={tp.path} className="text-foreground font-medium hover:text-accent transition-colors">{tp.title}</Link>
+                        </td>
+                        <td className="py-2 text-muted-foreground">{tp.shortDesc}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
       {/* Glossar Link */}
       <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
-          <Reveal>
-            <Link to="/steuervorteile/glossar" className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 items-center">
-              <div className="flex items-center gap-2.5">
-                <BookOpen className="text-accent" size={14} />
-                <span className="text-accent font-sans text-[10px] font-medium tracking-[0.14em] uppercase">{t.tax.categoryKnowledge}</span>
-              </div>
-              <div>
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{t.tax.glossarTitle}</h3>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{t.tax.glossarDesc}</p>
-              </div>
-              <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
-            </Link>
-          </Reveal>
+          <div className="section-shell">
+            <Reveal>
+              <Link to="/steuervorteile/glossar" className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 items-center">
+                <div className="flex items-center gap-2.5">
+                  <BookOpen className="text-accent" size={14} />
+                  <span className="text-accent font-sans text-[10px] font-medium tracking-[0.14em] uppercase">{t.tax.categoryKnowledge}</span>
+                </div>
+                <div>
+                  <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{t.tax.glossarTitle}</h3>
+                  <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{t.tax.glossarDesc}</p>
+                </div>
+                <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
+              </Link>
+            </Reveal>
+          </div>
         </div>
       </section>
 
