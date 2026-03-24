@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
   const { pathname } = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -24,7 +26,7 @@ const ScrollToTop = () => {
           ? "opacity-100 translate-y-0 pointer-events-auto"
           : "opacity-0 translate-y-3 pointer-events-none"
       }`}
-      aria-label="Nach oben scrollen"
+      aria-label={t.common.scrollTopAria}
     >
       <ArrowUp size={18} className="text-[#C6A16E] transition-transform duration-300 group-hover:-translate-y-0.5" />
     </button>

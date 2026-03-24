@@ -53,6 +53,7 @@ export interface Translations {
     languageAria: string;
     navigationOpenAria: string;
     scrollDownAria: string;
+    scrollTopAria: string;
     heroMeta: string;
     initialAssessmentNote: string;
   };
