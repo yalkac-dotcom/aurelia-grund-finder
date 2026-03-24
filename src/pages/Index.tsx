@@ -81,7 +81,7 @@ const Index = () => {
               </h2>
             </div>
           </Reveal>
-          <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4 mt-5">
+          <div className="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 mt-5">
             {t.landing.problemPoints.map((point, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div className="flex items-start gap-2.5">
