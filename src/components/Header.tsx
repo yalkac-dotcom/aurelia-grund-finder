@@ -21,18 +21,18 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/60">
-      <div className="container flex items-center justify-between h-20 md:h-24">
+      <div className="container flex items-center justify-between h-16 md:h-[72px]">
         <Link to="/" className="flex items-center">
-          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-12 md:h-14 w-auto object-contain" />
+          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-10 md:h-11 w-auto object-contain" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-10">
-          <nav className="flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-7">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-[13px] tracking-wide transition-colors hover:text-accent ${
+                className={`text-[12px] tracking-wide transition-colors hover:text-accent ${
                   location.pathname === item.path
                     ? "text-foreground font-medium"
                     : "text-muted-foreground"
@@ -52,7 +52,7 @@ const Header = () => {
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={t.common.navigationOpenAria}
           >
-            {mobileOpen ? <X size={22} /> : <Menu size={22} />}
+            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
@@ -64,7 +64,7 @@ const Header = () => {
               key={item.path}
               to={item.path}
               onClick={() => setMobileOpen(false)}
-              className={`block px-6 py-3.5 text-[13px] tracking-wide border-b border-border/40 transition-colors hover:bg-secondary ${
+              className={`block px-6 py-3 text-[12px] tracking-wide border-b border-border/40 transition-colors hover:bg-secondary ${
                 location.pathname === item.path
                   ? "text-foreground font-medium"
                   : "text-muted-foreground"
