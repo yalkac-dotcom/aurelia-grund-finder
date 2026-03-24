@@ -19,15 +19,15 @@ const TaxBenefits = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative h-[42vh] min-h-[300px] flex items-end">
+      <section className="relative h-[36vh] min-h-[260px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroImg} alt={t.tax.heroTitle} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
-        <div className="relative container pb-12 md:pb-16">
+        <div className="relative container pb-10 md:pb-12">
           <Reveal>
-            <p className="text-white/80 font-sans text-[11px] font-medium tracking-[0.16em] uppercase mb-3">{t.nav.taxBenefits}</p>
-            <h1 className="text-[1.85rem] md:text-[2.5rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
+            <p className="text-white/80 font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.nav.taxBenefits}</p>
+            <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.tax.heroTitle}
             </h1>
           </Reveal>
@@ -35,38 +35,38 @@ const TaxBenefits = () => {
       </section>
 
       {/* Intro */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] font-medium tracking-[0.18em] uppercase mb-4">{t.nav.taxBenefits}</p>
+            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.nav.taxBenefits}</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.35rem] md:text-[1.85rem] font-heading font-semibold text-foreground leading-[1.2] mb-6 max-w-xl text-balance">
+            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
               {t.tax.introTitle}
             </h2>
           </Reveal>
           <Reveal delay={0.15}>
-            <p className="text-muted-foreground text-[0.9rem] leading-[1.85] max-w-xl">{t.tax.introSubtitle}</p>
+            <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl">{t.tax.introSubtitle}</p>
           </Reveal>
         </div>
       </section>
 
       {/* Topics */}
-      <section className="py-16 md:py-20 border-t border-border/60">
+      <section className="py-10 md:py-14 border-t border-border/60">
         <div className="container max-w-3xl">
           <div className="divide-y divide-border/60">
             {topics.map((tp, i) => (
               <Reveal key={tp.id} delay={i * 0.08}>
-                <Link to={tp.path} className="group grid md:grid-cols-[1fr_2fr_auto] gap-2 md:gap-10 py-7 first:pt-0 last:pb-0 items-center">
-                  <div className="flex items-center gap-3">
-                    <tp.icon className="text-accent" size={15} />
-                    <span className="text-accent font-sans text-[11px] font-medium tracking-[0.14em] uppercase">{tp.category}</span>
+                <Link to={tp.path} className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0 items-center">
+                  <div className="flex items-center gap-2.5">
+                    <tp.icon className="text-accent" size={14} />
+                    <span className="text-accent font-sans text-[10px] font-medium tracking-[0.14em] uppercase">{tp.category}</span>
                   </div>
                   <div>
-                    <h3 className="text-[0.9rem] font-heading font-semibold text-foreground mb-1">{tp.title}</h3>
-                    <p className="text-muted-foreground text-[0.83rem] leading-[1.75]">{tp.shortDesc}</p>
+                    <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{tp.title}</h3>
+                    <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{tp.shortDesc}</p>
                   </div>
-                  <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={13} />
+                  <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
                 </Link>
               </Reveal>
             ))}
@@ -75,32 +75,32 @@ const TaxBenefits = () => {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-16 md:py-20 bg-secondary/50">
+      <section className="py-10 md:py-14 bg-secondary/50">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] font-medium tracking-[0.18em] uppercase mb-4">{t.tax.categoryKnowledge}</p>
-            <h2 className="text-[1.35rem] md:text-[1.85rem] font-heading font-semibold text-foreground leading-[1.2] mb-8 max-w-xl text-balance">
+            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
+            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-5 max-w-xl text-balance">
               {t.tax.overviewTitle}
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="overflow-x-auto">
-              <table className="w-full text-[0.83rem]">
+              <table className="w-full text-[0.8rem]">
                 <thead>
                   <tr className="border-b border-accent/40">
                     {t.tax.overviewHeaders.map((h, i) => (
-                      <th key={i} className="text-left py-2.5 pr-4 font-heading font-semibold text-foreground text-[0.8rem]">{h}</th>
+                      <th key={i} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-[0.78rem]">{h}</th>
                     ))}
                   </tr>
                 </thead>
                 <tbody>
                   {topics.map((tp) => (
                     <tr key={tp.id} className="border-b border-border/60">
-                      <td className="py-2.5 pr-4 text-muted-foreground">{tp.category}</td>
-                      <td className="py-2.5 pr-4">
+                      <td className="py-2 pr-4 text-muted-foreground">{tp.category}</td>
+                      <td className="py-2 pr-4">
                         <Link to={tp.path} className="text-foreground font-medium hover:text-accent transition-colors">{tp.title}</Link>
                       </td>
-                      <td className="py-2.5 text-muted-foreground">{tp.shortDesc}</td>
+                      <td className="py-2 text-muted-foreground">{tp.shortDesc}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -111,29 +111,29 @@ const TaxBenefits = () => {
       </section>
 
       {/* Glossar Link */}
-      <section className="py-16 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
           <Reveal>
-            <Link to="/steuervorteile/glossar" className="group grid md:grid-cols-[1fr_2fr_auto] gap-2 md:gap-10 items-center">
-              <div className="flex items-center gap-3">
-                <BookOpen className="text-accent" size={15} />
-                <span className="text-accent font-sans text-[11px] font-medium tracking-[0.14em] uppercase">{t.tax.categoryKnowledge}</span>
+            <Link to="/steuervorteile/glossar" className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 items-center">
+              <div className="flex items-center gap-2.5">
+                <BookOpen className="text-accent" size={14} />
+                <span className="text-accent font-sans text-[10px] font-medium tracking-[0.14em] uppercase">{t.tax.categoryKnowledge}</span>
               </div>
               <div>
-                <h3 className="text-[0.9rem] font-heading font-semibold text-foreground mb-1">{t.tax.glossarTitle}</h3>
-                <p className="text-muted-foreground text-[0.83rem] leading-[1.75]">{t.tax.glossarDesc}</p>
+                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{t.tax.glossarTitle}</h3>
+                <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{t.tax.glossarDesc}</p>
               </div>
-              <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={13} />
+              <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
             </Link>
           </Reveal>
         </div>
       </section>
 
       {/* Disclaimers */}
-      <section className="pb-16">
-        <div className="container max-w-3xl space-y-4">
-          <p className="text-[0.75rem] text-muted-foreground italic leading-relaxed">{t.tax.disclaimer}</p>
-          <p className="text-[0.75rem] text-muted-foreground italic leading-relaxed">
+      <section className="pb-10">
+        <div className="container max-w-3xl space-y-3">
+          <p className="text-[0.72rem] text-muted-foreground italic leading-relaxed">{t.tax.disclaimer}</p>
+          <p className="text-[0.72rem] text-muted-foreground italic leading-relaxed">
             <strong className="text-foreground">{t.tax.externalLinksDisclaimer.split(":")[0]}:</strong> {t.tax.externalLinksDisclaimer.substring(t.tax.externalLinksDisclaimer.indexOf(":") + 2)}
           </p>
         </div>
