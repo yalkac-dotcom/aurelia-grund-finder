@@ -130,7 +130,7 @@ const Index = () => {
       <section className="relative py-10 md:py-14">
         <div className="absolute inset-0">
           <OptimizedImg src={trustImg} alt={t.landing.trustTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-[#0F1113]/85" />
+          <div className="absolute inset-0 bg-[#0F1113]/65" />
         </div>
         <div className="relative container max-w-4xl text-center">
           <Reveal>
