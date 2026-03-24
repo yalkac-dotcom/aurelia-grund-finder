@@ -70,62 +70,58 @@ const Index = () => {
 
       {/* ── 2. PROBLEM ── */}
       <section className="py-10 md:py-14">
-        <div className="container max-w-3xl">
-          <div className="section-shell">
-            <Reveal>
-              <div className="section-shell-accent">
-                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.problemLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                  {t.landing.problemTitle}
-                </h2>
-              </div>
-            </Reveal>
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4 mt-5">
-              {t.landing.problemPoints.map((point, i) => (
-                <Reveal key={i} delay={i * 0.08}>
-                  <div className="flex items-start gap-2.5">
-                    <AlertTriangle className="text-accent shrink-0 mt-0.5" size={13} />
-                    <div>
-                      <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-0.5">{point.title}</h3>
-                      <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="section-shell-accent">
+              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+                {t.landing.problemLabel}
+              </p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                {t.landing.problemTitle}
+              </h2>
             </div>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4 mt-5">
+            {t.landing.problemPoints.map((point, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+                <div className="flex items-start gap-2.5">
+                  <AlertTriangle className="text-accent shrink-0 mt-0.5" size={13} />
+                  <div>
+                    <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-0.5">{point.title}</h3>
+                    <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ── 3. LÖSUNG ── */}
       <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
-        <div className="container max-w-3xl">
-          <div className="section-shell" style={{ borderColor: 'hsl(var(--border) / 0.3)', background: 'hsl(var(--background) / 0.5)' }}>
-            <Reveal>
-              <div className="section-shell-accent">
-                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.solutionLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                  {t.landing.solutionTitle}
-                </h2>
-              </div>
-            </Reveal>
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4 mt-5">
-              {t.landing.solutionPoints.map((point, i) => (
-                <Reveal key={i} delay={i * 0.08}>
-                  <div className="flex items-start gap-2.5">
-                    <CheckCircle className="text-accent shrink-0 mt-0.5" size={13} />
-                    <div>
-                      <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-0.5">{point.title}</h3>
-                      <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
-                    </div>
-                  </div>
-                </Reveal>
-              ))}
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="section-shell-accent">
+              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+                {t.landing.solutionLabel}
+              </p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                {t.landing.solutionTitle}
+              </h2>
             </div>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 gap-x-8 gap-y-4 mt-5">
+            {t.landing.solutionPoints.map((point, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+                <div className="flex items-start gap-2.5">
+                  <CheckCircle className="text-accent shrink-0 mt-0.5" size={13} />
+                  <div>
+                    <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-0.5">{point.title}</h3>
+                    <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
@@ -136,7 +132,7 @@ const Index = () => {
           <OptimizedImg src={trustImg} alt={t.landing.trustTitle} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#0F1113]/85" />
         </div>
-        <div className="relative container max-w-3xl text-center">
+        <div className="relative container max-w-4xl text-center">
           <Reveal>
             <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
               {t.landing.trustLabel}
@@ -162,62 +158,58 @@ const Index = () => {
 
       {/* ── 5. LEISTUNGEN ── */}
       <section className="py-10 md:py-14">
-        <div className="container max-w-3xl">
-          <div className="section-shell">
-            <Reveal>
-              <div className="section-shell-accent">
-                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.servicesLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                  {t.landing.servicesTitle}
-                </h2>
-              </div>
-            </Reveal>
-            <div className="divide-y divide-border/60 mt-5">
-              {t.landing.serviceCards.map((card, i) => (
-                <Reveal key={i} delay={i * 0.1}>
-                  <Link to="/leistungen" className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0 items-center">
-                    <h3 className="text-[0.83rem] font-heading font-semibold text-foreground">{card.title}</h3>
-                    <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{card.text}</p>
-                    <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
-                  </Link>
-                </Reveal>
-              ))}
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="section-shell-accent">
+              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+                {t.landing.servicesLabel}
+              </p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                {t.landing.servicesTitle}
+              </h2>
             </div>
+          </Reveal>
+          <div className="divide-y divide-border/60 mt-5">
+            {t.landing.serviceCards.map((card, i) => (
+              <Reveal key={i} delay={i * 0.1}>
+                <Link to="/leistungen" className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0 items-center">
+                  <h3 className="text-[0.83rem] font-heading font-semibold text-foreground">{card.title}</h3>
+                  <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{card.text}</p>
+                  <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
+                </Link>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ── 6. WERTE ── */}
       <section className="py-10 md:py-14 bg-secondary/50">
-        <div className="container max-w-3xl">
-          <div className="section-shell" style={{ borderColor: 'hsl(var(--border) / 0.3)', background: 'hsl(var(--background) / 0.5)' }}>
-            <Reveal>
-              <div className="section-shell-accent">
-                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.valuesLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-md text-balance">
-                  {t.landing.valuesTitle}
-                </h2>
-              </div>
-            </Reveal>
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-5 mt-5">
-              {t.landing.valuePoints.map((point, i) => (
-                <Reveal key={i} delay={i * 0.08}>
-                  <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-1">{point.title}</h3>
-                  <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
-                </Reveal>
-              ))}
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="section-shell-accent">
+              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+                {t.landing.valuesLabel}
+              </p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-md text-balance">
+                {t.landing.valuesTitle}
+              </h2>
             </div>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 gap-x-8 gap-y-5 mt-5">
+            {t.landing.valuePoints.map((point, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+                <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-1">{point.title}</h3>
+                <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ── 7. ABSCHLUSS CTA ── */}
       <section className="py-10 md:py-14">
-        <div className="container max-w-md text-center">
+        <div className="container max-w-xl text-center">
           <div className="cta-module">
             <Reveal>
               <div className="section-divider mx-auto mb-5" />
