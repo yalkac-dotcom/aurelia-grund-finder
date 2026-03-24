@@ -114,15 +114,15 @@ const Investors = () => {
       <section className="relative h-[36vh] min-h-[260px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroImg} alt={t.investor.heroTitle} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/65 via-[#0F1113]/30 to-[#0F1113]/10" />
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>
-            <p className="text-white/80 font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.nav.investors}</p>
+            <p className="text-white font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.nav.investors}</p>
             <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.investor.heroTitle}
             </h1>
-            <p className="text-white/80 text-[0.85rem] leading-[1.7] mt-3 max-w-sm">{t.investor.heroSubtitle}</p>
+            <p className="text-white/95 text-[0.85rem] leading-[1.7] mt-3 max-w-sm">{t.investor.heroSubtitle}</p>
           </Reveal>
         </div>
       </section>
