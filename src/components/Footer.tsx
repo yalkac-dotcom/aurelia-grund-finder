@@ -15,7 +15,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#16181A]">
+    <footer className="bg-[#16181A] border-t border-border/20">
       <div className="container py-10 md:py-12">
         <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-8 md:gap-6">
           {/* Left — Logo + Claim */}

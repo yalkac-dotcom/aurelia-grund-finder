@@ -40,24 +40,28 @@ const GlossarPage = () => {
 
       <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
-          <Reveal>
-            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
-              {t.tax.glossarSectionTitle}
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.85] max-w-xl mb-5">{t.tax.glossarSectionSubtitle}</p>
-          </Reveal>
-          <div className="divide-y divide-border/60">
-            {t.tax.glossarItems.map((g, i) => (
-              <Reveal key={g.term} delay={i * 0.05}>
-                <div className="grid md:grid-cols-[1fr_2fr] gap-2 md:gap-8 py-6 first:pt-0 last:pb-0">
-                  <dt className="text-[0.82rem] font-heading font-semibold text-foreground">{g.term}</dt>
-                  <dd className="text-muted-foreground text-[0.8rem] leading-[1.75]">{g.definition}</dd>
-                </div>
-              </Reveal>
-            ))}
+          <div className="section-shell">
+            <Reveal>
+              <div className="section-shell-accent">
+                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
+                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                  {t.tax.glossarSectionTitle}
+                </h2>
+              </div>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="text-muted-foreground text-[0.85rem] leading-[1.85] max-w-xl mt-4 mb-5">{t.tax.glossarSectionSubtitle}</p>
+            </Reveal>
+            <div className="divide-y divide-border/60">
+              {t.tax.glossarItems.map((g, i) => (
+                <Reveal key={g.term} delay={i * 0.05}>
+                  <div className="grid md:grid-cols-[1fr_2fr] gap-2 md:gap-8 py-5 first:pt-0 last:pb-0">
+                    <dt className="text-[0.82rem] font-heading font-semibold text-foreground">{g.term}</dt>
+                    <dd className="text-muted-foreground text-[0.8rem] leading-[1.75]">{g.definition}</dd>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>

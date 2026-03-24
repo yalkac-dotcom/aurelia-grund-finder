@@ -26,47 +26,49 @@ const Impressum = () => {
 
       <section className="py-10 md:py-14">
         <div className="container max-w-2xl">
-          <div className="divide-y divide-border/60">
-            <Reveal>
-              <div className="pb-5">
-                <h2 className="text-[0.9rem] font-heading font-semibold text-foreground mb-1.5">{imp.tmbTitle}</h2>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.75]">
-                  Aurelia Grundbesitz GmbH<br />
-                  Grevenbroicher Weg 2<br />
-                  40547 Düsseldorf, {t.common.country}
-                </p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.05}>
-              <div className="py-5">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.representedByTitle}</h3>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.75]">{imp.representedByText}</p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <div className="py-5">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.contactTitle}</h3>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.75] whitespace-pre-line">{imp.contactText}</p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.15}>
-              <div className="py-5">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.registerTitle}</h3>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.75] whitespace-pre-line">{imp.registerText}</p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.2}>
-              <div className="py-5">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.disclaimerTitle}</h3>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.75]">{imp.disclaimerText}</p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.25}>
-              <div className="pt-5">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.copyrightTitle}</h3>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.75]">{imp.copyrightText}</p>
-              </div>
-            </Reveal>
+          <div className="section-shell">
+            <div className="divide-y divide-border/60">
+              <Reveal>
+                <div className="pb-5">
+                  <h2 className="text-[0.9rem] font-heading font-semibold text-foreground mb-1.5">{imp.tmbTitle}</h2>
+                  <p className="text-muted-foreground text-[0.8rem] leading-[1.75]">
+                    Aurelia Grundbesitz GmbH<br />
+                    Grevenbroicher Weg 2<br />
+                    40547 Düsseldorf, {t.common.country}
+                  </p>
+                </div>
+              </Reveal>
+              <Reveal delay={0.05}>
+                <div className="py-5">
+                  <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.representedByTitle}</h3>
+                  <p className="text-muted-foreground text-[0.8rem] leading-[1.75]">{imp.representedByText}</p>
+                </div>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <div className="py-5">
+                  <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.contactTitle}</h3>
+                  <p className="text-muted-foreground text-[0.8rem] leading-[1.75] whitespace-pre-line">{imp.contactText}</p>
+                </div>
+              </Reveal>
+              <Reveal delay={0.15}>
+                <div className="py-5">
+                  <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.registerTitle}</h3>
+                  <p className="text-muted-foreground text-[0.8rem] leading-[1.75] whitespace-pre-line">{imp.registerText}</p>
+                </div>
+              </Reveal>
+              <Reveal delay={0.2}>
+                <div className="py-5">
+                  <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.disclaimerTitle}</h3>
+                  <p className="text-muted-foreground text-[0.8rem] leading-[1.75]">{imp.disclaimerText}</p>
+                </div>
+              </Reveal>
+              <Reveal delay={0.25}>
+                <div className="pt-5">
+                  <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-1">{imp.copyrightTitle}</h3>
+                  <p className="text-muted-foreground text-[0.8rem] leading-[1.75]">{imp.copyrightText}</p>
+                </div>
+              </Reveal>
+            </div>
           </div>
         </div>
       </section>

@@ -130,84 +130,96 @@ const Investors = () => {
       {/* Why */}
       <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
-          <Reveal>
-            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.whyLabel}</p>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
-              {t.investor.whyTitle}
-            </h2>
-          </Reveal>
-          <div className="space-y-3">
-            <Reveal delay={0.2}><p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl">{t.investor.whyP1}</p></Reveal>
-            <Reveal delay={0.25}><p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl">{t.investor.whyP2}</p></Reveal>
+          <div className="section-shell">
+            <Reveal>
+              <div className="section-shell-accent">
+                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.whyLabel}</p>
+                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                  {t.investor.whyTitle}
+                </h2>
+              </div>
+            </Reveal>
+            <div className="space-y-3 mt-4">
+              <Reveal delay={0.2}><p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl">{t.investor.whyP1}</p></Reveal>
+              <Reveal delay={0.25}><p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl">{t.investor.whyP2}</p></Reveal>
+            </div>
+            <Reveal delay={0.3}>
+              <p className="text-[0.72rem] text-muted-foreground mt-4 italic">{t.investor.whyDisclaimer}</p>
+            </Reveal>
           </div>
-          <Reveal delay={0.3}>
-            <p className="text-[0.72rem] text-muted-foreground mt-4 italic">{t.investor.whyDisclaimer}</p>
-          </Reveal>
         </div>
       </section>
 
       {/* Cooperation */}
       <section className="py-10 md:py-14 border-t border-border/60">
         <div className="container max-w-3xl">
-          <Reveal>
-            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.cooperationLabel}</p>
-          </Reveal>
-          <div className="divide-y divide-border/60">
-            {t.investor.cooperationModels.map((model, i) => {
-              const Icon = icons[i];
-              return (
-                <Reveal key={model.title} delay={i * 0.1}>
-                  <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0">
-                    <div className="flex items-center gap-2.5">
-                      <Icon className="text-accent" size={14} />
-                      <h3 className="text-[0.85rem] font-heading font-semibold text-foreground">{model.title}</h3>
+          <div className="section-shell">
+            <Reveal>
+              <div className="section-shell-accent">
+                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.cooperationLabel}</p>
+              </div>
+            </Reveal>
+            <div className="divide-y divide-border/60 mt-4">
+              {t.investor.cooperationModels.map((model, i) => {
+                const Icon = icons[i];
+                return (
+                  <Reveal key={model.title} delay={i * 0.1}>
+                    <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0">
+                      <div className="flex items-center gap-2.5">
+                        <Icon className="text-accent" size={14} />
+                        <h3 className="text-[0.85rem] font-heading font-semibold text-foreground">{model.title}</h3>
+                      </div>
+                      <p className="text-muted-foreground text-[0.82rem] leading-[1.7]">{model.text}</p>
                     </div>
-                    <p className="text-muted-foreground text-[0.82rem] leading-[1.7]">{model.text}</p>
-                  </div>
-                </Reveal>
-              );
-            })}
+                  </Reveal>
+                );
+              })}
+            </div>
+            <Reveal delay={0.3}>
+              <p className="text-[0.72rem] text-muted-foreground mt-5 italic">{t.investor.cooperationDisclaimer}</p>
+            </Reveal>
           </div>
-          <Reveal delay={0.3}>
-            <p className="text-[0.72rem] text-muted-foreground mt-5 italic">{t.investor.cooperationDisclaimer}</p>
-          </Reveal>
         </div>
       </section>
 
       {/* Transparency */}
       <section className="py-10 md:py-14 bg-secondary/50">
         <div className="container max-w-3xl">
-          <Reveal>
-            <div className="flex items-center gap-2.5 mb-2">
-              <ShieldCheck className="text-accent" size={15} />
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase">{t.investor.transparencyLabel}</p>
-            </div>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
-              {t.investor.transparencyTitle}
-            </h2>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl">{t.investor.transparencyText}</p>
-          </Reveal>
+          <div className="section-shell" style={{ borderColor: 'hsl(var(--border) / 0.3)', background: 'hsl(var(--background) / 0.5)' }}>
+            <Reveal>
+              <div className="flex items-center gap-2.5 mb-2">
+                <ShieldCheck className="text-accent" size={15} />
+                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase">{t.investor.transparencyLabel}</p>
+              </div>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
+                {t.investor.transparencyTitle}
+              </h2>
+              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-xl">{t.investor.transparencyText}</p>
+            </Reveal>
+          </div>
         </div>
       </section>
 
       {/* Form */}
       <section className="py-10 md:py-14">
         <div className="container max-w-2xl">
-          <Reveal>
-            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.formLabel}</p>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-3 text-balance">
-              {t.investor.formTitle}
-            </h2>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.7] mb-5">{t.investor.formSubtitle}</p>
-          </Reveal>
-          <InvestorForm t={t} />
-          <Reveal delay={0.1}>
-            <p className="text-[0.72rem] text-muted-foreground mt-6 italic leading-relaxed">
-              <strong className="text-foreground">{t.investor.transparencyTitle}:</strong> {t.investor.liabilityNotice}
-            </p>
-          </Reveal>
+          <div className="section-shell">
+            <Reveal>
+              <div className="section-shell-accent">
+                <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.formLabel}</p>
+                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
+                  {t.investor.formTitle}
+                </h2>
+              </div>
+            </Reveal>
+            <p className="text-muted-foreground text-[0.85rem] leading-[1.7] mt-3 mb-5">{t.investor.formSubtitle}</p>
+            <InvestorForm t={t} />
+            <Reveal delay={0.1}>
+              <p className="text-[0.72rem] text-muted-foreground mt-6 italic leading-relaxed">
+                <strong className="text-foreground">{t.investor.transparencyTitle}:</strong> {t.investor.liabilityNotice}
+              </p>
+            </Reveal>
+          </div>
         </div>
       </section>
     </Layout>

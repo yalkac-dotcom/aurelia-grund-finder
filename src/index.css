@@ -70,3 +70,36 @@
     text-wrap: balance;
   }
 }
+
+/* ── Architectural containment system ── */
+.section-shell {
+  border: 1px solid hsl(var(--border) / 0.45);
+  padding: 2rem 2.25rem;
+}
+@media (min-width: 768px) {
+  .section-shell {
+    padding: 2.5rem 3rem;
+  }
+}
+
+.section-shell-accent {
+  border-left: 2px solid hsl(var(--accent) / 0.35);
+  padding-left: 1.5rem;
+}
+
+.section-divider {
+  width: 2.5rem;
+  height: 1px;
+  background: hsl(var(--accent) / 0.4);
+}
+
+.cta-module {
+  border: 1px solid hsl(var(--border) / 0.5);
+  background: hsl(var(--secondary) / 0.35);
+  padding: 2rem 2.25rem;
+}
+@media (min-width: 768px) {
+  .cta-module {
+    padding: 2.5rem 3rem;
+  }
+}
