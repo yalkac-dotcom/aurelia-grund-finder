@@ -209,8 +209,8 @@ const Index = () => {
 
       {/* ── 7. ABSCHLUSS CTA ── */}
       <section className="py-10 md:py-14">
-        <div className="container max-w-xl text-center">
-          <div className="cta-module">
+        <div className="container max-w-4xl">
+          <div className="cta-module text-center">
             <Reveal>
               <div className="section-divider mx-auto mb-5" />
             </Reveal>
@@ -218,24 +218,24 @@ const Index = () => {
               <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
                 {t.landing.ctaLabel}
               </p>
-              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-3 text-balance">
+              <h2 className="text-[1.35rem] md:text-[1.65rem] font-heading font-semibold text-foreground leading-[1.2] mb-3 text-balance">
                 {t.landing.ctaTitle}
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.7] mb-5">
+              <p className="text-muted-foreground text-[0.9rem] leading-[1.7] mb-5 max-w-xl mx-auto">
                 {t.landing.ctaText}
               </p>
             </Reveal>
             <Reveal delay={0.3}>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-[10px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300"
+                className="inline-flex items-center gap-2 bg-accent text-white px-6 py-2.5 text-[10.5px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300"
               >
                 {t.landing.ctaButton}
-                <ArrowRight size={11} />
+                <ArrowRight size={12} />
               </Link>
-              <p className="text-muted-foreground/70 text-[9px] mt-2">{t.common.initialAssessmentNote}</p>
+              <p className="text-muted-foreground/70 text-[10px] mt-2.5">{t.common.initialAssessmentNote}</p>
             </Reveal>
           </div>
         </div>
