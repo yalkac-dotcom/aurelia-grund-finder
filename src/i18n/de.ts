@@ -57,6 +57,7 @@ const de: Translations = {
     languageAria: "Sprache wählen",
     navigationOpenAria: "Navigation öffnen",
     scrollDownAria: "Weiter scrollen",
+    scrollTopAria: "Nach oben scrollen",
     heroMeta: "Persönlich · Diskret · Klar eingeordnet",
     initialAssessmentNote: "Keine Verpflichtung · Persönliche Rückmeldung nach erster Prüfung",
   },

@@ -56,6 +56,7 @@ const it: Translations = {
     languageAria: "Scegli lingua",
     navigationOpenAria: "Apri navigazione",
     scrollDownAria: "Scorri verso il basso",
+    scrollTopAria: "Torna in alto",
     heroMeta: "Personale · Discreto · Valutato con chiarezza",
     initialAssessmentNote: "Senza impegno · Risposta personale dopo la prima verifica",
   },

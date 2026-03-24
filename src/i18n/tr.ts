@@ -56,6 +56,7 @@ const tr: Translations = {
     languageAria: "Dil seç",
     navigationOpenAria: "Navigasyonu aç",
     scrollDownAria: "Aşağı kaydır",
+    scrollTopAria: "Yukarı kaydır",
     heroMeta: "Kişisel · Gizli · Net şekilde değerlendirilmiş",
     initialAssessmentNote: "Bağlayıcılık yok · İlk inceleme sonrası kişisel geri dönüş",
   },
