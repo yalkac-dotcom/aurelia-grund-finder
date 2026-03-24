@@ -16,18 +16,18 @@ const KfwPage = () => {
 
   return (
     <Layout>
-      <section className="relative h-[38vh] min-h-[280px] flex items-end">
+      <section className="relative h-[32vh] min-h-[240px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroImg} alt={t.tax.kfwTitle} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
-        <div className="relative container pb-10 md:pb-14">
+        <div className="relative container pb-8 md:pb-10">
           <Reveal>
             <div className="flex items-center gap-3 mb-3">
               <Landmark className="text-accent" size={16} />
-              <span className="text-white/80 font-sans text-[11px] font-medium tracking-[0.16em] uppercase">{t.tax.categoryFunding}</span>
+              <span className="text-white/80 font-sans text-[10px] font-medium tracking-[0.16em] uppercase">{t.tax.categoryFunding}</span>
             </div>
-            <h1 className="text-[1.85rem] md:text-[2.25rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
+            <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.tax.kfwTitle}
             </h1>
           </Reveal>
@@ -43,23 +43,23 @@ const KfwPage = () => {
         </div>
       </section>
 
-      <section className="py-14 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] font-medium tracking-[0.16em] uppercase mb-4">{t.tax.categoryFunding}</p>
-            <h2 className="text-[1.35rem] md:text-[1.85rem] font-heading font-semibold text-foreground leading-[1.2] mb-5 max-w-xl text-balance">
+            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.tax.categoryFunding}</p>
+            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
               {t.tax.kfwSectionTitle}
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-muted-foreground text-[0.9rem] leading-[1.85] max-w-xl mb-8">{t.tax.kfwIntro}</p>
+            <p className="text-muted-foreground text-[0.85rem] leading-[1.85] max-w-xl mb-5">{t.tax.kfwIntro}</p>
           </Reveal>
           <div className="divide-y divide-border/60">
             {t.tax.kfwSections.map((s, i) => (
               <Reveal key={s.heading} delay={i * 0.08}>
-                <div className="grid md:grid-cols-[1fr_2fr] gap-2 md:gap-10 py-7 first:pt-0 last:pb-0">
-                  <h3 className="text-[0.9rem] font-heading font-semibold text-foreground">{s.heading}</h3>
-                  <p className="text-muted-foreground text-[0.85rem] leading-[1.75]">{s.text}</p>
+                <div className="grid md:grid-cols-[1fr_2fr] gap-2 md:gap-8 py-5 first:pt-0 last:pb-0">
+                  <h3 className="text-[0.85rem] font-heading font-semibold text-foreground">{s.heading}</h3>
+                  <p className="text-muted-foreground text-[0.82rem] leading-[1.75]">{s.text}</p>
                 </div>
               </Reveal>
             ))}
@@ -67,13 +67,13 @@ const KfwPage = () => {
         </div>
       </section>
 
-      <section className="py-14 md:py-20 bg-secondary/50">
+      <section className="py-10 md:py-14 bg-secondary/50">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] font-medium tracking-[0.16em] uppercase mb-4">{t.tax.furtherLinks}</p>
-            <div className="flex flex-wrap gap-4 mb-6">
+            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.tax.furtherLinks}</p>
+            <div className="flex flex-wrap gap-4 mb-4">
               {links.map((link) => (
-                <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[0.83rem] text-accent hover:text-accent/80 transition-colors">
+                <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[0.8rem] text-accent hover:text-accent/80 transition-colors">
                   <ExternalLink size={11} />
                   {link.label}
                 </a>
