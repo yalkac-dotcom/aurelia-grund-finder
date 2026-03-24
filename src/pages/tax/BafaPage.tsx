@@ -16,25 +16,25 @@ const BafaPage = () => {
 
   return (
     <Layout>
-      <section className="relative h-[45vh] min-h-[320px] flex items-end">
+      <section className="relative h-[38vh] min-h-[280px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroImg} alt={t.tax.bafaTitle} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
-        <div className="relative container pb-14 md:pb-18">
+        <div className="relative container pb-10 md:pb-14">
           <Reveal>
-            <div className="flex items-center gap-3 mb-4">
-              <Banknote className="text-accent" size={18} />
+            <div className="flex items-center gap-3 mb-3">
+              <Banknote className="text-accent" size={16} />
               <span className="text-white/80 font-sans text-[11px] font-medium tracking-[0.16em] uppercase">{t.tax.categoryFunding}</span>
             </div>
-            <h1 className="text-[2rem] md:text-[2.5rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
+            <h1 className="text-[1.85rem] md:text-[2.25rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.tax.bafaTitle}
             </h1>
           </Reveal>
         </div>
       </section>
 
-      <section className="py-6">
+      <section className="py-4">
         <div className="container max-w-3xl">
           <Link to="/steuervorteile" className="inline-flex items-center gap-2 text-[0.8rem] text-accent hover:text-accent/80 transition-colors">
             <ArrowLeft size={13} />
@@ -43,23 +43,23 @@ const BafaPage = () => {
         </div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-14 md:py-20">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] font-medium tracking-[0.16em] uppercase mb-6">{t.tax.categoryFunding}</p>
-            <h2 className="text-[1.5rem] md:text-[2.15rem] font-heading font-semibold text-foreground leading-[1.2] mb-8 max-w-xl text-balance">
+            <p className="text-accent font-sans text-[11px] font-medium tracking-[0.16em] uppercase mb-4">{t.tax.categoryFunding}</p>
+            <h2 className="text-[1.35rem] md:text-[1.85rem] font-heading font-semibold text-foreground leading-[1.2] mb-5 max-w-xl text-balance">
               {t.tax.bafaSectionTitle}
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-muted-foreground text-[0.95rem] leading-[1.95] max-w-xl mb-12">{t.tax.bafaIntro}</p>
+            <p className="text-muted-foreground text-[0.9rem] leading-[1.85] max-w-xl mb-8">{t.tax.bafaIntro}</p>
           </Reveal>
           <div className="divide-y divide-border/60">
             {t.tax.bafaSections.map((s, i) => (
               <Reveal key={s.heading} delay={i * 0.08}>
-                <div className="grid md:grid-cols-[1fr_2fr] gap-3 md:gap-12 py-10 first:pt-0 last:pb-0">
-                  <h3 className="text-[0.95rem] font-heading font-semibold text-foreground">{s.heading}</h3>
-                  <p className="text-muted-foreground text-[0.88rem] leading-[1.85]">{s.text}</p>
+                <div className="grid md:grid-cols-[1fr_2fr] gap-2 md:gap-10 py-7 first:pt-0 last:pb-0">
+                  <h3 className="text-[0.9rem] font-heading font-semibold text-foreground">{s.heading}</h3>
+                  <p className="text-muted-foreground text-[0.85rem] leading-[1.75]">{s.text}</p>
                 </div>
               </Reveal>
             ))}
@@ -67,14 +67,14 @@ const BafaPage = () => {
         </div>
       </section>
 
-      <section className="py-20 md:py-28 bg-secondary/50">
+      <section className="py-14 md:py-20 bg-secondary/50">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-accent font-sans text-[11px] font-medium tracking-[0.16em] uppercase mb-6">{t.tax.furtherLinks}</p>
-            <div className="flex flex-wrap gap-5 mb-8">
+            <p className="text-accent font-sans text-[11px] font-medium tracking-[0.16em] uppercase mb-4">{t.tax.furtherLinks}</p>
+            <div className="flex flex-wrap gap-4 mb-6">
               {links.map((link) => (
-                <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[0.85rem] text-accent hover:text-accent/80 transition-colors">
-                  <ExternalLink size={12} />
+                <a key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[0.83rem] text-accent hover:text-accent/80 transition-colors">
+                  <ExternalLink size={11} />
                   {link.label}
                 </a>
               ))}
@@ -82,7 +82,7 @@ const BafaPage = () => {
             <p className="text-[0.75rem] text-muted-foreground italic leading-relaxed">{t.tax.taxDisclaimer}</p>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-[0.75rem] text-muted-foreground italic leading-relaxed mt-6">{t.tax.disclaimer}</p>
+            <p className="text-[0.75rem] text-muted-foreground italic leading-relaxed mt-4">{t.tax.disclaimer}</p>
           </Reveal>
         </div>
       </section>

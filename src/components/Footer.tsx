@@ -16,18 +16,18 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#16181A]">
-      <div className="container py-16 md:py-20">
-        <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-12 md:gap-10">
+      <div className="container py-12 md:py-16">
+        <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-10 md:gap-8">
           {/* Left — Logo + Claim */}
           <div>
-            <Link to="/" className="inline-block mb-5">
+            <Link to="/" className="inline-block mb-4">
               <img
                 src={logoImg}
                 alt="Aurelia Grundbesitz GmbH"
-                className="h-9 w-auto object-contain brightness-0 invert"
+                className="h-8 w-auto object-contain brightness-0 invert"
               />
             </Link>
-            <p className="text-[#E5E5E5] text-[13px] leading-[1.8] max-w-xs mb-3">
+            <p className="text-[#E5E5E5] text-[12px] leading-[1.75] max-w-xs mb-2">
               {t.footer.brandLine}
             </p>
             <p className="text-[#9A9A9A] text-[11px] tracking-wide">
@@ -37,10 +37,10 @@ const Footer = () => {
 
           {/* Center — Navigation */}
           <div>
-            <h4 className="text-[10px] font-sans uppercase tracking-[0.2em] text-[#F5F5F5] mb-5">
+            <h4 className="text-[10px] font-sans uppercase tracking-[0.2em] text-[#F5F5F5] mb-4">
               {t.footer.navigation}
             </h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
@@ -56,10 +56,10 @@ const Footer = () => {
 
           {/* Right — Contact */}
           <div>
-            <h4 className="text-[10px] font-sans uppercase tracking-[0.2em] text-[#F5F5F5] mb-5">
+            <h4 className="text-[10px] font-sans uppercase tracking-[0.2em] text-[#F5F5F5] mb-4">
               {t.footer.contact}
             </h4>
-            <address className="not-italic text-[#B8B8B8] text-[12px] leading-[1.9] space-y-0.5">
+            <address className="not-italic text-[#B8B8B8] text-[12px] leading-[1.8] space-y-0.5">
               <p className="text-[#F5F5F5] font-medium">Aurelia Grundbesitz GmbH</p>
               <p>Grevenbroicher Weg 2</p>
               <p>40547 Düsseldorf</p>
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/[0.10] mt-14 pt-6">
+        <div className="border-t border-white/[0.10] mt-10 pt-5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-3">
             <p className="text-[#9A9A9A] text-[10px] order-2 md:order-1">
               © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
@@ -111,7 +111,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="text-[#8A8A8A] text-[9px] mt-5 text-center leading-relaxed max-w-2xl mx-auto">
+          <p className="text-[#8A8A8A] text-[9px] mt-4 text-center leading-relaxed max-w-2xl mx-auto">
             {t.footer.disclaimer}
           </p>
         </div>
