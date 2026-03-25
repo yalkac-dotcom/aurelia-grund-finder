@@ -129,9 +129,9 @@ const tr: Translations = {
       { title: "Gizlilik", text: "Gizlilik günlük çalışma anlayışımızın parçasıdır." },
       { title: "Perspektif", text: "Kararları uzun vadeli gelişimi gözeterek alırız." },
     ],
-    projectsLabel: "Yatırım odağı",
+    projectsLabel: "Konum odağı",
     projectsTitle: "Özü olan lokasyonlar",
-    projectsText: "Sağlam temelleri ve anlaşılır gelişim potansiyelini birleştiren Almanya'daki lokasyonlara odaklanıyoruz.",
+    projectsText: "Almanya'da öz, talep ve gelişim potansiyelini birleştiren lokasyonlara odaklanıyoruz. Bizim için belirleyici olan yalnızca ilk izlenim değil, bir konumun uzun vadeli taşıyıcılığıdır.",
     stats: [
       { value: "Seçici", label: "Dikkatle incelenen projeler" },
       { value: "Uzun vadeli", label: "Sürdürülebilir yapılarda düşünürüz" },
