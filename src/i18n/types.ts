@@ -300,6 +300,7 @@ export const languageNames: Record<Language, string> = {
   it: "Italiano",
   es: "Español",
   tr: "Türkçe",
+  nl: "Nederlands",
 };
 
 export const languageCodes: Language[] = ["de", "en", "it", "es", "tr"];
