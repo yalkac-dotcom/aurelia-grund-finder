@@ -78,7 +78,7 @@ const tr: Translations = {
     strategySubtitle: "Zaman baskısı altında veya karmaşık durumlarla satılan gayrimenkullere odaklanıyoruz. Potansiyele keskin bir bakışla, özel konseptler geliştiriyoruz.",
     ourServices: "Hizmetlerimiz",
     locationTitle: "Almanya odağı",
-    locationText: "Almanya genelinde değer istikrarlı lokasyonlara yatırım yapıyoruz – sürdürülebilir gelişim potansiyeli olan bölgelere özel önem vererek.",
+    locationText: "Almanya'da öz, talep ve gelişim potansiyelini birleştiren lokasyonlara odaklanıyoruz. Bizim için belirleyici olan yalnızca ilk izlenim değil, bir konumun uzun vadeli taşıyıcılığıdır.",
     contactCta: "İletişime geçin",
   },
   landing: {
