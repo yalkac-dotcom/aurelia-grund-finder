@@ -85,9 +85,9 @@ const nl: Translations = {
   landing: {
     heroLabel: "Aurelia Grundbesitz",
     heroSubtitle: "Wij beoordelen, verwerven en ontwikkelen vastgoed uit bijzondere situaties — met rust, ervaring en een scherp oog voor economisch verantwoorde oplossingen.",
-    heroCta: "Gratis waardebepaling aanvragen",
-    heroCtaSecondary: "Onze projecten",
-    trustLine: "Eigenaargestuurd · meer dan 30 jaar ervaring · gestructureerde besluitvorming",
+    heroCta: "Contact opnemen",
+    heroCtaSecondary: "Meer over Aurelia",
+    trustLine: "Eigenaargestuurd · meer dan 30 jaar ervaring · gestructureerde werkwijze",
     problemLabel: "De uitgangssituatie",
     problemTitle: "Waarom veel interessant vastgoed nooit openbaar wordt aangeboden.",
     problemPoints: [
