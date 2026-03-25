@@ -246,7 +246,7 @@ const en: Translations = {
     benefitColumn: "Benefit for Owners",
     glossarTitle: "Glossary",
     glossarDesc: "Key terms related to tax benefits and subsidies in the property sector.",
-    disclaimer: "Tax implications depend heavily on individual circumstances. The information presented here does not replace individual advice from a tax adviser. Qualified tax advice is essential before any investment decision.",
+    disclaimer: "Tax implications depend heavily on individual circumstances. The information presented here does not replace individual advice from a tax adviser. Qualified tax advice is essential before any property-related decision.",
     externalLinksDisclaimer: "Disclaimer for external links: This website contains links to third-party websites (external links). These websites are the responsibility of their respective operators. When the links were first created, the external content was checked for possible legal violations. No legal violations were apparent at the time. Permanent monitoring of the linked pages is not reasonable without concrete evidence of a legal violation. Upon becoming aware of legal violations, such external links will be removed immediately.",
     backToOverview: "Back to overview",
     furtherLinks: "Further Links",
