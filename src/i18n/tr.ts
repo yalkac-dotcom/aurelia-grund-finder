@@ -141,13 +141,13 @@ const tr: Translations = {
     ctaTitle: "Gayrimenkulünüz veya talebiniz hakkında bizimle konuşun.",
     ctaText: "Kişisel, gizli ve bağlayıcı olmadan. Dinler, dikkatle inceler ve net bir ilk değerlendirme ile geri döneriz.",
     ctaButton: "İlk görüşmeyi planla",
-    trustStatsLabel: "Deneyimle kazanılan güven",
+    trustStatsLabel: "Temelimiz",
     trustStatsItems: [
       { value: "30+", label: "Gayrimenkul pazarında deneyim yılı" },
-      { value: "87+", label: "Başarıyla geliştirilen gayrimenkul" },
-      { value: "50+", label: "Memnun yatırımcı ve iş ortağı" },
+      { value: "Sahip yönetimi", label: "Kişisel sorumluluk" },
+      { value: "Almanya", label: "Seçilmiş lokasyonlara odak" },
     ],
-    heroMetaLine: "30 yılı aşkın deneyim · 87+ geliştirilen gayrimenkul",
+    heroMetaLine: "30 yılı aşkın deneyim · Sahipleri tarafından yönetilir · Almanya merkezli",
     referencesLabel: "Seçilmiş projeler",
     referencesTitle: "Uygulamadan referanslar",
     referenceProjects: [
