@@ -141,6 +141,22 @@ const tr: Translations = {
     ctaTitle: "Gayrimenkulünüz veya talebiniz hakkında bizimle konuşun.",
     ctaText: "Kişisel, gizli ve bağlayıcı olmadan. Dinler, dikkatle inceler ve net bir ilk değerlendirme ile geri döneriz.",
     ctaButton: "İlk görüşmeyi planla",
+    trustStatsLabel: "Deneyimle kazanılan güven",
+    trustStatsItems: [
+      { value: "30+", label: "Gayrimenkul pazarında deneyim yılı" },
+      { value: "87+", label: "Başarıyla geliştirilen gayrimenkul" },
+      { value: "50+", label: "Memnun yatırımcı ve iş ortağı" },
+    ],
+    heroMetaLine: "30 yılı aşkın deneyim · 87+ geliştirilen gayrimenkul",
+    referencesLabel: "Seçilmiş projeler",
+    referencesTitle: "Uygulamadan referanslar",
+    referenceProjects: [
+      { location: "Düsseldorf-Oberkassel", year: "2021", type: "Miras tasfiyesinden çok aileli konut", before: "Boş, önemli ölçüde tadilat ihtiyacı, belirsiz mülkiyet ilişkileri", after: "Tamamen yenilenmiş, 8 konut birimi, uzun vadeli kiralanmış", result: "+%38 geliştirme sonrası değer artışı" },
+      { location: "Essen-Rüttenscheid", year: "2022", type: "Cebri icra ihalesi kaynaklı karma kullanımlı bina", before: "Kısmen dolu, yapısal kusurlar, karmaşık kiracı yapısı", after: "Kapsamlı yenileme, yeniden konumlandırma, istikrarlı kiracı yapısı", result: "+%42 18 ay sonra değer artışı" },
+      { location: "Köln-Ehrenfeld", year: "2023", type: "İflas işlemlerinden gelir binası", before: "Yönetim kaos, kira gecikmeleri, açık hukuki sorunlar", after: "Hukuken düzenlenmiş, modernize edilmiş, tamamen kiralanmış", result: "+%29 değer artışı, süregelen verim optimize edildi" },
+    ],
+    refBeforeLabel: "Başlangıç durumu",
+    refAfterLabel: "Sonuç",
   },
   about: {
     heroTitle: "Hakkımızda",

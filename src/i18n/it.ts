@@ -141,6 +141,22 @@ const it: Translations = {
     ctaTitle: "Parliamo del vostro immobile o della vostra richiesta.",
     ctaText: "Personale, discreto e senza impegno. Ascoltiamo, analizziamo con attenzione e torniamo con una prima valutazione chiara.",
     ctaButton: "Fissare un primo colloquio",
+    trustStatsLabel: "Fiducia attraverso l'esperienza",
+    trustStatsItems: [
+      { value: "30+", label: "Anni di esperienza nel settore immobiliare" },
+      { value: "87+", label: "Immobili sviluppati con successo" },
+      { value: "50+", label: "Investitori e partner soddisfatti" },
+    ],
+    heroMetaLine: "Oltre 30 anni di esperienza · 87+ immobili sviluppati",
+    referencesLabel: "Progetti selezionati",
+    referencesTitle: "Referenze dalla pratica",
+    referenceProjects: [
+      { location: "Düsseldorf-Oberkassel", year: "2021", type: "Casa plurifamiliare da successione", before: "Vuoto, notevole arretrato di ristrutturazione, rapporti di proprietà irrisolti", after: "Completamente ristrutturato, 8 unità abitative, affitto a lungo termine", result: "+38% aumento di valore dopo lo sviluppo" },
+      { location: "Essen-Rüttenscheid", year: "2022", type: "Edificio misto da asta giudiziaria", before: "Parzialmente occupato, difetti strutturali, struttura locativa complessa", after: "Ristrutturazione profonda, riposizionamento, struttura locativa stabile", result: "+42% aumento di valore in 18 mesi" },
+      { location: "Köln-Ehrenfeld", year: "2023", type: "Immobile da procedura di insolvenza", before: "Caos amministrativo, arretrati sugli affitti, questioni legali aperte", after: "Risanato giuridicamente, modernizzato, completamente affittato", result: "+29% aumento di valore, rendimento ottimizzato" },
+    ],
+    refBeforeLabel: "Situazione iniziale",
+    refAfterLabel: "Risultato",
   },
   about: {
     heroTitle: "Chi siamo",
