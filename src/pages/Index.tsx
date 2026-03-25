@@ -4,7 +4,8 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
-import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, MapPin, Calendar } from "lucide-react";
+import { ArrowRight, AlertTriangle, CheckCircle, MapPin, Calendar } from "lucide-react";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
@@ -55,17 +56,7 @@ const Index = () => {
             </p>
           </div>
 
-          <button
-            onClick={() => {
-              const hero = document.getElementById('hero');
-              const next = hero?.nextElementSibling as HTMLElement | null;
-              next?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="absolute left-1/2 -translate-x-1/2 bottom-4 h-7 w-7 flex items-center justify-center rounded-full border border-white/40 bg-black/20 text-white/85 hover:border-white/55 hover:bg-black/30 transition-all duration-300"
-            aria-label={t.common.scrollDownAria}
-          >
-            <ChevronDown size={14} />
-          </button>
+          <HeroScrollIndicator />
         </div>
       </section>
 
