@@ -18,6 +18,7 @@ export interface Translations {
     disclaimer: string;
     brandLine: string;
     subline: string;
+    ivdMembership: string;
   };
   hero: {
     slogan: string;
