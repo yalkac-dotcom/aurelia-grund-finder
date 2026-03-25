@@ -7,8 +7,6 @@ import trustImg from "@/assets/section-trust.jpg";
 import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, MapPin, Calendar } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const trustIcons = [Clock, Building2, Users];
-
 const Index = () => {
   const { t } = useLanguage();
 
