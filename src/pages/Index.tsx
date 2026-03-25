@@ -4,7 +4,8 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
-import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, MapPin, Calendar } from "lucide-react";
+import { ArrowRight, AlertTriangle, CheckCircle, MapPin, Calendar } from "lucide-react";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
