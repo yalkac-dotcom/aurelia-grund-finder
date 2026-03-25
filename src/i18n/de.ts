@@ -235,7 +235,7 @@ const de: Translations = {
   },
   tax: {
     heroTitle: "Steuervorteile und Fördermöglichkeiten",
-    introTitle: "Wichtige Themen für Investoren und Eigentümer",
+    introTitle: "Wichtige Themen für Eigentümer und Vermieter",
     introSubtitle: "Je nach Objekt, Nutzung und Maßnahme können steuerliche Aspekte und staatliche Förderprogramme eine wichtige Rolle spielen. Die konkrete Wirkung hängt immer vom Einzelfall ab.",
     categoryTax: "Steuern",
     categoryFunding: "Förderung",
