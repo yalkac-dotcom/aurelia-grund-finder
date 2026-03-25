@@ -38,7 +38,7 @@ const ScrollToTop = () => {
     <button
       onClick={handleClick}
       aria-label={atBottom ? t.common.scrollTopAria : t.common.scrollDownAria}
-      className={`fixed bottom-24 right-3 md:bottom-8 md:right-8 z-40 w-9 h-9 md:w-11 md:h-11 flex items-center justify-center rounded-full border border-border/30 md:border-transparent bg-background/80 md:bg-primary text-foreground md:text-primary-foreground backdrop-blur-sm md:backdrop-blur-none shadow-sm md:shadow-[0_4px_16px_-3px_rgba(0,0,0,0.25)] transition-all duration-300 active:scale-[0.93] hover:bg-accent hover:text-white hover:shadow-[0_6px_24px_-4px_rgba(0,0,0,0.3)] ${
+      className={`fixed bottom-20 right-3 md:bottom-8 md:right-8 z-40 w-8 h-8 md:w-11 md:h-11 flex items-center justify-center rounded-full border border-white/15 md:border-transparent bg-[#16181A]/70 md:bg-primary text-white/70 md:text-primary-foreground backdrop-blur-md md:backdrop-blur-none shadow-none md:shadow-[0_4px_16px_-3px_rgba(0,0,0,0.25)] transition-all duration-300 active:scale-[0.93] hover:bg-accent hover:text-white hover:shadow-[0_6px_24px_-4px_rgba(0,0,0,0.3)] ${
         visible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-4 pointer-events-none"
