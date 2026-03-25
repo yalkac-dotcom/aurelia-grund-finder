@@ -43,7 +43,7 @@ const de: Translations = {
     callbackRequest: "Ich wünsche einen telefonischen Rückruf.",
     personalContact: "Persönlicher Kontakt",
     ourTeam: "Unsere freundlichen Mitarbeiter",
-    teamDescription: "Unser erfahrenes Team steht Ihnen für alle Fragen rund um Immobilien und Kapitalanlagen zur Verfügung – persönlich, kompetent und diskret.",
+    teamDescription: "Unser erfahrenes Team steht Ihnen für alle Fragen rund um Immobilien zur Verfügung – persönlich, kompetent und diskret.",
     availability: "Erreichbarkeit",
     monFri: "Montag – Freitag",
     saturday: "Samstag",
