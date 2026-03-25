@@ -42,7 +42,7 @@ const App = () => (
               <Route path="/steuervorteile/bafa" element={<BafaPage />} />
               <Route path="/steuervorteile/glossar" element={<GlossarPage />} />
               <Route path="/kontakt" element={<Contact />} />
-              <Route path="/investoren" element={<Investors />} />
+              
               <Route path="/datenschutz" element={<Privacy />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="*" element={<NotFound />} />
