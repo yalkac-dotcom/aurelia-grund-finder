@@ -16,36 +16,36 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#16181A] border-t border-white/10">
-      <div className="container py-8 md:py-12">
-        <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-6 md:gap-6">
+      <div className="container py-6 md:py-12">
+        <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-5 md:gap-6">
           {/* Left — Logo + Claim */}
           <div>
-            <Link to="/" className="inline-block mb-3">
+            <Link to="/" className="inline-block mb-2.5 md:mb-3">
               <img
                 src={logoImg}
                 alt="Aurelia Grundbesitz GmbH"
-                className="h-7 w-auto object-contain brightness-0 invert"
+                className="h-6 md:h-7 w-auto object-contain brightness-0 invert"
               />
             </Link>
-            <p className="text-white text-xs leading-[1.7] max-w-xs mb-1.5">
+            <p className="text-white/90 text-[11px] md:text-xs leading-[1.65] md:leading-[1.7] max-w-xs mb-1">
               {t.footer.brandLine}
             </p>
-            <p className="text-white/85 text-xs tracking-wide">
+            <p className="text-white/60 text-[10px] md:text-xs tracking-wide">
               {t.footer.subline}
             </p>
           </div>
 
           {/* Center — Navigation */}
           <div>
-            <h4 className="text-xs font-sans uppercase tracking-[0.2em] text-white mb-3">
+            <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
               {t.footer.navigation}
             </h4>
-            <ul className="space-y-1.5">
+            <ul className="space-y-1 md:space-y-1.5">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="text-white/90 text-xs hover:text-accent transition-colors duration-200"
+                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
                   >
                     {item.label}
                   </Link>
@@ -56,11 +56,11 @@ const Footer = () => {
 
           {/* Right — Contact */}
           <div>
-            <h4 className="text-xs font-sans uppercase tracking-[0.2em] text-white mb-3">
+            <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
               {t.footer.contact}
             </h4>
-            <address className="not-italic text-white/90 text-xs leading-[1.75] space-y-0.5">
-              <p className="text-white font-medium">Aurelia Grundbesitz GmbH</p>
+            <address className="not-italic text-white/80 text-[11px] md:text-xs leading-[1.7] md:leading-[1.75] space-y-0.5">
+              <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
               <p>Grevenbroicher Weg 2</p>
               <p>40547 Düsseldorf</p>
               <p>{t.common.country}</p>
@@ -69,8 +69,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/20 mt-5 pt-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-2">
+        <div className="border-t border-white/10 md:border-white/20 mt-4 md:mt-5 pt-3 md:pt-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-1.5 md:gap-2">
             <p className="text-white/60 text-[10px] md:text-xs order-2 md:order-1">
               © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
             </p>
@@ -111,7 +111,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="text-white/50 text-[10px] md:text-xs mt-3 text-center leading-relaxed max-w-2xl mx-auto">
+          <p className="text-white/40 text-[9px] md:text-xs mt-2.5 md:mt-3 text-center leading-relaxed max-w-2xl mx-auto">
             {t.footer.disclaimer}
           </p>
         </div>

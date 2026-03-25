@@ -20,9 +20,9 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/60">
-      <div className="container flex items-center justify-between h-16 md:h-[72px]">
+      <div className="container flex items-center justify-between h-14 md:h-[72px]">
         <Link to="/" className="flex items-center">
-          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-10 md:h-11 w-auto object-contain" />
+          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-8 md:h-11 w-auto object-contain" />
         </Link>
 
         <div className="hidden md:flex items-baseline gap-7">
@@ -45,27 +45,28 @@ const Header = () => {
           <LanguageSwitcher />
         </div>
 
-        <div className="md:hidden flex items-center gap-2">
+        <div className="md:hidden flex items-center gap-3">
           <LanguageSwitcher />
+          <div className="w-px h-4 bg-border/40" />
           <button
-            className="p-2 text-foreground/80"
+            className="p-1.5 text-foreground/70"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={t.common.navigationOpenAria}
           >
-            {mobileOpen ? <X size={18} /> : <Menu size={18} />}
+            {mobileOpen ? <X size={16} /> : <Menu size={16} />}
           </button>
         </div>
       </div>
 
       {mobileOpen && (
         <nav className="md:hidden bg-background border-t border-border/40">
-          <div className="py-2">
+          <div className="pt-4 pb-2 px-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setMobileOpen(false)}
-                className={`block px-6 py-3 text-[11px] tracking-[0.12em] uppercase transition-colors ${
+                className={`block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors ${
                   location.pathname === item.path
                     ? "text-foreground font-medium"
                     : "text-muted-foreground"
@@ -75,18 +76,18 @@ const Header = () => {
               </Link>
             ))}
           </div>
-          <div className="border-t border-border/30 px-6 py-3 flex items-center gap-3">
+          <div className="border-t border-border/20 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">
             <Link
               to="/impressum"
               onClick={() => setMobileOpen(false)}
-              className="text-muted-foreground/60 text-[10px] tracking-wide"
+              className="text-muted-foreground/50 text-[10px] tracking-[0.08em]"
             >
               {t.footer.imprint}
             </Link>
             <Link
               to="/datenschutz"
               onClick={() => setMobileOpen(false)}
-              className="text-muted-foreground/60 text-[10px] tracking-wide"
+              className="text-muted-foreground/50 text-[10px] tracking-[0.08em]"
             >
               {t.footer.privacy}
             </Link>
