@@ -22,10 +22,10 @@ const nl: Translations = {
     ivdMembership: "Lid van de IVD (Duitse vastgoedvereniging)",
   },
   hero: {
-    slogan: "Waarde herkennen. Kansen benutten. Resultaten realiseren.",
+    slogan: "Vastgoed met substantie — discreet getoetst, helder ontwikkeld, op de lange termijn gedacht.",
     subtitle:
-      "Wij richten ons op vastgoed uit executieveilingen, nalatenschappen en insolventies. Elke situatie wordt zorgvuldig beoordeeld, zodat economisch verantwoorde en duurzame oplossingen ontstaan.",
-    cta: "Aankoopaanvraag indienen",
+      "Aurelia Grundbesitz ontwikkelt vastgoed uit bijzondere situaties met rust, ervaring en een scherp oog voor economisch verantwoorde oplossingen.",
+    cta: "Contact opnemen",
     ctaSecondary: "Meer over Aurelia",
   },
   common: {
