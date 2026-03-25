@@ -79,7 +79,7 @@ const de: Translations = {
     strategySubtitle: "Wir konzentrieren uns auf Immobilien, die unter Zeitdruck, in unübersichtlichen Situationen oder außerhalb des klassischen Marktes angeboten werden. Entscheidend ist für uns nicht die schnelle Wirkung, sondern die belastbare Grundlage: Substanz, Lage, Entwicklungsmöglichkeit und ein realistisch umsetzbares Konzept.",
     ourServices: "Unsere Leistungen",
     locationTitle: "Standortfokus Deutschland",
-    locationText: "Wir investieren in Deutschland mit besonderem Blick auf Standorte, die Substanz, Nachfrage und Entwicklungspotenzial miteinander verbinden. Dabei achten wir nicht nur auf Lage, sondern auch auf Vermietbarkeit, Nutzbarkeit und langfristige Werthaltigkeit.",
+    locationText: "Wir konzentrieren uns auf Standorte in Deutschland, die Substanz, Nachfrage und Entwicklungspotenzial miteinander verbinden. Entscheidend ist für uns nicht nur der erste Eindruck, sondern die langfristige Tragfähigkeit eines Standorts.",
     contactCta: "Kontakt aufnehmen",
   },
   landing: {
