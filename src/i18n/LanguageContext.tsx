@@ -53,6 +53,10 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     ogDesc?.setAttribute("content", descText);
     twDesc?.setAttribute("content", descText);
     metaDesc?.setAttribute("content", descText);
+
+    const localeMap: Record<Language, string> = { de: "de_DE", en: "en_US", it: "it_IT", es: "es_ES", tr: "tr_TR" };
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    ogLocale?.setAttribute("content", localeMap[language]);
   }, [language]);
 
   return (
