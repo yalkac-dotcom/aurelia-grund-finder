@@ -84,9 +84,9 @@ const es: Translations = {
   landing: {
     heroLabel: "Aurelia Grundbesitz",
     heroSubtitle: "Analizamos, adquirimos y desarrollamos inmuebles procedentes de situaciones especiales con serenidad, experiencia y una visión clara de soluciones económicamente sensatas.",
-    heroCta: "Concertar una primera conversación",
-    heroCtaSecondary: "Más información",
-    trustLine: "Gestionada por sus propietarios · más de 30 años de experiencia · decisiones estructuradas",
+    heroCta: "Contactar",
+    heroCtaSecondary: "Más sobre Aurelia",
+    trustLine: "Gestionada por sus propietarios · más de 30 años de experiencia · enfoque estructurado",
     problemLabel: "Punto de partida",
     problemTitle: "Por qué muchos inmuebles interesantes nunca se ofrecen públicamente.",
     problemPoints: [
