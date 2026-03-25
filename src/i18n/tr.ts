@@ -207,8 +207,8 @@ const tr: Translations = {
       ["Uygun", "Sağlam lokasyonlar, istikrarlı kiracılar", "Yüksek geliştirme potansiyeli olan gayrimenkuller"],
     ],
     experienceLabel: "Temel",
-    experienceTitle: "Deneyim stratejiyle buluşuyor",
-    experienceText: "Gayrimenkul dünyasında 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Bankalar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güçlü bir ağla çalışıyoruz.",
+    experienceTitle: "Deneyim her kararın temelidir",
+    experienceText: "Doğru strateji standart bir formülden doğmaz. Gayrimenkulden, konumdan, durumdan, talepten, gerekli çabadan ve hedeften ortaya çıkar. Bu nedenle hızlı genel çözümler yerine dikkatli incelemeye güveniyoruz.",
   },
   contact: {
     title: "İletişim",
