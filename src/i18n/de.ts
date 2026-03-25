@@ -6,7 +6,6 @@ const de: Translations = {
     about: "Über Aurelia",
     services: "Leistungen",
     taxBenefits: "Steuervorteile",
-    investors: "Für Investoren",
     contact: "Kontakt",
   },
   footer: {
