@@ -1,4 +1,4 @@
-export type Language = "de" | "en" | "it" | "es" | "tr";
+export type Language = "de" | "en" | "it" | "es" | "tr" | "nl";
 
 export interface Translations {
   nav: {
