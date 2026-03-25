@@ -170,8 +170,8 @@ const en: Translations = {
     philosophyP2: "Our aim is development with substance: economically sound, clearly structured, and free from unnecessary staging.",
     experienceLabel: "Experience",
     experienceTitle: "30+ years of experience",
-    experienceP1: "Aurelia brings together many years of experience in real estate, capital investment, project structuring, and the management of complex situations.",
-    experienceP2: "This is supported by a reliable network of banks, investors, specialist advisers, and service providers.",
+    experienceP1: "Aurelia brings together many years of experience in real estate, project structuring, and the management of complex situations.",
+    experienceP2: "This is supported by a reliable network of banks, specialist advisers, and service providers.",
     experienceP3: "This allows us not only to identify projects, but also to classify them soundly and implement them reliably.",
   },
   services: {
