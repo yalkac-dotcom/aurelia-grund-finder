@@ -65,7 +65,7 @@ const it: Translations = {
     bullets: [
       "Specializzazione in immobili da aste giudiziarie, successioni e procedure concorsuali.",
       "Due strategie chiare: mantenere in portafoglio e affittare oppure ristrutturare e vendere.",
-      "Oltre 30 anni di esperienza combinata del team in immobili e investimenti.",
+      "Oltre 30 anni di esperienza combinata del team nel settore immobiliare.",
       "Gestione discreta e strutturata dall'analisi alla consegna.",
     ],
     approachTitle: "Il nostro approccio",
