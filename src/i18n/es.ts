@@ -129,9 +129,9 @@ const es: Translations = {
       { title: "Discreción", text: "La confidencialidad forma parte de nuestra práctica diaria." },
       { title: "Perspectiva", text: "Tomamos decisiones pensando en el desarrollo a largo plazo." },
     ],
-    projectsLabel: "Foco de inversión",
+    projectsLabel: "Foco geográfico",
     projectsTitle: "Ubicaciones con sustancia",
-    projectsText: "Nos centramos en ubicaciones de Alemania que combinan fundamentos sólidos con un potencial de desarrollo comprensible.",
+    projectsText: "Nos centramos en ubicaciones de Alemania que combinan sustancia, demanda y potencial de desarrollo. Lo decisivo para nosotros no es solo la primera impresión, sino la viabilidad a largo plazo de una ubicación.",
     stats: [
       { value: "Selectivo", label: "Proyectos revisados con cuidado" },
       { value: "Largo plazo", label: "Pensamiento en estructuras sostenibles" },
