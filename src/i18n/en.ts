@@ -20,6 +20,7 @@ const en: Translations = {
     brandLine:
       "Aurelia Grundbesitz develops properties from special situations — discreetly, in a structured way, and with a clear eye for substance.",
     subline: "Discreet · Substance-focused · Long-term",
+    ivdMembership: "Member of IVD (German Real Estate Association)",
   },
   hero: {
     slogan: "Properties with substance — discreetly reviewed, clearly developed, and planned for the long term.",

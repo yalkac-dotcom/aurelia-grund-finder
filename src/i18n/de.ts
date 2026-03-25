@@ -20,6 +20,7 @@ const de: Translations = {
     brandLine:
       "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen – diskret, strukturiert und mit klarem Blick für Substanz.",
     subline: "Diskret · Substanzorientiert · Langfristig",
+    ivdMembership: "Mitglied im IVD (Immobilienverband Deutschland)",
   },
   hero: {
     slogan: "Substanz erkennen. Chancen nutzen. Werte schaffen.",

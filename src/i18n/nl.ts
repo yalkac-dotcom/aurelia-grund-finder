@@ -20,6 +20,7 @@ const nl: Translations = {
     brandLine:
       "Aurelia Grundbesitz ontwikkelt vastgoed uit bijzondere situaties — discreet, gestructureerd en met een scherp oog voor waarde.",
     subline: "Discreet · Waardegericht · Langetermijnvisie",
+    ivdMembership: "Lid van de IVD (Duitse vastgoedvereniging)",
   },
   hero: {
     slogan: "Waarde herkennen. Kansen benutten. Resultaten realiseren.",
