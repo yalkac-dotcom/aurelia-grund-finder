@@ -235,7 +235,7 @@ const it: Translations = {
   tax: {
     heroTitle: "Agevolazioni fiscali e sovvenzioni",
     introTitle: "Temi importanti per proprietari e locatori",
-    introSubtitle: "Gli investimenti immobiliari in Germania offrono numerosi vantaggi fiscali e di sovvenzione che, con una pianificazione strategica, possono generare rendimenti significativi.",
+    introSubtitle: "A seconda dell'immobile, dell'utilizzo e delle misure adottate, aspetti fiscali e programmi di sovvenzione statali possono svolgere un ruolo importante. L'impatto concreto dipende sempre dalla situazione individuale.",
     categoryTax: "Fisco",
     categoryFunding: "Sovvenzioni",
     categoryKnowledge: "Conoscenze",
