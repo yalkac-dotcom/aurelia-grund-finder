@@ -177,9 +177,9 @@ const tr: Translations = {
   services: {
     heroTitle: "Hizmetler ve stratejiler",
     introLabel: "Odak noktamız",
-    introTitle: "Yatırım stratejileri",
-    introSubtitle: "Genellikle zaman baskısı altında veya karmaşık durumlarda satılan gayrimenkullere odaklanıyoruz – örneğin cebri icralar, miras düzenlemeleri veya iflas süreçleri kapsamında.",
-    introText: "Potansiyele keskin bir bakışla özel konseptler geliştiriyoruz: kiralama durumunun stabilizasyonundan teknik ve enerji verimliliği iyileştirmelerine, piyasada tam yeniden konumlandırmaya kadar.",
+    introTitle: "Potansiyeli olan gayrimenkuller — net yapılandırılmış, anlamlı şekilde geliştirilmiş",
+    introSubtitle: "Özel durumlardan çıkan gayrimenkullerle ilgileniyor ve her nesne için ekonomik açıdan en mantıklı yolu inceliyoruz.",
+    introText: "Başlangıç durumuna bağlı olarak bu, uzun vadeli portföy oluşturma veya ardından satışla hedefli geliştirme olabilir.",
     holdTitle: "Portföyde tutma ve kiralama",
     holdItems: [
       "Zaman ufku: Uzun vadeli (yıllardan on yıllara)",
