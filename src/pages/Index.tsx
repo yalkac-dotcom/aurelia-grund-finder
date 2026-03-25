@@ -4,8 +4,41 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
-import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle } from "lucide-react";
+import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, Clock, Building2, Users, MapPin, Calendar, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+
+const trustStats = [
+  { icon: Clock, value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
+  { icon: Building2, value: "200+", label: "Erfolgreich entwickelte Objekte" },
+  { icon: Users, value: "50+", label: "Zufriedene Investoren & Partner" },
+];
+
+const referenceProjects = [
+  {
+    location: "Düsseldorf-Oberkassel",
+    year: "2021",
+    type: "Mehrfamilienhaus aus Nachlassauflösung",
+    before: "Leerstehend, erheblicher Sanierungsstau, ungeklärte Eigentumsverhältnisse",
+    after: "Vollständig saniert, 8 Wohneinheiten, langfristig vermietet",
+    result: "+38 % Wertsteigerung nach Entwicklung",
+  },
+  {
+    location: "Essen-Rüttenscheid",
+    year: "2022",
+    type: "Wohn- und Geschäftshaus aus Zwangsversteigerung",
+    before: "Teilbesetzt, bauliche Mängel, komplexe Mietstruktur",
+    after: "Kernsanierung, Neupositionierung, stabile Mieterstruktur",
+    result: "+42 % Wertsteigerung nach 18 Monaten",
+  },
+  {
+    location: "Köln-Ehrenfeld",
+    year: "2023",
+    type: "Zinshaus aus Insolvenzverfahren",
+    before: "Verwaltungschaos, Mietrückstände, offene Rechtsfragen",
+    after: "Rechtlich bereinigt, modernisiert, vollvermietet",
+    result: "+29 % Wertsteigerung, laufende Rendite optimiert",
+  },
+];
 
 const Index = () => {
   const { t } = useLanguage();
@@ -66,6 +99,34 @@ const Index = () => {
           >
             <ChevronDown size={14} />
           </button>
+        </div>
+      </section>
+
+      {/* ── 1b. TRUST STATS ── */}
+      <section className="py-10 md:py-14 border-b border-border/60">
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="section-shell-accent mb-6">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+                Vertrauen durch Erfahrung
+              </p>
+            </div>
+          </Reveal>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {trustStats.map((stat, i) => (
+              <Reveal key={i} delay={i * 0.1}>
+                <div className="border-l-2 border-accent/30 pl-5 py-3">
+                  <stat.icon className="text-accent mb-2" size={20} />
+                  <p className="text-4xl font-heading font-semibold text-foreground leading-none mb-1.5">
+                    {stat.value}
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-[1.5]">
+                    {stat.label}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -208,8 +269,55 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── 7. ABSCHLUSS CTA ── */}
+      {/* ── 7. REFERENZEN ── */}
       <section className="py-10 md:py-14">
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="section-shell-accent mb-6">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+                Ausgewählte Projekte
+              </p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                Referenzen aus der Praxis
+              </h2>
+            </div>
+          </Reveal>
+          <div className="grid gap-5">
+            {referenceProjects.map((project, i) => (
+              <Reveal key={i} delay={i * 0.1}>
+                <div className="border border-border/50 p-5 md:p-6">
+                  <div className="flex flex-wrap items-center gap-3 mb-3">
+                    <span className="inline-flex items-center gap-1.5 text-xs text-accent font-medium tracking-wide uppercase">
+                      <MapPin size={12} /> {project.location}
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
+                      <Calendar size={12} /> {project.year}
+                    </span>
+                  </div>
+                  <p className="text-sm font-heading font-semibold text-foreground mb-3">{project.type}</p>
+                  <div className="grid sm:grid-cols-2 gap-4 mb-3">
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ausgangslage</p>
+                      <p className="text-sm text-muted-foreground leading-[1.6]">{project.before}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ergebnis</p>
+                      <p className="text-sm text-foreground leading-[1.6]">{project.after}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1.5 pt-2 border-t border-border/40">
+                    <TrendingUp size={14} className="text-accent" />
+                    <p className="text-sm font-medium text-accent">{project.result}</p>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 8. ABSCHLUSS CTA ── */}
+      <section className="py-10 md:py-14 bg-secondary/50">
         <div className="container max-w-4xl">
           <div className="cta-module text-center">
             <Reveal>
@@ -231,7 +339,7 @@ const Index = () => {
             <Reveal delay={0.3}>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-accent text-white px-6 py-2.5 text-[10.5px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300"
+                className="inline-flex items-center gap-2 bg-accent text-white px-6 py-2.5 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300"
               >
                 {t.landing.ctaButton}
                 <ArrowRight size={12} />
