@@ -22,7 +22,7 @@ const de: Translations = {
     subline: "Diskret · Substanzorientiert · Langfristig",
   },
   hero: {
-    slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
+    slogan: "Substanz erkennen. Chancen nutzen. Werte schaffen.",
     subtitle:
       "Wir konzentrieren uns auf Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen. Dabei prüfen wir jede Situation sorgfältig und entwickeln Lösungen, die wirtschaftlich tragfähig und langfristig sinnvoll sind.",
     cta: "Ankaufanfrage stellen",
@@ -85,8 +85,8 @@ const de: Translations = {
   landing: {
     heroLabel: "Aurelia Grundbesitz",
     heroSubtitle: "Wir prüfen, erwerben und entwickeln Immobilien aus besonderen Situationen mit Ruhe, Erfahrung und einem klaren Blick für wirtschaftlich sinnvolle Lösungen.",
-    heroCta: "Erstgespräch vereinbaren",
-    heroCtaSecondary: "Mehr erfahren",
+    heroCta: "Immobilie kostenlos bewerten lassen",
+    heroCtaSecondary: "Unsere Erfolgsprojekte",
     trustLine: "Inhabergeführt · über 30 Jahre Erfahrung · strukturierte Entscheidungen",
     problemLabel: "Die Ausgangslage",
     problemTitle: "Warum viele interessante Immobilien nie öffentlich angeboten werden.",
