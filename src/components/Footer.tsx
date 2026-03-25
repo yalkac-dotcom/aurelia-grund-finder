@@ -16,21 +16,21 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#16181A] border-t border-white/10">
-      <div className="container py-8 md:py-12">
-        <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-6 md:gap-6">
+      <div className="container py-6 md:py-12">
+        <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-5 md:gap-6">
           {/* Left — Logo + Claim */}
           <div>
-            <Link to="/" className="inline-block mb-3">
+            <Link to="/" className="inline-block mb-2.5 md:mb-3">
               <img
                 src={logoImg}
                 alt="Aurelia Grundbesitz GmbH"
-                className="h-7 w-auto object-contain brightness-0 invert"
+                className="h-6 md:h-7 w-auto object-contain brightness-0 invert"
               />
             </Link>
-            <p className="text-white text-xs leading-[1.7] max-w-xs mb-1.5">
+            <p className="text-white/90 text-[11px] md:text-xs leading-[1.65] md:leading-[1.7] max-w-xs mb-1">
               {t.footer.brandLine}
             </p>
-            <p className="text-white/85 text-xs tracking-wide">
+            <p className="text-white/60 text-[10px] md:text-xs tracking-wide">
               {t.footer.subline}
             </p>
           </div>
