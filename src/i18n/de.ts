@@ -157,7 +157,7 @@ const de: Translations = {
       { location: "Köln-Ehrenfeld", year: "2023", type: "Immobilie aus einer besonderen Sondersituation mit unklarer Ausgangslage", before: "Verwaltungschaos, Mietrückstände, offene Rechtsfragen", after: "Einordnung der Rahmenbedingungen und Entwicklung einer realistischen Strategie", result: "Klar strukturierte Perspektive für Nutzung und Weiterentwicklung" },
     ],
     refBeforeLabel: "Ausgangslage",
-    refAfterLabel: "Ergebnis",
+    refAfterLabel: "Maßnahme",
   },
   about: {
     heroTitle: "Über Aurelia",
