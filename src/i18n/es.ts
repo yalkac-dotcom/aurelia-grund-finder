@@ -207,8 +207,8 @@ const es: Translations = {
       ["Adecuado para", "Ubicaciones sólidas, inquilinos estables", "Inmuebles con alto potencial de desarrollo"],
     ],
     experienceLabel: "Fundamento",
-    experienceTitle: "Experiencia y estrategia",
-    experienceText: "Más de 30 años de experiencia combinada en el mundo inmobiliario constituyen la base de nuestro trabajo. Operamos con una sólida red de bancos, agentes y proveedores de servicios especializados.",
+    experienceTitle: "La experiencia como base de cada decisión",
+    experienceText: "La estrategia correcta no surge de una fórmula estándar. Se deriva del inmueble, la ubicación, el estado, la demanda, el esfuerzo necesario y el objetivo. Por eso apostamos por un análisis cuidadoso en lugar de soluciones rápidas y genéricas.",
   },
   contact: {
     title: "Contacto",
