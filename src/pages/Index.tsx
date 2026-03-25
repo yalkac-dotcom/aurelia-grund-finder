@@ -46,7 +46,7 @@ const Index = () => {
                   const next = hero?.nextElementSibling as HTMLElement | null;
                   next?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="inline-flex items-center gap-2 border border-white/40 bg-black/10 backdrop-blur-sm text-white/92 px-6 py-3 text-sm font-medium tracking-[0.08em] uppercase hover:border-white/60 hover:bg-black/20 hover:text-white transition-colors duration-300"
+                className="inline-flex items-center gap-2 border border-white/40 bg-black/25 backdrop-blur-sm text-white px-6 py-3 text-sm font-medium tracking-[0.08em] uppercase hover:border-white/60 hover:bg-black/35 transition-colors duration-300"
               >
                 {t.landing.heroCtaSecondary}
               </button>
@@ -177,12 +177,12 @@ const Index = () => {
               {t.landing.trustTitle}
             </h2>
           </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-3 max-w-md mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6 max-w-lg mx-auto">
             {t.landing.trustPoints.map((stat, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className="border border-white/[0.08] py-4 px-3">
-                  <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-accent leading-none mb-1">{stat.value}</p>
-                  <p className="text-[#B0B0B0] text-xs tracking-[0.1em] uppercase">{stat.label}</p>
+                <div className="text-center">
+                  <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-accent leading-none mb-1.5">{stat.value}</p>
+                  <p className="text-[#B0B0B0] text-xs tracking-[0.1em] uppercase leading-snug">{stat.label}</p>
                 </div>
               </Reveal>
             ))}
