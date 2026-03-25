@@ -145,7 +145,7 @@ const nl: Translations = {
     trustStatsLabel: "Ons fundament",
     trustStatsItems: [
       { value: "30+", label: "Jaar ervaring in de vastgoedmarkt" },
-      { value: "Eigenaargestuurd", label: "Persoonlijke verantwoordelijkheid" },
+      { value: "Eigenaars", label: "Persoonlijke verantwoordelijkheid" },
       { value: "Duitsland", label: "Focus op geselecteerde locaties" },
     ],
     heroMetaLine: "Meer dan 30 jaar ervaring · Eigenaargestuurd · Gevestigd in Duitsland",
