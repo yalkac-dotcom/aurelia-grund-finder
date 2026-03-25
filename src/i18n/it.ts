@@ -42,7 +42,7 @@ const it: Translations = {
     callbackRequest: "Desidero essere richiamato/a telefonicamente.",
     personalContact: "Contatto personale",
     ourTeam: "Il nostro team cordiale",
-    teamDescription: "Il nostro team esperto è a vostra disposizione per tutte le domande relative a immobili e investimenti – in modo personale, competente e discreto.",
+    teamDescription: "Il nostro team esperto è a vostra disposizione per tutte le domande relative a immobili – in modo personale, competente e discreto.",
     availability: "Orari di disponibilità",
     monFri: "Lunedì – Venerdì",
     saturday: "Sabato",
