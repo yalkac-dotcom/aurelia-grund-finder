@@ -84,9 +84,9 @@ const tr: Translations = {
   landing: {
     heroLabel: "Aurelia Grundbesitz",
     heroSubtitle: "Özel durumlardan çıkan gayrimenkulleri sakinlik, deneyim ve ekonomik açıdan mantıklı çözümlere odaklanan net bir bakışla inceler, satın alır ve geliştiririz.",
-    heroCta: "İlk görüşmeyi planla",
-    heroCtaSecondary: "Daha fazla bilgi",
-    trustLine: "Sahipleri tarafından yönetilir · 30 yılı aşkın deneyim · yapılandırılmış kararlar",
+    heroCta: "İletişime geçin",
+    heroCtaSecondary: "Aurelia hakkında",
+    trustLine: "Sahipleri tarafından yönetilir · 30 yılı aşkın deneyim · yapılandırılmış yaklaşım",
     problemLabel: "Başlangıç durumu",
     problemTitle: "Neden birçok ilgi çekici gayrimenkul kamuya açık olarak sunulmaz.",
     problemPoints: [
