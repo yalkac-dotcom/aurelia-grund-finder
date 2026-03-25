@@ -16,7 +16,7 @@ const KfwPage = lazy(() => import("./pages/tax/KfwPage"));
 const BafaPage = lazy(() => import("./pages/tax/BafaPage"));
 const GlossarPage = lazy(() => import("./pages/tax/GlossarPage"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Investors = lazy(() => import("./pages/Investors"));
+
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Impressum = lazy(() => import("./pages/Impressum"));
 const NotFound = lazy(() => import("./pages/NotFound"));
