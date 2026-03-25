@@ -140,7 +140,7 @@ const tr: Translations = {
     ctaLabel: "Sonraki adım",
     ctaTitle: "Gayrimenkulünüz veya talebiniz hakkında bizimle konuşun.",
     ctaText: "Kişisel, gizli ve bağlayıcı olmadan. Dinler, dikkatle inceler ve net bir ilk değerlendirme ile geri döneriz.",
-    ctaButton: "İlk görüşmeyi planla",
+    ctaButton: "İletişime geçin",
     trustStatsLabel: "Temelimiz",
     trustStatsItems: [
       { value: "30+", label: "Gayrimenkul pazarında deneyim yılı" },
