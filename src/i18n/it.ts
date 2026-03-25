@@ -177,9 +177,9 @@ const it: Translations = {
   services: {
     heroTitle: "Servizi e strategie",
     introLabel: "Il nostro focus",
-    introTitle: "Strategie di investimento",
-    introSubtitle: "Ci concentriamo su immobili che vengono spesso venduti sotto pressione temporale o in situazioni complesse – ad esempio nell'ambito di aste giudiziarie, regolamenti successori o procedure concorsuali.",
-    introText: "Con uno sguardo attento al potenziale, sviluppiamo concept su misura: dalla stabilizzazione della situazione locativa a miglioramenti tecnici ed energetici, fino al completo riposizionamento sul mercato.",
+    introTitle: "Immobili con potenziale — strutturati con chiarezza, sviluppati con senso",
+    introSubtitle: "Ci occupiamo di immobili provenienti da situazioni particolari e valutiamo per ogni oggetto il percorso economicamente più sensato.",
+    introText: "A seconda della situazione di partenza, può trattarsi di un consolidamento a lungo termine o di uno sviluppo mirato con successiva vendita.",
     holdTitle: "Mantenere in portafoglio e affittare",
     holdItems: [
       "Orizzonte temporale: lungo termine (anni a decenni)",
