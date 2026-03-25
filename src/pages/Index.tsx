@@ -108,7 +108,7 @@ const Index = () => {
           <Reveal>
             <div className="section-shell-accent mb-6">
               <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                Vertrauen durch Erfahrung
+                {t.landing.trustStatsLabel}
               </p>
             </div>
           </Reveal>
