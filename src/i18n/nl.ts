@@ -141,7 +141,7 @@ const nl: Translations = {
     ctaLabel: "Volgende stap",
     ctaTitle: "Bespreek uw object of uw vraag met ons.",
     ctaText: "Persoonlijk, discreet en vrijblijvend. Wij luisteren, beoordelen zorgvuldig en komen terug met een heldere eerste inschatting.",
-    ctaButton: "Kennismakingsgesprek inplannen",
+    ctaButton: "Contact opnemen",
     trustStatsLabel: "Ons fundament",
     trustStatsItems: [
       { value: "30+", label: "Jaar ervaring in de vastgoedmarkt" },
