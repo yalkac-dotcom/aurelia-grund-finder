@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import logoImg from "@/assets/logo-aurelia.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { languageCodes } from "@/i18n/types";
+import { Shield } from "lucide-react";
 
 const Footer = () => {
   const { t, language, setLanguage } = useLanguage();
@@ -68,8 +69,18 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* IVD Membership Badge */}
+        <div className="border-t border-white/10 mt-8 pt-5">
+          <div className="flex items-center gap-2.5">
+            <Shield size={16} className="text-accent shrink-0" />
+            <p className="text-white/85 text-xs">
+              Mitglied im IVD (Immobilienverband Deutschland)
+            </p>
+          </div>
+        </div>
+
         {/* Bottom bar */}
-        <div className="border-t border-white/30 mt-8 pt-4">
+        <div className="border-t border-white/30 mt-5 pt-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-2.5">
             <p className="text-white/80 text-xs order-2 md:order-1">
               © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
