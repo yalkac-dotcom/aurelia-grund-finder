@@ -45,14 +45,15 @@ const Header = () => {
           <LanguageSwitcher />
         </div>
 
-        <div className="md:hidden flex items-center gap-2">
+        <div className="md:hidden flex items-center gap-3">
           <LanguageSwitcher />
+          <div className="w-px h-4 bg-border/40" />
           <button
-            className="p-2 text-foreground/80"
+            className="p-1.5 text-foreground/70"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={t.common.navigationOpenAria}
           >
-            {mobileOpen ? <X size={18} /> : <Menu size={18} />}
+            {mobileOpen ? <X size={16} /> : <Menu size={16} />}
           </button>
         </div>
       </div>
