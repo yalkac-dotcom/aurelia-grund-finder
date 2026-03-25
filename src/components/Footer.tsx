@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logoImg from "@/assets/logo-aurelia.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { languageCodes } from "@/i18n/types";
-import { Shield } from "lucide-react";
+
 
 const Footer = () => {
   const { t, language, setLanguage } = useLanguage();
@@ -65,16 +65,6 @@ const Footer = () => {
               <p>40547 Düsseldorf</p>
               <p>{t.common.country}</p>
             </address>
-          </div>
-        </div>
-
-        {/* IVD Membership Badge */}
-        <div className="border-t border-white/10 mt-8 pt-5">
-          <div className="flex items-center gap-2.5">
-            <Shield size={16} className="text-accent shrink-0" />
-            <p className="text-white/85 text-xs">
-              {t.footer.ivdMembership}
-            </p>
           </div>
         </div>
 
