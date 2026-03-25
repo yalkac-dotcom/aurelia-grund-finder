@@ -208,7 +208,7 @@ const tr: Translations = {
     ],
     experienceLabel: "Temel",
     experienceTitle: "Deneyim stratejiyle buluşuyor",
-    experienceText: "Gayrimenkul ve yatırım dünyasında 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Bankalar, yatırımcılar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güçlü bir ağla çalışıyoruz.",
+    experienceText: "Gayrimenkul dünyasında 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Bankalar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güçlü bir ağla çalışıyoruz.",
   },
   contact: {
     title: "İletişim",

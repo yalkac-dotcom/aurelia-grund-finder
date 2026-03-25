@@ -208,7 +208,7 @@ const es: Translations = {
     ],
     experienceLabel: "Fundamento",
     experienceTitle: "Experiencia y estrategia",
-    experienceText: "Más de 30 años de experiencia combinada en el mundo inmobiliario y de inversiones constituyen la base de nuestro trabajo. Operamos con una sólida red de bancos, inversores, agentes y proveedores de servicios especializados.",
+    experienceText: "Más de 30 años de experiencia combinada en el mundo inmobiliario constituyen la base de nuestro trabajo. Operamos con una sólida red de bancos, agentes y proveedores de servicios especializados.",
   },
   contact: {
     title: "Contacto",
