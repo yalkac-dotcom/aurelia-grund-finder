@@ -140,7 +140,7 @@ const es: Translations = {
     ctaLabel: "Siguiente paso",
     ctaTitle: "Hable con nosotros sobre su inmueble o su consulta.",
     ctaText: "Personal, discreto y sin compromiso. Escuchamos, revisamos con cuidado y respondemos con una primera valoración clara.",
-    ctaButton: "Concertar una primera conversación",
+    ctaButton: "Contactar",
     trustStatsLabel: "Nuestro fundamento",
     trustStatsItems: [
       { value: "30+", label: "Años de experiencia en el mercado inmobiliario" },
