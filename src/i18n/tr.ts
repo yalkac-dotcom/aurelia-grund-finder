@@ -6,7 +6,6 @@ const tr: Translations = {
     about: "Hakkımızda",
     services: "Hizmetler",
     taxBenefits: "Vergi Avantajları",
-    investors: "Yatırımcılar İçin",
     contact: "İletişim",
   },
   footer: {
