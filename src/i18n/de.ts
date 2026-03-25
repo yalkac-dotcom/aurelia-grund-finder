@@ -22,10 +22,10 @@ const de: Translations = {
     ivdMembership: "Mitglied im IVD (Immobilienverband Deutschland)",
   },
   hero: {
-    slogan: "Substanz erkennen. Chancen nutzen. Werte schaffen.",
+    slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
     subtitle:
-      "Wir konzentrieren uns auf Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen. Dabei prüfen wir jede Situation sorgfältig und entwickeln Lösungen, die wirtschaftlich tragfähig und langfristig sinnvoll sind.",
-    cta: "Ankaufanfrage stellen",
+      "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen mit Ruhe, Erfahrung und einem klaren Blick für wirtschaftlich sinnvolle Lösungen.",
+    cta: "Kontakt aufnehmen",
     ctaSecondary: "Mehr über Aurelia",
   },
   common: {
