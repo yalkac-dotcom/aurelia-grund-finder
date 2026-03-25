@@ -3,9 +3,21 @@ import { useState, useRef, useEffect, ImgHTMLAttributes } from "react";
 interface OptimizedImgProps extends ImgHTMLAttributes<HTMLImageElement> {
   /** If true, load eagerly (for above-the-fold hero images) */
   priority?: boolean;
+  /** Optional srcSet for responsive images */
+  srcSet?: string;
+  /** Optional sizes attribute for responsive images */
+  sizes?: string;
 }
 
-const OptimizedImg = ({ priority = false, className, src, alt, ...props }: OptimizedImgProps) => {
+const OptimizedImg = ({
+  priority = false,
+  className,
+  src,
+  alt,
+  srcSet,
+  sizes,
+  ...props
+}: OptimizedImgProps) => {
   const [loaded, setLoaded] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
 
@@ -17,6 +29,8 @@ const OptimizedImg = ({ priority = false, className, src, alt, ...props }: Optim
     <img
       ref={imgRef}
       src={src}
+      srcSet={srcSet}
+      sizes={sizes}
       alt={alt ?? ""}
       loading={priority ? "eager" : "lazy"}
       decoding={priority ? "sync" : "async"}
