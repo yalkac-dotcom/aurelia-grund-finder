@@ -37,15 +37,15 @@ const Footer = () => {
 
           {/* Center — Navigation */}
           <div>
-            <h4 className="text-xs font-sans uppercase tracking-[0.2em] text-white mb-3">
+            <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
               {t.footer.navigation}
             </h4>
-            <ul className="space-y-1.5">
+            <ul className="space-y-1 md:space-y-1.5">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="text-white/90 text-xs hover:text-accent transition-colors duration-200"
+                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
                   >
                     {item.label}
                   </Link>
@@ -56,11 +56,11 @@ const Footer = () => {
 
           {/* Right — Contact */}
           <div>
-            <h4 className="text-xs font-sans uppercase tracking-[0.2em] text-white mb-3">
+            <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
               {t.footer.contact}
             </h4>
-            <address className="not-italic text-white/90 text-xs leading-[1.75] space-y-0.5">
-              <p className="text-white font-medium">Aurelia Grundbesitz GmbH</p>
+            <address className="not-italic text-white/80 text-[11px] md:text-xs leading-[1.7] md:leading-[1.75] space-y-0.5">
+              <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
               <p>Grevenbroicher Weg 2</p>
               <p>40547 Düsseldorf</p>
               <p>{t.common.country}</p>
