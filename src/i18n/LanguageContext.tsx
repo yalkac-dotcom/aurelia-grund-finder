@@ -2,11 +2,12 @@ import { createContext, useContext, useState, useCallback, ReactNode, useEffect 
 import { Language, Translations } from "./types";
 import de from "./de";
 import en from "./en";
+import nl from "./nl";
 import it from "./it";
 import es from "./es";
 import tr from "./tr";
 
-const translationsMap: Record<Language, Translations> = { de, en, it, es, tr };
+const translationsMap: Record<Language, Translations> = { de, en, nl, it, es, tr };
 
 interface LanguageContextType {
   language: Language;
