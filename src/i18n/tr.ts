@@ -42,7 +42,7 @@ const tr: Translations = {
     callbackRequest: "Telefonla geri aranmak istiyorum.",
     personalContact: "Kişisel iletişim",
     ourTeam: "Güler yüzlü ekibimiz",
-    teamDescription: "Deneyimli ekibimiz gayrimenkul ve yatırımlarla ilgili tüm sorularınız için hizmetinizdedir – kişisel, yetkin ve gizlilik esasıyla.",
+    teamDescription: "Deneyimli ekibimiz gayrimenkulle ilgili tüm sorularınız için hizmetinizdedir – kişisel, yetkin ve gizlilik esasıyla.",
     availability: "Ulaşılabilirlik",
     monFri: "Pazartesi – Cuma",
     saturday: "Cumartesi",
