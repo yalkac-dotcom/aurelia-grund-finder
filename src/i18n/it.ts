@@ -170,8 +170,8 @@ const it: Translations = {
     philosophyP2: "Analizziamo gli immobili in modo approfondito, collaboriamo con partner esperti e prendiamo decisioni basate su solide conoscenze di mercato e scenari realistici. Ne risulta un portafoglio orientato alla stabilità, alla qualità e alla conservazione del valore a lungo termine.",
     experienceLabel: "Team",
     experienceTitle: "Competenza per convinzione",
-    experienceP1: "Oltre 30 anni di esperienza combinata nel settore costituiscono il fondamento del nostro lavoro. Il nostro team riunisce competenze nel settore immobiliare, degli investimenti, dello sviluppo di progetti e della consulenza alle transazioni – con un chiaro focus su investimenti di valore.",
-    experienceP2: "Operiamo con una rete affidabile di banche, investitori, agenti e fornitori di servizi specializzati. Che si tratti di immobili residenziali classici, investimenti orientati al rendimento o transazioni complesse da aste giudiziarie e situazioni speciali – il nostro team porta la necessaria conoscenza del mercato e sicurezza nella negoziazione.",
+    experienceP1: "Oltre 30 anni di esperienza combinata nel settore costituiscono il fondamento del nostro lavoro. Il nostro team riunisce competenze nel settore immobiliare, dello sviluppo di progetti e della consulenza alle transazioni – con un chiaro focus sulla creazione di valore sostenibile.",
+    experienceP2: "Operiamo con una rete affidabile di banche, agenti e fornitori di servizi specializzati. Che si tratti di immobili residenziali classici o transazioni complesse da aste giudiziarie e situazioni speciali – il nostro team porta la necessaria conoscenza del mercato e sicurezza nella negoziazione.",
     experienceP3: "Ogni progetto è concepito in modo olistico: dall'acquisizione alla strutturazione fino alla realizzazione. Ne risultano strategie fondate che convincono economicamente e resistono nel tempo.",
   },
   services: {
