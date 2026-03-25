@@ -4,10 +4,8 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
-import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, Clock, Building2, Users, MapPin, Calendar, TrendingUp } from "lucide-react";
+import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, MapPin, Calendar } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
-
-const trustIcons = [Clock, Building2, Users];
 
 const Index = () => {
   const { t } = useLanguage();
@@ -68,37 +66,6 @@ const Index = () => {
           >
             <ChevronDown size={14} />
           </button>
-        </div>
-      </section>
-
-      {/* ── 1b. TRUST STATS ── */}
-      <section className="py-10 md:py-14 border-b border-border/60">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className="section-shell-accent mb-6">
-              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                {t.landing.trustStatsLabel}
-              </p>
-            </div>
-          </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {t.landing.trustStatsItems.map((stat, i) => {
-              const Icon = trustIcons[i];
-              return (
-                <Reveal key={i} delay={i * 0.1}>
-                  <div className="border-l-2 border-accent/30 pl-5 py-3">
-                    <Icon className="text-accent mb-2" size={20} />
-                    <p className="text-4xl font-heading font-semibold text-foreground leading-none mb-1.5">
-                      {stat.value}
-                    </p>
-                    <p className="text-muted-foreground text-sm leading-[1.5]">
-                      {stat.label}
-                    </p>
-                  </div>
-                </Reveal>
-              );
-            })}
-          </div>
         </div>
       </section>
 
@@ -277,9 +244,9 @@ const Index = () => {
                       <p className="text-sm text-foreground leading-[1.6]">{project.after}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-1.5 pt-2 border-t border-border/40">
-                    <TrendingUp size={14} className="text-accent" />
-                    <p className="text-sm font-medium text-accent">{project.result}</p>
+                  <div className="pt-2 border-t border-border/40">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ergebnis</p>
+                    <p className="text-sm text-foreground leading-[1.6]">{project.result}</p>
                   </div>
                 </div>
               </Reveal>
