@@ -49,7 +49,7 @@ const GlossarPage = () => {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.85] max-w-2xl mt-4 mb-5">{t.tax.glossarSectionSubtitle}</p>
+            <p className="text-muted-foreground text-sm leading-[1.85] max-w-2xl mt-4 mb-5">{t.tax.glossarSectionSubtitle}</p>
           </Reveal>
           <div className="divide-y divide-border/60">
             {t.tax.glossarItems.map((g, i) => (

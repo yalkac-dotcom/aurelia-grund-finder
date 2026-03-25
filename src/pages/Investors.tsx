@@ -40,7 +40,7 @@ const InvestorForm = ({ t }: { t: Translations }) => {
   }
 
   const inputClasses = "w-full border border-border/60 bg-background px-3.5 py-2 text-base text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
-  const labelClasses = "block text-[9px] font-sans uppercase tracking-[0.15em] text-muted-foreground mb-1";
+  const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-muted-foreground mb-1";
 
   return (
     <form onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }} className="space-y-4">
@@ -81,15 +81,15 @@ const InvestorForm = ({ t }: { t: Translations }) => {
       </div>
       <label className="flex items-start gap-2.5 cursor-pointer">
         <input type="checkbox" name="datenschutz" required className="mt-1 h-3.5 w-3.5 border-border accent-accent" />
-        <span className="text-[0.78rem] text-muted-foreground leading-relaxed">
+        <span className="text-sm text-muted-foreground leading-relaxed">
           {t.common.privacyCheckbox} <span className="text-accent">*</span>
         </span>
       </label>
-      <p className="text-[9px] text-muted-foreground"><span className="text-accent">*</span> {t.common.requiredFields}</p>
+      <p className="text-xs text-muted-foreground"><span className="text-accent">*</span> {t.common.requiredFields}</p>
       <button type="submit" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
         {t.investor.sendInquiry}
       </button>
-      <p className="text-muted-foreground/70 text-[9px] mt-1">{t.investor.formNote}</p>
+      <p className="text-muted-foreground/70 text-xs mt-1">{t.investor.formNote}</p>
     </form>
   );
 };
@@ -122,7 +122,7 @@ const Investors = () => {
             <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.investor.heroTitle}
             </h1>
-            <p className="text-white/95 text-[0.85rem] leading-[1.7] mt-3 max-w-sm">{t.investor.heroSubtitle}</p>
+            <p className="text-white/95 text-sm leading-[1.7] mt-3 max-w-sm">{t.investor.heroSubtitle}</p>
           </Reveal>
         </div>
       </section>
@@ -139,8 +139,8 @@ const Investors = () => {
             </div>
           </Reveal>
           <div className="space-y-3 mt-4">
-            <Reveal delay={0.2}><p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.investor.whyP1}</p></Reveal>
-            <Reveal delay={0.25}><p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.investor.whyP2}</p></Reveal>
+            <Reveal delay={0.2}><p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.investor.whyP1}</p></Reveal>
+            <Reveal delay={0.25}><p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.investor.whyP2}</p></Reveal>
           </div>
           <Reveal delay={0.3}>
             <p className="text-[0.72rem] text-muted-foreground mt-4 italic">{t.investor.whyDisclaimer}</p>
@@ -164,7 +164,7 @@ const Investors = () => {
                   <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0">
                     <div className="flex items-center gap-2.5">
                       <Icon className="text-accent" size={14} />
-                      <h3 className="text-[0.85rem] font-heading font-semibold text-foreground">{model.title}</h3>
+                      <h3 className="text-sm font-heading font-semibold text-foreground">{model.title}</h3>
                     </div>
                     <p className="text-muted-foreground text-base leading-[1.7]">{model.text}</p>
                   </div>
@@ -189,7 +189,7 @@ const Investors = () => {
             <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
               {t.investor.transparencyTitle}
             </h2>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.investor.transparencyText}</p>
+            <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.investor.transparencyText}</p>
           </Reveal>
         </div>
       </section>
@@ -205,7 +205,7 @@ const Investors = () => {
               </h2>
             </div>
           </Reveal>
-          <p className="text-muted-foreground text-[0.85rem] leading-[1.7] mt-3 mb-5">{t.investor.formSubtitle}</p>
+          <p className="text-muted-foreground text-sm leading-[1.7] mt-3 mb-5">{t.investor.formSubtitle}</p>
           <InvestorForm t={t} />
           <Reveal delay={0.1}>
             <p className="text-[0.72rem] text-muted-foreground mt-6 italic leading-relaxed">

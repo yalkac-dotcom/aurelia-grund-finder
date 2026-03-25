@@ -41,10 +41,10 @@ const About = () => {
           </Reveal>
           <div className="space-y-3 mt-4">
             <Reveal delay={0.2}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.about.companyP1}</p>
+              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.about.companyP1}</p>
             </Reveal>
             <Reveal delay={0.25}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.about.companyP2}</p>
+              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.about.companyP2}</p>
             </Reveal>
           </div>
           <Reveal delay={0.3}>
@@ -69,10 +69,10 @@ const About = () => {
           </Reveal>
           <div className="space-y-3 mt-4">
             <Reveal delay={0.2}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.about.philosophyP1}</p>
+              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.about.philosophyP1}</p>
             </Reveal>
             <Reveal delay={0.25}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.about.philosophyP2}</p>
+              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.about.philosophyP2}</p>
             </Reveal>
           </div>
         </div>

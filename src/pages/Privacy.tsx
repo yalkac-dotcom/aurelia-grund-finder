@@ -50,7 +50,7 @@ const Privacy = () => {
                     {p.generalBdsgLabel} <ExternalLink size={10} />
                   </a>.
                 </p>
-                <p className="text-[0.68rem] text-muted-foreground/70 mt-1">{p.generalLinkHint}</p>
+                <p className="text-xs text-muted-foreground/70 mt-1">{p.generalLinkHint}</p>
               </div>
             </Reveal>
 
@@ -66,7 +66,7 @@ const Privacy = () => {
                     </li>
                   ))}
                 </ul>
-                <p className="text-[0.68rem] text-muted-foreground/70 mt-1">{p.legalLinkHint}</p>
+                <p className="text-xs text-muted-foreground/70 mt-1">{p.legalLinkHint}</p>
               </div>
             </Reveal>
 
@@ -96,7 +96,7 @@ const Privacy = () => {
                 <h2 className="text-[0.9rem] font-heading font-semibold text-foreground mb-1.5">{p.googleMapsTitle}</h2>
                 <p className="text-muted-foreground text-sm leading-[1.75]">{p.googleMapsText}</p>
                 <p className="text-muted-foreground text-sm leading-[1.75] mt-1">{p.googleMapsLegal}</p>
-                <p className="text-[0.68rem] text-muted-foreground/70 mt-1">{p.googleMapsLinkHint}</p>
+                <p className="text-xs text-muted-foreground/70 mt-1">{p.googleMapsLinkHint}</p>
               </div>
             </Reveal>
 
@@ -123,7 +123,7 @@ const Privacy = () => {
                 <p className="text-muted-foreground text-sm leading-[1.75] mt-1">
                   {p.rightsSupervisory}
                 </p>
-                <p className="text-[0.68rem] text-muted-foreground/70 mt-1">{p.rightsSupervisoryLinkHint}</p>
+                <p className="text-xs text-muted-foreground/70 mt-1">{p.rightsSupervisoryLinkHint}</p>
               </div>
             </Reveal>
 

@@ -9,7 +9,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const inputClasses =
   "w-full border border-border/60 bg-background px-3.5 py-2 text-base text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
 
-const labelClasses = "block text-[9px] font-sans uppercase tracking-[0.15em] text-muted-foreground mb-1";
+const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-muted-foreground mb-1";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -42,7 +42,7 @@ const Contact = () => {
       <section className="py-8 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">
+            <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">
               {t.contact.introText}
             </p>
           </Reveal>
@@ -189,20 +189,20 @@ const Contact = () => {
                 <div className="space-y-1.5 pt-1">
                   <label className="flex items-start gap-2.5 cursor-pointer">
                     <input type="checkbox" name="datenschutz" required className="mt-1 h-3.5 w-3.5 border-border accent-accent" />
-                    <span className="text-[0.78rem] text-muted-foreground leading-relaxed">
+                    <span className="text-sm text-muted-foreground leading-relaxed">
                       {t.common.privacyCheckbox} <span className="text-accent">*</span>
                     </span>
                   </label>
                   <label className="flex items-start gap-2.5 cursor-pointer">
                     <input type="checkbox" name="rueckruf" className="mt-1 h-3.5 w-3.5 border-border accent-accent" />
-                    <span className="text-[0.78rem] text-muted-foreground leading-relaxed">
+                    <span className="text-sm text-muted-foreground leading-relaxed">
                       {t.common.callbackRequest}
                     </span>
                   </label>
                 </div>
 
                 <div className="flex items-center justify-between pt-1">
-                  <p className="text-[9px] text-muted-foreground">
+                  <p className="text-xs text-muted-foreground">
                     <span className="text-accent">*</span> {t.common.requiredFields}
                   </p>
                   <button type="submit" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
@@ -210,7 +210,7 @@ const Contact = () => {
                     <ArrowRight size={11} />
                   </button>
                 </div>
-                <p className="text-muted-foreground/70 text-[9px] text-right mt-1">{t.contact.privacyNote}</p>
+                <p className="text-muted-foreground/70 text-xs text-right mt-1">{t.contact.privacyNote}</p>
               </form>
             )}
           </div>

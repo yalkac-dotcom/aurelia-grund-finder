@@ -40,10 +40,10 @@ const Services = () => {
           </Reveal>
           <div className="mt-4 space-y-3">
             <Reveal delay={0.15}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.services.introSubtitle}</p>
+              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.services.introSubtitle}</p>
             </Reveal>
             <Reveal delay={0.2}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.services.introText}</p>
+              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.services.introText}</p>
             </Reveal>
           </div>
         </div>
@@ -55,7 +55,7 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <Reveal>
               <div className="border border-border/40 p-5 md:p-6">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-3">{t.services.holdTitle}</h3>
+                <h3 className="text-sm font-heading font-semibold text-foreground mb-3">{t.services.holdTitle}</h3>
                 <ul className="space-y-2">
                   {t.services.holdItems.map((item) => (
                     <li key={item} className="flex items-start gap-2">
@@ -68,7 +68,7 @@ const Services = () => {
             </Reveal>
             <Reveal delay={0.1}>
               <div className="border border-border/40 p-5 md:p-6">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-3">{t.services.renovateTitle}</h3>
+                <h3 className="text-sm font-heading font-semibold text-foreground mb-3">{t.services.renovateTitle}</h3>
                 <ul className="space-y-2">
                   {t.services.renovateItems.map((item) => (
                     <li key={item} className="flex items-start gap-2">
@@ -100,7 +100,7 @@ const Services = () => {
                 <thead>
                   <tr className="border-b border-accent/40">
                     {t.services.comparisonHeaders.map((h) => (
-                      <th key={h} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-[0.78rem]">{h}</th>
+                      <th key={h} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-sm">{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -134,7 +134,7 @@ const Services = () => {
                     {t.services.experienceTitle}
                   </h2>
                 </div>
-                <p className="text-muted-foreground text-[0.85rem] leading-[1.8] mt-3">{t.services.experienceText}</p>
+                <p className="text-muted-foreground text-sm leading-[1.8] mt-3">{t.services.experienceText}</p>
                 <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-5">
                   {t.landing.heroCta}
                   <ArrowRight size={11} />

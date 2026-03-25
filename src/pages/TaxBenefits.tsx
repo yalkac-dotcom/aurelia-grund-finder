@@ -46,7 +46,7 @@ const TaxBenefits = () => {
             </div>
           </Reveal>
           <Reveal delay={0.15}>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl mt-4">{t.tax.introSubtitle}</p>
+            <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl mt-4">{t.tax.introSubtitle}</p>
           </Reveal>
         </div>
       </section>
@@ -63,7 +63,7 @@ const TaxBenefits = () => {
                     <span className="text-accent font-sans text-xs font-medium tracking-[0.14em] uppercase">{tp.category}</span>
                   </div>
                   <div>
-                    <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{tp.title}</h3>
+                    <h3 className="text-sm font-heading font-semibold text-foreground mb-0.5">{tp.title}</h3>
                     <p className="text-muted-foreground text-sm leading-[1.7]">{tp.shortDesc}</p>
                   </div>
                   <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
@@ -91,7 +91,7 @@ const TaxBenefits = () => {
                 <thead>
                   <tr className="border-b border-accent/40">
                     {t.tax.overviewHeaders.map((h, i) => (
-                      <th key={i} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-[0.78rem]">{h}</th>
+                      <th key={i} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-sm">{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -122,7 +122,7 @@ const TaxBenefits = () => {
                 <span className="text-accent font-sans text-xs font-medium tracking-[0.14em] uppercase">{t.tax.categoryKnowledge}</span>
               </div>
               <div>
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{t.tax.glossarTitle}</h3>
+                <h3 className="text-sm font-heading font-semibold text-foreground mb-0.5">{t.tax.glossarTitle}</h3>
                 <p className="text-muted-foreground text-sm leading-[1.7]">{t.tax.glossarDesc}</p>
               </div>
               <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />

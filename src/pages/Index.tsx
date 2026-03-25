@@ -23,7 +23,7 @@ const Index = () => {
             <h1 className="text-[1.75rem] md:text-[2.15rem] lg:text-[2.5rem] font-heading font-semibold text-white leading-[1.08] mb-3 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-white/90 text-[0.85rem] leading-[1.7] mb-3 max-w-sm animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-white/90 text-sm leading-[1.7] mb-3 max-w-sm animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
             <p className="text-white/75 text-xs font-medium tracking-[0.14em] uppercase mb-4 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
@@ -149,7 +149,7 @@ const Index = () => {
               <Reveal key={i} delay={i * 0.1}>
                 <div className="border border-white/[0.08] py-4 px-3">
                   <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-accent leading-none mb-1">{stat.value}</p>
-                  <p className="text-[#B0B0B0] text-[9px] tracking-[0.1em] uppercase">{stat.label}</p>
+                  <p className="text-[#B0B0B0] text-xs tracking-[0.1em] uppercase">{stat.label}</p>
                 </div>
               </Reveal>
             ))}

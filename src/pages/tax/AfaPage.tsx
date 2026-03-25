@@ -54,13 +54,13 @@ const AfaPage = () => {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="text-muted-foreground text-[0.85rem] leading-[1.85] max-w-2xl mt-4 mb-5">{t.tax.afaIntro}</p>
+            <p className="text-muted-foreground text-sm leading-[1.85] max-w-2xl mt-4 mb-5">{t.tax.afaIntro}</p>
           </Reveal>
           <div className="divide-y divide-border/60">
             {t.tax.afaSections.map((s, i) => (
               <Reveal key={s.heading} delay={i * 0.08}>
                 <div className="grid md:grid-cols-[1fr_2fr] gap-2 md:gap-8 py-5 first:pt-0 last:pb-0">
-                  <h3 className="text-[0.85rem] font-heading font-semibold text-foreground">{s.heading}</h3>
+                  <h3 className="text-sm font-heading font-semibold text-foreground">{s.heading}</h3>
                   <p className="text-muted-foreground text-base leading-[1.75]">{s.text}</p>
                 </div>
               </Reveal>
