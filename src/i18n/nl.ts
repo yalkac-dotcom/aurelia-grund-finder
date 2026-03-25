@@ -171,8 +171,8 @@ const nl: Translations = {
     philosophyP2: "Ons streven is ontwikkeling met substantie: economisch verantwoord, helder gestructureerd en vrij van onnodige enscenering.",
     experienceLabel: "Team",
     experienceTitle: "30+ jaar ervaring",
-    experienceP1: "In Aurelia komt jarenlange ervaring samen uit vastgoed, vermogensbeheer, projectstructurering en de begeleiding van complexe situaties.",
-    experienceP2: "Daarnaast beschikken wij over een betrouwbaar netwerk van banken, investeerders, gespecialiseerde adviseurs en dienstverleners.",
+    experienceP1: "In Aurelia komt jarenlange ervaring samen uit vastgoed, projectstructurering en de begeleiding van complexe situaties.",
+    experienceP2: "Daarnaast beschikken wij over een betrouwbaar netwerk van banken, gespecialiseerde adviseurs en dienstverleners.",
     experienceP3: "Hierdoor kunnen wij projecten niet alleen herkennen, maar ook gefundeerd beoordelen en betrouwbaar realiseren.",
   },
   services: {
