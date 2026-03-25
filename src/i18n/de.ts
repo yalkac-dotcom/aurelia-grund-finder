@@ -130,9 +130,9 @@ const de: Translations = {
       { title: "Diskretion", text: "Vertraulichkeit als gelebte Praxis." },
       { title: "Perspektive", text: "Langfristiges Denken in jeder Entscheidung." },
     ],
-    projectsLabel: "Investmentfokus",
+    projectsLabel: "Standortfokus",
     projectsTitle: "Standorte mit Substanz",
-    projectsText: "Wir konzentrieren uns auf Lagen in Deutschland, die eine stabile Grundlage und nachvollziehbare Entwicklungsmöglichkeiten bieten. Entscheidend ist für uns nicht nur der erste Eindruck, sondern die langfristige Tragfähigkeit eines Standorts.",
+    projectsText: "Wir konzentrieren uns auf Standorte in Deutschland, die Substanz, Nachfrage und Entwicklungspotenzial miteinander verbinden. Entscheidend ist für uns nicht nur der erste Eindruck, sondern die langfristige Tragfähigkeit eines Standorts.",
     stats: [
       { value: "30+", label: "Jahre Erfahrung" },
       { value: "DE", label: "Fokus auf Deutschland" },
