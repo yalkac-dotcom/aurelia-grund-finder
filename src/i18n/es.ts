@@ -177,9 +177,9 @@ const es: Translations = {
   services: {
     heroTitle: "Servicios y estrategias",
     introLabel: "Nuestro enfoque",
-    introTitle: "Estrategias de inversión",
-    introSubtitle: "Nos centramos en inmuebles que a menudo se venden bajo presión de tiempo o en situaciones complejas – por ejemplo en el marco de subastas judiciales, liquidaciones de herencias o procedimientos de insolvencia.",
-    introText: "Con una visión clara del potencial, desarrollamos conceptos a medida: desde la estabilización de la situación de alquiler y mejoras técnicas y de eficiencia energética hasta el reposicionamiento completo en el mercado.",
+    introTitle: "Inmuebles con potencial — estructurados con claridad, desarrollados con sentido",
+    introSubtitle: "Nos ocupamos de inmuebles procedentes de situaciones especiales y analizamos para cada objeto la vía económicamente más sensata.",
+    introText: "Según la situación de partida, puede tratarse de una consolidación a largo plazo o de un desarrollo dirigido con posterior venta.",
     holdTitle: "Mantener en cartera y alquilar",
     holdItems: [
       "Horizonte temporal: largo plazo (años a décadas)",
