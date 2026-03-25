@@ -177,12 +177,12 @@ const Index = () => {
               {t.landing.trustTitle}
             </h2>
           </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-3 max-w-md mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6 max-w-lg mx-auto">
             {t.landing.trustPoints.map((stat, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className="border border-white/[0.08] py-4 px-3">
-                  <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-accent leading-none mb-1">{stat.value}</p>
-                  <p className="text-[#B0B0B0] text-xs tracking-[0.1em] uppercase">{stat.label}</p>
+                <div className="text-center">
+                  <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-accent leading-none mb-1.5">{stat.value}</p>
+                  <p className="text-[#B0B0B0] text-xs tracking-[0.1em] uppercase leading-snug">{stat.label}</p>
                 </div>
               </Reveal>
             ))}
