@@ -171,8 +171,8 @@ const de: Translations = {
     philosophyP2: "Unser Anspruch ist eine Entwicklung mit Substanz: wirtschaftlich sinnvoll, sauber strukturiert und frei von unnötiger Inszenierung.",
     experienceLabel: "Team",
     experienceTitle: "30+ Jahre Erfahrung",
-    experienceP1: "In Aurelia bündelt sich langjährige Erfahrung aus Immobilienwirtschaft, Kapitalanlage, Projektstrukturierung und der Begleitung komplexer Konstellationen.",
-    experienceP2: "Dazu kommt ein belastbares Netzwerk aus Banken, Investoren, Fachberatern und spezialisierten Dienstleistern.",
+    experienceP1: "In Aurelia bündelt sich langjährige Erfahrung aus Immobilienwirtschaft, Projektstrukturierung und der Begleitung komplexer Konstellationen.",
+    experienceP2: "Dazu kommt ein belastbares Netzwerk aus Banken, Fachberatern und spezialisierten Dienstleistern.",
     experienceP3: "So können wir Projekte nicht nur erkennen, sondern auch fundiert einordnen und verlässlich umsetzen.",
   },
   services: {
