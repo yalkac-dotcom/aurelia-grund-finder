@@ -22,9 +22,9 @@ const tr: Translations = {
     ivdMembership: "IVD üyesi (Alman Gayrimenkul Birliği)",
   },
   hero: {
-    slogan: "Özü olan gayrimenkuller — gizlilikle incelenir, net biçimde geliştirilir ve uzun vadeli düşünülür.",
+    slogan: "Özü olan gayrimenkuller — gizlilikle incelenir, net biçimde geliştirilir, uzun vadeli düşünülür.",
     subtitle:
-      "Cebri icra, miras ve iflas kaynaklı gayrimenkullere odaklanıyoruz. Her durumu dikkatle inceleyerek ekonomik açıdan mantıklı ve sürdürülebilir çözümler geliştiriyoruz.",
+      "Aurelia Grundbesitz, özel durumlardan çıkan gayrimenkulleri sakinlik, deneyim ve ekonomik açıdan mantıklı çözümlere odaklanan net bir bakışla geliştirir.",
     cta: "İletişime geçin",
     ctaSecondary: "Aurelia hakkında",
   },

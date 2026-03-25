@@ -22,9 +22,9 @@ const es: Translations = {
     ivdMembership: "Miembro del IVD (Asociación inmobiliaria alemana)",
   },
   hero: {
-    slogan: "Inmuebles con sustancia: revisados con discreción, desarrollados con claridad y pensados a largo plazo.",
+    slogan: "Inmuebles con sustancia — revisados con discreción, desarrollados con claridad, pensados a largo plazo.",
     subtitle:
-      "Nos centramos en inmuebles procedentes de subastas judiciales, herencias e insolvencias. Analizamos cada situación con cuidado para desarrollar soluciones viables y sostenibles.",
+      "Aurelia Grundbesitz desarrolla inmuebles procedentes de situaciones especiales con serenidad, experiencia y una visión clara de soluciones económicamente sensatas.",
     cta: "Contactar",
     ctaSecondary: "Más sobre Aurelia",
   },
