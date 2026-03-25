@@ -69,37 +69,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── 1b. TRUST STATS ── */}
-      <section className="py-10 md:py-14 border-b border-border/60">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className="section-shell-accent mb-6">
-              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                {t.landing.trustStatsLabel}
-              </p>
-            </div>
-          </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {t.landing.trustStatsItems.map((stat, i) => {
-              const Icon = trustIcons[i];
-              return (
-                <Reveal key={i} delay={i * 0.1}>
-                  <div className="border-l-2 border-accent/30 pl-5 py-3">
-                    <Icon className="text-accent mb-2" size={20} />
-                    <p className="text-4xl font-heading font-semibold text-foreground leading-none mb-1.5">
-                      {stat.value}
-                    </p>
-                    <p className="text-muted-foreground text-sm leading-[1.5]">
-                      {stat.label}
-                    </p>
-                  </div>
-                </Reveal>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* ── 2. PROBLEM ── */}
       <section className="py-10 md:py-14">
         <div className="container max-w-4xl">
