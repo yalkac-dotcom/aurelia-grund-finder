@@ -26,8 +26,8 @@ const Header = () => {
           <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-10 md:h-11 w-auto object-contain" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-7">
-          <nav className="flex items-center gap-7">
+        <div className="hidden md:flex items-baseline gap-7">
+          <nav className="flex items-baseline gap-7">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -42,7 +42,7 @@ const Header = () => {
               </Link>
             ))}
           </nav>
-          <div className="w-px h-4 bg-border/60" />
+          <div className="self-center w-px h-4 bg-border/60" />
           <LanguageSwitcher />
         </div>
 
