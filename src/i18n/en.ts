@@ -42,7 +42,7 @@ const en: Translations = {
     callbackRequest: "I would like a callback.",
     personalContact: "Personal contact",
     ourTeam: "Our friendly team",
-    teamDescription: "Our experienced team is available for all questions regarding real estate and capital investments – personal, competent, and discreet.",
+    teamDescription: "Our experienced team is available for all questions regarding real estate – personal, competent, and discreet.",
     availability: "Availability",
     monFri: "Monday – Friday",
     saturday: "Saturday",
