@@ -234,7 +234,7 @@ const en: Translations = {
   },
   tax: {
     heroTitle: "Tax Benefits & Subsidies",
-    introTitle: "Benefits for Investors",
+    introTitle: "Key Topics for Property Owners",
     introSubtitle: "Property investments in Germany offer numerous tax and subsidy advantages that, with strategic planning, can yield significant returns.",
     categoryTax: "Tax",
     categoryFunding: "Subsidies",
