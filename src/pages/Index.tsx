@@ -33,10 +33,10 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-2.5 animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-[10px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300"
+                className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 text-sm font-medium tracking-[0.08em] uppercase hover:bg-accent/85 transition-colors duration-300"
               >
                 {t.landing.heroCta}
-                <ArrowRight size={11} />
+                <ArrowRight size={14} />
               </Link>
               <button
                 onClick={() => {
@@ -44,13 +44,14 @@ const Index = () => {
                   const next = hero?.nextElementSibling as HTMLElement | null;
                   next?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="inline-flex items-center gap-2 border border-white/40 bg-black/10 backdrop-blur-sm text-white/92 px-5 py-2 text-[10px] font-medium tracking-[0.14em] uppercase hover:border-white/60 hover:bg-black/20 hover:text-white transition-colors duration-300"
+                className="inline-flex items-center gap-2 border border-white/40 bg-black/10 backdrop-blur-sm text-white/92 px-6 py-3 text-sm font-medium tracking-[0.08em] uppercase hover:border-white/60 hover:bg-black/20 hover:text-white transition-colors duration-300"
               >
                 {t.landing.heroCtaSecondary}
               </button>
             </div>
-            <p className="text-white/70 text-[10px] mt-2 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-              {t.common.heroMeta}
+            <p className="flex items-center gap-1.5 text-white/80 text-xs mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+              <CheckCircle size={12} className="text-accent shrink-0" />
+              Über 30 Jahre Erfahrung · 200+ entwickelte Objekte
             </p>
           </div>
 
