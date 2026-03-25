@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
-import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, Clock, Building2, Users, MapPin, Calendar, TrendingUp } from "lucide-react";
+import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, MapPin, Calendar } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const trustIcons = [Clock, Building2, Users];
