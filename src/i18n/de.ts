@@ -141,7 +141,7 @@ const de: Translations = {
     ctaLabel: "Nächster Schritt",
     ctaTitle: "Sprechen Sie mit uns über Ihr Objekt oder Ihre Anfrage.",
     ctaText: "Persönlich, diskret und unverbindlich. Wir hören zu, prüfen sorgfältig und melden uns mit einer klaren ersten Einschätzung zurück.",
-    ctaButton: "Erstgespräch vereinbaren",
+    ctaButton: "Kontakt aufnehmen",
     trustStatsLabel: "Unser Fundament",
     trustStatsItems: [
       { value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
