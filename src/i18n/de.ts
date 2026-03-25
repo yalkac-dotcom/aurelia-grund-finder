@@ -20,6 +20,7 @@ const de: Translations = {
     brandLine:
       "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen – diskret, strukturiert und mit klarem Blick für Substanz.",
     subline: "Diskret · Substanzorientiert · Langfristig",
+    ivdMembership: "Mitglied im IVD (Immobilienverband Deutschland)",
   },
   hero: {
     slogan: "Substanz erkennen. Chancen nutzen. Werte schaffen.",
@@ -142,6 +143,22 @@ const de: Translations = {
     ctaTitle: "Sprechen Sie mit uns über Ihr Objekt oder Ihre Anfrage.",
     ctaText: "Persönlich, diskret und unverbindlich. Wir hören zu, prüfen sorgfältig und melden uns mit einer klaren ersten Einschätzung zurück.",
     ctaButton: "Erstgespräch vereinbaren",
+    trustStatsLabel: "Vertrauen durch Erfahrung",
+    trustStatsItems: [
+      { value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
+      { value: "87+", label: "Erfolgreich entwickelte Objekte" },
+      { value: "50+", label: "Zufriedene Investoren & Partner" },
+    ],
+    heroMetaLine: "Über 30 Jahre Erfahrung · 87+ entwickelte Objekte",
+    referencesLabel: "Ausgewählte Projekte",
+    referencesTitle: "Referenzen aus der Praxis",
+    referenceProjects: [
+      { location: "Düsseldorf-Oberkassel", year: "2021", type: "Mehrfamilienhaus aus Nachlassauflösung", before: "Leerstehend, erheblicher Sanierungsstau, ungeklärte Eigentumsverhältnisse", after: "Vollständig saniert, 8 Wohneinheiten, langfristig vermietet", result: "+38 % Wertsteigerung nach Entwicklung" },
+      { location: "Essen-Rüttenscheid", year: "2022", type: "Wohn- und Geschäftshaus aus Zwangsversteigerung", before: "Teilbesetzt, bauliche Mängel, komplexe Mietstruktur", after: "Kernsanierung, Neupositionierung, stabile Mieterstruktur", result: "+42 % Wertsteigerung nach 18 Monaten" },
+      { location: "Köln-Ehrenfeld", year: "2023", type: "Zinshaus aus Insolvenzverfahren", before: "Verwaltungschaos, Mietrückstände, offene Rechtsfragen", after: "Rechtlich bereinigt, modernisiert, vollvermietet", result: "+29 % Wertsteigerung, laufende Rendite optimiert" },
+    ],
+    refBeforeLabel: "Ausgangslage",
+    refAfterLabel: "Ergebnis",
   },
   about: {
     heroTitle: "Über Aurelia",

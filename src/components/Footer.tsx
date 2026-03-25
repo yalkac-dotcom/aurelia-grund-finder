@@ -74,7 +74,7 @@ const Footer = () => {
           <div className="flex items-center gap-2.5">
             <Shield size={16} className="text-accent shrink-0" />
             <p className="text-white/85 text-xs">
-              Mitglied im IVD (Immobilienverband Deutschland)
+              {t.footer.ivdMembership}
             </p>
           </div>
         </div>

@@ -20,6 +20,7 @@ const en: Translations = {
     brandLine:
       "Aurelia Grundbesitz develops properties from special situations — discreetly, in a structured way, and with a clear eye for substance.",
     subline: "Discreet · Substance-focused · Long-term",
+    ivdMembership: "Member of IVD (German Real Estate Association)",
   },
   hero: {
     slogan: "Properties with substance — discreetly reviewed, clearly developed, and planned for the long term.",
@@ -141,6 +142,22 @@ const en: Translations = {
     ctaTitle: "Talk to us about your property or your enquiry.",
     ctaText: "Personal, discreet, and without obligation. We listen, review carefully, and come back with a clear initial assessment.",
     ctaButton: "Schedule an initial consultation",
+    trustStatsLabel: "Trust through experience",
+    trustStatsItems: [
+      { value: "30+", label: "Years of experience in real estate" },
+      { value: "87+", label: "Successfully developed properties" },
+      { value: "50+", label: "Satisfied investors & partners" },
+    ],
+    heroMetaLine: "Over 30 years of experience · 87+ developed properties",
+    referencesLabel: "Selected projects",
+    referencesTitle: "Track record",
+    referenceProjects: [
+      { location: "Düsseldorf-Oberkassel", year: "2021", type: "Multi-family house from estate settlement", before: "Vacant, significant renovation backlog, unresolved ownership", after: "Fully renovated, 8 residential units, long-term leased", result: "+38% value increase after development" },
+      { location: "Essen-Rüttenscheid", year: "2022", type: "Mixed-use building from foreclosure", before: "Partially occupied, structural defects, complex tenancy structure", after: "Core renovation, repositioning, stable tenant structure", result: "+42% value increase after 18 months" },
+      { location: "Köln-Ehrenfeld", year: "2023", type: "Rental building from insolvency proceedings", before: "Administrative chaos, rental arrears, unresolved legal issues", after: "Legally resolved, modernised, fully leased", result: "+29% value increase, ongoing yield optimised" },
+    ],
+    refBeforeLabel: "Starting point",
+    refAfterLabel: "Result",
   },
   about: {
     heroTitle: "About Aurelia",

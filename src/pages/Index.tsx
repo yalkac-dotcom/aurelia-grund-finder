@@ -7,38 +7,7 @@ import trustImg from "@/assets/section-trust.jpg";
 import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, Clock, Building2, Users, MapPin, Calendar, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const trustStats = [
-  { icon: Clock, value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
-  { icon: Building2, value: "87+", label: "Erfolgreich entwickelte Objekte" },
-  { icon: Users, value: "50+", label: "Zufriedene Investoren & Partner" },
-];
-
-const referenceProjects = [
-  {
-    location: "Düsseldorf-Oberkassel",
-    year: "2021",
-    type: "Mehrfamilienhaus aus Nachlassauflösung",
-    before: "Leerstehend, erheblicher Sanierungsstau, ungeklärte Eigentumsverhältnisse",
-    after: "Vollständig saniert, 8 Wohneinheiten, langfristig vermietet",
-    result: "+38 % Wertsteigerung nach Entwicklung",
-  },
-  {
-    location: "Essen-Rüttenscheid",
-    year: "2022",
-    type: "Wohn- und Geschäftshaus aus Zwangsversteigerung",
-    before: "Teilbesetzt, bauliche Mängel, komplexe Mietstruktur",
-    after: "Kernsanierung, Neupositionierung, stabile Mieterstruktur",
-    result: "+42 % Wertsteigerung nach 18 Monaten",
-  },
-  {
-    location: "Köln-Ehrenfeld",
-    year: "2023",
-    type: "Zinshaus aus Insolvenzverfahren",
-    before: "Verwaltungschaos, Mietrückstände, offene Rechtsfragen",
-    after: "Rechtlich bereinigt, modernisiert, vollvermietet",
-    result: "+29 % Wertsteigerung, laufende Rendite optimiert",
-  },
-];
+const trustIcons = [Clock, Building2, Users];
 
 const Index = () => {
   const { t } = useLanguage();
@@ -84,7 +53,7 @@ const Index = () => {
             </div>
             <p className="flex items-center gap-1.5 text-white/90 text-xs mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
               <CheckCircle size={12} className="text-accent shrink-0" />
-              Über 30 Jahre Erfahrung · 87+ entwickelte Objekte
+              {t.landing.heroMetaLine}
             </p>
           </div>
 
@@ -108,24 +77,27 @@ const Index = () => {
           <Reveal>
             <div className="section-shell-accent mb-6">
               <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                Vertrauen durch Erfahrung
+                {t.landing.trustStatsLabel}
               </p>
             </div>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {trustStats.map((stat, i) => (
-              <Reveal key={i} delay={i * 0.1}>
-                <div className="border-l-2 border-accent/30 pl-5 py-3">
-                  <stat.icon className="text-accent mb-2" size={20} />
-                  <p className="text-4xl font-heading font-semibold text-foreground leading-none mb-1.5">
-                    {stat.value}
-                  </p>
-                  <p className="text-muted-foreground text-sm leading-[1.5]">
-                    {stat.label}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
+            {t.landing.trustStatsItems.map((stat, i) => {
+              const Icon = trustIcons[i];
+              return (
+                <Reveal key={i} delay={i * 0.1}>
+                  <div className="border-l-2 border-accent/30 pl-5 py-3">
+                    <Icon className="text-accent mb-2" size={20} />
+                    <p className="text-4xl font-heading font-semibold text-foreground leading-none mb-1.5">
+                      {stat.value}
+                    </p>
+                    <p className="text-muted-foreground text-sm leading-[1.5]">
+                      {stat.label}
+                    </p>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -275,15 +247,15 @@ const Index = () => {
           <Reveal>
             <div className="section-shell-accent mb-6">
               <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                Ausgewählte Projekte
+                {t.landing.referencesLabel}
               </p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                Referenzen aus der Praxis
+                {t.landing.referencesTitle}
               </h2>
             </div>
           </Reveal>
           <div className="grid gap-5">
-            {referenceProjects.map((project, i) => (
+            {t.landing.referenceProjects.map((project, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className="border border-border/50 p-5 md:p-6">
                   <div className="flex flex-wrap items-center gap-3 mb-3">
@@ -297,11 +269,11 @@ const Index = () => {
                   <p className="text-sm font-heading font-semibold text-foreground mb-3">{project.type}</p>
                   <div className="grid sm:grid-cols-2 gap-4 mb-3">
                     <div>
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ausgangslage</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{t.landing.refBeforeLabel}</p>
                       <p className="text-sm text-muted-foreground leading-[1.6]">{project.before}</p>
                     </div>
                     <div>
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ergebnis</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{t.landing.refAfterLabel}</p>
                       <p className="text-sm text-foreground leading-[1.6]">{project.after}</p>
                     </div>
                   </div>

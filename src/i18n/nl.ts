@@ -20,6 +20,7 @@ const nl: Translations = {
     brandLine:
       "Aurelia Grundbesitz ontwikkelt vastgoed uit bijzondere situaties — discreet, gestructureerd en met een scherp oog voor waarde.",
     subline: "Discreet · Waardegericht · Langetermijnvisie",
+    ivdMembership: "Lid van de IVD (Duitse vastgoedvereniging)",
   },
   hero: {
     slogan: "Waarde herkennen. Kansen benutten. Resultaten realiseren.",
@@ -142,6 +143,22 @@ const nl: Translations = {
     ctaTitle: "Bespreek uw object of uw vraag met ons.",
     ctaText: "Persoonlijk, discreet en vrijblijvend. Wij luisteren, beoordelen zorgvuldig en komen terug met een heldere eerste inschatting.",
     ctaButton: "Kennismakingsgesprek inplannen",
+    trustStatsLabel: "Vertrouwen door ervaring",
+    trustStatsItems: [
+      { value: "30+", label: "Jaar ervaring in de vastgoedmarkt" },
+      { value: "87+", label: "Succesvol ontwikkelde objecten" },
+      { value: "50+", label: "Tevreden investeerders & partners" },
+    ],
+    heroMetaLine: "Meer dan 30 jaar ervaring · 87+ ontwikkelde objecten",
+    referencesLabel: "Geselecteerde projecten",
+    referencesTitle: "Referenties uit de praktijk",
+    referenceProjects: [
+      { location: "Düsseldorf-Oberkassel", year: "2021", type: "Meergezinswoning uit nalatenschap", before: "Leegstaand, aanzienlijk achterstallig onderhoud, onduidelijke eigendomsverhoudingen", after: "Volledig gerenoveerd, 8 wooneenheden, langdurig verhuurd", result: "+38% waardestijging na ontwikkeling" },
+      { location: "Essen-Rüttenscheid", year: "2022", type: "Woon-/winkelpand uit executieveiling", before: "Deels bezet, bouwkundige gebreken, complexe huurstructuur", after: "Ingrijpend gerenoveerd, herpositionering, stabiele huurdersstructuur", result: "+42% waardestijging na 18 maanden" },
+      { location: "Köln-Ehrenfeld", year: "2023", type: "Opbrengstpand uit insolventie", before: "Bestuurlijke chaos, huurachterstanden, openstaande juridische kwesties", after: "Juridisch gesaneerd, gemoderniseerd, volledig verhuurd", result: "+29% waardestijging, lopend rendement geoptimaliseerd" },
+    ],
+    refBeforeLabel: "Uitgangssituatie",
+    refAfterLabel: "Resultaat",
   },
   about: {
     heroTitle: "Over Aurelia",

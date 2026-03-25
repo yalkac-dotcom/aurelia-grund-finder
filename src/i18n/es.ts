@@ -20,6 +20,7 @@ const es: Translations = {
     brandLine:
       "Aurelia Grundbesitz desarrolla inmuebles procedentes de situaciones especiales de forma discreta, estructurada y con una mirada clara a la sustancia.",
     subline: "Discreción · Orientación a la sustancia · Largo plazo",
+    ivdMembership: "Miembro del IVD (Asociación inmobiliaria alemana)",
   },
   hero: {
     slogan: "Inmuebles con sustancia: revisados con discreción, desarrollados con claridad y pensados a largo plazo.",
@@ -141,6 +142,22 @@ const es: Translations = {
     ctaTitle: "Hable con nosotros sobre su inmueble o su consulta.",
     ctaText: "Personal, discreto y sin compromiso. Escuchamos, revisamos con cuidado y respondemos con una primera valoración clara.",
     ctaButton: "Concertar una primera conversación",
+    trustStatsLabel: "Confianza a través de la experiencia",
+    trustStatsItems: [
+      { value: "30+", label: "Años de experiencia en el mercado inmobiliario" },
+      { value: "87+", label: "Inmuebles desarrollados con éxito" },
+      { value: "50+", label: "Inversores y socios satisfechos" },
+    ],
+    heroMetaLine: "Más de 30 años de experiencia · 87+ inmuebles desarrollados",
+    referencesLabel: "Proyectos seleccionados",
+    referencesTitle: "Referencias de la práctica",
+    referenceProjects: [
+      { location: "Düsseldorf-Oberkassel", year: "2021", type: "Edificio plurifamiliar de liquidación sucesoria", before: "Vacío, considerable necesidad de renovación, titularidad sin resolver", after: "Completamente renovado, 8 unidades residenciales, arrendado a largo plazo", result: "+38% revalorización tras desarrollo" },
+      { location: "Essen-Rüttenscheid", year: "2022", type: "Edificio mixto de subasta judicial", before: "Parcialmente ocupado, defectos estructurales, estructura de arrendamiento compleja", after: "Renovación integral, reposicionamiento, estructura de inquilinos estable", result: "+42% revalorización en 18 meses" },
+      { location: "Köln-Ehrenfeld", year: "2023", type: "Inmueble de rendimiento de procedimiento de insolvencia", before: "Caos administrativo, atrasos en alquileres, cuestiones legales abiertas", after: "Saneado jurídicamente, modernizado, completamente arrendado", result: "+29% revalorización, rendimiento corriente optimizado" },
+    ],
+    refBeforeLabel: "Situación inicial",
+    refAfterLabel: "Resultado",
   },
   about: {
     heroTitle: "Sobre Aurelia",
