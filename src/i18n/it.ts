@@ -141,13 +141,13 @@ const it: Translations = {
     ctaTitle: "Parliamo del vostro immobile o della vostra richiesta.",
     ctaText: "Personale, discreto e senza impegno. Ascoltiamo, analizziamo con attenzione e torniamo con una prima valutazione chiara.",
     ctaButton: "Fissare un primo colloquio",
-    trustStatsLabel: "Fiducia attraverso l'esperienza",
+    trustStatsLabel: "Il nostro fondamento",
     trustStatsItems: [
       { value: "30+", label: "Anni di esperienza nel settore immobiliare" },
-      { value: "87+", label: "Immobili sviluppati con successo" },
-      { value: "50+", label: "Investitori e partner soddisfatti" },
+      { value: "Proprietari", label: "Responsabilità personale" },
+      { value: "Germania", label: "Focus su località selezionate" },
     ],
-    heroMetaLine: "Oltre 30 anni di esperienza · 87+ immobili sviluppati",
+    heroMetaLine: "Oltre 30 anni di esperienza · Gestita dai proprietari · Sede in Germania",
     referencesLabel: "Progetti selezionati",
     referencesTitle: "Referenze dalla pratica",
     referenceProjects: [
