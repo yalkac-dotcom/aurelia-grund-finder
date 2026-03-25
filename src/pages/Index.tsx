@@ -247,15 +247,15 @@ const Index = () => {
           <Reveal>
             <div className="section-shell-accent mb-6">
               <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                Ausgewählte Projekte
+                {t.landing.referencesLabel}
               </p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                Referenzen aus der Praxis
+                {t.landing.referencesTitle}
               </h2>
             </div>
           </Reveal>
           <div className="grid gap-5">
-            {referenceProjects.map((project, i) => (
+            {t.landing.referenceProjects.map((project, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className="border border-border/50 p-5 md:p-6">
                   <div className="flex flex-wrap items-center gap-3 mb-3">
@@ -269,11 +269,11 @@ const Index = () => {
                   <p className="text-sm font-heading font-semibold text-foreground mb-3">{project.type}</p>
                   <div className="grid sm:grid-cols-2 gap-4 mb-3">
                     <div>
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ausgangslage</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{t.landing.refBeforeLabel}</p>
                       <p className="text-sm text-muted-foreground leading-[1.6]">{project.before}</p>
                     </div>
                     <div>
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ergebnis</p>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{t.landing.refAfterLabel}</p>
                       <p className="text-sm text-foreground leading-[1.6]">{project.after}</p>
                     </div>
                   </div>
