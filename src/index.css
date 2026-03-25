@@ -63,6 +63,23 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
   }
+
+  /* Accessible focus states for keyboard navigation */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent;
+  }
+
+  /* Minimum touch target for interactive elements */
+  a, button, [role="button"], input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Exception for inline links within text */
+  p a, li a, span a, td a, address a {
+    min-height: unset;
+    min-width: unset;
+  }
 }
 
 @layer utilities {
