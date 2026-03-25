@@ -141,13 +141,13 @@ const en: Translations = {
     ctaTitle: "Talk to us about your property or your enquiry.",
     ctaText: "Personal, discreet, and without obligation. We listen, review carefully, and come back with a clear initial assessment.",
     ctaButton: "Schedule an initial consultation",
-    trustStatsLabel: "Trust through experience",
+    trustStatsLabel: "Our foundation",
     trustStatsItems: [
       { value: "30+", label: "Years of experience in real estate" },
-      { value: "87+", label: "Successfully developed properties" },
-      { value: "50+", label: "Satisfied investors & partners" },
+      { value: "Owner-managed", label: "Personal responsibility" },
+      { value: "Germany", label: "Focus on selected locations" },
     ],
-    heroMetaLine: "Over 30 years of experience · 87+ developed properties",
+    heroMetaLine: "Over 30 years of experience · Owner-managed · Based in Germany",
     referencesLabel: "Selected projects",
     referencesTitle: "Track record",
     referenceProjects: [
