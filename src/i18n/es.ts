@@ -78,7 +78,7 @@ const es: Translations = {
     strategySubtitle: "Nos concentramos en inmuebles que se venden bajo presión de tiempo o en constelaciones complejas. Con una visión clara del potencial, desarrollamos conceptos a medida.",
     ourServices: "Nuestros servicios",
     locationTitle: "Enfoque en Alemania",
-    locationText: "Invertimos en ubicaciones de valor estable en toda Alemania – con especial atención a zonas con potencial de desarrollo sostenible.",
+    locationText: "Nos centramos en ubicaciones de Alemania que combinan sustancia, demanda y potencial de desarrollo. Lo decisivo para nosotros no es solo la primera impresión, sino la viabilidad a largo plazo de una ubicación.",
     contactCta: "Contactar",
   },
   landing: {
