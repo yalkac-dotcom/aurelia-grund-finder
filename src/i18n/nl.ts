@@ -142,13 +142,13 @@ const nl: Translations = {
     ctaTitle: "Bespreek uw object of uw vraag met ons.",
     ctaText: "Persoonlijk, discreet en vrijblijvend. Wij luisteren, beoordelen zorgvuldig en komen terug met een heldere eerste inschatting.",
     ctaButton: "Kennismakingsgesprek inplannen",
-    trustStatsLabel: "Vertrouwen door ervaring",
+    trustStatsLabel: "Ons fundament",
     trustStatsItems: [
       { value: "30+", label: "Jaar ervaring in de vastgoedmarkt" },
-      { value: "87+", label: "Succesvol ontwikkelde objecten" },
-      { value: "50+", label: "Tevreden investeerders & partners" },
+      { value: "Eigenaargestuurd", label: "Persoonlijke verantwoordelijkheid" },
+      { value: "Duitsland", label: "Focus op geselecteerde locaties" },
     ],
-    heroMetaLine: "Meer dan 30 jaar ervaring · 87+ ontwikkelde objecten",
+    heroMetaLine: "Meer dan 30 jaar ervaring · Eigenaargestuurd · Gevestigd in Duitsland",
     referencesLabel: "Geselecteerde projecten",
     referencesTitle: "Referenties uit de praktijk",
     referenceProjects: [
