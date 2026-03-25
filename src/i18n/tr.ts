@@ -235,7 +235,7 @@ const tr: Translations = {
   tax: {
     heroTitle: "Vergi avantajları ve teşvikler",
     introTitle: "Mülk sahipleri ve kiralama yapanlar için önemli konular",
-    introSubtitle: "Almanya'daki gayrimenkul yatırımları, stratejik planlama ile önemli getiri avantajları sağlayabilecek çok sayıda vergisel ve teşvik avantajı sunmaktadır.",
+    introSubtitle: "Nesneye, kullanıma ve alınan önlemlere bağlı olarak vergisel yönler ve devlet teşvik programları önemli bir rol oynayabilir. Somut etki her zaman bireysel duruma bağlıdır.",
     categoryTax: "Vergiler",
     categoryFunding: "Teşvikler",
     categoryKnowledge: "Bilgi",
