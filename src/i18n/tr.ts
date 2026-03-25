@@ -25,8 +25,8 @@ const tr: Translations = {
     slogan: "Özü olan gayrimenkuller — gizlilikle incelenir, net biçimde geliştirilir ve uzun vadeli düşünülür.",
     subtitle:
       "Cebri icra, miras ve iflas kaynaklı gayrimenkullere odaklanıyoruz. Her durumu dikkatle inceleyerek ekonomik açıdan mantıklı ve sürdürülebilir çözümler geliştiriyoruz.",
-    cta: "Satın alma talebi gönder",
-    ctaSecondary: "Aurelia hakkında daha fazla bilgi",
+    cta: "İletişime geçin",
+    ctaSecondary: "Aurelia hakkında",
   },
   common: {
     learnMore: "Daha fazla bilgi",
