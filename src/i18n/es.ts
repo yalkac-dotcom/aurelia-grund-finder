@@ -42,7 +42,7 @@ const es: Translations = {
     callbackRequest: "Deseo que me devuelvan la llamada.",
     personalContact: "Contacto personal",
     ourTeam: "Nuestro amable equipo",
-    teamDescription: "Nuestro equipo experimentado está a su disposición para todas las preguntas sobre inmuebles e inversiones – de forma personal, competente y discreta.",
+    teamDescription: "Nuestro equipo experimentado está a su disposición para todas las preguntas sobre inmuebles – de forma personal, competente y discreta.",
     availability: "Horario de atención",
     monFri: "Lunes – Viernes",
     saturday: "Sábado",
