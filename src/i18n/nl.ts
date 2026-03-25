@@ -43,7 +43,7 @@ const nl: Translations = {
     callbackRequest: "Ik wil graag teruggebeld worden.",
     personalContact: "Persoonlijk contact",
     ourTeam: "Ons team staat voor u klaar",
-    teamDescription: "Ons ervaren team is beschikbaar voor al uw vragen over vastgoed en beleggingen — persoonlijk, deskundig en discreet.",
+    teamDescription: "Ons ervaren team is beschikbaar voor al uw vragen over vastgoed — persoonlijk, deskundig en discreet.",
     availability: "Bereikbaarheid",
     monFri: "Maandag – vrijdag",
     saturday: "Zaterdag",
