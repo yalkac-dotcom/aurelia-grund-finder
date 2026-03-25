@@ -84,7 +84,7 @@ const Index = () => {
             </div>
             <p className="flex items-center gap-1.5 text-white/90 text-xs mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
               <CheckCircle size={12} className="text-accent shrink-0" />
-              Über 30 Jahre Erfahrung · 200+ entwickelte Objekte
+              Über 30 Jahre Erfahrung · 87+ entwickelte Objekte
             </p>
           </div>
 
