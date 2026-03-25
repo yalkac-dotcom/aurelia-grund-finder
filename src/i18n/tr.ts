@@ -234,7 +234,7 @@ const tr: Translations = {
   },
   tax: {
     heroTitle: "Vergi avantajları ve teşvikler",
-    introTitle: "Yatırımcılar için avantajlar",
+    introTitle: "Mülk sahipleri ve kiralama yapanlar için önemli konular",
     introSubtitle: "Almanya'daki gayrimenkul yatırımları, stratejik planlama ile önemli getiri avantajları sağlayabilecek çok sayıda vergisel ve teşvik avantajı sunmaktadır.",
     categoryTax: "Vergiler",
     categoryFunding: "Teşvikler",
