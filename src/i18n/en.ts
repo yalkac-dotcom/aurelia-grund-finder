@@ -129,9 +129,9 @@ const en: Translations = {
       { title: "Discretion", text: "Confidentiality is part of our everyday practice." },
       { title: "Perspective", text: "We make decisions with long-term development in mind." },
     ],
-    projectsLabel: "Investment focus",
+    projectsLabel: "Location focus",
     projectsTitle: "Locations with substance",
-    projectsText: "We focus on locations in Germany that combine sound fundamentals with understandable development potential.",
+    projectsText: "We focus on locations in Germany that combine substance, demand, and development potential. What matters to us is not just the first impression, but the long-term viability of a location.",
     stats: [
       { value: "Selected", label: "Projects reviewed carefully" },
       { value: "Long-term", label: "Thinking in sustainable structures" },
