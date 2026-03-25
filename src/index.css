@@ -109,3 +109,14 @@
     padding: 3rem 3.5rem;
   }
 }
+
+/* Scroll indicator — mouse symbol */
+@keyframes scroll-dot-move {
+  0% { opacity: 0.5; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(6px); }
+  100% { opacity: 0.5; transform: translateY(0); }
+}
+
+.animate-scroll-dot {
+  animation: scroll-dot-move 2.2s ease-in-out infinite;
+}
