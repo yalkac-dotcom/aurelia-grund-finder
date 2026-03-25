@@ -235,7 +235,7 @@ const nl: Translations = {
   },
   tax: {
     heroTitle: "Belastingvoordelen en subsidiemogelijkheden",
-    introTitle: "Belangrijke thema's voor investeerders en eigenaren",
+    introTitle: "Belangrijke thema's voor eigenaren en verhuurders",
     introSubtitle: "Afhankelijk van het object, het gebruik en de maatregel kunnen fiscale aspecten en overheidssubsidies een belangrijke rol spelen. De concrete impact is altijd afhankelijk van de individuele situatie.",
     categoryTax: "Belastingen",
     categoryFunding: "Subsidies",
