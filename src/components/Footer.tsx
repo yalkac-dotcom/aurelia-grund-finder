@@ -16,8 +16,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#16181A] border-t border-white/10">
-      <div className="container py-10 md:py-12">
-        <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-8 md:gap-6">
+      <div className="container py-8 md:py-12">
+        <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-6 md:gap-6">
           {/* Left — Logo + Claim */}
           <div>
             <Link to="/" className="inline-block mb-3">
@@ -69,9 +69,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/30 mt-5 pt-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-2.5">
-            <p className="text-white/80 text-xs order-2 md:order-1">
+        <div className="border-t border-white/20 mt-5 pt-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2">
+            <p className="text-white/60 text-[10px] md:text-xs order-2 md:order-1">
               © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
             </p>
 
@@ -80,16 +80,16 @@ const Footer = () => {
                 <span key={code} className="inline-flex items-center">
                   <button
                     onClick={() => setLanguage(code)}
-                    className={`text-xs transition-colors duration-200 ${
+                    className={`text-[10px] md:text-xs transition-colors duration-200 ${
                       code === language
                         ? "text-accent font-medium"
-                        : "text-white/80 hover:text-accent"
+                        : "text-white/60 hover:text-accent"
                     }`}
                   >
                     {code.toUpperCase()}
                   </button>
                   {i < languageCodes.length - 1 && (
-                    <span className="text-white/25 ml-2.5">|</span>
+                    <span className="text-white/20 ml-2.5">|</span>
                   )}
                 </span>
               ))}
@@ -98,20 +98,20 @@ const Footer = () => {
             <div className="flex items-center gap-3.5 order-3">
               <Link
                 to="/impressum"
-                className="text-white/80 text-xs hover:text-accent transition-colors duration-200"
+                className="text-white/60 text-[10px] md:text-xs hover:text-accent transition-colors duration-200"
               >
                 {t.footer.imprint}
               </Link>
               <Link
                 to="/datenschutz"
-                className="text-white/80 text-xs hover:text-accent transition-colors duration-200"
+                className="text-white/60 text-[10px] md:text-xs hover:text-accent transition-colors duration-200"
               >
                 {t.footer.privacy}
               </Link>
             </div>
           </div>
 
-          <p className="text-white/75 text-xs mt-3 text-center leading-relaxed max-w-2xl mx-auto">
+          <p className="text-white/50 text-[10px] md:text-xs mt-3 text-center leading-relaxed max-w-2xl mx-auto">
             {t.footer.disclaimer}
           </p>
         </div>
