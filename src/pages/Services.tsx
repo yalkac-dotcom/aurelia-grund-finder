@@ -19,7 +19,7 @@ const Services = () => {
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>
-            <p className="text-white/80 font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.nav.services}</p>
+            <p className="text-white/90 font-sans text-xs font-medium tracking-[0.16em] uppercase mb-2">{t.nav.services}</p>
             <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.services.heroTitle}
             </h1>
@@ -32,7 +32,7 @@ const Services = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.services.introLabel}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.services.introLabel}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
                 {t.services.introTitle}
               </h2>
@@ -40,10 +40,10 @@ const Services = () => {
           </Reveal>
           <div className="mt-4 space-y-3">
             <Reveal delay={0.15}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.services.introSubtitle}</p>
+              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.services.introSubtitle}</p>
             </Reveal>
             <Reveal delay={0.2}>
-              <p className="text-muted-foreground text-[0.85rem] leading-[1.8] max-w-2xl">{t.services.introText}</p>
+              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.services.introText}</p>
             </Reveal>
           </div>
         </div>
@@ -55,12 +55,12 @@ const Services = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <Reveal>
               <div className="border border-border/40 p-5 md:p-6">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-3">{t.services.holdTitle}</h3>
+                <h3 className="text-sm font-heading font-semibold text-foreground mb-3">{t.services.holdTitle}</h3>
                 <ul className="space-y-2">
                   {t.services.holdItems.map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <CheckCircle className="text-accent shrink-0 mt-0.5" size={12} />
-                      <span className="text-muted-foreground text-[0.8rem] leading-[1.7]">{item}</span>
+                      <span className="text-muted-foreground text-sm leading-[1.7]">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -68,12 +68,12 @@ const Services = () => {
             </Reveal>
             <Reveal delay={0.1}>
               <div className="border border-border/40 p-5 md:p-6">
-                <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-3">{t.services.renovateTitle}</h3>
+                <h3 className="text-sm font-heading font-semibold text-foreground mb-3">{t.services.renovateTitle}</h3>
                 <ul className="space-y-2">
                   {t.services.renovateItems.map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <CheckCircle className="text-accent shrink-0 mt-0.5" size={12} />
-                      <span className="text-muted-foreground text-[0.8rem] leading-[1.7]">{item}</span>
+                      <span className="text-muted-foreground text-sm leading-[1.7]">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -88,7 +88,7 @@ const Services = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.services.comparisonLabel}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.services.comparisonLabel}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
                 {t.services.comparisonTitle}
               </h2>
@@ -96,11 +96,11 @@ const Services = () => {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="overflow-x-auto mt-5">
-              <table className="w-full text-[0.8rem]">
+              <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-accent/40">
                     {t.services.comparisonHeaders.map((h) => (
-                      <th key={h} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-[0.78rem]">{h}</th>
+                      <th key={h} className="text-left py-2 pr-4 font-heading font-semibold text-foreground text-sm">{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -129,13 +129,13 @@ const Services = () => {
             <Reveal delay={0.1}>
               <div>
                 <div className="section-shell-accent">
-                  <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.services.experienceLabel}</p>
+                  <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.services.experienceLabel}</p>
                   <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
                     {t.services.experienceTitle}
                   </h2>
                 </div>
-                <p className="text-muted-foreground text-[0.85rem] leading-[1.8] mt-3">{t.services.experienceText}</p>
-                <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-[10px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-5">
+                <p className="text-muted-foreground text-sm leading-[1.8] mt-3">{t.services.experienceText}</p>
+                <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-5">
                   {t.landing.heroCta}
                   <ArrowRight size={11} />
                 </Link>
