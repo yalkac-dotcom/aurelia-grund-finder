@@ -7,38 +7,7 @@ import trustImg from "@/assets/section-trust.jpg";
 import { ArrowRight, ChevronDown, AlertTriangle, CheckCircle, Clock, Building2, Users, MapPin, Calendar, TrendingUp } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const trustStats = [
-  { icon: Clock, value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
-  { icon: Building2, value: "87+", label: "Erfolgreich entwickelte Objekte" },
-  { icon: Users, value: "50+", label: "Zufriedene Investoren & Partner" },
-];
-
-const referenceProjects = [
-  {
-    location: "Düsseldorf-Oberkassel",
-    year: "2021",
-    type: "Mehrfamilienhaus aus Nachlassauflösung",
-    before: "Leerstehend, erheblicher Sanierungsstau, ungeklärte Eigentumsverhältnisse",
-    after: "Vollständig saniert, 8 Wohneinheiten, langfristig vermietet",
-    result: "+38 % Wertsteigerung nach Entwicklung",
-  },
-  {
-    location: "Essen-Rüttenscheid",
-    year: "2022",
-    type: "Wohn- und Geschäftshaus aus Zwangsversteigerung",
-    before: "Teilbesetzt, bauliche Mängel, komplexe Mietstruktur",
-    after: "Kernsanierung, Neupositionierung, stabile Mieterstruktur",
-    result: "+42 % Wertsteigerung nach 18 Monaten",
-  },
-  {
-    location: "Köln-Ehrenfeld",
-    year: "2023",
-    type: "Zinshaus aus Insolvenzverfahren",
-    before: "Verwaltungschaos, Mietrückstände, offene Rechtsfragen",
-    after: "Rechtlich bereinigt, modernisiert, vollvermietet",
-    result: "+29 % Wertsteigerung, laufende Rendite optimiert",
-  },
-];
+const trustIcons = [Clock, Building2, Users];
 
 const Index = () => {
   const { t } = useLanguage();
