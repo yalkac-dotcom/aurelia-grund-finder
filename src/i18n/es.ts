@@ -78,7 +78,7 @@ const es: Translations = {
     strategySubtitle: "Nos concentramos en inmuebles que se venden bajo presión de tiempo o en constelaciones complejas. Con una visión clara del potencial, desarrollamos conceptos a medida.",
     ourServices: "Nuestros servicios",
     locationTitle: "Enfoque en Alemania",
-    locationText: "Invertimos en ubicaciones de valor estable en toda Alemania – con especial atención a zonas con potencial de desarrollo sostenible.",
+    locationText: "Nos centramos en ubicaciones de Alemania que combinan sustancia, demanda y potencial de desarrollo. Lo decisivo para nosotros no es solo la primera impresión, sino la viabilidad a largo plazo de una ubicación.",
     contactCta: "Contactar",
   },
   landing: {
@@ -177,9 +177,9 @@ const es: Translations = {
   services: {
     heroTitle: "Servicios y estrategias",
     introLabel: "Nuestro enfoque",
-    introTitle: "Estrategias de inversión",
-    introSubtitle: "Nos centramos en inmuebles que a menudo se venden bajo presión de tiempo o en situaciones complejas – por ejemplo en el marco de subastas judiciales, liquidaciones de herencias o procedimientos de insolvencia.",
-    introText: "Con una visión clara del potencial, desarrollamos conceptos a medida: desde la estabilización de la situación de alquiler y mejoras técnicas y de eficiencia energética hasta el reposicionamiento completo en el mercado.",
+    introTitle: "Inmuebles con potencial — estructurados con claridad, desarrollados con sentido",
+    introSubtitle: "Nos ocupamos de inmuebles procedentes de situaciones especiales y analizamos para cada objeto la vía económicamente más sensata.",
+    introText: "Según la situación de partida, puede tratarse de una consolidación a largo plazo o de un desarrollo dirigido con posterior venta.",
     holdTitle: "Mantener en cartera y alquilar",
     holdItems: [
       "Horizonte temporal: largo plazo (años a décadas)",
@@ -207,8 +207,8 @@ const es: Translations = {
       ["Adecuado para", "Ubicaciones sólidas, inquilinos estables", "Inmuebles con alto potencial de desarrollo"],
     ],
     experienceLabel: "Fundamento",
-    experienceTitle: "Experiencia y estrategia",
-    experienceText: "Más de 30 años de experiencia combinada en el mundo inmobiliario constituyen la base de nuestro trabajo. Operamos con una sólida red de bancos, agentes y proveedores de servicios especializados.",
+    experienceTitle: "La experiencia como base de cada decisión",
+    experienceText: "La estrategia correcta no surge de una fórmula estándar. Se deriva del inmueble, la ubicación, el estado, la demanda, el esfuerzo necesario y el objetivo. Por eso apostamos por un análisis cuidadoso en lugar de soluciones rápidas y genéricas.",
   },
   contact: {
     title: "Contacto",
@@ -235,7 +235,7 @@ const es: Translations = {
   tax: {
     heroTitle: "Ventajas fiscales y subvenciones",
     introTitle: "Temas importantes para propietarios y arrendadores",
-    introSubtitle: "Las inversiones inmobiliarias en Alemania ofrecen numerosas ventajas fiscales y de subvención que, con una planificación estratégica, pueden generar rendimientos significativos.",
+    introSubtitle: "Según el inmueble, el uso y las medidas adoptadas, los aspectos fiscales y los programas de subvención estatales pueden desempeñar un papel importante. El impacto concreto depende siempre de la situación individual.",
     categoryTax: "Impuestos",
     categoryFunding: "Subvenciones",
     categoryKnowledge: "Conocimiento",
@@ -246,7 +246,7 @@ const es: Translations = {
     benefitColumn: "Beneficio para propietarios",
     glossarTitle: "Glosario",
     glossarDesc: "Términos clave relacionados con las ventajas fiscales y subvenciones en el sector inmobiliario.",
-    disclaimer: "Las implicaciones fiscales dependen en gran medida de las circunstancias individuales. La información aquí presentada no sustituye el asesoramiento individual de un asesor fiscal. Un asesoramiento fiscal cualificado es imprescindible antes de cualquier decisión de inversión.",
+    disclaimer: "Las implicaciones fiscales dependen en gran medida de las circunstancias individuales. La información aquí presentada no sustituye el asesoramiento individual de un asesor fiscal. Antes de tomar decisiones importantes debe consultarse a un asesor cualificado.",
     externalLinksDisclaimer: "Aviso sobre enlaces externos: Este sitio web contiene enlaces a sitios web de terceros (enlaces externos). Estos sitios web están bajo la responsabilidad de sus respectivos operadores. Al crear los enlaces por primera vez, se verificaron los contenidos externos en busca de posibles infracciones legales. En ese momento no se detectaron infracciones. Un control permanente del contenido de las páginas enlazadas no es razonablemente exigible sin indicios concretos de infracción legal. Al tener conocimiento de infracciones legales, dichos enlaces externos se eliminarán de inmediato.",
     backToOverview: "Volver al resumen",
     furtherLinks: "Enlaces adicionales",

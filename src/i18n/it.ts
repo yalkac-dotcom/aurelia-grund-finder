@@ -78,7 +78,7 @@ const it: Translations = {
     strategySubtitle: "Ci concentriamo su immobili venduti sotto pressione temporale o in costellazioni complesse. Con uno sguardo attento al potenziale, sviluppiamo concept su misura.",
     ourServices: "I nostri servizi",
     locationTitle: "Focus sulla Germania",
-    locationText: "Investiamo in località stabili in tutta la Germania – con particolare attenzione a zone con un potenziale di sviluppo sostenibile.",
+    locationText: "Ci concentriamo su località in Germania che uniscono sostanza, domanda e potenziale di sviluppo. Per noi è decisiva non solo la prima impressione, ma la sostenibilità a lungo termine di una località.",
     contactCta: "Contattaci",
   },
   landing: {
@@ -177,9 +177,9 @@ const it: Translations = {
   services: {
     heroTitle: "Servizi e strategie",
     introLabel: "Il nostro focus",
-    introTitle: "Strategie di investimento",
-    introSubtitle: "Ci concentriamo su immobili che vengono spesso venduti sotto pressione temporale o in situazioni complesse – ad esempio nell'ambito di aste giudiziarie, regolamenti successori o procedure concorsuali.",
-    introText: "Con uno sguardo attento al potenziale, sviluppiamo concept su misura: dalla stabilizzazione della situazione locativa a miglioramenti tecnici ed energetici, fino al completo riposizionamento sul mercato.",
+    introTitle: "Immobili con potenziale — strutturati con chiarezza, sviluppati con senso",
+    introSubtitle: "Ci occupiamo di immobili provenienti da situazioni particolari e valutiamo per ogni oggetto il percorso economicamente più sensato.",
+    introText: "A seconda della situazione di partenza, può trattarsi di un consolidamento a lungo termine o di uno sviluppo mirato con successiva vendita.",
     holdTitle: "Mantenere in portafoglio e affittare",
     holdItems: [
       "Orizzonte temporale: lungo termine (anni a decenni)",
@@ -207,8 +207,8 @@ const it: Translations = {
       ["Adatto per", "Località solide, inquilini stabili", "Immobili con alto potenziale di sviluppo"],
     ],
     experienceLabel: "Fondamento",
-    experienceTitle: "Esperienza incontra strategia",
-    experienceText: "Oltre 30 anni di esperienza combinata nel settore immobiliare costituiscono il fondamento del nostro lavoro. Operiamo con una rete solida di banche, agenti e fornitori di servizi specializzati.",
+    experienceTitle: "L'esperienza come base di ogni decisione",
+    experienceText: "La strategia giusta non nasce da una formula standard. Deriva dall'immobile, dalla posizione, dallo stato, dalla domanda, dall'impegno necessario e dall'obiettivo. Per questo ci affidiamo a un'analisi accurata anziché a soluzioni rapide e generiche.",
   },
   contact: {
     title: "Contatti",
@@ -235,7 +235,7 @@ const it: Translations = {
   tax: {
     heroTitle: "Agevolazioni fiscali e sovvenzioni",
     introTitle: "Temi importanti per proprietari e locatori",
-    introSubtitle: "Gli investimenti immobiliari in Germania offrono numerosi vantaggi fiscali e di sovvenzione che, con una pianificazione strategica, possono generare rendimenti significativi.",
+    introSubtitle: "A seconda dell'immobile, dell'utilizzo e delle misure adottate, aspetti fiscali e programmi di sovvenzione statali possono svolgere un ruolo importante. L'impatto concreto dipende sempre dalla situazione individuale.",
     categoryTax: "Fisco",
     categoryFunding: "Sovvenzioni",
     categoryKnowledge: "Conoscenze",
@@ -246,7 +246,7 @@ const it: Translations = {
     benefitColumn: "Beneficio per i proprietari",
     glossarTitle: "Glossario",
     glossarDesc: "Termini chiave relativi alle agevolazioni fiscali e alle sovvenzioni nel settore immobiliare.",
-    disclaimer: "Le implicazioni fiscali dipendono fortemente dalle circostanze individuali. Le informazioni qui presentate non sostituiscono la consulenza individuale di un consulente fiscale. Una consulenza fiscale qualificata è indispensabile prima di qualsiasi decisione di investimento.",
+    disclaimer: "Le implicazioni fiscali dipendono fortemente dalle circostanze individuali. Le informazioni qui presentate non sostituiscono la consulenza individuale di un consulente fiscale. Prima di decisioni importanti è indispensabile rivolgersi a un consulente qualificato.",
     externalLinksDisclaimer: "Avvertenza per i link esterni: Questo sito web contiene collegamenti a siti web di terzi (link esterni). Questi siti web sono sotto la responsabilità dei rispettivi gestori. Al momento della prima creazione dei link, i contenuti esterni sono stati verificati per possibili violazioni legali. Al momento non erano evidenti violazioni. Un monitoraggio permanente dei contenuti delle pagine collegate non è ragionevolmente esigibile senza concrete indicazioni di violazione. Al momento della conoscenza di violazioni legali, tali link esterni saranno rimossi immediatamente.",
     backToOverview: "Torna alla panoramica",
     furtherLinks: "Link utili",

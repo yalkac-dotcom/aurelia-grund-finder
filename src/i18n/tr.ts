@@ -78,7 +78,7 @@ const tr: Translations = {
     strategySubtitle: "Zaman baskısı altında veya karmaşık durumlarla satılan gayrimenkullere odaklanıyoruz. Potansiyele keskin bir bakışla, özel konseptler geliştiriyoruz.",
     ourServices: "Hizmetlerimiz",
     locationTitle: "Almanya odağı",
-    locationText: "Almanya genelinde değer istikrarlı lokasyonlara yatırım yapıyoruz – sürdürülebilir gelişim potansiyeli olan bölgelere özel önem vererek.",
+    locationText: "Almanya'da öz, talep ve gelişim potansiyelini birleştiren lokasyonlara odaklanıyoruz. Bizim için belirleyici olan yalnızca ilk izlenim değil, bir konumun uzun vadeli taşıyıcılığıdır.",
     contactCta: "İletişime geçin",
   },
   landing: {
@@ -177,9 +177,9 @@ const tr: Translations = {
   services: {
     heroTitle: "Hizmetler ve stratejiler",
     introLabel: "Odak noktamız",
-    introTitle: "Yatırım stratejileri",
-    introSubtitle: "Genellikle zaman baskısı altında veya karmaşık durumlarda satılan gayrimenkullere odaklanıyoruz – örneğin cebri icralar, miras düzenlemeleri veya iflas süreçleri kapsamında.",
-    introText: "Potansiyele keskin bir bakışla özel konseptler geliştiriyoruz: kiralama durumunun stabilizasyonundan teknik ve enerji verimliliği iyileştirmelerine, piyasada tam yeniden konumlandırmaya kadar.",
+    introTitle: "Potansiyeli olan gayrimenkuller — net yapılandırılmış, anlamlı şekilde geliştirilmiş",
+    introSubtitle: "Özel durumlardan çıkan gayrimenkullerle ilgileniyor ve her nesne için ekonomik açıdan en mantıklı yolu inceliyoruz.",
+    introText: "Başlangıç durumuna bağlı olarak bu, uzun vadeli portföy oluşturma veya ardından satışla hedefli geliştirme olabilir.",
     holdTitle: "Portföyde tutma ve kiralama",
     holdItems: [
       "Zaman ufku: Uzun vadeli (yıllardan on yıllara)",
@@ -207,8 +207,8 @@ const tr: Translations = {
       ["Uygun", "Sağlam lokasyonlar, istikrarlı kiracılar", "Yüksek geliştirme potansiyeli olan gayrimenkuller"],
     ],
     experienceLabel: "Temel",
-    experienceTitle: "Deneyim stratejiyle buluşuyor",
-    experienceText: "Gayrimenkul dünyasında 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Bankalar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güçlü bir ağla çalışıyoruz.",
+    experienceTitle: "Deneyim her kararın temelidir",
+    experienceText: "Doğru strateji standart bir formülden doğmaz. Gayrimenkulden, konumdan, durumdan, talepten, gerekli çabadan ve hedeften ortaya çıkar. Bu nedenle hızlı genel çözümler yerine dikkatli incelemeye güveniyoruz.",
   },
   contact: {
     title: "İletişim",
@@ -235,7 +235,7 @@ const tr: Translations = {
   tax: {
     heroTitle: "Vergi avantajları ve teşvikler",
     introTitle: "Mülk sahipleri ve kiralama yapanlar için önemli konular",
-    introSubtitle: "Almanya'daki gayrimenkul yatırımları, stratejik planlama ile önemli getiri avantajları sağlayabilecek çok sayıda vergisel ve teşvik avantajı sunmaktadır.",
+    introSubtitle: "Nesneye, kullanıma ve alınan önlemlere bağlı olarak vergisel yönler ve devlet teşvik programları önemli bir rol oynayabilir. Somut etki her zaman bireysel duruma bağlıdır.",
     categoryTax: "Vergiler",
     categoryFunding: "Teşvikler",
     categoryKnowledge: "Bilgi",
@@ -246,7 +246,7 @@ const tr: Translations = {
     benefitColumn: "Mülk sahipleri için fayda",
     glossarTitle: "Sözlük",
     glossarDesc: "Gayrimenkul sektöründeki vergi avantajları ve teşviklerle ilgili önemli terimler.",
-    disclaimer: "Vergisel etkiler büyük ölçüde bireysel koşullara bağlıdır. Burada sunulan bilgiler, bir vergi danışmanının bireysel danışmanlığının yerini almaz. Nitelikli vergi danışmanlığı, herhangi bir yatırım kararından önce vazgeçilmezdir.",
+    disclaimer: "Vergisel etkiler büyük ölçüde bireysel koşullara bağlıdır. Burada sunulan bilgiler, bir vergi danışmanının bireysel danışmanlığının yerini almaz. Önemli kararlar öncesinde nitelikli danışmanlık alınmalıdır.",
     externalLinksDisclaimer: "Dış bağlantılar için sorumluluk reddi: Bu web sitesi üçüncü taraf web sitelerine bağlantılar (harici bağlantılar) içermektedir. Bu web siteleri ilgili işletmecilerin sorumluluğundadır. Bağlantıların ilk oluşturulması sırasında harici içerikler olası hukuki ihlaller açısından kontrol edilmiştir. O sırada herhangi bir hukuki ihlal tespit edilmemiştir. Bağlantılı sayfaların içeriklerinin sürekli kontrolü, somut bir hukuki ihlal belirtisi olmaksızın makul olarak beklenemez. Hukuki ihlallerin tespit edilmesi halinde bu tür harici bağlantılar derhal kaldırılacaktır.",
     backToOverview: "Genel bakışa dön",
     furtherLinks: "İlgili bağlantılar",
