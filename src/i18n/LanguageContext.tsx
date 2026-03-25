@@ -2,11 +2,12 @@ import { createContext, useContext, useState, useCallback, ReactNode, useEffect 
 import { Language, Translations } from "./types";
 import de from "./de";
 import en from "./en";
+import nl from "./nl";
 import it from "./it";
 import es from "./es";
 import tr from "./tr";
 
-const translationsMap: Record<Language, Translations> = { de, en, it, es, tr };
+const translationsMap: Record<Language, Translations> = { de, en, nl, it, es, tr };
 
 interface LanguageContextType {
   language: Language;
@@ -54,7 +55,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     twDesc?.setAttribute("content", descText);
     metaDesc?.setAttribute("content", descText);
 
-    const localeMap: Record<Language, string> = { de: "de_DE", en: "en_US", it: "it_IT", es: "es_ES", tr: "tr_TR" };
+    const localeMap: Record<Language, string> = { de: "de_DE", en: "en_US", nl: "nl_NL", it: "it_IT", es: "es_ES", tr: "tr_TR" };
     const ogLocale = document.querySelector('meta[property="og:locale"]');
     ogLocale?.setAttribute("content", localeMap[language]);
   }, [language]);
