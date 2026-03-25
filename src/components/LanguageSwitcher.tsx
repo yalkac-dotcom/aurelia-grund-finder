@@ -1,15 +1,7 @@
 import { useState, useRef, useEffect } from "react";
-import { Globe } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { languageNames, languageCodes, Language } from "@/i18n/types";
-
-const languageFlags: Record<Language, string> = {
-  de: "🇩🇪",
-  en: "🇬🇧",
-  it: "🇮🇹",
-  es: "🇪🇸",
-  tr: "🇹🇷",
-};
+import { languageNames, languageCodes } from "@/i18n/types";
 
 const LanguageSwitcher = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -25,18 +17,18 @@ const LanguageSwitcher = () => {
   }, []);
 
   return (
-    <div ref={ref} className="relative">
+    <div ref={ref} className="relative flex items-center">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 text-muted-foreground hover:text-foreground transition-colors text-sm"
+        className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors text-[12px] tracking-wide"
         aria-label={t.common.languageAria}
       >
-        <Globe size={18} />
-        <span className="uppercase font-medium tracking-wide">{language}</span>
+        <span className="uppercase font-medium">{language}</span>
+        <ChevronDown size={14} className={`transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
 
       {open && (
-        <div className="absolute right-0 top-full mt-2 bg-card border border-border shadow-lg rounded min-w-[180px] z-50">
+        <div className="absolute right-0 top-full mt-2 bg-card border border-border shadow-lg rounded min-w-[160px] z-50">
           {languageCodes.map((code) => (
             <button
               key={code}
@@ -44,13 +36,14 @@ const LanguageSwitcher = () => {
                 setLanguage(code);
                 setOpen(false);
               }}
-              className={`flex items-center gap-2.5 w-full text-left px-4 py-2.5 text-sm transition-colors hover:bg-secondary ${
+              className={`flex items-center gap-2 w-full text-left px-4 py-2.5 text-[12px] tracking-wide transition-colors hover:bg-secondary ${
                 code === language
                   ? "text-foreground font-medium bg-secondary"
                   : "text-muted-foreground"
               }`}
             >
-              <span className="text-base leading-none">{languageFlags[code]}</span>
+              <span className="uppercase w-5">{code}</span>
+              <span className="text-muted-foreground">—</span>
               {languageNames[code]}
             </button>
           ))}

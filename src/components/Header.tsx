@@ -26,13 +26,13 @@ const Header = () => {
           <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-10 md:h-11 w-auto object-contain" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-7">
           <nav className="flex items-center gap-7">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-[12px] tracking-wide transition-colors hover:text-accent ${
+                className={`text-[12px] tracking-wide transition-colors hover:text-accent leading-none ${
                   location.pathname === item.path
                     ? "text-foreground font-medium"
                     : "text-muted-foreground"
@@ -42,6 +42,7 @@ const Header = () => {
               </Link>
             ))}
           </nav>
+          <div className="w-px h-4 bg-border/60" />
           <LanguageSwitcher />
         </div>
 
