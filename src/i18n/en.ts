@@ -78,7 +78,7 @@ const en: Translations = {
     strategySubtitle: "We focus on properties sold under time pressure or in complex constellations. With a keen eye for potential, we develop tailored concepts.",
     ourServices: "Our Services",
     locationTitle: "Focus on Germany",
-    locationText: "We invest in value-stable locations throughout Germany – with particular attention to areas with sustainable development potential.",
+    locationText: "We focus on locations in Germany that combine substance, demand, and development potential. What matters to us is not just the first impression, but the long-term viability of a location.",
     contactCta: "Get in touch",
   },
   landing: {
