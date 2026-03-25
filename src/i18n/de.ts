@@ -66,7 +66,7 @@ const de: Translations = {
     bullets: [
       "Spezialisierung auf Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen.",
       "Klare Strategien für Bestand, Entwicklung und werthaltige Weiterveräußerung.",
-      "Über 30 Jahre gebündelte Erfahrung in Immobilien, Kapitalanlagen und Strukturierung.",
+      "Über 30 Jahre gebündelte Erfahrung in Immobilien und Strukturierung.",
       "Diskrete und verlässliche Begleitung vom ersten Überblick bis zur Umsetzung.",
     ],
     approachTitle: "Unser Ansatz",
