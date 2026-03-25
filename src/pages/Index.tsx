@@ -36,6 +36,17 @@ const Index = () => {
                 to="/kontakt"
                 className="inline-flex items-center justify-center gap-1.5 md:gap-2 bg-accent text-white px-4 md:px-6 py-2 md:py-3 text-[0.65rem] md:text-sm font-medium tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors duration-300"
               >
+                {t.landing.heroCta}
+                <ArrowRight size={11} className="md:w-3.5 md:h-3.5" />
+              </Link>
+              <button
+                onClick={() => {
+                  const hero = document.getElementById('hero');
+                  const next = hero?.nextElementSibling as HTMLElement | null;
+                  next?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="inline-flex items-center justify-center gap-1.5 md:gap-2 border border-white/30 bg-black/15 backdrop-blur-sm text-white px-4 md:px-6 py-2 md:py-3 text-[0.65rem] md:text-sm font-medium tracking-[0.1em] uppercase hover:border-white/60 hover:bg-black/35 transition-colors duration-300"
+              >
                 {t.landing.heroCtaSecondary}
               </button>
             </div>
