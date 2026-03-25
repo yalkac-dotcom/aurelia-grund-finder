@@ -7,7 +7,7 @@ import { MapPin, Mail, Phone, Send, Clock, CheckCircle, ArrowRight } from "lucid
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const inputClasses =
-  "w-full border border-border/60 bg-background px-3.5 py-2 text-[0.82rem] text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
+  "w-full border border-border/60 bg-background px-3.5 py-2 text-base text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
 
 const labelClasses = "block text-[9px] font-sans uppercase tracking-[0.15em] text-muted-foreground mb-1";
 
@@ -30,7 +30,7 @@ const Contact = () => {
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>
-            <p className="text-white/80 font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.contact.title}</p>
+            <p className="text-white/90 font-sans text-xs font-medium tracking-[0.16em] uppercase mb-2">{t.contact.title}</p>
             <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.contact.subtitle}
             </h1>
@@ -57,9 +57,9 @@ const Contact = () => {
               <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 first:pt-0">
                 <div className="flex items-center gap-2.5">
                   <MapPin className="text-accent" size={13} />
-                  <h3 className="text-[0.82rem] font-heading font-semibold text-foreground">{t.common.address}</h3>
+                  <h3 className="text-base font-heading font-semibold text-foreground">{t.common.address}</h3>
                 </div>
-                <address className="not-italic text-muted-foreground text-[0.8rem] leading-[1.75]">
+                <address className="not-italic text-muted-foreground text-sm leading-[1.75]">
                   Aurelia Grundbesitz GmbH<br />
                   Grevenbroicher Weg 2<br />
                   40547 Düsseldorf<br />
@@ -71,9 +71,9 @@ const Contact = () => {
               <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5">
                 <div className="flex items-center gap-2.5">
                   <Mail className="text-accent" size={13} />
-                  <h3 className="text-[0.82rem] font-heading font-semibold text-foreground">{t.contact.email}</h3>
+                  <h3 className="text-base font-heading font-semibold text-foreground">{t.contact.email}</h3>
                 </div>
-                <a href="mailto:info@aurelia-grundbesitz.de" className="text-muted-foreground text-[0.8rem] hover:text-accent transition-colors">
+                <a href="mailto:info@aurelia-grundbesitz.de" className="text-muted-foreground text-sm hover:text-accent transition-colors">
                   info@aurelia-grundbesitz.de
                 </a>
               </div>
@@ -82,18 +82,18 @@ const Contact = () => {
               <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5">
                 <div className="flex items-center gap-2.5">
                   <Phone className="text-accent" size={13} />
-                  <h3 className="text-[0.82rem] font-heading font-semibold text-foreground">{t.contact.phone}</h3>
+                  <h3 className="text-base font-heading font-semibold text-foreground">{t.contact.phone}</h3>
                 </div>
-                <p className="text-muted-foreground text-[0.8rem]">{t.contact.phonePending}</p>
+                <p className="text-muted-foreground text-sm">{t.contact.phonePending}</p>
               </div>
             </Reveal>
             <Reveal delay={0.15}>
               <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 last:pb-0">
                 <div className="flex items-center gap-2.5">
                   <Clock className="text-accent" size={13} />
-                  <h3 className="text-[0.82rem] font-heading font-semibold text-foreground">{t.common.availability}</h3>
+                  <h3 className="text-base font-heading font-semibold text-foreground">{t.common.availability}</h3>
                 </div>
-                <div className="text-muted-foreground text-[0.8rem] space-y-0.5">
+                <div className="text-muted-foreground text-sm space-y-0.5">
                   <p>{t.common.monFri}: 09:00 – 18:00</p>
                   <p>{t.common.saturday}: {t.common.byAppointment}</p>
                   <p>{t.common.sunday}: {t.common.closed}</p>
@@ -109,7 +109,7 @@ const Contact = () => {
         <div className="container max-w-2xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.contact.formLabel}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.contact.formLabel}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
                 {t.contact.formTitle}
               </h2>
@@ -122,7 +122,7 @@ const Contact = () => {
                 <div className="py-6 text-center">
                   <CheckCircle className="text-accent mx-auto mb-3" size={24} />
                   <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1.5">{t.contact.successTitle}</h3>
-                  <p className="text-muted-foreground text-[0.82rem] leading-[1.7] max-w-sm mx-auto">{t.contact.successText}</p>
+                  <p className="text-muted-foreground text-base leading-[1.7] max-w-sm mx-auto">{t.contact.successText}</p>
                 </div>
               </Reveal>
             ) : (
@@ -205,7 +205,7 @@ const Contact = () => {
                   <p className="text-[9px] text-muted-foreground">
                     <span className="text-accent">*</span> {t.common.requiredFields}
                   </p>
-                  <button type="submit" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-[10px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
+                  <button type="submit" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
                     {t.contact.send}
                     <ArrowRight size={11} />
                   </button>
@@ -222,7 +222,7 @@ const Contact = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.common.address}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.common.address}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
                 {t.common.ourLocation}
               </h2>

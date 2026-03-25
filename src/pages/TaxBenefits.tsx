@@ -26,7 +26,7 @@ const TaxBenefits = () => {
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>
-            <p className="text-white/80 font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.nav.taxBenefits}</p>
+            <p className="text-white/90 font-sans text-xs font-medium tracking-[0.16em] uppercase mb-2">{t.nav.taxBenefits}</p>
             <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.tax.heroTitle}
             </h1>
@@ -39,7 +39,7 @@ const TaxBenefits = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.nav.taxBenefits}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.nav.taxBenefits}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
                 {t.tax.introTitle}
               </h2>
@@ -60,11 +60,11 @@ const TaxBenefits = () => {
                 <Link to={tp.path} className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0 items-center">
                   <div className="flex items-center gap-2.5">
                     <tp.icon className="text-accent" size={14} />
-                    <span className="text-accent font-sans text-[10px] font-medium tracking-[0.14em] uppercase">{tp.category}</span>
+                    <span className="text-accent font-sans text-xs font-medium tracking-[0.14em] uppercase">{tp.category}</span>
                   </div>
                   <div>
                     <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{tp.title}</h3>
-                    <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{tp.shortDesc}</p>
+                    <p className="text-muted-foreground text-sm leading-[1.7]">{tp.shortDesc}</p>
                   </div>
                   <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
                 </Link>
@@ -79,7 +79,7 @@ const TaxBenefits = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
                 {t.tax.overviewTitle}
               </h2>
@@ -87,7 +87,7 @@ const TaxBenefits = () => {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="overflow-x-auto mt-5">
-              <table className="w-full text-[0.8rem]">
+              <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-accent/40">
                     {t.tax.overviewHeaders.map((h, i) => (
@@ -119,11 +119,11 @@ const TaxBenefits = () => {
             <Link to="/steuervorteile/glossar" className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 items-center">
               <div className="flex items-center gap-2.5">
                 <BookOpen className="text-accent" size={14} />
-                <span className="text-accent font-sans text-[10px] font-medium tracking-[0.14em] uppercase">{t.tax.categoryKnowledge}</span>
+                <span className="text-accent font-sans text-xs font-medium tracking-[0.14em] uppercase">{t.tax.categoryKnowledge}</span>
               </div>
               <div>
                 <h3 className="text-[0.85rem] font-heading font-semibold text-foreground mb-0.5">{t.tax.glossarTitle}</h3>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{t.tax.glossarDesc}</p>
+                <p className="text-muted-foreground text-sm leading-[1.7]">{t.tax.glossarDesc}</p>
               </div>
               <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
             </Link>

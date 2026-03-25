@@ -30,7 +30,7 @@ const Footer = () => {
             <p className="text-white text-[11px] leading-[1.7] max-w-xs mb-1.5">
               {t.footer.brandLine}
             </p>
-            <p className="text-white/70 text-[10px] tracking-wide">
+            <p className="text-white/85 text-xs tracking-wide">
               {t.footer.subline}
             </p>
           </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="text-white/80 text-[11px] hover:text-accent transition-colors duration-200"
+                    className="text-white/90 text-[11px] hover:text-accent transition-colors duration-200"
                   >
                     {item.label}
                   </Link>
@@ -59,7 +59,7 @@ const Footer = () => {
             <h4 className="text-[9px] font-sans uppercase tracking-[0.2em] text-white mb-3">
               {t.footer.contact}
             </h4>
-            <address className="not-italic text-white/80 text-[11px] leading-[1.75] space-y-0.5">
+            <address className="not-italic text-white/90 text-[11px] leading-[1.75] space-y-0.5">
               <p className="text-white font-medium">Aurelia Grundbesitz GmbH</p>
               <p>Grevenbroicher Weg 2</p>
               <p>40547 Düsseldorf</p>

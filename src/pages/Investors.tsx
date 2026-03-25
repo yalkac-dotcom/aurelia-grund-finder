@@ -14,12 +14,12 @@ const InvestorDisclaimer = ({ t, onAccept, onDecline }: { t: Translations; onAcc
         <AlertTriangle className="text-accent shrink-0" size={18} />
         <h2 className="text-[0.9rem] font-heading font-semibold text-foreground">{t.investor.disclaimerTitle}</h2>
       </div>
-      <p className="text-muted-foreground text-[0.8rem] leading-[1.7] mb-5">{t.investor.disclaimerText}</p>
+      <p className="text-muted-foreground text-sm leading-[1.7] mb-5">{t.investor.disclaimerText}</p>
       <div className="flex flex-col sm:flex-row gap-2.5">
-        <button onClick={onAccept} className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-[10px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
+        <button onClick={onAccept} className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
           {t.investor.acceptButton}
         </button>
-        <button onClick={onDecline} className="inline-flex items-center gap-2 border border-border text-muted-foreground px-5 py-2 text-[10px] font-medium tracking-[0.15em] uppercase hover:border-foreground/30 transition-colors duration-300">
+        <button onClick={onDecline} className="inline-flex items-center gap-2 border border-border text-muted-foreground px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:border-foreground/30 transition-colors duration-300">
           {t.investor.declineButton}
         </button>
       </div>
@@ -34,12 +34,12 @@ const InvestorForm = ({ t }: { t: Translations }) => {
     return (
       <div className="py-6 text-center">
         <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1.5">{t.investor.successTitle}</h3>
-        <p className="text-muted-foreground text-[0.82rem] leading-[1.7]">{t.investor.successText}</p>
+        <p className="text-muted-foreground text-base leading-[1.7]">{t.investor.successText}</p>
       </div>
     );
   }
 
-  const inputClasses = "w-full border border-border/60 bg-background px-3.5 py-2 text-[0.82rem] text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
+  const inputClasses = "w-full border border-border/60 bg-background px-3.5 py-2 text-base text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
   const labelClasses = "block text-[9px] font-sans uppercase tracking-[0.15em] text-muted-foreground mb-1";
 
   return (
@@ -86,7 +86,7 @@ const InvestorForm = ({ t }: { t: Translations }) => {
         </span>
       </label>
       <p className="text-[9px] text-muted-foreground"><span className="text-accent">*</span> {t.common.requiredFields}</p>
-      <button type="submit" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-[10px] font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
+      <button type="submit" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
         {t.investor.sendInquiry}
       </button>
       <p className="text-muted-foreground/70 text-[9px] mt-1">{t.investor.formNote}</p>
@@ -118,7 +118,7 @@ const Investors = () => {
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>
-            <p className="text-white font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.nav.investors}</p>
+            <p className="text-white font-sans text-xs font-medium tracking-[0.16em] uppercase mb-2">{t.nav.investors}</p>
             <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.investor.heroTitle}
             </h1>
@@ -132,7 +132,7 @@ const Investors = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.whyLabel}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.investor.whyLabel}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
                 {t.investor.whyTitle}
               </h2>
@@ -153,7 +153,7 @@ const Investors = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.cooperationLabel}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.investor.cooperationLabel}</p>
             </div>
           </Reveal>
           <div className="divide-y divide-border/60 mt-4">
@@ -166,7 +166,7 @@ const Investors = () => {
                       <Icon className="text-accent" size={14} />
                       <h3 className="text-[0.85rem] font-heading font-semibold text-foreground">{model.title}</h3>
                     </div>
-                    <p className="text-muted-foreground text-[0.82rem] leading-[1.7]">{model.text}</p>
+                    <p className="text-muted-foreground text-base leading-[1.7]">{model.text}</p>
                   </div>
                 </Reveal>
               );
@@ -184,7 +184,7 @@ const Investors = () => {
           <Reveal>
             <div className="flex items-center gap-2.5 mb-2">
               <ShieldCheck className="text-accent" size={15} />
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase">{t.investor.transparencyLabel}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase">{t.investor.transparencyLabel}</p>
             </div>
             <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-xl text-balance">
               {t.investor.transparencyTitle}
@@ -199,7 +199,7 @@ const Investors = () => {
         <div className="container max-w-2xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">{t.investor.formLabel}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.investor.formLabel}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
                 {t.investor.formTitle}
               </h2>

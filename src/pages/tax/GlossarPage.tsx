@@ -20,7 +20,7 @@ const GlossarPage = () => {
           <Reveal>
             <div className="flex items-center gap-3 mb-3">
               <BookOpen className="text-accent" size={16} />
-              <span className="text-white/80 font-sans text-[10px] font-medium tracking-[0.16em] uppercase">{t.tax.categoryKnowledge}</span>
+              <span className="text-white/90 font-sans text-xs font-medium tracking-[0.16em] uppercase">{t.tax.categoryKnowledge}</span>
             </div>
             <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
               {t.tax.glossarTitle}
@@ -31,7 +31,7 @@ const GlossarPage = () => {
 
       <section className="py-4">
         <div className="container max-w-4xl">
-          <Link to="/steuervorteile" className="inline-flex items-center gap-2 text-[0.8rem] text-accent hover:text-accent/80 transition-colors">
+          <Link to="/steuervorteile" className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors">
             <ArrowLeft size={13} />
             {t.tax.backToOverview}
           </Link>
@@ -42,7 +42,7 @@ const GlossarPage = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.16em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.16em] uppercase mb-2">{t.tax.categoryKnowledge}</p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
                 {t.tax.glossarSectionTitle}
               </h2>
@@ -55,8 +55,8 @@ const GlossarPage = () => {
             {t.tax.glossarItems.map((g, i) => (
               <Reveal key={g.term} delay={i * 0.05}>
                 <div className="grid md:grid-cols-[1fr_2fr] gap-2 md:gap-8 py-5 first:pt-0 last:pb-0">
-                  <dt className="text-[0.82rem] font-heading font-semibold text-foreground">{g.term}</dt>
-                  <dd className="text-muted-foreground text-[0.8rem] leading-[1.75]">{g.definition}</dd>
+                  <dt className="text-base font-heading font-semibold text-foreground">{g.term}</dt>
+                  <dd className="text-muted-foreground text-sm leading-[1.75]">{g.definition}</dd>
                 </div>
               </Reveal>
             ))}

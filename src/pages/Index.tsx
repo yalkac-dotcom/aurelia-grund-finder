@@ -23,10 +23,10 @@ const Index = () => {
             <h1 className="text-[1.75rem] md:text-[2.15rem] lg:text-[2.5rem] font-heading font-semibold text-white leading-[1.08] mb-3 animate-fade-in-up text-balance">
               {t.hero.slogan}
             </h1>
-            <p className="text-white/80 text-[0.85rem] leading-[1.7] mb-3 max-w-sm animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-white/90 text-[0.85rem] leading-[1.7] mb-3 max-w-sm animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
-            <p className="text-white/75 text-[10px] font-medium tracking-[0.14em] uppercase mb-4 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            <p className="text-white/75 text-xs font-medium tracking-[0.14em] uppercase mb-4 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
               {t.landing.trustLine}
             </p>
 
@@ -49,7 +49,7 @@ const Index = () => {
                 {t.landing.heroCtaSecondary}
               </button>
             </div>
-            <p className="flex items-center gap-1.5 text-white/80 text-xs mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+            <p className="flex items-center gap-1.5 text-white/90 text-xs mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
               <CheckCircle size={12} className="text-accent shrink-0" />
               Über 30 Jahre Erfahrung · 200+ entwickelte Objekte
             </p>
@@ -61,7 +61,7 @@ const Index = () => {
               const next = hero?.nextElementSibling as HTMLElement | null;
               next?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="absolute left-1/2 -translate-x-1/2 bottom-4 h-7 w-7 flex items-center justify-center rounded-full border border-white/25 bg-black/20 text-white/85 hover:border-white/55 hover:bg-black/30 transition-all duration-300"
+            className="absolute left-1/2 -translate-x-1/2 bottom-4 h-7 w-7 flex items-center justify-center rounded-full border border-white/40 bg-black/20 text-white/85 hover:border-white/55 hover:bg-black/30 transition-all duration-300"
             aria-label={t.common.scrollDownAria}
           >
             <ChevronDown size={14} />
@@ -74,7 +74,7 @@ const Index = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                 {t.landing.problemLabel}
               </p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
@@ -88,8 +88,8 @@ const Index = () => {
                 <div className="flex items-start gap-2.5">
                   <AlertTriangle className="text-accent shrink-0 mt-0.5" size={13} />
                   <div>
-                    <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-0.5">{point.title}</h3>
-                    <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
+                    <h3 className="text-base font-heading font-semibold text-foreground mb-0.5">{point.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-[1.7]">{point.text}</p>
                   </div>
                 </div>
               </Reveal>
@@ -103,7 +103,7 @@ const Index = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                 {t.landing.solutionLabel}
               </p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
@@ -117,8 +117,8 @@ const Index = () => {
                 <div className="flex items-start gap-2.5">
                   <CheckCircle className="text-accent shrink-0 mt-0.5" size={13} />
                   <div>
-                    <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-0.5">{point.title}</h3>
-                    <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
+                    <h3 className="text-base font-heading font-semibold text-foreground mb-0.5">{point.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-[1.7]">{point.text}</p>
                   </div>
                 </div>
               </Reveal>
@@ -135,7 +135,7 @@ const Index = () => {
         </div>
         <div className="relative container max-w-4xl text-center">
           <Reveal>
-            <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+            <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
               {t.landing.trustLabel}
             </p>
           </Reveal>
@@ -162,7 +162,7 @@ const Index = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                 {t.landing.servicesLabel}
               </p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
@@ -175,7 +175,7 @@ const Index = () => {
               <Reveal key={i} delay={i * 0.1}>
                 <Link to="/leistungen" className="group grid md:grid-cols-[1fr_2fr_auto] gap-1.5 md:gap-8 py-5 first:pt-0 last:pb-0 items-center">
                   <h3 className="text-[0.83rem] font-heading font-semibold text-foreground">{card.title}</h3>
-                  <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{card.text}</p>
+                  <p className="text-muted-foreground text-sm leading-[1.7]">{card.text}</p>
                   <ArrowRight className="text-accent transition-transform group-hover:translate-x-1 hidden md:block" size={12} />
                 </Link>
               </Reveal>
@@ -189,7 +189,7 @@ const Index = () => {
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                 {t.landing.valuesLabel}
               </p>
               <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-md text-balance">
@@ -200,8 +200,8 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 gap-x-8 gap-y-5 mt-5">
             {t.landing.valuePoints.map((point, i) => (
               <Reveal key={i} delay={i * 0.08}>
-                <h3 className="text-[0.82rem] font-heading font-semibold text-foreground mb-1">{point.title}</h3>
-                <p className="text-muted-foreground text-[0.8rem] leading-[1.7]">{point.text}</p>
+                <h3 className="text-base font-heading font-semibold text-foreground mb-1">{point.title}</h3>
+                <p className="text-muted-foreground text-sm leading-[1.7]">{point.text}</p>
               </Reveal>
             ))}
           </div>
@@ -216,7 +216,7 @@ const Index = () => {
               <div className="section-divider mx-auto mb-5" />
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="text-accent font-sans text-[10px] font-medium tracking-[0.18em] uppercase mb-2">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                 {t.landing.ctaLabel}
               </p>
               <h2 className="text-[1.35rem] md:text-[1.65rem] font-heading font-semibold text-foreground leading-[1.2] mb-3 text-balance">
@@ -236,7 +236,7 @@ const Index = () => {
                 {t.landing.ctaButton}
                 <ArrowRight size={12} />
               </Link>
-              <p className="text-muted-foreground/70 text-[10px] mt-2.5">{t.common.initialAssessmentNote}</p>
+              <p className="text-muted-foreground/70 text-xs mt-2.5">{t.common.initialAssessmentNote}</p>
             </Reveal>
           </div>
         </div>
