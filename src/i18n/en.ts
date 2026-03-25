@@ -235,7 +235,7 @@ const en: Translations = {
   tax: {
     heroTitle: "Tax Benefits & Subsidies",
     introTitle: "Key Topics for Property Owners",
-    introSubtitle: "Property investments in Germany offer numerous tax and subsidy advantages that, with strategic planning, can yield significant returns.",
+    introSubtitle: "Depending on the property, its use, and the measures taken, tax aspects and government subsidy programmes can play an important role. The specific impact always depends on the individual situation.",
     categoryTax: "Tax",
     categoryFunding: "Subsidies",
     categoryKnowledge: "Knowledge",
