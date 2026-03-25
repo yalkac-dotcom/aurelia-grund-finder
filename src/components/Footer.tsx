@@ -69,8 +69,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/20 mt-5 pt-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-2">
+        <div className="border-t border-white/10 md:border-white/20 mt-4 md:mt-5 pt-3 md:pt-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-1.5 md:gap-2">
             <p className="text-white/60 text-[10px] md:text-xs order-2 md:order-1">
               © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
             </p>
