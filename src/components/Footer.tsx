@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logoImg from "@/assets/logo-aurelia.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { languageCodes } from "@/i18n/types";
-import { Shield } from "lucide-react";
+
 
 const Footer = () => {
   const { t, language, setLanguage } = useLanguage();
