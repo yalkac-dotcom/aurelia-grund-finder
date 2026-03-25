@@ -170,8 +170,8 @@ const es: Translations = {
     philosophyP2: "Analizamos los inmuebles a fondo, trabajamos con socios experimentados y tomamos decisiones basadas en un sólido conocimiento del mercado y escenarios realistas. El resultado es una cartera orientada a la estabilidad, la calidad y la conservación del valor a largo plazo.",
     experienceLabel: "Equipo",
     experienceTitle: "Competencia por convicción",
-    experienceP1: "Más de 30 años de experiencia combinada en el sector constituyen la base de nuestro trabajo. Nuestro equipo reúne conocimientos en inmobiliaria, inversión de capital, desarrollo de proyectos y asesoramiento en transacciones – con un claro enfoque en inversiones de valor.",
-    experienceP2: "Operamos con una red fiable de bancos, inversores, agentes y proveedores de servicios especializados. Ya sea inmuebles residenciales clásicos, inversiones orientadas al rendimiento o transacciones complejas de subastas judiciales y situaciones especiales – nuestro equipo aporta el conocimiento de mercado y la seguridad negociadora necesarios.",
+    experienceP1: "Más de 30 años de experiencia combinada en el sector constituyen la base de nuestro trabajo. Nuestro equipo reúne conocimientos en inmobiliaria, desarrollo de proyectos y asesoramiento en transacciones – con un claro enfoque en la creación de valor sostenible.",
+    experienceP2: "Operamos con una red fiable de bancos, agentes y proveedores de servicios especializados. Ya sea inmuebles residenciales clásicos o transacciones complejas de subastas judiciales y situaciones especiales – nuestro equipo aporta el conocimiento de mercado y la seguridad negociadora necesarios.",
     experienceP3: "Cada proyecto se concibe de forma integral: desde la adquisición, pasando por la estructuración, hasta la ejecución. El resultado son estrategias fundamentadas que convencen económicamente y perduran en el tiempo.",
   },
   services: {
