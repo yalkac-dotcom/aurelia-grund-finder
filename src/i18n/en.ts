@@ -6,7 +6,6 @@ const en: Translations = {
     about: "About Aurelia",
     services: "Services",
     taxBenefits: "Tax Benefits",
-    investors: "For Investors",
     contact: "Contact",
   },
   footer: {
