@@ -22,7 +22,7 @@ const de: Translations = {
     subline: "Diskret · Substanzorientiert · Langfristig",
   },
   hero: {
-    slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
+    slogan: "Substanz erkennen. Chancen nutzen. Werte schaffen.",
     subtitle:
       "Wir konzentrieren uns auf Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen. Dabei prüfen wir jede Situation sorgfältig und entwickeln Lösungen, die wirtschaftlich tragfähig und langfristig sinnvoll sind.",
     cta: "Ankaufanfrage stellen",
