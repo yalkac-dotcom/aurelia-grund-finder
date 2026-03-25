@@ -78,7 +78,7 @@ const it: Translations = {
     strategySubtitle: "Ci concentriamo su immobili venduti sotto pressione temporale o in costellazioni complesse. Con uno sguardo attento al potenziale, sviluppiamo concept su misura.",
     ourServices: "I nostri servizi",
     locationTitle: "Focus sulla Germania",
-    locationText: "Investiamo in località stabili in tutta la Germania – con particolare attenzione a zone con un potenziale di sviluppo sostenibile.",
+    locationText: "Ci concentriamo su località in Germania che uniscono sostanza, domanda e potenziale di sviluppo. Per noi è decisiva non solo la prima impressione, ma la sostenibilità a lungo termine di una località.",
     contactCta: "Contattaci",
   },
   landing: {
