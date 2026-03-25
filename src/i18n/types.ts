@@ -303,4 +303,4 @@ export const languageNames: Record<Language, string> = {
   nl: "Nederlands",
 };
 
-export const languageCodes: Language[] = ["de", "en", "it", "es", "tr"];
+export const languageCodes: Language[] = ["de", "en", "nl", "it", "es", "tr"];
