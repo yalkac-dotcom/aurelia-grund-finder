@@ -102,6 +102,14 @@ export interface Translations {
     ctaTitle: string;
     ctaText: string;
     ctaButton: string;
+    trustStatsLabel: string;
+    trustStatsItems: { value: string; label: string }[];
+    heroMetaLine: string;
+    referencesLabel: string;
+    referencesTitle: string;
+    referenceProjects: { location: string; year: string; type: string; before: string; after: string; result: string }[];
+    refBeforeLabel: string;
+    refAfterLabel: string;
   };
   about: {
     heroTitle: string;
