@@ -170,8 +170,8 @@ const tr: Translations = {
     philosophyP2: "Gayrimenkulleri titizlikle analiz ediyor, deneyimli partnerlerle çalışıyor ve sağlam piyasa bilgisine ve gerçekçi senaryolara dayanan kararlar alıyoruz. Sonuç, istikrar, kalite ve uzun vadeli değer korumasına odaklanan bir portföydür.",
     experienceLabel: "Ekip",
     experienceTitle: "İnançla gelen yetkinlik",
-    experienceP1: "Sektörde 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Ekibimiz gayrimenkul, sermaye yatırımı, proje geliştirme ve işlem danışmanlığı alanlarındaki uzmanlığı bir araya getirmektedir – değer odaklı yatırımlara net bir odaklanmayla.",
-    experienceP2: "Bankalar, yatırımcılar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güvenilir bir ağla çalışıyoruz. Klasik konut gayrimenkulleri, getiri odaklı yatırımlar veya cebri icra ve özel durumlardan kaynaklanan karmaşık işlemler olsun – ekibimiz gerekli piyasa bilgisini ve müzakere güvenliğini sunmaktadır.",
+    experienceP1: "Sektörde 30 yılı aşkın birikimli deneyim çalışmamızın temelini oluşturmaktadır. Ekibimiz gayrimenkul, proje geliştirme ve işlem danışmanlığı alanlarındaki uzmanlığı bir araya getirmektedir – sürdürülebilir değer yaratmaya net bir odaklanmayla.",
+    experienceP2: "Bankalar, emlakçılar ve uzman hizmet sağlayıcılardan oluşan güvenilir bir ağla çalışıyoruz. Klasik konut gayrimenkulleri veya cebri icra ve özel durumlardan kaynaklanan karmaşık işlemler olsun – ekibimiz gerekli piyasa bilgisini ve müzakere güvenliğini sunmaktadır.",
     experienceP3: "Her proje bütüncül olarak düşünülmektedir: satın almadan yapılandırmaya ve uygulamaya kadar. Sonuç, hem ekonomik olarak ikna edici hem de uzun vadede kalıcı olan sağlam stratejilerdir.",
   },
   services: {
