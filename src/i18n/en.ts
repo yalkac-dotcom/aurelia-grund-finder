@@ -65,7 +65,7 @@ const en: Translations = {
     bullets: [
       "Specialising in properties from foreclosures, estates, and insolvencies.",
       "Two clear strategies: hold & let or renovate & sell.",
-      "Over 30 years of combined team experience in real estate and capital investment.",
+      "Over 30 years of combined team experience in real estate.",
       "Discreet, structured handling from analysis to handover.",
     ],
     approachTitle: "Our Approach",
