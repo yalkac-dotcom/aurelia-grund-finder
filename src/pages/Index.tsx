@@ -46,7 +46,7 @@ const Index = () => {
                   const next = hero?.nextElementSibling as HTMLElement | null;
                   next?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="inline-flex items-center gap-2 border border-white/40 bg-black/10 backdrop-blur-sm text-white/92 px-6 py-3 text-sm font-medium tracking-[0.08em] uppercase hover:border-white/60 hover:bg-black/20 hover:text-white transition-colors duration-300"
+                className="inline-flex items-center gap-2 border border-white/40 bg-black/25 backdrop-blur-sm text-white px-6 py-3 text-sm font-medium tracking-[0.08em] uppercase hover:border-white/60 hover:bg-black/35 transition-colors duration-300"
               >
                 {t.landing.heroCtaSecondary}
               </button>
