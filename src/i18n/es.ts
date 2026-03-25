@@ -25,7 +25,7 @@ const es: Translations = {
     slogan: "Inmuebles con sustancia: revisados con discreción, desarrollados con claridad y pensados a largo plazo.",
     subtitle:
       "Nos centramos en inmuebles procedentes de subastas judiciales, herencias e insolvencias. Analizamos cada situación con cuidado para desarrollar soluciones viables y sostenibles.",
-    cta: "Enviar consulta de compra",
+    cta: "Contactar",
     ctaSecondary: "Más sobre Aurelia",
   },
   common: {
