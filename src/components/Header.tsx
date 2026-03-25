@@ -45,34 +45,52 @@ const Header = () => {
           <LanguageSwitcher />
         </div>
 
-        <div className="md:hidden flex items-center gap-3">
+        <div className="md:hidden flex items-center gap-2">
           <LanguageSwitcher />
           <button
-            className="p-2 text-foreground"
+            className="p-2 text-foreground/80"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={t.common.navigationOpenAria}
           >
-            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+            {mobileOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
         </div>
       </div>
 
       {mobileOpen && (
-        <nav className="md:hidden bg-background border-t border-border/60">
-          {navItems.map((item) => (
+        <nav className="md:hidden bg-background border-t border-border/40">
+          <div className="py-2">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                onClick={() => setMobileOpen(false)}
+                className={`block px-6 py-3 text-[11px] tracking-[0.12em] uppercase transition-colors ${
+                  location.pathname === item.path
+                    ? "text-foreground font-medium"
+                    : "text-muted-foreground"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+          <div className="border-t border-border/30 px-6 py-3 flex items-center gap-3">
             <Link
-              key={item.path}
-              to={item.path}
+              to="/impressum"
               onClick={() => setMobileOpen(false)}
-              className={`block px-6 py-3 text-[12px] tracking-wide border-b border-border/40 transition-colors hover:bg-secondary ${
-                location.pathname === item.path
-                  ? "text-foreground font-medium"
-                  : "text-muted-foreground"
-              }`}
+              className="text-muted-foreground/60 text-[10px] tracking-wide"
             >
-              {item.label}
+              {t.footer.imprint}
             </Link>
-          ))}
+            <Link
+              to="/datenschutz"
+              onClick={() => setMobileOpen(false)}
+              className="text-muted-foreground/60 text-[10px] tracking-wide"
+            >
+              {t.footer.privacy}
+            </Link>
+          </div>
         </nav>
       )}
     </header>
