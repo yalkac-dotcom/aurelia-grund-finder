@@ -19,7 +19,7 @@ const it: Translations = {
     brandLine:
       "Aurelia Grundbesitz sviluppa immobili provenienti da situazioni particolari in modo discreto, strutturato e con uno sguardo chiaro alla sostanza.",
     subline: "Discrezione · Orientamento alla sostanza · Lungo termine",
-    ivdMembership: "Membro dell'IVD (Associazione immobiliare tedesca)",
+    
   },
   hero: {
     slogan: "Immobili con sostanza — valutati con discrezione, sviluppati con chiarezza, pensati per il lungo periodo.",

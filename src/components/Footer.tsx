@@ -68,16 +68,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* IVD Membership Badge */}
-        <div className="border-t border-white/10 mt-8 pt-5">
-          <div className="flex items-center gap-2.5">
-            <Shield size={16} className="text-accent shrink-0" />
-            <p className="text-white/85 text-xs">
-              {t.footer.ivdMembership}
-            </p>
-          </div>
-        </div>
-
         {/* Bottom bar */}
         <div className="border-t border-white/30 mt-5 pt-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-2.5">
