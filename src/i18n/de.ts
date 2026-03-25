@@ -142,13 +142,13 @@ const de: Translations = {
     ctaTitle: "Sprechen Sie mit uns über Ihr Objekt oder Ihre Anfrage.",
     ctaText: "Persönlich, diskret und unverbindlich. Wir hören zu, prüfen sorgfältig und melden uns mit einer klaren ersten Einschätzung zurück.",
     ctaButton: "Erstgespräch vereinbaren",
-    trustStatsLabel: "Vertrauen durch Erfahrung",
+    trustStatsLabel: "Unser Fundament",
     trustStatsItems: [
       { value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
-      { value: "87+", label: "Erfolgreich entwickelte Objekte" },
-      { value: "50+", label: "Zufriedene Investoren & Partner" },
+      { value: "Inhabergeführt", label: "Persönliche Verantwortung" },
+      { value: "Deutschland", label: "Fokus auf ausgewählte Standorte" },
     ],
-    heroMetaLine: "Über 30 Jahre Erfahrung · 87+ entwickelte Objekte",
+    heroMetaLine: "Über 30 Jahre Erfahrung · Inhabergeführt · Standort Deutschland",
     referencesLabel: "Ausgewählte Projekte",
     referencesTitle: "Referenzen aus der Praxis",
     referenceProjects: [
