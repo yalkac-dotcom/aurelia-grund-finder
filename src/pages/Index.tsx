@@ -9,7 +9,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 const trustStats = [
   { icon: Clock, value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
-  { icon: Building2, value: "200+", label: "Erfolgreich entwickelte Objekte" },
+  { icon: Building2, value: "87+", label: "Erfolgreich entwickelte Objekte" },
   { icon: Users, value: "50+", label: "Zufriedene Investoren & Partner" },
 ];
 
