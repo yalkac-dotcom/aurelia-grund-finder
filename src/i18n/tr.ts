@@ -246,7 +246,7 @@ const tr: Translations = {
     benefitColumn: "Mülk sahipleri için fayda",
     glossarTitle: "Sözlük",
     glossarDesc: "Gayrimenkul sektöründeki vergi avantajları ve teşviklerle ilgili önemli terimler.",
-    disclaimer: "Vergisel etkiler büyük ölçüde bireysel koşullara bağlıdır. Burada sunulan bilgiler, bir vergi danışmanının bireysel danışmanlığının yerini almaz. Nitelikli vergi danışmanlığı, herhangi bir yatırım kararından önce vazgeçilmezdir.",
+    disclaimer: "Vergisel etkiler büyük ölçüde bireysel koşullara bağlıdır. Burada sunulan bilgiler, bir vergi danışmanının bireysel danışmanlığının yerini almaz. Önemli kararlar öncesinde nitelikli danışmanlık alınmalıdır.",
     externalLinksDisclaimer: "Dış bağlantılar için sorumluluk reddi: Bu web sitesi üçüncü taraf web sitelerine bağlantılar (harici bağlantılar) içermektedir. Bu web siteleri ilgili işletmecilerin sorumluluğundadır. Bağlantıların ilk oluşturulması sırasında harici içerikler olası hukuki ihlaller açısından kontrol edilmiştir. O sırada herhangi bir hukuki ihlal tespit edilmemiştir. Bağlantılı sayfaların içeriklerinin sürekli kontrolü, somut bir hukuki ihlal belirtisi olmaksızın makul olarak beklenemez. Hukuki ihlallerin tespit edilmesi halinde bu tür harici bağlantılar derhal kaldırılacaktır.",
     backToOverview: "Genel bakışa dön",
     furtherLinks: "İlgili bağlantılar",

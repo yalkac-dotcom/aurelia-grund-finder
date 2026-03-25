@@ -246,7 +246,7 @@ const it: Translations = {
     benefitColumn: "Beneficio per i proprietari",
     glossarTitle: "Glossario",
     glossarDesc: "Termini chiave relativi alle agevolazioni fiscali e alle sovvenzioni nel settore immobiliare.",
-    disclaimer: "Le implicazioni fiscali dipendono fortemente dalle circostanze individuali. Le informazioni qui presentate non sostituiscono la consulenza individuale di un consulente fiscale. Una consulenza fiscale qualificata è indispensabile prima di qualsiasi decisione di investimento.",
+    disclaimer: "Le implicazioni fiscali dipendono fortemente dalle circostanze individuali. Le informazioni qui presentate non sostituiscono la consulenza individuale di un consulente fiscale. Prima di decisioni importanti è indispensabile rivolgersi a un consulente qualificato.",
     externalLinksDisclaimer: "Avvertenza per i link esterni: Questo sito web contiene collegamenti a siti web di terzi (link esterni). Questi siti web sono sotto la responsabilità dei rispettivi gestori. Al momento della prima creazione dei link, i contenuti esterni sono stati verificati per possibili violazioni legali. Al momento non erano evidenti violazioni. Un monitoraggio permanente dei contenuti delle pagine collegate non è ragionevolmente esigibile senza concrete indicazioni di violazione. Al momento della conoscenza di violazioni legali, tali link esterni saranno rimossi immediatamente.",
     backToOverview: "Torna alla panoramica",
     furtherLinks: "Link utili",
