@@ -234,7 +234,7 @@ const es: Translations = {
   },
   tax: {
     heroTitle: "Ventajas fiscales y subvenciones",
-    introTitle: "Ventajas para inversores",
+    introTitle: "Temas importantes para propietarios y arrendadores",
     introSubtitle: "Las inversiones inmobiliarias en Alemania ofrecen numerosas ventajas fiscales y de subvención que, con una planificación estratégica, pueden generar rendimientos significativos.",
     categoryTax: "Impuestos",
     categoryFunding: "Subvenciones",
