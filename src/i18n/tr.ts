@@ -20,6 +20,7 @@ const tr: Translations = {
     brandLine:
       "Aurelia Grundbesitz, özel durumlardan çıkan gayrimenkulleri gizli, yapılandırılmış ve özü net gören bir yaklaşımla geliştirir.",
     subline: "Gizli · Öz odaklı · Uzun vadeli",
+    ivdMembership: "IVD üyesi (Alman Gayrimenkul Birliği)",
   },
   hero: {
     slogan: "Özü olan gayrimenkuller — gizlilikle incelenir, net biçimde geliştirilir ve uzun vadeli düşünülür.",
