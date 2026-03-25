@@ -6,7 +6,6 @@ export interface Translations {
     about: string;
     services: string;
     taxBenefits: string;
-    investors: string;
     contact: string;
   };
   footer: {
@@ -145,36 +144,6 @@ export interface Translations {
     experienceLabel: string;
     experienceTitle: string;
     experienceText: string;
-  };
-  investor: {
-    disclaimerTitle: string;
-    disclaimerText: string;
-    acceptButton: string;
-    declineButton: string;
-    heroTitle: string;
-    heroSubtitle: string;
-    whyLabel: string;
-    whyTitle: string;
-    whyP1: string;
-    whyP2: string;
-    whyDisclaimer: string;
-    cooperationLabel: string;
-    cooperationTitle: string;
-    cooperationModels: { title: string; text: string }[];
-    cooperationDisclaimer: string;
-    transparencyLabel: string;
-    transparencyTitle: string;
-    transparencyText: string;
-    formLabel: string;
-    formTitle: string;
-    formSubtitle: string;
-    sendInquiry: string;
-    messageLabel: string;
-    messagePlaceholder: string;
-    liabilityNotice: string;
-    successTitle: string;
-    successText: string;
-    formNote: string;
   };
   contact: {
     title: string;
