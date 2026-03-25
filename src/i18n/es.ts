@@ -65,7 +65,7 @@ const es: Translations = {
     bullets: [
       "Especialización en inmuebles de subastas judiciales, herencias e insolvencias.",
       "Dos estrategias claras: mantener en cartera y alquilar o renovar y vender.",
-      "Más de 30 años de experiencia combinada del equipo en inmuebles e inversiones.",
+      "Más de 30 años de experiencia combinada del equipo en el sector inmobiliario.",
       "Gestión discreta y estructurada desde el análisis hasta la entrega.",
     ],
     approachTitle: "Nuestro enfoque",
