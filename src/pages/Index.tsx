@@ -39,8 +39,8 @@ const Index = () => {
                 {t.landing.heroCtaSecondary}
               </button>
             </div>
-            <p className="flex items-center gap-1.5 text-white/75 text-[0.65rem] md:text-xs mt-2.5 md:mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-              <CheckCircle size={11} className="text-accent shrink-0 md:w-3 md:h-3" />
+            <p className="flex items-center gap-1.5 text-white/60 text-[0.6rem] md:text-xs mt-2 md:mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+              <CheckCircle size={10} className="text-accent/70 shrink-0 md:w-3 md:h-3" />
               {t.landing.heroMetaLine}
             </p>
           </div>

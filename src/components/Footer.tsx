@@ -111,7 +111,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="text-white/50 text-[10px] md:text-xs mt-3 text-center leading-relaxed max-w-2xl mx-auto">
+          <p className="text-white/40 text-[9px] md:text-xs mt-2.5 md:mt-3 text-center leading-relaxed max-w-2xl mx-auto">
             {t.footer.disclaimer}
           </p>
         </div>

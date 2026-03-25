@@ -45,9 +45,9 @@ const ScrollToTop = () => {
       }`}
     >
       {atBottom ? (
-        <ChevronUp size={16} strokeWidth={2} className="md:w-5 md:h-5" />
+        <ChevronUp size={14} strokeWidth={1.5} className="md:w-5 md:h-5 md:[stroke-width:2]" />
       ) : (
-        <ChevronDown size={16} strokeWidth={2} className="md:w-5 md:h-5" />
+        <ChevronDown size={14} strokeWidth={1.5} className="md:w-5 md:h-5 md:[stroke-width:2]" />
       )}
     </button>
   );

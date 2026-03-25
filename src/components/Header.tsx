@@ -60,13 +60,13 @@ const Header = () => {
 
       {mobileOpen && (
         <nav className="md:hidden bg-background border-t border-border/40">
-          <div className="py-2">
+          <div className="pt-4 pb-2 px-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={() => setMobileOpen(false)}
-                className={`block px-6 py-3 text-[11px] tracking-[0.12em] uppercase transition-colors ${
+                className={`block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors ${
                   location.pathname === item.path
                     ? "text-foreground font-medium"
                     : "text-muted-foreground"
@@ -76,18 +76,18 @@ const Header = () => {
               </Link>
             ))}
           </div>
-          <div className="border-t border-border/30 px-6 py-3 flex items-center gap-3">
+          <div className="border-t border-border/20 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">
             <Link
               to="/impressum"
               onClick={() => setMobileOpen(false)}
-              className="text-muted-foreground/60 text-[10px] tracking-wide"
+              className="text-muted-foreground/50 text-[10px] tracking-[0.08em]"
             >
               {t.footer.imprint}
             </Link>
             <Link
               to="/datenschutz"
               onClick={() => setMobileOpen(false)}
-              className="text-muted-foreground/60 text-[10px] tracking-wide"
+              className="text-muted-foreground/50 text-[10px] tracking-[0.08em]"
             >
               {t.footer.privacy}
             </Link>
