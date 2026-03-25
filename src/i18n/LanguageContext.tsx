@@ -32,8 +32,27 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     document.documentElement.lang = lang;
   }, []);
 
+  // Sync OG/Twitter meta tags with current language
   useEffect(() => {
     document.documentElement.lang = language;
+    const currentT = translationsMap[language];
+    const title = document.querySelector("title");
+    if (title) title.textContent = currentT.hero.slogan;
+
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    const metaDesc = document.querySelector('meta[name="description"]');
+
+    const titleText = `${currentT.hero.slogan} | Aurelia Grundbesitz`;
+    const descText = currentT.landing.heroSubtitle;
+
+    ogTitle?.setAttribute("content", titleText);
+    twTitle?.setAttribute("content", titleText);
+    ogDesc?.setAttribute("content", descText);
+    twDesc?.setAttribute("content", descText);
+    metaDesc?.setAttribute("content", descText);
   }, [language]);
 
   return (
