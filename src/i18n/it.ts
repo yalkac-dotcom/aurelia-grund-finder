@@ -25,8 +25,8 @@ const it: Translations = {
     slogan: "Immobili con sostanza — valutati con discrezione, sviluppati con chiarezza e pensati per il lungo periodo.",
     subtitle:
       "Ci concentriamo su immobili provenienti da aste giudiziarie, successioni e insolvenze. Analizziamo ogni situazione con attenzione per sviluppare soluzioni sostenibili e sensate dal punto di vista economico.",
-    cta: "Invia richiesta di acquisto",
-    ctaSecondary: "Più su Aurelia",
+    cta: "Contattaci",
+    ctaSecondary: "Scopri Aurelia",
   },
   common: {
     learnMore: "Scopri di più",
