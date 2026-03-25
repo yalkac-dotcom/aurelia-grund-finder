@@ -22,10 +22,10 @@ const en: Translations = {
     ivdMembership: "Member of IVD (German Real Estate Association)",
   },
   hero: {
-    slogan: "Properties with substance — discreetly reviewed, clearly developed, and planned for the long term.",
+    slogan: "Properties with substance — discreetly reviewed, clearly developed, built to last.",
     subtitle:
-      "We focus on properties from foreclosures, estates, and insolvencies. Each situation is carefully reviewed so that viable, long-term solutions can be developed.",
-    cta: "Submit acquisition inquiry",
+      "Aurelia Grundbesitz develops properties from special situations with calm judgment, experience, and a clear eye for economically sound solutions.",
+    cta: "Get in touch",
     ctaSecondary: "More about Aurelia",
   },
   common: {
