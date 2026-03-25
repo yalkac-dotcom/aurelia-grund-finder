@@ -225,7 +225,7 @@ const nl: Translations = {
     send: "Bericht versturen",
     successTitle: "Hartelijk dank voor uw bericht.",
     successText: "Wij hebben uw aanvraag ontvangen en nemen zo spoedig mogelijk persoonlijk contact met u op.",
-    subjectOptions: ["Algemene aanvraag", "Aankoopaanbod", "Samenwerkingsaanvraag", "Terugbelverzoek"],
+    subjectOptions: ["Algemene aanvraag", "Aankoopaanbod", "Terugbelverzoek", "Overige kwestie"],
     company: "Bedrijf / Instelling",
     messagePlaceholder: "Hoe kunnen wij u van dienst zijn?",
     formLabel: "Contactformulier",

@@ -244,9 +244,9 @@ const Index = () => {
                       <p className="text-sm text-foreground leading-[1.6]">{project.after}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-1.5 pt-2 border-t border-border/40">
-                    <TrendingUp size={14} className="text-accent" />
-                    <p className="text-sm font-medium text-accent">{project.result}</p>
+                  <div className="pt-2 border-t border-border/40">
+                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ergebnis</p>
+                    <p className="text-sm text-foreground leading-[1.6]">{project.result}</p>
                   </div>
                 </div>
               </Reveal>

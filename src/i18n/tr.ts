@@ -224,7 +224,7 @@ const tr: Translations = {
     send: "Mesaj gönder",
     successTitle: "Mesajınız için teşekkür ederiz.",
     successText: "Talebinizi aldık ve mümkün olan en kısa sürede size geri döneceğiz.",
-    subjectOptions: ["Genel talep", "Satın alma teklifi", "İş birliği talebi", "Geri arama talebi"],
+    subjectOptions: ["Genel talep", "Satın alma teklifi", "Geri arama talebi", "Diğer konu"],
     company: "Şirket / Kurum",
     messagePlaceholder: "Size nasıl yardımcı olabiliriz?",
     formLabel: "İletişim formu",
