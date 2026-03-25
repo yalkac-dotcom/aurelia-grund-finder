@@ -79,7 +79,7 @@ const nl: Translations = {
     strategySubtitle: "Wij richten ons op vastgoed dat onder tijdsdruk, in onoverzichtelijke situaties of buiten de reguliere markt wordt aangeboden. Bepalend voor ons is niet het snelle effect, maar een solide basis: waarde, locatie, ontwikkelingsmogelijkheden en een realistisch uitvoerbaar concept.",
     ourServices: "Onze diensten",
     locationTitle: "Focus op Duitsland",
-    locationText: "Wij investeren in Duitsland met bijzondere aandacht voor locaties die waarde, vraag en ontwikkelingspotentieel combineren. Daarbij letten wij niet alleen op ligging, maar ook op verhuurbaarheid, bruikbaarheid en langetermijnwaarde.",
+    locationText: "Wij richten ons op locaties in Duitsland die substantie, vraag en ontwikkelingspotentieel combineren. Bepalend is voor ons niet alleen de eerste indruk, maar de langetermijndraagkracht van een locatie.",
     contactCta: "Contact opnemen",
   },
   landing: {
