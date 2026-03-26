@@ -316,7 +316,7 @@ const tr: Translations = {
     title: "Gizlilik Bildirimi",
     controllerTitle: "1. Sorumlu",
     controllerText: "Aurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf, Almanya\nE-posta: info@aurelia-grundbesitz.de",
-    controllerCeo: "Genel Müdür: Yasar Alkac",
+    controllerCeo: "Genel Müdür: Eyüp Yasar Alkac\nTicaret sicili: Amtsgericht Düsseldorf, HRB 107859",
     generalTitle: "2. Veri işleme hakkında genel bilgiler",
     generalText: "Kullanıcılarımızın kişisel verilerini yalnızca işlevsel bir web sitesi ile içerik ve hizmetlerimizin sunulması için gerekli olduğu ölçüde işliyoruz. İşleme, aşağıdaki hukuki düzenlemeler temelinde gerçekleştirilmektedir:",
     generalDsgvoLabel: "Genel Veri Koruma Yönetmeliği (GVKY/DSGVO)",
