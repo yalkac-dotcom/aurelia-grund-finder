@@ -35,9 +35,9 @@ const InvestorDisclaimer = ({ onAccept }: { onAccept: () => void }) => {
 
               <div className="text-muted-foreground text-sm leading-[1.8] space-y-4 mb-6">
                 <p>{g.intro}</p>
-                <p>{g.body1}</p>
-                <p>{g.body2}</p>
-                {g.body3 && <p>{g.body3}</p>}
+                {g.body.split("\n\n").map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
               </div>
 
               <label className="flex items-start gap-2.5 mb-8 cursor-pointer select-none">
@@ -66,8 +66,8 @@ const InvestorDisclaimer = ({ onAccept }: { onAccept: () => void }) => {
                   {g.declineBtn}
                 </button>
               </div>
-              {g.micro && (
-                <p className="text-muted-foreground/60 text-xs mt-4 text-center">{g.micro}</p>
+              {g.microcopy && (
+                <p className="text-muted-foreground/60 text-xs mt-4 text-center">{g.microcopy}</p>
               )}
             </div>
           </Reveal>
@@ -222,7 +222,7 @@ const Investors = () => {
                   <div>
                     <p className="text-sm text-foreground leading-[1.7] mb-2">{cs.resultText}</p>
                     <p className="text-muted-foreground/70 text-xs leading-[1.7] max-w-lg">
-                      {cs.note}
+                      {inv.gate.exampleNote}
                     </p>
                   </div>
                 </div>
