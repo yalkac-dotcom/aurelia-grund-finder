@@ -284,13 +284,12 @@ export interface Translations {
     gate: {
       title: string;
       intro: string;
-      body1: string;
-      body2: string;
-      body3: string;
+      body: string;
       checkbox: string;
       acceptBtn: string;
       declineBtn: string;
-      micro: string;
+      microcopy: string;
+      exampleNote: string;
     };
     heroBadge: string;
     heroTitle: string;
