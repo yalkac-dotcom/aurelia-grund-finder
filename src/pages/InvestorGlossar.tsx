@@ -116,7 +116,7 @@ const InvestorGlossar = () => {
             id={LETTER_BAR_ID}
             className="sticky top-20 md:top-28 z-30 bg-background/95 backdrop-blur-sm py-3 -mx-1 px-1 border-b border-border/30 mb-8 scroll-mt-20"
           >
-            <div className="flex gap-1 md:gap-1.5 overflow-x-auto scrollbar-hide">
+            <div className="flex flex-wrap gap-1 md:gap-1.5 overflow-x-auto md:overflow-x-visible scrollbar-hide">
               {letters.map((l) => (
                 <a
                   key={l}
