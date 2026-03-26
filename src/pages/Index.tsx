@@ -16,10 +16,13 @@ const Index = () => {
       {/* ── 1. HERO ── */}
       <section id="hero" className="relative h-[55vh] md:h-[60vh] min-h-[380px] md:min-h-[400px] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover" priority />
-          {/* Strong layered overlay for text legibility */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0B0D]/90 via-[#0A0B0D]/60 to-[#0A0B0D]/25" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0B0D]/70 via-[#0A0B0D]/30 to-transparent" />
+          <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover brightness-[1.15]" priority />
+          {/* Vertical gradient – lighter overall, warm-gold tint at bottom */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1408]/85 via-[#12110D]/45 to-[#0A0B0D]/15" />
+          {/* Side gradient – text protection zone with subtle gold warmth */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1408]/60 via-[#12110D]/20 to-transparent" />
+          {/* Very subtle gold shimmer layer */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#8B7340]/10 via-transparent to-transparent" />
         </div>
         <div className="relative container pb-8 md:pb-14">
           <div className="max-w-lg">
