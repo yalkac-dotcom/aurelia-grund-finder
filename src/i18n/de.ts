@@ -429,7 +429,7 @@ const de: Translations = {
         { label: "Beispielhafter Veräußerungserlös", value: "451.800 €" },
       ],
       resultText: "Aus dieser Beispielrechnung ergab sich ein Projektergebnis von rund 91.800 €, entsprechend einer beispielhaften Kapitalrendite von etwa 25,5 %.",
-      note: "Die vorstehenden Angaben dienen ausschließlich der beispielhaften Darstellung eines Einzelfalls. Daraus ergeben sich weder Zusagen noch belastbare Rückschlüsse auf zukünftige Projekte oder Ergebnisse.",
+      note: "Die vorstehenden Angaben dienen ausschließlich der beispielhaften Darstellung eines Einzelfalls. Sie stellen weder eine Zusage noch einen verlässlichen Hinweis auf zukünftige Entwicklungen oder Ergebnisse dar.",
     },
     pipelineBadge: "Projektpipeline",
     pipelineTitle: "Projekte in Vorbereitung",
