@@ -14,9 +14,9 @@ const Index = () => {
   return (
     <Layout>
       {/* ── 1. HERO ── */}
-      <section id="hero" className="relative h-[55vh] md:h-[60vh] min-h-[380px] md:min-h-[400px] flex items-end">
+      <section id="hero" className="relative h-[60vh] md:h-[68vh] min-h-[380px] md:min-h-[440px] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover brightness-[1.15]" priority />
+          <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover brightness-[1.3]" priority />
           {/* Vertical gradient – lighter overall, warm-gold tint at bottom */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#1A1408]/85 via-[#12110D]/45 to-[#0A0B0D]/15" />
           {/* Side gradient – text protection zone with subtle gold warmth */}
