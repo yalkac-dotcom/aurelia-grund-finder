@@ -430,7 +430,7 @@ const it: Translations = {
       resultText: "Da questo calcolo esemplificativo è risultato un risultato di progetto di circa 75.000 €, corrispondente a un rendimento esemplificativo del capitale di circa il 21,7 %.",
       note: "I dati sopra riportati servono esclusivamente a illustrare un singolo caso. Non ne derivano impegni né conclusioni affidabili riguardo a progetti o risultati futuri.",
     },
-    pipelineBadge: "Pipeline di progetto",
+    pipelineBadge: "Portafoglio",
     pipelineTitle: "Asset propri in portafoglio",
     pipelineDesc: "Oltre ai casi individuali conclusi, Aurelia detiene anche immobili nel proprio portafoglio che vengono attualmente preparati in modo strutturato per ulteriori fasi di sviluppo.",
     pipelineProject: {

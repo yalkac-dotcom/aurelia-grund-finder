@@ -430,7 +430,7 @@ const tr: Translations = {
       resultText: "Bu örnek hesaplamadan yaklaşık 75.000 € tutarında bir proje sonucu elde edilmiş olup, bu yaklaşık %21,7'lik örnek bir sermaye getirisine karşılık gelmektedir.",
       note: "Yukarıdaki veriler yalnızca bir bireysel vakayı örneklemek amacıyla sunulmuştur. Gelecekteki projeler veya sonuçlar hakkında herhangi bir taahhüt veya güvenilir sonuç çıkarımı yapılamaz.",
     },
-    pipelineBadge: "Proje hattı",
+    pipelineBadge: "Portföy",
     pipelineTitle: "Portföydeki kendi assetler",
     pipelineDesc: "Tamamlanmış bireysel vakaların yanı sıra Aurelia, kendi portföyünde de gayrimenkuller bulundurmakta olup bunlar şu anda sonraki geliştirme adımları için yapılandırılmış biçimde hazırlanmaktadır.",
     pipelineProject: {

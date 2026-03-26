@@ -430,7 +430,7 @@ const en: Translations = {
       resultText: "This illustrative calculation resulted in a project outcome of approximately €75,000, corresponding to an illustrative return on capital of approximately 21.7%.",
       note: "The above figures serve exclusively to illustrate a single completed case. They do not constitute commitments nor reliable conclusions regarding future projects or outcomes.",
     },
-    pipelineBadge: "Project pipeline",
+    pipelineBadge: "Portfolio",
     pipelineTitle: "Own assets in portfolio",
     pipelineDesc: "In addition to completed individual cases, Aurelia also holds properties in its own portfolio that are currently being prepared in a structured manner for further development.",
     pipelineProject: {

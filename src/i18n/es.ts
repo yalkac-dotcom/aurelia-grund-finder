@@ -430,7 +430,7 @@ const es: Translations = {
       resultText: "De este cálculo ilustrativo resultó un resultado de proyecto de aproximadamente 75.000 €, correspondiente a una rentabilidad ilustrativa del capital de aproximadamente el 21,7 %.",
       note: "Los datos anteriores sirven exclusivamente para ilustrar un caso individual. No se derivan de ellos compromisos ni conclusiones fiables sobre proyectos o resultados futuros.",
     },
-    pipelineBadge: "Pipeline de proyectos",
+    pipelineBadge: "Cartera",
     pipelineTitle: "Activos propios en cartera",
     pipelineDesc: "Además de los casos individuales concluidos, Aurelia también mantiene inmuebles en su propia cartera que se preparan actualmente de forma estructurada para futuros pasos de desarrollo.",
     pipelineProject: {
