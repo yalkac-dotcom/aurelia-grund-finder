@@ -432,7 +432,7 @@ const es: Translations = {
     },
     pipelineBadge: "Pipeline de proyectos",
     pipelineTitle: "Proyectos en preparación",
-    pipelineDesc: "Además de los casos individuales ya concluidos, Aurelia también acompaña proyectos que se encuentran actualmente en preparación estructurada.",
+    pipelineDesc: "Además de los casos individuales concluidos, Aurelia también mantiene inmuebles en su propia cartera que se preparan actualmente de forma estructurada para futuros pasos de desarrollo.",
     pipelineProject: {
       title: "Terreno de 8.700 m² en Gelsenkirchen en propiedad de Aurelia",
       text: "El terreno de aproximadamente 8.700 m² en Gelsenkirchen ya es propiedad de Aurelia y se prepara actualmente de forma estructurada para los próximos pasos de desarrollo.",

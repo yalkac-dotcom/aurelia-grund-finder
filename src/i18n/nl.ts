@@ -433,7 +433,7 @@ const nl: Translations = {
     },
     pipelineBadge: "Projectpijplijn",
     pipelineTitle: "Projecten in voorbereiding",
-    pipelineDesc: "Naast afgeronde individuele gevallen begeleidt Aurelia ook projecten die zich momenteel in een gestructureerde voorbereiding bevinden.",
+    pipelineDesc: "Naast afgeronde individuele gevallen houdt Aurelia ook eigen objecten in portefeuille, die momenteel gestructureerd worden voorbereid voor verdere ontwikkelingsstappen.",
     pipelineProject: {
       title: "8.700 m² terrein in Gelsenkirchen in eigendom van Aurelia",
       text: "Het circa 8.700 m² grote terrein in Gelsenkirchen is reeds eigendom van Aurelia en wordt momenteel gestructureerd voorbereid voor verdere ontwikkelingsstappen.",

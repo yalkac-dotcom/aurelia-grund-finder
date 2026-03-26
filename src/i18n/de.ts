@@ -433,7 +433,7 @@ const de: Translations = {
     },
     pipelineBadge: "Projektpipeline",
     pipelineTitle: "Projekte in Vorbereitung",
-    pipelineDesc: "Neben abgeschlossenen Einzelfällen begleitet Aurelia auch Projekte, die sich aktuell in der strukturierten Vorbereitung befinden.",
+    pipelineDesc: "Neben abgeschlossenen Einzelfällen hält Aurelia auch eigene Objekte im Bestand, die aktuell strukturiert für weitere Entwicklungsschritte vorbereitet werden.",
     pipelineProject: {
       title: "8.700 m² Grundstück in Gelsenkirchen im Bestand der Aurelia",
       text: "Das rund 8.700 m² große Grundstück in Gelsenkirchen befindet sich bereits im Eigentum der Aurelia und wird derzeit für weitere Entwicklungsschritte strukturiert vorbereitet.",

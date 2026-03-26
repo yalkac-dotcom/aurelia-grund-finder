@@ -432,7 +432,7 @@ const en: Translations = {
     },
     pipelineBadge: "Project pipeline",
     pipelineTitle: "Projects in preparation",
-    pipelineDesc: "In addition to completed individual cases, Aurelia also accompanies projects that are currently in structured preparation.",
+    pipelineDesc: "In addition to completed individual cases, Aurelia also holds properties in its own portfolio that are currently being prepared in a structured manner for further development.",
     pipelineProject: {
       title: "8,700 m² plot in Gelsenkirchen owned by Aurelia",
       text: "The approximately 8,700 m² plot in Gelsenkirchen is already owned by Aurelia and is currently being prepared in a structured manner for further development steps.",

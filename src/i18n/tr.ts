@@ -432,7 +432,7 @@ const tr: Translations = {
     },
     pipelineBadge: "Proje hattı",
     pipelineTitle: "Hazırlık aşamasındaki projeler",
-    pipelineDesc: "Tamamlanmış bireysel vakaların yanı sıra Aurelia, yapılandırılmış hazırlık aşamasında olan projelere de eşlik etmektedir.",
+    pipelineDesc: "Tamamlanmış bireysel vakaların yanı sıra Aurelia, kendi portföyünde de gayrimenkuller bulundurmakta olup bunlar şu anda sonraki geliştirme adımları için yapılandırılmış biçimde hazırlanmaktadır.",
     pipelineProject: {
       title: "Gelsenkirchen'de 8.700 m² arsa Aurelia mülkiyetinde",
       text: "Gelsenkirchen'deki yaklaşık 8.700 m² büyüklüğündeki arsa halihazırda Aurelia'nın mülkiyetindedir ve şu anda sonraki geliştirme adımları için yapılandırılmış biçimde hazırlanmaktadır.",
