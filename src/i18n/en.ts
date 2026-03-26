@@ -316,7 +316,7 @@ const en: Translations = {
     title: "Privacy Policy",
     controllerTitle: "1. Controller",
     controllerText: "Aurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf, Germany\nEmail: info@aurelia-grundbesitz.de",
-    controllerCeo: "Managing Director: Yasar Alkac",
+    controllerCeo: "Managing Director: Eyüp Yasar Alkac\nCommercial register: Amtsgericht Düsseldorf, HRB 107859",
     generalTitle: "2. General Information on Data Processing",
     generalText: "We only process personal data of our users insofar as this is necessary to provide a functional website and our content and services. Processing is carried out on the basis of the",
     generalDsgvoLabel: "General Data Protection Regulation (GDPR)",
