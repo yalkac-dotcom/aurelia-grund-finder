@@ -144,17 +144,11 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-3">
-                  <div>
-                    <label htmlFor="email" className={labelClasses}>
-                      {t.contact.email} <span className="text-accent">*</span>
-                    </label>
-                    <input id="email" name="email" type="email" required className={inputClasses} />
-                  </div>
-                  <div>
-                    <label htmlFor="telefon" className={labelClasses}>{t.contact.phone}</label>
-                    <input id="telefon" name="telefon" type="tel" className={inputClasses} />
-                  </div>
+                <div>
+                  <label htmlFor="email" className={labelClasses}>
+                    {t.contact.email} <span className="text-accent">*</span>
+                  </label>
+                  <input id="email" name="email" type="email" required className={inputClasses} />
                 </div>
 
                 <div>
