@@ -437,7 +437,7 @@ const nl: Translations = {
       micro: "In voorbereiding · gestructureerd beoordeeld · ontwikkelingsgericht",
     },
     glossaryBadge: "Glossarium",
-    glossaryLinkText: "Verdere begrippen en grondbeginselen vindt u in ons glossarium voor investeerders.",
+    glossaryLinkText: "Verdere begrippen, grondbeginselen en inkadering vindt u in ons glossarium voor investeerders.",
     glossaryTitle: "Woordenlijst voor investeerders",
     glossaryDisclaimer: "De volgende begrippen en toelichtingen dienen uitsluitend ter algemene informatie. Zij vormen geen juridisch, fiscaal of beleggingsadvies en vervangen geen individuele beoordeling van het betreffende geval.",
     glossaryLetters: ["A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","R","S","T","U","V","W","Z"],
