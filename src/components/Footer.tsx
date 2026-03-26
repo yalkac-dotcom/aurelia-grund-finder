@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoImg from "@/assets/logo-aurelia.png";
+import logoImg from "@/assets/aurelia-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { languageCodes } from "@/i18n/types";
 
