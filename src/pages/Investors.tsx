@@ -280,66 +280,26 @@ const Investors = () => {
         </div>
       </section>
 
-      {/* Glossary */}
-      <section className="py-12 md:py-16 border-t border-border/60">
+      {/* Glossary Link */}
+      <section className="py-10 md:py-14 border-t border-border/60">
         <div className="container max-w-4xl">
           <Reveal>
-            <div className="flex items-center gap-3 mb-3">
-              <BookOpen className="text-accent" size={16} />
-              <span className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase">
-                {inv.glossaryBadge}
-              </span>
-            </div>
-            <h2 className="text-[1.35rem] md:text-[1.65rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 max-w-lg text-balance">
-              {inv.glossaryTitle}
-            </h2>
-          </Reveal>
-
-          <Reveal delay={0.05}>
-            <div className="border-l-2 border-accent/30 pl-4 mb-8">
-              <p className="text-muted-foreground/80 text-xs leading-[1.7] max-w-xl">
-                {inv.glossaryDisclaimer}
-              </p>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.08}>
-            <div className="flex flex-wrap gap-1.5 mb-10">
-              {inv.glossaryLetters.map((l) => (
-                <a
-                  key={l}
-                  href={`#glossar-${l}`}
-                  className="w-7 h-7 flex items-center justify-center text-xs font-medium border border-border/40 text-muted-foreground hover:text-accent hover:border-accent/40 transition-colors"
+            <div className="flex items-start gap-3">
+              <BookOpen className="text-accent shrink-0 mt-0.5" size={16} />
+              <div>
+                <p className="text-muted-foreground text-sm leading-[1.7] mb-2">
+                  {inv.glossaryLinkText}
+                </p>
+                <Link
+                  to="/investoren-glossar"
+                  className="inline-flex items-center gap-2 text-accent text-sm hover:text-accent/80 transition-colors"
                 >
-                  {l}
-                </a>
-              ))}
+                  {inv.glossaryTitle}
+                  <ArrowRight size={12} />
+                </Link>
+              </div>
             </div>
           </Reveal>
-
-          <div className="space-y-10">
-            {inv.glossaryLetters.map((letter) => {
-              const items = inv.glossaryEntries[letter];
-              if (!items) return null;
-              return (
-                <Reveal key={letter} delay={0.04}>
-                  <div id={`glossar-${letter}`} className="scroll-mt-28">
-                    <h3 className="text-base font-heading font-semibold text-accent mb-4">
-                      {letter}
-                    </h3>
-                    <div className="space-y-3">
-                      {items.map((item) => (
-                        <div key={item.term} className="border-b border-border/30 pb-3">
-                          <p className="text-sm font-medium text-foreground">{item.term}</p>
-                          <p className="text-muted-foreground text-sm leading-[1.75] mt-0.5">{item.desc}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </Reveal>
-              );
-            })}
-          </div>
         </div>
       </section>
 
