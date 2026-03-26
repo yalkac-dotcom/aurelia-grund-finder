@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import OptimizedImg from "@/components/OptimizedImg";
-import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
 import { ArrowRight, AlertTriangle, CheckCircle } from "lucide-react";
-import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import HomeHero from "@/components/home/HomeHero";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Index = () => {
@@ -14,59 +12,10 @@ const Index = () => {
   return (
     <Layout>
       {/* ── 1. HERO ── */}
-      <section id="hero" className="relative h-[60vh] md:h-[68vh] min-h-[380px] md:min-h-[440px] flex items-end">
-        <div className="absolute inset-0">
-          <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover brightness-[1.45]" priority />
-          {/* Vertical gradient – lighter, warm-gold tint */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1408]/75 via-[#12110D]/30 to-transparent" />
-          {/* Side gradient – text protection */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1408]/50 via-[#12110D]/15 to-transparent" />
-          {/* Subtle gold shimmer */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#8B7340]/8 via-transparent to-transparent" />
-        </div>
-        <div className="relative container pb-8 md:pb-14">
-          <div className="max-w-lg">
-            <h1 className="text-[1.35rem] md:text-[2.2rem] lg:text-[2.5rem] font-heading font-semibold text-white leading-[1.18] md:leading-[1.1] mb-2.5 md:mb-3.5 animate-fade-in-up text-balance drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
-              {t.hero.slogan}
-            </h1>
-            <p className="text-white/90 text-[0.8rem] md:text-[0.935rem] leading-[1.65] md:leading-[1.7] mb-2.5 md:mb-3.5 max-w-[300px] md:max-w-sm animate-fade-in-up drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]" style={{ animationDelay: "0.15s" }}>
-              {t.landing.heroSubtitle}
-            </p>
-            <p className="text-white/65 text-[0.65rem] md:text-xs font-medium tracking-[0.14em] uppercase mb-3.5 md:mb-4 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
-              {t.landing.trustLine}
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-2 md:gap-2.5 animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center justify-center gap-1.5 md:gap-2 bg-accent text-white px-5 md:px-6 py-2.5 md:py-3 text-[0.7rem] md:text-sm font-semibold tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.3)]"
-              >
-                {t.landing.heroCta}
-                <ArrowRight size={12} className="md:w-3.5 md:h-3.5" />
-              </Link>
-              <button
-                onClick={() => {
-                  const hero = document.getElementById('hero');
-                  const next = hero?.nextElementSibling as HTMLElement | null;
-                  next?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="inline-flex items-center justify-center gap-1.5 md:gap-2 border border-white/40 bg-black/30 backdrop-blur-sm text-white px-5 md:px-6 py-2.5 md:py-3 text-[0.7rem] md:text-sm font-medium tracking-[0.1em] uppercase hover:border-white/70 hover:bg-black/45 transition-colors duration-300"
-              >
-                {t.landing.heroCtaSecondary}
-              </button>
-            </div>
-            <p className="flex items-center gap-1.5 text-white/70 text-[0.65rem] md:text-xs mt-2.5 md:mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-              <CheckCircle size={10} className="text-accent shrink-0 md:w-3 md:h-3" />
-              {t.landing.heroMetaLine}
-            </p>
-          </div>
-
-          <HeroScrollIndicator />
-        </div>
-      </section>
+      <HomeHero />
 
       {/* ── 2. PROBLEM ── */}
-      <section className="py-10 md:py-14">
+      <section className="pt-16 pb-10 md:pt-20 md:pb-14">
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
