@@ -236,7 +236,7 @@ const de: Translations = {
     messagePlaceholder: "Wie können wir Ihnen weiterhelfen?",
     formLabel: "Kontaktformular",
     formTitle: "Schreiben Sie uns",
-    phonePending: "Telefonnummer folgt nach finaler Freigabe",
+    phonePending: "",
     privacyNote: "Ihre Daten werden vertraulich behandelt · Persönliche Rückmeldung nach Prüfung",
   },
   tax: {
