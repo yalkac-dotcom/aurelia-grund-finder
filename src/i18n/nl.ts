@@ -7,6 +7,7 @@ const nl: Translations = {
     services: "Diensten",
     taxBenefits: "Belastingvoordelen",
     investors: "Voor investeerders",
+    glossar: "Glossarium",
     contact: "Contact",
   },
   footer: {
