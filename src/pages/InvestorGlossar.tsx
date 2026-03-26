@@ -1,21 +1,71 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { BookOpen, ArrowLeft } from "lucide-react";
+import { BookOpen, ArrowLeft, ChevronsUp } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
+
+const LETTER_BAR_ID = "glossar-letter-bar";
 
 const InvestorGlossar = () => {
   const { t } = useLanguage();
   const inv = t.investors;
   const letters = inv.glossaryLetters;
   const entries = inv.glossaryEntries;
+  const [activeLetter, setActiveLetter] = useState<string>("");
+  const [showJump, setShowJump] = useState(false);
+  const sectionRefs = useRef<Map<string, HTMLDivElement>>(new Map());
 
   useEffect(() => {
     document.title = inv.glossaryTitle + " – Aurelia Grundbesitz GmbH";
     const desc = document.querySelector('meta[name="description"]');
     desc?.setAttribute("content", inv.glossaryDisclaimer);
   }, [inv]);
+
+  // Track which letter section is currently visible
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        if (visible.length > 0) {
+          const id = visible[0].target.id;
+          const letter = id.replace("glossar-", "");
+          setActiveLetter(letter);
+        }
+      },
+      { rootMargin: "-120px 0px -60% 0px", threshold: 0 }
+    );
+
+    sectionRefs.current.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [letters]);
+
+  // Show floating button after scrolling past letter bar
+  useEffect(() => {
+    const handleScroll = () => {
+      const bar = document.getElementById(LETTER_BAR_ID);
+      if (bar) {
+        const rect = bar.getBoundingClientRect();
+        setShowJump(rect.bottom < 0);
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const refCallback = useCallback(
+    (letter: string) => (el: HTMLDivElement | null) => {
+      if (el) sectionRefs.current.set(letter, el);
+    },
+    []
+  );
+
+  const scrollToBar = () => {
+    const bar = document.getElementById(LETTER_BAR_ID);
+    bar?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <Layout>
@@ -61,20 +111,27 @@ const InvestorGlossar = () => {
             </div>
           </Reveal>
 
-          {/* Letter bar */}
-          <Reveal delay={0.05}>
-            <div className="flex flex-wrap gap-1.5 mb-8">
+          {/* Sticky Letter bar */}
+          <div
+            id={LETTER_BAR_ID}
+            className="sticky top-20 md:top-28 z-30 bg-background/95 backdrop-blur-sm py-3 -mx-1 px-1 border-b border-border/30 mb-8 scroll-mt-20"
+          >
+            <div className="flex gap-1 md:gap-1.5 overflow-x-auto scrollbar-hide">
               {letters.map((l) => (
                 <a
                   key={l}
                   href={`#glossar-${l}`}
-                  className="w-7 h-7 flex items-center justify-center text-xs font-medium border border-border/40 text-muted-foreground hover:text-accent hover:border-accent/40 transition-colors"
+                  className={`shrink-0 w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-xs font-medium border transition-colors duration-200 ${
+                    activeLetter === l
+                      ? "border-accent bg-accent/10 text-accent"
+                      : "border-border/40 text-muted-foreground hover:text-accent hover:border-accent/40"
+                  }`}
                 >
                   {l}
                 </a>
               ))}
             </div>
-          </Reveal>
+          </div>
 
           {/* Terms */}
           <div className="space-y-8">
@@ -82,33 +139,47 @@ const InvestorGlossar = () => {
               const items = entries[letter];
               if (!items) return null;
               return (
-                <Reveal key={letter} delay={0.05}>
-                  <div id={`glossar-${letter}`} className="scroll-mt-28">
-                    <h3 className="text-base font-heading font-semibold text-accent mb-3">
-                      {letter}
-                    </h3>
-                    <div className="space-y-2.5">
-                      {items.map((item) => (
-                        <div
-                          key={item.term}
-                          className="border-b border-border/30 pb-2.5"
-                        >
-                          <p className="text-sm font-medium text-foreground">
-                            {item.term}
-                          </p>
-                          <p className="text-muted-foreground text-sm leading-[1.75]">
-                            {item.desc}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
+                <div
+                  key={letter}
+                  id={`glossar-${letter}`}
+                  className="scroll-mt-[8.5rem] md:scroll-mt-[10rem]"
+                  ref={refCallback(letter)}
+                >
+                  <h3 className="text-base font-heading font-semibold text-accent mb-3">
+                    {letter}
+                  </h3>
+                  <div className="space-y-2.5">
+                    {items.map((item) => (
+                      <div
+                        key={item.term}
+                        className="border-b border-border/30 pb-2.5"
+                      >
+                        <p className="text-sm font-medium text-foreground">
+                          {item.term}
+                        </p>
+                        <p className="text-muted-foreground text-sm leading-[1.75]">
+                          {item.desc}
+                        </p>
+                      </div>
+                    ))}
                   </div>
-                </Reveal>
+                </div>
               );
             })}
           </div>
         </div>
       </section>
+
+      {/* Floating jump-to-bar button */}
+      {showJump && (
+        <button
+          onClick={scrollToBar}
+          aria-label="Buchstaben wählen"
+          className="fixed bottom-20 right-14 md:bottom-8 md:right-8 z-40 w-10 h-10 md:w-11 md:h-11 flex items-center justify-center bg-accent/90 text-white border border-accent/60 backdrop-blur-sm shadow-lg hover:bg-accent transition-all duration-300 animate-in fade-in"
+        >
+          <ChevronsUp size={16} strokeWidth={1.5} />
+        </button>
+      )}
     </Layout>
   );
 };

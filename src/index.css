@@ -176,3 +176,12 @@
 .animate-scroll-dot {
   animation: scroll-dot-move 2.2s ease-in-out infinite;
 }
+
+/* Hide scrollbar for glossary letter bar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
