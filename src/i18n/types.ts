@@ -58,6 +58,11 @@ export interface Translations {
     scrollTopAria: string;
     heroMeta: string;
     initialAssessmentNote: string;
+    cookieText: string;
+    cookieAccept: string;
+    cookieReject: string;
+    mapConsentText: string;
+    mapConsentBtn: string;
   };
   index: {
     bulletTitle: string;
