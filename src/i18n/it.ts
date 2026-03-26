@@ -159,6 +159,7 @@ const it: Translations = {
     ],
     refBeforeLabel: "Situazione iniziale",
     refAfterLabel: "Approccio",
+    refResultLabel: "Risultato",
   },
   about: {
     heroTitle: "Chi siamo",

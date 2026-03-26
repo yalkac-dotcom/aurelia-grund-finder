@@ -159,6 +159,7 @@ const es: Translations = {
     ],
     refBeforeLabel: "Situación inicial",
     refAfterLabel: "Enfoque",
+    refResultLabel: "Resultado",
   },
   about: {
     heroTitle: "Sobre Aurelia",

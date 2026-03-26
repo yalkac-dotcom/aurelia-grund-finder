@@ -160,6 +160,7 @@ const nl: Translations = {
     ],
     refBeforeLabel: "Uitgangssituatie",
     refAfterLabel: "Aanpak",
+    refResultLabel: "Resultaat",
   },
   about: {
     heroTitle: "Over Aurelia",

@@ -159,6 +159,7 @@ const tr: Translations = {
     ],
     refBeforeLabel: "Başlangıç durumu",
     refAfterLabel: "Yaklaşım",
+    refResultLabel: "Sonuç",
   },
   about: {
     heroTitle: "Hakkımızda",

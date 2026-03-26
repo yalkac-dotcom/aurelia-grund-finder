@@ -160,6 +160,7 @@ const de: Translations = {
     ],
     refBeforeLabel: "Ausgangslage",
     refAfterLabel: "Maßnahme",
+    refResultLabel: "Ergebnis",
   },
   about: {
     heroTitle: "Über Aurelia",
