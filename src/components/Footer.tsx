@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="container py-6 md:py-12">
         <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-5 md:gap-6 items-start">
           {/* Left — Logo + Claim */}
-          <div>
+          <div className="flex flex-col">
             <Link to="/" className="inline-block mb-2.5 md:mb-3">
               <img
                 src={logoImg}
