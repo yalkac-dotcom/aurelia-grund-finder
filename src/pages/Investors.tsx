@@ -222,7 +222,7 @@ const Investors = () => {
                   <div>
                     <p className="text-sm text-foreground leading-[1.7] mb-2">{cs.resultText}</p>
                     <p className="text-muted-foreground/70 text-xs leading-[1.7] max-w-lg">
-                      {cs.note}
+                      {inv.gate.exampleNote}
                     </p>
                   </div>
                 </div>
