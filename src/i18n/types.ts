@@ -112,6 +112,7 @@ export interface Translations {
     referenceProjects: { location: string; year: string; type: string; before: string; after: string; result: string }[];
     refBeforeLabel: string;
     refAfterLabel: string;
+    refResultLabel: string;
   };
   about: {
     heroTitle: string;
