@@ -316,7 +316,7 @@ const it: Translations = {
     title: "Informativa sulla privacy",
     controllerTitle: "1. Titolare del trattamento",
     controllerText: "Aurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf, Germania\nE-mail: info@aurelia-grundbesitz.de",
-    controllerCeo: "Amministratore delegato: Yasar Alkac",
+    controllerCeo: "Amministratore delegato: Eyüp Yasar Alkac\nRegistro delle imprese: Amtsgericht Düsseldorf, HRB 107859",
     generalTitle: "2. Informazioni generali sul trattamento dei dati",
     generalText: "Trattiamo i dati personali dei nostri utenti solo nella misura in cui ciò sia necessario per fornire un sito web funzionale e i nostri contenuti e servizi. Il trattamento avviene sulla base del",
     generalDsgvoLabel: "Regolamento generale sulla protezione dei dati (RGPD)",
