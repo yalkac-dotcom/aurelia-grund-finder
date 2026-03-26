@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logoImg from "@/assets/logo-aurelia.png";
+import logoImg from "@/assets/aurelia-logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -22,7 +22,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/60">
       <div className="container flex items-center justify-between h-14 md:h-[72px]">
         <Link to="/" className="flex items-center">
-          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-10 md:h-14 w-auto object-contain" />
+          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-12 md:h-16 w-auto object-contain" />
         </Link>
 
         <div className="hidden md:flex items-baseline gap-7">

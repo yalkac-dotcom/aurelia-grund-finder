@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logoImg from "@/assets/logo-aurelia.png";
+import logoImg from "@/assets/aurelia-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { languageCodes } from "@/i18n/types";
 
@@ -24,7 +24,7 @@ const Footer = () => {
               <img
                 src={logoImg}
                 alt="Aurelia Grundbesitz GmbH"
-                className="h-10 md:h-12 w-auto object-contain brightness-0 invert"
+                className="h-14 md:h-16 w-auto object-contain brightness-0 invert"
               />
             </Link>
             <p className="text-white/90 text-[11px] md:text-xs leading-[1.65] md:leading-[1.7] max-w-xs mb-1">
