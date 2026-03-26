@@ -7,6 +7,7 @@ const en: Translations = {
     services: "Services",
     taxBenefits: "Tax Benefits",
     investors: "For Investors",
+    glossar: "Glossary",
     contact: "Contact",
   },
   footer: {
@@ -435,6 +436,7 @@ const en: Translations = {
       micro: "In preparation · structurally reviewed · development-oriented",
     },
     glossaryBadge: "Glossary",
+    glossaryLinkText: "Further terms and fundamentals can be found in our investor glossary.",
     glossaryTitle: "Investor glossary",
     glossaryDisclaimer: "The following terms and explanations are provided for general information only. They do not constitute legal, tax or investment advice and do not replace an individual assessment of the respective case.",
     glossaryLetters: ["A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","R","S","T","U","V","W","Z"],

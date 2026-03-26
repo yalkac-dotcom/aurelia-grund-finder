@@ -67,78 +67,6 @@ const InvestorDisclaimer = ({ onAccept }: { onAccept: () => void }) => {
     </Layout>
   );
 };
-
-/* ─── Glossary Section ─── */
-const InvestorGlossary = () => {
-  const { t } = useLanguage();
-  const inv = t.investors;
-  const letters = inv.glossaryLetters;
-  const entries = inv.glossaryEntries;
-
-  return (
-    <section className="py-10 md:py-14 border-t border-border/60">
-      <div className="container max-w-4xl">
-        <Reveal>
-          <div className="section-shell-accent mb-4">
-            <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-              {inv.glossaryBadge}
-            </p>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-              {inv.glossaryTitle}
-            </h2>
-          </div>
-        </Reveal>
-
-        <Reveal delay={0.05}>
-          <div className="border-l-2 border-accent/30 pl-4 mb-6">
-            <p className="text-muted-foreground/80 text-xs leading-[1.7] max-w-xl">
-              {inv.glossaryDisclaimer}
-            </p>
-          </div>
-        </Reveal>
-
-        {/* Letter bar */}
-        <Reveal delay={0.1}>
-          <div className="flex flex-wrap gap-1.5 mb-6">
-            {letters.map((l) => (
-              <a
-                key={l}
-                href={`#glossar-${l}`}
-                className="w-7 h-7 flex items-center justify-center text-xs font-medium border border-border/40 text-muted-foreground hover:text-accent hover:border-accent/40 transition-colors"
-              >
-                {l}
-              </a>
-            ))}
-          </div>
-        </Reveal>
-
-        {/* Terms */}
-        <div className="space-y-6">
-          {letters.map((letter) => {
-            const items = entries[letter];
-            if (!items) return null;
-            return (
-              <Reveal key={letter} delay={0.05}>
-                <div id={`glossar-${letter}`} className="scroll-mt-28">
-                  <h3 className="text-base font-heading font-semibold text-accent mb-2">{letter}</h3>
-                  <div className="space-y-2">
-                    {items.map((item) => (
-                      <div key={item.term} className="border-b border-border/30 pb-2">
-                        <p className="text-sm font-medium text-foreground">{item.term}</p>
-                        <p className="text-muted-foreground text-sm leading-[1.7]">{item.desc}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </Reveal>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
-};
-
 /* ─── Main Investors Page ─── */
 const Investors = () => {
   const { t } = useLanguage();
@@ -329,8 +257,28 @@ const Investors = () => {
         </div>
       </section>
 
-      {/* Glossary */}
-      <InvestorGlossary />
+      {/* Glossary Link */}
+      <section className="py-10 md:py-14 border-t border-border/60">
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="flex items-start gap-3">
+              <BookOpen className="text-accent shrink-0 mt-0.5" size={16} />
+              <div>
+                <p className="text-muted-foreground text-sm leading-[1.7] mb-2">
+                  {inv.glossaryLinkText}
+                </p>
+                <Link
+                  to="/investoren-glossar"
+                  className="inline-flex items-center gap-2 text-accent text-sm hover:text-accent/80 transition-colors"
+                >
+                  {inv.glossaryTitle}
+                  <ArrowRight size={12} />
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
       {/* Disclaimer */}
       <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">

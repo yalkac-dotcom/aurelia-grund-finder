@@ -7,6 +7,7 @@ const nl: Translations = {
     services: "Diensten",
     taxBenefits: "Belastingvoordelen",
     investors: "Voor investeerders",
+    glossar: "Glossarium",
     contact: "Contact",
   },
   footer: {
@@ -435,7 +436,8 @@ const nl: Translations = {
       extra: "Dit project illustreert in welke omvang en constellaties Aurelia actief is: bij grondstukken en vastgoed met substantie, ontwikkelingspotentieel en een duidelijk strategisch perspectief.",
       micro: "In voorbereiding · gestructureerd beoordeeld · ontwikkelingsgericht",
     },
-    glossaryBadge: "Woordenlijst",
+    glossaryBadge: "Glossarium",
+    glossaryLinkText: "Verdere begrippen en grondbeginselen vindt u in ons glossarium voor investeerders.",
     glossaryTitle: "Woordenlijst voor investeerders",
     glossaryDisclaimer: "De volgende begrippen en toelichtingen dienen uitsluitend ter algemene informatie. Zij vormen geen juridisch, fiscaal of beleggingsadvies en vervangen geen individuele beoordeling van het betreffende geval.",
     glossaryLetters: ["A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","R","S","T","U","V","W","Z"],

@@ -7,6 +7,7 @@ export interface Translations {
     services: string;
     taxBenefits: string;
     investors: string;
+    glossar: string;
     contact: string;
   };
   footer: {
@@ -315,6 +316,7 @@ export interface Translations {
       micro: string;
     };
     glossaryBadge: string;
+    glossaryLinkText: string;
     glossaryTitle: string;
     glossaryDisclaimer: string;
     glossaryLetters: string[];
