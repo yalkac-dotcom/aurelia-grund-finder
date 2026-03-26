@@ -415,9 +415,9 @@ const en: Translations = {
       { title: "Structured execution", desc: "From analysis and development to later sale or long-term holding, the focus remains on a clear and understandable process." },
       { title: "Discreet communication", desc: "Especially in special situations, a confidential and professional handling of information and stakeholders is essential." },
     ],
-    completedBadge: "Project constellations",
-    completedTitle: "Illustrative project constellations",
-    completedDesc: "The following examples illustrate typical starting conditions and development paths. They show in which constellations structured assessment, preparation and economic classification are particularly important.",
+    completedBadge: "Completed projects",
+    completedTitle: "Illustrative project completions",
+    completedDesc: "Individual completed project developments can serve as examples of how properties develop economically after careful assessment, structured preparation and disciplined execution. The following figures relate to specific individual cases and do not constitute a performance promise for future projects.",
     caseStudy: {
       title: "Case study: Residential property from foreclosure in Ratingen",
       intro: "The following presentation serves solely to illustrate a completed individual case.",
