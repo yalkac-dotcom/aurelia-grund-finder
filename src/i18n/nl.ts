@@ -317,7 +317,7 @@ const nl: Translations = {
     title: "Privacyverklaring",
     controllerTitle: "1. Verwerkingsverantwoordelijke",
     controllerText: "Aurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf, Duitsland\nE-mail: info@aurelia-grundbesitz.de",
-    controllerCeo: "Directeur: Yasar Alkac",
+    controllerCeo: "Directeur: Eyüp Yasar Alkac\nHandelsregister: Amtsgericht Düsseldorf, HRB 107859",
     generalTitle: "2. Algemene informatie over gegevensverwerking",
     generalText: "Wij verwerken persoonsgegevens van onze gebruikers uitsluitend voor zover dit noodzakelijk is voor het aanbieden van een functionele website en onze inhoud en diensten. De verwerking vindt plaats op basis van de",
     generalDsgvoLabel: "Algemene Verordening Gegevensbescherming (AVG)",
