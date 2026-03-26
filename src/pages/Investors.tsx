@@ -3,7 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ArrowRight, CheckCircle, Shield, TrendingUp, BookOpen } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, TrendingUp, BookOpen, ChevronDown } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const DISCLAIMER_KEY = "aurelia-investor-disclaimer";
 
