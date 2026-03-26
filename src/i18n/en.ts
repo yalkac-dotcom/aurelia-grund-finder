@@ -7,6 +7,7 @@ const en: Translations = {
     services: "Services",
     taxBenefits: "Tax Benefits",
     investors: "For Investors",
+    glossar: "Glossary",
     contact: "Contact",
   },
   footer: {
