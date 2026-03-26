@@ -7,6 +7,7 @@ export interface Translations {
     services: string;
     taxBenefits: string;
     investors: string;
+    glossar: string;
     contact: string;
   };
   footer: {
