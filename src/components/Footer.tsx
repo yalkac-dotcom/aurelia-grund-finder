@@ -11,6 +11,7 @@ const Footer = () => {
     { label: t.nav.home, path: "/" },
     { label: t.nav.about, path: "/ueber-uns" },
     { label: t.nav.services, path: "/leistungen" },
+    { label: t.nav.investors, path: "/investoren" },
     { label: t.nav.contact, path: "/kontakt" },
   ];
 
