@@ -16,7 +16,6 @@ const Header = () => {
     { label: t.nav.services, path: "/leistungen" },
     { label: t.nav.taxBenefits, path: "/steuervorteile" },
     { label: t.nav.investors, path: "/investoren" },
-    { label: t.nav.glossar, path: "/investoren-glossar" },
     { label: t.nav.contact, path: "/kontakt" },
   ];
 
