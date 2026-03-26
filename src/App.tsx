@@ -15,6 +15,7 @@ const EnergetischPage = lazy(() => import("./pages/tax/EnergetischPage"));
 const KfwPage = lazy(() => import("./pages/tax/KfwPage"));
 const BafaPage = lazy(() => import("./pages/tax/BafaPage"));
 const GlossarPage = lazy(() => import("./pages/tax/GlossarPage"));
+const Investors = lazy(() => import("./pages/Investors"));
 const Contact = lazy(() => import("./pages/Contact"));
 
 const Privacy = lazy(() => import("./pages/Privacy"));
