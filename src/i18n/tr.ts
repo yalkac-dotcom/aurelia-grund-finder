@@ -61,6 +61,11 @@ const tr: Translations = {
     scrollTopAria: "Yukarı kaydır",
     heroMeta: "Kişisel · Gizli · Net şekilde değerlendirilmiş",
     initialAssessmentNote: "Bağlayıcılık yok · İlk inceleme sonrası kişisel geri dönüş",
+    cookieText: "Bu web sitesi teknik olarak gerekli işlevler kullanmaktadır. Harici hizmetlerin (ör. harita görüntüleme) entegrasyonu için onayınız gerekmektedir.",
+    cookieAccept: "Kabul et",
+    cookieReject: "Reddet",
+    mapConsentText: "Haritanın görüntülenmesi için Google Maps kullanılmaktadır. Yükleyerek Google'ın gizlilik politikasını kabul etmiş olursunuz.",
+    mapConsentBtn: "Haritayı yükle",
   },
   index: {
     bulletTitle: "Neden Aurelia Grundbesitz",
@@ -159,6 +164,7 @@ const tr: Translations = {
     ],
     refBeforeLabel: "Başlangıç durumu",
     refAfterLabel: "Yaklaşım",
+    refResultLabel: "Sonuç",
   },
   about: {
     heroTitle: "Hakkımızda",

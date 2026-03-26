@@ -62,6 +62,11 @@ const nl: Translations = {
     scrollTopAria: "Naar boven scrollen",
     heroMeta: "Persoonlijk · Discreet · Helder beoordeeld",
     initialAssessmentNote: "Vrijblijvend · Persoonlijke reactie na eerste beoordeling",
+    cookieText: "Deze website maakt gebruik van technisch noodzakelijke functies. Voor de integratie van externe diensten (bijv. kaartweergave) is uw toestemming vereist.",
+    cookieAccept: "Accepteren",
+    cookieReject: "Weigeren",
+    mapConsentText: "Voor de weergave van de kaart wordt Google Maps gebruikt. Door te laden stemt u in met het privacybeleid van Google.",
+    mapConsentBtn: "Kaart laden",
   },
   index: {
     bulletTitle: "Waarom Aurelia Grundbesitz",
@@ -160,6 +165,7 @@ const nl: Translations = {
     ],
     refBeforeLabel: "Uitgangssituatie",
     refAfterLabel: "Aanpak",
+    refResultLabel: "Resultaat",
   },
   about: {
     heroTitle: "Over Aurelia",

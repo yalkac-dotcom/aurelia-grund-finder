@@ -3,8 +3,9 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-contact.jpg";
-import { MapPin, Mail, Phone, Send, Clock, CheckCircle, ArrowRight } from "lucide-react";
+import { MapPin, Mail, Send, Clock, CheckCircle, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import ConsentMap from "@/components/ConsentMap";
 
 const inputClasses =
   "w-full border border-border/60 bg-background px-3.5 py-2 text-base text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
@@ -76,15 +77,6 @@ const Contact = () => {
                 <a href="mailto:info@aurelia-grundbesitz.de" className="text-muted-foreground text-sm hover:text-accent transition-colors">
                   info@aurelia-grundbesitz.de
                 </a>
-              </div>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5">
-                <div className="flex items-center gap-2.5">
-                  <Phone className="text-accent" size={13} />
-                  <h3 className="text-base font-heading font-semibold text-foreground">{t.contact.phone}</h3>
-                </div>
-                <p className="text-muted-foreground text-sm">{t.contact.phonePending}</p>
               </div>
             </Reveal>
             <Reveal delay={0.15}>
@@ -230,10 +222,9 @@ const Contact = () => {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="overflow-hidden border border-border/40 mt-5">
-              <iframe
+              <ConsentMap
                 title={`${t.common.ourLocation} – Aurelia Grundbesitz GmbH`}
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5!2d6.7367!3d51.2467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ca1b0b7e1b0d%3A0x0!2sGrevenbroicher+Weg+2%2C+40547+D%C3%BCsseldorf!5e0!3m2!1sde!2sde!4v1700000000000"
-                width="100%" height="280" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
           </Reveal>

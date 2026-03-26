@@ -61,6 +61,11 @@ const en: Translations = {
     scrollTopAria: "Scroll to top",
     heroMeta: "Personal · Discreet · Clearly assessed",
     initialAssessmentNote: "No obligation · Personal response after initial review",
+    cookieText: "This website uses technically necessary functions. Your consent is required for the integration of external services (e.g. map display).",
+    cookieAccept: "Accept",
+    cookieReject: "Decline",
+    mapConsentText: "Google Maps is used to display the map. By loading, you agree to Google's privacy policy.",
+    mapConsentBtn: "Load map",
   },
   index: {
     bulletTitle: "Why Aurelia Grundbesitz",
@@ -159,6 +164,7 @@ const en: Translations = {
     ],
     refBeforeLabel: "Starting point",
     refAfterLabel: "Approach",
+    refResultLabel: "Outcome",
   },
   about: {
     heroTitle: "About Aurelia",

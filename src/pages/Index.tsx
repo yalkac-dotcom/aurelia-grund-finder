@@ -233,7 +233,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="pt-2 border-t border-border/40">
-                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Ergebnis</p>
+                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{t.landing.refResultLabel}</p>
                     <p className="text-sm text-foreground leading-[1.6]">{project.result}</p>
                   </div>
                 </div>

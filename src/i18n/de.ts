@@ -62,6 +62,11 @@ const de: Translations = {
     scrollTopAria: "Nach oben scrollen",
     heroMeta: "Persönlich · diskret · klar eingeordnet",
     initialAssessmentNote: "Keine Verpflichtung · Persönliche Rückmeldung nach erster Prüfung",
+    cookieText: "Diese Website verwendet technisch notwendige Funktionen. Für die Einbindung externer Dienste (z. B. Kartenanzeige) ist Ihre Zustimmung erforderlich.",
+    cookieAccept: "Akzeptieren",
+    cookieReject: "Ablehnen",
+    mapConsentText: "Für die Anzeige der Karte wird Google Maps eingebunden. Mit dem Laden stimmen Sie der Datenschutzerklärung von Google zu.",
+    mapConsentBtn: "Karte laden",
   },
   index: {
     bulletTitle: "Warum Aurelia Grundbesitz",
@@ -160,6 +165,7 @@ const de: Translations = {
     ],
     refBeforeLabel: "Ausgangslage",
     refAfterLabel: "Maßnahme",
+    refResultLabel: "Ergebnis",
   },
   about: {
     heroTitle: "Über Aurelia",
