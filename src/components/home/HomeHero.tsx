@@ -16,7 +16,7 @@ const HomeHero = () => {
   };
 
   return (
-    <section id="hero" className="relative flex h-[70svh] min-h-[470px] items-end md:h-[78vh] md:min-h-[620px]">
+    <section id="hero" className="relative flex h-[62svh] min-h-[400px] items-end md:h-[70vh] md:min-h-[480px]">
       <div className="absolute inset-0 overflow-hidden">
         <OptimizedImg
           src={heroImg}
