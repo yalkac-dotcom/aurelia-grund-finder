@@ -16,13 +16,13 @@ const Index = () => {
       {/* ── 1. HERO ── */}
       <section id="hero" className="relative h-[60vh] md:h-[68vh] min-h-[380px] md:min-h-[440px] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover brightness-[1.3]" priority />
-          {/* Vertical gradient – lighter overall, warm-gold tint at bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1408]/85 via-[#12110D]/45 to-[#0A0B0D]/15" />
-          {/* Side gradient – text protection zone with subtle gold warmth */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1408]/60 via-[#12110D]/20 to-transparent" />
-          {/* Very subtle gold shimmer layer */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#8B7340]/10 via-transparent to-transparent" />
+          <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover brightness-[1.45]" priority />
+          {/* Vertical gradient – lighter, warm-gold tint */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1408]/75 via-[#12110D]/30 to-transparent" />
+          {/* Side gradient – text protection */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1408]/50 via-[#12110D]/15 to-transparent" />
+          {/* Subtle gold shimmer */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#8B7340]/8 via-transparent to-transparent" />
         </div>
         <div className="relative container pb-8 md:pb-14">
           <div className="max-w-lg">
