@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import OptimizedImg from "@/components/OptimizedImg";
 import trustImg from "@/assets/section-trust.jpg";
 import { ArrowRight, AlertTriangle, CheckCircle } from "lucide-react";
 import HomeHero from "@/components/home/HomeHero";
