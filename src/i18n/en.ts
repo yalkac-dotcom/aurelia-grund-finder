@@ -225,7 +225,7 @@ const en: Translations = {
     send: "Send message",
     successTitle: "Thank you for your interest.",
     successText: "We have received your enquiry and will get back to you personally as soon as possible.",
-    subjectOptions: ["General enquiry", "Acquisition offer", "Callback request", "Other matter"],
+    subjectOptions: ["General enquiry", "Acquisition offer", "Investor enquiry", "Callback request", "Other matter"],
     company: "Company / Institution",
     messagePlaceholder: "How can we help you?",
     formLabel: "Contact form",

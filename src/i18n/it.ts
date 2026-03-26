@@ -225,7 +225,7 @@ const it: Translations = {
     send: "Invia messaggio",
     successTitle: "Grazie per il vostro messaggio.",
     successText: "Abbiamo ricevuto la vostra richiesta e vi risponderemo il prima possibile.",
-    subjectOptions: ["Richiesta generale", "Offerta di acquisto", "Richiesta di richiamata", "Altra questione"],
+    subjectOptions: ["Richiesta generale", "Offerta di acquisto", "Richiesta investitori", "Richiesta di richiamata", "Altra questione"],
     company: "Azienda / Istituzione",
     messagePlaceholder: "Come possiamo aiutarvi?",
     formLabel: "Modulo di contatto",

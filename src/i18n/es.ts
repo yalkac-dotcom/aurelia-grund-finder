@@ -225,7 +225,7 @@ const es: Translations = {
     send: "Enviar mensaje",
     successTitle: "Gracias por su mensaje.",
     successText: "Hemos recibido su consulta y nos pondremos en contacto con usted lo antes posible.",
-    subjectOptions: ["Consulta general", "Oferta de compra", "Solicitud de devolución de llamada", "Otro asunto"],
+    subjectOptions: ["Consulta general", "Oferta de compra", "Consulta de inversores", "Solicitud de devolución de llamada", "Otro asunto"],
     company: "Empresa / Institución",
     messagePlaceholder: "¿Cómo podemos ayudarle?",
     formLabel: "Formulario de contacto",

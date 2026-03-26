@@ -226,7 +226,7 @@ const de: Translations = {
     send: "Nachricht senden",
     successTitle: "Vielen Dank für Ihre Nachricht.",
     successText: "Wir haben Ihre Anfrage erhalten und melden uns so zeitnah wie möglich bei Ihnen zurück.",
-    subjectOptions: ["Allgemeine Anfrage", "Ankaufangebot", "Rückrufwunsch", "Sonstiges Anliegen"],
+    subjectOptions: ["Allgemeine Anfrage", "Ankaufangebot", "Investoren-Anfrage", "Rückrufwunsch", "Sonstiges Anliegen"],
     company: "Firma / Institution",
     messagePlaceholder: "Wie können wir Ihnen weiterhelfen?",
     formLabel: "Kontaktformular",
