@@ -317,7 +317,8 @@ export interface Translations {
     glossaryBadge: string;
     glossaryTitle: string;
     glossaryDisclaimer: string;
-    glossaryItems: { term: string; definition: string }[];
+    glossaryLetters: string[];
+    glossaryEntries: Record<string, { term: string; desc: string }[]>;
     disclaimerBadge: string;
     disclaimerTitle: string;
     disclaimerDesc: string;

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
@@ -72,22 +72,8 @@ const InvestorDisclaimer = ({ onAccept }: { onAccept: () => void }) => {
 const InvestorGlossary = () => {
   const { t } = useLanguage();
   const inv = t.investors;
-  const items = inv.glossaryItems;
-
-  const letters = useMemo(() => {
-    const set = new Set(items.map((i) => i.term.charAt(0).toUpperCase()));
-    return Array.from(set).sort();
-  }, [items]);
-
-  const grouped = useMemo(() => {
-    const map: Record<string, typeof items> = {};
-    items.forEach((item) => {
-      const l = item.term.charAt(0).toUpperCase();
-      if (!map[l]) map[l] = [];
-      map[l].push(item);
-    });
-    return map;
-  }, [items]);
+  const letters = inv.glossaryLetters;
+  const entries = inv.glossaryEntries;
 
   return (
     <section className="py-10 md:py-14 border-t border-border/60">
@@ -128,21 +114,25 @@ const InvestorGlossary = () => {
 
         {/* Terms */}
         <div className="space-y-6">
-          {letters.map((letter) => (
-            <Reveal key={letter} delay={0.05}>
-              <div id={`glossar-${letter}`} className="scroll-mt-28">
-                <h3 className="text-base font-heading font-semibold text-accent mb-2">{letter}</h3>
-                <div className="space-y-2">
-                  {grouped[letter].map((item) => (
-                    <div key={item.term} className="border-b border-border/30 pb-2">
-                      <p className="text-sm font-medium text-foreground">{item.term}</p>
-                      <p className="text-muted-foreground text-sm leading-[1.7]">{item.definition}</p>
-                    </div>
-                  ))}
+          {letters.map((letter) => {
+            const items = entries[letter];
+            if (!items) return null;
+            return (
+              <Reveal key={letter} delay={0.05}>
+                <div id={`glossar-${letter}`} className="scroll-mt-28">
+                  <h3 className="text-base font-heading font-semibold text-accent mb-2">{letter}</h3>
+                  <div className="space-y-2">
+                    {items.map((item) => (
+                      <div key={item.term} className="border-b border-border/30 pb-2">
+                        <p className="text-sm font-medium text-foreground">{item.term}</p>
+                        <p className="text-muted-foreground text-sm leading-[1.7]">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </Reveal>
-          ))}
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>
