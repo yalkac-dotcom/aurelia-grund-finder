@@ -397,6 +397,7 @@ const tr: Translations = {
       checkbox: "Bilgilendirmeleri okudum ve anladım.",
       acceptBtn: "Uyarıları kabul et ve devam et",
       declineBtn: "Ana sayfaya dön",
+      micro: "Genel bilgi · yatırım danışmanlığı değildir · hukuki veya vergi danışmanlığı değildir",
     },
     heroBadge: "Yatırımcılar için",
     heroTitle: "Yapılandırılmış değerlendirme ve gizli rehberlikle seçilmiş gayrimenkul projeleri.",

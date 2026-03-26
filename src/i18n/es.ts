@@ -397,6 +397,7 @@ const es: Translations = {
       checkbox: "He leído y comprendido estas indicaciones.",
       acceptBtn: "Aceptar y continuar",
       declineBtn: "Volver a la página principal",
+      micro: "Información general · sin asesoramiento de inversión · sin asesoramiento legal o fiscal",
     },
     heroBadge: "Para inversores",
     heroTitle: "Proyectos inmobiliarios seleccionados con análisis estructurado y acompañamiento discreto.",
