@@ -159,7 +159,6 @@ const en: Translations = {
     referencesTitle: "How we handle projects",
     referenceProjects: [
       { location: "Typical scenario", year: "", type: "Residential property from a special situation with unclear circumstances", before: "Complex ownership or usage structures, renovation needs, limited market transparency", after: "Careful review, structural preparation, and targeted development", result: "Clearly structured perspective for economically sound use" },
-      { location: "Köln-Ehrenfeld", year: "", type: "Property from a special situation with unclear starting conditions", before: "Administrative chaos, rental arrears, unresolved legal issues", after: "Assessment of framework conditions and development of a realistic strategy", result: "Clearly structured perspective for use and further development" },
     ],
     refBeforeLabel: "Starting point",
     refAfterLabel: "Approach",
