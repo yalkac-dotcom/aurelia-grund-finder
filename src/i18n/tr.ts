@@ -235,7 +235,7 @@ const tr: Translations = {
     messagePlaceholder: "Size nasıl yardımcı olabiliriz?",
     formLabel: "İletişim formu",
     formTitle: "Bize yazın",
-    phonePending: "Telefon numarası son onaydan sonra eklenecektir",
+    phonePending: "",
     privacyNote: "Verileriniz gizli tutulur · İnceleme sonrası kişisel geri dönüş",
   },
   tax: {

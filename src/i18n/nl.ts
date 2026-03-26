@@ -236,7 +236,7 @@ const nl: Translations = {
     messagePlaceholder: "Hoe kunnen wij u van dienst zijn?",
     formLabel: "Contactformulier",
     formTitle: "Schrijf ons",
-    phonePending: "Telefoonnummer volgt na definitieve goedkeuring",
+    phonePending: "",
     privacyNote: "Uw gegevens worden vertrouwelijk behandeld · Persoonlijke reactie na beoordeling",
   },
   tax: {

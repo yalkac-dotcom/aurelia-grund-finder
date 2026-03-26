@@ -235,7 +235,7 @@ const en: Translations = {
     messagePlaceholder: "How can we help you?",
     formLabel: "Contact form",
     formTitle: "Write to us",
-    phonePending: "Phone number will be added after final approval",
+    phonePending: "",
     privacyNote: "Your data will be treated confidentially · Personal response after review",
   },
   tax: {

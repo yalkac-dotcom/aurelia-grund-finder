@@ -235,7 +235,7 @@ const es: Translations = {
     messagePlaceholder: "¿Cómo podemos ayudarle?",
     formLabel: "Formulario de contacto",
     formTitle: "Escríbanos",
-    phonePending: "El número de teléfono se añadirá tras la aprobación final",
+    phonePending: "",
     privacyNote: "Sus datos se tratarán de forma confidencial · Respuesta personal tras la revisión",
   },
   tax: {

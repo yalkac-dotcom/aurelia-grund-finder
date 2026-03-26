@@ -235,7 +235,7 @@ const it: Translations = {
     messagePlaceholder: "Come possiamo aiutarvi?",
     formLabel: "Modulo di contatto",
     formTitle: "Scriveteci",
-    phonePending: "Il numero di telefono sarà aggiunto dopo l'approvazione finale",
+    phonePending: "",
     privacyNote: "I vostri dati saranno trattati in modo confidenziale · Risposta personale dopo la verifica",
   },
   tax: {
