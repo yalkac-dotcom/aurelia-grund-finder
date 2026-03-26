@@ -321,6 +321,10 @@ export interface Translations {
     glossaryDisclaimer: string;
     glossaryLetters: string[];
     glossaryEntries: Record<string, { term: string; desc: string }[]>;
+    faqBadge: string;
+    faqTitle: string;
+    faqIntro: string;
+    faqItems: { q: string; a: string }[];
     disclaimerBadge: string;
     disclaimerTitle: string;
     disclaimerDesc: string;

@@ -3,7 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ArrowRight, CheckCircle, Shield, TrendingUp, BookOpen } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, TrendingUp, BookOpen, ChevronDown } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const DISCLAIMER_KEY = "aurelia-investor-disclaimer";
 
@@ -257,31 +263,47 @@ const Investors = () => {
         </div>
       </section>
 
-      {/* Glossary Link */}
+      {/* FAQ */}
       <section className="py-10 md:py-14 border-t border-border/60">
         <div className="container max-w-4xl">
           <Reveal>
-            <div className="flex items-start gap-3">
-              <BookOpen className="text-accent shrink-0 mt-0.5" size={16} />
-              <div>
-                <p className="text-muted-foreground text-sm leading-[1.7] mb-2">
-                  {inv.glossaryLinkText}
-                </p>
-                <Link
-                  to="/investoren-glossar"
-                  className="inline-flex items-center gap-2 text-accent text-sm hover:text-accent/80 transition-colors"
-                >
-                  {inv.glossaryTitle}
-                  <ArrowRight size={12} />
-                </Link>
-              </div>
+            <div className="section-shell-accent mb-4">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+                {inv.faqBadge}
+              </p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                {inv.faqTitle}
+              </h2>
             </div>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="text-muted-foreground text-sm leading-[1.7] mb-6 max-w-xl">
+              {inv.faqIntro}
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <Accordion type="single" collapsible className="space-y-2">
+              {inv.faqItems.map((item, i) => (
+                <AccordionItem
+                  key={i}
+                  value={`faq-${i}`}
+                  className="border border-border/40 px-5 data-[state=open]:border-accent/20 transition-colors"
+                >
+                  <AccordionTrigger className="text-sm font-heading font-medium text-foreground py-4 hover:no-underline hover:text-accent transition-colors [&[data-state=open]]:text-accent">
+                    {item.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground text-sm leading-[1.8] pb-5">
+                    {item.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </Reveal>
         </div>
       </section>
 
       {/* Glossary Link */}
-      <section className="py-10 md:py-14 border-t border-border/60">
+      <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
             <div className="flex items-start gap-3">
