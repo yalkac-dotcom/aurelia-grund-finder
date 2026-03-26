@@ -24,7 +24,7 @@ const Footer = () => {
               <img
                 src={logoImg}
                 alt="Aurelia Grundbesitz GmbH"
-                className="h-32 md:h-40 w-auto object-contain brightness-0 invert"
+                className="h-20 md:h-24 w-auto object-contain brightness-0 invert"
               />
             </Link>
             <p className="text-white/90 text-[11px] md:text-xs leading-[1.65] md:leading-[1.7] max-w-xs mb-1">
