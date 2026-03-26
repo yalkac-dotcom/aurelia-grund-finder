@@ -15,6 +15,7 @@ const EnergetischPage = lazy(() => import("./pages/tax/EnergetischPage"));
 const KfwPage = lazy(() => import("./pages/tax/KfwPage"));
 const BafaPage = lazy(() => import("./pages/tax/BafaPage"));
 const GlossarPage = lazy(() => import("./pages/tax/GlossarPage"));
+const Investors = lazy(() => import("./pages/Investors"));
 const Contact = lazy(() => import("./pages/Contact"));
 
 const Privacy = lazy(() => import("./pages/Privacy"));
@@ -41,6 +42,7 @@ const App = () => (
               <Route path="/steuervorteile/kfw" element={<KfwPage />} />
               <Route path="/steuervorteile/bafa" element={<BafaPage />} />
               <Route path="/steuervorteile/glossar" element={<GlossarPage />} />
+              <Route path="/investoren" element={<Investors />} />
               <Route path="/kontakt" element={<Contact />} />
               
               <Route path="/datenschutz" element={<Privacy />} />
