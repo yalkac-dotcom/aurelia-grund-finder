@@ -437,6 +437,7 @@ const de: Translations = {
       micro: "In Vorbereitung · strukturiert geprüft · entwicklungsorientiert",
     },
     glossaryBadge: "Glossar",
+    glossaryLinkText: "Weiterführende Begriffe und Grundlagen finden Sie in unserem Glossar für Investoren.",
     glossaryTitle: "Glossar für Investoren",
     glossaryDisclaimer: "Die nachfolgenden Begriffe und Erläuterungen dienen ausschließlich der allgemeinen Information. Sie stellen keine Rechts-, Steuer- oder Anlageberatung dar und ersetzen keine individuelle Prüfung des jeweiligen Einzelfalls.",
     glossaryLetters: ["A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","R","S","T","U","V","W","Z"],

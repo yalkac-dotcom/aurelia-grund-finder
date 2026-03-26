@@ -435,6 +435,7 @@ const tr: Translations = {
       micro: "Hazırlık aşamasında · yapılandırılmış değerlendirme · gelişime yönelik",
     },
     glossaryBadge: "Sözlük",
+    glossaryLinkText: "Ek terimler ve temel kavramlar için yatırımcı sözlüğümüze bakabilirsiniz.",
     glossaryTitle: "Yatırımcılar için sözlük",
     glossaryDisclaimer: "Aşağıdaki terimler ve açıklamalar yalnızca genel bilgi amaçlıdır. Hukuki, vergisel veya yatırım danışmanlığı niteliği taşımaz ve ilgili vakanın bireysel değerlendirmesinin yerini almaz.",
     glossaryLetters: ["A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","R","S","T","U","V","W","Z"],
