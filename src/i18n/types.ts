@@ -271,6 +271,46 @@ export interface Translations {
     copyrightTitle: string;
     copyrightText: string;
   };
+  investors: {
+    navLabel: string;
+    metaTitle: string;
+    metaDescription: string;
+    disclaimerTitle: string;
+    disclaimerText: string;
+    disclaimerAccept: string;
+    disclaimerDecline: string;
+    heroTitle: string;
+    heroSubtitle: string;
+    audienceLabel: string;
+    audienceTitle: string;
+    audienceText: string;
+    selectionLabel: string;
+    selectionTitle: string;
+    selectionText: string;
+    selectionPoints: { title: string; text: string }[];
+    prioritiesLabel: string;
+    prioritiesTitle: string;
+    priorityPoints: { title: string; text: string }[];
+    projectsLabel: string;
+    projectsTitle: string;
+    projectsDisclaimer: string;
+    projectExample: {
+      location: string;
+      type: string;
+      year: string;
+      acquisition: string;
+      measures: string;
+      result: string;
+      roiLabel: string;
+      roiValue: string;
+      roiNote: string;
+    };
+    ctaLabel: string;
+    ctaTitle: string;
+    ctaText: string;
+    ctaButton: string;
+    ctaNote: string;
+  };
 }
 
 export const languageNames: Record<Language, string> = {
