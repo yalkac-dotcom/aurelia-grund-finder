@@ -316,6 +316,7 @@ export interface Translations {
       micro: string;
     };
     glossaryBadge: string;
+    glossaryLinkText: string;
     glossaryTitle: string;
     glossaryDisclaimer: string;
     glossaryLetters: string[];
