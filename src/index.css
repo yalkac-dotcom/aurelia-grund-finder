@@ -200,7 +200,7 @@
 }
 
 .hero-bottom-fade {
-  background: linear-gradient(180deg, transparent 0%, hsl(var(--background) / 0.92) 78%, hsl(var(--background)) 100%);
+  display: none;
 }
 
 .hero-copy-shell {
