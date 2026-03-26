@@ -27,7 +27,6 @@ const HomeHero = () => {
         <div className="hero-overlay-base absolute inset-0" />
         <div className="hero-overlay-protect absolute inset-0" />
         <div className="hero-overlay-warm absolute inset-0" />
-        <div className="hero-bottom-fade absolute inset-x-0 bottom-0 h-16 md:h-20" />
       </div>
 
       <div className="relative container pb-14 pt-24 md:pb-20 md:pt-28">
