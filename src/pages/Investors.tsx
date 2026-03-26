@@ -37,7 +37,7 @@ const InvestorDisclaimer = ({ onAccept }: { onAccept: () => void }) => {
                 <p>{g.intro}</p>
                 <p>{g.body1}</p>
                 <p>{g.body2}</p>
-                <p>{g.body3}</p>
+                {g.body3 && <p>{g.body3}</p>}
               </div>
 
               <label className="flex items-start gap-2.5 mb-8 cursor-pointer select-none">
