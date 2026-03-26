@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-premium.jpg";
 import trustImg from "@/assets/section-trust.jpg";
-import { ArrowRight, AlertTriangle, CheckCircle, MapPin } from "lucide-react";
+import { ArrowRight, AlertTriangle, CheckCircle } from "lucide-react";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -216,11 +216,6 @@ const Index = () => {
             {t.landing.referenceProjects.map((project, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className="border border-border/50 p-5 md:p-6">
-                  <div className="flex flex-wrap items-center gap-3 mb-3">
-                    <span className="inline-flex items-center gap-1.5 text-xs text-accent font-medium tracking-wide uppercase">
-                      <MapPin size={12} /> {project.location}
-                    </span>
-                  </div>
                   <p className="text-sm font-heading font-semibold text-foreground mb-3">{project.type}</p>
                   <div className="grid sm:grid-cols-2 gap-4 mb-3">
                     <div>

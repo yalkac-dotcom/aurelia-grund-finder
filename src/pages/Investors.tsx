@@ -302,28 +302,6 @@ const Investors = () => {
         </div>
       </section>
 
-      {/* Glossary Link */}
-      <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className="flex items-start gap-3">
-              <BookOpen className="text-accent shrink-0 mt-0.5" size={16} />
-              <div>
-                <p className="text-muted-foreground text-sm leading-[1.7] mb-2">
-                  {inv.glossaryLinkText}
-                </p>
-                <Link
-                  to="/investoren-glossar"
-                  className="inline-flex items-center gap-2 text-accent text-sm hover:text-accent/80 transition-colors"
-                >
-                  {inv.glossaryTitle}
-                  <ArrowRight size={12} />
-                </Link>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
 
       {/* Disclaimer */}
       <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
