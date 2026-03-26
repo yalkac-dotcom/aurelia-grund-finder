@@ -14,7 +14,7 @@ const Index = () => {
   return (
     <Layout>
       {/* ── 1. HERO ── */}
-      <section id="hero" className="relative h-[55vh] md:h-[60vh] min-h-[380px] md:min-h-[400px] flex items-end">
+      <section id="hero" className="relative h-[60vh] md:h-[68vh] min-h-[380px] md:min-h-[440px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover brightness-[1.15]" priority />
           {/* Vertical gradient – lighter overall, warm-gold tint at bottom */}
