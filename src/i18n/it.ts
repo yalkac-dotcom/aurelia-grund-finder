@@ -61,6 +61,11 @@ const it: Translations = {
     scrollTopAria: "Torna in alto",
     heroMeta: "Personale · Discreto · Valutato con chiarezza",
     initialAssessmentNote: "Senza impegno · Risposta personale dopo la prima verifica",
+    cookieText: "Questo sito web utilizza funzioni tecnicamente necessarie. Per l'integrazione di servizi esterni (ad es. visualizzazione mappa) è richiesto il vostro consenso.",
+    cookieAccept: "Accetta",
+    cookieReject: "Rifiuta",
+    mapConsentText: "Per la visualizzazione della mappa viene utilizzato Google Maps. Caricandola, acconsentite all'informativa sulla privacy di Google.",
+    mapConsentBtn: "Carica mappa",
   },
   index: {
     bulletTitle: "Perché Aurelia Grundbesitz",
