@@ -78,15 +78,6 @@ const Contact = () => {
                 </a>
               </div>
             </Reveal>
-            <Reveal delay={0.1}>
-              <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5">
-                <div className="flex items-center gap-2.5">
-                  <Phone className="text-accent" size={13} />
-                  <h3 className="text-base font-heading font-semibold text-foreground">{t.contact.phone}</h3>
-                </div>
-                <p className="text-muted-foreground text-sm">{t.contact.phonePending}</p>
-              </div>
-            </Reveal>
             <Reveal delay={0.15}>
               <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 last:pb-0">
                 <div className="flex items-center gap-2.5">
