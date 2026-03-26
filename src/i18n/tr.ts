@@ -414,9 +414,9 @@ const tr: Translations = {
       { title: "Yapılandırılmış uygulama", desc: "Analizden gelişime, sonraki satışa veya portföy tutmaya kadar açık, anlaşılır bir süreç merkezde yer alır." },
       { title: "Gizli iletişim", desc: "Özellikle özel durumlarda bilgi ve paydaşlarla gizli ve profesyonel bir ilişki esastır." },
     ],
-    completedBadge: "Proje konstellasyonları",
-    completedTitle: "Örnek proje konstellasyonları",
-    completedDesc: "Aşağıdaki örnekler, tipik başlangıç durumlarını ve gelişim yollarını göstermektedir. Yapılandırılmış değerlendirme, hazırlık ve ekonomik sınıflandırmanın hangi konstellasyonlarda özellikle önemli olduğunu ortaya koymaktadır.",
+    completedBadge: "Tamamlanan projeler",
+    completedTitle: "Örnek proje kapanışları",
+    completedDesc: "Tamamlanan bireysel proje geliştirmeleri, gayrimenkullerin dikkatli değerlendirme, yapılandırılmış hazırlık ve disiplinli uygulama sonrasında ekonomik olarak nasıl geliştiğini örnek olarak gösterebilir. Aşağıdaki veriler somut bireysel vakalara ilişkindir ve gelecekteki projeler için bir performans vaadi teşkil etmez.",
     caseStudy: {
       title: "Uygulama örneği: Ratingen'de cebri icra yoluyla konut gayrimenkulü",
       intro: "Aşağıdaki sunum yalnızca tamamlanmış bir bireysel vakayı örneklemek amacıyla hazırlanmıştır.",

@@ -415,9 +415,9 @@ const nl: Translations = {
       { title: "Gestructureerde uitvoering", desc: "Van analyse en ontwikkeling tot latere verkoop of langetermijnbehoud blijft het proces duidelijk en begrijpelijk." },
       { title: "Discrete communicatie", desc: "Vooral in bijzondere situaties is een vertrouwelijke en professionele omgang met informatie en betrokkenen essentieel." },
     ],
-    completedBadge: "Projectconstellaties",
-    completedTitle: "Illustratieve projectconstellaties",
-    completedDesc: "De volgende voorbeelden illustreren typische uitgangssituaties en ontwikkelingspaden. Ze tonen in welke constellaties een gestructureerde beoordeling, voorbereiding en economische inkadering bijzonder belangrijk zijn.",
+    completedBadge: "Afgeronde projecten",
+    completedTitle: "Illustratieve projectafsluitingen",
+    completedDesc: "Individuele afgeronde projectontwikkelingen kunnen als voorbeeld dienen van hoe vastgoed zich economisch ontwikkelt na zorgvuldige beoordeling, gestructureerde voorbereiding en gedisciplineerde uitvoering. De volgende gegevens hebben betrekking op concrete individuele gevallen en vormen geen prestatiebelofte voor toekomstige projecten.",
     caseStudy: {
       title: "Praktijkvoorbeeld: woonobject uit executieveiling in Ratingen",
       intro: "De volgende weergave dient uitsluitend ter illustratie van een afgerond individueel geval.",
