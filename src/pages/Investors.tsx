@@ -305,6 +305,19 @@ const Investors = () => {
         </div>
       </section>
 
+      {/* Glossary Link */}
+      <section className="py-6 md:py-8 border-t border-border/60">
+        <div className="container max-w-4xl">
+          <Reveal>
+            <p className="text-muted-foreground text-sm leading-[1.7]">
+              <Link to="/investoren-glossar" className="text-accent hover:text-accent/80 transition-colors">
+                {inv.glossaryLinkText}
+              </Link>
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
 
       {/* Disclaimer */}
       <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
