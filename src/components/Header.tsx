@@ -22,7 +22,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/60">
       <div className="container flex items-center justify-between h-14 md:h-[72px]">
         <Link to="/" className="flex items-center">
-          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-8 md:h-11 w-auto object-contain" />
+          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-10 md:h-14 w-auto object-contain" />
         </Link>
 
         <div className="hidden md:flex items-baseline gap-7">
