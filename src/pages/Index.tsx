@@ -16,7 +16,7 @@ const Index = () => {
       <HomeHero />
 
       {/* ── 2. PROBLEM ── */}
-      <section className="pt-16 pb-10 md:pt-20 md:pb-14">
+      <section className="py-10 md:py-14">
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent">
