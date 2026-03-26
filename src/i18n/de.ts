@@ -317,7 +317,7 @@ const de: Translations = {
     title: "Datenschutzerklärung",
     controllerTitle: "1. Verantwortlicher",
     controllerText: "Aurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf, Deutschland\nE-Mail: info@aurelia-grundbesitz.de",
-    controllerCeo: "Geschäftsführer: Yasar Alkac",
+    controllerCeo: "Geschäftsführer: Eyüp Yasar Alkac\nHandelsregister: Amtsgericht Düsseldorf, HRB 107859",
     generalTitle: "2. Allgemeines zur Datenverarbeitung",
     generalText: "Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung erfolgt auf Grundlage der",
     generalDsgvoLabel: "Datenschutz-Grundverordnung (DSGVO)",
