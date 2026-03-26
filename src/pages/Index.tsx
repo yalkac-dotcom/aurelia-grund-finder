@@ -17,27 +17,29 @@ const Index = () => {
       <section id="hero" className="relative h-[55vh] md:h-[60vh] min-h-[380px] md:min-h-[400px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroImg} alt="Aurelia Grundbesitz" className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/80 via-[#0F1113]/30 to-transparent" />
+          {/* Strong layered overlay for text legibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0B0D]/90 via-[#0A0B0D]/60 to-[#0A0B0D]/25" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0B0D]/70 via-[#0A0B0D]/30 to-transparent" />
         </div>
         <div className="relative container pb-8 md:pb-14">
           <div className="max-w-lg">
-            <h1 className="text-[1.3rem] md:text-[2.15rem] lg:text-[2.5rem] font-heading font-semibold text-white leading-[1.15] md:leading-[1.08] mb-2 md:mb-3 animate-fade-in-up text-balance">
+            <h1 className="text-[1.35rem] md:text-[2.2rem] lg:text-[2.5rem] font-heading font-semibold text-white leading-[1.18] md:leading-[1.1] mb-2.5 md:mb-3.5 animate-fade-in-up text-balance drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
               {t.hero.slogan}
             </h1>
-            <p className="text-white/80 text-[0.75rem] md:text-sm leading-[1.6] md:leading-[1.7] mb-2 md:mb-3 max-w-[280px] md:max-w-sm animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
+            <p className="text-white/90 text-[0.8rem] md:text-[0.935rem] leading-[1.65] md:leading-[1.7] mb-2.5 md:mb-3.5 max-w-[300px] md:max-w-sm animate-fade-in-up drop-shadow-[0_1px_4px_rgba(0,0,0,0.4)]" style={{ animationDelay: "0.15s" }}>
               {t.landing.heroSubtitle}
             </p>
-            <p className="text-white/50 text-[0.6rem] md:text-xs font-medium tracking-[0.14em] uppercase mb-3 md:mb-4 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            <p className="text-white/65 text-[0.65rem] md:text-xs font-medium tracking-[0.14em] uppercase mb-3.5 md:mb-4 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
               {t.landing.trustLine}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-1.5 md:gap-2.5 animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
+            <div className="flex flex-col sm:flex-row gap-2 md:gap-2.5 animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center justify-center gap-1.5 md:gap-2 bg-accent text-white px-4 md:px-6 py-2 md:py-3 text-[0.65rem] md:text-sm font-medium tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors duration-300"
+                className="inline-flex items-center justify-center gap-1.5 md:gap-2 bg-accent text-white px-5 md:px-6 py-2.5 md:py-3 text-[0.7rem] md:text-sm font-semibold tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.3)]"
               >
                 {t.landing.heroCta}
-                <ArrowRight size={11} className="md:w-3.5 md:h-3.5" />
+                <ArrowRight size={12} className="md:w-3.5 md:h-3.5" />
               </Link>
               <button
                 onClick={() => {
@@ -45,13 +47,13 @@ const Index = () => {
                   const next = hero?.nextElementSibling as HTMLElement | null;
                   next?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="inline-flex items-center justify-center gap-1.5 md:gap-2 border border-white/30 bg-black/15 backdrop-blur-sm text-white px-4 md:px-6 py-2 md:py-3 text-[0.65rem] md:text-sm font-medium tracking-[0.1em] uppercase hover:border-white/60 hover:bg-black/35 transition-colors duration-300"
+                className="inline-flex items-center justify-center gap-1.5 md:gap-2 border border-white/40 bg-black/30 backdrop-blur-sm text-white px-5 md:px-6 py-2.5 md:py-3 text-[0.7rem] md:text-sm font-medium tracking-[0.1em] uppercase hover:border-white/70 hover:bg-black/45 transition-colors duration-300"
               >
                 {t.landing.heroCtaSecondary}
               </button>
             </div>
-            <p className="flex items-center gap-1.5 text-white/60 text-[0.6rem] md:text-xs mt-2 md:mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-              <CheckCircle size={10} className="text-accent/70 shrink-0 md:w-3 md:h-3" />
+            <p className="flex items-center gap-1.5 text-white/70 text-[0.65rem] md:text-xs mt-2.5 md:mt-3 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+              <CheckCircle size={10} className="text-accent shrink-0 md:w-3 md:h-3" />
               {t.landing.heroMetaLine}
             </p>
           </div>
