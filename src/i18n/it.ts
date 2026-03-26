@@ -6,6 +6,7 @@ const it: Translations = {
     about: "Chi siamo",
     services: "Servizi",
     taxBenefits: "Agevolazioni fiscali",
+    investors: "Per investitori",
     contact: "Contatti",
   },
   footer: {
