@@ -295,23 +295,29 @@ export interface Translations {
     processBadge: string;
     processTitle: string;
     processItems: { title: string; desc: string }[];
-    prioritiesBadge: string;
-    prioritiesTitle: string;
-    prioritiesDesc: string;
-    prioritiesItems: { title: string; desc: string }[];
     completedBadge: string;
     completedTitle: string;
     completedDesc: string;
     caseStudy: {
       title: string;
-      startLabel: string;
-      startText: string;
-      actionLabel: string;
-      actionText: string;
-      resultLabel: string;
+      intro: string;
+      data: { label: string; value: string }[];
       resultText: string;
       note: string;
     };
+    pipelineBadge: string;
+    pipelineTitle: string;
+    pipelineDesc: string;
+    pipelineProject: {
+      title: string;
+      text: string;
+      extra: string;
+      micro: string;
+    };
+    glossaryBadge: string;
+    glossaryTitle: string;
+    glossaryDisclaimer: string;
+    glossaryItems: { term: string; definition: string }[];
     disclaimerBadge: string;
     disclaimerTitle: string;
     disclaimerDesc: string;

@@ -1,12 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ArrowRight, CheckCircle, Shield, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, TrendingUp, BookOpen } from "lucide-react";
 
 const DISCLAIMER_KEY = "aurelia-investor-disclaimer";
 
+/* ─── Disclaimer Gate ─── */
 const InvestorDisclaimer = ({ onAccept }: { onAccept: () => void }) => {
   const navigate = useNavigate();
   const { t } = useLanguage();
@@ -67,6 +68,88 @@ const InvestorDisclaimer = ({ onAccept }: { onAccept: () => void }) => {
   );
 };
 
+/* ─── Glossary Section ─── */
+const InvestorGlossary = () => {
+  const { t } = useLanguage();
+  const inv = t.investors;
+  const items = inv.glossaryItems;
+
+  const letters = useMemo(() => {
+    const set = new Set(items.map((i) => i.term.charAt(0).toUpperCase()));
+    return Array.from(set).sort();
+  }, [items]);
+
+  const grouped = useMemo(() => {
+    const map: Record<string, typeof items> = {};
+    items.forEach((item) => {
+      const l = item.term.charAt(0).toUpperCase();
+      if (!map[l]) map[l] = [];
+      map[l].push(item);
+    });
+    return map;
+  }, [items]);
+
+  return (
+    <section className="py-10 md:py-14 border-t border-border/60">
+      <div className="container max-w-4xl">
+        <Reveal>
+          <div className="section-shell-accent mb-4">
+            <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+              {inv.glossaryBadge}
+            </p>
+            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+              {inv.glossaryTitle}
+            </h2>
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.05}>
+          <div className="border-l-2 border-accent/30 pl-4 mb-6">
+            <p className="text-muted-foreground/80 text-xs leading-[1.7] max-w-xl">
+              {inv.glossaryDisclaimer}
+            </p>
+          </div>
+        </Reveal>
+
+        {/* Letter bar */}
+        <Reveal delay={0.1}>
+          <div className="flex flex-wrap gap-1.5 mb-6">
+            {letters.map((l) => (
+              <a
+                key={l}
+                href={`#glossar-${l}`}
+                className="w-7 h-7 flex items-center justify-center text-xs font-medium border border-border/40 text-muted-foreground hover:text-accent hover:border-accent/40 transition-colors"
+              >
+                {l}
+              </a>
+            ))}
+          </div>
+        </Reveal>
+
+        {/* Terms */}
+        <div className="space-y-6">
+          {letters.map((letter) => (
+            <Reveal key={letter} delay={0.05}>
+              <div id={`glossar-${letter}`} className="scroll-mt-28">
+                <h3 className="text-base font-heading font-semibold text-accent mb-2">{letter}</h3>
+                <div className="space-y-2">
+                  {grouped[letter].map((item) => (
+                    <div key={item.term} className="border-b border-border/30 pb-2">
+                      <p className="text-sm font-medium text-foreground">{item.term}</p>
+                      <p className="text-muted-foreground text-sm leading-[1.7]">{item.definition}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+/* ─── Main Investors Page ─── */
 const Investors = () => {
   const { t } = useLanguage();
   const [accepted, setAccepted] = useState(false);
@@ -91,6 +174,7 @@ const Investors = () => {
 
   const inv = t.investors;
   const cs = inv.caseStudy;
+  const pp = inv.pipelineProject;
 
   return (
     <Layout>
@@ -169,37 +253,8 @@ const Investors = () => {
         </div>
       </section>
 
-      {/* Priorities */}
-      <section className="py-10 md:py-14">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className="section-shell-accent">
-              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                {inv.prioritiesBadge}
-              </p>
-              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                {inv.prioritiesTitle}
-              </h2>
-            </div>
-          </Reveal>
-          <Reveal delay={0.05}>
-            <p className="text-muted-foreground text-sm leading-[1.7] mt-4 mb-5 max-w-xl">
-              {inv.prioritiesDesc}
-            </p>
-          </Reveal>
-          <div className="grid sm:grid-cols-3 gap-x-8 gap-y-5">
-            {inv.prioritiesItems.map((item, i) => (
-              <Reveal key={i} delay={i * 0.08}>
-                <h3 className="text-base font-heading font-semibold text-foreground mb-1">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.7]">{item.desc}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Completed Projects */}
-      <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
+      <section className="py-10 md:py-14">
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent mb-4">
@@ -220,30 +275,25 @@ const Investors = () => {
 
           <Reveal delay={0.1}>
             <div className="border border-border/50 p-6 md:p-8">
-              <h3 className="text-sm font-heading font-semibold text-foreground mb-5">{cs.title}</h3>
+              <h3 className="text-sm font-heading font-semibold text-foreground mb-2">{cs.title}</h3>
+              <p className="text-muted-foreground/70 text-xs leading-[1.7] mb-5">{cs.intro}</p>
 
-              <div className="space-y-3 mb-5">
-                <div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{cs.startLabel}</p>
-                  <p className="text-sm text-muted-foreground leading-[1.6]">{cs.startText}</p>
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{cs.actionLabel}</p>
-                  <p className="text-sm text-muted-foreground leading-[1.6]">{cs.actionText}</p>
-                </div>
-                <div>
-                  <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{cs.resultLabel}</p>
-                  <p className="text-sm text-foreground leading-[1.6]">{cs.resultText}</p>
-                </div>
+              {/* Data rows */}
+              <div className="space-y-2 mb-5">
+                {cs.data.map((row, i) => (
+                  <div key={i} className="flex justify-between items-baseline border-b border-border/30 pb-1.5">
+                    <p className="text-sm text-muted-foreground">{row.label}</p>
+                    <p className="text-sm font-medium text-foreground tabular-nums">{row.value}</p>
+                  </div>
+                ))}
               </div>
 
-              {/* ROI highlight */}
+              {/* Result highlight */}
               <div className="border-t border-border/40 pt-5">
                 <div className="flex items-start gap-3">
                   <TrendingUp className="text-accent shrink-0 mt-0.5" size={16} />
                   <div>
-                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1.5">Return on Investment</p>
-                    <p className="text-[1.5rem] md:text-[2rem] font-heading font-semibold text-accent leading-none mb-2">14 %</p>
+                    <p className="text-sm text-foreground leading-[1.7] mb-2">{cs.resultText}</p>
                     <p className="text-muted-foreground/70 text-xs leading-[1.7] max-w-lg">
                       {cs.note}
                     </p>
@@ -255,8 +305,45 @@ const Investors = () => {
         </div>
       </section>
 
+      {/* Pipeline */}
+      <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="section-shell-accent mb-4">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+                {inv.pipelineBadge}
+              </p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                {inv.pipelineTitle}
+              </h2>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.05}>
+            <p className="text-muted-foreground text-sm leading-[1.7] mb-6 max-w-xl">
+              {inv.pipelineDesc}
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <div className="border border-border/50 p-6 md:p-8">
+              <div className="flex items-center gap-2.5 mb-3">
+                <BookOpen className="text-accent shrink-0" size={14} />
+                <h3 className="text-sm font-heading font-semibold text-foreground">{pp.title}</h3>
+              </div>
+              <p className="text-muted-foreground text-sm leading-[1.7] mb-3">{pp.text}</p>
+              <p className="text-muted-foreground text-sm leading-[1.7] mb-4">{pp.extra}</p>
+              <p className="text-muted-foreground/60 text-xs">{pp.micro}</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Glossary */}
+      <InvestorGlossary />
+
       {/* Disclaimer */}
-      <section className="py-10 md:py-14">
+      <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
         <div className="container max-w-4xl">
           <Reveal>
             <div className="border-l-2 border-accent/30 pl-4">
