@@ -220,9 +220,6 @@ const Index = () => {
                     <span className="inline-flex items-center gap-1.5 text-xs text-accent font-medium tracking-wide uppercase">
                       <MapPin size={12} /> {project.location}
                     </span>
-                    <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
-                      <Calendar size={12} /> {project.year}
-                    </span>
                   </div>
                   <p className="text-sm font-heading font-semibold text-foreground mb-3">{project.type}</p>
                   <div className="grid sm:grid-cols-2 gap-4 mb-3">

@@ -410,9 +410,9 @@ const it: Translations = {
       { title: "Esecuzione strutturata", desc: "Dall'analisi allo sviluppo fino alla successiva cessione o al mantenimento a lungo termine, il processo rimane chiaro e comprensibile." },
       { title: "Comunicazione discreta", desc: "Soprattutto in situazioni particolari, è essenziale gestire informazioni e soggetti coinvolti in modo riservato e professionale." },
     ],
-    completedBadge: "Progetti conclusi",
-    completedTitle: "Esempi di progetti conclusi",
-    completedDesc: "Alcuni sviluppi immobiliari conclusi possono mostrare come gli immobili possano evolvere economicamente dopo un'analisi accurata, una preparazione strutturata e un'esecuzione disciplinata. Le informazioni si riferiscono esclusivamente a singoli casi concreti e non rappresentano una promessa di risultati futuri.",
+    completedBadge: "Costellazioni progettuali",
+    completedTitle: "Costellazioni progettuali esemplari",
+    completedDesc: "I seguenti esempi illustrano situazioni di partenza e percorsi di sviluppo tipici. Mostrano in quali costellazioni l'analisi strutturata, la preparazione e l'inquadramento economico sono particolarmente importanti.",
     caseStudy: {
       title: "Esempio pratico: immobile residenziale da asta giudiziaria a Ratingen",
       intro: "La seguente rappresentazione serve esclusivamente a illustrare un singolo caso concluso.",

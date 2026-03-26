@@ -410,9 +410,9 @@ const es: Translations = {
       { title: "Ejecución estructurada", desc: "Desde el análisis y el desarrollo hasta la venta posterior o la conservación a largo plazo, el proceso se mantiene claro y comprensible." },
       { title: "Comunicación discreta", desc: "Especialmente en situaciones especiales, es esencial tratar la información y a las partes implicadas de forma confidencial y profesional." },
     ],
-    completedBadge: "Proyectos finalizados",
-    completedTitle: "Ejemplos de proyectos concluidos",
-    completedDesc: "Algunos desarrollos inmobiliarios finalizados pueden mostrar cómo evolucionan económicamente los inmuebles tras un análisis cuidadoso, una preparación estructurada y una ejecución disciplinada. La información se refiere exclusivamente a casos concretos y no representa una promesa de resultados futuros.",
+    completedBadge: "Constelaciones de proyectos",
+    completedTitle: "Constelaciones de proyectos ilustrativas",
+    completedDesc: "Los siguientes ejemplos ilustran situaciones de partida y vías de desarrollo típicas. Muestran en qué constelaciones el análisis estructurado, la preparación y la clasificación económica son especialmente importantes.",
     caseStudy: {
       title: "Ejemplo práctico: inmueble residencial de subasta judicial en Ratingen",
       intro: "La siguiente presentación sirve exclusivamente para ilustrar un caso individual ya concluido.",

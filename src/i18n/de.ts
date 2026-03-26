@@ -411,9 +411,9 @@ const de: Translations = {
       { title: "Strukturierte Umsetzung", desc: "Von der Analyse über die Entwicklung bis zur späteren Verwertung oder Bestandshaltung steht ein klarer, nachvollziehbarer Prozess im Mittelpunkt." },
       { title: "Diskrete Kommunikation", desc: "Gerade in besonderen Konstellationen ist ein vertraulicher und professioneller Umgang mit Informationen und Beteiligten entscheidend." },
     ],
-    completedBadge: "Abgeschlossene Projekte",
-    completedTitle: "Beispielhafte Projektabschlüsse",
-    completedDesc: "Einzelne abgeschlossene Projektentwicklungen können beispielhaft zeigen, wie sich Immobilien nach sorgfältiger Prüfung, strukturierter Aufbereitung und disziplinierter Umsetzung wirtschaftlich entwickeln. Die nachfolgenden Angaben beziehen sich jeweils auf konkrete Einzelfälle und stellen kein Leistungsversprechen für zukünftige Projekte dar.",
+    completedBadge: "Projektkonstellationen",
+    completedTitle: "Beispielhafte Projektkonstellationen",
+    completedDesc: "Die nachfolgenden Beispiele dienen der Veranschaulichung typischer Ausgangslagen und Entwicklungswege. Sie zeigen, in welchen Konstellationen strukturierte Prüfung, Aufbereitung und wirtschaftliche Einordnung besonders wichtig sind.",
     caseStudy: {
       title: "Praxisbeispiel: Wohnobjekt aus Zwangsversteigerung in Ratingen",
       intro: "Die nachfolgende Darstellung dient ausschließlich der Veranschaulichung eines abgeschlossenen Einzelfalls.",
