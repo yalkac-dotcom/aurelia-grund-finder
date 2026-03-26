@@ -397,6 +397,7 @@ const it: Translations = {
       checkbox: "Ho letto e compreso le presenti avvertenze.",
       acceptBtn: "Accetta e continua",
       declineBtn: "Torna alla homepage",
+      micro: "Informazioni generali · nessuna consulenza in materia di investimenti · nessuna consulenza legale o fiscale",
     },
     heroBadge: "Per investitori",
     heroTitle: "Progetti immobiliari selezionati con analisi strutturata e accompagnamento discreto.",

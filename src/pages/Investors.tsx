@@ -66,6 +66,9 @@ const InvestorDisclaimer = ({ onAccept }: { onAccept: () => void }) => {
                   {g.declineBtn}
                 </button>
               </div>
+              {g.micro && (
+                <p className="text-muted-foreground/60 text-xs mt-4 text-center">{g.micro}</p>
+              )}
             </div>
           </Reveal>
         </div>

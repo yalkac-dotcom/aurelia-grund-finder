@@ -398,6 +398,7 @@ const nl: Translations = {
       checkbox: "Ik heb deze informatie gelezen en begrepen.",
       acceptBtn: "Informatie accepteren en doorgaan",
       declineBtn: "Terug naar homepage",
+      micro: "Algemene informatie · geen beleggingsadvies · geen juridisch of fiscaal advies",
     },
     heroBadge: "Voor investeerders",
     heroTitle: "Geselecteerde vastgoedprojecten met gestructureerde beoordeling en discrete begeleiding.",

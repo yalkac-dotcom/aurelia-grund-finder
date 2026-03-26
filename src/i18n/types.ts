@@ -290,6 +290,7 @@ export interface Translations {
       checkbox: string;
       acceptBtn: string;
       declineBtn: string;
+      micro: string;
     };
     heroBadge: string;
     heroTitle: string;

@@ -397,6 +397,7 @@ const en: Translations = {
       checkbox: "I have read and understood these notices.",
       acceptBtn: "Accept notices and continue",
       declineBtn: "Return to homepage",
+      micro: "General information · no investment advice · no legal or tax advice",
     },
     heroBadge: "For Investors",
     heroTitle: "Selected real estate projects with structured review and discreet guidance.",
