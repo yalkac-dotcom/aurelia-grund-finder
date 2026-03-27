@@ -401,14 +401,14 @@
 
 /* Scroll indicator — mouse symbol */
 @keyframes scroll-dot-move {
-  0% { opacity: 0.4; transform: translateY(0); }
-  40% { opacity: 1; transform: translateY(5px); }
-  100% { opacity: 0.4; transform: translateY(0); }
+  0%   { opacity: 0.35; transform: translateY(0); }
+  50%  { opacity: 0.9;  transform: translateY(4px); }
+  100% { opacity: 0.35; transform: translateY(0); }
 }
 
 .animate-scroll-dot {
-  animation: scroll-dot-move 2.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-  will-change: transform, opacity;
+  animation: scroll-dot-move 3s ease-in-out infinite;
+  will-change: opacity;
 }
 
 /* Hide scrollbar for glossary letter bar */
