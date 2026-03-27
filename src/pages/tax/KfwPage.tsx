@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
-import heroImg from "@/assets/hero-kfw.jpg";
+import { heroSets } from "@/assets/heroImages";
 import { Landmark, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
