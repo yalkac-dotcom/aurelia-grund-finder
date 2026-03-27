@@ -379,7 +379,7 @@
 
 @media (min-width: 768px) {
   .hero-media {
-    filter: brightness(1.2) saturate(0.92) contrast(1.04);
+    filter: brightness(1.28) saturate(0.94) contrast(1.03);
   }
 
   .hero-actions {
