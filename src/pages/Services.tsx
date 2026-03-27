@@ -5,6 +5,7 @@ import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-services.jpg";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 const Services = () => {
   const { t } = useLanguage();
@@ -24,6 +25,7 @@ const Services = () => {
               {t.services.heroTitle}
             </h1>
           </Reveal>
+          <HeroScrollIndicator />
         </div>
       </section>
 

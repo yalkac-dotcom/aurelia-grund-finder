@@ -5,6 +5,7 @@ import heroImg from "@/assets/hero-steuervorteile.jpg";
 import { Landmark, Leaf, Banknote, BadgePercent, BookOpen, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 const TaxBenefits = () => {
   const { t } = useLanguage();
@@ -31,6 +32,7 @@ const TaxBenefits = () => {
               {t.tax.heroTitle}
             </h1>
           </Reveal>
+          <HeroScrollIndicator />
         </div>
       </section>
 

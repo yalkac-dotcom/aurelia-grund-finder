@@ -168,26 +168,26 @@
 
 /* Hero system */
 .hero-media {
-  filter: brightness(1.14) saturate(0.9) contrast(1.03);
+  filter: brightness(1.22) saturate(0.92) contrast(1.02);
 }
 
 .hero-overlay-base {
   background: linear-gradient(
     180deg,
-    hsl(var(--background) / 0.02) 0%,
-    hsl(var(--primary) / 0.08) 24%,
-    hsl(var(--primary) / 0.22) 62%,
-    hsl(var(--primary) / 0.38) 100%
+    hsl(var(--background) / 0.01) 0%,
+    hsl(var(--primary) / 0.05) 24%,
+    hsl(var(--primary) / 0.16) 62%,
+    hsl(var(--primary) / 0.30) 100%
   );
 }
 
 .hero-overlay-protect {
   background: linear-gradient(
     112deg,
-    hsl(var(--primary) / 0.86) 0%,
-    hsl(var(--primary) / 0.74) 26%,
-    hsl(var(--primary) / 0.5) 48%,
-    hsl(var(--primary) / 0.18) 70%,
+    hsl(var(--primary) / 0.78) 0%,
+    hsl(var(--primary) / 0.64) 26%,
+    hsl(var(--primary) / 0.40) 48%,
+    hsl(var(--primary) / 0.14) 70%,
     transparent 100%
   );
 }
@@ -318,26 +318,26 @@
 
 @media (max-width: 767px) {
   .hero-media {
-    filter: brightness(1.12) saturate(0.88) contrast(1.02);
+    filter: brightness(1.18) saturate(0.9) contrast(1.02);
   }
 
   .hero-overlay-base {
     background: linear-gradient(
       180deg,
-      hsl(var(--primary) / 0.16) 0%,
-      hsl(var(--primary) / 0.32) 18%,
-      hsl(var(--primary) / 0.56) 54%,
-      hsl(var(--primary) / 0.74) 100%
+      hsl(var(--primary) / 0.10) 0%,
+      hsl(var(--primary) / 0.24) 18%,
+      hsl(var(--primary) / 0.46) 54%,
+      hsl(var(--primary) / 0.64) 100%
     );
   }
 
   .hero-overlay-protect {
     background: linear-gradient(
       180deg,
-      hsl(var(--primary) / 0.04) 0%,
-      hsl(var(--primary) / 0.38) 18%,
-      hsl(var(--primary) / 0.8) 60%,
-      hsl(var(--primary) / 0.92) 100%
+      hsl(var(--primary) / 0.02) 0%,
+      hsl(var(--primary) / 0.30) 18%,
+      hsl(var(--primary) / 0.70) 60%,
+      hsl(var(--primary) / 0.84) 100%
     );
   }
 
@@ -379,7 +379,7 @@
 
 @media (min-width: 768px) {
   .hero-media {
-    filter: brightness(1.2) saturate(0.92) contrast(1.04);
+    filter: brightness(1.28) saturate(0.94) contrast(1.03);
   }
 
   .hero-actions {
@@ -401,13 +401,14 @@
 
 /* Scroll indicator — mouse symbol */
 @keyframes scroll-dot-move {
-  0% { opacity: 0.5; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(6px); }
-  100% { opacity: 0.5; transform: translateY(0); }
+  0% { opacity: 0.4; transform: translateY(0); }
+  40% { opacity: 1; transform: translateY(5px); }
+  100% { opacity: 0.4; transform: translateY(0); }
 }
 
 .animate-scroll-dot {
-  animation: scroll-dot-move 2.2s ease-in-out infinite;
+  animation: scroll-dot-move 2.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  will-change: transform, opacity;
 }
 
 /* Hide scrollbar for glossary letter bar */
