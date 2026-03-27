@@ -24,7 +24,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0F1A2E] border-t border-white/10">
+    <footer className="relative z-40 bg-[#0F1A2E] border-t border-white/10">
       <div className="container py-6 md:py-12">
         <div className="grid md:grid-cols-[1.4fr_0.8fr_1fr] gap-5 md:gap-6 items-start">
           {/* Left — Logo + Claim */}
@@ -68,17 +68,17 @@ const Footer = () => {
             <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
               {t.footer.information}
             </h4>
-            <div className="text-white/80 text-[11px] md:text-xs leading-[1.7]">
+            <div className="text-[11px] md:text-xs leading-[1.7]">
               <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
-              <a href="mailto:info@aurelia-grundbesitz.de" className="block hover:text-accent transition-colors duration-200 mt-0.5">
+              <a href="mailto:info@aurelia-grundbesitz.de" className="text-white/80 block hover:text-accent transition-colors duration-200 mt-0.5">
                 info@aurelia-grundbesitz.de
               </a>
             </div>
-            <ul className="mt-3 space-y-1.5">
+            <ul className="mt-4 space-y-1.5">
               <li>
                 <Link
                   to="/impressum"
-                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 inline-block"
                 >
                   {t.footer.imprint}
                 </Link>
@@ -86,13 +86,14 @@ const Footer = () => {
               <li>
                 <Link
                   to="/datenschutz"
-                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 inline-block"
                 >
                   {t.footer.privacy}
                 </Link>
               </li>
               <li>
                 <button
+                  type="button"
                   onClick={openCookieSettings}
                   className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 text-left"
                 >

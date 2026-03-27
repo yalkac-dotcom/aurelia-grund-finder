@@ -35,8 +35,8 @@ const CookieConsent = () => {
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-end justify-center">
-      {/* Backdrop – blocks interaction */}
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
+      {/* Backdrop – blocks interaction, only when visible */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" onClick={(e) => e.stopPropagation()} />
 
       {/* Dialog */}
       <div className="relative w-full max-w-2xl mx-4 mb-6 bg-background border border-border/60 shadow-2xl p-6 sm:p-8">
