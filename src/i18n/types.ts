@@ -13,13 +13,14 @@ export interface Translations {
   footer: {
     navigation: string;
     contact: string;
+    information: string;
     rights: string;
     imprint: string;
     privacy: string;
+    cookieSettings: string;
     disclaimer: string;
     brandLine: string;
     subline: string;
-    
   };
   hero: {
     slogan: string;
