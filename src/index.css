@@ -260,12 +260,12 @@
 }
 
 .hero-description {
-  max-width: 32rem;
-  margin-bottom: 1.4rem;
-  color: hsl(var(--primary-foreground) / 0.94);
-  font-size: clamp(0.95rem, 2.1vw, 1.05rem);
-  line-height: 1.72;
-  text-shadow: 0 6px 20px hsl(var(--primary) / 0.24);
+  max-width: 30rem;
+  margin-bottom: 1.2rem;
+  color: hsl(var(--primary-foreground) / 0.92);
+  font-size: clamp(0.88rem, 1.8vw, 0.98rem);
+  line-height: 1.68;
+  text-shadow: 0 4px 14px hsl(var(--primary) / 0.18);
 }
 
 .hero-actions {
