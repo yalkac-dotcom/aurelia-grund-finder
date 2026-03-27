@@ -32,7 +32,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/inter-300.woff2') format('truetype');
+  src: url('/fonts/inter-300.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
