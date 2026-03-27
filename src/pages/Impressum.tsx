@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
-import heroImg from "@/assets/hero-building.jpg";
+import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Impressum = () => {
@@ -12,7 +12,7 @@ const Impressum = () => {
     <Layout>
       <section className="relative h-[30vh] min-h-[220px] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroImg} alt={imp.title} className="w-full h-full object-cover" priority />
+          <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
         <div className="relative container pb-8 md:pb-10">

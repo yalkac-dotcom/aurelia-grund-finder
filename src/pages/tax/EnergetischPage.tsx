@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
-import heroImg from "@/assets/hero-energetisch.jpg";
+import { heroSets } from "@/assets/heroImages";
 import { Leaf, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -18,7 +18,7 @@ const EnergetischPage = () => {
     <Layout>
       <section className="relative h-[32vh] min-h-[240px] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroImg} alt={t.tax.energetischTitle} className="w-full h-full object-cover" priority />
+          <OptimizedImg src={heroSets.energetisch.src} srcSet={heroSets.energetisch.srcSet} sizes={heroSets.energetisch.sizes} alt={t.tax.energetischTitle} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
         <div className="relative container pb-8 md:pb-10">
