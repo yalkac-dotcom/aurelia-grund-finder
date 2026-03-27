@@ -42,7 +42,7 @@ const Contact = () => {
 
     if (dbError) {
       console.error("Contact form error:", dbError);
-      setError(t.contact.errorText ?? "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.");
+      setError("Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.");
       return;
     }
 
