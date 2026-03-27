@@ -13,15 +13,16 @@ const nl: Translations = {
   footer: {
     navigation: "Navigatie",
     contact: "Contact",
+    information: "Informatie",
     rights: "Alle rechten voorbehouden.",
     imprint: "Impressum",
     privacy: "Privacybeleid",
+    cookieSettings: "Cookie-instellingen",
     disclaimer:
       "Let op: De inhoud van deze website dient uitsluitend ter algemene informatie en vormt geen juridisch, fiscaal of financieel advies.",
     brandLine:
       "Aurelia Grundbesitz ontwikkelt vastgoed uit bijzondere situaties — discreet, gestructureerd en met een scherp oog voor waarde.",
     subline: "Discreet · Waardegericht · Langetermijnvisie",
-    
   },
   hero: {
     slogan: "Vastgoed met substantie — discreet getoetst, helder ontwikkeld, op de lange termijn gedacht.",
