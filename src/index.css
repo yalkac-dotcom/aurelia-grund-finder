@@ -168,26 +168,26 @@
 
 /* Hero system */
 .hero-media {
-  filter: brightness(1.14) saturate(0.9) contrast(1.03);
+  filter: brightness(1.22) saturate(0.92) contrast(1.02);
 }
 
 .hero-overlay-base {
   background: linear-gradient(
     180deg,
-    hsl(var(--background) / 0.02) 0%,
-    hsl(var(--primary) / 0.08) 24%,
-    hsl(var(--primary) / 0.22) 62%,
-    hsl(var(--primary) / 0.38) 100%
+    hsl(var(--background) / 0.01) 0%,
+    hsl(var(--primary) / 0.05) 24%,
+    hsl(var(--primary) / 0.16) 62%,
+    hsl(var(--primary) / 0.30) 100%
   );
 }
 
 .hero-overlay-protect {
   background: linear-gradient(
     112deg,
-    hsl(var(--primary) / 0.86) 0%,
-    hsl(var(--primary) / 0.74) 26%,
-    hsl(var(--primary) / 0.5) 48%,
-    hsl(var(--primary) / 0.18) 70%,
+    hsl(var(--primary) / 0.78) 0%,
+    hsl(var(--primary) / 0.64) 26%,
+    hsl(var(--primary) / 0.40) 48%,
+    hsl(var(--primary) / 0.14) 70%,
     transparent 100%
   );
 }
