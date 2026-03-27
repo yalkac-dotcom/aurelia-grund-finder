@@ -41,7 +41,7 @@ const CookieConsent = () => {
       {/* Dialog */}
       <div className="relative w-full max-w-2xl mx-4 mb-6 bg-background border border-border/60 shadow-2xl p-6 sm:p-8">
         <p className="text-foreground text-sm font-heading font-semibold mb-2">
-          {t.common.cookieTitle ?? "Cookie-Einstellungen"}
+          Cookie-Einstellungen
         </p>
         <p className="text-muted-foreground text-xs leading-[1.75] mb-5">
           {t.common.cookieText}
