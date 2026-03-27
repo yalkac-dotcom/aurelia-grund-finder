@@ -6,6 +6,7 @@ import heroImg from "@/assets/hero-contact.jpg";
 import { MapPin, Mail, Send, Clock, CheckCircle, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 const inputClasses =
   "w-full border border-border/60 bg-background px-3.5 py-2 text-base text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
