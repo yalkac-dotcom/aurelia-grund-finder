@@ -3,6 +3,8 @@ import { getConsentState } from "./CookieConsent";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { MapPin } from "lucide-react";
 
+const MAP_CONSENT_KEY = "aurelia-map-consent";
+
 interface ConsentMapProps {
   src: string;
   title: string;
@@ -10,16 +12,26 @@ interface ConsentMapProps {
 }
 
 const ConsentMap = ({ src, title, height = 280 }: ConsentMapProps) => {
-  const [consent, setConsent] = useState(getConsentState());
+  const [cookieConsent, setCookieConsent] = useState(getConsentState());
+  const [mapConsent, setMapConsent] = useState(() => {
+    try {
+      return localStorage.getItem(MAP_CONSENT_KEY) === "true";
+    } catch {
+      return false;
+    }
+  });
   const { t } = useLanguage();
 
   useEffect(() => {
-    const handler = () => setConsent(getConsentState());
+    const handler = () => setCookieConsent(getConsentState());
     window.addEventListener("consent-change", handler);
     return () => window.removeEventListener("consent-change", handler);
   }, []);
 
-  if (consent !== "accepted") {
+  // Show map only if global cookies accepted AND map consent given
+  const showMap = cookieConsent === "accepted" && mapConsent;
+
+  if (!showMap) {
     return (
       <div
         className="border border-border/40 bg-secondary/50 flex flex-col items-center justify-center gap-3 text-center px-6"
@@ -31,9 +43,8 @@ const ConsentMap = ({ src, title, height = 280 }: ConsentMapProps) => {
         </p>
         <button
           onClick={() => {
-            localStorage.setItem("aurelia-cookie-consent", "accepted");
-            setConsent("accepted");
-            window.dispatchEvent(new Event("consent-change"));
+            localStorage.setItem(MAP_CONSENT_KEY, "true");
+            setMapConsent(true);
           }}
           className="bg-accent text-white px-4 py-2 text-xs font-medium tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors"
         >
