@@ -125,16 +125,24 @@
     @apply outline-2 outline-offset-2 outline-accent;
   }
 
-  /* Minimum touch target for interactive elements */
-  a, button, [role="button"], input, select, textarea {
+  /* Minimum touch target for standalone interactive elements */
+  button, [role="button"], input, select, textarea {
     min-height: 44px;
     min-width: 44px;
   }
 
-  /* Exception for inline links within text */
-  p a, li a, span a, td a, address a {
-    min-height: unset;
-    min-width: unset;
+  /* Inline links have no minimum size */
+  a {
+    min-height: auto;
+    min-width: auto;
+  }
+
+  /* Standalone CTA links (not inside text) get touch targets */
+  a.hero-primary-button,
+  a.hero-secondary-button,
+  nav a,
+  footer a {
+    min-height: 44px;
   }
 }
 
