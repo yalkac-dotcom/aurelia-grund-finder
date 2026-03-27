@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
-import heroImg from "@/assets/hero-premium.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const HomeHero = () => {
