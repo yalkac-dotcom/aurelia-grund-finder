@@ -13,15 +13,16 @@ const de: Translations = {
   footer: {
     navigation: "Navigation",
     contact: "Kontakt",
+    information: "Informationen",
     rights: "Alle Rechte vorbehalten.",
     imprint: "Impressum",
     privacy: "Datenschutz",
+    cookieSettings: "Cookie-Einstellungen",
     disclaimer:
       "Hinweis: Die Inhalte dieser Website dienen ausschließlich allgemeinen Informationszwecken und stellen keine rechtliche, steuerliche oder finanzielle Beratung dar.",
     brandLine:
       "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen – diskret, strukturiert und mit klarem Blick für Substanz.",
     subline: "Diskret · Substanzorientiert · Langfristig",
-    
   },
   hero: {
     slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
