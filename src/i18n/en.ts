@@ -13,15 +13,16 @@ const en: Translations = {
   footer: {
     navigation: "Navigation",
     contact: "Contact",
+    information: "Information",
     rights: "All rights reserved.",
     imprint: "Legal Notice",
     privacy: "Privacy Policy",
+    cookieSettings: "Cookie Settings",
     disclaimer:
       "Disclaimer: The content of this website is provided for general information only and does not constitute legal, tax, or financial advice.",
     brandLine:
       "Aurelia Grundbesitz develops properties from special situations — discreetly, in a structured way, and with a clear eye for substance.",
     subline: "Discreet · Substance-focused · Long-term",
-    
   },
   hero: {
     slogan: "Properties with substance — discreetly reviewed, clearly developed, built to last.",
