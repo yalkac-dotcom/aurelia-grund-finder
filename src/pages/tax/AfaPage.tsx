@@ -18,7 +18,7 @@ const AfaPage = () => {
     <Layout>
       <section className="relative h-[32vh] min-h-[240px] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroImg} alt={t.tax.afaTitle} className="w-full h-full object-cover" priority />
+          <OptimizedImg src={heroSets.afa.src} srcSet={heroSets.afa.srcSet} sizes={heroSets.afa.sizes} alt={t.tax.afaTitle} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
         </div>
         <div className="relative container pb-8 md:pb-10">
