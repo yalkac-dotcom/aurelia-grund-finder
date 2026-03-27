@@ -230,7 +230,7 @@ const Contact = () => {
                     {submitting ? (
                       <>
                         <Loader2 size={11} className="animate-spin" />
-                        {t.contact.sending ?? "Wird gesendet..."}
+                        {"Wird gesendet..."}
                       </>
                     ) : (
                       <>
