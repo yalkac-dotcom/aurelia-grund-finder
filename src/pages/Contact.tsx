@@ -3,10 +3,11 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import heroImg from "@/assets/hero-contact.jpg";
-import { MapPin, Mail, Send, Clock, CheckCircle, ArrowRight } from "lucide-react";
+import { MapPin, Mail, Send, Clock, CheckCircle, ArrowRight, Loader2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import { supabase } from "@/integrations/supabase/client";
 
 const inputClasses =
   "w-full border border-border/60 bg-background px-3.5 py-2 text-base text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
@@ -15,10 +16,36 @@ const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-m
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const { t } = useLanguage();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSubmitting(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const { error: dbError } = await supabase.from("contact_submissions").insert({
+      salutation: (formData.get("anrede") as string) || null,
+      first_name: formData.get("vorname") as string,
+      last_name: formData.get("nachname") as string,
+      email: formData.get("email") as string,
+      subject: (formData.get("betreff") as string) || null,
+      message: formData.get("nachricht") as string,
+      callback_requested: formData.has("rueckruf") && formData.get("rueckruf") === "on",
+    });
+
+    setSubmitting(false);
+
+    if (dbError) {
+      console.error("Contact form error:", dbError);
+      setError(t.contact.errorText ?? "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.");
+      return;
+    }
+
     setSubmitted(true);
   };
 
@@ -187,13 +214,30 @@ const Contact = () => {
                   </label>
                 </div>
 
+                {error && (
+                  <p className="text-destructive text-sm">{error}</p>
+                )}
+
                 <div className="flex items-center justify-between pt-1">
                   <p className="text-xs text-muted-foreground">
                     <span className="text-accent">*</span> {t.common.requiredFields}
                   </p>
-                  <button type="submit" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300">
-                    {t.contact.send}
-                    <ArrowRight size={11} />
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 disabled:opacity-60"
+                  >
+                    {submitting ? (
+                      <>
+                        <Loader2 size={11} className="animate-spin" />
+                        {t.contact.sending ?? "Wird gesendet..."}
+                      </>
+                    ) : (
+                      <>
+                        {t.contact.send}
+                        <ArrowRight size={11} />
+                      </>
+                    )}
                   </button>
                 </div>
                 <p className="text-muted-foreground/70 text-xs text-right mt-1">{t.contact.privacyNote}</p>
