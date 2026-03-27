@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/playfair-500.woff2') format('truetype');
+  src: url('/fonts/playfair-500.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Playfair Display';
