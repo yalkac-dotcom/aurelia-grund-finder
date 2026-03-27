@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
-import heroImg from "@/assets/hero-contact.jpg";
+import { heroSets } from "@/assets/heroImages";
 import { MapPin, Mail, Send, Clock, CheckCircle, ArrowRight, Loader2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";

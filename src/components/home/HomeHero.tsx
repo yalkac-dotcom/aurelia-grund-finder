@@ -19,10 +19,13 @@ const HomeHero = () => {
     <section id="hero" className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
       <div className="absolute inset-0 overflow-hidden">
         <OptimizedImg
-          src={heroImg}
+          src={heroSets.premium.src}
+          srcSet={heroSets.premium.srcSet}
+          sizes={heroSets.premium.sizes}
           alt="Helle, hochwertige Architekturfassade von Aurelia Grundbesitz"
           className="hero-media h-full w-full object-cover object-[62%_center] md:object-center"
           priority
+        />
         />
         <div className="hero-overlay-base absolute inset-0" />
         <div className="hero-overlay-protect absolute inset-0" />
