@@ -3,6 +3,7 @@ import logoImg from "@/assets/aurelia-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { languageCodes } from "@/i18n/types";
 
+const COOKIE_KEY = "aurelia-cookie-consent";
 
 const Footer = () => {
   const { t, language, setLanguage } = useLanguage();
@@ -15,6 +16,12 @@ const Footer = () => {
     { label: t.nav.glossar, path: "/investoren-glossar" },
     { label: t.nav.contact, path: "/kontakt" },
   ];
+
+  const openCookieSettings = () => {
+    localStorage.removeItem(COOKIE_KEY);
+    window.dispatchEvent(new Event("consent-change"));
+    window.dispatchEvent(new Event("open-cookie-consent"));
+  };
 
   return (
     <footer className="bg-[#0F1A2E] border-t border-white/10">
@@ -56,17 +63,45 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Right — Contact */}
+          {/* Right — Information */}
           <div>
             <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
-              {t.footer.contact}
+              {t.footer.information}
             </h4>
-            <address className="not-italic text-white/80 text-[11px] md:text-xs leading-[1.7] md:leading-[1.75] space-y-0.5">
-              <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
-              <p>Grevenbroicher Weg 2</p>
-              <p>40547 Düsseldorf</p>
-              <p>{t.common.country}</p>
-            </address>
+            <div className="space-y-3">
+              <div className="text-white/80 text-[11px] md:text-xs leading-[1.7] space-y-0.5">
+                <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
+                <a href="mailto:info@aurelia-grundbesitz.de" className="block hover:text-accent transition-colors duration-200">
+                  info@aurelia-grundbesitz.de
+                </a>
+              </div>
+              <ul className="space-y-1 md:space-y-1.5">
+                <li>
+                  <Link
+                    to="/impressum"
+                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                  >
+                    {t.footer.imprint}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/datenschutz"
+                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                  >
+                    {t.footer.privacy}
+                  </Link>
+                </li>
+                <li>
+                  <button
+                    onClick={openCookieSettings}
+                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                  >
+                    {t.footer.cookieSettings}
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -95,21 +130,6 @@ const Footer = () => {
                   )}
                 </span>
               ))}
-            </div>
-
-            <div className="flex items-center gap-3.5 order-3">
-              <Link
-                to="/impressum"
-                className="text-white/60 text-[10px] md:text-xs hover:text-accent transition-colors duration-200"
-              >
-                {t.footer.imprint}
-              </Link>
-              <Link
-                to="/datenschutz"
-                className="text-white/60 text-[10px] md:text-xs hover:text-accent transition-colors duration-200"
-              >
-                {t.footer.privacy}
-              </Link>
             </div>
           </div>
 

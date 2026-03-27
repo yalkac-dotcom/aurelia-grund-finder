@@ -85,11 +85,9 @@ const Contact = () => {
                   <Clock className="text-accent" size={13} />
                   <h3 className="text-base font-heading font-semibold text-foreground">{t.common.availability}</h3>
                 </div>
-                <div className="text-muted-foreground text-sm space-y-0.5">
-                  <p>{t.common.monFri}: 09:00 – 18:00</p>
-                  <p>{t.common.saturday}: {t.common.byAppointment}</p>
-                  <p>{t.common.sunday}: {t.common.closed}</p>
-                </div>
+                <p className="text-muted-foreground text-sm leading-[1.75]">
+                  {t.common.availabilityText}
+                </p>
               </div>
             </Reveal>
           </div>

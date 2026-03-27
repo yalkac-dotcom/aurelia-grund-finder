@@ -13,15 +13,16 @@ const nl: Translations = {
   footer: {
     navigation: "Navigatie",
     contact: "Contact",
+    information: "Informatie",
     rights: "Alle rechten voorbehouden.",
     imprint: "Impressum",
     privacy: "Privacybeleid",
+    cookieSettings: "Cookie-instellingen",
     disclaimer:
       "Let op: De inhoud van deze website dient uitsluitend ter algemene informatie en vormt geen juridisch, fiscaal of financieel advies.",
     brandLine:
       "Aurelia Grundbesitz ontwikkelt vastgoed uit bijzondere situaties — discreet, gestructureerd en met een scherp oog voor waarde.",
     subline: "Discreet · Waardegericht · Langetermijnvisie",
-    
   },
   hero: {
     slogan: "Vastgoed met substantie — discreet getoetst, helder ontwikkeld, op de lange termijn gedacht.",
@@ -47,12 +48,16 @@ const nl: Translations = {
     ourTeam: "Ons team staat voor u klaar",
     teamDescription: "Ons ervaren team is beschikbaar voor al uw vragen over vastgoed — persoonlijk, deskundig en discreet.",
     availability: "Bereikbaarheid",
+    availabilityText: "Omdat wij regelmatig ter plaatse zijn voor projecten en afspraken, verzoeken wij u ons per e-mail te benaderen. Vervolgens maken wij graag een passende afspraak.",
     monFri: "Maandag – vrijdag",
     saturday: "Zaterdag",
     sunday: "Zondag",
     byAppointment: "op afspraak",
     closed: "gesloten",
     emailOutsideHours: "Vragen per e-mail worden ook buiten kantooruren ontvangen en zo spoedig mogelijk behandeld.",
+    cookieAcceptAll: "Alles accepteren",
+    cookieNecessaryOnly: "Alleen noodzakelijk",
+    cookieSettingsBtn: "Instellingen",
     ourLocation: "Onze locatie",
     address: "Adres",
     country: "Duitsland",

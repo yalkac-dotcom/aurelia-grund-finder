@@ -13,13 +13,14 @@ export interface Translations {
   footer: {
     navigation: string;
     contact: string;
+    information: string;
     rights: string;
     imprint: string;
     privacy: string;
+    cookieSettings: string;
     disclaimer: string;
     brandLine: string;
     subline: string;
-    
   };
   hero: {
     slogan: string;
@@ -43,12 +44,16 @@ export interface Translations {
     ourTeam: string;
     teamDescription: string;
     availability: string;
+    availabilityText: string;
     monFri: string;
     saturday: string;
     sunday: string;
     byAppointment: string;
     closed: string;
     emailOutsideHours: string;
+    cookieAcceptAll: string;
+    cookieNecessaryOnly: string;
+    cookieSettingsBtn: string;
     ourLocation: string;
     address: string;
     country: string;

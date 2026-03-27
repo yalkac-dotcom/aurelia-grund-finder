@@ -19,6 +19,10 @@ const CookieConsent = () => {
 
   useEffect(() => {
     if (getConsentState() === "pending") setVisible(true);
+
+    const handleOpen = () => setVisible(true);
+    window.addEventListener("open-cookie-consent", handleOpen);
+    return () => window.removeEventListener("open-cookie-consent", handleOpen);
   }, []);
 
   const handle = (choice: "accepted" | "rejected") => {
@@ -40,13 +44,13 @@ const CookieConsent = () => {
             onClick={() => handle("accepted")}
             className="bg-accent text-white px-4 py-2 text-xs font-medium tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors"
           >
-            {t.common.cookieAccept}
+            {t.common.cookieAcceptAll}
           </button>
           <button
             onClick={() => handle("rejected")}
             className="border border-border/60 text-muted-foreground px-4 py-2 text-xs font-medium tracking-[0.1em] uppercase hover:text-foreground hover:border-border transition-colors"
           >
-            {t.common.cookieReject}
+            {t.common.cookieNecessaryOnly}
           </button>
         </div>
       </div>

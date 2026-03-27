@@ -13,15 +13,16 @@ const it: Translations = {
   footer: {
     navigation: "Navigazione",
     contact: "Contatti",
+    information: "Informazioni",
     rights: "Tutti i diritti riservati.",
     imprint: "Note legali",
     privacy: "Informativa sulla privacy",
+    cookieSettings: "Impostazioni cookie",
     disclaimer:
       "Avviso: i contenuti di questo sito sono forniti esclusivamente a scopo informativo e non costituiscono consulenza legale, fiscale o finanziaria.",
     brandLine:
       "Aurelia Grundbesitz sviluppa immobili provenienti da situazioni particolari in modo discreto, strutturato e con uno sguardo chiaro alla sostanza.",
     subline: "Discrezione · Orientamento alla sostanza · Lungo termine",
-    
   },
   hero: {
     slogan: "Immobili con sostanza — valutati con discrezione, sviluppati con chiarezza, pensati per il lungo periodo.",
@@ -46,12 +47,16 @@ const it: Translations = {
     ourTeam: "Il nostro team cordiale",
     teamDescription: "Il nostro team esperto è a vostra disposizione per tutte le domande relative a immobili – in modo personale, competente e discreto.",
     availability: "Orari di disponibilità",
+    availabilityText: "Poiché siamo regolarmente impegnati in progetti e appuntamenti sul posto, vi preghiamo di contattarci via e-mail. Saremo lieti di concordare un appuntamento adeguato.",
     monFri: "Lunedì – Venerdì",
     saturday: "Sabato",
     sunday: "Domenica",
     byAppointment: "su appuntamento",
     closed: "chiuso",
     emailOutsideHours: "Le richieste via e-mail vengono accettate anche al di fuori dell'orario d'ufficio e gestite tempestivamente.",
+    cookieAcceptAll: "Accetta tutti",
+    cookieNecessaryOnly: "Solo necessari",
+    cookieSettingsBtn: "Impostazioni",
     ourLocation: "La nostra sede",
     address: "Indirizzo",
     country: "Germania",

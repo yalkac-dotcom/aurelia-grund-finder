@@ -13,15 +13,16 @@ const de: Translations = {
   footer: {
     navigation: "Navigation",
     contact: "Kontakt",
+    information: "Informationen",
     rights: "Alle Rechte vorbehalten.",
     imprint: "Impressum",
     privacy: "Datenschutz",
+    cookieSettings: "Cookie-Einstellungen",
     disclaimer:
       "Hinweis: Die Inhalte dieser Website dienen ausschließlich allgemeinen Informationszwecken und stellen keine rechtliche, steuerliche oder finanzielle Beratung dar.",
     brandLine:
       "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen – diskret, strukturiert und mit klarem Blick für Substanz.",
     subline: "Diskret · Substanzorientiert · Langfristig",
-    
   },
   hero: {
     slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
@@ -47,12 +48,16 @@ const de: Translations = {
     ourTeam: "Unsere freundlichen Mitarbeiter",
     teamDescription: "Unser erfahrenes Team steht Ihnen für alle Fragen rund um Immobilien zur Verfügung – persönlich, kompetent und diskret.",
     availability: "Erreichbarkeit",
+    availabilityText: "Da wir uns regelmäßig in Projekten und Terminen vor Ort befinden, bitten wir um eine kurze Kontaktaufnahme per E-Mail. Im Anschluss vereinbaren wir gern einen passenden Termin.",
     monFri: "Montag – Freitag",
     saturday: "Samstag",
     sunday: "Sonntag",
     byAppointment: "nach Vereinbarung",
     closed: "geschlossen",
     emailOutsideHours: "Anfragen per E-Mail werden auch außerhalb der Geschäftszeiten entgegengenommen und zeitnah bearbeitet.",
+    cookieAcceptAll: "Alle akzeptieren",
+    cookieNecessaryOnly: "Nur notwendige",
+    cookieSettingsBtn: "Einstellungen",
     ourLocation: "Unser Standort",
     address: "Adresse",
     country: "Deutschland",

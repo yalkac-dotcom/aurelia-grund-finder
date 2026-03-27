@@ -13,15 +13,16 @@ const tr: Translations = {
   footer: {
     navigation: "Navigasyon",
     contact: "İletişim",
+    information: "Bilgiler",
     rights: "Tüm hakları saklıdır.",
     imprint: "Yasal Bilgiler",
     privacy: "Gizlilik Bildirimi",
+    cookieSettings: "Çerez Ayarları",
     disclaimer:
       "Uyarı: Bu web sitesindeki içerikler yalnızca genel bilgilendirme amacı taşır ve hukuki, vergisel veya finansal danışmanlık niteliğinde değildir.",
     brandLine:
       "Aurelia Grundbesitz, özel durumlardan çıkan gayrimenkulleri gizli, yapılandırılmış ve özü net gören bir yaklaşımla geliştirir.",
     subline: "Gizli · Öz odaklı · Uzun vadeli",
-    
   },
   hero: {
     slogan: "Özü olan gayrimenkuller — gizlilikle incelenir, net biçimde geliştirilir, uzun vadeli düşünülür.",
@@ -46,12 +47,16 @@ const tr: Translations = {
     ourTeam: "Güler yüzlü ekibimiz",
     teamDescription: "Deneyimli ekibimiz gayrimenkulle ilgili tüm sorularınız için hizmetinizdedir – kişisel, yetkin ve gizlilik esasıyla.",
     availability: "Ulaşılabilirlik",
+    availabilityText: "Projeler ve randevular nedeniyle düzenli olarak sahada bulunduğumuz için, lütfen bize e-posta yoluyla ulaşınız. Ardından uygun bir görüşme zamanı belirlemekten memnuniyet duyarız.",
     monFri: "Pazartesi – Cuma",
     saturday: "Cumartesi",
     sunday: "Pazar",
     byAppointment: "randevu ile",
     closed: "kapalı",
     emailOutsideHours: "E-posta yoluyla gelen talepler mesai saatleri dışında da kabul edilir ve en kısa sürede işleme alınır.",
+    cookieAcceptAll: "Tümünü kabul et",
+    cookieNecessaryOnly: "Yalnızca gerekli",
+    cookieSettingsBtn: "Ayarlar",
     ourLocation: "Konumumuz",
     address: "Adres",
     country: "Almanya",
