@@ -126,7 +126,7 @@ const Services = () => {
         <div className="container max-w-4xl">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <Reveal>
-              <OptimizedImg src={heroImg} alt={t.services.experienceTitle} className="w-full h-56 object-cover" />
+              <OptimizedImg src={heroSets.services.src} srcSet={heroSets.services.srcSet} sizes={heroSets.services.sizes} alt={t.services.experienceTitle} className="w-full h-56 object-cover" />
             </Reveal>
             <Reveal delay={0.1}>
               <div>
