@@ -4,56 +4,56 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/playfair-400.woff2') format('truetype');
+  src: url('/fonts/playfair-400.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/playfair-500.woff2') format('truetype');
+  src: url('/fonts/playfair-500.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/playfair-600.woff2') format('truetype');
+  src: url('/fonts/playfair-600.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/playfair-700.woff2') format('truetype');
+  src: url('/fonts/playfair-700.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/inter-300.woff2') format('truetype');
+  src: url('/fonts/inter-300.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/inter-400.woff2') format('truetype');
+  src: url('/fonts/inter-400.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/inter-500.woff2') format('truetype');
+  src: url('/fonts/inter-500.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/inter-600.woff2') format('truetype');
+  src: url('/fonts/inter-600.woff2') format('woff2');
 }
 
 @tailwind base;
@@ -125,16 +125,24 @@
     @apply outline-2 outline-offset-2 outline-accent;
   }
 
-  /* Minimum touch target for interactive elements */
-  a, button, [role="button"], input, select, textarea {
+  /* Minimum touch target for standalone interactive elements */
+  button, [role="button"], input, select, textarea {
     min-height: 44px;
     min-width: 44px;
   }
 
-  /* Exception for inline links within text */
-  p a, li a, span a, td a, address a {
-    min-height: unset;
-    min-width: unset;
+  /* Inline links have no minimum size */
+  a {
+    min-height: auto;
+    min-width: auto;
+  }
+
+  /* Standalone CTA links (not inside text) get touch targets */
+  a.hero-primary-button,
+  a.hero-secondary-button,
+  nav a,
+  footer a {
+    min-height: 44px;
   }
 }
 
