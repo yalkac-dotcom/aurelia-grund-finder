@@ -37,6 +37,7 @@ const Contact = () => {
               {t.contact.subtitle}
             </h1>
           </Reveal>
+          <HeroScrollIndicator />
         </div>
       </section>
 

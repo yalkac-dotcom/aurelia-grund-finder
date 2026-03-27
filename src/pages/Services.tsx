@@ -25,6 +25,7 @@ const Services = () => {
               {t.services.heroTitle}
             </h1>
           </Reveal>
+          <HeroScrollIndicator />
         </div>
       </section>
 

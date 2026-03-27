@@ -32,6 +32,7 @@ const TaxBenefits = () => {
               {t.tax.heroTitle}
             </h1>
           </Reveal>
+          <HeroScrollIndicator />
         </div>
       </section>
 
