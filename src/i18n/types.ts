@@ -44,12 +44,16 @@ export interface Translations {
     ourTeam: string;
     teamDescription: string;
     availability: string;
+    availabilityText: string;
     monFri: string;
     saturday: string;
     sunday: string;
     byAppointment: string;
     closed: string;
     emailOutsideHours: string;
+    cookieAcceptAll: string;
+    cookieNecessaryOnly: string;
+    cookieSettingsBtn: string;
     ourLocation: string;
     address: string;
     country: string;
