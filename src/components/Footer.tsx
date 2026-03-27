@@ -63,45 +63,43 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Right — Information */}
+          {/* Right — Informationen */}
           <div>
             <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
               {t.footer.information}
             </h4>
-            <div className="space-y-3">
-              <div className="text-white/80 text-[11px] md:text-xs leading-[1.7] space-y-0.5">
-                <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
-                <a href="mailto:info@aurelia-grundbesitz.de" className="block hover:text-accent transition-colors duration-200">
-                  info@aurelia-grundbesitz.de
-                </a>
-              </div>
-              <ul className="space-y-1 md:space-y-1.5">
-                <li>
-                  <Link
-                    to="/impressum"
-                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
-                  >
-                    {t.footer.imprint}
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/datenschutz"
-                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
-                  >
-                    {t.footer.privacy}
-                  </Link>
-                </li>
-                <li>
-                  <button
-                    onClick={openCookieSettings}
-                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
-                  >
-                    {t.footer.cookieSettings}
-                  </button>
-                </li>
-              </ul>
+            <div className="text-white/80 text-[11px] md:text-xs leading-[1.7]">
+              <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
+              <a href="mailto:info@aurelia-grundbesitz.de" className="block hover:text-accent transition-colors duration-200 mt-0.5">
+                info@aurelia-grundbesitz.de
+              </a>
             </div>
+            <ul className="mt-3 space-y-1.5">
+              <li>
+                <Link
+                  to="/impressum"
+                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                >
+                  {t.footer.imprint}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/datenschutz"
+                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                >
+                  {t.footer.privacy}
+                </Link>
+              </li>
+              <li>
+                <button
+                  onClick={openCookieSettings}
+                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 text-left"
+                >
+                  {t.footer.cookieSettings}
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
 
