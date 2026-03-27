@@ -13,15 +13,16 @@ const tr: Translations = {
   footer: {
     navigation: "Navigasyon",
     contact: "İletişim",
+    information: "Bilgiler",
     rights: "Tüm hakları saklıdır.",
     imprint: "Yasal Bilgiler",
     privacy: "Gizlilik Bildirimi",
+    cookieSettings: "Çerez Ayarları",
     disclaimer:
       "Uyarı: Bu web sitesindeki içerikler yalnızca genel bilgilendirme amacı taşır ve hukuki, vergisel veya finansal danışmanlık niteliğinde değildir.",
     brandLine:
       "Aurelia Grundbesitz, özel durumlardan çıkan gayrimenkulleri gizli, yapılandırılmış ve özü net gören bir yaklaşımla geliştirir.",
     subline: "Gizli · Öz odaklı · Uzun vadeli",
-    
   },
   hero: {
     slogan: "Özü olan gayrimenkuller — gizlilikle incelenir, net biçimde geliştirilir, uzun vadeli düşünülür.",
