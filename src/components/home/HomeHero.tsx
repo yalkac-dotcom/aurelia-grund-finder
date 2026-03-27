@@ -26,7 +26,6 @@ const HomeHero = () => {
           className="hero-media h-full w-full object-cover object-[62%_center] md:object-center"
           priority
         />
-        />
         <div className="hero-overlay-base absolute inset-0" />
         <div className="hero-overlay-protect absolute inset-0" />
         <div className="hero-overlay-warm absolute inset-0" />
