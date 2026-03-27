@@ -34,21 +34,28 @@ const CookieConsent = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[9999] bg-background border-t border-border/60 shadow-lg">
-      <div className="container max-w-4xl py-4 flex flex-col sm:flex-row items-start sm:items-center gap-3">
-        <p className="text-muted-foreground text-xs leading-[1.7] flex-1">
+    <div className="fixed inset-0 z-[9999] flex items-end justify-center">
+      {/* Backdrop – blocks interaction */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
+
+      {/* Dialog */}
+      <div className="relative w-full max-w-2xl mx-4 mb-6 bg-background border border-border/60 shadow-2xl p-6 sm:p-8">
+        <p className="text-foreground text-sm font-heading font-semibold mb-2">
+          {t.common.cookieTitle ?? "Cookie-Einstellungen"}
+        </p>
+        <p className="text-muted-foreground text-xs leading-[1.75] mb-5">
           {t.common.cookieText}
         </p>
-        <div className="flex gap-2 shrink-0">
+        <div className="flex flex-col sm:flex-row gap-2.5">
           <button
             onClick={() => handle("accepted")}
-            className="bg-accent text-white px-4 py-2 text-xs font-medium tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors"
+            className="bg-accent text-white px-5 py-2.5 text-xs font-medium tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors flex-1 sm:flex-none"
           >
             {t.common.cookieAcceptAll}
           </button>
           <button
             onClick={() => handle("rejected")}
-            className="border border-border/60 text-muted-foreground px-4 py-2 text-xs font-medium tracking-[0.1em] uppercase hover:text-foreground hover:border-border transition-colors"
+            className="bg-accent/10 text-foreground border border-accent/30 px-5 py-2.5 text-xs font-medium tracking-[0.1em] uppercase hover:bg-accent/20 transition-colors flex-1 sm:flex-none"
           >
             {t.common.cookieNecessaryOnly}
           </button>
