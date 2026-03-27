@@ -68,39 +68,38 @@ const Footer = () => {
             <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
               {t.footer.information}
             </h4>
-            <div className="text-[11px] md:text-xs leading-[1.7]">
+
+            <div className="flex flex-col items-start gap-1 text-[11px] md:text-xs leading-[1.7]">
               <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
-              <a href="mailto:info@aurelia-grundbesitz.de" className="text-white/80 block hover:text-accent transition-colors duration-200 mt-0.5">
+              <a
+                href="mailto:info@aurelia-grundbesitz.de"
+                className="min-h-0 text-white/80 hover:text-accent transition-colors duration-200"
+              >
                 info@aurelia-grundbesitz.de
               </a>
             </div>
-            <ul className="mt-3 space-y-1">
-              <li>
-                <Link
-                  to="/impressum"
-                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 inline-block"
-                >
-                  {t.footer.imprint}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/datenschutz"
-                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 inline-block"
-                >
-                  {t.footer.privacy}
-                </Link>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={openCookieSettings}
-                  className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 text-left"
-                >
-                  {t.footer.cookieSettings}
-                </button>
-              </li>
-            </ul>
+
+            <div className="mt-6 flex flex-col items-start gap-3">
+              <Link
+                to="/impressum"
+                className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+              >
+                {t.footer.imprint}
+              </Link>
+              <Link
+                to="/datenschutz"
+                className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+              >
+                {t.footer.privacy}
+              </Link>
+              <button
+                type="button"
+                onClick={openCookieSettings}
+                className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 text-left"
+              >
+                {t.footer.cookieSettings}
+              </button>
+            </div>
           </div>
         </div>
 
