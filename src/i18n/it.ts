@@ -13,15 +13,16 @@ const it: Translations = {
   footer: {
     navigation: "Navigazione",
     contact: "Contatti",
+    information: "Informazioni",
     rights: "Tutti i diritti riservati.",
     imprint: "Note legali",
     privacy: "Informativa sulla privacy",
+    cookieSettings: "Impostazioni cookie",
     disclaimer:
       "Avviso: i contenuti di questo sito sono forniti esclusivamente a scopo informativo e non costituiscono consulenza legale, fiscale o finanziaria.",
     brandLine:
       "Aurelia Grundbesitz sviluppa immobili provenienti da situazioni particolari in modo discreto, strutturato e con uno sguardo chiaro alla sostanza.",
     subline: "Discrezione · Orientamento alla sostanza · Lungo termine",
-    
   },
   hero: {
     slogan: "Immobili con sostanza — valutati con discrezione, sviluppati con chiarezza, pensati per il lungo periodo.",
