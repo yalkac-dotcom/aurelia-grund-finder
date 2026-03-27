@@ -29,7 +29,7 @@ const HomeHero = () => {
         <div className="hero-overlay-warm absolute inset-0" />
       </div>
 
-      <div className="relative container pb-14 pt-24 md:pb-20 md:pt-28">
+      <div className="relative container pb-16 pt-20 md:pb-24 md:pt-24">
         <div className="hero-copy-shell">
           <p className="hero-kicker">{t.landing.trustLine}</p>
 
