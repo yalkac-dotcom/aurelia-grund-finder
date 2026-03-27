@@ -16,7 +16,7 @@ const HomeHero = () => {
   };
 
   return (
-    <section id="hero" className="relative flex h-[66svh] min-h-[420px] items-end md:h-[72vh] md:min-h-[500px]">
+    <section id="hero" className="relative flex h-[82svh] min-h-[520px] items-end md:h-[88vh] md:min-h-[600px]">
       <div className="absolute inset-0 overflow-hidden">
         <OptimizedImg
           src={heroImg}
@@ -29,7 +29,7 @@ const HomeHero = () => {
         <div className="hero-overlay-warm absolute inset-0" />
       </div>
 
-      <div className="relative container pb-16 pt-20 md:pb-24 md:pt-24">
+      <div className="relative container pb-20 pt-28 md:pb-28 md:pt-32">
         <div className="hero-copy-shell">
           <p className="hero-kicker">{t.landing.trustLine}</p>
 
