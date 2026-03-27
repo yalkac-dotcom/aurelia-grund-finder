@@ -326,68 +326,68 @@
 
 @media (max-width: 767px) {
   .hero-media {
-    filter: brightness(1.26) saturate(0.92) contrast(1.02);
+    filter: brightness(1.38) saturate(0.88) contrast(1.01);
   }
 
   .hero-overlay-base {
     background: linear-gradient(
       180deg,
-      hsl(var(--primary) / 0.06) 0%,
-      hsl(var(--primary) / 0.18) 18%,
-      hsl(var(--primary) / 0.38) 54%,
-      hsl(var(--primary) / 0.56) 100%
+      hsl(var(--primary) / 0.03) 0%,
+      hsl(var(--primary) / 0.10) 20%,
+      hsl(var(--primary) / 0.24) 55%,
+      hsl(var(--primary) / 0.38) 100%
     );
   }
 
   .hero-overlay-protect {
     background: linear-gradient(
       180deg,
-      hsl(var(--primary) / 0.02) 0%,
-      hsl(var(--primary) / 0.24) 18%,
-      hsl(var(--primary) / 0.60) 60%,
-      hsl(var(--primary) / 0.76) 100%
+      hsl(var(--primary) / 0.01) 0%,
+      hsl(var(--primary) / 0.14) 20%,
+      hsl(var(--primary) / 0.40) 60%,
+      hsl(var(--primary) / 0.54) 100%
     );
   }
 
   .hero-copy-shell::before {
-    inset: -1rem -0.75rem -1rem -0.75rem;
+    inset: -0.75rem -0.6rem -0.75rem -0.6rem;
     border-radius: calc(var(--radius) * 7);
     background: linear-gradient(
       180deg,
-      hsl(var(--primary) / 0.22) 0%,
-      hsl(var(--primary) / 0.42) 42%,
-      hsl(var(--primary) / 0.24) 100%
+      hsl(var(--primary) / 0.16) 0%,
+      hsl(var(--primary) / 0.30) 42%,
+      hsl(var(--primary) / 0.18) 100%
     );
   }
 
   .hero-kicker {
-    padding: 0.45rem 0.65rem;
-    margin-bottom: 0.95rem;
-    font-size: 0.67rem;
-    letter-spacing: 0.16em;
+    padding: 0.32rem 0.55rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.63rem;
+    letter-spacing: 0.14em;
   }
 
   .hero-title {
-    max-width: 11ch;
-    margin-bottom: 0.85rem;
+    max-width: 13ch;
+    margin-bottom: 0.65rem;
   }
 
   .hero-description {
-    max-width: 30ch;
-    margin-bottom: 1.25rem;
-    font-size: 0.92rem;
-    line-height: 1.7;
+    max-width: 28ch;
+    margin-bottom: 1rem;
+    font-size: 0.86rem;
+    line-height: 1.65;
   }
 
   .hero-meta-line {
-    max-width: 30ch;
-    font-size: 0.72rem;
+    max-width: 28ch;
+    font-size: 0.7rem;
   }
 }
 
 @media (min-width: 768px) {
   .hero-media {
-    filter: brightness(1.38) saturate(0.95) contrast(1.03);
+    filter: brightness(1.48) saturate(0.92) contrast(1.02);
   }
 
   .hero-actions {
@@ -395,11 +395,11 @@
   }
 
   .hero-kicker {
-    margin-bottom: 1.15rem;
+    margin-bottom: 0.9rem;
   }
 
   .hero-title {
-    max-width: 13ch;
+    max-width: 15ch;
   }
 
   .hero-meta-line {
