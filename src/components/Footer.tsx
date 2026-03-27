@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
 
           {/* Right — Informationen */}
-          <div>
+          <div className="flex flex-col items-start justify-start">
             <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/70 md:text-white mb-2.5 md:mb-3">
               {t.footer.information}
             </h4>
@@ -74,7 +74,7 @@ const Footer = () => {
                 info@aurelia-grundbesitz.de
               </a>
             </div>
-            <ul className="mt-4 space-y-1.5">
+            <ul className="mt-3 space-y-1">
               <li>
                 <Link
                   to="/impressum"
