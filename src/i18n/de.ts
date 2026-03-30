@@ -27,8 +27,8 @@ const de: Translations = {
   hero: {
     slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
     subtitle:
-      "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen mit Ruhe, Erfahrung und einem klaren Blick für wirtschaftlich sinnvolle Lösungen.",
-    cta: "Kontakt aufnehmen",
+      "Wir kaufen Objekte, die andere nicht sehen – in Zwangsversteigerungen, Nachlässen, Insolvenzen. 30 Jahre Erfahrung. Über 200 Projekte. Transparente Struktur.",
+    cta: "Kostenloses Erstgespräch anfordern",
     ctaSecondary: "Mehr über Aurelia",
   },
   common: {
