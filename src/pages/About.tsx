@@ -109,7 +109,7 @@ const About = () => {
               </div>
               <Reveal delay={0.35}>
                 <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-5">
-                  {t.landing.heroCta}
+                  {t.hero.cta}
                   <ArrowRight size={11} />
                 </Link>
               </Reveal>

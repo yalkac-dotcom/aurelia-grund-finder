@@ -165,6 +165,7 @@ export interface Translations {
     salutation: string;
     firstName: string;
     lastName: string;
+    name: string;
     email: string;
     phone: string;
     subject: string;
@@ -173,6 +174,8 @@ export interface Translations {
     successTitle: string;
     successText: string;
     subjectOptions: string[];
+    propertyType: string;
+    propertyTypeOptions: string[];
     company: string;
     messagePlaceholder: string;
     formLabel: string;

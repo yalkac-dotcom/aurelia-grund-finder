@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
-import { MapPin, Mail, Send, Clock, CheckCircle, ArrowRight, Loader2 } from "lucide-react";
+import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
@@ -29,13 +29,12 @@ const Contact = () => {
     const formData = new FormData(form);
 
     const { error: dbError } = await supabase.from("contact_submissions").insert({
-      salutation: (formData.get("anrede") as string) || null,
-      first_name: formData.get("vorname") as string,
-      last_name: formData.get("nachname") as string,
+      first_name: formData.get("name") as string,
+      last_name: "",
       email: formData.get("email") as string,
-      subject: (formData.get("betreff") as string) || null,
-      message: formData.get("nachricht") as string,
-      callback_requested: formData.has("rueckruf") && formData.get("rueckruf") === "on",
+      phone: (formData.get("phone") as string) || null,
+      property_type: (formData.get("property_type") as string) || null,
+      message: formData.get("message") as string,
     });
 
     setSubmitting(false);
@@ -123,7 +122,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Form */}
+      {/* Form – 5 fields only */}
       <section className="py-10 md:py-14 bg-secondary/50">
         <div className="container max-w-2xl">
           <Reveal>
@@ -146,31 +145,15 @@ const Contact = () => {
               </Reveal>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
+                {/* 1. Name */}
                 <div>
-                  <label htmlFor="anrede" className={labelClasses}>{t.contact.salutation}</label>
-                  <select id="anrede" name="anrede" className={inputClasses}>
-                    <option value="">{t.common.pleaseSelect}</option>
-                    {t.common.salutationOptions.map((opt) => (
-                      <option key={opt} value={opt}>{opt}</option>
-                    ))}
-                  </select>
+                  <label htmlFor="name" className={labelClasses}>
+                    {t.contact.name} <span className="text-accent">*</span>
+                  </label>
+                  <input id="name" name="name" type="text" required className={inputClasses} />
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-3">
-                  <div>
-                    <label htmlFor="vorname" className={labelClasses}>
-                      {t.contact.firstName} <span className="text-accent">*</span>
-                    </label>
-                    <input id="vorname" name="vorname" type="text" required className={inputClasses} />
-                  </div>
-                  <div>
-                    <label htmlFor="nachname" className={labelClasses}>
-                      {t.contact.lastName} <span className="text-accent">*</span>
-                    </label>
-                    <input id="nachname" name="nachname" type="text" required className={inputClasses} />
-                  </div>
-                </div>
-
+                {/* 2. Email */}
                 <div>
                   <label htmlFor="email" className={labelClasses}>
                     {t.contact.email} <span className="text-accent">*</span>
@@ -178,40 +161,35 @@ const Contact = () => {
                   <input id="email" name="email" type="email" required className={inputClasses} />
                 </div>
 
+                {/* 3. Phone (optional) */}
                 <div>
-                  <label htmlFor="betreff" className={labelClasses}>{t.contact.subject}</label>
-                  <select id="betreff" name="betreff" className={inputClasses}>
+                  <label htmlFor="phone" className={labelClasses}>
+                    {t.contact.phone}
+                  </label>
+                  <input id="phone" name="phone" type="tel" className={inputClasses} />
+                </div>
+
+                {/* 4. Property type dropdown */}
+                <div>
+                  <label htmlFor="property_type" className={labelClasses}>{t.contact.propertyType}</label>
+                  <select id="property_type" name="property_type" className={inputClasses}>
                     <option value="">{t.common.pleaseSelect}</option>
-                    {t.contact.subjectOptions.map((opt) => (
+                    {t.contact.propertyTypeOptions.map((opt) => (
                       <option key={opt} value={opt}>{opt}</option>
                     ))}
                   </select>
                 </div>
 
+                {/* 5. Short message */}
                 <div>
-                  <label htmlFor="nachricht" className={labelClasses}>
+                  <label htmlFor="message" className={labelClasses}>
                     {t.contact.message} <span className="text-accent">*</span>
                   </label>
                   <textarea
-                    id="nachricht" name="nachricht" rows={4} required
+                    id="message" name="message" rows={4} required
                     className={`${inputClasses} resize-none`}
                     placeholder={t.contact.messagePlaceholder}
                   />
-                </div>
-
-                <div className="space-y-1.5 pt-1">
-                  <label className="flex items-start gap-2.5 cursor-pointer">
-                    <input type="checkbox" name="datenschutz" required className="mt-1 h-3.5 w-3.5 border-border accent-accent" />
-                    <span className="text-sm text-muted-foreground leading-relaxed">
-                      {t.common.privacyCheckbox} <span className="text-accent">*</span>
-                    </span>
-                  </label>
-                  <label className="flex items-start gap-2.5 cursor-pointer">
-                    <input type="checkbox" name="rueckruf" className="mt-1 h-3.5 w-3.5 border-border accent-accent" />
-                    <span className="text-sm text-muted-foreground leading-relaxed">
-                      {t.common.callbackRequest}
-                    </span>
-                  </label>
                 </div>
 
                 {error && (
