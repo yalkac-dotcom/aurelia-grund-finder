@@ -109,7 +109,7 @@ const de: Translations = {
       { title: "Begrenzter Zugang", text: "Viele Objekte werden gar nicht breit angeboten, sondern in kleineren Kreisen oder situativ verhandelt." },
     ],
     solutionLabel: "Unser Ansatz",
-    solutionTitle: "Wir bringen Klarheit in komplexe Immobilienkonstellationen.",
+    solutionTitle: "Wie wir Sondersituationen in stabile Renditen umwandeln.",
     solutionPoints: [
       { title: "Sorgfältige Prüfung", text: "Jedes Objekt wird mit Blick auf Substanz, Lage, Risiken und Potenziale realistisch bewertet." },
       { title: "Erfahrung in besonderen Situationen", text: "Wir kennen die Abläufe und Herausforderungen bei Immobilien, die nicht im normalen Marktumfeld gehandelt werden." },
