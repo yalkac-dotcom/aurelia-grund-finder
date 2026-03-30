@@ -152,8 +152,8 @@ const de: Translations = {
     ],
     ctaLabel: "Nächster Schritt",
     ctaTitle: "Sprechen Sie mit uns über Ihr Objekt oder Ihre Anfrage.",
-    ctaText: "Persönlich, diskret und unverbindlich. Wir hören zu, prüfen sorgfältig und melden uns mit einer klaren ersten Einschätzung zurück.",
-    ctaButton: "Kontakt aufnehmen",
+    ctaText: "Schreiben Sie uns Ihre Immobilie. Innerhalb von 24-48 Stunden erhalten Sie eine erste, verbindliche Einschätzung – kostenlos, diskret, unverbindlich.",
+    ctaButton: "Kostenloses Erstgespräch anfordern",
     trustStatsLabel: "Unser Fundament",
     trustStatsItems: [
       { value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
