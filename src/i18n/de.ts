@@ -92,7 +92,7 @@ const de: Translations = {
     ourServices: "Unsere Leistungen",
     locationTitle: "Standortfokus Deutschland",
     locationText: "Wir konzentrieren uns auf Standorte in Deutschland, die Substanz, Nachfrage und Entwicklungspotenzial miteinander verbinden. Entscheidend ist für uns nicht nur der erste Eindruck, sondern die langfristige Tragfähigkeit eines Standorts.",
-    contactCta: "Kontakt aufnehmen",
+    contactCta: "Kostenloses Erstgespräch anfordern",
   },
   landing: {
     heroLabel: "Aurelia Grundbesitz",
