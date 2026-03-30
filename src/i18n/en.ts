@@ -91,7 +91,7 @@ const en: Translations = {
     ourServices: "Our Services",
     locationTitle: "Focus on Germany",
     locationText: "We focus on locations in Germany that combine substance, demand, and development potential. What matters to us is not just the first impression, but the long-term viability of a location.",
-    contactCta: "Get in touch",
+    contactCta: "Free Initial Consultation",
   },
   landing: {
     heroLabel: "Aurelia Grundbesitz",
