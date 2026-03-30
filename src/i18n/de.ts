@@ -101,7 +101,7 @@ const de: Translations = {
     heroCtaSecondary: "Mehr über Aurelia",
     trustLine: "30 Jahre Erfahrung · Über 200 Projekte · Inhabergeführt",
     problemLabel: "Die Ausgangslage",
-    problemTitle: "Warum viele interessante Immobilien nie öffentlich angeboten werden.",
+    problemTitle: "Wo echte Immobilien-Chancen zu finden sind – und warum sie nicht alle auf dem Markt landen.",
     problemPoints: [
       { title: "Unübersichtliche Situationen", text: "Bei Nachlässen, Insolvenzen oder Zwangsversteigerungen ist die Ausgangslage oft komplex und erklärungsbedürftig." },
       { title: "Zeitdruck", text: "Entscheidungen müssen häufig schneller getroffen werden als im klassischen Markt." },
