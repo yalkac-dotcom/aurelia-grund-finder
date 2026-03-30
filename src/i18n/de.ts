@@ -97,7 +97,7 @@ const de: Translations = {
   landing: {
     heroLabel: "Aurelia Grundbesitz",
     heroSubtitle: "Wir prüfen, erwerben und entwickeln Immobilien aus besonderen Situationen mit Ruhe, Erfahrung und einem klaren Blick für wirtschaftlich sinnvolle Lösungen.",
-    heroCta: "Kontakt aufnehmen",
+    heroCta: "Kostenloses Erstgespräch anfordern",
     heroCtaSecondary: "Mehr über Aurelia",
     trustLine: "Inhabergeführt · über 30 Jahre Erfahrung · strukturiertes Vorgehen",
     problemLabel: "Die Ausgangslage",
