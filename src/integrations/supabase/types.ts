@@ -21,8 +21,10 @@ export type Database = {
           email: string
           first_name: string
           id: string
-          last_name: string
+          last_name: string | null
           message: string
+          phone: string | null
+          property_type: string | null
           salutation: string | null
           subject: string | null
         }
@@ -32,8 +34,10 @@ export type Database = {
           email: string
           first_name: string
           id?: string
-          last_name: string
+          last_name?: string | null
           message: string
+          phone?: string | null
+          property_type?: string | null
           salutation?: string | null
           subject?: string | null
         }
@@ -43,8 +47,10 @@ export type Database = {
           email?: string
           first_name?: string
           id?: string
-          last_name?: string
+          last_name?: string | null
           message?: string
+          phone?: string | null
+          property_type?: string | null
           salutation?: string | null
           subject?: string | null
         }
