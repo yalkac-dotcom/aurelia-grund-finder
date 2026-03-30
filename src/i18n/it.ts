@@ -222,7 +222,6 @@ const it: Translations = {
     experienceText: "La strategia giusta non nasce da una formula standard. Deriva dall'immobile, dalla posizione, dallo stato, dalla domanda, dall'impegno necessario e dall'obiettivo. Per questo ci affidiamo a un'analisi accurata anziché a soluzioni rapide e generiche.",
   },
   contact: {
-  contact: {
     title: "Contatti",
     subtitle: "Siamo a vostra disposizione",
     introText: "Descrivete il vostro immobile. Entro 24-48 ore riceverete una prima valutazione vincolante – gratuita, discreta, senza impegno.",

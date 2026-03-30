@@ -222,7 +222,6 @@ const tr: Translations = {
     experienceText: "Doğru strateji standart bir formülden doğmaz. Gayrimenkulden, konumdan, durumdan, talepten, gerekli çabadan ve hedeften ortaya çıkar. Bu nedenle hızlı genel çözümler yerine dikkatli incelemeye güveniyoruz.",
   },
   contact: {
-  contact: {
     title: "İletişim",
     subtitle: "Sizin için buradayız",
     introText: "Gayrimenkulünüzü bize yazın. 24-48 saat içinde ilk, bağlayıcı bir değerlendirme alacaksınız – ücretsiz, gizli, bağlayıcı değil.",

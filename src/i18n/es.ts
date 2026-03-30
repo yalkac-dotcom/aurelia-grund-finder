@@ -222,7 +222,6 @@ const es: Translations = {
     experienceText: "La estrategia correcta no surge de una fórmula estándar. Se deriva del inmueble, la ubicación, el estado, la demanda, el esfuerzo necesario y el objetivo. Por eso apostamos por un análisis cuidadoso en lugar de soluciones rápidas y genéricas.",
   },
   contact: {
-  contact: {
     title: "Contacto",
     subtitle: "Estamos a su disposición",
     introText: "Descríbanos su inmueble. En un plazo de 24-48 horas recibirá una primera valoración vinculante – gratuita, discreta, sin compromiso.",
