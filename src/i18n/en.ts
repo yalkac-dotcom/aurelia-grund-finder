@@ -27,8 +27,8 @@ const en: Translations = {
   hero: {
     slogan: "Properties with substance — discreetly reviewed, clearly developed, built to last.",
     subtitle:
-      "Aurelia Grundbesitz develops properties from special situations with calm judgment, experience, and a clear eye for economically sound solutions.",
-    cta: "Get in touch",
+      "We acquire properties others overlook – from foreclosures, estates, and insolvencies. 30 years of experience. 200+ successful projects. Transparent approach.",
+    cta: "Free Initial Consultation",
     ctaSecondary: "More about Aurelia",
   },
   common: {
