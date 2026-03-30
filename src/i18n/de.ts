@@ -19,7 +19,7 @@ const de: Translations = {
     privacy: "Datenschutz",
     cookieSettings: "Cookie-Einstellungen",
     disclaimer:
-      "Hinweis: Die Inhalte dieser Website dienen ausschließlich allgemeinen Informationszwecken und stellen keine rechtliche, steuerliche oder finanzielle Beratung dar.",
+      "Diese Website informiert über Immobilien-Investments. Eine individuelle Beratung erfolgt persönlich nach Kontaktaufnahme. Nicht als Rechts- oder Steuerberatung auszulegen.",
     brandLine:
       "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen – diskret, strukturiert und mit klarem Blick für Substanz.",
     subline: "Diskret · Substanzorientiert · Langfristig",
