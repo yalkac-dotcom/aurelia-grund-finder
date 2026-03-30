@@ -96,7 +96,7 @@ const en: Translations = {
   landing: {
     heroLabel: "Aurelia Grundbesitz",
     heroSubtitle: "We review, acquire, and develop properties from special situations with calm judgment, experience, and a clear eye for economically sound solutions.",
-    heroCta: "Get in touch",
+    heroCta: "Free Initial Consultation",
     heroCtaSecondary: "More about Aurelia",
     trustLine: "Owner-managed · over 30 years of experience · structured approach",
     problemLabel: "The starting point",
