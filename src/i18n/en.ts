@@ -152,7 +152,7 @@ const en: Translations = {
     ctaLabel: "Next step",
     ctaTitle: "Talk to us about your property or your enquiry.",
     ctaText: "Personal, discreet, and without obligation. We listen, review carefully, and come back with a clear initial assessment.",
-    ctaButton: "Get in touch",
+    ctaButton: "Free Initial Consultation",
     trustStatsLabel: "Our foundation",
     trustStatsItems: [
       { value: "30+", label: "Years of experience in real estate" },
