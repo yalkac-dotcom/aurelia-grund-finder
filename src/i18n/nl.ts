@@ -117,9 +117,9 @@ const nl: Translations = {
       { title: "Betrouwbare communicatie", text: "Wij hechten waarde aan navolgbare beslissingen en een discrete, professionele werkwijze." },
     ],
     trustLabel: "Ervaring",
-    trustTitle: "Ervaring, structuur en een heldere blik op wat er werkelijk toe doet.",
+    trustTitle: "Substantiële vastgoedexpertise. Eigenaargestuurd. Met langetermijnperspectief.",
     trustPoints: [
-      { value: "30+", label: "Jaar ervaring" },
+      { value: "Substantie", label: "Vastgoedexpertise" },
       { value: "DE", label: "Focus op Duitsland" },
       { value: "Gestructureerd", label: "met langetermijnperspectief" },
     ],
