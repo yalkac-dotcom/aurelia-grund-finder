@@ -146,7 +146,7 @@ const de: Translations = {
     projectsTitle: "Standorte mit Substanz",
     projectsText: "Wir konzentrieren uns auf Standorte in Deutschland, die Substanz, Nachfrage und Entwicklungspotenzial miteinander verbinden. Entscheidend ist für uns nicht nur der erste Eindruck, sondern die langfristige Tragfähigkeit eines Standorts.",
     stats: [
-      { value: "30+", label: "Jahre Erfahrung" },
+      { value: "Substanz", label: "Immobilienkompetenz" },
       { value: "DE", label: "Fokus auf Deutschland" },
       { value: "Strukturiert", label: "statt kurzfristig gedacht" },
     ],
