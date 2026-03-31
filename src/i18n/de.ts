@@ -27,7 +27,7 @@ const de: Translations = {
   hero: {
     slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
     subtitle:
-      "Wir kaufen Objekte, die andere nicht sehen – in Zwangsversteigerungen, Nachlässen, Insolvenzen. 30 Jahre Erfahrung. Über 200 Projekte. Transparente Struktur.",
+      "Wir kaufen Objekte, die andere nicht sehen – in Zwangsversteigerungen, Nachlässen, Insolvenzen. Substanzielle Kompetenz. Inhabergeführt. Transparente Struktur.",
     cta: "Kostenloses Erstgespräch anfordern",
     ctaSecondary: "Mehr über Aurelia",
   },
@@ -78,7 +78,7 @@ const de: Translations = {
     bullets: [
       "Spezialisierung auf Immobilien aus Zwangsversteigerungen, Nachlässen und Insolvenzen.",
       "Klare Strategien für Bestand, Entwicklung und werthaltige Weiterveräußerung.",
-      "Über 30 Jahre gebündelte Erfahrung in Immobilien und Strukturierung.",
+      "Substanzielle, gebündelte Kompetenz in Immobilien und Strukturierung.",
       "Diskrete und verlässliche Begleitung vom ersten Überblick bis zur Umsetzung.",
     ],
     approachTitle: "Unser Ansatz",
@@ -119,7 +119,7 @@ const de: Translations = {
     trustLabel: "Erfahrung",
     trustTitle: "Substanzielle Immobilienkompetenz. Inhabergeführt. Mit langfristiger Perspektive.",
     trustPoints: [
-      { value: "30+", label: "Jahre Erfahrung" },
+      { value: "Substanz", label: "Immobilienkompetenz" },
       { value: "DE", label: "Fokus auf Deutschland" },
       { value: "Strukturiert", label: "mit langfristiger Perspektive" },
     ],
@@ -146,7 +146,7 @@ const de: Translations = {
     projectsTitle: "Standorte mit Substanz",
     projectsText: "Wir konzentrieren uns auf Standorte in Deutschland, die Substanz, Nachfrage und Entwicklungspotenzial miteinander verbinden. Entscheidend ist für uns nicht nur der erste Eindruck, sondern die langfristige Tragfähigkeit eines Standorts.",
     stats: [
-      { value: "30+", label: "Jahre Erfahrung" },
+      { value: "Substanz", label: "Immobilienkompetenz" },
       { value: "DE", label: "Fokus auf Deutschland" },
       { value: "Strukturiert", label: "statt kurzfristig gedacht" },
     ],
@@ -156,7 +156,7 @@ const de: Translations = {
     ctaButton: "Kostenloses Erstgespräch anfordern",
     trustStatsLabel: "Unser Fundament",
     trustStatsItems: [
-      { value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
+      { value: "Substanz", label: "Kompetenz im Immobilienmarkt" },
       { value: "Inhabergeführt", label: "Persönliche Verantwortung" },
       { value: "Deutschland", label: "Fokus auf ausgewählte Standorte" },
     ],
@@ -173,16 +173,16 @@ const de: Translations = {
   about: {
     heroTitle: "Über Aurelia",
     companyLabel: "Das Unternehmen",
-    companyTitle: "Das Team hinter Aurelia – 30+ Jahre am Markt",
-    companyP1: "Aurelia Grundbesitz kauft Immobilien aus Zwangsversteigerungen, Erbschaften und Insolvenzverfahren. Gegründet 1995, inhabergeführt, über 200 abgeschlossene Projekte. Unser Fokus: profitabel zu strukturieren, nicht zu spekulieren.",
+    companyTitle: "Das Team hinter Aurelia",
+    companyP1: "Aurelia Grundbesitz kauft Immobilien aus Zwangsversteigerungen, Erbschaften und Insolvenzverfahren. Inhabergeführt, mit substanzieller Erfahrung und langfristiger Perspektive. Unser Fokus: profitabel zu strukturieren, nicht zu spekulieren.",
     companyP2: "Wir prüfen jede Immobilie nicht nur nach Lage und Zustand, sondern auch nach den tatsächlichen Möglichkeiten in der Umsetzung. So entstehen Entscheidungen, die nachvollziehbar, realistisch und langfristig tragfähig sind.",
     philosophyLabel: "Haltung",
     philosophyTitle: "Was uns leitet",
     philosophyP1: "Jede Immobilie hat ihre eigene Geschichte, ihre eigene Ausgangslage und ihre eigenen Herausforderungen. Deshalb arbeiten wir nicht mit Standardsätzen, sondern mit genauer Prüfung und einem klaren Blick auf die jeweilige Situation.",
     philosophyP2: "Unser Anspruch ist eine Entwicklung mit Substanz: wirtschaftlich sinnvoll, sauber strukturiert und frei von unnötiger Inszenierung.",
     experienceLabel: "Team",
-    experienceTitle: "30+ Jahre Erfahrung",
-    experienceP1: "In Aurelia bündelt sich langjährige Erfahrung aus Immobilienwirtschaft, Projektstrukturierung und der Begleitung komplexer Konstellationen.",
+    experienceTitle: "Langjährige Erfahrung",
+    experienceP1: "In Aurelia bündelt sich substanzielle Kompetenz aus Immobilienwirtschaft, Projektstrukturierung und der Begleitung komplexer Konstellationen.",
     experienceP2: "Dazu kommt ein belastbares Netzwerk aus Banken, Fachberatern und spezialisierten Dienstleistern.",
     experienceP3: "So können wir Projekte nicht nur erkennen, sondern auch fundiert einordnen und verlässlich umsetzen.",
   },

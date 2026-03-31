@@ -27,7 +27,7 @@ const en: Translations = {
   hero: {
     slogan: "Properties with substance — discreetly reviewed, clearly developed, built to last.",
     subtitle:
-      "We acquire properties others overlook – from foreclosures, estates, and insolvencies. 30 years of experience. 200+ successful projects. Transparent approach.",
+      "We acquire properties others overlook – from foreclosures, estates, and insolvencies. Substantial expertise. Owner-led. Transparent approach.",
     cta: "Free Initial Consultation",
     ctaSecondary: "More about Aurelia",
   },
@@ -64,7 +64,7 @@ const en: Translations = {
     navigationOpenAria: "Open navigation",
     scrollDownAria: "Scroll down",
     scrollTopAria: "Scroll to top",
-    heroMeta: "Personal · Discreet · Clearly assessed",
+    heroMeta: "Substantial expertise · Owner-led · Long-term perspective",
     initialAssessmentNote: "No obligation · Personal response after initial review",
     cookieText: "This website uses technically necessary functions. Your consent is required for the integration of external services (e.g. map display).",
     cookieAccept: "Accept",
@@ -77,7 +77,7 @@ const en: Translations = {
     bullets: [
       "Specialising in properties from foreclosures, estates, and insolvencies.",
       "Two clear strategies: hold & let or renovate & sell.",
-      "Over 30 years of combined team experience in real estate.",
+      "Substantial combined team expertise in real estate.",
       "Discreet, structured handling from analysis to handover.",
     ],
     approachTitle: "Our Approach",
@@ -98,7 +98,7 @@ const en: Translations = {
     heroSubtitle: "We review, acquire, and develop properties from special situations with calm judgment, experience, and a clear eye for economically sound solutions.",
     heroCta: "Free Initial Consultation",
     heroCtaSecondary: "More about Aurelia",
-    trustLine: "Owner-managed · over 30 years of experience · structured approach",
+    trustLine: "Substantial expertise · Owner-led · Long-term perspective",
     problemLabel: "The starting point",
     problemTitle: "Why many attractive properties are never offered publicly.",
     problemPoints: [
@@ -116,9 +116,9 @@ const en: Translations = {
       { title: "Reliable communication", text: "We value comprehensible decisions and a discreet, professional way of working." },
     ],
     trustLabel: "Experience",
-    trustTitle: "30 years of real estate expertise. 200+ successful projects. Owner-led.",
+    trustTitle: "Substantial real estate expertise. Owner-led. With a long-term perspective.",
     trustPoints: [
-      { value: "30+", label: "Years of experience" },
+      { value: "Substance", label: "Real estate expertise" },
       { value: "DE", label: "Focus on Germany" },
       { value: "Structured", label: "with a long-term perspective" },
     ],
@@ -155,11 +155,11 @@ const en: Translations = {
     ctaButton: "Free Initial Consultation",
     trustStatsLabel: "Our foundation",
     trustStatsItems: [
-      { value: "30+", label: "Years of experience in real estate" },
+      { value: "Substance", label: "Real estate expertise" },
       { value: "Owner-managed", label: "Personal responsibility" },
       { value: "Germany", label: "Focus on selected locations" },
     ],
-    heroMetaLine: "Personal · discreet · clearly assessed",
+    heroMetaLine: "Substantial expertise · Owner-led · Long-term perspective",
     referencesLabel: "Our approach",
     referencesTitle: "How we handle projects",
     referenceProjects: [
@@ -180,8 +180,8 @@ const en: Translations = {
     philosophyP1: "Every property has its own history, starting point, and challenges. That is why we do not work with empty standard phrases, but with careful review and a clear understanding of the individual situation.",
     philosophyP2: "Our aim is development with substance: economically sound, clearly structured, and free from unnecessary staging.",
     experienceLabel: "Experience",
-    experienceTitle: "30+ years of experience",
-    experienceP1: "Aurelia brings together many years of experience in real estate, project structuring, and the management of complex situations.",
+    experienceTitle: "Extensive experience",
+    experienceP1: "Aurelia brings together substantial expertise in real estate, project structuring, and the management of complex situations.",
     experienceP2: "This is supported by a reliable network of banks, specialist advisers, and service providers.",
     experienceP3: "This allows us not only to identify projects, but also to classify them soundly and implement them reliably.",
   },
