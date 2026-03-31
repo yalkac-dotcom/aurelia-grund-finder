@@ -159,7 +159,7 @@ const en: Translations = {
       { value: "Owner-managed", label: "Personal responsibility" },
       { value: "Germany", label: "Focus on selected locations" },
     ],
-    heroMetaLine: "Personal · discreet · clearly assessed",
+    heroMetaLine: "Substantial expertise · Owner-led · Long-term perspective",
     referencesLabel: "Our approach",
     referencesTitle: "How we handle projects",
     referenceProjects: [
