@@ -159,7 +159,7 @@ const it: Translations = {
       { value: "Proprietari", label: "Responsabilità personale" },
       { value: "Germania", label: "Focus su località selezionate" },
     ],
-    heroMetaLine: "Personale · discreto · chiaramente valutato",
+    heroMetaLine: "Competenza sostanziale · Gestita dai proprietari · Prospettiva di lungo periodo",
     referencesLabel: "Il nostro approccio",
     referencesTitle: "Come gestiamo i progetti",
     referenceProjects: [
