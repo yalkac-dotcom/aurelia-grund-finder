@@ -99,7 +99,7 @@ const nl: Translations = {
     heroSubtitle: "Wij beoordelen, verwerven en ontwikkelen vastgoed uit bijzondere situaties — met rust, ervaring en een scherp oog voor economisch verantwoorde oplossingen.",
     heroCta: "Contact opnemen",
     heroCtaSecondary: "Meer over Aurelia",
-    trustLine: "Eigenaargestuurd · meer dan 30 jaar ervaring · gestructureerde werkwijze",
+    trustLine: "Substantiële expertise · Eigenaargestuurd · Langetermijnperspectief",
     problemLabel: "De uitgangssituatie",
     problemTitle: "Waarom veel interessant vastgoed nooit openbaar wordt aangeboden.",
     problemPoints: [
