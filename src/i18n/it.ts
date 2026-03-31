@@ -64,7 +64,7 @@ const it: Translations = {
     navigationOpenAria: "Apri navigazione",
     scrollDownAria: "Scorri verso il basso",
     scrollTopAria: "Torna in alto",
-    heroMeta: "Personale · Discreto · Valutato con chiarezza",
+    heroMeta: "Competenza sostanziale · Gestita dai proprietari · Prospettiva di lungo periodo",
     initialAssessmentNote: "Senza impegno · Risposta personale dopo la prima verifica",
     cookieText: "Questo sito web utilizza funzioni tecnicamente necessarie. Per l'integrazione di servizi esterni (ad es. visualizzazione mappa) è richiesto il vostro consenso.",
     cookieAccept: "Accetta",
