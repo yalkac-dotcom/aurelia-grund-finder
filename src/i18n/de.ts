@@ -117,7 +117,7 @@ const de: Translations = {
       { title: "Verlässliche Kommunikation", text: "Wir legen Wert auf nachvollziehbare Entscheidungen und einen diskreten, professionellen Umgang." },
     ],
     trustLabel: "Erfahrung",
-    trustTitle: "30 Jahre Immobilien-Expertise. 200+ erfolgreiche Projekte. Inhabergeführt.",
+    trustTitle: "Substanzielle Immobilienkompetenz. Inhabergeführt. Mit langfristiger Perspektive.",
     trustPoints: [
       { value: "30+", label: "Jahre Erfahrung" },
       { value: "DE", label: "Fokus auf Deutschland" },
