@@ -116,9 +116,9 @@ const it: Translations = {
       { title: "Comunicazione affidabile", text: "Diamo valore a decisioni comprensibili e a un modo di lavorare discreto e professionale." },
     ],
     trustLabel: "Esperienza",
-    trustTitle: "Esperienza, struttura e attenzione chiara a ciò che conta.",
+    trustTitle: "Competenza immobiliare sostanziale. Gestita dai proprietari. Con una prospettiva di lungo periodo.",
     trustPoints: [
-      { value: "30+", label: "Anni di esperienza" },
+      { value: "Sostanza", label: "Competenza immobiliare" },
       { value: "DE", label: "Focus sulla Germania" },
       { value: "Struttura", label: "con prospettiva a lungo termine" },
     ],
