@@ -98,7 +98,7 @@ const es: Translations = {
     heroSubtitle: "Analizamos, adquirimos y desarrollamos inmuebles procedentes de situaciones especiales con serenidad, experiencia y una visión clara de soluciones económicamente sensatas.",
     heroCta: "Contactar",
     heroCtaSecondary: "Más sobre Aurelia",
-    trustLine: "Gestionada por sus propietarios · más de 30 años de experiencia · enfoque estructurado",
+    trustLine: "Competencia sustancial · Dirigida por propietarios · Perspectiva a largo plazo",
     problemLabel: "Punto de partida",
     problemTitle: "Por qué muchos inmuebles interesantes nunca se ofrecen públicamente.",
     problemPoints: [
