@@ -65,7 +65,7 @@ const nl: Translations = {
     navigationOpenAria: "Navigatie openen",
     scrollDownAria: "Verder scrollen",
     scrollTopAria: "Naar boven scrollen",
-    heroMeta: "Persoonlijk · Discreet · Helder beoordeeld",
+    heroMeta: "Substantiële expertise · Eigenaargestuurd · Langetermijnperspectief",
     initialAssessmentNote: "Vrijblijvend · Persoonlijke reactie na eerste beoordeling",
     cookieText: "Deze website maakt gebruik van technisch noodzakelijke functies. Voor de integratie van externe diensten (bijv. kaartweergave) is uw toestemming vereist.",
     cookieAccept: "Accepteren",
