@@ -146,7 +146,7 @@ const nl: Translations = {
     projectsTitle: "Locaties met substantie",
     projectsText: "Wij richten ons op locaties in Duitsland die substantie, vraag en ontwikkelingspotentieel combineren. Bepalend is voor ons niet alleen de eerste indruk, maar de langetermijndraagkracht van een locatie.",
     stats: [
-      { value: "30+", label: "Jaar ervaring" },
+      { value: "Substantie", label: "Vastgoedexpertise" },
       { value: "DE", label: "Focus op Duitsland" },
       { value: "Gestructureerd", label: "In plaats van kortetermijndenken" },
     ],
