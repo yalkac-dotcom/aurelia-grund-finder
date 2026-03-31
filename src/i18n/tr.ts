@@ -64,7 +64,7 @@ const tr: Translations = {
     navigationOpenAria: "Navigasyonu aç",
     scrollDownAria: "Aşağı kaydır",
     scrollTopAria: "Yukarı kaydır",
-    heroMeta: "Kişisel · Gizli · Net şekilde değerlendirilmiş",
+    heroMeta: "Köklü yetkinlik · Sahipleri tarafından yönetilir · Uzun vadeli perspektif",
     initialAssessmentNote: "Bağlayıcılık yok · İlk inceleme sonrası kişisel geri dönüş",
     cookieText: "Bu web sitesi teknik olarak gerekli işlevler kullanmaktadır. Harici hizmetlerin (ör. harita görüntüleme) entegrasyonu için onayınız gerekmektedir.",
     cookieAccept: "Kabul et",
