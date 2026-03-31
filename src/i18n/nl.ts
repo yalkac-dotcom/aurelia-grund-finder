@@ -78,7 +78,7 @@ const nl: Translations = {
     bullets: [
       "Gespecialiseerd in vastgoed uit executieveilingen, nalatenschappen en insolventies.",
       "Heldere strategieën voor bestandsbeheer, ontwikkeling en waardevolle doorverkoop.",
-      "Meer dan 30 jaar gecombineerde ervaring in vastgoed en structurering.",
+      "Substantiële, gebundelde expertise in vastgoed en structurering.",
       "Discrete en betrouwbare begeleiding van eerste oriëntatie tot en met realisatie.",
     ],
     approachTitle: "Onze aanpak",
