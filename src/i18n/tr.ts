@@ -77,7 +77,7 @@ const tr: Translations = {
     bullets: [
       "Cebri icra, miras ve iflas yoluyla elde edilen gayrimenkullerde uzmanlaşma.",
       "İki net strateji: portföyde tutma ve kiralama veya yenileme ve satış.",
-      "Ekibin gayrimenkul alanında 30 yılı aşkın birikimli deneyimi.",
+      "Gayrimenkul alanında köklü ve kapsamlı ekip yetkinliği.",
       "Analizden teslimata kadar gizli ve yapılandırılmış süreç yönetimi.",
     ],
     approachTitle: "Yaklaşımımız",
