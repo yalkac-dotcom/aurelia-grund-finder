@@ -173,8 +173,8 @@ const de: Translations = {
   about: {
     heroTitle: "Über Aurelia",
     companyLabel: "Das Unternehmen",
-    companyTitle: "Das Team hinter Aurelia – 30+ Jahre am Markt",
-    companyP1: "Aurelia Grundbesitz kauft Immobilien aus Zwangsversteigerungen, Erbschaften und Insolvenzverfahren. Gegründet 1995, inhabergeführt, über 200 abgeschlossene Projekte. Unser Fokus: profitabel zu strukturieren, nicht zu spekulieren.",
+    companyTitle: "Das Team hinter Aurelia",
+    companyP1: "Aurelia Grundbesitz kauft Immobilien aus Zwangsversteigerungen, Erbschaften und Insolvenzverfahren. Inhabergeführt, mit substanzieller Erfahrung und langfristiger Perspektive. Unser Fokus: profitabel zu strukturieren, nicht zu spekulieren.",
     companyP2: "Wir prüfen jede Immobilie nicht nur nach Lage und Zustand, sondern auch nach den tatsächlichen Möglichkeiten in der Umsetzung. So entstehen Entscheidungen, die nachvollziehbar, realistisch und langfristig tragfähig sind.",
     philosophyLabel: "Haltung",
     philosophyTitle: "Was uns leitet",
