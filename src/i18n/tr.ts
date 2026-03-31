@@ -116,9 +116,9 @@ const tr: Translations = {
       { title: "Güvenilir iletişim", text: "Anlaşılır kararları ve gizli, profesyonel çalışma biçimini önemsiyoruz." },
     ],
     trustLabel: "Deneyim",
-    trustTitle: "Deneyim, yapı ve esas olana odaklanan net bir bakış.",
+    trustTitle: "Köklü gayrimenkul yetkinliği. Sahipleri tarafından yönetilir. Uzun vadeli perspektifle.",
     trustPoints: [
-      { value: "30+", label: "Yıllık deneyim" },
+      { value: "Köklü", label: "Gayrimenkul yetkinliği" },
       { value: "DE", label: "Almanya odağı" },
       { value: "Yapılandırılmış", label: "uzun vadeli perspektifle" },
     ],
