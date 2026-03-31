@@ -119,7 +119,7 @@ const de: Translations = {
     trustLabel: "Erfahrung",
     trustTitle: "Substanzielle Immobilienkompetenz. Inhabergeführt. Mit langfristiger Perspektive.",
     trustPoints: [
-      { value: "30+", label: "Jahre Erfahrung" },
+      { value: "Substanz", label: "Immobilienkompetenz" },
       { value: "DE", label: "Fokus auf Deutschland" },
       { value: "Strukturiert", label: "mit langfristiger Perspektive" },
     ],
