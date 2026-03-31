@@ -65,7 +65,7 @@ const de: Translations = {
     navigationOpenAria: "Navigation öffnen",
     scrollDownAria: "Weiter scrollen",
     scrollTopAria: "Nach oben scrollen",
-    heroMeta: "30 Jahre Erfahrung · Über 200 Projekte · Inhabergeführt",
+    heroMeta: "Substanzielle Immobilienkompetenz · Inhabergeführt · Langfristige Perspektive",
     initialAssessmentNote: "Keine Verpflichtung · Persönliche Rückmeldung nach erster Prüfung",
     cookieText: "Diese Website verwendet technisch notwendige Funktionen. Für die Einbindung externer Dienste (z. B. Kartenanzeige) ist Ihre Zustimmung erforderlich.",
     cookieAccept: "Akzeptieren",
@@ -99,7 +99,7 @@ const de: Translations = {
     heroSubtitle: "Wir prüfen, erwerben und entwickeln Immobilien aus besonderen Situationen mit Ruhe, Erfahrung und einem klaren Blick für wirtschaftlich sinnvolle Lösungen.",
     heroCta: "Kostenloses Erstgespräch anfordern",
     heroCtaSecondary: "Mehr über Aurelia",
-    trustLine: "30 Jahre Erfahrung · Über 200 Projekte · Inhabergeführt",
+    trustLine: "Substanzielle Immobilienkompetenz · Inhabergeführt · Langfristige Perspektive",
     problemLabel: "Die Ausgangslage",
     problemTitle: "Wo echte Immobilien-Chancen zu finden sind – und warum sie nicht alle auf dem Markt landen.",
     problemPoints: [
@@ -117,7 +117,7 @@ const de: Translations = {
       { title: "Verlässliche Kommunikation", text: "Wir legen Wert auf nachvollziehbare Entscheidungen und einen diskreten, professionellen Umgang." },
     ],
     trustLabel: "Erfahrung",
-    trustTitle: "30 Jahre Immobilien-Expertise. 200+ erfolgreiche Projekte. Inhabergeführt.",
+    trustTitle: "Substanzielle Immobilienkompetenz. Inhabergeführt. Mit langfristiger Perspektive.",
     trustPoints: [
       { value: "30+", label: "Jahre Erfahrung" },
       { value: "DE", label: "Fokus auf Deutschland" },
@@ -160,7 +160,7 @@ const de: Translations = {
       { value: "Inhabergeführt", label: "Persönliche Verantwortung" },
       { value: "Deutschland", label: "Fokus auf ausgewählte Standorte" },
     ],
-    heroMetaLine: "30 Jahre Erfahrung · Über 200 Projekte · Inhabergeführt",
+    heroMetaLine: "Substanzielle Immobilienkompetenz · Inhabergeführt · Langfristige Perspektive",
     referencesLabel: "Unsere Arbeitsweise",
     referencesTitle: "So gehen wir bei Projekten vor",
     referenceProjects: [
