@@ -27,7 +27,7 @@ const en: Translations = {
   hero: {
     slogan: "Properties with substance — discreetly reviewed, clearly developed, built to last.",
     subtitle:
-      "We acquire properties others overlook – from foreclosures, estates, and insolvencies. 30 years of experience. 200+ successful projects. Transparent approach.",
+      "We acquire properties others overlook – from foreclosures, estates, and insolvencies. Substantial expertise. Owner-led. Transparent approach.",
     cta: "Free Initial Consultation",
     ctaSecondary: "More about Aurelia",
   },
