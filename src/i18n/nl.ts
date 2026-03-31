@@ -160,7 +160,7 @@ const nl: Translations = {
       { value: "Eigenaars", label: "Persoonlijke verantwoordelijkheid" },
       { value: "Duitsland", label: "Focus op geselecteerde locaties" },
     ],
-    heroMetaLine: "Persoonlijk · discreet · helder beoordeeld",
+    heroMetaLine: "Substantiële expertise · Eigenaargestuurd · Langetermijnperspectief",
     referencesLabel: "Onze aanpak",
     referencesTitle: "Hoe wij projecten aanpakken",
     referenceProjects: [
