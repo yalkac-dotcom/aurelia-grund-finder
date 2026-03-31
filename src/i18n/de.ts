@@ -65,7 +65,7 @@ const de: Translations = {
     navigationOpenAria: "Navigation öffnen",
     scrollDownAria: "Weiter scrollen",
     scrollTopAria: "Nach oben scrollen",
-    heroMeta: "30 Jahre Erfahrung · Über 200 Projekte · Inhabergeführt",
+    heroMeta: "Substanzielle Immobilienkompetenz · Inhabergeführt · Langfristige Perspektive",
     initialAssessmentNote: "Keine Verpflichtung · Persönliche Rückmeldung nach erster Prüfung",
     cookieText: "Diese Website verwendet technisch notwendige Funktionen. Für die Einbindung externer Dienste (z. B. Kartenanzeige) ist Ihre Zustimmung erforderlich.",
     cookieAccept: "Akzeptieren",
