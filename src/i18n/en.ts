@@ -98,7 +98,7 @@ const en: Translations = {
     heroSubtitle: "We review, acquire, and develop properties from special situations with calm judgment, experience, and a clear eye for economically sound solutions.",
     heroCta: "Free Initial Consultation",
     heroCtaSecondary: "More about Aurelia",
-    trustLine: "Owner-managed · over 30 years of experience · structured approach",
+    trustLine: "Substantial expertise · Owner-led · Long-term perspective",
     problemLabel: "The starting point",
     problemTitle: "Why many attractive properties are never offered publicly.",
     problemPoints: [
