@@ -116,9 +116,9 @@ const en: Translations = {
       { title: "Reliable communication", text: "We value comprehensible decisions and a discreet, professional way of working." },
     ],
     trustLabel: "Experience",
-    trustTitle: "30 years of real estate expertise. 200+ successful projects. Owner-led.",
+    trustTitle: "Substantial real estate expertise. Owner-led. With a long-term perspective.",
     trustPoints: [
-      { value: "30+", label: "Years of experience" },
+      { value: "Substance", label: "Real estate expertise" },
       { value: "DE", label: "Focus on Germany" },
       { value: "Structured", label: "with a long-term perspective" },
     ],
