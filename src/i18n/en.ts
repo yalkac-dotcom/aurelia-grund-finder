@@ -64,7 +64,7 @@ const en: Translations = {
     navigationOpenAria: "Open navigation",
     scrollDownAria: "Scroll down",
     scrollTopAria: "Scroll to top",
-    heroMeta: "Personal · Discreet · Clearly assessed",
+    heroMeta: "Substantial expertise · Owner-led · Long-term perspective",
     initialAssessmentNote: "No obligation · Personal response after initial review",
     cookieText: "This website uses technically necessary functions. Your consent is required for the integration of external services (e.g. map display).",
     cookieAccept: "Accept",
