@@ -159,7 +159,7 @@ const tr: Translations = {
       { value: "Sahip yönetimi", label: "Kişisel sorumluluk" },
       { value: "Almanya", label: "Seçilmiş lokasyonlara odak" },
     ],
-    heroMetaLine: "Kişisel · gizli · açıkça değerlendirilmiş",
+    heroMetaLine: "Köklü yetkinlik · Sahipleri tarafından yönetilir · Uzun vadeli perspektif",
     referencesLabel: "Yaklaşımımız",
     referencesTitle: "Projeleri nasıl yönetiyoruz",
     referenceProjects: [
