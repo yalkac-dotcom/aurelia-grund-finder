@@ -155,7 +155,7 @@ const it: Translations = {
     ctaButton: "Contattaci",
     trustStatsLabel: "Il nostro fondamento",
     trustStatsItems: [
-      { value: "30+", label: "Anni di esperienza nel settore immobiliare" },
+      { value: "Sostanza", label: "Competenza nel mercato immobiliare" },
       { value: "Proprietari", label: "Responsabilità personale" },
       { value: "Germania", label: "Focus su località selezionate" },
     ],

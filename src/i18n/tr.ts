@@ -155,7 +155,7 @@ const tr: Translations = {
     ctaButton: "İletişime geçin",
     trustStatsLabel: "Temelimiz",
     trustStatsItems: [
-      { value: "30+", label: "Gayrimenkul pazarında deneyim yılı" },
+      { value: "Köklü", label: "Gayrimenkul pazarında yetkinlik" },
       { value: "Sahip yönetimi", label: "Kişisel sorumluluk" },
       { value: "Almanya", label: "Seçilmiş lokasyonlara odak" },
     ],

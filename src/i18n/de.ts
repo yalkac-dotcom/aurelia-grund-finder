@@ -156,7 +156,7 @@ const de: Translations = {
     ctaButton: "Kostenloses Erstgespräch anfordern",
     trustStatsLabel: "Unser Fundament",
     trustStatsItems: [
-      { value: "30+", label: "Jahre Erfahrung im Immobilienmarkt" },
+      { value: "Substanz", label: "Kompetenz im Immobilienmarkt" },
       { value: "Inhabergeführt", label: "Persönliche Verantwortung" },
       { value: "Deutschland", label: "Fokus auf ausgewählte Standorte" },
     ],

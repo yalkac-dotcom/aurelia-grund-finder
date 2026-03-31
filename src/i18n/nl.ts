@@ -156,7 +156,7 @@ const nl: Translations = {
     ctaButton: "Contact opnemen",
     trustStatsLabel: "Ons fundament",
     trustStatsItems: [
-      { value: "30+", label: "Jaar ervaring in de vastgoedmarkt" },
+      { value: "Substantie", label: "Expertise in de vastgoedmarkt" },
       { value: "Eigenaars", label: "Persoonlijke verantwoordelijkheid" },
       { value: "Duitsland", label: "Focus op geselecteerde locaties" },
     ],

@@ -155,7 +155,7 @@ const en: Translations = {
     ctaButton: "Free Initial Consultation",
     trustStatsLabel: "Our foundation",
     trustStatsItems: [
-      { value: "30+", label: "Years of experience in real estate" },
+      { value: "Substance", label: "Real estate expertise" },
       { value: "Owner-managed", label: "Personal responsibility" },
       { value: "Germany", label: "Focus on selected locations" },
     ],
