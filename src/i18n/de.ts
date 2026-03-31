@@ -160,7 +160,7 @@ const de: Translations = {
       { value: "Inhabergeführt", label: "Persönliche Verantwortung" },
       { value: "Deutschland", label: "Fokus auf ausgewählte Standorte" },
     ],
-    heroMetaLine: "30 Jahre Erfahrung · Über 200 Projekte · Inhabergeführt",
+    heroMetaLine: "Substanzielle Immobilienkompetenz · Inhabergeführt · Langfristige Perspektive",
     referencesLabel: "Unsere Arbeitsweise",
     referencesTitle: "So gehen wir bei Projekten vor",
     referenceProjects: [
