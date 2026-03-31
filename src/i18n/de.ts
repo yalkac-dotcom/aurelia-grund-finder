@@ -27,7 +27,7 @@ const de: Translations = {
   hero: {
     slogan: "Immobilien mit Substanz – diskret geprüft, klar entwickelt, langfristig gedacht.",
     subtitle:
-      "Wir kaufen Objekte, die andere nicht sehen – in Zwangsversteigerungen, Nachlässen, Insolvenzen. 30 Jahre Erfahrung. Über 200 Projekte. Transparente Struktur.",
+      "Wir kaufen Objekte, die andere nicht sehen – in Zwangsversteigerungen, Nachlässen, Insolvenzen. Substanzielle Kompetenz. Inhabergeführt. Transparente Struktur.",
     cta: "Kostenloses Erstgespräch anfordern",
     ctaSecondary: "Mehr über Aurelia",
   },
