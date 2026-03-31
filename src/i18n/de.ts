@@ -99,7 +99,7 @@ const de: Translations = {
     heroSubtitle: "Wir prüfen, erwerben und entwickeln Immobilien aus besonderen Situationen mit Ruhe, Erfahrung und einem klaren Blick für wirtschaftlich sinnvolle Lösungen.",
     heroCta: "Kostenloses Erstgespräch anfordern",
     heroCtaSecondary: "Mehr über Aurelia",
-    trustLine: "30 Jahre Erfahrung · Über 200 Projekte · Inhabergeführt",
+    trustLine: "Substanzielle Immobilienkompetenz · Inhabergeführt · Langfristige Perspektive",
     problemLabel: "Die Ausgangslage",
     problemTitle: "Wo echte Immobilien-Chancen zu finden sind – und warum sie nicht alle auf dem Markt landen.",
     problemPoints: [
