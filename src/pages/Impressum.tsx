@@ -5,7 +5,7 @@ import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Impressum = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const imp = t.impressum;
 
   return (
@@ -27,6 +27,7 @@ const Impressum = () => {
       <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
           <div className="divide-y divide-border/60">
+            {/* Company info */}
             <Reveal>
               <div className="pb-5">
                 <h2 className="text-[0.9rem] font-heading font-semibold text-foreground mb-1.5">{imp.tmbTitle}</h2>
@@ -55,18 +56,41 @@ const Impressum = () => {
                 <p className="text-muted-foreground text-sm leading-[1.75] whitespace-pre-line">{imp.registerText}</p>
               </div>
             </Reveal>
+
+            {/* Additional Legal Information */}
             <Reveal delay={0.2}>
               <div className="py-5">
-                <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.disclaimerTitle}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.75]">{imp.disclaimerText}</p>
+                <h2 className="text-[0.9rem] font-heading font-semibold text-foreground mb-4">{imp.additionalLegalTitle}</h2>
+
+                <div className="space-y-5">
+                  <div>
+                    <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.disputeTitle}</h3>
+                    <p className="text-muted-foreground text-sm leading-[1.75]">{imp.disputeText}</p>
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.liabilityContentTitle}</h3>
+                    <p className="text-muted-foreground text-sm leading-[1.75]">{imp.liabilityContentText}</p>
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.liabilityLinksTitle}</h3>
+                    <p className="text-muted-foreground text-sm leading-[1.75]">{imp.liabilityLinksText}</p>
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.copyrightTitle}</h3>
+                    <p className="text-muted-foreground text-sm leading-[1.75]">{imp.copyrightText}</p>
+                  </div>
+                </div>
               </div>
             </Reveal>
-            <Reveal delay={0.25}>
-              <div className="pt-5">
-                <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.copyrightTitle}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.75]">{imp.copyrightText}</p>
-              </div>
-            </Reveal>
+
+            {/* Binding language note for non-DE languages */}
+            {language !== "de" && imp.bindingLanguageNote && (
+              <Reveal delay={0.25}>
+                <div className="pt-5">
+                  <p className="text-muted-foreground text-sm leading-[1.75] italic">{imp.bindingLanguageNote}</p>
+                </div>
+              </Reveal>
+            )}
           </div>
         </div>
       </section>

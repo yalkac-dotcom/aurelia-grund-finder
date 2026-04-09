@@ -281,10 +281,16 @@ export interface Translations {
     contactText: string;
     registerTitle: string;
     registerText: string;
-    disclaimerTitle: string;
-    disclaimerText: string;
+    additionalLegalTitle: string;
+    disputeTitle: string;
+    disputeText: string;
+    liabilityContentTitle: string;
+    liabilityContentText: string;
+    liabilityLinksTitle: string;
+    liabilityLinksText: string;
     copyrightTitle: string;
     copyrightText: string;
+    bindingLanguageNote?: string;
   };
   investors: {
     seoTitle: string;
