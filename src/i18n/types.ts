@@ -198,6 +198,10 @@ export interface Translations {
     moduleNote: string;
     callbackSubject: string;
     appointmentSubject: string;
+    faqLabel: string;
+    faqTitle: string;
+    faqSubtitle: string;
+    faqItems: { q: string; a: string }[];
   };
   tax: {
     heroTitle: string;
