@@ -252,7 +252,7 @@ const de: Translations = {
     moduleHeading: "Kontakt",
     moduleIntro: "Wir freuen uns auf Ihre Nachricht.",
     moduleIntro2: "Ob erste Anfrage, konkretes Anliegen oder Terminwunsch – kontaktieren Sie uns gerne auf dem für Sie passenden Weg.",
-    moduleCta1: "Anfrage senden",
+    moduleGoToForm: "Zum Formular",
     moduleCta2: "Rückruf anfragen",
     moduleCta3: "Termin vereinbaren",
     moduleNote: "Da wir uns regelmäßig in Terminen und Projekten vor Ort befinden, bitten wir um eine kurze Kontaktaufnahme per E-Mail. Gerne vereinbaren wir im Anschluss einen passenden Termin.",

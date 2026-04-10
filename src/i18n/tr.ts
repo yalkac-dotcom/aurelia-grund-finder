@@ -251,7 +251,7 @@ const tr: Translations = {
     moduleHeading: "İletişim",
     moduleIntro: "Mesajınızı bekliyoruz.",
     moduleIntro2: "İlk bir talep, somut bir konu veya randevu isteği – size en uygun yoldan bizimle iletişime geçebilirsiniz.",
-    moduleCta1: "Talep gönder",
+    moduleGoToForm: "Forma git",
     moduleCta2: "Geri arama talep et",
     moduleCta3: "Randevu al",
     moduleNote: "Sıklıkla randevularda ve projelerde sahada bulunduğumuz için, lütfen önce e-posta yoluyla iletişime geçmenizi rica ederiz. Ardından uygun bir randevu ayarlamaktan memnuniyet duyarız.",

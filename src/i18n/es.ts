@@ -251,7 +251,7 @@ const es: Translations = {
     moduleHeading: "Contacto",
     moduleIntro: "Esperamos su mensaje con interés.",
     moduleIntro2: "Ya se trate de una primera consulta, un asunto concreto o una solicitud de cita – no dude en contactarnos por la vía que le resulte más conveniente.",
-    moduleCta1: "Enviar consulta",
+    moduleGoToForm: "Ir al formulario",
     moduleCta2: "Solicitar llamada",
     moduleCta3: "Concertar cita",
     moduleNote: "Dado que nos encontramos frecuentemente en citas y proyectos sobre el terreno, le rogamos que se ponga en contacto con nosotros por correo electrónico. Con mucho gusto concertaremos una cita adecuada.",

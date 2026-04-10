@@ -252,7 +252,7 @@ const nl: Translations = {
     moduleHeading: "Contact",
     moduleIntro: "Wij kijken uit naar uw bericht.",
     moduleIntro2: "Of het nu gaat om een eerste vraag, een concreet verzoek of een afspraak – neem gerust contact met ons op via de weg die u het beste past.",
-    moduleCta1: "Aanvraag versturen",
+    moduleGoToForm: "Naar het formulier",
     moduleCta2: "Terugbelverzoek",
     moduleCta3: "Afspraak maken",
     moduleNote: "Omdat wij regelmatig bij afspraken en projecten ter plaatse zijn, verzoeken wij u om ons per e-mail te benaderen. Graag maken wij vervolgens een passende afspraak.",

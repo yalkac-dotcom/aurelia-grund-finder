@@ -251,7 +251,7 @@ const it: Translations = {
     moduleHeading: "Contatti",
     moduleIntro: "Saremo lieti di ricevere il vostro messaggio.",
     moduleIntro2: "Che si tratti di una prima richiesta, di un'esigenza specifica o di un appuntamento – contattateci nel modo che preferite.",
-    moduleCta1: "Invia richiesta",
+    moduleGoToForm: "Vai al modulo",
     moduleCta2: "Richiedi richiamata",
     moduleCta3: "Fissare un appuntamento",
     moduleNote: "Poiché ci troviamo regolarmente in appuntamenti e progetti sul posto, vi preghiamo di contattarci via e-mail. Saremo lieti di concordare un appuntamento adeguato.",
