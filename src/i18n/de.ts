@@ -72,6 +72,9 @@ const de: Translations = {
     cookieReject: "Ablehnen",
     mapConsentText: "Für die Anzeige der Karte wird Google Maps eingebunden. Mit dem Laden stimmen Sie der Datenschutzerklärung von Google zu.",
     mapConsentBtn: "Karte laden",
+    cookieTitle: "Cookie-Einstellungen",
+    submitting: "Wird gesendet …",
+    formError: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
   },
   index: {
     bulletTitle: "Warum Aurelia Grundbesitz",
@@ -253,6 +256,8 @@ const de: Translations = {
     moduleCta2: "Rückruf anfragen",
     moduleCta3: "Termin vereinbaren",
     moduleNote: "Da wir uns regelmäßig in Terminen und Projekten vor Ort befinden, bitten wir um eine kurze Kontaktaufnahme per E-Mail. Gerne vereinbaren wir im Anschluss einen passenden Termin.",
+    callbackSubject: "Rückrufwunsch",
+    appointmentSubject: "Terminanfrage",
   },
   tax: {
     heroTitle: "Steuervorteile und Fördermöglichkeiten",

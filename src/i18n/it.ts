@@ -71,6 +71,9 @@ const it: Translations = {
     cookieReject: "Rifiuta",
     mapConsentText: "Per la visualizzazione della mappa viene utilizzato Google Maps. Caricandola, acconsentite all'informativa sulla privacy di Google.",
     mapConsentBtn: "Carica mappa",
+    cookieTitle: "Impostazioni cookie",
+    submitting: "Invio in corso …",
+    formError: "Si è verificato un errore. Riprovare.",
   },
   index: {
     bulletTitle: "Perché Aurelia Grundbesitz",
@@ -252,6 +255,8 @@ const it: Translations = {
     moduleCta2: "Richiedi richiamata",
     moduleCta3: "Fissare un appuntamento",
     moduleNote: "Poiché ci troviamo regolarmente in appuntamenti e progetti sul posto, vi preghiamo di contattarci via e-mail. Saremo lieti di concordare un appuntamento adeguato.",
+    callbackSubject: "Richiesta di richiamata",
+    appointmentSubject: "Richiesta di appuntamento",
   },
   tax: {
     heroTitle: "Agevolazioni fiscali e sovvenzioni",
