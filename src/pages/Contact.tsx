@@ -117,7 +117,7 @@ const Contact = () => {
       </section>
 
       {/* Form – 5 fields only */}
-      <section className="py-10 md:py-14 bg-secondary/50">
+      <section id="kontaktformular" className="py-10 md:py-14 bg-secondary/50">
         <div className="container max-w-2xl">
           <Reveal>
             <div className="section-shell-accent">
