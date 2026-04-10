@@ -6,6 +6,7 @@ import { heroSets } from "@/assets/heroImages";
 import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";
+import PremiumContactModule from "@/components/contact/PremiumContactModule";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -67,16 +68,9 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="py-8 md:py-10">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">
-              {t.contact.introText}
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      {/* Premium Contact Module */}
+      <PremiumContactModule />
+
 
       {/* Contact Info */}
       <section className="border-t border-border/60">
@@ -123,7 +117,7 @@ const Contact = () => {
       </section>
 
       {/* Form – 5 fields only */}
-      <section className="py-10 md:py-14 bg-secondary/50">
+      <section id="kontaktformular" className="py-10 md:py-14 bg-secondary/50">
         <div className="container max-w-2xl">
           <Reveal>
             <div className="section-shell-accent">

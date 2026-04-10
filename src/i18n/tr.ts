@@ -245,6 +245,13 @@ const tr: Translations = {
     formTitle: "Bize yazın",
     phonePending: "",
     privacyNote: "Verileriniz gizli tutulur · 24-48 saat içinde yanıt",
+    moduleHeading: "İletişim",
+    moduleIntro: "Mesajınızı bekliyoruz.",
+    moduleIntro2: "İlk bir talep, somut bir konu veya randevu isteği – size en uygun yoldan bizimle iletişime geçebilirsiniz.",
+    moduleCta1: "Talep gönder",
+    moduleCta2: "Geri arama talep et",
+    moduleCta3: "Randevu al",
+    moduleNote: "Sıklıkla randevularda ve projelerde sahada bulunduğumuz için, lütfen önce e-posta yoluyla iletişime geçmenizi rica ederiz. Ardından uygun bir randevu ayarlamaktan memnuniyet duyarız.",
   },
   tax: {
     heroTitle: "Vergi avantajları ve teşvikler",
