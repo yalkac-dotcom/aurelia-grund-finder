@@ -11,9 +11,9 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { supabase } from "@/integrations/supabase/client";
 
 const inputClasses =
-  "w-full border border-border/60 bg-background px-3.5 py-2 text-base text-foreground transition-colors focus:outline-none focus:border-accent/60 placeholder:text-muted-foreground/40";
+  "w-full border border-border bg-background px-3.5 py-2.5 text-base text-foreground transition-colors focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary placeholder:text-muted-foreground/60";
 
-const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-muted-foreground mb-1";
+const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-foreground/70 mb-1.5 font-medium";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
