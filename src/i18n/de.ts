@@ -121,10 +121,10 @@ const de: Translations = {
     ],
     trustLabel: "Erfahrung",
     trustTitle: "Substanzielle Immobilienkompetenz. Inhabergeführt. Mit langfristiger Perspektive.",
-    trustPoints: [
-      { value: "Substanz", label: "Immobilienkompetenz" },
-      { value: "DE", label: "Fokus auf Deutschland" },
-      { value: "Strukturiert", label: "mit langfristiger Perspektive" },
+    trustPillars: [
+      { title: "Inhabergeführt", text: "Direkte Entscheidungswege ohne Umwege." },
+      { title: "Substanzorientiert", text: "Prüfung vor Spekulation – wirtschaftliche Tragfähigkeit steht im Vordergrund." },
+      { title: "Langfristig", text: "Nachhaltige Strukturen statt kurzfristiger Renditeoptimierung." },
     ],
     aboutLabel: "Über Aurelia",
     aboutTitle: "Erfahrung, Marktkenntnis und langfristiges Denken.",
@@ -172,6 +172,15 @@ const de: Translations = {
     refBeforeLabel: "Ausgangslage",
     refAfterLabel: "Maßnahme",
     refResultLabel: "Ergebnis",
+    processLabel: "So arbeiten wir",
+    processTitle: "Von der ersten Anfrage bis zur erfolgreichen Umsetzung",
+    processSubtitle: "Transparent und strukturiert – in vier klaren Schritten.",
+    processSteps: [
+      { num: "01", title: "Erstgespräch", text: "Sie schildern uns Ihre Situation – kostenlos, unverbindlich und diskret." },
+      { num: "02", title: "Prüfung", text: "Wir analysieren das Objekt und die wirtschaftliche Tragfähigkeit." },
+      { num: "03", title: "Angebot", text: "Sie erhalten eine fundierte Einschätzung und einen konkreten Vorschlag." },
+      { num: "04", title: "Umsetzung", text: "Gemeinsam bringen wir das Projekt strukturiert zum Abschluss." },
+    ],
   },
   about: {
     heroTitle: "Über Aurelia",
@@ -258,6 +267,16 @@ const de: Translations = {
     moduleNote: "Da wir uns regelmäßig in Terminen und Projekten vor Ort befinden, bitten wir um eine kurze Kontaktaufnahme per E-Mail. Gerne vereinbaren wir im Anschluss einen passenden Termin.",
     callbackSubject: "Rückrufwunsch",
     appointmentSubject: "Terminanfrage",
+    faqLabel: "Häufige Fragen",
+    faqTitle: "Häufige Fragen",
+    faqSubtitle: "Antworten auf die wichtigsten Fragen vor der ersten Kontaktaufnahme.",
+    faqItems: [
+      { q: "Ist die Ersteinschätzung wirklich kostenlos?", a: "Ja. Wir prüfen Ihre Anfrage ohne Berechnung und melden uns innerhalb von 48 Stunden persönlich bei Ihnen." },
+      { q: "Welche Objekte prüfen Sie?", a: "Wir bearbeiten Immobilien in Sondersituationen – darunter Erbschaftsobjekte, Scheidungsimmobilien, sanierungsbedürftige Bestände und Leerstandsobjekte." },
+      { q: "Wie läuft das Erstgespräch ab?", a: "Per Telefon oder Videocall – auf Wunsch auch persönlich in Düsseldorf. Dauer: ca. 20–30 Minuten." },
+      { q: "Arbeiten Sie bundesweit?", a: "Schwerpunkt ist Deutschland, mit besonderem Fokus auf die Metropolregionen." },
+      { q: "Wie diskret wird meine Anfrage behandelt?", a: "Alle Informationen werden streng vertraulich behandelt. Wir geben keine Daten weiter." },
+    ],
   },
   tax: {
     heroTitle: "Steuervorteile und Fördermöglichkeiten",

@@ -120,10 +120,10 @@ const en: Translations = {
     ],
     trustLabel: "Experience",
     trustTitle: "Substantial real estate expertise. Owner-led. With a long-term perspective.",
-    trustPoints: [
-      { value: "Substance", label: "Real estate expertise" },
-      { value: "DE", label: "Focus on Germany" },
-      { value: "Structured", label: "with a long-term perspective" },
+    trustPillars: [
+      { title: "Owner-led", text: "Direct decision-making without detours." },
+      { title: "Substance-focused", text: "Review before speculation — economic viability comes first." },
+      { title: "Long-term", text: "Sustainable structures instead of short-term yield optimisation." },
     ],
     aboutLabel: "About Aurelia",
     aboutTitle: "Experience, market understanding, and long-term thinking.",
@@ -171,6 +171,15 @@ const en: Translations = {
     refBeforeLabel: "Starting point",
     refAfterLabel: "Approach",
     refResultLabel: "Outcome",
+    processLabel: "How we work",
+    processTitle: "From the first enquiry to successful completion",
+    processSubtitle: "Transparent and structured — in four clear steps.",
+    processSteps: [
+      { num: "01", title: "Initial consultation", text: "Tell us about your situation — free of charge, no obligation, and in confidence." },
+      { num: "02", title: "Review", text: "We analyse the property and its economic viability." },
+      { num: "03", title: "Proposal", text: "You receive a well-founded assessment and a concrete proposal." },
+      { num: "04", title: "Implementation", text: "Together we bring the project to a structured conclusion." },
+    ],
   },
   about: {
     heroTitle: "About Aurelia",
@@ -257,6 +266,16 @@ const en: Translations = {
     moduleNote: "As we are frequently on-site for appointments and projects, we kindly ask you to contact us by email first. We will then be happy to arrange a suitable appointment.",
     callbackSubject: "Callback request",
     appointmentSubject: "Appointment request",
+    faqLabel: "FAQ",
+    faqTitle: "Frequently Asked Questions",
+    faqSubtitle: "Answers to the most important questions before your first contact.",
+    faqItems: [
+      { q: "Is the initial assessment really free?", a: "Yes. We review your enquiry at no cost and will get back to you personally within 48 hours." },
+      { q: "What types of properties do you handle?", a: "We work with properties in special situations — including inherited properties, divorce assets, buildings in need of renovation, and vacant properties." },
+      { q: "How does the initial consultation work?", a: "By phone or video call — or in person in Düsseldorf if preferred. Duration: approx. 20–30 minutes." },
+      { q: "Do you operate nationwide?", a: "Our focus is Germany, with particular emphasis on metropolitan regions." },
+      { q: "How confidentially is my enquiry treated?", a: "All information is treated in strict confidence. We do not share any data." },
+    ],
   },
   tax: {
     heroTitle: "Tax Benefits & Subsidies",
