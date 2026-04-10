@@ -72,6 +72,9 @@ const nl: Translations = {
     cookieReject: "Weigeren",
     mapConsentText: "Voor de weergave van de kaart wordt Google Maps gebruikt. Door te laden stemt u in met het privacybeleid van Google.",
     mapConsentBtn: "Kaart laden",
+    cookieTitle: "Cookie-instellingen",
+    submitting: "Wordt verzonden …",
+    formError: "Er is een fout opgetreden. Probeer het opnieuw.",
   },
   index: {
     bulletTitle: "Waarom Aurelia Grundbesitz",
@@ -253,6 +256,8 @@ const nl: Translations = {
     moduleCta2: "Terugbelverzoek",
     moduleCta3: "Afspraak maken",
     moduleNote: "Omdat wij regelmatig bij afspraken en projecten ter plaatse zijn, verzoeken wij u om ons per e-mail te benaderen. Graag maken wij vervolgens een passende afspraak.",
+    callbackSubject: "Terugbelverzoek",
+    appointmentSubject: "Afspraakverzoek",
   },
   tax: {
     heroTitle: "Belastingvoordelen en subsidiemogelijkheden",

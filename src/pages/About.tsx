@@ -17,7 +17,7 @@ const About = () => {
       <section className="relative h-[36vh] min-h-[260px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={t.about.heroTitle} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/70 via-[#0B1929]/25 to-transparent" />
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>

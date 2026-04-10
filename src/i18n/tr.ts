@@ -71,6 +71,9 @@ const tr: Translations = {
     cookieReject: "Reddet",
     mapConsentText: "Haritanın görüntülenmesi için Google Maps kullanılmaktadır. Yükleyerek Google'ın gizlilik politikasını kabul etmiş olursunuz.",
     mapConsentBtn: "Haritayı yükle",
+    cookieTitle: "Çerez Ayarları",
+    submitting: "Gönderiliyor …",
+    formError: "Bir hata oluştu. Lütfen tekrar deneyiniz.",
   },
   index: {
     bulletTitle: "Neden Aurelia Grundbesitz",
@@ -252,6 +255,8 @@ const tr: Translations = {
     moduleCta2: "Geri arama talep et",
     moduleCta3: "Randevu al",
     moduleNote: "Sıklıkla randevularda ve projelerde sahada bulunduğumuz için, lütfen önce e-posta yoluyla iletişime geçmenizi rica ederiz. Ardından uygun bir randevu ayarlamaktan memnuniyet duyarız.",
+    callbackSubject: "Geri arama talebi",
+    appointmentSubject: "Randevu talebi",
   },
   tax: {
     heroTitle: "Vergi avantajları ve teşvikler",

@@ -68,6 +68,9 @@ export interface Translations {
     cookieReject: string;
     mapConsentText: string;
     mapConsentBtn: string;
+    cookieTitle: string;
+    submitting: string;
+    formError: string;
   };
   index: {
     bulletTitle: string;
@@ -189,6 +192,8 @@ export interface Translations {
     moduleCta2: string;
     moduleCta3: string;
     moduleNote: string;
+    callbackSubject: string;
+    appointmentSubject: string;
   };
   tax: {
     heroTitle: string;

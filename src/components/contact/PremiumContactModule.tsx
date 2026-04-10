@@ -14,12 +14,12 @@ const PremiumContactModule = () => {
     {
       icon: PhoneCall,
       label: t.contact.moduleCta2,
-      href: "mailto:info@aurelia-grundbesitz.de?subject=Rückrufwunsch",
+      href: `mailto:info@aurelia-grundbesitz.de?subject=${encodeURIComponent(t.contact.callbackSubject)}`,
     },
     {
       icon: CalendarDays,
       label: t.contact.moduleCta3,
-      href: "mailto:info@aurelia-grundbesitz.de?subject=Terminanfrage",
+      href: `mailto:info@aurelia-grundbesitz.de?subject=${encodeURIComponent(t.contact.appointmentSubject)}`,
     },
   ];
 
