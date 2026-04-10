@@ -182,6 +182,13 @@ export interface Translations {
     formTitle: string;
     phonePending: string;
     privacyNote: string;
+    moduleHeading: string;
+    moduleIntro: string;
+    moduleIntro2: string;
+    moduleCta1: string;
+    moduleCta2: string;
+    moduleCta3: string;
+    moduleNote: string;
   };
   tax: {
     heroTitle: string;
