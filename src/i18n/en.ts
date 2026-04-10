@@ -251,7 +251,7 @@ const en: Translations = {
     moduleHeading: "Contact",
     moduleIntro: "We look forward to hearing from you.",
     moduleIntro2: "Whether an initial enquiry, a specific matter or a meeting request – please feel free to reach out in the way that suits you best.",
-    moduleCta1: "Send enquiry",
+    moduleGoToForm: "Go to form",
     moduleCta2: "Request a callback",
     moduleCta3: "Schedule a meeting",
     moduleNote: "As we are frequently on-site for appointments and projects, we kindly ask you to contact us by email first. We will then be happy to arrange a suitable appointment.",
