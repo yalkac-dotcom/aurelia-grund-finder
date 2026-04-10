@@ -73,29 +73,29 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── 4. TRUST / Zahlen ── */}
+      {/* ── 4. TRUST / Qualitative Pillars ── */}
       <section className="relative py-10 md:py-14">
         <div className="absolute inset-0">
           <OptimizedImg src={trustImg} alt={t.landing.trustTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-[#0B1929]/70" />
+          <div className="absolute inset-0 bg-[hsl(var(--primary)/0.75)]" />
         </div>
         <div className="relative container max-w-4xl text-center">
           <Reveal>
-            <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+            <p className="text-[hsl(var(--gold))] font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
               {t.landing.trustLabel}
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-white/90 leading-[1.2] mb-5 text-balance">
+            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-primary-foreground/90 leading-[1.2] mb-6 text-balance">
               {t.landing.trustTitle}
             </h2>
           </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-6 max-w-lg mx-auto">
-            {t.landing.trustPoints.map((stat, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto">
+            {t.landing.trustPillars.map((pillar, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className="text-center">
-                  <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-[hsl(45,88%,52%)] leading-none mb-1.5">{stat.value}</p>
-                  <p className="text-white/70 text-xs tracking-[0.1em] uppercase leading-snug">{stat.label}</p>
+                  <h3 className="text-[0.95rem] md:text-base font-heading font-semibold text-[hsl(var(--gold))] mb-1.5">{pillar.title}</h3>
+                  <p className="text-primary-foreground/70 text-xs leading-[1.7]">{pillar.text}</p>
                 </div>
               </Reveal>
             ))}
@@ -186,6 +186,42 @@ const Index = () => {
                     <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">{t.landing.refResultLabel}</p>
                     <p className="text-sm text-foreground leading-[1.6]">{project.result}</p>
                   </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* ── 7.5 PROZESS ── */}
+      <section className="py-10 md:py-14 border-t border-border/60">
+        <div className="container max-w-4xl">
+          <Reveal>
+            <div className="section-shell-accent">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+                {t.landing.processLabel}
+              </p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                {t.landing.processTitle}
+              </h2>
+            </div>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="text-muted-foreground text-sm leading-[1.7] mt-3 max-w-xl">
+              {t.landing.processSubtitle}
+            </p>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+            {t.landing.processSteps.map((step, i) => (
+              <Reveal key={i} delay={i * 0.1}>
+                <div className="relative">
+                  <p className="text-[1.5rem] font-heading font-semibold text-[hsl(var(--gold))] mb-1.5">{step.num}</p>
+                  {i < t.landing.processSteps.length - 1 && (
+                    <div className="hidden md:block absolute top-4 left-full w-full h-px bg-border/40 -translate-x-4" />
+                  )}
+                  <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{step.title}</h3>
+                  <p className="text-muted-foreground text-xs leading-[1.7]">{step.text}</p>
                 </div>
               </Reveal>
             ))}
