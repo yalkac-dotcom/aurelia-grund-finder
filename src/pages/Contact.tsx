@@ -42,7 +42,7 @@ const Contact = () => {
 
     if (dbError) {
       console.error("Contact form error:", dbError);
-      setError("Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.");
+      setError(t.common.formError);
       return;
     }
 
@@ -55,7 +55,7 @@ const Contact = () => {
       <section className="relative h-[36vh] min-h-[260px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt={t.contact.title} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0F1113]/70 via-[#0F1113]/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/70 via-[#0B1929]/25 to-transparent" />
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>
@@ -202,7 +202,7 @@ const Contact = () => {
                     {submitting ? (
                       <>
                         <Loader2 size={11} className="animate-spin" />
-                        {"Wird gesendet..."}
+                        {t.common.submitting}
                       </>
                     ) : (
                       <>

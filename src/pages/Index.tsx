@@ -77,7 +77,7 @@ const Index = () => {
       <section className="relative py-10 md:py-14">
         <div className="absolute inset-0">
           <OptimizedImg src={trustImg} alt={t.landing.trustTitle} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-[#0F1113]/65" />
+          <div className="absolute inset-0 bg-[#0B1929]/70" />
         </div>
         <div className="relative container max-w-4xl text-center">
           <Reveal>
@@ -86,7 +86,7 @@ const Index = () => {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-[#E5E5E5] leading-[1.2] mb-5 text-balance">
+            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-white/90 leading-[1.2] mb-5 text-balance">
               {t.landing.trustTitle}
             </h2>
           </Reveal>
@@ -95,7 +95,7 @@ const Index = () => {
               <Reveal key={i} delay={i * 0.1}>
                 <div className="text-center">
                   <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-accent leading-none mb-1.5">{stat.value}</p>
-                  <p className="text-[#B0B0B0] text-xs tracking-[0.1em] uppercase leading-snug">{stat.label}</p>
+                  <p className="text-white/70 text-xs tracking-[0.1em] uppercase leading-snug">{stat.label}</p>
                 </div>
               </Reveal>
             ))}
