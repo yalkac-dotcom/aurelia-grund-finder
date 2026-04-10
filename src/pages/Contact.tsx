@@ -6,6 +6,7 @@ import { heroSets } from "@/assets/heroImages";
 import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2 } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";
+import PremiumContactModule from "@/components/contact/PremiumContactModule";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { supabase } from "@/integrations/supabase/client";
 
