@@ -94,7 +94,7 @@ const Index = () => {
             {t.landing.trustPoints.map((stat, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className="text-center">
-                  <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-accent leading-none mb-1.5">{stat.value}</p>
+                  <p className="text-[1.5rem] md:text-[1.85rem] font-heading font-semibold text-[hsl(45,88%,52%)] leading-none mb-1.5">{stat.value}</p>
                   <p className="text-white/70 text-xs tracking-[0.1em] uppercase leading-snug">{stat.label}</p>
                 </div>
               </Reveal>
