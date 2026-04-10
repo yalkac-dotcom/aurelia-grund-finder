@@ -188,7 +188,7 @@ export interface Translations {
     moduleHeading: string;
     moduleIntro: string;
     moduleIntro2: string;
-    moduleCta1: string;
+    moduleGoToForm: string;
     moduleCta2: string;
     moduleCta3: string;
     moduleNote: string;
