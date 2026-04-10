@@ -120,10 +120,10 @@ const es: Translations = {
     ],
     trustLabel: "Experiencia",
     trustTitle: "Competencia inmobiliaria sustancial. Dirigida por sus propietarios. Con perspectiva a largo plazo.",
-    trustPoints: [
-      { value: "Sustancia", label: "Competencia inmobiliaria" },
-      { value: "DE", label: "Foco en Alemania" },
-      { value: "Estructura", label: "con perspectiva a largo plazo" },
+    trustPillars: [
+      { title: "Dirigida por propietarios", text: "Vías de decisión directas, sin rodeos." },
+      { title: "Orientada a la sustancia", text: "Análisis antes de especulación – la viabilidad económica es lo primero." },
+      { title: "A largo plazo", text: "Estructuras sostenibles en lugar de optimización de rendimiento a corto plazo." },
     ],
     aboutLabel: "Sobre Aurelia",
     aboutTitle: "Experiencia, conocimiento del mercado y visión a largo plazo.",
@@ -171,6 +171,15 @@ const es: Translations = {
     refBeforeLabel: "Situación inicial",
     refAfterLabel: "Enfoque",
     refResultLabel: "Resultado",
+    processLabel: "Cómo trabajamos",
+    processTitle: "Desde la primera consulta hasta la ejecución exitosa",
+    processSubtitle: "Transparente y estructurado – en cuatro pasos claros.",
+    processSteps: [
+      { num: "01", title: "Primera consulta", text: "Descríbanos su situación – gratis, sin compromiso y con discreción." },
+      { num: "02", title: "Análisis", text: "Analizamos el inmueble y su viabilidad económica." },
+      { num: "03", title: "Propuesta", text: "Recibe una valoración fundamentada y una propuesta concreta." },
+      { num: "04", title: "Ejecución", text: "Juntos llevamos el proyecto a una conclusión estructurada." },
+    ],
   },
   about: {
     heroTitle: "Sobre Aurelia",
@@ -257,6 +266,16 @@ const es: Translations = {
     moduleNote: "Dado que nos encontramos frecuentemente en citas y proyectos sobre el terreno, le rogamos que se ponga en contacto con nosotros por correo electrónico. Con mucho gusto concertaremos una cita adecuada.",
     callbackSubject: "Solicitud de llamada",
     appointmentSubject: "Solicitud de cita",
+    faqLabel: "Preguntas frecuentes",
+    faqTitle: "Preguntas frecuentes",
+    faqSubtitle: "Respuestas a las preguntas más importantes antes de su primer contacto.",
+    faqItems: [
+      { q: "¿Es realmente gratuita la primera valoración?", a: "Sí. Revisamos su consulta sin coste alguno y nos pondremos en contacto personalmente en un plazo de 48 horas." },
+      { q: "¿Qué tipo de inmuebles gestionan?", a: "Trabajamos con inmuebles en situaciones especiales: herencias, divorcios, edificios que necesitan renovación y propiedades vacías." },
+      { q: "¿Cómo funciona la primera consulta?", a: "Por teléfono o videollamada, o presencialmente en Düsseldorf si lo prefiere. Duración: aprox. 20–30 minutos." },
+      { q: "¿Operan a nivel nacional?", a: "Nuestro foco es Alemania, con especial énfasis en las regiones metropolitanas." },
+      { q: "¿Con qué discreción se trata mi consulta?", a: "Toda la información se trata con estricta confidencialidad. No compartimos ningún dato." },
+    ],
   },
   tax: {
     heroTitle: "Ventajas fiscales y subvenciones",

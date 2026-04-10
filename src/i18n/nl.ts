@@ -121,10 +121,10 @@ const nl: Translations = {
     ],
     trustLabel: "Ervaring",
     trustTitle: "Substantiële vastgoedexpertise. Eigenaargestuurd. Met langetermijnperspectief.",
-    trustPoints: [
-      { value: "Substantie", label: "Vastgoedexpertise" },
-      { value: "DE", label: "Focus op Duitsland" },
-      { value: "Gestructureerd", label: "met langetermijnperspectief" },
+    trustPillars: [
+      { title: "Eigenaargestuurd", text: "Directe besluitvorming zonder omwegen." },
+      { title: "Substantiegericht", text: "Beoordeling vóór speculatie – economische draagkracht staat voorop." },
+      { title: "Langetermijn", text: "Duurzame structuren in plaats van kortetermijnrendementsoptimalisatie." },
     ],
     aboutLabel: "Over Aurelia",
     aboutTitle: "Ervaring, marktkennis en langetermijnvisie.",
@@ -172,6 +172,15 @@ const nl: Translations = {
     refBeforeLabel: "Uitgangssituatie",
     refAfterLabel: "Aanpak",
     refResultLabel: "Resultaat",
+    processLabel: "Hoe wij werken",
+    processTitle: "Van de eerste aanvraag tot de succesvolle uitvoering",
+    processSubtitle: "Transparant en gestructureerd – in vier duidelijke stappen.",
+    processSteps: [
+      { num: "01", title: "Eerste gesprek", text: "Vertel ons over uw situatie – gratis, vrijblijvend en discreet." },
+      { num: "02", title: "Beoordeling", text: "Wij analyseren het object en de economische draagkracht." },
+      { num: "03", title: "Voorstel", text: "U ontvangt een onderbouwde inschatting en een concreet voorstel." },
+      { num: "04", title: "Uitvoering", text: "Samen brengen wij het project gestructureerd tot een goed einde." },
+    ],
   },
   about: {
     heroTitle: "Over Aurelia",
@@ -258,6 +267,16 @@ const nl: Translations = {
     moduleNote: "Omdat wij regelmatig bij afspraken en projecten ter plaatse zijn, verzoeken wij u om ons per e-mail te benaderen. Graag maken wij vervolgens een passende afspraak.",
     callbackSubject: "Terugbelverzoek",
     appointmentSubject: "Afspraakverzoek",
+    faqLabel: "Veelgestelde vragen",
+    faqTitle: "Veelgestelde vragen",
+    faqSubtitle: "Antwoorden op de belangrijkste vragen vóór uw eerste contact.",
+    faqItems: [
+      { q: "Is de eerste beoordeling echt gratis?", a: "Ja. Wij beoordelen uw aanvraag kosteloos en nemen binnen 48 uur persoonlijk contact met u op." },
+      { q: "Welk type vastgoed behandelt u?", a: "Wij werken met vastgoed in bijzondere situaties – waaronder erfenissen, echtscheidingsobjecten, renovatieobjecten en leegstaande panden." },
+      { q: "Hoe verloopt het eerste gesprek?", a: "Per telefoon of videogesprek – op verzoek ook persoonlijk in Düsseldorf. Duur: ca. 20–30 minuten." },
+      { q: "Werkt u landelijk?", a: "Onze focus ligt op Duitsland, met bijzondere nadruk op de metropoolregio's." },
+      { q: "Hoe discreet wordt mijn aanvraag behandeld?", a: "Alle informatie wordt strikt vertrouwelijk behandeld. Wij delen geen gegevens." },
+    ],
   },
   tax: {
     heroTitle: "Belastingvoordelen en subsidiemogelijkheden",

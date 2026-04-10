@@ -120,10 +120,10 @@ const it: Translations = {
     ],
     trustLabel: "Esperienza",
     trustTitle: "Competenza immobiliare sostanziale. Gestita dai proprietari. Con una prospettiva di lungo periodo.",
-    trustPoints: [
-      { value: "Sostanza", label: "Competenza immobiliare" },
-      { value: "DE", label: "Focus sulla Germania" },
-      { value: "Struttura", label: "con prospettiva a lungo termine" },
+    trustPillars: [
+      { title: "Gestita dai proprietari", text: "Vie decisionali dirette, senza deviazioni." },
+      { title: "Orientata alla sostanza", text: "Analisi prima della speculazione – la sostenibilità economica è prioritaria." },
+      { title: "A lungo termine", text: "Strutture sostenibili anziché ottimizzazione del rendimento a breve termine." },
     ],
     aboutLabel: "Su Aurelia",
     aboutTitle: "Esperienza, conoscenza del mercato e visione di lungo periodo.",
@@ -171,6 +171,15 @@ const it: Translations = {
     refBeforeLabel: "Situazione iniziale",
     refAfterLabel: "Approccio",
     refResultLabel: "Risultato",
+    processLabel: "Come lavoriamo",
+    processTitle: "Dalla prima richiesta alla realizzazione di successo",
+    processSubtitle: "Trasparente e strutturato – in quattro passaggi chiari.",
+    processSteps: [
+      { num: "01", title: "Primo colloquio", text: "Ci descriva la sua situazione – gratuitamente, senza impegno e in modo discreto." },
+      { num: "02", title: "Analisi", text: "Analizziamo l'immobile e la sua sostenibilità economica." },
+      { num: "03", title: "Proposta", text: "Riceverà una valutazione fondata e una proposta concreta." },
+      { num: "04", title: "Realizzazione", text: "Insieme portiamo il progetto a una conclusione strutturata." },
+    ],
   },
   about: {
     heroTitle: "Chi siamo",
@@ -257,6 +266,16 @@ const it: Translations = {
     moduleNote: "Poiché ci troviamo regolarmente in appuntamenti e progetti sul posto, vi preghiamo di contattarci via e-mail. Saremo lieti di concordare un appuntamento adeguato.",
     callbackSubject: "Richiesta di richiamata",
     appointmentSubject: "Richiesta di appuntamento",
+    faqLabel: "Domande frequenti",
+    faqTitle: "Domande frequenti",
+    faqSubtitle: "Risposte alle domande più importanti prima del primo contatto.",
+    faqItems: [
+      { q: "La prima valutazione è davvero gratuita?", a: "Sì. Esaminiamo la vostra richiesta senza alcun costo e vi contatteremo personalmente entro 48 ore." },
+      { q: "Che tipo di immobili trattate?", a: "Lavoriamo con immobili in situazioni particolari: successioni, divorzi, edifici da ristrutturare e immobili sfitti." },
+      { q: "Come si svolge il primo colloquio?", a: "Per telefono o videochiamata – su richiesta anche di persona a Düsseldorf. Durata: ca. 20–30 minuti." },
+      { q: "Operate a livello nazionale?", a: "Il nostro focus è la Germania, con particolare attenzione alle aree metropolitane." },
+      { q: "Con quanta discrezione viene trattata la mia richiesta?", a: "Tutte le informazioni vengono trattate in modo strettamente riservato. Non condividiamo alcun dato." },
+    ],
   },
   tax: {
     heroTitle: "Agevolazioni fiscali e sovvenzioni",
