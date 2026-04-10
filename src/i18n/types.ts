@@ -98,7 +98,7 @@ export interface Translations {
     solutionPoints: { title: string; text: string }[];
     trustLabel: string;
     trustTitle: string;
-    trustPoints: { value: string; label: string }[];
+    trustPillars: { title: string; text: string }[];
     aboutLabel: string;
     aboutTitle: string;
     aboutText: string;
@@ -126,6 +126,10 @@ export interface Translations {
     refBeforeLabel: string;
     refAfterLabel: string;
     refResultLabel: string;
+    processLabel: string;
+    processTitle: string;
+    processSubtitle: string;
+    processSteps: { num: string; title: string; text: string }[];
   };
   about: {
     heroTitle: string;
@@ -194,6 +198,10 @@ export interface Translations {
     moduleNote: string;
     callbackSubject: string;
     appointmentSubject: string;
+    faqLabel: string;
+    faqTitle: string;
+    faqSubtitle: string;
+    faqItems: { q: string; a: string }[];
   };
   tax: {
     heroTitle: string;

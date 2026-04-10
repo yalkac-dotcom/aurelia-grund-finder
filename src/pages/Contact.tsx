@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
-import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2 } from "lucide-react";
+import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";
 import PremiumContactModule from "@/components/contact/PremiumContactModule";
@@ -219,6 +219,9 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* FAQ */}
+      <ContactFAQ />
+
       {/* Map */}
       <section className="py-10 md:py-14">
         <div className="container max-w-4xl">
@@ -241,6 +244,55 @@ const Contact = () => {
         </div>
       </section>
     </Layout>
+  );
+};
+
+const ContactFAQ = () => {
+  const { t } = useLanguage();
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <section className="py-10 md:py-14 border-t border-border/60">
+      <div className="container max-w-2xl">
+        <Reveal>
+          <div className="section-shell-accent">
+            <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.contact.faqLabel}</p>
+            <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
+              {t.contact.faqTitle}
+            </h2>
+          </div>
+        </Reveal>
+        <Reveal delay={0.05}>
+          <p className="text-muted-foreground text-sm leading-[1.7] mt-3 mb-5">
+            {t.contact.faqSubtitle}
+          </p>
+        </Reveal>
+        <div className="divide-y divide-border/60">
+          {t.contact.faqItems.map((item, i) => (
+            <Reveal key={i} delay={i * 0.05}>
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                  className="w-full flex items-center justify-between py-4 text-left gap-4 group"
+                >
+                  <span className="text-sm font-heading font-semibold text-foreground group-hover:text-accent transition-colors">{item.q}</span>
+                  <ChevronDown
+                    size={14}
+                    className={`shrink-0 text-muted-foreground transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`}
+                  />
+                </button>
+                {openIndex === i && (
+                  <p className="text-muted-foreground text-sm leading-[1.7] pb-4 -mt-1">
+                    {item.a}
+                  </p>
+                )}
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

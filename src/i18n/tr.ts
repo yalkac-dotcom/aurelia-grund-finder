@@ -120,10 +120,10 @@ const tr: Translations = {
     ],
     trustLabel: "Deneyim",
     trustTitle: "Köklü gayrimenkul yetkinliği. Sahipleri tarafından yönetilir. Uzun vadeli perspektifle.",
-    trustPoints: [
-      { value: "Köklü", label: "Gayrimenkul yetkinliği" },
-      { value: "DE", label: "Almanya odağı" },
-      { value: "Yapılandırılmış", label: "uzun vadeli perspektifle" },
+    trustPillars: [
+      { title: "Sahip yönetimi", text: "Doğrudan karar süreçleri, dolambaçsız." },
+      { title: "Öz odaklı", text: "Spekülasyondan önce inceleme – ekonomik sürdürülebilirlik önceliklidir." },
+      { title: "Uzun vadeli", text: "Kısa vadeli getiri optimizasyonu yerine sürdürülebilir yapılar." },
     ],
     aboutLabel: "Aurelia hakkında",
     aboutTitle: "Deneyim, piyasa bilgisi ve uzun vadeli bakış.",
@@ -171,6 +171,15 @@ const tr: Translations = {
     refBeforeLabel: "Başlangıç durumu",
     refAfterLabel: "Yaklaşım",
     refResultLabel: "Sonuç",
+    processLabel: "Nasıl çalışıyoruz",
+    processTitle: "İlk talepten başarılı uygulamaya kadar",
+    processSubtitle: "Şeffaf ve yapılandırılmış – dört net adımda.",
+    processSteps: [
+      { num: "01", title: "İlk görüşme", text: "Durumunuzu bize anlatın – ücretsiz, bağlayıcı olmayan ve gizli." },
+      { num: "02", title: "İnceleme", text: "Gayrimenkulü ve ekonomik sürdürülebilirliğini analiz ediyoruz." },
+      { num: "03", title: "Teklif", text: "Sağlam bir değerlendirme ve somut bir öneri alırsınız." },
+      { num: "04", title: "Uygulama", text: "Projeyi birlikte yapılandırılmış şekilde sonuca ulaştırıyoruz." },
+    ],
   },
   about: {
     heroTitle: "Hakkımızda",
@@ -257,6 +266,16 @@ const tr: Translations = {
     moduleNote: "Sıklıkla randevularda ve projelerde sahada bulunduğumuz için, lütfen önce e-posta yoluyla iletişime geçmenizi rica ederiz. Ardından uygun bir randevu ayarlamaktan memnuniyet duyarız.",
     callbackSubject: "Geri arama talebi",
     appointmentSubject: "Randevu talebi",
+    faqLabel: "Sık sorulan sorular",
+    faqTitle: "Sık Sorulan Sorular",
+    faqSubtitle: "İlk iletişim öncesinde en önemli soruların yanıtları.",
+    faqItems: [
+      { q: "İlk değerlendirme gerçekten ücretsiz mi?", a: "Evet. Talebinizi ücretsiz olarak inceliyor ve 48 saat içinde size kişisel olarak geri dönüyoruz." },
+      { q: "Hangi tür gayrimenkulleri inceliyorsunuz?", a: "Özel durumlardan kaynaklanan gayrimenkullerle ilgileniyoruz – miras, boşanma, tadilat gerektiren veya boş gayrimenkuller dahil." },
+      { q: "İlk görüşme nasıl gerçekleşir?", a: "Telefon veya görüntülü görüşme ile – istenirse Düsseldorf'ta bizzat. Süre: yaklaşık 20–30 dakika." },
+      { q: "Ülke genelinde faaliyet gösteriyor musunuz?", a: "Odağımız Almanya'dır; özellikle metropol bölgelere ağırlık veriyoruz." },
+      { q: "Talebim ne kadar gizli tutulur?", a: "Tüm bilgiler kesinlikle gizli tutulur. Hiçbir veriyi paylaşmıyoruz." },
+    ],
   },
   tax: {
     heroTitle: "Vergi avantajları ve teşvikler",
