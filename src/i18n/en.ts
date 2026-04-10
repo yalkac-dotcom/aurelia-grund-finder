@@ -245,6 +245,13 @@ const en: Translations = {
     formTitle: "Write to us",
     phonePending: "",
     privacyNote: "Your data will be treated confidentially · Response within 24-48 hours",
+    moduleHeading: "Contact",
+    moduleIntro: "We look forward to hearing from you.",
+    moduleIntro2: "Whether an initial enquiry, a specific matter or a meeting request – please feel free to reach out in the way that suits you best.",
+    moduleCta1: "Send enquiry",
+    moduleCta2: "Request a callback",
+    moduleCta3: "Schedule a meeting",
+    moduleNote: "As we are frequently on-site for appointments and projects, we kindly ask you to contact us by email first. We will then be happy to arrange a suitable appointment.",
   },
   tax: {
     heroTitle: "Tax Benefits & Subsidies",

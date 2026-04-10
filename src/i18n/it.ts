@@ -245,6 +245,13 @@ const it: Translations = {
     formTitle: "Scriveteci",
     phonePending: "",
     privacyNote: "I vostri dati saranno trattati in modo confidenziale · Risposta entro 24-48 ore",
+    moduleHeading: "Contatti",
+    moduleIntro: "Saremo lieti di ricevere il vostro messaggio.",
+    moduleIntro2: "Che si tratti di una prima richiesta, di un'esigenza specifica o di un appuntamento – contattateci nel modo che preferite.",
+    moduleCta1: "Invia richiesta",
+    moduleCta2: "Richiedi richiamata",
+    moduleCta3: "Fissare un appuntamento",
+    moduleNote: "Poiché ci troviamo regolarmente in appuntamenti e progetti sul posto, vi preghiamo di contattarci via e-mail. Saremo lieti di concordare un appuntamento adeguato.",
   },
   tax: {
     heroTitle: "Agevolazioni fiscali e sovvenzioni",
