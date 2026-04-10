@@ -68,16 +68,9 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="py-8 md:py-10">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">
-              {t.contact.introText}
-            </p>
-          </Reveal>
-        </div>
-      </section>
+      {/* Premium Contact Module */}
+      <PremiumContactModule />
+
 
       {/* Contact Info */}
       <section className="border-t border-border/60">
