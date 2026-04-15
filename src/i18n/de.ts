@@ -18,6 +18,7 @@ const de: Translations = {
     rights: "Alle Rechte vorbehalten.",
     imprint: "Impressum",
     privacy: "Datenschutz",
+    imageCredits: "Bildnachweise",
     cookieSettings: "Cookie-Einstellungen",
     disclaimer:
       "Diese Website dient der allgemeinen Information über die Aurelia Grundbesitz GmbH und ersetzt keine individuelle Beratung. Nicht als Rechts- oder Steuerberatung auszulegen.",

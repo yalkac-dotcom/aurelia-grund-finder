@@ -18,6 +18,7 @@ const en: Translations = {
     rights: "All rights reserved.",
     imprint: "Legal Notice",
     privacy: "Privacy Policy",
+    imageCredits: "Image Credits",
     cookieSettings: "Cookie Settings",
     disclaimer:
       "Disclaimer: The content of this website is provided for general information only and does not constitute legal, tax, or financial advice.",
