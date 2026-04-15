@@ -20,7 +20,7 @@ const Header = () => {
   const navItems: NavItem[] = [
     { label: t.nav.home, path: "/" },
     { label: t.nav.services, path: "/leistungen" },
-    { label: t.nav.workApproach, path: "/", hash: "arbeitsweise" },
+    { label: t.nav.workApproach, path: "/arbeitsweise" },
     { label: t.nav.about, path: "/ueber-uns" },
     { label: t.nav.contact, path: "/kontakt" },
   ];
