@@ -18,6 +18,7 @@ const nl: Translations = {
     rights: "Alle rechten voorbehouden.",
     imprint: "Impressum",
     privacy: "Privacybeleid",
+    imageCredits: "Beeldverantwoording",
     cookieSettings: "Cookie-instellingen",
     disclaimer:
       "Let op: De inhoud van deze website dient uitsluitend ter algemene informatie en vormt geen juridisch, fiscaal of financieel advies.",

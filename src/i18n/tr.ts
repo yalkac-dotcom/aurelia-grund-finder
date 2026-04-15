@@ -18,6 +18,7 @@ const tr: Translations = {
     rights: "Tüm hakları saklıdır.",
     imprint: "Yasal Bilgiler",
     privacy: "Gizlilik Bildirimi",
+    imageCredits: "Görsel Kaynakları",
     cookieSettings: "Çerez Ayarları",
     disclaimer:
       "Uyarı: Bu web sitesindeki içerikler yalnızca genel bilgilendirme amacı taşır ve hukuki, vergisel veya finansal danışmanlık niteliğinde değildir.",

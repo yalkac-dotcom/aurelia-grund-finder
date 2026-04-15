@@ -18,6 +18,7 @@ const it: Translations = {
     rights: "Tutti i diritti riservati.",
     imprint: "Note legali",
     privacy: "Informativa sulla privacy",
+    imageCredits: "Crediti immagini",
     cookieSettings: "Impostazioni cookie",
     disclaimer:
       "Avviso: i contenuti di questo sito sono forniti esclusivamente a scopo informativo e non costituiscono consulenza legale, fiscale o finanziaria.",

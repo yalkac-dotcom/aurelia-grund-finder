@@ -18,6 +18,7 @@ export interface Translations {
     rights: string;
     imprint: string;
     privacy: string;
+    imageCredits: string;
     cookieSettings: string;
     disclaimer: string;
     brandLine: string;
