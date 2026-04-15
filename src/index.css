@@ -176,7 +176,7 @@
 
 /* Hero system */
 .hero-media {
-  filter: brightness(1.45) saturate(0.90) contrast(1.01);
+  filter: brightness(1.15) saturate(0.95) contrast(1.02);
 }
 
 .hero-overlay-base {
@@ -326,7 +326,7 @@
 
 @media (max-width: 767px) {
   .hero-media {
-    filter: brightness(1.38) saturate(0.88) contrast(1.01);
+    filter: brightness(1.10) saturate(0.92) contrast(1.02);
   }
 
   .hero-overlay-base {
@@ -387,7 +387,7 @@
 
 @media (min-width: 768px) {
   .hero-media {
-    filter: brightness(1.48) saturate(0.92) contrast(1.02);
+    filter: brightness(1.18) saturate(0.95) contrast(1.03);
   }
 
   .hero-actions {
