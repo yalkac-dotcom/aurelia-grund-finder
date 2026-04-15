@@ -153,7 +153,7 @@ const Index = () => {
                 {t.landing.situationsList.map((item, i) => (
                   <Reveal key={i} delay={i * 0.06}>
                     <div className="flex items-start gap-3 py-2">
-                      <div className="w-1 h-5 bg-accent/40 rounded-full shrink-0 mt-0.5" />
+                      <div className="w-1 h-5 bg-accent/60 rounded-full shrink-0 mt-0.5" />
                       <p className="text-foreground text-[0.93rem] leading-[1.6]">
                         {item}
                       </p>
