@@ -55,7 +55,7 @@ const Index = () => {
       </section>
 
       {/* 3. DREI EINSTIEGSPFADE */}
-      <section className="py-6 md:py-10 bg-secondary/30">
+      <section className="py-8 md:py-14 bg-secondary/50">
         <div className="container max-w-5xl">
           <Reveal>
             <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-8">
@@ -65,8 +65,8 @@ const Index = () => {
           <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
             {t.landing.relevanceCards.map((card, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className="group bg-card rounded-[1.25rem] p-8 md:p-10 shadow-[0_8px_40px_-8px_hsl(212_55%_20%/0.06),0_2px_10px_-4px_hsl(212_55%_20%/0.03)] border border-border/8 hover:shadow-[0_16px_56px_-10px_hsl(212_55%_20%/0.10),0_4px_16px_-6px_hsl(212_55%_20%/0.05)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full">
-                  <div className="w-10 h-[2px] bg-accent/40 rounded-full mb-7" />
+                <div className="group bg-card rounded-[1.75rem] p-8 md:p-10 shadow-[0_10px_48px_-8px_hsl(212_55%_15%/0.09),0_4px_14px_-4px_hsl(212_55%_15%/0.05)] border border-border/40 hover:shadow-[0_18px_60px_-10px_hsl(212_55%_15%/0.14),0_6px_20px_-6px_hsl(212_55%_15%/0.07)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full">
+                  <div className="w-10 h-[2px] bg-accent rounded-full mb-7" />
                   <h3 className="text-[1.05rem] md:text-[1.12rem] font-heading font-semibold text-foreground mb-3">
                     {card.title}
                   </h3>
