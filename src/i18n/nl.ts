@@ -241,6 +241,8 @@ const nl: Translations = {
       "Geselecteerde vastgoedgerelateerde vorderingen en posities",
     ],
   },
+  about: {
+    heroTitle: "Over Aurelia",
     companyLabel: "Het bedrijf",
     companyTitle: "Wie wij zijn",
     companyP1: "Aurelia Grundbesitz ontwikkelt vastgoed uit executieveilingen, nalatenschappen, insolventies en vergelijkbare bijzondere situaties. Onze focus ligt op objecten die ervaring, structuur en een zorgvuldige economische beoordeling vereisen.",

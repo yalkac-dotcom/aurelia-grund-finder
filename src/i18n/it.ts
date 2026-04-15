@@ -240,6 +240,8 @@ const it: Translations = {
       "Crediti immobiliari selezionati e posizioni simili",
     ],
   },
+  about: {
+    heroTitle: "Chi siamo",
     companyLabel: "Chi siamo",
     companyTitle: "La nostra azienda",
     companyP1: "Aurelia Grundbesitz GmbH è specializzata nello sviluppo e nella gestione professionale di immobili provenienti da situazioni particolari. L'attenzione è rivolta a immobili da aste giudiziarie, successioni e procedure concorsuali, selezionati con grande esperienza, cura e lungimiranza.",

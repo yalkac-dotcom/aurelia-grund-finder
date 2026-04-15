@@ -240,6 +240,8 @@ const es: Translations = {
       "Créditos inmobiliarios seleccionados y posiciones similares",
     ],
   },
+  about: {
+    heroTitle: "Sobre Aurelia",
     companyLabel: "Quiénes somos",
     companyTitle: "Nuestra empresa",
     companyP1: "Aurelia Grundbesitz GmbH está especializada en el desarrollo y la gestión profesional de inmuebles procedentes de situaciones especiales. El foco está en inmuebles de subastas judiciales, herencias e insolvencias, seleccionados con amplia experiencia, cuidado y visión de futuro.",
