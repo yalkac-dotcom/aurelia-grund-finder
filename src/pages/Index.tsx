@@ -112,23 +112,23 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 5. UNTERNEHMERISCHER ANSATZ */}
-      <section className="py-6 md:py-10 bg-secondary/30">
+      {/* 5. UNTERNEHMERISCHER ANSATZ — DARK */}
+      <section className={`py-10 md:py-16 ${darkSection}`}>
         <div className="container max-w-4xl">
           <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-5">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+            <div className={`${darkPanelBase} ${panelPadding}`}>
+              <div className="section-shell-accent mb-5 border-l-white/20">
+                <p className="text-[hsl(195_55%_55%)] font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.entrepreneurLabel}
                 </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-foreground leading-[1.2] max-w-xl text-balance">
+                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-white leading-[1.2] max-w-xl text-balance">
                   {t.landing.entrepreneurTitle}
                 </h2>
               </div>
-              <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mb-4 max-w-2xl">
+              <p className="text-white/75 text-[0.93rem] leading-[1.85] mb-4 max-w-2xl">
                 {t.landing.entrepreneurText}
               </p>
-              <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">
+              <p className="text-white/75 text-[0.93rem] leading-[1.85] max-w-2xl">
                 {t.landing.entrepreneurText2}
               </p>
             </div>
