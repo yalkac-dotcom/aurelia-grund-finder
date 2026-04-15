@@ -27,11 +27,11 @@ const tr: Translations = {
     subline: "Gizli · Öz odaklı · Uzun vadeli",
   },
   hero: {
-    slogan: "Zor durumlardaki gayrimenkuller için net çözüm yolları.",
+    slogan: "Bir satış durduğunda veya baskı arttığında, net bir sonraki adım gerekir.",
     subtitle:
-      "Gizli, yapılandırılmış ve gerçekçi adımlara odaklı.",
-    cta: "İletişime geçin",
-    ctaSecondary: "Aurelia hakkında",
+      "Aurelia, zor veya zaman baskısı altındaki durumlarda gayrimenkulleri, arsaları ve seçilmiş gayrimenkul konstellasyonlarını inceler — gizli, yapılandırılmış ve gerçekçi çözümlere odaklı.",
+    cta: "Gizli iletişim",
+    ctaSecondary: "Nasıl yardımcı oluyoruz",
   },
   common: {
     learnMore: "Daha fazla bilgi",

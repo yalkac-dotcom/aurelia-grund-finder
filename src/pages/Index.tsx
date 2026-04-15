@@ -13,9 +13,9 @@ import {
 } from "@/components/ui/accordion";
 
 const panelBase =
-  "bg-card rounded-3xl shadow-[0_8px_60px_-12px_hsl(var(--primary)/0.08),0_2px_12px_-4px_hsl(var(--primary)/0.04)] border border-border/10";
+  "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
 
-const panelPadding = "px-8 py-10 md:px-14 md:py-14";
+const panelPadding = "px-8 py-10 md:px-16 md:py-16";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -59,9 +59,9 @@ const Index = () => {
           <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
             {t.landing.relevanceCards.map((card, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className={`group ${panelBase} p-8 md:p-10 hover:shadow-[0_16px_72px_-14px_hsl(var(--primary)/0.13),0_4px_18px_-6px_hsl(var(--primary)/0.06)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full`}>
-                  <div className="w-8 h-[2px] bg-[hsl(var(--gold)/0.45)] rounded-full mb-6" />
-                  <h3 className="text-[1.02rem] md:text-[1.1rem] font-heading font-semibold text-foreground mb-3">
+                <div className="group bg-card rounded-[1.25rem] p-8 md:p-10 shadow-[0_8px_40px_-8px_hsl(212_55%_20%/0.06),0_2px_10px_-4px_hsl(212_55%_20%/0.03)] border border-border/8 hover:shadow-[0_16px_56px_-10px_hsl(212_55%_20%/0.10),0_4px_16px_-6px_hsl(212_55%_20%/0.05)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full">
+                  <div className="w-10 h-[2px] bg-accent/40 rounded-full mb-7" />
+                  <h3 className="text-[1.05rem] md:text-[1.12rem] font-heading font-semibold text-foreground mb-3">
                     {card.title}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-[1.8]">
@@ -90,8 +90,8 @@ const Index = () => {
               <div className="grid sm:grid-cols-2 gap-5 md:gap-7">
                 {t.landing.servicesModules.map((mod, i) => (
                   <Reveal key={i} delay={i * 0.08}>
-                    <div className="bg-secondary/30 rounded-2xl p-7 md:p-9 border-l-[3px] border-l-[hsl(var(--gold)/0.4)] hover:bg-secondary/50 transition-colors duration-400 h-full">
-                      <h3 className="text-[0.98rem] md:text-[1.05rem] font-heading font-semibold text-foreground mb-2">
+                    <div className="bg-secondary/40 rounded-[1.1rem] p-8 md:p-10 border-l-[3px] border-l-accent/30 hover:bg-secondary/60 transition-colors duration-400 h-full">
+                      <h3 className="text-[0.98rem] md:text-[1.05rem] font-heading font-semibold text-foreground mb-2.5">
                         {mod.title}
                       </h3>
                       <p className="text-muted-foreground text-sm leading-[1.8]">
@@ -147,7 +147,7 @@ const Index = () => {
                 {t.landing.situationsList.map((item, i) => (
                   <Reveal key={i} delay={i * 0.06}>
                     <div className="flex items-start gap-3 py-2">
-                      <div className="w-1 h-5 bg-[hsl(var(--gold)/0.5)] rounded-full shrink-0 mt-0.5" />
+                      <div className="w-1 h-5 bg-accent/40 rounded-full shrink-0 mt-0.5" />
                       <p className="text-foreground text-[0.93rem] leading-[1.6]">
                         {item}
                       </p>
@@ -180,7 +180,7 @@ const Index = () => {
                 {t.landing.processSteps.map((step, i) => (
                   <Reveal key={i} delay={i * 0.1}>
                     <div className="relative">
-                      <p className="text-[1.5rem] font-heading font-semibold text-[hsl(var(--gold))] mb-2">
+                      <p className="text-[1.5rem] font-heading font-semibold text-accent mb-2">
                         {step.num}
                       </p>
                       {i < t.landing.processSteps.length - 1 && (
@@ -218,7 +218,7 @@ const Index = () => {
                 {t.landing.whyPoints.map((point, i) => (
                   <Reveal key={i} delay={i * 0.08}>
                     <div className="flex items-start gap-3">
-                      <div className="w-1 h-6 bg-[hsl(var(--gold)/0.5)] rounded-full shrink-0 mt-0.5" />
+                      <div className="w-1 h-6 bg-accent/40 rounded-full shrink-0 mt-0.5" />
                       <div>
                         <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1">
                           {point.title}
@@ -252,7 +252,7 @@ const Index = () => {
               <div className="grid gap-5">
                 {t.landing.objections.map((obj, i) => (
                   <Reveal key={i} delay={i * 0.1}>
-                    <div className="bg-secondary/30 rounded-2xl p-7 md:p-9">
+                    <div className="bg-secondary/40 rounded-[1.1rem] p-8 md:p-10">
                       <p className="text-[1rem] font-heading font-semibold text-foreground mb-3 italic">
                         „{obj.q}"
                       </p>
@@ -313,7 +313,7 @@ const Index = () => {
                   <AccordionItem
                     key={i}
                     value={`faq-${i}`}
-                    className="bg-secondary/30 rounded-2xl border-none px-7 overflow-hidden"
+                    className="bg-secondary/40 rounded-[1.1rem] border-none px-7 overflow-hidden"
                   >
                     <AccordionTrigger className="text-sm font-heading font-semibold text-foreground py-5 hover:no-underline text-left">
                       {item.q}

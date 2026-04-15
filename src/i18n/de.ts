@@ -27,9 +27,9 @@ const de: Translations = {
     subline: "Diskret · Substanzorientiert · Langfristig",
   },
   hero: {
-    slogan: "Klare Wege für Immobilien in schwierigen Situationen.",
+    slogan: "Wenn der Verkauf stockt oder der Druck steigt, braucht es einen klaren nächsten Schritt.",
     subtitle:
-      "Diskret, strukturiert und mit Blick auf realistische nächste Schritte.",
+      "Aurelia prüft Immobilien, Grundstücke und ausgewählte immobilienbezogene Konstellationen in schwierigen oder zeitkritischen Situationen – diskret, strukturiert und mit Blick auf realistische Lösungen.",
     cta: "Vertraulich anfragen",
     ctaSecondary: "Wie wir helfen",
   },
