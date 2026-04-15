@@ -99,8 +99,8 @@ const Contact = () => {
                     <Mail className="text-accent" size={13} />
                     <h3 className="text-[0.95rem] font-heading font-semibold text-foreground">{t.contact.email}</h3>
                   </div>
-                  <a href="mailto:info@aurelia-grundbesitz.de" className="text-muted-foreground text-sm hover:text-accent transition-colors">
-                    info@aurelia-grundbesitz.de
+                  <a href="mailto:info@aureliaestates.de" className="text-muted-foreground text-sm hover:text-accent transition-colors">
+                    info@aureliaestates.de
                   </a>
                 </div>
                 <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 last:pb-0">

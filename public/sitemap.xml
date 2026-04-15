@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://aurelia-grundbesitz.de/</loc><priority>1.0</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/ueber-uns</loc><priority>0.8</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/leistungen</loc><priority>0.8</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/steuervorteile</loc><priority>0.7</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/steuervorteile/afa</loc><priority>0.6</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/steuervorteile/energetisch</loc><priority>0.6</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/steuervorteile/kfw</loc><priority>0.6</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/steuervorteile/bafa</loc><priority>0.6</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/steuervorteile/glossar</loc><priority>0.5</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/investoren</loc><priority>0.7</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/investoren-glossar</loc><priority>0.6</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/kontakt</loc><priority>0.8</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/impressum</loc><priority>0.3</priority></url>
-  <url><loc>https://aurelia-grundbesitz.de/datenschutz</loc><priority>0.3</priority></url>
+  <url><loc>https://aureliaestates.de/</loc><priority>1.0</priority></url>
+  <url><loc>https://aureliaestates.de/ueber-uns</loc><priority>0.8</priority></url>
+  <url><loc>https://aureliaestates.de/leistungen</loc><priority>0.8</priority></url>
+  <url><loc>https://aureliaestates.de/steuervorteile</loc><priority>0.7</priority></url>
+  <url><loc>https://aureliaestates.de/steuervorteile/afa</loc><priority>0.6</priority></url>
+  <url><loc>https://aureliaestates.de/steuervorteile/energetisch</loc><priority>0.6</priority></url>
+  <url><loc>https://aureliaestates.de/steuervorteile/kfw</loc><priority>0.6</priority></url>
+  <url><loc>https://aureliaestates.de/steuervorteile/bafa</loc><priority>0.6</priority></url>
+  <url><loc>https://aureliaestates.de/steuervorteile/glossar</loc><priority>0.5</priority></url>
+  <url><loc>https://aureliaestates.de/investoren</loc><priority>0.7</priority></url>
+  <url><loc>https://aureliaestates.de/investoren-glossar</loc><priority>0.6</priority></url>
+  <url><loc>https://aureliaestates.de/kontakt</loc><priority>0.8</priority></url>
+  <url><loc>https://aureliaestates.de/impressum</loc><priority>0.3</priority></url>
+  <url><loc>https://aureliaestates.de/datenschutz</loc><priority>0.3</priority></url>
 </urlset>

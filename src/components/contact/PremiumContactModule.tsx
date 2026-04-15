@@ -38,14 +38,14 @@ const PremiumContactModule = () => {
 
             <div className="flex flex-wrap gap-x-6 gap-y-1 mt-5">
               <a
-                href={`mailto:info@aurelia-grundbesitz.de?subject=${encodeURIComponent(t.contact.callbackSubject)}`}
+                href={`mailto:info@aureliaestates.de?subject=${encodeURIComponent(t.contact.callbackSubject)}`}
                 className="inline-flex items-center gap-1.5 text-muted-foreground text-xs hover:text-accent transition-colors"
               >
                 <PhoneCall size={12} strokeWidth={1.5} />
                 {t.contact.moduleCta2}
               </a>
               <a
-                href={`mailto:info@aurelia-grundbesitz.de?subject=${encodeURIComponent(t.contact.appointmentSubject)}`}
+                href={`mailto:info@aureliaestates.de?subject=${encodeURIComponent(t.contact.appointmentSubject)}`}
                 className="inline-flex items-center gap-1.5 text-muted-foreground text-xs hover:text-accent transition-colors"
               >
                 <CalendarDays size={12} strokeWidth={1.5} />
