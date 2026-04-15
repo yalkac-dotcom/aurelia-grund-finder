@@ -35,7 +35,7 @@ const Services = () => {
       </section>
 
       {/* Intro */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -55,7 +55,7 @@ const Services = () => {
       </section>
 
       {/* Strategy Cards */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <div className="grid md:grid-cols-2 gap-6 md:gap-8">
             <Reveal>
@@ -89,7 +89,7 @@ const Services = () => {
       </section>
 
       {/* Comparison */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -125,7 +125,7 @@ const Services = () => {
       </section>
 
       {/* Experience */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>

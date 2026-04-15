@@ -42,7 +42,7 @@ const TaxBenefits = () => {
       </section>
 
       {/* Intro */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -59,7 +59,7 @@ const TaxBenefits = () => {
       </section>
 
       {/* Topics */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -86,7 +86,7 @@ const TaxBenefits = () => {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -124,7 +124,7 @@ const TaxBenefits = () => {
       </section>
 
       {/* Glossar Link */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>

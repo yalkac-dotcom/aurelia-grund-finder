@@ -36,7 +36,7 @@ const About = () => {
       </section>
 
       {/* Company */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -60,7 +60,7 @@ const About = () => {
       </section>
 
       {/* Philosophy */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -80,7 +80,7 @@ const About = () => {
       </section>
 
       {/* Team & Experience */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>

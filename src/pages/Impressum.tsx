@@ -29,7 +29,7 @@ const Impressum = () => {
         </div>
       </section>
 
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-3xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>

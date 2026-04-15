@@ -139,7 +139,7 @@ const Investors = () => {
       </section>
 
       {/* Audience */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -160,7 +160,7 @@ const Investors = () => {
       </section>
 
       {/* Process */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -191,7 +191,7 @@ const Investors = () => {
       </section>
 
       {/* Completed Projects */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -236,7 +236,7 @@ const Investors = () => {
       </section>
 
       {/* Pipeline */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -267,7 +267,7 @@ const Investors = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -317,7 +317,7 @@ const Investors = () => {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -336,7 +336,7 @@ const Investors = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-3xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding} text-center`}>

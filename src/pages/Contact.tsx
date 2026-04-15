@@ -77,7 +77,7 @@ const Contact = () => {
       <PremiumContactModule />
 
       {/* Contact Info */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -119,7 +119,7 @@ const Contact = () => {
       </section>
 
       {/* Form */}
-      <section id="kontaktformular" className="py-10 md:py-16 bg-secondary/30">
+      <section id="kontaktformular" className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-2xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -212,7 +212,7 @@ const Contact = () => {
       <ContactFAQ />
 
       {/* Map */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -241,7 +241,7 @@ const ContactFAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-10 md:py-16 bg-secondary/30">
+    <section className="py-6 md:py-10 bg-secondary/30">
       <div className="container max-w-3xl">
         <Reveal>
           <div className={`${panelBase} ${panelPadding}`}>
