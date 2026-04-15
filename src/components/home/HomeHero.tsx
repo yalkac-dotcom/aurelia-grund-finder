@@ -53,7 +53,7 @@ const HomeHero = () => {
           </div>
 
           <p className="hero-meta-line animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <CheckCircle size={13} className="mt-0.5 shrink-0 opacity-70 md:mt-0" style={{ color: "hsl(var(--gold))" }} />
+            <CheckCircle size={13} className="mt-0.5 shrink-0 opacity-80 md:mt-0 text-accent" />
             <span>{t.common.initialAssessmentNote}</span>
           </p>
         </div>

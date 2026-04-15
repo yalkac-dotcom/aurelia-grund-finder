@@ -154,14 +154,14 @@
 
 /* ── Architectural containment system ── */
 .section-shell-accent {
-  border-left: 2px solid hsl(var(--gold) / 0.5);
+  border-left: 2px solid hsl(var(--accent) / 0.35);
   padding-left: 1.25rem;
 }
 
 .section-divider {
   width: 2.5rem;
   height: 1px;
-  background: hsl(var(--gold) / 0.6);
+  background: hsl(var(--accent) / 0.4);
 }
 
 .cta-module {

@@ -180,7 +180,7 @@ const Index = () => {
                 {t.landing.processSteps.map((step, i) => (
                   <Reveal key={i} delay={i * 0.1}>
                     <div className="relative">
-                      <p className="text-[1.5rem] font-heading font-semibold text-[hsl(var(--gold))] mb-2">
+                      <p className="text-[1.5rem] font-heading font-semibold text-accent mb-2">
                         {step.num}
                       </p>
                       {i < t.landing.processSteps.length - 1 && (
