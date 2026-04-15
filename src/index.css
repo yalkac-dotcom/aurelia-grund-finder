@@ -192,10 +192,10 @@
 .hero-overlay-protect {
   background: linear-gradient(
     112deg,
-    hsl(var(--primary) / 0.48) 0%,
-    hsl(var(--primary) / 0.34) 24%,
-    hsl(var(--primary) / 0.16) 46%,
-    hsl(var(--primary) / 0.04) 68%,
+    hsl(var(--primary) / 0.55) 0%,
+    hsl(var(--primary) / 0.40) 24%,
+    hsl(var(--primary) / 0.20) 46%,
+    hsl(var(--primary) / 0.06) 68%,
     transparent 100%
   );
 }
@@ -213,7 +213,7 @@
 
 .hero-copy-shell {
   position: relative;
-  max-width: 32rem;
+  max-width: 34rem;
 }
 
 .hero-copy-shell::before {
@@ -318,8 +318,8 @@
   align-items: flex-start;
   gap: 0.5rem;
   max-width: 26rem;
-  color: hsl(var(--primary-foreground) / 0.84);
-  font-size: 0.78rem;
+  color: hsl(var(--primary-foreground) / 0.72);
+  font-size: 0.72rem;
   line-height: 1.6;
   text-shadow: 0 4px 16px hsl(var(--primary) / 0.2);
 }

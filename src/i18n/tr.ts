@@ -222,6 +222,7 @@ const tr: Translations = {
       { q: "İlk görüşme bağlayıcı mı?", a: "Hayır. İlk görüşme ücretsiz ve bağlayıcı değildir. İlk bir değerlendirme niteliğindedir — her iki taraf için de yükümlülük olmadan." },
       { q: "Her şey tam olarak hazır mı olmalı?", a: "Hayır. Genellikle durumun kaba bir tanımı başlamak için yeterlidir. Bir sonraki adımda hangi bilgilerin gerekli olduğunu birlikte belirleriz." },
       { q: "Her vakayı kabul ediyor musunuz?", a: "Hayır. Bir görevin ekonomik olarak anlamlı ve gerçekçi olarak uygulanabilir olup olmadığını dikkatle değerlendiriyoruz. Değerlendirmede dürüstlük, temel yaklaşımımızın bir parçasıdır." },
+      { q: "Gizli ve güvenilir mi çalışıyorsunuz?", a: "Evet, istisnasız. Gizlilik opsiyonel bir hizmet değil, kimliğimizin bir parçasıdır. Tüm bilgiler, belgeler ve görüşmeler gizli tutulur — istisnasız." },
     ],
   },
   about: {

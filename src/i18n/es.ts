@@ -222,6 +222,7 @@ const es: Translations = {
       { q: "¿La primera consulta es vinculante?", a: "No. La primera consulta es gratuita y sin compromiso. Sirve como una primera evaluación — sin obligación para ninguna de las partes." },
       { q: "¿Debe estar todo completamente preparado?", a: "No. A menudo basta con una descripción general de la situación para empezar. Juntos aclaramos qué información es relevante en el siguiente paso." },
       { q: "¿Aceptan todos los casos?", a: "No. Evaluamos cuidadosamente si un encargo es económicamente razonable y realistamente viable. La honestidad en la evaluación forma parte de nuestro enfoque." },
+      { q: "¿Trabajan de forma discreta y confidencial?", a: "Sí, sin excepción. La discreción no es un servicio opcional, sino parte de nuestra identidad. Toda la información, documentación y conversaciones se tratan de forma confidencial — sin excepciones." },
     ],
   },
   about: {

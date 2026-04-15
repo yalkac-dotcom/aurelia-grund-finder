@@ -202,7 +202,7 @@ const en: Translations = {
     whyTitle: "What sets us apart",
     whyPoints: [
       { title: "Discreet, not public", text: "We work away from public processes — with discretion as a core principle." },
-      { title: "Fast initial assessment", text: "Within a few days, you receive a reliable response to your enquiry." },
+      { title: "Fast initial assessment", text: "You receive a reliable initial assessment of your enquiry promptly." },
       { title: "Own entrepreneurial approach", text: "We buy and develop on our own account — no brokerage model, no intermediary business." },
       { title: "Substance over staging", text: "We rely on economic clarity rather than glossy promises." },
     ],
@@ -222,6 +222,7 @@ const en: Translations = {
       { q: "Is the initial consultation binding?", a: "No. The initial consultation is free of charge and non-binding. It serves as a first assessment — without obligation for either party." },
       { q: "Does everything need to be fully prepared?", a: "No. A rough description of the situation is often enough to start with. We clarify together which information becomes relevant in the next step." },
       { q: "Do you take on every case?", a: "No. We carefully assess whether an engagement is economically sensible and realistically feasible. Honesty in assessment is part of our core approach." },
+      { q: "Do you work discreetly and confidentially?", a: "Yes, without exception. Discretion is not an optional service but part of our identity. All information, documents, and conversations are treated confidentially — no exceptions." },
     ],
   },
   about: {

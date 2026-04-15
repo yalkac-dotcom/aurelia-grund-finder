@@ -28,7 +28,7 @@ const Index = () => {
       <HomeHero />
 
       {/* 2. EINORDNUNG */}
-      <section className="py-14 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container max-w-3xl">
           <Reveal>
             <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-foreground leading-[1.2] mb-5 text-balance">
@@ -44,21 +44,21 @@ const Index = () => {
       </section>
 
       {/* 3. WANN AURELIA RELEVANT IST */}
-      <section className="py-14 md:py-20 bg-secondary/40">
+      <section className="py-10 md:py-14 bg-secondary/40">
         <div className="container max-w-5xl">
           <Reveal>
             <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-6">
               {t.landing.relevanceLabel}
             </p>
           </Reveal>
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-7">
             {t.landing.relevanceCards.map((card, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className="group bg-card rounded-2xl border border-border/40 p-7 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5">
-                  <h3 className="text-[1rem] md:text-[1.08rem] font-heading font-semibold text-foreground mb-2.5">
+                <div className="group bg-card rounded-3xl border border-border/30 p-8 md:p-10 shadow-[0_4px_24px_-6px_hsl(var(--primary)/0.08)] hover:shadow-[0_12px_40px_-8px_hsl(var(--primary)/0.14)] transition-all duration-500 hover:-translate-y-1 cursor-default">
+                  <h3 className="text-[1.02rem] md:text-[1.1rem] font-heading font-semibold text-foreground mb-3">
                     {card.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-[1.75]">
+                  <p className="text-muted-foreground text-sm leading-[1.8]">
                     {card.text}
                   </p>
                 </div>
@@ -69,7 +69,7 @@ const Index = () => {
       </section>
 
       {/* 4. LEISTUNGEN */}
-      <section className="py-14 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container max-w-5xl">
           <Reveal>
             <div className="section-shell-accent mb-8">
@@ -81,14 +81,14 @@ const Index = () => {
               </h2>
             </div>
           </Reveal>
-          <div className="grid sm:grid-cols-2 gap-5 md:gap-6">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-7">
             {t.landing.servicesModules.map((mod, i) => (
               <Reveal key={i} delay={i * 0.08}>
-                <div className="border-l-2 border-[hsl(var(--gold)/0.4)] pl-5 py-1">
-                  <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1.5">
+                <div className="bg-card rounded-2xl border border-border/30 p-7 md:p-9 shadow-[0_2px_16px_-4px_hsl(var(--primary)/0.06)] hover:shadow-[0_8px_32px_-6px_hsl(var(--primary)/0.10)] transition-all duration-400 border-l-[3px] border-l-[hsl(var(--gold)/0.5)]">
+                  <h3 className="text-[0.98rem] md:text-[1.05rem] font-heading font-semibold text-foreground mb-2">
                     {mod.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-[1.75]">
+                  <p className="text-muted-foreground text-sm leading-[1.8]">
                     {mod.text}
                   </p>
                 </div>
@@ -99,7 +99,7 @@ const Index = () => {
       </section>
 
       {/* 5. ARBEITSWEISE */}
-      <section id="arbeitsweise" className="py-14 md:py-20 bg-secondary/40">
+      <section id="arbeitsweise" className="py-10 md:py-14 bg-secondary/40">
         <div className="container max-w-5xl">
           <Reveal>
             <div className="section-shell-accent mb-3">
@@ -140,7 +140,7 @@ const Index = () => {
       </section>
 
       {/* 6. WARUM AURELIA */}
-      <section className="py-14 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent mb-8">
@@ -173,7 +173,7 @@ const Index = () => {
       </section>
 
       {/* 7. EINWANDBEHANDLUNG */}
-      <section className="py-14 md:py-20 bg-secondary/40">
+      <section className="py-10 md:py-14 bg-secondary/40">
         <div className="container max-w-4xl">
           <Reveal>
             <div className="section-shell-accent mb-8">
@@ -188,11 +188,11 @@ const Index = () => {
           <div className="grid gap-5">
             {t.landing.objections.map((obj, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className="bg-card rounded-2xl border border-border/40 p-6 md:p-8">
-                  <p className="text-[1rem] font-heading font-semibold text-foreground mb-2.5 italic">
+                <div className="bg-card rounded-3xl border border-border/30 p-7 md:p-9 shadow-[0_4px_24px_-6px_hsl(var(--primary)/0.07)]">
+                  <p className="text-[1rem] font-heading font-semibold text-foreground mb-3 italic">
                     „{obj.q}"
                   </p>
-                  <p className="text-muted-foreground text-sm leading-[1.75]">
+                  <p className="text-muted-foreground text-sm leading-[1.8]">
                     {obj.a}
                   </p>
                 </div>
@@ -203,7 +203,7 @@ const Index = () => {
       </section>
 
       {/* 8. CTA */}
-      <section className="py-14 md:py-20">
+      <section className="py-10 md:py-14">
         <div className="container max-w-3xl text-center">
           <Reveal>
             <div className="section-divider mx-auto mb-6" />
@@ -234,7 +234,7 @@ const Index = () => {
       </section>
 
       {/* 9. FAQ */}
-      <section className="py-14 md:py-20 bg-secondary/40">
+      <section className="py-10 md:py-14 bg-secondary/40">
         <div className="container max-w-3xl">
           <Reveal>
             <div className="section-shell-accent mb-8">
@@ -247,17 +247,17 @@ const Index = () => {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <Accordion type="single" collapsible className="space-y-2">
+            <Accordion type="single" collapsible className="space-y-3">
               {t.landing.homeFaqItems.map((item, i) => (
                 <AccordionItem
                   key={i}
                   value={`faq-${i}`}
-                  className="bg-card rounded-xl border border-border/40 px-6 overflow-hidden"
+                  className="bg-card rounded-2xl border border-border/30 px-7 overflow-hidden shadow-[0_2px_12px_-4px_hsl(var(--primary)/0.05)]"
                 >
-                  <AccordionTrigger className="text-sm font-heading font-semibold text-foreground py-4 hover:no-underline text-left">
+                  <AccordionTrigger className="text-sm font-heading font-semibold text-foreground py-5 hover:no-underline text-left">
                     {item.q}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground text-sm leading-[1.75] pb-4">
+                  <AccordionContent className="text-muted-foreground text-sm leading-[1.8] pb-5">
                     {item.a}
                   </AccordionContent>
                 </AccordionItem>

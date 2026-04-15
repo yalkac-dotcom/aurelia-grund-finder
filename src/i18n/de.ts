@@ -20,7 +20,7 @@ const de: Translations = {
     privacy: "Datenschutz",
     cookieSettings: "Cookie-Einstellungen",
     disclaimer:
-      "Diese Website informiert über Immobilien-Investments. Eine individuelle Beratung erfolgt persönlich nach Kontaktaufnahme. Nicht als Rechts- oder Steuerberatung auszulegen.",
+      "Diese Website dient der allgemeinen Information über die Aurelia Grundbesitz GmbH und ersetzt keine individuelle Beratung. Nicht als Rechts- oder Steuerberatung auszulegen.",
     brandLine:
       "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen – diskret, strukturiert und mit klarem Blick für Substanz.",
     subline: "Diskret · Substanzorientiert · Langfristig",
@@ -203,7 +203,7 @@ const de: Translations = {
     whyTitle: "Was uns unterscheidet",
     whyPoints: [
       { title: "Diskret statt öffentlich", text: "Wir arbeiten abseits öffentlicher Prozesse – mit Diskretion als Grundprinzip." },
-      { title: "Schnelle Ersteinschätzung", text: "Innerhalb weniger Tage erhalten Sie eine belastbare Rückmeldung zu Ihrer Anfrage." },
+      { title: "Schnelle Ersteinschätzung", text: "Sie erhalten zeitnah eine erste belastbare Einordnung zu Ihrer Anfrage." },
       { title: "Eigener unternehmerischer Ansatz", text: "Wir kaufen und entwickeln auf eigene Rechnung – kein Maklermodell, kein Vermittlungsgeschäft." },
       { title: "Substanz vor Inszenierung", text: "Wir setzen auf wirtschaftliche Klarheit statt auf Hochglanz-Versprechen." },
     ],
@@ -223,6 +223,7 @@ const de: Translations = {
       { q: "Ist das Erstgespräch verbindlich?", a: "Nein. Das Erstgespräch ist kostenlos und unverbindlich. Es dient einer ersten Einordnung – ohne Verpflichtung für eine Seite." },
       { q: "Muss schon alles vollständig vorbereitet sein?", a: "Nein. Oft reicht zunächst eine grobe Beschreibung der Situation. Wir klären gemeinsam, welche Informationen im nächsten Schritt relevant werden." },
       { q: "Übernehmen Sie jeden Fall?", a: "Nein. Wir prüfen sorgfältig, ob ein Engagement wirtschaftlich sinnvoll und realistisch umsetzbar ist. Ehrlichkeit in der Einschätzung gehört zu unserem Grundverständnis." },
+      { q: "Arbeiten Sie diskret und vertraulich?", a: "Ja, ausnahmslos. Diskretion ist kein optionaler Service, sondern Teil unseres Selbstverständnisses. Alle Informationen, Unterlagen und Gespräche werden vertraulich behandelt – ohne Ausnahme." },
     ],
   },
   about: {
