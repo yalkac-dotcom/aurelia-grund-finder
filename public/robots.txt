@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://aurelia-grundbesitz.de/sitemap.xml
+Sitemap: https://aureliaestates.de/sitemap.xml

@@ -71,10 +71,10 @@ const Footer = () => {
             <div className="flex flex-col items-start gap-1 text-[11px] md:text-xs leading-[1.7]">
               <p className="text-white/90 md:text-white font-medium">Aurelia Grundbesitz GmbH</p>
               <a
-                href="mailto:info@aurelia-grundbesitz.de"
+                href="mailto:info@aureliaestates.de"
                 className="min-h-0 text-white/80 hover:text-accent transition-colors duration-200"
               >
-                info@aurelia-grundbesitz.de
+                info@aureliaestates.de
               </a>
             </div>
 
