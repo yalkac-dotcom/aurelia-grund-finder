@@ -13,9 +13,15 @@ import {
 } from "@/components/ui/accordion";
 
 const panelBase =
-  "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
+  "bg-card rounded-[1.75rem] shadow-[0_12px_56px_-10px_hsl(212_55%_15%/0.10),0_6px_20px_-6px_hsl(212_55%_15%/0.06)] border border-border/50";
 
 const panelPadding = "px-6 py-7 md:px-12 md:py-10";
+
+const darkSection =
+  "bg-[hsl(212_55%_12%)] text-white";
+
+const darkPanelBase =
+  "bg-[hsl(212_50%_16%)] rounded-[1.75rem] shadow-[0_12px_56px_-10px_hsl(212_55%_8%/0.4),0_6px_20px_-6px_hsl(212_55%_8%/0.25)] border border-white/[0.06]";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -49,7 +55,7 @@ const Index = () => {
       </section>
 
       {/* 3. DREI EINSTIEGSPFADE */}
-      <section className="py-6 md:py-10 bg-secondary/30">
+      <section className="py-8 md:py-14 bg-secondary/50">
         <div className="container max-w-5xl">
           <Reveal>
             <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-8">
@@ -59,8 +65,8 @@ const Index = () => {
           <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
             {t.landing.relevanceCards.map((card, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className="group bg-card rounded-[1.25rem] p-8 md:p-10 shadow-[0_8px_40px_-8px_hsl(212_55%_20%/0.06),0_2px_10px_-4px_hsl(212_55%_20%/0.03)] border border-border/8 hover:shadow-[0_16px_56px_-10px_hsl(212_55%_20%/0.10),0_4px_16px_-6px_hsl(212_55%_20%/0.05)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full">
-                  <div className="w-10 h-[2px] bg-accent/40 rounded-full mb-7" />
+                <div className="group bg-card rounded-[1.75rem] p-8 md:p-10 shadow-[0_10px_48px_-8px_hsl(212_55%_15%/0.09),0_4px_14px_-4px_hsl(212_55%_15%/0.05)] border border-border/40 hover:shadow-[0_18px_60px_-10px_hsl(212_55%_15%/0.14),0_6px_20px_-6px_hsl(212_55%_15%/0.07)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full">
+                  <div className="w-10 h-[2px] bg-accent rounded-full mb-7" />
                   <h3 className="text-[1.05rem] md:text-[1.12rem] font-heading font-semibold text-foreground mb-3">
                     {card.title}
                   </h3>
@@ -90,7 +96,7 @@ const Index = () => {
               <div className="grid sm:grid-cols-2 gap-5 md:gap-7">
                 {t.landing.servicesModules.map((mod, i) => (
                   <Reveal key={i} delay={i * 0.08}>
-                    <div className="bg-secondary/40 rounded-[1.1rem] p-8 md:p-10 border-l-[3px] border-l-accent/30 hover:bg-secondary/60 transition-colors duration-400 h-full">
+                    <div className="bg-secondary/50 rounded-[1.25rem] p-8 md:p-10 border-l-[3px] border-l-accent/50 hover:bg-secondary/70 transition-colors duration-400 h-full">
                       <h3 className="text-[0.98rem] md:text-[1.05rem] font-heading font-semibold text-foreground mb-2.5">
                         {mod.title}
                       </h3>
@@ -106,23 +112,23 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 5. UNTERNEHMERISCHER ANSATZ */}
-      <section className="py-6 md:py-10 bg-secondary/30">
+      {/* 5. UNTERNEHMERISCHER ANSATZ — DARK */}
+      <section className={`py-10 md:py-16 ${darkSection}`}>
         <div className="container max-w-4xl">
           <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-5">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+            <div className={`${darkPanelBase} ${panelPadding}`}>
+              <div className="section-shell-accent mb-5 border-l-white/20">
+                <p className="text-[hsl(195_55%_55%)] font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.entrepreneurLabel}
                 </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-foreground leading-[1.2] max-w-xl text-balance">
+                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-white leading-[1.2] max-w-xl text-balance">
                   {t.landing.entrepreneurTitle}
                 </h2>
               </div>
-              <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mb-4 max-w-2xl">
+              <p className="text-white/75 text-[0.93rem] leading-[1.85] mb-4 max-w-2xl">
                 {t.landing.entrepreneurText}
               </p>
-              <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">
+              <p className="text-white/75 text-[0.93rem] leading-[1.85] max-w-2xl">
                 {t.landing.entrepreneurText2}
               </p>
             </div>
@@ -147,7 +153,7 @@ const Index = () => {
                 {t.landing.situationsList.map((item, i) => (
                   <Reveal key={i} delay={i * 0.06}>
                     <div className="flex items-start gap-3 py-2">
-                      <div className="w-1 h-5 bg-accent/40 rounded-full shrink-0 mt-0.5" />
+                      <div className="w-1 h-5 bg-accent/60 rounded-full shrink-0 mt-0.5" />
                       <p className="text-foreground text-[0.93rem] leading-[1.6]">
                         {item}
                       </p>
@@ -201,16 +207,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 8. WARUM AURELIA */}
-      <section className="py-6 md:py-10">
+      {/* 8. WARUM AURELIA — DARK */}
+      <section className={`py-10 md:py-16 ${darkSection}`}>
         <div className="container max-w-4xl">
           <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-6">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
+            <div className={`${darkPanelBase} ${panelPadding}`}>
+              <div className="section-shell-accent mb-6 border-l-white/20">
+                <p className="text-[hsl(195_55%_55%)] font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.whyLabel}
                 </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-foreground leading-[1.2] max-w-xl text-balance">
+                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-white leading-[1.2] max-w-xl text-balance">
                   {t.landing.whyTitle}
                 </h2>
               </div>
@@ -218,12 +224,12 @@ const Index = () => {
                 {t.landing.whyPoints.map((point, i) => (
                   <Reveal key={i} delay={i * 0.08}>
                     <div className="flex items-start gap-3">
-                      <div className="w-1 h-6 bg-accent/40 rounded-full shrink-0 mt-0.5" />
+                      <div className="w-1 h-6 bg-[hsl(195_55%_45%)]/60 rounded-full shrink-0 mt-0.5" />
                       <div>
-                        <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1">
+                        <h3 className="text-[0.95rem] font-heading font-semibold text-white mb-1">
                           {point.title}
                         </h3>
-                        <p className="text-muted-foreground text-sm leading-[1.75]">
+                        <p className="text-white/70 text-sm leading-[1.75]">
                           {point.text}
                         </p>
                       </div>
@@ -268,26 +274,26 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 10. CTA */}
-      <section className="py-6 md:py-10">
+      {/* 10. CTA — DARK */}
+      <section className={`py-10 md:py-16 ${darkSection}`}>
         <div className="container max-w-3xl">
           <Reveal>
-            <div className={`${panelBase} ${panelPadding} text-center`}>
-              <div className="section-divider mx-auto mb-7" />
-              <h2 className="text-[1.3rem] md:text-[1.6rem] font-heading font-semibold text-foreground leading-[1.2] mb-4 text-balance">
+            <div className={`${darkPanelBase} ${panelPadding} text-center`}>
+              <div className="w-10 h-[2px] bg-[hsl(195_55%_45%)] rounded-full mx-auto mb-7" />
+              <h2 className="text-[1.3rem] md:text-[1.6rem] font-heading font-semibold text-white leading-[1.2] mb-4 text-balance">
                 {t.landing.ctaTitle}
               </h2>
-              <p className="text-muted-foreground text-[0.9rem] leading-[1.75] mb-7 max-w-xl mx-auto">
+              <p className="text-white/75 text-[0.9rem] leading-[1.75] mb-7 max-w-xl mx-auto">
                 {t.landing.ctaText}
               </p>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-7 py-3 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 rounded-sm"
+                className="inline-flex items-center gap-2 bg-[hsl(195_55%_32%)] text-white px-7 py-3 text-xs font-medium tracking-[0.15em] uppercase hover:bg-[hsl(195_55%_38%)] transition-colors duration-300 rounded-sm"
               >
                 {t.landing.ctaButton}
                 <ArrowRight size={13} />
               </Link>
-              <p className="text-muted-foreground/70 text-xs mt-3">
+              <p className="text-white/50 text-xs mt-3">
                 {t.common.initialAssessmentNote}
               </p>
             </div>
