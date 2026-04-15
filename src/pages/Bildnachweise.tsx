@@ -4,6 +4,11 @@ import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 
+const panelBase =
+  "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
+
+const panelPadding = "px-8 py-10 md:px-16 md:py-16";
+
 const Bildnachweise = () => {
   const { t } = useLanguage();
 
@@ -23,23 +28,24 @@ const Bildnachweise = () => {
         </div>
       </section>
 
-      <section className="py-10 md:py-14">
+      <section className="py-10 md:py-16">
         <div className="container max-w-3xl">
           <Reveal>
-            <p className="text-muted-foreground text-sm leading-[1.8] mb-6">
-              Sämtliche auf dieser Website verwendeten Bilder sind KI-generiert und lizenzfrei. Sie wurden eigens für die Aurelia Grundbesitz GmbH erstellt und dienen ausschließlich der Illustration.
-            </p>
-            <p className="text-muted-foreground text-sm leading-[1.8] mb-6">
-              Es werden keine Bilder von Drittanbietern mit kostenpflichtiger oder unklarer Lizenzlage verwendet. Sollten dennoch Rechte Dritter betroffen sein, bitten wir um umgehende Kontaktaufnahme.
-            </p>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <div className="border-t border-border/40 pt-6">
-              <h2 className="text-sm font-heading font-semibold text-foreground mb-3">Kontakt bei Rückfragen</h2>
-              <p className="text-muted-foreground text-sm leading-[1.8]">
-                Aurelia Grundbesitz GmbH<br />
-                <a href="mailto:info@aurelia-grundbesitz.de" className="text-accent hover:underline">info@aurelia-grundbesitz.de</a>
+            <div className={`${panelBase} ${panelPadding}`}>
+              <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mb-4">
+                Sämtliche auf dieser Website verwendeten Bilder sind KI-generiert und lizenzfrei. Sie wurden eigens für die Aurelia Grundbesitz GmbH erstellt und dienen ausschließlich der Illustration.
               </p>
+              <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mb-8">
+                Es werden keine Bilder von Drittanbietern mit kostenpflichtiger oder unklarer Lizenzlage verwendet. Sollten dennoch Rechte Dritter betroffen sein, bitten wir um umgehende Kontaktaufnahme.
+              </p>
+
+              <div className="border-t border-border/20 pt-6">
+                <h2 className="text-[0.93rem] font-heading font-semibold text-foreground mb-2">Kontakt bei Rückfragen</h2>
+                <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">
+                  Aurelia Grundbesitz GmbH<br />
+                  <a href="mailto:info@aurelia-grundbesitz.de" className="text-accent hover:underline">info@aurelia-grundbesitz.de</a>
+                </p>
+              </div>
             </div>
           </Reveal>
         </div>
