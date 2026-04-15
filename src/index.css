@@ -215,18 +215,15 @@
 .hero-copy-shell::before {
   content: "";
   position: absolute;
-  inset: -1.2rem -1.5rem -1.2rem -1.2rem;
+  inset: -1.4rem -1.8rem -1.4rem -1.4rem;
   z-index: -1;
-  border-radius: 1rem;
-  background: linear-gradient(
-    115deg,
-    hsl(212 55% 20% / 0.38) 0%,
-    hsl(212 55% 20% / 0.22) 40%,
-    hsl(212 55% 20% / 0.06) 72%,
-    transparent 100%
-  );
-  backdrop-filter: blur(12px);
-  box-shadow: 0 20px 40px -30px hsl(212 55% 20% / 0.5);
+  border-radius: 1.25rem;
+  background: hsl(212 55% 12% / 0.82);
+  backdrop-filter: blur(18px) saturate(1.1);
+  border: 1px solid hsl(0 0% 100% / 0.06);
+  box-shadow:
+    0 24px 48px -12px hsl(212 55% 8% / 0.5),
+    0 8px 16px -8px hsl(212 55% 8% / 0.3);
 }
 
 .hero-kicker {
@@ -234,10 +231,10 @@
   align-items: center;
   padding: 0.35rem 0.7rem;
   margin-bottom: 0.9rem;
-  border: 1px solid hsl(0 0% 100% / 0.15);
-  background: hsl(212 55% 20% / 0.18);
+  border: 1px solid hsl(0 0% 100% / 0.18);
+  background: hsl(0 0% 100% / 0.08);
   backdrop-filter: blur(8px);
-  color: hsl(0 0% 100% / 0.92);
+  color: hsl(0 0% 100%);
   font-size: 0.68rem;
   font-weight: 600;
   line-height: 1.45;
@@ -253,16 +250,16 @@
   font-weight: 600;
   line-height: 1.2;
   text-wrap: balance;
-  text-shadow: 0 2px 12px hsl(212 55% 10% / 0.4);
+  text-shadow: none;
 }
 
 .hero-description {
   max-width: 34rem;
   margin-bottom: 1.3rem;
-  color: hsl(0 0% 100% / 0.88);
+  color: hsl(0 0% 100% / 0.95);
   font-size: clamp(0.86rem, 1.6vw, 0.95rem);
   line-height: 1.72;
-  text-shadow: 0 2px 8px hsl(212 55% 10% / 0.3);
+  text-shadow: none;
 }
 
 .hero-actions {
@@ -316,10 +313,10 @@
   align-items: flex-start;
   gap: 0.5rem;
   max-width: 30rem;
-  color: hsl(0 0% 100% / 0.75);
+  color: hsl(0 0% 100% / 0.85);
   font-size: 0.72rem;
   line-height: 1.6;
-  text-shadow: 0 2px 8px hsl(212 55% 10% / 0.25);
+  text-shadow: none;
 }
 
 @media (max-width: 767px) {
