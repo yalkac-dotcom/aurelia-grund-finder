@@ -148,6 +148,13 @@ export interface Translations {
     homeFaqLabel: string;
     homeFaqTitle: string;
     homeFaqItems: { q: string; a: string }[];
+    entrepreneurLabel: string;
+    entrepreneurTitle: string;
+    entrepreneurText: string;
+    entrepreneurText2: string;
+    situationsLabel: string;
+    situationsTitle: string;
+    situationsList: string[];
   };
   about: {
     heroTitle: string;
