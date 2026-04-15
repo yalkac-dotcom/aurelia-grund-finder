@@ -4,6 +4,11 @@ import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 
+const panelBase =
+  "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
+
+const panelPadding = "px-8 py-10 md:px-16 md:py-16";
+
 const Impressum = () => {
   const { t, language } = useLanguage();
   const imp = t.impressum;
@@ -24,74 +29,65 @@ const Impressum = () => {
         </div>
       </section>
 
-      <section className="py-10 md:py-14">
+      <section className="py-10 md:py-16">
         <div className="container max-w-3xl">
-          <div className="divide-y divide-border/60">
-            {/* Company info */}
-            <Reveal>
-              <div className="pb-5">
-                <h2 className="text-[0.9rem] font-heading font-semibold text-foreground mb-1.5">{imp.tmbTitle}</h2>
-                <p className="text-muted-foreground text-sm leading-[1.75]">
-                  Aurelia Grundbesitz GmbH<br />
-                  Grevenbroicher Weg 2<br />
-                  40547 Düsseldorf, {t.common.country}
-                </p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.05}>
-              <div className="py-5">
-                <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.representedByTitle}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.75]">{imp.representedByText}</p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <div className="py-5">
-                <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.contactTitle}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.75] whitespace-pre-line">{imp.contactText}</p>
-              </div>
-            </Reveal>
-            <Reveal delay={0.15}>
-              <div className="py-5">
-                <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.registerTitle}</h3>
-                <p className="text-muted-foreground text-sm leading-[1.75] whitespace-pre-line">{imp.registerText}</p>
-              </div>
-            </Reveal>
+          <Reveal>
+            <div className={`${panelBase} ${panelPadding}`}>
+              <div className="divide-y divide-border/30">
+                {/* Company info */}
+                <div className="pb-6">
+                  <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{imp.tmbTitle}</h2>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">
+                    Aurelia Grundbesitz GmbH<br />
+                    Grevenbroicher Weg 2<br />
+                    40547 Düsseldorf, {t.common.country}
+                  </p>
+                </div>
+                <div className="py-6">
+                  <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.representedByTitle}</h3>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{imp.representedByText}</p>
+                </div>
+                <div className="py-6">
+                  <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.contactTitle}</h3>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] whitespace-pre-line">{imp.contactText}</p>
+                </div>
+                <div className="py-6">
+                  <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.registerTitle}</h3>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] whitespace-pre-line">{imp.registerText}</p>
+                </div>
 
-            {/* Additional Legal Information */}
-            <Reveal delay={0.2}>
-              <div className="py-5">
-                <h2 className="text-[0.9rem] font-heading font-semibold text-foreground mb-4">{imp.additionalLegalTitle}</h2>
-
-                <div className="space-y-5">
-                  <div>
-                    <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.disputeTitle}</h3>
-                    <p className="text-muted-foreground text-sm leading-[1.75]">{imp.disputeText}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.liabilityContentTitle}</h3>
-                    <p className="text-muted-foreground text-sm leading-[1.75]">{imp.liabilityContentText}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.liabilityLinksTitle}</h3>
-                    <p className="text-muted-foreground text-sm leading-[1.75]">{imp.liabilityLinksText}</p>
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-heading font-semibold text-foreground mb-1">{imp.copyrightTitle}</h3>
-                    <p className="text-muted-foreground text-sm leading-[1.75]">{imp.copyrightText}</p>
+                {/* Additional Legal */}
+                <div className="pt-6">
+                  <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-6">{imp.additionalLegalTitle}</h2>
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.disputeTitle}</h3>
+                      <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{imp.disputeText}</p>
+                    </div>
+                    <div>
+                      <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.liabilityContentTitle}</h3>
+                      <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{imp.liabilityContentText}</p>
+                    </div>
+                    <div>
+                      <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.liabilityLinksTitle}</h3>
+                      <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{imp.liabilityLinksText}</p>
+                    </div>
+                    <div>
+                      <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.copyrightTitle}</h3>
+                      <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{imp.copyrightText}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Reveal>
 
-            {/* Binding language note for non-DE languages */}
-            {language !== "de" && imp.bindingLanguageNote && (
-              <Reveal delay={0.25}>
-                <div className="pt-5">
-                  <p className="text-muted-foreground text-sm leading-[1.75] italic">{imp.bindingLanguageNote}</p>
-                </div>
-              </Reveal>
-            )}
-          </div>
+                {/* Binding language note */}
+                {language !== "de" && imp.bindingLanguageNote && (
+                  <div className="pt-6">
+                    <p className="text-muted-foreground text-[0.93rem] leading-[1.85] italic">{imp.bindingLanguageNote}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
     </Layout>
