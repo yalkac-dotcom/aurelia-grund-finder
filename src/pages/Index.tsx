@@ -15,7 +15,7 @@ import {
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
 
-const panelPadding = "px-8 py-10 md:px-16 md:py-16";
+const panelPadding = "px-6 py-7 md:px-12 md:py-10";
 
 const Index = () => {
   const { t } = useLanguage();
@@ -33,7 +33,7 @@ const Index = () => {
       <HomeHero />
 
       {/* 2. EINORDNUNG */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -49,7 +49,7 @@ const Index = () => {
       </section>
 
       {/* 3. DREI EINSTIEGSPFADE */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-5xl">
           <Reveal>
             <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-8">
@@ -75,11 +75,11 @@ const Index = () => {
       </section>
 
       {/* 4. SO KÖNNEN WIR UNTERSTÜTZEN */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-5xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-10">
+              <div className="section-shell-accent mb-6">
                 <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.servicesModuleLabel}
                 </p>
@@ -107,11 +107,11 @@ const Index = () => {
       </section>
 
       {/* 5. UNTERNEHMERISCHER ANSATZ */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-8">
+              <div className="section-shell-accent mb-5">
                 <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.entrepreneurLabel}
                 </p>
@@ -131,11 +131,11 @@ const Index = () => {
       </section>
 
       {/* 6. BESONDERE SITUATIONEN */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-10">
+              <div className="section-shell-accent mb-6">
                 <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.situationsLabel}
                 </p>
@@ -161,7 +161,7 @@ const Index = () => {
       </section>
 
       {/* 7. ARBEITSWEISE */}
-      <section id="arbeitsweise" className="py-10 md:py-16 bg-secondary/30">
+      <section id="arbeitsweise" className="py-6 md:py-10 bg-secondary/30 scroll-mt-20">
         <div className="container max-w-5xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
@@ -173,7 +173,7 @@ const Index = () => {
                   {t.landing.processTitle}
                 </h2>
               </div>
-              <p className="text-muted-foreground text-sm leading-[1.7] mt-3 mb-10 max-w-xl">
+              <p className="text-muted-foreground text-sm leading-[1.7] mt-3 mb-6 max-w-xl">
                 {t.landing.processSubtitle}
               </p>
               <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -202,11 +202,11 @@ const Index = () => {
       </section>
 
       {/* 8. WARUM AURELIA */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-10">
+              <div className="section-shell-accent mb-6">
                 <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.whyLabel}
                 </p>
@@ -237,11 +237,11 @@ const Index = () => {
       </section>
 
       {/* 9. EINWANDBEHANDLUNG */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-10">
+              <div className="section-shell-accent mb-6">
                 <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.objectionsLabel}
                 </p>
@@ -269,7 +269,7 @@ const Index = () => {
       </section>
 
       {/* 10. CTA */}
-      <section className="py-10 md:py-16">
+      <section className="py-6 md:py-10">
         <div className="container max-w-3xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding} text-center`}>
@@ -296,11 +296,11 @@ const Index = () => {
       </section>
 
       {/* 11. FAQ */}
-      <section className="py-10 md:py-16 bg-secondary/30">
+      <section className="py-6 md:py-10 bg-secondary/30">
         <div className="container max-w-3xl">
           <Reveal>
             <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-10">
+              <div className="section-shell-accent mb-6">
                 <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
                   {t.landing.homeFaqLabel}
                 </p>
