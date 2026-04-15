@@ -8,6 +8,11 @@ import ceoImg from "@/assets/about-ceo.jpg";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 
+const panelBase =
+  "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
+
+const panelPadding = "px-8 py-10 md:px-16 md:py-16";
+
 const About = () => {
   const { t } = useLanguage();
 
@@ -31,90 +36,76 @@ const About = () => {
       </section>
 
       {/* Company */}
-      <section className="py-10 md:py-14">
+      <section className="py-10 md:py-16">
         <div className="container max-w-4xl">
           <Reveal>
-            <div className="section-shell-accent">
-              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.companyLabel}</p>
-              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                {t.about.companyTitle}
-              </h2>
+            <div className={`${panelBase} ${panelPadding}`}>
+              <div className="section-shell-accent mb-8">
+                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.companyLabel}</p>
+                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                  {t.about.companyTitle}
+                </h2>
+              </div>
+              <div className="space-y-3">
+                <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">{t.about.companyP1}</p>
+                <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">{t.about.companyP2}</p>
+              </div>
+              <Link to="/leistungen" className="inline-flex items-center gap-2 border border-foreground/15 text-foreground px-5 py-2.5 text-xs font-medium tracking-[0.15em] uppercase hover:border-foreground/40 transition-colors duration-300 rounded-sm mt-6">
+                {t.nav.services}
+                <ArrowRight size={11} />
+              </Link>
             </div>
-          </Reveal>
-          <div className="space-y-3 mt-4">
-            <Reveal delay={0.2}>
-              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.about.companyP1}</p>
-            </Reveal>
-            <Reveal delay={0.25}>
-              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.about.companyP2}</p>
-            </Reveal>
-          </div>
-          <Reveal delay={0.3}>
-            <Link to="/leistungen" className="inline-flex items-center gap-2 border border-foreground/15 text-foreground px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:border-foreground/40 transition-colors duration-300 mt-5">
-              {t.nav.services}
-              <ArrowRight size={11} />
-            </Link>
           </Reveal>
         </div>
       </section>
 
       {/* Philosophy */}
-      <section className="py-10 md:py-14 border-t border-border/60 bg-secondary/50">
+      <section className="py-10 md:py-16 bg-secondary/30">
         <div className="container max-w-4xl">
           <Reveal>
-            <div className="section-shell-accent">
-              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.philosophyLabel}</p>
-              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                {t.about.philosophyTitle}
-              </h2>
+            <div className={`${panelBase} ${panelPadding}`}>
+              <div className="section-shell-accent mb-8">
+                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.philosophyLabel}</p>
+                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
+                  {t.about.philosophyTitle}
+                </h2>
+              </div>
+              <div className="space-y-3">
+                <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">{t.about.philosophyP1}</p>
+                <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">{t.about.philosophyP2}</p>
+              </div>
             </div>
           </Reveal>
-          <div className="space-y-3 mt-4">
-            <Reveal delay={0.2}>
-              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.about.philosophyP1}</p>
-            </Reveal>
-            <Reveal delay={0.25}>
-              <p className="text-muted-foreground text-sm leading-[1.8] max-w-2xl">{t.about.philosophyP2}</p>
-            </Reveal>
-          </div>
         </div>
       </section>
 
       {/* Team & Experience */}
-      <section className="py-10 md:py-14">
+      <section className="py-10 md:py-16">
         <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <Reveal>
-              <OptimizedImg src={ceoImg} alt={t.about.experienceTitle} className="w-full h-[320px] object-cover" />
-            </Reveal>
-            <div>
-              <Reveal delay={0.1}>
-                <div className="section-shell-accent">
-                  <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.experienceLabel}</p>
-                  <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
-                    {t.about.experienceTitle}
-                  </h2>
+          <Reveal>
+            <div className={`${panelBase} ${panelPadding}`}>
+              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <OptimizedImg src={ceoImg} alt={t.about.experienceTitle} className="w-full h-[320px] object-cover rounded-xl" />
+                <div>
+                  <div className="section-shell-accent mb-4">
+                    <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.experienceLabel}</p>
+                    <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
+                      {t.about.experienceTitle}
+                    </h2>
+                  </div>
+                  <div className="space-y-2.5 mt-4">
+                    <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{t.about.experienceP1}</p>
+                    <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{t.about.experienceP2}</p>
+                    <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{t.about.experienceP3}</p>
+                  </div>
+                  <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-5 py-2.5 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 rounded-sm mt-6">
+                    {t.hero.cta}
+                    <ArrowRight size={11} />
+                  </Link>
                 </div>
-              </Reveal>
-              <div className="space-y-2.5 mt-4">
-                <Reveal delay={0.2}>
-                  <p className="text-muted-foreground text-base leading-[1.75]">{t.about.experienceP1}</p>
-                </Reveal>
-                <Reveal delay={0.25}>
-                  <p className="text-muted-foreground text-base leading-[1.75]">{t.about.experienceP2}</p>
-                </Reveal>
-                <Reveal delay={0.3}>
-                  <p className="text-muted-foreground text-base leading-[1.75]">{t.about.experienceP3}</p>
-                </Reveal>
               </div>
-              <Reveal delay={0.35}>
-                <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent text-white px-5 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 mt-5">
-                  {t.hero.cta}
-                  <ArrowRight size={11} />
-                </Link>
-              </Reveal>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
     </Layout>
