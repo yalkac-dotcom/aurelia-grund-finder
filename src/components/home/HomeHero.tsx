@@ -9,10 +9,9 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const HomeHero = () => {
   const { t } = useLanguage();
 
-  const handleScrollToNext = () => {
-    const hero = document.getElementById("hero");
-    const next = hero?.nextElementSibling as HTMLElement | null;
-    next?.scrollIntoView({ behavior: "smooth", block: "start" });
+  const handleScrollToProcess = () => {
+    const el = document.getElementById("arbeitsweise");
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -46,7 +45,7 @@ const HomeHero = () => {
             </Link>
 
             <button
-              onClick={handleScrollToNext}
+              onClick={handleScrollToProcess}
               className="hero-secondary-button inline-flex items-center justify-center gap-2"
             >
               {t.landing.heroCtaSecondary}
