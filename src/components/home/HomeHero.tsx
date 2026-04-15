@@ -34,7 +34,7 @@ const HomeHero = () => {
         <div className="hero-copy-shell">
           <p className="hero-kicker">{t.landing.trustLine}</p>
 
-          <h1 className="hero-title" style={{ maxWidth: "20ch" }}>{t.hero.slogan}</h1>
+          <h1 className="hero-title">{t.hero.slogan}</h1>
 
           <p className="hero-description">{t.landing.heroSubtitle}</p>
 

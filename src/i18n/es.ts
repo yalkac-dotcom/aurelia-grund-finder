@@ -27,9 +27,9 @@ const es: Translations = {
     subline: "Discreción · Orientación a la sustancia · Largo plazo",
   },
   hero: {
-    slogan: "Inmuebles con sustancia — revisados con discreción, desarrollados con claridad, pensados a largo plazo.",
+    slogan: "Caminos claros para inmuebles en situaciones difíciles.",
     subtitle:
-      "Aurelia Grundbesitz desarrolla inmuebles procedentes de situaciones especiales con serenidad, experiencia y una visión clara de soluciones económicamente sensatas.",
+      "Discreto, estructurado y con enfoque en pasos realistas.",
     cta: "Contactar",
     ctaSecondary: "Más sobre Aurelia",
   },
@@ -100,7 +100,7 @@ const es: Translations = {
   },
   landing: {
     heroLabel: "Aurelia Grundbesitz",
-    heroSubtitle: "Analizamos, adquirimos y desarrollamos inmuebles procedentes de situaciones especiales con serenidad, experiencia y una visión clara de soluciones económicamente sensatas.",
+    heroSubtitle: "Analizamos situaciones inmobiliarias complejas e identificamos pasos realistas.",
     heroCta: "Contactar",
     heroCtaSecondary: "Más sobre Aurelia",
     trustLine: "Competencia sustancial · Dirigida por propietarios · Perspectiva a largo plazo",

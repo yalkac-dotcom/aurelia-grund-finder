@@ -176,7 +176,7 @@
 
 /* Hero system */
 .hero-media {
-  filter: brightness(1.45) saturate(0.90) contrast(1.01);
+  filter: brightness(1.15) saturate(0.95) contrast(1.02);
 }
 
 .hero-overlay-base {
@@ -249,12 +249,12 @@
 }
 
 .hero-title {
-  max-width: 14ch;
-  margin-bottom: 0.75rem;
+  max-width: 18ch;
+  margin-bottom: 0.65rem;
   color: hsl(var(--primary-foreground));
-  font-size: clamp(1.55rem, 5vw, 2.6rem);
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
   font-weight: 600;
-  line-height: 1.12;
+  line-height: 1.15;
   text-wrap: balance;
   text-shadow: 0 6px 20px hsl(var(--primary) / 0.25);
 }
@@ -326,7 +326,7 @@
 
 @media (max-width: 767px) {
   .hero-media {
-    filter: brightness(1.38) saturate(0.88) contrast(1.01);
+    filter: brightness(1.10) saturate(0.92) contrast(1.02);
   }
 
   .hero-overlay-base {
@@ -368,8 +368,8 @@
   }
 
   .hero-title {
-    max-width: 13ch;
-    margin-bottom: 0.65rem;
+    max-width: 16ch;
+    margin-bottom: 0.55rem;
   }
 
   .hero-description {
@@ -387,7 +387,7 @@
 
 @media (min-width: 768px) {
   .hero-media {
-    filter: brightness(1.48) saturate(0.92) contrast(1.02);
+    filter: brightness(1.18) saturate(0.95) contrast(1.03);
   }
 
   .hero-actions {
@@ -399,7 +399,7 @@
   }
 
   .hero-title {
-    max-width: 15ch;
+    max-width: 20ch;
   }
 
   .hero-meta-line {

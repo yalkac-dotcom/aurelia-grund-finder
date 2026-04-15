@@ -27,9 +27,9 @@ const en: Translations = {
     subline: "Discreet · Substance-focused · Long-term",
   },
   hero: {
-    slogan: "When properties, land, or stalled positions have no clear path forward, what's needed is a calm and realistic assessment.",
+    slogan: "Clear paths for real estate in difficult situations.",
     subtitle:
-      "Aurelia reviews difficult, time-sensitive, and economically blocked constellations around real estate — discreetly, in a structured way, and with a focus on realistic next steps.",
+      "Discreet, structured, and focused on realistic next steps.",
     cta: "Enquire confidentially",
     ctaSecondary: "How we help",
   },
@@ -100,7 +100,7 @@ const en: Translations = {
   },
   landing: {
     heroLabel: "Aurelia Grundbesitz",
-    heroSubtitle: "Aurelia reviews difficult, time-sensitive, and economically blocked constellations around real estate — discreetly, in a structured way, and with a focus on realistic next steps.",
+    heroSubtitle: "We assess complex real estate situations and identify realistic next steps.",
     heroCta: "Enquire confidentially",
     heroCtaSecondary: "How we help",
     trustLine: "Discreet · Owner-led · Entrepreneurially capable",

@@ -27,9 +27,9 @@ const nl: Translations = {
     subline: "Discreet · Waardegericht · Langetermijnvisie",
   },
   hero: {
-    slogan: "Vastgoed met substantie — discreet getoetst, helder ontwikkeld, op de lange termijn gedacht.",
+    slogan: "Duidelijke wegen voor vastgoed in moeilijke situaties.",
     subtitle:
-      "Aurelia Grundbesitz ontwikkelt vastgoed uit bijzondere situaties met rust, ervaring en een scherp oog voor economisch verantwoorde oplossingen.",
+      "Discreet, gestructureerd en gericht op realistische volgende stappen.",
     cta: "Contact opnemen",
     ctaSecondary: "Meer over Aurelia",
   },
@@ -101,7 +101,7 @@ const nl: Translations = {
   },
   landing: {
     heroLabel: "Aurelia Grundbesitz",
-    heroSubtitle: "Wij beoordelen, verwerven en ontwikkelen vastgoed uit bijzondere situaties — met rust, ervaring en een scherp oog voor economisch verantwoorde oplossingen.",
+    heroSubtitle: "Wij beoordelen complexe vastgoedsituaties en identificeren realistische volgende stappen.",
     heroCta: "Contact opnemen",
     heroCtaSecondary: "Meer over Aurelia",
     trustLine: "Substantiële expertise · Eigenaargestuurd · Langetermijnperspectief",

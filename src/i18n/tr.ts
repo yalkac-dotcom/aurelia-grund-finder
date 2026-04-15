@@ -27,9 +27,9 @@ const tr: Translations = {
     subline: "Gizli · Öz odaklı · Uzun vadeli",
   },
   hero: {
-    slogan: "Özü olan gayrimenkuller — gizlilikle incelenir, net biçimde geliştirilir, uzun vadeli düşünülür.",
+    slogan: "Zor durumlardaki gayrimenkuller için net çözüm yolları.",
     subtitle:
-      "Aurelia Grundbesitz, özel durumlardan çıkan gayrimenkulleri sakinlik, deneyim ve ekonomik açıdan mantıklı çözümlere odaklanan net bir bakışla geliştirir.",
+      "Gizli, yapılandırılmış ve gerçekçi adımlara odaklı.",
     cta: "İletişime geçin",
     ctaSecondary: "Aurelia hakkında",
   },
@@ -100,7 +100,7 @@ const tr: Translations = {
   },
   landing: {
     heroLabel: "Aurelia Grundbesitz",
-    heroSubtitle: "Özel durumlardan çıkan gayrimenkulleri sakinlik, deneyim ve ekonomik açıdan mantıklı çözümlere odaklanan net bir bakışla inceler, satın alır ve geliştiririz.",
+    heroSubtitle: "Karmaşık gayrimenkul durumlarını analiz eder ve gerçekçi adımlar belirleriz.",
     heroCta: "İletişime geçin",
     heroCtaSecondary: "Aurelia hakkında",
     trustLine: "Köklü yetkinlik · Sahipleri tarafından yönetilir · Uzun vadeli perspektif",
