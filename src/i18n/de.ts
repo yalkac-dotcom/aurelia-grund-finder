@@ -27,9 +27,9 @@ const de: Translations = {
     subline: "Diskret · Substanzorientiert · Langfristig",
   },
   hero: {
-    slogan: "Wenn Immobilien, Grundstücke oder festgefahrene Positionen keinen klaren Weg mehr haben, braucht es eine ruhige und realistische Einordnung.",
+    slogan: "Klare Wege für Immobilien in schwierigen Situationen.",
     subtitle:
-      "Aurelia prüft schwierige, zeitkritische und wirtschaftlich blockierte Konstellationen rund um Immobilien – diskret, strukturiert und mit Blick auf realistische nächste Schritte.",
+      "Diskret, strukturiert und mit Blick auf realistische nächste Schritte.",
     cta: "Vertraulich anfragen",
     ctaSecondary: "Wie wir helfen",
   },
@@ -101,7 +101,7 @@ const de: Translations = {
   },
   landing: {
     heroLabel: "Aurelia Grundbesitz",
-    heroSubtitle: "Aurelia prüft schwierige, zeitkritische und wirtschaftlich blockierte Konstellationen rund um Immobilien – diskret, strukturiert und mit Blick auf realistische nächste Schritte.",
+    heroSubtitle: "Wir prüfen schwierige Konstellationen rund um Immobilien und zeigen realistische nächste Schritte auf.",
     heroCta: "Vertraulich anfragen",
     heroCtaSecondary: "Wie wir helfen",
     trustLine: "Diskret · Inhabergeführt · Unternehmerisch handlungsfähig",
