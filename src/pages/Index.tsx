@@ -59,9 +59,9 @@ const Index = () => {
           <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
             {t.landing.relevanceCards.map((card, i) => (
               <Reveal key={i} delay={i * 0.1}>
-                <div className={`group ${panelBase} p-8 md:p-10 hover:shadow-[0_16px_72px_-14px_hsl(var(--primary)/0.13),0_4px_18px_-6px_hsl(var(--primary)/0.06)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full`}>
-                  <div className="w-8 h-[2px] bg-[hsl(var(--gold)/0.45)] rounded-full mb-6" />
-                  <h3 className="text-[1.02rem] md:text-[1.1rem] font-heading font-semibold text-foreground mb-3">
+                <div className="group bg-card rounded-[1.25rem] p-8 md:p-10 shadow-[0_8px_40px_-8px_hsl(212_55%_20%/0.06),0_2px_10px_-4px_hsl(212_55%_20%/0.03)] border border-border/8 hover:shadow-[0_16px_56px_-10px_hsl(212_55%_20%/0.10),0_4px_16px_-6px_hsl(212_55%_20%/0.05)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full">
+                  <div className="w-10 h-[2px] bg-accent/40 rounded-full mb-7" />
+                  <h3 className="text-[1.05rem] md:text-[1.12rem] font-heading font-semibold text-foreground mb-3">
                     {card.title}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-[1.8]">
@@ -90,8 +90,8 @@ const Index = () => {
               <div className="grid sm:grid-cols-2 gap-5 md:gap-7">
                 {t.landing.servicesModules.map((mod, i) => (
                   <Reveal key={i} delay={i * 0.08}>
-                    <div className="bg-secondary/30 rounded-2xl p-7 md:p-9 border-l-[3px] border-l-[hsl(var(--gold)/0.4)] hover:bg-secondary/50 transition-colors duration-400 h-full">
-                      <h3 className="text-[0.98rem] md:text-[1.05rem] font-heading font-semibold text-foreground mb-2">
+                    <div className="bg-secondary/40 rounded-[1.1rem] p-8 md:p-10 border-l-[3px] border-l-accent/30 hover:bg-secondary/60 transition-colors duration-400 h-full">
+                      <h3 className="text-[0.98rem] md:text-[1.05rem] font-heading font-semibold text-foreground mb-2.5">
                         {mod.title}
                       </h3>
                       <p className="text-muted-foreground text-sm leading-[1.8]">
