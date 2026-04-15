@@ -91,6 +91,12 @@ const Footer = () => {
               >
                 {t.footer.privacy}
               </Link>
+              <Link
+                to="/bildnachweise"
+                className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+              >
+                {t.footer.imageCredits}
+              </Link>
               <button
                 type="button"
                 onClick={openCookieSettings}
