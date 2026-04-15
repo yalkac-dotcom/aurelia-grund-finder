@@ -223,6 +223,7 @@ const nl: Translations = {
       { q: "Is het eerste gesprek bindend?", a: "Nee. Het eerste gesprek is gratis en vrijblijvend. Het dient als een eerste inschatting — zonder verplichting voor beide partijen." },
       { q: "Moet alles al volledig voorbereid zijn?", a: "Nee. Vaak is een ruwe beschrijving van de situatie voldoende om te beginnen. Samen bepalen wij welke informatie in de volgende stap relevant wordt." },
       { q: "Neemt u elke zaak aan?", a: "Nee. Wij beoordelen zorgvuldig of een opdracht economisch zinvol en realistisch haalbaar is. Eerlijkheid in de beoordeling is onderdeel van onze kernaanpak." },
+      { q: "Werkt u discreet en vertrouwelijk?", a: "Ja, zonder uitzondering. Discretie is geen optionele dienst, maar onderdeel van onze identiteit. Alle informatie, documenten en gesprekken worden vertrouwelijk behandeld — zonder uitzonderingen." },
     ],
   },
   about: {

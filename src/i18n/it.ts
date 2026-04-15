@@ -222,6 +222,7 @@ const it: Translations = {
       { q: "Il primo colloquio è vincolante?", a: "No. Il primo colloquio è gratuito e non vincolante. Serve come prima valutazione — senza obblighi per nessuna delle parti." },
       { q: "Deve essere tutto completamente preparato?", a: "No. Spesso una descrizione sommaria della situazione è sufficiente per iniziare. Insieme chiariremo quali informazioni diventano rilevanti nel passo successivo." },
       { q: "Accettate ogni caso?", a: "No. Valutiamo attentamente se un incarico è economicamente sensato e realisticamente fattibile. L'onestà nella valutazione è parte del nostro approccio." },
+      { q: "Lavorate in modo discreto e riservato?", a: "Sì, senza eccezioni. La discrezione non è un servizio opzionale, ma parte della nostra identità. Tutte le informazioni, i documenti e le conversazioni vengono trattati in modo riservato — senza eccezioni." },
     ],
   },
   about: {
