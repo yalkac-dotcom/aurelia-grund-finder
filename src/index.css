@@ -155,14 +155,14 @@
 
 /* ── Architectural containment system ── */
 .section-shell-accent {
-  border-left: 2px solid hsl(var(--accent) / 0.35);
+  border-left: 2px solid hsl(var(--accent) / 0.55);
   padding-left: 1.25rem;
 }
 
 .section-divider {
   width: 2.5rem;
-  height: 1px;
-  background: hsl(var(--accent) / 0.4);
+  height: 2px;
+  background: hsl(var(--accent) / 0.6);
 }
 
 .cta-module {
