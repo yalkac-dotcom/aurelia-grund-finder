@@ -96,7 +96,7 @@ const Index = () => {
               <div className="grid sm:grid-cols-2 gap-5 md:gap-7">
                 {t.landing.servicesModules.map((mod, i) => (
                   <Reveal key={i} delay={i * 0.08}>
-                    <div className="bg-secondary/40 rounded-[1.1rem] p-8 md:p-10 border-l-[3px] border-l-accent/30 hover:bg-secondary/60 transition-colors duration-400 h-full">
+                    <div className="bg-secondary/50 rounded-[1.25rem] p-8 md:p-10 border-l-[3px] border-l-accent/50 hover:bg-secondary/70 transition-colors duration-400 h-full">
                       <h3 className="text-[0.98rem] md:text-[1.05rem] font-heading font-semibold text-foreground mb-2.5">
                         {mod.title}
                       </h3>
