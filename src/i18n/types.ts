@@ -9,6 +9,7 @@ export interface Translations {
     investors: string;
     glossar: string;
     contact: string;
+    workApproach: string;
   };
   footer: {
     navigation: string;
@@ -130,6 +131,22 @@ export interface Translations {
     processTitle: string;
     processSubtitle: string;
     processSteps: { num: string; title: string; text: string }[];
+    positioningTitle: string;
+    positioningText: string;
+    relevanceLabel: string;
+    relevanceCards: { title: string; text: string }[];
+    servicesModuleLabel: string;
+    servicesModuleTitle: string;
+    servicesModules: { title: string; text: string }[];
+    whyLabel: string;
+    whyTitle: string;
+    whyPoints: { title: string; text: string }[];
+    objectionsLabel: string;
+    objectionsTitle: string;
+    objections: { q: string; a: string }[];
+    homeFaqLabel: string;
+    homeFaqTitle: string;
+    homeFaqItems: { q: string; a: string }[];
   };
   about: {
     heroTitle: string;
