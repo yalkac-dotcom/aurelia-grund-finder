@@ -27,11 +27,11 @@ const nl: Translations = {
     subline: "Discreet · Waardegericht · Langetermijnvisie",
   },
   hero: {
-    slogan: "Duidelijke wegen voor vastgoed in moeilijke situaties.",
+    slogan: "Wanneer een verkoop vastloopt of de druk toeneemt, is een duidelijke volgende stap nodig.",
     subtitle:
-      "Discreet, gestructureerd en gericht op realistische volgende stappen.",
-    cta: "Contact opnemen",
-    ctaSecondary: "Meer over Aurelia",
+      "Aurelia beoordeelt vastgoed, grond en geselecteerde vastgoedgerelateerde constellaties in moeilijke of tijdkritische situaties — discreet, gestructureerd en gericht op realistische oplossingen.",
+    cta: "Vertrouwelijk contact opnemen",
+    ctaSecondary: "Hoe wij helpen",
   },
   common: {
     learnMore: "Meer informatie",

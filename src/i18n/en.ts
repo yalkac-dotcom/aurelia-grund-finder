@@ -27,9 +27,9 @@ const en: Translations = {
     subline: "Discreet · Substance-focused · Long-term",
   },
   hero: {
-    slogan: "Clear paths for real estate in difficult situations.",
+    slogan: "When a sale stalls or pressure mounts, what's needed is a clear next step.",
     subtitle:
-      "Discreet, structured, and focused on realistic next steps.",
+      "Aurelia reviews properties, land, and selected property-related constellations in difficult or time-critical situations — discreetly, in a structured way, and with a focus on realistic solutions.",
     cta: "Enquire confidentially",
     ctaSecondary: "How we help",
   },

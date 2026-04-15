@@ -27,11 +27,11 @@ const it: Translations = {
     subline: "Discrezione · Orientamento alla sostanza · Lungo termine",
   },
   hero: {
-    slogan: "Percorsi chiari per immobili in situazioni difficili.",
+    slogan: "Quando una vendita si blocca o la pressione aumenta, serve un passo successivo chiaro.",
     subtitle:
-      "Discreti, strutturati e focalizzati su passi realistici.",
-    cta: "Contattaci",
-    ctaSecondary: "Scopri Aurelia",
+      "Aurelia esamina immobili, terreni e costellazioni immobiliari selezionate in situazioni difficili o urgenti — con discrezione, in modo strutturato e con un focus su soluzioni realistiche.",
+    cta: "Richiesta riservata",
+    ctaSecondary: "Come aiutiamo",
   },
   common: {
     learnMore: "Scopri di più",
