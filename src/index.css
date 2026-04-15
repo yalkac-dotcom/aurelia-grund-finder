@@ -345,15 +345,11 @@
   }
 
   .hero-copy-shell::before {
-    inset: -0.8rem -0.8rem -0.8rem -0.8rem;
-    border-radius: 0.75rem;
-    background: linear-gradient(
-      180deg,
-      hsl(212 55% 20% / 0.20) 0%,
-      hsl(212 55% 20% / 0.35) 50%,
-      hsl(212 55% 20% / 0.22) 100%
-    );
-    backdrop-filter: blur(14px);
+    inset: -1rem -1rem -1rem -1rem;
+    border-radius: 1rem;
+    background: hsl(212 55% 12% / 0.85);
+    backdrop-filter: blur(18px) saturate(1.1);
+    border: 1px solid hsl(0 0% 100% / 0.06);
   }
 
   .hero-kicker {
