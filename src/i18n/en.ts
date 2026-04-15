@@ -239,6 +239,8 @@ const en: Translations = {
       "Selected property-related claims and positions",
     ],
   },
+  about: {
+    heroTitle: "About Aurelia",
     companyLabel: "Who we are",
     companyTitle: "Who we are",
     companyP1: "Aurelia Grundbesitz develops properties from foreclosures, estates, insolvencies, and comparable special situations. Our focus is on assets that require experience, structure, and careful economic assessment.",

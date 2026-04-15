@@ -240,6 +240,7 @@ const de: Translations = {
       "Ausgewählte immobilienbezogene Forderungen und Positionen",
     ],
   },
+  about: {
     heroTitle: "Über Aurelia",
     companyLabel: "Das Unternehmen",
     companyTitle: "Das Team hinter Aurelia",

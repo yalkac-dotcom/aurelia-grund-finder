@@ -240,6 +240,8 @@ const tr: Translations = {
       "Seçilmiş gayrimenkul ile ilgili alacaklar ve pozisyonlar",
     ],
   },
+  about: {
+    heroTitle: "Hakkımızda",
     companyLabel: "Biz kimiz",
     companyTitle: "Şirketimiz",
     companyP1: "Aurelia Grundbesitz GmbH, özel durumlardan kaynaklanan gayrimenkullerin profesyonel geliştirilmesi ve yönetimi konusunda uzmanlaşmıştır. Odak noktasını, geniş deneyim, özen ve ileri görüşlülükle seçilen cebri icra, miras ve iflas süreçlerinden elde edilen gayrimenkuller oluşturmaktadır.",
