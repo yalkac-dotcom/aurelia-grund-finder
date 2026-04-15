@@ -147,7 +147,7 @@ const Index = () => {
                 {t.landing.situationsList.map((item, i) => (
                   <Reveal key={i} delay={i * 0.06}>
                     <div className="flex items-start gap-3 py-2">
-                      <div className="w-1 h-5 bg-[hsl(var(--gold)/0.5)] rounded-full shrink-0 mt-0.5" />
+                      <div className="w-1 h-5 bg-accent/40 rounded-full shrink-0 mt-0.5" />
                       <p className="text-foreground text-[0.93rem] leading-[1.6]">
                         {item}
                       </p>
@@ -218,7 +218,7 @@ const Index = () => {
                 {t.landing.whyPoints.map((point, i) => (
                   <Reveal key={i} delay={i * 0.08}>
                     <div className="flex items-start gap-3">
-                      <div className="w-1 h-6 bg-[hsl(var(--gold)/0.5)] rounded-full shrink-0 mt-0.5" />
+                      <div className="w-1 h-6 bg-accent/40 rounded-full shrink-0 mt-0.5" />
                       <div>
                         <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1">
                           {point.title}
@@ -252,7 +252,7 @@ const Index = () => {
               <div className="grid gap-5">
                 {t.landing.objections.map((obj, i) => (
                   <Reveal key={i} delay={i * 0.1}>
-                    <div className="bg-secondary/30 rounded-2xl p-7 md:p-9">
+                    <div className="bg-secondary/40 rounded-[1.1rem] p-8 md:p-10">
                       <p className="text-[1rem] font-heading font-semibold text-foreground mb-3 italic">
                         „{obj.q}"
                       </p>
@@ -313,7 +313,7 @@ const Index = () => {
                   <AccordionItem
                     key={i}
                     value={`faq-${i}`}
-                    className="bg-secondary/30 rounded-2xl border-none px-7 overflow-hidden"
+                    className="bg-secondary/40 rounded-[1.1rem] border-none px-7 overflow-hidden"
                   >
                     <AccordionTrigger className="text-sm font-heading font-semibold text-foreground py-5 hover:no-underline text-left">
                       {item.q}
