@@ -21,7 +21,7 @@ const HomeHero = () => {
           src={heroSets.premium.src}
           srcSet={heroSets.premium.srcSet}
           sizes={heroSets.premium.sizes}
-          alt="Helle, hochwertige Architekturfassade von Aurelia Grundbesitz"
+          alt="Gepflegtes Mehrfamilienhaus in einer ruhigen Wohnstraße"
           className="hero-media h-full w-full object-cover object-[62%_center] md:object-center"
           priority
         />
@@ -34,7 +34,7 @@ const HomeHero = () => {
         <div className="hero-copy-shell">
           <p className="hero-kicker">{t.landing.trustLine}</p>
 
-          <h1 className="hero-title">{t.hero.slogan}</h1>
+          <h1 className="hero-title" style={{ maxWidth: "20ch" }}>{t.hero.slogan}</h1>
 
           <p className="hero-description">{t.landing.heroSubtitle}</p>
 
