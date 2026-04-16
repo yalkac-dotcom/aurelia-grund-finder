@@ -156,6 +156,48 @@
   }
 }
 
+.page-shell {
+  width: min(100%, 76rem);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.page-frame,
+.page-frame-wide,
+.page-frame-hero {
+  width: 100%;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .page-shell {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-shell {
+    padding-inline: 2rem;
+  }
+}
+
+.page-frame-hero {
+  width: min(100%, 76rem);
+  padding-inline: 1rem;
+}
+
+@media (min-width: 768px) {
+  .page-frame-hero {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-frame-hero {
+    padding-inline: 2rem;
+  }
+}
+
 /* ── Architectural containment system ── */
 .section-shell-accent {
   border-left: 2px solid hsl(var(--accent) / 0.55);
