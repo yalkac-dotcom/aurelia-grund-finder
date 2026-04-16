@@ -260,7 +260,7 @@ const HomePage = () => {
                   role: "Softwareentwickler, Ratingen"
                 },
                 {
-                  quote: "Die Beteiligung bei Aurelia überzeugt mich durch Transparenz: echte Zahlen, real Assets, professionelle Abwicklung. Nach 7 Monaten hatte ich meine erwartete Rendite.",
+                  quote: "Die Beteiligung bei Aurelia überzeugt mich durch Transparenz: echte Zahlen, real Assets, professionelle Abwicklung. Nach 12 Monaten hatte ich meine erwartete Rendite.",
                   author: "Reinhard Hoffmann",
                   role: "Unternehmer & Kapitalanleger, Meerbusch (Düsseldorf-Umgebung)"
                 }
