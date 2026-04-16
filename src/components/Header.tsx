@@ -21,6 +21,7 @@ const Header = () => {
     { label: t.nav.services, path: "/leistungen" },
     { label: t.nav.workApproach, path: "/arbeitsweise" },
     { label: t.nav.about, path: "/ueber-uns" },
+    { label: "FAQ", path: "/faq" },
   ];
 
   const handleHashNav = (item: NavItem) => {

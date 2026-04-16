@@ -17,6 +17,7 @@ const Investors = lazy(() => import("./pages/Investors"));
 const InvestorGlossar = lazy(() => import("./pages/InvestorGlossar"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Arbeitsweise = lazy(() => import("./pages/Arbeitsweise"));
+const FAQ = lazy(() => import("./pages/FAQ"));
 
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Impressum = lazy(() => import("./pages/Impressum"));
@@ -45,6 +46,7 @@ const App = () => (
               <Route path="/investoren-glossar" element={<InvestorGlossar />} />
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/arbeitsweise" element={<Arbeitsweise />} />
+              <Route path="/faq" element={<FAQ />} />
               <Route path="/datenschutz" element={<Privacy />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/bildnachweise" element={<Bildnachweise />} />
