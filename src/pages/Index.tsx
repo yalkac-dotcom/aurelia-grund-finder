@@ -28,9 +28,9 @@ const HomePage = () => {
           <div className="hero-copy-shell">
             <Reveal>
               <p className="hero-kicker">Aurelia Grundbesitz</p>
-              <h1 className="hero-title">Immobilien. Forderungen. Chancen.</h1>
+              <h1 className="hero-title">Immobilien. Forderungen. Vermögensaufbau.</h1>
               <p className="hero-description">
-                Du sitzt fest mit Deiner Immobilie? Du willst günstig kaufen? Du willst mit uns gewinnen? Wir haben eine Lösung für Dich.
+                Aurelia bietet maßgeschneiderte Lösungen in drei Bereichen: Forderungsmanagement für Eigentümer in Schwierigkeiten, Immobilienerwerb für Käufer zu fairen Bedingungen und Investmentmöglichkeiten mit transparenten Renditeperspektiven.
               </p>
             </Reveal>
           </div>
@@ -46,10 +46,10 @@ const HomePage = () => {
               <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Dein Weg zu Aurelia
+                  Unsere Geschäftsbereiche
                 </h2>
                 <p className="mx-auto max-w-lg text-[0.93rem] leading-[1.85] text-muted-foreground">
-                  Ob Du Hilfe brauchst, sparen willst oder investieren möchtest — wir haben den richtigen Weg für Dich.
+                  Unabhängig von Ihrer Ausgangssituation verfügen wir über spezialisierte Lösungen für Ihre Anforderungen.
                 </p>
               </div>
             </Reveal>
@@ -58,22 +58,22 @@ const HomePage = () => {
               {[
                 {
                   icon: Shield,
-                  title: "Ich brauche HILFE",
-                  desc: "Meine Immobilie ist in Schwierigkeiten",
+                  title: "Eigentümer in Schwierigkeiten",
+                  desc: "Forderungsankauf und Schuldenerledigung",
                   link: "/fuer-eigentumer-in-not",
                   color: "bg-red-500"
                 },
                 {
                   icon: TrendingUp,
-                  title: "Ich will KAUFEN",
-                  desc: "Immobilien zu fairen Preisen",
+                  title: "Käufer",
+                  desc: "Immobilienerwerb zu transparenten Konditionen",
                   link: "/fuer-kaeufer",
                   color: "bg-green-500"
                 },
                 {
                   icon: Check,
-                  title: "Ich will INVESTIEREN",
-                  desc: "Mit Aurelia profitieren",
+                  title: "Investoren",
+                  desc: "Vermögensaufbau durch strukturierte Beteiligungen",
                   link: "/fuer-investoren",
                   color: "bg-yellow-500"
                 }
@@ -92,7 +92,7 @@ const HomePage = () => {
                         {path.desc}
                       </p>
                       <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-semibold text-teal-700">
-                        Mehr erfahren <ArrowRight size={14} />
+                        Weitere Informationen <ArrowRight size={14} />
                       </span>
                     </Link>
                   </Reveal>
@@ -102,17 +102,17 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* WHO WE ARE - Trust Building mit GF Erfahrung */}
+        {/* WHO WE ARE - Trust Building */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-10">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
-                  Wer ist Aurelia?
+                  Über Aurelia Grundbesitz
                 </h2>
                 <p className="mx-auto max-w-2xl text-[0.93rem] leading-[1.85] text-white/75">
-                  Aurelia ist ein Immobilien-Unternehmen mit tiefem Branchenwissen. Unsere Geschäftsführung bringt über 30 Jahre Erfahrung in der Immobilienbranche mit. Wir kaufen Forderungen an Immobilien, helfen Menschen in Schwierigkeiten, verkaufen Objekte zu fairen Preisen und ermöglichen Investoren, langfristiges Vermögen aufzubauen. Unser Ziel: Menschen helfen — und dabei nachhaltige Geschäfte machen.
+                  Aurelia Grundbesitz ist ein Immobilienunternehmen mit über 30 Jahren Erfahrung in der Branche. Wir spezialisieren uns auf den Ankauf von Immobilienforderungen, den Erwerb schwieriger Objekte und deren wirtschaftliche Verwertung. Unser Geschäftsmodell basiert auf Transparenz, fairer Preisgestaltung und langfristigem Vermögensaufbau für alle Beteiligten.
                 </p>
               </div>
             </Reveal>
@@ -121,18 +121,18 @@ const HomePage = () => {
               {[
                 { 
                   icon: "🎯",
-                  label: "Jahrzehnte Erfahrung", 
-                  desc: "Über 30 Jahre Know-how in der Immobilienbranche" 
+                  label: "Branchenerfahrung", 
+                  desc: "Über 30 Jahre fundiertes Know-how in der Immobilienwirtschaft" 
                 },
                 { 
                   icon: "🤝",
-                  label: "Vertrauensvolle Partnerschaften", 
-                  desc: "Hunderte zufriedene Kunden und Investoren" 
+                  label: "Verlässliche Partnerschaft", 
+                  desc: "Langfristige Geschäftsbeziehungen mit hunderten zufriedenen Partnern" 
                 },
                 { 
                   icon: "✅",
-                  label: "Nachgewiesener Erfolg", 
-                  desc: "Langfristige Beziehungen und echte Ergebnisse" 
+                  label: "Nachgewiesene Erfolgsbilanz", 
+                  desc: "Realistische Renditeergebnisse und stabile Geschäftsabläufe" 
                 }
               ].map((stat, i) => (
                 <Reveal key={i} delay={i * 0.08}>
@@ -148,13 +148,13 @@ const HomePage = () => {
             <Reveal delay={0.15}>
               <div className="glass-card-dark rounded-2xl p-8 md:p-10">
                 <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
-                  Unser Versprechen
+                  Unser Anspruch
                 </h3>
                 <p className="mb-4 text-[0.93rem] leading-[1.85] text-white/70">
-                  Transparenz. Gerechtigkeit. Erfolg. Wir verstecken uns nicht hinter Makler-Umwegen oder undurchsichtigen Prozessen. Du bekommst den echten Wert. Wir machen faire Geschäfte — weil wir langfristig denken.
+                  Transparente Kommunikation. Ethisches Handeln. Nachhaltige Wertschöpfung. Aurelia verzichtet auf intransparente Intermediäre und undurchschaubare Prozesse. Alle Geschäfte werden zu fairen Bedingungen und auf Basis objektiver Marktwerte abgewickelt. Wir handeln im Interesse aller Stakeholder und mit Fokus auf langfristige Geschäftsbeziehungen.
                 </p>
                 <p className="text-[0.88rem] font-semibold text-teal-400">
-                  ✓ Echte Hilfe + Echte Gewinne
+                  ✓ Hilfe und Geschäftserfolg vereinigt
                 </p>
               </div>
             </Reveal>
@@ -171,10 +171,10 @@ const HomePage = () => {
               <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Wie es funktioniert
+                  Unsere Arbeitsweise
                 </h2>
                 <p className="mx-auto max-w-lg text-[0.93rem] leading-[1.85] text-muted-foreground">
-                  Egal welcher Weg — wir haben einen klaren, transparenten Prozess.
+                  Unabhängig vom Geschäftsbereich folgen wir einem transparenten und strukturierten Prozess.
                 </p>
               </div>
             </Reveal>
@@ -183,18 +183,18 @@ const HomePage = () => {
               {[
                 {
                   step: "1",
-                  title: "Kostenlose Beratung",
-                  desc: "Du erzählst uns Deine Situation. Wir hören zu, analysieren fair und beraten Dich ehrlich."
+                  title: "Kostenfreie Erstberatung",
+                  desc: "Wir analysieren Ihre Situation sachlich und geben ehrliche Einschätzungen ohne versteckte Erwartungen."
                 },
                 {
                   step: "2",
                   title: "Faire Verhandlung",
-                  desc: "Wir machen Dir ein transparentes Angebot — basierend auf echten Marktpreisen, ohne Umwege."
+                  desc: "Unser Angebot basiert auf marktüblichen Bewertungen und transparenten Konditionen ohne Umwege."
                 },
                 {
                   step: "3",
-                  title: "Schneller Abschluss",
-                  desc: "Klare Paperwork, schnelle Bearbeitung — in Tagen, nicht Monaten. Du weißt immer wo Du stehst."
+                  title: "Zügige Abwicklung",
+                  desc: "Klare vertragliche Regelungen und schnelle Bearbeitung — Abschluss typischerweise innerhalb von Wochen."
                 }
               ].map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
@@ -222,7 +222,7 @@ const HomePage = () => {
                   to="/arbeitsweise"
                   className="inline-flex items-center gap-2 text-[0.85rem] font-semibold text-teal-700 hover:text-teal-800 transition-colors"
                 >
-                  Alle 3 Wege verstehen
+                  Detaillierte Prozessübersicht
                   <ArrowRight size={15} />
                 </Link>
               </div>
@@ -237,7 +237,7 @@ const HomePage = () => {
               <div className="text-center mb-10">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Das sagen unsere Partner
+                  Referenzen & Fallstudien
                 </h2>
               </div>
             </Reveal>
@@ -245,25 +245,25 @@ const HomePage = () => {
             <div className="grid gap-6 sm:grid-cols-3">
               {[
                 {
-                  quote: "Aurelia hat mir geholfen, aus einer unmöglichen Situation herauszukommen. Schnell, fair, unbürokratisch.",
-                  author: "Maria K.",
-                  role: "Immobilien-Eigentümerin"
+                  quote: "Aurelia half uns, eine festgefahrene Erbauseinandersetzung zu lösen. Die Bearbeitung war unbürokratisch und fair.",
+                  author: "Familie K.",
+                  role: "Immobilieneigentümer"
                 },
                 {
-                  quote: "Ich habe meine Traumimmobilie zu einem fairen Preis gekauft. Keine versteckten Kosten, keine Überraschungen.",
-                  author: "Thomas M.",
-                  role: "Immobilien-Käufer"
+                  quote: "Wir konnten eine hochwertige Immobilie zu angemessenem Preis erwerben. Die Transparenz des Prozesses war überzeugend.",
+                  author: "Herr M.",
+                  role: "Immobilienkäufer"
                 },
                 {
-                  quote: "Mit Aurelia zu investieren war die beste Entscheidung. Transparente Prozesse, nachvollziehbare Gewinne.",
-                  author: "Andreas B.",
+                  quote: "Die Investmentbeteiligung bei Aurelia hat sich als solide und nachvollziehbar erwiesen. Professionelle Abwicklung.",
+                  author: "Herr B.",
                   role: "Investor"
                 }
               ].map((story, i) => (
                 <Reveal key={i} delay={i * 0.08}>
                   <div className="glass-card rounded-2xl p-8">
                     <p className="mb-6 text-[0.93rem] italic leading-[1.85] text-foreground">
-                      &ldquo;{story.quote}&rdquo;
+                      „{story.quote}"
                     </p>
                     <div>
                       <p className="text-[0.9rem] font-heading font-semibold text-foreground">{story.author}</p>
@@ -284,15 +284,15 @@ const HomePage = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
           <div className="container-premium relative text-center">
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Ready? Lass uns starten.</h2>
+              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Kontaktieren Sie uns unverbindlich.</h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                Egal wie komplex Deine Situation ist — wir haben eine Lösung. Die erste Beratung ist kostenlos, keine Verpflichtung, keine versteckten Agenden.
+                Gerne stellen wir uns Ihren Anforderungen vor und erläutern, wie Aurelia Grundbesitz Ihre Ziele unterstützen kann. Die erste Beratung ist kostenlos und unverbindlich.
               </p>
               <Link
                 to="/kontakt"
                 className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
               >
-                Kostenlose Beratung buchen
+                Beratungstermin vereinbaren
                 <ArrowRight size={13} />
               </Link>
             </Reveal>
