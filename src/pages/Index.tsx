@@ -34,7 +34,7 @@ const HomePage = () => {
                 <ul className="space-y-1.5">
                   <li>● Hilfe für Eigentümer in Schwierigkeiten</li>
                   <li>● Faire Immobilien für Käufer</li>
-                  <li>● Sichere Investitionen für Vermögensaufbau</li>
+                  <li>● Geschäftspartnerschaften für Vermögensaufbau</li>
                 </ul>
               </div>
             </Reveal>
@@ -77,9 +77,9 @@ const HomePage = () => {
                 },
                 {
                   icon: Check,
-                  title: "Investoren",
-                  desc: "Vermögensaufbau durch strukturierte Beteiligungen",
-                  link: "/fuer-investoren",
+                  title: "Geschäftspartner",
+                  desc: "Aurelia arbeitet mit strategischen Partnern zusammen — individuelle Projektpartnerschaften",
+                  link: "/fuer-geschaeftspartner",
                   color: "bg-yellow-500"
                 }
               ].map((path, i) => {
