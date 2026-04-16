@@ -81,8 +81,6 @@ const Header = () => {
         </div>
 
         <div className="md:hidden flex items-center gap-3">
-          <LanguageSwitcher />
-          <div className="w-px h-4 bg-border/40" />
           <button
             className="p-1.5 text-foreground/70"
             onClick={() => setMobileOpen(!mobileOpen)}

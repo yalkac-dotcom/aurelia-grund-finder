@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import logoImg from "@/assets/aurelia-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { languageCodes } from "@/i18n/types";
 
 const COOKIE_KEY = "aurelia-cookie-consent";
 
 const Footer = () => {
-  const { t, language, setLanguage } = useLanguage();
+  const { t } = useLanguage();
 
   const navItems = [
     { label: t.nav.home, path: "/" },
