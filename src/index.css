@@ -577,6 +577,51 @@
     box-shadow: 0 4px 16px -3px hsl(212 30% 10% / 0.25);
   }
 }
+.cookie-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cookie-btn-primary,
+.cookie-btn-secondary {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.125rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.cookie-btn-primary {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.cookie-btn-primary:hover {
+  background: hsl(var(--accent) / 0.88);
+}
+
+.cookie-btn-secondary {
+  border: 1px solid hsl(var(--border));
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+}
+
+.cookie-btn-secondary:hover {
+  background: hsl(var(--secondary));
+}
+
+@media (min-width: 640px) {
+  .cookie-actions {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
