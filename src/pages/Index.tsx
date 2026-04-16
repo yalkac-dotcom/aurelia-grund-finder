@@ -256,8 +256,8 @@ const HomePage = () => {
                 },
                 {
                   quote: "Die Beteiligung bei Aurelia überzeugt mich durch Transparenz: echte Zahlen, real Assets, professionelle Abwicklung. Nach 18 Monaten hatte ich meine erwartete Rendite.",
-                  author: "Dr. Reinhard Hoffmann",
-                  role: "Zahnarzt & Kapitalanleger, Meerbusch (Düsseldorf-Umgebung)"
+                  author: "Reinhard Hoffmann",
+                  role: "Unternehmer & Kapitalanleger, Meerbusch (Düsseldorf-Umgebung)"
                 }
               ].map((story, i) => (
                 <Reveal key={i} delay={i * 0.08}>
