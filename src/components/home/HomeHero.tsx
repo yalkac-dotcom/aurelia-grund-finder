@@ -36,9 +36,9 @@ const HomeHero = () => {
 
           <p className="hero-description">{t.landing.heroSubtitle}</p>
 
-          <div className="flex flex-col gap-4">
-            <div className="hero-actions animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <div className="block">
+          <div className="hero-actions">
+            <div className="hero-cta-row animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+              <div>
                 <Link
                   to="/kontakt"
                   className="hero-primary-button inline-flex items-center justify-center gap-2"
@@ -47,7 +47,7 @@ const HomeHero = () => {
                   <ArrowRight size={14} />
                 </Link>
               </div>
-              <div className="block">
+              <div>
                 <button
                   type="button"
                   onClick={handleScrollToProcess}
@@ -58,7 +58,7 @@ const HomeHero = () => {
               </div>
             </div>
 
-            <p className="hero-meta-line animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <p className="hero-trust animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
               <CheckCircle size={13} className="mt-0.5 shrink-0 text-accent opacity-80 md:mt-0" />
               <span>{t.common.initialAssessmentNote}</span>
             </p>
