@@ -6,53 +6,18 @@ import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import { ArrowRight, Lock, Eye, Briefcase, Layers } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { workApproachPageContent } from "@/i18n/pages/workApproachPage";
 
-const steps = [
-  {
-    title: "Vertrauliche Erstaufnahme",
-    text: "Sie schildern die Ausgangslage. Wir hören zu, fragen gezielt nach und verschaffen uns ein erstes Bild der Situation. Im Mittelpunkt steht dabei nicht Geschwindigkeit um jeden Preis, sondern das richtige Verständnis der tatsächlichen Lage.",
-  },
-  {
-    title: "Erste Einordnung",
-    text: "Wir prüfen, ob die Konstellation grundsätzlich zu unserem Ansatz passt und wo die entscheidenden Punkte liegen. Schon in diesem Schritt wird oft klar, ob ein Fall tragfähig ist oder ob ein anderer Weg sinnvoller wäre.",
-  },
-  {
-    title: "Vertiefte Prüfung",
-    text: "Wenn die Ausgangslage grundsätzlich passt, sehen wir genauer hin: Struktur, Substanz, Zeitfaktoren, Beteiligte und wirtschaftliche Optionen. Ziel ist keine theoretische Analyse, sondern eine belastbare Grundlage für die Entscheidung.",
-  },
-  {
-    title: "Nächster realistischer Schritt",
-    text: "Dann wird entschieden, wie es weitergeht: Einordnung, Strukturierung, direkte Übernahme oder bewusst kein weiterer Schritt. Wichtig ist nicht, jeden Fall weiterzuführen, sondern nur die Wege zu gehen, die tatsächlich sinnvoll sind.",
-  },
-];
-
-const values = [
-  {
-    icon: Lock,
-    title: "Diskret",
-    text: "Nicht jede Lage gehört in die Öffentlichkeit. Wenn Vertraulichkeit sinnvoll ist, behandeln wir sie entsprechend.",
-  },
-  {
-    icon: Eye,
-    title: "Klar",
-    text: "Wir sagen früh, ob ein Fall grundsätzlich passt oder nicht. Das spart Zeit und unnötige Umwege.",
-  },
-  {
-    icon: Briefcase,
-    title: "Unternehmerisch",
-    text: "Wir denken nicht nur in Gesprächsprozessen, sondern in umsetzbaren Entscheidungen.",
-  },
-  {
-    icon: Layers,
-    title: "Strukturiert",
-    text: "Gerade in unklaren Situationen schaffen klare Reihenfolgen oft mehr Fortschritt als vorschneller Aktionismus.",
-  },
-];
+const valueIcons = [Lock, Eye, Briefcase, Layers];
 
 const HowItWorks = () => {
+  const { language } = useLanguage();
+  const t = workApproachPageContent[language];
+
   useEffect(() => {
-    document.title = "Arbeitsweise — Aurelia Grundbesitz GmbH";
-  }, []);
+    document.title = t.documentTitle;
+  }, [t.documentTitle]);
 
   return (
     <Layout>
@@ -63,7 +28,7 @@ const HowItWorks = () => {
             src={heroSets.arbeitsweise.src}
             srcSet={heroSets.arbeitsweise.srcSet}
             sizes={heroSets.arbeitsweise.sizes}
-            alt="Arbeitsweise — Aurelia Grundbesitz"
+            alt={t.heroAlt}
             className="hero-media h-full w-full object-cover object-center"
             priority
           />
@@ -74,13 +39,9 @@ const HowItWorks = () => {
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
           <div className="hero-copy-shell">
             <Reveal>
-              <p className="hero-kicker">Arbeitsweise</p>
-              <h1 className="hero-title">Ein geordneter Ablauf statt offener Baustellen</h1>
-              <p className="hero-description">
-                In schwierigen Situationen hilft keine Show, sondern ein klarer Prozess. Aurelia
-                arbeitet ruhig, vertraulich und mit Blick auf das, was tatsächlich tragfähig ist –
-                Schritt für Schritt und ohne unnötige Komplexität.
-              </p>
+              <p className="hero-kicker">{t.heroKicker}</p>
+              <h1 className="hero-title">{t.heroTitle}</h1>
+              <p className="hero-description">{t.heroText}</p>
             </Reveal>
           </div>
           <HeroScrollIndicator />
@@ -95,13 +56,9 @@ const HowItWorks = () => {
               <div className="mx-auto max-w-3xl text-center">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Wie wir vorgehen
+                  {t.introTitle}
                 </h2>
-                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">
-                  Nicht jede Konstellation führt zu derselben Lösung. Aber jede sinnvolle Lösung
-                  beginnt mit einer sauberen Reihenfolge: verstehen, einordnen, prüfen und dann
-                  entscheiden, welcher Weg wirklich passt.
-                </p>
+                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">{t.introText}</p>
               </div>
             </Reveal>
           </div>
@@ -115,7 +72,7 @@ const HowItWorks = () => {
           <div className="container-premium">
             <div className="mx-auto max-w-4xl">
               <div className="grid gap-6 sm:grid-cols-2">
-                {steps.map((s, i) => (
+                {t.steps.map((s, i) => (
                   <Reveal key={s.title} delay={i * 0.08}>
                     <div className="glass-card rounded-2xl p-8 h-full">
                       <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-lg icon-badge">
@@ -142,14 +99,14 @@ const HowItWorks = () => {
               <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
-                  Was unsere Arbeitsweise auszeichnet
+                  {t.valuesTitle}
                 </h2>
               </div>
             </Reveal>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {values.map((item, i) => {
-                const Icon = item.icon;
+              {t.values.map((item, i) => {
+                const Icon = valueIcons[i] ?? Lock;
                 return (
                   <Reveal key={item.title} delay={i * 0.08}>
                     <div className="glass-card-dark rounded-2xl p-7 h-full">
@@ -173,14 +130,9 @@ const HowItWorks = () => {
               <div className="mx-auto max-w-3xl text-center">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Der nächste Schritt muss nicht groß sein. Nur klar.
+                  {t.closingTitle}
                 </h2>
-                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">
-                  In vielen Fällen ist nicht sofort eine Lösung nötig, sondern zuerst eine
-                  belastbare Einordnung. Genau dafür ist unsere Arbeitsweise gedacht: ruhig,
-                  nachvollziehbar und auf das ausgerichtet, was in der konkreten Lage tatsächlich
-                  Sinn ergibt.
-                </p>
+                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">{t.closingText}</p>
               </div>
             </Reveal>
           </div>
@@ -195,17 +147,16 @@ const HowItWorks = () => {
           <div className="container-premium relative text-center">
             <Reveal>
               <h2 className="mb-5 text-[1.7rem] md:text-[1.95rem] font-heading font-bold text-white">
-                Der erste Schritt ist kein großer Prozess, sondern ein klares Gespräch
+                {t.ctaTitle}
               </h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/85">
-                Wenn Sie eine Situation einordnen möchten, reicht zunächst eine vertrauliche
-                Erstaufnahme. Danach zeigt sich, ob und wie ein weiterer Schritt sinnvoll ist.
+                {t.ctaText}
               </p>
               <Link
                 to="/kontakt"
                 className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
               >
-                Kontakt aufnehmen
+                {t.ctaButton}
                 <ArrowRight size={13} />
               </Link>
             </Reveal>

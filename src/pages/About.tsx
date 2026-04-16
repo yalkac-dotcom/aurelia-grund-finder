@@ -6,49 +6,18 @@ import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import { ArrowRight, Volume2, Eye, ShieldCheck, Anchor } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { aboutPageContent } from "@/i18n/pages/aboutPage";
 
-const sections = [
-  {
-    title: "Nicht jede Immobilie braucht denselben Weg",
-    text: "Manche Konstellationen lassen sich über den offenen Markt lösen. Andere brauchen zunächst Struktur, Ruhe und eine ehrliche Einordnung. Aurelia arbeitet genau an dieser Schnittstelle: dort, wo Standardprozesse an Grenzen stoßen und ein belastbarer nächster Schritt gebraucht wird.",
-  },
-  {
-    title: "Diskret, strukturiert, handlungsfähig",
-    text: "Unsere Arbeit beginnt mit Verständnis der Ausgangslage und endet nicht bei unverbindlichen Gesprächen. In passenden Fällen prüfen wir auch unternehmerische Lösungen, bis hin zur direkten Übernahme, strukturierten Weiterentwicklung oder anderen realistischen Wegen, wenn sie sinnvoll und tragfähig sind.",
-  },
-  {
-    title: "Substanz vor Inszenierung",
-    text: "Aurelia interessiert sich nicht für große Worte ohne Fundament. Entscheidend sind Lage, Struktur, Handlungsspielraum und die Frage, ob sich aus einer Situation ein sinnvoller Weg entwickeln lässt. Genau dort setzen wir an – nüchtern, diskret und mit Verantwortung für die Qualität der Entscheidung.",
-  },
-];
-
-const values = [
-  {
-    icon: Volume2,
-    title: "Ruhe statt Lautstärke",
-    text: "Wir bevorzugen klare Prozesse und diskrete Kommunikation gegenüber öffentlicher Inszenierung.",
-  },
-  {
-    icon: Eye,
-    title: "Frühe Klarheit",
-    text: "Wir sagen früh, ob ein Fall tragfähig ist oder ob ein anderer Weg sinnvoller wäre.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Unternehmerische Verantwortung",
-    text: "Wir prüfen nicht nur, wir handeln in passenden Fällen auch selbst.",
-  },
-  {
-    icon: Anchor,
-    title: "Belastbare Lösungen",
-    text: "Am Ende zählt nicht die Erzählung, sondern ob ein Schritt tatsächlich trägt.",
-  },
-];
+const valueIcons = [Volume2, Eye, ShieldCheck, Anchor];
 
 const About = () => {
+  const { language } = useLanguage();
+  const t = aboutPageContent[language];
+
   useEffect(() => {
-    document.title = "Über Aurelia — Aurelia Grundbesitz GmbH";
-  }, []);
+    document.title = t.documentTitle;
+  }, [t.documentTitle]);
 
   return (
     <Layout>
@@ -59,7 +28,7 @@ const About = () => {
             src={heroSets.about.src}
             srcSet={heroSets.about.srcSet}
             sizes={heroSets.about.sizes}
-            alt="Über Aurelia Grundbesitz"
+            alt={t.heroAlt}
             className="hero-media h-full w-full object-cover object-center"
             priority
           />
@@ -70,15 +39,9 @@ const About = () => {
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
           <div className="hero-copy-shell">
             <Reveal>
-              <p className="hero-kicker">Über Aurelia</p>
-              <h1 className="hero-title">
-                Ein ruhiger, unternehmerischer Blick auf Immobilien in besonderen Situationen
-              </h1>
-              <p className="hero-description">
-                Aurelia arbeitet dort, wo Immobilien nicht sauber in Standards passen. Im Mittelpunkt
-                stehen keine lauten Auftritte und keine allgemeinen Versprechen, sondern diskrete
-                Einordnung, klare Entscheidungen und tragfähige Lösungen in ausgewählten Fällen.
-              </p>
+              <p className="hero-kicker">{t.heroKicker}</p>
+              <h1 className="hero-title">{t.heroTitle}</h1>
+              <p className="hero-description">{t.heroText}</p>
             </Reveal>
           </div>
           <HeroScrollIndicator />
@@ -93,13 +56,9 @@ const About = () => {
               <div className="mx-auto max-w-3xl text-center">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Was Aurelia ausmacht
+                  {t.introTitle}
                 </h2>
-                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">
-                  Aurelia ist kein lauter Marktauftritt und kein abstraktes Beteiligungsmodell. Der
-                  Ansatz ist unternehmerisch, diskret und auf Substanz ausgerichtet. Wir prüfen
-                  sorgfältig, sprechen klar und handeln in passenden Fällen auch selbst.
-                </p>
+                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">{t.introText}</p>
               </div>
             </Reveal>
           </div>
@@ -112,7 +71,7 @@ const About = () => {
         >
           <div className="container-premium">
             <div className="mx-auto max-w-4xl space-y-6">
-              {sections.map((s, i) => (
+              {t.sections.map((s, i) => (
                 <Reveal key={s.title} delay={i * 0.08}>
                   <div className="glass-card rounded-2xl p-8 md:p-10">
                     <h3 className="mb-3 text-[1.05rem] md:text-[1.15rem] font-heading font-semibold text-foreground">
@@ -133,14 +92,14 @@ const About = () => {
               <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
-                  Wofür wir stehen
+                  {t.valuesTitle}
                 </h2>
               </div>
             </Reveal>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {values.map((item, i) => {
-                const Icon = item.icon;
+              {t.values.map((item, i) => {
+                const Icon = valueIcons[i] ?? Anchor;
                 return (
                   <Reveal key={item.title} delay={i * 0.08}>
                     <div className="glass-card-dark rounded-2xl p-7 h-full">
@@ -164,13 +123,9 @@ const About = () => {
               <div className="mx-auto max-w-3xl text-center">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Aurelia ist dann sinnvoll, wenn eine Lage mehr als Standard braucht
+                  {t.closingTitle}
                 </h2>
-                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">
-                  Wenn eine Immobilie, ein Grundstück oder eine besondere Konstellation nicht
-                  sauber in einen einfachen Marktprozess passt, hilft oft zuerst eine ruhige und
-                  belastbare Einordnung. Genau dafür steht Aurelia.
-                </p>
+                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">{t.closingText}</p>
               </div>
             </Reveal>
           </div>
@@ -185,18 +140,16 @@ const About = () => {
           <div className="container-premium relative text-center">
             <Reveal>
               <h2 className="mb-5 text-[1.7rem] md:text-[1.95rem] font-heading font-bold text-white">
-                Lassen Sie uns die Situation vertraulich besprechen
+                {t.ctaTitle}
               </h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/85">
-                Wenn Sie einschätzen möchten, ob und wie ein sinnvoller nächster Schritt möglich
-                ist, sprechen Sie mit uns. Ohne Druck. Ohne unnötige Schleifen. Mit klarem Blick
-                auf das, was realistisch ist.
+                {t.ctaText}
               </p>
               <Link
                 to="/kontakt"
                 className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
               >
-                Vertraulich anfragen
+                {t.ctaButton}
                 <ArrowRight size={13} />
               </Link>
             </Reveal>

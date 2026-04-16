@@ -6,57 +6,19 @@ import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import { ArrowRight, Search, Layers, Handshake, Compass, ShieldCheck, Eye, Briefcase, Anchor } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { servicesPageContent } from "@/i18n/pages/servicesPage";
 
-const services = [
-  {
-    icon: Search,
-    title: "Prüfen und einordnen",
-    desc: "Wir prüfen die Ausgangslage, ordnen Risiken und Handlungsspielräume ein und schaffen Klarheit, bevor unnötige Schritte ausgelöst werden. Dabei geht es nicht um schöne Theorie, sondern um eine belastbare Einschätzung dessen, was tatsächlich realistisch ist.",
-  },
-  {
-    icon: Layers,
-    title: "Strukturieren und vorbereiten",
-    desc: "Wenn eine Situation festgefahren ist, helfen wir dabei, sie wieder entscheidungsfähig zu machen. Das kann bedeuten, Unterlagen, Beteiligte, Prioritäten und Handlungsmöglichkeiten so zu ordnen, dass ein sinnvoller nächster Schritt überhaupt erst möglich wird.",
-  },
-  {
-    icon: Handshake,
-    title: "Direkt übernehmen, wenn es passt",
-    desc: "In passenden Fällen prüfen wir die direkte Übernahme von Immobilien oder Grundstücken auf eigene Rechnung. Nicht pauschal, sondern nur dort, wo Lage, Substanz und Struktur eine tragfähige Lösung erkennen lassen.",
-  },
-  {
-    icon: Compass,
-    title: "Unternehmerisch weiterdenken",
-    desc: "Je nach Objekt und Ausgangslage kann der richtige Weg in Neuordnung, Entwicklung, Halten oder selektiver Weiterveräußerung liegen. Entscheidend ist nicht Aktivität um ihrer selbst willen, sondern ein wirtschaftlich klarer und umsetzbarer Schritt.",
-  },
-];
-
-const values = [
-  {
-    icon: ShieldCheck,
-    title: "Klarheit vor Aktion",
-    text: "Wir beginnen mit einer belastbaren Einordnung, nicht mit vorschnellen Schritten.",
-  },
-  {
-    icon: Eye,
-    title: "Diskret im Vorgehen",
-    text: "Nicht jede Konstellation gehört in die Öffentlichkeit. Wenn Zurückhaltung sinnvoll ist, arbeiten wir entsprechend.",
-  },
-  {
-    icon: Briefcase,
-    title: "Unternehmerisch gedacht",
-    text: "Wir prüfen nicht nur Optionen, sondern übernehmen in passenden Fällen auch selbst Verantwortung.",
-  },
-  {
-    icon: Anchor,
-    title: "Tragfähigkeit im Fokus",
-    text: "Entscheidend ist nicht, ob etwas gut klingt, sondern ob es sich wirtschaftlich sinnvoll umsetzen lässt.",
-  },
-];
+const sectionIcons = [Search, Layers, Handshake, Compass];
+const valueIcons = [ShieldCheck, Eye, Briefcase, Anchor];
 
 const Services = () => {
+  const { language } = useLanguage();
+  const t = servicesPageContent[language];
+
   useEffect(() => {
-    document.title = "Leistungen — Aurelia Grundbesitz GmbH";
-  }, []);
+    document.title = t.documentTitle;
+  }, [t.documentTitle]);
 
   return (
     <Layout>
@@ -67,7 +29,7 @@ const Services = () => {
             src={heroSets.services.src}
             srcSet={heroSets.services.srcSet}
             sizes={heroSets.services.sizes}
-            alt="Leistungen — Aurelia Grundbesitz"
+            alt={t.heroAlt}
             className="hero-media h-full w-full object-cover object-center"
             priority
           />
@@ -78,14 +40,9 @@ const Services = () => {
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
           <div className="hero-copy-shell">
             <Reveal>
-              <p className="hero-kicker">Leistungen</p>
-              <h1 className="hero-title">Klare Leistungen für Situationen, die nicht in Standards passen</h1>
-              <p className="hero-description">
-                Nicht jede Immobilie braucht denselben Weg. Entscheidend ist, was in der konkreten Lage
-                sinnvoll, tragfähig und wirtschaftlich sauber ist. Aurelia prüft, strukturiert und übernimmt
-                in passenden Fällen Verantwortung – diskret, unternehmerisch und mit klarem Blick auf den
-                nächsten realistischen Schritt.
-              </p>
+              <p className="hero-kicker">{t.heroKicker}</p>
+              <h1 className="hero-title">{t.heroTitle}</h1>
+              <p className="hero-description">{t.heroText}</p>
             </Reveal>
           </div>
           <HeroScrollIndicator />
@@ -100,12 +57,10 @@ const Services = () => {
               <div className="mx-auto max-w-3xl text-center">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-4 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Was wir konkret leisten
+                  {t.introTitle}
                 </h2>
                 <p className="mx-auto max-w-2xl text-[0.95rem] leading-[1.85] text-muted-foreground">
-                  Unsere Arbeit beginnt nicht mit großen Versprechen, sondern mit einer sauberen Einordnung.
-                  Je nach Ausgangslage kann daraus ein strukturierter Klärungsprozess, eine gezielte
-                  Vorbereitung, eine direkte Übernahme oder eine unternehmerische Weiterentwicklung entstehen.
+                  {t.introText}
                 </p>
               </div>
             </Reveal>
@@ -119,8 +74,8 @@ const Services = () => {
         >
           <div className="container-premium">
             <div className="grid gap-6 sm:grid-cols-2">
-              {services.map((s, i) => {
-                const Icon = s.icon;
+              {t.sections.map((s, i) => {
+                const Icon = sectionIcons[i] ?? Search;
                 return (
                   <Reveal key={s.title} delay={i * 0.08}>
                     <div className="glass-card rounded-2xl p-8 h-full">
@@ -128,12 +83,12 @@ const Services = () => {
                         <Icon size={20} />
                       </div>
                       <p className="mb-2 text-[0.72rem] font-sans font-semibold uppercase tracking-[0.15em] text-teal-700">
-                        Schritt {i + 1}
+                        {t.stepLabel} {i + 1}
                       </p>
                       <h3 className="mb-3 text-[1.05rem] font-heading font-semibold text-foreground">
                         {s.title}
                       </h3>
-                      <p className="text-[0.9rem] leading-[1.8] text-muted-foreground">{s.desc}</p>
+                      <p className="text-[0.9rem] leading-[1.8] text-muted-foreground">{s.text}</p>
                     </div>
                   </Reveal>
                 );
@@ -149,14 +104,14 @@ const Services = () => {
               <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
-                  Wofür unsere Leistungen ausgerichtet sind
+                  {t.valuesTitle}
                 </h2>
               </div>
             </Reveal>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {values.map((item, i) => {
-                const Icon = item.icon;
+              {t.values.map((item, i) => {
+                const Icon = valueIcons[i] ?? ShieldCheck;
                 return (
                   <Reveal key={item.title} delay={i * 0.08}>
                     <div className="glass-card-dark rounded-2xl p-7 h-full">
@@ -180,14 +135,9 @@ const Services = () => {
               <div className="mx-auto max-w-3xl text-center">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Nicht jede Situation braucht Öffentlichkeit. Aber jede braucht Klarheit.
+                  {t.closingTitle}
                 </h2>
-                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">
-                  Gerade bei Immobilien in schwierigen, blockierten oder zeitkritischen Konstellationen
-                  hilft meist kein lauter Marktauftritt, sondern eine ruhige und belastbare Einordnung.
-                  Aurelia arbeitet genau in diesem Feld: diskret, strukturiert und mit unternehmerischer
-                  Entscheidungsfähigkeit.
-                </p>
+                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">{t.closingText}</p>
               </div>
             </Reveal>
           </div>
@@ -202,18 +152,16 @@ const Services = () => {
           <div className="container-premium relative text-center">
             <Reveal>
               <h2 className="mb-5 text-[1.7rem] md:text-[1.95rem] font-heading font-bold text-white">
-                Lassen Sie uns die Ausgangslage zuerst sauber einordnen
+                {t.ctaTitle}
               </h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/85">
-                Wenn Sie klären möchten, welcher Weg für eine Immobilie, ein Grundstück oder eine besondere
-                Konstellation wirklich sinnvoll ist, sprechen Sie mit uns. Oft ist ein klares erstes Gespräch
-                der beste Ausgangspunkt.
+                {t.ctaText}
               </p>
               <Link
                 to="/kontakt"
                 className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
               >
-                Vertraulich anfragen
+                {t.ctaButton}
                 <ArrowRight size={13} />
               </Link>
             </Reveal>
