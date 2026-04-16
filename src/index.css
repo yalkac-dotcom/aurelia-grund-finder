@@ -424,3 +424,143 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* ── Premium containment panels ── */
+.panel {
+  background: hsl(0 0% 100%);
+  border: 1px solid hsl(var(--border) / 0.5);
+  border-radius: 0.5rem;
+  padding: 1.75rem 1.5rem;
+  box-shadow:
+    0 1px 3px hsl(212 30% 20% / 0.04),
+    0 4px 12px -4px hsl(212 30% 20% / 0.06);
+}
+@media (min-width: 768px) {
+  .panel {
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+.panel-dark {
+  background: hsl(212 55% 13%);
+  border: 1px solid hsl(0 0% 100% / 0.06);
+  border-radius: 0.5rem;
+  padding: 1.75rem 1.5rem;
+  box-shadow:
+    0 2px 8px hsl(212 55% 6% / 0.3),
+    0 8px 24px -8px hsl(212 55% 6% / 0.25);
+}
+@media (min-width: 768px) {
+  .panel-dark {
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+.panel-subtle {
+  background: hsl(var(--secondary) / 0.5);
+  border: 1px solid hsl(var(--border) / 0.3);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.25rem;
+}
+@media (min-width: 768px) {
+  .panel-subtle {
+    padding: 2rem 2.25rem;
+  }
+}
+
+/* Section background variants */
+.section-warm {
+  background: linear-gradient(
+    180deg,
+    hsl(210 20% 98%) 0%,
+    hsl(210 18% 96%) 100%
+  );
+}
+
+.section-navy {
+  background: linear-gradient(
+    170deg,
+    hsl(212 55% 11%) 0%,
+    hsl(212 55% 8%) 100%
+  );
+}
+
+.section-navy-warm {
+  background: linear-gradient(
+    170deg,
+    hsl(212 45% 13%) 0%,
+    hsl(215 50% 9%) 100%
+  );
+}
+
+/* Accent line decorations */
+.accent-line-top {
+  position: relative;
+}
+.accent-line-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 2px;
+  background: hsl(var(--accent) / 0.5);
+  border-radius: 1px;
+}
+
+/* Step card */
+.step-card {
+  background: hsl(0 0% 100%);
+  border: 1px solid hsl(var(--border) / 0.4);
+  border-radius: 0.5rem;
+  padding: 1.5rem 1.25rem;
+  height: 100%;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 1px 3px hsl(212 30% 20% / 0.03);
+}
+.step-card:hover {
+  border-color: hsl(var(--accent) / 0.25);
+  box-shadow:
+    0 4px 16px -4px hsl(212 30% 20% / 0.08),
+    0 1px 3px hsl(212 30% 20% / 0.04);
+}
+
+/* FAQ item */
+.faq-item {
+  background: hsl(0 0% 100%);
+  border: 1px solid hsl(var(--border) / 0.35);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.3s ease;
+}
+.faq-item:hover {
+  border-color: hsl(var(--accent) / 0.2);
+}
+
+/* Objection card */
+.objection-card {
+  background: hsl(0 0% 100%);
+  border: 1px solid hsl(var(--border) / 0.35);
+  border-left: 3px solid hsl(var(--accent) / 0.4);
+  border-radius: 0.375rem;
+  padding: 1.5rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.objection-card:hover {
+  border-left-color: hsl(var(--accent) / 0.6);
+  box-shadow: 0 4px 12px -4px hsl(212 30% 20% / 0.06);
+}
+
+/* Why-point card */
+.why-card {
+  background: hsl(var(--secondary) / 0.5);
+  border: 1px solid hsl(var(--border) / 0.3);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  height: 100%;
+  transition: border-color 0.3s ease;
+}
+.why-card:hover {
+  border-color: hsl(var(--accent) / 0.25);
+}
