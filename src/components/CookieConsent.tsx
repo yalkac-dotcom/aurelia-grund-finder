@@ -39,23 +39,23 @@ const CookieConsent = () => {
       <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" onClick={(e) => e.stopPropagation()} />
 
       {/* Dialog */}
-      <div className="relative w-full max-w-2xl mx-4 mb-6 bg-background border border-border/60 shadow-2xl p-6 sm:p-8">
-        <p className="text-foreground text-sm font-heading font-semibold mb-2">
+      <div className="relative w-full max-w-xl mx-4 mb-6 bg-background border border-border/40 shadow-[0_16px_48px_-12px_rgba(0,0,0,0.25)] rounded-sm p-6 sm:p-7">
+        <p className="text-foreground text-[0.88rem] font-heading font-semibold mb-1.5">
           {t.common.cookieTitle}
         </p>
-        <p className="text-muted-foreground text-xs leading-[1.75] mb-5">
+        <p className="text-muted-foreground text-[0.78rem] leading-[1.75] mb-5">
           {t.common.cookieText}
         </p>
         <div className="flex flex-col sm:flex-row gap-2.5">
           <button
             onClick={() => handle("accepted")}
-            className="bg-accent text-white px-5 py-2.5 text-xs font-medium tracking-[0.1em] uppercase hover:bg-accent/85 transition-colors flex-1 sm:flex-none"
+            className="bg-accent text-white px-6 py-2.5 text-[0.68rem] font-semibold tracking-[0.12em] uppercase rounded-sm hover:bg-accent/88 transition-colors flex-1 sm:flex-none"
           >
             {t.common.cookieAcceptAll}
           </button>
           <button
             onClick={() => handle("rejected")}
-            className="bg-accent/10 text-foreground border border-accent/30 px-5 py-2.5 text-xs font-medium tracking-[0.1em] uppercase hover:bg-accent/20 transition-colors flex-1 sm:flex-none"
+            className="bg-transparent text-muted-foreground border border-border px-6 py-2.5 text-[0.68rem] font-semibold tracking-[0.12em] uppercase rounded-sm hover:bg-secondary transition-colors flex-1 sm:flex-none"
           >
             {t.common.cookieNecessaryOnly}
           </button>

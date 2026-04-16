@@ -77,7 +77,8 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="mt-6 flex flex-col items-start gap-3">
+            <div className="mt-5 pt-4 border-t border-white/10 flex flex-col items-start gap-2">
+              <p className="text-[9px] md:text-[10px] font-sans uppercase tracking-[0.15em] text-white/50 mb-0.5">Rechtliches</p>
               <Link
                 to="/impressum"
                 className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
@@ -96,10 +97,13 @@ const Footer = () => {
               >
                 {t.footer.imageCredits}
               </Link>
+            </div>
+
+            <div className="mt-4 pt-3 border-t border-white/10 flex flex-col items-start">
               <button
                 type="button"
                 onClick={openCookieSettings}
-                className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 text-left"
+                className="min-h-0 text-white/60 text-[10px] md:text-[11px] hover:text-accent transition-colors duration-200 text-left tracking-wide"
               >
                 {t.footer.cookieSettings}
               </button>
@@ -108,11 +112,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 md:border-white/20 mt-4 md:mt-5 pt-3 md:pt-4">
-          <p className="text-white/60 text-[10px] md:text-xs text-center">
+        <div className="border-t border-white/10 md:border-white/15 mt-6 md:mt-8 pt-5 md:pt-6">
+          <p className="text-white/55 text-[10px] md:text-xs text-center tracking-wide">
             © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
           </p>
-          <p className="text-white/40 text-[9px] md:text-[10px] mt-2.5 text-center leading-relaxed max-w-2xl mx-auto">
+          <p className="text-white/35 text-[9px] md:text-[10px] mt-3 text-center leading-relaxed max-w-2xl mx-auto">
             {t.footer.disclaimer}
           </p>
         </div>
