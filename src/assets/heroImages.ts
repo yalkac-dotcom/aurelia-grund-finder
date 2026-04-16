@@ -74,4 +74,6 @@ export const heroSets = {
   kfw:           { src: kfw1920,           srcSet: srcSet(kfw640, kfw1024, kfw1440, kfw1920),                               sizes: SIZES },
   energetisch:   { src: energetisch1920,   srcSet: srcSet(energetisch640, energetisch1024, energetisch1440, energetisch1920), sizes: SIZES },
   glossar:       { src: glossar1920,       srcSet: srcSet(glossar640, glossar1024, glossar1440, glossar1920),               sizes: SIZES },
+  arbeitsweise:  { src: arbeitsweise1920,  srcSet: srcSet(arbeitsweise640, arbeitsweise1024, arbeitsweise1440, arbeitsweise1920), sizes: SIZES },
+  about:         { src: about1920,         srcSet: srcSet(about640, about1024, about1440, about1920),                           sizes: SIZES },
 } as const;
