@@ -36,26 +36,32 @@ const HomeHero = () => {
 
           <p className="hero-description">{t.landing.heroSubtitle}</p>
 
-          <div className="hero-actions animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <div>
-              <Link to="/kontakt" className="hero-primary-button inline-flex items-center justify-center gap-2">
-                {t.landing.heroCta}
-                <ArrowRight size={14} />
-              </Link>
+          <div className="flex flex-col gap-4">
+            <div className="hero-actions animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+              <div className="block">
+                <Link
+                  to="/kontakt"
+                  className="hero-primary-button inline-flex items-center justify-center gap-2"
+                >
+                  {t.landing.heroCta}
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+              <div className="block">
+                <button
+                  type="button"
+                  onClick={handleScrollToProcess}
+                  className="hero-secondary-button inline-flex items-center justify-center gap-2"
+                >
+                  {t.landing.heroCtaSecondary}
+                </button>
+              </div>
             </div>
-            <div>
-              <button
-                onClick={handleScrollToProcess}
-                className="hero-secondary-button inline-flex items-center justify-center gap-2"
-              >
-                {t.landing.heroCtaSecondary}
-              </button>
-            </div>
-          </div>
 
-          <div className="hero-meta-line animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <CheckCircle size={13} className="mt-0.5 shrink-0 text-accent opacity-80 md:mt-0" />
-            <span>{t.common.initialAssessmentNote}</span>
+            <p className="hero-meta-line animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+              <CheckCircle size={13} className="mt-0.5 shrink-0 text-accent opacity-80 md:mt-0" />
+              <span>{t.common.initialAssessmentNote}</span>
+            </p>
           </div>
         </div>
       </div>
