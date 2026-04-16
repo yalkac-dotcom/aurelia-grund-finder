@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logoImg from "@/assets/aurelia-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface NavItem {
   label: string;
@@ -75,15 +76,19 @@ const Header = () => {
               )
             )}
           </nav>
+          <div className="ml-3 pl-5 border-l border-teal-100/50">
+            <LanguageSwitcher />
+          </div>
           <Link
             to="/kontakt"
-            className="ml-5 inline-flex items-center px-5 py-2.5 text-[11px] font-semibold tracking-[0.12em] uppercase btn-gradient rounded-sm transition-all duration-300"
+            className="ml-2 inline-flex items-center px-5 py-2.5 text-[11px] font-semibold tracking-[0.12em] uppercase btn-gradient rounded-sm transition-all duration-300"
           >
             {t.hero.cta}
           </Link>
         </div>
 
         <div className="md:hidden flex items-center gap-3">
+          <LanguageSwitcher />
           <button
             className="p-1.5 text-foreground/70"
             onClick={() => setMobileOpen(!mobileOpen)}
