@@ -120,6 +120,13 @@ const Header = () => {
                 </Link>
               )
             )}
+            <Link
+              to="/kontakt"
+              onClick={() => setMobileOpen(false)}
+              className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold bg-accent text-accent-foreground rounded-sm"
+            >
+              {t.hero.cta}
+            </Link>
           </div>
           <div className="border-t border-border/20 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">
             <Link
