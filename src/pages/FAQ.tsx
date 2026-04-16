@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout";
+import Layout from "@/components/Layout";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
   Accordion,
@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Reveal } from "@/components/Reveal";
+import Reveal from "@/components/Reveal";
 
 const FAQ = () => {
   const { t } = useLanguage();
