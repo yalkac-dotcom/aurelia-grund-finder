@@ -20,6 +20,7 @@ const GlossarPage = lazy(() => import("./pages/tax/GlossarPage"));
 const InvestorGlossar = lazy(() => import("./pages/InvestorGlossar"));
 const Contact = lazy(() => import("./pages/Contact"));
 const FAQ = lazy(() => import("./pages/FAQ"));
+const Portfolio = lazy(() => import("./pages/Portfolio"));
 
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Impressum = lazy(() => import("./pages/Impressum"));
@@ -55,6 +56,7 @@ const App = () => (
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
               <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />
               <Route path="/fuer-investoren" element={<ForGeschaftspartner />} />
+              <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/datenschutz" element={<Privacy />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/bildnachweise" element={<Bildnachweise />} />
