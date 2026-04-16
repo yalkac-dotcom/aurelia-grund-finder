@@ -386,14 +386,18 @@
   gap: 0.75rem;
 }
 
-.hero-primary-button,
-.hero-secondary-button {
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 44px;
   padding: 0.7rem 1.4rem;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.13em;
   text-transform: uppercase;
+  text-decoration: none;
   border-radius: 0.25rem;
   transition:
     transform 0.3s ease,
@@ -402,25 +406,25 @@
     color 0.3s ease;
 }
 
-.hero-primary-button {
+.btn-primary {
   background: hsl(var(--accent));
   color: hsl(var(--accent-foreground));
   box-shadow: 0 8px 20px -10px hsl(212 55% 10% / 0.5);
 }
 
-.hero-primary-button:hover {
+.btn-primary:hover {
   background: hsl(var(--accent) / 0.88);
   transform: translateY(-1px);
 }
 
-.hero-secondary-button {
+.btn-secondary {
   border: 1px solid hsl(0 0% 100% / 0.25);
   background: hsl(0 0% 100% / 0.08);
   color: hsl(0 0% 100% / 0.95);
   backdrop-filter: blur(6px);
 }
 
-.hero-secondary-button:hover {
+.btn-secondary:hover {
   border-color: hsl(0 0% 100% / 0.4);
   background: hsl(0 0% 100% / 0.14);
 }

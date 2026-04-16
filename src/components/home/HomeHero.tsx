@@ -7,7 +7,8 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const HomeHero = () => {
   const { t } = useLanguage();
 
-  const handleScrollToProcess = () => {
+  const handleScrollToProcess = (e: React.MouseEvent) => {
+    e.preventDefault();
     const el = document.getElementById("arbeitsweise");
     el?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
