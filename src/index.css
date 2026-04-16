@@ -531,7 +531,52 @@
   will-change: opacity;
 }
 
-/* Hide scrollbar for glossary letter bar */
+.scroll-top-btn {
+  position: fixed;
+  right: 0.75rem;
+  bottom: 5rem;
+  z-index: 40;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1px solid hsl(0 0% 100% / 0.15);
+  background: hsl(220 8% 12% / 0.7);
+  color: hsl(0 0% 100% / 0.7);
+  backdrop-filter: blur(12px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+  box-shadow: 0 6px 24px -4px hsl(212 55% 10% / 0.3);
+}
+
+.scroll-top-btn:active {
+  transform: scale(0.93);
+}
+
+@media (min-width: 768px) {
+  .scroll-top-btn {
+    right: 2rem;
+    bottom: 2rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-color: transparent;
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    backdrop-filter: none;
+    box-shadow: 0 4px 16px -3px hsl(212 30% 10% / 0.25);
+  }
+}
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
