@@ -23,7 +23,7 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen — diskret, strukturiert und mit klarem Blick für wirtschaftlich sinnvolle Entscheidungen.",
+      "Diskrete Prüfung, klare Struktur und unternehmerische Lösungen für Immobilien in besonderen Situationen.",
     subline: "Diskret · Substanzorientiert · Langfristig",
     navItems: [
       { label: "Startseite", path: "/" },
