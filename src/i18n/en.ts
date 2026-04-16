@@ -23,7 +23,7 @@ const en: Translations = {
     disclaimer:
       "Disclaimer: The content of this website is provided for general information only and does not constitute legal, tax, or financial advice.",
     brandLine:
-      "Aurelia Grundbesitz develops properties from special situations — discreetly, in a structured way, and with a clear eye for substance.",
+      "Discreet review, clear structure and entrepreneurial solutions for real estate in special situations.",
     subline: "Discreet · Substance-focused · Long-term",
     navItems: [
       { label: "Home", path: "/" },

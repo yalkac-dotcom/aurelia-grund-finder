@@ -23,7 +23,7 @@ const it: Translations = {
     disclaimer:
       "Avviso: i contenuti di questo sito sono forniti esclusivamente a scopo informativo e non costituiscono consulenza legale, fiscale o finanziaria.",
     brandLine:
-      "Aurelia Grundbesitz sviluppa immobili provenienti da situazioni particolari in modo discreto, strutturato e con uno sguardo chiaro alla sostanza.",
+      "Valutazione discreta, struttura chiara e soluzioni imprenditoriali per immobili in situazioni particolari.",
     subline: "Discrezione · Orientamento alla sostanza · Lungo termine",
     navItems: [
       { label: "Home", path: "/" },

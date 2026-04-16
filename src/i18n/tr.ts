@@ -23,7 +23,7 @@ const tr: Translations = {
     disclaimer:
       "Uyarı: Bu web sitesindeki içerikler yalnızca genel bilgilendirme amacı taşır ve hukuki, vergisel veya finansal danışmanlık niteliğinde değildir.",
     brandLine:
-      "Aurelia Grundbesitz, özel durumlardan çıkan gayrimenkulleri gizli, yapılandırılmış ve özü net gören bir yaklaşımla geliştirir.",
+      "Özel durumlardaki gayrimenkuller için gizli inceleme, net yapı ve girişimci çözümler.",
     subline: "Gizli · Öz odaklı · Uzun vadeli",
     navItems: [
       { label: "Ana Sayfa", path: "/" },
