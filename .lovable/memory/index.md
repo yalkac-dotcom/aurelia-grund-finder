@@ -4,10 +4,10 @@ Updated: now
 # Project Memory
 
 ## Core
-- **Brand**: Aurelia Grundbesitz GmbH. Immobilien, Forderungen, Chancen. 3-Wege-Modell (Hilfe, Kaufen, Investieren).
+- **Brand**: Aurelia Grundbesitz GmbH. Immobilien, Forderungen, Chancen. 3-Wege-Modell (Hilfe, Kaufen, Geschäftspartnerschaften).
 - **Tone**: Informal "Du", direkt, menschlich, ehrlich. Keine steife Corporate-Sprache.
 - **Colors**: Teal (primary), Navy (dark sections), White. Glassmorphism cards.
-- **Rules**: NO placeholders ("XXX") — remove incomplete sections entirely. NO 1px section borders.
+- **Rules**: NO placeholders ("XXX") — remove incomplete sections entirely. NO 1px section borders. BaFin: NO concrete return % or minimum investments in public content.
 - **Languages**: 6 languages (DE, EN, NL, IT, ES, TR). DE is master. Sync SEO & hreflang dynamically.
 
 ## Memories
