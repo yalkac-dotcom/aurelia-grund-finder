@@ -247,17 +247,17 @@ const HomePage = () => {
                 {
                   quote: "Nach dem Tod meines Mannes stand ich vor einer belasteten Immobilie und Schulden. Aurelia hat mir schnell und fair geholfen. Innerhalb von 3 Wochen war alles erledigt.",
                   author: "Anita Rösler",
-                  role: "Immobilieneigentümerin, Berlin-Charlottenburg"
+                  role: "Immobilieneigentümerin, Düsseldorf-Oberkassel"
                 },
                 {
-                  quote: "Ich suchte lange nach einer bezahlbaren Immobilie. Bei Aurelia fand ich ein Einfamilienhaus in Unterhaching — 35% unter dem Marktwert. Keine versteckten Kosten, keine Makler.",
+                  quote: "Ich suchte lange nach einer bezahlbaren Immobilie. Bei Aurelia fand ich ein Einfamilienhaus in Ratingen — 35% unter dem Marktwert. Keine versteckten Kosten, keine Makler.",
                   author: "Stefan Möller",
-                  role: "Softwareentwickler, München"
+                  role: "Softwareentwickler, Düsseldorf"
                 },
                 {
                   quote: "Die Beteiligung bei Aurelia überzeugt mich durch Transparenz: echte Zahlen, real Assets, professionelle Abwicklung. Nach 18 Monaten hatte ich meine erwartete Rendite.",
                   author: "Dr. Reinhard Hoffmann",
-                  role: "Zahnarzt & Kapitalanleger, Hamburg"
+                  role: "Zahnarzt & Kapitalanleger, Meerbusch (Düsseldorf-Umgebung)"
                 }
               ].map((story, i) => (
                 <Reveal key={i} delay={i * 0.08}>
