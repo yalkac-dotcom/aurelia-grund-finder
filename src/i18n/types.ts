@@ -23,6 +23,32 @@ export interface Translations {
     disclaimer: string;
     brandLine: string;
     subline: string;
+    // Extended (i18n-1a)
+    navItems: { label: string; path: string }[];
+    legalItems: { label: string; path: string }[];
+    legalSectionLabel: string;
+    newsletterColTitle: string;
+    newsletterColIntro: string;
+    socialPending: string;
+    socialLinkedinAria: string;
+    socialInstagramAria: string;
+    copyright: string; // "© {year} Aurelia Grundbesitz GmbH. ..."
+    kwgDisclaimer: string;
+  };
+  newsletter: {
+    placeholder: string;
+    submit: string;
+    submitting: string;
+    consentLabel: string;
+    privacyLink: string;
+    invalidEmailTitle: string;
+    invalidEmailDesc: string;
+    consentRequiredTitle: string;
+    consentRequiredDesc: string;
+    errorTitle: string;
+    errorDesc: string;
+    successTitle: string;
+    successDesc: string;
   };
   hero: {
     slogan: string;
