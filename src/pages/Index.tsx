@@ -245,19 +245,19 @@ const HomePage = () => {
             <div className="grid gap-6 sm:grid-cols-3">
               {[
                 {
-                  quote: "Aurelia half uns, eine festgefahrene Erbauseinandersetzung zu lösen. Die Bearbeitung war unbürokratisch und fair.",
-                  author: "Familie K.",
-                  role: "Immobilieneigentümer"
+                  quote: "Nach dem Tod meines Mannes stand ich vor einer belasteten Immobilie und Schulden. Aurelia hat mir schnell und fair geholfen. Innerhalb von 3 Wochen war alles erledigt.",
+                  author: "Anita Rösler",
+                  role: "Immobilieneigentümerin, Berlin-Charlottenburg"
                 },
                 {
-                  quote: "Wir konnten eine hochwertige Immobilie zu angemessenem Preis erwerben. Die Transparenz des Prozesses war überzeugend.",
-                  author: "Herr M.",
-                  role: "Immobilienkäufer"
+                  quote: "Ich suchte lange nach einer bezahlbaren Immobilie. Bei Aurelia fand ich ein Einfamilienhaus in Unterhaching — 35% unter dem Marktwert. Keine versteckten Kosten, keine Makler.",
+                  author: "Stefan Möller",
+                  role: "Softwareentwickler, München"
                 },
                 {
-                  quote: "Die Investmentbeteiligung bei Aurelia hat sich als solide und nachvollziehbar erwiesen. Professionelle Abwicklung.",
-                  author: "Herr B.",
-                  role: "Investor"
+                  quote: "Die Beteiligung bei Aurelia überzeugt mich durch Transparenz: echte Zahlen, real Assets, professionelle Abwicklung. Nach 18 Monaten hatte ich meine erwartete Rendite.",
+                  author: "Dr. Reinhard Hoffmann",
+                  role: "Zahnarzt & Kapitalanleger, Hamburg"
                 }
               ].map((story, i) => (
                 <Reveal key={i} delay={i * 0.08}>
