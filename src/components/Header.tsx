@@ -18,7 +18,7 @@ const Header = () => {
 
   const navItems: NavItem[] = [
     { label: t.nav.home, path: "/" },
-    { label: "Für Eigentümer in Not", path: "/fuer-eigentumer-in-not" },
+    { label: "Für Eigentümer", path: "/fuer-eigentumer-in-not" },
     { label: "Für Käufer", path: "/fuer-kaeufer" },
     { label: "Für Geschäftspartner", path: "/fuer-geschaeftspartner" },
     { label: "Wie es funktioniert", path: "/wie-es-funktioniert" },
