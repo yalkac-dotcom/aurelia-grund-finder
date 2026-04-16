@@ -4,7 +4,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { languageNames, type Language } from "@/i18n/types";
 
 // Only show languages that are fully synced with the current DE master
-const enabledLanguages: Language[] = ["de"];
+const enabledLanguages: Language[] = ["de", "en", "nl", "it", "es", "tr"];
 
 const LanguageSwitcher = () => {
   const { language, setLanguage, t } = useLanguage();

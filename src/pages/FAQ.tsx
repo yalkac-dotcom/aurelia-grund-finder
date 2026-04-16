@@ -51,9 +51,9 @@ const FAQ = () => {
       <section id="hero" className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
         <div className="absolute inset-0 overflow-hidden">
           <OptimizedImg
-            src={heroSets.premium.src}
-            srcSet={heroSets.premium.srcSet}
-            sizes={heroSets.premium.sizes}
+            src={heroSets.glossar.src}
+            srcSet={heroSets.glossar.srcSet}
+            sizes={heroSets.glossar.sizes}
             alt="Häufig gestellte Fragen"
             className="hero-media h-full w-full object-cover object-center"
             priority

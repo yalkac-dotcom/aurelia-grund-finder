@@ -13,9 +13,9 @@ const ForOwnerInTrouble = () => {
       <section id="hero" className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
         <div className="absolute inset-0 overflow-hidden">
           <OptimizedImg
-            src={heroSets.premium.src}
-            srcSet={heroSets.premium.srcSet}
-            sizes={heroSets.premium.sizes}
+            src={heroSets.building.src}
+            srcSet={heroSets.building.srcSet}
+            sizes={heroSets.building.sizes}
             alt="Immobilie in Schwierigkeiten"
             className="hero-media h-full w-full object-cover object-center"
             priority
