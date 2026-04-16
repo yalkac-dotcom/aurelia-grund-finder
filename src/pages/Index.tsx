@@ -64,7 +64,7 @@ const HomePage = () => {
                 {
                   icon: Shield,
                   title: "Eigentümer in Schwierigkeiten",
-                  desc: "Forderungsankauf und Schuldenerledigung",
+                  desc: "Forderungsankauf und Schuldenbereinigung",
                   link: "/fuer-eigentumer-in-not",
                   color: "bg-red-500"
                 },
@@ -257,10 +257,10 @@ const HomePage = () => {
                 {
                   quote: "Ich suchte lange nach einer bezahlbaren Immobilie. Bei Aurelia fand ich ein Einfamilienhaus in Ratingen — 35% unter dem Marktwert. Keine versteckten Kosten, keine Makler.",
                   author: "Stefan Möller",
-                  role: "Softwareentwickler, Düsseldorf"
+                  role: "Softwareentwickler, Ratingen"
                 },
                 {
-                  quote: "Die Beteiligung bei Aurelia überzeugt mich durch Transparenz: echte Zahlen, real Assets, professionelle Abwicklung. Nach 18 Monaten hatte ich meine erwartete Rendite.",
+                  quote: "Die Beteiligung bei Aurelia überzeugt mich durch Transparenz: echte Zahlen, real Assets, professionelle Abwicklung. Nach 7 Monaten hatte ich meine erwartete Rendite.",
                   author: "Reinhard Hoffmann",
                   role: "Unternehmer & Kapitalanleger, Meerbusch (Düsseldorf-Umgebung)"
                 }
