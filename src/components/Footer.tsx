@@ -77,36 +77,43 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="mt-5 pt-4 border-t border-white/10 flex flex-col items-start gap-2">
-              <p className="text-[9px] md:text-[10px] font-sans uppercase tracking-[0.15em] text-white/50 mb-0.5">Rechtliches</p>
-              <Link
-                to="/impressum"
-                className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
-              >
-                {t.footer.imprint}
-              </Link>
-              <Link
-                to="/datenschutz"
-                className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
-              >
-                {t.footer.privacy}
-              </Link>
-              <Link
-                to="/bildnachweise"
-                className="min-h-0 text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
-              >
-                {t.footer.imageCredits}
-              </Link>
-            </div>
-
-            <div className="mt-4 pt-3 border-t border-white/10 flex flex-col items-start">
-              <button
-                type="button"
-                onClick={openCookieSettings}
-                className="min-h-0 text-white/60 text-[10px] md:text-[11px] hover:text-accent transition-colors duration-200 text-left tracking-wide"
-              >
-                {t.footer.cookieSettings}
-              </button>
+            <div className="mt-5 pt-4 border-t border-white/10">
+              <p className="text-[9px] md:text-[10px] font-sans uppercase tracking-[0.15em] text-white/50 mb-2.5">Rechtliches</p>
+              <ul className="space-y-1.5">
+                <li>
+                  <Link
+                    to="/impressum"
+                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                  >
+                    {t.footer.imprint}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/datenschutz"
+                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                  >
+                    {t.footer.privacy}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/bildnachweise"
+                    className="text-white/80 text-[11px] md:text-xs hover:text-accent transition-colors duration-200"
+                  >
+                    {t.footer.imageCredits}
+                  </Link>
+                </li>
+                <li className="pt-1.5">
+                  <button
+                    type="button"
+                    onClick={openCookieSettings}
+                    className="text-white/60 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 text-left"
+                  >
+                    {t.footer.cookieSettings}
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
