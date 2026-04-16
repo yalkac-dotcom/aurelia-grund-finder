@@ -250,7 +250,7 @@ const HomePage = () => {
             <div className="grid gap-6 sm:grid-cols-3">
               {[
                 {
-                  quote: "Nach dem Tod meines Mannes stand ich vor einer belasteten Immobilie und Schulden. Aurelia hat mir schnell und fair geholfen. Innerhalb von 3 Wochen war alles erledigt.",
+                  quote: "Nach dem Tod meines Mannes stand ich vor einer belasteten Immobilie und Schulden. Aurelia hat mir schnell und fair geholfen. Innerhalb von 11 Wochen war alles erledigt.",
                   author: "Anita Rösler",
                   role: "Immobilieneigentümerin, Düsseldorf-Oberkassel"
                 },
