@@ -27,8 +27,9 @@ const ForOwnerInTrouble = () => {
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
           <div className="hero-copy-shell">
             <Reveal>
-              <p className="hero-kicker">Deine Lösung</p>
-              <h1 className="hero-title">Deine Immobilie in Schwierigkeiten?</h1>
+              <p className="hero-kicker">Für Eigentümer in Schwierigkeiten</p>
+              <h1 className="hero-title">Lösungen für Eigentümer in Schwierigkeiten</h1>
+              <p className="hero-description">Aurelia kauft Ihre Forderung diskret und fair.</p>
             </Reveal>
           </div>
           <HeroScrollIndicator />
@@ -42,63 +43,44 @@ const ForOwnerInTrouble = () => {
             <Reveal>
               <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
               <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                Wir kaufen Forderungen — unbürokratisch, fair, schnell.
+                Wir helfen in schwierigen Zeiten
               </h2>
               <p className="mx-auto max-w-2xl text-[0.93rem] leading-[1.85] text-muted-foreground">
-                Egal ob Schulden, Erbstreit, Mehrheits-Probleme oder Zwangsversteigerung droht — Aurelia hat die Lösung. Wir kaufen Deine Forderung an der Immobilie und bezahlen Dir einen fairen Wert. Sofort, ohne Makler, ohne Umwege. Du atmet auf. Wir kümmern uns um den Rest.
+                Wenn Sie als Eigentümer mit Schuldenproblemen, Erbkonflikten oder anderen Belastungen kämpfen, kann Aurelia eine Lösung bieten. Wir kaufen Ihre Forderung an — mit fairer Bewertung nach Marktstandards.
               </p>
             </Reveal>
           </div>
         </section>
 
-        {/* DAS PROBLEM */}
+        {/* SITUATIONEN */}
         <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}>
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-12">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-red-600/50" />
+                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-amber-600/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Das erkenne ich wieder
+                  Situationen, in denen wir helfen können
                 </h2>
               </div>
             </Reveal>
 
             <div className="grid gap-6 sm:grid-cols-2">
               {[
-                {
-                  icon: AlertTriangle,
-                  title: "Schulden auf der Immobilie",
-                  desc: "Kredite, Rückstände, Steuern — der Berg wird größer und die Nächte kürzer"
-                },
-                {
-                  icon: AlertTriangle,
-                  title: "Mehrere Eigentümer",
-                  desc: "Ihr einigt Euch nicht, die Situation ist festgefahren, keiner kommt voran"
-                },
-                {
-                  icon: AlertTriangle,
-                  title: "Zwangsversteigerung droht",
-                  desc: "Die Zeit wird knapp, die Bank macht Druck, die Angst wächst"
-                },
-                {
-                  icon: AlertTriangle,
-                  title: "Du brauchst schnell Geld",
-                  desc: "Die Immobilie ist eine Last, nicht ein Asset — Du willst sie loswerden"
-                }
-              ].map((item, i) => {
-                const Icon = item.icon;
-                return (
-                  <Reveal key={i} delay={i * 0.08}>
-                    <div className="glass-card rounded-2xl p-8 flex gap-4">
-                      <Icon className="shrink-0 text-red-600" size={28} />
-                      <div>
-                        <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
-                        <p className="text-[0.88rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
-                      </div>
+                { title: "Komplexe Immobiliensituationen", desc: "Wenn die Verwaltung einer Immobilie zu belastend wird." },
+                { title: "Finanzielle Herausforderungen", desc: "Wenn Schulden oder Belastungen entstanden sind." },
+                { title: "Mehrheits- oder Erbkonflikte", desc: "Wenn sich Co-Eigentümer nicht einigen können." },
+                { title: "Längerfristige Belastungen", desc: "Wenn eine strukturierte Lösung notwendig ist." },
+              ].map((item, i) => (
+                <Reveal key={i} delay={i * 0.08}>
+                  <div className="glass-card rounded-2xl p-8 flex gap-4">
+                    <AlertTriangle className="shrink-0 text-amber-600" size={26} />
+                    <div>
+                      <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
+                      <p className="text-[0.88rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
                     </div>
-                  </Reveal>
-                );
-              })}
+                  </div>
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
@@ -110,62 +92,29 @@ const ForOwnerInTrouble = () => {
               <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
-                  So helfen wir Dir
+                  Wie Aurelia helfen kann
                 </h2>
-                <p className="mx-auto max-w-2xl text-[0.93rem] leading-[1.85] text-white/75">
-                  Aurelia kauft Deine Forderung an der Immobilie. Wir bezahlen Dir einen fairen Wert — und Du hast wieder Luft zum Atmen. Schnell, unbürokratisch, ohne Makler.
+                <p className="mx-auto max-w-3xl text-[0.93rem] leading-[1.85] text-white/75">
+                  Aurelia kauft Ihre Forderung an. Das bedeutet: Wir werden Gläubiger und zahlen Ihnen einen fairen Preis nach Vereinbarung. Sie erhalten Kapital, Aurelia wird Eigentümer der Immobilie. Danach liegt die Verwertung in unserer Hand — wir renovieren, vermieten oder verkaufen die Immobilie, je nachdem, was wirtschaftlich sinnvoll ist.
                 </p>
               </div>
             </Reveal>
 
-            <div className="mb-10 grid gap-8 sm:grid-cols-3">
-              {[
-                {
-                  icon: Phone,
-                  title: "1. Gespräch",
-                  desc: "Du erzählst uns alles. Keine Vorurteile, keine versteckten Fragen, nur Zuhören.",
-                  color: "bg-blue-500"
-                },
-                {
-                  icon: Clock,
-                  title: "2. Analyse",
-                  desc: "Wir überprüfen die Forderung gründlich und fair. Du weißt, was Du bekommst.",
-                  color: "bg-purple-500"
-                },
-                {
-                  icon: CheckCircle,
-                  title: "3. Zahlung",
-                  desc: "Du erhältst den fairen Wert — sofort, auf Dein Konto. Die Sorge ist weg.",
-                  color: "bg-green-500"
-                }
-              ].map((step, i) => {
-                const Icon = step.icon;
-                return (
-                  <Reveal key={i} delay={i * 0.1}>
-                    <div className="glass-card-dark rounded-2xl p-8 text-center">
-                      <div className={`mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full ${step.color} text-white`}>
-                        <Icon size={24} />
-                      </div>
-                      <h3 className="mb-2 text-[1rem] font-heading font-semibold text-white">{step.title}</h3>
-                      <p className="text-[0.88rem] leading-[1.75] text-white/70">{step.desc}</p>
-                    </div>
-                  </Reveal>
-                );
-              })}
-            </div>
-
             <Reveal delay={0.15}>
-              <div className="glass-card-dark rounded-2xl p-8 md:p-10">
-                <h3 className="mb-5 text-[1.1rem] font-heading font-semibold text-white">Was das für Dich bedeutet</h3>
-                <div className="space-y-3">
+              <div className="glass-card-dark rounded-2xl p-8 md:p-10 max-w-3xl mx-auto">
+                <h3 className="mb-5 text-[1.1rem] font-heading font-semibold text-white">Vorteile für Sie</h3>
+                <div className="grid sm:grid-cols-2 gap-3">
                   {[
-                    "✓ Keine Zwangsversteigerung mehr",
-                    "✓ Geld in der Hand, nicht nur Hoffnung",
-                    "✓ Kein Makler, keine versteckten Gebühren",
-                    "✓ Deine Würde bleibt erhalten",
-                    "✓ Schneller Prozess — in Tagen, nicht Monaten"
+                    "Strukturierte Lösung nach Vereinbarung",
+                    "Faire Marktbewertung",
+                    "Rechtliche Begleitung",
+                    "Diskrete Behandlung",
+                    "Professionelle Abwicklung",
                   ].map((point, i) => (
-                    <p key={i} className="text-[0.93rem] leading-[1.75] text-white/80">{point}</p>
+                    <div key={i} className="flex items-start gap-2">
+                      <CheckCircle size={16} className="mt-0.5 shrink-0 text-teal-400" />
+                      <p className="text-[0.9rem] leading-[1.7] text-white/85">{point}</p>
+                    </div>
                   ))}
                 </div>
               </div>
@@ -173,92 +122,87 @@ const ForOwnerInTrouble = () => {
           </div>
         </section>
 
-        {/* SUCCESS STORIES */}
+        {/* PROZESS */}
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <Reveal>
-              <div className="text-center mb-10">
+              <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Das haben wir schon geschafft
+                  Der Prozess in 5 Schritten
                 </h2>
               </div>
             </Reveal>
 
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
               {[
-                {
-                  title: "Familie Schneider",
-                  role: "Immobilieneigentümer, Düsseldorf-Benrath",
-                  story: "Vier Geschwister, sechs Jahre Streit über das Elternhaus in Benrath. Aurelia hörte alle an und fand eine faire Lösung. Heute haben wir unseren Frieden und alle unsere Anteile erhalten."
-                },
-                {
-                  title: "Peter Abshagen",
-                  role: "Handwerksbetriebsleiter, Hilden (Düsseldorf-Umgebung)",
-                  story: "Meine Schreinerei geriet in Schwierigkeiten und ich war gezwungen, meine Wohnimmobilie zu belasten. Die Bank drohte mit Zwangsversteigerung. Aurelia verhandelte mit mir wie ein Partner. Heute läuft mein Betrieb wieder."
-                },
-                {
-                  title: "Petra und Frank Lenz",
-                  role: "Co-Eigentümer einer Wohnanlage, Neuss (Rhein-Kreis)",
-                  story: "Wir zwei verstanden uns nicht, aber die Bank drückte auf Verwertung. Aurelia kaufte beide Forderungen — plötzlich war das Problem weg. Jeder erhielt seinen fairen Wert."
-                },
-                {
-                  title: "Margot Hoffmann",
-                  role: "Rentnerin (75), Düsseldorf-Grafenberg",
-                  story: "Nach meinem Schlaganfall brauchte ich schnell Geld für Pflegekosten. Aurelia zahlte sofort und fair. Heute habe ich die beste Pflege und kann beruhigt schlafen."
-                }
-              ].map((story, i) => (
-                <Reveal key={i} delay={i * 0.08}>
-                  <div className="glass-card rounded-2xl p-8">
-                    <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{story.title}</h3>
-                    <p className="mb-3 text-[0.82rem] text-muted-foreground/80">{story.role}</p>
-                    <p className="text-[0.88rem] leading-[1.75] text-muted-foreground italic">„{story.story}"</p>
+                { step: "1", title: "Erstkontakt", desc: "Sie kontaktieren Aurelia oder nehmen unsere Beratung an." },
+                { step: "2", title: "Situationsanalyse", desc: "Wir analysieren Ihre Immobilie und Ihre Situation." },
+                { step: "3", title: "Bewertung & Angebot", desc: "Schriftliches Angebot nach Marktstandards." },
+                { step: "4", title: "Vereinbarung", desc: "Bei Zustimmung unterzeichnen wir einen verbindlichen Vertrag." },
+                { step: "5", title: "Abwicklung", desc: "Professionelle Verwertung nach Vertragsabschluss." },
+              ].map((item, i) => (
+                <Reveal key={i} delay={i * 0.06}>
+                  <div className="glass-card rounded-2xl p-6 text-center h-full">
+                    <div className="icon-badge mx-auto mb-4 flex h-11 w-11 items-center justify-center rounded-lg">
+                      <span className="text-[1.15rem] font-heading font-bold text-teal-700">{item.step}</span>
+                    </div>
+                    <h3 className="mb-2 text-[0.95rem] font-heading font-semibold text-foreground">{item.title}</h3>
+                    <p className="text-[0.82rem] leading-[1.7] text-muted-foreground">{item.desc}</p>
                   </div>
                 </Reveal>
               ))}
             </div>
+
+            <Reveal delay={0.3}>
+              <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
+                Alle Zeitrahmen sind Richtwerte und hängen von Ihrer individuellen Situation ab. Eine typische Abwicklung dauert mehrere Wochen bis Monate.
+              </p>
+            </Reveal>
           </div>
         </section>
 
-        {/* FAQ */}
+        {/* TESTIMONIALS — anonymisiert */}
         <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}>
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-10">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Deine Fragen
+                  Stimmen aus der Praxis
                 </h2>
               </div>
             </Reveal>
 
-            <div className="mx-auto max-w-3xl space-y-6">
+            <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
               {[
                 {
-                  q: "Wie viel bekomme ich für meine Forderung?",
-                  a: "Das hängt von Deiner Situation ab. Wir bewerten fair und transparent. In einer kostenlosen Beratung sagen wir Dir konkrete Zahlen — ohne Überraschungen."
+                  role: "Kundin aus der Region Düsseldorf",
+                  story: "Der Prozess war unkomplizierter als ich erwartet hatte. Aurelia hat alles transparent gemacht.",
                 },
                 {
-                  q: "Kann ich die Immobilie behalten?",
-                  a: "Das hängt von Deinem Ziel ab. Wenn Du sie behalten willst und wir die Forderung kaufen — ja. Wenn nicht, unterstützen wir Dich beim fairen Verkauf."
+                  role: "Geschäftsführer eines Unternehmens",
+                  story: "In einer schwierigen Situation war die strukturierte Lösung genau das, was wir brauchten.",
                 },
                 {
-                  q: "Wie schnell funktioniert das?",
-                  a: "Normalerweise 2-4 Wochen vom Gespräch bis zur Zahlung. Bei Notfällen auch schneller. Wir verstehen, dass Zeit kostbar ist und jeder Tag zählt."
+                  role: "Co-Eigentümer (anonym)",
+                  story: "Nach Jahren des Streits konnten wir endlich einen Weg finden, der für alle fair war.",
                 },
-                {
-                  q: "Was kostet mich das?",
-                  a: "Für Dich kostet nichts. Die Beratung ist kostenlos. Wir verdienen durch den Kauf und die Verwertung der Immobilie. Du bekommst Dein Geld, fertig."
-                }
-              ].map((item, i) => (
+              ].map((s, i) => (
                 <Reveal key={i} delay={i * 0.08}>
-                  <div className="glass-card rounded-2xl p-8">
-                    <h3 className="mb-3 text-[1rem] font-heading font-semibold text-foreground">{item.q}</h3>
-                    <p className="text-[0.88rem] leading-[1.75] text-muted-foreground">{item.a}</p>
+                  <div className="glass-card rounded-2xl p-7 h-full">
+                    <p className="mb-4 text-[0.9rem] italic leading-[1.8] text-foreground">„{s.story}"</p>
+                    <p className="text-[0.8rem] text-muted-foreground/80">{s.role}</p>
                   </div>
                 </Reveal>
               ))}
             </div>
+
+            <Reveal delay={0.3}>
+              <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
+                Vollständige Referenzen sind auf Anfrage und unter Beachtung des Datenschutzes verfügbar.
+              </p>
+            </Reveal>
           </div>
         </section>
 
@@ -267,26 +211,17 @@ const ForOwnerInTrouble = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
           <div className="container-premium relative text-center">
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Bereit für die Lösung?</h2>
+              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Lassen Sie uns Ihre Situation besprechen</h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                Die erste Beratung kostet Dich nichts. Wir hören zu, schauen uns alles an, und sagen Dir ehrlich, was möglich ist. Kein Risiko, keine Verpflichtung.
+                Kostenlose und unverbindliche Beratung. Wir hören zu und sagen Ihnen ehrlich, was möglich ist.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  to="/kontakt"
-                  className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
-                >
-                  Kostenlose Beratung
-                  <ArrowRight size={13} />
-                </Link>
-                <Link
-                  to="/faq"
-                  className="inline-flex items-center gap-2.5 rounded-sm bg-white/10 backdrop-blur-sm border border-white/30 px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-white transition-all duration-300 hover:bg-white/20"
-                >
-                  Mehr Fragen & Antworten
-                  <ArrowRight size={13} />
-                </Link>
-              </div>
+              <Link
+                to="/kontakt"
+                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
+              >
+                Termin vereinbaren
+                <ArrowRight size={13} />
+              </Link>
             </Reveal>
           </div>
         </section>

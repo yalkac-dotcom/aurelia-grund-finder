@@ -1,113 +1,149 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
-import { ArrowRight } from "lucide-react";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
-import ceoImg from "@/assets/about-ceo.jpg";
 import { heroSets } from "@/assets/heroImages";
-import { useLanguage } from "@/i18n/LanguageContext";
-
-const panelBase =
-  "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
-
-const panelPadding = "px-6 py-7 md:px-12 md:py-10";
+import { ArrowRight, Eye, Heart, Clock, ShieldCheck } from "lucide-react";
 
 const About = () => {
-  const { t } = useLanguage();
+  useEffect(() => {
+    document.title = "Über Aurelia – Aurelia Grundbesitz GmbH";
+  }, []);
 
   return (
     <Layout>
-      {/* Hero */}
-      <section className="relative h-[36vh] min-h-[260px] flex items-end">
-        <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.about.src} srcSet={heroSets.about.srcSet} sizes={heroSets.about.sizes} alt={t.about.heroTitle} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/70 via-[#0B1929]/25 to-transparent" />
+      {/* HERO */}
+      <section id="hero" className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
+        <div className="absolute inset-0 overflow-hidden">
+          <OptimizedImg
+            src={heroSets.about.src}
+            srcSet={heroSets.about.srcSet}
+            sizes={heroSets.about.sizes}
+            alt="Über Aurelia Grundbesitz"
+            className="hero-media h-full w-full object-cover object-center"
+            priority
+          />
+          <div className="hero-overlay-base absolute inset-0" />
+          <div className="hero-overlay-protect absolute inset-0" />
         </div>
-        <div className="relative container pb-10 md:pb-12">
-          <Reveal>
-            <p className="text-white/90 font-sans text-xs font-medium tracking-[0.16em] uppercase mb-2">{t.nav.about}</p>
-            <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
-              {t.about.heroTitle}
-            </h1>
-          </Reveal>
+
+        <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
+          <div className="hero-copy-shell">
+            <Reveal>
+              <p className="hero-kicker">Über Aurelia</p>
+              <h1 className="hero-title">Über Aurelia Grundbesitz</h1>
+              <p className="hero-description">Diskret, substanzorientiert, langfristig.</p>
+            </Reveal>
+          </div>
           <HeroScrollIndicator />
         </div>
       </section>
 
-      {/* Company */}
-      <section className="py-6 md:py-10">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-8">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.companyLabel}</p>
-                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                  {t.about.companyTitle}
+      <div className="page-shell">
+        {/* GESCHICHTE */}
+        <section className="section-premium bg-gradient-warm">
+          <div className="container-premium">
+            <Reveal>
+              <div className="max-w-3xl mx-auto text-center">
+                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                  Unsere Geschichte
                 </h2>
-              </div>
-              <div className="space-y-3">
-                <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">{t.about.companyP1}</p>
-                <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">{t.about.companyP2}</p>
-              </div>
-              <Link to="/leistungen" className="inline-flex items-center gap-2 border border-foreground/15 text-foreground px-5 py-2.5 text-xs font-medium tracking-[0.15em] uppercase hover:border-foreground/40 transition-colors duration-300 rounded-sm mt-6">
-                {t.nav.services}
-                <ArrowRight size={11} />
-              </Link>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Philosophy */}
-      <section className="py-6 md:py-10 bg-secondary/30">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-8">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.philosophyLabel}</p>
-                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 max-w-xl text-balance">
-                  {t.about.philosophyTitle}
-                </h2>
-              </div>
-              <div className="space-y-3">
-                <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">{t.about.philosophyP1}</p>
-                <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">{t.about.philosophyP2}</p>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* Team & Experience */}
-      <section className="py-6 md:py-10">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                <OptimizedImg src={ceoImg} alt={t.about.experienceTitle} className="w-full h-[320px] object-cover rounded-xl" />
-                <div>
-                  <div className="section-shell-accent mb-4">
-                    <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.about.experienceLabel}</p>
-                    <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
-                      {t.about.experienceTitle}
-                    </h2>
-                  </div>
-                  <div className="space-y-2.5 mt-4">
-                    <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{t.about.experienceP1}</p>
-                    <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{t.about.experienceP2}</p>
-                    <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{t.about.experienceP3}</p>
-                  </div>
-                  <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-5 py-2.5 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 rounded-sm mt-6">
-                    {t.hero.cta}
-                    <ArrowRight size={11} />
-                  </Link>
+                <div className="space-y-4 text-[0.93rem] leading-[1.85] text-muted-foreground">
+                  <p>
+                    Aurelia Grundbesitz wurde gegründet, um professionelle Lösungen im Immobilienmarkt anzubieten — mit klarem Fokus auf Forderungsankauf, anspruchsvolle Objekte und nachhaltige Verwertung.
+                  </p>
+                  <p>
+                    Mit kontinuierlicher Erfahrung entwickelten wir ein Geschäftsmodell, das hilfreiche Lösungen für Eigentümer mit Schwierigkeiten bietet, während wir gleichzeitig nachhaltige Geschäfte aufbauen.
+                  </p>
                 </div>
               </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* WERTE */}
+        <section className="section-premium section-navy text-white">
+          <div className="container-premium">
+            <Reveal>
+              <div className="text-center mb-12">
+                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
+                <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
+                  Unsere Werte
+                </h2>
+              </div>
+            </Reveal>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                { icon: Eye, title: "Transparenz", desc: "Offene Kommunikation in allen Geschäften." },
+                { icon: Heart, title: "Hilfreiche Lösungen", desc: "Vor Profitmaximierung steht der nachhaltige Mehrwert." },
+                { icon: Clock, title: "Langfristige Beziehungen", desc: "Statt kurzfristiger Transaktionen." },
+                { icon: ShieldCheck, title: "Professionalität", desc: "Saubere, rechtssichere Abwicklung." },
+              ].map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <Reveal key={i} delay={i * 0.08}>
+                    <div className="glass-card-dark rounded-2xl p-7 h-full">
+                      <Icon className="mb-4 text-teal-400" size={28} />
+                      <h3 className="mb-2 text-[1rem] font-heading font-semibold text-white">{item.title}</h3>
+                      <p className="text-[0.86rem] leading-[1.75] text-white/70">{item.desc}</p>
+                    </div>
+                  </Reveal>
+                );
+              })}
             </div>
-          </Reveal>
-        </div>
-      </section>
+          </div>
+        </section>
+
+        {/* UNTERNEHMENSDATEN */}
+        <section className="section-premium bg-gradient-warm">
+          <div className="container-premium">
+            <Reveal>
+              <div className="glass-card rounded-2xl p-8 md:p-10 max-w-2xl mx-auto">
+                <h3 className="mb-5 text-[1.1rem] font-heading font-semibold text-foreground">
+                  Aurelia Grundbesitz GmbH
+                </h3>
+                <div className="space-y-2 text-[0.9rem] leading-[1.8] text-muted-foreground">
+                  <p>Grevenbroicher Weg 2</p>
+                  <p>40547 Düsseldorf</p>
+                  <p>Deutschland</p>
+                  <p className="pt-2">
+                    <a href="mailto:info@aureliaestates.de" className="text-teal-700 hover:text-teal-800">
+                      info@aureliaestates.de
+                    </a>
+                  </p>
+                </div>
+                <p className="mt-5 text-[0.78rem] text-muted-foreground/80">
+                  Vollständige Registerangaben finden Sie im <Link to="/impressum" className="underline hover:text-teal-700">Impressum</Link>.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="relative section-premium text-white overflow-hidden" style={{ background: "linear-gradient(170deg, #0e6e91 0%, #0889b3 40%, #06acd5 100%)" }}>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
+          <div className="container-premium relative text-center">
+            <Reveal>
+              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Lernen Sie uns kennen</h2>
+              <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
+                Vereinbaren Sie ein unverbindliches Gespräch — wir freuen uns, Ihre Fragen zu beantworten.
+              </p>
+              <Link
+                to="/kontakt"
+                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
+              >
+                Kontakt aufnehmen
+                <ArrowRight size={13} />
+              </Link>
+            </Reveal>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 };
