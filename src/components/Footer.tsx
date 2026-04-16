@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import { Linkedin, Instagram } from "lucide-react";
 import logoImg from "@/assets/aurelia-logo.png";
-import NewsletterSignup from "@/components/NewsletterSignup";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const COOKIE_KEY = "aurelia-cookie-consent";
@@ -20,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="relative z-40 footer-premium border-t border-white/[0.06]">
       <div className="container py-10 md:py-14">
-        <div className="grid gap-8 md:gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:gap-10 md:grid-cols-3">
           {/* Col 1 — Brand */}
           <div className="flex flex-col">
             <Link to="/" className="inline-block mb-4">
