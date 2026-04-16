@@ -4,6 +4,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import Index from "./pages/Index";
+import ForOwnerInTrouble from "./pages/ForOwnerInTrouble";
+import ForBuyers from "./pages/ForBuyers";
+import ForInvestors from "./pages/ForInvestors";
+import HowItWorks from "./pages/HowItWorks";
 
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
@@ -16,11 +20,7 @@ const GlossarPage = lazy(() => import("./pages/tax/GlossarPage"));
 const Investors = lazy(() => import("./pages/Investors"));
 const InvestorGlossar = lazy(() => import("./pages/InvestorGlossar"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Arbeitsweise = lazy(() => import("./pages/Arbeitsweise"));
 const FAQ = lazy(() => import("./pages/FAQ"));
-const ForOwnerInTrouble = lazy(() => import("./pages/ForOwnerInTrouble"));
-const ForBuyers = lazy(() => import("./pages/ForBuyers"));
-const ForInvestors = lazy(() => import("./pages/ForInvestors"));
 
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Impressum = lazy(() => import("./pages/Impressum"));
@@ -48,7 +48,7 @@ const App = () => (
               <Route path="/investoren" element={<Investors />} />
               <Route path="/investoren-glossar" element={<InvestorGlossar />} />
               <Route path="/kontakt" element={<Contact />} />
-              <Route path="/arbeitsweise" element={<Arbeitsweise />} />
+              <Route path="/arbeitsweise" element={<HowItWorks />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
