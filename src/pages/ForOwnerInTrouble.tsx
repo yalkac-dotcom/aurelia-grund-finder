@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
-import { ArrowRight, AlertTriangle, CheckCircle, Phone, Clock, Shield } from "lucide-react";
+import { ArrowRight, Building2, Wallet, Users, CalendarClock, CheckCircle } from "lucide-react";
 
 const ForOwnerInTrouble = () => {
   return (
@@ -66,14 +66,14 @@ const ForOwnerInTrouble = () => {
 
             <div className="grid gap-6 sm:grid-cols-2">
               {[
-                { title: "Komplexe Immobiliensituationen", desc: "Wenn die Verwaltung einer Immobilie zu belastend wird." },
-                { title: "Finanzielle Herausforderungen", desc: "Wenn Schulden oder Belastungen entstanden sind." },
-                { title: "Mehrheits- oder Erbkonflikte", desc: "Wenn sich Co-Eigentümer nicht einigen können." },
-                { title: "Längerfristige Belastungen", desc: "Wenn eine strukturierte Lösung notwendig ist." },
+                { title: "Komplexe Immobiliensituationen", desc: "Wenn die Verwaltung einer Immobilie zu belastend wird.", Icon: Building2 },
+                { title: "Finanzielle Herausforderungen", desc: "Wenn Schulden oder Belastungen entstanden sind.", Icon: Wallet },
+                { title: "Mehrheits- oder Erbkonflikte", desc: "Wenn sich Co-Eigentümer nicht einigen können.", Icon: Users },
+                { title: "Längerfristige Belastungen", desc: "Wenn eine strukturierte Lösung notwendig ist.", Icon: CalendarClock },
               ].map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
                   <div className="glass-card rounded-2xl p-8 flex gap-4">
-                    <AlertTriangle className="shrink-0 text-amber-600" size={26} />
+                    <item.Icon className="shrink-0 text-teal-700" size={26} />
                     <div>
                       <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
                       <p className="text-[0.88rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
