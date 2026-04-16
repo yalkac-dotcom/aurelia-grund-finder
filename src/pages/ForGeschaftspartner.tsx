@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, AlertTriangle } from "lucide-react";
 
 const ForGeschaftspartner = () => {
   return (
@@ -28,7 +28,10 @@ const ForGeschaftspartner = () => {
           <div className="hero-copy-shell">
             <Reveal>
               <p className="hero-kicker">Geschäftsbereich Partnerschaften</p>
-              <h1 className="hero-title">Strategische Geschäftspartnerschaften</h1>
+              <h1 className="hero-title">Geschäftspartnerschaften im Immobilienmarkt</h1>
+              <p className="hero-description">
+                Individuelle Finanzierungsstrukturen für einzelne Projekte.
+              </p>
             </Reveal>
           </div>
           <HeroScrollIndicator />
@@ -36,130 +39,108 @@ const ForGeschaftspartner = () => {
       </section>
 
       <div className="page-shell">
+        {/* PROMINENTER HINWEIS oben */}
+        <section className="bg-amber-50 border-y border-amber-200/60">
+          <div className="container-premium py-5">
+            <div className="flex items-start gap-3 max-w-3xl mx-auto">
+              <AlertTriangle size={18} className="mt-0.5 shrink-0 text-amber-700" />
+              <p className="text-[0.85rem] leading-[1.7] text-amber-900">
+                <strong>Wichtiger Hinweis:</strong> Die hier beschriebenen Partnerschaften sind <strong>keine Finanzanlage</strong> und <strong>kein reguliertes Finanzprodukt</strong>. Es handelt sich um individuelle, projektbezogene Vereinbarungen.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* INTRO */}
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <Reveal>
               <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
-              <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                Individuelle Projektpartnerschaften
+              <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem] text-center">
+                Partner statt Investoren
               </h2>
-              <p className="mx-auto max-w-3xl text-[0.93rem] leading-[1.85] text-muted-foreground">
-                Aurelia arbeitet mit ausgewählten Geschäftspartnern zusammen — auf Basis individueller Vereinbarungen, gemeinsamer Projektverantwortung und einer transparenten Aufteilung der erzielten Erträge. Der Schwerpunkt liegt auf realen Immobilien, klaren Strukturen und einem partnerschaftlichen Umgang.
+              <p className="mx-auto max-w-3xl text-[0.93rem] leading-[1.85] text-muted-foreground text-center">
+                Aurelia arbeitet mit strategischen Partnern zusammen. Für ausgewählte Immobilien-Projekte können individuelle Finanzierungsstrukturen vereinbart werden. Jede Partnerschaft wird transparent verhandelt und rechtlich dokumentiert. Es gibt keine Standard-Modelle — alles wird individuell gestaltet.
               </p>
             </Reveal>
           </div>
         </section>
 
-        {/* THE MODEL */}
+        {/* KOOPERATIONS-MODELLE */}
         <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}>
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  So funktioniert die Zusammenarbeit
+                  Mögliche Kooperations-Modelle
                 </h2>
               </div>
             </Reveal>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-10">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 {
-                  num: "1",
-                  title: "Projekt-Identifikation",
-                  desc: "Aurelia identifiziert geeignete Immobilienprojekte mit Entwicklungspotenzial und prüft sie sorgfältig.",
+                  title: "Projektfinanzierung",
+                  desc: "Sie finanzieren ein einzelnes Immobilien-Projekt. Aurelia entwickelt und verwertet. Struktur wird individuell vereinbart.",
                 },
                 {
-                  num: "2",
-                  title: "Partnerschafts-Vereinbarung",
-                  desc: "Geschäftspartner und Aurelia einigen sich auf Struktur, Laufzeit und Aufteilung der Projekterträge.",
+                  title: "Mehrfach-Beteiligung",
+                  desc: "Sie unterstützen mehrere Projekte parallel. Regelmäßige Berichte über Fortschritt. Flexible Struktur pro Projekt.",
                 },
                 {
-                  num: "3",
-                  title: "Projekt-Verwertung",
-                  desc: "Aurelia verwaltet, renoviert und optimiert die Immobilie professionell entlang der vereinbarten Strategie.",
+                  title: "Flexible Vereinbarung",
+                  desc: "Keine Standard-Modelle — alles wird individuell gestaltet, basierend auf Ihrer Anforderung und Aurelias Kapazität.",
                 },
                 {
-                  num: "4",
-                  title: "Transparente Abrechnung",
-                  desc: "Nach abgeschlossener Verwertung werden alle Erträge entsprechend der individuellen Vereinbarung transparent abgerechnet.",
+                  title: "Direkte Kommunikation",
+                  desc: "Direkter Kontakt zum Aurelia-Management. Transparente Kommunikation und regelmäßige Updates.",
                 },
               ].map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
-                  <div className="glass-card rounded-2xl p-8 text-center h-full">
-                    <div className="icon-badge mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-lg">
-                      <span className="text-[1.3rem] font-heading font-bold text-teal-700">{item.num}</span>
-                    </div>
-                    <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
+                  <div className="glass-card rounded-2xl p-7 h-full">
+                    <h3 className="mb-3 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
                     <p className="text-[0.86rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
                   </div>
                 </Reveal>
               ))}
             </div>
-
-            <Reveal delay={0.3}>
-              <div className="glass-card rounded-2xl p-8 md:p-10">
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div>
-                    <p className="mb-2 text-[0.78rem] font-sans uppercase tracking-[0.16em] text-teal-700">Für Geschäftspartner</p>
-                    <p className="text-[0.95rem] leading-[1.75] text-foreground">
-                      Transparente Beteiligung an Projekterträgen — nach individuell vereinbarter Struktur.
-                    </p>
-                  </div>
-                  <div>
-                    <p className="mb-2 text-[0.78rem] font-sans uppercase tracking-[0.16em] text-teal-700">Für Aurelia</p>
-                    <p className="text-[0.95rem] leading-[1.75] text-foreground">
-                      Verlässliche Partner für Forderungsankauf und nachhaltige Immobilienverwertung.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
           </div>
         </section>
 
-        {/* WHY PARTNERSHIP */}
+        {/* WAS WIR ERWARTEN */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
-                  Was eine Partnerschaft mit Aurelia ausmacht
+                  Grundlagen für erfolgreiche Partnerschaften
                 </h2>
               </div>
             </Reveal>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2">
               {[
                 {
-                  title: "Reale Sachwerte",
-                  desc: "Jede Partnerschaft basiert auf konkreten Immobilien — keine abstrakten Finanzkonstrukte.",
-                },
-                {
-                  title: "Branchenerfahrung",
-                  desc: "Geschäftsführung mit langjähriger Erfahrung in Forderungsankauf und Immobilienverwertung.",
-                },
-                {
-                  title: "Strukturvorteile",
-                  desc: "Durch den Forderungsankauf erwirbt Aurelia Objekte unter marktüblichen Konditionen.",
-                },
-                {
-                  title: "Transparenz",
-                  desc: "Alle Zahlen, Verträge und Abrechnungen werden offengelegt — ohne versteckte Provisionen.",
-                },
-                {
-                  title: "Individuelle Vereinbarungen",
-                  desc: "Jede Partnerschaft wird passgenau strukturiert — abgestimmt auf Projekt und Partner.",
+                  title: "Transparente Kommunikation",
+                  desc: "Offenes Verständnis von Zielen, Risiken und Chancen.",
                 },
                 {
                   title: "Langfristige Perspektive",
-                  desc: "Wir suchen Partner für nachhaltige Zusammenarbeit — nicht für kurzfristige Transaktionen.",
+                  desc: "Keine kurzfristige Spekulation, sondern nachhaltige Zusammenarbeit.",
+                },
+                {
+                  title: "Finanzielle Stabilität",
+                  desc: "Das Kapital sollte stabil zur Verfügung stehen.",
+                },
+                {
+                  title: "Geteilte Geschäftsphilosophie",
+                  desc: "Verständnis für nachhaltige Lösungen im Immobilienmarkt.",
                 },
               ].map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
-                  <div className="glass-card-dark rounded-2xl p-8 h-full">
+                  <div className="glass-card-dark rounded-2xl p-7 h-full">
                     <h3 className="mb-3 text-[1rem] font-heading font-semibold text-white">{item.title}</h3>
                     <p className="text-[0.86rem] leading-[1.75] text-white/70">{item.desc}</p>
                   </div>
@@ -169,15 +150,47 @@ const ForGeschaftspartner = () => {
           </div>
         </section>
 
-        {/* DISCLAIMER */}
+        {/* RECHTLICHER HINWEIS — prominent */}
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <Reveal>
-              <div className="glass-card rounded-2xl p-8 md:p-10 max-w-3xl mx-auto">
-                <p className="mb-3 text-[0.78rem] font-sans uppercase tracking-[0.16em] text-muted-foreground">Wichtiger Hinweis</p>
-                <p className="text-[0.88rem] leading-[1.85] text-muted-foreground">
-                  Die Inhalte dieser Seite dienen ausschließlich der allgemeinen Information über die Form möglicher Geschäftspartnerschaften mit Aurelia Grundbesitz. Sie stellen keine Anlageberatung, Steuer- oder Rechtsberatung dar und enthalten kein öffentliches Angebot von Vermögensanlagen oder Finanzinstrumenten im Sinne aufsichtsrechtlicher Vorschriften. Konkrete Vereinbarungen werden ausschließlich individuell und schriftlich zwischen den Vertragspartnern getroffen.
-                </p>
+              <div className="rounded-2xl border-2 border-amber-300 bg-amber-50/50 p-8 md:p-10 max-w-3xl mx-auto">
+                <div className="flex items-center gap-3 mb-5">
+                  <AlertTriangle size={22} className="text-amber-700" />
+                  <h2 className="text-[1.2rem] font-heading font-semibold text-amber-900">
+                    Rechtlicher Hinweis
+                  </h2>
+                </div>
+                <div className="space-y-4 text-[0.88rem] leading-[1.85] text-amber-950/90">
+                  <p>
+                    Aurelia Grundbesitz ist <strong>kein reguliertes Finanzinstitut</strong>. Diese Seite stellt <strong>keine Finanzanlage-Produkte</strong> dar und ist <strong>kein Angebot</strong> zum Abschluss eines Finanzdienstleistungsvertrags.
+                  </p>
+                  <div>
+                    <p className="mb-2 font-semibold">Die hier beschriebenen Partnerschaften:</p>
+                    <ul className="space-y-1.5 list-disc pl-5">
+                      <li>sind <strong>keine Finanzinvestitionen</strong></li>
+                      <li>haben <strong>keine Rendite-Garantien</strong></li>
+                      <li>unterliegen keiner Garantie von Rückzahlung oder Gewinnen</li>
+                      <li>sind mit erheblichen Risiken verbunden</li>
+                      <li>können zu Kapitalverlust oder Totalverlust führen</li>
+                    </ul>
+                  </div>
+                  <p>
+                    Alle Gewinne sind spekulativ und nicht zugesichert. Immobilienmärkte unterliegen Volatilität und Marktrisiken.
+                  </p>
+                  <div>
+                    <p className="mb-2 font-semibold">Vor einer Vereinbarung sollten Sie:</p>
+                    <ul className="space-y-1.5 list-disc pl-5">
+                      <li>Unabhängige rechtliche Beratung einholen</li>
+                      <li>Das individuelle Angebot gründlich prüfen</li>
+                      <li>Alle Bedingungen und Risiken verstehen</li>
+                      <li>Nur Kapital einsetzen, das Sie entbehren können</li>
+                    </ul>
+                  </div>
+                  <p className="text-[0.82rem] text-amber-900/80 pt-2 border-t border-amber-300/50">
+                    Weitere Informationen finden Sie in unserer <Link to="/datenschutz" className="underline hover:text-amber-700">Datenschutzerklärung</Link>.
+                  </p>
+                </div>
               </div>
             </Reveal>
           </div>
@@ -191,15 +204,15 @@ const ForGeschaftspartner = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
           <div className="container-premium relative text-center">
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Vertraulich Kontakt aufnehmen</h2>
+              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Lassen Sie uns sprechen</h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                Sie interessieren sich für eine strategische Geschäftspartnerschaft mit Aurelia? Wir prüfen Ihre Anfrage diskret und melden uns mit einer ersten Einschätzung zurück.
+                Wenn Sie an einer Partnerschaft interessiert sind, kontaktieren Sie uns für ein vertrauliches Gespräch. Bitte beachten Sie die oben genannten rechtlichen Hinweise.
               </p>
               <Link
                 to="/kontakt"
                 className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
               >
-                Gespräch vereinbaren
+                Vertraulich Kontakt aufnehmen
                 <ArrowRight size={13} />
               </Link>
             </Reveal>
