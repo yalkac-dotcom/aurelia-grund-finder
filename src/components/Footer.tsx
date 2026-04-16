@@ -31,30 +31,9 @@ const Footer = () => {
             <p className="text-white/85 text-[11px] md:text-xs leading-[1.7] max-w-xs mb-3">
               {t.footer.brandLine}
             </p>
-            <p className="text-white/50 text-[10px] md:text-xs tracking-wide mb-5">
+            <p className="text-white/50 text-[10px] md:text-xs tracking-wide">
               {t.footer.subline}
             </p>
-
-            {/* Social slot */}
-            <div className="flex items-center gap-3 mt-auto">
-              <a
-                href="#"
-                aria-label={t.footer.socialLinkedinAria}
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.12] text-white/60 hover:text-accent hover:border-white/30 transition-colors duration-200"
-                onClick={(e) => e.preventDefault()}
-              >
-                <Linkedin size={15} />
-              </a>
-              <a
-                href="#"
-                aria-label={t.footer.socialInstagramAria}
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.12] text-white/60 hover:text-accent hover:border-white/30 transition-colors duration-200"
-                onClick={(e) => e.preventDefault()}
-              >
-                <Instagram size={15} />
-              </a>
-              <span className="text-white/30 text-[10px] tracking-wide">{t.footer.socialPending}</span>
-            </div>
           </div>
 
           {/* Col 2 — Navigation */}
@@ -117,17 +96,6 @@ const Footer = () => {
                 </button>
               </li>
             </ul>
-          </div>
-
-          {/* Col 4 — Newsletter */}
-          <div>
-            <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/60 mb-4">
-              {t.footer.newsletterColTitle}
-            </h4>
-            <p className="text-white/70 text-[11px] md:text-xs leading-[1.7] mb-4">
-              {t.footer.newsletterColIntro}
-            </p>
-            <NewsletterSignup source="footer" variant="dark" />
           </div>
         </div>
 
