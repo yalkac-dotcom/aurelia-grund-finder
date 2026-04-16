@@ -39,10 +39,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 3. EINSTIEGSSITUATIONEN */}
+      {/* 3. EINSTIEGSSITUATIONEN — contained frame */}
       <section className="py-16 md:py-24">
         <div className="container max-w-4xl">
-          <div className="panel">
+          <div className="content-frame">
             <Reveal>
               <h2 className="text-[1.4rem] md:text-[1.9rem] font-heading font-semibold text-foreground leading-[1.18] mb-5 text-balance">
                 {t.landing.positioningTitle}
@@ -69,9 +69,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 4. ARBEITSWEISE */}
+      {/* 4. ARBEITSWEISE — linear process, no cards */}
       <section id="arbeitsweise" className="py-16 md:py-24 section-warm scroll-mt-20">
-        <div className="container max-w-5xl">
+        <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
               {t.landing.processLabel}
@@ -81,23 +81,25 @@ const Index = () => {
             </h2>
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="text-muted-foreground text-sm leading-[1.7] mb-10 max-w-lg">
+            <p className="text-muted-foreground text-sm leading-[1.7] mb-12 max-w-lg">
               {t.landing.processSubtitle}
             </p>
           </Reveal>
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+          <div className="space-y-0">
             {t.landing.processSteps.map((step, i) => (
-              <Reveal key={i} delay={i * 0.08}>
-                <div className="step-card">
-                  <p className="text-[1.6rem] font-heading font-semibold text-accent/70 mb-2">
+              <Reveal key={i} delay={i * 0.06}>
+                <div className="grid grid-cols-[3rem_1fr] md:grid-cols-[4rem_1fr] items-start border-b border-border/25 last:border-b-0 py-5 first:pt-0 last:pb-0">
+                  <p className="text-[1.5rem] md:text-[1.7rem] font-heading font-semibold text-accent/60">
                     {step.num}
                   </p>
-                  <h3 className="text-[0.92rem] font-heading font-semibold text-foreground mb-1.5">
-                    {step.title}
-                  </h3>
-                  <p className="text-muted-foreground text-[0.82rem] leading-[1.7]">
-                    {step.text}
-                  </p>
+                  <div>
+                    <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1">
+                      {step.title}
+                    </h3>
+                    <p className="text-muted-foreground text-[0.84rem] leading-[1.75] max-w-lg">
+                      {step.text}
+                    </p>
+                  </div>
                 </div>
               </Reveal>
             ))}
@@ -105,10 +107,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 5. UNTERNEHMERISCHER ANSATZ — DARK */}
+      {/* 5. UNTERNEHMERISCHER ANSATZ — dark contained */}
       <section className="py-16 md:py-24 section-navy text-white">
         <div className="container max-w-4xl">
-          <div className="panel-dark">
+          <div className="content-frame-dark">
             <Reveal>
               <p className="text-[hsl(195_50%_55%)] font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
                 {t.landing.entrepreneurLabel}
@@ -123,7 +125,7 @@ const Index = () => {
               </p>
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="text-white/60 text-[0.86rem] leading-[1.75] border-l-2 border-[hsl(195_50%_40%)]/40 pl-4">
+              <p className="text-white/55 text-[0.86rem] leading-[1.75] border-l-2 border-[hsl(195_50%_40%)]/30 pl-4">
                 {t.landing.entrepreneurText2}
               </p>
             </Reveal>
@@ -131,7 +133,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 6. WARUM AURELIA */}
+      {/* 6. WARUM AURELIA — typographic grid, no cards */}
       <section className="py-16 md:py-24">
         <div className="container max-w-4xl">
           <Reveal>
@@ -142,16 +144,13 @@ const Index = () => {
               {t.landing.whyTitle}
             </h2>
           </Reveal>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5">
             {t.landing.whyPoints.map((point, i) => (
               <Reveal key={i} delay={i * 0.06}>
-                <div className="why-card">
-                  <div className="flex items-start gap-3">
-                    <div className="w-[3px] h-5 bg-accent/50 rounded-full shrink-0 mt-0.5" />
-                    <p className="text-foreground text-[0.95rem] font-heading font-semibold">
-                      {point.title}
-                    </p>
-                  </div>
+                <div className="py-3 border-b border-border/20">
+                  <p className="text-foreground text-[0.95rem] font-heading font-semibold leading-[1.4]">
+                    {point.title}
+                  </p>
                 </div>
               </Reveal>
             ))}
@@ -159,10 +158,10 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 7. ABGRENZUNG */}
+      {/* 7. ABGRENZUNG — quiet contained block */}
       <section className="py-14 md:py-20 section-warm">
         <div className="container max-w-4xl">
-          <div className="panel-subtle">
+          <div className="content-frame">
             <Reveal>
               <h2 className="text-[1.15rem] md:text-[1.4rem] font-heading font-semibold text-foreground leading-[1.2] mb-5 text-balance">
                 Wann wir nicht der richtige Ansprechpartner sind
@@ -180,9 +179,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 8. HÄUFIGE BEDENKEN */}
+      {/* 8. HÄUFIGE BEDENKEN — editorial reading column */}
       <section className="py-16 md:py-24">
-        <div className="container max-w-4xl">
+        <div className="container max-w-3xl">
           <Reveal>
             <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
               {t.landing.objectionsLabel}
@@ -191,14 +190,14 @@ const Index = () => {
               {t.landing.objectionsTitle}
             </h2>
           </Reveal>
-          <div className="space-y-4">
+          <div className="space-y-0">
             {t.landing.objections.map((obj, i) => (
-              <Reveal key={i} delay={i * 0.08}>
-                <div className="objection-card">
-                  <p className="text-[0.98rem] font-heading font-semibold text-foreground mb-2 italic">
+              <Reveal key={i} delay={i * 0.06}>
+                <div className="py-6 border-b border-border/25 last:border-b-0 first:pt-0">
+                  <p className="text-[0.98rem] font-heading font-semibold text-foreground mb-2.5 italic">
                     „{obj.q}"
                   </p>
-                  <p className="text-muted-foreground text-[0.88rem] leading-[1.8]">
+                  <p className="text-muted-foreground text-[0.88rem] leading-[1.85] max-w-2xl">
                     {obj.a}
                   </p>
                 </div>
@@ -208,9 +207,9 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 9. FAQ */}
+      {/* 9. FAQ — calm reading block */}
       <section className="py-16 md:py-24 section-warm">
-        <div className="container max-w-4xl">
+        <div className="container max-w-3xl">
           <Reveal>
             <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
               {t.landing.homeFaqLabel}
@@ -219,14 +218,14 @@ const Index = () => {
               {t.landing.homeFaqTitle}
             </h2>
           </Reveal>
-          <div className="space-y-3">
+          <div className="space-y-0">
             {t.landing.homeFaqItems.map((item, i) => (
               <Reveal key={i} delay={i * 0.04}>
-                <div className="faq-item">
+                <div className="py-5 border-b border-border/30 last:border-b-0">
                   <h3 className="text-[0.92rem] font-heading font-semibold text-foreground text-left mb-2">
                     {item.q}
                   </h3>
-                  <p className="text-muted-foreground text-[0.88rem] leading-[1.8] pr-0 md:pr-6">
+                  <p className="text-muted-foreground text-[0.88rem] leading-[1.85] max-w-2xl">
                     {item.a}
                   </p>
                 </div>
@@ -236,7 +235,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 10. ABSCHLUSS-CTA — DARK */}
+      {/* 10. ABSCHLUSS-CTA — dark */}
       <section className="py-16 md:py-24 section-navy-warm text-white">
         <div className="container max-w-3xl text-center">
           <Reveal>
