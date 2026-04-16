@@ -217,22 +217,20 @@ const Index = () => {
               {t.landing.homeFaqTitle}
             </h2>
           </Reveal>
-          <Accordion type="single" collapsible className="space-y-2">
+          <div className="space-y-0">
             {t.landing.homeFaqItems.map((item, i) => (
-              <AccordionItem
-                key={i}
-                value={`faq-${i}`}
-                className="border-b border-border/40 last:border-b-0"
-              >
-                <AccordionTrigger className="text-[0.92rem] font-heading font-semibold text-foreground py-4 hover:no-underline text-left">
-                  {item.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-[0.88rem] leading-[1.8] pb-4">
-                  {item.a}
-                </AccordionContent>
-              </AccordionItem>
+              <Reveal key={i} delay={i * 0.04}>
+                <div className="border-b border-border/40 py-5 last:border-b-0">
+                  <h3 className="text-[0.92rem] font-heading font-semibold text-foreground text-left mb-2.5">
+                    {item.q}
+                  </h3>
+                  <p className="text-muted-foreground text-[0.88rem] leading-[1.8] pr-0 md:pr-6">
+                    {item.a}
+                  </p>
+                </div>
+              </Reveal>
             ))}
-          </Accordion>
+          </div>
         </div>
       </section>
 
