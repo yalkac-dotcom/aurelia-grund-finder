@@ -142,8 +142,8 @@
   }
 
   /* Standalone CTA links (not inside text) get touch targets */
-  a.hero-primary-button,
-  a.hero-secondary-button,
+  a.btn-primary,
+  a.btn-secondary,
   nav a,
   footer a {
     min-height: 44px;
@@ -382,7 +382,7 @@
 
 .hero-cta-row {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 0.75rem;
 }
 
