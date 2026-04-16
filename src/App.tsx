@@ -27,6 +27,7 @@ const Impressum = lazy(() => import("./pages/Impressum"));
 const Bildnachweise = lazy(() => import("./pages/Bildnachweise"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
