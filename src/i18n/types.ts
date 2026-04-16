@@ -182,6 +182,26 @@ export interface Translations {
     situationsTitle: string;
     situationsList: string[];
   };
+  home: {
+    heroKicker: string;
+    heroTitle: string;
+    heroDescription: string;
+    areasLabel: string;
+    areasTitle: string;
+    areasIntro: string;
+    areas: { title: string; desc: string; cta: string }[];
+    trustTitle: string;
+    trustText: string;
+    trustClaimTitle: string;
+    trustClaimText: string;
+    stepsTitle: string;
+    steps: { title: string; desc: string }[];
+    stepsNote: string;
+    stepsLink: string;
+    finalCtaTitle: string;
+    finalCtaText: string;
+    finalCtaButton: string;
+  };
   about: {
     heroTitle: string;
     companyLabel: string;
