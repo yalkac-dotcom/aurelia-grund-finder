@@ -26,6 +26,8 @@ const HomeHero = () => {
         />
         <div className="hero-overlay-base absolute inset-0" />
         <div className="hero-overlay-protect absolute inset-0" />
+        {/* Teal gradient accent overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-teal-900/20 via-transparent to-transparent" />
       </div>
 
       <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
@@ -38,16 +40,20 @@ const HomeHero = () => {
 
           <div className="hero-actions">
             <div className="hero-cta-row animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <a href="/kontakt" className="btn-primary">
+              <a href="/kontakt" className="btn-gradient inline-flex items-center justify-content min-h-[44px] px-6 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.13em] rounded-sm shadow-lg">
                 {t.landing.heroCta}
               </a>
-              <a href="#arbeitsweise" className="btn-secondary" onClick={handleScrollToProcess}>
+              <a
+                href="#arbeitsweise"
+                className="btn-secondary glass-card-dark inline-flex items-center justify-center min-h-[44px] px-5 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.13em]"
+                onClick={handleScrollToProcess}
+              >
                 {t.landing.heroCtaSecondary}
               </a>
             </div>
 
             <p className="hero-trust animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <CheckCircle size={13} className="mt-0.5 shrink-0 text-accent opacity-80 md:mt-0" />
+              <CheckCircle size={13} className="mt-0.5 shrink-0 text-teal-400 opacity-90 md:mt-0" />
               <span>{t.common.initialAssessmentNote}</span>
             </p>
           </div>

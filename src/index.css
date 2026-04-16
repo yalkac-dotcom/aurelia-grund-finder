@@ -156,6 +156,89 @@
   }
 }
 
+/* ── Glassmorphism & Premium utilities ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+}
+
+.glass-card-dark {
+  background: rgba(14, 110, 145, 0.08);
+  backdrop-filter: blur(16px) saturate(1.2);
+  border: 1px solid rgba(8, 137, 179, 0.15);
+  border-radius: 1rem;
+}
+
+.section-premium {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+@media (min-width: 768px) {
+  .section-premium {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.container-premium {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 32px -8px rgba(8, 137, 179, 0.15),
+    0 4px 12px -4px rgba(0, 0, 0, 0.08);
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #0889b3 0%, #06acd5 50%, #22c9ef 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.btn-gradient:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(8, 137, 179, 0.12) 0%, rgba(6, 172, 213, 0.08) 100%);
+}
+
+.section-divider-gradient {
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #0889b3 50%, transparent 100%);
+  border: none;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #0889b3 0%, #06acd5 60%, #22c9ef 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
+.animation-delay-400 { animation-delay: 400ms; }
+
 .page-shell {
   width: min(100%, 76rem);
   margin-inline: auto;
