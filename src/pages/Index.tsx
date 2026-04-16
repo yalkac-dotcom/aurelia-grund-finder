@@ -5,12 +5,6 @@ import Reveal from "@/components/Reveal";
 import HomeHero from "@/components/home/HomeHero";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ArrowRight } from "lucide-react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
 const Index = () => {
   const { t } = useLanguage();
