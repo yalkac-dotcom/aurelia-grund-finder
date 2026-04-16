@@ -47,18 +47,22 @@ const CookieConsent = () => {
           {t.common.cookieText}
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-          <button
-            onClick={() => handle("accepted")}
-            className="bg-accent text-white px-7 py-3 text-[0.68rem] font-semibold tracking-[0.12em] uppercase rounded-sm hover:bg-accent/88 transition-colors"
-          >
-            {t.common.cookieAcceptAll}
-          </button>
-          <button
-            onClick={() => handle("rejected")}
-            className="bg-transparent text-muted-foreground border border-border px-7 py-3 text-[0.68rem] font-semibold tracking-[0.12em] uppercase rounded-sm hover:bg-secondary transition-colors"
-          >
-            {t.common.cookieNecessaryOnly}
-          </button>
+          <div>
+            <button
+              onClick={() => handle("accepted")}
+              className="w-full bg-accent text-white px-7 py-3 text-[0.68rem] font-semibold tracking-[0.12em] uppercase rounded-sm hover:bg-accent/88 transition-colors"
+            >
+              {t.common.cookieAcceptAll}
+            </button>
+          </div>
+          <div>
+            <button
+              onClick={() => handle("rejected")}
+              className="w-full bg-transparent text-muted-foreground border border-border px-7 py-3 text-[0.68rem] font-semibold tracking-[0.12em] uppercase rounded-sm hover:bg-secondary transition-colors"
+            >
+              {t.common.cookieNecessaryOnly}
+            </button>
+          </div>
         </div>
       </div>
     </div>
