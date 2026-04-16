@@ -196,7 +196,7 @@ const HomePage = () => {
             <Reveal delay={0.35}>
               <div className="mt-6 text-center">
                 <Link
-                  to="/wie-es-funktioniert"
+                  to="/arbeitsweise"
                   className="inline-flex items-center gap-2 text-[0.85rem] font-semibold text-teal-700 hover:text-teal-800 transition-colors"
                 >
                   Zum detaillierten Prozess
