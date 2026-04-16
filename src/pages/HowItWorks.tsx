@@ -5,24 +5,47 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Lock, Eye, Briefcase, Layers } from "lucide-react";
 
 const steps = [
   {
     title: "Vertrauliche Erstaufnahme",
-    desc: "Ein erstes, diskretes Gespräch. Wir hören zu, ordnen die Situation grob ein und klären gemeinsam, ob eine vertiefte Prüfung sinnvoll ist.",
+    text: "Sie schildern die Ausgangslage. Wir hören zu, fragen gezielt nach und verschaffen uns ein erstes Bild der Situation. Im Mittelpunkt steht dabei nicht Geschwindigkeit um jeden Preis, sondern das richtige Verständnis der tatsächlichen Lage.",
   },
   {
     title: "Erste Einordnung",
-    desc: "Auf Basis der Ausgangslage prüfen wir den groben Rahmen — rechtlich, wirtschaftlich, zeitlich. Ohne Vorfestlegung, ohne Druck.",
+    text: "Wir prüfen, ob die Konstellation grundsätzlich zu unserem Ansatz passt und wo die entscheidenden Punkte liegen. Schon in diesem Schritt wird oft klar, ob ein Fall tragfähig ist oder ob ein anderer Weg sinnvoller wäre.",
   },
   {
     title: "Vertiefte Prüfung",
-    desc: "Wenn Substanz und Konstellation passen, gehen wir in die strukturierte Detailprüfung. Klar, nachvollziehbar, mit belastbaren Ergebnissen.",
+    text: "Wenn die Ausgangslage grundsätzlich passt, sehen wir genauer hin: Struktur, Substanz, Zeitfaktoren, Beteiligte und wirtschaftliche Optionen. Ziel ist keine theoretische Analyse, sondern eine belastbare Grundlage für die Entscheidung.",
   },
   {
     title: "Nächster realistischer Schritt",
-    desc: "Am Ende steht eine klare Linie: ein konkreter nächster Schritt, eine geordnete Vorbereitung — oder eine ehrliche Absage, wenn es nicht passt.",
+    text: "Dann wird entschieden, wie es weitergeht: Einordnung, Strukturierung, direkte Übernahme oder bewusst kein weiterer Schritt. Wichtig ist nicht, jeden Fall weiterzuführen, sondern nur die Wege zu gehen, die tatsächlich sinnvoll sind.",
+  },
+];
+
+const values = [
+  {
+    icon: Lock,
+    title: "Diskret",
+    text: "Nicht jede Lage gehört in die Öffentlichkeit. Wenn Vertraulichkeit sinnvoll ist, behandeln wir sie entsprechend.",
+  },
+  {
+    icon: Eye,
+    title: "Klar",
+    text: "Wir sagen früh, ob ein Fall grundsätzlich passt oder nicht. Das spart Zeit und unnötige Umwege.",
+  },
+  {
+    icon: Briefcase,
+    title: "Unternehmerisch",
+    text: "Wir denken nicht nur in Gesprächsprozessen, sondern in umsetzbaren Entscheidungen.",
+  },
+  {
+    icon: Layers,
+    title: "Strukturiert",
+    text: "Gerade in unklaren Situationen schaffen klare Reihenfolgen oft mehr Fortschritt als vorschneller Aktionismus.",
   },
 ];
 
@@ -52,9 +75,11 @@ const HowItWorks = () => {
           <div className="hero-copy-shell">
             <Reveal>
               <p className="hero-kicker">Arbeitsweise</p>
-              <h1 className="hero-title">Geordnet vom ersten Gespräch bis zur Entscheidung</h1>
+              <h1 className="hero-title">Ein geordneter Ablauf statt offener Baustellen</h1>
               <p className="hero-description">
-                Vier klare Schritte — vertraulich, strukturiert und ohne unnötigen Druck.
+                In schwierigen Situationen hilft keine Show, sondern ein klarer Prozess. Aurelia
+                arbeitet ruhig, vertraulich und mit Blick auf das, was tatsächlich tragfähig ist –
+                Schritt für Schritt und ohne unnötige Komplexität.
               </p>
             </Reveal>
           </div>
@@ -69,12 +94,13 @@ const HowItWorks = () => {
             <Reveal>
               <div className="mx-auto max-w-3xl text-center">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
-                <h2 className="mb-4 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Vertraulich, strukturiert, nachvollziehbar
+                <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                  Wie wir vorgehen
                 </h2>
-                <p className="mx-auto max-w-2xl text-[0.95rem] leading-[1.85] text-muted-foreground">
-                  Jede Konstellation ist anders. Was gleich bleibt, ist die Art, wie wir
-                  herangehen — ruhig, geordnet und mit Respekt vor der Situation der Beteiligten.
+                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">
+                  Nicht jede Konstellation führt zu derselben Lösung. Aber jede sinnvolle Lösung
+                  beginnt mit einer sauberen Reihenfolge: verstehen, einordnen, prüfen und dann
+                  entscheiden, welcher Weg wirklich passt.
                 </p>
               </div>
             </Reveal>
@@ -100,34 +126,60 @@ const HowItWorks = () => {
                       <h3 className="mb-3 text-[1.05rem] font-heading font-semibold text-foreground">
                         {s.title}
                       </h3>
-                      <p className="text-[0.9rem] leading-[1.8] text-muted-foreground">{s.desc}</p>
+                      <p className="text-[0.9rem] leading-[1.8] text-muted-foreground">{s.text}</p>
                     </div>
                   </Reveal>
                 ))}
               </div>
-
-              <Reveal delay={0.3}>
-                <p className="mt-10 mx-auto max-w-2xl text-center text-[0.82rem] leading-[1.75] text-muted-foreground/80 italic">
-                  Nicht jede Konstellation führt zu einer Übernahme. Eine ehrliche Einordnung — auch
-                  eine Absage — gehört zum Vorgehen genauso dazu wie ein konkreter nächster Schritt.
-                </p>
-              </Reveal>
             </div>
           </div>
         </section>
 
-        {/* HALTUNG */}
+        {/* VALUES */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
             <Reveal>
-              <div className="mx-auto max-w-3xl text-center">
+              <div className="text-center mb-12">
                 <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
-                <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
-                  Diskretion ist kein Versprechen, sondern Voraussetzung
+                <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
+                  Was unsere Arbeitsweise auszeichnet
                 </h2>
-                <p className="mx-auto max-w-2xl text-[0.95rem] leading-[1.85] text-white/80">
-                  Anfragen werden vertraulich behandelt. Inhalte verlassen die unmittelbar
-                  Beteiligten nicht. Zeitpläne richten sich nach der Situation — nicht umgekehrt.
+              </div>
+            </Reveal>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {values.map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <Reveal key={item.title} delay={i * 0.08}>
+                    <div className="glass-card-dark rounded-2xl p-7 h-full">
+                      <Icon className="mb-4 text-teal-400" size={26} />
+                      <h3 className="mb-2 text-[1rem] font-heading font-semibold text-white">
+                        {item.title}
+                      </h3>
+                      <p className="text-[0.86rem] leading-[1.75] text-white/70">{item.text}</p>
+                    </div>
+                  </Reveal>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* CLOSING */}
+        <section className="section-premium bg-gradient-warm">
+          <div className="container-premium">
+            <Reveal>
+              <div className="mx-auto max-w-3xl text-center">
+                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                  Der nächste Schritt muss nicht groß sein. Nur klar.
+                </h2>
+                <p className="text-[0.95rem] leading-[1.85] text-muted-foreground">
+                  In vielen Fällen ist nicht sofort eine Lösung nötig, sondern zuerst eine
+                  belastbare Einordnung. Genau dafür ist unsere Arbeitsweise gedacht: ruhig,
+                  nachvollziehbar und auf das ausgerichtet, was in der konkreten Lage tatsächlich
+                  Sinn ergibt.
                 </p>
               </div>
             </Reveal>
@@ -143,10 +195,11 @@ const HowItWorks = () => {
           <div className="container-premium relative text-center">
             <Reveal>
               <h2 className="mb-5 text-[1.7rem] md:text-[1.95rem] font-heading font-bold text-white">
-                Erstes Gespräch — vertraulich und unverbindlich
+                Der erste Schritt ist kein großer Prozess, sondern ein klares Gespräch
               </h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/85">
-                Ein kurzer Anruf oder eine Nachricht genügt, um die Ausgangslage in Ruhe zu prüfen.
+                Wenn Sie eine Situation einordnen möchten, reicht zunächst eine vertrauliche
+                Erstaufnahme. Danach zeigt sich, ob und wie ein weiterer Schritt sinnvoll ist.
               </p>
               <Link
                 to="/kontakt"
