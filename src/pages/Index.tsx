@@ -5,6 +5,7 @@ import { ArrowRight, Handshake, Home as HomeIcon, Briefcase } from "lucide-react
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const HomePage = () => {
   return (
@@ -203,6 +204,30 @@ const HomePage = () => {
                 </Link>
               </div>
             </Reveal>
+          </div>
+        </section>
+
+        {/* NEWSLETTER */}
+        <section className="section-premium bg-gradient-warm">
+          <div className="container-premium">
+            <div className="mx-auto max-w-2xl">
+              <Reveal>
+                <div className="text-center mb-8">
+                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <h2 className="mb-3 text-[1.3rem] font-heading font-semibold leading-[1.2] text-foreground md:text-[1.7rem]">
+                    Newsletter abonnieren
+                  </h2>
+                  <p className="text-[0.92rem] leading-[1.8] text-muted-foreground">
+                    Gelegentliche Marktbeobachtungen und Mitteilungen zu neuen Objekten in unserem Bestand. Jederzeit kündbar.
+                  </p>
+                </div>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <div className="glass-card rounded-2xl p-6 md:p-8">
+                  <NewsletterSignup source="homepage" variant="light" />
+                </div>
+              </Reveal>
+            </div>
           </div>
         </section>
 
