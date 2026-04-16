@@ -188,26 +188,31 @@ const ForOwnerInTrouble = () => {
             <div className="grid gap-6 sm:grid-cols-2">
               {[
                 {
-                  title: "Erbstreit-Familie (Köln)",
-                  story: "Familie Schneider — vier Geschwister, sechs Jahre Streit über das Elternhaus. Aurelia hörte alle an und fand eine faire Lösung. Heute haben sie ihren Frieden und alle ihre Anteile erhalten."
+                  title: "Familie Schneider",
+                  role: "Immobilieneigentümer, Düsseldorf-Benrath",
+                  story: "Vier Geschwister, sechs Jahre Streit über das Elternhaus in Benrath. Aurelia hörte alle an und fand eine faire Lösung. Heute haben wir unseren Frieden und alle unsere Anteile erhalten."
                 },
                 {
-                  title: "Unternehmer in Not (Nürnberg)",
-                  story: "Peter Abshagen — seine Schreinerei geriet in Schwierigkeiten. Die Bank drohte mit Zwangsversteigerung seiner Wohnimmobilie. Aurelia verhandelte wie ein Partner. Heute läuft sein Betrieb wieder."
+                  title: "Peter Abshagen",
+                  role: "Handwerksbetriebsleiter, Hilden (Düsseldorf-Umgebung)",
+                  story: "Meine Schreinerei geriet in Schwierigkeiten und ich war gezwungen, meine Wohnimmobilie zu belasten. Die Bank drohte mit Zwangsversteigerung. Aurelia verhandelte mit mir wie ein Partner. Heute läuft mein Betrieb wieder."
                 },
                 {
-                  title: "Mehrheits-Blockade (Leipzig)",
-                  story: "Petra und Frank Lenz — zwei Co-Eigentümer verstanden sich nicht, aber die Bank drückte auf Verwertung. Aurelia kaufte beide Forderungen — plötzlich war das Problem weg. Jeder erhielt seinen fairen Wert."
+                  title: "Petra und Frank Lenz",
+                  role: "Co-Eigentümer einer Wohnanlage, Neuss (Rhein-Kreis)",
+                  story: "Wir zwei verstanden uns nicht, aber die Bank drückte auf Verwertung. Aurelia kaufte beide Forderungen — plötzlich war das Problem weg. Jeder erhielt seinen fairen Wert."
                 },
                 {
-                  title: "Liquiditätsnotfall (Bremen)",
-                  story: "Margot Hoffmann (75) — nach ihrem Schlaganfall brauchte sie schnell Geld für Pflegekosten. Aurelia zahlte sofort und fair. Heute hat sie die beste Pflege und kann beruhigt schlafen."
+                  title: "Margot Hoffmann",
+                  role: "Rentnerin (75), Düsseldorf-Grafenberg",
+                  story: "Nach meinem Schlaganfall brauchte ich schnell Geld für Pflegekosten. Aurelia zahlte sofort und fair. Heute habe ich die beste Pflege und kann beruhigt schlafen."
                 }
               ].map((story, i) => (
                 <Reveal key={i} delay={i * 0.08}>
                   <div className="glass-card rounded-2xl p-8">
-                    <h3 className="mb-3 text-[1rem] font-heading font-semibold text-foreground">{story.title}</h3>
-                    <p className="text-[0.88rem] leading-[1.75] text-muted-foreground">{story.story}</p>
+                    <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{story.title}</h3>
+                    <p className="mb-3 text-[0.82rem] text-muted-foreground/80">{story.role}</p>
+                    <p className="text-[0.88rem] leading-[1.75] text-muted-foreground italic">„{story.story}"</p>
                   </div>
                 </Reveal>
               ))}
