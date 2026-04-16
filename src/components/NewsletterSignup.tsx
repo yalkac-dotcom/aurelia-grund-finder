@@ -3,12 +3,7 @@ import { z } from "zod";
 import { Mail, CheckCircle2, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-
-const emailSchema = z
-  .string()
-  .trim()
-  .email({ message: "Bitte geben Sie eine gültige E-Mail-Adresse ein." })
-  .max(255, { message: "E-Mail-Adresse ist zu lang." });
+import { useLanguage } from "@/i18n/LanguageContext";
 
 interface NewsletterSignupProps {
   source?: string;
@@ -16,6 +11,7 @@ interface NewsletterSignupProps {
 }
 
 const NewsletterSignup = ({ source = "homepage", variant = "light" }: NewsletterSignupProps) => {
+  const { t, language } = useLanguage();
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -24,13 +20,19 @@ const NewsletterSignup = ({ source = "homepage", variant = "light" }: Newsletter
 
   const isDark = variant === "dark";
 
+  const emailSchema = z
+    .string()
+    .trim()
+    .email({ message: t.newsletter.invalidEmailDesc })
+    .max(255, { message: t.newsletter.invalidEmailDesc });
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const parsed = emailSchema.safeParse(email);
     if (!parsed.success) {
       toast({
-        title: "Ungültige Eingabe",
+        title: t.newsletter.invalidEmailTitle,
         description: parsed.error.issues[0].message,
         variant: "destructive",
       });
@@ -39,8 +41,8 @@ const NewsletterSignup = ({ source = "homepage", variant = "light" }: Newsletter
 
     if (!consent) {
       toast({
-        title: "Einwilligung erforderlich",
-        description: "Bitte bestätigen Sie die Datenschutzhinweise.",
+        title: t.newsletter.consentRequiredTitle,
+        description: t.newsletter.consentRequiredDesc,
         variant: "destructive",
       });
       return;
@@ -53,7 +55,7 @@ const NewsletterSignup = ({ source = "homepage", variant = "light" }: Newsletter
         .insert({
           email: parsed.data.toLowerCase(),
           source,
-          language: "de",
+          language,
         });
 
       if (error) {
@@ -70,8 +72,8 @@ const NewsletterSignup = ({ source = "homepage", variant = "light" }: Newsletter
       setConsent(false);
     } catch (err) {
       toast({
-        title: "Fehler",
-        description: "Anmeldung konnte nicht gespeichert werden. Bitte später erneut versuchen.",
+        title: t.newsletter.errorTitle,
+        description: t.newsletter.errorDesc,
         variant: "destructive",
       });
     } finally {
@@ -88,9 +90,9 @@ const NewsletterSignup = ({ source = "homepage", variant = "light" }: Newsletter
       >
         <CheckCircle2 size={20} className={isDark ? "text-teal-300 mt-0.5 shrink-0" : "text-teal-600 mt-0.5 shrink-0"} />
         <div>
-          <p className="text-[0.92rem] font-semibold">Vielen Dank für Ihr Interesse.</p>
+          <p className="text-[0.92rem] font-semibold">{t.newsletter.successTitle}</p>
           <p className={`text-[0.82rem] mt-1 leading-relaxed ${isDark ? "text-white/70" : "text-teal-800/80"}`}>
-            Sie erhalten in Kürze eine Bestätigung per E-Mail.
+            {t.newsletter.successDesc}
           </p>
         </div>
       </div>
@@ -111,7 +113,7 @@ const NewsletterSignup = ({ source = "homepage", variant = "light" }: Newsletter
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Ihre E-Mail-Adresse"
+            placeholder={t.newsletter.placeholder}
             required
             maxLength={255}
             className={`w-full h-11 pl-9 pr-3 rounded-md text-[0.88rem] outline-none transition-colors ${
@@ -126,7 +128,7 @@ const NewsletterSignup = ({ source = "homepage", variant = "light" }: Newsletter
           disabled={loading}
           className="inline-flex items-center justify-center h-11 px-5 rounded-md bg-teal-600 hover:bg-teal-700 text-white text-[0.78rem] font-semibold uppercase tracking-[0.1em] transition-colors disabled:opacity-60"
         >
-          {loading ? <Loader2 size={16} className="animate-spin" /> : "Anmelden"}
+          {loading ? <Loader2 size={16} className="animate-spin" /> : t.newsletter.submit}
         </button>
       </div>
       <label className={`flex items-start gap-2 text-[0.72rem] leading-relaxed cursor-pointer ${
@@ -139,10 +141,9 @@ const NewsletterSignup = ({ source = "homepage", variant = "light" }: Newsletter
           className="mt-0.5 h-3.5 w-3.5 accent-teal-600"
         />
         <span>
-          Ich willige ein, dass meine E-Mail-Adresse zur Zusendung des Newsletters verarbeitet wird.
-          Hinweise zum Widerruf finden Sie in der{" "}
+          {t.newsletter.consentLabel}{" "}
           <a href="/datenschutz" className={isDark ? "underline hover:text-teal-300" : "underline hover:text-teal-700"}>
-            Datenschutzerklärung
+            {t.newsletter.privacyLink}
           </a>.
         </span>
       </label>
