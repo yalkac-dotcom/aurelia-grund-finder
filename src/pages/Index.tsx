@@ -22,7 +22,7 @@ const Index = () => {
       <HomeHero />
 
       {/* 2. PROOF BAR */}
-      <section className="border-b border-border/40 bg-secondary/30">
+      <section className="border-b border-border/30 bg-[hsl(32_16%_95%)]">
         <div className="container max-w-5xl py-5 md:py-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             {t.landing.trustPillars.map((item, i) => (
@@ -40,7 +40,7 @@ const Index = () => {
       </section>
 
       {/* 3. EINSTIEGSSITUATIONEN */}
-      <section className="py-14 md:py-20">
+      <section className="py-16 md:py-24 section-cream">
         <div className="container max-w-4xl">
           <div className="content-frame">
             <Reveal>
@@ -67,8 +67,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 4. ARBEITSWEISE — contained linear process */}
-      <section id="arbeitsweise" className="py-14 md:py-20 section-warm scroll-mt-20">
+      {/* 4. ARBEITSWEISE */}
+      <section id="arbeitsweise" className="py-16 md:py-24 scroll-mt-20" style={{ background: 'linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)' }}>
         <div className="container max-w-4xl">
           <Reveal>
             <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
@@ -79,19 +79,19 @@ const Index = () => {
             </h2>
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="text-muted-foreground text-sm leading-[1.7] mb-8 max-w-lg">
+            <p className="text-muted-foreground text-sm leading-[1.7] mb-10 max-w-lg">
               {t.landing.processSubtitle}
             </p>
           </Reveal>
           <div className="content-frame">
             {t.landing.processSteps.map((step, i) => (
               <Reveal key={i} delay={i * 0.06}>
-                <div className={`grid grid-cols-[3rem_1fr] md:grid-cols-[4.5rem_1fr] items-start py-5 ${i < t.landing.processSteps.length - 1 ? 'border-b border-border/20' : ''}`}>
-                  <p className="text-[1.4rem] md:text-[1.6rem] font-heading font-semibold text-accent/50">
+                <div className={`grid grid-cols-[3rem_1fr] md:grid-cols-[4.5rem_1fr] items-start py-6 ${i < t.landing.processSteps.length - 1 ? 'border-b border-border/15' : ''}`}>
+                  <p className="text-[1.5rem] md:text-[1.7rem] font-heading font-semibold text-accent/40">
                     {step.num}
                   </p>
                   <div>
-                    <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1">
+                    <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1.5">
                       {step.title}
                     </h3>
                     <p className="text-muted-foreground text-[0.84rem] leading-[1.75] max-w-lg">
@@ -105,8 +105,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 5. UNTERNEHMERISCHER ANSATZ — dark */}
-      <section className="py-14 md:py-20 section-navy text-white">
+      {/* 5. UNTERNEHMERISCHER ANSATZ — dark focus */}
+      <section className="py-16 md:py-24 section-navy text-white">
         <div className="container max-w-4xl">
           <div className="content-frame-dark">
             <Reveal>
@@ -118,7 +118,7 @@ const Index = () => {
               </h2>
             </Reveal>
             <Reveal delay={0.05}>
-              <p className="text-white/75 text-[0.93rem] leading-[1.85] mb-5">
+              <p className="text-white/75 text-[0.93rem] leading-[1.85] mb-6">
                 {t.landing.entrepreneurText}
               </p>
             </Reveal>
@@ -131,8 +131,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 6. WARUM AURELIA — contained grid */}
-      <section className="py-14 md:py-20">
+      {/* 6. WARUM AURELIA */}
+      <section className="py-16 md:py-24 section-cream">
         <div className="container max-w-4xl">
           <div className="content-frame">
             <Reveal>
@@ -146,7 +146,7 @@ const Index = () => {
             <div className="grid sm:grid-cols-2 gap-x-10 gap-y-0">
               {t.landing.whyPoints.map((point, i) => (
                 <Reveal key={i} delay={i * 0.05}>
-                  <div className="py-3.5 border-b border-border/20 last:border-b-0">
+                  <div className="py-4 border-b border-border/15 last:border-b-0">
                     <p className="text-foreground text-[0.93rem] font-heading font-semibold leading-[1.4]">
                       {point.title}
                     </p>
@@ -159,7 +159,7 @@ const Index = () => {
       </section>
 
       {/* 7. ABGRENZUNG */}
-      <section className="py-12 md:py-16 section-warm">
+      <section className="py-14 md:py-20" style={{ background: 'linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(32 16% 96%) 100%)' }}>
         <div className="container max-w-4xl">
           <div className="content-frame">
             <Reveal>
@@ -179,26 +179,26 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 8. HÄUFIGE BEDENKEN — contained editorial */}
-      <section className="py-14 md:py-20">
+      {/* 8. HÄUFIGE BEDENKEN */}
+      <section className="py-16 md:py-24 section-navy-warm text-white">
         <div className="container max-w-4xl">
-          <div className="content-frame">
+          <div className="content-frame-dark">
             <Reveal>
-              <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
+              <p className="text-[hsl(195_50%_55%)] font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
                 {t.landing.objectionsLabel}
               </p>
-              <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-foreground leading-[1.18] mb-8 text-balance">
+              <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-white leading-[1.18] mb-8 text-balance">
                 {t.landing.objectionsTitle}
               </h2>
             </Reveal>
             <div className="max-w-2xl">
               {t.landing.objections.map((obj, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <div className={`py-5 ${i < t.landing.objections.length - 1 ? 'border-b border-border/20' : ''}`}>
-                    <p className="text-[0.96rem] font-heading font-semibold text-foreground mb-2 italic">
+                  <div className={`py-6 ${i < t.landing.objections.length - 1 ? 'border-b border-white/8' : ''}`}>
+                    <p className="text-[0.96rem] font-heading font-semibold text-white/90 mb-2.5 italic">
                       „{obj.q}"
                     </p>
-                    <p className="text-muted-foreground text-[0.86rem] leading-[1.85]">
+                    <p className="text-white/60 text-[0.86rem] leading-[1.85]">
                       {obj.a}
                     </p>
                   </div>
@@ -209,8 +209,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 9. FAQ — contained reading block */}
-      <section className="py-14 md:py-20 section-warm">
+      {/* 9. FAQ */}
+      <section className="py-16 md:py-24 section-cream">
         <div className="container max-w-4xl">
           <div className="content-frame">
             <Reveal>
@@ -224,7 +224,7 @@ const Index = () => {
             <div className="max-w-2xl">
               {t.landing.homeFaqItems.map((item, i) => (
                 <Reveal key={i} delay={i * 0.04}>
-                  <div className={`py-5 ${i < t.landing.homeFaqItems.length - 1 ? 'border-b border-border/20' : ''}`}>
+                  <div className={`py-6 ${i < t.landing.homeFaqItems.length - 1 ? 'border-b border-border/15' : ''}`}>
                     <h3 className="text-[0.92rem] font-heading font-semibold text-foreground text-left mb-2">
                       {item.q}
                     </h3>
@@ -239,27 +239,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 10. ABSCHLUSS-CTA — dark */}
-      <section className="py-14 md:py-20 section-navy-warm text-white">
-        <div className="container max-w-3xl text-center">
+      {/* 10. ABSCHLUSS-CTA */}
+      <section className="relative py-20 md:py-28 cta-section-dark text-white">
+        <div className="relative container max-w-3xl text-center">
           <Reveal>
-            <div className="w-8 h-[2px] bg-[hsl(195_50%_45%)] rounded-full mx-auto mb-8" />
-            <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-white leading-[1.2] mb-5 text-balance">
+            <div className="w-10 h-[2px] bg-[hsl(195_50%_45%)] rounded-full mx-auto mb-10" />
+            <h2 className="text-[1.4rem] md:text-[1.85rem] font-heading font-semibold text-white leading-[1.2] mb-6 text-balance">
               {t.landing.ctaTitle}
             </h2>
-            <p className="text-white/70 text-[0.9rem] leading-[1.75] mb-8 max-w-lg mx-auto">
+            <p className="text-white/65 text-[0.92rem] leading-[1.75] mb-10 max-w-lg mx-auto">
               {t.landing.ctaText}
             </p>
             <div>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2 bg-[hsl(195_55%_30%)] text-white px-7 py-3.5 text-[0.72rem] font-semibold tracking-[0.15em] uppercase hover:bg-[hsl(195_55%_36%)] transition-colors duration-300 rounded-sm"
+                className="inline-flex items-center gap-2.5 bg-accent text-white px-8 py-4 text-[0.72rem] font-semibold tracking-[0.15em] uppercase hover:bg-accent/88 transition-all duration-300 rounded-sm shadow-[0_8px_24px_-8px_hsl(195_55%_20%_/_0.4)]"
               >
                 {t.landing.ctaButton}
                 <ArrowRight size={13} />
               </Link>
             </div>
-            <p className="text-white/45 text-[0.75rem] mt-4 tracking-wide">
+            <p className="text-white/40 text-[0.75rem] mt-5 tracking-wide">
               Unverbindlich · Persönlich · Ohne öffentliche Vermarktung
             </p>
           </Reveal>
