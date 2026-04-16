@@ -29,9 +29,14 @@ const HomePage = () => {
             <Reveal>
               <p className="hero-kicker">Aurelia Grundbesitz</p>
               <h1 className="hero-title">Immobilien. Forderungen. Vermögensaufbau.</h1>
-              <p className="hero-description">
-                Aurelia bietet maßgeschneiderte Lösungen in drei Bereichen: Forderungsmanagement für Eigentümer in Schwierigkeiten, Immobilienerwerb für Käufer zu fairen Bedingungen und Investmentmöglichkeiten mit transparenten Renditeperspektiven.
-              </p>
+              <div className="hero-description">
+                <p className="mb-3">Aurelia bietet maßgeschneiderte Lösungen:</p>
+                <ul className="space-y-1.5">
+                  <li>● Hilfe für Eigentümer in Schwierigkeiten</li>
+                  <li>● Faire Immobilien für Käufer</li>
+                  <li>● Sichere Investitionen für Vermögensaufbau</li>
+                </ul>
+              </div>
             </Reveal>
           </div>
           <HeroScrollIndicator />
