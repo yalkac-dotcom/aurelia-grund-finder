@@ -1,17 +1,17 @@
-# Memory: index.md
-Updated: now
-
 # Project Memory
 
 ## Core
-- **Brand**: Aurelia Grundbesitz GmbH. Immobilien, Forderungen, Chancen. 3-Wege-Modell (Hilfe, Kaufen, Geschäftspartnerschaften).
-- **Tone**: Informal "Du", direkt, menschlich, ehrlich. Keine steife Corporate-Sprache.
-- **Colors**: Teal (primary), Navy (dark sections), White. Glassmorphism cards.
-- **Rules**: NO placeholders ("XXX") — remove incomplete sections entirely. NO 1px section borders. BaFin: NO concrete return % or minimum investments in public content.
+- **Brand**: Aurelia Grundbesitz GmbH. Premium, discrete boutique. Focus on special situation real estate.
+- **Modell (BaFin-safe)**: Eigenbestand. Aurelia kauft Forderungen mit eigenem Kapital, wird Eigentümer, trägt Risiko. KEINE Investitionsangebote, KEINE Renditeversprechen, KEINE konkreten Zahlen (%, p.a., ROI) auf öffentlichen Seiten.
+- **Colors**: Navy Blue (primary), White, Yellow (subtle accents/hover). NEVER use dark, black-gold, or heavy luxury aesthetics.
+- **Rules**: NO placeholders ("XXX") — remove incomplete sections entirely. NO 1px section borders.
+- **Constraints**: Founded 2023 — NEVER use earlier dates. NO numeric claims ("30 years", "200+ projects").
 - **Languages**: 6 languages (DE, EN, NL, IT, ES, TR). DE is master. Sync SEO & hreflang dynamically.
+- **Investor area**: Removed. Only `/immobilien-glossar` (formerly `/investoren-glossar`) remains as educational resource. `/investoren` redirects to `/fuer-geschaeftspartner`.
 
 ## Memories
-- [Unternehmensfokus](mem://projekt/unternehmensfokus) — Premium, discrete positioning, special situations, gated investor area
+- [BaFin Konformität](mem://constraints/bafin-konformitaet) — No financial product claims, no yield guarantees, partnership wording only
+- [Unternehmensfokus](mem://projekt/unternehmensfokus) — Premium, discrete positioning, special situations
 - [Historie Constraint](mem://constraints/historie) — Handling of foundation year (2023) and illustrative project constellations
 - [Steuervorteile Struktur](mem://inhalt/struktur-steuervorteile) — Subpages for AfA, energy, KfW, BAFA with official links
 - [Startseite Slogan](mem://branding/slogan-startseite) — Primary hero slogan ("Immobilien mit Substanz...")
@@ -32,14 +32,10 @@ Updated: now
 - [Sprachreihenfolge](mem://features/sprachreihenfolge-vorgabe) — Order: DE, EN, NL, IT, ES, TR
 - [Logo Vorgaben](mem://branding/logo-vorgaben) — Stacked logo, 30% larger symbol, responsive header/footer heights
 - [Typografie & Farben](mem://style/typografie-und-farben) — Font sizes, 44px touch targets (except inline links), 85% text opacity
-- [Investoren Seite](mem://features/investoren-seite) — SessionStorage gate, case studies (Ratingen, Gelsenkirchen), FAQs
-- [Investoren Glossar](mem://features/investoren-glossar) — 69+ terms, sticky A-Z bar, floating back button
+- [Investoren Glossar](mem://features/investoren-glossar) — 69+ terms, sticky A-Z bar, floating back button. Now at /immobilien-glossar (alias /investoren-glossar)
 - [Unternehmensdaten](mem://inhalt/unternehmensdaten) — Official company address and registry data (Düsseldorf, HRB 107859)
-- [Investoren Gate](mem://inhalt/investoren-gate-vorgaben) — Interstitial disclaimer structure and sober tone
-- [Case Study Ratingen](mem://inhalt/case-study-ratingen) — Specific financials (345k total, 420k sale, 21.7% ROI) as strict single case
 - [Claim Positionierung](mem://branding/claim-positionierung) — Core claim text, removal of numeric performance metrics
 - [Impressum Details](mem://inhalt/impressum-details) — Mandatory info, legal notices, non-DE binding disclaimer
-- [Farbschema CI](mem://style/farbschema-ci) — Teal palette, glassmorphism, gradient buttons
+- [Farbschema CI](mem://style/farbschema-ci) — Navy Blue, Yellow, White. Light and clear, no heavy luxury aesthetics
 - [Kontaktseite Struktur](mem://features/kontaktseite-struktur) — Slim intro, primary form focus, 24-48h response promise
 - [CTA Strategie](mem://features/cta-strategie) — Max 2 actions per section, primary to contact form, secondary "Mehr erfahren"
-- [BaFin Konformität](mem://constraints/bafin-konformitaet) — Geschäftspartnerschaften statt Investitionen; keine konkreten Renditen/Mindestanlagen im Public Content
