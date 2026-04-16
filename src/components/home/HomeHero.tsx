@@ -28,7 +28,7 @@ const HomeHero = () => {
         <div className="hero-overlay-protect absolute inset-0" />
       </div>
 
-      <div className="relative container pt-16 pb-10 md:pt-20 md:pb-14">
+      <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
         <div className="hero-copy-shell">
           <p className="hero-kicker">{t.landing.trustLine}</p>
 
@@ -54,7 +54,7 @@ const HomeHero = () => {
           </div>
 
           <div className="hero-meta-line animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <CheckCircle size={13} className="mt-0.5 shrink-0 opacity-80 md:mt-0 text-accent" />
+            <CheckCircle size={13} className="mt-0.5 shrink-0 text-accent opacity-80 md:mt-0" />
             <span>{t.common.initialAssessmentNote}</span>
           </div>
         </div>
