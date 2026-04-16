@@ -13,9 +13,9 @@ const ForBuyers = () => {
       <section id="hero" className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
         <div className="absolute inset-0 overflow-hidden">
           <OptimizedImg
-            src={heroSets.premium.src}
-            srcSet={heroSets.premium.srcSet}
-            sizes={heroSets.premium.sizes}
+            src={heroSets.investors.src}
+            srcSet={heroSets.investors.srcSet}
+            sizes={heroSets.investors.sizes}
             alt="Immobilie aus dem Aurelia-Bestand"
             className="hero-media h-full w-full object-cover object-center"
             priority
