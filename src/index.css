@@ -571,3 +571,44 @@
     hsl(212 60% 7%) 100%
   );
 }
+
+/* ── Cookie consent ── */
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cookie-btn-primary,
+.cookie-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 0.125rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cookie-btn-primary {
+  background: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.cookie-btn-primary:hover {
+  background: hsl(var(--accent) / 0.88);
+}
+
+.cookie-btn-secondary {
+  background: transparent;
+  color: hsl(var(--muted-foreground));
+  border: 1px solid hsl(var(--border));
+}
+
+.cookie-btn-secondary:hover {
+  background: hsl(var(--secondary));
+}
