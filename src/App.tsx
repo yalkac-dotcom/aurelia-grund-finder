@@ -48,7 +48,7 @@ const App = () => (
               <Route path="/investoren" element={<Investors />} />
               <Route path="/investoren-glossar" element={<InvestorGlossar />} />
               <Route path="/kontakt" element={<Contact />} />
-              <Route path="/arbeitsweise" element={<Arbeitsweise />} />
+              <Route path="/arbeitsweise" element={<HowItWorks />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
