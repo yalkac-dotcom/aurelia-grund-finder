@@ -1,7 +1,10 @@
 import { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { languageNames, languageCodes } from "@/i18n/types";
+import { languageNames, type Language } from "@/i18n/types";
+
+// Only show languages that are fully synced with the current DE master
+const enabledLanguages: Language[] = ["de"];
 
 const LanguageSwitcher = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -16,6 +19,9 @@ const LanguageSwitcher = () => {
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
+  // Don't render the switcher if only one language is enabled
+  if (enabledLanguages.length <= 1) return null;
+
   return (
     <div ref={ref} className="relative flex items-center">
       <button
@@ -29,7 +35,7 @@ const LanguageSwitcher = () => {
 
       {open && (
         <div className="absolute right-0 top-full mt-2 bg-card border border-border shadow-lg rounded min-w-[160px] z-50">
-          {languageCodes.map((code) => (
+          {enabledLanguages.map((code) => (
             <button
               key={code}
               onClick={() => {
