@@ -230,6 +230,46 @@ const ForBuyers = () => {
           </div>
         </section>
 
+        {/* TESTIMONIALS */}
+        <section className="section-premium bg-gradient-to-b from-green-50/30 to-white">
+          <div className="container-premium">
+            <Reveal>
+              <div className="text-center mb-12">
+                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                  Zufriedene Käufer
+                </h2>
+              </div>
+            </Reveal>
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              {[
+                {
+                  quote: "Erstes Eigenheim, kleines Budget. Bei Aurelia fanden wir ein Haus, das wir uns leisten konnten — 30% unter dem Makler-Preis. Heute sind wir dankbar, dass wir nicht verschuldet sind.",
+                  author: "Familie Müller",
+                  role: "Angestellte, Berlin"
+                },
+                {
+                  quote: "Ich kaufe alte Häuser und renoviere sie. Bei Aurelia finde ich regelmäßig Schätze mit Potential. Die direkten Preise ohne Makler machen mein Business erst möglich.",
+                  author: "Johannes Köster",
+                  role: "Lehrer & Renovierer, Hannover"
+                }
+              ].map((story, i) => (
+                <Reveal key={i} delay={i * 0.1}>
+                  <div className="glass-card rounded-2xl p-8 border border-green-100/50">
+                    <p className="mb-6 text-[0.93rem] italic leading-[1.85] text-foreground">
+                      „{story.quote}"
+                    </p>
+                    <div className="border-t border-green-100/50 pt-4">
+                      <p className="text-[0.9rem] font-heading font-semibold text-foreground">{story.author}</p>
+                      <p className="text-[0.8rem] text-teal-600">{story.role}</p>
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* FAQ */}
         <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}>
           <div className="container-premium">

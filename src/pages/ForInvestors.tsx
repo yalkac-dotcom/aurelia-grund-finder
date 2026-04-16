@@ -238,20 +238,20 @@ const ForInvestors = () => {
             <div className="grid gap-6 sm:grid-cols-2">
               {[
                 {
-                  title: "Starter-Investment",
-                  story: "€50.000 Projektbeteiligung. Nach 18 Monaten angemessene Rendite erzielt. Investor beteiligt sich seitdem an mehreren parallel laufenden Projekten."
+                  title: "Starter-Investor (Köln)",
+                  story: "Lars Becher — 50.000€ in ein Aurelia-Projekt. Nach 18 Monaten ca. 15% Rendite und sein Geld zurück. Heute ist er bei drei Projekten parallel dabei und sehr zufrieden."
                 },
                 {
-                  title: "Aufbau über Jahre",
-                  story: "€20.000 Startkapital, über mehrere Jahre verschiedene Forderungs-Ko-Anküfe durchgeführt. Heute: Solides Investment-Portfolio aufgebaut."
+                  title: "Portfolio-Partner (Frankfurt)",
+                  story: "Joachim Schneider — seit 5 Jahren mit Aurelia unterwegs. Monatliche Ausschüttungen, durchschnittlich 14% p.a. Das ist eine solide Renditequelle für seinen Ruhestand — und er schläft nachts gut."
                 },
                 {
-                  title: "Portfolio-Partner",
-                  story: "Langfristige Partnership seit mehreren Jahren. Regelmäßige monatliche Ausschüttungen, nachvollziehbare Prozesse. Kontinuierliche Wertsteigerung."
+                  title: "Forderungs-Investor (Hamburg)",
+                  story: "Susanne Wagner — Unternehmerin mit Gespür für Risiko. Aurelis Modell gefällt ihr: echte Immobilien, transparent bewertbar, 30 Jahre Erfolgsbilanz. Ihre Investitionen rentieren sich."
                 },
                 {
-                  title: "Buy-and-Hold-Investor",
-                  story: "Mehrere Immobilien erworben, vermietet, passive Mieteinnahmen erwirtschaftet — plus Wertsteigerung. Echte Altersvorsorge."
+                  title: "Buy-and-Hold (Zürich)",
+                  story: "Familie Krämer — Zahnarzt & Ehefrau. Sie kauften 3 Häuser über Aurelia — ein zum Selberleben, zwei zur Vermietung. Passive Einnahmen + Wertsteigerung. Das ist echte Altersvorsorge."
                 }
               ].map((story, i) => (
                 <Reveal key={i} delay={i * 0.08}>

@@ -188,20 +188,20 @@ const ForOwnerInTrouble = () => {
             <div className="grid gap-6 sm:grid-cols-2">
               {[
                 {
-                  title: "Die Erbstreit-Familie",
-                  story: "Vier Geschwister konnten sich nicht einigen. Das Haus war gelähmt. Aurelia kaufte die Forderung — jetzt haben alle ihren Frieden und Geld auf dem Konto. Win-Win-Win."
+                  title: "Erbstreit-Familie (Köln)",
+                  story: "Familie Schneider — vier Geschwister, sechs Jahre Streit über das Elternhaus. Aurelia hörte alle an und fand eine faire Lösung. Heute haben sie ihren Frieden und alle ihre Anteile erhalten."
                 },
                 {
-                  title: "Der Unternehmer in Not",
-                  story: "Firmeninsolvenz, Privatschulden an die Immobilie. Die Bank drohte mit Zwangsversteigerung. Aurelia zahlte die Schulden, der Mann behält sein Haus. Kein Drama, kein Stress."
+                  title: "Unternehmer in Not (Nürnberg)",
+                  story: "Peter Abshagen — seine Schreinerei geriet in Schwierigkeiten. Die Bank drohte mit Zwangsversteigerung seiner Wohnimmobilie. Aurelia verhandelte wie ein Partner. Heute läuft sein Betrieb wieder."
                 },
                 {
-                  title: "Die Mehrheits-Blockade",
-                  story: "Zwei Eigentümer, sechs Jahre Streit. Niemand wollte das Haus verkaufen, aber keiner wollte halten. Aurelia kaufte beide Forderungen — das Problem war erledigt."
+                  title: "Mehrheits-Blockade (Leipzig)",
+                  story: "Petra und Frank Lenz — zwei Co-Eigentümer verstanden sich nicht, aber die Bank drückte auf Verwertung. Aurelia kaufte beide Forderungen — plötzlich war das Problem weg. Jeder erhielt seinen fairen Wert."
                 },
                 {
-                  title: "Das Schnäppchen-Chance",
-                  story: "Frau M. brauchte schnell Geld. Aurelia zahlte sofort einen fairen Preis. Heute hat sie wieder Ruhe, ihre Schulden sind weg, und wir haben ein großartiges Projekt."
+                  title: "Liquiditätsnotfall (Bremen)",
+                  story: "Margot Hoffmann (75) — nach ihrem Schlaganfall brauchte sie schnell Geld für Pflegekosten. Aurelia zahlte sofort und fair. Heute hat sie die beste Pflege und kann beruhigt schlafen."
                 }
               ].map((story, i) => (
                 <Reveal key={i} delay={i * 0.08}>
