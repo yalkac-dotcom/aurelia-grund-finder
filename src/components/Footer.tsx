@@ -110,33 +110,10 @@ const Footer = () => {
 
         {/* Bottom bar */}
         <div className="border-t border-white/10 md:border-white/20 mt-4 md:mt-5 pt-3 md:pt-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-1.5 md:gap-2">
-            <p className="text-white/60 text-[10px] md:text-xs order-2 md:order-1">
-              © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
-            </p>
-
-            <div className="flex items-center gap-2.5 order-1 md:order-2">
-              {languageCodes.map((code, i) => (
-                <span key={code} className="inline-flex items-center">
-                  <button
-                    onClick={() => setLanguage(code)}
-                    className={`text-[10px] md:text-xs transition-colors duration-200 ${
-                      code === language
-                        ? "text-accent font-medium"
-                        : "text-white/60 hover:text-accent"
-                    }`}
-                  >
-                    {code.toUpperCase()}
-                  </button>
-                  {i < languageCodes.length - 1 && (
-                    <span className="text-white/20 ml-2.5">|</span>
-                  )}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          <p className="text-white/40 text-[9px] md:text-xs mt-2.5 md:mt-3 text-center leading-relaxed max-w-2xl mx-auto">
+          <p className="text-white/60 text-[10px] md:text-xs text-center">
+            © {new Date().getFullYear()} Aurelia Grundbesitz GmbH. {t.footer.rights}
+          </p>
+          <p className="text-white/40 text-[9px] md:text-[10px] mt-2.5 text-center leading-relaxed max-w-2xl mx-auto">
             {t.footer.disclaimer}
           </p>
         </div>

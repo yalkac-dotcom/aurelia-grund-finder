@@ -72,11 +72,9 @@ const Header = () => {
               )
             )}
           </nav>
-          <div className="self-center w-px h-4 bg-border/60" />
-          <LanguageSwitcher />
           <Link
             to="/kontakt"
-            className="ml-3 inline-flex items-center px-4 py-2 text-[11px] font-semibold tracking-[0.12em] uppercase bg-accent text-accent-foreground hover:bg-accent/88 transition-colors duration-300 rounded-sm"
+            className="ml-5 inline-flex items-center px-4 py-2 text-[11px] font-semibold tracking-[0.12em] uppercase bg-accent text-accent-foreground hover:bg-accent/88 transition-colors duration-300 rounded-sm"
           >
             {t.hero.cta}
           </Link>
