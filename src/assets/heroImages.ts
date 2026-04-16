@@ -56,6 +56,16 @@ import glossar1024 from "@/assets/hero-glossar-1024w.webp";
 import glossar1440 from "@/assets/hero-glossar-1440w.webp";
 import glossar1920 from "@/assets/hero-glossar-1920w.webp";
 
+import arbeitsweise640 from "@/assets/hero-arbeitsweise-640w.webp";
+import arbeitsweise1024 from "@/assets/hero-arbeitsweise-1024w.webp";
+import arbeitsweise1440 from "@/assets/hero-arbeitsweise-1440w.webp";
+import arbeitsweise1920 from "@/assets/hero-arbeitsweise-1920w.webp";
+
+import about640 from "@/assets/hero-about-640w.webp";
+import about1024 from "@/assets/hero-about-1024w.webp";
+import about1440 from "@/assets/hero-about-1440w.webp";
+import about1920 from "@/assets/hero-about-1920w.webp";
+
 const SIZES = "(max-width: 640px) 100vw, (max-width: 1024px) 100vw, (max-width: 1440px) 100vw, 1920px";
 
 function srcSet(w640: string, w1024: string, w1440: string, w1920: string) {
