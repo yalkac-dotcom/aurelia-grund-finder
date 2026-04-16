@@ -12,17 +12,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const panelBase =
-  "bg-card rounded-[1.75rem] shadow-[0_12px_56px_-10px_hsl(212_55%_15%/0.10),0_6px_20px_-6px_hsl(212_55%_15%/0.06)] border border-border/50";
-
-const panelPadding = "px-6 py-7 md:px-12 md:py-10";
-
-const darkSection =
-  "bg-[hsl(212_55%_12%)] text-white";
-
-const darkPanelBase =
-  "bg-[hsl(212_50%_16%)] rounded-[1.75rem] shadow-[0_12px_56px_-10px_hsl(212_55%_8%/0.4),0_6px_20px_-6px_hsl(212_55%_8%/0.25)] border border-white/[0.06]";
-
 const Index = () => {
   const { t } = useLanguage();
 
@@ -38,40 +27,16 @@ const Index = () => {
       {/* 1. HERO */}
       <HomeHero />
 
-      {/* 2. EINORDNUNG */}
-      <section className="py-6 md:py-10">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-foreground leading-[1.2] mb-5 text-balance">
-                {t.landing.positioningTitle}
-              </h2>
-              <p className="text-muted-foreground text-[0.93rem] leading-[1.85] max-w-2xl">
-                {t.landing.positioningText}
-              </p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 3. DREI EINSTIEGSPFADE */}
-      <section className="py-8 md:py-14 bg-secondary/50">
-        <div className="container max-w-5xl">
-          <Reveal>
-            <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-8">
-              {t.landing.relevanceLabel}
-            </p>
-          </Reveal>
-          <div className="grid sm:grid-cols-3 gap-6 md:gap-8">
-            {t.landing.relevanceCards.map((card, i) => (
-              <Reveal key={i} delay={i * 0.1}>
-                <div className="group bg-card rounded-[1.75rem] p-8 md:p-10 shadow-[0_10px_48px_-8px_hsl(212_55%_15%/0.09),0_4px_14px_-4px_hsl(212_55%_15%/0.05)] border border-border/40 hover:shadow-[0_18px_60px_-10px_hsl(212_55%_15%/0.14),0_6px_20px_-6px_hsl(212_55%_15%/0.07)] transition-all duration-500 hover:-translate-y-1 cursor-default h-full">
-                  <div className="w-10 h-[2px] bg-accent rounded-full mb-7" />
-                  <h3 className="text-[1.05rem] md:text-[1.12rem] font-heading font-semibold text-foreground mb-3">
-                    {card.title}
-                  </h3>
-                  <p className="text-muted-foreground text-sm leading-[1.8]">
-                    {card.text}
+      {/* 2. PROOF BAR */}
+      <section className="border-b border-border/40 bg-secondary/30">
+        <div className="container max-w-5xl py-5 md:py-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            {t.landing.trustPillars.map((item, i) => (
+              <Reveal key={i} delay={i * 0.06}>
+                <div className="flex items-start gap-2.5">
+                  <div className="w-[3px] h-4 bg-accent/50 rounded-full shrink-0 mt-0.5" />
+                  <p className="text-foreground text-[0.78rem] md:text-[0.82rem] leading-[1.5] font-medium">
+                    {item.title}
                   </p>
                 </div>
               </Reveal>
@@ -80,257 +45,199 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 4. SO KÖNNEN WIR UNTERSTÜTZEN */}
-      <section className="py-6 md:py-10">
-        <div className="container max-w-5xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-6">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.servicesModuleLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-foreground leading-[1.2] max-w-xl text-balance">
-                  {t.landing.servicesModuleTitle}
-                </h2>
-              </div>
-              <div className="grid sm:grid-cols-2 gap-5 md:gap-7">
-                {t.landing.servicesModules.map((mod, i) => (
-                  <Reveal key={i} delay={i * 0.08}>
-                    <div className="bg-secondary/50 rounded-[1.25rem] p-8 md:p-10 border-l-[3px] border-l-accent/50 hover:bg-secondary/70 transition-colors duration-400 h-full">
-                      <h3 className="text-[0.98rem] md:text-[1.05rem] font-heading font-semibold text-foreground mb-2.5">
-                        {mod.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm leading-[1.8]">
-                        {mod.text}
-                      </p>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 5. UNTERNEHMERISCHER ANSATZ — DARK */}
-      <section className={`py-10 md:py-16 ${darkSection}`}>
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${darkPanelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-5 border-l-white/20">
-                <p className="text-[hsl(195_55%_55%)] font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.entrepreneurLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-white leading-[1.2] max-w-xl text-balance">
-                  {t.landing.entrepreneurTitle}
-                </h2>
-              </div>
-              <p className="text-white/75 text-[0.93rem] leading-[1.85] mb-4 max-w-2xl">
-                {t.landing.entrepreneurText}
-              </p>
-              <p className="text-white/75 text-[0.93rem] leading-[1.85] max-w-2xl">
-                {t.landing.entrepreneurText2}
-              </p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 6. BESONDERE SITUATIONEN */}
-      <section className="py-6 md:py-10">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-6">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.situationsLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-foreground leading-[1.2] max-w-xl text-balance">
-                  {t.landing.situationsTitle}
-                </h2>
-              </div>
-              <div className="grid sm:grid-cols-2 gap-x-10 gap-y-4">
-                {t.landing.situationsList.map((item, i) => (
-                  <Reveal key={i} delay={i * 0.06}>
-                    <div className="flex items-start gap-3 py-2">
-                      <div className="w-1 h-5 bg-accent/60 rounded-full shrink-0 mt-0.5" />
-                      <p className="text-foreground text-[0.93rem] leading-[1.6]">
-                        {item}
-                      </p>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 7. ARBEITSWEISE */}
-      <section id="arbeitsweise" className="py-6 md:py-10 bg-secondary/30 scroll-mt-20">
-        <div className="container max-w-5xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-4">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.processLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-foreground leading-[1.2] max-w-xl text-balance">
-                  {t.landing.processTitle}
-                </h2>
-              </div>
-              <p className="text-muted-foreground text-sm leading-[1.7] mt-3 mb-6 max-w-xl">
-                {t.landing.processSubtitle}
-              </p>
-              <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
-                {t.landing.processSteps.map((step, i) => (
-                  <Reveal key={i} delay={i * 0.1}>
-                    <div className="relative">
-                      <p className="text-[1.5rem] font-heading font-semibold text-accent mb-2">
-                        {step.num}
-                      </p>
-                      {i < t.landing.processSteps.length - 1 && (
-                        <div className="hidden md:block absolute top-4 left-full w-full h-px bg-border/40 -translate-x-4" />
-                      )}
-                      <h3 className="text-sm font-heading font-semibold text-foreground mb-1.5">
-                        {step.title}
-                      </h3>
-                      <p className="text-muted-foreground text-xs leading-[1.7]">
-                        {step.text}
-                      </p>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 8. WARUM AURELIA — DARK */}
-      <section className={`py-10 md:py-16 ${darkSection}`}>
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${darkPanelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-6 border-l-white/20">
-                <p className="text-[hsl(195_55%_55%)] font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.whyLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-white leading-[1.2] max-w-xl text-balance">
-                  {t.landing.whyTitle}
-                </h2>
-              </div>
-              <div className="grid sm:grid-cols-2 gap-x-10 gap-y-7">
-                {t.landing.whyPoints.map((point, i) => (
-                  <Reveal key={i} delay={i * 0.08}>
-                    <div className="flex items-start gap-3">
-                      <div className="w-1 h-6 bg-[hsl(195_55%_45%)]/60 rounded-full shrink-0 mt-0.5" />
-                      <div>
-                        <h3 className="text-[0.95rem] font-heading font-semibold text-white mb-1">
-                          {point.title}
-                        </h3>
-                        <p className="text-white/70 text-sm leading-[1.75]">
-                          {point.text}
-                        </p>
-                      </div>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 9. EINWANDBEHANDLUNG */}
-      <section className="py-6 md:py-10 bg-secondary/30">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-6">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.objectionsLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-foreground leading-[1.2] max-w-xl text-balance">
-                  {t.landing.objectionsTitle}
-                </h2>
-              </div>
-              <div className="grid gap-5">
-                {t.landing.objections.map((obj, i) => (
-                  <Reveal key={i} delay={i * 0.1}>
-                    <div className="bg-secondary/40 rounded-[1.1rem] p-8 md:p-10">
-                      <p className="text-[1rem] font-heading font-semibold text-foreground mb-3 italic">
-                        „{obj.q}"
-                      </p>
-                      <p className="text-muted-foreground text-sm leading-[1.8]">
-                        {obj.a}
-                      </p>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 10. CTA — DARK */}
-      <section className={`py-10 md:py-16 ${darkSection}`}>
+      {/* 3. TYPISCHE EINSTIEGSSITUATIONEN */}
+      <section className="py-16 md:py-24">
         <div className="container max-w-3xl">
           <Reveal>
-            <div className={`${darkPanelBase} ${panelPadding} text-center`}>
-              <div className="w-10 h-[2px] bg-[hsl(195_55%_45%)] rounded-full mx-auto mb-7" />
-              <h2 className="text-[1.3rem] md:text-[1.6rem] font-heading font-semibold text-white leading-[1.2] mb-4 text-balance">
-                {t.landing.ctaTitle}
-              </h2>
-              <p className="text-white/75 text-[0.9rem] leading-[1.75] mb-7 max-w-xl mx-auto">
-                {t.landing.ctaText}
-              </p>
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center gap-2 bg-[hsl(195_55%_32%)] text-white px-7 py-3 text-xs font-medium tracking-[0.15em] uppercase hover:bg-[hsl(195_55%_38%)] transition-colors duration-300 rounded-sm"
+            <h2 className="text-[1.4rem] md:text-[1.9rem] font-heading font-semibold text-foreground leading-[1.18] mb-5 text-balance">
+              {t.landing.positioningTitle}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mb-10 max-w-2xl">
+              {t.landing.positioningText}
+            </p>
+          </Reveal>
+          <div className="space-y-3">
+            {t.landing.situationsList.map((item, i) => (
+              <Reveal key={i} delay={i * 0.05}>
+                <div className="flex items-center gap-3 py-2.5 border-b border-border/30 last:border-b-0">
+                  <div className="w-1.5 h-1.5 bg-accent rounded-full shrink-0" />
+                  <p className="text-foreground text-[0.93rem] leading-[1.5]">
+                    {item}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. ARBEITSWEISE */}
+      <section id="arbeitsweise" className="py-16 md:py-24 bg-secondary/30 scroll-mt-20">
+        <div className="container max-w-5xl">
+          <Reveal>
+            <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
+              {t.landing.processLabel}
+            </p>
+            <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-foreground leading-[1.18] mb-2 text-balance max-w-xl">
+              {t.landing.processTitle}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="text-muted-foreground text-sm leading-[1.7] mb-10 max-w-lg">
+              {t.landing.processSubtitle}
+            </p>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
+            {t.landing.processSteps.map((step, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+                <div className="relative">
+                  <p className="text-[1.6rem] font-heading font-semibold text-accent/70 mb-2">
+                    {step.num}
+                  </p>
+                  <h3 className="text-[0.92rem] font-heading font-semibold text-foreground mb-1.5">
+                    {step.title}
+                  </h3>
+                  <p className="text-muted-foreground text-[0.82rem] leading-[1.7]">
+                    {step.text}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5. UNTERNEHMERISCHER ANSATZ */}
+      <section className="py-16 md:py-24 bg-[hsl(212_55%_10%)] text-white">
+        <div className="container max-w-3xl">
+          <Reveal>
+            <p className="text-[hsl(195_50%_55%)] font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
+              {t.landing.entrepreneurLabel}
+            </p>
+            <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-white leading-[1.18] mb-6 text-balance">
+              {t.landing.entrepreneurTitle}
+            </h2>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="text-white/75 text-[0.93rem] leading-[1.85] mb-5">
+              {t.landing.entrepreneurText}
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="text-white/60 text-[0.86rem] leading-[1.75] border-l-2 border-[hsl(195_50%_40%)]/40 pl-4">
+              {t.landing.entrepreneurText2}
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 6. WARUM AURELIA */}
+      <section className="py-16 md:py-24">
+        <div className="container max-w-3xl">
+          <Reveal>
+            <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
+              {t.landing.whyLabel}
+            </p>
+            <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-foreground leading-[1.18] mb-10 text-balance">
+              {t.landing.whyTitle}
+            </h2>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 gap-x-12 gap-y-6">
+            {t.landing.whyPoints.map((point, i) => (
+              <Reveal key={i} delay={i * 0.06}>
+                <div className="flex items-start gap-3">
+                  <div className="w-[3px] h-5 bg-accent/50 rounded-full shrink-0 mt-0.5" />
+                  <p className="text-foreground text-[0.95rem] font-heading font-semibold">
+                    {point.title}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. HÄUFIGE BEDENKEN */}
+      <section className="py-16 md:py-24 bg-secondary/30">
+        <div className="container max-w-3xl">
+          <Reveal>
+            <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
+              {t.landing.objectionsLabel}
+            </p>
+            <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-foreground leading-[1.18] mb-10 text-balance">
+              {t.landing.objectionsTitle}
+            </h2>
+          </Reveal>
+          <div className="space-y-6">
+            {t.landing.objections.map((obj, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+                <div className="border-l-2 border-accent/30 pl-5 md:pl-7">
+                  <p className="text-[0.98rem] font-heading font-semibold text-foreground mb-2 italic">
+                    „{obj.q}"
+                  </p>
+                  <p className="text-muted-foreground text-[0.88rem] leading-[1.8]">
+                    {obj.a}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 8. FAQ */}
+      <section className="py-16 md:py-24">
+        <div className="container max-w-3xl">
+          <Reveal>
+            <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
+              {t.landing.homeFaqLabel}
+            </p>
+            <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-foreground leading-[1.18] mb-10 text-balance">
+              {t.landing.homeFaqTitle}
+            </h2>
+          </Reveal>
+          <Accordion type="single" collapsible className="space-y-2">
+            {t.landing.homeFaqItems.map((item, i) => (
+              <AccordionItem
+                key={i}
+                value={`faq-${i}`}
+                className="border-b border-border/40 last:border-b-0"
               >
-                {t.landing.ctaButton}
-                <ArrowRight size={13} />
-              </Link>
-              <p className="text-white/50 text-xs mt-3">
-                {t.common.initialAssessmentNote}
-              </p>
-            </div>
-          </Reveal>
+                <AccordionTrigger className="text-[0.92rem] font-heading font-semibold text-foreground py-4 hover:no-underline text-left">
+                  {item.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-[0.88rem] leading-[1.8] pb-4">
+                  {item.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </section>
 
-      {/* 11. FAQ */}
-      <section className="py-6 md:py-10 bg-secondary/30">
-        <div className="container max-w-3xl">
+      {/* 9. ABSCHLUSS-CTA */}
+      <section className="py-16 md:py-24 bg-[hsl(212_55%_10%)] text-white">
+        <div className="container max-w-3xl text-center">
           <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-6">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">
-                  {t.landing.homeFaqLabel}
-                </p>
-                <h2 className="text-[1.2rem] md:text-[1.5rem] font-heading font-semibold text-foreground leading-[1.2] max-w-xl text-balance">
-                  {t.landing.homeFaqTitle}
-                </h2>
-              </div>
-              <Accordion type="single" collapsible className="space-y-3">
-                {t.landing.homeFaqItems.map((item, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={`faq-${i}`}
-                    className="bg-secondary/40 rounded-[1.1rem] border-none px-7 overflow-hidden"
-                  >
-                    <AccordionTrigger className="text-sm font-heading font-semibold text-foreground py-5 hover:no-underline text-left">
-                      {item.q}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground text-sm leading-[1.8] pb-5">
-                      {item.a}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
+            <div className="w-8 h-[2px] bg-[hsl(195_50%_45%)] rounded-full mx-auto mb-8" />
+            <h2 className="text-[1.3rem] md:text-[1.7rem] font-heading font-semibold text-white leading-[1.2] mb-5 text-balance">
+              {t.landing.ctaTitle}
+            </h2>
+            <p className="text-white/70 text-[0.9rem] leading-[1.75] mb-8 max-w-lg mx-auto">
+              {t.landing.ctaText}
+            </p>
+            <Link
+              to="/kontakt"
+              className="inline-flex items-center gap-2 bg-[hsl(195_55%_30%)] text-white px-7 py-3.5 text-[0.72rem] font-semibold tracking-[0.15em] uppercase hover:bg-[hsl(195_55%_36%)] transition-colors duration-300 rounded-sm"
+            >
+              {t.landing.ctaButton}
+              <ArrowRight size={13} />
+            </Link>
+            <p className="text-white/45 text-[0.75rem] mt-4 tracking-wide">
+              Unverbindlich · Persönlich · Ohne öffentliche Vermarktung
+            </p>
           </Reveal>
         </div>
       </section>

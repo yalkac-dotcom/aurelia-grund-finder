@@ -22,7 +22,6 @@ const Header = () => {
     { label: t.nav.services, path: "/leistungen" },
     { label: t.nav.workApproach, path: "/arbeitsweise" },
     { label: t.nav.about, path: "/ueber-uns" },
-    { label: t.nav.contact, path: "/kontakt" },
   ];
 
   const handleHashNav = (item: NavItem) => {
@@ -75,6 +74,12 @@ const Header = () => {
           </nav>
           <div className="self-center w-px h-4 bg-border/60" />
           <LanguageSwitcher />
+          <Link
+            to="/kontakt"
+            className="ml-3 inline-flex items-center px-4 py-2 text-[11px] font-semibold tracking-[0.12em] uppercase bg-accent text-accent-foreground hover:bg-accent/88 transition-colors duration-300 rounded-sm"
+          >
+            {t.hero.cta}
+          </Link>
         </div>
 
         <div className="md:hidden flex items-center gap-3">
@@ -115,6 +120,13 @@ const Header = () => {
                 </Link>
               )
             )}
+            <Link
+              to="/kontakt"
+              onClick={() => setMobileOpen(false)}
+              className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold bg-accent text-accent-foreground rounded-sm"
+            >
+              {t.hero.cta}
+            </Link>
           </div>
           <div className="border-t border-border/20 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">
             <Link
