@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/i18n/LanguageContext";
@@ -52,7 +52,8 @@ const App = () => (
               <Route path="/investoren-glossar" element={<InvestorGlossar />} />
               <Route path="/investoren" element={<ForGeschaftspartner />} />
               <Route path="/kontakt" element={<Contact />} />
-              <Route path="/wie-es-funktioniert" element={<HowItWorks />} />
+              <Route path="/arbeitsweise" element={<HowItWorks />} />
+              <Route path="/wie-es-funktioniert" element={<Navigate to="/arbeitsweise" replace />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
