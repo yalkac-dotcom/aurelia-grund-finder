@@ -56,6 +56,16 @@ import glossar1024 from "@/assets/hero-glossar-1024w.webp";
 import glossar1440 from "@/assets/hero-glossar-1440w.webp";
 import glossar1920 from "@/assets/hero-glossar-1920w.webp";
 
+import arbeitsweise640 from "@/assets/hero-arbeitsweise-640w.webp";
+import arbeitsweise1024 from "@/assets/hero-arbeitsweise-1024w.webp";
+import arbeitsweise1440 from "@/assets/hero-arbeitsweise-1440w.webp";
+import arbeitsweise1920 from "@/assets/hero-arbeitsweise-1920w.webp";
+
+import about640 from "@/assets/hero-about-640w.webp";
+import about1024 from "@/assets/hero-about-1024w.webp";
+import about1440 from "@/assets/hero-about-1440w.webp";
+import about1920 from "@/assets/hero-about-1920w.webp";
+
 const SIZES = "(max-width: 640px) 100vw, (max-width: 1024px) 100vw, (max-width: 1440px) 100vw, 1920px";
 
 function srcSet(w640: string, w1024: string, w1440: string, w1920: string) {
@@ -74,4 +84,6 @@ export const heroSets = {
   kfw:           { src: kfw1920,           srcSet: srcSet(kfw640, kfw1024, kfw1440, kfw1920),                               sizes: SIZES },
   energetisch:   { src: energetisch1920,   srcSet: srcSet(energetisch640, energetisch1024, energetisch1440, energetisch1920), sizes: SIZES },
   glossar:       { src: glossar1920,       srcSet: srcSet(glossar640, glossar1024, glossar1440, glossar1920),               sizes: SIZES },
+  arbeitsweise:  { src: arbeitsweise1920,  srcSet: srcSet(arbeitsweise640, arbeitsweise1024, arbeitsweise1440, arbeitsweise1920), sizes: SIZES },
+  about:         { src: about1920,         srcSet: srcSet(about640, about1024, about1440, about1920),                           sizes: SIZES },
 } as const;

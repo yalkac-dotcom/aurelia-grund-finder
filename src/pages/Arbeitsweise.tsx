@@ -21,9 +21,9 @@ const Arbeitsweise = () => {
       <section className="relative h-[36vh] min-h-[260px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg
-            src={heroSets.building.src}
-            srcSet={heroSets.building.srcSet}
-            sizes={heroSets.building.sizes}
+            src={heroSets.arbeitsweise.src}
+            srcSet={heroSets.arbeitsweise.srcSet}
+            sizes={heroSets.arbeitsweise.sizes}
             alt={t.landing.processTitle}
             className="w-full h-full object-cover"
             priority
