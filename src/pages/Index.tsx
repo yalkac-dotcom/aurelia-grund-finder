@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, Handshake, Home as HomeIcon, Briefcase } from "lucide-react";
+import { ArrowRight, LifeBuoy, KeyRound, Handshake } from "lucide-react";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
@@ -9,8 +9,8 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  const areaIcons = [Handshake, HomeIcon, Briefcase];
-  const areaColors = ["bg-red-500", "bg-green-500", "bg-yellow-500"];
+  const areaIcons = [LifeBuoy, KeyRound, Handshake];
+  const areaColors = ["bg-teal-700", "bg-teal-600", "bg-amber-600"];
   const areaLinks = ["/fuer-eigentumer-in-not", "/fuer-kaeufer", "/fuer-geschaeftspartner"];
 
   return (
