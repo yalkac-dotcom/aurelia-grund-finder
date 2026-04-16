@@ -38,24 +38,12 @@ const HomeHero = () => {
 
           <div className="hero-actions">
             <div className="hero-cta-row animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-              <div>
-                <Link
-                  to="/kontakt"
-                  className="hero-primary-button inline-flex items-center justify-center gap-2"
-                >
-                  {t.landing.heroCta}
-                  <ArrowRight size={14} />
-                </Link>
-              </div>
-              <div>
-                <button
-                  type="button"
-                  onClick={handleScrollToProcess}
-                  className="hero-secondary-button inline-flex items-center justify-center gap-2"
-                >
-                  {t.landing.heroCtaSecondary}
-                </button>
-              </div>
+              <a href="/kontakt" className="btn-primary">
+                {t.landing.heroCta}
+              </a>
+              <a href="#arbeitsweise" className="btn-secondary" onClick={handleScrollToProcess}>
+                {t.landing.heroCtaSecondary}
+              </a>
             </div>
 
             <p className="hero-trust animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
