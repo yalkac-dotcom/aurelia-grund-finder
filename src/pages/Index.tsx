@@ -45,7 +45,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 3. TYPISCHE EINSTIEGSSITUATIONEN */}
+      {/* 3. EINSTIEGSSITUATIONEN */}
       <section className="py-16 md:py-24">
         <div className="container max-w-3xl">
           <Reveal>
@@ -92,7 +92,7 @@ const Index = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
             {t.landing.processSteps.map((step, i) => (
               <Reveal key={i} delay={i * 0.08}>
-                <div className="relative">
+                <div>
                   <p className="text-[1.6rem] font-heading font-semibold text-accent/70 mb-2">
                     {step.num}
                   </p>
@@ -109,7 +109,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 5. UNTERNEHMERISCHER ANSATZ */}
+      {/* 5. UNTERNEHMERISCHER ANSATZ — DARK */}
       <section className="py-16 md:py-24 bg-[hsl(212_55%_10%)] text-white">
         <div className="container max-w-3xl">
           <Reveal>
@@ -159,8 +159,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 7. HÄUFIGE BEDENKEN */}
-      <section className="py-16 md:py-24 bg-secondary/30">
+      {/* 7. ABGRENZUNG — Wann wir NICHT der richtige Ansprechpartner sind */}
+      <section className="py-14 md:py-20 bg-secondary/30">
+        <div className="container max-w-3xl">
+          <Reveal>
+            <h2 className="text-[1.15rem] md:text-[1.4rem] font-heading font-semibold text-foreground leading-[1.2] mb-5 text-balance">
+              Wann wir nicht der richtige Ansprechpartner sind
+            </h2>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="text-muted-foreground text-[0.9rem] leading-[1.8] mb-4 max-w-2xl">
+              Nicht jede Anfrage passt zu unserem Ansatz. Wenn Sie eine klassische öffentliche Vermarktung, ein breites Maklernetzwerk oder eine standardisierte Verkaufsstrecke suchen, sind andere Anbieter wahrscheinlich passender.
+            </p>
+            <p className="text-muted-foreground text-[0.9rem] leading-[1.8] max-w-2xl">
+              Aurelia wird dort relevant, wo Diskretion, Struktur und unternehmerische Entscheidungsfähigkeit wichtiger sind als Reichweite und Vermarktungsroutine.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 8. HÄUFIGE BEDENKEN */}
+      <section className="py-16 md:py-24">
         <div className="container max-w-3xl">
           <Reveal>
             <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
@@ -187,8 +206,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 8. FAQ */}
-      <section className="py-16 md:py-24">
+      {/* 9. FAQ */}
+      <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container max-w-3xl">
           <Reveal>
             <p className="text-accent font-sans text-[0.68rem] font-semibold tracking-[0.2em] uppercase mb-3">
@@ -217,7 +236,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* 9. ABSCHLUSS-CTA */}
+      {/* 10. ABSCHLUSS-CTA — DARK */}
       <section className="py-16 md:py-24 bg-[hsl(212_55%_10%)] text-white">
         <div className="container max-w-3xl text-center">
           <Reveal>
