@@ -380,6 +380,12 @@
   margin-bottom: 1.75rem;
 }
 
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .hero-primary-button,
 .hero-secondary-button {
   min-height: 44px;
