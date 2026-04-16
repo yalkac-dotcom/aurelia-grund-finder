@@ -572,6 +572,52 @@
   );
 }
 
+/* ── Scroll-to-top button ── */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 5rem;
+  right: 0.75rem;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  border: 1px solid hsl(0 0% 100% / 0.15);
+  background: hsl(212 10% 10% / 0.7);
+  color: hsl(0 0% 100% / 0.7);
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.scroll-top-btn:active {
+  transform: scale(0.93);
+}
+
+.scroll-top-btn:hover {
+  background: hsl(var(--accent));
+  color: hsl(0 0% 100%);
+}
+
+@media (min-width: 768px) {
+  .scroll-top-btn {
+    bottom: 2rem;
+    right: 2rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: none;
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    backdrop-filter: none;
+    box-shadow: 0 4px 16px -3px hsl(0 0% 0% / 0.25);
+  }
+
+  .scroll-top-btn:hover {
+    box-shadow: 0 6px 24px -4px hsl(0 0% 0% / 0.3);
+  }
+}
+
 /* ── Cookie consent ── */
 .cookie-actions {
   display: flex;
