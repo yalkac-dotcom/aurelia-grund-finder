@@ -42,3 +42,4 @@ Updated: now
 - [Farbschema CI](mem://style/farbschema-ci) — Teal palette, glassmorphism, gradient buttons
 - [Kontaktseite Struktur](mem://features/kontaktseite-struktur) — Slim intro, primary form focus, 24-48h response promise
 - [CTA Strategie](mem://features/cta-strategie) — Max 2 actions per section, primary to contact form, secondary "Mehr erfahren"
+- [BaFin Konformität](mem://constraints/bafin-konformitaet) — Geschäftspartnerschaften statt Investitionen; keine konkreten Renditen/Mindestanlagen im Public Content
