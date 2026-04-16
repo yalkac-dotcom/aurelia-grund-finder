@@ -37,23 +37,26 @@ const HomeHero = () => {
           <p className="hero-description">{t.landing.heroSubtitle}</p>
 
           <div className="hero-actions animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <Link to="/kontakt" className="hero-primary-button inline-flex items-center justify-center gap-2">
-              {t.landing.heroCta}
-              <ArrowRight size={14} />
-            </Link>
-
-            <button
-              onClick={handleScrollToProcess}
-              className="hero-secondary-button inline-flex items-center justify-center gap-2"
-            >
-              {t.landing.heroCtaSecondary}
-            </button>
+            <div>
+              <Link to="/kontakt" className="hero-primary-button inline-flex items-center justify-center gap-2">
+                {t.landing.heroCta}
+                <ArrowRight size={14} />
+              </Link>
+            </div>
+            <div>
+              <button
+                onClick={handleScrollToProcess}
+                className="hero-secondary-button inline-flex items-center justify-center gap-2"
+              >
+                {t.landing.heroCtaSecondary}
+              </button>
+            </div>
           </div>
 
-          <p className="hero-meta-line animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <div className="hero-meta-line animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <CheckCircle size={13} className="mt-0.5 shrink-0 opacity-80 md:mt-0 text-accent" />
             <span>{t.common.initialAssessmentNote}</span>
-          </p>
+          </div>
         </div>
       </div>
     </section>
