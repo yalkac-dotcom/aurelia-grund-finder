@@ -23,19 +23,24 @@ const tr: Translations = {
     disclaimer:
       "Uyarı: Bu web sitesindeki içerikler yalnızca genel bilgilendirme amacı taşır ve hukuki, vergisel veya finansal danışmanlık niteliğinde değildir.",
     brandLine:
-      "Özel durumlardaki gayrimenkuller için gizli inceleme, net yapı ve girişimci çözümler.",
+      "Aurelia Grundbesitz, özel durumlardan çıkan gayrimenkulleri gizli, yapılandırılmış ve özü net gören bir yaklaşımla geliştirir.",
     subline: "Gizli · Öz odaklı · Uzun vadeli",
     navItems: [
       { label: "Ana Sayfa", path: "/" },
-      { label: "Hizmetler", path: "/leistungen" },
-      { label: "Çalışma Şeklimiz", path: "/arbeitsweise" },
+      { label: "Zor Durumdaki Mülk Sahipleri", path: "/fuer-eigentumer-in-not" },
+      { label: "Alıcılar İçin", path: "/fuer-kaeufer" },
+      { label: "İş Ortakları İçin", path: "/fuer-geschaeftspartner" },
+      { label: "Portföy", path: "/portfolio" },
       { label: "Aurelia Hakkında", path: "/ueber-uns" },
+      { label: "Çalışma Şeklimiz", path: "/wie-es-funktioniert" },
       { label: "İletişim", path: "/kontakt" },
     ],
     legalItems: [
       { label: "Künye", path: "/impressum" },
       { label: "Gizlilik", path: "/datenschutz" },
       { label: "Görsel Kaynakları", path: "/bildnachweise" },
+      { label: "Sözlük", path: "/immobilien-glossar" },
+      { label: "SSS", path: "/faq" },
     ],
     legalSectionLabel: "Yasal",
     newsletterColTitle: "Bülten",

@@ -23,19 +23,24 @@ const nl: Translations = {
     disclaimer:
       "Let op: De inhoud van deze website dient uitsluitend ter algemene informatie en vormt geen juridisch, fiscaal of financieel advies.",
     brandLine:
-      "Discrete beoordeling, heldere structuur en ondernemende oplossingen voor vastgoed in bijzondere situaties.",
+      "Aurelia Grundbesitz ontwikkelt vastgoed uit bijzondere situaties — discreet, gestructureerd en met een scherp oog voor waarde.",
     subline: "Discreet · Waardegericht · Langetermijnvisie",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Diensten", path: "/leistungen" },
-      { label: "Werkwijze", path: "/arbeitsweise" },
+      { label: "Eigenaren in nood", path: "/fuer-eigentumer-in-not" },
+      { label: "Voor kopers", path: "/fuer-kaeufer" },
+      { label: "Voor partners", path: "/fuer-geschaeftspartner" },
+      { label: "Portfolio", path: "/portfolio" },
       { label: "Over Aurelia", path: "/ueber-uns" },
+      { label: "Hoe wij werken", path: "/wie-es-funktioniert" },
       { label: "Contact", path: "/kontakt" },
     ],
     legalItems: [
       { label: "Colofon", path: "/impressum" },
       { label: "Privacy", path: "/datenschutz" },
       { label: "Beeldverantwoording", path: "/bildnachweise" },
+      { label: "Glossarium", path: "/immobilien-glossar" },
+      { label: "FAQ", path: "/faq" },
     ],
     legalSectionLabel: "Juridisch",
     newsletterColTitle: "Nieuwsbrief",

@@ -18,10 +18,11 @@ const Header = () => {
 
   const navItems: NavItem[] = [
     { label: t.nav.home, path: "/" },
-    { label: t.nav.services, path: "/leistungen" },
-    { label: t.nav.workApproach, path: "/arbeitsweise" },
-    { label: t.nav.about, path: "/ueber-uns" },
-    { label: t.nav.contact, path: "/kontakt" },
+    { label: "Für Eigentümer", path: "/fuer-eigentumer-in-not" },
+    { label: "Für Käufer", path: "/fuer-kaeufer" },
+    { label: "Für Geschäftspartner", path: "/fuer-geschaeftspartner" },
+    { label: "Wie es funktioniert", path: "/wie-es-funktioniert" },
+    { label: "FAQ", path: "/faq" },
   ];
 
   const handleHashNav = (item: NavItem) => {

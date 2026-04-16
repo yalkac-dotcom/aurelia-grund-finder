@@ -23,19 +23,24 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Diskrete Prüfung, klare Struktur und unternehmerische Lösungen für Immobilien in besonderen Situationen.",
+      "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen — diskret, strukturiert und mit klarem Blick für wirtschaftlich sinnvolle Entscheidungen.",
     subline: "Diskret · Substanzorientiert · Langfristig",
     navItems: [
       { label: "Startseite", path: "/" },
-      { label: "Leistungen", path: "/leistungen" },
-      { label: "Arbeitsweise", path: "/arbeitsweise" },
+      { label: "Eigentümer in Schwierigkeiten", path: "/fuer-eigentumer-in-not" },
+      { label: "Für Käufer", path: "/fuer-kaeufer" },
+      { label: "Für Geschäftspartner", path: "/fuer-geschaeftspartner" },
+      { label: "Portfolio", path: "/portfolio" },
       { label: "Über Aurelia", path: "/ueber-uns" },
+      { label: "Wie wir arbeiten", path: "/wie-es-funktioniert" },
       { label: "Kontakt", path: "/kontakt" },
     ],
     legalItems: [
       { label: "Impressum", path: "/impressum" },
       { label: "Datenschutz", path: "/datenschutz" },
       { label: "Bildnachweise", path: "/bildnachweise" },
+      { label: "Glossar", path: "/immobilien-glossar" },
+      { label: "FAQ", path: "/faq" },
     ],
     legalSectionLabel: "Rechtliches",
     newsletterColTitle: "Newsletter",

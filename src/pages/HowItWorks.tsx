@@ -151,7 +151,7 @@ const HowItWorks = () => {
                 <div className="mt-6 flex items-start gap-3 max-w-2xl rounded-lg bg-amber-50 border border-amber-200/60 p-4">
                   <AlertTriangle size={16} className="mt-0.5 shrink-0 text-amber-700" />
                   <p className="text-[0.82rem] leading-[1.7] text-amber-900">
-                    Für vertrauliche Anfragen nutzen Sie bitte das <Link to="/kontakt" className="underline hover:text-amber-700">Kontaktformular</Link>.
+                    Siehe <Link to="/fuer-geschaeftspartner" className="underline hover:text-amber-700">Geschäftspartner-Seite</Link> für wichtige rechtliche Informationen.
                   </p>
                 </div>
               </div>

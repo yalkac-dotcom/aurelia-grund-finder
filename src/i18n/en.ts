@@ -23,19 +23,24 @@ const en: Translations = {
     disclaimer:
       "Disclaimer: The content of this website is provided for general information only and does not constitute legal, tax, or financial advice.",
     brandLine:
-      "Discreet review, clear structure and entrepreneurial solutions for real estate in special situations.",
+      "Aurelia Grundbesitz develops properties from special situations — discreetly, in a structured way, and with a clear eye for substance.",
     subline: "Discreet · Substance-focused · Long-term",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Services", path: "/leistungen" },
-      { label: "How We Work", path: "/arbeitsweise" },
+      { label: "Owners in Distress", path: "/fuer-eigentumer-in-not" },
+      { label: "For Buyers", path: "/fuer-kaeufer" },
+      { label: "For Partners", path: "/fuer-geschaeftspartner" },
+      { label: "Portfolio", path: "/portfolio" },
       { label: "About Aurelia", path: "/ueber-uns" },
+      { label: "How We Work", path: "/wie-es-funktioniert" },
       { label: "Contact", path: "/kontakt" },
     ],
     legalItems: [
       { label: "Legal Notice", path: "/impressum" },
       { label: "Privacy Policy", path: "/datenschutz" },
       { label: "Image Credits", path: "/bildnachweise" },
+      { label: "Glossary", path: "/immobilien-glossar" },
+      { label: "FAQ", path: "/faq" },
     ],
     legalSectionLabel: "Legal",
     newsletterColTitle: "Newsletter",
