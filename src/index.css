@@ -506,9 +506,8 @@
     filter: brightness(1.06) saturate(0.98) contrast(1.02);
   }
 
-  .hero-cta-row {
-    flex-direction: row;
-  }
+
+
 
   .hero-kicker {
     margin-bottom: 0.95rem;
