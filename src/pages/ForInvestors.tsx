@@ -247,7 +247,7 @@ const ForInvestors = () => {
                 },
                 {
                   title: "Forderungs-Investor (Hamburg)",
-                  story: "Susanne Wagner — Unternehmerin mit Gespür für Risiko. Aurelis Modell gefällt ihr: echte Immobilien, transparent bewertbar, 30 Jahre Erfolgsbilanz. Ihre Investitionen rentieren sich."
+                  story: "Susanne Wagner — Unternehmerin mit Gespür für Risiko. Aurelias Modell gefällt ihr: echte Immobilien, transparent bewertbar, 30 Jahre Erfolgsbilanz. Ihre Investitionen rentieren sich."
                 },
                 {
                   title: "Buy-and-Hold (Zürich)",
