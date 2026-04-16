@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
