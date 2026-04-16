@@ -6,7 +6,7 @@ import { LanguageProvider } from "@/i18n/LanguageContext";
 import Index from "./pages/Index";
 import ForOwnerInTrouble from "./pages/ForOwnerInTrouble";
 import ForBuyers from "./pages/ForBuyers";
-import ForInvestors from "./pages/ForInvestors";
+import ForGeschaftspartner from "./pages/ForGeschaftspartner";
 import HowItWorks from "./pages/HowItWorks";
 
 const About = lazy(() => import("./pages/About"));
@@ -53,7 +53,8 @@ const App = () => (
               <Route path="/faq" element={<FAQ />} />
               <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
-              <Route path="/fuer-investoren" element={<ForInvestors />} />
+              <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />
+              <Route path="/fuer-investoren" element={<ForGeschaftspartner />} />
               <Route path="/datenschutz" element={<Privacy />} />
               <Route path="/impressum" element={<Impressum />} />
               <Route path="/bildnachweise" element={<Bildnachweise />} />
