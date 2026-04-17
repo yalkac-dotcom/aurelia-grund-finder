@@ -283,7 +283,7 @@ const de: Translations = {
   },
   home: {
     heroKicker: "Aurelia Grundbesitz",
-    heroTitle: "Lösungen für Immobilien in Schwierigkeiten",
+    heroTitle: "Diskrete Immobilienlösungen in besonderen Situationen",
     heroDescription: "Aurelia kauft Forderungen von Eigentümern in Schwierigkeiten und bietet individuelle Lösungen.",
     areasLabel: "Geschäftsbereiche",
     areasTitle: "Unsere Geschäftsbereiche",
