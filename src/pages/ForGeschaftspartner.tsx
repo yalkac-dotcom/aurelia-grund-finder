@@ -10,6 +10,7 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
+import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
   MessagesSquare,
@@ -18,8 +19,14 @@ import {
   Handshake,
 } from "lucide-react";
 
-// Forms: Objektbezogen → Gebäude, Mehrere Projekte → Aktentasche, Individuelle Vereinbarung → Vertrag, Direkter Austausch → Dialog
-const formIcon3d = [icons3d.building, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
+// Forms (4): editorial Bild-Header — CI-konform
+const formImages = cardImages.partnerForms;
+const formImageAlts = [
+  "Modernes Mehrfamilienhaus mit klaren Linien in Tageslicht – sinnbildlich für objektbezogene Kooperation",
+  "Lederaktentasche auf Bank in lichtdurchflutetem Flur – sinnbildlich für mehrere Projekte",
+  "Vertragsunterlagen mit Füllfederhalter auf Schreibtisch – sinnbildlich für individuelle Vereinbarung",
+  "Zwei Ledersessel am Fenster – sinnbildlich für direkten Austausch",
+];
 // Principles: Klare Kommunikation → Dialog, Langfristige Perspektive → Horizont, Verlässlicher Rahmen → Schild, Geteiltes Verständnis → Handschlag
 const principleIcon3d = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
 const principleIcons = [MessagesSquare, Compass, ShieldCheck, Handshake];
@@ -71,8 +78,8 @@ const ForGeschaftspartner = () => {
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <AreaCard
-                    iconImage={formIcon3d[i % formIcon3d.length]}
-                    iconAlt={f.title}
+                    headerImage={formImages[i % formImages.length]}
+                    headerImageAlt={formImageAlts[i % formImageAlts.length]}
                     title={f.title}
                     text={f.desc}
                   />

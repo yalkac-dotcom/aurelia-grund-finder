@@ -13,6 +13,7 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
+import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
   UserCheck,
@@ -21,9 +22,15 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-// Features: Transparente Preise → Waage, Keine Maklergebühren → Wallet, Geprüfter Bestand → Haus, Klare Abwicklung → Vertrag
-const featureIcon3d = [icons3d.scale, icons3d.wallet, icons3d.house, icons3d.contract];
-// Proof: Direkter Eigentümer, Vollständige Unterlagen, Realistische Preisbasis (Waage statt Trend), Verlässliche Abwicklung
+// Features (4): editorial Bild-Header — CI-konform
+const featureImages = cardImages.buyerFeatures;
+const featureImageAlts = [
+  "Messingwaage auf Marmoroberfläche in ruhiger Bibliothek – sinnbildlich für transparente, faire Preisbildung",
+  "Handschlag über Vertrag und Unterlagen – sinnbildlich für direkten Erwerb ohne Maklerprovision",
+  "Gepflegtes Einfamilienhaus mit Vorgarten – sinnbildlich für geprüften Bestand",
+  "Vertragsunterlagen mit Füllfederhalter auf Eichenholz – sinnbildlich für klare Abwicklung",
+];
+// Proof (auf Navy): bleiben 3D-Icons (CI-Anker)
 const proofIcon3d = [icons3d.userCheckLight, icons3d.documentLight, icons3d.scaleLight, icons3d.checkCircleLight];
 const proofIcons = [UserCheck, FileText, TrendingUp, CheckCircle2];
 
@@ -53,8 +60,8 @@ const ForBuyers = () => {
               {b.features.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <AreaCard
-                    iconImage={featureIcon3d[i % featureIcon3d.length]}
-                    iconAlt={f.title}
+                    headerImage={featureImages[i % featureImages.length]}
+                    headerImageAlt={featureImageAlts[i % featureImageAlts.length]}
                     title={f.title}
                     text={f.desc}
                   />
