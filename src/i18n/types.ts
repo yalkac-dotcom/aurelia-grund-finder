@@ -368,14 +368,20 @@ export interface Translations {
   };
   aboutV2: {
     hero: { kicker: string; title: string; subtitle: string; body: string; cta: string };
-    intro: { headline: string; subheadline: string; body: string; cta: string };
-    profile: { headline: string; subheadline: string; body: string; cta: string };
-    principles: { headline: string; subheadline: string; body: string; cta: string };
-    situations: { headline: string; subheadline: string; body: string; cta: string };
-    review: { headline: string; subheadline: string; body: string; cta: string };
-    process: { headline: string; subheadline: string; body: string; cta: string };
-    trust: { headline: string; subheadline: string; body: string; cta: string };
-    closing: { headline: string; subheadline: string; body: string; cta: string };
+    intro: { body: string };
+    profile: { headline: string; body1: string; body2: string };
+    approach: {
+      headline: string;
+      items: { title: string; text: string }[];
+    };
+    situations: { headline: string; body1: string; body2: string };
+    review: { headline: string; body1: string; body2: string };
+    cases: {
+      headline: string;
+      note: string;
+      items: { label: string; title: string; text: string; results: string[] }[];
+    };
+    closing: { headline: string; body: string; note: string; cta: string };
   };
   services: {
     heroTitle: string;
