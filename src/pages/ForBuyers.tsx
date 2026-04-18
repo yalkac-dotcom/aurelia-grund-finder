@@ -14,12 +14,12 @@ import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-// Features (4) — 3D-Icons im ProofCard-Stil
-const featureIcons = [icons3d.scale, icons3d.wallet, icons3d.house, icons3d.contract];
+// Features (4) — Direkter Eigentümer, Vollständige Unterlagen, Realistische Preisbasis, Verlässliche Abwicklung
+const featureIcons = [icons3d.handshake, icons3d.documentsStack, icons3d.calculator, icons3d.clock];
 // Proof (Navy) — 3D-Icons in light-Variante
 const proofIcons = [icons3d.userCheckLight, icons3d.documentLight, icons3d.scaleLight, icons3d.checkCircleLight];
-// Steps (4) — eigene 3D-Icons
-const stepIcons = [icons3d.dialogue, icons3d.house, icons3d.scale, icons3d.contract];
+// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe
+const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal, icons3d.key];
 
 const ForBuyers = () => {
   const { t } = useLanguage();

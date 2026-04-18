@@ -17,16 +17,16 @@ import FinalCta from "@/components/sections/FinalCta";
 const HomePage = () => {
   const { t } = useLanguage();
 
-  // Areas (3 Wege) — ProofCard-Stil mit 3D-Icons & Nummerierung
-  // Notlagen → support, Erbe/Konflikt → heirs, Direktankauf → house
-  const areaIcons = [icons3d.support, icons3d.heirs, icons3d.house];
+  // Areas (3 Wege) — thematisch spezifische 3D-Icons
+  // Notlagen → support, Erbe/Konflikt → familyTree, Direktankauf → coinsHouse
+  const areaIcons = [icons3d.support, icons3d.familyTree, icons3d.coinsHouse];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
 
   // ProofPoints (4 Versprechen, auf Navy):
   const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
 
-  // Schritte (3) — eigene 3D-Icons
-  const stepIcons = [icons3d.dialogue, icons3d.scale, icons3d.contract];
+  // Schritte (3) — Erstkontakt, Prüfung, Angebot
+  const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal];
 
   return (
     <Layout>
