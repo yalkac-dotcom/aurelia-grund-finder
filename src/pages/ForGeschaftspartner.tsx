@@ -16,8 +16,8 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const formImages = cardImages.partnerForms;
 // Principles (Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
 const principleIcons = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
-// Steps (5) — geteiltes Bildset
-const stepImages = cardImages.steps;
+// Steps (5) — Erstkontakt, Einordnung, Bewertung, Vereinbarung, Umsetzung (3D-Icons)
+const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
 
 const ForGeschaftspartner = () => {
   const { t } = useLanguage();
@@ -117,8 +117,8 @@ const ForGeschaftspartner = () => {
                   total={p.steps.length}
                   title={s.title}
                   desc={s.desc}
-                  image={stepImages[i % stepImages.length]}
-                  imageAlt={s.title}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={s.title}
                 />
               ))}
             </div>

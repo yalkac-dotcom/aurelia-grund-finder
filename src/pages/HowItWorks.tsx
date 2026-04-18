@@ -10,13 +10,14 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { cardImages } from "@/assets/cards";
+import { icons3d } from "@/assets/icons3d";
 
-// Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen
+// Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen (Fotos beibehalten)
 const segmentImages = cardImages.segments;
-// Hold-Steps (5) — Erwerb, Strategie, Bestand, Sicherung, Fundament
-const holdStepImages = cardImages.holdSteps;
-// Principles (4) — Bilder (Dialog, Fairness, Dokumentation, Orientierung)
-const principleImages = cardImages.principles;
+// Hold-Steps (5) — Erwerb, Strategie, Bestand, Sicherung, Fundament (3D-Icons)
+const holdStepIcons = [icons3d.key, icons3d.compassLight, icons3d.building, icons3d.shieldLight, icons3d.foundationLight];
+// Principles (4) — 3D-Icons (Dialog, Fairness, Dokumentation, Orientierung)
+const principleIcons = [icons3d.dialogueLight, icons3d.scaleLight, icons3d.documentLight, icons3d.orientationLight];
 
 const HowItWorks = () => {
   const { t } = useLanguage();
@@ -82,8 +83,8 @@ const HowItWorks = () => {
                   total={w.holdSteps.length}
                   title={s.title}
                   desc={s.desc}
-                  image={holdStepImages[i % holdStepImages.length]}
-                  imageAlt={s.title}
+                  iconImage={holdStepIcons[i % holdStepIcons.length]}
+                  iconAlt={s.title}
                 />
               ))}
             </div>
@@ -104,8 +105,8 @@ const HowItWorks = () => {
                 {w.principles.map((p, i) => (
                   <ProofCard
                     key={i}
-                    image={principleImages[i % principleImages.length]}
-                    imageAlt={p.title}
+                    iconImage={principleIcons[i % principleIcons.length]}
+                    iconAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}

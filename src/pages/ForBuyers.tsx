@@ -12,14 +12,15 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
 import { editorial } from "@/assets/editorial";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-// Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung
+// Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
 // Proof — Bilder (Verifiziert, Fair, Bestätigt, Dokumentiert)
 const proofImages = cardImages.buyerProof;
-// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe (geteiltes Bildset, Step 5 entfällt)
-const stepImages = [cardImages.steps[0], cardImages.steps[1], cardImages.steps[2], cardImages.steps[4]];
+// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe (3D-Icons)
+const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract, icons3d.handshakeLight];
 
 const ForBuyers = () => {
   const { t } = useLanguage();
@@ -127,8 +128,8 @@ const ForBuyers = () => {
                   total={b.steps.length}
                   title={s.title}
                   desc={s.desc}
-                  image={stepImages[i % stepImages.length]}
-                  imageAlt={s.title}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={s.title}
                 />
               ))}
             </div>

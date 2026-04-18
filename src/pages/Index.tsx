@@ -25,8 +25,8 @@ const HomePage = () => {
   // ProofPoints (4 Versprechen, auf Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
   const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
 
-  // Schritte (3) — Erstkontakt, Prüfung, Angebot
-  const stepImages = cardImages.steps;
+  // Schritte (3) — Erstkontakt, Prüfung, Angebot (3D-Icons statt Fotos)
+  const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract];
 
   return (
     <Layout>
@@ -128,8 +128,8 @@ const HomePage = () => {
                   total={t.home.steps.length}
                   title={item.title}
                   desc={item.desc}
-                  image={stepImages[i % stepImages.length]}
-                  imageAlt={item.title}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={item.title}
                 />
               ))}
             </div>
