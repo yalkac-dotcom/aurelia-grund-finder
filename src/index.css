@@ -292,6 +292,34 @@
   background: transparent;
   border: none;
   padding: 0;
+  animation: aurelia-icon-float 5.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Dezenter goldener Glow hinter dem schwebenden 3D-Icon */
+.proof-card__icon--image::before {
+  content: "";
+  position: absolute;
+  inset: -28%;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 50% 55%,
+    hsl(var(--accent) / 0.32) 0%,
+    hsl(var(--accent) / 0.14) 35%,
+    transparent 70%
+  );
+  filter: blur(10px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes aurelia-icon-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .proof-card__icon--image { animation: none; }
 }
 
 .proof-card__numeral {
