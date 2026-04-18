@@ -49,6 +49,16 @@ import meeting from "./meeting.png";
 import houseTag from "./house-tag.png";
 import puzzleCooperation from "./puzzle-cooperation.png";
 
+// Themenpräzise Akten-Icons (Aurelia: diskrete Spezialgesellschaft)
+import foreclosureFile from "./foreclosure-file.png";
+import deadlineDocument from "./deadline-document.png";
+import heirsFiles from "./heirs-files.png";
+import legalPortfolio from "./legal-portfolio.png";
+import contractFolder from "./contract-folder.png";
+import closingFolder from "./closing-folder.png";
+import sealedFile from "./sealed-file.png";
+import assessmentDocument from "./assessment-document.png";
+
 export const icons3d = {
   support,
   partners,
@@ -98,6 +108,14 @@ export const icons3d = {
   meeting,
   houseTag,
   puzzleCooperation,
+  foreclosureFile,
+  deadlineDocument,
+  heirsFiles,
+  legalPortfolio,
+  contractFolder,
+  closingFolder,
+  sealedFile,
+  assessmentDocument,
 };
 
 export type Icon3dKey = keyof typeof icons3d;
