@@ -79,7 +79,7 @@ const Contact = () => {
           <div className="text-center">
             <h2 className="text-[1.4rem] md:text-[1.85rem] font-heading font-bold text-primary leading-[1.2] mb-3">
               <span className="block mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
-              {t.common.address ? "Wir sind für Sie da" : "Wir sind für Sie da"}
+              {t.contact.hereForYou}
             </h2>
             <a
               href="tel:+4921169583033"
