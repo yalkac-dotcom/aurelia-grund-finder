@@ -5,12 +5,27 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
-import { ArrowRight, Home as HomeIcon, EyeOff, Clock, Phone } from "lucide-react";
+import {
+  ArrowRight,
+  Home as HomeIcon,
+  EyeOff,
+  Clock,
+  Phone,
+  Compass,
+  Target,
+  Lock,
+  Handshake,
+  Zap,
+  Scale,
+} from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+
   useEffect(() => {
-    document.title = "Über Aurelia – Aurelia Grundbesitz GmbH";
-  }, []);
+    document.title = `${t.about.heroTitle} – Aurelia Grundbesitz GmbH`;
+  }, [t.about.heroTitle]);
 
   const approach = [
     {
@@ -63,6 +78,8 @@ const About = () => {
     },
   ];
 
+  const principleIcons = [Lock, Handshake, Zap, Scale];
+
   return (
     <Layout>
       {/* HERO */}
@@ -88,8 +105,8 @@ const About = () => {
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
           <div className="hero-copy-shell">
             <Reveal>
-              <p className="hero-kicker">Über Aurelia</p>
-              <h1 className="hero-title">Über Aurelia Grundbesitz</h1>
+              <p className="hero-kicker">{t.nav.about}</p>
+              <h1 className="hero-title">{t.about.heroTitle}</h1>
               <p className="hero-description">Diskret, substanzorientiert, langfristig.</p>
             </Reveal>
           </div>
@@ -97,8 +114,31 @@ const About = () => {
         </div>
       </section>
 
+      {/* SEKTION 1: KPI-LEISTE */}
+      <section className="bg-primary">
+        <div className="container-premium py-10 md:py-14">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
+            {t.about.kpis.map((k, i) => (
+              <Reveal key={i} delay={i * 0.06}>
+                <div className="text-center">
+                  <div
+                    className="font-heading font-bold leading-none text-[2rem] md:text-[2.75rem]"
+                    style={{ color: "hsl(var(--accent))" }}
+                  >
+                    {k.value}
+                  </div>
+                  <div className="mt-3 text-[12px] md:text-[13px] uppercase tracking-[0.08em] text-white/85 leading-snug">
+                    {k.label}
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <div className="page-shell">
-        {/* BLOCK 1: Wer hinter Aurelia steht */}
+        {/* BLOCK 2: Wer hinter Aurelia steht + Zitat */}
         <section className="py-16 md:py-20 bg-background">
           <div className="container-premium">
             <div className="grid items-center gap-10 md:gap-14 md:grid-cols-2">
@@ -139,10 +179,110 @@ const About = () => {
                 </figure>
               </Reveal>
             </div>
+
+            {/* Zitat-Block */}
+            <Reveal delay={0.15}>
+              <figure className="mx-auto mt-12 md:mt-16 max-w-3xl text-center">
+                <div
+                  aria-hidden="true"
+                  className="font-heading leading-none mb-2"
+                  style={{ color: "hsl(var(--accent))", fontSize: "4.5rem" }}
+                >
+                  „
+                </div>
+                <blockquote className="italic text-[1.0625rem] md:text-[1.25rem] leading-[1.6] text-foreground/85">
+                  {t.about.founderQuote}
+                </blockquote>
+                <figcaption
+                  className="mt-5 text-[13px] uppercase tracking-[0.12em]"
+                  style={{ color: "hsl(var(--primary))", fontWeight: 600 }}
+                >
+                  — {t.about.founderQuoteName}
+                </figcaption>
+              </figure>
+            </Reveal>
           </div>
         </section>
 
-        {/* BLOCK 2: Unser Ansatz */}
+        {/* BLOCK 3: Vision & Mission */}
+        <section className="py-16 md:py-20 bg-secondary/40">
+          <div className="container-premium">
+            <Reveal>
+              <div className="text-center mb-10">
+                <div className="mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
+                <h2 className="font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
+                  {t.about.visionMissionLabel}
+                </h2>
+              </div>
+            </Reveal>
+            <div className="grid gap-6 md:gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+              {[
+                { Icon: Compass, title: t.about.visionTitle, text: t.about.visionText },
+                { Icon: Target, title: t.about.missionTitle, text: t.about.missionText },
+              ].map((card, i) => {
+                const Icon = card.Icon;
+                return (
+                  <Reveal key={i} delay={i * 0.08}>
+                    <div className="h-full bg-background rounded-lg p-8 md:p-10 shadow-[0_4px_20px_-8px_rgba(27,42,74,0.12)]">
+                      <div
+                        className="mb-6 flex h-14 w-14 items-center justify-center rounded-full"
+                        style={{ backgroundColor: "hsl(var(--highlight))" }}
+                      >
+                        <Icon size={26} strokeWidth={1.75} className="text-white" aria-hidden="true" />
+                      </div>
+                      <h3
+                        className="mb-3 font-heading font-semibold text-[1.25rem] md:text-[1.4rem]"
+                        style={{ color: "hsl(var(--accent))" }}
+                      >
+                        {card.title}
+                      </h3>
+                      <p className="text-[15px] md:text-[16px] leading-[1.7] text-foreground/85">
+                        {card.text}
+                      </p>
+                    </div>
+                  </Reveal>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* BLOCK 4: Unsere Grundsätze */}
+        <section className="py-16 md:py-20 bg-background">
+          <div className="container-premium">
+            <Reveal>
+              <div className="text-center mb-10">
+                <div className="mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
+                <h2 className="font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
+                  {t.about.principlesTitle}
+                </h2>
+              </div>
+            </Reveal>
+            <div className="grid gap-8 md:gap-6 grid-cols-2 md:grid-cols-4 max-w-5xl mx-auto">
+              {t.about.principles.map((p, i) => {
+                const Icon = principleIcons[i] ?? Lock;
+                return (
+                  <Reveal key={i} delay={i * 0.06}>
+                    <div className="text-center">
+                      <div
+                        className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full"
+                        style={{ backgroundColor: "hsl(var(--highlight))" }}
+                      >
+                        <Icon size={26} strokeWidth={1.75} className="text-white" aria-hidden="true" />
+                      </div>
+                      <h3 className="mb-2 font-heading font-semibold text-primary text-[1.05rem]">
+                        {p.title}
+                      </h3>
+                      <p className="text-[14px] leading-[1.65] text-foreground/80">{p.text}</p>
+                    </div>
+                  </Reveal>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* BLOCK 5: Unser Ansatz (bestehend) */}
         <section className="py-16 md:py-20 bg-secondary/40">
           <div className="container-premium">
             <Reveal>
@@ -178,7 +318,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* BLOCK 3: Beispiele aus der Praxis */}
+        {/* BLOCK 6: Beispiele aus der Praxis (bestehend) */}
         <section className="py-16 md:py-20 bg-background">
           <div className="container-premium">
             <Reveal>
@@ -240,7 +380,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* BLOCK 4: CTA */}
+        {/* BLOCK 7: CTA (bestehend) */}
         <section style={{ backgroundColor: "#1B2A4A" }} className="px-0">
           <div className="container-premium" style={{ paddingTop: 64, paddingBottom: 64 }}>
             <Reveal>
