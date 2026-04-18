@@ -11,12 +11,15 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { Building2, Wallet, Users, Gavel, Lock, Scale, FileCheck, ShieldCheck, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
-// Situations
-const situationIcons = [Building2, Wallet, Users, Gavel];
-// Proof (auf Navy): Diskretion, Faire Bewertung, Klare Vereinbarung, Verlässliche Abwicklung
-const proofIcons = [Lock, Scale, FileCheck, ShieldCheck];
+// Situations (4 typische Lagen) — logisch zugeordnet:
+// Komplexe Eigentumsverhältnisse → Vertrag, Finanzielle Belastung → Wallet,
+// Konflikte zwischen Eigentümern → Erben, Laufendes Zwangsversteigerungsverfahren → Hammer
+const situationIconImages = [icons3d.contract, icons3d.wallet, icons3d.heirs, icons3d.gavel];
+// Proof (auf Navy, light-Varianten):
+// Diskretion → Schloss, Faire Bewertung → Waage, Klare Vereinbarung → Dokument, Verlässliche Abwicklung → Schild
+const proofIconImages = [icons3d.lockLight, icons3d.scaleLight, icons3d.documentLight, icons3d.shieldLight];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
