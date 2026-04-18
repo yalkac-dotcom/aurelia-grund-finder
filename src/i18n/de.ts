@@ -23,7 +23,7 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Aurelia Grundbesitz kauft Immobilien — und in besonderen Fällen immobilienbezogene Forderungen — auf eigene Rechnung. Diskret, strukturiert und ohne Vermittlerketten.",
+      "Aurelia Grundbesitz GmbH – kauft auf eigene Rechnung.",
     subline: "Diskret · Auf eigene Rechnung · Verbindlich",
     navItems: [
       { label: "Startseite", path: "/" },
