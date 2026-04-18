@@ -13,8 +13,9 @@ const nl: Translations = {
     ownerInTrouble: "Voor eigenaren",
     buyers: "Voor kopers",
     partners: "Voor zakenpartners",
-    howItWorks: "Hoe het werkt",
+    howItWorks: "Hoe wij werken",
     faq: "FAQ",
+    ctaConfidential: "Vertrouwelijk aanvragen",
   },
   footer: {
     navigation: "Navigatie",

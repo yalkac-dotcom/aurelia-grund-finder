@@ -13,8 +13,9 @@ const tr: Translations = {
     ownerInTrouble: "Mülk sahipleri için",
     buyers: "Alıcılar için",
     partners: "İş ortakları için",
-    howItWorks: "Nasıl çalışır",
+    howItWorks: "Nasıl çalışıyoruz",
     faq: "SSS",
+    ctaConfidential: "Gizli olarak sor",
   },
   footer: {
     navigation: "Navigasyon",

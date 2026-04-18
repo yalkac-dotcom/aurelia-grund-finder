@@ -15,6 +15,7 @@ export interface Translations {
     partners: string;
     howItWorks: string;
     faq: string;
+    ctaConfidential: string;
   };
   footer: {
     navigation: string;

@@ -13,8 +13,9 @@ const it: Translations = {
     ownerInTrouble: "Per proprietari",
     buyers: "Per acquirenti",
     partners: "Per partner commerciali",
-    howItWorks: "Come funziona",
+    howItWorks: "Come lavoriamo",
     faq: "FAQ",
+    ctaConfidential: "Richiesta riservata",
   },
   footer: {
     navigation: "Navigazione",
