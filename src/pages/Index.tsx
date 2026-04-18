@@ -17,7 +17,8 @@ const HomePage = () => {
   const { t } = useLanguage();
   const areaIcons = [LifeBuoy, Users, KeyRound];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
-  const proofIcons = [ShieldCheck, Handshake, FileCheck, Gavel];
+  // Vier Versprechen: Diskretion, Substanz, Langfristigkeit, Klarheit
+  const proofIcons = [Lock, Scale, Compass, CheckCircle2];
 
   return (
     <Layout>
