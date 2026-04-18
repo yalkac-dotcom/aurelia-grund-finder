@@ -1,20 +1,38 @@
 import { LucideIcon } from "lucide-react";
 
 interface ProofCardProps {
-  icon: LucideIcon;
+  icon?: LucideIcon;
+  iconImage?: string;
+  iconAlt?: string;
   index: number;
   title: string;
   text: string;
 }
 
-const ProofCard = ({ icon: Icon, index, title, text }: ProofCardProps) => {
+const ProofCard = ({ icon: Icon, iconImage, iconAlt, index, title, text }: ProofCardProps) => {
   const id = `proof-${index}-title`;
   return (
     <article className="proof-card group h-full" aria-labelledby={id}>
       <div className="proof-card__visual">
-        <span className="proof-card__icon" aria-hidden="true">
-          <Icon size={22} />
-        </span>
+        {iconImage ? (
+          <span
+            className="proof-card__icon proof-card__icon--image"
+            aria-hidden={iconAlt ? undefined : "true"}
+          >
+            <img
+              src={iconImage}
+              alt={iconAlt ?? ""}
+              loading="lazy"
+              width={128}
+              height={128}
+              className="h-full w-full object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.35)] transition-transform duration-500 ease-out group-hover:-translate-y-0.5"
+            />
+          </span>
+        ) : Icon ? (
+          <span className="proof-card__icon" aria-hidden="true">
+            <Icon size={22} />
+          </span>
+        ) : null}
         <span className="proof-card__numeral" aria-hidden="true">
           {String(index + 1).padStart(2, "0")}
         </span>

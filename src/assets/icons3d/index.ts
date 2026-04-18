@@ -13,6 +13,10 @@ import scale from "./scale.png";
 import house from "./house.png";
 import bolt from "./bolt.png";
 import shield from "./shield.png";
+import lockLight from "./lock-light.png";
+import scaleLight from "./scale-light.png";
+import compassLight from "./compass-light.png";
+import checkLight from "./check-light.png";
 
 export const icons3d = {
   support,
@@ -30,6 +34,10 @@ export const icons3d = {
   house,
   bolt,
   shield,
+  lockLight,
+  scaleLight,
+  compassLight,
+  checkLight,
 };
 
 export type Icon3dKey = keyof typeof icons3d;
