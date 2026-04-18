@@ -23,7 +23,7 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Aurelia Grundbesitz GmbH – kauft auf eigene Rechnung.",
+      "Aurelia Grundbesitz kauft Immobilien und immobilienbezogene Forderungen ausschließlich auf eigene Rechnung – diskret, strukturiert und verbindlich.",
     subline: "Diskret · Auf eigene Rechnung · Verbindlich",
     navItems: [
       { label: "Startseite", path: "/" },
@@ -49,7 +49,7 @@ const de: Translations = {
     socialLinkedinAria: "LinkedIn (folgt)",
     socialInstagramAria: "Instagram (folgt)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle Rechte vorbehalten.",
-    kwgDisclaimer: "Wir handeln nur als Käufer; wir vergeben keine Kredite und bieten keine Beteiligungsmodelle.",
+    kwgDisclaimer: "Wir handeln nur als Käufer auf eigene Rechnung. Wir sind kein Kreditinstitut und bieten keine Finanzdienstleistungen, Darlehen oder Beteiligungsmodelle an.",
   },
   newsletter: {
     placeholder: "Ihre E-Mail-Adresse",
@@ -284,7 +284,7 @@ const de: Translations = {
   home: {
     heroKicker: "Aurelia Grundbesitz",
     heroTitle: "Wenn eine Immobilie zur Last wird, brauchen Sie keinen Vermittler – sondern einen Käufer.",
-    heroDescription: "Drohende Zwangsversteigerung, Druck von Banken oder anderen Gläubigern, festgefahrene Erbengemeinschaften – wir steigen ein, kaufen Ihre Immobilie auf eigene Rechnung und – in besonderen Fällen – auch immobilienbezogene Forderungen. Wir verhandeln mit Gläubigern und ermöglichen einen geordneten Ausstieg: diskret, strukturiert, ohne versteckte Konstrukte.",
+    heroDescription: "Drohende Zwangsversteigerung, Druck von Banken oder anderen Gläubigern, festgefahrene Erbengemeinschaften – wir kaufen Ihre Immobilie oder (in besonderen Fällen) immobilienbezogene Forderungen für unsere eigene Rechnung. Wir verhandeln mit Gläubigern und ermöglichen einen geordneten Ausstieg: diskret, strukturiert, ohne versteckte Konstrukte.",
     heroPrimaryCta: "Kostenlose Ersteinschätzung sichern",
     heroSecondaryCta: "Wie wir vorgehen",
     heroTrustLine: "Kostenlos · Unverbindlich · Persönliche Rückmeldung in 2 Werktagen",
@@ -294,17 +294,17 @@ const de: Translations = {
     areas: [
       { title: "Notlagen", desc: "Drohende Zwangsversteigerung, Zahlungsschwierigkeiten, Druck von Banken oder anderen Gläubigern: Wir prüfen Ihre Immobilie kurzfristig, sprechen direkt mit den Forderungsinhabern und kaufen zu einem nachvollziehbaren Preis.", cta: "Situation schildern" },
       { title: "Erb- und Konfliktfälle", desc: "Erbengemeinschaften, Streit um Anteile, blockierte Verkäufe: Wir kaufen ganze Anteile oder einzelne Erbteile auf und bringen festgefahrene Prozesse wieder in Bewegung.", cta: "Fall vertraulich besprechen" },
-      { title: "Direktankauf ohne Notlage", desc: "Sie möchten ohne Notlage verkaufen? Wir prüfen attraktive Objekte und kaufen direkt – ohne Maklerprovision, ohne Vorbehalte.", cta: "Objekt anfragen" },
+      { title: "Direktankauf ohne Notlage", desc: "Sie möchten ohne Notlage verkaufen? Wir prüfen attraktive Objekte und kaufen direkt – ohne Maklerprovision, ohne Besichtigungsmarathon, ohne Finanzierungsvorbehalte.", cta: "Objekt anfragen" },
     ],
     trustTitle: "Was wir tun – und was nicht",
     trustText: "Aurelia kauft Immobilien – und in besonderen Fällen immobilienbezogene Forderungen – ausschließlich auf eigene Rechnung. Wir vergeben keine Kredite, vermitteln keine Finanzprodukte und bieten keine Beteiligungsmodelle. Unser Ertrag entsteht aus dem Ankauf, nicht aus Gebühren.",
     trustClaimTitle: "Unsere vier Versprechen",
     trustClaimText: "Diskretion, Substanzorientierung, Langfristigkeit, Klarheit & Verbindlichkeit – nach der Prüfung erhalten Sie entweder eine klare Absage oder eine begründete Zahl. Kein „vielleicht“.",
     proofPoints: [
-      { title: "Diskretion", text: "Ihre Angaben bleiben vertraulich, wir geben keine Daten weiter." },
+      { title: "Diskretion", text: "Keine Aushänge, keine öffentlichen Inserate, keine Weitergabe von Daten." },
       { title: "Substanzorientierung", text: "Entscheidungen basieren auf Zahlen, Fakten und realistischen Einschätzungen." },
-      { title: "Langfristigkeit", text: "Wir denken über den Verkauf hinaus – Ziel ist eine nachhaltige Lösung." },
-      { title: "Klarheit & Verbindlichkeit", text: "Nach der Prüfung erhalten Sie entweder eine klare Absage oder eine begründete Zahl. Kein „vielleicht“." },
+      { title: "Langfristigkeit", text: "Wir denken über den Verkauf hinaus; Ziel ist eine nachhaltige Lösung für Eigentümer und Käufer." },
+      { title: "Klarheit", text: "Aus der Prüfung ergibt sich entweder eine klare Absage oder ein konkretes Angebot mit Begründung. Kein „Vielleicht“." },
     ],
     stepsTitle: "So läuft eine Anfrage bei uns ab",
     steps: [
@@ -325,7 +325,7 @@ const de: Translations = {
     faqIntro: "Was Sie vor einem ersten Gespräch wissen sollten.",
     faqItems: [
       { q: "Wie läuft die Zusammenarbeit konkret ab?", a: "Sie schildern uns Ihren Fall, wir prüfen und geben Ihnen innerhalb von zwei Werktagen eine Einschätzung. Danach entscheiden Sie, ob Sie weitergehen. Kommt es zum Verkauf, kümmern wir uns um Bewertung, Gläubigergespräche und die Beurkundung beim Notar." },
-      { q: "Welche Unterlagen brauchen Sie von mir?", a: "Grundbuchauszug, aktuelle Forderungsaufstellungen der Gläubiger und – bei Erbfällen – der Erbschein. Wir helfen Ihnen, fehlende Dokumente zu beschaffen." },
+      { q: "Welche Unterlagen brauchen Sie von mir?", a: "Für die Ersteinschätzung reicht eine grobe Beschreibung der Situation und der Immobilie. Für ein verbindliches Angebot benötigen wir zwingend einen aktuellen Grundbuchauszug, die Forderungsaufstellungen der Gläubiger und – bei Erbfällen – den Erbschein. Diese Dokumente werden erst im weiteren Verlauf erforderlich; wir helfen Ihnen, fehlende Unterlagen zu beschaffen." },
       { q: "Entstehen mir Kosten, wenn ich Ihr Angebot nicht annehme?", a: "Nein. Prüfung und Erstgespräch sind kostenlos. Kosten fallen nur an, wenn ein Kaufvertrag zustande kommt." },
       { q: "Kann ich nach dem Verkauf in der Immobilie wohnen bleiben?", a: "In einigen Fällen lässt sich ein Miet- oder Rückmietverhältnis vereinbaren. Ob das möglich ist, hängt von Objekt, Markt und Ihren Zielen ab." },
       { q: "Was passiert mit meinen Gläubigern und der laufenden Zwangsversteigerung?", a: "Wir übernehmen die Kommunikation, sorgen für den Verzicht auf die Versteigerung und lösen die Forderungen ab. Sie müssen sich nicht mehr selbst darum kümmern." },
