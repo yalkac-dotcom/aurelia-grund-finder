@@ -10,7 +10,7 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { cardImages } from "@/assets/cards";
+// (cardImages entfernt — Features & Proof jetzt ikonisch)
 import { editorial } from "@/assets/editorial";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";

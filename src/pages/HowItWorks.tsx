@@ -9,7 +9,7 @@ import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { cardImages } from "@/assets/cards";
+// (cardImages entfernt — Segmente jetzt ikonisch)
 import { icons3d } from "@/assets/icons3d";
 
 // Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen (3D-Icons)
