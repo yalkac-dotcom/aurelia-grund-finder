@@ -9,7 +9,7 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
-import { cardImages } from "@/assets/cards";
+
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Forms (4) — Einzelobjekt, Portfolio, Off-Market-Vertrag, Strategischer Dialog
