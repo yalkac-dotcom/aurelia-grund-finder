@@ -31,12 +31,6 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, image, imageAlt, index, tit
         className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent"
         aria-hidden="true"
       />
-      <span
-        className="absolute top-3 right-4 font-heading text-[1.05rem] font-light tracking-[0.15em] text-white/90 drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"
-        aria-hidden="true"
-      >
-        O{numeral}
-      </span>
     </div>
   ) : (
     <div className="proof-card__visual">
