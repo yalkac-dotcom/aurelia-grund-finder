@@ -12,12 +12,12 @@ import { editorial } from "@/assets/editorial";
 import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-// Forms (4) — Einzelobjekt, Portfolio, Off-Market-Vertrag, Strategischer Dialog
-const formImages = cardImages.partnerForms;
+// Forms (4) — Einzelobjekt, Portfolio, Off-Market-Vertrag, Strategischer Dialog (3D-Icons)
+const formIcons = [icons3d.singleBuilding, icons3d.buildingsCluster, icons3d.sealedFile, icons3d.handshakeLight];
 // Principles (Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
 const principleIcons = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
 // Steps (5) — Erstkontakt, Einordnung, Bewertung, Vereinbarung, Umsetzung (3D-Icons)
-const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
+const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.assessmentDocument, icons3d.contractFolder, icons3d.closingFolder];
 
 const ForGeschaftspartner = () => {
   const { t } = useLanguage();
@@ -66,8 +66,8 @@ const ForGeschaftspartner = () => {
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    image={formImages[i % formImages.length]}
-                    imageAlt={f.title}
+                    iconImage={formIcons[i % formIcons.length]}
+                    iconAlt={f.title}
                     index={i}
                     title={f.title}
                     text={f.desc}

@@ -12,8 +12,8 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { cardImages } from "@/assets/cards";
 import { icons3d } from "@/assets/icons3d";
 
-// Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen (Fotos beibehalten)
-const segmentImages = cardImages.segments;
+// Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen (3D-Icons)
+const segmentIcons = [icons3d.sealedFile, icons3d.contractFolder, icons3d.puzzleCooperation];
 // Hold-Steps (5) — Erwerb, Strategie, Bestand, Sicherung, Fundament (3D-Icons)
 const holdStepIcons = [icons3d.key, icons3d.compassLight, icons3d.building, icons3d.shieldLight, icons3d.foundationLight];
 // Principles (4) — 3D-Icons (Dialog, Fairness, Dokumentation, Orientierung)
@@ -59,8 +59,8 @@ const HowItWorks = () => {
               {w.segments.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    image={segmentImages[i % segmentImages.length]}
-                    imageAlt={s.title}
+                    iconImage={segmentIcons[i % segmentIcons.length]}
+                    iconAlt={s.title}
                     index={i}
                     title={s.title}
                     text={s.desc}
