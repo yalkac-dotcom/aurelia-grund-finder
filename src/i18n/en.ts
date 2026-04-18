@@ -427,6 +427,58 @@ const en: Translations = {
       "A confidential first conversation is non-binding and free of charge. We tell you honestly what is possible – even when time is short.",
     finalCtaButton: "Request in confidence",
   },
+  partners: {
+    heroKicker: "For business partners",
+    heroTitle: "Project-based cooperations within a clear framework.",
+    heroDescription:
+      "In selected cases we examine individual, project-based cooperations. No standard models – but clearly structured agreements that fit the specific situation.",
+    heroPrimaryCta: "Discuss the constellation",
+    heroSecondaryCta: "How we work",
+    heroTrustLine: "Confidential · Case-by-case · Direct contact with management",
+    heroImageAlt: "Quiet business setting – symbolising clearly structured, project-based cooperations",
+    legalNoticeLabel: "Note",
+    legalNoticeText:
+      "This page does not constitute a public offer of investment products or an invitation to invest. Any agreements are made exclusively on an individual, project-based basis after a separate review.",
+    formsTitle: "Possible forms of cooperation",
+    formsIntro:
+      "Every cooperation arises from the specific project. The following constellations are the most common in practice.",
+    forms: [
+      { title: "Project-based cooperation", desc: "Working together on a specific real estate project – from acquisition to realisation." },
+      { title: "Multiple projects", desc: "Accompaniment over a longer period, with regular, calm coordination on the status of the projects." },
+      { title: "Individual agreement", desc: "No standard models. Each constellation is developed on the basis of the specific situation." },
+      { title: "Direct exchange", desc: "Confidential contact with management. Clear communication, factual coordination." },
+    ],
+    principlesTitle: "Foundations of a good cooperation",
+    principlesText: "We work with partners with a long-term orientation. Four points are important to us.",
+    principles: [
+      { title: "Clear communication", text: "Open exchange about goals, framework and expectations." },
+      { title: "Long-term perspective", text: "No speculation, but calm, sustainable cooperation." },
+      { title: "Reliable framework", text: "Stable, plannable conditions on both sides." },
+      { title: "Shared understanding", text: "A shared understanding of careful, project-based work." },
+    ],
+    stepsTitle: "How we proceed",
+    steps: [
+      { title: "First contact", desc: "You describe the constellation to us – confidentially and without obligation." },
+      { title: "Assessment", desc: "We examine whether a joint project is fundamentally suitable." },
+      { title: "Coordination", desc: "Content, framework and expectations are discussed in detail." },
+      { title: "Agreement", desc: "We document everything in writing and properly." },
+      { title: "Implementation", desc: "Accompaniment and calm coordination throughout the project." },
+    ],
+    stepsNote:
+      "Time frames are guideline values. Content and terms are discussed exclusively on a case-by-case basis.",
+    faqTitle: "Frequently asked questions",
+    faqIntro: "If your question is not answered here, please contact us directly.",
+    faqItems: [
+      { q: "Do you offer standardised participation models?", a: "No. We do not offer public investment products or standardised models. Every cooperation arises on a project-based, individual basis." },
+      { q: "Who is this page aimed at?", a: "At partners with a long-term orientation related to the real estate sector who are interested in project-based cooperation." },
+      { q: "How does the first contact work?", a: "Confidentially and without obligation. You describe the constellation; we assess whether a cooperation is fundamentally suitable." },
+      { q: "How are agreements documented?", a: "In writing and properly documented. Content, framework and terms are discussed exclusively on a case-by-case basis." },
+    ],
+    finalCtaTitle: "Discuss the constellation in confidence.",
+    finalCtaText:
+      "If a project-based cooperation is fundamentally conceivable for you, we look forward to a calm, non-binding exchange.",
+    finalCtaButton: "Contact us without obligation",
+  },
   about: {
     heroTitle: "About Aurelia",
     companyLabel: "The company",

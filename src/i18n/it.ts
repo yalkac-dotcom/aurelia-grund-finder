@@ -394,6 +394,58 @@ const it: Translations = {
       "Un primo colloquio riservato è senza impegno e gratuito. Le diciamo onestamente cosa è possibile – anche quando il tempo stringe.",
     finalCtaButton: "Richiesta riservata",
   },
+  partners: {
+    heroKicker: "Per partner commerciali",
+    heroTitle: "Collaborazioni di progetto in un quadro chiaro.",
+    heroDescription:
+      "In casi selezionati esaminiamo collaborazioni individuali e di progetto. Nessun modello standard – ma accordi chiaramente strutturati, adatti alla situazione concreta.",
+    heroPrimaryCta: "Discutere la costellazione",
+    heroSecondaryCta: "Come operiamo",
+    heroTrustLine: "Riservato · Caso per caso · Contatto diretto con la direzione",
+    heroImageAlt: "Ambiente professionale tranquillo – simbolo di collaborazioni di progetto chiaramente strutturate",
+    legalNoticeLabel: "Nota",
+    legalNoticeText:
+      "Questa pagina non costituisce un'offerta pubblica di prodotti d'investimento né un invito a investire. Eventuali accordi vengono presi esclusivamente su base individuale e di progetto, previa specifica valutazione.",
+    formsTitle: "Possibili forme di collaborazione",
+    formsIntro:
+      "Ogni collaborazione nasce dal progetto concreto. Le seguenti costellazioni sono le più frequenti nella pratica.",
+    forms: [
+      { title: "Collaborazione di progetto", desc: "Collaborazione su un progetto immobiliare concreto – dall'acquisto alla valorizzazione." },
+      { title: "Più progetti", desc: "Accompagnamento per un periodo prolungato, con allineamento regolare e pacato sullo stato dei progetti." },
+      { title: "Accordo individuale", desc: "Nessun modello standard. Ogni costellazione viene sviluppata sulla base della situazione concreta." },
+      { title: "Scambio diretto", desc: "Contatto riservato con la direzione. Comunicazione chiara, allineamento oggettivo." },
+    ],
+    principlesTitle: "Le basi di una buona collaborazione",
+    principlesText: "Lavoriamo con partner orientati al lungo periodo. Quattro punti per noi sono importanti.",
+    principles: [
+      { title: "Comunicazione chiara", text: "Scambio aperto su obiettivi, quadro e aspettative." },
+      { title: "Prospettiva di lungo periodo", text: "Nessuna speculazione, ma collaborazione pacata e sostenibile." },
+      { title: "Quadro affidabile", text: "Condizioni stabili e pianificabili da entrambe le parti." },
+      { title: "Comprensione condivisa", text: "Comprensione condivisa di un lavoro di progetto svolto con cura." },
+    ],
+    stepsTitle: "Come procediamo",
+    steps: [
+      { title: "Primo contatto", desc: "Lei ci descrive la costellazione – in modo riservato e non vincolante." },
+      { title: "Valutazione", desc: "Verifichiamo se un progetto comune è in linea di principio adatto." },
+      { title: "Allineamento", desc: "Contenuti, quadro e aspettative vengono discussi in dettaglio." },
+      { title: "Accordo", desc: "Documentiamo tutto per iscritto e in modo accurato." },
+      { title: "Realizzazione", desc: "Accompagnamento e allineamento pacato per l'intera durata del progetto." },
+    ],
+    stepsNote:
+      "I tempi indicati sono di riferimento. Contenuti e condizioni vengono discussi esclusivamente caso per caso.",
+    faqTitle: "Domande frequenti",
+    faqIntro: "Se la Sua domanda non è qui, ci contatti direttamente.",
+    faqItems: [
+      { q: "Offrite modelli di partecipazione standardizzati?", a: "No. Non offriamo prodotti d'investimento pubblici né modelli standardizzati. Ogni collaborazione nasce su base individuale e di progetto." },
+      { q: "A chi si rivolge questa pagina?", a: "A partner con orientamento di lungo periodo legati al settore immobiliare, interessati a una collaborazione di progetto." },
+      { q: "Come si svolge il primo contatto?", a: "In modo riservato e non vincolante. Lei descrive la costellazione; noi valutiamo se una collaborazione è in linea di principio adatta." },
+      { q: "Come vengono documentati gli accordi?", a: "Per iscritto e accuratamente documentati. Contenuti, quadro e condizioni vengono discussi esclusivamente caso per caso." },
+    ],
+    finalCtaTitle: "Discutere la costellazione in via riservata.",
+    finalCtaText:
+      "Se una collaborazione di progetto è in linea di principio ipotizzabile per Lei, saremo lieti di un confronto pacato e non vincolante.",
+    finalCtaButton: "Contattarci senza impegno",
+  },
   about: {
     heroTitle: "Chi siamo",
     companyLabel: "L'azienda",

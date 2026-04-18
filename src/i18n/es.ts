@@ -394,6 +394,58 @@ const es: Translations = {
       "Una primera conversación confidencial es sin compromiso y gratuita. Le decimos honestamente qué es posible – también cuando el tiempo apremia.",
     finalCtaButton: "Consulta confidencial",
   },
+  partners: {
+    heroKicker: "Para socios comerciales",
+    heroTitle: "Cooperaciones por proyecto con un marco claro.",
+    heroDescription:
+      "En casos seleccionados examinamos cooperaciones individuales y por proyecto. Sin modelos estándar – sino acuerdos claramente estructurados que se ajustan a la situación concreta.",
+    heroPrimaryCta: "Conversar sobre la constelación",
+    heroSecondaryCta: "Cómo trabajamos",
+    heroTrustLine: "Confidencial · Caso por caso · Contacto directo con la dirección",
+    heroImageAlt: "Entorno profesional sereno – símbolo de cooperaciones por proyecto claramente estructuradas",
+    legalNoticeLabel: "Aviso",
+    legalNoticeText:
+      "Esta página no constituye una oferta pública de productos de inversión ni una invitación a invertir. Los eventuales acuerdos se establecen exclusivamente de forma individual y por proyecto, previa revisión específica.",
+    formsTitle: "Posibles formas de cooperación",
+    formsIntro:
+      "Cada cooperación surge del proyecto concreto. Las siguientes constelaciones son las más frecuentes en la práctica.",
+    forms: [
+      { title: "Cooperación por proyecto", desc: "Colaboración en torno a un proyecto inmobiliario concreto – desde la compra hasta la realización." },
+      { title: "Varios proyectos", desc: "Acompañamiento durante un periodo prolongado, con coordinación regular y serena sobre el estado de los proyectos." },
+      { title: "Acuerdo individual", desc: "Sin modelos estándar. Cada constelación se desarrolla sobre la base de la situación concreta." },
+      { title: "Intercambio directo", desc: "Contacto confidencial con la dirección. Comunicación clara, coordinación objetiva." },
+    ],
+    principlesTitle: "Bases de una buena cooperación",
+    principlesText: "Trabajamos con socios con orientación a largo plazo. Cuatro puntos son importantes para nosotros.",
+    principles: [
+      { title: "Comunicación clara", text: "Intercambio abierto sobre objetivos, marco y expectativas." },
+      { title: "Perspectiva a largo plazo", text: "Sin especulación, sino cooperación serena y sostenible." },
+      { title: "Marco fiable", text: "Condiciones estables y planificables por ambas partes." },
+      { title: "Comprensión compartida", text: "Comprensión compartida de un trabajo de proyecto cuidadoso." },
+    ],
+    stepsTitle: "Así procedemos",
+    steps: [
+      { title: "Primer contacto", desc: "Usted nos describe la constelación – de forma confidencial y sin compromiso." },
+      { title: "Evaluación", desc: "Comprobamos si un proyecto conjunto encaja en principio." },
+      { title: "Coordinación", desc: "Contenidos, marco y expectativas se discuten en detalle." },
+      { title: "Acuerdo", desc: "Documentamos todo por escrito y con cuidado." },
+      { title: "Ejecución", desc: "Acompañamiento y coordinación serena durante todo el proyecto." },
+    ],
+    stepsNote:
+      "Los plazos indicados son orientativos. Contenidos y condiciones se discuten exclusivamente caso por caso.",
+    faqTitle: "Preguntas frecuentes",
+    faqIntro: "Si su pregunta no aparece aquí, contacte con nosotros directamente.",
+    faqItems: [
+      { q: "¿Ofrecen modelos de participación estandarizados?", a: "No. No ofrecemos productos de inversión públicos ni modelos estandarizados. Cada cooperación surge sobre una base individual y por proyecto." },
+      { q: "¿A quién se dirige esta página?", a: "A socios con orientación a largo plazo vinculados al sector inmobiliario, interesados en una cooperación por proyecto." },
+      { q: "¿Cómo se desarrolla el primer contacto?", a: "De forma confidencial y sin compromiso. Usted describe la constelación; nosotros evaluamos si una cooperación encaja en principio." },
+      { q: "¿Cómo se documentan los acuerdos?", a: "Por escrito y debidamente documentados. Contenidos, marco y condiciones se discuten exclusivamente caso por caso." },
+    ],
+    finalCtaTitle: "Conversar sobre la constelación de forma confidencial.",
+    finalCtaText:
+      "Si una cooperación por proyecto es, en principio, concebible para usted, nos alegrará un intercambio sereno y sin compromiso.",
+    finalCtaButton: "Contactar sin compromiso",
+  },
   about: {
     heroTitle: "Sobre Aurelia",
     companyLabel: "La empresa",
