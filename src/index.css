@@ -857,14 +857,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 9999px;
-  border: 1px solid hsl(0 0% 100% / 0.15);
-  background: hsl(212 10% 10% / 0.7);
-  color: hsl(0 0% 100% / 0.7);
-  backdrop-filter: blur(12px);
-  transition: all 0.3s ease;
+  border: 1px solid hsl(var(--accent) / 0.4);
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  box-shadow: 0 4px 16px -3px hsl(0 0% 0% / 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-top-btn.is-hidden {
+  opacity: 0;
+  transform: translateY(1rem);
+  pointer-events: none;
+}
+
+.scroll-top-btn.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .scroll-top-btn:active {
@@ -882,15 +894,10 @@
     right: 2rem;
     width: 2.75rem;
     height: 2.75rem;
-    border: none;
-    background: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
-    backdrop-filter: none;
-    box-shadow: 0 4px 16px -3px hsl(0 0% 0% / 0.25);
   }
 
   .scroll-top-btn:hover {
-    box-shadow: 0 6px 24px -4px hsl(0 0% 0% / 0.3);
+    box-shadow: 0 6px 24px -4px hsl(0 0% 0% / 0.35);
   }
 }
 
