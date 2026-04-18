@@ -17,8 +17,10 @@ import {
   Handshake,
 } from "lucide-react";
 
-const formIcon3d = [icons3d.office, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
-const principleIcon3d = [icons3d.dialogueLight, icons3d.orientationLight, icons3d.shieldLight, icons3d.handshakeLight];
+// Forms: Objektbezogen → Gebäude, Mehrere Projekte → Aktentasche, Individuelle Vereinbarung → Vertrag, Direkter Austausch → Dialog
+const formIcon3d = [icons3d.building, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
+// Principles: Klare Kommunikation → Dialog, Langfristige Perspektive → Horizont, Verlässlicher Rahmen → Schild, Geteiltes Verständnis → Handschlag
+const principleIcon3d = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
 const principleIcons = [MessagesSquare, Compass, ShieldCheck, Handshake];
 
 const ForGeschaftspartner = () => {

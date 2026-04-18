@@ -18,8 +18,10 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
+// Situations: komplexe Eigentumsverhältnisse → Gebäude, Finanzielle Belastung → Wallet, Konflikte zwischen Eigentümern → Erben/Mehrere, Zwangsversteigerung → Hammer
 const situationImages = [icons3d.building, icons3d.wallet, icons3d.heirs, icons3d.gavel];
-const proofIcons = [Lock, Scale, Handshake, CheckCircle2];
+// Proof (auf Navy): Diskretion, Faire Bewertung, Klare Vereinbarung (Handschlag), Verlässliche Abwicklung
+const proofImagesLight = [icons3d.lockLight, icons3d.scaleLight, icons3d.handshakeLight, icons3d.checkLight];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();

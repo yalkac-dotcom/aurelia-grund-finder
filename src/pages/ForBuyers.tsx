@@ -20,8 +20,10 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const featureIcon3d = [icons3d.scale, icons3d.house, icons3d.bolt, icons3d.shield];
-const proofIcon3d = [icons3d.userCheckLight, icons3d.documentLight, icons3d.trendLight, icons3d.checkCircleLight];
+// Features: Transparente Preise → Waage, Keine Maklergebühren → Wallet, Geprüfter Bestand → Haus, Klare Abwicklung → Vertrag
+const featureIcon3d = [icons3d.scale, icons3d.wallet, icons3d.house, icons3d.contract];
+// Proof: Direkter Eigentümer, Vollständige Unterlagen, Realistische Preisbasis (Waage statt Trend), Verlässliche Abwicklung
+const proofIcon3d = [icons3d.userCheckLight, icons3d.documentLight, icons3d.scaleLight, icons3d.checkCircleLight];
 const proofIcons = [UserCheck, FileText, TrendingUp, CheckCircle2];
 
 const ForBuyers = () => {

@@ -16,9 +16,11 @@ import FinalCta from "@/components/sections/FinalCta";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  const areaImages = [icons3d.support, icons3d.partners, icons3d.key];
+  // Areas: Notlagen → Schutz/Hilfe (support), Erb-/Konfliktfälle → Erben (heirs), Direktankauf → Schlüssel (key)
+  const areaImages = [icons3d.support, icons3d.heirs, icons3d.key];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
-  const proofImages = [icons3d.lockLight, icons3d.scaleLight, icons3d.compassLight, icons3d.checkLight];
+  // ProofPoints: Diskretion → Schloss, Substanz → Säule/Fundament, Langfristigkeit → Horizont, Klarheit → Haken
+  const proofImages = [icons3d.lockLight, icons3d.foundationLight, icons3d.horizonLight, icons3d.checkLight];
 
   return (
     <Layout>
