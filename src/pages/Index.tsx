@@ -131,8 +131,8 @@ const HomePage = () => {
                     const Icon = proofIcons[i % proofIcons.length];
                     return (
                       <div key={i} className="glass-card-dark p-6 text-left h-full">
-                        <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-md bg-[hsl(45_60%_55%_/_0.12)] text-[hsl(45_70%_70%)] ring-1 ring-[hsl(45_60%_55%_/_0.2)]">
-                          <Icon size={17} strokeWidth={1.6} />
+                        <div className="icon-tile icon-tile-sm mb-4">
+                          <Icon size={16} aria-hidden="true" />
                         </div>
                         <h4 className="mb-1.5 text-[0.92rem] font-heading font-semibold text-white">
                           {point.title}
