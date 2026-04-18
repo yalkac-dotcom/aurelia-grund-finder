@@ -10,16 +10,16 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { icons3d } from "@/assets/icons3d";
+import { cardImages } from "@/assets/cards";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung
-const featureIcons = [icons3d.handshake, icons3d.documentsStack, icons3d.calculator, icons3d.checkCircleLight];
-// Proof — 3D Icons (Verifiziert, Fair, Bestätigt, Dokumentiert)
-const proofIcons = [icons3d.userCheckLight, icons3d.scaleLight, icons3d.checkLight, icons3d.documentLight];
-// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe
-const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal, icons3d.key];
+const featureImages = cardImages.buyerFeatures;
+// Proof — Bilder (Verifiziert, Fair, Bestätigt, Dokumentiert)
+const proofImages = cardImages.buyerProof;
+// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe (geteiltes Bildset, Step 5 entfällt)
+const stepImages = [cardImages.steps[0], cardImages.steps[1], cardImages.steps[2], cardImages.steps[4]];
 
 const ForBuyers = () => {
   const { t } = useLanguage();
@@ -47,8 +47,8 @@ const ForBuyers = () => {
               {b.features.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    floatingIcon={featureIcons[i % featureIcons.length]}
-                    floatingIconAlt={f.title}
+                    image={featureImages[i % featureImages.length]}
+                    imageAlt={f.title}
                     index={i}
                     title={f.title}
                     text={f.desc}
@@ -102,8 +102,8 @@ const ForBuyers = () => {
                 {b.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    floatingIcon={proofIcons[i % proofIcons.length]}
-                    floatingIconAlt={p.title}
+                    image={proofImages[i % proofImages.length]}
+                    imageAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}
@@ -127,8 +127,8 @@ const ForBuyers = () => {
                   total={b.steps.length}
                   title={s.title}
                   desc={s.desc}
-                  floatingIcon={stepIcons[i % stepIcons.length]}
-                  floatingIconAlt={s.title}
+                  image={stepImages[i % stepImages.length]}
+                  imageAlt={s.title}
                 />
               ))}
             </div>

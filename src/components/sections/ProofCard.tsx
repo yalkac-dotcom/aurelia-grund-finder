@@ -9,9 +9,6 @@ interface ProofCardProps {
   /** Optional thematic photo shown as full-width header (16:10 default, 21:9 when compact). */
   image?: string;
   imageAlt?: string;
-  /** Floating 3D icon shown on a warm gradient header. Takes precedence over image. */
-  floatingIcon?: string;
-  floatingIconAlt?: string;
   index: number;
   title: string;
   text: string;
@@ -26,8 +23,6 @@ const ProofCard = ({
   iconAlt,
   image,
   imageAlt,
-  floatingIcon,
-  floatingIconAlt,
   index,
   title,
   text,
@@ -36,33 +31,8 @@ const ProofCard = ({
 }: ProofCardProps) => {
   const id = `proof-${index}-title`;
   const numeral = String(index + 1).padStart(2, "0");
-  const floatDelay = `${(index % 5) * 0.4}s`;
 
-  const visual = floatingIcon ? (
-    <div
-      className="relative w-full overflow-hidden flex items-center justify-center"
-      style={{
-        aspectRatio: compact ? "21 / 9" : "16 / 10",
-        background:
-          "linear-gradient(155deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 60%, hsl(var(--secondary)) 100%)",
-      }}
-    >
-      <span
-        className="absolute inset-x-6 bottom-3 h-3 rounded-[50%] bg-primary/15 blur-md"
-        aria-hidden="true"
-      />
-      <img
-        src={floatingIcon}
-        alt={floatingIconAlt ?? iconAlt ?? ""}
-        aria-hidden={floatingIconAlt || iconAlt ? undefined : "true"}
-        loading="lazy"
-        width={140}
-        height={140}
-        className={`relative w-auto object-contain drop-shadow-[0_12px_22px_rgba(15,23,42,0.22)] animate-float transition-transform duration-500 ease-out group-hover:-translate-y-1 ${compact ? "h-[62%]" : "h-[58%]"}`}
-        style={{ animationDelay: floatDelay }}
-      />
-    </div>
-  ) : image ? (
+  const visual = image ? (
     <div
       className="relative w-full overflow-hidden bg-primary/5"
       style={{ aspectRatio: compact ? "21 / 9" : "16 / 10" }}
