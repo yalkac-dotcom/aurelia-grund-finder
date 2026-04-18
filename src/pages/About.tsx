@@ -113,8 +113,6 @@ const About = () => {
         <TextBlock
           headline={a.profile.headline}
           tone="muted"
-          image={editorial.interiorCalm}
-          imageAlt="Ruhiger, lichtdurchfluteter Innenraum – sinnbildlich für die Haltung von Aurelia"
         >
           <p>{a.profile.body1}</p>
           <p>{a.profile.body2}</p>
@@ -124,8 +122,6 @@ const About = () => {
         <TextBlock
           headline={a.situations.headline}
           tone="light"
-          image={editorial.caseReviewDesk}
-          imageAlt="Akten, Lederportfolio und Notarsiegel auf ruhigem Eichentisch – sinnbildlich für strukturierte Fallprüfung"
         >
           <p>{a.situations.body1}</p>
           <p>{a.situations.body2}</p>
@@ -135,8 +131,6 @@ const About = () => {
         <TextBlock
           headline={a.review.headline}
           tone="muted"
-          image={editorial.notaryQuiet}
-          imageAlt="Stiller Notarraum – sinnbildlich für die vertrauliche Prüfung jedes Einzelfalls"
         >
           <p>{a.review.body1}</p>
           <p>{a.review.body2}</p>
