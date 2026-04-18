@@ -52,8 +52,8 @@ const ForGeschaftspartner = () => {
             <Reveal>
               <div className="mb-12 md:mb-16 overflow-hidden rounded-sm border-l-2 border-l-[hsl(45_70%_55%_/_0.5)]">
                 <img
-                  src={editorial.facadeDetail}
-                  alt="Detail einer historischen Sandsteinfassade in Düsseldorf – sinnbildlich für substanzielle Bestandsimmobilien"
+                  src={editorial.cooperationMeeting}
+                  alt="Ruhiger Besprechungsraum mit langem Holztisch und Tageslicht – sinnbildlich für partnerschaftlichen Dialog und Kooperation"
                   loading="lazy"
                   width={1600}
                   height={520}
