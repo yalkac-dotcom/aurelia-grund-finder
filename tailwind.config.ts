@@ -46,6 +46,10 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        highlight: {
+          DEFAULT: "hsl(var(--highlight))",
+          foreground: "hsl(var(--highlight-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -61,18 +65,23 @@ export default {
         navy: {
           DEFAULT: "hsl(var(--primary))",
           light: "hsl(var(--navy-light))",
+          deep: "hsl(var(--navy-deep))",
+        },
+        steel: {
+          DEFAULT: "hsl(var(--highlight))",
+          light: "hsl(var(--steel-light))",
         },
         teal: {
-          50: "#f0fdff",
-          100: "#ccf7fe",
-          200: "#99edfd",
-          300: "#55dffb",
-          400: "#22c9ef",
-          500: "#06acd5",
-          600: "#0889b3",
-          700: "#0e6e91",
-          800: "#155a76",
-          900: "#00838f",
+          50: "hsl(207 38% 96%)",
+          100: "hsl(207 38% 90%)",
+          200: "hsl(207 38% 80%)",
+          300: "hsl(207 38% 70%)",
+          400: "hsl(207 38% 60%)",
+          500: "hsl(var(--highlight))",
+          600: "hsl(207 38% 40%)",
+          700: "hsl(207 38% 32%)",
+          800: "hsl(207 38% 24%)",
+          900: "hsl(207 38% 18%)",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -93,9 +102,9 @@ export default {
         "3xl": "2rem",
       },
       backgroundImage: {
-        "gradient-teal": "linear-gradient(135deg, #0889b3 0%, #06acd5 50%, #22c9ef 100%)",
-        "gradient-teal-dark": "linear-gradient(135deg, #0e6e91 0%, #0889b3 50%, #06acd5 100%)",
-        "gradient-warm": "linear-gradient(135deg, hsl(32 18% 96%) 0%, hsl(36 22% 97%) 50%, hsl(30 15% 97%) 100%)",
+        "gradient-teal": "linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--highlight)) 100%)",
+        "gradient-teal-dark": "linear-gradient(135deg, hsl(var(--navy-deep)) 0%, hsl(var(--primary)) 100%)",
+        "gradient-warm": "linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)",
       },
       keyframes: {
         "accordion-down": {
