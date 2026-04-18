@@ -75,7 +75,7 @@ const HomePage = () => {
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-12">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_60%_50%_/_0.55)]" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                   {t.home.areasTitle}
                 </h2>
@@ -85,22 +85,22 @@ const HomePage = () => {
               </div>
             </Reveal>
 
-            <div className="grid gap-6 md:gap-8 sm:grid-cols-3">
+            <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
               {t.home.areas.map((path, i) => {
                 const Icon = areaIcons[i];
                 return (
-                  <Link key={i} to={areaLinks[i]} className="glass-card card-hover block rounded-2xl p-8 text-center transition-all duration-300 h-full">
-                    <div className={`mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full ${areaColors[i]} text-white`}>
-                      <Icon size={24} />
+                  <Link key={i} to={areaLinks[i]} className="glass-card card-hover block p-8 text-left transition-all duration-300 h-full">
+                    <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-md bg-primary text-[hsl(45_70%_60%)] ring-1 ring-[hsl(45_60%_50%_/_0.25)]">
+                      <Icon size={20} strokeWidth={1.6} />
                     </div>
-                    <h3 className="mb-2 text-[1.05rem] font-heading font-semibold text-foreground">
+                    <h3 className="mb-2.5 text-[1.05rem] font-heading font-semibold text-foreground">
                       {path.title}
                     </h3>
-                    <p className="mb-4 text-[0.88rem] leading-[1.7] text-muted-foreground">
+                    <p className="mb-5 text-[0.88rem] leading-[1.7] text-muted-foreground">
                       {path.desc}
                     </p>
-                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-semibold text-teal-700">
-                      {path.cta} <ArrowRight size={14} />
+                    <span className="inline-flex items-center gap-1.5 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-primary">
+                      {path.cta} <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
                     </span>
                   </Link>
                 );
