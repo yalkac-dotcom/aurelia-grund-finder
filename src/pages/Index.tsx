@@ -3,9 +3,9 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
-import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ShieldAlert, Network, Home as HomeIcon, Lock, Scale, CalendarCheck, Target } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import AreaCard from "@/components/sections/AreaCard";
@@ -18,11 +18,11 @@ import TrustBar from "@/components/home/TrustBar";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  // Areas: Notlagen → Schutz/Hilfe (support), Erb-/Konfliktfälle → Erben (heirs), Direktankauf → Schlüssel (key)
-  const areaImages = [icons3d.support, icons3d.heirs, icons3d.key];
+  // Areas: Notlagen → Schild mit Ausrufezeichen, Erb-/Konfliktfälle → Personen-Netzwerk, Direktankauf → Haus
+  const areaIcons = [ShieldAlert, Network, HomeIcon];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
-  // ProofPoints: Diskretion → Schloss, Substanz → Säule/Fundament, Langfristigkeit → Horizont, Klarheit → Haken
-  const proofImages = [icons3d.lockLight, icons3d.foundationLight, icons3d.horizonLight, icons3d.checkLight];
+  // ProofPoints: Diskretion → Schloss, Substanz → Waage, Langfristigkeit → Kalender, Klarheit → Zielscheibe
+  const proofIcons = [Lock, Scale, CalendarCheck, Target];
 
   return (
     <Layout>
@@ -49,7 +49,7 @@ const HomePage = () => {
               {t.home.areas.map((path, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <AreaCard
-                    iconImage={areaImages[i]}
+                    icon={areaIcons[i]}
                     iconAlt={path.title}
                     title={path.title}
                     text={path.desc}
@@ -72,7 +72,7 @@ const HomePage = () => {
                   {t.home.proofPoints.map((point, i) => (
                     <ProofCard
                       key={i}
-                      iconImage={proofImages[i % proofImages.length]}
+                      icon={proofIcons[i % proofIcons.length]}
                       iconAlt={point.title}
                       index={i}
                       title={point.title}
