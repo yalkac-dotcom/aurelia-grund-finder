@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import AreaCard from "@/components/sections/AreaCard";
 import ProofCard from "@/components/sections/ProofCard";
 import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
@@ -13,26 +12,14 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
-import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
-import {
-  UserCheck,
-  FileText,
-  TrendingUp,
-  CheckCircle2,
-} from "lucide-react";
 
-// Features (4): editorial Bild-Header — CI-konform
-const featureImages = cardImages.buyerFeatures;
-const featureImageAlts = [
-  "Messingwaage auf Marmoroberfläche in ruhiger Bibliothek – sinnbildlich für transparente, faire Preisbildung",
-  "Handschlag über Vertrag und Unterlagen – sinnbildlich für direkten Erwerb ohne Maklerprovision",
-  "Gepflegtes Einfamilienhaus mit Vorgarten – sinnbildlich für geprüften Bestand",
-  "Vertragsunterlagen mit Füllfederhalter auf Eichenholz – sinnbildlich für klare Abwicklung",
-];
-// Proof (auf Navy): bleiben 3D-Icons (CI-Anker)
-const proofIcon3d = [icons3d.userCheckLight, icons3d.documentLight, icons3d.scaleLight, icons3d.checkCircleLight];
-const proofIcons = [UserCheck, FileText, TrendingUp, CheckCircle2];
+// Features (4) — 3D-Icons im ProofCard-Stil
+const featureIcons = [icons3d.scale, icons3d.wallet, icons3d.house, icons3d.contract];
+// Proof (Navy) — 3D-Icons in light-Variante
+const proofIcons = [icons3d.userCheckLight, icons3d.documentLight, icons3d.scaleLight, icons3d.checkCircleLight];
+// Steps (4) — eigene 3D-Icons
+const stepIcons = [icons3d.dialogue, icons3d.house, icons3d.scale, icons3d.contract];
 
 const ForBuyers = () => {
   const { t } = useLanguage();
@@ -59,9 +46,10 @@ const ForBuyers = () => {
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
               {b.features.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <AreaCard
-                    headerImage={featureImages[i % featureImages.length]}
-                    headerImageAlt={featureImageAlts[i % featureImageAlts.length]}
+                  <ProofCard
+                    iconImage={featureIcons[i % featureIcons.length]}
+                    iconAlt={f.title}
+                    index={i}
                     title={f.title}
                     text={f.desc}
                   />
@@ -113,7 +101,7 @@ const ForBuyers = () => {
                 {b.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    iconImage={proofIcon3d[i % proofIcon3d.length]}
+                    iconImage={proofIcons[i % proofIcons.length]}
                     iconAlt={p.title}
                     index={i}
                     title={p.title}
@@ -137,6 +125,8 @@ const ForBuyers = () => {
                   total={b.steps.length}
                   title={s.title}
                   desc={s.desc}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={s.title}
                 />
               ))}
             </div>

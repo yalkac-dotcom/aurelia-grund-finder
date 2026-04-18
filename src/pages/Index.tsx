@@ -8,31 +8,25 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import AreaCard from "@/components/sections/AreaCard";
 import ProofCard from "@/components/sections/ProofCard";
 import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
-import areaDistress from "@/assets/areas/area-distress.jpg";
-import areaHeirs from "@/assets/areas/area-heirs.jpg";
-import areaDirect from "@/assets/areas/area-direct.jpg";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  // Areas (3 Wege) — editorial Bild-Header statt Icons, einheitlicher Bildstil
-  // Build marker: areas-image-headers-v1
-  const areaImages = [areaDistress, areaHeirs, areaDirect];
-  const areaImageAlts = [
-    "Ruhige Hausfassade in weichem Morgenlicht – sinnbildlich für diskrete Lösungen in Notlagen",
-    "Stiller Tisch mit zwei Stühlen am Fenster – sinnbildlich für faire Lösungen in Erb- und Konfliktfällen",
-    "Gepflegtes Einfamilienhaus mit Vorgarten – sinnbildlich für unkomplizierten Direktankauf",
-  ];
+
+  // Areas (3 Wege) — ProofCard-Stil mit 3D-Icons & Nummerierung
+  // Notlagen → support, Erbe/Konflikt → heirs, Direktankauf → house
+  const areaIcons = [icons3d.support, icons3d.heirs, icons3d.house];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
+
   // ProofPoints (4 Versprechen, auf Navy):
-  // Diskretion → Schild, Substanz → Waage, Langfristigkeit → Gebäude, Klarheit → Vertrag
   const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
 
+  // Schritte (3) — eigene 3D-Icons
+  const stepIcons = [icons3d.dialogue, icons3d.scale, icons3d.contract];
 
   return (
     <Layout>
@@ -56,9 +50,10 @@ const HomePage = () => {
             <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
               {t.home.areas.map((path, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <AreaCard
-                    headerImage={areaImages[i]}
-                    headerImageAlt={areaImageAlts[i]}
+                  <ProofCard
+                    iconImage={areaIcons[i % areaIcons.length]}
+                    iconAlt={path.title}
+                    index={i}
                     title={path.title}
                     text={path.desc}
                     cta={{ label: path.cta, to: areaLinks[i] }}
@@ -133,6 +128,8 @@ const HomePage = () => {
                   total={t.home.steps.length}
                   title={item.title}
                   desc={item.desc}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={item.title}
                 />
               ))}
             </div>

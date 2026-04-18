@@ -3,29 +3,21 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import AreaCard from "@/components/sections/AreaCard";
 import ProofCard from "@/components/sections/ProofCard";
 import ProcessStep from "@/components/sections/ProcessStep";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
-import {
-  MessagesSquare,
-  Scale,
-  FileCheck,
-  Compass,
-} from "lucide-react";
-import { cardImages } from "@/assets/cards";
+import { icons3d } from "@/assets/icons3d";
 
-// Segmente (3) — editorial Bild-Header (CI-konform)
-const segmentImages = cardImages.segments;
-const segmentImageAlts = [
-  "Lederbörse auf Marmoroberfläche in weichem Tageslicht – sinnbildlich für diskreten Ankauf",
-  "Eleganter Hauseingang mit Messinggriff in Morgenlicht – sinnbildlich für Immobilienverkauf",
-  "Architektonische Pläne auf Holztisch am Fenster – sinnbildlich für Projektkooperationen",
-];
-const principleIcons = [MessagesSquare, Scale, FileCheck, Compass];
+// Segmente (3) — 3D-Icons im ProofCard-Stil
+// Diskreter Ankauf → wallet, Immobilienverkauf → house, Projektkooperationen → partners
+const segmentIcons = [icons3d.wallet, icons3d.house, icons3d.partners];
+// Hold-Steps (5) — Strategie-Schritte
+const holdStepIcons = [icons3d.key, icons3d.briefcase, icons3d.house, icons3d.shield, icons3d.foundationLight];
+// Principles (4) — 3D-Icons light
+const principleIcons = [icons3d.dialogueLight, icons3d.scaleLight, icons3d.documentLight, icons3d.compassLight];
 
 const HowItWorks = () => {
   const { t } = useLanguage();
@@ -66,9 +58,10 @@ const HowItWorks = () => {
             <div className="grid gap-6 md:gap-7 md:grid-cols-3">
               {w.segments.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <AreaCard
-                    headerImage={segmentImages[i % segmentImages.length]}
-                    headerImageAlt={segmentImageAlts[i % segmentImageAlts.length]}
+                  <ProofCard
+                    iconImage={segmentIcons[i % segmentIcons.length]}
+                    iconAlt={s.title}
+                    index={i}
                     title={s.title}
                     text={s.desc}
                   />
@@ -90,6 +83,8 @@ const HowItWorks = () => {
                   total={w.holdSteps.length}
                   title={s.title}
                   desc={s.desc}
+                  iconImage={holdStepIcons[i % holdStepIcons.length]}
+                  iconAlt={s.title}
                 />
               ))}
             </div>
@@ -110,7 +105,8 @@ const HowItWorks = () => {
                 {w.principles.map((p, i) => (
                   <ProofCard
                     key={i}
-                    icon={principleIcons[i % principleIcons.length]}
+                    iconImage={principleIcons[i % principleIcons.length]}
+                    iconAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}
