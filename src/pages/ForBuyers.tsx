@@ -11,19 +11,16 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
-  Scale,
-  Home,
-  Zap,
-  Shield,
   UserCheck,
   FileText,
   TrendingUp,
   CheckCircle2,
 } from "lucide-react";
 
-const featureIcons = [Scale, Home, Zap, Shield];
+const featureIcon3d = [icons3d.scale, icons3d.house, icons3d.bolt, icons3d.shield];
 const proofIcons = [UserCheck, FileText, TrendingUp, CheckCircle2];
 
 const ForBuyers = () => {
@@ -49,14 +46,16 @@ const ForBuyers = () => {
           <div className="container-premium">
             <SectionHeader title={b.featuresTitle} intro={b.featuresIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
-              {b.features.map((f, i) => {
-                const Icon = featureIcons[i % featureIcons.length];
-                return (
-                  <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard icon={Icon} title={f.title} text={f.desc} />
-                  </Reveal>
-                );
-              })}
+              {b.features.map((f, i) => (
+                <Reveal key={i} delay={i * 0.06}>
+                  <AreaCard
+                    iconImage={featureIcon3d[i % featureIcon3d.length]}
+                    iconAlt={f.title}
+                    title={f.title}
+                    text={f.desc}
+                  />
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
