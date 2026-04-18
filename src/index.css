@@ -63,33 +63,32 @@
 @layer base {
   :root {
     /* === Aurelia Core Palette ===
-       Navy   #1B2A4A → 218 46% 20%
+       Sky Blue (Primary + Highlight) #7BA8C9 → 205 38% 64%
        Gold   #C9A84C → 43 56% 54%
-       Steel  #4A7FA5 → 207 38% 47%
        Off-W  #F7F6F2 → 48 19% 96%
     */
     --background: 48 19% 96%;
-    --foreground: 218 46% 14%;
+    --foreground: 205 38% 14%;
 
     --card: 48 19% 96%;
-    --card-foreground: 218 46% 14%;
+    --card-foreground: 205 38% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 218 46% 14%;
+    --popover-foreground: 205 38% 14%;
 
-    --primary: 218 46% 20%;
+    --primary: 205 38% 64%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 48 19% 93%;
-    --secondary-foreground: 218 46% 18%;
+    --secondary-foreground: 205 38% 18%;
 
     --muted: 48 14% 91%;
-    --muted-foreground: 218 18% 36%;
+    --muted-foreground: 205 18% 36%;
 
     --accent: 43 56% 54%;
-    --accent-foreground: 218 46% 14%;
+    --accent-foreground: 205 38% 14%;
 
-    --highlight: 207 38% 47%;
+    --highlight: 205 38% 64%;
     --highlight-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -97,28 +96,28 @@
 
     --border: 48 14% 86%;
     --input: 48 14% 86%;
-    --ring: 207 38% 47%;
+    --ring: 205 38% 64%;
 
     --radius: 0.125rem;
 
     --gold: 43 56% 54%;
     --gold-light: 43 56% 78%;
-    --navy-light: 218 38% 32%;
-    --navy-deep: 218 50% 14%;
-    --steel: 207 38% 47%;
-    --steel-light: 207 42% 62%;
+    --navy-light: 205 38% 72%;
+    --navy-deep: 205 38% 52%;
+    --steel: 205 38% 64%;
+    --steel-light: 205 38% 76%;
 
     --surface-warm: 48 19% 96%;
     --surface-cream: 48 19% 96%;
 
     --sidebar-background: 48 19% 96%;
-    --sidebar-foreground: 218 30% 22%;
-    --sidebar-primary: 218 46% 20%;
+    --sidebar-foreground: 205 38% 22%;
+    --sidebar-primary: 205 38% 64%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 48 19% 93%;
-    --sidebar-accent-foreground: 218 46% 20%;
+    --sidebar-accent-foreground: 205 38% 22%;
     --sidebar-border: 48 14% 88%;
-    --sidebar-ring: 207 38% 47%;
+    --sidebar-ring: 205 38% 64%;
   }
 }
 
