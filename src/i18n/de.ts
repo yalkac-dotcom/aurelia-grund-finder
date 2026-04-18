@@ -339,6 +339,109 @@ const de: Translations = {
     finalCtaText: "Wir prüfen Ihren Fall unverbindlich und melden uns innerhalb von zwei Werktagen mit einer klaren Aussage.",
     finalCtaButton: "Fall jetzt prüfen lassen",
   },
+  ownerInTrouble: {
+    heroKicker: "Für Eigentümer in besonderen Lagen",
+    heroTitle: "Wenn ein Verkauf nicht mehr nach Plan verläuft.",
+    heroDescription:
+      "Aurelia prüft schwierige Eigentümer-Situationen vertraulich – auch dann, wenn ein Zwangsversteigerungsverfahren bereits läuft. Wir hören zu, ordnen ein und sagen ehrlich, was möglich ist.",
+    heroPrimaryCta: "Vertraulich anfragen",
+    heroSecondaryCta: "Wie wir vorgehen",
+    heroTrustLine: "Diskret · Auf eigene Rechnung · Ohne Maklerprovision",
+    heroImageAlt: "Ruhige Wohnstraße mit gepflegtem Mehrfamilienhaus – sinnbildlich für diskrete Lösungen in besonderen Eigentümer-Situationen",
+    situationsTitle: "Situationen, in denen wir helfen können",
+    situationsIntro:
+      "Jede Lage ist anders. Wir prüfen jede Konstellation einzeln, ohne Schema F – und auch dann, wenn andere bereits abgewunken haben.",
+    situations: [
+      {
+        title: "Komplexe Eigentumsverhältnisse",
+        desc: "Erbengemeinschaften, mehrere Eigentümer, blockierte Entscheidungen – wir sortieren die Lage und schaffen Bewegung.",
+      },
+      {
+        title: "Finanzielle Belastung",
+        desc: "Hohe Verbindlichkeiten, gekündigte Darlehen, drohende Verwertung – wir prüfen, ob ein direkter Ankauf eine tragfähige Lösung ist.",
+      },
+      {
+        title: "Konflikte zwischen Eigentümern",
+        desc: "Wenn sich Miteigentümer nicht einigen, hilft ein nüchterner Dritter – mit klarer Bewertung und verbindlichem Angebot.",
+      },
+      {
+        title: "Laufendes Zwangsversteigerungsverfahren",
+        desc: "Auch im laufenden Verfahren ist ein Verkauf häufig noch möglich – solange der Versteigerungstermin nicht abgeschlossen ist. Wir prüfen kurzfristig, ob sich ein freihändiger Verkauf noch realisieren lässt.",
+      },
+    ],
+    solutionTitle: "Wie wir Eigentümer entlasten",
+    solutionText:
+      "Wir kaufen direkt und auf eigene Rechnung. Kein Makler, keine Besichtigungstour, keine offene Vermarktung. Sie sprechen mit den Personen, die auch entscheiden.",
+    proofPoints: [
+      {
+        title: "Diskretion",
+        text: "Keine öffentliche Vermarktung, keine Schilder, keine Anzeigen. Gespräche bleiben vertraulich.",
+      },
+      {
+        title: "Faire Bewertung",
+        text: "Marktorientierte Einschätzung – nachvollziehbar erklärt, ohne Schönrechnerei.",
+      },
+      {
+        title: "Klare Vereinbarung",
+        text: "Verbindliches Angebot, transparente Konditionen, notarielle Abwicklung.",
+      },
+      {
+        title: "Verlässliche Abwicklung",
+        text: "Wir handeln auf eigene Rechnung – keine Finanzierungsvorbehalte, keine Rückzieher in letzter Minute.",
+      },
+    ],
+    stepsTitle: "So gehen wir vor",
+    steps: [
+      { title: "Erstkontakt", desc: "Sie schildern uns die Lage – telefonisch oder per Formular. Vertraulich, unverbindlich." },
+      { title: "Einordnung", desc: "Wir prüfen die Unterlagen und ordnen die Situation realistisch ein." },
+      { title: "Bewertung & Angebot", desc: "Sie erhalten eine schriftliche Einschätzung und – wenn passend – ein verbindliches Angebot." },
+      { title: "Vereinbarung", desc: "Bei Zustimmung halten wir die Konditionen klar fest und bereiten den Notartermin vor." },
+      { title: "Abwicklung", desc: "Verbindliche Abwicklung über den Notar. Danach kümmern wir uns um alles Weitere." },
+    ],
+    stepsNote:
+      "Zeitrahmen sind Richtwerte. In dringenden Fällen – etwa bei laufenden Verfahren – arbeiten wir spürbar schneller.",
+    objectionsTitle: "Was Eigentümer häufig fragen",
+    objectionsIntro:
+      "Drei Sorgen hören wir besonders oft. Hier unsere ehrliche Antwort.",
+    objections: [
+      {
+        q: "Ist es zu spät, wenn das Verfahren schon läuft?",
+        a: "Nicht zwingend. Solange der Versteigerungstermin nicht abgeschlossen ist, kann ein freihändiger Verkauf häufig noch eine bessere Lösung sein. Wir prüfen das kurzfristig.",
+      },
+      {
+        q: "Erfährt jemand davon?",
+        a: "Nein. Wir vermarkten nichts öffentlich. Gespräche bleiben zwischen Ihnen, uns und – sofern nötig – den involvierten Stellen.",
+      },
+      {
+        q: "Was kostet die Erstprüfung?",
+        a: "Nichts. Erstgespräch und Einschätzung sind unverbindlich und ohne Kosten für Sie.",
+      },
+    ],
+    faqTitle: "Häufige Fragen",
+    faqIntro: "Wenn Ihre Frage hier nicht beantwortet ist, sprechen Sie uns direkt an.",
+    faqItems: [
+      {
+        q: "Geht ein Verkauf auch im laufenden Zwangsversteigerungsverfahren noch?",
+        a: "In vielen Fällen ja – solange der Versteigerungstermin nicht abgeschlossen ist. Ein freihändiger Verkauf kann auch in dieser Phase noch eine bessere Lösung sein als die Verwertung. Wir prüfen das kurzfristig und sagen Ihnen ehrlich, ob es realistisch ist.",
+      },
+      {
+        q: "Was bedeutet „Ankauf auf eigene Rechnung“?",
+        a: "Wir kaufen die Immobilie selbst – nicht im Auftrag Dritter. Es gibt keine Maklerprovision, keine Finanzierungsvorbehalte und keine Käuferkette, die noch entscheiden muss.",
+      },
+      {
+        q: "Wie schnell können Sie reagieren?",
+        a: "Eine erste Einschätzung erhalten Sie in der Regel innerhalb weniger Tage. In dringenden Fällen schneller.",
+      },
+      {
+        q: "Was passiert mit Mietern, falls die Immobilie vermietet ist?",
+        a: "Bestehende Mietverhältnisse werden respektiert. Wir treten nach dem Kauf in die Vermieterrolle ein – an den Verträgen ändert sich nichts.",
+      },
+    ],
+    finalCtaTitle: "Lassen Sie uns Ihre Situation einordnen.",
+    finalCtaText:
+      "Ein vertrauliches Erstgespräch ist unverbindlich und kostenfrei. Wir sagen Ihnen ehrlich, was möglich ist – auch dann, wenn die Zeit drängt.",
+    finalCtaButton: "Vertraulich anfragen",
+  },
   about: {
     heroTitle: "Über Aurelia",
     companyLabel: "Das Unternehmen",

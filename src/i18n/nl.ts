@@ -338,6 +338,63 @@ const nl: Translations = {
     finalCtaText: "Wij beoordelen uw zaak vrijblijvend en koppelen binnen twee werkdagen terug met een duidelijke uitspraak.",
     finalCtaButton: "Mijn zaak laten beoordelen",
   },
+  ownerInTrouble: {
+    heroKicker: "Voor eigenaren in bijzondere situaties",
+    heroTitle: "Wanneer een verkoop niet meer volgens plan verloopt.",
+    heroDescription:
+      "Aurelia beoordeelt moeilijke eigenaarssituaties vertrouwelijk – ook wanneer een executieveiling al loopt. Wij luisteren, plaatsen de situatie in perspectief en zeggen eerlijk wat nog mogelijk is.",
+    heroPrimaryCta: "Vertrouwelijk aanvragen",
+    heroSecondaryCta: "Hoe wij werken",
+    heroTrustLine: "Discreet · Voor eigen rekening · Geen makelaarskosten",
+    heroImageAlt: "Rustige woonstraat met goed onderhouden appartementengebouw – symbool voor discrete oplossingen in bijzondere eigenaarssituaties",
+    situationsTitle: "Situaties waarin wij kunnen helpen",
+    situationsIntro:
+      "Elke situatie is anders. Wij beoordelen elke constellatie afzonderlijk – ook wanneer anderen al hebben afgehaakt.",
+    situations: [
+      { title: "Complexe eigendomsverhoudingen", desc: "Erfgemeenschappen, meerdere eigenaren, geblokkeerde besluiten – wij ordenen de situatie en brengen beweging." },
+      { title: "Financiële druk", desc: "Hoge schulden, opgezegde leningen, dreigende executie – wij toetsen of een directe aankoop een werkbare oplossing is." },
+      { title: "Conflicten tussen eigenaren", desc: "Als mede-eigenaren er niet uitkomen, helpt een nuchtere derde – met heldere taxatie en bindend bod." },
+      { title: "Lopende executieveiling", desc: "Ook tijdens een lopende procedure is een verkoop vaak nog mogelijk – zolang de veilingdatum niet is afgerond. Wij beoordelen op korte termijn of een onderhandse verkoop nog haalbaar is." },
+    ],
+    solutionTitle: "Hoe wij eigenaren ontlasten",
+    solutionText:
+      "Wij kopen direct en voor eigen rekening. Geen makelaar, geen bezichtigingencircus, geen openbare marketing. U spreekt met de mensen die ook beslissen.",
+    proofPoints: [
+      { title: "Discretie", text: "Geen openbare marketing, geen borden, geen advertenties. Gesprekken blijven vertrouwelijk." },
+      { title: "Eerlijke taxatie", text: "Marktconforme inschatting – begrijpelijk uitgelegd, zonder mooipraterij." },
+      { title: "Heldere afspraak", text: "Bindend bod, transparante voorwaarden, notariële afwikkeling." },
+      { title: "Betrouwbare uitvoering", text: "Wij handelen voor eigen rekening – geen financieringsvoorbehoud, geen terugtrekken op het laatste moment." },
+    ],
+    stepsTitle: "Zo gaan wij te werk",
+    steps: [
+      { title: "Eerste contact", desc: "U schetst de situatie – telefonisch of via het formulier. Vertrouwelijk en vrijblijvend." },
+      { title: "Beoordeling", desc: "Wij bekijken de documenten en plaatsen de situatie realistisch in perspectief." },
+      { title: "Taxatie & bod", desc: "U ontvangt een schriftelijke inschatting en – indien passend – een bindend bod." },
+      { title: "Overeenkomst", desc: "Bij akkoord leggen wij de voorwaarden helder vast en bereiden de notarisafspraak voor." },
+      { title: "Uitvoering", desc: "Bindende afwikkeling via de notaris. Daarna nemen wij al het verdere uit handen." },
+    ],
+    stepsNote:
+      "Tijdsindicaties zijn richtlijnen. In urgente gevallen – zoals lopende procedures – werken wij merkbaar sneller.",
+    objectionsTitle: "Wat eigenaren vaak vragen",
+    objectionsIntro: "Drie zorgen horen wij bijzonder vaak. Hier ons eerlijke antwoord.",
+    objections: [
+      { q: "Is het te laat als de procedure al loopt?", a: "Niet per se. Zolang de veilingdatum niet is afgerond, kan een onderhandse verkoop vaak nog de betere oplossing zijn. Wij beoordelen dat op korte termijn." },
+      { q: "Komt iemand het te weten?", a: "Nee. Wij verkopen niets openbaar. Gesprekken blijven tussen u, ons en – indien nodig – de betrokken instanties." },
+      { q: "Wat kost de eerste beoordeling?", a: "Niets. Het eerste gesprek en de inschatting zijn vrijblijvend en kosteloos voor u." },
+    ],
+    faqTitle: "Veelgestelde vragen",
+    faqIntro: "Staat uw vraag er niet bij, neem dan rechtstreeks contact op.",
+    faqItems: [
+      { q: "Is verkoop ook tijdens een lopende executieveiling nog mogelijk?", a: "In veel gevallen wel – zolang de veilingdatum niet is afgerond. Een onderhandse verkoop kan ook in deze fase nog een betere oplossing zijn dan de veiling. Wij beoordelen dit op korte termijn en zeggen u eerlijk of het realistisch is." },
+      { q: "Wat betekent ‘aankoop voor eigen rekening'?", a: "Wij kopen het object zelf – niet namens derden. Geen makelaarsprovisie, geen financieringsvoorbehoud, geen kopersketen die nog moet beslissen." },
+      { q: "Hoe snel kunt u reageren?", a: "Een eerste inschatting ontvangt u doorgaans binnen enkele dagen. In urgente gevallen sneller." },
+      { q: "Wat gebeurt er met huurders, als het object verhuurd is?", a: "Bestaande huurovereenkomsten worden gerespecteerd. Na de aankoop nemen wij de rol van verhuurder over – aan de contracten verandert niets." },
+    ],
+    finalCtaTitle: "Laat ons uw situatie in perspectief plaatsen.",
+    finalCtaText:
+      "Een vertrouwelijk eerste gesprek is vrijblijvend en kosteloos. Wij zeggen u eerlijk wat mogelijk is – ook wanneer de tijd dringt.",
+    finalCtaButton: "Vertrouwelijk aanvragen",
+  },
   about: {
     heroTitle: "Over Aurelia",
     companyLabel: "Het bedrijf",

@@ -337,6 +337,63 @@ const it: Translations = {
     finalCtaText: "Esaminiamo il vostro caso senza impegno e vi rispondiamo entro due giorni lavorativi con un parere chiaro.",
     finalCtaButton: "Far esaminare il mio caso",
   },
+  ownerInTrouble: {
+    heroKicker: "Per proprietari in situazioni particolari",
+    heroTitle: "Quando una vendita non procede più come previsto.",
+    heroDescription:
+      "Aurelia esamina con riservatezza le situazioni complesse di proprietà – anche quando è già in corso una procedura esecutiva. Ascoltiamo, valutiamo e diciamo onestamente cosa è ancora possibile.",
+    heroPrimaryCta: "Richiesta riservata",
+    heroSecondaryCta: "Come operiamo",
+    heroTrustLine: "Riservato · Per conto proprio · Senza commissioni di agenzia",
+    heroImageAlt: "Strada residenziale tranquilla con un edificio plurifamiliare ben curato – simbolo di soluzioni discrete in situazioni particolari di proprietà",
+    situationsTitle: "Situazioni in cui possiamo aiutare",
+    situationsIntro:
+      "Ogni caso è diverso. Valutiamo ciascuna situazione singolarmente – anche quando altri hanno già rinunciato.",
+    situations: [
+      { title: "Strutture proprietarie complesse", desc: "Comunioni ereditarie, più proprietari, decisioni bloccate – mettiamo ordine e creiamo movimento." },
+      { title: "Pressione finanziaria", desc: "Debiti elevati, finanziamenti revocati, esecuzione imminente – verifichiamo se un acquisto diretto sia una soluzione percorribile." },
+      { title: "Conflitti tra proprietari", desc: "Quando i comproprietari non trovano un accordo, un terzo neutrale aiuta – con una valutazione chiara e un'offerta vincolante." },
+      { title: "Procedura esecutiva in corso", desc: "Anche durante una procedura in corso una vendita è spesso ancora possibile – finché l'asta non è stata conclusa. Valutiamo in tempi brevi se una vendita privata sia ancora realizzabile." },
+    ],
+    solutionTitle: "Come alleggeriamo i proprietari",
+    solutionText:
+      "Acquistiamo direttamente e per conto proprio. Niente agenzia, niente carosello di visite, niente marketing aperto. Parla con le persone che decidono.",
+    proofPoints: [
+      { title: "Riservatezza", text: "Nessun marketing pubblico, nessun cartello, nessun annuncio. I colloqui restano riservati." },
+      { title: "Valutazione equa", text: "Stima orientata al mercato – spiegata in modo comprensibile, senza abbellimenti." },
+      { title: "Accordo chiaro", text: "Offerta vincolante, condizioni trasparenti, perfezionamento notarile." },
+      { title: "Esecuzione affidabile", text: "Agiamo per conto proprio – nessuna riserva di finanziamento, nessun ritiro all'ultimo minuto." },
+    ],
+    stepsTitle: "Come procediamo",
+    steps: [
+      { title: "Primo contatto", desc: "Lei descrive la situazione – al telefono o tramite modulo. Riservato e senza impegno." },
+      { title: "Valutazione", desc: "Esaminiamo la documentazione e inquadriamo la situazione in modo realistico." },
+      { title: "Stima e offerta", desc: "Riceve una valutazione scritta e – se appropriato – un'offerta vincolante." },
+      { title: "Accordo", desc: "In caso di accettazione fissiamo le condizioni in modo chiaro e prepariamo l'appuntamento dal notaio." },
+      { title: "Esecuzione", desc: "Perfezionamento vincolante davanti al notaio. Successivamente ci occupiamo di tutto il resto." },
+    ],
+    stepsNote:
+      "I tempi indicati sono di riferimento. In casi urgenti – come procedure in corso – lavoriamo sensibilmente più velocemente.",
+    objectionsTitle: "Le domande più frequenti dei proprietari",
+    objectionsIntro: "Tre preoccupazioni sentiamo particolarmente spesso. Ecco la nostra risposta sincera.",
+    objections: [
+      { q: "È troppo tardi se la procedura è già in corso?", a: "Non necessariamente. Finché la data dell'asta non è stata conclusa, una vendita privata può ancora essere la soluzione migliore. Possiamo valutarlo in tempi brevi." },
+      { q: "Qualcuno verrà a saperlo?", a: "No. Non commercializziamo nulla pubblicamente. I colloqui restano tra Lei, noi e – ove necessario – le parti coinvolte." },
+      { q: "Quanto costa la prima valutazione?", a: "Nulla. Il primo colloquio e la valutazione sono senza impegno e gratuiti per Lei." },
+    ],
+    faqTitle: "Domande frequenti",
+    faqIntro: "Se la Sua domanda non è qui, ci contatti direttamente.",
+    faqItems: [
+      { q: "Una vendita è ancora possibile durante una procedura esecutiva in corso?", a: "In molti casi sì – finché la data dell'asta non è stata conclusa. Una vendita privata può essere ancora una soluzione migliore dell'asta in questa fase. Valutiamo questo in tempi brevi e Le diciamo onestamente se è realistico." },
+      { q: "Cosa significa ‘acquisto per conto proprio'?", a: "Acquistiamo l'immobile direttamente – non per conto di terzi. Nessuna provvigione di agenzia, nessuna riserva di finanziamento, nessuna catena di acquirenti che debba ancora decidere." },
+      { q: "Con quale rapidità potete rispondere?", a: "Una prima valutazione arriva di norma entro pochi giorni. In casi urgenti più rapidamente." },
+      { q: "Cosa succede agli inquilini, se l'immobile è locato?", a: "I contratti di locazione esistenti vengono rispettati. Dopo l'acquisto subentriamo come locatori – i contratti restano invariati." },
+    ],
+    finalCtaTitle: "Lasci che inquadriamo la Sua situazione.",
+    finalCtaText:
+      "Un primo colloquio riservato è senza impegno e gratuito. Le diciamo onestamente cosa è possibile – anche quando il tempo stringe.",
+    finalCtaButton: "Richiesta riservata",
+  },
   about: {
     heroTitle: "Chi siamo",
     companyLabel: "L'azienda",

@@ -337,6 +337,63 @@ const tr: Translations = {
     finalCtaText: "Vakanızı bağlayıcı olmadan inceler ve iki iş günü içinde net bir geri bildirimle dönüş yaparız.",
     finalCtaButton: "Vakamı incelet",
   },
+  ownerInTrouble: {
+    heroKicker: "Özel durumlardaki mülk sahipleri için",
+    heroTitle: "Satış artık planlandığı gibi ilerlemediğinde.",
+    heroDescription:
+      "Aurelia, zorlu mülkiyet durumlarını gizlilik içinde değerlendirir – cebri icra (zorunlu satış) süreci başlamış olsa bile. Dinleriz, durumu yerli yerine oturturuz ve neyin mümkün olduğunu dürüstçe söyleriz.",
+    heroPrimaryCta: "Gizli başvuru",
+    heroSecondaryCta: "Nasıl çalışıyoruz",
+    heroTrustLine: "Gizli · Kendi hesabımıza · Emlakçı komisyonu yok",
+    heroImageAlt: "Bakımlı bir apartmanın bulunduğu sakin bir konut sokağı – özel mülkiyet durumlarında ihtiyatlı çözümlerin simgesi",
+    situationsTitle: "Yardımcı olabileceğimiz durumlar",
+    situationsIntro:
+      "Her durum farklıdır. Her bir tabloyu ayrı ayrı değerlendiririz – başkalarının vazgeçtiği durumlarda da.",
+    situations: [
+      { title: "Karmaşık mülkiyet yapıları", desc: "Miras toplulukları, birden fazla malik, kilitlenmiş kararlar – durumu düzenler ve hareket başlatırız." },
+      { title: "Mali baskı", desc: "Yüksek borçlar, feshedilmiş krediler, yaklaşan icra – doğrudan satın alımın uygulanabilir bir çözüm olup olmadığını inceleriz." },
+      { title: "Malikler arası anlaşmazlıklar", desc: "Ortak malikler uzlaşamadığında sakin bir üçüncü taraf yardımcı olur – net bir değerleme ve bağlayıcı bir teklifle." },
+      { title: "Devam eden cebri icra süreci", desc: "Süreç başlamış olsa bile satış çoğu zaman hâlâ mümkündür – ihale tarihi sonuçlanmadığı sürece. Serbest satışın hâlâ gerçekleştirilebilir olup olmadığını kısa sürede değerlendiririz." },
+    ],
+    solutionTitle: "Mülk sahiplerini nasıl rahatlatıyoruz",
+    solutionText:
+      "Doğrudan ve kendi hesabımıza satın alıyoruz. Emlakçı yok, tur şeklinde gezme yok, açık pazarlama yok. Karar verenlerle doğrudan konuşursunuz.",
+    proofPoints: [
+      { title: "Gizlilik", text: "Açık pazarlama yok, tabela yok, ilan yok. Görüşmeler gizli kalır." },
+      { title: "Adil değerleme", text: "Piyasaya uygun değerlendirme – anlaşılır biçimde açıklanır, süslemeden." },
+      { title: "Net mutabakat", text: "Bağlayıcı teklif, şeffaf koşullar, noter huzurunda işlem." },
+      { title: "Güvenilir ifa", text: "Kendi hesabımıza hareket ederiz – finansman çekincesi yok, son anda geri çekilme yok." },
+    ],
+    stepsTitle: "Nasıl ilerliyoruz",
+    steps: [
+      { title: "İlk temas", desc: "Durumu bize aktarırsınız – telefonla veya formla. Gizli ve bağlayıcı olmayan." },
+      { title: "Değerlendirme", desc: "Belgeleri inceler ve durumu gerçekçi biçimde konumlandırırız." },
+      { title: "Değerleme ve teklif", desc: "Yazılı değerlendirme ve – uygunsa – bağlayıcı bir teklif alırsınız." },
+      { title: "Mutabakat", desc: "Kabul halinde koşulları net biçimde belirler ve noter randevusunu hazırlarız." },
+      { title: "İfa", desc: "Noter huzurunda bağlayıcı işlem. Ardından geri kalan her şeyi biz üstleniriz." },
+    ],
+    stepsNote:
+      "Süreler yaklaşık değerlerdir. Acil durumlarda – devam eden süreçlerde – belirgin biçimde daha hızlı çalışırız.",
+    objectionsTitle: "Mülk sahiplerinin sıkça sorduğu sorular",
+    objectionsIntro: "Özellikle sık duyduğumuz üç endişe. İşte dürüst yanıtımız.",
+    objections: [
+      { q: "Süreç başladıysa çok mu geç?", a: "Mutlaka değil. İhale tarihi sonuçlanmadığı sürece serbest satış çoğu zaman daha iyi bir çözüm olabilir. Bunu kısa sürede değerlendirebiliriz." },
+      { q: "Birileri bunu öğrenecek mi?", a: "Hayır. Hiçbir şeyi açıkça pazarlamıyoruz. Görüşmeler sizinle, bizimle ve – gerekiyorsa – ilgili taraflarla sınırlı kalır." },
+      { q: "İlk değerlendirmenin maliyeti nedir?", a: "Yok. İlk görüşme ve değerlendirme bağlayıcı değildir ve sizin için ücretsizdir." },
+    ],
+    faqTitle: "Sık sorulan sorular",
+    faqIntro: "Sorunuzun yanıtını burada bulamazsanız doğrudan bize ulaşın.",
+    faqItems: [
+      { q: "Devam eden cebri icra sürecinde de satış mümkün müdür?", a: "Çoğu durumda evet – ihale tarihi sonuçlanmadığı sürece. Bu aşamada serbest satış, ihaleden daha iyi bir çözüm olabilir. Bunu kısa sürede değerlendirir ve gerçekçi olup olmadığını dürüstçe söyleriz." },
+      { q: "‘Kendi hesabına alım' ne demektir?", a: "Mülkü kendimiz satın alırız – üçüncü kişiler adına değil. Emlakçı komisyonu yoktur, finansman çekincesi yoktur, hâlâ karar vermesi gereken bir alıcı zinciri yoktur." },
+      { q: "Ne kadar hızlı yanıt verebilirsiniz?", a: "İlk değerlendirmeyi genellikle birkaç gün içinde alırsınız. Acil durumlarda daha hızlı." },
+      { q: "Mülk kiraya verilmişse kiracılara ne olur?", a: "Mevcut kira sözleşmelerine saygı gösterilir. Satın alımın ardından kiraya veren rolünü üstleniriz – sözleşmelerde bir değişiklik olmaz." },
+    ],
+    finalCtaTitle: "Durumunuzu birlikte yerli yerine koyalım.",
+    finalCtaText:
+      "Gizli bir ilk görüşme bağlayıcı değildir ve ücretsizdir. Zaman daraldığında bile neyin mümkün olduğunu dürüstçe söyleriz.",
+    finalCtaButton: "Gizli başvuru",
+  },
   about: {
     heroTitle: "Hakkımızda",
     companyLabel: "Şirket",
