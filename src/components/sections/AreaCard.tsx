@@ -44,13 +44,13 @@ const AreaCard = ({ icon: Icon, iconImage, iconAlt, title, text, cta }: AreaCard
     return (
       <Link
         to={cta.to}
-        className="glass-card card-hover block p-8 text-left transition-all duration-300 h-full"
+        className="group glass-card card-hover block p-8 text-left transition-all duration-300 h-full"
       >
         {inner}
       </Link>
     );
   }
-  return <div className="glass-card p-8 text-left h-full">{inner}</div>;
+  return <div className="group glass-card p-8 text-left h-full">{inner}</div>;
 };
 
 export default AreaCard;
