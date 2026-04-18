@@ -1171,56 +1171,85 @@ const de: Translations = {
     hero: {
       kicker: "Über Aurelia",
       title: "Über Aurelia Grundbesitz",
-      subtitle: "Diskret. Substanzorientiert. Verbindlich.",
+      subtitle: "Diskret, substanzorientiert, langfristig.",
       body: "Aurelia Grundbesitz ist auf den Ankauf von Immobilien in besonderen, sensiblen und zeitkritischen Situationen spezialisiert. Wir handeln ausschließlich auf eigene Rechnung und prüfen Fälle dort, wo klassische Verkaufsprozesse oft keine tragfähige Lösung mehr bieten.",
       cta: "Kontakt aufnehmen",
     },
     intro: {
-      headline: "Wenn eine Immobilie feststeckt, braucht es keinen langen Vermarktungsprozess.",
-      subheadline: "Sondern einen realistischen nächsten Schritt.",
-      body: "Aurelia begleitet Eigentümer, Erbengemeinschaften und Geschäftspartner in Konstellationen, in denen Zeitdruck, Belastungen oder blockierte Strukturen eine klare Entscheidung erfordern. Unser Ansatz ist nicht vertriebsgetrieben, sondern strukturiert, diskret und auf Umsetzbarkeit ausgerichtet.",
-      cta: "Fall vertraulich schildern",
+      body: "Wenn eine Immobilie feststeckt, braucht es keinen langen Vermarktungsprozess. Sondern einen realistischen nächsten Schritt. Aurelia begleitet Eigentümer, Erbengemeinschaften und Geschäftspartner in Konstellationen, in denen Zeitdruck, Belastungen oder blockierte Strukturen eine klare Entscheidung erfordern. Unser Ansatz ist nicht vertriebsgetrieben, sondern strukturiert, diskret und auf Umsetzbarkeit ausgerichtet.",
     },
     profile: {
       headline: "Wofür Aurelia steht",
-      subheadline: "Direkter Ankauf statt unverbindlicher Vermittlung.",
-      body: "Wir sind kein Maklerhaus und kein Vermittler zwischen mehreren Parteien. Wir kaufen nicht im Auftrag Dritter und arbeiten nicht mit unverbindlichen Finanzierungszusagen. Wenn wir einen Fall prüfen, dann mit dem Ziel, ihn belastbar einzuordnen und — wenn er darstellbar ist — selbst anzukaufen.",
-      cta: "Wie wir arbeiten",
+      body1: "Aurelia ist kein Maklerhaus und kein Vermittler zwischen mehreren Parteien. Wir kaufen nicht im Auftrag Dritter und arbeiten nicht mit unverbindlichen Finanzierungszusagen. Wenn wir einen Fall prüfen, dann mit dem Ziel, ihn belastbar einzuordnen und — wenn er darstellbar ist — selbst anzukaufen.",
+      body2: "Das bedeutet für Eigentümer und Ansprechpartner: keine öffentliche Vermarktung, keine Weitergabe an eine Kette von Interessenten und keine unnötige Unklarheit im Prozess. Gespräche bleiben vertraulich, Entscheidungen nachvollziehbar und der nächste Schritt realistisch.",
     },
-    principles: {
-      headline: "Diskretion, Klarheit und belastbare Entscheidungen",
-      subheadline: "Unser Maßstab ist nicht Lautstärke, sondern Umsetzbarkeit.",
-      body: "Das bedeutet für Eigentümer und Ansprechpartner: keine öffentliche Vermarktung, keine Weitergabe an eine Kette von Interessenten und keine unnötige Unklarheit im Prozess. Gespräche bleiben vertraulich, Entscheidungen nachvollziehbar und der nächste Schritt realistisch.",
-      cta: "Vertraulich anfragen",
+    approach: {
+      headline: "Unser Ansatz",
+      items: [
+        {
+          title: "Direkter Ankauf",
+          text: "Wir kaufen aus eigenen Mitteln, treffen klare Entscheidungen und begleiten den Prozess bis zur notariellen Umsetzung. Kein Makler, kein Finanzierungsvorbehalt, keine Weitervermittlung.",
+        },
+        {
+          title: "Maximale Diskretion",
+          text: "Sensible Immobilienlagen brauchen Vertraulichkeit. Deshalb vermeiden wir öffentliche Vermarktung, unnötige Sichtbarkeit und jede Form von Aktionismus. Gespräche und Unterlagen bleiben dort, wo sie hingehören: in einem geschützten Rahmen.",
+        },
+        {
+          title: "Schnelle Reaktion",
+          text: "Innerhalb von 48 Stunden erhalten Sie eine erste Einschätzung, in dringenden Fällen schneller. Wer sich in einer schwierigen Situation befindet, braucht keine Verzögerung, sondern eine ehrliche und belastbare Rückmeldung.",
+        },
+      ],
     },
     situations: {
       headline: "In welchen Situationen wir tätig werden",
-      subheadline: "Dort, wo Immobilien zuerst eingeordnet werden müssen.",
-      body: "Aurelia wird vor allem dort eingeschaltet, wo klassische Verkaufsprozesse zu langsam, zu offen oder zu unklar geworden sind. Typische Fälle sind drohende oder laufende Zwangsversteigerungen, Druck durch Banken oder Gläubiger, Erbengemeinschaften mit blockierten Entscheidungen, notleidende Objekte oder Verkäufe, bei denen Diskretion wichtiger ist als Reichweite.",
-      cta: "Typische Fälle ansehen",
+      body1: "Aurelia wird vor allem dort eingeschaltet, wo Immobilien nicht nur verkauft, sondern zunächst sauber eingeordnet werden müssen. Typische Fälle sind drohende oder laufende Zwangsversteigerungen, Druck durch Banken oder Gläubiger, Erbengemeinschaften mit blockierten Entscheidungen, notleidende Objekte oder Verkäufe, bei denen Diskretion wichtiger ist als Reichweite.",
+      body2: "Nicht jede Situation ist gleich. Gemeinsam ist diesen Fällen jedoch, dass Standardprozesse häufig nicht ausreichen. Genau hier setzen wir an: mit einer nüchternen Bewertung der Lage und einem belastbaren weiteren Vorgehen.",
     },
     review: {
       headline: "Wie wir Fälle prüfen",
-      subheadline: "Nicht nur das Objekt zählt, sondern die gesamte Lage dahinter.",
-      body: "Wir betrachten nicht nur die Immobilie selbst, sondern auch Belastungen im Grundbuch, wirtschaftlichen Druck, Zeitrahmen, Beteiligte und die tatsächliche Umsetzbarkeit eines Ankaufs. Jeder Fall wird einzeln geprüft. Wo ein Ankauf möglich ist, handeln wir zügig und verbindlich. Wo er nicht darstellbar ist, sagen wir das früh und offen.",
-      cta: "Fall einordnen lassen",
+      body1: "Wir betrachten nicht nur die Immobilie selbst, sondern auch die Struktur dahinter: Belastungen im Grundbuch, wirtschaftlicher Druck, Zeitrahmen, Beteiligte und die tatsächliche Umsetzbarkeit eines Ankaufs. Eine Immobilie lässt sich nur dann sinnvoll lösen, wenn das Gesamtbild verstanden wird.",
+      body2: "Deshalb arbeiten wir nicht mit pauschalen Aussagen. Jeder Fall wird einzeln geprüft. Wo ein Ankauf möglich ist, handeln wir zügig und verbindlich. Wo er nicht darstellbar ist, sagen wir das früh und offen.",
     },
-    process: {
-      headline: "Wie Aurelia arbeitet",
-      subheadline: "Klarer Prozess statt unnötiger Schleifen.",
-      body: "Im ersten Schritt geht es um eine vertrauliche Erstaufnahme. Danach folgt eine strukturierte Vorprüfung der Informationen und Unterlagen. Anschließend erhalten Eigentümer eine ehrliche Einschätzung, ob ein Ankauf realistisch ist. Eine erste Einschätzung erfolgt innerhalb von 48 Stunden, in dringenden Fällen schneller.",
-      cta: "Jetzt Kontakt aufnehmen",
-    },
-    trust: {
-      headline: "Warum Eigentümer und Partner mit Aurelia sprechen",
-      subheadline: "Weil schwierige Immobilienlagen Klarheit brauchen.",
-      body: "Keine Besichtigungsschleifen, keine öffentlichen Angebote, keine unverbindlichen Interessenten und keine künstliche Prozessverlängerung. Stattdessen: diskrete Prüfung, nachvollziehbare Einordnung und eine klare Entscheidung, wenn ein Fall tragfähig ist.",
-      cta: "Unverbindlich sprechen",
+    cases: {
+      headline: "Beispiele aus der Praxis",
+      note: "Alle Fälle anonymisiert dargestellt.",
+      items: [
+        {
+          label: "NOTLAGE · NRW · 2025",
+          title: "Zwangsversteigerung abgewendet",
+          text: "Alleinerbin, Mehrfamilienhaus NRW, laufendes Zwangsversteigerungsverfahren, Schulden höher als Verkehrswert.",
+          results: [
+            "Freihändiger Verkauf 4 Wochen vor Termin",
+            "Verfahren eingestellt",
+            "Eigentümerin schuldenfrei",
+          ],
+        },
+        {
+          label: "ERBENGEMEINSCHAFT · RHEINLAND · 2024",
+          title: "Blockierten Verkauf gelöst",
+          text: "3 Erben, Einfamilienhaus, blockierter Verkauf seit über 2 Jahren, keine Einigung.",
+          results: [
+            "Ankauf eines Erbteils",
+            "Gesamtlösung in 6 Wochen",
+            "Alle Parteien ausgezahlt",
+          ],
+        },
+        {
+          label: "DIREKTANKAUF · DÜSSELDORF · 2025",
+          title: "Schneller Verkauf ohne Makler",
+          text: "Eigentümer, Gewerbeobjekt Düsseldorf, Gläubigerdruck, Darlehen gekündigt.",
+          results: [
+            "Direktkontakt Gläubigerbank",
+            "Strukturierter Ankauf",
+            "Darlehen vollständig abgelöst",
+          ],
+        },
+      ],
     },
     closing: {
-      headline: "Belastbarkeit ist wichtiger als Außendarstellung",
-      subheadline: "Direkte Kaufentscheidungen in sensiblen Immobilienlagen.",
-      body: "Aurelia Grundbesitz steht für diskrete, strukturierte und verbindliche Ankaufslösungen auf eigene Rechnung. Wenn eine Immobilie nicht nur einen Käufer, sondern vor allem einen realistischen nächsten Schritt braucht, prüfen wir den Fall vertraulich und ohne Umwege.",
+      headline: "Lassen Sie uns Ihren Fall einordnen.",
+      body: "Aurelia Grundbesitz steht für direkte Kaufentscheidungen in Situationen, in denen Belastbarkeit wichtiger ist als Außendarstellung. Wenn eine Immobilie nicht nur einen Käufer, sondern vor allem einen realistischen nächsten Schritt braucht, prüfen wir den Fall vertraulich, strukturiert und ohne Umwege.",
+      note: "Ein vertrauliches Erstgespräch ist unverbindlich und kostenfrei. Wir sagen Ihnen ehrlich, was möglich ist.",
       cta: "Kontakt aufnehmen",
     },
   },
