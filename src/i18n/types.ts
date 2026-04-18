@@ -351,6 +351,20 @@ export interface Translations {
     experienceP1: string;
     experienceP2: string;
     experienceP3: string;
+    // KPI strip
+    kpis: { value: string; label: string }[];
+    // Founder quote
+    founderQuote: string;
+    founderQuoteName: string;
+    // Vision & Mission
+    visionMissionLabel?: string;
+    visionTitle: string;
+    visionText: string;
+    missionTitle: string;
+    missionText: string;
+    // Principles
+    principlesTitle: string;
+    principles: { title: string; text: string }[];
   };
   services: {
     heroTitle: string;
