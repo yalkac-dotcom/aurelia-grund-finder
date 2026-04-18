@@ -186,6 +186,9 @@ export interface Translations {
     heroKicker: string;
     heroTitle: string;
     heroDescription: string;
+    heroPrimaryCta?: string;
+    heroSecondaryCta?: string;
+    heroTrustLine?: string;
     areasLabel: string;
     areasTitle: string;
     areasIntro: string;
@@ -194,10 +197,17 @@ export interface Translations {
     trustText: string;
     trustClaimTitle: string;
     trustClaimText: string;
+    proofPoints?: { title: string; text: string }[];
     stepsTitle: string;
     steps: { title: string; desc: string }[];
     stepsNote: string;
     stepsLink: string;
+    objectionsTitle?: string;
+    objectionsIntro?: string;
+    objections?: { q: string; a: string }[];
+    faqTitle?: string;
+    faqIntro?: string;
+    faqItems?: { q: string; a: string }[];
     finalCtaTitle: string;
     finalCtaText: string;
     finalCtaButton: string;

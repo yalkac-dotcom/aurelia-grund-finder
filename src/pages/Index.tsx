@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, LifeBuoy, KeyRound, Handshake } from "lucide-react";
+import { ArrowRight, LifeBuoy, Users, KeyRound, ShieldCheck, Handshake, Gavel, FileCheck } from "lucide-react";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
 import { useLanguage } from "@/i18n/LanguageContext";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  const areaIcons = [LifeBuoy, KeyRound, Handshake];
+  const areaIcons = [LifeBuoy, Users, KeyRound];
   const areaColors = ["bg-teal-700", "bg-teal-600", "bg-amber-600"];
-  const areaLinks = ["/fuer-eigentumer-in-not", "/fuer-kaeufer", "/fuer-geschaeftspartner"];
+  const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
+  const proofIcons = [ShieldCheck, Handshake, FileCheck, Gavel];
 
   return (
     <Layout>
@@ -36,6 +43,24 @@ const HomePage = () => {
               <p className="hero-kicker">{t.home.heroKicker}</p>
               <h1 className="hero-title">{t.home.heroTitle}</h1>
               <p className="hero-description">{t.home.heroDescription}</p>
+              <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
+                <Link
+                  to="/kontakt"
+                  className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
+                >
+                  {t.home.heroPrimaryCta ?? t.home.finalCtaButton}
+                  <ArrowRight size={13} />
+                </Link>
+                <a
+                  href="#ablauf"
+                  className="inline-flex items-center gap-2 rounded-sm border border-white/40 bg-white/5 px-6 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
+                >
+                  {t.home.heroSecondaryCta ?? "Wie wir vorgehen"}
+                </a>
+              </div>
+              {t.home.heroTrustLine && (
+                <p className="mt-4 text-[0.78rem] text-white/75">{t.home.heroTrustLine}</p>
+              )}
             </Reveal>
           </div>
           <HeroScrollIndicator />
@@ -97,6 +122,27 @@ const HomePage = () => {
               </div>
             </Reveal>
 
+            {t.home.proofPoints && t.home.proofPoints.length > 0 && (
+              <Reveal delay={0.1}>
+                <div className="grid gap-4 md:gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+                  {t.home.proofPoints.map((point, i) => {
+                    const Icon = proofIcons[i % proofIcons.length];
+                    return (
+                      <div key={i} className="glass-card-dark rounded-xl p-6 text-left h-full">
+                        <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-teal-500/20 text-teal-200">
+                          <Icon size={18} />
+                        </div>
+                        <h4 className="mb-1.5 text-[0.92rem] font-heading font-semibold text-white">
+                          {point.title}
+                        </h4>
+                        <p className="text-[0.82rem] leading-[1.7] text-white/65">{point.text}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Reveal>
+            )}
+
             <Reveal delay={0.15}>
               <div className="glass-card-dark rounded-2xl p-8 md:p-10">
                 <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
@@ -112,7 +158,8 @@ const HomePage = () => {
 
         {/* 3-SCHRITT-TEASER */}
         <section
-          className="section-premium"
+          id="ablauf"
+          className="section-premium scroll-mt-24"
           style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}
         >
           <div className="container-premium">
@@ -166,7 +213,78 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* FINAL CTA */}
+        {/* EINWANDBEHANDLUNG */}
+        {t.home.objections && t.home.objections.length > 0 && (
+          <section className="section-premium bg-gradient-warm">
+            <div className="container-premium">
+              <Reveal>
+                <div className="text-center mb-10 max-w-2xl mx-auto">
+                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                    {t.home.objectionsTitle}
+                  </h2>
+                  {t.home.objectionsIntro && (
+                    <p className="text-[0.93rem] leading-[1.85] text-muted-foreground">
+                      {t.home.objectionsIntro}
+                    </p>
+                  )}
+                </div>
+              </Reveal>
+              <div className="grid gap-5 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+                {t.home.objections.map((item, i) => (
+                  <Reveal key={i} delay={i * 0.08}>
+                    <div className="glass-card rounded-2xl p-7 h-full">
+                      <h3 className="mb-3 text-[0.98rem] font-heading font-semibold text-foreground leading-snug">
+                        „{item.q}“
+                      </h3>
+                      <p className="text-[0.86rem] leading-[1.8] text-muted-foreground">{item.a}</p>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* FAQ */}
+        {t.home.faqItems && t.home.faqItems.length > 0 && (
+          <section
+            className="section-premium"
+            style={{ background: "linear-gradient(180deg, hsl(30 10% 96%) 0%, hsl(30 12% 97.5%) 100%)" }}
+          >
+            <div className="container-premium max-w-3xl">
+              <Reveal>
+                <div className="text-center mb-8">
+                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                    {t.home.faqTitle}
+                  </h2>
+                  {t.home.faqIntro && (
+                    <p className="text-[0.93rem] leading-[1.85] text-muted-foreground">
+                      {t.home.faqIntro}
+                    </p>
+                  )}
+                </div>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <Accordion type="single" collapsible className="rounded-2xl bg-white/70 backdrop-blur-sm px-5 md:px-7 shadow-sm">
+                  {t.home.faqItems.map((item, i) => (
+                    <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/50 last:border-0">
+                      <AccordionTrigger className="text-left text-[0.95rem] font-heading font-semibold text-foreground hover:no-underline py-5">
+                        {item.q}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-[0.88rem] leading-[1.85] text-muted-foreground pb-5">
+                        {item.a}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </Reveal>
+            </div>
+          </section>
+        )}
+
+
         <section
           className="relative section-premium text-white overflow-hidden"
           style={{ background: "linear-gradient(170deg, #0e6e91 0%, #0889b3 40%, #06acd5 100%)" }}
