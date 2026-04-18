@@ -158,17 +158,23 @@
 
 /* ── Glassmorphism & Premium utilities ── */
 .glass-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(16px) saturate(1.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 1rem;
+  background: hsl(0 0% 100% / 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid hsl(212 30% 88% / 0.6);
+  border-radius: 0.5rem;
+  box-shadow:
+    0 1px 2px hsl(212 40% 15% / 0.04),
+    0 8px 24px -12px hsl(212 40% 15% / 0.08);
 }
 
 .glass-card-dark {
-  background: rgba(14, 110, 145, 0.08);
-  backdrop-filter: blur(16px) saturate(1.2);
-  border: 1px solid rgba(8, 137, 179, 0.15);
-  border-radius: 1rem;
+  background: hsl(212 50% 16% / 0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(0 0% 100% / 0.08);
+  border-radius: 0.5rem;
+  box-shadow:
+    0 1px 2px hsl(212 60% 4% / 0.2),
+    0 12px 32px -16px hsl(212 60% 4% / 0.4);
 }
 
 .section-premium {
