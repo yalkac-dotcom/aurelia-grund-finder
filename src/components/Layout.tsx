@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
-import CookieConsent from "./CookieConsent";
+// import CookieConsent from "./CookieConsent";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -18,7 +18,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
       <Footer />
       <ScrollToTop />
-      <CookieConsent />
+      {/* <CookieConsent /> */}
     </div>
   );
 };
