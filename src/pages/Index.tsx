@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, LifeBuoy, Users, KeyRound, ShieldCheck, Handshake, Gavel, FileCheck } from "lucide-react";
+import { ArrowRight, LifeBuoy, Users, KeyRound, Lock, Scale, Compass, MessageSquareCheck } from "lucide-react";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
