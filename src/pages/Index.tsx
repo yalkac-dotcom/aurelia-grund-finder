@@ -35,14 +35,17 @@ const HomePage = () => {
           />
           <div className="hero-overlay-base absolute inset-0" />
           <div className="hero-overlay-protect absolute inset-0" />
+          {/* Stronger readability layer for hero copy */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
         </div>
 
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
-          <div className="hero-copy-shell">
+          <div className="hero-copy-shell max-w-2xl">
             <Reveal>
               <p className="hero-kicker">{t.home.heroKicker}</p>
               <h1 className="hero-title">{t.home.heroTitle}</h1>
-              <p className="hero-description">{t.home.heroDescription}</p>
+              <p className="hero-description max-w-xl">{t.home.heroDescription}</p>
               <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
                 <Link
                   to="/kontakt"
