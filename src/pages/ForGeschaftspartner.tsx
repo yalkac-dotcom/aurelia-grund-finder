@@ -9,6 +9,7 @@ import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
+import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
   MessagesSquare,
@@ -53,6 +54,18 @@ const ForGeschaftspartner = () => {
         {/* KOOPERATIONSFORMEN */}
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
+            <Reveal>
+              <div className="mb-12 md:mb-16 overflow-hidden rounded-sm border-l-2 border-l-[hsl(45_70%_55%_/_0.5)]">
+                <img
+                  src={editorial.facadeDetail}
+                  alt="Detail einer historischen Sandsteinfassade in Düsseldorf – sinnbildlich für substanzielle Bestandsimmobilien"
+                  loading="lazy"
+                  width={1600}
+                  height={520}
+                  className="h-56 md:h-72 w-full object-cover"
+                />
+              </div>
+            </Reveal>
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
               {p.forms.map((f, i) => (
