@@ -73,6 +73,13 @@ const nl: Translations = {
     cta: "Vertrouwelijk contact opnemen",
     ctaSecondary: "Hoe wij helpen",
   },
+  trustBar: {
+    items: [
+      "Discreet & vertrouwelijk",
+      "Aankoop voor eigen rekening",
+      "Bindende beslissing",
+    ],
+  },
   common: {
     learnMore: "Meer informatie",
     sendMessage: "Bericht versturen",

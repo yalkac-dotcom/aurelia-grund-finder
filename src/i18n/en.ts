@@ -73,6 +73,13 @@ const en: Translations = {
     cta: "Enquire confidentially",
     ctaSecondary: "How we help",
   },
+  trustBar: {
+    items: [
+      "Discreet & confidential",
+      "Purchase for our own account",
+      "Binding decision",
+    ],
+  },
   common: {
     learnMore: "Learn more",
     sendMessage: "Send message",

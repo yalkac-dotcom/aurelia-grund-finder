@@ -56,6 +56,9 @@ export interface Translations {
     cta: string;
     ctaSecondary: string;
   };
+  trustBar: {
+    items: string[];
+  };
   common: {
     learnMore: string;
     sendMessage: string;

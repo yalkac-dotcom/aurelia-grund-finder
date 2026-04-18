@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 interface AreaCardProps {
   icon?: LucideIcon;
+  iconColor?: string;
   iconImage?: string;
   iconAlt?: string;
   title: string;
@@ -10,7 +11,7 @@ interface AreaCardProps {
   cta?: { label: string; to: string };
 }
 
-const AreaCard = ({ icon: Icon, iconImage, iconAlt, title, text, cta }: AreaCardProps) => {
+const AreaCard = ({ icon: Icon, iconColor, iconImage, iconAlt, title, text, cta }: AreaCardProps) => {
   const inner = (
     <>
       {Icon ? (
@@ -19,7 +20,7 @@ const AreaCard = ({ icon: Icon, iconImage, iconAlt, title, text, cta }: AreaCard
             size={36}
             strokeWidth={1.5}
             aria-hidden="true"
-            style={{ color: "hsl(var(--highlight))" }}
+            style={{ color: iconColor ?? "hsl(var(--highlight))" }}
           />
         </div>
       ) : iconImage ? (

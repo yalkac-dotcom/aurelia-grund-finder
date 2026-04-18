@@ -73,6 +73,13 @@ const tr: Translations = {
     cta: "Gizli iletişim",
     ctaSecondary: "Nasıl yardımcı oluyoruz",
   },
+  trustBar: {
+    items: [
+      "Gizli ve güvenilir",
+      "Kendi hesabımıza satın alım",
+      "Bağlayıcı karar",
+    ],
+  },
   common: {
     learnMore: "Daha fazla bilgi",
     sendMessage: "Mesaj gönder",

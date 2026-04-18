@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
+import TrustBar from "./home/TrustBar";
 // import CookieConsent from "./CookieConsent";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -15,6 +16,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         {t.common.skipToContent ?? "Zum Inhalt springen"}
       </a>
       <Header />
+      <TrustBar />
       <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
       <Footer />
       <ScrollToTop />
