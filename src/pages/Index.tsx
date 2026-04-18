@@ -43,6 +43,24 @@ const HomePage = () => {
               <p className="hero-kicker">{t.home.heroKicker}</p>
               <h1 className="hero-title">{t.home.heroTitle}</h1>
               <p className="hero-description">{t.home.heroDescription}</p>
+              <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
+                <Link
+                  to="/kontakt"
+                  className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
+                >
+                  {t.home.heroPrimaryCta ?? t.home.finalCtaButton}
+                  <ArrowRight size={13} />
+                </Link>
+                <a
+                  href="#ablauf"
+                  className="inline-flex items-center gap-2 rounded-sm border border-white/40 bg-white/5 px-6 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
+                >
+                  {t.home.heroSecondaryCta ?? "Wie wir vorgehen"}
+                </a>
+              </div>
+              {t.home.heroTrustLine && (
+                <p className="mt-4 text-[0.78rem] text-white/75">{t.home.heroTrustLine}</p>
+              )}
             </Reveal>
           </div>
           <HeroScrollIndicator />
