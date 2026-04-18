@@ -66,8 +66,8 @@ const ForGeschaftspartner = () => {
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    image={formImages[i % formImages.length]}
-                    imageAlt={f.title}
+                    floatingIcon={formIcons[i % formIcons.length]}
+                    floatingIconAlt={f.title}
                     index={i}
                     title={f.title}
                     text={f.desc}
