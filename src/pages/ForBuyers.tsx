@@ -10,17 +10,17 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { cardImages } from "@/assets/cards";
+// (cardImages entfernt — Features & Proof jetzt ikonisch)
 import { editorial } from "@/assets/editorial";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-// Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
-const featureImages = cardImages.buyerFeatures;
-// Proof — Bilder (Verifiziert, Fair, Bestätigt, Dokumentiert)
-const proofImages = cardImages.buyerProof;
+// Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (3D-Icons)
+const featureIcons = [icons3d.handshakeLight, icons3d.documentLight, icons3d.assessmentDocument, icons3d.closingFolder];
+// Proof (4) — Verifiziert, Fair, Bestätigt, Dokumentiert (3D-Icons, themengenau)
+const proofIcons = [icons3d.shieldLight, icons3d.scaleLight, icons3d.checkCircleLight, icons3d.documentLight];
 // Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe (3D-Icons)
-const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract, icons3d.handshakeLight];
+const stepIcons = [icons3d.dialogueLight, icons3d.assessmentDocument, icons3d.contractFolder, icons3d.closingFolder];
 
 const ForBuyers = () => {
   const { t } = useLanguage();
@@ -48,8 +48,8 @@ const ForBuyers = () => {
               {b.features.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    image={featureImages[i % featureImages.length]}
-                    imageAlt={f.title}
+                    iconImage={featureIcons[i % featureIcons.length]}
+                    iconAlt={f.title}
                     index={i}
                     title={f.title}
                     text={f.desc}
@@ -103,8 +103,8 @@ const ForBuyers = () => {
                 {b.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    image={proofImages[i % proofImages.length]}
-                    imageAlt={p.title}
+                    iconImage={proofIcons[i % proofIcons.length]}
+                    iconAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}
