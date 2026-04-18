@@ -83,7 +83,7 @@ const Header = () => {
             to="/kontakt"
             className="ml-2 inline-flex items-center px-5 py-2.5 text-[11px] font-semibold tracking-[0.12em] uppercase btn-gradient rounded-sm transition-all duration-300"
           >
-            {t.hero.cta}
+            {t.home.finalCtaButton}
           </Link>
         </div>
 
