@@ -1106,6 +1106,10 @@ const nl: Translations = {
     intro: {
       body: "Als een pand vastzit, is geen lang verkoopproces nodig – maar een realistische volgende stap. Aurelia begeleidt eigenaren, erfgemeenschappen en zakelijke partners in situaties waarin tijdsdruk, lasten of geblokkeerde structuren een duidelijke beslissing vereisen. Onze aanpak is niet verkoopgedreven, maar gestructureerd, discreet en gericht op haalbaarheid.",
     },
+    companyProfile: {
+      headline: "Waarom Aurelia relevant is bij vastgelopen vastgoedsituaties",
+      body: "Als een pand vastzit, is geen lang verkoopproces nodig – maar een realistische volgende stap. Aurelia begeleidt eigenaren, erfgemeenschappen en zakelijke partners in situaties waarin tijdsdruk, lasten of geblokkeerde structuren een duidelijke beslissing vereisen. Onze aanpak is niet verkoopgedreven, maar gestructureerd, discreet en gericht op haalbaarheid.",
+    },
     profile: {
       headline: "Waar Aurelia voor staat",
       body1: "Aurelia is geen makelaarskantoor en geen tussenpersoon tussen meerdere partijen. Wij kopen niet in opdracht van derden en werken niet met vrijblijvende financieringstoezeggingen. Als wij een zaak beoordelen, dan met het doel deze betrouwbaar in te schatten en – indien haalbaar – zelf aan te kopen.",

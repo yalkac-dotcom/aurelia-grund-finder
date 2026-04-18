@@ -1138,6 +1138,10 @@ const en: Translations = {
     intro: {
       body: "When a property is stuck, what's needed is not a long marketing process – but a realistic next step. Aurelia supports owners, communities of heirs and business partners in situations where time pressure, financial burdens or blocked structures require a clear decision. Our approach is not sales-driven, but structured, discreet and focused on what can actually be implemented.",
     },
+    companyProfile: {
+      headline: "Why Aurelia matters when property situations are stuck",
+      body: "When a property is stuck, what is needed is not a long marketing process – but a realistic next step. Aurelia supports owners, communities of heirs and business partners in situations where time pressure, financial burdens or blocked structures require a clear decision. Our approach is not sales-driven, but structured, discreet and focused on what can actually be implemented.",
+    },
     profile: {
       headline: "What Aurelia stands for",
       body1: "Aurelia is neither an estate agency nor an intermediary between several parties. We do not buy on behalf of third parties and do not work with non-binding financing commitments. When we review a case, we do so with the aim of assessing it reliably and – where feasible – acquiring it ourselves.",

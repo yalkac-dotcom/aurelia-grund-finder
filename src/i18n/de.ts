@@ -1179,6 +1179,10 @@ const de: Translations = {
     intro: {
       body: "Wenn eine Immobilie feststeckt, braucht es keinen langen Vermarktungsprozess. Sondern einen realistischen nächsten Schritt. Aurelia begleitet Eigentümer, Erbengemeinschaften und Geschäftspartner in Konstellationen, in denen Zeitdruck, Belastungen oder blockierte Strukturen eine klare Entscheidung erfordern. Unser Ansatz ist nicht vertriebsgetrieben, sondern strukturiert, diskret und auf Umsetzbarkeit ausgerichtet.",
     },
+    companyProfile: {
+      headline: "Warum Aurelia bei festgefahrenen Immobilienlagen relevant ist",
+      body: "Wenn eine Immobilie feststeckt, braucht es keinen langen Vermarktungsprozess – sondern einen realistischen nächsten Schritt. Aurelia begleitet Eigentümer, Erbengemeinschaften und Geschäftspartner in Konstellationen, in denen Zeitdruck, Belastungen oder blockierte Strukturen eine klare Entscheidung erfordern. Unser Ansatz ist nicht vertriebsgetrieben, sondern strukturiert, diskret und auf Umsetzbarkeit ausgerichtet.",
+    },
     profile: {
       headline: "Wofür Aurelia steht",
       body1: "Aurelia ist kein Maklerhaus und kein Vermittler zwischen mehreren Parteien. Wir kaufen nicht im Auftrag Dritter und arbeiten nicht mit unverbindlichen Finanzierungszusagen. Wenn wir einen Fall prüfen, dann mit dem Ziel, ihn belastbar einzuordnen und — wenn er darstellbar ist — selbst anzukaufen.",

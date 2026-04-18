@@ -1105,6 +1105,10 @@ const tr: Translations = {
     intro: {
       body: "Bir gayrimenkul tıkandığında uzun bir pazarlama sürecine değil, gerçekçi bir sonraki adıma ihtiyaç vardır. Aurelia; mülk sahiplerine, miras topluluklarına ve iş ortaklarına, zaman baskısı, yükler veya tıkanmış yapıların net bir karar gerektirdiği durumlarda eşlik eder. Yaklaşımımız satış odaklı değil, yapılandırılmış, gizli ve uygulanabilirliğe yöneliktir.",
     },
+    companyProfile: {
+      headline: "Tıkanmış gayrimenkul durumlarında Aurelia neden önemlidir",
+      body: "Bir gayrimenkul tıkandığında uzun bir pazarlama sürecine değil, gerçekçi bir sonraki adıma ihtiyaç vardır. Aurelia; mülk sahiplerine, miras topluluklarına ve iş ortaklarına, zaman baskısı, yükler veya tıkanmış yapıların net bir karar gerektirdiği durumlarda eşlik eder. Yaklaşımımız satış odaklı değil, yapılandırılmış, gizli ve uygulanabilirliğe yöneliktir.",
+    },
     profile: {
       headline: "Aurelia neyi temsil eder",
       body1: "Aurelia bir emlak ofisi veya birden fazla taraf arasında aracı değildir. Üçüncü kişiler adına satın almıyor ve bağlayıcı olmayan finansman sözleriyle çalışmıyoruz. Bir durumu incelediğimizde amacımız onu güvenilir biçimde sınıflandırmak ve uygulanabilirse kendimiz satın almaktır.",

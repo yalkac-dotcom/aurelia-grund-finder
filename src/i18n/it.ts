@@ -1105,6 +1105,10 @@ const it: Translations = {
     intro: {
       body: "Quando un immobile si blocca, non serve un lungo processo di commercializzazione – ma un passo successivo realistico. Aurelia accompagna proprietari, comunioni ereditarie e partner commerciali in situazioni in cui pressione temporale, oneri o strutture bloccate richiedono una decisione chiara. Il nostro approccio non è orientato alla vendita, ma è strutturato, discreto e focalizzato sulla fattibilità.",
     },
+    companyProfile: {
+      headline: "Perché Aurelia è rilevante in situazioni immobiliari bloccate",
+      body: "Quando un immobile si blocca, non serve un lungo processo di commercializzazione – ma un passo successivo realistico. Aurelia accompagna proprietari, comunioni ereditarie e partner commerciali in situazioni in cui pressione temporale, oneri o strutture bloccate richiedono una decisione chiara. Il nostro approccio non è orientato alla vendita, ma è strutturato, discreto e focalizzato sulla fattibilità.",
+    },
     profile: {
       headline: "Cosa rappresenta Aurelia",
       body1: "Aurelia non è né un'agenzia immobiliare né un intermediario tra più parti. Non acquistiamo per conto di terzi e non lavoriamo con impegni di finanziamento non vincolanti. Quando esaminiamo un caso, lo facciamo con l'obiettivo di valutarlo in modo affidabile e – ove fattibile – acquistarlo direttamente.",
