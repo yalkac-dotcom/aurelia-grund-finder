@@ -1,13 +1,21 @@
 ---
-name: Farbschema CI — Teal Redesign
-description: Updated CI with teal palette, glassmorphism cards, gradient buttons replacing navy/yellow
+name: Farbschema CI (Aurelia 4-Farben-System)
+description: Verbindliches 4-Farben-System. Navy Primary, Gold Akzent, Steel Blue Highlight, Off-White Hintergrund. Kein reines Weiß als Sektions-Hintergrund, kein warmer Cream-Ton mehr.
 type: design
 ---
-Die Corporate Identity wurde auf ein Teal-basiertes Farbschema umgestellt:
-- Primärfarben: Teal (#0889b3), Weiß, helleres Navy/Petrol (hsl 210 42% 26%) als Basis für dunkle Sections — bewusst HELLER als zuvor (war 212 55% 12%) für mehr Kontrast & Premium-Eleganz
-- Teal-Palette: 50 (#f0fdff) bis 900 (#00838f)
-- Glassmorphism: .glass-card und .glass-card-dark für Cards
-- Gradient-Buttons: .btn-gradient (Teal 135deg)
-- Akzente: Teal-600/700 statt Gold/Gelb
-- CTA-Section: Teal-Gradient-Hintergrund statt Navy
-- Icon-Badges: 70x70 mit Teal-Gradient-Background
+
+Verbindliches 4-Farben-System für aureliaestates.de:
+
+- **PRIMARY Navy `#1B2A4A` → `218 46% 20%`**: Hero-/Footer-Hintergrund, primäre CTA-Buttons (z. B. „Fall jetzt prüfen lassen", „Vertraulich anfragen"), mobile Navigationsleiste/Hamburger-Menü.
+- **ACCENT Gold `#C9A84C` → `43 56% 54%`**: Logo-Dreieck, dekorative Trennstriche über Sektions-H2, Hover-Zustand aller Textlinks, aktive Navigations-Unterstreichung, dezente 1px-Card-Borders. NIEMALS als Sektions-Hintergrund.
+- **HIGHLIGHT Steel Blue `#4A7FA5` → `207 38% 47%`**: Sekundäre Buttons (Hintergrund Steel Blue, Text Weiß, kein transparenter Rahmen), Badge-Labels (90% Opacity), Telefonnummer-Links auf hellem Hintergrund, Trust-Bar-Hintergrund unter Hero, Icons in Feature-Blöcken, aktive/Hover-Zustände der Navigationslinks.
+- **BACKGROUND Off-White `#F7F6F2` → `48 19% 96%`**: Hintergrund aller Content-Sektionen zwischen Hero/Footer, Formular-Hintergrund, FAQ-Card-Hintergrund.
+
+Weiß `#FFFFFF` nur noch für Text auf dunklen Flächen (Navy/Steel Blue) und Button-Beschriftungen. Reines Weiß ist nicht mehr als Sektions-Hintergrund erlaubt.
+
+Tokens (`src/index.css`):
+- `--primary 218 46% 20%`, `--accent 43 56% 54%`, `--highlight 207 38% 47%`, `--background 48 19% 96%`, `--card 48 19% 96%`, `--secondary 48 19% 93%`.
+
+Tailwind-Utility: `bg-highlight`, `text-highlight`, `border-accent`, `bg-primary`. Die alte Teal-Palette (`teal-500` etc.) verweist jetzt auf Steel Blue.
+
+Konsistenz seitenübergreifend: Startseite, /fuer-eigentumer-in-not, /kontakt, /ueber-uns, /portfolio, /impressum.
