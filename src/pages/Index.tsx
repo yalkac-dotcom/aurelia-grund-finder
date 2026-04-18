@@ -114,7 +114,7 @@ const HomePage = () => {
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-10">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
+                <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_70%_60%_/_0.6)]" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
                   {t.home.trustTitle}
                 </h2>
@@ -130,9 +130,9 @@ const HomePage = () => {
                   {t.home.proofPoints.map((point, i) => {
                     const Icon = proofIcons[i % proofIcons.length];
                     return (
-                      <div key={i} className="glass-card-dark rounded-xl p-6 text-left h-full">
-                        <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-teal-500/20 text-teal-200">
-                          <Icon size={18} />
+                      <div key={i} className="glass-card-dark p-6 text-left h-full">
+                        <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-md bg-[hsl(45_60%_55%_/_0.12)] text-[hsl(45_70%_70%)] ring-1 ring-[hsl(45_60%_55%_/_0.2)]">
+                          <Icon size={17} strokeWidth={1.6} />
                         </div>
                         <h4 className="mb-1.5 text-[0.92rem] font-heading font-semibold text-white">
                           {point.title}
@@ -146,7 +146,7 @@ const HomePage = () => {
             )}
 
             <Reveal delay={0.15}>
-              <div className="glass-card-dark rounded-2xl p-8 md:p-10">
+              <div className="glass-card-dark p-8 md:p-10 border-l-2 border-l-[hsl(45_70%_55%_/_0.6)]">
                 <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
                   {t.home.trustClaimTitle}
                 </h3>
