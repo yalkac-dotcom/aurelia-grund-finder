@@ -11,11 +11,10 @@ import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 
-// Segmente (3) — 3D-Icons im ProofCard-Stil
-// Diskreter Ankauf → wallet, Immobilienverkauf → house, Projektkooperationen → partners
-const segmentIcons = [icons3d.wallet, icons3d.house, icons3d.partners];
-// Hold-Steps (5) — Strategie-Schritte
-const holdStepIcons = [icons3d.key, icons3d.briefcase, icons3d.house, icons3d.shield, icons3d.foundationLight];
+// Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen
+const segmentIcons = [icons3d.coinsHouse, icons3d.houseTag, icons3d.puzzleCooperation];
+// Hold-Steps (5) — Erwerb, Strategie, Bestand, Sicherung, Fundament
+const holdStepIcons = [icons3d.key, icons3d.portfolioFolder, icons3d.buildingsCluster, icons3d.shield, icons3d.pillar];
 // Principles (4) — 3D-Icons light
 const principleIcons = [icons3d.dialogueLight, icons3d.scaleLight, icons3d.documentLight, icons3d.compassLight];
 

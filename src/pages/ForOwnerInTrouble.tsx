@@ -12,12 +12,12 @@ import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
 
-// Situations (4) — 3D-Icons im ProofCard-Stil
-const situationIcons = [icons3d.contract, icons3d.wallet, icons3d.heirs, icons3d.gavel];
+// Situations (4) — thematisch spezifisch: Zwangsversteigerung, Finanznot, Erben, Recht
+const situationIcons = [icons3d.auctionGavel, icons3d.walletEmpty, icons3d.familyTree, icons3d.lawBook];
 // Proof (auf Navy) — Lucide-Icons im ProofCard-Stil
 const proofIcons = [Lock, Scale, FileText, ShieldCheck];
-// Steps (5) — eigene 3D-Icons pro Schritt
-const stepIcons = [icons3d.dialogue, icons3d.scale, icons3d.contract, icons3d.briefcase, icons3d.key];
+// Steps (5) — Erstkontakt, Prüfung, Angebot, Vereinbarung, Abwicklung
+const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal, icons3d.handshake, icons3d.key];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();

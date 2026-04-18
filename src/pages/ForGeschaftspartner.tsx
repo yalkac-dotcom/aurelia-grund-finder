@@ -11,12 +11,12 @@ import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-// Forms (4) — 3D-Icons im ProofCard-Stil
-const formIcons = [icons3d.building, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
+// Forms (4) — Einzelobjekt, Portfolio, Off-Market-Vertrag, Strategischer Dialog
+const formIcons = [icons3d.singleBuilding, icons3d.buildingsCluster, icons3d.envelopeSeal, icons3d.meeting];
 // Principles (Navy) — 3D-Icons light
 const principleIcons = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
-// Steps (5)
-const stepIcons = [icons3d.dialogue, icons3d.scale, icons3d.contract, icons3d.briefcase, icons3d.key];
+// Steps (5) — Erstkontakt, Prüfung, Angebot, Vereinbarung, Abwicklung
+const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal, icons3d.handshake, icons3d.key];
 
 const ForGeschaftspartner = () => {
   const { t } = useLanguage();
