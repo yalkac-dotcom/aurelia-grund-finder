@@ -8,16 +8,16 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { cardImages } from "@/assets/cards";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
 
 // Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht
-const situationImages = cardImages.ownerSituations;
+const situationIcons = [icons3d.auctionGavel, icons3d.walletEmpty, icons3d.familyTree, icons3d.lawBook];
 // Proof (auf Navy) — Lucide-Icons im ProofCard-Stil (Navy-Sektion bleibt iconisch)
 const proofIcons = [Lock, Scale, FileText, ShieldCheck];
-// Steps (5) — geteiltes Bildset
-const stepImages = cardImages.steps;
+// Steps (5) — Erstkontakt, Einordnung, Bewertung & Angebot, Vereinbarung, Abwicklung
+const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal, icons3d.contract, icons3d.key];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -45,8 +45,8 @@ const ForOwnerInTrouble = () => {
               {o.situations.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    image={situationImages[i % situationImages.length]}
-                    imageAlt={s.title}
+                    floatingIcon={situationIcons[i % situationIcons.length]}
+                    floatingIconAlt={s.title}
                     index={i}
                     title={s.title}
                     text={s.desc}
@@ -94,8 +94,8 @@ const ForOwnerInTrouble = () => {
                   total={o.steps.length}
                   title={s.title}
                   desc={s.desc}
-                  image={stepImages[i % stepImages.length]}
-                  imageAlt={s.title}
+                  floatingIcon={stepIcons[i % stepIcons.length]}
+                  floatingIconAlt={s.title}
                 />
               ))}
             </div>
