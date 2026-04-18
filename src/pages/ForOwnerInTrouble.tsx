@@ -37,11 +37,11 @@ const ForOwnerInTrouble = () => {
       />
 
       <div className="page-shell">
-        {/* SITUATIONEN */}
+        {/* SITUATIONEN – filigrane editoriale Kacheln */}
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <SectionHeader title={o.situationsTitle} intro={o.situationsIntro} />
-            <div className="grid gap-6 md:gap-7 sm:grid-cols-2">
+            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 max-w-5xl mx-auto">
               {o.situations.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
@@ -50,6 +50,7 @@ const ForOwnerInTrouble = () => {
                     index={i}
                     title={s.title}
                     text={s.desc}
+                    compact
                   />
                 </Reveal>
               ))}
