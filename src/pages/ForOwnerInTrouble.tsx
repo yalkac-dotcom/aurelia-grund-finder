@@ -2,29 +2,22 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import AreaCard from "@/components/sections/AreaCard";
 import ProofCard from "@/components/sections/ProofCard";
 import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { cardImages } from "@/assets/cards";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
 
-// Situations (4 typische Lagen) — editorial Bild-Header (CI-konform):
-// Zwangsversteigerung → ruhiges Notarbüro, Finanzielle Belastung → Hausfassade,
-// Erbengemeinschaft → Tisch am Fenster, Rechtliche Lage → Gerichtsfassade
-const situationImages = cardImages.situations;
-const situationImageAlts = [
-  "Ruhiges Notarbüro mit Aktenstapel auf Eichenholztisch – sinnbildlich für diskrete Bearbeitung in Notlagen",
-  "Wohnhausfassade in weichem Morgenlicht – sinnbildlich für finanziell belastete Eigentümer",
-  "Stiller Tisch am Fenster – sinnbildlich für faire Lösungen in Erbengemeinschaften",
-  "Klassische Gerichtsfassade in Tageslicht – sinnbildlich für rechtlich komplexe Situationen",
-];
-// Proof (auf Navy): konsistente Linien-Icons in Steel-Blue-Kreisen (siehe ProofCard)
+// Situations (4) — 3D-Icons im ProofCard-Stil
+const situationIcons = [icons3d.contract, icons3d.wallet, icons3d.heirs, icons3d.gavel];
+// Proof (auf Navy) — Lucide-Icons im ProofCard-Stil
 const proofIcons = [Lock, Scale, FileText, ShieldCheck];
+// Steps (5) — eigene 3D-Icons pro Schritt
+const stepIcons = [icons3d.dialogue, icons3d.scale, icons3d.contract, icons3d.briefcase, icons3d.key];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -51,9 +44,10 @@ const ForOwnerInTrouble = () => {
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2">
               {o.situations.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <AreaCard
-                    headerImage={situationImages[i % situationImages.length]}
-                    headerImageAlt={situationImageAlts[i % situationImageAlts.length]}
+                  <ProofCard
+                    iconImage={situationIcons[i % situationIcons.length]}
+                    iconAlt={s.title}
+                    index={i}
                     title={s.title}
                     text={s.desc}
                   />
@@ -99,6 +93,8 @@ const ForOwnerInTrouble = () => {
                   total={o.steps.length}
                   title={s.title}
                   desc={s.desc}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={s.title}
                 />
               ))}
             </div>
@@ -143,7 +139,7 @@ const ForOwnerInTrouble = () => {
         />
       </div>
 
-      {/* Sticky Mobile Bottom Bar — nur auf dieser Seite */}
+      {/* Sticky Mobile Bottom Bar */}
       <div
         className="fixed bottom-0 inset-x-0 z-[60] md:hidden flex"
         style={{ backgroundColor: "hsl(var(--primary))", height: 56 }}
@@ -163,7 +159,6 @@ const ForOwnerInTrouble = () => {
           Anfragen
         </a>
       </div>
-      {/* Spacer damit Content nicht hinter Sticky-Bar verschwindet */}
       <div className="md:hidden" style={{ height: 56 }} aria-hidden="true" />
     </Layout>
   );

@@ -2,7 +2,6 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import AreaCard from "@/components/sections/AreaCard";
 import ProofCard from "@/components/sections/ProofCard";
 import ProcessStep from "@/components/sections/ProcessStep";
 import FaqBlock from "@/components/sections/FaqBlock";
@@ -10,26 +9,14 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
-import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
-import {
-  MessagesSquare,
-  Compass,
-  ShieldCheck,
-  Handshake,
-} from "lucide-react";
 
-// Forms (4): editorial Bild-Header — CI-konform
-const formImages = cardImages.partnerForms;
-const formImageAlts = [
-  "Modernes Mehrfamilienhaus mit klaren Linien in Tageslicht – sinnbildlich für objektbezogene Kooperation",
-  "Lederaktentasche auf Bank in lichtdurchflutetem Flur – sinnbildlich für mehrere Projekte",
-  "Vertragsunterlagen mit Füllfederhalter auf Schreibtisch – sinnbildlich für individuelle Vereinbarung",
-  "Zwei Ledersessel am Fenster – sinnbildlich für direkten Austausch",
-];
-// Principles: Klare Kommunikation → Dialog, Langfristige Perspektive → Horizont, Verlässlicher Rahmen → Schild, Geteiltes Verständnis → Handschlag
-const principleIcon3d = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
-const principleIcons = [MessagesSquare, Compass, ShieldCheck, Handshake];
+// Forms (4) — 3D-Icons im ProofCard-Stil
+const formIcons = [icons3d.building, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
+// Principles (Navy) — 3D-Icons light
+const principleIcons = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
+// Steps (5)
+const stepIcons = [icons3d.dialogue, icons3d.scale, icons3d.contract, icons3d.briefcase, icons3d.key];
 
 const ForGeschaftspartner = () => {
   const { t } = useLanguage();
@@ -77,9 +64,10 @@ const ForGeschaftspartner = () => {
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <AreaCard
-                    headerImage={formImages[i % formImages.length]}
-                    headerImageAlt={formImageAlts[i % formImageAlts.length]}
+                  <ProofCard
+                    iconImage={formIcons[i % formIcons.length]}
+                    iconAlt={f.title}
+                    index={i}
                     title={f.title}
                     text={f.desc}
                   />
@@ -89,7 +77,7 @@ const ForGeschaftspartner = () => {
           </div>
         </section>
 
-        {/* GRUNDLAGEN (Navy + Proof Points) */}
+        {/* GRUNDLAGEN (Navy) */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
             <SectionHeader title={p.principlesTitle} intro={p.principlesText} tone="dark" />
@@ -98,7 +86,7 @@ const ForGeschaftspartner = () => {
                 {p.principles.map((pr, i) => (
                   <ProofCard
                     key={i}
-                    iconImage={principleIcon3d[i % principleIcon3d.length]}
+                    iconImage={principleIcons[i % principleIcons.length]}
                     iconAlt={pr.title}
                     index={i}
                     title={pr.title}
@@ -126,6 +114,8 @@ const ForGeschaftspartner = () => {
                   total={p.steps.length}
                   title={s.title}
                   desc={s.desc}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={s.title}
                 />
               ))}
             </div>
