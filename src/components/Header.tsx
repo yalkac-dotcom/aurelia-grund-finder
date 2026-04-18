@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logoImg from "@/assets/aurelia-logo.png";
@@ -13,9 +13,17 @@ interface NavItem {
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const { t } = useLanguage();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const navItems: NavItem[] = [
     { label: t.nav.home, path: "/" },
@@ -43,11 +51,20 @@ const Header = () => {
     return location.pathname === item.path;
   };
 
+  const headerClass = scrolled
+    ? "sticky top-0 z-50 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.08)] transition-all duration-300"
+    : "sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/40 transition-all duration-300";
+
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-teal-100/40">
+    <header className={headerClass}>
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center">
-          <img src={logoImg} alt="Aurelia Grundbesitz GmbH" className="h-[2.6rem] md:h-[3.2rem] w-auto object-contain" />
+          <img
+            src={logoImg}
+            alt="Aurelia Grundbesitz GmbH"
+            className="h-[2.6rem] md:h-[3.2rem] w-auto object-contain"
+            style={{ minWidth: 120 }}
+          />
         </Link>
 
         <div className="hidden md:flex items-baseline gap-9">
@@ -57,7 +74,7 @@ const Header = () => {
                 <button
                   key={item.label}
                   onClick={() => handleHashNav(item)}
-                  className="text-[12px] tracking-wide transition-all duration-300 hover:text-teal-700 leading-none text-muted-foreground min-h-0 min-w-0"
+                  className="text-[12px] tracking-wide text-primary/75 hover:text-accent transition-colors duration-300 leading-none min-h-0 min-w-0"
                 >
                   {item.label}
                 </button>
@@ -65,10 +82,10 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-[12px] tracking-wide transition-all duration-300 hover:text-teal-700 leading-none ${
+                  className={`text-[12px] tracking-wide transition-colors duration-300 leading-none hover:text-accent ${
                     isActive(item)
-                      ? "text-teal-800 font-medium border-b-2 border-teal-600 pb-0.5"
-                      : "text-muted-foreground"
+                      ? "text-primary font-medium border-b-2 border-accent pb-0.5"
+                      : "text-primary/75"
                   }`}
                 >
                   {item.label}
@@ -76,7 +93,7 @@ const Header = () => {
               )
             )}
           </nav>
-          <div className="ml-3 pl-5 border-l border-teal-100/50">
+          <div className="ml-3 pl-5 border-l border-border/60">
             <LanguageSwitcher />
           </div>
           <Link
@@ -90,24 +107,24 @@ const Header = () => {
         <div className="md:hidden flex items-center gap-3">
           <LanguageSwitcher />
           <button
-            className="p-1.5 text-foreground/70"
+            className="p-1.5 text-primary"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={t.common.navigationOpenAria}
           >
-            {mobileOpen ? <X size={16} /> : <Menu size={16} />}
+            {mobileOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
         </div>
       </div>
 
       {mobileOpen && (
-        <nav className="md:hidden bg-background border-t border-teal-100/30">
+        <nav className="md:hidden bg-primary text-white">
           <div className="pt-4 pb-2 px-6">
             {navItems.map((item) =>
               item.hash ? (
                 <button
                   key={item.label}
                   onClick={() => handleHashNav(item)}
-                  className="block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors text-muted-foreground hover:text-teal-700 w-full text-left min-h-0 min-w-0"
+                  className="block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors text-white/80 hover:text-accent w-full text-left min-h-0 min-w-0"
                 >
                   {item.label}
                 </button>
@@ -116,8 +133,8 @@ const Header = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setMobileOpen(false)}
-                  className={`block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors hover:text-teal-700 ${
-                    isActive(item) ? "text-teal-800 font-medium" : "text-muted-foreground"
+                  className={`block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors hover:text-accent ${
+                    isActive(item) ? "text-accent font-medium" : "text-white/80"
                   }`}
                 >
                   {item.label}
@@ -127,23 +144,23 @@ const Header = () => {
             <Link
               to="/kontakt"
               onClick={() => setMobileOpen(false)}
-              className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold btn-gradient rounded-sm"
+              className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold bg-accent text-primary rounded-sm"
             >
               {t.home.finalCtaButton}
             </Link>
           </div>
-          <div className="border-t border-teal-100/20 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">
+          <div className="border-t border-white/10 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">
             <Link
               to="/impressum"
               onClick={() => setMobileOpen(false)}
-              className="text-muted-foreground/50 text-[10px] tracking-[0.08em]"
+              className="text-white/55 text-[10px] tracking-[0.08em]"
             >
               {t.footer.imprint}
             </Link>
             <Link
               to="/datenschutz"
               onClick={() => setMobileOpen(false)}
-              className="text-muted-foreground/50 text-[10px] tracking-[0.08em]"
+              className="text-white/55 text-[10px] tracking-[0.08em]"
             >
               {t.footer.privacy}
             </Link>

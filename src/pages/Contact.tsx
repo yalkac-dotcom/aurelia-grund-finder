@@ -73,6 +73,28 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Direkter Telefon-Kontakt — direkt unter Hero */}
+      <section className="pt-8 md:pt-10">
+        <div className="container max-w-3xl">
+          <div className="text-center">
+            <h2 className="text-[1.4rem] md:text-[1.85rem] font-heading font-bold text-primary leading-[1.2] mb-3">
+              <span className="block mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
+              {t.common.address ? "Wir sind für Sie da" : "Wir sind für Sie da"}
+            </h2>
+            <a
+              href="tel:+4921169583033"
+              className="inline-block text-[1.05rem] md:text-[1.2rem] font-semibold tracking-tight transition-colors"
+              style={{ color: "hsl(var(--highlight))" }}
+            >
+              📞 +49 211 69583033
+            </a>
+            <p className="mt-2 text-[0.85rem] text-muted-foreground">
+              Mo–Fr, auch kurzfristig bei laufenden Verfahren
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Premium Contact Module */}
       <PremiumContactModule />
 

@@ -14,12 +14,12 @@ const SectionHeader = ({ title, intro, align = "center", tone = "light" }: Secti
     <Reveal>
       <div className={`mb-10 ${isCenter ? "text-center" : ""}`}>
         <div
-          className={`mb-4 h-px w-12 ${isCenter ? "mx-auto" : ""}`}
-          style={{ background: isDark ? "hsl(var(--accent) / 0.7)" : "hsl(var(--accent) / 0.7)" }}
+          className={`mb-3 h-[2px] w-10 ${isCenter ? "mx-auto" : ""}`}
+          style={{ background: "hsl(var(--accent))" }}
         />
         <h2
-          className={`mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-balance md:text-[1.9rem] ${
-            isDark ? "text-white" : "text-foreground"
+          className={`mb-4 font-heading font-bold leading-[1.2] text-balance text-[1.625rem] md:text-[2.25rem] ${
+            isDark ? "text-white" : "text-primary"
           }`}
         >
           {title}

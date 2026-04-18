@@ -87,7 +87,7 @@ const About = () => {
                 return (
                   <Reveal key={i} delay={i * 0.08}>
                     <div className="glass-card-dark rounded-2xl p-7 h-full">
-                      <Icon className="mb-4 text-teal-400" size={28} />
+                      <Icon className="mb-4" size={28} strokeWidth={1.5} style={{ color: "hsl(var(--highlight))" }} />
                       <h3 className="mb-2 text-[1rem] font-heading font-semibold text-white">{item.title}</h3>
                       <p className="text-[0.86rem] leading-[1.75] text-white/70">{item.desc}</p>
                     </div>

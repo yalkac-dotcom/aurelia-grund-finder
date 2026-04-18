@@ -11,11 +11,12 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Building2, Wallet, Users, Gavel, Lock, Scale, FileCheck, ShieldCheck, Phone } from "lucide-react";
 
-// Situations: komplexe Eigentumsverhältnisse → Gebäude, Finanzielle Belastung → Wallet, Konflikte zwischen Eigentümern → Erben/Mehrere, Zwangsversteigerung → Hammer
-const situationImages = [icons3d.building, icons3d.wallet, icons3d.heirs, icons3d.gavel];
-// Proof (auf Navy): Diskretion, Faire Bewertung, Klare Vereinbarung (Handschlag), Verlässliche Abwicklung
-const proofImagesLight = [icons3d.lockLight, icons3d.scaleLight, icons3d.handshakeLight, icons3d.checkLight];
+// Situations
+const situationIcons = [Building2, Wallet, Users, Gavel];
+// Proof (auf Navy): Diskretion, Faire Bewertung, Klare Vereinbarung, Verlässliche Abwicklung
+const proofIcons = [Lock, Scale, FileCheck, ShieldCheck];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -42,10 +43,10 @@ const ForOwnerInTrouble = () => {
             <SectionHeader title={o.situationsTitle} intro={o.situationsIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2">
               {o.situations.map((s, i) => {
-                const img = situationImages[i % situationImages.length];
+                const Icon = situationIcons[i % situationIcons.length];
                 return (
                   <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard iconImage={img} iconAlt={s.title} title={s.title} text={s.desc} />
+                    <AreaCard icon={Icon} iconAlt={s.title} title={s.title} text={s.desc} />
                   </Reveal>
                 );
               })}
@@ -62,7 +63,7 @@ const ForOwnerInTrouble = () => {
                 {o.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    iconImage={proofImagesLight[i % proofImagesLight.length]}
+                    icon={proofIcons[i % proofIcons.length]}
                     iconAlt={p.title}
                     index={i}
                     title={p.title}
@@ -133,6 +134,29 @@ const ForOwnerInTrouble = () => {
           buttonTo="/kontakt"
         />
       </div>
+
+      {/* Sticky Mobile Bottom Bar — nur auf dieser Seite */}
+      <div
+        className="fixed bottom-0 inset-x-0 z-[60] md:hidden flex"
+        style={{ backgroundColor: "hsl(var(--primary))", height: 56 }}
+      >
+        <a
+          href="tel:+4921169583033"
+          className="flex flex-1 items-center justify-center gap-2 text-white text-[13px] font-semibold uppercase tracking-[0.08em]"
+          style={{ borderRight: "1px solid rgba(255,255,255,0.2)" }}
+        >
+          <Phone size={15} strokeWidth={1.75} />
+          Anrufen
+        </a>
+        <a
+          href="/kontakt"
+          className="flex flex-1 items-center justify-center text-white text-[13px] font-semibold uppercase tracking-[0.08em]"
+        >
+          Anfragen
+        </a>
+      </div>
+      {/* Spacer damit Content nicht hinter Sticky-Bar verschwindet */}
+      <div className="md:hidden" style={{ height: 56 }} aria-hidden="true" />
     </Layout>
   );
 };

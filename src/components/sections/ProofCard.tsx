@@ -14,7 +14,11 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, index, title, text }: Proof
   return (
     <article className="proof-card group h-full" aria-labelledby={id}>
       <div className="proof-card__visual">
-        {iconImage ? (
+        {Icon ? (
+          <span className="proof-card__icon" aria-hidden="true">
+            <Icon size={22} strokeWidth={1.5} className="text-white" />
+          </span>
+        ) : iconImage ? (
           <span
             className="proof-card__icon proof-card__icon--image"
             aria-hidden={iconAlt ? undefined : "true"}
@@ -27,10 +31,6 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, index, title, text }: Proof
               height={128}
               className="h-full w-full object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.35)] transition-transform duration-500 ease-out group-hover:-translate-y-0.5"
             />
-          </span>
-        ) : Icon ? (
-          <span className="proof-card__icon" aria-hidden="true">
-            <Icon size={22} />
           </span>
         ) : null}
         <span className="proof-card__numeral" aria-hidden="true">
