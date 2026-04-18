@@ -139,4 +139,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HomePage_NameFix;
+export default HowItWorks;
