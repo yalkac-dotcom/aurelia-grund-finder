@@ -102,8 +102,8 @@ const ForBuyers = () => {
                 {b.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    image={proofImages[i % proofImages.length]}
-                    imageAlt={p.title}
+                    floatingIcon={proofIcons[i % proofIcons.length]}
+                    floatingIconAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}
