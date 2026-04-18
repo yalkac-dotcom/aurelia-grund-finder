@@ -395,6 +395,79 @@ const nl: Translations = {
       "Een vertrouwelijk eerste gesprek is vrijblijvend en kosteloos. Wij zeggen u eerlijk wat mogelijk is – ook wanneer de tijd dringt.",
     finalCtaButton: "Vertrouwelijk aanvragen",
   },
+  howItWorks: {
+    heroKicker: "Hoe wij werken",
+    heroTitle: "Drie werkterreinen, één gemeenschappelijk principe.",
+    heroDescription:
+      "Aurelia bundelt drie activiteiten onder één heldere maatstaf: aankoop van vorderingen, verkoop van objecten uit eigen portefeuille en projectgebonden samenwerkingen – telkens netjes gestructureerd en verifieerbaar gedocumenteerd.",
+    heroPrimaryCta: "Werkwijze bespreken",
+    heroSecondaryCta: "Bekijk het proces",
+    heroTrustLine: "Gestructureerde processen · Heldere verantwoordelijkheden · Vertrouwelijk",
+    heroImageAlt: "Rustige, lichtrijke zakelijke omgeving – symbool voor de gestructureerde werkwijze van Aurelia",
+    introTitle: "Eén maatstaf, drie wegen",
+    introText:
+      "Alle activiteiten van Aurelia berusten op dezelfde uitgangspunten: eerlijke voorwaarden, transparante communicatie en een langetermijnperspectief. Wat verschilt is niet het principe – maar de uitgangssituatie van de gesprekspartner.",
+    segmentsTitle: "Onze drie werkterreinen",
+    segmentsIntro: "Naargelang de situatie zijn er verschillende wegen. De onderliggende logica blijft consistent.",
+    segments: [
+      {
+        title: "Aankoop van vorderingen",
+        desc: "Voor eigenaren in moeilijke situaties. Wij beoordelen de constellatie, doen een navolgbaar bod en zorgen voor een geordende afhandeling.",
+      },
+      {
+        title: "Vastgoedverkoop",
+        desc: "Voor kopers die geïnteresseerd zijn in gecontroleerde objecten uit onze portefeuille. Rechtstreeks van de eigenaar, met transparante prijsbasis en zonder makelaarscourtage.",
+      },
+      {
+        title: "Projectsamenwerkingen",
+        desc: "Voor langetermijngerichte zakenpartners. Individueel afgesproken, projectgebonden, vertrouwelijk – geen publieke beleggingsmodellen.",
+      },
+    ],
+    holdTitle: "Portefeuille aanhouden – de rustige strategie",
+    holdIntro:
+      "Niet elk object wordt op korte termijn verkocht. Een deel van de portefeuille blijft langdurig in eigen bezit en wordt rustig ontwikkeld.",
+    holdSteps: [
+      { title: "Aankoop", desc: "Gecontroleerde overname op basis van duidelijk gedocumenteerde criteria." },
+      { title: "Structurering", desc: "Bouwkundige en juridische opwaardering waar zinvol." },
+      { title: "Verhuur", desc: "Opbouw van stabiele huurverhoudingen met rustige structuren." },
+      { title: "Waardebehoud", desc: "Lopend onderhoud en zakelijk beheer." },
+      { title: "Langetermijnbezit", desc: "De portefeuille blijft – als rustig groeiende vermogenspijler." },
+    ],
+    holdNote:
+      "Beschrijving van de algemene werkwijze. Concrete beslissingen worden uitsluitend per object genomen. Marktomstandigheden kunnen veranderen.",
+    principlesTitle: "Wat over alle werkterreinen geldt",
+    principlesIntro: "Vier uitgangspunten die ons werk bepalen – ongeacht het werkterrein.",
+    principles: [
+      { title: "Transparante communicatie", text: "Heldere taal. Geen beloften die wij niet kunnen waarmaken." },
+      { title: "Eerlijke voorwaarden", text: "Navolgbare berekening op basis van zakelijke kengetallen." },
+      { title: "Goede documentatie", text: "Alle stappen worden schriftelijk en verifieerbaar vastgelegd." },
+      { title: "Langetermijnperspectief", text: "Geen speculatie, maar rustige, duurzame ontwikkeling." },
+    ],
+    faqTitle: "Veelgestelde vragen over onze werkwijze",
+    faqIntro: "Als uw vraag hier niet wordt beantwoord, neem dan rechtstreeks contact met ons op.",
+    faqItems: [
+      {
+        q: "Hoe verschillen de drie werkterreinen bij het eerste contact?",
+        a: "De openingsvraag verschilt – onze houding is dezelfde. Eigenaren, kopers en zakenpartners worden zakelijk en vertrouwelijk benaderd, zonder druk en zonder standaardprocedures.",
+      },
+      {
+        q: "Wie beslist of een project doorgaat?",
+        a: "Beide partijen. Wij beoordelen de constellatie zorgvuldig en gaan alleen afspraken aan die voor beide partijen draagbaar zijn.",
+      },
+      {
+        q: "Worden objecten in portefeuille uiteindelijk toch verkocht?",
+        a: "Mogelijk, maar niet de regel. Portefeuille betekent voor ons langdurig aanhouden. Verkoop vindt alleen plaats als dat voor de concrete constellatie zinvol is.",
+      },
+      {
+        q: "Hoe wordt vertrouwelijkheid gewaarborgd?",
+        a: "Eerste gesprekken zijn standaard vertrouwelijk. Inhoud wordt niet doorgegeven. Op verzoek werken wij met geheimhoudingsovereenkomsten.",
+      },
+    ],
+    finalCtaTitle: "Vragen over de werkwijze?",
+    finalCtaText:
+      "Wij lichten de afzonderlijke stappen graag toe in een persoonlijk gesprek – zakelijk, vertrouwelijk en vrijblijvend.",
+    finalCtaButton: "Vrijblijvend contact opnemen",
+  },
   buyers: {
     heroKicker: "Voor kopers",
     heroTitle: "Kwaliteitsvastgoed tegen transparante prijzen.",

@@ -442,6 +442,80 @@ const de: Translations = {
       "Ein vertrauliches Erstgespräch ist unverbindlich und kostenfrei. Wir sagen Ihnen ehrlich, was möglich ist – auch dann, wenn die Zeit drängt.",
     finalCtaButton: "Vertraulich anfragen",
   },
+  howItWorks: {
+    heroKicker: "Wie wir arbeiten",
+    heroTitle: "Drei Geschäftsbereiche, ein gemeinsames Prinzip.",
+    heroDescription:
+      "Aurelia bündelt drei Tätigkeitsfelder unter einem klaren Anspruch: Forderungsankauf, Immobilienverkauf aus dem Bestand und projektbezogene Kooperationen – jeweils sauber strukturiert und nachvollziehbar dokumentiert.",
+    heroPrimaryCta: "Vorgehen besprechen",
+    heroSecondaryCta: "Ablauf ansehen",
+    heroTrustLine: "Strukturierte Prozesse · Klare Verantwortlichkeiten · Vertraulich",
+    heroImageAlt: "Ruhige, lichtdurchflutete Geschäftsumgebung – sinnbildlich für die strukturierte Arbeitsweise von Aurelia",
+    introTitle: "Ein Anspruch, drei Wege",
+    introText:
+      "Alle Tätigkeiten von Aurelia bauen auf denselben Grundsätzen auf: faire Konditionen, transparente Kommunikation und eine langfristige Perspektive. Was sich unterscheidet, ist nicht das Prinzip – sondern die Ausgangslage des Gegenübers.",
+    segmentsTitle: "Unsere drei Tätigkeitsfelder",
+    segmentsIntro:
+      "Je nach Situation stehen unterschiedliche Wege offen. Die Logik dahinter bleibt konsistent.",
+    segments: [
+      {
+        title: "Forderungsankauf",
+        desc: "Für Eigentümer in schwierigen Situationen. Wir prüfen die Konstellation, machen ein nachvollziehbares Angebot und übernehmen die geordnete Abwicklung.",
+      },
+      {
+        title: "Immobilienverkauf",
+        desc: "Für Käufer mit Interesse an geprüften Objekten aus unserem Bestand. Direkt vom Eigentümer, mit transparenter Preisbasis und ohne Maklerprovision.",
+      },
+      {
+        title: "Projektkooperationen",
+        desc: "Für langfristig orientierte Geschäftspartner. Individuell vereinbart, projektbezogen, vertraulich – ohne öffentliche Beteiligungsmodelle.",
+      },
+    ],
+    holdTitle: "Bestand halten – die ruhige Strategie",
+    holdIntro:
+      "Nicht jedes Objekt wird kurzfristig veräußert. Ein Teil des Portfolios bleibt langfristig im Bestand und wird ruhig entwickelt.",
+    holdSteps: [
+      { title: "Erwerb", desc: "Geprüfte Übernahme nach klar dokumentierten Kriterien." },
+      { title: "Strukturierung", desc: "Bauliche und rechtliche Aufarbeitung, sofern sinnvoll." },
+      { title: "Vermietung", desc: "Aufbau stabiler Mietverhältnisse mit ruhigen Strukturen." },
+      { title: "Werterhalt", desc: "Laufende Pflege und sachliche Bewirtschaftung." },
+      { title: "Langfristig halten", desc: "Bestand bleibt – als ruhig wachsender Vermögensbaustein." },
+    ],
+    holdNote:
+      "Beschreibung des allgemeinen Vorgehens. Konkrete Entscheidungen werden ausschließlich objektbezogen getroffen. Marktbedingungen können sich verändern.",
+    principlesTitle: "Was über alle Bereiche hinweg gilt",
+    principlesIntro: "Vier Grundsätze, die unsere Arbeit prägen – unabhängig vom Tätigkeitsfeld.",
+    principles: [
+      { title: "Transparente Kommunikation", text: "Klare Sprache. Keine Versprechen, die wir nicht halten können." },
+      { title: "Faire Konditionen", text: "Nachvollziehbare Kalkulation auf Basis sachlicher Kennzahlen." },
+      { title: "Saubere Dokumentation", text: "Alle Schritte werden schriftlich und prüfbar festgehalten." },
+      { title: "Langfristige Perspektive", text: "Keine Spekulation, sondern ruhige, nachhaltige Entwicklung." },
+    ],
+    faqTitle: "Häufige Fragen zum Vorgehen",
+    faqIntro: "Wenn Ihre Frage hier nicht beantwortet ist, sprechen Sie uns direkt an.",
+    faqItems: [
+      {
+        q: "Wie unterscheiden sich die drei Bereiche im Erstkontakt?",
+        a: "Die Ausgangsfrage ist eine andere – die Haltung dieselbe. Eigentümer, Käufer und Geschäftspartner werden jeweils sachlich und vertraulich angesprochen, ohne Druck und ohne Standardabläufe.",
+      },
+      {
+        q: "Wer entscheidet, ob ein Projekt zustande kommt?",
+        a: "Beide Seiten. Wir prüfen die Konstellation sorgfältig und treffen nur Vereinbarungen, die für beide Seiten tragfähig sind.",
+      },
+      {
+        q: "Werden Bestandsobjekte später doch verkauft?",
+        a: "Möglich, aber nicht vorgesehen. Bestand bedeutet bei uns langfristiges Halten. Veräußerungen erfolgen nur, wenn es für die jeweilige Konstellation sinnvoll ist.",
+      },
+      {
+        q: "Wie wird Vertraulichkeit sichergestellt?",
+        a: "Erstgespräche sind grundsätzlich vertraulich. Inhalte werden nicht weitergegeben. Auf Wunsch arbeiten wir mit Vertraulichkeitsvereinbarungen.",
+      },
+    ],
+    finalCtaTitle: "Fragen zum Vorgehen?",
+    finalCtaText:
+      "Wir erläutern Ihnen die einzelnen Schritte gerne im persönlichen Gespräch – sachlich, vertraulich und ohne Verpflichtung.",
+    finalCtaButton: "Unverbindlich Kontakt aufnehmen",
+  },
   buyers: {
     heroKicker: "Für Käufer",
     heroTitle: "Qualitätsimmobilien zu transparenten Preisen.",

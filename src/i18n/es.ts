@@ -394,6 +394,79 @@ const es: Translations = {
       "Una primera conversación confidencial es sin compromiso y gratuita. Le decimos honestamente qué es posible – también cuando el tiempo apremia.",
     finalCtaButton: "Consulta confidencial",
   },
+  howItWorks: {
+    heroKicker: "Cómo trabajamos",
+    heroTitle: "Tres ámbitos de actividad, un principio común.",
+    heroDescription:
+      "Aurelia agrupa tres ámbitos bajo una misma exigencia clara: compra de créditos, venta de inmuebles desde nuestro portafolio y cooperaciones por proyecto – todos ellos estructurados con orden y documentados de forma verificable.",
+    heroPrimaryCta: "Hablar de nuestro enfoque",
+    heroSecondaryCta: "Ver el proceso",
+    heroTrustLine: "Procesos estructurados · Responsabilidades claras · Confidencial",
+    heroImageAlt: "Entorno profesional tranquilo y luminoso – símbolo de la forma estructurada de trabajar de Aurelia",
+    introTitle: "Una exigencia, tres caminos",
+    introText:
+      "Todas las actividades de Aurelia se basan en los mismos principios: condiciones justas, comunicación transparente y perspectiva a largo plazo. Lo que varía no es el principio, sino la situación de partida del interlocutor.",
+    segmentsTitle: "Nuestros tres ámbitos de actividad",
+    segmentsIntro: "Según la situación se abren caminos distintos. La lógica subyacente se mantiene.",
+    segments: [
+      {
+        title: "Compra de créditos",
+        desc: "Para propietarios en situaciones difíciles. Analizamos la constelación, hacemos una oferta verificable y nos encargamos de la tramitación ordenada.",
+      },
+      {
+        title: "Venta de inmuebles",
+        desc: "Para compradores interesados en inmuebles verificados de nuestro portafolio. Directamente del propietario, con base de precio transparente y sin comisión de agencia.",
+      },
+      {
+        title: "Cooperaciones por proyecto",
+        desc: "Para socios orientados al largo plazo. Acordadas individualmente, ligadas a un proyecto, confidenciales – sin modelos de inversión públicos.",
+      },
+    ],
+    holdTitle: "Mantener en cartera – la estrategia tranquila",
+    holdIntro:
+      "No todos los inmuebles se venden a corto plazo. Una parte del portafolio permanece a largo plazo y se desarrolla con calma.",
+    holdSteps: [
+      { title: "Adquisición", desc: "Adquisición revisada según criterios claramente documentados." },
+      { title: "Estructuración", desc: "Mejora estructural y jurídica donde tenga sentido." },
+      { title: "Arrendamiento", desc: "Construcción de relaciones de alquiler estables y estructuras tranquilas." },
+      { title: "Conservación del valor", desc: "Mantenimiento continuo y gestión objetiva." },
+      { title: "Mantenimiento a largo plazo", desc: "El portafolio permanece, como activo de crecimiento sosegado." },
+    ],
+    holdNote:
+      "Descripción del enfoque general. Las decisiones concretas se toman exclusivamente caso por caso. Las condiciones de mercado pueden variar.",
+    principlesTitle: "Lo que aplica en todos los ámbitos",
+    principlesIntro: "Cuatro principios que definen nuestro trabajo – con independencia del ámbito.",
+    principles: [
+      { title: "Comunicación transparente", text: "Lenguaje claro. Sin promesas que no podamos cumplir." },
+      { title: "Condiciones justas", text: "Cálculo verificable basado en parámetros objetivos." },
+      { title: "Documentación correcta", text: "Todos los pasos se registran por escrito y de forma verificable." },
+      { title: "Perspectiva a largo plazo", text: "Sin especulación, con desarrollo sereno y sostenible." },
+    ],
+    faqTitle: "Preguntas frecuentes sobre el enfoque",
+    faqIntro: "Si su pregunta no aparece aquí, póngase en contacto con nosotros directamente.",
+    faqItems: [
+      {
+        q: "¿En qué se diferencian los tres ámbitos en el primer contacto?",
+        a: "La pregunta inicial es distinta – la actitud es la misma. Propietarios, compradores y socios se abordan de forma objetiva y confidencial, sin presión y sin procesos estandarizados.",
+      },
+      {
+        q: "¿Quién decide si un proyecto sigue adelante?",
+        a: "Ambas partes. Analizamos la constelación con cuidado y solo cerramos acuerdos sostenibles para ambas partes.",
+      },
+      {
+        q: "¿Los inmuebles del portafolio acaban vendiéndose?",
+        a: "Es posible, pero no es lo previsto. Para nosotros mantener significa conservar a largo plazo. Las ventas solo se producen cuando tienen sentido para la situación concreta.",
+      },
+      {
+        q: "¿Cómo se garantiza la confidencialidad?",
+        a: "Las primeras conversaciones son confidenciales por principio. Los contenidos no se transmiten. A solicitud trabajamos con acuerdos de confidencialidad.",
+      },
+    ],
+    finalCtaTitle: "¿Dudas sobre el enfoque?",
+    finalCtaText:
+      "Le explicamos con gusto los pasos en una conversación personal – objetiva, confidencial y sin compromiso.",
+    finalCtaButton: "Contacte sin compromiso",
+  },
   buyers: {
     heroKicker: "Para compradores",
     heroTitle: "Inmuebles de calidad a precios transparentes.",

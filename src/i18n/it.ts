@@ -394,6 +394,79 @@ const it: Translations = {
       "Un primo colloquio riservato è senza impegno e gratuito. Le diciamo onestamente cosa è possibile – anche quando il tempo stringe.",
     finalCtaButton: "Richiesta riservata",
   },
+  howItWorks: {
+    heroKicker: "Come lavoriamo",
+    heroTitle: "Tre ambiti di attività, un principio comune.",
+    heroDescription:
+      "Aurelia riunisce tre ambiti sotto un'unica chiara impostazione: acquisto di crediti, vendita di immobili dal proprio portafoglio e cooperazioni progettuali – ciascuno strutturato con cura e documentato in modo verificabile.",
+    heroPrimaryCta: "Discutere il nostro approccio",
+    heroSecondaryCta: "Vedere il processo",
+    heroTrustLine: "Processi strutturati · Responsabilità chiare · Riservato",
+    heroImageAlt: "Ambiente professionale tranquillo e luminoso – simbolo del modo di lavorare strutturato di Aurelia",
+    introTitle: "Un'unica impostazione, tre percorsi",
+    introText:
+      "Tutte le attività di Aurelia poggiano sugli stessi principi: condizioni eque, comunicazione trasparente e prospettiva di lungo termine. Ciò che cambia non è il principio – ma la situazione di partenza dell'interlocutore.",
+    segmentsTitle: "I nostri tre ambiti di attività",
+    segmentsIntro: "A seconda della situazione si aprono percorsi diversi. La logica di fondo rimane coerente.",
+    segments: [
+      {
+        title: "Acquisto di crediti",
+        desc: "Per proprietari in situazioni difficili. Esaminiamo la costellazione, formuliamo un'offerta verificabile e curiamo lo svolgimento ordinato.",
+      },
+      {
+        title: "Vendita di immobili",
+        desc: "Per acquirenti interessati a immobili verificati del nostro portafoglio. Direttamente dal proprietario, con base di prezzo trasparente e senza provvigione.",
+      },
+      {
+        title: "Cooperazioni progettuali",
+        desc: "Per partner orientati al lungo termine. Concordate individualmente, su base progettuale, riservate – senza modelli di investimento pubblici.",
+      },
+    ],
+    holdTitle: "Mantenere in portafoglio – la strategia tranquilla",
+    holdIntro:
+      "Non ogni immobile viene venduto a breve termine. Una parte del portafoglio resta in possesso a lungo termine e viene sviluppata con calma.",
+    holdSteps: [
+      { title: "Acquisizione", desc: "Acquisizione verificata in base a criteri chiaramente documentati." },
+      { title: "Strutturazione", desc: "Riqualificazione strutturale e giuridica laddove sensata." },
+      { title: "Locazione", desc: "Costruzione di rapporti di locazione stabili con strutture tranquille." },
+      { title: "Conservazione del valore", desc: "Manutenzione continua e gestione concreta." },
+      { title: "Mantenimento di lungo termine", desc: "Il portafoglio resta – come elemento patrimoniale che cresce con calma." },
+    ],
+    holdNote:
+      "Descrizione dell'approccio generale. Le decisioni concrete vengono prese esclusivamente su base oggettuale. Le condizioni di mercato possono variare.",
+    principlesTitle: "Ciò che vale in tutti gli ambiti",
+    principlesIntro: "Quattro principi che caratterizzano il nostro lavoro – indipendentemente dall'ambito.",
+    principles: [
+      { title: "Comunicazione trasparente", text: "Linguaggio chiaro. Nessuna promessa che non possiamo mantenere." },
+      { title: "Condizioni eque", text: "Calcolo verificabile basato su parametri concreti." },
+      { title: "Documentazione accurata", text: "Tutte le fasi vengono registrate per iscritto e in modo verificabile." },
+      { title: "Prospettiva di lungo termine", text: "Nessuna speculazione, ma sviluppo tranquillo e sostenibile." },
+    ],
+    faqTitle: "Domande frequenti sull'approccio",
+    faqIntro: "Se la vostra domanda non è qui, contattateci direttamente.",
+    faqItems: [
+      {
+        q: "Come si differenziano i tre ambiti al primo contatto?",
+        a: "La domanda di partenza è diversa – l'atteggiamento è lo stesso. Proprietari, acquirenti e partner d'affari vengono interpellati in modo concreto e riservato, senza pressione e senza procedure standard.",
+      },
+      {
+        q: "Chi decide se un progetto si concretizza?",
+        a: "Entrambe le parti. Esaminiamo la costellazione con attenzione e stipuliamo solo accordi sostenibili per entrambe le parti.",
+      },
+      {
+        q: "Gli immobili in portafoglio vengono comunque venduti in seguito?",
+        a: "Possibile, ma non previsto. Per noi mantenere significa tenere a lungo termine. Le vendite avvengono solo se ciò ha senso per la singola costellazione.",
+      },
+      {
+        q: "Come viene garantita la riservatezza?",
+        a: "I primi colloqui sono per principio riservati. I contenuti non vengono divulgati. Su richiesta lavoriamo con accordi di riservatezza.",
+      },
+    ],
+    finalCtaTitle: "Domande sull'approccio?",
+    finalCtaText:
+      "Vi illustriamo volentieri le singole fasi in un colloquio personale – concreto, riservato e senza impegno.",
+    finalCtaButton: "Contattateci senza impegno",
+  },
   buyers: {
     heroKicker: "Per acquirenti",
     heroTitle: "Immobili di qualità a prezzi trasparenti.",
