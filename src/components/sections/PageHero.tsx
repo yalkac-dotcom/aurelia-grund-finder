@@ -31,9 +31,9 @@ const PageHero = ({
 }: PageHeroProps) => (
   <section
     id="hero"
-    className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]"
+    className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px] bg-primary"
   >
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden bg-primary">
       <OptimizedImg
         src={image.src}
         srcSet={image.srcSet}
@@ -43,10 +43,14 @@ const PageHero = ({
         style={{ objectPosition: imagePosition }}
         priority
       />
-      <div className="hero-overlay-base absolute inset-0" />
-      <div className="hero-overlay-protect absolute inset-0" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/40 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+      {/* Lese-Schutz: links 85% Navy, rechts 30% — schützt Text, lässt Bild atmen */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to right, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.78) 35%, hsl(var(--primary) / 0.45) 65%, hsl(var(--primary) / 0.30) 100%)",
+        }}
+      />
     </div>
 
     <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
@@ -58,19 +62,13 @@ const PageHero = ({
           {(primaryCta || secondaryCta) && (
             <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
               {primaryCta && (
-                <Link
-                  to={primaryCta.to}
-                  className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-primary shadow-lg ring-1 ring-[hsl(45_70%_55%_/_0.4)] transition-all duration-300 hover:bg-white/95 hover:ring-[hsl(45_80%_60%)]"
-                >
+                <Link to={primaryCta.to} className="btn-primary">
                   {primaryCta.label}
-                  <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
+                  <ArrowRight size={13} className="ml-2 text-accent" />
                 </Link>
               )}
               {secondaryCta && (
-                <a
-                  href={secondaryCta.href}
-                  className="inline-flex items-center gap-2 rounded-sm border border-white/35 bg-white/5 px-6 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-sm transition-all duration-300 hover:border-white/55 hover:bg-white/10"
-                >
+                <a href={secondaryCta.href} className="btn-secondary">
                   {secondaryCta.label}
                 </a>
               )}
