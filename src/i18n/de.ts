@@ -23,8 +23,8 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Aurelia Grundbesitz entwickelt Immobilien aus besonderen Situationen — diskret, strukturiert und mit klarem Blick für wirtschaftlich sinnvolle Entscheidungen.",
-    subline: "Diskret · Substanzorientiert · Langfristig",
+      "Aurelia Grundbesitz kauft Immobilien — und in besonderen Fällen immobilienbezogene Forderungen — auf eigene Rechnung. Diskret, strukturiert und ohne Vermittlerketten.",
+    subline: "Diskret · Auf eigene Rechnung · Verbindlich",
     navItems: [
       { label: "Startseite", path: "/" },
       { label: "Eigentümer in Schwierigkeiten", path: "/fuer-eigentumer-in-not" },
@@ -49,7 +49,7 @@ const de: Translations = {
     socialLinkedinAria: "LinkedIn (folgt)",
     socialInstagramAria: "Instagram (folgt)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle Rechte vorbehalten.",
-    kwgDisclaimer: "Aurelia Grundbesitz GmbH ist kein Finanzdienstleister im Sinne des KWG und bietet keine Anlageberatung an. Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
+    kwgDisclaimer: "Wir kaufen und verkaufen ausschließlich auf eigene Rechnung. Keine Finanzdienstleistungen, keine Kreditvergabe oder -vermittlung, keine Anlageberatung. Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
   },
   newsletter: {
     placeholder: "Ihre E-Mail-Adresse",
