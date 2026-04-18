@@ -45,10 +45,10 @@ const ForOwnerInTrouble = () => {
             <SectionHeader title={o.situationsTitle} intro={o.situationsIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2">
               {o.situations.map((s, i) => {
-                const Icon = situationIcons[i % situationIcons.length];
+                const img = situationIconImages[i % situationIconImages.length];
                 return (
                   <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard icon={Icon} iconAlt={s.title} title={s.title} text={s.desc} />
+                    <AreaCard iconImage={img} iconAlt={s.title} title={s.title} text={s.desc} />
                   </Reveal>
                 );
               })}
