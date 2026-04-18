@@ -134,6 +134,29 @@ const ForOwnerInTrouble = () => {
           buttonTo="/kontakt"
         />
       </div>
+
+      {/* Sticky Mobile Bottom Bar — nur auf dieser Seite */}
+      <div
+        className="fixed bottom-0 inset-x-0 z-[60] md:hidden flex"
+        style={{ backgroundColor: "hsl(var(--primary))", height: 56 }}
+      >
+        <a
+          href="tel:+4921169583033"
+          className="flex flex-1 items-center justify-center gap-2 text-white text-[13px] font-semibold uppercase tracking-[0.08em]"
+          style={{ borderRight: "1px solid rgba(255,255,255,0.2)" }}
+        >
+          <Phone size={15} strokeWidth={1.75} />
+          Anrufen
+        </a>
+        <a
+          href="/kontakt"
+          className="flex flex-1 items-center justify-center text-white text-[13px] font-semibold uppercase tracking-[0.08em]"
+        >
+          Anfragen
+        </a>
+      </div>
+      {/* Spacer damit Content nicht hinter Sticky-Bar verschwindet */}
+      <div className="md:hidden" style={{ height: 56 }} aria-hidden="true" />
     </Layout>
   );
 };
