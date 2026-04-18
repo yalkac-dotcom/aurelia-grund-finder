@@ -5,6 +5,7 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
+import { editorial } from "@/assets/editorial";
 import { ArrowRight, Phone } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -16,20 +17,34 @@ const About = () => {
     document.title = `${a.hero.title} – Aurelia Grundbesitz GmbH`;
   }, [a.hero.title]);
 
-  // Editorial text section: thin gold rule, restrained typography, generous whitespace
+  // Editorial text section: optional thin image strip above headline, thin gold rule, restrained typography
   const TextBlock = ({
     headline,
     children,
     tone = "light",
+    image,
+    imageAlt,
   }: {
     headline: string;
     children: React.ReactNode;
     tone?: "light" | "muted";
+    image?: string;
+    imageAlt?: string;
   }) => (
     <section className={`py-20 md:py-28 ${tone === "muted" ? "bg-secondary/40" : "bg-background"}`}>
       <div className="container-premium">
         <Reveal>
           <div className="max-w-2xl mx-auto">
+            {image && (
+              <div className="mb-8 overflow-hidden rounded-sm border border-border/40">
+                <img
+                  src={image}
+                  alt={imageAlt ?? ""}
+                  loading="lazy"
+                  className="block w-full h-auto aspect-[21/9] object-cover"
+                />
+              </div>
+            )}
             <div className="mb-4 h-px w-8 bg-accent" aria-hidden="true" />
             <h2 className="mb-6 font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
               {headline}
@@ -85,24 +100,44 @@ const About = () => {
 
       <div className="page-shell">
         {/* 1 – Unternehmensprofil */}
-        <TextBlock headline={a.companyProfile.headline} tone="light">
+        <TextBlock
+          headline={a.companyProfile.headline}
+          tone="light"
+          image={editorial.facadeDetail}
+          imageAlt=""
+        >
           <p>{a.companyProfile.body}</p>
         </TextBlock>
 
         {/* 2 – Wofür Aurelia steht */}
-        <TextBlock headline={a.profile.headline} tone="muted">
+        <TextBlock
+          headline={a.profile.headline}
+          tone="muted"
+          image={editorial.interiorCalm}
+          imageAlt=""
+        >
           <p>{a.profile.body1}</p>
           <p>{a.profile.body2}</p>
         </TextBlock>
 
         {/* 3 – In welchen Situationen wir tätig werden */}
-        <TextBlock headline={a.situations.headline} tone="light">
+        <TextBlock
+          headline={a.situations.headline}
+          tone="light"
+          image={editorial.notaryQuiet}
+          imageAlt=""
+        >
           <p>{a.situations.body1}</p>
           <p>{a.situations.body2}</p>
         </TextBlock>
 
         {/* 4 – Wie wir Fälle prüfen */}
-        <TextBlock headline={a.review.headline} tone="muted">
+        <TextBlock
+          headline={a.review.headline}
+          tone="muted"
+          image={editorial.cooperationMeeting}
+          imageAlt=""
+        >
           <p>{a.review.body1}</p>
           <p>{a.review.body2}</p>
         </TextBlock>
