@@ -442,6 +442,83 @@ const de: Translations = {
       "Ein vertrauliches Erstgespräch ist unverbindlich und kostenfrei. Wir sagen Ihnen ehrlich, was möglich ist – auch dann, wenn die Zeit drängt.",
     finalCtaButton: "Vertraulich anfragen",
   },
+  partners: {
+    heroKicker: "Für Geschäftspartner",
+    heroTitle: "Projektbezogene Kooperationen mit klarem Rahmen.",
+    heroDescription:
+      "In ausgewählten Fällen prüfen wir individuelle, objektbezogene Kooperationen. Keine Standardmodelle – sondern klar strukturierte Vereinbarungen, die zur jeweiligen Situation passen.",
+    heroPrimaryCta: "Konstellation besprechen",
+    heroSecondaryCta: "Wie wir vorgehen",
+    heroTrustLine: "Vertraulich · Im Einzelfall · Direkter Kontakt zur Geschäftsleitung",
+    heroImageAlt: "Ruhige Geschäftsumgebung – sinnbildlich für klar strukturierte, projektbezogene Kooperationen",
+    legalNoticeLabel: "Hinweis",
+    legalNoticeText:
+      "Diese Seite stellt kein öffentliches Angebot von Vermögensanlagen und keine Aufforderung zur Investition dar. Etwaige Vereinbarungen erfolgen ausschließlich individuell, projektbezogen und nach gesonderter Prüfung.",
+    formsTitle: "Mögliche Formen der Zusammenarbeit",
+    formsIntro:
+      "Jede Kooperation entsteht aus dem konkreten Projekt heraus. Diese Konstellationen kommen in der Praxis am häufigsten vor.",
+    forms: [
+      {
+        title: "Objektbezogene Kooperation",
+        desc: "Zusammenarbeit rund um ein konkretes Immobilienprojekt – von Ankauf bis Verwertung.",
+      },
+      {
+        title: "Mehrere Projekte",
+        desc: "Begleitung über einen längeren Zeitraum, mit regelmäßiger, ruhiger Abstimmung zum Stand der Vorhaben.",
+      },
+      {
+        title: "Individuelle Vereinbarung",
+        desc: "Keine Standardmodelle. Jede Konstellation wird auf Basis der konkreten Situation ausgearbeitet.",
+      },
+      {
+        title: "Direkter Austausch",
+        desc: "Vertraulicher Kontakt zur Geschäftsleitung. Klare Kommunikation, sachliche Abstimmung.",
+      },
+    ],
+    principlesTitle: "Grundlagen einer guten Zusammenarbeit",
+    principlesText:
+      "Wir arbeiten mit langfristig orientierten Partnern. Vier Punkte sind uns dabei wichtig.",
+    principles: [
+      { title: "Klare Kommunikation", text: "Offener Austausch über Ziele, Rahmen und Erwartungen." },
+      { title: "Langfristige Perspektive", text: "Keine Spekulation, sondern ruhige, nachhaltige Zusammenarbeit." },
+      { title: "Verlässlicher Rahmen", text: "Stabile, planbare Voraussetzungen auf beiden Seiten." },
+      { title: "Geteiltes Verständnis", text: "Gemeinsames Verständnis für sorgfältige, projektbezogene Arbeit." },
+    ],
+    stepsTitle: "So gehen wir vor",
+    steps: [
+      { title: "Erstkontakt", desc: "Sie schildern uns die Konstellation – vertraulich und unverbindlich." },
+      { title: "Einordnung", desc: "Wir prüfen, ob ein gemeinsames Projekt grundsätzlich passt." },
+      { title: "Abstimmung", desc: "Inhalte, Rahmen und Erwartungen werden im Detail besprochen." },
+      { title: "Vereinbarung", desc: "Wir halten alles schriftlich und sauber dokumentiert fest." },
+      { title: "Umsetzung", desc: "Begleitung und ruhige Abstimmung über die gesamte Projektlaufzeit." },
+    ],
+    stepsNote:
+      "Zeitrahmen sind Richtwerte. Inhalte und Konditionen werden ausschließlich im Einzelfall besprochen.",
+    faqTitle: "Häufige Fragen",
+    faqIntro: "Wenn Ihre Frage hier nicht beantwortet ist, sprechen Sie uns direkt an.",
+    faqItems: [
+      {
+        q: "Bieten Sie standardisierte Beteiligungsmodelle an?",
+        a: "Nein. Wir bieten keine öffentlichen Vermögensanlagen und keine standardisierten Modelle. Jede Kooperation entsteht projektbezogen und individuell.",
+      },
+      {
+        q: "An wen richtet sich diese Seite?",
+        a: "An langfristig orientierte Partner mit Bezug zum Immobilienbereich, die an einer projektbezogenen Zusammenarbeit interessiert sind.",
+      },
+      {
+        q: "Wie läuft der Erstkontakt ab?",
+        a: "Vertraulich und ohne Verpflichtung. Sie schildern die Konstellation, wir ordnen ein, ob eine Zusammenarbeit grundsätzlich passt.",
+      },
+      {
+        q: "Wie werden Vereinbarungen dokumentiert?",
+        a: "Schriftlich und sauber dokumentiert. Inhalte, Rahmen und Konditionen werden ausschließlich im Einzelfall besprochen.",
+      },
+    ],
+    finalCtaTitle: "Konstellation vertraulich besprechen.",
+    finalCtaText:
+      "Wenn eine projektbezogene Zusammenarbeit für Sie grundsätzlich denkbar ist, freuen wir uns über einen ruhigen, unverbindlichen Austausch.",
+    finalCtaButton: "Unverbindlich Kontakt aufnehmen",
+  },
   about: {
     heroTitle: "Über Aurelia",
     companyLabel: "Das Unternehmen",

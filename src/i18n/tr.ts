@@ -394,6 +394,58 @@ const tr: Translations = {
       "Gizli bir ilk görüşme bağlayıcı değildir ve ücretsizdir. Zaman daraldığında bile neyin mümkün olduğunu dürüstçe söyleriz.",
     finalCtaButton: "Gizli başvuru",
   },
+  partners: {
+    heroKicker: "İş ortakları için",
+    heroTitle: "Net çerçevede, projeye dayalı işbirlikleri.",
+    heroDescription:
+      "Seçili durumlarda bireysel, projeye dayalı işbirliklerini değerlendiririz. Standart modeller yok – yalnızca duruma uygun, net biçimde yapılandırılmış mutabakatlar.",
+    heroPrimaryCta: "Yapıyı görüşelim",
+    heroSecondaryCta: "Nasıl çalışıyoruz",
+    heroTrustLine: "Gizli · Vakaya özel · Yönetimle doğrudan temas",
+    heroImageAlt: "Sakin bir iş ortamı – net biçimde yapılandırılmış, projeye dayalı işbirliklerinin simgesi",
+    legalNoticeLabel: "Not",
+    legalNoticeText:
+      "Bu sayfa, kamuya açık bir yatırım ürünü teklifi veya yatırıma davet niteliği taşımaz. Olası mutabakatlar yalnızca bireysel olarak, projeye dayalı şekilde ve ayrı bir değerlendirme sonrasında yapılır.",
+    formsTitle: "Olası işbirliği biçimleri",
+    formsIntro:
+      "Her işbirliği somut projeden doğar. Pratikte en sık karşılaşılan yapılar şunlardır.",
+    forms: [
+      { title: "Projeye dayalı işbirliği", desc: "Somut bir gayrimenkul projesi etrafında işbirliği – alımdan değerlendirmeye." },
+      { title: "Birden fazla proje", desc: "Daha uzun bir dönem boyunca eşlik; projelerin durumuna ilişkin düzenli ve sakin uyum." },
+      { title: "Bireysel mutabakat", desc: "Standart model yok. Her yapı somut duruma göre hazırlanır." },
+      { title: "Doğrudan diyalog", desc: "Yönetimle gizli temas. Net iletişim, nesnel uyum." },
+    ],
+    principlesTitle: "Sağlam bir işbirliğinin temelleri",
+    principlesText: "Uzun vadeli bakış açısına sahip ortaklarla çalışıyoruz. Dört nokta bizim için önemlidir.",
+    principles: [
+      { title: "Net iletişim", text: "Hedefler, çerçeve ve beklentiler hakkında açık alışveriş." },
+      { title: "Uzun vadeli bakış", text: "Spekülasyon yok, sakin ve sürdürülebilir işbirliği." },
+      { title: "Güvenilir çerçeve", text: "Her iki tarafta da istikrarlı, planlanabilir koşullar." },
+      { title: "Ortak anlayış", text: "Özenli, projeye dayalı çalışma konusunda ortak anlayış." },
+    ],
+    stepsTitle: "Nasıl ilerliyoruz",
+    steps: [
+      { title: "İlk temas", desc: "Yapıyı bize aktarırsınız – gizli ve bağlayıcı olmayan." },
+      { title: "Değerlendirme", desc: "Ortak bir projenin ilkesel olarak uygun olup olmadığını inceleriz." },
+      { title: "Uyum", desc: "İçerik, çerçeve ve beklentiler ayrıntılı olarak konuşulur." },
+      { title: "Mutabakat", desc: "Her şeyi yazılı ve özenle belgeleriz." },
+      { title: "Uygulama", desc: "Tüm proje süresince eşlik ve sakin uyum." },
+    ],
+    stepsNote:
+      "Süreler yaklaşık değerlerdir. İçerik ve koşullar yalnızca vakaya özel olarak konuşulur.",
+    faqTitle: "Sık sorulan sorular",
+    faqIntro: "Sorunuzun yanıtı burada yoksa doğrudan bize ulaşın.",
+    faqItems: [
+      { q: "Standart katılım modelleri sunuyor musunuz?", a: "Hayır. Kamuya açık yatırım ürünleri veya standart modeller sunmuyoruz. Her işbirliği projeye dayalı ve bireysel olarak ortaya çıkar." },
+      { q: "Bu sayfa kime yönelik?", a: "Gayrimenkul alanıyla bağlantılı, uzun vadeli bakış açısına sahip ve projeye dayalı işbirliğine ilgi duyan ortaklara." },
+      { q: "İlk temas nasıl ilerler?", a: "Gizli ve bağlayıcı değildir. Yapıyı siz aktarırsınız; biz işbirliğinin ilkesel olarak uygun olup olmadığını değerlendiririz." },
+      { q: "Mutabakatlar nasıl belgelenir?", a: "Yazılı ve özenle belgelenir. İçerik, çerçeve ve koşullar yalnızca vakaya özel olarak konuşulur." },
+    ],
+    finalCtaTitle: "Yapıyı gizlilik içinde görüşelim.",
+    finalCtaText:
+      "Projeye dayalı bir işbirliği sizin için ilkesel olarak düşünülebilirse, sakin ve bağlayıcı olmayan bir görüşmeye memnuniyetle açığız.",
+    finalCtaButton: "Bağlayıcı olmadan iletişime geçin",
+  },
   about: {
     heroTitle: "Hakkımızda",
     companyLabel: "Şirket",

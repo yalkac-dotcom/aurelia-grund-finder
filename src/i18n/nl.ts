@@ -395,6 +395,58 @@ const nl: Translations = {
       "Een vertrouwelijk eerste gesprek is vrijblijvend en kosteloos. Wij zeggen u eerlijk wat mogelijk is – ook wanneer de tijd dringt.",
     finalCtaButton: "Vertrouwelijk aanvragen",
   },
+  partners: {
+    heroKicker: "Voor zakelijke partners",
+    heroTitle: "Projectgerichte samenwerkingen binnen een helder kader.",
+    heroDescription:
+      "In geselecteerde gevallen onderzoeken wij individuele, projectgerichte samenwerkingen. Geen standaardmodellen – maar helder gestructureerde afspraken die bij de situatie passen.",
+    heroPrimaryCta: "Constellatie bespreken",
+    heroSecondaryCta: "Hoe wij werken",
+    heroTrustLine: "Vertrouwelijk · Per geval · Direct contact met de directie",
+    heroImageAlt: "Rustige zakelijke setting – symbool voor helder gestructureerde, projectgerichte samenwerkingen",
+    legalNoticeLabel: "Let op",
+    legalNoticeText:
+      "Deze pagina vormt geen openbaar aanbod van beleggingen en geen uitnodiging tot investering. Eventuele afspraken vinden uitsluitend individueel en projectgericht plaats, na afzonderlijke beoordeling.",
+    formsTitle: "Mogelijke vormen van samenwerking",
+    formsIntro:
+      "Elke samenwerking ontstaat vanuit het concrete project. De volgende constellaties komen in de praktijk het vaakst voor.",
+    forms: [
+      { title: "Projectgerichte samenwerking", desc: "Samenwerking rond een concreet vastgoedproject – van aankoop tot realisatie." },
+      { title: "Meerdere projecten", desc: "Begeleiding over een langere periode, met regelmatige, rustige afstemming over de stand van zaken." },
+      { title: "Individuele afspraak", desc: "Geen standaardmodellen. Elke constellatie wordt op basis van de concrete situatie uitgewerkt." },
+      { title: "Direct overleg", desc: "Vertrouwelijk contact met de directie. Heldere communicatie, zakelijke afstemming." },
+    ],
+    principlesTitle: "Pijlers van een goede samenwerking",
+    principlesText: "Wij werken met partners met een langetermijnoriëntatie. Vier punten zijn voor ons belangrijk.",
+    principles: [
+      { title: "Heldere communicatie", text: "Open uitwisseling over doelen, kader en verwachtingen." },
+      { title: "Langetermijnperspectief", text: "Geen speculatie, maar rustige, duurzame samenwerking." },
+      { title: "Betrouwbaar kader", text: "Stabiele, planbare voorwaarden aan beide kanten." },
+      { title: "Gedeeld begrip", text: "Gedeeld begrip voor zorgvuldig, projectgericht werk." },
+    ],
+    stepsTitle: "Zo gaan wij te werk",
+    steps: [
+      { title: "Eerste contact", desc: "U schetst ons de constellatie – vertrouwelijk en vrijblijvend." },
+      { title: "Beoordeling", desc: "Wij bekijken of een gezamenlijk project in de basis past." },
+      { title: "Afstemming", desc: "Inhoud, kader en verwachtingen worden in detail besproken." },
+      { title: "Overeenkomst", desc: "Wij leggen alles schriftelijk en zorgvuldig vast." },
+      { title: "Uitvoering", desc: "Begeleiding en rustige afstemming gedurende het hele project." },
+    ],
+    stepsNote:
+      "Tijdsindicaties zijn richtwaarden. Inhoud en voorwaarden worden uitsluitend per geval besproken.",
+    faqTitle: "Veelgestelde vragen",
+    faqIntro: "Staat uw vraag er niet bij, neem dan direct contact op.",
+    faqItems: [
+      { q: "Bieden jullie gestandaardiseerde participatiemodellen?", a: "Nee. Wij bieden geen openbare beleggingen en geen gestandaardiseerde modellen. Elke samenwerking ontstaat projectgericht en individueel." },
+      { q: "Voor wie is deze pagina bedoeld?", a: "Voor partners met een langetermijnoriëntatie binnen het vastgoeddomein die interesse hebben in projectgerichte samenwerking." },
+      { q: "Hoe verloopt het eerste contact?", a: "Vertrouwelijk en vrijblijvend. U schetst de constellatie; wij beoordelen of samenwerking in de basis past." },
+      { q: "Hoe worden afspraken vastgelegd?", a: "Schriftelijk en zorgvuldig gedocumenteerd. Inhoud, kader en voorwaarden worden uitsluitend per geval besproken." },
+    ],
+    finalCtaTitle: "Constellatie vertrouwelijk bespreken.",
+    finalCtaText:
+      "Wanneer een projectgerichte samenwerking voor u in de basis denkbaar is, kijken wij uit naar een rustige, vrijblijvende uitwisseling.",
+    finalCtaButton: "Vrijblijvend contact opnemen",
+  },
   about: {
     heroTitle: "Over Aurelia",
     companyLabel: "Het bedrijf",
