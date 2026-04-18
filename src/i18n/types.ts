@@ -10,6 +10,11 @@ export interface Translations {
     glossar: string;
     contact: string;
     workApproach: string;
+    ownerInTrouble: string;
+    buyers: string;
+    partners: string;
+    howItWorks: string;
+    faq: string;
   };
   footer: {
     navigation: string;
