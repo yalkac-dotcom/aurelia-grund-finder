@@ -16,7 +16,7 @@ import {
 const HomePage = () => {
   const { t } = useLanguage();
   const areaIcons = [LifeBuoy, Users, KeyRound];
-  const areaColors = ["bg-teal-700", "bg-teal-600", "bg-amber-600"];
+  const areaColors = ["bg-teal-700", "bg-teal-600", "bg-teal-700"];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
   const proofIcons = [ShieldCheck, Handshake, FileCheck, Gavel];
 
