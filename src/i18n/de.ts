@@ -743,7 +743,7 @@ const de: Translations = {
     successText: "Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24-48 Stunden bei Ihnen zurück.",
     subjectOptions: ["Allgemeine Anfrage", "Ankaufangebot", "Investoren-Anfrage", "Rückrufwunsch", "Sonstiges Anliegen"],
     propertyType: "Thema Ihrer Anfrage",
-    propertyTypeOptions: ["Zwangsversteigerung", "Nachlass / Erbschaft", "Insolvenz", "Sonstiges"],
+    propertyTypeOptions: ["Zwangsversteigerung", "Nachlass / Erbschaft", "Insolvenz / Überschuldung", "Direktankauf (ohne Notlage)", "Sonstiges"],
     company: "Firma / Institution",
     messagePlaceholder: "Beschreiben Sie kurz Ihr Anliegen …",
     formLabel: "Kontaktformular",
