@@ -9,14 +9,14 @@ import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { icons3d } from "@/assets/icons3d";
+import { cardImages } from "@/assets/cards";
 
 // Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen
-const segmentIcons = [icons3d.coinsHouse, icons3d.houseTag, icons3d.puzzleCooperation];
+const segmentImages = cardImages.segments;
 // Hold-Steps (5) — Erwerb, Strategie, Bestand, Sicherung, Fundament
-const holdStepIcons = [icons3d.key, icons3d.portfolioFolder, icons3d.buildingsCluster, icons3d.shield, icons3d.pillar];
-// Principles (4) — 3D-Icons light
-const principleIcons = [icons3d.dialogueLight, icons3d.scaleLight, icons3d.documentLight, icons3d.compassLight];
+const holdStepImages = cardImages.holdSteps;
+// Principles (4) — Bilder (Dialog, Fairness, Dokumentation, Orientierung)
+const principleImages = cardImages.principles;
 
 const HowItWorks = () => {
   const { t } = useLanguage();
@@ -58,8 +58,8 @@ const HowItWorks = () => {
               {w.segments.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    iconImage={segmentIcons[i % segmentIcons.length]}
-                    iconAlt={s.title}
+                    image={segmentImages[i % segmentImages.length]}
+                    imageAlt={s.title}
                     index={i}
                     title={s.title}
                     text={s.desc}
@@ -82,8 +82,8 @@ const HowItWorks = () => {
                   total={w.holdSteps.length}
                   title={s.title}
                   desc={s.desc}
-                  iconImage={holdStepIcons[i % holdStepIcons.length]}
-                  iconAlt={s.title}
+                  image={holdStepImages[i % holdStepImages.length]}
+                  imageAlt={s.title}
                 />
               ))}
             </div>
@@ -104,8 +104,8 @@ const HowItWorks = () => {
                 {w.principles.map((p, i) => (
                   <ProofCard
                     key={i}
-                    iconImage={principleIcons[i % principleIcons.length]}
-                    iconAlt={p.title}
+                    image={principleImages[i % principleImages.length]}
+                    imageAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}

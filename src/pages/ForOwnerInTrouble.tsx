@@ -8,16 +8,16 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { icons3d } from "@/assets/icons3d";
+import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
 
-// Situations (4) — thematisch spezifisch: Zwangsversteigerung, Finanznot, Erben, Recht
-const situationIcons = [icons3d.auctionGavel, icons3d.walletEmpty, icons3d.familyTree, icons3d.lawBook];
-// Proof (auf Navy) — Lucide-Icons im ProofCard-Stil
+// Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht
+const situationImages = cardImages.ownerSituations;
+// Proof (auf Navy) — Lucide-Icons im ProofCard-Stil (Navy-Sektion bleibt iconisch)
 const proofIcons = [Lock, Scale, FileText, ShieldCheck];
-// Steps (5) — Erstkontakt, Prüfung, Angebot, Vereinbarung, Abwicklung
-const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal, icons3d.handshake, icons3d.key];
+// Steps (5) — geteiltes Bildset
+const stepImages = cardImages.steps;
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -45,8 +45,8 @@ const ForOwnerInTrouble = () => {
               {o.situations.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    iconImage={situationIcons[i % situationIcons.length]}
-                    iconAlt={s.title}
+                    image={situationImages[i % situationImages.length]}
+                    imageAlt={s.title}
                     index={i}
                     title={s.title}
                     text={s.desc}
@@ -93,8 +93,8 @@ const ForOwnerInTrouble = () => {
                   total={o.steps.length}
                   title={s.title}
                   desc={s.desc}
-                  iconImage={stepIcons[i % stepIcons.length]}
-                  iconAlt={s.title}
+                  image={stepImages[i % stepImages.length]}
+                  imageAlt={s.title}
                 />
               ))}
             </div>

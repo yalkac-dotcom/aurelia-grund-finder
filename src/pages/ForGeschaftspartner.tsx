@@ -9,14 +9,15 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
+import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Forms (4) — Einzelobjekt, Portfolio, Off-Market-Vertrag, Strategischer Dialog
-const formIcons = [icons3d.singleBuilding, icons3d.buildingsCluster, icons3d.envelopeSeal, icons3d.meeting];
-// Principles (Navy) — 3D-Icons light
+const formImages = cardImages.partnerForms;
+// Principles (Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
 const principleIcons = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
-// Steps (5) — Erstkontakt, Prüfung, Angebot, Vereinbarung, Abwicklung
-const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal, icons3d.handshake, icons3d.key];
+// Steps (5) — geteiltes Bildset
+const stepImages = cardImages.steps;
 
 const ForGeschaftspartner = () => {
   const { t } = useLanguage();
@@ -65,8 +66,8 @@ const ForGeschaftspartner = () => {
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    iconImage={formIcons[i % formIcons.length]}
-                    iconAlt={f.title}
+                    image={formImages[i % formImages.length]}
+                    imageAlt={f.title}
                     index={i}
                     title={f.title}
                     text={f.desc}
@@ -114,8 +115,8 @@ const ForGeschaftspartner = () => {
                   total={p.steps.length}
                   title={s.title}
                   desc={s.desc}
-                  iconImage={stepIcons[i % stepIcons.length]}
-                  iconAlt={s.title}
+                  image={stepImages[i % stepImages.length]}
+                  imageAlt={s.title}
                 />
               ))}
             </div>
