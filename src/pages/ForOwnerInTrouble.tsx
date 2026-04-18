@@ -11,12 +11,15 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { Building2, Wallet, Users, Gavel, Lock, Scale, FileCheck, ShieldCheck, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
-// Situations
-const situationIcons = [Building2, Wallet, Users, Gavel];
-// Proof (auf Navy): Diskretion, Faire Bewertung, Klare Vereinbarung, Verlässliche Abwicklung
-const proofIcons = [Lock, Scale, FileCheck, ShieldCheck];
+// Situations (4 typische Lagen) — logisch zugeordnet:
+// Komplexe Eigentumsverhältnisse → Vertrag, Finanzielle Belastung → Wallet,
+// Konflikte zwischen Eigentümern → Erben, Laufendes Zwangsversteigerungsverfahren → Hammer
+const situationIconImages = [icons3d.contract, icons3d.wallet, icons3d.heirs, icons3d.gavel];
+// Proof (auf Navy, light-Varianten):
+// Diskretion → Schloss, Faire Bewertung → Waage, Klare Vereinbarung → Dokument, Verlässliche Abwicklung → Schild
+const proofIconImages = [icons3d.lockLight, icons3d.scaleLight, icons3d.documentLight, icons3d.shieldLight];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -32,7 +35,6 @@ const ForOwnerInTrouble = () => {
         description={o.heroDescription}
         primaryCta={{ label: o.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: o.heroSecondaryCta, href: "#ablauf" }}
-        phoneLine={{ href: "tel:+4921169583033", label: "📞 +49 211 69583033 — auch bei laufendem Verfahren" }}
         trustLine={o.heroTrustLine}
       />
 
@@ -43,10 +45,10 @@ const ForOwnerInTrouble = () => {
             <SectionHeader title={o.situationsTitle} intro={o.situationsIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2">
               {o.situations.map((s, i) => {
-                const Icon = situationIcons[i % situationIcons.length];
+                const img = situationIconImages[i % situationIconImages.length];
                 return (
                   <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard icon={Icon} iconAlt={s.title} title={s.title} text={s.desc} />
+                    <AreaCard iconImage={img} iconAlt={s.title} title={s.title} text={s.desc} />
                   </Reveal>
                 );
               })}
@@ -63,7 +65,7 @@ const ForOwnerInTrouble = () => {
                 {o.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    icon={proofIcons[i % proofIcons.length]}
+                    iconImage={proofIconImages[i % proofIconImages.length]}
                     iconAlt={p.title}
                     index={i}
                     title={p.title}
