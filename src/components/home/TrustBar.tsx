@@ -1,7 +1,7 @@
 const items = [
-  "Amtsgericht Düsseldorf · HRB 107859",
+  "Diskret & vertraulich",
   "Ankauf auf eigene Rechnung",
-  "Diskret · Verbindlich",
+  "Verbindliche Entscheidung",
 ];
 
 const TrustBar = () => (
