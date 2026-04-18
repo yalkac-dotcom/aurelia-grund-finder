@@ -394,6 +394,79 @@ const tr: Translations = {
       "Gizli bir ilk görüşme bağlayıcı değildir ve ücretsizdir. Zaman daraldığında bile neyin mümkün olduğunu dürüstçe söyleriz.",
     finalCtaButton: "Gizli başvuru",
   },
+  howItWorks: {
+    heroKicker: "Nasıl çalışıyoruz",
+    heroTitle: "Üç iş alanı, ortak bir ilke.",
+    heroDescription:
+      "Aurelia üç faaliyet alanını net bir anlayış altında birleştirir: alacak satın alma, kendi portföyünden gayrimenkul satışı ve projeye dayalı işbirlikleri – her biri düzenli biçimde yapılandırılmış ve doğrulanabilir biçimde belgelenmiştir.",
+    heroPrimaryCta: "Yaklaşımımızı görüşün",
+    heroSecondaryCta: "Süreci görün",
+    heroTrustLine: "Yapılandırılmış süreçler · Net sorumluluklar · Gizli",
+    heroImageAlt: "Sakin ve aydınlık bir profesyonel ortam – Aurelia'nın yapılandırılmış çalışma biçiminin simgesi",
+    introTitle: "Tek anlayış, üç yol",
+    introText:
+      "Aurelia'nın tüm faaliyetleri aynı ilkelere dayanır: adil koşullar, şeffaf iletişim ve uzun vadeli bakış. Değişen ilke değildir – muhatabın başlangıç durumudur.",
+    segmentsTitle: "Üç faaliyet alanımız",
+    segmentsIntro: "Duruma göre farklı yollar açılır. Altta yatan mantık tutarlı kalır.",
+    segments: [
+      {
+        title: "Alacak satın alma",
+        desc: "Zor durumdaki mal sahipleri için. Yapıyı inceler, doğrulanabilir bir teklif sunar ve düzenli süreci yürütürüz.",
+      },
+      {
+        title: "Gayrimenkul satışı",
+        desc: "Portföyümüzdeki incelenmiş objelerle ilgilenen alıcılar için. Doğrudan mal sahibinden, şeffaf fiyat tabanıyla ve emlakçı komisyonu olmadan.",
+      },
+      {
+        title: "Proje işbirlikleri",
+        desc: "Uzun vadeli düşünen iş ortakları için. Bireysel olarak kararlaştırılmış, projeye bağlı, gizli – kamuya açık yatırım modelleri yok.",
+      },
+    ],
+    holdTitle: "Portföyde tutmak – sakin strateji",
+    holdIntro:
+      "Her obje kısa vadede satılmaz. Portföyün bir kısmı uzun vadede elde tutulur ve sakin biçimde geliştirilir.",
+    holdSteps: [
+      { title: "Devralma", desc: "Açıkça belgelenmiş kriterlere göre incelenmiş devralma." },
+      { title: "Yapılandırma", desc: "Anlamlı olduğunda yapısal ve hukuki iyileştirme." },
+      { title: "Kiraya verme", desc: "Sakin yapılarla istikrarlı kiracı ilişkilerinin kurulması." },
+      { title: "Değer koruma", desc: "Sürekli bakım ve nesnel yönetim." },
+      { title: "Uzun vadeli tutma", desc: "Portföy kalır – sakince büyüyen bir varlık unsuru olarak." },
+    ],
+    holdNote:
+      "Genel yaklaşımın açıklaması. Somut kararlar yalnızca obje bazında alınır. Piyasa koşulları değişebilir.",
+    principlesTitle: "Tüm alanlarda geçerli olan",
+    principlesIntro: "Faaliyet alanından bağımsız olarak çalışmamızı belirleyen dört ilke.",
+    principles: [
+      { title: "Şeffaf iletişim", text: "Açık dil. Tutamayacağımız söz vermeyiz." },
+      { title: "Adil koşullar", text: "Nesnel verilere dayalı doğrulanabilir hesaplama." },
+      { title: "Düzgün belgeleme", text: "Tüm adımlar yazılı ve doğrulanabilir biçimde kayıt altına alınır." },
+      { title: "Uzun vadeli bakış", text: "Spekülasyon değil, sakin ve sürdürülebilir gelişim." },
+    ],
+    faqTitle: "Yaklaşımımıza dair sıkça sorulan sorular",
+    faqIntro: "Sorunuzun yanıtını burada bulamazsanız bize doğrudan ulaşın.",
+    faqItems: [
+      {
+        q: "Üç alan ilk temasta nasıl farklılaşır?",
+        a: "Başlangıç sorusu farklıdır – tutum aynıdır. Mal sahipleri, alıcılar ve iş ortaklarına nesnel ve gizli biçimde, baskısız ve standart prosedürler olmadan yaklaşılır.",
+      },
+      {
+        q: "Bir projenin gerçekleşip gerçekleşmeyeceğine kim karar verir?",
+        a: "Her iki taraf. Yapıyı dikkatle inceler ve yalnızca her iki taraf için sürdürülebilir anlaşmalar yaparız.",
+      },
+      {
+        q: "Portföydeki objeler sonradan satılır mı?",
+        a: "Mümkündür ama planlanmış değildir. Bizde tutmak, uzun vadeli elde tutmak demektir. Satışlar yalnızca ilgili duruma uygun olduğunda yapılır.",
+      },
+      {
+        q: "Gizlilik nasıl sağlanır?",
+        a: "İlk görüşmeler ilke olarak gizlidir. İçerikler aktarılmaz. Talep üzerine gizlilik anlaşmalarıyla çalışırız.",
+      },
+    ],
+    finalCtaTitle: "Yaklaşımla ilgili sorularınız mı var?",
+    finalCtaText:
+      "Adımları kişisel bir görüşmede memnuniyetle açıklarız – nesnel, gizli ve yükümlülük olmadan.",
+    finalCtaButton: "Yükümlülük olmadan iletişime geçin",
+  },
   buyers: {
     heroKicker: "Alıcılar İçin",
     heroTitle: "Şeffaf fiyatlarla nitelikli gayrimenkuller.",

@@ -427,6 +427,79 @@ const en: Translations = {
       "A confidential first conversation is non-binding and free of charge. We tell you honestly what is possible – even when time is short.",
     finalCtaButton: "Request in confidence",
   },
+  howItWorks: {
+    heroKicker: "How we work",
+    heroTitle: "Three business areas, one shared principle.",
+    heroDescription:
+      "Aurelia combines three areas of activity under a single clear standard: claims acquisition, sale of properties from our portfolio, and project-based cooperations – each cleanly structured and verifiably documented.",
+    heroPrimaryCta: "Discuss our approach",
+    heroSecondaryCta: "See the process",
+    heroTrustLine: "Structured processes · Clear responsibilities · Confidential",
+    heroImageAlt: "Calm, light-filled business environment – representing Aurelia's structured way of working",
+    introTitle: "One standard, three paths",
+    introText:
+      "All of Aurelia's activities rest on the same principles: fair terms, transparent communication and a long-term perspective. What differs is not the principle – but the situation of the person on the other side.",
+    segmentsTitle: "Our three areas of activity",
+    segmentsIntro: "Different paths apply depending on the situation. The underlying logic remains consistent.",
+    segments: [
+      {
+        title: "Claims acquisition",
+        desc: "For owners in difficult situations. We review the constellation, make a verifiable offer and handle the orderly process.",
+      },
+      {
+        title: "Property sale",
+        desc: "For buyers interested in vetted properties from our portfolio. Directly from the owner, with a transparent price basis and no agent commission.",
+      },
+      {
+        title: "Project cooperations",
+        desc: "For long-term oriented business partners. Individually arranged, project-based, confidential – no public investment models.",
+      },
+    ],
+    holdTitle: "Holding portfolio – the calm strategy",
+    holdIntro:
+      "Not every property is sold in the short term. Part of the portfolio remains long-term and is developed quietly.",
+    holdSteps: [
+      { title: "Acquisition", desc: "Reviewed take-over based on clearly documented criteria." },
+      { title: "Structuring", desc: "Structural and legal upgrading where it makes sense." },
+      { title: "Letting", desc: "Building stable tenancy relationships with calm structures." },
+      { title: "Value preservation", desc: "Ongoing maintenance and factual management." },
+      { title: "Long-term hold", desc: "The portfolio remains – as a quietly growing asset." },
+    ],
+    holdNote:
+      "Description of the general approach. Specific decisions are taken exclusively on a property-by-property basis. Market conditions may change.",
+    principlesTitle: "What applies across all areas",
+    principlesIntro: "Four principles that shape our work – regardless of the area of activity.",
+    principles: [
+      { title: "Transparent communication", text: "Clear language. No promises we cannot keep." },
+      { title: "Fair terms", text: "Verifiable calculations based on factual figures." },
+      { title: "Proper documentation", text: "All steps are recorded in writing and remain verifiable." },
+      { title: "Long-term perspective", text: "No speculation, but calm and sustainable development." },
+    ],
+    faqTitle: "Frequently asked questions about our approach",
+    faqIntro: "If your question is not answered here, please get in touch directly.",
+    faqItems: [
+      {
+        q: "How do the three areas differ at first contact?",
+        a: "The opening question is different – our attitude is the same. Owners, buyers and business partners are addressed factually and confidentially, without pressure and without standardised procedures.",
+      },
+      {
+        q: "Who decides whether a project goes ahead?",
+        a: "Both sides. We review the constellation carefully and only enter into arrangements that are sound for both parties.",
+      },
+      {
+        q: "Are portfolio properties eventually sold after all?",
+        a: "Possible, but not the default. Holding means long-term holding for us. Sales only take place when it makes sense for the specific constellation.",
+      },
+      {
+        q: "How is confidentiality ensured?",
+        a: "Initial discussions are confidential by default. Content is not passed on. On request, we work with confidentiality agreements.",
+      },
+    ],
+    finalCtaTitle: "Questions about our approach?",
+    finalCtaText:
+      "We are happy to explain the individual steps in a personal conversation – factual, confidential and without obligation.",
+    finalCtaButton: "Get in touch without obligation",
+  },
   buyers: {
     heroKicker: "For Buyers",
     heroTitle: "Quality properties at transparent prices.",
