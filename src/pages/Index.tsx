@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, LifeBuoy, Users, KeyRound, Lock, Scale, Compass, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Lock, Scale, Compass, CheckCircle2 } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
@@ -15,7 +16,7 @@ import FinalCta from "@/components/sections/FinalCta";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  const areaIcons = [LifeBuoy, Users, KeyRound];
+  const areaImages = [icons3d.support, icons3d.partners, icons3d.key];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
   const proofIcons = [Lock, Scale, Compass, CheckCircle2];
 
@@ -42,7 +43,8 @@ const HomePage = () => {
               {t.home.areas.map((path, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <AreaCard
-                    icon={areaIcons[i]}
+                    iconImage={areaImages[i]}
+                    iconAlt={path.title}
                     title={path.title}
                     text={path.desc}
                     cta={{ label: path.cta, to: areaLinks[i] }}

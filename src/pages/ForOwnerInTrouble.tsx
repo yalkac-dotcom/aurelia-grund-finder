@@ -9,19 +9,16 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
-  Building2,
-  Wallet,
-  Users,
-  Gavel,
   Lock,
   Scale,
   Handshake,
   CheckCircle2,
 } from "lucide-react";
 
-const situationIcons = [Building2, Wallet, Users, Gavel];
+const situationImages = [icons3d.building, icons3d.wallet, icons3d.heirs, icons3d.gavel];
 const proofIcons = [Lock, Scale, Handshake, CheckCircle2];
 
 const ForOwnerInTrouble = () => {
@@ -48,10 +45,10 @@ const ForOwnerInTrouble = () => {
             <SectionHeader title={o.situationsTitle} intro={o.situationsIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2">
               {o.situations.map((s, i) => {
-                const Icon = situationIcons[i % situationIcons.length];
+                const img = situationImages[i % situationImages.length];
                 return (
                   <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard icon={Icon} title={s.title} text={s.desc} />
+                    <AreaCard iconImage={img} iconAlt={s.title} title={s.title} text={s.desc} />
                   </Reveal>
                 );
               })}
