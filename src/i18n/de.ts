@@ -446,7 +446,7 @@ const de: Translations = {
     heroKicker: "Wie wir arbeiten",
     heroTitle: "Drei Geschäftsbereiche, ein gemeinsames Prinzip.",
     heroDescription:
-      "Aurelia bündelt drei Tätigkeitsfelder unter einem klaren Anspruch: Forderungsankauf, Immobilienverkauf aus dem Bestand und projektbezogene Kooperationen – jeweils sauber strukturiert und nachvollziehbar dokumentiert.",
+      "Aurelia bündelt drei Tätigkeitsfelder unter einem klaren Anspruch: Diskreter Ankauf, Immobilienverkauf aus dem Bestand und projektbezogene Kooperationen – jeweils sauber strukturiert und nachvollziehbar dokumentiert.",
     heroPrimaryCta: "Vorgehen besprechen",
     heroSecondaryCta: "Ablauf ansehen",
     heroTrustLine: "Strukturierte Prozesse · Klare Verantwortlichkeiten · Vertraulich",
@@ -459,7 +459,7 @@ const de: Translations = {
       "Je nach Situation stehen unterschiedliche Wege offen. Die Logik dahinter bleibt konsistent.",
     segments: [
       {
-        title: "Forderungsankauf",
+        title: "Diskreter Ankauf",
         desc: "Für Eigentümer in schwierigen Situationen. Wir prüfen die Konstellation, machen ein nachvollziehbares Angebot und übernehmen die geordnete Abwicklung.",
       },
       {

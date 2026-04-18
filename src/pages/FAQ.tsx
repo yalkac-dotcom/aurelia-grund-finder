@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "Kann ich meine Immobilie behalten?",
-    a: "Im Forderungsankauf-Modell geht die Immobilie auf Aurelia über. Wenn Sie alternative Lösungen suchen, sprechen Sie uns gerne an — wir prüfen den jeweiligen Einzelfall.",
+    a: "Beim diskreten Ankauf geht die Immobilie auf Aurelia über. Wenn Sie alternative Lösungen suchen, sprechen Sie uns gerne an — wir prüfen den jeweiligen Einzelfall.",
   },
   {
     q: "Welche Gebühren fallen an?",
