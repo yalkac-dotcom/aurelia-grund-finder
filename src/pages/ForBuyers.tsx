@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 
 const featureIcon3d = [icons3d.scale, icons3d.house, icons3d.bolt, icons3d.shield];
+const proofIcon3d = [icons3d.userCheckLight, icons3d.documentLight, icons3d.trendLight, icons3d.checkCircleLight];
 const proofIcons = [UserCheck, FileText, TrendingUp, CheckCircle2];
 
 const ForBuyers = () => {
@@ -90,7 +91,8 @@ const ForBuyers = () => {
                 {b.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    icon={proofIcons[i % proofIcons.length]}
+                    iconImage={proofIcon3d[i % proofIcon3d.length]}
+                    iconAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}
