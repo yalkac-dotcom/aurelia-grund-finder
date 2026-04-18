@@ -117,8 +117,8 @@ const ForGeschaftspartner = () => {
                   total={p.steps.length}
                   title={s.title}
                   desc={s.desc}
-                  image={stepImages[i % stepImages.length]}
-                  imageAlt={s.title}
+                  floatingIcon={stepIcons[i % stepIcons.length]}
+                  floatingIconAlt={s.title}
                 />
               ))}
             </div>
