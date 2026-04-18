@@ -25,6 +25,8 @@ import userCheckLight from "./user-check-light.png";
 import documentLight from "./document-light.png";
 import trendLight from "./trend-light.png";
 import checkCircleLight from "./check-circle-light.png";
+import foundationLight from "./foundation-light.png";
+import horizonLight from "./horizon-light.png";
 
 export const icons3d = {
   support,
@@ -54,6 +56,8 @@ export const icons3d = {
   documentLight,
   trendLight,
   checkCircleLight,
+  foundationLight,
+  horizonLight,
 };
 
 export type Icon3dKey = keyof typeof icons3d;

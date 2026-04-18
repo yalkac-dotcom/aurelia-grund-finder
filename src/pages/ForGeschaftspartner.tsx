@@ -9,6 +9,7 @@ import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
+import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
   MessagesSquare,
@@ -17,8 +18,10 @@ import {
   Handshake,
 } from "lucide-react";
 
-const formIcon3d = [icons3d.office, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
-const principleIcon3d = [icons3d.dialogueLight, icons3d.orientationLight, icons3d.shieldLight, icons3d.handshakeLight];
+// Forms: Objektbezogen → Gebäude, Mehrere Projekte → Aktentasche, Individuelle Vereinbarung → Vertrag, Direkter Austausch → Dialog
+const formIcon3d = [icons3d.building, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
+// Principles: Klare Kommunikation → Dialog, Langfristige Perspektive → Horizont, Verlässlicher Rahmen → Schild, Geteiltes Verständnis → Handschlag
+const principleIcon3d = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
 const principleIcons = [MessagesSquare, Compass, ShieldCheck, Handshake];
 
 const ForGeschaftspartner = () => {
@@ -51,6 +54,18 @@ const ForGeschaftspartner = () => {
         {/* KOOPERATIONSFORMEN */}
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
+            <Reveal>
+              <div className="mb-12 md:mb-16 overflow-hidden rounded-sm border-l-2 border-l-[hsl(45_70%_55%_/_0.5)]">
+                <img
+                  src={editorial.facadeDetail}
+                  alt="Detail einer historischen Sandsteinfassade in Düsseldorf – sinnbildlich für substanzielle Bestandsimmobilien"
+                  loading="lazy"
+                  width={1600}
+                  height={520}
+                  className="h-56 md:h-72 w-full object-cover"
+                />
+              </div>
+            </Reveal>
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
               {p.forms.map((f, i) => (

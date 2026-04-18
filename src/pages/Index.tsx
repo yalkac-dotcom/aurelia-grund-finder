@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
+import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
@@ -16,9 +17,11 @@ import FinalCta from "@/components/sections/FinalCta";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  const areaImages = [icons3d.support, icons3d.partners, icons3d.key];
+  // Areas: Notlagen → Schutz/Hilfe (support), Erb-/Konfliktfälle → Erben (heirs), Direktankauf → Schlüssel (key)
+  const areaImages = [icons3d.support, icons3d.heirs, icons3d.key];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
-  const proofImages = [icons3d.lockLight, icons3d.scaleLight, icons3d.compassLight, icons3d.checkLight];
+  // ProofPoints: Diskretion → Schloss, Substanz → Säule/Fundament, Langfristigkeit → Horizont, Klarheit → Haken
+  const proofImages = [icons3d.lockLight, icons3d.foundationLight, icons3d.horizonLight, icons3d.checkLight];
 
   return (
     <Layout>
@@ -78,13 +81,26 @@ const HomePage = () => {
             )}
 
             <Reveal delay={0.15}>
-              <div className="glass-card-dark p-8 md:p-10 border-l-2 border-l-[hsl(45_70%_55%_/_0.6)]">
-                <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
-                  {t.home.trustClaimTitle}
-                </h3>
-                <p className="text-[0.93rem] leading-[1.85] text-white/70">
-                  {t.home.trustClaimText}
-                </p>
+              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[260px_1fr] gap-0 overflow-hidden">
+                <div className="relative h-48 md:h-auto min-h-[200px] overflow-hidden">
+                  <img
+                    src={editorial.notaryQuiet}
+                    alt="Ruhige Bibliothek mit Messinglampe und Marmoroberfläche – sinnbildlich für vertrauliche, gewissenhafte Bearbeitung"
+                    loading="lazy"
+                    width={520}
+                    height={520}
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[hsl(212_52%_12%_/_0.55)]" aria-hidden="true" />
+                </div>
+                <div className="p-8 md:p-10">
+                  <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
+                    {t.home.trustClaimTitle}
+                  </h3>
+                  <p className="text-[0.93rem] leading-[1.85] text-white/70">
+                    {t.home.trustClaimText}
+                  </p>
+                </div>
               </div>
             </Reveal>
           </div>

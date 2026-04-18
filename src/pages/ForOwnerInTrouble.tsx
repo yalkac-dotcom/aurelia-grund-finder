@@ -11,15 +11,11 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
-import {
-  Lock,
-  Scale,
-  Handshake,
-  CheckCircle2,
-} from "lucide-react";
 
+// Situations: komplexe Eigentumsverhältnisse → Gebäude, Finanzielle Belastung → Wallet, Konflikte zwischen Eigentümern → Erben/Mehrere, Zwangsversteigerung → Hammer
 const situationImages = [icons3d.building, icons3d.wallet, icons3d.heirs, icons3d.gavel];
-const proofIcons = [Lock, Scale, Handshake, CheckCircle2];
+// Proof (auf Navy): Diskretion, Faire Bewertung, Klare Vereinbarung (Handschlag), Verlässliche Abwicklung
+const proofImagesLight = [icons3d.lockLight, icons3d.scaleLight, icons3d.handshakeLight, icons3d.checkLight];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -65,7 +61,8 @@ const ForOwnerInTrouble = () => {
                 {o.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    icon={proofIcons[i % proofIcons.length]}
+                    iconImage={proofImagesLight[i % proofImagesLight.length]}
+                    iconAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}
