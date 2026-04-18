@@ -14,6 +14,7 @@ import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
+import TrustBar from "@/components/home/TrustBar";
 
 const HomePage = () => {
   const { t } = useLanguage();
@@ -36,6 +37,8 @@ const HomePage = () => {
         trustLine={t.home.heroTrustLine}
         imagePosition="62% center"
       />
+
+      <TrustBar />
 
       <div className="page-shell">
         {/* DIE 3 BEREICHE */}
