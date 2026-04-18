@@ -394,6 +394,86 @@ const es: Translations = {
       "Una primera conversación confidencial es sin compromiso y gratuita. Le decimos honestamente qué es posible – también cuando el tiempo apremia.",
     finalCtaButton: "Consulta confidencial",
   },
+  buyers: {
+    heroKicker: "Para compradores",
+    heroTitle: "Inmuebles de calidad a precios transparentes.",
+    heroDescription:
+      "Directamente desde nuestro portafolio, sin intermediarios. Inmuebles verificados, condiciones justas, proceso claramente documentado.",
+    heroPrimaryCta: "Solicitar asesoramiento",
+    heroSecondaryCta: "Cómo procedemos",
+    heroTrustLine: "Compra directa · Sin comisión de agencia · Acompañamiento notarial",
+    heroImageAlt: "Inmueble residencial del portafolio Aurelia – símbolo de calidad verificada y condiciones transparentes",
+    featuresTitle: "Lo que puede esperar de Aurelia",
+    featuresIntro:
+      "Aurelia vende exclusivamente inmuebles de su propio portafolio. Esto garantiza vías cortas, responsabilidades claras y condiciones transparentes.",
+    features: [
+      { title: "Precios transparentes", desc: "Cálculo justo basado en parámetros verificables – sin costes ocultos." },
+      { title: "Sin comisiones de agencia", desc: "Compra directamente al propietario. La habitual comisión de agencia no se aplica." },
+      { title: "Portafolio verificado", desc: "Cada inmueble ha sido revisado, documentado y estructurado previamente." },
+      { title: "Proceso claro", desc: "Flujo estructurado desde el primer contacto hasta la escritura notarial." },
+    ],
+    portfolioTitle: "Nuestra oferta actual",
+    portfolioText:
+      "Aurelia dispone de un portafolio en constante actualización de inmuebles verificados en la región de Düsseldorf y alrededores. Objetos y detalles actuales bajo solicitud.",
+    portfolioCta: "Ver portafolio",
+    proofTitle: "Por qué comprar directamente a Aurelia",
+    proofIntro: "Cuatro puntos que marcan la diferencia frente a una transacción clásica con agencia.",
+    proofPoints: [
+      { title: "Propietario directo", text: "Habla directamente con el vendedor – sin intermediarios." },
+      { title: "Documentación completa", text: "Extracto registral, expediente y documentos relevantes están disponibles." },
+      { title: "Base de precio realista", text: "Calculamos de forma alineada al mercado – sin excesos." },
+      { title: "Proceso fiable", text: "Notario, cita, entrega – todo estructurado y documentado." },
+    ],
+    stepsTitle: "Así es la compra",
+    steps: [
+      { title: "Primer contacto", desc: "Usted contacta – aclaramos sus deseos y el marco de la operación." },
+      { title: "Visita", desc: "Visita in situ con documentación completa y valoración honesta." },
+      { title: "Negociación", desc: "Conversación abierta sobre precio, condiciones y fecha de entrega." },
+      { title: "Escritura y entrega", desc: "Escritura notarial, pago del precio, entrega ordenada." },
+    ],
+    stepsNote:
+      "Los plazos son orientativos. Las condiciones concretas se acuerdan exclusivamente caso por caso.",
+    objectionsTitle: "Lo que los compradores suelen preguntar",
+    objectionsIntro: "Dudas habituales – respondidas con objetividad.",
+    objections: [
+      {
+        q: "¿Los inmuebles están realmente verificados?",
+        a: "Sí. Cada inmueble del portafolio se ha revisado, documentado y, cuando ha sido necesario, mejorado estructuralmente antes de la compra.",
+      },
+      {
+        q: "Sin agencia – ¿quién representa mis intereses?",
+        a: "La seguridad jurídica la aporta el notario, que acompaña a ambas partes de forma neutral. Puede involucrar a sus propios asesores o peritos en cualquier momento.",
+      },
+      {
+        q: "¿Los precios son negociables?",
+        a: "Calculamos de forma transparente y alineada al mercado. Dentro de ese marco, una negociación objetiva es naturalmente posible.",
+      },
+    ],
+    faqTitle: "Preguntas frecuentes",
+    faqIntro: "Si su pregunta no aparece aquí, póngase en contacto con nosotros directamente.",
+    faqItems: [
+      {
+        q: "¿Qué tipos de inmueble vende Aurelia?",
+        a: "Principalmente inmuebles residenciales en la región de Düsseldorf y alrededores – pisos, edificios plurifamiliares y objetos individuales seleccionados.",
+      },
+      {
+        q: "¿Aurelia gestiona la financiación?",
+        a: "No gestionamos financiación, pero bajo solicitud podemos derivarle a bancos y asesores financieros experimentados de nuestra red.",
+      },
+      {
+        q: "¿Con qué rapidez se puede concertar una visita?",
+        a: "Normalmente en pocos días tras su solicitud – según disponibilidad y situación del inmueble.",
+      },
+      {
+        q: "¿Qué ocurre tras la cita ante notario?",
+        a: "Tras el pago del precio y la transmisión de la propiedad se realiza la entrega ordenada del inmueble, incluyendo toda la documentación relevante.",
+      },
+    ],
+    finalCtaTitle: "¿Interesado en un inmueble concreto?",
+    finalCtaText:
+      "Háblenos de sus preferencias – comprobaremos qué inmuebles de nuestro portafolio podrían encajar.",
+    finalCtaButton: "Contacte sin compromiso",
+  },
   partners: {
     heroKicker: "Para socios comerciales",
     heroTitle: "Cooperaciones por proyecto con un marco claro.",

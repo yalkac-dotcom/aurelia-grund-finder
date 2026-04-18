@@ -394,6 +394,86 @@ const tr: Translations = {
       "Gizli bir ilk görüşme bağlayıcı değildir ve ücretsizdir. Zaman daraldığında bile neyin mümkün olduğunu dürüstçe söyleriz.",
     finalCtaButton: "Gizli başvuru",
   },
+  buyers: {
+    heroKicker: "Alıcılar İçin",
+    heroTitle: "Şeffaf fiyatlarla nitelikli gayrimenkuller.",
+    heroDescription:
+      "Aracısız, doğrudan kendi portföyümüzden. İncelenmiş gayrimenkuller, adil koşullar, açıkça belgelenmiş süreç.",
+    heroPrimaryCta: "Görüşme talep edin",
+    heroSecondaryCta: "Nasıl çalışıyoruz",
+    heroTrustLine: "Doğrudan satın alma · Emlakçı komisyonu yok · Noter eşliğinde",
+    heroImageAlt: "Aurelia portföyünden bir konut – incelenmiş kalite ve şeffaf koşulların simgesi",
+    featuresTitle: "Aurelia'da sizi neler bekliyor",
+    featuresIntro:
+      "Aurelia yalnızca kendi portföyündeki gayrimenkulleri satar. Bu, kısa süreçler, net sorumluluklar ve şeffaf koşullar sağlar.",
+    features: [
+      { title: "Şeffaf fiyatlandırma", desc: "Doğrulanabilir verilere dayalı adil hesaplama – gizli maliyet yok." },
+      { title: "Emlakçı ücreti yok", desc: "Doğrudan mal sahibinden satın alırsınız. Olağan emlakçı komisyonu uygulanmaz." },
+      { title: "İncelenmiş portföy", desc: "Her gayrimenkul önceden incelenmiş, belgelenmiş ve düzenli biçimde yapılandırılmıştır." },
+      { title: "Net süreç", desc: "İlk görüşmeden noter senedine kadar yapılandırılmış akış." },
+    ],
+    portfolioTitle: "Mevcut sunumumuz",
+    portfolioText:
+      "Aurelia, Düsseldorf bölgesi ve çevresinde sürekli güncellenen, incelenmiş bir gayrimenkul portföyüne sahiptir. Güncel objeler ve ayrıntılar talep üzerine paylaşılır.",
+    portfolioCta: "Portföye git",
+    proofTitle: "Neden doğrudan Aurelia'dan satın almalı",
+    proofIntro: "Klasik bir emlakçı işlemine kıyasla farkı yaratan dört nokta.",
+    proofPoints: [
+      { title: "Doğrudan mal sahibi", text: "Doğrudan satıcının kendisiyle konuşursunuz – aracı olmadan." },
+      { title: "Eksiksiz belgeler", text: "Tapu kaydı, broşür ve ilgili tüm belgeler hazırdır." },
+      { title: "Gerçekçi fiyat tabanı", text: "Piyasaya uygun hesaplarız – abartısız." },
+      { title: "Güvenilir süreç", text: "Noter, randevu, teslim – düzenli ve belgelenmiş." },
+    ],
+    stepsTitle: "Satın alma süreci",
+    steps: [
+      { title: "İlk iletişim", desc: "Bize ulaşın – istek ve çerçeveyi netleştiririz." },
+      { title: "Görme", desc: "Eksiksiz belgeler ve dürüst değerlendirme ile yerinde inceleme." },
+      { title: "Müzakere", desc: "Fiyat, koşullar ve teslim tarihi üzerine açık görüşme." },
+      { title: "Senet ve teslim", desc: "Noter senedi, bedelin ödenmesi, düzenli teslim." },
+    ],
+    stepsNote:
+      "Süreler yaklaşık değerlerdir. Somut koşullar yalnızca duruma özgü olarak görüşülür.",
+    objectionsTitle: "Alıcıların sıkça sorduğu sorular",
+    objectionsIntro: "Tipik kaygılar – nesnel yanıtlar.",
+    objections: [
+      {
+        q: "Gayrimenkuller gerçekten incelendi mi?",
+        a: "Evet. Portföydeki her gayrimenkul, satın alımdan önce incelenmiş, belgelenmiş ve gerektiğinde yapısal olarak iyileştirilmiştir.",
+      },
+      {
+        q: "Emlakçısız – haklarımı kim temsil edecek?",
+        a: "Hukuki güvenliği, her iki tarafa tarafsız eşlik eden noter sağlar. İstediğiniz zaman kendi danışman veya bilirkişilerinizi sürece dahil edebilirsiniz.",
+      },
+      {
+        q: "Fiyatlar pazarlığa açık mı?",
+        a: "Şeffaf ve piyasaya uygun hesaplama yaparız. Bu çerçevede nesnel bir pazarlık doğal olarak mümkündür.",
+      },
+    ],
+    faqTitle: "Sıkça sorulan sorular",
+    faqIntro: "Sorunuzun yanıtını burada bulamazsanız bize doğrudan ulaşın.",
+    faqItems: [
+      {
+        q: "Aurelia ne tür gayrimenkuller satar?",
+        a: "Ağırlıklı olarak Düsseldorf bölgesi ve çevresindeki konutlar – daireler, çok aileli binalar ve seçili tekil objeler.",
+      },
+      {
+        q: "Aurelia üzerinden finansman sağlanabilir mi?",
+        a: "Finansman aracılığı yapmıyoruz, ancak talep üzerine ağımızdaki deneyimli banka ve finansman danışmanlarına yönlendirebiliriz.",
+      },
+      {
+        q: "Görme ne kadar sürede mümkündür?",
+        a: "Genellikle talebinizden birkaç gün içinde – uygunluk ve obje durumuna göre.",
+      },
+      {
+        q: "Noter randevusundan sonra ne olur?",
+        a: "Bedel ödendikten ve mülkiyet devri yapıldıktan sonra gayrimenkul, ilgili tüm belgelerle birlikte düzenli biçimde teslim edilir.",
+      },
+    ],
+    finalCtaTitle: "Belirli bir gayrimenkulle mi ilgileniyorsunuz?",
+    finalCtaText:
+      "İsteklerinizi bizimle paylaşın – portföyümüzdeki hangi objelerin size uygun olabileceğini değerlendirelim.",
+    finalCtaButton: "Yükümlülük olmadan iletişime geçin",
+  },
   partners: {
     heroKicker: "İş ortakları için",
     heroTitle: "Net çerçevede, projeye dayalı işbirlikleri.",

@@ -427,6 +427,86 @@ const en: Translations = {
       "A confidential first conversation is non-binding and free of charge. We tell you honestly what is possible – even when time is short.",
     finalCtaButton: "Request in confidence",
   },
+  buyers: {
+    heroKicker: "For Buyers",
+    heroTitle: "Quality properties at transparent prices.",
+    heroDescription:
+      "Directly from our portfolio, without an agent. Vetted properties, fair terms, clearly documented process.",
+    heroPrimaryCta: "Request a consultation",
+    heroSecondaryCta: "How we proceed",
+    heroTrustLine: "Direct purchase · No agent commission · Notarial support",
+    heroImageAlt: "Residential property from the Aurelia portfolio – representing vetted quality and transparent terms",
+    featuresTitle: "What to expect at Aurelia",
+    featuresIntro:
+      "Aurelia only sells properties from its own portfolio. This ensures short paths, clear responsibilities and transparent terms.",
+    features: [
+      { title: "Transparent pricing", desc: "Fair calculation based on verifiable figures – no hidden costs." },
+      { title: "No agent fees", desc: "You buy directly from the owner. The usual agent commission does not apply." },
+      { title: "Vetted portfolio", desc: "Every property has been reviewed, documented and properly structured in advance." },
+      { title: "Clear process", desc: "Structured workflow from initial contact to notarial deed." },
+    ],
+    portfolioTitle: "Our current offering",
+    portfolioText:
+      "Aurelia maintains a regularly updated portfolio of vetted properties in the Düsseldorf region. Current objects and details are available on request.",
+    portfolioCta: "View portfolio",
+    proofTitle: "Why buy directly from Aurelia",
+    proofIntro: "Four points that make the difference compared with a classic agent transaction.",
+    proofPoints: [
+      { title: "Direct owner", text: "You speak with the seller directly – without intermediaries." },
+      { title: "Complete documents", text: "Land register extract, exposé and all relevant documents are available." },
+      { title: "Realistic price basis", text: "We calculate in line with the market – not overstretched." },
+      { title: "Reliable process", text: "Notary, appointment, handover – cleanly structured and documented." },
+    ],
+    stepsTitle: "How the purchase works",
+    steps: [
+      { title: "Initial contact", desc: "You reach out – we clarify your wishes and framework." },
+      { title: "Viewing", desc: "On-site visit with complete documents and an honest assessment." },
+      { title: "Negotiation", desc: "Open discussion on price, terms and handover date." },
+      { title: "Deed & handover", desc: "Notarial deed, payment of the purchase price, orderly handover." },
+    ],
+    stepsNote:
+      "Time frames are guidelines. Specific terms are discussed exclusively on a case-by-case basis.",
+    objectionsTitle: "What buyers often ask",
+    objectionsIntro: "Typical concerns – addressed factually.",
+    objections: [
+      {
+        q: "Are the properties really vetted?",
+        a: "Yes. Every property in the portfolio is reviewed, documented and – where necessary – structurally improved before acquisition.",
+      },
+      {
+        q: "Without an agent – who represents my interests?",
+        a: "Legal certainty is provided by the notary, who supports both parties neutrally. You may involve your own advisors or surveyors at any time.",
+      },
+      {
+        q: "Are the prices negotiable?",
+        a: "We calculate transparently and in line with the market. Within this framework, factual negotiation is of course possible.",
+      },
+    ],
+    faqTitle: "Frequently asked questions",
+    faqIntro: "If your question is not answered here, please get in touch directly.",
+    faqItems: [
+      {
+        q: "What types of property does Aurelia sell?",
+        a: "Primarily residential properties in the Düsseldorf region – apartments, multi-family houses and selected individual properties.",
+      },
+      {
+        q: "Can financing be arranged through Aurelia?",
+        a: "We do not arrange financing, but can refer you to experienced banks and financing advisors in our network on request.",
+      },
+      {
+        q: "How quickly is a viewing possible?",
+        a: "Usually within a few days of your request – depending on availability and the situation of the property.",
+      },
+      {
+        q: "What happens after the notary appointment?",
+        a: "Once the purchase price is paid and ownership is transferred, the orderly handover of the property takes place, including all relevant documents.",
+      },
+    ],
+    finalCtaTitle: "Interested in a specific property?",
+    finalCtaText:
+      "Talk to us about your wishes – we will check which properties from our portfolio might suit you.",
+    finalCtaButton: "Get in touch without obligation",
+  },
   partners: {
     heroKicker: "For business partners",
     heroTitle: "Project-based cooperations within a clear framework.",
