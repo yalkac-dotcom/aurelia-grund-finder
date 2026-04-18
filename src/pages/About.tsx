@@ -142,8 +142,8 @@ const About = () => {
           <p>{a.review.body2}</p>
         </TextBlock>
 
-        {/* 5 – Abschluss-CTA (Navy, ruhig) */}
-        <section style={{ backgroundColor: "hsl(var(--primary))" }} className="px-0">
+        {/* 5 – Abschluss-CTA (Steel Blue, ruhig) mit goldener Trennlinie zum Navy-Footer */}
+        <section style={{ backgroundColor: "hsl(var(--highlight))" }} className="px-0">
           <div className="container-premium" style={{ paddingTop: 80, paddingBottom: 80 }}>
             <Reveal>
               <div className="max-w-2xl mx-auto text-center">
@@ -151,10 +151,10 @@ const About = () => {
                 <h2 className="mb-6 font-heading font-semibold text-white text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
                   {a.closing.headline}
                 </h2>
-                <p className="mb-5 text-[15px] md:text-[16px] leading-[1.8] text-white/85">
+                <p className="mb-5 text-[15px] md:text-[16px] leading-[1.8] text-white/90">
                   {a.closing.body}
                 </p>
-                <p className="mb-9 text-[14px] md:text-[15px] leading-[1.75] text-white/65 italic">
+                <p className="mb-9 text-[14px] md:text-[15px] leading-[1.75] text-white/75 italic">
                   {a.closing.note}
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -167,7 +167,7 @@ const About = () => {
                   </Link>
                   <a
                     href="tel:+4921169583033"
-                    className="inline-flex items-center gap-2 rounded-sm px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.12em] text-white transition-colors duration-300 border border-white/30 hover:border-white/60"
+                    className="inline-flex items-center gap-2 rounded-sm px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.12em] text-white transition-colors duration-300 border border-white/40 hover:border-white/70"
                   >
                     <Phone size={14} strokeWidth={1.75} />
                     +49 211 69583033
@@ -176,6 +176,8 @@ const About = () => {
               </div>
             </Reveal>
           </div>
+          {/* Goldene Trennlinie zum Navy-Footer */}
+          <div className="h-px w-full bg-accent" aria-hidden="true" />
         </section>
       </div>
     </Layout>
