@@ -125,7 +125,7 @@ const HomePage = () => {
               </div>
             </Reveal>
 
-            <div className="grid gap-8 sm:grid-cols-3">
+            <div className="grid gap-8 md:gap-12 sm:grid-cols-3">
               {t.home.steps.map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
                   <div className="relative">
@@ -137,8 +137,8 @@ const HomePage = () => {
                       <p className="text-[0.86rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
                     </div>
                     {i < 2 && (
-                      <div className="hidden sm:block absolute top-1/2 -right-3 w-6 h-6 -translate-y-1/2">
-                        <ArrowRight className="text-teal-600/30" size={24} />
+                      <div className="hidden sm:flex absolute top-1/2 -right-6 md:-right-8 w-6 h-6 -translate-y-1/2 items-center justify-center">
+                        <ArrowRight className="text-teal-600/40" size={22} />
                       </div>
                     )}
                   </div>
