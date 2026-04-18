@@ -29,7 +29,7 @@ const HomePage = () => {
             src={heroSets.premium.src}
             srcSet={heroSets.premium.srcSet}
             sizes={heroSets.premium.sizes}
-            alt="Gepflegtes Mehrfamilienhaus in einer ruhigen Wohnstraße"
+            alt="Ruhige Wohnstraße mit gepflegtem Mehrfamilienhaus bei Tageslicht – sinnbildlich für diskrete Immobilienlösungen in besonderen Situationen"
             className="hero-media h-full w-full object-cover object-[62%_center] md:object-center"
             priority
           />
