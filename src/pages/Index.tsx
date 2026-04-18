@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Gavel, Users, KeyRound } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
