@@ -350,7 +350,7 @@ const tr: Translations = {
     ],
     finalCtaTitle: "Şimdi ücretsiz ilk değerlendirmenizi alın",
     finalCtaText: "Vakanızı bağlayıcı olmadan inceler ve iki iş günü içinde net bir geri bildirimle dönüş yaparız.",
-    finalCtaButton: "Vakamı incelet",
+    finalCtaButton: "Gizli olarak sor",
   },
   ownerInTrouble: {
     heroKicker: "Özel durumlardaki mülk sahipleri için",

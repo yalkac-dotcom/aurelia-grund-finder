@@ -350,7 +350,7 @@ const it: Translations = {
     ],
     finalCtaTitle: "Richiedete ora la vostra valutazione iniziale gratuita",
     finalCtaText: "Esaminiamo il vostro caso senza impegno e vi rispondiamo entro due giorni lavorativi con un parere chiaro.",
-    finalCtaButton: "Far esaminare il mio caso",
+    finalCtaButton: "Richiesta riservata",
   },
   ownerInTrouble: {
     heroKicker: "Per proprietari in situazioni particolari",

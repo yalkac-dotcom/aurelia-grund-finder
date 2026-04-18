@@ -350,7 +350,7 @@ const en: Translations = {
     ],
     finalCtaTitle: "Get your free initial assessment now",
     finalCtaText: "We review your case without obligation and get back to you within two working days with a clear answer.",
-    finalCtaButton: "Have my case reviewed",
+    finalCtaButton: "Confidential enquiry",
   },
   ownerInTrouble: {
     heroKicker: "For owners in special situations",

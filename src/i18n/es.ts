@@ -350,7 +350,7 @@ const es: Translations = {
     ],
     finalCtaTitle: "Solicite ahora su primera valoración gratuita",
     finalCtaText: "Revisamos su caso sin compromiso y le respondemos en dos días laborables con una respuesta clara.",
-    finalCtaButton: "Hacer revisar mi caso",
+    finalCtaButton: "Consulta confidencial",
   },
   ownerInTrouble: {
     heroKicker: "Para propietarios en situaciones especiales",
