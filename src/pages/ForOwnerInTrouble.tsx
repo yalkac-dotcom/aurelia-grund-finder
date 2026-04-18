@@ -45,8 +45,8 @@ const ForOwnerInTrouble = () => {
               {o.situations.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    image={situationImages[i % situationImages.length]}
-                    imageAlt={s.title}
+                    floatingIcon={situationIcons[i % situationIcons.length]}
+                    floatingIconAlt={s.title}
                     index={i}
                     title={s.title}
                     text={s.desc}
