@@ -204,6 +204,94 @@
   background: hsl(45 60% 55% / 0.55);
 }
 
+/* ── Proof Cards (zwei Ebenen: Navy-Visual + weißer Inhalt) ───── */
+.proof-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: hsl(0 0% 100%);
+  border: 1px solid hsl(212 30% 88% / 0.7);
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow:
+    0 1px 2px hsl(212 40% 15% / 0.05),
+    0 12px 28px -16px hsl(212 40% 15% / 0.18);
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 0.4s ease;
+}
+
+.proof-card:hover,
+.proof-card:focus-within {
+  transform: translateY(-4px);
+  border-color: hsl(45 60% 55% / 0.45);
+  box-shadow:
+    0 2px 6px hsl(212 40% 15% / 0.08),
+    0 24px 48px -20px hsl(212 50% 12% / 0.28);
+}
+
+.proof-card__visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.25rem 1rem;
+  background:
+    linear-gradient(
+      135deg,
+      hsl(212 55% 16%) 0%,
+      hsl(212 60% 12%) 100%
+    );
+  color: hsl(45 70% 65%);
+  border-bottom: 1px solid hsl(45 60% 50% / 0.35);
+}
+
+/* Subtiler Glanz auf der Navy-Fläche – haptisch, nicht verspielt */
+.proof-card__visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 70% 60% at 20% 0%,
+      hsl(0 0% 100% / 0.06) 0%,
+      transparent 60%
+    );
+  pointer-events: none;
+}
+
+.proof-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.5rem;
+  background: hsl(0 0% 100% / 0.06);
+  border: 1px solid hsl(45 60% 55% / 0.35);
+  color: hsl(45 70% 70%);
+  position: relative;
+  z-index: 1;
+}
+
+.proof-card__numeral {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: hsl(45 60% 70% / 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+.proof-card__body {
+  padding: 1.1rem 1.25rem 1.25rem;
+  background: hsl(0 0% 100%);
+  flex: 1;
+}
+
+
 /* ── Glassmorphism & Premium utilities ── */
 .glass-card {
   background: hsl(0 0% 100% / 0.92);
