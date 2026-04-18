@@ -52,6 +52,7 @@ const ForBuyers = () => {
                     index={i}
                     title={f.title}
                     text={f.desc}
+                    compact
                   />
                 </Reveal>
               ))}
@@ -106,6 +107,7 @@ const ForBuyers = () => {
                     index={i}
                     title={p.title}
                     text={p.text}
+                    compact
                   />
                 ))}
               </div>
