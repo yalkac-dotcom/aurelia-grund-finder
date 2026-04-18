@@ -221,7 +221,7 @@ const HomePage = () => {
             <div className="container-premium">
               <Reveal>
                 <div className="text-center mb-10 max-w-2xl mx-auto">
-                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_60%_50%_/_0.55)]" />
                   <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                     {t.home.objectionsTitle}
                   </h2>
@@ -235,9 +235,9 @@ const HomePage = () => {
               <div className="grid gap-5 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto">
                 {t.home.objections.map((item, i) => (
                   <Reveal key={i} delay={i * 0.08}>
-                    <div className="glass-card rounded-2xl p-7 h-full">
+                    <div className="glass-card p-7 h-full border-l-2 border-l-[hsl(45_60%_50%_/_0.4)]">
                       <h3 className="mb-3 text-[0.98rem] font-heading font-semibold text-foreground leading-snug">
-                        „{item.q}“
+                        „{item.q}"
                       </h3>
                       <p className="text-[0.86rem] leading-[1.8] text-muted-foreground">{item.a}</p>
                     </div>
