@@ -83,7 +83,7 @@ const Header = () => {
             to="/kontakt"
             className="ml-2 inline-flex items-center px-5 py-2.5 text-[11px] font-semibold tracking-[0.12em] uppercase btn-gradient rounded-sm transition-all duration-300"
           >
-            {t.hero.cta}
+            {t.home.finalCtaButton}
           </Link>
         </div>
 
@@ -129,7 +129,7 @@ const Header = () => {
               onClick={() => setMobileOpen(false)}
               className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold btn-gradient rounded-sm"
             >
-              {t.hero.cta}
+              {t.home.finalCtaButton}
             </Link>
           </div>
           <div className="border-t border-teal-100/20 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">
