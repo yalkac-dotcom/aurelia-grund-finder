@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
-import CookieConsent from "./CookieConsent";
+// import CookieConsent from "./CookieConsent";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
