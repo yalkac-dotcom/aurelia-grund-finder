@@ -312,13 +312,13 @@
 }
 
 .glass-card-dark {
-  background: hsl(212 50% 16% / 0.55);
+  background: hsl(210 42% 26% / 0.55);
   backdrop-filter: blur(10px);
   border: 1px solid hsl(0 0% 100% / 0.08);
   border-radius: 0.5rem;
   box-shadow:
-    0 1px 2px hsl(212 60% 4% / 0.2),
-    0 12px 32px -16px hsl(212 60% 4% / 0.4);
+    0 1px 2px hsl(212 50% 8% / 0.2),
+    0 12px 32px -16px hsl(212 50% 8% / 0.4);
 }
 
 .section-premium {
