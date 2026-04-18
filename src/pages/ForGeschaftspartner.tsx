@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 
 const formIcon3d = [icons3d.office, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
+const principleIcon3d = [icons3d.dialogueLight, icons3d.orientationLight, icons3d.shieldLight, icons3d.handshakeLight];
 const principleIcons = [MessagesSquare, Compass, ShieldCheck, Handshake];
 
 const ForGeschaftspartner = () => {
@@ -75,7 +76,8 @@ const ForGeschaftspartner = () => {
                 {p.principles.map((pr, i) => (
                   <ProofCard
                     key={i}
-                    icon={principleIcons[i % principleIcons.length]}
+                    iconImage={principleIcon3d[i % principleIcon3d.length]}
+                    iconAlt={pr.title}
                     index={i}
                     title={pr.title}
                     text={pr.text}
