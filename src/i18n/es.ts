@@ -23,8 +23,8 @@ const es: Translations = {
     disclaimer:
       "Aviso: El contenido de este sitio web se ofrece únicamente con fines informativos y no constituye asesoramiento legal, fiscal ni financiero.",
     brandLine:
-      "Aurelia Grundbesitz desarrolla inmuebles procedentes de situaciones especiales de forma discreta, estructurada y con una mirada clara a la sustancia.",
-    subline: "Discreción · Orientación a la sustancia · Largo plazo",
+      "Aurelia Grundbesitz compra inmuebles y créditos vinculados a inmuebles exclusivamente por cuenta propia — de forma discreta, estructurada y vinculante.",
+    subline: "Discreto · Por cuenta propia · Vinculante",
     navItems: [
       { label: "Inicio", path: "/" },
       { label: "Propietarios en dificultad", path: "/fuer-eigentumer-in-not" },
@@ -49,7 +49,7 @@ const es: Translations = {
     socialLinkedinAria: "LinkedIn (próximamente)",
     socialInstagramAria: "Instagram (próximamente)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Todos los derechos reservados.",
-    kwgDisclaimer: "Aurelia Grundbesitz GmbH no es un proveedor de servicios financieros en el sentido de la Ley Bancaria alemana (KWG) y no ofrece asesoramiento de inversión. Este sitio web tiene fines meramente informativos y no sustituye el asesoramiento legal o fiscal individual.",
+    kwgDisclaimer: "Actuamos exclusivamente como comprador por cuenta propia. No somos una entidad de crédito y no ofrecemos servicios financieros, préstamos ni modelos de participación.",
   },
   newsletter: {
     placeholder: "Su dirección de correo electrónico",

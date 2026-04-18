@@ -23,8 +23,8 @@ const tr: Translations = {
     disclaimer:
       "Uyarı: Bu web sitesindeki içerikler yalnızca genel bilgilendirme amacı taşır ve hukuki, vergisel veya finansal danışmanlık niteliğinde değildir.",
     brandLine:
-      "Aurelia Grundbesitz, özel durumlardan çıkan gayrimenkulleri gizli, yapılandırılmış ve özü net gören bir yaklaşımla geliştirir.",
-    subline: "Gizli · Öz odaklı · Uzun vadeli",
+      "Aurelia Grundbesitz, gayrimenkulleri ve gayrimenkule bağlı alacakları yalnızca kendi hesabına satın alır — gizli, yapılandırılmış ve bağlayıcı.",
+    subline: "Gizli · Kendi hesabına · Bağlayıcı",
     navItems: [
       { label: "Ana Sayfa", path: "/" },
       { label: "Zor Durumdaki Mülk Sahipleri", path: "/fuer-eigentumer-in-not" },
@@ -49,7 +49,7 @@ const tr: Translations = {
     socialLinkedinAria: "LinkedIn (yakında)",
     socialInstagramAria: "Instagram (yakında)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Tüm hakları saklıdır.",
-    kwgDisclaimer: "Aurelia Grundbesitz GmbH, Alman Bankacılık Yasası (KWG) anlamında bir finansal hizmet sağlayıcısı değildir ve yatırım danışmanlığı sunmaz. Bu web sitesi yalnızca genel bilgilendirme amaçlıdır ve bireysel hukuki veya vergi danışmanlığının yerini almaz.",
+    kwgDisclaimer: "Yalnızca kendi hesabımıza alıcı olarak hareket ederiz. Bir kredi kuruluşu değiliz; finansal hizmet, kredi veya ortaklık modeli sunmayız.",
   },
   newsletter: {
     placeholder: "E-posta adresiniz",

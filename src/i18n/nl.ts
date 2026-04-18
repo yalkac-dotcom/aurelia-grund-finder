@@ -23,8 +23,8 @@ const nl: Translations = {
     disclaimer:
       "Let op: De inhoud van deze website dient uitsluitend ter algemene informatie en vormt geen juridisch, fiscaal of financieel advies.",
     brandLine:
-      "Aurelia Grundbesitz ontwikkelt vastgoed uit bijzondere situaties — discreet, gestructureerd en met een scherp oog voor waarde.",
-    subline: "Discreet · Waardegericht · Langetermijnvisie",
+      "Aurelia Grundbesitz koopt vastgoed en vastgoedgerelateerde vorderingen uitsluitend voor eigen rekening — discreet, gestructureerd en verbindend.",
+    subline: "Discreet · Voor eigen rekening · Verbindend",
     navItems: [
       { label: "Home", path: "/" },
       { label: "Eigenaren in nood", path: "/fuer-eigentumer-in-not" },
@@ -49,7 +49,7 @@ const nl: Translations = {
     socialLinkedinAria: "LinkedIn (binnenkort)",
     socialInstagramAria: "Instagram (binnenkort)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle rechten voorbehouden.",
-    kwgDisclaimer: "Aurelia Grundbesitz GmbH is geen financiële dienstverlener in de zin van de Duitse Bankwet (KWG) en biedt geen beleggingsadvies. Deze website dient uitsluitend ter algemene informatie en vervangt geen individueel juridisch of fiscaal advies.",
+    kwgDisclaimer: "Wij treden uitsluitend op als koper voor eigen rekening. Wij zijn geen kredietinstelling en bieden geen financiële diensten, leningen of participatiemodellen aan.",
   },
   newsletter: {
     placeholder: "Uw e-mailadres",
