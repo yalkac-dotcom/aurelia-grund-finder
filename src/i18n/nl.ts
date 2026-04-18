@@ -351,7 +351,7 @@ const nl: Translations = {
     ],
     finalCtaTitle: "Vraag nu uw gratis eerste beoordeling aan",
     finalCtaText: "Wij beoordelen uw zaak vrijblijvend en koppelen binnen twee werkdagen terug met een duidelijke uitspraak.",
-    finalCtaButton: "Mijn zaak laten beoordelen",
+    finalCtaButton: "Vertrouwelijk aanvragen",
   },
   ownerInTrouble: {
     heroKicker: "Voor eigenaren in bijzondere situaties",

@@ -352,7 +352,7 @@ const de: Translations = {
     ],
     finalCtaTitle: "Jetzt kostenlose Ersteinschätzung sichern",
     finalCtaText: "Wir prüfen Ihren Fall unverbindlich und melden uns innerhalb von zwei Werktagen mit einer klaren Aussage.",
-    finalCtaButton: "Fall jetzt prüfen lassen",
+    finalCtaButton: "Vertraulich anfragen",
   },
   ownerInTrouble: {
     heroKicker: "Für Eigentümer in besonderen Lagen",
