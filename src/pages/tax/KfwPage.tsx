@@ -23,7 +23,7 @@ const KfwPage = () => {
       <section className="relative h-[32vh] min-h-[240px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.kfw.src} srcSet={heroSets.kfw.srcSet} sizes={heroSets.kfw.sizes} alt={t.tax.kfwTitle} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/70 via-[#0B1929]/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
         </div>
         <div className="relative container pb-8 md:pb-10">
           <Reveal>

@@ -55,7 +55,7 @@ const HowItWorks = () => {
         {/* SEGMENTE */}
         <section
           className="section-premium"
-          style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
           <div className="container-premium">
             <SectionHeader title={w.segmentsTitle} intro={w.segmentsIntro} />
@@ -118,7 +118,7 @@ const HowItWorks = () => {
         {/* FAQ */}
         <section
           className="section-premium"
-          style={{ background: "linear-gradient(180deg, hsl(30 10% 96%) 0%, hsl(30 12% 97.5%) 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 100%)" }}
         >
           <div className="container-premium max-w-3xl">
             <SectionHeader title={w.faqTitle} intro={w.faqIntro} />
