@@ -6,29 +6,45 @@ interface ProofCardProps {
   icon?: LucideIcon;
   iconImage?: string;
   iconAlt?: string;
-  /** Optional thematic photo shown as full-width header (16:10). Replaces the icon visual. */
+  /** Optional thematic photo shown as full-width header (16:10 default, 21:9 when compact). */
   image?: string;
   imageAlt?: string;
   index: number;
   title: string;
   text: string;
   cta?: { label: string; to: string };
+  /** Editorial / filigree variant: smaller image, lighter shadow, semibold heading, tighter padding. */
+  compact?: boolean;
 }
 
-const ProofCard = ({ icon: Icon, iconImage, iconAlt, image, imageAlt, index, title, text, cta }: ProofCardProps) => {
+const ProofCard = ({
+  icon: Icon,
+  iconImage,
+  iconAlt,
+  image,
+  imageAlt,
+  index,
+  title,
+  text,
+  cta,
+  compact = false,
+}: ProofCardProps) => {
   const id = `proof-${index}-title`;
   const numeral = String(index + 1).padStart(2, "0");
 
   const visual = image ? (
-    <div className="relative w-full overflow-hidden bg-primary/5" style={{ aspectRatio: "16 / 10" }}>
+    <div
+      className="relative w-full overflow-hidden bg-primary/5"
+      style={{ aspectRatio: compact ? "21 / 9" : "16 / 10" }}
+    >
       <img
         src={image}
         alt={imageAlt ?? iconAlt ?? ""}
         loading="lazy"
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
       />
       <div
-        className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent"
+        className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"
         aria-hidden="true"
       />
     </div>
@@ -60,11 +76,26 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, image, imageAlt, index, tit
   );
 
   const body = (
-    <div className="proof-card__body">
-      <h4 id={id} className="text-[0.95rem] font-heading font-semibold text-primary leading-snug">
+    <div className={compact ? "px-5 pt-4 pb-5 md:px-6 md:pt-5 md:pb-6" : "proof-card__body"}>
+      <h4
+        id={id}
+        className={
+          compact
+            ? "text-[0.95rem] md:text-[1rem] font-heading font-semibold text-primary leading-snug tracking-tight"
+            : "text-[0.95rem] font-heading font-semibold text-primary leading-snug"
+        }
+      >
         {title}
       </h4>
-      <p className="mt-1.5 text-[0.82rem] leading-[1.7] text-muted-foreground">{text}</p>
+      <p
+        className={
+          compact
+            ? "mt-2 text-[0.82rem] md:text-[0.85rem] leading-[1.75] text-muted-foreground"
+            : "mt-1.5 text-[0.82rem] leading-[1.7] text-muted-foreground"
+        }
+      >
+        {text}
+      </p>
       {cta && (
         <span className="mt-4 inline-flex items-center gap-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-primary">
           {cta.label} <ArrowRight size={13} className="text-accent" />
@@ -73,13 +104,13 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, image, imageAlt, index, tit
     </div>
   );
 
+  const cardClass = compact
+    ? "group h-full overflow-hidden bg-card border border-border/50 rounded-md transition-colors duration-300 hover:border-accent/40"
+    : "proof-card group h-full overflow-hidden";
+
   if (cta) {
     return (
-      <Link
-        to={cta.to}
-        className="proof-card group h-full block overflow-hidden"
-        aria-labelledby={id}
-      >
+      <Link to={cta.to} className={`${cardClass} block`} aria-labelledby={id}>
         {visual}
         {body}
       </Link>
@@ -87,7 +118,7 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, image, imageAlt, index, tit
   }
 
   return (
-    <article className="proof-card group h-full overflow-hidden" aria-labelledby={id}>
+    <article className={cardClass} aria-labelledby={id}>
       {visual}
       {body}
     </article>
