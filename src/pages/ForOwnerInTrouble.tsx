@@ -9,15 +9,16 @@ import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
 
-// Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht
+// Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht (Fotos beibehalten)
 const situationImages = cardImages.ownerSituations;
 // Proof (auf Navy) — Lucide-Icons im ProofCard-Stil (Navy-Sektion bleibt iconisch)
 const proofIcons = [Lock, Scale, FileText, ShieldCheck];
-// Steps (5) — geteiltes Bildset
-const stepImages = cardImages.steps;
+// Steps (5) — Erstkontakt, Einordnung, Bewertung, Angebot, Abwicklung (3D-Icons)
+const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -94,8 +95,8 @@ const ForOwnerInTrouble = () => {
                   total={o.steps.length}
                   title={s.title}
                   desc={s.desc}
-                  image={stepImages[i % stepImages.length]}
-                  imageAlt={s.title}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={s.title}
                 />
               ))}
             </div>
