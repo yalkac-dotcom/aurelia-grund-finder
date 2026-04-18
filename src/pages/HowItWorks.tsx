@@ -61,10 +61,10 @@ const HowItWorks = () => {
             <SectionHeader title={w.segmentsTitle} intro={w.segmentsIntro} />
             <div className="grid gap-6 md:gap-7 md:grid-cols-3">
               {w.segments.map((s, i) => {
-                const Icon = segmentIcons[i % segmentIcons.length];
+                const img = segmentIconImages[i % segmentIconImages.length];
                 return (
                   <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard icon={Icon} title={s.title} text={s.desc} />
+                    <AreaCard iconImage={img} iconAlt={s.title} title={s.title} text={s.desc} />
                   </Reveal>
                 );
               })}
