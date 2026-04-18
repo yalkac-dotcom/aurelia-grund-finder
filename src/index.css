@@ -506,11 +506,46 @@
 }
 
 .section-navy {
+  position: relative;
   background: linear-gradient(
     170deg,
     hsl(212 52% 12%) 0%,
     hsl(215 55% 9%) 100%
   );
+  /* Subtile Innenschattierung am oberen Rand für klare Abgrenzung zum hellen Bereich */
+  box-shadow: inset 0 1px 0 hsl(45 60% 55% / 0.18), inset 0 8px 24px -8px hsl(0 0% 0% / 0.35);
+}
+.section-navy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1080px, calc(100% - 3rem));
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    hsl(45 60% 55% / 0) 0%,
+    hsl(45 60% 55% / 0.45) 50%,
+    hsl(45 60% 55% / 0) 100%
+  );
+  pointer-events: none;
+}
+.section-navy::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1080px, calc(100% - 3rem));
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    hsl(45 60% 55% / 0) 0%,
+    hsl(45 60% 55% / 0.30) 50%,
+    hsl(45 60% 55% / 0) 100%
+  );
+  pointer-events: none;
 }
 
 .section-navy-warm {
