@@ -1097,56 +1097,85 @@ const es: Translations = {
     hero: {
       kicker: "Sobre Aurelia",
       title: "Sobre Aurelia Grundbesitz",
-      subtitle: "Discretos. Orientados a la sustancia. Vinculantes.",
+      subtitle: "Discretos, orientados a la sustancia, a largo plazo.",
       body: "Aurelia Grundbesitz está especializada en la adquisición de inmuebles en situaciones particulares, sensibles y con plazos críticos. Actuamos exclusivamente por cuenta propia y examinamos casos en los que los procesos de venta clásicos ya no ofrecen una solución viable.",
       cta: "Contáctenos",
     },
     intro: {
-      headline: "Cuando un inmueble se bloquea, no se necesita un largo proceso de comercialización.",
-      subheadline: "Sino un siguiente paso realista.",
-      body: "Aurelia acompaña a propietarios, comunidades de herederos y socios comerciales en situaciones en las que la presión de tiempo, las cargas o las estructuras bloqueadas exigen una decisión clara. Nuestro enfoque no se orienta a la venta, sino que es estructurado, discreto y centrado en la viabilidad.",
-      cta: "Describa su caso de forma confidencial",
+      body: "Cuando un inmueble se bloquea, no se necesita un largo proceso de comercialización – sino un siguiente paso realista. Aurelia acompaña a propietarios, comunidades de herederos y socios comerciales en situaciones en las que la presión de tiempo, las cargas o las estructuras bloqueadas exigen una decisión clara. Nuestro enfoque no se orienta a la venta, sino que es estructurado, discreto y centrado en la viabilidad.",
     },
     profile: {
       headline: "Lo que representa Aurelia",
-      subheadline: "Compra directa en lugar de intermediación no vinculante.",
-      body: "No somos una agencia inmobiliaria ni un intermediario entre varias partes. No compramos por cuenta de terceros y no trabajamos con compromisos de financiación no vinculantes. Cuando examinamos un caso, lo hacemos con el objetivo de evaluarlo de forma fiable y – cuando es viable – adquirirlo nosotros mismos.",
-      cta: "Cómo trabajamos",
+      body1: "Aurelia no es una agencia inmobiliaria ni un intermediario entre varias partes. No compramos por cuenta de terceros y no trabajamos con compromisos de financiación no vinculantes. Cuando examinamos un caso, lo hacemos con el objetivo de evaluarlo de forma fiable y – cuando es viable – adquirirlo nosotros mismos.",
+      body2: "Para propietarios y contactos esto significa: sin comercialización pública, sin transmisión a una cadena de interesados y sin ambigüedades innecesarias en el proceso. Las conversaciones permanecen confidenciales, las decisiones comprensibles y el siguiente paso realista.",
     },
-    principles: {
-      headline: "Discreción, claridad y decisiones sólidas",
-      subheadline: "Nuestro criterio no es la visibilidad, sino la viabilidad.",
-      body: "Para propietarios y contactos esto significa: sin comercialización pública, sin transmisión a una cadena de interesados y sin ambigüedades innecesarias en el proceso. Las conversaciones permanecen confidenciales, las decisiones comprensibles y el siguiente paso realista.",
-      cta: "Consulta confidencial",
+    approach: {
+      headline: "Nuestro enfoque",
+      items: [
+        {
+          title: "Compra directa",
+          text: "Compramos con fondos propios, tomamos decisiones claras y acompañamos el proceso hasta la formalización notarial. Sin intermediario, sin condición de financiación, sin reventa.",
+        },
+        {
+          title: "Máxima discreción",
+          text: "Las situaciones inmobiliarias sensibles requieren confidencialidad. Por eso evitamos la comercialización pública, la visibilidad innecesaria y cualquier forma de activismo. Conversaciones y documentos permanecen donde corresponde: en un marco protegido.",
+        },
+        {
+          title: "Respuesta rápida",
+          text: "Recibe una primera valoración en 48 horas, antes en casos urgentes. Quien se encuentra en una situación difícil no necesita demoras, sino una respuesta honesta y fiable.",
+        },
+      ],
     },
     situations: {
       headline: "En qué situaciones intervenimos",
-      subheadline: "Allí donde los inmuebles deben primero ser evaluados.",
-      body: "Aurelia interviene sobre todo cuando los procesos de venta clásicos se han vuelto demasiado lentos, demasiado abiertos o demasiado poco claros. Casos típicos son procedimientos de ejecución inminentes o en curso, presión de bancos o acreedores, comunidades de herederos con decisiones bloqueadas, inmuebles problemáticos y ventas en las que la discreción importa más que el alcance.",
-      cta: "Ver casos típicos",
+      body1: "Aurelia interviene sobre todo allí donde los inmuebles deben primero evaluarse con cuidado antes de venderse. Casos típicos son procedimientos de ejecución inminentes o en curso, presión de bancos o acreedores, comunidades de herederos con decisiones bloqueadas, inmuebles problemáticos o ventas en las que la discreción importa más que el alcance.",
+      body2: "No hay dos situaciones iguales. Lo que tienen en común, sin embargo, es que los procesos estándar a menudo no bastan. Justo ahí intervenimos: con una valoración sobria de la situación y un siguiente paso fiable.",
     },
     review: {
       headline: "Cómo evaluamos los casos",
-      subheadline: "No solo cuenta el inmueble, sino toda la situación que hay detrás.",
-      body: "Consideramos no solo el inmueble, sino también las cargas registrales, la presión económica, los plazos, las partes implicadas y la viabilidad real de una compra. Cada caso se evalúa individualmente. Cuando una compra es posible, actuamos con rapidez y de forma vinculante. Cuando no es viable, lo decimos pronto y con claridad.",
-      cta: "Solicite una evaluación de su caso",
+      body1: "Consideramos no solo el inmueble en sí, sino también la estructura que lo rodea: cargas registrales, presión económica, plazos, partes implicadas y la viabilidad real de una compra. Un inmueble solo puede resolverse de forma sensata cuando se entiende la imagen completa.",
+      body2: "Por eso no trabajamos con afirmaciones generales. Cada caso se evalúa individualmente. Cuando una compra es posible, actuamos con rapidez y de forma vinculante. Cuando no es viable, lo decimos pronto y con claridad.",
     },
-    process: {
-      headline: "Cómo trabaja Aurelia",
-      subheadline: "Un proceso claro en lugar de rodeos innecesarios.",
-      body: "El primer paso es una toma de contacto confidencial. Después, una revisión preliminar estructurada de la información y los documentos. A continuación, los propietarios reciben una valoración honesta sobre si una compra es realista. Una primera valoración se entrega en 48 horas, antes en casos urgentes.",
-      cta: "Contáctenos ahora",
-    },
-    trust: {
-      headline: "Por qué propietarios y socios hablan con Aurelia",
-      subheadline: "Porque las situaciones inmobiliarias difíciles exigen claridad.",
-      body: "Sin rondas de visitas, sin ofertas públicas, sin interesados no vinculantes y sin prolongación artificial del proceso. En su lugar: revisión discreta, evaluación comprensible y una decisión clara cuando un caso es viable.",
-      cta: "Hablar sin compromiso",
+    cases: {
+      headline: "Ejemplos de la práctica",
+      note: "Todos los casos se presentan de forma anónima.",
+      items: [
+        {
+          label: "EMERGENCIA · NRW · 2025",
+          title: "Ejecución hipotecaria evitada",
+          text: "Heredera única, edificio plurifamiliar en NRW, procedimiento de ejecución en curso, deudas superiores al valor de mercado.",
+          results: [
+            "Venta libre 4 semanas antes de la subasta",
+            "Procedimiento detenido",
+            "Propietaria sin deudas",
+          ],
+        },
+        {
+          label: "COMUNIDAD DE HEREDEROS · RENANIA · 2024",
+          title: "Venta bloqueada resuelta",
+          text: "3 herederos, vivienda unifamiliar, venta bloqueada durante más de 2 años, sin acuerdo.",
+          results: [
+            "Compra de una cuota hereditaria",
+            "Solución global en 6 semanas",
+            "Todas las partes pagadas",
+          ],
+        },
+        {
+          label: "COMPRA DIRECTA · DÜSSELDORF · 2025",
+          title: "Venta rápida sin intermediario",
+          text: "Propietario, inmueble comercial en Düsseldorf, presión de acreedores, préstamo cancelado.",
+          results: [
+            "Contacto directo con el banco acreedor",
+            "Compra estructurada",
+            "Préstamo totalmente amortizado",
+          ],
+        },
+      ],
     },
     closing: {
-      headline: "La fiabilidad importa más que la apariencia externa",
-      subheadline: "Decisiones de compra directas en situaciones inmobiliarias sensibles.",
-      body: "Aurelia Grundbesitz representa soluciones de compra discretas, estructuradas y vinculantes por cuenta propia. Cuando un inmueble necesita no solo un comprador, sino sobre todo un siguiente paso realista, examinamos el caso de forma confidencial y sin rodeos.",
+      headline: "Permítanos evaluar su caso.",
+      body: "Aurelia Grundbesitz representa decisiones de compra directas en situaciones en las que la fiabilidad importa más que la apariencia externa. Cuando un inmueble necesita no solo un comprador, sino sobre todo un siguiente paso realista, examinamos el caso de forma confidencial, estructurada y sin rodeos.",
+      note: "Una conversación inicial confidencial es sin compromiso y gratuita. Le diremos honestamente qué es posible.",
       cta: "Contáctenos",
     },
   },

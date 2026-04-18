@@ -1098,56 +1098,85 @@ const nl: Translations = {
     hero: {
       kicker: "Over Aurelia",
       title: "Over Aurelia Grundbesitz",
-      subtitle: "Discreet. Op substantie gericht. Bindend.",
+      subtitle: "Discreet, op substantie gericht, langetermijn.",
       body: "Aurelia Grundbesitz is gespecialiseerd in de aankoop van vastgoed in bijzondere, gevoelige en tijdkritische situaties. Wij handelen uitsluitend voor eigen rekening en beoordelen zaken waarin klassieke verkoopprocessen vaak geen werkbare oplossing meer bieden.",
       cta: "Neem contact op",
     },
     intro: {
-      headline: "Als een pand vastzit, is geen lang verkoopproces nodig,",
-      subheadline: "maar een realistische volgende stap.",
-      body: "Aurelia begeleidt eigenaren, erfgemeenschappen en zakelijke partners in situaties waarin tijdsdruk, lasten of geblokkeerde structuren een duidelijke beslissing vereisen. Onze aanpak is niet verkoopgedreven, maar gestructureerd, discreet en gericht op haalbaarheid.",
-      cta: "Schets uw situatie vertrouwelijk",
+      body: "Als een pand vastzit, is geen lang verkoopproces nodig – maar een realistische volgende stap. Aurelia begeleidt eigenaren, erfgemeenschappen en zakelijke partners in situaties waarin tijdsdruk, lasten of geblokkeerde structuren een duidelijke beslissing vereisen. Onze aanpak is niet verkoopgedreven, maar gestructureerd, discreet en gericht op haalbaarheid.",
     },
     profile: {
       headline: "Waar Aurelia voor staat",
-      subheadline: "Directe aankoop in plaats van vrijblijvende bemiddeling.",
-      body: "Wij zijn geen makelaarskantoor en geen tussenpersoon tussen meerdere partijen. Wij kopen niet in opdracht van derden en werken niet met vrijblijvende financieringstoezeggingen. Als wij een zaak beoordelen, dan met het doel deze betrouwbaar in te schatten en – indien haalbaar – zelf aan te kopen.",
-      cta: "Hoe wij werken",
+      body1: "Aurelia is geen makelaarskantoor en geen tussenpersoon tussen meerdere partijen. Wij kopen niet in opdracht van derden en werken niet met vrijblijvende financieringstoezeggingen. Als wij een zaak beoordelen, dan met het doel deze betrouwbaar in te schatten en – indien haalbaar – zelf aan te kopen.",
+      body2: "Voor eigenaren en contactpersonen betekent dit: geen publieke marketing, geen doorgifte aan een keten van geïnteresseerden en geen onnodige onduidelijkheid in het proces. Gesprekken blijven vertrouwelijk, beslissingen navolgbaar en de volgende stap realistisch.",
     },
-    principles: {
-      headline: "Discretie, helderheid en betrouwbare beslissingen",
-      subheadline: "Onze maatstaf is niet zichtbaarheid, maar haalbaarheid.",
-      body: "Voor eigenaren en contactpersonen betekent dit: geen publieke marketing, geen doorgifte aan een keten van geïnteresseerden en geen onnodige onduidelijkheid in het proces. Gesprekken blijven vertrouwelijk, beslissingen navolgbaar en de volgende stap realistisch.",
-      cta: "Vertrouwelijk aanvragen",
+    approach: {
+      headline: "Onze aanpak",
+      items: [
+        {
+          title: "Directe aankoop",
+          text: "Wij kopen met eigen middelen, nemen heldere beslissingen en begeleiden het proces tot aan de notariële afwikkeling. Geen makelaar, geen financieringsvoorbehoud, geen doorbemiddeling.",
+        },
+        {
+          title: "Maximale discretie",
+          text: "Gevoelige vastgoedsituaties vragen om vertrouwelijkheid. Daarom vermijden wij publieke marketing, onnodige zichtbaarheid en elke vorm van actionisme. Gesprekken en stukken blijven waar ze horen: in een beschermde context.",
+        },
+        {
+          title: "Snelle reactie",
+          text: "Binnen 48 uur ontvangt u een eerste inschatting, in dringende gevallen sneller. Wie in een lastige situatie zit, heeft geen vertraging nodig, maar een eerlijke en betrouwbare terugkoppeling.",
+        },
+      ],
     },
     situations: {
       headline: "In welke situaties wij optreden",
-      subheadline: "Daar waar vastgoed eerst moet worden ingeschat.",
-      body: "Aurelia wordt vooral ingeschakeld waar klassieke verkoopprocessen te traag, te open of te onduidelijk zijn geworden. Typische gevallen zijn dreigende of lopende executieveilingen, druk van banken of schuldeisers, erfgemeenschappen met geblokkeerde beslissingen, probleempanden en verkopen waarbij discretie belangrijker is dan bereik.",
-      cta: "Bekijk typische gevallen",
+      body1: "Aurelia wordt vooral ingeschakeld waar vastgoed eerst zorgvuldig moet worden ingeschat voordat het wordt verkocht. Typische gevallen zijn dreigende of lopende executieveilingen, druk van banken of schuldeisers, erfgemeenschappen met geblokkeerde beslissingen, probleempanden of verkopen waarbij discretie belangrijker is dan bereik.",
+      body2: "Geen situatie is gelijk. Wat ze gemeen hebben is dat standaardprocessen vaak niet volstaan. Juist daar zetten wij in: met een nuchtere beoordeling van de situatie en een betrouwbare vervolgaanpak.",
     },
     review: {
       headline: "Hoe wij zaken beoordelen",
-      subheadline: "Niet alleen het object telt, maar de hele situatie erachter.",
-      body: "Wij kijken niet alleen naar het pand zelf, maar ook naar lasten in het kadaster, economische druk, tijdsbestek, betrokkenen en de feitelijke haalbaarheid van een aankoop. Elk geval wordt afzonderlijk beoordeeld. Waar een aankoop mogelijk is, handelen wij snel en bindend. Waar dat niet haalbaar is, zeggen wij dat tijdig en openlijk.",
-      cta: "Laat uw zaak beoordelen",
+      body1: "Wij kijken niet alleen naar het pand zelf, maar ook naar de structuur erachter: lasten in het kadaster, economische druk, tijdsbestek, betrokkenen en de feitelijke haalbaarheid van een aankoop. Een pand kan alleen zinvol worden opgelost als het totaalbeeld wordt begrepen.",
+      body2: "Daarom werken wij niet met algemene uitspraken. Elke zaak wordt afzonderlijk beoordeeld. Waar een aankoop mogelijk is, handelen wij snel en bindend. Waar dat niet haalbaar is, zeggen wij dat tijdig en openlijk.",
     },
-    process: {
-      headline: "Hoe Aurelia werkt",
-      subheadline: "Een helder proces in plaats van onnodige lussen.",
-      body: "De eerste stap is een vertrouwelijke intake. Daarna volgt een gestructureerde voorbeoordeling van informatie en documenten. Vervolgens krijgen eigenaren een eerlijke inschatting of een aankoop realistisch is. Een eerste inschatting volgt binnen 48 uur, in dringende gevallen sneller.",
-      cta: "Neem nu contact op",
-    },
-    trust: {
-      headline: "Waarom eigenaren en partners met Aurelia spreken",
-      subheadline: "Omdat lastige vastgoedsituaties helderheid vereisen.",
-      body: "Geen bezichtigingsrondes, geen publieke aanbiedingen, geen vrijblijvende geïnteresseerden en geen kunstmatige procesverlenging. In plaats daarvan: discrete beoordeling, navolgbare inschatting en een heldere beslissing wanneer een zaak haalbaar is.",
-      cta: "Vrijblijvend spreken",
+    cases: {
+      headline: "Voorbeelden uit de praktijk",
+      note: "Alle gevallen geanonimiseerd weergegeven.",
+      items: [
+        {
+          label: "NOODSITUATIE · NRW · 2025",
+          title: "Executieveiling afgewend",
+          text: "Enige erfgenaam, meergezinswoning NRW, lopende executieprocedure, schulden hoger dan marktwaarde.",
+          results: [
+            "Onderhandse verkoop 4 weken vóór veiling",
+            "Procedure stopgezet",
+            "Eigenaar schuldenvrij",
+          ],
+        },
+        {
+          label: "ERFGEMEENSCHAP · RIJNLAND · 2024",
+          title: "Geblokkeerde verkoop opgelost",
+          text: "3 erfgenamen, eengezinswoning, verkoop al ruim 2 jaar geblokkeerd, geen overeenstemming.",
+          results: [
+            "Aankoop van een erfdeel",
+            "Totale oplossing in 6 weken",
+            "Alle partijen uitbetaald",
+          ],
+        },
+        {
+          label: "DIRECTE AANKOOP · DÜSSELDORF · 2025",
+          title: "Snelle verkoop zonder makelaar",
+          text: "Eigenaar, commercieel object Düsseldorf, druk van schuldeisers, lening opgezegd.",
+          results: [
+            "Direct contact met schuldeiserbank",
+            "Gestructureerde aankoop",
+            "Lening volledig afgelost",
+          ],
+        },
+      ],
     },
     closing: {
-      headline: "Betrouwbaarheid is belangrijker dan presentatie",
-      subheadline: "Directe aankoopbeslissingen in gevoelige vastgoedsituaties.",
-      body: "Aurelia Grundbesitz staat voor discrete, gestructureerde en bindende aankoopoplossingen voor eigen rekening. Wanneer een pand niet alleen een koper nodig heeft, maar vooral een realistische volgende stap, beoordelen wij de zaak vertrouwelijk en zonder omwegen.",
+      headline: "Laten wij uw zaak inschatten.",
+      body: "Aurelia Grundbesitz staat voor directe aankoopbeslissingen in situaties waarin betrouwbaarheid belangrijker is dan presentatie. Wanneer een pand niet alleen een koper nodig heeft, maar vooral een realistische volgende stap, beoordelen wij de zaak vertrouwelijk, gestructureerd en zonder omwegen.",
+      note: "Een vertrouwelijk eerste gesprek is vrijblijvend en kosteloos. Wij vertellen u eerlijk wat mogelijk is.",
       cta: "Neem contact op",
     },
   },
