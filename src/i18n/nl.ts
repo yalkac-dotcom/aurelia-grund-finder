@@ -395,6 +395,86 @@ const nl: Translations = {
       "Een vertrouwelijk eerste gesprek is vrijblijvend en kosteloos. Wij zeggen u eerlijk wat mogelijk is – ook wanneer de tijd dringt.",
     finalCtaButton: "Vertrouwelijk aanvragen",
   },
+  buyers: {
+    heroKicker: "Voor kopers",
+    heroTitle: "Kwaliteitsvastgoed tegen transparante prijzen.",
+    heroDescription:
+      "Rechtstreeks uit onze portefeuille, zonder makelaar. Gecontroleerde objecten, eerlijke voorwaarden, duidelijk gedocumenteerde afwikkeling.",
+    heroPrimaryCta: "Advies aanvragen",
+    heroSecondaryCta: "Hoe wij werken",
+    heroTrustLine: "Directe aankoop · Zonder makelaarscourtage · Notariële begeleiding",
+    heroImageAlt: "Woonobject uit de Aurelia-portefeuille – symbool voor gecontroleerde kwaliteit en transparante voorwaarden",
+    featuresTitle: "Wat u bij Aurelia kunt verwachten",
+    featuresIntro:
+      "Aurelia verkoopt uitsluitend objecten uit de eigen portefeuille. Dat zorgt voor korte lijnen, duidelijke verantwoordelijkheden en transparante voorwaarden.",
+    features: [
+      { title: "Transparante prijzen", desc: "Eerlijke berekening op basis van controleerbare kengetallen – zonder verborgen kosten." },
+      { title: "Geen makelaarskosten", desc: "U koopt rechtstreeks van de eigenaar. De gebruikelijke makelaarscourtage vervalt." },
+      { title: "Gecontroleerde portefeuille", desc: "Elk object is vooraf gecontroleerd, gedocumenteerd en netjes gestructureerd." },
+      { title: "Heldere afwikkeling", desc: "Gestructureerd verloop van eerste gesprek tot notariële akte." },
+    ],
+    portfolioTitle: "Ons actuele aanbod",
+    portfolioText:
+      "Aurelia beschikt over een regelmatig wisselende portefeuille gecontroleerde woningen in de regio Düsseldorf en omgeving. Actuele objecten en details worden op aanvraag verstrekt.",
+    portfolioCta: "Naar de portefeuille",
+    proofTitle: "Waarom rechtstreeks bij Aurelia kopen",
+    proofIntro: "Vier punten die het verschil maken met een klassieke makelaarstransactie.",
+    proofPoints: [
+      { title: "Directe eigenaar", text: "U spreekt met de verkoper zelf – zonder tussenpersoon." },
+      { title: "Volledige documenten", text: "Kadasteruittreksel, brochure en relevante documenten zijn beschikbaar." },
+      { title: "Realistische prijsbasis", text: "Wij rekenen marktconform – niet overspannen." },
+      { title: "Betrouwbare afwikkeling", text: "Notaris, afspraak, oplevering – netjes gestructureerd en gedocumenteerd." },
+    ],
+    stepsTitle: "Zo verloopt de aankoop",
+    steps: [
+      { title: "Eerste contact", desc: "U neemt contact op – wij verduidelijken uw wensen en kaders." },
+      { title: "Bezichtiging", desc: "Bezoek ter plaatse met volledige documenten en eerlijke inschatting." },
+      { title: "Onderhandeling", desc: "Open gesprek over prijs, voorwaarden en opleveringsdatum." },
+      { title: "Akte & oplevering", desc: "Notariële akte, betaling van de koopsom, geordende oplevering." },
+    ],
+    stepsNote:
+      "Tijdsbestek is indicatief. Concrete voorwaarden worden uitsluitend per geval besproken.",
+    objectionsTitle: "Wat kopers vaak vragen",
+    objectionsIntro: "Typische bedenkingen – zakelijk beantwoord.",
+    objections: [
+      {
+        q: "Zijn de objecten echt gecontroleerd?",
+        a: "Ja. Elk object in de portefeuille is vóór aankoop gecontroleerd, gedocumenteerd en – waar nodig – bouwkundig opgewaardeerd.",
+      },
+      {
+        q: "Zonder makelaar – wie behartigt mijn belangen?",
+        a: "De juridische zekerheid wordt geboden door de notaris, die beide partijen neutraal begeleidt. U kunt op elk moment eigen adviseurs of experts inschakelen.",
+      },
+      {
+        q: "Zijn de prijzen onderhandelbaar?",
+        a: "Wij rekenen transparant en marktconform. Binnen dat kader is een zakelijke onderhandeling vanzelfsprekend mogelijk.",
+      },
+    ],
+    faqTitle: "Veelgestelde vragen",
+    faqIntro: "Als uw vraag hier niet wordt beantwoord, neem dan rechtstreeks contact met ons op.",
+    faqItems: [
+      {
+        q: "Welke soorten objecten verkoopt Aurelia?",
+        a: "Voornamelijk woonobjecten in de regio Düsseldorf en omgeving – appartementen, meergezinswoningen en geselecteerde individuele objecten.",
+      },
+      {
+        q: "Kan een financiering via Aurelia worden bemiddeld?",
+        a: "Wij bemiddelen geen financieringen, maar kunnen op verzoek verwijzen naar ervaren banken en financieringsadviseurs in ons netwerk.",
+      },
+      {
+        q: "Hoe snel is een bezichtiging mogelijk?",
+        a: "Doorgaans binnen enkele dagen na uw aanvraag – afhankelijk van beschikbaarheid en objectsituatie.",
+      },
+      {
+        q: "Wat gebeurt er na de notarisafspraak?",
+        a: "Na betaling van de koopsom en eigendomsoverdracht volgt de geordende oplevering van het object inclusief alle relevante documenten.",
+      },
+    ],
+    finalCtaTitle: "Geïnteresseerd in een concreet object?",
+    finalCtaText:
+      "Bespreek uw wensen met ons – wij beoordelen welke objecten uit onze portefeuille bij u passen.",
+    finalCtaButton: "Vrijblijvend contact opnemen",
+  },
   partners: {
     heroKicker: "Voor zakelijke partners",
     heroTitle: "Projectgerichte samenwerkingen binnen een helder kader.",

@@ -442,6 +442,87 @@ const de: Translations = {
       "Ein vertrauliches Erstgespräch ist unverbindlich und kostenfrei. Wir sagen Ihnen ehrlich, was möglich ist – auch dann, wenn die Zeit drängt.",
     finalCtaButton: "Vertraulich anfragen",
   },
+  buyers: {
+    heroKicker: "Für Käufer",
+    heroTitle: "Qualitätsimmobilien zu transparenten Preisen.",
+    heroDescription:
+      "Direkt aus unserem Bestand, ohne Makler. Geprüfte Objekte, faire Konditionen, klar dokumentierte Abwicklung.",
+    heroPrimaryCta: "Beratung anfragen",
+    heroSecondaryCta: "Wie wir vorgehen",
+    heroTrustLine: "Direkter Ankauf · Ohne Maklerprovision · Notarielle Begleitung",
+    heroImageAlt: "Wohnimmobilie aus dem Aurelia-Bestand – sinnbildlich für geprüfte Qualität und transparente Konditionen",
+    featuresTitle: "Was Sie bei Aurelia erwartet",
+    featuresIntro:
+      "Aurelia verkauft ausschließlich Objekte aus dem eigenen Bestand. Das schafft kurze Wege, klare Verantwortlichkeiten und transparente Konditionen.",
+    features: [
+      { title: "Transparente Preise", desc: "Faire Kalkulation auf Basis nachvollziehbarer Kennzahlen – ohne versteckte Kosten." },
+      { title: "Keine Maklergebühren", desc: "Sie kaufen direkt vom Eigentümer. Die übliche Maklerprovision entfällt." },
+      { title: "Geprüfter Bestand", desc: "Jedes Objekt wurde im Vorfeld geprüft, dokumentiert und sauber strukturiert." },
+      { title: "Klare Abwicklung", desc: "Strukturierter Ablauf vom Erstgespräch bis zur notariellen Beurkundung." },
+    ],
+    portfolioTitle: "Unser aktuelles Angebot",
+    portfolioText:
+      "Aurelia verfügt über ein regelmäßig wechselndes Portfolio geprüfter Immobilien in der Region Düsseldorf und Umland. Aktuelle Objekte und Details erfahren Sie auf Anfrage.",
+    portfolioCta: "Zum Portfolio",
+    proofTitle: "Warum direkt bei Aurelia kaufen",
+    proofIntro:
+      "Vier Punkte, die den Unterschied zu einer klassischen Maklertransaktion ausmachen.",
+    proofPoints: [
+      { title: "Direkter Eigentümer", text: "Sie sprechen mit dem Verkäufer selbst – ohne Zwischenstation." },
+      { title: "Vollständige Unterlagen", text: "Grundbuchauszug, Exposé und relevante Dokumente liegen vor." },
+      { title: "Realistische Preisbasis", text: "Wir kalkulieren am Markt orientiert, nicht überreizt." },
+      { title: "Verlässliche Abwicklung", text: "Notar, Termin, Übergabe – sauber strukturiert und dokumentiert." },
+    ],
+    stepsTitle: "So läuft der Kauf",
+    steps: [
+      { title: "Erstkontakt", desc: "Sie melden sich – wir klären Ihre Wünsche und Rahmenbedingungen." },
+      { title: "Besichtigung", desc: "Vor-Ort-Termin mit vollständigen Unterlagen und ehrlicher Einordnung." },
+      { title: "Verhandlung", desc: "Offenes Gespräch zu Preis, Bedingungen und Übergabezeitpunkt." },
+      { title: "Beurkundung & Übergabe", desc: "Notarielle Beurkundung, Kaufpreiszahlung, geordnete Übergabe." },
+    ],
+    stepsNote:
+      "Zeitrahmen sind Richtwerte. Konkrete Konditionen werden ausschließlich im Einzelfall besprochen.",
+    objectionsTitle: "Was Käufer häufig fragen",
+    objectionsIntro: "Typische Bedenken – sachlich beantwortet.",
+    objections: [
+      {
+        q: "Sind die Objekte wirklich geprüft?",
+        a: "Ja. Jedes Objekt im Bestand wurde vor dem Ankauf geprüft, dokumentiert und – wo nötig – baulich aufgearbeitet.",
+      },
+      {
+        q: "Ohne Makler – wer vertritt meine Interessen?",
+        a: "Die rechtliche Sicherheit entsteht durch den Notar, der beide Seiten neutral begleitet. Sie können jederzeit eigene Berater oder Sachverständige einbinden.",
+      },
+      {
+        q: "Sind die Preise verhandelbar?",
+        a: "Wir kalkulieren transparent und am Markt orientiert. Innerhalb dieses Rahmens ist eine sachliche Verhandlung selbstverständlich möglich.",
+      },
+    ],
+    faqTitle: "Häufige Fragen",
+    faqIntro: "Wenn Ihre Frage hier nicht beantwortet ist, sprechen Sie uns direkt an.",
+    faqItems: [
+      {
+        q: "Welche Objekttypen verkauft Aurelia?",
+        a: "Schwerpunktmäßig Wohnimmobilien in der Region Düsseldorf und Umland – Eigentumswohnungen, Mehrfamilienhäuser und ausgewählte Einzelobjekte.",
+      },
+      {
+        q: "Kann ich eine Finanzierung über Aurelia vermittelt bekommen?",
+        a: "Wir vermitteln keine Finanzierungen, können bei Bedarf aber auf erfahrene Banken und Finanzierungsberater in unserem Netzwerk verweisen.",
+      },
+      {
+        q: "Wie schnell ist eine Besichtigung möglich?",
+        a: "In der Regel innerhalb weniger Tage nach Ihrer Anfrage – abhängig von Verfügbarkeit und Objektsituation.",
+      },
+      {
+        q: "Was passiert nach dem Notartermin?",
+        a: "Nach Kaufpreiszahlung und Eigentumsumschreibung erfolgt die geordnete Übergabe der Immobilie inklusive aller relevanten Unterlagen.",
+      },
+    ],
+    finalCtaTitle: "Interesse an einem konkreten Objekt?",
+    finalCtaText:
+      "Sprechen Sie mit uns über Ihre Wünsche – wir prüfen, welche Objekte aus unserem Bestand für Sie passen könnten.",
+    finalCtaButton: "Unverbindlich Kontakt aufnehmen",
+  },
   partners: {
     heroKicker: "Für Geschäftspartner",
     heroTitle: "Projektbezogene Kooperationen mit klarem Rahmen.",
