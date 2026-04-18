@@ -1167,6 +1167,63 @@ const de: Translations = {
     formSubjectOption: "Investorenanfrage",
     formPrivacyNote: "Ihre Anfrage wird ausschließlich zur Bearbeitung Ihres Anliegens verwendet und vertraulich behandelt. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
   },
+  aboutV2: {
+    hero: {
+      kicker: "Über Aurelia",
+      title: "Über Aurelia Grundbesitz",
+      subtitle: "Diskret. Substanzorientiert. Verbindlich.",
+      body: "Aurelia Grundbesitz ist auf den Ankauf von Immobilien in besonderen, sensiblen und zeitkritischen Situationen spezialisiert. Wir handeln ausschließlich auf eigene Rechnung und prüfen Fälle dort, wo klassische Verkaufsprozesse oft keine tragfähige Lösung mehr bieten.",
+      cta: "Kontakt aufnehmen",
+    },
+    intro: {
+      headline: "Wenn eine Immobilie feststeckt, braucht es keinen langen Vermarktungsprozess.",
+      subheadline: "Sondern einen realistischen nächsten Schritt.",
+      body: "Aurelia begleitet Eigentümer, Erbengemeinschaften und Geschäftspartner in Konstellationen, in denen Zeitdruck, Belastungen oder blockierte Strukturen eine klare Entscheidung erfordern. Unser Ansatz ist nicht vertriebsgetrieben, sondern strukturiert, diskret und auf Umsetzbarkeit ausgerichtet.",
+      cta: "Fall vertraulich schildern",
+    },
+    profile: {
+      headline: "Wofür Aurelia steht",
+      subheadline: "Direkter Ankauf statt unverbindlicher Vermittlung.",
+      body: "Wir sind kein Maklerhaus und kein Vermittler zwischen mehreren Parteien. Wir kaufen nicht im Auftrag Dritter und arbeiten nicht mit unverbindlichen Finanzierungszusagen. Wenn wir einen Fall prüfen, dann mit dem Ziel, ihn belastbar einzuordnen und — wenn er darstellbar ist — selbst anzukaufen.",
+      cta: "Wie wir arbeiten",
+    },
+    principles: {
+      headline: "Diskretion, Klarheit und belastbare Entscheidungen",
+      subheadline: "Unser Maßstab ist nicht Lautstärke, sondern Umsetzbarkeit.",
+      body: "Das bedeutet für Eigentümer und Ansprechpartner: keine öffentliche Vermarktung, keine Weitergabe an eine Kette von Interessenten und keine unnötige Unklarheit im Prozess. Gespräche bleiben vertraulich, Entscheidungen nachvollziehbar und der nächste Schritt realistisch.",
+      cta: "Vertraulich anfragen",
+    },
+    situations: {
+      headline: "In welchen Situationen wir tätig werden",
+      subheadline: "Dort, wo Immobilien zuerst eingeordnet werden müssen.",
+      body: "Aurelia wird vor allem dort eingeschaltet, wo klassische Verkaufsprozesse zu langsam, zu offen oder zu unklar geworden sind. Typische Fälle sind drohende oder laufende Zwangsversteigerungen, Druck durch Banken oder Gläubiger, Erbengemeinschaften mit blockierten Entscheidungen, notleidende Objekte oder Verkäufe, bei denen Diskretion wichtiger ist als Reichweite.",
+      cta: "Typische Fälle ansehen",
+    },
+    review: {
+      headline: "Wie wir Fälle prüfen",
+      subheadline: "Nicht nur das Objekt zählt, sondern die gesamte Lage dahinter.",
+      body: "Wir betrachten nicht nur die Immobilie selbst, sondern auch Belastungen im Grundbuch, wirtschaftlichen Druck, Zeitrahmen, Beteiligte und die tatsächliche Umsetzbarkeit eines Ankaufs. Jeder Fall wird einzeln geprüft. Wo ein Ankauf möglich ist, handeln wir zügig und verbindlich. Wo er nicht darstellbar ist, sagen wir das früh und offen.",
+      cta: "Fall einordnen lassen",
+    },
+    process: {
+      headline: "Wie Aurelia arbeitet",
+      subheadline: "Klarer Prozess statt unnötiger Schleifen.",
+      body: "Im ersten Schritt geht es um eine vertrauliche Erstaufnahme. Danach folgt eine strukturierte Vorprüfung der Informationen und Unterlagen. Anschließend erhalten Eigentümer eine ehrliche Einschätzung, ob ein Ankauf realistisch ist. Eine erste Einschätzung erfolgt innerhalb von 48 Stunden, in dringenden Fällen schneller.",
+      cta: "Jetzt Kontakt aufnehmen",
+    },
+    trust: {
+      headline: "Warum Eigentümer und Partner mit Aurelia sprechen",
+      subheadline: "Weil schwierige Immobilienlagen Klarheit brauchen.",
+      body: "Keine Besichtigungsschleifen, keine öffentlichen Angebote, keine unverbindlichen Interessenten und keine künstliche Prozessverlängerung. Stattdessen: diskrete Prüfung, nachvollziehbare Einordnung und eine klare Entscheidung, wenn ein Fall tragfähig ist.",
+      cta: "Unverbindlich sprechen",
+    },
+    closing: {
+      headline: "Belastbarkeit ist wichtiger als Außendarstellung",
+      subheadline: "Direkte Kaufentscheidungen in sensiblen Immobilienlagen.",
+      body: "Aurelia Grundbesitz steht für diskrete, strukturierte und verbindliche Ankaufslösungen auf eigene Rechnung. Wenn eine Immobilie nicht nur einen Käufer, sondern vor allem einen realistischen nächsten Schritt braucht, prüfen wir den Fall vertraulich und ohne Umwege.",
+      cta: "Kontakt aufnehmen",
+    },
+  },
 };
 
 export default de;
