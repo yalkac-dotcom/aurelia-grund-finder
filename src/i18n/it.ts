@@ -10,6 +10,11 @@ const it: Translations = {
     glossar: "Glossario",
     contact: "Contatti",
     workApproach: "Come lavoriamo",
+    ownerInTrouble: "Per proprietari",
+    buyers: "Per acquirenti",
+    partners: "Per partner commerciali",
+    howItWorks: "Come funziona",
+    faq: "FAQ",
   },
   footer: {
     navigation: "Navigazione",

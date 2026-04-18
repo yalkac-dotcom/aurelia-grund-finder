@@ -10,6 +10,11 @@ const nl: Translations = {
     glossar: "Glossarium",
     contact: "Contact",
     workApproach: "Werkwijze",
+    ownerInTrouble: "Voor eigenaren",
+    buyers: "Voor kopers",
+    partners: "Voor zakenpartners",
+    howItWorks: "Hoe het werkt",
+    faq: "FAQ",
   },
   footer: {
     navigation: "Navigatie",

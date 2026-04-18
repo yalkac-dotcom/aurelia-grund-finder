@@ -10,6 +10,11 @@ const tr: Translations = {
     glossar: "Sözlük",
     contact: "İletişim",
     workApproach: "Çalışma yöntemi",
+    ownerInTrouble: "Mülk sahipleri için",
+    buyers: "Alıcılar için",
+    partners: "İş ortakları için",
+    howItWorks: "Nasıl çalışır",
+    faq: "SSS",
   },
   footer: {
     navigation: "Navigasyon",
