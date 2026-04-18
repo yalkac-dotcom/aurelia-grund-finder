@@ -11,16 +11,16 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
-  HandCoins,
-  Home,
-  Handshake,
   MessagesSquare,
   Scale,
   FileCheck,
   Compass,
 } from "lucide-react";
+import { icons3d } from "@/assets/icons3d";
 
-const segmentIcons = [HandCoins, Home, Handshake];
+// Segmente — 3D-Icons konsistent zur Startseite:
+// Forderungsankauf → wallet, Immobilienverkauf → house, Projektkooperationen → partners
+const segmentIconImages = [icons3d.wallet, icons3d.house, icons3d.partners];
 const principleIcons = [MessagesSquare, Scale, FileCheck, Compass];
 
 const HowItWorks = () => {
@@ -61,10 +61,10 @@ const HowItWorks = () => {
             <SectionHeader title={w.segmentsTitle} intro={w.segmentsIntro} />
             <div className="grid gap-6 md:gap-7 md:grid-cols-3">
               {w.segments.map((s, i) => {
-                const Icon = segmentIcons[i % segmentIcons.length];
+                const img = segmentIconImages[i % segmentIconImages.length];
                 return (
                   <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard icon={Icon} title={s.title} text={s.desc} />
+                    <AreaCard iconImage={img} iconAlt={s.title} title={s.title} text={s.desc} />
                   </Reveal>
                 );
               })}

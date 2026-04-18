@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, Gavel, Users, KeyRound } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -17,9 +17,9 @@ import FinalCta from "@/components/sections/FinalCta";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  // Areas (3 Wege) — einheitliche Outline-Icons in Steel Blue:
-  // Notlagen → Gavel, Erb-/Konflikt → Users, Direktankauf → KeyRound
-  const areaIcons = [Gavel, Users, KeyRound];
+  // Areas (3 Wege) — logisch zugeordnet:
+  // Notlagen → Hammer (Zwangsversteigerung), Erb-/Konflikt → Erben, Direktankauf → Schlüssel
+  const areaIconImages = [icons3d.gavel, icons3d.heirs, icons3d.key];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
   // ProofPoints (4 Versprechen, auf Navy):
   // Diskretion → Schild, Substanz → Waage, Langfristigkeit → Gebäude, Klarheit → Vertrag
@@ -48,7 +48,8 @@ const HomePage = () => {
               {t.home.areas.map((path, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <AreaCard
-                    icon={areaIcons[i]}
+                    iconImage={areaIconImages[i]}
+                    iconAlt={path.title}
                     title={path.title}
                     text={path.desc}
                     cta={{ label: path.cta, to: areaLinks[i] }}
