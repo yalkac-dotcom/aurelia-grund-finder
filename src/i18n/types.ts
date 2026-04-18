@@ -216,6 +216,33 @@ export interface Translations {
     finalCtaText: string;
     finalCtaButton: string;
   };
+  ownerInTrouble: {
+    heroKicker: string;
+    heroTitle: string;
+    heroDescription: string;
+    heroPrimaryCta: string;
+    heroSecondaryCta: string;
+    heroTrustLine: string;
+    heroImageAlt: string;
+    situationsTitle: string;
+    situationsIntro: string;
+    situations: { title: string; desc: string }[];
+    solutionTitle: string;
+    solutionText: string;
+    proofPoints: { title: string; text: string }[];
+    stepsTitle: string;
+    steps: { title: string; desc: string }[];
+    stepsNote: string;
+    objectionsTitle: string;
+    objectionsIntro: string;
+    objections: { q: string; a: string }[];
+    faqTitle: string;
+    faqIntro: string;
+    faqItems: { q: string; a: string }[];
+    finalCtaTitle: string;
+    finalCtaText: string;
+    finalCtaButton: string;
+  };
   about: {
     heroTitle: string;
     companyLabel: string;
