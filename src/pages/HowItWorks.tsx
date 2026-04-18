@@ -11,16 +11,16 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
-  HandCoins,
-  Home,
-  Handshake,
   MessagesSquare,
   Scale,
   FileCheck,
   Compass,
 } from "lucide-react";
+import { icons3d } from "@/assets/icons3d";
 
-const segmentIcons = [HandCoins, Home, Handshake];
+// Segmente — 3D-Icons konsistent zur Startseite:
+// Forderungsankauf → wallet, Immobilienverkauf → house, Projektkooperationen → partners
+const segmentIconImages = [icons3d.wallet, icons3d.house, icons3d.partners];
 const principleIcons = [MessagesSquare, Scale, FileCheck, Compass];
 
 const HowItWorks = () => {
