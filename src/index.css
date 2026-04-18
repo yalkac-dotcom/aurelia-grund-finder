@@ -158,17 +158,23 @@
 
 /* ── Glassmorphism & Premium utilities ── */
 .glass-card {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(16px) saturate(1.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 1rem;
+  background: hsl(0 0% 100% / 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid hsl(212 30% 88% / 0.6);
+  border-radius: 0.5rem;
+  box-shadow:
+    0 1px 2px hsl(212 40% 15% / 0.04),
+    0 8px 24px -12px hsl(212 40% 15% / 0.08);
 }
 
 .glass-card-dark {
-  background: rgba(14, 110, 145, 0.08);
-  backdrop-filter: blur(16px) saturate(1.2);
-  border: 1px solid rgba(8, 137, 179, 0.15);
-  border-radius: 1rem;
+  background: hsl(212 50% 16% / 0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(0 0% 100% / 0.08);
+  border-radius: 0.5rem;
+  box-shadow:
+    0 1px 2px hsl(212 60% 4% / 0.2),
+    0 12px 32px -16px hsl(212 60% 4% / 0.4);
 }
 
 .section-premium {
@@ -189,25 +195,27 @@
 }
 
 .card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 .card-hover:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
+  border-color: hsl(45 60% 60% / 0.4);
   box-shadow:
-    0 12px 32px -8px rgba(8, 137, 179, 0.15),
-    0 4px 12px -4px rgba(0, 0, 0, 0.08);
+    0 2px 4px hsl(212 40% 15% / 0.04),
+    0 16px 40px -16px hsl(212 40% 15% / 0.12);
 }
 
 .btn-gradient {
-  background: linear-gradient(135deg, #0889b3 0%, #06acd5 50%, #22c9ef 100%);
-  color: #fff;
-  border: none;
-  border-radius: 0.5rem;
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: 1px solid hsl(45 70% 55% / 0.5);
+  border-radius: 0.25rem;
   font-weight: 600;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 .btn-gradient:hover {
-  opacity: 0.92;
+  background: hsl(212 55% 14%);
+  border-color: hsl(45 80% 60%);
   transform: translateY(-1px);
 }
 
@@ -215,10 +223,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(8, 137, 179, 0.12) 0%, rgba(6, 172, 213, 0.08) 100%);
+  width: 56px;
+  height: 56px;
+  border-radius: 0.5rem;
+  background: hsl(212 50% 16%);
+  color: hsl(45 70% 60%);
+  border: 1px solid hsl(45 60% 50% / 0.25);
 }
 
 .section-divider-gradient {

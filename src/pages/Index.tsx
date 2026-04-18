@@ -16,7 +16,6 @@ import {
 const HomePage = () => {
   const { t } = useLanguage();
   const areaIcons = [LifeBuoy, Users, KeyRound];
-  const areaColors = ["bg-teal-700", "bg-teal-600", "bg-teal-700"];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
   const proofIcons = [ShieldCheck, Handshake, FileCheck, Gavel];
 
@@ -49,14 +48,14 @@ const HomePage = () => {
               <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
                 <Link
                   to="/kontakt"
-                  className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
+                  className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-primary shadow-lg ring-1 ring-[hsl(45_70%_55%_/_0.4)] transition-all duration-300 hover:bg-white/95 hover:ring-[hsl(45_80%_60%)]"
                 >
                   {t.home.heroPrimaryCta ?? t.home.finalCtaButton}
-                  <ArrowRight size={13} />
+                  <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
                 </Link>
                 <a
                   href="#ablauf"
-                  className="inline-flex items-center gap-2 rounded-sm border border-white/40 bg-white/5 px-6 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/10"
+                  className="inline-flex items-center gap-2 rounded-sm border border-white/35 bg-white/5 px-6 py-3.5 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-sm transition-all duration-300 hover:border-white/55 hover:bg-white/10"
                 >
                   {t.home.heroSecondaryCta ?? "Wie wir vorgehen"}
                 </a>
@@ -76,7 +75,7 @@ const HomePage = () => {
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-12">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_60%_50%_/_0.55)]" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                   {t.home.areasTitle}
                 </h2>
@@ -86,22 +85,22 @@ const HomePage = () => {
               </div>
             </Reveal>
 
-            <div className="grid gap-6 md:gap-8 sm:grid-cols-3">
+            <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
               {t.home.areas.map((path, i) => {
                 const Icon = areaIcons[i];
                 return (
-                  <Link key={i} to={areaLinks[i]} className="glass-card card-hover block rounded-2xl p-8 text-center transition-all duration-300 h-full">
-                    <div className={`mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full ${areaColors[i]} text-white`}>
-                      <Icon size={24} />
+                  <Link key={i} to={areaLinks[i]} className="glass-card card-hover block p-8 text-left transition-all duration-300 h-full">
+                    <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-md bg-primary text-[hsl(45_70%_60%)] ring-1 ring-[hsl(45_60%_50%_/_0.25)]">
+                      <Icon size={20} strokeWidth={1.6} />
                     </div>
-                    <h3 className="mb-2 text-[1.05rem] font-heading font-semibold text-foreground">
+                    <h3 className="mb-2.5 text-[1.05rem] font-heading font-semibold text-foreground">
                       {path.title}
                     </h3>
-                    <p className="mb-4 text-[0.88rem] leading-[1.7] text-muted-foreground">
+                    <p className="mb-5 text-[0.88rem] leading-[1.7] text-muted-foreground">
                       {path.desc}
                     </p>
-                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-semibold text-teal-700">
-                      {path.cta} <ArrowRight size={14} />
+                    <span className="inline-flex items-center gap-1.5 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-primary">
+                      {path.cta} <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
                     </span>
                   </Link>
                 );
@@ -115,7 +114,7 @@ const HomePage = () => {
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-10">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
+                <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_70%_60%_/_0.6)]" />
                 <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
                   {t.home.trustTitle}
                 </h2>
@@ -131,9 +130,9 @@ const HomePage = () => {
                   {t.home.proofPoints.map((point, i) => {
                     const Icon = proofIcons[i % proofIcons.length];
                     return (
-                      <div key={i} className="glass-card-dark rounded-xl p-6 text-left h-full">
-                        <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-teal-500/20 text-teal-200">
-                          <Icon size={18} />
+                      <div key={i} className="glass-card-dark p-6 text-left h-full">
+                        <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-md bg-[hsl(45_60%_55%_/_0.12)] text-[hsl(45_70%_70%)] ring-1 ring-[hsl(45_60%_55%_/_0.2)]">
+                          <Icon size={17} strokeWidth={1.6} />
                         </div>
                         <h4 className="mb-1.5 text-[0.92rem] font-heading font-semibold text-white">
                           {point.title}
@@ -147,7 +146,7 @@ const HomePage = () => {
             )}
 
             <Reveal delay={0.15}>
-              <div className="glass-card-dark rounded-2xl p-8 md:p-10">
+              <div className="glass-card-dark p-8 md:p-10 border-l-2 border-l-[hsl(45_70%_55%_/_0.6)]">
                 <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
                   {t.home.trustClaimTitle}
                 </h3>
@@ -168,27 +167,27 @@ const HomePage = () => {
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-12">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_60%_50%_/_0.55)]" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                   {t.home.stepsTitle}
                 </h2>
               </div>
             </Reveal>
 
-            <div className="grid gap-8 md:gap-12 sm:grid-cols-3">
+            <div className="grid gap-6 md:gap-10 sm:grid-cols-3">
               {t.home.steps.map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
                   <div className="relative">
-                    <div className="glass-card rounded-2xl p-8 text-center h-full">
-                      <div className="icon-badge mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-lg">
-                        <span className="text-[1.3rem] font-heading font-bold text-teal-700">{i + 1}</span>
+                    <div className="glass-card p-8 text-left h-full">
+                      <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-md bg-primary text-[hsl(45_70%_60%)] ring-1 ring-[hsl(45_60%_50%_/_0.25)]">
+                        <span className="text-[0.92rem] font-heading font-semibold">{i + 1}</span>
                       </div>
                       <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
                       <p className="text-[0.86rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
                     </div>
                     {i < 2 && (
-                      <div className="hidden sm:flex absolute top-1/2 -right-6 md:-right-8 w-6 h-6 -translate-y-1/2 items-center justify-center">
-                        <ArrowRight className="text-teal-600/40" size={22} />
+                      <div className="hidden sm:flex absolute top-1/2 -right-5 md:-right-7 w-5 h-5 -translate-y-1/2 items-center justify-center">
+                        <ArrowRight className="text-[hsl(45_60%_50%_/_0.5)]" size={18} strokeWidth={1.5} />
                       </div>
                     )}
                   </div>
@@ -206,10 +205,10 @@ const HomePage = () => {
               <div className="mt-6 text-center">
                 <Link
                   to="/wie-es-funktioniert"
-                  className="inline-flex items-center gap-2 text-[0.85rem] font-semibold text-teal-700 hover:text-teal-800 transition-colors"
+                  className="inline-flex items-center gap-2 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-primary hover:text-primary/80 transition-colors"
                 >
                   {t.home.stepsLink}
-                  <ArrowRight size={15} />
+                  <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
                 </Link>
               </div>
             </Reveal>
@@ -222,7 +221,7 @@ const HomePage = () => {
             <div className="container-premium">
               <Reveal>
                 <div className="text-center mb-10 max-w-2xl mx-auto">
-                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_60%_50%_/_0.55)]" />
                   <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                     {t.home.objectionsTitle}
                   </h2>
@@ -236,9 +235,9 @@ const HomePage = () => {
               <div className="grid gap-5 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto">
                 {t.home.objections.map((item, i) => (
                   <Reveal key={i} delay={i * 0.08}>
-                    <div className="glass-card rounded-2xl p-7 h-full">
+                    <div className="glass-card p-7 h-full border-l-2 border-l-[hsl(45_60%_50%_/_0.4)]">
                       <h3 className="mb-3 text-[0.98rem] font-heading font-semibold text-foreground leading-snug">
-                        „{item.q}“
+                        „{item.q}"
                       </h3>
                       <p className="text-[0.86rem] leading-[1.8] text-muted-foreground">{item.a}</p>
                     </div>
@@ -258,7 +257,7 @@ const HomePage = () => {
             <div className="container-premium max-w-3xl">
               <Reveal>
                 <div className="text-center mb-8">
-                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_60%_50%_/_0.55)]" />
                   <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                     {t.home.faqTitle}
                   </h2>
@@ -270,9 +269,9 @@ const HomePage = () => {
                 </div>
               </Reveal>
               <Reveal delay={0.1}>
-                <Accordion type="single" collapsible className="rounded-2xl bg-white/70 backdrop-blur-sm px-5 md:px-7 shadow-sm">
+                <Accordion type="single" collapsible className="rounded-md bg-white/85 backdrop-blur-sm px-5 md:px-7 ring-1 ring-border/40 shadow-[0_2px_8px_-4px_hsl(212_40%_15%_/_0.06)]">
                   {t.home.faqItems.map((item, i) => (
-                    <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/50 last:border-0">
+                    <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/40 last:border-0">
                       <AccordionTrigger className="text-left text-[0.95rem] font-heading font-semibold text-foreground hover:no-underline py-5">
                         {item.q}
                       </AccordionTrigger>
@@ -289,22 +288,22 @@ const HomePage = () => {
 
 
         <section
-          className="relative section-premium text-white overflow-hidden"
-          style={{ background: "linear-gradient(170deg, #0e6e91 0%, #0889b3 40%, #06acd5 100%)" }}
+          className="relative section-premium text-white overflow-hidden section-navy"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,hsl(45_60%_55%_/_0.06)_0%,transparent_70%)] pointer-events-none" />
           <div className="container-premium relative text-center">
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{t.home.finalCtaTitle}</h2>
-              <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
+              <div className="mx-auto mb-6 h-px w-12 bg-[hsl(45_70%_60%_/_0.6)]" />
+              <h2 className="mb-6 text-[1.6rem] md:text-[1.85rem] font-heading font-semibold text-white">{t.home.finalCtaTitle}</h2>
+              <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/75">
                 {t.home.finalCtaText}
               </p>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
+                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-primary shadow-lg ring-1 ring-[hsl(45_70%_55%_/_0.4)] transition-all duration-300 hover:bg-white/95 hover:ring-[hsl(45_80%_60%)]"
               >
                 {t.home.finalCtaButton}
-                <ArrowRight size={13} />
+                <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
               </Link>
             </Reveal>
           </div>
