@@ -21,6 +21,10 @@ import dialogueLight from "./dialogue-light.png";
 import orientationLight from "./orientation-light.png";
 import shieldLight from "./shield-light.png";
 import handshakeLight from "./handshake-light.png";
+import userCheckLight from "./user-check-light.png";
+import documentLight from "./document-light.png";
+import trendLight from "./trend-light.png";
+import checkCircleLight from "./check-circle-light.png";
 
 export const icons3d = {
   support,
@@ -46,6 +50,10 @@ export const icons3d = {
   orientationLight,
   shieldLight,
   handshakeLight,
+  userCheckLight,
+  documentLight,
+  trendLight,
+  checkCircleLight,
 };
 
 export type Icon3dKey = keyof typeof icons3d;
