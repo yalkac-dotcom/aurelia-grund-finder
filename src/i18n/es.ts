@@ -55,6 +55,8 @@ const es: Translations = {
     socialInstagramAria: "Instagram (próximamente)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Todos los derechos reservados.",
     kwgDisclaimer: "Actuamos exclusivamente como comprador por cuenta propia. No somos una entidad de crédito y no ofrecemos servicios financieros, préstamos ni modelos de participación.",
+    phoneLabel: "Teléfono",
+    emailLabel: "Correo electrónico",
   },
   newsletter: {
     placeholder: "Su dirección de correo electrónico",
@@ -666,6 +668,7 @@ const es: Translations = {
   contact: {
     title: "Contacto",
     subtitle: "Estamos a su disposición",
+    hereForYou: "Estamos aquí para usted",
     introText: "Descríbanos su inmueble. En un plazo de 24-48 horas recibirá una primera valoración vinculante – gratuita, discreta, sin compromiso.",
     salutation: "Tratamiento",
     firstName: "Nombre",

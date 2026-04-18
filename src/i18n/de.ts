@@ -55,6 +55,8 @@ const de: Translations = {
     socialInstagramAria: "Instagram (folgt)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle Rechte vorbehalten.",
     kwgDisclaimer: "Wir handeln nur als Käufer auf eigene Rechnung. Wir sind kein Kreditinstitut und bieten keine Finanzdienstleistungen, Darlehen oder Beteiligungsmodelle an.",
+    phoneLabel: "Telefon",
+    emailLabel: "E-Mail",
   },
   newsletter: {
     placeholder: "Ihre E-Mail-Adresse",
@@ -741,6 +743,7 @@ const de: Translations = {
   contact: {
     title: "Kontakt",
     subtitle: "Wir sind für Sie da",
+    hereForYou: "Wir sind für Sie da",
     introText: "Schreiben Sie uns Ihre Immobilie. Innerhalb von 24-48 Stunden erhalten Sie eine erste, verbindliche Einschätzung – kostenlos, diskret, unverbindlich.",
     salutation: "Anrede",
     firstName: "Vorname",
