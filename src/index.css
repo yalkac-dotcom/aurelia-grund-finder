@@ -292,12 +292,9 @@
   background: transparent;
   border: none;
   padding: 0;
-  animation: aurelia-icon-float 5.4s ease-in-out infinite;
-  animation-delay: var(--icon-float-delay, 0s);
-  will-change: transform;
 }
 
-/* Dezenter goldener Glow hinter dem schwebenden 3D-Icon (heller Hintergrund) */
+/* Dezenter goldener Glow hinter dem 3D-Icon (heller Hintergrund) */
 .proof-card__icon--image::before {
   content: "";
   position: absolute;
@@ -324,15 +321,6 @@
     transparent 75%
   );
   filter: blur(16px);
-}
-
-@keyframes aurelia-icon-float {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-6px); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .proof-card__icon--image { animation: none; }
 }
 
 .proof-card__numeral {
