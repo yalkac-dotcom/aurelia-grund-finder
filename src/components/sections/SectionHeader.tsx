@@ -15,7 +15,7 @@ const SectionHeader = ({ title, intro, align = "center", tone = "light" }: Secti
       <div className={`mb-10 ${isCenter ? "text-center" : ""}`}>
         <div
           className={`mb-4 h-px w-12 ${isCenter ? "mx-auto" : ""}`}
-          style={{ background: isDark ? "hsl(45 70% 60% / 0.6)" : "hsl(45 60% 50% / 0.55)" }}
+          style={{ background: isDark ? "hsl(var(--accent) / 0.7)" : "hsl(var(--accent) / 0.7)" }}
         />
         <h2
           className={`mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-balance md:text-[1.9rem] ${

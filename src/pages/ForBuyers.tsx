@@ -85,7 +85,7 @@ const ForBuyers = () => {
         {/* GRUNDE / PROOF POINTS */}
         <section
           className="section-premium"
-          style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
           <div className="container-premium">
             <Reveal>
@@ -144,7 +144,7 @@ const ForBuyers = () => {
         {/* EINWANDE */}
         <section
           className="section-premium"
-          style={{ background: "linear-gradient(180deg, hsl(30 10% 96%) 0%, hsl(30 12% 97.5%) 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 100%)" }}
         >
           <div className="container-premium">
             <SectionHeader title={b.objectionsTitle} intro={b.objectionsIntro} />
@@ -161,7 +161,7 @@ const ForBuyers = () => {
         {/* FAQ */}
         <section
           className="section-premium"
-          style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
           <div className="container-premium max-w-3xl">
             <SectionHeader title={b.faqTitle} intro={b.faqIntro} />

@@ -113,7 +113,7 @@ const HomePage = () => {
         <section
           id="ablauf"
           className="section-premium scroll-mt-24"
-          style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}
+          style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
           <div className="container-premium">
             <SectionHeader title={t.home.stepsTitle} />
@@ -172,7 +172,7 @@ const HomePage = () => {
         {t.home.faqItems && t.home.faqItems.length > 0 && (
           <section
             className="section-premium"
-            style={{ background: "linear-gradient(180deg, hsl(30 10% 96%) 0%, hsl(30 12% 97.5%) 100%)" }}
+            style={{ background: "linear-gradient(180deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 100%)" }}
           >
             <div className="container-premium max-w-3xl">
               <SectionHeader title={t.home.faqTitle ?? ""} intro={t.home.faqIntro} />

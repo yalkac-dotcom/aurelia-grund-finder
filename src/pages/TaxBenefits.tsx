@@ -28,7 +28,7 @@ const TaxBenefits = () => {
       <section className="relative h-[36vh] min-h-[260px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.steuervorteile.src} srcSet={heroSets.steuervorteile.srcSet} sizes={heroSets.steuervorteile.sizes} alt={t.tax.heroTitle} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/70 via-[#0B1929]/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>

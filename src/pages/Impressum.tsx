@@ -18,7 +18,7 @@ const Impressum = () => {
       <section className="relative h-[30vh] min-h-[220px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/70 via-[#0B1929]/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
         </div>
         <div className="relative container pb-8 md:pb-10">
           <Reveal>
@@ -50,8 +50,8 @@ const Impressum = () => {
                 <div className="py-6">
                   <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.contactTitle}</h3>
                   <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">
-                    Telefon: <a href="tel:+4921169583033" className="hover:text-accent transition-colors">+49 211 69583033</a><br />
-                    E-Mail: <a href="mailto:info@aureliaestates.de" className="hover:text-accent transition-colors">info@aureliaestates.de</a>
+                    Telefon: <a href="tel:+4921169583033" className="text-highlight hover:text-accent transition-colors">+49 211 69583033</a><br />
+                    E-Mail: <a href="mailto:info@aureliaestates.de" className="text-highlight hover:text-accent transition-colors">info@aureliaestates.de</a>
                   </p>
                 </div>
                 <div className="py-6">
