@@ -257,7 +257,7 @@ const HomePage = () => {
             <div className="container-premium max-w-3xl">
               <Reveal>
                 <div className="text-center mb-8">
-                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_60%_50%_/_0.55)]" />
                   <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                     {t.home.faqTitle}
                   </h2>
@@ -269,9 +269,9 @@ const HomePage = () => {
                 </div>
               </Reveal>
               <Reveal delay={0.1}>
-                <Accordion type="single" collapsible className="rounded-2xl bg-white/70 backdrop-blur-sm px-5 md:px-7 shadow-sm">
+                <Accordion type="single" collapsible className="rounded-md bg-white/85 backdrop-blur-sm px-5 md:px-7 ring-1 ring-border/40 shadow-[0_2px_8px_-4px_hsl(212_40%_15%_/_0.06)]">
                   {t.home.faqItems.map((item, i) => (
-                    <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/50 last:border-0">
+                    <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/40 last:border-0">
                       <AccordionTrigger className="text-left text-[0.95rem] font-heading font-semibold text-foreground hover:no-underline py-5">
                         {item.q}
                       </AccordionTrigger>
@@ -288,22 +288,22 @@ const HomePage = () => {
 
 
         <section
-          className="relative section-premium text-white overflow-hidden"
-          style={{ background: "linear-gradient(170deg, #0e6e91 0%, #0889b3 40%, #06acd5 100%)" }}
+          className="relative section-premium text-white overflow-hidden section-navy"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,hsl(45_60%_55%_/_0.06)_0%,transparent_70%)] pointer-events-none" />
           <div className="container-premium relative text-center">
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{t.home.finalCtaTitle}</h2>
-              <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
+              <div className="mx-auto mb-6 h-px w-12 bg-[hsl(45_70%_60%_/_0.6)]" />
+              <h2 className="mb-6 text-[1.6rem] md:text-[1.85rem] font-heading font-semibold text-white">{t.home.finalCtaTitle}</h2>
+              <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/75">
                 {t.home.finalCtaText}
               </p>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
+                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-primary shadow-lg ring-1 ring-[hsl(45_70%_55%_/_0.4)] transition-all duration-300 hover:bg-white/95 hover:ring-[hsl(45_80%_60%)]"
               >
                 {t.home.finalCtaButton}
-                <ArrowRight size={13} />
+                <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
               </Link>
             </Reveal>
           </div>
