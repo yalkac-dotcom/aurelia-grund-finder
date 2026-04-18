@@ -107,6 +107,7 @@ const ForBuyers = () => {
                     index={i}
                     title={p.title}
                     text={p.text}
+                    compact
                   />
                 ))}
               </div>
