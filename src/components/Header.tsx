@@ -27,11 +27,11 @@ const Header = () => {
 
   const navItems: NavItem[] = [
     { label: t.nav.home, path: "/" },
-    { label: "Für Eigentümer", path: "/fuer-eigentumer-in-not" },
-    { label: "Für Käufer", path: "/fuer-kaeufer" },
-    { label: "Für Geschäftspartner", path: "/fuer-geschaeftspartner" },
-    { label: "Wie es funktioniert", path: "/wie-es-funktioniert" },
-    { label: "FAQ", path: "/faq" },
+    { label: t.nav.ownerInTrouble, path: "/fuer-eigentumer-in-not" },
+    { label: t.nav.buyers, path: "/fuer-kaeufer" },
+    { label: t.nav.partners, path: "/fuer-geschaeftspartner" },
+    { label: t.nav.howItWorks, path: "/wie-es-funktioniert" },
+    { label: t.nav.faq, path: "/faq" },
   ];
 
   const handleHashNav = (item: NavItem) => {
