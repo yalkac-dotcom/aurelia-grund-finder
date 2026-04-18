@@ -71,7 +71,7 @@ const HomePage = () => {
                   {t.home.proofPoints.map((point, i) => (
                     <ProofCard
                       key={i}
-                      icon={proofIcons[i % proofIcons.length]}
+                      iconImage={proofIconImages[i % proofIconImages.length]}
                       iconAlt={point.title}
                       index={i}
                       title={point.title}
