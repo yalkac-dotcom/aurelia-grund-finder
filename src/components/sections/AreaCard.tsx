@@ -15,12 +15,15 @@ const AreaCard = ({ icon: Icon, iconColor, iconImage, iconAlt, title, text, cta 
   const inner = (
     <>
       {Icon ? (
-        <div className="mb-6 inline-flex h-12 w-12 items-center justify-center transition-transform duration-500 ease-out group-hover:-translate-y-0.5">
+        <div
+          className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-full transition-transform duration-500 ease-out group-hover:-translate-y-0.5"
+          style={{ backgroundColor: "hsl(var(--highlight))" }}
+        >
           <Icon
-            size={36}
-            strokeWidth={1.5}
+            size={24}
+            strokeWidth={1.75}
             aria-hidden="true"
-            style={{ color: iconColor ?? "hsl(var(--highlight))" }}
+            className="text-white"
           />
         </div>
       ) : iconImage ? (
