@@ -8,19 +8,16 @@ import ProcessStep from "@/components/sections/ProcessStep";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
-  Building2,
-  Briefcase,
-  FileSignature,
-  MessageSquare,
   MessagesSquare,
   Compass,
   ShieldCheck,
   Handshake,
 } from "lucide-react";
 
-const formIcons = [Building2, Briefcase, FileSignature, MessageSquare];
+const formIcon3d = [icons3d.office, icons3d.briefcase, icons3d.contract, icons3d.dialogue];
 const principleIcons = [MessagesSquare, Compass, ShieldCheck, Handshake];
 
 const ForGeschaftspartner = () => {
@@ -55,14 +52,16 @@ const ForGeschaftspartner = () => {
           <div className="container-premium">
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
-              {p.forms.map((f, i) => {
-                const Icon = formIcons[i % formIcons.length];
-                return (
-                  <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard icon={Icon} title={f.title} text={f.desc} />
-                  </Reveal>
-                );
-              })}
+              {p.forms.map((f, i) => (
+                <Reveal key={i} delay={i * 0.06}>
+                  <AreaCard
+                    iconImage={formIcon3d[i % formIcon3d.length]}
+                    iconAlt={f.title}
+                    title={f.title}
+                    text={f.desc}
+                  />
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
