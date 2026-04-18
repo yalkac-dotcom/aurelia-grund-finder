@@ -90,8 +90,8 @@ const HomePage = () => {
                 const Icon = areaIcons[i];
                 return (
                   <Link key={i} to={areaLinks[i]} className="glass-card card-hover block p-8 text-left transition-all duration-300 h-full">
-                    <div className="mb-6 flex h-11 w-11 items-center justify-center rounded-md bg-primary text-[hsl(45_70%_60%)] ring-1 ring-[hsl(45_60%_50%_/_0.25)]">
-                      <Icon size={20} strokeWidth={1.6} />
+                    <div className="icon-tile mb-6">
+                      <Icon size={20} aria-hidden="true" />
                     </div>
                     <h3 className="mb-2.5 text-[1.05rem] font-heading font-semibold text-foreground">
                       {path.title}
