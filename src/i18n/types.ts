@@ -15,6 +15,7 @@ export interface Translations {
     partners: string;
     howItWorks: string;
     faq: string;
+    ctaConfidential: string;
   };
   footer: {
     navigation: string;
@@ -369,6 +370,7 @@ export interface Translations {
   aboutV2: {
     hero: { kicker: string; title: string; subtitle: string; body: string; cta: string };
     intro: { body: string };
+    companyProfile: { headline: string; body: string };
     profile: { headline: string; body1: string; body2: string };
     approach: {
       headline: string;

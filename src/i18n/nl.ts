@@ -13,8 +13,9 @@ const nl: Translations = {
     ownerInTrouble: "Voor eigenaren",
     buyers: "Voor kopers",
     partners: "Voor zakenpartners",
-    howItWorks: "Hoe het werkt",
+    howItWorks: "Hoe wij werken",
     faq: "FAQ",
+    ctaConfidential: "Vertrouwelijk aanvragen",
   },
   footer: {
     navigation: "Navigatie",
@@ -1103,6 +1104,10 @@ const nl: Translations = {
       cta: "Neem contact op",
     },
     intro: {
+      body: "Als een pand vastzit, is geen lang verkoopproces nodig – maar een realistische volgende stap. Aurelia begeleidt eigenaren, erfgemeenschappen en zakelijke partners in situaties waarin tijdsdruk, lasten of geblokkeerde structuren een duidelijke beslissing vereisen. Onze aanpak is niet verkoopgedreven, maar gestructureerd, discreet en gericht op haalbaarheid.",
+    },
+    companyProfile: {
+      headline: "Waarom Aurelia relevant is bij vastgelopen vastgoedsituaties",
       body: "Als een pand vastzit, is geen lang verkoopproces nodig – maar een realistische volgende stap. Aurelia begeleidt eigenaren, erfgemeenschappen en zakelijke partners in situaties waarin tijdsdruk, lasten of geblokkeerde structuren een duidelijke beslissing vereisen. Onze aanpak is niet verkoopgedreven, maar gestructureerd, discreet en gericht op haalbaarheid.",
     },
     profile: {

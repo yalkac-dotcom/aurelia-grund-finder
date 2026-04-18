@@ -31,6 +31,7 @@ const Header = () => {
     { label: t.nav.buyers, path: "/fuer-kaeufer" },
     { label: t.nav.partners, path: "/fuer-geschaeftspartner" },
     { label: t.nav.howItWorks, path: "/wie-es-funktioniert" },
+    { label: t.nav.about, path: "/ueber-uns" },
     { label: t.nav.faq, path: "/faq" },
   ];
 
@@ -100,7 +101,7 @@ const Header = () => {
             to="/kontakt"
             className="ml-2 inline-flex items-center px-5 py-2.5 text-[11px] font-semibold tracking-[0.12em] uppercase btn-gradient rounded-sm transition-all duration-300"
           >
-            {t.home.finalCtaButton}
+            {t.nav.ctaConfidential}
           </Link>
         </div>
 
@@ -146,7 +147,7 @@ const Header = () => {
               onClick={() => setMobileOpen(false)}
               className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold bg-accent text-primary rounded-sm"
             >
-              {t.home.finalCtaButton}
+              {t.nav.ctaConfidential}
             </Link>
           </div>
           <div className="border-t border-white/10 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">

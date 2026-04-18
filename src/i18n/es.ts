@@ -13,8 +13,9 @@ const es: Translations = {
     ownerInTrouble: "Para propietarios",
     buyers: "Para compradores",
     partners: "Para socios comerciales",
-    howItWorks: "Cómo funciona",
+    howItWorks: "Cómo trabajamos",
     faq: "FAQ",
+    ctaConfidential: "Consulta confidencial",
   },
   footer: {
     navigation: "Navegación",
@@ -1102,6 +1103,10 @@ const es: Translations = {
       cta: "Contáctenos",
     },
     intro: {
+      body: "Cuando un inmueble se bloquea, no se necesita un largo proceso de comercialización – sino un siguiente paso realista. Aurelia acompaña a propietarios, comunidades de herederos y socios comerciales en situaciones en las que la presión de tiempo, las cargas o las estructuras bloqueadas exigen una decisión clara. Nuestro enfoque no se orienta a la venta, sino que es estructurado, discreto y centrado en la viabilidad.",
+    },
+    companyProfile: {
+      headline: "Por qué Aurelia es relevante en situaciones inmobiliarias bloqueadas",
       body: "Cuando un inmueble se bloquea, no se necesita un largo proceso de comercialización – sino un siguiente paso realista. Aurelia acompaña a propietarios, comunidades de herederos y socios comerciales en situaciones en las que la presión de tiempo, las cargas o las estructuras bloqueadas exigen una decisión clara. Nuestro enfoque no se orienta a la venta, sino que es estructurado, discreto y centrado en la viabilidad.",
     },
     profile: {

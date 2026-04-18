@@ -13,8 +13,9 @@ const en: Translations = {
     ownerInTrouble: "For Owners",
     buyers: "For Buyers",
     partners: "For Partners",
-    howItWorks: "How It Works",
+    howItWorks: "How We Work",
     faq: "FAQ",
+    ctaConfidential: "Confidential enquiry",
   },
   footer: {
     navigation: "Navigation",
@@ -1136,6 +1137,10 @@ const en: Translations = {
     },
     intro: {
       body: "When a property is stuck, what's needed is not a long marketing process – but a realistic next step. Aurelia supports owners, communities of heirs and business partners in situations where time pressure, financial burdens or blocked structures require a clear decision. Our approach is not sales-driven, but structured, discreet and focused on what can actually be implemented.",
+    },
+    companyProfile: {
+      headline: "Why Aurelia matters when property situations are stuck",
+      body: "When a property is stuck, what is needed is not a long marketing process – but a realistic next step. Aurelia supports owners, communities of heirs and business partners in situations where time pressure, financial burdens or blocked structures require a clear decision. Our approach is not sales-driven, but structured, discreet and focused on what can actually be implemented.",
     },
     profile: {
       headline: "What Aurelia stands for",

@@ -5,13 +5,7 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
-import {
-  ArrowRight,
-  Home as HomeIcon,
-  EyeOff,
-  Clock,
-  Phone,
-} from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const About = () => {
@@ -22,14 +16,39 @@ const About = () => {
     document.title = `${a.hero.title} – Aurelia Grundbesitz GmbH`;
   }, [a.hero.title]);
 
-  const approachIcons = [HomeIcon, EyeOff, Clock];
+  // Editorial text section: thin gold rule, restrained typography, generous whitespace
+  const TextBlock = ({
+    headline,
+    children,
+    tone = "light",
+  }: {
+    headline: string;
+    children: React.ReactNode;
+    tone?: "light" | "muted";
+  }) => (
+    <section className={`py-20 md:py-28 ${tone === "muted" ? "bg-secondary/40" : "bg-background"}`}>
+      <div className="container-premium">
+        <Reveal>
+          <div className="max-w-2xl mx-auto">
+            <div className="mb-4 h-px w-8 bg-accent" aria-hidden="true" />
+            <h2 className="mb-6 font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
+              {headline}
+            </h2>
+            <div className="space-y-5 text-[15px] md:text-[16px] leading-[1.85] text-foreground/80">
+              {children}
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
 
   return (
     <Layout>
-      {/* HERO */}
+      {/* HERO – ruhig, ohne CTA-Stack */}
       <section
         id="hero"
-        className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px] bg-primary"
+        className="relative flex h-[58svh] min-h-[400px] items-center md:h-[64vh] md:min-h-[460px] bg-primary"
       >
         <div className="absolute inset-0 overflow-hidden bg-primary">
           <OptimizedImg
@@ -44,7 +63,7 @@ const About = () => {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to right, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.78) 35%, hsl(var(--primary) / 0.45) 65%, hsl(var(--primary) / 0.30) 100%)",
+                "linear-gradient(to right, hsl(var(--primary) / 0.92) 0%, hsl(var(--primary) / 0.82) 35%, hsl(var(--primary) / 0.50) 65%, hsl(var(--primary) / 0.32) 100%)",
             }}
           />
         </div>
@@ -55,6 +74,9 @@ const About = () => {
               <p className="hero-kicker">{a.hero.kicker}</p>
               <h1 className="hero-title">{a.hero.title}</h1>
               <p className="hero-description">{a.hero.subtitle}</p>
+              <p className="mt-5 max-w-2xl text-[15px] md:text-[16px] leading-[1.8] text-white/85">
+                {a.hero.body}
+              </p>
             </Reveal>
           </div>
           <HeroScrollIndicator />
@@ -62,211 +84,55 @@ const About = () => {
       </section>
 
       <div className="page-shell">
-        {/* INTRO – ruhiger Fließtext direkt nach Hero */}
-        <section className="py-16 md:py-20 bg-background">
-          <div className="container-premium">
-            <Reveal>
-              <div className="max-w-3xl mx-auto">
-                <p className="text-[16px] md:text-[17px] leading-[1.8] text-foreground/85">
-                  {a.hero.body}
-                </p>
-                <p className="mt-6 text-[16px] md:text-[17px] leading-[1.8] text-foreground/85">
-                  {a.intro.body}
-                </p>
-              </div>
-            </Reveal>
-          </div>
-        </section>
+        {/* 1 – Unternehmensprofil */}
+        <TextBlock headline={a.companyProfile.headline} tone="light">
+          <p>{a.companyProfile.body}</p>
+        </TextBlock>
 
-        {/* WOFÜR AURELIA STEHT */}
-        <section className="py-16 md:py-20 bg-secondary/40">
-          <div className="container-premium">
-            <Reveal>
-              <div className="max-w-3xl mx-auto">
-                <div className="mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
-                <h2 className="mb-5 font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
-                  {a.profile.headline}
-                </h2>
-                <p className="text-[15px] md:text-[16px] leading-[1.8] text-foreground/85">
-                  {a.profile.body1}
-                </p>
-                <p className="mt-5 text-[15px] md:text-[16px] leading-[1.8] text-foreground/85">
-                  {a.profile.body2}
-                </p>
-              </div>
-            </Reveal>
-          </div>
-        </section>
+        {/* 2 – Wofür Aurelia steht */}
+        <TextBlock headline={a.profile.headline} tone="muted">
+          <p>{a.profile.body1}</p>
+          <p>{a.profile.body2}</p>
+        </TextBlock>
 
-        {/* UNSER ANSATZ – 3 Kacheln */}
-        <section className="py-16 md:py-20 bg-background">
-          <div className="container-premium">
-            <Reveal>
-              <div className="text-center mb-10">
-                <div className="mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
-                <h2 className="font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
-                  {a.approach.headline}
-                </h2>
-              </div>
-            </Reveal>
-            <div className="grid gap-6 md:gap-8 md:grid-cols-3">
-              {a.approach.items.map((item, i) => {
-                const Icon = approachIcons[i] ?? HomeIcon;
-                return (
-                  <Reveal key={i} delay={i * 0.08}>
-                    <div className="glass-card h-full p-7 md:p-8 text-left">
-                      <Icon
-                        size={32}
-                        strokeWidth={1.5}
-                        className="mb-5"
-                        style={{ color: "hsl(var(--highlight))" }}
-                        aria-hidden="true"
-                      />
-                      <h3 className="mb-2 text-[1.125rem] md:text-[1.25rem] font-heading font-semibold text-primary">
-                        {item.title}
-                      </h3>
-                      <p className="text-[15px] md:text-[16px] leading-[1.7] text-foreground/80">
-                        {item.text}
-                      </p>
-                    </div>
-                  </Reveal>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+        {/* 3 – In welchen Situationen wir tätig werden */}
+        <TextBlock headline={a.situations.headline} tone="light">
+          <p>{a.situations.body1}</p>
+          <p>{a.situations.body2}</p>
+        </TextBlock>
 
-        {/* SITUATIONEN */}
-        <section className="py-16 md:py-20 bg-secondary/40">
-          <div className="container-premium">
-            <Reveal>
-              <div className="max-w-3xl mx-auto">
-                <div className="mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
-                <h2 className="mb-5 font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
-                  {a.situations.headline}
-                </h2>
-                <p className="text-[15px] md:text-[16px] leading-[1.8] text-foreground/85">
-                  {a.situations.body1}
-                </p>
-                <p className="mt-5 text-[15px] md:text-[16px] leading-[1.8] text-foreground/85">
-                  {a.situations.body2}
-                </p>
-              </div>
-            </Reveal>
-          </div>
-        </section>
+        {/* 4 – Wie wir Fälle prüfen */}
+        <TextBlock headline={a.review.headline} tone="muted">
+          <p>{a.review.body1}</p>
+          <p>{a.review.body2}</p>
+        </TextBlock>
 
-        {/* PRÜFPROZESS */}
-        <section className="py-16 md:py-20 bg-background">
-          <div className="container-premium">
-            <Reveal>
-              <div className="max-w-3xl mx-auto">
-                <div className="mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
-                <h2 className="mb-5 font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
-                  {a.review.headline}
-                </h2>
-                <p className="text-[15px] md:text-[16px] leading-[1.8] text-foreground/85">
-                  {a.review.body1}
-                </p>
-                <p className="mt-5 text-[15px] md:text-[16px] leading-[1.8] text-foreground/85">
-                  {a.review.body2}
-                </p>
-              </div>
-            </Reveal>
-          </div>
-        </section>
-
-        {/* PRAXISBEISPIELE */}
-        <section className="py-16 md:py-20 bg-secondary/40">
-          <div className="container-premium">
-            <Reveal>
-              <div className="text-center mb-10">
-                <div className="mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
-                <h2 className="font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
-                  {a.cases.headline}
-                </h2>
-              </div>
-            </Reveal>
-
-            <div className="grid gap-6 md:gap-7 md:grid-cols-3">
-              {a.cases.items.map((c, i) => (
-                <Reveal key={i} delay={i * 0.08}>
-                  <article
-                    className="h-full flex flex-col"
-                    style={{
-                      backgroundColor: "#F7F6F2",
-                      border: "1px solid #C9A84C",
-                      borderRadius: 8,
-                      padding: 32,
-                    }}
-                  >
-                    <p
-                      className="mb-3"
-                      style={{
-                        fontSize: 11,
-                        fontWeight: 600,
-                        letterSpacing: "0.1em",
-                        textTransform: "uppercase",
-                        color: "hsl(var(--highlight))",
-                      }}
-                    >
-                      {c.label}
-                    </p>
-                    <h3 className="mb-3 text-[1.125rem] font-heading font-semibold text-primary leading-[1.25]">
-                      {c.title}
-                    </h3>
-                    <p className="text-[15px] leading-[1.7] text-foreground/80 mb-5">
-                      {c.text}
-                    </p>
-                    <div className="my-1" style={{ borderTop: "1px solid #E0DDD8" }} />
-                    <ul className="mt-4 space-y-1.5 text-[14px] leading-[1.65] text-foreground/85">
-                      {c.results.map((r, j) => (
-                        <li key={j} className="flex items-start gap-2">
-                          <span aria-hidden="true" style={{ color: "hsl(var(--accent))" }}>
-                            ✓
-                          </span>
-                          <span>{r}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-
-            <p className="mt-8 text-center text-[12px] text-muted-foreground">
-              {a.cases.note}
-            </p>
-          </div>
-        </section>
-
-        {/* SCHLUSS-CTA (Navy) */}
+        {/* 5 – Abschluss-CTA (Navy, ruhig) */}
         <section style={{ backgroundColor: "hsl(var(--primary))" }} className="px-0">
-          <div className="container-premium" style={{ paddingTop: 64, paddingBottom: 64 }}>
+          <div className="container-premium" style={{ paddingTop: 80, paddingBottom: 80 }}>
             <Reveal>
               <div className="max-w-2xl mx-auto text-center">
-                <div className="mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
-                <h2 className="mb-4 font-heading font-bold text-white text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
+                <div className="mx-auto mb-4 h-px w-8 bg-accent" aria-hidden="true" />
+                <h2 className="mb-6 font-heading font-semibold text-white text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
                   {a.closing.headline}
                 </h2>
-                <p className="mb-5 text-[15px] md:text-[16px] leading-[1.75] text-white/85">
+                <p className="mb-5 text-[15px] md:text-[16px] leading-[1.8] text-white/85">
                   {a.closing.body}
                 </p>
-                <p className="mb-8 text-[15px] md:text-[16px] leading-[1.75] text-white/75 italic">
+                <p className="mb-9 text-[14px] md:text-[15px] leading-[1.75] text-white/65 italic">
                   {a.closing.note}
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
                   <Link
                     to="/kontakt"
-                    className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-primary transition-colors duration-300 hover:bg-white/95"
+                    className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.12em] text-primary transition-colors duration-300 hover:bg-white/95"
                   >
                     {a.closing.cta}
                     <ArrowRight size={13} className="text-accent" />
                   </Link>
                   <a
                     href="tel:+4921169583033"
-                    className="inline-flex items-center gap-2 rounded-sm px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-white transition-colors duration-300"
-                    style={{ backgroundColor: "hsl(var(--highlight))" }}
+                    className="inline-flex items-center gap-2 rounded-sm px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.12em] text-white transition-colors duration-300 border border-white/30 hover:border-white/60"
                   >
                     <Phone size={14} strokeWidth={1.75} />
                     +49 211 69583033
