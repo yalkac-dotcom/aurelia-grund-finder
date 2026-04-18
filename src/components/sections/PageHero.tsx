@@ -14,6 +14,7 @@ interface PageHeroProps {
   secondaryCta?: { label: string; href: string };
   trustLine?: string;
   imagePosition?: string;
+  phoneLine?: { href: string; label: string };
 }
 
 const PageHero = ({
@@ -26,6 +27,7 @@ const PageHero = ({
   secondaryCta,
   trustLine,
   imagePosition = "center",
+  phoneLine,
 }: PageHeroProps) => (
   <section
     id="hero"
@@ -73,6 +75,14 @@ const PageHero = ({
                 </a>
               )}
             </div>
+          )}
+          {phoneLine && (
+            <a
+              href={phoneLine.href}
+              className="mt-3 inline-block text-[14px] text-white/80 hover:text-white transition-colors"
+            >
+              {phoneLine.label}
+            </a>
           )}
           {trustLine && <p className="mt-4 text-[0.78rem] text-white/75">{trustLine}</p>}
         </Reveal>
