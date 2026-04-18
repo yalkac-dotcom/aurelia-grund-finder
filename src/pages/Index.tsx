@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, Lock, Scale, Compass, CheckCircle2 } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -18,7 +18,7 @@ const HomePage = () => {
   const { t } = useLanguage();
   const areaImages = [icons3d.support, icons3d.partners, icons3d.key];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
-  const proofIcons = [Lock, Scale, Compass, CheckCircle2];
+  const proofImages = [icons3d.lockLight, icons3d.scaleLight, icons3d.compassLight, icons3d.checkLight];
 
   return (
     <Layout>
@@ -66,7 +66,8 @@ const HomePage = () => {
                   {t.home.proofPoints.map((point, i) => (
                     <ProofCard
                       key={i}
-                      icon={proofIcons[i % proofIcons.length]}
+                      iconImage={proofImages[i % proofImages.length]}
+                      iconAlt={point.title}
                       index={i}
                       title={point.title}
                       text={point.text}
