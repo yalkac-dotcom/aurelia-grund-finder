@@ -99,12 +99,12 @@ const About = () => {
       </section>
 
       <div className="page-shell">
-        {/* 1 – Unternehmensprofil */}
+        {/* 1 – Unternehmensprofil: Warum Aurelia bei festgefahrenen Lagen relevant ist */}
         <TextBlock
           headline={a.companyProfile.headline}
           tone="light"
-          image={editorial.facadeDetail}
-          imageAlt=""
+          image={editorial.townhouseClassical}
+          imageAlt="Klassizistische Stadtvilla mit ruhiger Sandsteinfassade – sinnbildlich für Substanz und Beständigkeit"
         >
           <p>{a.companyProfile.body}</p>
         </TextBlock>
@@ -114,7 +114,7 @@ const About = () => {
           headline={a.profile.headline}
           tone="muted"
           image={editorial.interiorCalm}
-          imageAlt=""
+          imageAlt="Ruhiger, lichtdurchfluteter Innenraum – sinnbildlich für die Haltung von Aurelia"
         >
           <p>{a.profile.body1}</p>
           <p>{a.profile.body2}</p>
@@ -124,8 +124,8 @@ const About = () => {
         <TextBlock
           headline={a.situations.headline}
           tone="light"
-          image={editorial.notaryQuiet}
-          imageAlt=""
+          image={editorial.caseReviewDesk}
+          imageAlt="Akten, Lederportfolio und Notarsiegel auf ruhigem Eichentisch – sinnbildlich für strukturierte Fallprüfung"
         >
           <p>{a.situations.body1}</p>
           <p>{a.situations.body2}</p>
@@ -135,8 +135,8 @@ const About = () => {
         <TextBlock
           headline={a.review.headline}
           tone="muted"
-          image={editorial.cooperationMeeting}
-          imageAlt=""
+          image={editorial.notaryQuiet}
+          imageAlt="Stiller Notarraum – sinnbildlich für die vertrauliche Prüfung jedes Einzelfalls"
         >
           <p>{a.review.body1}</p>
           <p>{a.review.body2}</p>

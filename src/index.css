@@ -293,24 +293,37 @@
   border: none;
   padding: 0;
   animation: aurelia-icon-float 5.4s ease-in-out infinite;
+  animation-delay: var(--icon-float-delay, 0s);
   will-change: transform;
 }
 
-/* Dezenter goldener Glow hinter dem schwebenden 3D-Icon */
+/* Dezenter goldener Glow hinter dem schwebenden 3D-Icon (heller Hintergrund) */
 .proof-card__icon--image::before {
   content: "";
   position: absolute;
-  inset: -28%;
+  inset: -38%;
   border-radius: 9999px;
   background: radial-gradient(
     circle at 50% 55%,
-    hsl(var(--accent) / 0.32) 0%,
-    hsl(var(--accent) / 0.14) 35%,
-    transparent 70%
+    hsl(var(--accent) / 0.45) 0%,
+    hsl(var(--accent) / 0.22) 35%,
+    transparent 72%
   );
-  filter: blur(10px);
+  filter: blur(14px);
   z-index: -1;
   pointer-events: none;
+}
+
+/* Wärmerer, sichtbarerer Glow auf Navy-Sektionen */
+.section-navy .proof-card__icon--image::before {
+  inset: -45%;
+  background: radial-gradient(
+    circle at 50% 55%,
+    hsl(42 75% 62% / 0.55) 0%,
+    hsl(42 70% 55% / 0.28) 38%,
+    transparent 75%
+  );
+  filter: blur(16px);
 }
 
 @keyframes aurelia-icon-float {
