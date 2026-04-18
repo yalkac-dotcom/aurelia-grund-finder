@@ -167,27 +167,27 @@ const HomePage = () => {
           <div className="container-premium">
             <Reveal>
               <div className="text-center mb-12">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                <div className="mx-auto mb-4 h-px w-12 bg-[hsl(45_60%_50%_/_0.55)]" />
                 <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                   {t.home.stepsTitle}
                 </h2>
               </div>
             </Reveal>
 
-            <div className="grid gap-8 md:gap-12 sm:grid-cols-3">
+            <div className="grid gap-6 md:gap-10 sm:grid-cols-3">
               {t.home.steps.map((item, i) => (
                 <Reveal key={i} delay={i * 0.08}>
                   <div className="relative">
-                    <div className="glass-card rounded-2xl p-8 text-center h-full">
-                      <div className="icon-badge mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-lg">
-                        <span className="text-[1.3rem] font-heading font-bold text-teal-700">{i + 1}</span>
+                    <div className="glass-card p-8 text-left h-full">
+                      <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-md bg-primary text-[hsl(45_70%_60%)] ring-1 ring-[hsl(45_60%_50%_/_0.25)]">
+                        <span className="text-[0.92rem] font-heading font-semibold">{i + 1}</span>
                       </div>
                       <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
                       <p className="text-[0.86rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
                     </div>
                     {i < 2 && (
-                      <div className="hidden sm:flex absolute top-1/2 -right-6 md:-right-8 w-6 h-6 -translate-y-1/2 items-center justify-center">
-                        <ArrowRight className="text-teal-600/40" size={22} />
+                      <div className="hidden sm:flex absolute top-1/2 -right-5 md:-right-7 w-5 h-5 -translate-y-1/2 items-center justify-center">
+                        <ArrowRight className="text-[hsl(45_60%_50%_/_0.5)]" size={18} strokeWidth={1.5} />
                       </div>
                     )}
                   </div>
@@ -205,10 +205,10 @@ const HomePage = () => {
               <div className="mt-6 text-center">
                 <Link
                   to="/wie-es-funktioniert"
-                  className="inline-flex items-center gap-2 text-[0.85rem] font-semibold text-teal-700 hover:text-teal-800 transition-colors"
+                  className="inline-flex items-center gap-2 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-primary hover:text-primary/80 transition-colors"
                 >
                   {t.home.stepsLink}
-                  <ArrowRight size={15} />
+                  <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
                 </Link>
               </div>
             </Reveal>
