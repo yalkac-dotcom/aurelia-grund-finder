@@ -17,6 +17,10 @@ import lockLight from "./lock-light.png";
 import scaleLight from "./scale-light.png";
 import compassLight from "./compass-light.png";
 import checkLight from "./check-light.png";
+import dialogueLight from "./dialogue-light.png";
+import orientationLight from "./orientation-light.png";
+import shieldLight from "./shield-light.png";
+import handshakeLight from "./handshake-light.png";
 
 export const icons3d = {
   support,
@@ -38,6 +42,10 @@ export const icons3d = {
   scaleLight,
   compassLight,
   checkLight,
+  dialogueLight,
+  orientationLight,
+  shieldLight,
+  handshakeLight,
 };
 
 export type Icon3dKey = keyof typeof icons3d;
