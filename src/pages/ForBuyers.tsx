@@ -47,8 +47,8 @@ const ForBuyers = () => {
               {b.features.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    image={featureImages[i % featureImages.length]}
-                    imageAlt={f.title}
+                    floatingIcon={featureIcons[i % featureIcons.length]}
+                    floatingIconAlt={f.title}
                     index={i}
                     title={f.title}
                     text={f.desc}
