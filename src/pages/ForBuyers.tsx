@@ -10,16 +10,16 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { cardImages } from "@/assets/cards";
+import { icons3d } from "@/assets/icons3d";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung
-const featureImages = cardImages.buyerFeatures;
-// Proof — Bilder (Verifiziert, Fair, Bestätigt, Dokumentiert)
-const proofImages = cardImages.buyerProof;
-// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe (geteiltes Bildset, Step 5 entfällt)
-const stepImages = [cardImages.steps[0], cardImages.steps[1], cardImages.steps[2], cardImages.steps[4]];
+const featureIcons = [icons3d.handshake, icons3d.documentsStack, icons3d.calculator, icons3d.checkCircleLight];
+// Proof — 3D Icons (Verifiziert, Fair, Bestätigt, Dokumentiert)
+const proofIcons = [icons3d.userCheckLight, icons3d.scaleLight, icons3d.checkLight, icons3d.documentLight];
+// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe
+const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal, icons3d.key];
 
 const ForBuyers = () => {
   const { t } = useLanguage();
