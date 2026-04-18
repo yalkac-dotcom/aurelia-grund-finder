@@ -1,9 +1,10 @@
 import { Check } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
+// Build marker: i18n-trustbar-v2 — items kommen ausschließlich aus den Sprachdateien
 const TrustBar = () => {
   const { t } = useLanguage();
-  const items = t.trustBar.items;
+  const items = t?.trustBar?.items ?? [];
 
   return (
     <section
