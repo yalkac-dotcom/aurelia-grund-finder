@@ -74,18 +74,51 @@ const Portfolio = () => {
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { icon: Building2, title: "Eigentumswohnungen", desc: "Einzelobjekte und mehrgeschossige Wohnanlagen." },
-                { icon: Building2, title: "Einfamilienhäuser", desc: "Verschiedene Sanierungszustände." },
-                { icon: TreePine, title: "Grundstücke", desc: "Bauland und freie Flächen mit Entwicklungspotenzial." },
-                { icon: Store, title: "Gewerbeimmobilien", desc: "Einzelhandel, Büro und gemischte Nutzung." },
+                {
+                  icon: Building2,
+                  title: "Eigentumswohnungen",
+                  desc: "Einzelobjekte und mehrgeschossige Wohnanlagen.",
+                  img: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=70",
+                  alt: "Modernes Wohngebäude mit Balkonen",
+                },
+                {
+                  icon: Building2,
+                  title: "Einfamilienhäuser",
+                  desc: "Verschiedene Sanierungszustände.",
+                  img: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=70",
+                  alt: "Freistehendes Einfamilienhaus",
+                },
+                {
+                  icon: TreePine,
+                  title: "Grundstücke",
+                  desc: "Bauland und freie Flächen mit Entwicklungspotenzial.",
+                  img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=70",
+                  alt: "Luftbild eines Baugrundstücks",
+                },
+                {
+                  icon: Store,
+                  title: "Gewerbeimmobilien",
+                  desc: "Einzelhandel, Büro und gemischte Nutzung.",
+                  img: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=70",
+                  alt: "Bürogebäude Außenansicht",
+                },
               ].map((item, i) => {
                 const Icon = item.icon;
                 return (
                   <Reveal key={i} delay={i * 0.08}>
-                    <div className="glass-card rounded-2xl p-7 h-full">
-                      <Icon className="mb-4 text-teal-600" size={28} />
-                      <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
-                      <p className="text-[0.86rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
+                    <div className="glass-card overflow-hidden h-full" style={{ borderRadius: 12 }}>
+                      <img
+                        src={item.img}
+                        alt={item.alt}
+                        loading="lazy"
+                        className="block w-full"
+                        style={{ height: 180, objectFit: "cover", borderRadius: "8px 8px 0 0" }}
+                      />
+                      <div className="p-7">
+                        <Icon className="mb-4 text-teal-600" size={28} />
+                        <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
+                        <p className="text-[0.86rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
+                      </div>
                     </div>
                   </Reveal>
                 );
