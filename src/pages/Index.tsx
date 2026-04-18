@@ -179,15 +179,15 @@ const HomePage = () => {
                 <Reveal key={i} delay={i * 0.08}>
                   <div className="relative">
                     <div className="glass-card p-8 text-left h-full">
-                      <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-md bg-primary text-[hsl(45_70%_60%)] ring-1 ring-[hsl(45_60%_50%_/_0.25)]">
-                        <span className="text-[0.92rem] font-heading font-semibold">{i + 1}</span>
+                      <div className="icon-tile mb-5">
+                        <span className="text-[0.92rem] font-heading font-semibold leading-none">{i + 1}</span>
                       </div>
                       <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
                       <p className="text-[0.86rem] leading-[1.75] text-muted-foreground">{item.desc}</p>
                     </div>
                     {i < 2 && (
                       <div className="hidden sm:flex absolute top-1/2 -right-5 md:-right-7 w-5 h-5 -translate-y-1/2 items-center justify-center">
-                        <ArrowRight className="text-[hsl(45_60%_50%_/_0.5)]" size={18} strokeWidth={1.5} />
+                        <ArrowRight className="text-[hsl(45_60%_50%_/_0.55)]" size={18} aria-hidden="true" />
                       </div>
                     )}
                   </div>
