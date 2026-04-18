@@ -11,12 +11,6 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
-import {
-  Lock,
-  Scale,
-  Handshake,
-  CheckCircle2,
-} from "lucide-react";
 
 // Situations: komplexe Eigentumsverhältnisse → Gebäude, Finanzielle Belastung → Wallet, Konflikte zwischen Eigentümern → Erben/Mehrere, Zwangsversteigerung → Hammer
 const situationImages = [icons3d.building, icons3d.wallet, icons3d.heirs, icons3d.gavel];
