@@ -39,8 +39,6 @@ const HomePage = () => {
         imagePosition="62% center"
       />
 
-      <TrustBar />
-
       <div className="page-shell">
         {/* DIE 3 BEREICHE */}
         <section className="section-premium bg-gradient-warm pt-10 md:pt-16">
