@@ -17,8 +17,9 @@ import FinalCta from "@/components/sections/FinalCta";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  // Areas (3 Wege) — Linien-Icons in #4A7FA5:
-  // Notlagen → Schild mit Ausrufezeichen, Erbengemeinschaften → Personen, Direktankauf → Haus
+  // Areas (3 Wege) — Linien-Icons (Lucide, stroke 1.5) auf allen Viewports, Farbe #4A7FA5
+  // Notlagen → ShieldAlert, Erbengemeinschaften → Users, Direktankauf → Home
+  // Build marker: areas-line-icons-v2 (kein Mobile-Fallback, kein 3D-PNG)
   const areaIcons = [ShieldAlert, Users, HomeIcon];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
   // ProofPoints (4 Versprechen, auf Navy):
