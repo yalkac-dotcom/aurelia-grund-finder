@@ -127,19 +127,37 @@ const HomePage = () => {
 
             {t.home.proofPoints && t.home.proofPoints.length > 0 && (
               <Reveal delay={0.1}>
-                <div className="grid gap-4 md:gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+                <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
                   {t.home.proofPoints.map((point, i) => {
                     const Icon = proofIcons[i % proofIcons.length];
                     return (
-                      <div key={i} className="glass-card-dark p-6 text-left h-full">
-                        <div className="icon-tile icon-tile-sm mb-4">
-                          <Icon size={16} aria-hidden="true" />
+                      <article
+                        key={i}
+                        className="proof-card group h-full"
+                        aria-labelledby={`proof-${i}-title`}
+                      >
+                        {/* Bildebene (Navy) mit Icon + Goldlinie */}
+                        <div className="proof-card__visual">
+                          <span className="proof-card__icon" aria-hidden="true">
+                            <Icon size={22} />
+                          </span>
+                          <span className="proof-card__numeral" aria-hidden="true">
+                            {String(i + 1).padStart(2, "0")}
+                          </span>
                         </div>
-                        <h4 className="mb-1.5 text-[0.92rem] font-heading font-semibold text-white">
-                          {point.title}
-                        </h4>
-                        <p className="text-[0.82rem] leading-[1.7] text-white/65">{point.text}</p>
-                      </div>
+                        {/* Inhaltsebene (weiß, Navy-Typo) */}
+                        <div className="proof-card__body">
+                          <h4
+                            id={`proof-${i}-title`}
+                            className="text-[0.95rem] font-heading font-semibold text-primary leading-snug"
+                          >
+                            {point.title}
+                          </h4>
+                          <p className="mt-1.5 text-[0.82rem] leading-[1.7] text-muted-foreground">
+                            {point.text}
+                          </p>
+                        </div>
+                      </article>
                     );
                   })}
                 </div>
