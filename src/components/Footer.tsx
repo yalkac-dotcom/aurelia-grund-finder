@@ -65,10 +65,16 @@ const Footer = () => {
               <p className="text-white/65">Grevenbroicher Weg 2</p>
               <p className="text-white/65">40547 Düsseldorf</p>
               <a
+                href="tel:+4921169583033"
+                className="text-white/65 hover:text-accent transition-colors duration-200"
+              >
+                Telefon: +49 211 69583033
+              </a>
+              <a
                 href="mailto:info@aureliaestates.de"
                 className="text-white/65 hover:text-accent transition-colors duration-200"
               >
-                info@aureliaestates.de
+                E-Mail: info@aureliaestates.de
               </a>
             </div>
 
