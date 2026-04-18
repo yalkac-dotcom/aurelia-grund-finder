@@ -19,7 +19,7 @@ import {
 import { icons3d } from "@/assets/icons3d";
 
 // Segmente — 3D-Icons konsistent zur Startseite:
-// Forderungsankauf → wallet, Immobilienverkauf → house, Projektkooperationen → partners
+// Diskreter Ankauf → wallet, Immobilienverkauf → house, Projektkooperationen → partners
 const segmentIconImages = [icons3d.wallet, icons3d.house, icons3d.partners];
 const principleIcons = [MessagesSquare, Scale, FileCheck, Compass];
 
