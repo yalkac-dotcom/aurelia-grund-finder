@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
+import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 import PageHero from "@/components/sections/PageHero";
@@ -17,16 +18,15 @@ import FinalCta from "@/components/sections/FinalCta";
 const HomePage = () => {
   const { t } = useLanguage();
 
-  // Areas (3 Wege) — thematisch spezifische 3D-Icons
-  // Notlagen → support, Erbe/Konflikt → familyTree, Direktankauf → coinsHouse
-  const areaIcons = [icons3d.support, icons3d.familyTree, icons3d.coinsHouse];
+  // Areas (3 Wege) — Notlagen, Erbe/Konflikt, Direktankauf
+  const areaImages = cardImages.areas;
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
 
-  // ProofPoints (4 Versprechen, auf Navy):
+  // ProofPoints (4 Versprechen, auf Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
   const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
 
   // Schritte (3) — Erstkontakt, Prüfung, Angebot
-  const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.envelopeSeal];
+  const stepImages = cardImages.steps;
 
   return (
     <Layout>
@@ -51,8 +51,8 @@ const HomePage = () => {
               {t.home.areas.map((path, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    iconImage={areaIcons[i % areaIcons.length]}
-                    iconAlt={path.title}
+                    image={areaImages[i % areaImages.length]}
+                    imageAlt={path.title}
                     index={i}
                     title={path.title}
                     text={path.desc}
@@ -128,8 +128,8 @@ const HomePage = () => {
                   total={t.home.steps.length}
                   title={item.title}
                   desc={item.desc}
-                  iconImage={stepIcons[i % stepIcons.length]}
-                  iconAlt={item.title}
+                  image={stepImages[i % stepImages.length]}
+                  imageAlt={item.title}
                 />
               ))}
             </div>

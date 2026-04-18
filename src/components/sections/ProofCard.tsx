@@ -6,16 +6,39 @@ interface ProofCardProps {
   icon?: LucideIcon;
   iconImage?: string;
   iconAlt?: string;
+  /** Optional thematic photo shown as full-width header (16:10). Replaces the icon visual. */
+  image?: string;
+  imageAlt?: string;
   index: number;
   title: string;
   text: string;
   cta?: { label: string; to: string };
 }
 
-const ProofCard = ({ icon: Icon, iconImage, iconAlt, index, title, text, cta }: ProofCardProps) => {
+const ProofCard = ({ icon: Icon, iconImage, iconAlt, image, imageAlt, index, title, text, cta }: ProofCardProps) => {
   const id = `proof-${index}-title`;
+  const numeral = String(index + 1).padStart(2, "0");
 
-  const visual = (
+  const visual = image ? (
+    <div className="relative w-full overflow-hidden bg-primary/5" style={{ aspectRatio: "16 / 10" }}>
+      <img
+        src={image}
+        alt={imageAlt ?? iconAlt ?? ""}
+        loading="lazy"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+      />
+      <div
+        className="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent"
+        aria-hidden="true"
+      />
+      <span
+        className="absolute top-3 right-4 font-heading text-[1.05rem] font-light tracking-[0.15em] text-white/90 drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]"
+        aria-hidden="true"
+      >
+        O{numeral}
+      </span>
+    </div>
+  ) : (
     <div className="proof-card__visual">
       {Icon ? (
         <span className="proof-card__icon" aria-hidden="true">
@@ -37,7 +60,7 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, index, title, text, cta }: 
         </span>
       ) : null}
       <span className="proof-card__numeral" aria-hidden="true">
-        {String(index + 1).padStart(2, "0")}
+        {numeral}
       </span>
     </div>
   );
@@ -60,7 +83,7 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, index, title, text, cta }: 
     return (
       <Link
         to={cta.to}
-        className="proof-card group h-full block"
+        className="proof-card group h-full block overflow-hidden"
         aria-labelledby={id}
       >
         {visual}
@@ -70,7 +93,7 @@ const ProofCard = ({ icon: Icon, iconImage, iconAlt, index, title, text, cta }: 
   }
 
   return (
-    <article className="proof-card group h-full" aria-labelledby={id}>
+    <article className="proof-card group h-full overflow-hidden" aria-labelledby={id}>
       {visual}
       {body}
     </article>
