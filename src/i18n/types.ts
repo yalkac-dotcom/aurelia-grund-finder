@@ -366,6 +366,17 @@ export interface Translations {
     principlesTitle: string;
     principles: { title: string; text: string }[];
   };
+  aboutV2: {
+    hero: { kicker: string; title: string; subtitle: string; body: string; cta: string };
+    intro: { headline: string; subheadline: string; body: string; cta: string };
+    profile: { headline: string; subheadline: string; body: string; cta: string };
+    principles: { headline: string; subheadline: string; body: string; cta: string };
+    situations: { headline: string; subheadline: string; body: string; cta: string };
+    review: { headline: string; subheadline: string; body: string; cta: string };
+    process: { headline: string; subheadline: string; body: string; cta: string };
+    trust: { headline: string; subheadline: string; body: string; cta: string };
+    closing: { headline: string; subheadline: string; body: string; cta: string };
+  };
   services: {
     heroTitle: string;
     introLabel: string;
