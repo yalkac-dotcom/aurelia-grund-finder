@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ShieldAlert, Network, Home as HomeIcon, Lock, Scale, CalendarCheck, Target } from "lucide-react";
+import { icons3d } from "@/assets/icons3d";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import AreaCard from "@/components/sections/AreaCard";
@@ -14,15 +14,16 @@ import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
-import TrustBar from "@/components/home/TrustBar";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  // Areas: Notlagen → Schild mit Ausrufezeichen, Erb-/Konfliktfälle → Personen-Netzwerk, Direktankauf → Haus
-  const areaIcons = [ShieldAlert, Network, HomeIcon];
+  // Areas (3 Wege) — logisch zugeordnet:
+  // Notlagen → Hammer (Zwangsversteigerung), Erb-/Konflikt → Erben, Direktankauf → Schlüssel
+  const areaIconImages = [icons3d.gavel, icons3d.heirs, icons3d.key];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
-  // ProofPoints: Diskretion → Schloss, Substanz → Waage, Langfristigkeit → Kalender, Klarheit → Zielscheibe
-  const proofIcons = [Lock, Scale, CalendarCheck, Target];
+  // ProofPoints (4 Versprechen, auf Navy):
+  // Diskretion → Schild, Substanz → Waage, Langfristigkeit → Gebäude, Klarheit → Vertrag
+  const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
 
   return (
     <Layout>
