@@ -13,11 +13,11 @@ import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Forms (4) — Einzelobjekt, Portfolio, Off-Market-Vertrag, Strategischer Dialog
-const formImages = cardImages.partnerForms;
+const formIcons = [icons3d.singleBuilding, icons3d.buildingsCluster, icons3d.envelopeSeal, icons3d.meeting];
 // Principles (Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
 const principleIcons = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
-// Steps (5) — geteiltes Bildset
-const stepImages = cardImages.steps;
+// Steps (5) — Erstkontakt, Einordnung, Abstimmung, Vereinbarung, Umsetzung
+const stepIcons = [icons3d.phone, icons3d.magnifier, icons3d.dialogue, icons3d.contract, icons3d.puzzleCooperation];
 
 const ForGeschaftspartner = () => {
   const { t } = useLanguage();
