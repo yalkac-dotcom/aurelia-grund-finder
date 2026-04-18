@@ -275,6 +275,14 @@
   z-index: 1;
 }
 
+.proof-card__icon--image {
+  width: 3.2rem;
+  height: 3.2rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
 .proof-card__numeral {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.05rem;
