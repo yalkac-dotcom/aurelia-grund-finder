@@ -4,7 +4,7 @@ description: Updated CI with teal palette, glassmorphism cards, gradient buttons
 type: design
 ---
 Die Corporate Identity wurde auf ein Teal-basiertes Farbschema umgestellt:
-- Primärfarben: Teal (#0889b3), Weiß, Navy (als Basis für dunkle Sections)
+- Primärfarben: Teal (#0889b3), Weiß, helleres Navy/Petrol (hsl 210 42% 26%) als Basis für dunkle Sections — bewusst HELLER als zuvor (war 212 55% 12%) für mehr Kontrast & Premium-Eleganz
 - Teal-Palette: 50 (#f0fdff) bis 900 (#00838f)
 - Glassmorphism: .glass-card und .glass-card-dark für Cards
 - Gradient-Buttons: .btn-gradient (Teal 135deg)
