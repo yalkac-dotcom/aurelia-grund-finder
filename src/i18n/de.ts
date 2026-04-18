@@ -425,7 +425,7 @@ const de: Translations = {
         a: "In vielen Fällen ja – solange der Versteigerungstermin nicht abgeschlossen ist. Ein freihändiger Verkauf kann auch in dieser Phase noch eine bessere Lösung sein als die Verwertung. Wir prüfen das kurzfristig und sagen Ihnen ehrlich, ob es realistisch ist.",
       },
       {
-        q: "Was bedeutet „Ankauf auf eigene Rechnung"?",
+        q: "Was bedeutet „Ankauf auf eigene Rechnung“?",
         a: "Wir kaufen die Immobilie selbst – nicht im Auftrag Dritter. Es gibt keine Maklerprovision, keine Finanzierungsvorbehalte und keine Käuferkette, die noch entscheiden muss.",
       },
       {
