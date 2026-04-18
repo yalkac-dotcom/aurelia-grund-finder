@@ -58,26 +58,24 @@ const HomePage = () => {
               </div>
             </Reveal>
 
-            <div className="grid gap-6 sm:grid-cols-3">
+            <div className="grid gap-6 md:gap-8 sm:grid-cols-3">
               {t.home.areas.map((path, i) => {
                 const Icon = areaIcons[i];
                 return (
-                  <Reveal key={i} delay={i * 0.08}>
-                    <Link to={areaLinks[i]} className="glass-card card-hover block rounded-2xl p-8 text-center transition-all duration-300 h-full">
-                      <div className={`mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full ${areaColors[i]} text-white`}>
-                        <Icon size={24} />
-                      </div>
-                      <h3 className="mb-2 text-[1.05rem] font-heading font-semibold text-foreground">
-                        {path.title}
-                      </h3>
-                      <p className="mb-4 text-[0.88rem] leading-[1.7] text-muted-foreground">
-                        {path.desc}
-                      </p>
-                      <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-semibold text-teal-700">
-                        {path.cta} <ArrowRight size={14} />
-                      </span>
-                    </Link>
-                  </Reveal>
+                  <Link key={i} to={areaLinks[i]} className="glass-card card-hover block rounded-2xl p-8 text-center transition-all duration-300 h-full">
+                    <div className={`mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full ${areaColors[i]} text-white`}>
+                      <Icon size={24} />
+                    </div>
+                    <h3 className="mb-2 text-[1.05rem] font-heading font-semibold text-foreground">
+                      {path.title}
+                    </h3>
+                    <p className="mb-4 text-[0.88rem] leading-[1.7] text-muted-foreground">
+                      {path.desc}
+                    </p>
+                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-semibold text-teal-700">
+                      {path.cta} <ArrowRight size={14} />
+                    </span>
+                  </Link>
                 );
               })}
             </div>
