@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, ShieldAlert, Users, Home as HomeIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -14,17 +14,25 @@ import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
+import areaDistress from "@/assets/areas/area-distress.jpg";
+import areaHeirs from "@/assets/areas/area-heirs.jpg";
+import areaDirect from "@/assets/areas/area-direct.jpg";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  // Areas (3 Wege) — Linien-Icons (Lucide, stroke 1.5) auf allen Viewports, Farbe #4A7FA5
-  // Notlagen → ShieldAlert, Erbengemeinschaften → Users, Direktankauf → Home
-  // Build marker: areas-line-icons-v2 (kein Mobile-Fallback, kein 3D-PNG)
-  const areaIcons = [ShieldAlert, Users, HomeIcon];
+  // Areas (3 Wege) — editorial Bild-Header statt Icons, einheitlicher Bildstil
+  // Build marker: areas-image-headers-v1
+  const areaImages = [areaDistress, areaHeirs, areaDirect];
+  const areaImageAlts = [
+    "Ruhige Hausfassade in weichem Morgenlicht – sinnbildlich für diskrete Lösungen in Notlagen",
+    "Stiller Tisch mit zwei Stühlen am Fenster – sinnbildlich für faire Lösungen in Erb- und Konfliktfällen",
+    "Gepflegtes Einfamilienhaus mit Vorgarten – sinnbildlich für unkomplizierten Direktankauf",
+  ];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
   // ProofPoints (4 Versprechen, auf Navy):
   // Diskretion → Schild, Substanz → Waage, Langfristigkeit → Gebäude, Klarheit → Vertrag
   const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
+
 
   return (
     <Layout>
@@ -49,8 +57,8 @@ const HomePage = () => {
               {t.home.areas.map((path, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <AreaCard
-                    icon={areaIcons[i]}
-                    iconColor="#4A7FA5"
+                    headerImage={areaImages[i]}
+                    headerImageAlt={areaImageAlts[i]}
                     title={path.title}
                     text={path.desc}
                     cta={{ label: path.cta, to: areaLinks[i] }}
