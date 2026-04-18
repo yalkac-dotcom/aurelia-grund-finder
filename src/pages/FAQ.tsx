@@ -2,9 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import OptimizedImg from "@/components/OptimizedImg";
-import HeroScrollIndicator from "@/components/HeroScrollIndicator";
-import { heroSets } from "@/assets/heroImages";
 import { ChevronDown, ArrowRight } from "lucide-react";
 
 const faqs = [
@@ -47,30 +44,20 @@ const FAQ = () => {
 
   return (
     <Layout>
-      {/* HERO */}
-      <section id="hero" className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
-        <div className="absolute inset-0 overflow-hidden">
-          <OptimizedImg
-            src={heroSets.glossar.src}
-            srcSet={heroSets.glossar.srcSet}
-            sizes={heroSets.glossar.sizes}
-            alt="Häufig gestellte Fragen"
-            className="hero-media h-full w-full object-cover object-center"
-            priority
-          />
-          <div className="hero-overlay-base absolute inset-0" />
-          <div className="hero-overlay-protect absolute inset-0" />
-        </div>
-
-        <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
-          <div className="hero-copy-shell">
-            <Reveal>
-              <p className="hero-kicker">Häufige Fragen</p>
-              <h1 className="hero-title">FAQ</h1>
-              <p className="hero-description">Antworten auf die wichtigsten Fragen.</p>
-            </Reveal>
-          </div>
-          <HeroScrollIndicator />
+      {/* HERO – schlank, ruhig */}
+      <section className="bg-gradient-warm border-b border-border/40">
+        <div className="container-premium py-16 md:py-20 text-center">
+          <Reveal>
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent mb-3">
+              Häufige Fragen
+            </p>
+            <h1 className="font-heading font-semibold text-primary text-[1.85rem] md:text-[2.4rem] leading-tight tracking-tight mb-4">
+              FAQ
+            </h1>
+            <p className="mx-auto max-w-xl text-[0.95rem] leading-[1.75] text-muted-foreground">
+              Antworten auf die wichtigsten Fragen.
+            </p>
+          </Reveal>
         </div>
       </section>
 

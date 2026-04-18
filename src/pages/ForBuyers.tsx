@@ -11,14 +11,13 @@ import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
-import { editorial } from "@/assets/editorial";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
-// Proof — Bilder (Verifiziert, Fair, Bestätigt, Dokumentiert)
-const proofImages = cardImages.buyerProof;
+// Proof (4) — Verifiziert, Fair, Bestätigt, Dokumentiert → semantische 3D-Icons
+const proofIcons = [icons3d.userCheckLight, icons3d.scaleLight, icons3d.checkCircleLight, icons3d.documentLight];
 // Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe (3D-Icons)
 const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract, icons3d.handshakeLight];
 
@@ -85,26 +84,14 @@ const ForBuyers = () => {
           style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
           <div className="container-premium">
-            <Reveal>
-              <div className="mb-12 md:mb-16 overflow-hidden rounded-sm border-l-2 border-l-[hsl(45_70%_55%_/_0.5)]">
-                <img
-                  src={editorial.interiorCalm}
-                  alt="Ruhiger, lichtdurchfluteter Wohnraum mit Eichenparkett – sinnbildlich für geprüfte Qualitätsimmobilien aus dem Aurelia-Bestand"
-                  loading="lazy"
-                  width={1600}
-                  height={520}
-                  className="h-56 md:h-72 w-full object-cover"
-                />
-              </div>
-            </Reveal>
             <SectionHeader title={b.proofTitle} intro={b.proofIntro} />
             <Reveal delay={0.1}>
               <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 {b.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    image={proofImages[i % proofImages.length]}
-                    imageAlt={p.title}
+                    iconImage={proofIcons[i % proofIcons.length]}
+                    iconAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}
