@@ -71,6 +71,7 @@ const ForGeschaftspartner = () => {
                     index={i}
                     title={f.title}
                     text={f.desc}
+                    compact
                   />
                 </Reveal>
               ))}
@@ -92,6 +93,7 @@ const ForGeschaftspartner = () => {
                     index={i}
                     title={pr.title}
                     text={pr.text}
+                    compact
                   />
                 ))}
               </div>
