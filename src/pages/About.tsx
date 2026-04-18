@@ -5,18 +5,69 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
-import { ArrowRight, Eye, Heart, Clock, ShieldCheck } from "lucide-react";
+import { ArrowRight, Home as HomeIcon, EyeOff, Clock, Phone } from "lucide-react";
 
 const About = () => {
   useEffect(() => {
     document.title = "Über Aurelia – Aurelia Grundbesitz GmbH";
   }, []);
 
+  const approach = [
+    {
+      Icon: HomeIcon,
+      title: "Direkter Ankauf",
+      text: "Kein Makler. Kein Finanzierungsvorbehalt. Wir kaufen aus eigenen Mitteln – verbindlich und notariell abgesichert.",
+    },
+    {
+      Icon: EyeOff,
+      title: "Maximale Diskretion",
+      text: "Keine öffentliche Vermarktung. Keine Aushänge. Gespräche bleiben zwischen Ihnen und uns.",
+    },
+    {
+      Icon: Clock,
+      title: "Schnelle Reaktion",
+      text: "Innerhalb von 48 Stunden erhalten Sie eine erste Einschätzung. In dringenden Fällen schneller.",
+    },
+  ];
+
+  const cases = [
+    {
+      label: "NOTLAGE · NRW · 2025",
+      title: "Zwangsversteigerung abgewendet",
+      text: "Alleinerbin, Mehrfamilienhaus NRW, laufendes Zwangsversteigerungsverfahren, Schulden höher als Verkehrswert.",
+      results: [
+        "Freihändiger Verkauf 4 Wochen vor Termin",
+        "Verfahren eingestellt",
+        "Eigentümerin schuldenfrei",
+      ],
+    },
+    {
+      label: "ERBENGEMEINSCHAFT · RHEINLAND · 2024",
+      title: "Blockierten Verkauf gelöst",
+      text: "3 Erben, Einfamilienhaus, blockierter Verkauf seit über 2 Jahren, keine Einigung.",
+      results: [
+        "Ankauf eines Erbteils",
+        "Gesamtlösung in 6 Wochen",
+        "Alle Parteien ausgezahlt",
+      ],
+    },
+    {
+      label: "DIREKTANKAUF · DÜSSELDORF · 2025",
+      title: "Schneller Verkauf ohne Makler",
+      text: "Eigentümer, Gewerbeobjekt Düsseldorf, Gläubigerdruck, Darlehen gekündigt.",
+      results: [
+        "Direktkontakt Gläubigerbank",
+        "Strukturierter Ankauf",
+        "Darlehen vollständig abgelöst",
+      ],
+    },
+  ];
+
   return (
     <Layout>
       {/* HERO */}
-      <section id="hero" className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
-        <div className="absolute inset-0 overflow-hidden">
+      <section id="hero" className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px] bg-primary">
+        <div className="absolute inset-0 overflow-hidden bg-primary">
           <OptimizedImg
             src={heroSets.about.src}
             srcSet={heroSets.about.srcSet}
@@ -25,8 +76,13 @@ const About = () => {
             className="hero-media h-full w-full object-cover object-center"
             priority
           />
-          <div className="hero-overlay-base absolute inset-0" />
-          <div className="hero-overlay-protect absolute inset-0" />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to right, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.78) 35%, hsl(var(--primary) / 0.45) 65%, hsl(var(--primary) / 0.30) 100%)",
+            }}
+          />
         </div>
 
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
@@ -42,54 +98,78 @@ const About = () => {
       </section>
 
       <div className="page-shell">
-        {/* GESCHICHTE */}
-        <section className="section-premium bg-gradient-warm">
+        {/* BLOCK 1: Wer hinter Aurelia steht */}
+        <section className="py-16 md:py-20 bg-background">
           <div className="container-premium">
-            <Reveal>
-              <div className="max-w-3xl mx-auto text-center">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
-                <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                  Unsere Geschichte
-                </h2>
-                <div className="space-y-4 text-[0.93rem] leading-[1.85] text-muted-foreground">
-                  <p>
-                    Aurelia Grundbesitz wurde gegründet, um professionelle Lösungen im Immobilienmarkt anzubieten — mit klarem Fokus auf Forderungsankauf, anspruchsvolle Objekte und nachhaltige Verwertung.
-                  </p>
-                  <p>
-                    Mit kontinuierlicher Erfahrung entwickelten wir ein Geschäftsmodell, das hilfreiche Lösungen für Eigentümer mit Schwierigkeiten bietet, während wir gleichzeitig nachhaltige Geschäfte aufbauen.
+            <div className="grid items-center gap-10 md:gap-14 md:grid-cols-2">
+              <Reveal>
+                <div>
+                  <div className="mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
+                  <h2 className="mb-4 font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
+                    Wer hinter Aurelia steht
+                  </h2>
+                  <p className="text-[15px] md:text-[16px] leading-[1.7] text-foreground/85">
+                    Aurelia Grundbesitz GmbH wurde von <strong>Eyüp Yasar Alkac</strong> gegründet – mit Sitz in
+                    Düsseldorf und Fokus auf Immobilien in besonderen Situationen. Zwangsversteigerungen,
+                    Erbengemeinschaften, notleidende Objekte. Wir handeln ausschließlich auf eigene Rechnung.
+                    Kein Bankfinanzierungsvorbehalt. Keine Weitervermittlung. Wer mit uns spricht, spricht mit
+                    dem Entscheider.
                   </p>
                 </div>
-              </div>
-            </Reveal>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <figure className="mx-auto md:ml-auto md:mr-0">
+                  <div
+                    className="rounded-lg overflow-hidden"
+                    style={{
+                      width: "100%",
+                      maxWidth: 400,
+                      aspectRatio: "4 / 5",
+                      backgroundColor: "#D9D9D9",
+                    }}
+                    aria-label="Porträt-Platzhalter Eyüp Yasar Alkac"
+                    role="img"
+                  />
+                  <figcaption
+                    className="mt-3 text-center md:text-left"
+                    style={{ fontSize: 13, color: "#1B2A4A", fontWeight: 500 }}
+                  >
+                    Eyüp Yasar Alkac — Geschäftsführer
+                  </figcaption>
+                </figure>
+              </Reveal>
+            </div>
           </div>
         </section>
 
-        {/* WERTE */}
-        <section className="section-premium section-navy text-white">
+        {/* BLOCK 2: Unser Ansatz */}
+        <section className="py-16 md:py-20 bg-secondary/40">
           <div className="container-premium">
             <Reveal>
-              <div className="text-center mb-12">
-                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-400/50" />
-                <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-white text-balance md:text-[1.9rem]">
-                  Unsere Werte
+              <div className="text-center mb-10">
+                <div className="mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
+                <h2 className="font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
+                  Unser Ansatz
                 </h2>
               </div>
             </Reveal>
-
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                { icon: Eye, title: "Transparenz", desc: "Offene Kommunikation in allen Geschäften." },
-                { icon: Heart, title: "Hilfreiche Lösungen", desc: "Vor Profitmaximierung steht der nachhaltige Mehrwert." },
-                { icon: Clock, title: "Langfristige Beziehungen", desc: "Statt kurzfristiger Transaktionen." },
-                { icon: ShieldCheck, title: "Professionalität", desc: "Saubere, rechtssichere Abwicklung." },
-              ].map((item, i) => {
-                const Icon = item.icon;
+            <div className="grid gap-6 md:gap-8 md:grid-cols-3">
+              {approach.map((item, i) => {
+                const Icon = item.Icon;
                 return (
                   <Reveal key={i} delay={i * 0.08}>
-                    <div className="glass-card-dark rounded-2xl p-7 h-full">
-                      <Icon className="mb-4" size={28} strokeWidth={1.5} style={{ color: "hsl(var(--highlight))" }} />
-                      <h3 className="mb-2 text-[1rem] font-heading font-semibold text-white">{item.title}</h3>
-                      <p className="text-[0.86rem] leading-[1.75] text-white/70">{item.desc}</p>
+                    <div className="glass-card h-full p-7 md:p-8 text-left">
+                      <Icon
+                        size={32}
+                        strokeWidth={1.5}
+                        className="mb-5"
+                        style={{ color: "hsl(var(--highlight))" }}
+                        aria-hidden="true"
+                      />
+                      <h3 className="mb-2 text-[1.125rem] md:text-[1.25rem] font-heading font-semibold text-primary">
+                        {item.title}
+                      </h3>
+                      <p className="text-[15px] md:text-[16px] leading-[1.7] text-foreground/80">{item.text}</p>
                     </div>
                   </Reveal>
                 );
@@ -98,48 +178,99 @@ const About = () => {
           </div>
         </section>
 
-        {/* UNTERNEHMENSDATEN */}
-        <section className="section-premium bg-gradient-warm">
+        {/* BLOCK 3: Beispiele aus der Praxis */}
+        <section className="py-16 md:py-20 bg-background">
           <div className="container-premium">
             <Reveal>
-              <div className="glass-card rounded-2xl p-8 md:p-10 max-w-2xl mx-auto">
-                <h3 className="mb-5 text-[1.1rem] font-heading font-semibold text-foreground">
-                  Aurelia Grundbesitz GmbH
-                </h3>
-                <div className="space-y-2 text-[0.9rem] leading-[1.8] text-muted-foreground">
-                  <p>Grevenbroicher Weg 2</p>
-                  <p>40547 Düsseldorf</p>
-                  <p>Deutschland</p>
-                  <p className="pt-2">
-                    <a href="mailto:info@aureliaestates.de" className="text-teal-700 hover:text-teal-800">
-                      info@aureliaestates.de
-                    </a>
-                  </p>
-                </div>
-                <p className="mt-5 text-[0.78rem] text-muted-foreground/80">
-                  Vollständige Registerangaben finden Sie im <Link to="/impressum" className="underline hover:text-teal-700">Impressum</Link>.
-                </p>
+              <div className="text-center mb-10">
+                <div className="mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
+                <h2 className="font-heading font-bold text-primary text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
+                  Beispiele aus der Praxis
+                </h2>
               </div>
             </Reveal>
+
+            <div className="grid gap-6 md:gap-7 md:grid-cols-3">
+              {cases.map((c, i) => (
+                <Reveal key={i} delay={i * 0.08}>
+                  <article
+                    className="h-full flex flex-col"
+                    style={{
+                      backgroundColor: "#F7F6F2",
+                      border: "1px solid #C9A84C",
+                      borderRadius: 8,
+                      padding: 32,
+                    }}
+                  >
+                    <p
+                      className="mb-3"
+                      style={{
+                        fontSize: 11,
+                        fontWeight: 600,
+                        letterSpacing: "0.1em",
+                        textTransform: "uppercase",
+                        color: "hsl(var(--highlight))",
+                      }}
+                    >
+                      {c.label}
+                    </p>
+                    <h3 className="mb-3 text-[1.125rem] font-heading font-semibold text-primary leading-[1.25]">
+                      {c.title}
+                    </h3>
+                    <p className="text-[15px] leading-[1.7] text-foreground/80 mb-5">{c.text}</p>
+                    <div className="my-1" style={{ borderTop: "1px solid #E0DDD8" }} />
+                    <ul className="mt-4 space-y-1.5 text-[14px] leading-[1.65] text-foreground/85">
+                      {c.results.map((r, j) => (
+                        <li key={j} className="flex items-start gap-2">
+                          <span aria-hidden="true" style={{ color: "hsl(var(--accent))" }}>
+                            ✓
+                          </span>
+                          <span>{r}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+
+            <p className="mt-8 text-center text-[12px] text-muted-foreground">
+              Alle Fälle anonymisiert dargestellt.
+            </p>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="relative section-premium text-white overflow-hidden" style={{ background: "linear-gradient(170deg, hsl(var(--primary)) 0%, hsl(var(--highlight)) 100%)" }}>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
-          <div className="container-premium relative text-center">
+        {/* BLOCK 4: CTA */}
+        <section style={{ backgroundColor: "#1B2A4A" }} className="px-0">
+          <div className="container-premium" style={{ paddingTop: 64, paddingBottom: 64 }}>
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Lernen Sie uns kennen</h2>
-              <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                Vereinbaren Sie ein unverbindliches Gespräch — wir freuen uns, Ihre Fragen zu beantworten.
-              </p>
-              <Link
-                to="/kontakt"
-                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
-              >
-                Kontakt aufnehmen
-                <ArrowRight size={13} />
-              </Link>
+              <div className="max-w-2xl mx-auto text-center">
+                <div className="mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
+                <h2 className="mb-4 font-heading font-bold text-white text-[1.625rem] md:text-[2.25rem] leading-[1.2]">
+                  Lassen Sie uns Ihren Fall einordnen.
+                </h2>
+                <p className="mb-8 text-[15px] md:text-[16px] leading-[1.7] text-white/80">
+                  Ein vertrauliches Erstgespräch ist unverbindlich und kostenfrei. Wir sagen Ihnen ehrlich, was
+                  möglich ist.
+                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
+                  <Link
+                    to="/kontakt"
+                    className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-primary transition-colors duration-300 hover:bg-white/95"
+                  >
+                    Kontakt aufnehmen
+                    <ArrowRight size={13} className="text-accent" />
+                  </Link>
+                  <a
+                    href="tel:+4921169583033"
+                    className="inline-flex items-center gap-2 rounded-sm px-7 py-3.5 text-[13px] font-semibold uppercase tracking-[0.1em] text-white transition-colors duration-300"
+                    style={{ backgroundColor: "hsl(var(--highlight))" }}
+                  >
+                    <Phone size={14} strokeWidth={1.75} />
+                    +49 211 69583033
+                  </a>
+                </div>
+              </div>
             </Reveal>
           </div>
         </section>

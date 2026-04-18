@@ -42,7 +42,7 @@ const HomePage = () => {
 
       <div className="page-shell">
         {/* DIE 3 BEREICHE */}
-        <section className="section-premium bg-gradient-warm">
+        <section className="section-premium bg-gradient-warm pt-10 md:pt-16">
           <div className="container-premium">
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
