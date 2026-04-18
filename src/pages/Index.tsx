@@ -213,7 +213,78 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* FINAL CTA */}
+        {/* EINWANDBEHANDLUNG */}
+        {t.home.objections && t.home.objections.length > 0 && (
+          <section className="section-premium bg-gradient-warm">
+            <div className="container-premium">
+              <Reveal>
+                <div className="text-center mb-10 max-w-2xl mx-auto">
+                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                    {t.home.objectionsTitle}
+                  </h2>
+                  {t.home.objectionsIntro && (
+                    <p className="text-[0.93rem] leading-[1.85] text-muted-foreground">
+                      {t.home.objectionsIntro}
+                    </p>
+                  )}
+                </div>
+              </Reveal>
+              <div className="grid gap-5 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+                {t.home.objections.map((item, i) => (
+                  <Reveal key={i} delay={i * 0.08}>
+                    <div className="glass-card rounded-2xl p-7 h-full">
+                      <h3 className="mb-3 text-[0.98rem] font-heading font-semibold text-foreground leading-snug">
+                        „{item.q}“
+                      </h3>
+                      <p className="text-[0.86rem] leading-[1.8] text-muted-foreground">{item.a}</p>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* FAQ */}
+        {t.home.faqItems && t.home.faqItems.length > 0 && (
+          <section
+            className="section-premium"
+            style={{ background: "linear-gradient(180deg, hsl(30 10% 96%) 0%, hsl(30 12% 97.5%) 100%)" }}
+          >
+            <div className="container-premium max-w-3xl">
+              <Reveal>
+                <div className="text-center mb-8">
+                  <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                  <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                    {t.home.faqTitle}
+                  </h2>
+                  {t.home.faqIntro && (
+                    <p className="text-[0.93rem] leading-[1.85] text-muted-foreground">
+                      {t.home.faqIntro}
+                    </p>
+                  )}
+                </div>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <Accordion type="single" collapsible className="rounded-2xl bg-white/70 backdrop-blur-sm px-5 md:px-7 shadow-sm">
+                  {t.home.faqItems.map((item, i) => (
+                    <AccordionItem key={i} value={`item-${i}`} className="border-b border-border/50 last:border-0">
+                      <AccordionTrigger className="text-left text-[0.95rem] font-heading font-semibold text-foreground hover:no-underline py-5">
+                        {item.q}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-[0.88rem] leading-[1.85] text-muted-foreground pb-5">
+                        {item.a}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </Reveal>
+            </div>
+          </section>
+        )}
+
+
         <section
           className="relative section-premium text-white overflow-hidden"
           style={{ background: "linear-gradient(170deg, #0e6e91 0%, #0889b3 40%, #06acd5 100%)" }}
