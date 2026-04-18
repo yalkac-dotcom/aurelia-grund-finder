@@ -67,7 +67,8 @@ const ForOwnerInTrouble = () => {
                 {o.proofPoints.map((p, i) => (
                   <ProofCard
                     key={i}
-                    icon={proofIcons[i % proofIcons.length]}
+                    iconImage={proofImagesLight[i % proofImagesLight.length]}
+                    iconAlt={p.title}
                     index={i}
                     title={p.title}
                     text={p.text}
