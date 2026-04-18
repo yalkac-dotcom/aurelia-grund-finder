@@ -8,17 +8,17 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-// (cardImages entfernt — Situationen jetzt ikonisch)
+import { cardImages } from "@/assets/cards";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
 
-// Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht (themenpräzise 3D-Akten-Icons)
-const situationIcons = [icons3d.foreclosureFile, icons3d.deadlineDocument, icons3d.heirsFiles, icons3d.legalPortfolio];
+// Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht (Fotos beibehalten)
+const situationImages = cardImages.ownerSituations;
 // Proof (auf Navy) — Lucide-Icons im ProofCard-Stil (Navy-Sektion bleibt iconisch)
 const proofIcons = [Lock, Scale, FileText, ShieldCheck];
 // Steps (5) — Erstkontakt, Einordnung, Bewertung, Angebot, Abwicklung (3D-Icons)
-const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.assessmentDocument, icons3d.contractFolder, icons3d.closingFolder];
+const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -46,8 +46,8 @@ const ForOwnerInTrouble = () => {
               {o.situations.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    iconImage={situationIcons[i % situationIcons.length]}
-                    iconAlt={s.title}
+                    image={situationImages[i % situationImages.length]}
+                    imageAlt={s.title}
                     index={i}
                     title={s.title}
                     text={s.desc}

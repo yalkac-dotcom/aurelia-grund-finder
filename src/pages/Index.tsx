@@ -25,8 +25,8 @@ const HomePage = () => {
   // ProofPoints (4 Versprechen, auf Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
   const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
 
-  // Schritte (3) — Erstkontakt, Prüfung, Vereinbarung (themenpräzise 3D-Akten-Icons)
-  const stepIcons = [icons3d.dialogueLight, icons3d.assessmentDocument, icons3d.contractFolder];
+  // Schritte (3) — Erstkontakt, Prüfung, Angebot (3D-Icons statt Fotos)
+  const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract];
 
   return (
     <Layout>
