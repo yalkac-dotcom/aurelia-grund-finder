@@ -48,7 +48,7 @@ const HomePage = () => {
               {t.home.areas.map((path, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <AreaCard
-                    icon={areaIcons[i]}
+                    iconImage={areaIconImages[i]}
                     iconAlt={path.title}
                     title={path.title}
                     text={path.desc}
