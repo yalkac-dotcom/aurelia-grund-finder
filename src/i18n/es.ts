@@ -73,6 +73,13 @@ const es: Translations = {
     cta: "Consulta confidencial",
     ctaSecondary: "Cómo ayudamos",
   },
+  trustBar: {
+    items: [
+      "Discreto y confidencial",
+      "Compra por cuenta propia",
+      "Decisión vinculante",
+    ],
+  },
   common: {
     learnMore: "Más información",
     sendMessage: "Enviar mensaje",

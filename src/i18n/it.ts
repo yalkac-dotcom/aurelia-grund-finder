@@ -73,6 +73,13 @@ const it: Translations = {
     cta: "Richiesta riservata",
     ctaSecondary: "Come aiutiamo",
   },
+  trustBar: {
+    items: [
+      "Discreto e riservato",
+      "Acquisto in conto proprio",
+      "Decisione vincolante",
+    ],
+  },
   common: {
     learnMore: "Scopri di più",
     sendMessage: "Invia messaggio",

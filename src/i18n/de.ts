@@ -73,6 +73,13 @@ const de: Translations = {
     cta: "Vertraulich anfragen",
     ctaSecondary: "Wie wir vorgehen",
   },
+  trustBar: {
+    items: [
+      "Diskret & vertraulich",
+      "Ankauf auf eigene Rechnung",
+      "Verbindliche Entscheidung",
+    ],
+  },
   common: {
     learnMore: "Mehr erfahren",
     sendMessage: "Nachricht senden",
