@@ -35,7 +35,6 @@ const ForOwnerInTrouble = () => {
         description={o.heroDescription}
         primaryCta={{ label: o.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: o.heroSecondaryCta, href: "#ablauf" }}
-        phoneLine={{ href: "tel:+4921169583033", label: "📞 +49 211 69583033 — auch bei laufendem Verfahren" }}
         trustLine={o.heroTrustLine}
       />
 
