@@ -1,17 +1,24 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import { ArrowRight, LifeBuoy, KeyRound, Handshake } from "lucide-react";
+import { ArrowRight, LifeBuoy, Users, KeyRound, ShieldCheck, Handshake, Gavel, FileCheck } from "lucide-react";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
 import { useLanguage } from "@/i18n/LanguageContext";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  const areaIcons = [LifeBuoy, KeyRound, Handshake];
+  const areaIcons = [LifeBuoy, Users, KeyRound];
   const areaColors = ["bg-teal-700", "bg-teal-600", "bg-amber-600"];
-  const areaLinks = ["/fuer-eigentumer-in-not", "/fuer-kaeufer", "/fuer-geschaeftspartner"];
+  const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
+  const proofIcons = [ShieldCheck, Handshake, FileCheck, Gavel];
 
   return (
     <Layout>
