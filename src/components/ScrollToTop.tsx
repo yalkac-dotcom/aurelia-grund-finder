@@ -22,15 +22,16 @@ const ScrollToTop = () => {
 
   return (
     <button
+      type="button"
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label={t.common.scrollTopAria}
+      aria-hidden={!visible}
+      tabIndex={visible ? 0 : -1}
       className={`scroll-top-btn ${
-        visible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-4 pointer-events-none"
+        visible ? "is-visible" : "is-hidden"
       }`}
     >
-      <ChevronUp />
+      <ChevronUp size={18} strokeWidth={2} aria-hidden="true" />
       <span className="sr-only">{t.common.scrollTopAria}</span>
     </button>
   );
