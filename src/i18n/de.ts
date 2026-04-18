@@ -49,7 +49,7 @@ const de: Translations = {
     socialLinkedinAria: "LinkedIn (folgt)",
     socialInstagramAria: "Instagram (folgt)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle Rechte vorbehalten.",
-    kwgDisclaimer: "Wir kaufen und verkaufen ausschließlich auf eigene Rechnung. Keine Finanzdienstleistungen, keine Kreditvergabe oder -vermittlung, keine Anlageberatung. Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
+    kwgDisclaimer: "Wir handeln nur als Käufer; wir vergeben keine Kredite und bieten keine Beteiligungsmodelle.",
   },
   newsletter: {
     placeholder: "Ihre E-Mail-Adresse",
