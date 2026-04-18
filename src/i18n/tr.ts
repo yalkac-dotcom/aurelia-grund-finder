@@ -10,6 +10,11 @@ const tr: Translations = {
     glossar: "Sözlük",
     contact: "İletişim",
     workApproach: "Çalışma yöntemi",
+    ownerInTrouble: "Mülk sahipleri için",
+    buyers: "Alıcılar için",
+    partners: "İş ortakları için",
+    howItWorks: "Nasıl çalışır",
+    faq: "SSS",
   },
   footer: {
     navigation: "Navigasyon",
@@ -50,6 +55,8 @@ const tr: Translations = {
     socialInstagramAria: "Instagram (yakında)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Tüm hakları saklıdır.",
     kwgDisclaimer: "Yalnızca kendi hesabımıza alıcı olarak hareket ederiz. Bir kredi kuruluşu değiliz; finansal hizmet, kredi veya ortaklık modeli sunmayız.",
+    phoneLabel: "Telefon",
+    emailLabel: "E-posta",
   },
   newsletter: {
     placeholder: "E-posta adresiniz",
@@ -661,6 +668,7 @@ const tr: Translations = {
   contact: {
     title: "İletişim",
     subtitle: "Sizin için buradayız",
+    hereForYou: "Sizin için buradayız",
     introText: "Gayrimenkulünüzü bize yazın. 24-48 saat içinde ilk, bağlayıcı bir değerlendirme alacaksınız – ücretsiz, gizli, bağlayıcı değil.",
     salutation: "Hitap",
     firstName: "Ad",

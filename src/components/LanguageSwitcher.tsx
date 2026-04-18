@@ -26,7 +26,7 @@ const LanguageSwitcher = () => {
     <div ref={ref} className="relative flex items-center">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1 text-muted-foreground hover:text-foreground transition-colors text-[12px] tracking-wide"
+        className="flex items-center gap-1 bg-transparent border-0 p-0 text-muted-foreground hover:text-foreground transition-colors text-[12px] tracking-wide focus:outline-none focus-visible:ring-0"
         aria-label={t.common.languageAria}
       >
         <span className="uppercase font-medium">{language}</span>

@@ -10,6 +10,11 @@ export interface Translations {
     glossar: string;
     contact: string;
     workApproach: string;
+    ownerInTrouble: string;
+    buyers: string;
+    partners: string;
+    howItWorks: string;
+    faq: string;
   };
   footer: {
     navigation: string;
@@ -34,6 +39,8 @@ export interface Translations {
     socialInstagramAria: string;
     copyright: string; // "© {year} Aurelia Grundbesitz GmbH. ..."
     kwgDisclaimer: string;
+    phoneLabel: string;
+    emailLabel: string;
   };
   newsletter: {
     placeholder: string;
@@ -366,6 +373,7 @@ export interface Translations {
   contact: {
     title: string;
     subtitle: string;
+    hereForYou: string;
     introText: string;
     salutation: string;
     firstName: string;

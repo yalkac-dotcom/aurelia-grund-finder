@@ -68,13 +68,13 @@ const Footer = () => {
                 href="tel:+4921169583033"
                 className="text-white/65 hover:text-accent transition-colors duration-200"
               >
-                Telefon: +49 211 69583033
+                {t.footer.phoneLabel}: +49 211 69583033
               </a>
               <a
                 href="mailto:info@aureliaestates.de"
                 className="text-white/65 hover:text-accent transition-colors duration-200"
               >
-                E-Mail: info@aureliaestates.de
+                {t.footer.emailLabel}: info@aureliaestates.de
               </a>
             </div>
 

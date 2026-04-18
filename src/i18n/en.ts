@@ -10,6 +10,11 @@ const en: Translations = {
     glossar: "Glossary",
     contact: "Contact",
     workApproach: "How We Work",
+    ownerInTrouble: "For Owners",
+    buyers: "For Buyers",
+    partners: "For Partners",
+    howItWorks: "How It Works",
+    faq: "FAQ",
   },
   footer: {
     navigation: "Navigation",
@@ -50,6 +55,8 @@ const en: Translations = {
     socialInstagramAria: "Instagram (coming soon)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. All rights reserved.",
     kwgDisclaimer: "We act solely as a buyer for our own account. We are not a credit institution and do not offer financial services, loans or participation models.",
+    phoneLabel: "Phone",
+    emailLabel: "Email",
   },
   newsletter: {
     placeholder: "Your email address",
@@ -694,6 +701,7 @@ const en: Translations = {
   contact: {
     title: "Contact",
     subtitle: "We are here for you",
+    hereForYou: "We are here for you",
     introText: "Tell us about your property. Within 24-48 hours you will receive an initial, binding assessment – free of charge, discreet, no obligation.",
     salutation: "Salutation",
     firstName: "First name",

@@ -10,6 +10,11 @@ const nl: Translations = {
     glossar: "Glossarium",
     contact: "Contact",
     workApproach: "Werkwijze",
+    ownerInTrouble: "Voor eigenaren",
+    buyers: "Voor kopers",
+    partners: "Voor zakenpartners",
+    howItWorks: "Hoe het werkt",
+    faq: "FAQ",
   },
   footer: {
     navigation: "Navigatie",
@@ -50,6 +55,8 @@ const nl: Translations = {
     socialInstagramAria: "Instagram (binnenkort)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle rechten voorbehouden.",
     kwgDisclaimer: "Wij treden uitsluitend op als koper voor eigen rekening. Wij zijn geen kredietinstelling en bieden geen financiële diensten, leningen of participatiemodellen aan.",
+    phoneLabel: "Telefoon",
+    emailLabel: "E-mail",
   },
   newsletter: {
     placeholder: "Uw e-mailadres",
@@ -662,6 +669,7 @@ const nl: Translations = {
   contact: {
     title: "Contact",
     subtitle: "Wij staan voor u klaar",
+    hereForYou: "Wij zijn er voor u",
     introText: "Beschrijf uw vastgoed. Binnen 24-48 uur ontvangt u een eerste, vrijblijvende inschatting – gratis, discreet, zonder verplichting.",
     salutation: "Aanhef",
     firstName: "Voornaam",
