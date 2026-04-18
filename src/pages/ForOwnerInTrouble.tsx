@@ -9,12 +9,20 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { icons3d } from "@/assets/icons3d";
+import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
 
-// Situations (4 typische Lagen) — logisch zugeordnet:
-const situationIconImages = [icons3d.contract, icons3d.wallet, icons3d.heirs, icons3d.gavel];
+// Situations (4 typische Lagen) — editorial Bild-Header (CI-konform):
+// Zwangsversteigerung → ruhiges Notarbüro, Finanzielle Belastung → Hausfassade,
+// Erbengemeinschaft → Tisch am Fenster, Rechtliche Lage → Gerichtsfassade
+const situationImages = cardImages.situations;
+const situationImageAlts = [
+  "Ruhiges Notarbüro mit Aktenstapel auf Eichenholztisch – sinnbildlich für diskrete Bearbeitung in Notlagen",
+  "Wohnhausfassade in weichem Morgenlicht – sinnbildlich für finanziell belastete Eigentümer",
+  "Stiller Tisch am Fenster – sinnbildlich für faire Lösungen in Erbengemeinschaften",
+  "Klassische Gerichtsfassade in Tageslicht – sinnbildlich für rechtlich komplexe Situationen",
+];
 // Proof (auf Navy): konsistente Linien-Icons in Steel-Blue-Kreisen (siehe ProofCard)
 const proofIcons = [Lock, Scale, FileText, ShieldCheck];
 
@@ -41,14 +49,16 @@ const ForOwnerInTrouble = () => {
           <div className="container-premium">
             <SectionHeader title={o.situationsTitle} intro={o.situationsIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2">
-              {o.situations.map((s, i) => {
-                const img = situationIconImages[i % situationIconImages.length];
-                return (
-                  <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard iconImage={img} iconAlt={s.title} title={s.title} text={s.desc} />
-                  </Reveal>
-                );
-              })}
+              {o.situations.map((s, i) => (
+                <Reveal key={i} delay={i * 0.06}>
+                  <AreaCard
+                    headerImage={situationImages[i % situationImages.length]}
+                    headerImageAlt={situationImageAlts[i % situationImageAlts.length]}
+                    title={s.title}
+                    text={s.desc}
+                  />
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>

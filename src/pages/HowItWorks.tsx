@@ -16,11 +16,15 @@ import {
   FileCheck,
   Compass,
 } from "lucide-react";
-import { icons3d } from "@/assets/icons3d";
+import { cardImages } from "@/assets/cards";
 
-// Segmente — 3D-Icons konsistent zur Startseite:
-// Diskreter Ankauf → wallet, Immobilienverkauf → house, Projektkooperationen → partners
-const segmentIconImages = [icons3d.wallet, icons3d.house, icons3d.partners];
+// Segmente (3) — editorial Bild-Header (CI-konform)
+const segmentImages = cardImages.segments;
+const segmentImageAlts = [
+  "Lederbörse auf Marmoroberfläche in weichem Tageslicht – sinnbildlich für diskreten Ankauf",
+  "Eleganter Hauseingang mit Messinggriff in Morgenlicht – sinnbildlich für Immobilienverkauf",
+  "Architektonische Pläne auf Holztisch am Fenster – sinnbildlich für Projektkooperationen",
+];
 const principleIcons = [MessagesSquare, Scale, FileCheck, Compass];
 
 const HowItWorks = () => {
@@ -60,14 +64,16 @@ const HowItWorks = () => {
           <div className="container-premium">
             <SectionHeader title={w.segmentsTitle} intro={w.segmentsIntro} />
             <div className="grid gap-6 md:gap-7 md:grid-cols-3">
-              {w.segments.map((s, i) => {
-                const img = segmentIconImages[i % segmentIconImages.length];
-                return (
-                  <Reveal key={i} delay={i * 0.06}>
-                    <AreaCard iconImage={img} iconAlt={s.title} title={s.title} text={s.desc} />
-                  </Reveal>
-                );
-              })}
+              {w.segments.map((s, i) => (
+                <Reveal key={i} delay={i * 0.06}>
+                  <AreaCard
+                    headerImage={segmentImages[i % segmentImages.length]}
+                    headerImageAlt={segmentImageAlts[i % segmentImageAlts.length]}
+                    title={s.title}
+                    text={s.desc}
+                  />
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
