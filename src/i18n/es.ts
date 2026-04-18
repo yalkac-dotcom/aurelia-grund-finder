@@ -337,6 +337,63 @@ const es: Translations = {
     finalCtaText: "Revisamos su caso sin compromiso y le respondemos en dos días laborables con una respuesta clara.",
     finalCtaButton: "Hacer revisar mi caso",
   },
+  ownerInTrouble: {
+    heroKicker: "Para propietarios en situaciones especiales",
+    heroTitle: "Cuando una venta ya no avanza según lo previsto.",
+    heroDescription:
+      "Aurelia analiza con confidencialidad situaciones difíciles de propiedad – también cuando ya está en curso un procedimiento de subasta judicial. Escuchamos, ordenamos la situación y decimos honestamente qué es posible.",
+    heroPrimaryCta: "Consulta confidencial",
+    heroSecondaryCta: "Cómo trabajamos",
+    heroTrustLine: "Discreto · Por cuenta propia · Sin comisión de agencia",
+    heroImageAlt: "Calle residencial tranquila con un edificio plurifamiliar bien cuidado – símbolo de soluciones discretas en situaciones especiales de propiedad",
+    situationsTitle: "Situaciones en las que podemos ayudar",
+    situationsIntro:
+      "Cada caso es distinto. Evaluamos cada constelación individualmente – también cuando otros ya se han retirado.",
+    situations: [
+      { title: "Estructuras de propiedad complejas", desc: "Comunidades hereditarias, varios propietarios, decisiones bloqueadas – ordenamos la situación y generamos movimiento." },
+      { title: "Presión financiera", desc: "Deudas elevadas, préstamos rescindidos, subasta inminente – examinamos si una compra directa es una solución viable." },
+      { title: "Conflictos entre propietarios", desc: "Cuando los copropietarios no se ponen de acuerdo, un tercero sereno ayuda – con valoración clara y oferta vinculante." },
+      { title: "Procedimiento de subasta en curso", desc: "También durante un procedimiento en curso, una venta suele seguir siendo posible – mientras la fecha de subasta no haya concluido. Evaluamos a corto plazo si una venta privada aún es factible." },
+    ],
+    solutionTitle: "Cómo aliviamos a los propietarios",
+    solutionText:
+      "Compramos directamente y por cuenta propia. Sin agencia, sin carrusel de visitas, sin comercialización abierta. Habla con las personas que también deciden.",
+    proofPoints: [
+      { title: "Discreción", text: "Sin comercialización pública, sin carteles, sin anuncios. Las conversaciones se mantienen confidenciales." },
+      { title: "Valoración justa", text: "Estimación orientada al mercado – explicada con claridad, sin embellecimientos." },
+      { title: "Acuerdo claro", text: "Oferta vinculante, condiciones transparentes, formalización notarial." },
+      { title: "Ejecución fiable", text: "Actuamos por cuenta propia – sin reservas de financiación, sin retiradas de última hora." },
+    ],
+    stepsTitle: "Así procedemos",
+    steps: [
+      { title: "Primer contacto", desc: "Usted describe la situación – por teléfono o mediante el formulario. Confidencial y sin compromiso." },
+      { title: "Evaluación", desc: "Revisamos la documentación y situamos el caso en una perspectiva realista." },
+      { title: "Valoración y oferta", desc: "Recibe una evaluación escrita y – si procede – una oferta vinculante." },
+      { title: "Acuerdo", desc: "En caso de aceptación fijamos las condiciones con claridad y preparamos la cita notarial." },
+      { title: "Ejecución", desc: "Formalización vinculante ante notario. Después nos encargamos de todo lo demás." },
+    ],
+    stepsNote:
+      "Los plazos son orientativos. En casos urgentes – como procedimientos en curso – trabajamos notablemente más rápido.",
+    objectionsTitle: "Lo que los propietarios suelen preguntar",
+    objectionsIntro: "Tres preocupaciones escuchamos con especial frecuencia. Esta es nuestra respuesta honesta.",
+    objections: [
+      { q: "¿Es demasiado tarde si el procedimiento ya está en curso?", a: "No necesariamente. Mientras la fecha de subasta no haya concluido, una venta privada a menudo puede seguir siendo la mejor solución. Lo evaluamos a corto plazo." },
+      { q: "¿Se enterará alguien?", a: "No. No comercializamos nada públicamente. Las conversaciones permanecen entre usted, nosotros y – si es necesario – las partes implicadas." },
+      { q: "¿Cuánto cuesta la primera valoración?", a: "Nada. La primera conversación y la evaluación son sin compromiso y gratuitas para usted." },
+    ],
+    faqTitle: "Preguntas frecuentes",
+    faqIntro: "Si su pregunta no aparece aquí, contacte con nosotros directamente.",
+    faqItems: [
+      { q: "¿Sigue siendo posible una venta durante un procedimiento de subasta en curso?", a: "En muchos casos sí – mientras la fecha de subasta no haya concluido. Una venta privada puede seguir siendo una solución mejor que la subasta en esta fase. Lo evaluamos a corto plazo y le decimos honestamente si es realista." },
+      { q: "¿Qué significa ‘compra por cuenta propia'?", a: "Compramos el inmueble nosotros mismos – no en nombre de terceros. Sin comisión de agencia, sin reservas de financiación, sin cadena de compradores que aún tenga que decidir." },
+      { q: "¿Con qué rapidez pueden responder?", a: "Una primera evaluación suele llegar en pocos días. En casos urgentes, más rápido." },
+      { q: "¿Qué ocurre con los inquilinos si el inmueble está alquilado?", a: "Los contratos de alquiler existentes se respetan. Tras la compra asumimos el papel de arrendador – los contratos permanecen sin cambios." },
+    ],
+    finalCtaTitle: "Permítanos situar su caso en perspectiva.",
+    finalCtaText:
+      "Una primera conversación confidencial es sin compromiso y gratuita. Le decimos honestamente qué es posible – también cuando el tiempo apremia.",
+    finalCtaButton: "Consulta confidencial",
+  },
   about: {
     heroTitle: "Sobre Aurelia",
     companyLabel: "La empresa",

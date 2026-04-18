@@ -337,6 +337,96 @@ const en: Translations = {
     finalCtaText: "We review your case without obligation and get back to you within two working days with a clear answer.",
     finalCtaButton: "Have my case reviewed",
   },
+  ownerInTrouble: {
+    heroKicker: "For owners in special situations",
+    heroTitle: "When a sale no longer goes to plan.",
+    heroDescription:
+      "Aurelia reviews difficult ownership situations confidentially – even when a foreclosure procedure is already under way. We listen, take stock and tell you honestly what is still possible.",
+    heroPrimaryCta: "Request in confidence",
+    heroSecondaryCta: "How we work",
+    heroTrustLine: "Discreet · For our own account · No broker fees",
+    heroImageAlt: "Quiet residential street with a well-kept apartment building – symbolising discreet solutions in special ownership situations",
+    situationsTitle: "Situations where we can help",
+    situationsIntro:
+      "Every case is different. We assess each constellation individually – and also when others have already declined.",
+    situations: [
+      {
+        title: "Complex ownership structures",
+        desc: "Communities of heirs, multiple owners, blocked decisions – we sort the situation and create movement.",
+      },
+      {
+        title: "Financial pressure",
+        desc: "High liabilities, terminated loans, looming foreclosure – we examine whether a direct purchase is a viable solution.",
+      },
+      {
+        title: "Disputes between owners",
+        desc: "When co-owners cannot agree, a sober third party helps – with a clear valuation and a binding offer.",
+      },
+      {
+        title: "Ongoing foreclosure procedure",
+        desc: "Even during an ongoing procedure, a sale is often still possible – as long as the auction date has not been completed. We assess at short notice whether a private sale is still feasible.",
+      },
+    ],
+    solutionTitle: "How we relieve owners",
+    solutionText:
+      "We buy directly and for our own account. No broker, no viewings carousel, no open marketing. You speak with the people who also decide.",
+    proofPoints: [
+      { title: "Discretion", text: "No public marketing, no signs, no listings. Conversations remain confidential." },
+      { title: "Fair valuation", text: "Market-oriented assessment – clearly explained, without sugar-coating." },
+      { title: "Clear agreement", text: "Binding offer, transparent terms, notarial settlement." },
+      { title: "Reliable execution", text: "We act for our own account – no financing reservations, no last-minute withdrawals." },
+    ],
+    stepsTitle: "How we proceed",
+    steps: [
+      { title: "First contact", desc: "You describe the situation – by phone or via the form. Confidential and non-binding." },
+      { title: "Assessment", desc: "We review the documents and put the situation into a realistic perspective." },
+      { title: "Valuation & offer", desc: "You receive a written assessment and – where appropriate – a binding offer." },
+      { title: "Agreement", desc: "If you accept, we set out the terms clearly and prepare the notary appointment." },
+      { title: "Execution", desc: "Binding settlement via the notary. We then take care of everything that follows." },
+    ],
+    stepsNote:
+      "Time frames are guideline values. In urgent cases – such as ongoing procedures – we work noticeably faster.",
+    objectionsTitle: "What owners often ask",
+    objectionsIntro: "Three concerns we hear especially often. Here is our honest answer.",
+    objections: [
+      {
+        q: "Is it too late once the procedure has started?",
+        a: "Not necessarily. As long as the auction date has not been completed, a private sale can often still be the better solution. We can assess that at short notice.",
+      },
+      {
+        q: "Will anyone find out?",
+        a: "No. We do not market anything publicly. Conversations stay between you, us and – where necessary – the parties involved.",
+      },
+      {
+        q: "What does the initial review cost?",
+        a: "Nothing. The first conversation and the assessment are non-binding and free of charge for you.",
+      },
+    ],
+    faqTitle: "Frequently asked questions",
+    faqIntro: "If your question is not answered here, please contact us directly.",
+    faqItems: [
+      {
+        q: "Is a sale still possible during an ongoing foreclosure procedure?",
+        a: "In many cases yes – as long as the auction date has not been completed. A private sale can still be a better solution than the auction in this phase. We assess this at short notice and tell you honestly whether it is realistic.",
+      },
+      {
+        q: "What does ‘purchase for our own account' mean?",
+        a: "We buy the property ourselves – not on behalf of third parties. There is no broker commission, no financing reservations and no chain of buyers that still has to decide.",
+      },
+      {
+        q: "How quickly can you respond?",
+        a: "You will usually receive an initial assessment within a few days. In urgent cases more quickly.",
+      },
+      {
+        q: "What happens to tenants if the property is rented?",
+        a: "Existing tenancies are respected. After the purchase we take on the role of landlord – the contracts themselves remain unchanged.",
+      },
+    ],
+    finalCtaTitle: "Let us put your situation into perspective.",
+    finalCtaText:
+      "A confidential first conversation is non-binding and free of charge. We tell you honestly what is possible – even when time is short.",
+    finalCtaButton: "Request in confidence",
+  },
   about: {
     heroTitle: "About Aurelia",
     companyLabel: "The company",
