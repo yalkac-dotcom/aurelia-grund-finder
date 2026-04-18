@@ -122,6 +122,27 @@ const HomePage = () => {
               </div>
             </Reveal>
 
+            {t.home.proofPoints && t.home.proofPoints.length > 0 && (
+              <Reveal delay={0.1}>
+                <div className="grid gap-4 md:gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+                  {t.home.proofPoints.map((point, i) => {
+                    const Icon = proofIcons[i % proofIcons.length];
+                    return (
+                      <div key={i} className="glass-card-dark rounded-xl p-6 text-left h-full">
+                        <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-md bg-teal-500/20 text-teal-200">
+                          <Icon size={18} />
+                        </div>
+                        <h4 className="mb-1.5 text-[0.92rem] font-heading font-semibold text-white">
+                          {point.title}
+                        </h4>
+                        <p className="text-[0.82rem] leading-[1.7] text-white/65">{point.text}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Reveal>
+            )}
+
             <Reveal delay={0.15}>
               <div className="glass-card-dark rounded-2xl p-8 md:p-10">
                 <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
@@ -137,7 +158,8 @@ const HomePage = () => {
 
         {/* 3-SCHRITT-TEASER */}
         <section
-          className="section-premium"
+          id="ablauf"
+          className="section-premium scroll-mt-24"
           style={{ background: "linear-gradient(180deg, hsl(30 12% 97.5%) 0%, hsl(30 10% 96%) 100%)" }}
         >
           <div className="container-premium">
