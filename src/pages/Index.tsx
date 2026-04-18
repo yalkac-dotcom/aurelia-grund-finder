@@ -17,9 +17,9 @@ import FinalCta from "@/components/sections/FinalCta";
 
 const HomePage = () => {
   const { t } = useLanguage();
-  // Areas (3 Wege) — logisch zugeordnet:
-  // Notlagen → Hammer (Zwangsversteigerung), Erb-/Konflikt → Erben, Direktankauf → Schlüssel
-  const areaIconImages = [icons3d.gavel, icons3d.heirs, icons3d.key];
+  // Areas (3 Wege) — einheitliche Outline-Icons in Steel Blue:
+  // Notlagen → Gavel, Erb-/Konflikt → Users, Direktankauf → KeyRound
+  const areaIcons = [Gavel, Users, KeyRound];
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
   // ProofPoints (4 Versprechen, auf Navy):
   // Diskretion → Schild, Substanz → Waage, Langfristigkeit → Gebäude, Klarheit → Vertrag
