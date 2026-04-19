@@ -72,18 +72,22 @@ const HomePage = () => {
           <div className="container-premium">
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
-              {t.home.areas.map((path, i) => (
-                <Reveal key={i} delay={i * 0.06}>
-                  <ProofCard
-                    image={areaImages[i % areaImages.length]}
-                    imageAlt={path.title}
-                    index={i}
-                    title={path.title}
-                    text={path.desc}
-                    cta={{ label: path.cta, to: areaLinks[i] }}
-                  />
-                </Reveal>
-              ))}
+              {t.home.areas.map((path, i) => {
+                const key = areaKeys[i];
+                const asset = areaAssets[key];
+                return (
+                  <Reveal key={key} delay={i * 0.06}>
+                    <ProofCard
+                      image={asset.image}
+                      imageAlt={path.title}
+                      index={i}
+                      title={path.title}
+                      text={path.desc}
+                      cta={{ label: path.cta, to: asset.link }}
+                    />
+                  </Reveal>
+                );
+              })}
             </div>
           </div>
         </section>
