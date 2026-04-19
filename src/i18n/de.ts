@@ -33,7 +33,7 @@ const de: Translations = {
     subline: "Diskret · Auf eigene Rechnung · Verbindlich",
     navItems: [
       { label: "Startseite", path: "/" },
-      { label: "Eigentümer in Schwierigkeiten", path: "/fuer-eigentumer-in-not" },
+      { label: "Für Eigentümer", path: "/fuer-eigentumer-in-not" },
       { label: "Für Käufer", path: "/fuer-kaeufer" },
       { label: "Für Geschäftspartner", path: "/fuer-geschaeftspartner" },
       { label: "Portfolio", path: "/portfolio" },
