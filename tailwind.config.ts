@@ -83,12 +83,6 @@ export default {
           800: "hsl(207 38% 24%)",
           900: "hsl(207 38% 18%)",
         },
-        sand: {
-          DEFAULT: "hsl(var(--sand))",
-          deep: "hsl(var(--sand-deep))",
-        },
-        cream: "hsl(var(--cream))",
-        paper: "hsl(var(--paper))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -110,8 +104,7 @@ export default {
       backgroundImage: {
         "gradient-teal": "linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--highlight)) 100%)",
         "gradient-teal-dark": "linear-gradient(135deg, hsl(var(--navy-deep)) 0%, hsl(var(--primary)) 100%)",
-        "gradient-warm": "linear-gradient(160deg, hsl(var(--cream)) 0%, hsl(var(--sand)) 100%)",
-        "gradient-warm-deep": "linear-gradient(170deg, hsl(var(--sand)) 0%, hsl(var(--sand-deep)) 100%)",
+        "gradient-warm": "linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)",
       },
       keyframes: {
         "accordion-down": {
