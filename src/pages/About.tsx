@@ -174,11 +174,11 @@ const About = () => {
           </section>
         )}
 
-        {/* SEKTION 3 – Vision & Mission (2 Karten auf Navy) */}
+        {/* SEKTION 3 – Vision & Mission (typografisch ruhig, dezente Mini-Icons auf Navy) */}
         {a.visionMission && (
           <section className="py-20 md:py-28 bg-primary">
             <div className="container-premium">
-              <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-10 md:gap-16 max-w-5xl mx-auto">
                 {[
                   { icon: Compass, title: a.visionMission.visionTitle, text: a.visionMission.visionText },
                   { icon: Target, title: a.visionMission.missionTitle, text: a.visionMission.missionText },
@@ -186,17 +186,15 @@ const About = () => {
                   const Icon = card.icon;
                   return (
                     <Reveal key={idx} delay={idx * 0.08}>
-                      <div className="h-full p-8 md:p-10 border border-white/10 bg-primary/40 rounded-sm">
-                        <div
-                          className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full"
-                          style={{ backgroundColor: "hsl(var(--highlight))" }}
-                        >
-                          <Icon size={20} strokeWidth={1.75} className="text-white" />
+                      <div className="h-full">
+                        <div className="mb-5 flex items-center gap-3">
+                          <Icon size={14} strokeWidth={1.5} className="text-accent/80" />
+                          <div className="h-px w-8 bg-accent/60" aria-hidden="true" />
                         </div>
-                        <h3 className="mb-4 font-heading font-semibold text-accent text-[1.15rem] md:text-[1.3rem] leading-tight">
+                        <h3 className="mb-5 font-heading font-semibold text-accent text-[1.2rem] md:text-[1.35rem] leading-tight">
                           {card.title}
                         </h3>
-                        <p className="text-[14px] md:text-[15px] leading-[1.8] text-white/85">
+                        <p className="text-[14px] md:text-[15px] leading-[1.85] text-white/80">
                           {card.text}
                         </p>
                       </div>
