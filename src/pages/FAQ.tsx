@@ -5,6 +5,24 @@ import Reveal from "@/components/Reveal";
 import { ChevronDown, ArrowRight } from "lucide-react";
 
 const faqs = [
+  // — Eigentümer in besonderen Lagen —
+  {
+    q: "Geht ein Verkauf auch im laufenden Zwangsversteigerungsverfahren noch?",
+    a: "In vielen Fällen ja – solange der Versteigerungstermin nicht abgeschlossen ist. Ein freihändiger Verkauf kann auch in dieser Phase noch eine bessere Lösung sein als die Verwertung. Wir prüfen das kurzfristig und sagen Ihnen ehrlich, ob es realistisch ist.",
+  },
+  {
+    q: "Was bedeutet „Ankauf auf eigene Rechnung“?",
+    a: "Wir kaufen die Immobilie selbst – nicht im Auftrag Dritter. Es gibt keine Maklerprovision, keine Finanzierungsvorbehalte und keine Käuferkette, die noch entscheiden muss.",
+  },
+  {
+    q: "Wie schnell können Sie reagieren?",
+    a: "Eine erste Einschätzung erhalten Sie in der Regel innerhalb weniger Tage. In dringenden Fällen schneller.",
+  },
+  {
+    q: "Was passiert mit Mietern, falls die Immobilie vermietet ist?",
+    a: "Bestehende Mietverhältnisse werden respektiert. Wir treten nach dem Kauf in die Vermieterrolle ein – an den Verträgen ändert sich nichts.",
+  },
+  // — Allgemein —
   {
     q: "Wie schnell erfolgt die Abwicklung?",
     a: "Nach Vertragsabschluss erfolgt die Abwicklung gemäß vertraglicher Vereinbarung. Genaue Zeitrahmen werden individuell festgelegt und sind abhängig von der jeweiligen Situation. Eine typische Abwicklung dauert mehrere Wochen bis Monate.",
