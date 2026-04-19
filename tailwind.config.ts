@@ -110,7 +110,8 @@ export default {
       backgroundImage: {
         "gradient-teal": "linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--highlight)) 100%)",
         "gradient-teal-dark": "linear-gradient(135deg, hsl(var(--navy-deep)) 0%, hsl(var(--primary)) 100%)",
-        "gradient-warm": "linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)",
+        "gradient-warm": "linear-gradient(160deg, hsl(var(--cream)) 0%, hsl(var(--sand)) 100%)",
+        "gradient-warm-deep": "linear-gradient(170deg, hsl(var(--sand)) 0%, hsl(var(--sand-deep)) 100%)",
       },
       keyframes: {
         "accordion-down": {
