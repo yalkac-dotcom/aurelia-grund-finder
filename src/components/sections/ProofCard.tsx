@@ -15,6 +15,8 @@ interface ProofCardProps {
   cta?: { label: string; to: string };
   /** Editorial / filigree variant: smaller image, lighter shadow, semibold heading, tighter padding. */
   compact?: boolean;
+  /** Editorial premium variant: larger image, hairline-only frame, big serif numeral, no card box. */
+  editorial?: boolean;
 }
 
 const ProofCard = ({
