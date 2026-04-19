@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import ProofCard from "@/components/sections/ProofCard";
+
 import ProcessStep from "@/components/sections/ProcessStep";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";

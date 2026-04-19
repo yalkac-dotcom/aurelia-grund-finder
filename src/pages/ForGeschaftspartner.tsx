@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import ProofCard from "@/components/sections/ProofCard";
+
 import ProcessStep from "@/components/sections/ProcessStep";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
@@ -10,11 +10,7 @@ import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-// Forms (4) — Einzelobjekt, Portfolio, Off-Market, strategischer Dialog → semantische 3D-Icons
-const formIcons = [icons3d.singleBuilding, icons3d.buildingsCluster, icons3d.envelopeSeal, icons3d.meeting];
-// Principles (Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
-const principleIcons = [icons3d.dialogueLight, icons3d.horizonLight, icons3d.shieldLight, icons3d.handshakeLight];
-// Steps (5) — Erstkontakt, Einordnung, Bewertung, Vereinbarung, Umsetzung (3D-Icons)
+// Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
 const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
 
 const ForGeschaftspartner = () => {
@@ -48,17 +44,18 @@ const ForGeschaftspartner = () => {
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
-            <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <ProofCard
-                    iconImage={formIcons[i % formIcons.length]}
-                    iconAlt={f.title}
-                    index={i}
-                    title={f.title}
-                    text={f.desc}
-                    compact
-                  />
+                  <div className="border-l border-accent/40 pl-5">
+                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                      {f.title}
+                    </h3>
+                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{f.desc}</p>
+                  </div>
                 </Reveal>
               ))}
             </div>
@@ -70,17 +67,17 @@ const ForGeschaftspartner = () => {
           <div className="container-premium">
             <SectionHeader title={p.principlesTitle} intro={p.principlesText} tone="dark" />
             <Reveal delay={0.1}>
-              <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {p.principles.map((pr, i) => (
-                  <ProofCard
-                    key={i}
-                    iconImage={principleIcons[i % principleIcons.length]}
-                    iconAlt={pr.title}
-                    index={i}
-                    title={pr.title}
-                    text={pr.text}
-                    compact
-                  />
+                  <div key={i} className="border-l border-accent/50 pl-5">
+                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-white leading-snug">
+                      {pr.title}
+                    </h3>
+                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-white/75">{pr.text}</p>
+                  </div>
                 ))}
               </div>
             </Reveal>
