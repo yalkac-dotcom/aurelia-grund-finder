@@ -108,8 +108,17 @@
     --steel: 207 38% 47%;
     --steel-light: 207 42% 62%;
 
+    /* Editorial surface system — warm, gestaffelt, ruhig */
     --surface-warm: 48 19% 96%;
-    --surface-cream: 48 19% 96%;
+    --surface-cream: 42 28% 95%;     /* warmes Papier, etwas wärmer als bg */
+    --surface-stone: 38 14% 91%;     /* ruhiger Stein/Sand für Mid-Layer */
+    --surface-sand:  36 22% 88%;     /* tiefere Sandfläche für Akzentmodule */
+    --surface-ink:   218 38% 16%;    /* tiefes Navy für editoriale Inseln */
+
+    /* Hairlines — präziser als border */
+    --hairline:        38 14% 78%;
+    --hairline-soft:   38 14% 84%;
+    --hairline-on-dark: 0 0% 100%;
 
     --sidebar-background: 48 19% 96%;
     --sidebar-foreground: 218 30% 22%;
@@ -165,10 +174,137 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  /* ── Editorial Surfaces ───────────────────────────────────────── */
+  .surface-cream { background-color: hsl(var(--surface-cream)); }
+  .surface-stone { background-color: hsl(var(--surface-stone)); }
+  .surface-sand  { background-color: hsl(var(--surface-sand)); }
+  .surface-ink   { background-color: hsl(var(--surface-ink)); color: hsl(0 0% 100%); }
+
+  .surface-paper {
+    background:
+      radial-gradient(ellipse 80% 50% at 0% 0%, hsl(var(--surface-cream)) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 70% at 100% 100%, hsl(var(--surface-stone) / 0.7) 0%, transparent 60%),
+      hsl(var(--surface-warm));
+  }
+  .surface-paper-deep {
+    background:
+      radial-gradient(ellipse 70% 60% at 100% 0%, hsl(var(--surface-sand) / 0.7) 0%, transparent 60%),
+      radial-gradient(ellipse 80% 50% at 0% 100%, hsl(var(--surface-stone)) 0%, transparent 65%),
+      hsl(var(--surface-cream));
+  }
+
+  /* ── Hairlines ───────────────────────────────────────────────── */
+  .hairline-t { border-top: 1px solid hsl(var(--hairline-soft)); }
+  .hairline-b { border-bottom: 1px solid hsl(var(--hairline-soft)); }
+  .hairline-l { border-left: 1px solid hsl(var(--hairline-soft)); }
+  .hairline-r { border-right: 1px solid hsl(var(--hairline-soft)); }
+  .hairline-on-dark-t { border-top: 1px solid hsl(0 0% 100% / 0.08); }
+  .hairline-on-dark-b { border-bottom: 1px solid hsl(0 0% 100% / 0.08); }
+
+  /* ── Editorial Eyebrow ───────────────────────────────────────── */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: hsl(var(--accent));
+  }
+  .eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 1.6rem;
+    height: 1px;
+    background: hsl(var(--accent) / 0.7);
+  }
+  .eyebrow--center::before { display: none; }
+  .eyebrow--dark { color: hsl(43 56% 70%); }
+  .eyebrow--dark::before { background: hsl(43 56% 70% / 0.7); }
+
+  /* ── Editorial Numeral ───────────────────────────────────────── */
+  .numeral-display {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: hsl(var(--accent) / 0.85);
+  }
+  .numeral-display--lg { font-size: 3.25rem; }
+  .numeral-display--dark { color: hsl(43 56% 64%); }
+
+  /* ── Drop cap ────────────────────────────────────────────────── */
+  .drop-cap::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3.4rem;
+    line-height: 0.9;
+    font-weight: 500;
+    float: left;
+    padding: 0.3rem 0.7rem 0 0;
+    color: hsl(var(--primary));
+  }
+
+  /* ── Editorial Card (asymmetrisch, hairline-only) ────────────── */
+  .editorial-card {
+    position: relative;
+    padding: 1.75rem 1.5rem 1.75rem 1.75rem;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--hairline-soft));
+    border-left: 2px solid hsl(var(--accent) / 0.55);
+    transition: border-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  .editorial-card:hover {
+    border-color: hsl(var(--hairline));
+    border-left-color: hsl(var(--accent));
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px -20px hsl(218 40% 15% / 0.15);
+  }
+  @media (min-width: 768px) {
+    .editorial-card { padding: 2rem 1.75rem 2rem 2rem; }
+  }
+
+  /* ── Editorial Index Item (typografisch, ohne Box) ───────────── */
+  .index-item__label {
+    display: block;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: hsl(var(--accent));
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid hsl(var(--hairline-soft));
+  }
+  .index-item__label--dark {
+    color: hsl(43 56% 68%);
+    border-bottom-color: hsl(0 0% 100% / 0.12);
+  }
+
+  /* ── Sektions-Vertikal-Rhythmus ──────────────────────────────── */
+  .section-y-tight  { padding-block: 3.5rem; }
+  .section-y-base   { padding-block: 5rem; }
+  .section-y-lux    { padding-block: 7rem; }
+  @media (min-width: 768px) {
+    .section-y-tight  { padding-block: 5rem; }
+    .section-y-base   { padding-block: 7rem; }
+    .section-y-lux    { padding-block: 9rem; }
+  }
+
+  .seam-top::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: min(72rem, calc(100% - 3rem));
+    margin: 0 auto;
+    background: linear-gradient(90deg, transparent 0%, hsl(var(--hairline)) 50%, transparent 100%);
+  }
 }
 
 /* ── Globale Icon-Verfeinerung (Lucide) ────────────────────────── */
-/* Dünnere, gleichmäßige Linien für einen modernen, hochwertigen Look. */
 .lucide {
   stroke-width: 1.5;
   vector-effect: non-scaling-stroke;

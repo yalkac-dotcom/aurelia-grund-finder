@@ -15,6 +15,8 @@ interface ProofCardProps {
   cta?: { label: string; to: string };
   /** Editorial / filigree variant: smaller image, lighter shadow, semibold heading, tighter padding. */
   compact?: boolean;
+  /** Editorial premium variant: larger image, hairline-only frame, big serif numeral, no card box. */
+  editorial?: boolean;
 }
 
 const ProofCard = ({
@@ -28,9 +30,69 @@ const ProofCard = ({
   text,
   cta,
   compact = false,
+  editorial = false,
 }: ProofCardProps) => {
   const id = `proof-${index}-title`;
   const numeral = String(index + 1).padStart(2, "0");
+
+  // ── Editorial Variant ───────────────────────────────────────────
+  if (editorial) {
+    const editorialInner = (
+      <>
+        {image && (
+          <div
+            className="relative w-full overflow-hidden bg-primary/5 mb-7"
+            style={{ aspectRatio: "4 / 5" }}
+          >
+            <img
+              src={image}
+              alt={imageAlt ?? iconAlt ?? ""}
+              loading="lazy"
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.03]"
+            />
+            <div
+              className="absolute inset-0 bg-gradient-to-t from-primary/25 via-transparent to-transparent"
+              aria-hidden="true"
+            />
+          </div>
+        )}
+        <div className="flex items-baseline gap-4 mb-3">
+          <span className="numeral-display" aria-hidden="true">
+            {numeral}
+          </span>
+          <span className="h-px flex-1 bg-[hsl(var(--hairline-soft))]" aria-hidden="true" />
+        </div>
+        <h3
+          id={id}
+          className="text-[1.15rem] md:text-[1.22rem] font-heading font-medium text-primary leading-[1.25] tracking-[-0.005em]"
+        >
+          {title}
+        </h3>
+        <p className="mt-3 text-[0.9rem] leading-[1.8] text-muted-foreground">{text}</p>
+        {cta && (
+          <span className="mt-6 inline-flex items-center gap-2 text-[0.74rem] font-semibold uppercase tracking-[0.16em] text-primary border-b border-accent/60 pb-1 transition-colors group-hover:text-accent group-hover:border-accent">
+            {cta.label} <ArrowRight size={13} className="text-accent" />
+          </span>
+        )}
+      </>
+    );
+
+    const editorialClass =
+      "group h-full flex flex-col text-left transition-colors duration-300";
+
+    if (cta) {
+      return (
+        <Link to={cta.to} className={`${editorialClass} block`} aria-labelledby={id}>
+          {editorialInner}
+        </Link>
+      );
+    }
+    return (
+      <article className={editorialClass} aria-labelledby={id}>
+        {editorialInner}
+      </article>
+    );
+  }
 
   const visual = image ? (
     <div

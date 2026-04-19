@@ -105,6 +105,9 @@ export default {
         "gradient-teal": "linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--highlight)) 100%)",
         "gradient-teal-dark": "linear-gradient(135deg, hsl(var(--navy-deep)) 0%, hsl(var(--primary)) 100%)",
         "gradient-warm": "linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)",
+        "gradient-paper": "linear-gradient(180deg, hsl(var(--surface-warm)) 0%, hsl(var(--surface-cream)) 100%)",
+        "gradient-cream-stone": "linear-gradient(180deg, hsl(var(--surface-cream)) 0%, hsl(var(--surface-stone)) 100%)",
+        "gradient-stone-cream": "linear-gradient(180deg, hsl(var(--surface-stone)) 0%, hsl(var(--surface-cream)) 100%)",
       },
       keyframes: {
         "accordion-down": {
