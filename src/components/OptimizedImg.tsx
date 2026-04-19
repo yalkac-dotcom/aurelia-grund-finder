@@ -25,6 +25,23 @@ const OptimizedImg = ({
     if (imgRef.current?.complete) setLoaded(true);
   }, []);
 
+  // Priority images render immediately (no fade) so they can serve as LCP without delay.
+  if (priority) {
+    return (
+      <img
+        src={src}
+        srcSet={srcSet}
+        sizes={sizes}
+        alt={alt ?? ""}
+        loading="eager"
+        decoding="sync"
+        fetchPriority="high"
+        className={className}
+        {...props}
+      />
+    );
+  }
+
   return (
     <img
       ref={imgRef}
@@ -32,9 +49,9 @@ const OptimizedImg = ({
       srcSet={srcSet}
       sizes={sizes}
       alt={alt ?? ""}
-      loading={priority ? "eager" : "lazy"}
-      decoding={priority ? "sync" : "async"}
-      fetchPriority={priority ? "high" : "auto"}
+      loading="lazy"
+      decoding="async"
+      fetchPriority="auto"
       onLoad={() => setLoaded(true)}
       className={`${className ?? ""} transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
       {...props}
