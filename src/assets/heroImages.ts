@@ -1,10 +1,13 @@
 // Hero image imports with WebP srcSet variants
 // Each hero has 4 widths: 640, 1024, 1440, 1920
 
-import premium640 from "@/assets/hero-premium-640w.webp";
-import premium1024 from "@/assets/hero-premium-1024w.webp";
-import premium1440 from "@/assets/hero-premium-1440w.webp";
-import premium1920 from "@/assets/hero-premium-1920w.webp";
+// NOTE: hero-premium uses stable /public/heroes URLs (not Vite-imported) so the
+// <link rel="preload"> in index.html matches the same URL the <img> requests.
+// This is critical for LCP on the homepage.
+const premium640 = "/heroes/hero-premium-640w.webp";
+const premium1024 = "/heroes/hero-premium-1024w.webp";
+const premium1440 = "/heroes/hero-premium-1440w.webp";
+const premium1920 = "/heroes/hero-premium-1920w.webp";
 
 import building640 from "@/assets/hero-building-640w.webp";
 import building1024 from "@/assets/hero-building-1024w.webp";
