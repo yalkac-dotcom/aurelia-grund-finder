@@ -11,12 +11,8 @@ import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 
-// Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen → semantische 3D-Icons
-const segmentIcons = [icons3d.envelopeSeal, icons3d.houseTag, icons3d.puzzleCooperation];
-// Hold-Steps (5) — Erwerb, Strategie, Bestand, Sicherung, Fundament (3D-Icons)
+// Hold-Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
 const holdStepIcons = [icons3d.key, icons3d.compassLight, icons3d.building, icons3d.shieldLight, icons3d.foundationLight];
-// Principles (4) — 3D-Icons (Dialog, Fairness, Dokumentation, Orientierung)
-const principleIcons = [icons3d.dialogueLight, icons3d.scaleLight, icons3d.documentLight, icons3d.orientationLight];
 
 const HowItWorks = () => {
   const { t } = useLanguage();
