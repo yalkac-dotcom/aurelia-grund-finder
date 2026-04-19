@@ -32,6 +32,15 @@
     <meta property="og:site_name" content="Aurelia Grundbesitz" />
     <link rel="preload" href="/fonts/playfair-600.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- Preload hero image for LCP (homepage). Browser only fetches if URL matches the rendered <img>. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/hero-premium-1440w.webp"
+      imagesrcset="/src/assets/hero-premium-640w.webp 640w, /src/assets/hero-premium-1024w.webp 1024w, /src/assets/hero-premium-1440w.webp 1440w, /src/assets/hero-premium-1920w.webp 1920w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
     
     
     
