@@ -32,7 +32,7 @@ const PageHero = ({
     id="hero"
     className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px] bg-primary"
   >
-    <div className="absolute inset-0 overflow-hidden bg-primary">
+    <div className="absolute inset-0 overflow-hidden">
       <OptimizedImg
         src={image.src}
         srcSet={image.srcSet}
@@ -42,7 +42,7 @@ const PageHero = ({
         style={{ objectPosition: imagePosition }}
         priority
       />
-      {/* Lese-Schutz: links 85% Navy, rechts 30% — schützt Text, lässt Bild atmen */}
+      {/* Single read-protection gradient (merged from previous double layer) */}
       <div
         className="absolute inset-0"
         style={{
