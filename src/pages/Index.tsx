@@ -21,10 +21,10 @@ const HomePage = () => {
   const areaImages = cardImages.areas;
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
 
-  // ProofPoints (4 Versprechen, auf Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
+  // ProofPoints (4 Versprechen, auf Navy)
   const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
 
-  // Schritte (3) — Erstkontakt, Prüfung, Angebot (3D-Icons statt Fotos)
+  // Schritte (3) — editorial mit großen Numeralen
   const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract];
 
   return (
@@ -42,35 +42,58 @@ const HomePage = () => {
       />
 
       <div className="page-shell">
-        {/* DIE 3 BEREICHE */}
-        <section className="section-premium bg-gradient-warm pt-10 md:pt-16">
-          <div className="container-premium">
-            <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} />
-            <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
-              {t.home.areas.map((path, i) => (
-                <Reveal key={i} delay={i * 0.06}>
-                  <ProofCard
-                    image={areaImages[i % areaImages.length]}
-                    imageAlt={path.title}
-                    index={i}
-                    title={path.title}
-                    text={path.desc}
-                    cta={{ label: path.cta, to: areaLinks[i] }}
-                  />
-                </Reveal>
-              ))}
+        {/* DIE 3 BEREICHE — asymmetrisch (Eyebrow links, Karten rechts) auf cremiger Sand-Vignette */}
+        <section className="surface-cream-vignette py-20 md:py-28">
+          <div className="container-premium relative">
+            <div className="grid gap-10 md:gap-14 lg:grid-cols-12 items-start">
+              <Reveal>
+                <div className="lg:col-span-4 lg:sticky lg:top-28">
+                  <p className="mb-5 text-[0.66rem] font-semibold uppercase tracking-[0.22em] text-accent">
+                    <span className="inline-block h-px w-6 align-middle mr-2 bg-accent/70" />
+                    Drei Wege
+                  </p>
+                  <h2 className="font-heading font-semibold leading-[1.15] text-balance text-[1.7rem] md:text-[2.3rem] tracking-tight text-primary mb-5">
+                    {t.home.areasTitle}
+                  </h2>
+                  <p className="text-[0.95rem] leading-[1.85] text-muted-foreground max-w-md">
+                    {t.home.areasIntro}
+                  </p>
+                </div>
+              </Reveal>
+              <div className="lg:col-span-8 grid gap-6 md:gap-7 sm:grid-cols-2">
+                {t.home.areas.map((path, i) => (
+                  <Reveal key={i} delay={i * 0.06}>
+                    <div className={i === 2 ? "sm:col-span-2 sm:max-w-md sm:mx-auto" : ""}>
+                      <ProofCard
+                        image={areaImages[i % areaImages.length]}
+                        imageAlt={path.title}
+                        index={i}
+                        title={path.title}
+                        text={path.desc}
+                        cta={{ label: path.cta, to: areaLinks[i] }}
+                        compact
+                      />
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
-        {/* TRUST */}
+        {/* TRUST – Navy mit warmer Inszenierung */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
-            <SectionHeader title={t.home.trustTitle} intro={t.home.trustText} tone="dark" />
+            <SectionHeader
+              eyebrow="Vertrauen"
+              title={t.home.trustTitle}
+              intro={t.home.trustText}
+              tone="dark"
+            />
 
             {t.home.proofPoints && t.home.proofPoints.length > 0 && (
               <Reveal delay={0.1}>
-                <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+                <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-10">
                   {t.home.proofPoints.map((point, i) => (
                     <ProofCard
                       key={i}
@@ -86,8 +109,8 @@ const HomePage = () => {
             )}
 
             <Reveal delay={0.15}>
-              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[260px_1fr] gap-0 overflow-hidden">
-                <div className="relative h-48 md:h-auto min-h-[200px] overflow-hidden">
+              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[280px_1fr] gap-0 overflow-hidden">
+                <div className="relative h-48 md:h-auto min-h-[220px] overflow-hidden">
                   <img
                     src={editorial.notaryQuiet}
                     alt="Ruhige Bibliothek mit Messinglampe und Marmoroberfläche – sinnbildlich für vertrauliche, gewissenhafte Bearbeitung"
@@ -98,11 +121,14 @@ const HomePage = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[hsl(212_52%_12%_/_0.55)]" aria-hidden="true" />
                 </div>
-                <div className="p-8 md:p-10">
-                  <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
+                <div className="p-8 md:p-12">
+                  <p className="mb-3 text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-accent">
+                    Unser Anspruch
+                  </p>
+                  <h3 className="mb-4 text-[1.15rem] md:text-[1.25rem] font-heading font-semibold text-white leading-snug">
                     {t.home.trustClaimTitle}
                   </h3>
-                  <p className="text-[0.93rem] leading-[1.85] text-white/70">
+                  <p className="text-[0.93rem] leading-[1.85] text-white/72">
                     {t.home.trustClaimText}
                   </p>
                 </div>
@@ -111,15 +137,27 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* 3-SCHRITT-TEASER */}
+        {/* ZÄSUR — schmales Papier-Band als typografische Pause */}
+        <section className="editorial-quote-band">
+          <div className="container-premium">
+            <Reveal>
+              <p className="mx-auto max-w-3xl text-center font-heading italic text-primary/80 text-[1.15rem] md:text-[1.4rem] leading-[1.55] tracking-tight">
+                „Diskretion ist keine Geste — sie ist die Grundlage jeder ernsthaften
+                Zusammenarbeit."
+              </p>
+              <div className="mx-auto mt-5 h-px w-10 bg-accent/60" />
+            </Reveal>
+          </div>
+        </section>
+
+        {/* 3-SCHRITT-TEASER — auf warmer Cream-Fläche */}
         <section
           id="ablauf"
-          className="section-premium scroll-mt-24"
-          style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
+          className="section-premium scroll-mt-24 surface-paper"
         >
           <div className="container-premium">
-            <SectionHeader title={t.home.stepsTitle} />
-            <div className="grid gap-6 md:gap-10 sm:grid-cols-3">
+            <SectionHeader eyebrow="Ablauf" title={t.home.stepsTitle} />
+            <div className="grid gap-10 md:gap-12 sm:grid-cols-3">
               {t.home.steps.map((item, i) => (
                 <ProcessStep
                   key={i}
@@ -134,7 +172,7 @@ const HomePage = () => {
             </div>
 
             <Reveal delay={0.3}>
-              <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
+              <p className="mt-12 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
                 {t.home.stepsNote}
               </p>
             </Reveal>
@@ -146,22 +184,23 @@ const HomePage = () => {
                   className="inline-flex items-center gap-2 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-primary hover:text-primary/80 transition-colors"
                 >
                   {t.home.stepsLink}
-                  <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
+                  <ArrowRight size={13} className="text-accent" />
                 </Link>
               </div>
             </Reveal>
           </div>
         </section>
 
-        {/* EINWANDBEHANDLUNG */}
+        {/* EINWANDBEHANDLUNG — kompakter, charaktervoll */}
         {t.home.objections && t.home.objections.length > 0 && (
-          <section className="section-premium bg-gradient-warm">
+          <section className="py-20 md:py-24" style={{ background: "hsl(var(--sand))" }}>
             <div className="container-premium">
               <SectionHeader
+                eyebrow="Häufige Bedenken"
                 title={t.home.objectionsTitle ?? ""}
                 intro={t.home.objectionsIntro}
               />
-              <div className="grid gap-5 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+              <div className="grid gap-6 md:gap-7 md:grid-cols-3 max-w-5xl mx-auto">
                 {t.home.objections.map((item, i) => (
                   <Reveal key={i} delay={i * 0.08}>
                     <ObjectionCard q={item.q} a={item.a} />
@@ -173,8 +212,8 @@ const HomePage = () => {
         )}
 
         {/* Hinweis auf zentrale FAQ */}
-        <section className="bg-gradient-warm">
-          <div className="container-premium py-10 md:py-12 text-center">
+        <section style={{ background: "hsl(var(--paper))" }}>
+          <div className="container-premium py-12 md:py-14 text-center">
             <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
               Weitere Fragen beantworten wir in unseren{" "}
               <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
