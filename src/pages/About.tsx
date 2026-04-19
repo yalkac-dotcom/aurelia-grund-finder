@@ -56,8 +56,7 @@ const About = () => {
     </section>
   );
 
-  // Icons for the 4 values cards (mapped semantically)
-  const valueIcons = [Lock, Handshake, Zap, Scale];
+  // Icons removed for editorial calm — values are purely typographic now.
 
   // Visual motifs for the 3 typology cards (uses existing editorial assets)
   const caseImages = [
