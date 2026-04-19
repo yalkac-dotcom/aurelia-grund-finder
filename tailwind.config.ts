@@ -83,6 +83,12 @@ export default {
           800: "hsl(207 38% 24%)",
           900: "hsl(207 38% 18%)",
         },
+        sand: {
+          DEFAULT: "hsl(var(--sand))",
+          deep: "hsl(var(--sand-deep))",
+        },
+        cream: "hsl(var(--cream))",
+        paper: "hsl(var(--paper))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
