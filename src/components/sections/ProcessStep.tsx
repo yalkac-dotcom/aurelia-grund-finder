@@ -11,18 +11,31 @@ interface ProcessStepProps {
   /** Optional thematic photo shown as full-width header (16:10). Replaces the icon visual. */
   image?: string;
   imageAlt?: string;
+  /** Light tone for use on dark/navy sections. */
+  tone?: "light" | "dark";
 }
 
-const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, imageAlt }: ProcessStepProps) => {
+const ProcessStep = ({
+  index,
+  total,
+  title,
+  desc,
+  iconImage,
+  iconAlt,
+  image,
+  imageAlt,
+  tone = "light",
+}: ProcessStepProps) => {
   const id = `step-${index}-title`;
   const numeral = String(index + 1).padStart(2, "0");
+  const isDark = tone === "dark";
 
   return (
     <Reveal delay={index * 0.06}>
       <div className="relative h-full">
-        <article className="proof-card group h-full overflow-hidden" aria-labelledby={id}>
+        <article className="group relative h-full" aria-labelledby={id}>
           {image ? (
-            <div className="relative w-full overflow-hidden bg-primary/5" style={{ aspectRatio: "16 / 10" }}>
+            <div className="relative w-full overflow-hidden rounded-sm" style={{ aspectRatio: "16 / 10" }}>
               <img
                 src={image}
                 alt={imageAlt ?? iconAlt ?? ""}
@@ -35,38 +48,55 @@ const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, ima
               />
             </div>
           ) : (
-            <div className="proof-card__visual">
-              {iconImage ? (
+            <div className="flex items-start justify-between gap-3 mb-4">
+              <span
+                className={`editorial-numeral ${isDark ? "editorial-numeral--dark" : ""}`}
+                aria-hidden="true"
+              >
+                {numeral}
+              </span>
+              {iconImage && (
                 <span
-                  className="proof-card__icon proof-card__icon--image"
+                  className="inline-flex h-12 w-12 items-center justify-center"
                   aria-hidden={iconAlt ? undefined : "true"}
-                  style={{ ["--icon-float-delay" as string]: `${(index % 6) * 0.45}s` }}
                 >
                   <img
                     src={iconImage}
                     alt={iconAlt ?? ""}
                     loading="lazy"
-                    width={128}
-                    height={128}
-                    className="h-full w-full object-contain drop-shadow-[0_6px_14px_rgba(0,0,0,0.35)] transition-transform duration-500 ease-out group-hover:-translate-y-0.5"
+                    width={96}
+                    height={96}
+                    className="h-full w-full object-contain opacity-90 transition-transform duration-500 ease-out group-hover:-translate-y-0.5"
                   />
                 </span>
-              ) : null}
-              <span className="proof-card__numeral" aria-hidden="true">
-                {numeral}
-              </span>
+              )}
             </div>
           )}
-          <div className="proof-card__body">
-            <h3 id={id} className="text-[0.95rem] font-heading font-semibold text-primary leading-snug">
+          <div
+            className={`pt-4 ${
+              isDark ? "border-t border-white/15" : "border-t border-accent/30"
+            }`}
+          >
+            <h3
+              id={id}
+              className={`text-[1rem] md:text-[1.05rem] font-heading font-semibold leading-snug tracking-tight ${
+                isDark ? "text-white" : "text-primary"
+              }`}
+            >
               {title}
             </h3>
-            <p className="mt-1.5 text-[0.82rem] leading-[1.7] text-muted-foreground">{desc}</p>
+            <p
+              className={`mt-2.5 text-[0.86rem] leading-[1.8] ${
+                isDark ? "text-white/70" : "text-muted-foreground"
+              }`}
+            >
+              {desc}
+            </p>
           </div>
         </article>
         {index < total - 1 && (
-          <div className="hidden lg:flex absolute top-1/2 -right-5 w-5 h-5 -translate-y-1/2 items-center justify-center">
-            <ArrowRight className="text-accent" size={18} aria-hidden="true" />
+          <div className="hidden lg:flex absolute top-7 -right-5 w-5 h-5 items-center justify-center">
+            <ArrowRight className="text-accent/60" size={16} aria-hidden="true" />
           </div>
         )}
       </div>
