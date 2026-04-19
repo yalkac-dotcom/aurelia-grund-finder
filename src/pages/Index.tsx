@@ -152,17 +152,20 @@ const HomePage = () => {
           <div className="container-premium">
             <SectionHeader title={t.home.stepsTitle} />
             <div className="grid gap-6 md:gap-10 sm:grid-cols-3">
-              {t.home.steps.map((item, i) => (
-                <ProcessStep
-                  key={i}
-                  index={i}
-                  total={t.home.steps.length}
-                  title={item.title}
-                  desc={item.desc}
-                  iconImage={stepIcons[i % stepIcons.length]}
-                  iconAlt={item.title}
-                />
-              ))}
+              {t.home.steps.map((item, i) => {
+                const key = stepKeys[i];
+                return (
+                  <ProcessStep
+                    key={key}
+                    index={i}
+                    total={t.home.steps.length}
+                    title={item.title}
+                    desc={item.desc}
+                    iconImage={stepIconsByKey[key]}
+                    iconAlt={item.title}
+                  />
+                );
+              })}
             </div>
 
             <Reveal delay={0.3}>
