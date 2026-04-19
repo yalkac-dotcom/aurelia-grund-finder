@@ -33,7 +33,7 @@ const en: Translations = {
     subline: "Discreet · For our own account · Binding",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Owners in Distress", path: "/fuer-eigentumer-in-not" },
+      { label: "For Owners", path: "/fuer-eigentumer-in-not" },
       { label: "For Buyers", path: "/fuer-kaeufer" },
       { label: "For Partners", path: "/fuer-geschaeftspartner" },
       { label: "Portfolio", path: "/portfolio" },
