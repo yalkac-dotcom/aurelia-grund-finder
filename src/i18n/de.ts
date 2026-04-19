@@ -10,7 +10,7 @@ const de: Translations = {
     glossar: "Glossar",
     contact: "Kontakt",
     workApproach: "Arbeitsweise",
-    ownerInTrouble: "Eigentümer in Not",
+    ownerInTrouble: "Für Eigentümer",
     buyers: "Für Käufer",
     partners: "Für Geschäftspartner",
     howItWorks: "Wie wir arbeiten",
@@ -33,7 +33,7 @@ const de: Translations = {
     subline: "Diskret · Auf eigene Rechnung · Verbindlich",
     navItems: [
       { label: "Startseite", path: "/" },
-      { label: "Eigentümer in Schwierigkeiten", path: "/fuer-eigentumer-in-not" },
+      { label: "Für Eigentümer", path: "/fuer-eigentumer-in-not" },
       { label: "Für Käufer", path: "/fuer-kaeufer" },
       { label: "Für Geschäftspartner", path: "/fuer-geschaeftspartner" },
       { label: "Portfolio", path: "/portfolio" },

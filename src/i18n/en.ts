@@ -10,7 +10,7 @@ const en: Translations = {
     glossar: "Glossary",
     contact: "Contact",
     workApproach: "How We Work",
-    ownerInTrouble: "Owners in Distress",
+    ownerInTrouble: "For Owners",
     buyers: "For Buyers",
     partners: "For Partners",
     howItWorks: "How We Work",
@@ -33,7 +33,7 @@ const en: Translations = {
     subline: "Discreet · For our own account · Binding",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Owners in Distress", path: "/fuer-eigentumer-in-not" },
+      { label: "For Owners", path: "/fuer-eigentumer-in-not" },
       { label: "For Buyers", path: "/fuer-kaeufer" },
       { label: "For Partners", path: "/fuer-geschaeftspartner" },
       { label: "Portfolio", path: "/portfolio" },
