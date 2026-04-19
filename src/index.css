@@ -108,8 +108,17 @@
     --steel: 207 38% 47%;
     --steel-light: 207 42% 62%;
 
+    /* Editorial surface system — warm, gestaffelt, ruhig */
     --surface-warm: 48 19% 96%;
-    --surface-cream: 48 19% 96%;
+    --surface-cream: 42 28% 95%;     /* warmes Papier, etwas wärmer als bg */
+    --surface-stone: 38 14% 91%;     /* ruhiger Stein/Sand für Mid-Layer */
+    --surface-sand:  36 22% 88%;     /* tiefere Sandfläche für Akzentmodule */
+    --surface-ink:   218 38% 16%;    /* tiefes Navy für editoriale Inseln */
+
+    /* Hairlines — präziser als border */
+    --hairline:        38 14% 78%;
+    --hairline-soft:   38 14% 84%;
+    --hairline-on-dark: 0 0% 100%;
 
     --sidebar-background: 48 19% 96%;
     --sidebar-foreground: 218 30% 22%;
