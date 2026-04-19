@@ -6,7 +6,6 @@ import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
 import ObjectionCard from "@/components/sections/ObjectionCard";
-import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
@@ -149,14 +148,16 @@ const ForBuyers = () => {
           </div>
         </section>
 
-        {/* FAQ */}
-        <section
-          className="section-premium"
-          style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
-        >
-          <div className="container-premium max-w-3xl">
-            <SectionHeader title={b.faqTitle} intro={b.faqIntro} />
-            <FaqBlock items={b.faqItems} />
+        {/* Hinweis auf zentrale FAQ */}
+        <section className="bg-gradient-warm">
+          <div className="container-premium py-10 md:py-12 text-center">
+            <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
+              Weitere Fragen beantworten wir in unseren{" "}
+              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
+                FAQ
+              </Link>
+              .
+            </p>
           </div>
         </section>
 

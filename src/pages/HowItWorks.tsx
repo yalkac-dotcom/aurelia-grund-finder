@@ -5,8 +5,8 @@ import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 
 import ProcessStep from "@/components/sections/ProcessStep";
-import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
+import { Link } from "react-router-dom";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
@@ -115,14 +115,16 @@ const HowItWorks = () => {
           </div>
         </section>
 
-        {/* FAQ */}
-        <section
-          className="section-premium"
-          style={{ background: "linear-gradient(180deg, hsl(var(--secondary)) 0%, hsl(var(--background)) 100%)" }}
-        >
-          <div className="container-premium max-w-3xl">
-            <SectionHeader title={w.faqTitle} intro={w.faqIntro} />
-            <FaqBlock items={w.faqItems} />
+        {/* Hinweis auf zentrale FAQ */}
+        <section className="bg-gradient-warm">
+          <div className="container-premium py-10 md:py-12 text-center">
+            <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
+              Weitere Fragen beantworten wir in unseren{" "}
+              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
+                FAQ
+              </Link>
+              .
+            </p>
           </div>
         </section>
 
