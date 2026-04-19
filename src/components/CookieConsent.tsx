@@ -58,10 +58,13 @@ const CookieConsent = () => {
     "Hilft uns, die Website anonym zu verbessern. Wird erst nach Ihrer Zustimmung geladen.";
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-end justify-center" role="dialog" aria-modal="true" aria-labelledby="cookie-consent-title">
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" onClick={(e) => e.stopPropagation()} />
-
-      <div className="relative w-full max-w-xl mx-4 mb-6 bg-background border border-border/40 shadow-[0_16px_48px_-12px_rgba(0,0,0,0.25)] rounded-sm p-6 sm:p-7">
+    <div
+      className="fixed inset-x-0 bottom-0 z-[9999] flex justify-center pointer-events-none"
+      role="dialog"
+      aria-modal="false"
+      aria-labelledby="cookie-consent-title"
+    >
+      <div className="pointer-events-auto relative w-full max-w-xl mx-4 mb-4 bg-background border border-border shadow-[0_16px_48px_-12px_rgba(0,0,0,0.25)] rounded-sm p-5 sm:p-6">
         <p id="cookie-consent-title" className="text-foreground text-[0.88rem] font-heading font-semibold mb-1.5">
           {t.common.cookieTitle}
         </p>
@@ -69,13 +72,12 @@ const CookieConsent = () => {
           {t.common.cookieText}
         </p>
 
-        {/* Granular opt-in */}
-        <label className="flex items-start gap-3 mb-5 cursor-pointer rounded-sm border border-border/40 p-3 hover:bg-muted/30 transition-colors">
+        <label className="flex items-start gap-3 mb-4 cursor-pointer rounded-sm border border-border p-3 hover:bg-muted/30 transition-colors">
           <input
             type="checkbox"
             checked={analyticsOptIn}
             onChange={(e) => setAnalyticsOptIn(e.target.checked)}
-            className="mt-0.5 h-4 w-4 accent-teal-700"
+            className="mt-0.5 h-4 w-4 accent-primary"
             aria-describedby="analytics-hint"
           />
           <span className="flex-1">
