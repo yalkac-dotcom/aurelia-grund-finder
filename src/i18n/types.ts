@@ -384,6 +384,19 @@ export interface Translations {
       items: { label: string; title: string; text: string; results: string[] }[];
     };
     closing: { headline: string; body: string; note: string; cta: string };
+    // New sections (qualitative, BaFin-konform)
+    metricsBar?: { items: { value: string; label: string }[] };
+    team?: { headline: string; body: string; imageAlt: string };
+    visionMission?: {
+      visionTitle: string;
+      visionText: string;
+      missionTitle: string;
+      missionText: string;
+    };
+    values?: {
+      headline: string;
+      items: { title: string; text: string }[];
+    };
   };
   services: {
     heroTitle: string;
