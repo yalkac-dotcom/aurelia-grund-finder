@@ -3,22 +3,18 @@ import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
-import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
-import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
+import { Phone, MessageSquare, Compass, Scale, FileText, Handshake } from "lucide-react";
 
 // Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht (Fotos beibehalten)
 const situationImages = cardImages.ownerSituations;
-// Proof (auf Navy) — Lucide-Icons im ProofCard-Stil (Navy-Sektion bleibt iconisch)
-const proofIcons = [Lock, Scale, FileText, ShieldCheck];
-// Steps (5) — Erstkontakt, Einordnung, Bewertung, Angebot, Abwicklung (3D-Icons)
-const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
+// Steps (5) — kleine, zurückhaltende Lucide-Icons für die Prozess-Schritte
+const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
