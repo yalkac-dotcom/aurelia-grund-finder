@@ -30,15 +30,14 @@
     <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:locale:alternate" content="tr_TR" />
     <meta property="og:site_name" content="Aurelia Grundbesitz" />
-    <link rel="preload" href="/fonts/playfair-600.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
-    <!-- Preload hero image for LCP (homepage). Stable /heroes/ path so it matches in dev+prod. -->
+    <!-- Preload hero image for LCP (homepage). Stable /heroes/ path so it matches in dev+prod.
+         No font preloads here: fonts use font-display: swap and would steal bandwidth from the LCP image. -->
     <link
       rel="preload"
       as="image"
-      href="/heroes/hero-premium-1440w.webp"
+      href="/heroes/hero-premium-1024w.webp"
       imagesrcset="/heroes/hero-premium-640w.webp 640w, /heroes/hero-premium-1024w.webp 1024w, /heroes/hero-premium-1440w.webp 1440w, /heroes/hero-premium-1920w.webp 1920w"
-      imagesizes="100vw"
+      imagesizes="(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px"
       fetchpriority="high"
     />
     
