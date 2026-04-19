@@ -100,16 +100,19 @@ const HomePage = () => {
             {t.home.proofPoints && t.home.proofPoints.length > 0 && (
               <Reveal delay={0.1}>
                 <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
-                  {t.home.proofPoints.map((point, i) => (
-                    <ProofCard
-                      key={i}
-                      iconImage={proofIconImages[i % proofIconImages.length]}
-                      iconAlt={point.title}
-                      index={i}
-                      title={point.title}
-                      text={point.text}
-                    />
-                  ))}
+                  {t.home.proofPoints.map((point, i) => {
+                    const key = proofKeys[i];
+                    return (
+                      <ProofCard
+                        key={key}
+                        iconImage={proofIcons[key]}
+                        iconAlt={point.title}
+                        index={i}
+                        title={point.title}
+                        text={point.text}
+                      />
+                    );
+                  })}
                 </div>
               </Reveal>
             )}
