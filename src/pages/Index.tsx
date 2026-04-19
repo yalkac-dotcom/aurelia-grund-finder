@@ -14,18 +14,43 @@ import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
 
+// Robuste, semantische Zuordnung statt Index-Mapping.
+// Reihenfolge in i18n bleibt führend; jeder Eintrag bekommt zusätzlich einen
+// stabilen Schlüssel und ein dediziertes Asset – Sprach-/Reihenfolgewechsel
+// können die Bedeutung damit nicht mehr kippen.
+
+type AreaKey = "notlagen" | "erbe" | "direktankauf";
+type ProofKey = "diskretion" | "substanz" | "langfristigkeit" | "klarheit";
+type StepKey = "kontakt" | "pruefung" | "angebot";
+
 const HomePage = () => {
   const { t } = useLanguage();
 
-  // Areas (3 Wege) — Notlagen, Erbe/Konflikt, Direktankauf
-  const areaImages = cardImages.areas;
-  const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
+  // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
+  const areaKeys: AreaKey[] = ["notlagen", "erbe", "direktankauf"];
+  const areaAssets: Record<AreaKey, { image: string; link: string }> = {
+    notlagen:      { image: cardImages.areas[0], link: "/fuer-eigentumer-in-not" },
+    erbe:          { image: cardImages.areas[1], link: "/kontakt" },
+    direktankauf:  { image: cardImages.areas[2], link: "/fuer-kaeufer" },
+  };
 
-  // ProofPoints (4 Versprechen, auf Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
-  const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
+  // 4 Versprechen – stabile Schlüssel, Icon pro Schlüssel (Light-Familie für Navy-Sektion)
+  const proofKeys: ProofKey[] = ["diskretion", "substanz", "langfristigkeit", "klarheit"];
+  const proofIcons: Record<ProofKey, string> = {
+    diskretion:      icons3d.shieldLight,      // Schutz / Vertraulichkeit
+    substanz:        icons3d.foundationLight,  // Fundament / Substanz
+    langfristigkeit: icons3d.horizonLight,     // Horizont / Langfristigkeit
+    klarheit:        icons3d.checkLight,       // Klare Entscheidung
+  };
 
-  // Schritte (3) — Erstkontakt, Prüfung, Angebot (3D-Icons statt Fotos)
-  const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract];
+  // 3 Schritte – stabile Schlüssel; einheitliche Stilfamilie (Standard, nicht-light),
+  // weil keine Light-Variante für magnifier/contract existiert.
+  const stepKeys: StepKey[] = ["kontakt", "pruefung", "angebot"];
+  const stepIconsByKey: Record<StepKey, string> = {
+    kontakt:  icons3d.dialogue,   // Erstkontakt / Gespräch
+    pruefung: icons3d.magnifier,  // Prüfung
+    angebot:  icons3d.contract,   // Angebot / Beurkundung
+  };
 
   return (
     <Layout>
@@ -47,18 +72,22 @@ const HomePage = () => {
           <div className="container-premium">
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
-              {t.home.areas.map((path, i) => (
-                <Reveal key={i} delay={i * 0.06}>
-                  <ProofCard
-                    image={areaImages[i % areaImages.length]}
-                    imageAlt={path.title}
-                    index={i}
-                    title={path.title}
-                    text={path.desc}
-                    cta={{ label: path.cta, to: areaLinks[i] }}
-                  />
-                </Reveal>
-              ))}
+              {t.home.areas.map((path, i) => {
+                const key = areaKeys[i];
+                const asset = areaAssets[key];
+                return (
+                  <Reveal key={key} delay={i * 0.06}>
+                    <ProofCard
+                      image={asset.image}
+                      imageAlt={path.title}
+                      index={i}
+                      title={path.title}
+                      text={path.desc}
+                      cta={{ label: path.cta, to: asset.link }}
+                    />
+                  </Reveal>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -71,16 +100,19 @@ const HomePage = () => {
             {t.home.proofPoints && t.home.proofPoints.length > 0 && (
               <Reveal delay={0.1}>
                 <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
-                  {t.home.proofPoints.map((point, i) => (
-                    <ProofCard
-                      key={i}
-                      iconImage={proofIconImages[i % proofIconImages.length]}
-                      iconAlt={point.title}
-                      index={i}
-                      title={point.title}
-                      text={point.text}
-                    />
-                  ))}
+                  {t.home.proofPoints.map((point, i) => {
+                    const key = proofKeys[i];
+                    return (
+                      <ProofCard
+                        key={key}
+                        iconImage={proofIcons[key]}
+                        iconAlt={point.title}
+                        index={i}
+                        title={point.title}
+                        text={point.text}
+                      />
+                    );
+                  })}
                 </div>
               </Reveal>
             )}
@@ -120,17 +152,20 @@ const HomePage = () => {
           <div className="container-premium">
             <SectionHeader title={t.home.stepsTitle} />
             <div className="grid gap-6 md:gap-10 sm:grid-cols-3">
-              {t.home.steps.map((item, i) => (
-                <ProcessStep
-                  key={i}
-                  index={i}
-                  total={t.home.steps.length}
-                  title={item.title}
-                  desc={item.desc}
-                  iconImage={stepIcons[i % stepIcons.length]}
-                  iconAlt={item.title}
-                />
-              ))}
+              {t.home.steps.map((item, i) => {
+                const key = stepKeys[i];
+                return (
+                  <ProcessStep
+                    key={key}
+                    index={i}
+                    total={t.home.steps.length}
+                    title={item.title}
+                    desc={item.desc}
+                    iconImage={stepIconsByKey[key]}
+                    iconAlt={item.title}
+                  />
+                );
+              })}
             </div>
 
             <Reveal delay={0.3}>
