@@ -206,40 +206,34 @@ const About = () => {
           </section>
         )}
 
-        {/* SEKTION 4 – Unsere Werte (4 Icon-Karten, Off-White) */}
+        {/* SEKTION 4 – Unsere Werte (rein typografisch, editorial) */}
         {a.values && (
           <section className="py-20 md:py-28 bg-secondary/40">
             <div className="container-premium">
               <Reveal>
-                <div className="text-center mb-12 md:mb-14">
+                <div className="text-center mb-14 md:mb-16">
                   <div className="mx-auto mb-4 h-px w-8 bg-accent" aria-hidden="true" />
                   <h2 className="font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
                     {a.values.headline}
                   </h2>
                 </div>
               </Reveal>
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 max-w-6xl mx-auto">
-                {a.values.items.map((item, idx) => {
-                  const Icon = valueIcons[idx] ?? Lock;
-                  return (
-                    <Reveal key={idx} delay={idx * 0.05}>
-                      <div className="h-full p-6 md:p-7 bg-background border border-border/40 rounded-sm text-center">
-                        <div
-                          className="mx-auto mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full"
-                          style={{ backgroundColor: "hsl(var(--highlight))" }}
-                        >
-                          <Icon size={20} strokeWidth={1.75} className="text-white" />
-                        </div>
-                        <h3 className="mb-3 font-heading font-semibold text-accent text-[1rem] md:text-[1.1rem] leading-tight">
-                          {item.title}
-                        </h3>
-                        <p className="text-[13px] md:text-[14px] leading-[1.75] text-foreground/80">
-                          {item.text}
-                        </p>
-                      </div>
-                    </Reveal>
-                  );
-                })}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 md:gap-x-16 gap-y-10 md:gap-y-12 max-w-4xl mx-auto">
+                {a.values.items.map((item, idx) => (
+                  <Reveal key={idx} delay={idx * 0.05}>
+                    <div className="border-l border-accent/40 pl-6">
+                      <p className="mb-2 text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.18em] text-accent">
+                        {String(idx + 1).padStart(2, "0")}
+                      </p>
+                      <h3 className="mb-3 font-heading font-semibold text-primary text-[1.05rem] md:text-[1.2rem] leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-[14px] md:text-[15px] leading-[1.8] text-foreground/75">
+                        {item.text}
+                      </p>
+                    </div>
+                  </Reveal>
+                ))}
               </div>
             </div>
           </section>
