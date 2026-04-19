@@ -68,23 +68,29 @@
        Steel  #4A7FA5 → 207 38% 47%
        Off-W  #F7F6F2 → 48 19% 96%
     */
-    --background: 48 19% 96%;
-    --foreground: 218 46% 14%;
+    --background: 38 28% 95%;
+    --foreground: 218 46% 13%;
 
-    --card: 48 19% 96%;
+    --card: 40 30% 97%;
     --card-foreground: 218 46% 14%;
 
-    --popover: 0 0% 100%;
+    --popover: 40 30% 98%;
     --popover-foreground: 218 46% 14%;
 
     --primary: 218 46% 20%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 48 19% 93%;
+    --secondary: 36 24% 91%;
     --secondary-foreground: 218 46% 18%;
 
-    --muted: 48 14% 91%;
-    --muted-foreground: 218 18% 36%;
+    --muted: 36 18% 88%;
+    --muted-foreground: 218 16% 34%;
+
+    /* Wärmere Sand-/Creme-Layer für editoriale Tiefenstaffelung */
+    --sand: 34 32% 90%;
+    --sand-deep: 32 28% 84%;
+    --cream: 42 38% 96%;
+    --paper: 38 30% 93%;
 
     --accent: 43 56% 54%;
     --accent-foreground: 218 46% 14%;
@@ -108,8 +114,8 @@
     --steel: 207 38% 47%;
     --steel-light: 207 42% 62%;
 
-    --surface-warm: 48 19% 96%;
-    --surface-cream: 48 19% 96%;
+    --surface-warm: 38 28% 95%;
+    --surface-cream: 42 38% 96%;
 
     --sidebar-background: 48 19% 96%;
     --sidebar-foreground: 218 30% 22%;
