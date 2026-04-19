@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/i18n/LanguageContext";
+import AnalyticsTracker from "./components/AnalyticsTracker";
 import Index from "./pages/Index";
 import ForOwnerInTrouble from "./pages/ForOwnerInTrouble";
 import ForBuyers from "./pages/ForBuyers";
@@ -37,6 +38,7 @@ const App = () => (
       <Toaster />
       <LanguageProvider>
         <BrowserRouter>
+          <AnalyticsTracker />
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
               <Route path="/" element={<Index />} />

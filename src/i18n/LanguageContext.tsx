@@ -31,6 +31,12 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     setLang(lang);
     localStorage.setItem("aurelia-lang", lang);
     document.documentElement.lang = lang;
+    // Fire analytics event (no-op if no consent / not loaded)
+    try {
+      if (typeof window !== "undefined" && typeof window.gtag === "function") {
+        window.gtag("event", "language_change", { language: lang });
+      }
+    } catch {}
   }, []);
 
   // Sync OG/Twitter meta tags with current language
