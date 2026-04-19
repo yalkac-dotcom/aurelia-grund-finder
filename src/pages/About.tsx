@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import SectionHeader from "@/components/sections/SectionHeader";
+import EditorialPoint from "@/components/sections/EditorialPoint";
+import FinalCta from "@/components/sections/FinalCta";
+import FaqHint from "@/components/sections/FaqHint";
+import OptimizedImg from "@/components/OptimizedImg";
 import { editorial } from "@/assets/editorial";
-import { ArrowRight, Phone, Compass, Target } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const About = () => {
@@ -15,68 +18,11 @@ const About = () => {
     document.title = `${a.hero.title} – Aurelia Grundbesitz GmbH`;
   }, [a.hero.title]);
 
-  // Editorial text section (used for the existing narrative blocks)
-  const TextBlock = ({
-    headline,
-    children,
-    tone = "light",
-    image,
-    imageAlt,
-  }: {
-    headline: string;
-    children: React.ReactNode;
-    tone?: "light" | "muted";
-    image?: string;
-    imageAlt?: string;
-  }) => (
-    <section className={`py-20 md:py-28 ${tone === "muted" ? "bg-secondary/40" : "bg-background"}`}>
-      <div className="container-premium">
-        <Reveal>
-          <div className="max-w-2xl mx-auto">
-            {image && (
-              <div className="mb-8 overflow-hidden rounded-sm border border-border/40">
-                <img
-                  src={image}
-                  alt={imageAlt ?? ""}
-                  loading="lazy"
-                  className="block w-full h-auto aspect-[21/9] object-cover"
-                />
-              </div>
-            )}
-            <div className="mb-4 h-px w-8 bg-accent" aria-hidden="true" />
-            <h2 className="mb-6 font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
-              {headline}
-            </h2>
-            <div className="space-y-5 text-[15px] md:text-[16px] leading-[1.85] text-foreground/80">
-              {children}
-            </div>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-
-  // Icons removed for editorial calm — values are purely typographic now.
-
-  // Visual motifs for the 3 typology cards (themed Unsplash photography, no persons)
-  const caseImages = [
-    {
-      src: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
-      alt: "Zwangsversteigerungsverfahren",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=800&q=80",
-      alt: "Erbschaftsdokumente",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
-      alt: "Direktankauf Immobilie",
-    },
-  ];
-
   return (
     <Layout>
-      {/* HERO – ruhig, ohne CTA-Stack */}
+      {/* ─────────────────────────────────────────────────────────────
+          HERO — ruhig, ohne CTA-Stack
+          ─────────────────────────────────────────────────────────── */}
       <section
         id="hero"
         className="relative flex h-[58svh] min-h-[400px] items-center md:h-[64vh] md:min-h-[460px] bg-primary"
@@ -112,133 +58,56 @@ const About = () => {
         </div>
       </section>
 
-      {/* SEKTION 1 – Qualitative Kennzahlen-Leiste (Navy, Gold-Akzente) */}
-      {a.metricsBar && (
-        <section className="bg-primary py-14 md:py-16 border-t border-accent/20">
+      <div className="page-shell">
+        {/* ═══════════════════════════════════════════════════════════
+            1) UNTERNEHMENSPROFIL — editorialer Split (Bild + Text)
+            ─────────────────────────────────────────────────────────── */}
+        <section className="surface-paper section-y-lux">
           <div className="container-premium">
-            <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
-              {a.metricsBar.items.map((item, idx) => (
-                <Reveal key={idx} delay={idx * 0.05}>
-                  <div className="text-center px-4 py-6 md:py-2">
-                    <p className="font-heading font-medium text-accent text-[0.95rem] md:text-[1.05rem] leading-tight tracking-wide">
-                      {item.value}
-                    </p>
-                    <div className="mx-auto my-3 h-px w-5 bg-accent/50" aria-hidden="true" />
-                    <p className="text-[11px] md:text-[12px] leading-[1.6] text-white/65 uppercase tracking-[0.12em]">
-                      {item.label}
-                    </p>
+            <div className="grid gap-12 md:gap-16 lg:gap-20 md:grid-cols-12 items-center">
+              <Reveal>
+                <div className="md:col-span-5">
+                  <div className="overflow-hidden">
+                    <OptimizedImg
+                      src={editorial.caseReviewDesk}
+                      alt="Ruhiger Arbeitsplatz mit geordneten Unterlagen"
+                      className="block w-full h-auto object-cover"
+                      style={{ aspectRatio: "4 / 5" }}
+                    />
                   </div>
-                </Reveal>
-              ))}
+                </div>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <div className="md:col-span-7">
+                  <p className="eyebrow mb-5">Profil</p>
+                  <h2 className="font-heading font-medium text-primary leading-[1.15] tracking-[-0.01em] text-balance text-[1.7rem] md:text-[2.25rem] lg:text-[2.45rem]">
+                    {a.companyProfile.headline}
+                  </h2>
+                  <p className="mt-6 text-[0.96rem] md:text-[1rem] leading-[1.9] text-muted-foreground">
+                    {a.companyProfile.body}
+                  </p>
+                </div>
+              </Reveal>
             </div>
           </div>
         </section>
-      )}
 
-      <div className="page-shell">
-        {/* Bestehend – Warum Aurelia bei festgefahrenen Lagen relevant ist */}
-        <TextBlock
-          headline={a.companyProfile.headline}
-          tone="light"
-          image={editorial.caseReviewDesk}
-          imageAlt="Ruhiger Arbeitsplatz mit geordneten Unterlagen"
-        >
-          <p>{a.companyProfile.body}</p>
-        </TextBlock>
-
-        {/* Bestehend – Wofür Aurelia steht */}
-        <TextBlock headline={a.profile.headline} tone="muted">
-          <p>{a.profile.body1}</p>
-          <p>{a.profile.body2}</p>
-        </TextBlock>
-
-        {/* SEKTION 2 – Das Team hinter Aurelia (zweispaltig) */}
-        {a.team && (
-          <section className="py-20 md:py-28 bg-background">
+        {/* ═══════════════════════════════════════════════════════════
+            2) METRICS-LEISTE — qualitative Kennzahlen auf Navy
+            ─────────────────────────────────────────────────────────── */}
+        {a.metricsBar && (
+          <section className="surface-ink py-14 md:py-16 hairline-on-dark-t">
             <div className="container-premium">
-              <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-                <Reveal>
-                  <div>
-                    <div className="mb-4 h-px w-8 bg-accent" aria-hidden="true" />
-                    <h2 className="mb-6 font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
-                      {a.team.headline}
-                    </h2>
-                    <p className="text-[15px] md:text-[16px] leading-[1.85] text-foreground/80">
-                      {a.team.body}
-                    </p>
-                  </div>
-                </Reveal>
-                <Reveal delay={0.1}>
-                  <div className="overflow-hidden rounded-sm border border-border/40">
-                    <img
-                      src={editorial.cooperationMeeting}
-                      alt={a.team.imageAlt}
-                      loading="lazy"
-                      className="block w-full h-auto aspect-[4/3] object-cover"
-                    />
-                  </div>
-                </Reveal>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* SEKTION 3 – Vision & Mission (typografisch ruhig, dezente Mini-Icons auf Navy) */}
-        {a.visionMission && (
-          <section className="py-20 md:py-28 bg-primary">
-            <div className="container-premium">
-              <div className="grid md:grid-cols-2 gap-10 md:gap-16 max-w-5xl mx-auto">
-                {[
-                  { icon: Compass, title: a.visionMission.visionTitle, text: a.visionMission.visionText },
-                  { icon: Target, title: a.visionMission.missionTitle, text: a.visionMission.missionText },
-                ].map((card, idx) => {
-                  const Icon = card.icon;
-                  return (
-                    <Reveal key={idx} delay={idx * 0.08}>
-                      <div className="h-full">
-                        <div className="mb-5 flex items-center gap-3">
-                          <Icon size={14} strokeWidth={1.5} className="text-accent/80" />
-                          <div className="h-px w-8 bg-accent/60" aria-hidden="true" />
-                        </div>
-                        <h3 className="mb-5 font-heading font-semibold text-accent text-[1.2rem] md:text-[1.35rem] leading-tight">
-                          {card.title}
-                        </h3>
-                        <p className="text-[14px] md:text-[15px] leading-[1.85] text-white/80">
-                          {card.text}
-                        </p>
-                      </div>
-                    </Reveal>
-                  );
-                })}
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* SEKTION 4 – Unsere Werte (rein typografisch, editorial) */}
-        {a.values && (
-          <section className="py-20 md:py-28 bg-secondary/40">
-            <div className="container-premium">
-              <Reveal>
-                <div className="text-center mb-14 md:mb-16">
-                  <div className="mx-auto mb-4 h-px w-8 bg-accent" aria-hidden="true" />
-                  <h2 className="font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
-                    {a.values.headline}
-                  </h2>
-                </div>
-              </Reveal>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 md:gap-x-16 gap-y-10 md:gap-y-12 max-w-4xl mx-auto">
-                {a.values.items.map((item, idx) => (
+              <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
+                {a.metricsBar.items.map((item, idx) => (
                   <Reveal key={idx} delay={idx * 0.05}>
-                    <div className="border-l border-accent/40 pl-6">
-                      <p className="mb-2 text-[10px] md:text-[11px] font-semibold uppercase tracking-[0.18em] text-accent">
-                        {String(idx + 1).padStart(2, "0")}
+                    <div className="text-center px-4 py-6 md:py-2">
+                      <p className="font-heading font-medium text-accent text-[1rem] md:text-[1.1rem] leading-tight tracking-wide">
+                        {item.value}
                       </p>
-                      <h3 className="mb-3 font-heading font-semibold text-primary text-[1.05rem] md:text-[1.2rem] leading-tight">
-                        {item.title}
-                      </h3>
-                      <p className="text-[14px] md:text-[15px] leading-[1.8] text-foreground/75">
-                        {item.text}
+                      <div className="mx-auto my-3 h-px w-5 bg-accent/50" aria-hidden="true" />
+                      <p className="text-[11px] md:text-[12px] leading-[1.6] text-white/65 uppercase tracking-[0.14em]">
+                        {item.label}
                       </p>
                     </div>
                   </Reveal>
@@ -248,109 +117,199 @@ const About = () => {
           </section>
         )}
 
-        {/* Bestehend – In welchen Situationen wir tätig werden */}
-        <TextBlock headline={a.situations.headline} tone="light">
-          <p>{a.situations.body1}</p>
-          <p>{a.situations.body2}</p>
-        </TextBlock>
-
-        {/* SEKTION 5 – Fall-Typologien (3 Karten mit Bild) */}
-        {a.cases && (
-          <section className="py-20 md:py-28 bg-secondary/40">
-            <div className="container-premium">
-              <Reveal>
-                <div className="text-center mb-12 md:mb-14 max-w-2xl mx-auto">
-                  <div className="mx-auto mb-4 h-px w-8 bg-accent" aria-hidden="true" />
-                  <h2 className="font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
-                    {a.cases.headline}
-                  </h2>
-                </div>
-              </Reveal>
-              <div className="grid md:grid-cols-3 gap-6 md:gap-7 max-w-6xl mx-auto">
-                {a.cases.items.map((item, idx) => {
-                  const img = caseImages[idx] ?? caseImages[0];
-                  return (
-                    <Reveal key={idx} delay={idx * 0.06}>
-                      <article className="h-full bg-background border border-border/40 rounded-sm overflow-hidden flex flex-col">
-                        <div className="overflow-hidden">
-                          <img
-                            src={img.src}
-                            alt={img.alt}
-                            loading="lazy"
-                            className="block w-full h-auto aspect-[4/3] object-cover"
-                          />
-                        </div>
-                        <div className="p-6 md:p-7 flex flex-col flex-1">
-                          <span
-                            className="self-start mb-4 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] rounded-sm"
-                            style={{
-                              backgroundColor: "hsl(var(--highlight) / 0.9)",
-                              color: "hsl(var(--primary-foreground))",
-                            }}
-                          >
-                            {item.label}
-                          </span>
-                          <h3 className="mb-3 font-heading font-semibold text-primary text-[1.05rem] md:text-[1.15rem] leading-tight">
-                            {item.title}
-                          </h3>
-                          <p className="text-[13px] md:text-[14px] leading-[1.75] text-foreground/80">
-                            {item.text}
-                          </p>
-                        </div>
-                      </article>
-                    </Reveal>
-                  );
-                })}
-              </div>
-              <p className="mt-10 text-center text-[12px] md:text-[13px] italic text-muted-foreground">
-                {a.cases.note}
-              </p>
-            </div>
-          </section>
-        )}
-
-        {/* Bestehend – Wie wir Fälle prüfen */}
-        <TextBlock headline={a.review.headline} tone="light">
-          <p>{a.review.body1}</p>
-          <p>{a.review.body2}</p>
-        </TextBlock>
-
-        {/* Abschluss-CTA */}
-        <section style={{ backgroundColor: "hsl(var(--highlight))" }} className="px-0">
-          <div className="container-premium" style={{ paddingTop: 80, paddingBottom: 80 }}>
+        {/* ═══════════════════════════════════════════════════════════
+            3) WOFÜR AURELIA STEHT — editorialer Text-Block auf Cream
+            ─────────────────────────────────────────────────────────── */}
+        <section className="surface-cream section-y-base">
+          <div className="container-premium">
             <Reveal>
-              <div className="max-w-2xl mx-auto text-center">
-                <div className="mx-auto mb-4 h-px w-8 bg-accent" aria-hidden="true" />
-                <h2 className="mb-6 font-heading font-semibold text-white text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
-                  {a.closing.headline}
+              <div className="max-w-3xl">
+                <p className="eyebrow mb-5">Haltung</p>
+                <h2 className="font-heading font-medium text-primary leading-[1.15] tracking-[-0.01em] text-balance text-[1.7rem] md:text-[2.25rem]">
+                  {a.profile.headline}
                 </h2>
-                <p className="mb-5 text-[15px] md:text-[16px] leading-[1.8] text-white/90">
-                  {a.closing.body}
-                </p>
-                <p className="mb-9 text-[14px] md:text-[15px] leading-[1.75] text-white/75 italic">
-                  {a.closing.note}
-                </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-                  <Link
-                    to="/kontakt"
-                    className="inline-flex items-center gap-2 rounded-sm bg-white px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.12em] text-primary transition-colors duration-300 hover:bg-white/95"
-                  >
-                    {a.closing.cta}
-                    <ArrowRight size={13} className="text-accent" />
-                  </Link>
-                  <a
-                    href="tel:+4921169583033"
-                    className="inline-flex items-center gap-2 rounded-sm px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.12em] text-white transition-colors duration-300 border border-white/40 hover:border-white/70"
-                  >
-                    <Phone size={14} strokeWidth={1.75} />
-                    +49 211 69583033
-                  </a>
+                <div className="mt-6 space-y-5 text-[0.96rem] md:text-[1rem] leading-[1.9] text-muted-foreground">
+                  <p>{a.profile.body1}</p>
+                  <p>{a.profile.body2}</p>
                 </div>
               </div>
             </Reveal>
           </div>
-          <div className="h-px w-full bg-accent" aria-hidden="true" />
         </section>
+
+        {/* ═══════════════════════════════════════════════════════════
+            4) TEAM — editorialer Split (Text + Bild)
+            ─────────────────────────────────────────────────────────── */}
+        {a.team && (
+          <section className="surface-paper section-y-base">
+            <div className="container-premium">
+              <div className="grid gap-12 md:gap-16 lg:gap-20 md:grid-cols-12 items-center">
+                <Reveal>
+                  <div className="md:col-span-6">
+                    <p className="eyebrow mb-5">Team</p>
+                    <h2 className="font-heading font-medium text-primary leading-[1.15] tracking-[-0.01em] text-balance text-[1.7rem] md:text-[2.25rem]">
+                      {a.team.headline}
+                    </h2>
+                    <p className="mt-6 text-[0.96rem] md:text-[1rem] leading-[1.9] text-muted-foreground">
+                      {a.team.body}
+                    </p>
+                  </div>
+                </Reveal>
+                <Reveal delay={0.1}>
+                  <div className="md:col-span-6">
+                    <div className="overflow-hidden">
+                      <OptimizedImg
+                        src={editorial.cooperationMeeting}
+                        alt={a.team.imageAlt}
+                        className="block w-full h-auto object-cover"
+                        style={{ aspectRatio: "4 / 3" }}
+                      />
+                    </div>
+                  </div>
+                </Reveal>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* ═══════════════════════════════════════════════════════════
+            5) VISION & MISSION — Navy-Editorial mit zwei EditorialPoints
+            ─────────────────────────────────────────────────────────── */}
+        {a.visionMission && (
+          <section className="surface-ink section-y-base">
+            <div className="container-premium">
+              <div className="grid gap-y-12 gap-x-16 md:grid-cols-2 max-w-5xl mx-auto">
+                <Reveal>
+                  <EditorialPoint
+                    index={0}
+                    title={a.visionMission.visionTitle}
+                    text={a.visionMission.visionText}
+                    tone="dark"
+                    label="Vision"
+                  />
+                </Reveal>
+                <Reveal delay={0.1}>
+                  <EditorialPoint
+                    index={1}
+                    title={a.visionMission.missionTitle}
+                    text={a.visionMission.missionText}
+                    tone="dark"
+                    label="Mission"
+                  />
+                </Reveal>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* ═══════════════════════════════════════════════════════════
+            6) WERTE — EditorialPoint-Liste auf Stone
+            ─────────────────────────────────────────────────────────── */}
+        {a.values && (
+          <section className="bg-gradient-stone-cream section-y-base">
+            <div className="container-premium">
+              <SectionHeader
+                eyebrow="Werte"
+                title={a.values.headline}
+              />
+              <div className="grid gap-y-10 gap-x-12 md:grid-cols-2 max-w-4xl mx-auto">
+                {a.values.items.map((item, idx) => (
+                  <Reveal key={idx} delay={idx * 0.05}>
+                    <EditorialPoint
+                      index={idx}
+                      title={item.title}
+                      text={item.text}
+                    />
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* ═══════════════════════════════════════════════════════════
+            7) SITUATIONEN — editorialer Text-Block auf Cream
+            ─────────────────────────────────────────────────────────── */}
+        <section className="surface-cream section-y-base">
+          <div className="container-premium">
+            <Reveal>
+              <div className="max-w-3xl">
+                <p className="eyebrow mb-5">Anlässe</p>
+                <h2 className="font-heading font-medium text-primary leading-[1.15] tracking-[-0.01em] text-balance text-[1.7rem] md:text-[2.25rem]">
+                  {a.situations.headline}
+                </h2>
+                <div className="mt-6 space-y-5 text-[0.96rem] md:text-[1rem] leading-[1.9] text-muted-foreground">
+                  <p>{a.situations.body1}</p>
+                  <p>{a.situations.body2}</p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* ═══════════════════════════════════════════════════════════
+            8) FALL-TYPOLOGIEN — EditorialPoint-Liste statt Karten
+            ─────────────────────────────────────────────────────────── */}
+        {a.cases && (
+          <section className="surface-paper section-y-base">
+            <div className="container-premium">
+              <SectionHeader
+                eyebrow="Fall-Typologien"
+                title={a.cases.headline}
+              />
+              <div className="grid gap-y-10 gap-x-12 md:grid-cols-3 max-w-5xl mx-auto">
+                {a.cases.items.map((item, idx) => (
+                  <Reveal key={idx} delay={idx * 0.06}>
+                    <EditorialPoint
+                      index={idx}
+                      title={item.title}
+                      text={item.text}
+                      label={item.label}
+                    />
+                  </Reveal>
+                ))}
+              </div>
+              <Reveal delay={0.3}>
+                <p className="mt-12 mx-auto max-w-2xl text-center text-[0.85rem] leading-[1.85] text-muted-foreground italic">
+                  {a.cases.note}
+                </p>
+              </Reveal>
+            </div>
+          </section>
+        )}
+
+        {/* ═══════════════════════════════════════════════════════════
+            9) PRÜFUNG — editorialer Text-Block auf Stone
+            ─────────────────────────────────────────────────────────── */}
+        <section className="surface-stone section-y-base">
+          <div className="container-premium">
+            <Reveal>
+              <div className="max-w-3xl">
+                <p className="eyebrow mb-5">Methodik</p>
+                <h2 className="font-heading font-medium text-primary leading-[1.15] tracking-[-0.01em] text-balance text-[1.7rem] md:text-[2.25rem]">
+                  {a.review.headline}
+                </h2>
+                <div className="mt-6 space-y-5 text-[0.96rem] md:text-[1rem] leading-[1.9] text-muted-foreground">
+                  <p>{a.review.body1}</p>
+                  <p>{a.review.body2}</p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* 10) FAQ-Hinweis */}
+        <FaqHint />
+
+        {/* 11) Final CTA — editorial Split */}
+        <FinalCta
+          variant="split"
+          eyebrow="Nächster Schritt"
+          title={a.closing.headline}
+          text={a.closing.body}
+          buttonLabel={a.closing.cta}
+          buttonTo="/kontakt"
+        />
       </div>
     </Layout>
   );
