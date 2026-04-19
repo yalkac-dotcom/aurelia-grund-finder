@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
-import Reveal from "@/components/Reveal";
 
 interface PageHeroProps {
   image: { src: string; srcSet: string; sizes: string };
