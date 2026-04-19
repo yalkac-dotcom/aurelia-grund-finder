@@ -98,16 +98,17 @@ const HowItWorks = () => {
           <div className="container-premium">
             <SectionHeader title={w.principlesTitle} intro={w.principlesIntro} />
             <Reveal delay={0.1}>
-              <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {w.principles.map((p, i) => (
-                  <ProofCard
-                    key={i}
-                    iconImage={principleIcons[i % principleIcons.length]}
-                    iconAlt={p.title}
-                    index={i}
-                    title={p.title}
-                    text={p.text}
-                  />
+                  <div key={i} className="border-l border-accent/40 pl-5">
+                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{p.text}</p>
+                  </div>
                 ))}
               </div>
             </Reveal>
