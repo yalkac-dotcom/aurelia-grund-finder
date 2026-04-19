@@ -72,18 +72,20 @@ function srcSet(w640: string, w1024: string, w1440: string, w1920: string) {
   return `${w640} 640w, ${w1024} 1024w, ${w1440} 1440w, ${w1920} 1920w`;
 }
 
+// `src` uses the 1440w variant as a sensible fallback (most desktop viewports < 1920px).
+// The browser still picks the optimal width from `srcSet` based on `sizes` + DPR.
 export const heroSets = {
-  premium:       { src: premium1920,       srcSet: srcSet(premium640, premium1024, premium1440, premium1920),             sizes: SIZES },
-  building:      { src: building1920,      srcSet: srcSet(building640, building1024, building1440, building1920),           sizes: SIZES },
-  contact:       { src: contact1920,       srcSet: srcSet(contact640, contact1024, contact1440, contact1920),               sizes: SIZES },
-  services:      { src: services1920,      srcSet: srcSet(services640, services1024, services1440, services1920),           sizes: SIZES },
-  investors:     { src: investors1920,     srcSet: srcSet(investors640, investors1024, investors1440, investors1920),       sizes: SIZES },
-  steuervorteile:{ src: steuervorteile1920,srcSet: srcSet(steuervorteile640, steuervorteile1024, steuervorteile1440, steuervorteile1920), sizes: SIZES },
-  afa:           { src: afa1920,           srcSet: srcSet(afa640, afa1024, afa1440, afa1920),                               sizes: SIZES },
-  bafa:          { src: bafa1920,          srcSet: srcSet(bafa640, bafa1024, bafa1440, bafa1920),                           sizes: SIZES },
-  kfw:           { src: kfw1920,           srcSet: srcSet(kfw640, kfw1024, kfw1440, kfw1920),                               sizes: SIZES },
-  energetisch:   { src: energetisch1920,   srcSet: srcSet(energetisch640, energetisch1024, energetisch1440, energetisch1920), sizes: SIZES },
-  glossar:       { src: glossar1920,       srcSet: srcSet(glossar640, glossar1024, glossar1440, glossar1920),               sizes: SIZES },
-  arbeitsweise:  { src: arbeitsweise1920,  srcSet: srcSet(arbeitsweise640, arbeitsweise1024, arbeitsweise1440, arbeitsweise1920), sizes: SIZES },
-  about:         { src: about1920,         srcSet: srcSet(about640, about1024, about1440, about1920),                           sizes: SIZES },
+  premium:       { src: premium1440,       srcSet: srcSet(premium640, premium1024, premium1440, premium1920),             sizes: SIZES },
+  building:      { src: building1440,      srcSet: srcSet(building640, building1024, building1440, building1920),           sizes: SIZES },
+  contact:       { src: contact1440,       srcSet: srcSet(contact640, contact1024, contact1440, contact1920),               sizes: SIZES },
+  services:      { src: services1440,      srcSet: srcSet(services640, services1024, services1440, services1920),           sizes: SIZES },
+  investors:     { src: investors1440,     srcSet: srcSet(investors640, investors1024, investors1440, investors1920),       sizes: SIZES },
+  steuervorteile:{ src: steuervorteile1440,srcSet: srcSet(steuervorteile640, steuervorteile1024, steuervorteile1440, steuervorteile1920), sizes: SIZES },
+  afa:           { src: afa1440,           srcSet: srcSet(afa640, afa1024, afa1440, afa1920),                               sizes: SIZES },
+  bafa:          { src: bafa1440,          srcSet: srcSet(bafa640, bafa1024, bafa1440, bafa1920),                           sizes: SIZES },
+  kfw:           { src: kfw1440,           srcSet: srcSet(kfw640, kfw1024, kfw1440, kfw1920),                               sizes: SIZES },
+  energetisch:   { src: energetisch1440,   srcSet: srcSet(energetisch640, energetisch1024, energetisch1440, energetisch1920), sizes: SIZES },
+  glossar:       { src: glossar1440,       srcSet: srcSet(glossar640, glossar1024, glossar1440, glossar1920),               sizes: SIZES },
+  arbeitsweise:  { src: arbeitsweise1440,  srcSet: srcSet(arbeitsweise640, arbeitsweise1024, arbeitsweise1440, arbeitsweise1920), sizes: SIZES },
+  about:         { src: about1440,         srcSet: srcSet(about640, about1024, about1440, about1920),                           sizes: SIZES },
 } as const;
