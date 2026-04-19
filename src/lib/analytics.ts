@@ -39,8 +39,19 @@ export const initGA = () => {
   window.gtag("js", new Date());
   window.gtag("config", GA_MEASUREMENT_ID, {
     anonymize_ip: true,
-    send_page_view: false, // we send manually on route change
+    send_page_view: false, // we send manually so SPA route changes are tracked
   });
+
+  // Send the initial page_view immediately after init so consent-on-first-load
+  // (or consent given mid-session) results in a real-time hit without waiting
+  // for the next route change.
+  if (typeof window !== "undefined") {
+    window.gtag("event", "page_view", {
+      page_path: window.location.pathname + window.location.search,
+      page_title: document.title,
+      page_location: window.location.href,
+    });
+  }
 };
 
 export const trackPageView = (path: string, title?: string) => {
