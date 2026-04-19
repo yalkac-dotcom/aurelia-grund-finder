@@ -58,11 +58,20 @@ const About = () => {
 
   // Icons removed for editorial calm — values are purely typographic now.
 
-  // Visual motifs for the 3 typology cards (uses existing editorial assets)
+  // Visual motifs for the 3 typology cards (themed Unsplash photography, no persons)
   const caseImages = [
-    { src: editorial.facadeDetail, alt: "Bestandsfassade – sinnbildlich für Notlagen" },
-    { src: editorial.interiorCalm, alt: "Ruhiger Innenraum – sinnbildlich für Erbengemeinschaften" },
-    { src: editorial.notaryQuiet, alt: "Notarieller Schreibtisch – sinnbildlich für direkten Ankauf" },
+    {
+      src: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+      alt: "Zwangsversteigerungsverfahren",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=800&q=80",
+      alt: "Erbschaftsdokumente",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+      alt: "Direktankauf Immobilie",
+    },
   ];
 
   return (
