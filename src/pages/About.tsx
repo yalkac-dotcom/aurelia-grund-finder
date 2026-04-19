@@ -4,16 +4,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { editorial } from "@/assets/editorial";
-import {
-  ArrowRight,
-  Phone,
-  Compass,
-  Target,
-  Lock,
-  Handshake,
-  Zap,
-  Scale,
-} from "lucide-react";
+import { ArrowRight, Phone, Compass, Target } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const About = () => {
