@@ -105,17 +105,17 @@ const About = () => {
 
       {/* SEKTION 1 – Qualitative Kennzahlen-Leiste (Navy, Gold-Akzente) */}
       {a.metricsBar && (
-        <section className="bg-primary py-12 md:py-14 border-t border-accent/20">
+        <section className="bg-primary py-14 md:py-16 border-t border-accent/20">
           <div className="container-premium">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
               {a.metricsBar.items.map((item, idx) => (
                 <Reveal key={idx} delay={idx * 0.05}>
-                  <div className="text-center px-2">
-                    <div className="mx-auto mb-3 h-px w-6 bg-accent" aria-hidden="true" />
-                    <p className="font-heading font-semibold text-accent text-[1.05rem] md:text-[1.2rem] leading-tight">
+                  <div className="text-center px-4 py-6 md:py-2">
+                    <p className="font-heading font-medium text-accent text-[0.95rem] md:text-[1.05rem] leading-tight tracking-wide">
                       {item.value}
                     </p>
-                    <p className="mt-2 text-[12px] md:text-[13px] leading-[1.55] text-white/75">
+                    <div className="mx-auto my-3 h-px w-5 bg-accent/50" aria-hidden="true" />
+                    <p className="text-[11px] md:text-[12px] leading-[1.6] text-white/65 uppercase tracking-[0.12em]">
                       {item.label}
                     </p>
                   </div>
