@@ -20,7 +20,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
       <Footer />
       <ScrollToTop />
-      {/* <CookieConsent /> */}
+      <CookieConsent />
     </div>
   );
 };
