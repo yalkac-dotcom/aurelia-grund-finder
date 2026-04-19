@@ -3,22 +3,18 @@ import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
-import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
-import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { Phone, Lock, Scale, FileText, ShieldCheck } from "lucide-react";
+import { Phone, MessageSquare, Compass, Scale, FileText, Handshake } from "lucide-react";
 
 // Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht (Fotos beibehalten)
 const situationImages = cardImages.ownerSituations;
-// Proof (auf Navy) — Lucide-Icons im ProofCard-Stil (Navy-Sektion bleibt iconisch)
-const proofIcons = [Lock, Scale, FileText, ShieldCheck];
-// Steps (5) — Erstkontakt, Einordnung, Bewertung, Angebot, Abwicklung (3D-Icons)
-const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
+// Steps (5) — kleine, zurückhaltende Lucide-Icons für die Prozess-Schritte
+const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
 
 const ForOwnerInTrouble = () => {
   const { t } = useLanguage();
@@ -59,27 +55,29 @@ const ForOwnerInTrouble = () => {
           </div>
         </section>
 
-        {/* UNSERE LÖSUNG (Navy + Proof Points) */}
+        {/* UNSERE LÖSUNG (Navy) — typografisch, ohne Icons */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
             <SectionHeader title={o.solutionTitle} intro={o.solutionText} tone="dark" />
-            <Reveal delay={0.1}>
-              <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {o.proofPoints.map((p, i) => (
-                  <ProofCard
-                    key={i}
-                    icon={proofIcons[i % proofIcons.length]}
-                    index={i}
-                    title={p.title}
-                    text={p.text}
-                  />
-                ))}
-              </div>
-            </Reveal>
+            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              {o.proofPoints.map((p, i) => (
+                <Reveal key={i} delay={i * 0.06}>
+                  <div className="border-l border-accent/50 pl-5">
+                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-white leading-snug">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-white/75">{p.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* ABLAUF */}
+        {/* ABLAUF — kleine, zurückhaltende Prozess-Icons */}
         <section
           id="ablauf"
           className="section-premium scroll-mt-24"
@@ -87,18 +85,26 @@ const ForOwnerInTrouble = () => {
         >
           <div className="container-premium">
             <SectionHeader title={o.stepsTitle} />
-            <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-5">
-              {o.steps.map((s, i) => (
-                <ProcessStep
-                  key={i}
-                  index={i}
-                  total={o.steps.length}
-                  title={s.title}
-                  desc={s.desc}
-                  iconImage={stepIcons[i % stepIcons.length]}
-                  iconAlt={s.title}
-                />
-              ))}
+            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-5">
+              {o.steps.map((s, i) => {
+                const Icon = stepIcons[i % stepIcons.length];
+                return (
+                  <Reveal key={i} delay={i * 0.06}>
+                    <div>
+                      <div className="flex items-center gap-3">
+                        <Icon size={16} strokeWidth={1.5} className="text-accent/80" aria-hidden="true" />
+                        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <h3 className="mt-3 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                        {s.title}
+                      </h3>
+                      <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{s.desc}</p>
+                    </div>
+                  </Reveal>
+                );
+              })}
             </div>
             <Reveal delay={0.3}>
               <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
