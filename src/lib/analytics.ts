@@ -27,20 +27,24 @@ export const initGA = () => {
 
   window.__ga4Loaded = true;
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
+  // IMPORTANT: gtag MUST push the native `arguments` object, not a spread array.
+  // gtag.js inspects arguments.length / arguments[0] — pushing a real array
+  // breaks command parsing and no `g/collect` hit is sent.
+  window.gtag = function gtag() {
+    // eslint-disable-next-line prefer-rest-params
+    window.dataLayer.push(arguments);
   };
-
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-  document.head.appendChild(script);
 
   window.gtag("js", new Date());
   window.gtag("config", GA_MEASUREMENT_ID, {
     anonymize_ip: true,
     send_page_view: false, // we send manually so SPA route changes are tracked
   });
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+  document.head.appendChild(script);
 
   // Send the initial page_view immediately after init so consent-on-first-load
   // (or consent given mid-session) results in a real-time hit without waiting
