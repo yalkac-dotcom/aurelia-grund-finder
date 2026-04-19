@@ -66,13 +66,11 @@ const About = () => {
         className="relative flex h-[58svh] min-h-[400px] items-center md:h-[64vh] md:min-h-[460px] bg-primary"
       >
         <div className="absolute inset-0 overflow-hidden bg-primary">
-          <OptimizedImg
-            src={heroSets.about.src}
-            srcSet={heroSets.about.srcSet}
-            sizes={heroSets.about.sizes}
+          <img
+            src={editorial.notaryQuiet}
             alt={a.hero.title}
+            loading="eager"
             className="hero-media h-full w-full object-cover object-center"
-            priority
           />
           <div
             className="absolute inset-0"
@@ -103,8 +101,8 @@ const About = () => {
         <TextBlock
           headline={a.companyProfile.headline}
           tone="light"
-          image={editorial.townhouseClassical}
-          imageAlt="Klassizistische Stadtvilla mit ruhiger Sandsteinfassade – sinnbildlich für Substanz und Beständigkeit"
+          image={editorial.caseReviewDesk}
+          imageAlt="Ruhiger Arbeitsplatz mit geordneten Unterlagen – sinnbildlich für strukturierte Fallprüfung"
         >
           <p>{a.companyProfile.body}</p>
         </TextBlock>
