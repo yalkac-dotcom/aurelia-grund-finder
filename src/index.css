@@ -45,11 +45,12 @@
 
 @layer base {
   :root {
-    /* === Aurelia Core Palette ===
-       Navy   #1B2A4A → 218 46% 20%
-       Gold   #C9A84C → 43 56% 54%
-       Steel  #4A7FA5 → 207 38% 47%
-       Off-W  #F7F6F2 → 48 19% 96%
+    /* === Aurelia Core Palette (Final, harmonisiert) ===
+       Navy (Primary) #233859 → 218 42% 24%   (einheitlicher Marineblau auf allen dunklen Flächen)
+       Gold (Accent)  #C9A84C → 43 56% 54%
+       Steel (Highlight) #4A7FA5 → 207 38% 47%
+       Off-White (BG) #F7F6F2 → 48 19% 96%
+       Hinweis: navy-deep ist nahe am primary, damit Gradienten optisch ruhig bleiben.
     */
     --background: 48 19% 96%;
     --foreground: 218 46% 14%;
@@ -60,11 +61,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 218 46% 14%;
 
-    --primary: 218 46% 20%;
+    --primary: 218 42% 24%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 48 19% 93%;
-    --secondary-foreground: 218 46% 18%;
+    --secondary-foreground: 218 42% 22%;
 
     --muted: 48 14% 91%;
     --muted-foreground: 218 18% 36%;
@@ -87,7 +88,7 @@
     --gold: 43 56% 54%;
     --gold-light: 43 56% 78%;
     --navy-light: 218 38% 32%;
-    --navy-deep: 218 50% 14%;
+    --navy-deep: 218 42% 20%;
     --steel: 207 38% 47%;
     --steel-light: 207 42% 62%;
 
@@ -235,7 +236,7 @@
     linear-gradient(
       135deg,
       hsl(var(--highlight)) 0%,
-      hsl(218 46% 22%) 100%
+      hsl(var(--primary)) 100%
     );
   color: hsl(0 0% 100%);
   border-bottom: 1px solid hsl(var(--accent) / 0.45);
