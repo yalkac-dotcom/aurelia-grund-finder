@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { Link } from "react-router-dom";
-import { ArrowRight, MessageSquare, Search, FileText, Handshake } from "lucide-react";
+import { ArrowRight, MessageSquare, Eye, Handshake, FileSignature } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
@@ -13,8 +13,9 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
-// Steps (4) — kleine, zurückhaltende Lucide-Icons für die Prozess-Schritte
-const stepIcons = [MessageSquare, Search, FileText, Handshake];
+// Steps (4) — themenbezogene, zurückhaltende Lucide-Icons:
+// Erstkontakt (Gespräch), Besichtigung (Auge), Verhandlung (Handshake), Beurkundung & Übergabe (Urkunde)
+const stepIcons = [MessageSquare, Eye, Handshake, FileSignature];
 
 const ForBuyers = () => {
   const { t } = useLanguage();
