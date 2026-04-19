@@ -10,7 +10,7 @@ const en: Translations = {
     glossar: "Glossary",
     contact: "Contact",
     workApproach: "How We Work",
-    ownerInTrouble: "For Owners",
+    ownerInTrouble: "Owners in Distress",
     buyers: "For Buyers",
     partners: "For Partners",
     howItWorks: "How We Work",
