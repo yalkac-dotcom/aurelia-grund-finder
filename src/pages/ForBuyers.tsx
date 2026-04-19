@@ -1,25 +1,21 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageSquare, Search, FileText, Handshake } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
-import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
-import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
-// Proof (4) — Verifiziert, Fair, Bestätigt, Dokumentiert → semantische 3D-Icons
-const proofIcons = [icons3d.userCheckLight, icons3d.scaleLight, icons3d.checkCircleLight, icons3d.documentLight];
-// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe (3D-Icons)
-const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract, icons3d.handshakeLight];
+// Steps (4) — kleine, zurückhaltende Lucide-Icons für die Prozess-Schritte
+const stepIcons = [MessageSquare, Search, FileText, Handshake];
 
 const ForBuyers = () => {
   const { t } = useLanguage();
