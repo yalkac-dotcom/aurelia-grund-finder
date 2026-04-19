@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import ProofCard from "@/components/sections/ProofCard";
+
 import ProcessStep from "@/components/sections/ProcessStep";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
@@ -11,12 +11,8 @@ import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 
-// Segmente (3) — Diskreter Ankauf, Immobilienverkauf, Projektkooperationen → semantische 3D-Icons
-const segmentIcons = [icons3d.envelopeSeal, icons3d.houseTag, icons3d.puzzleCooperation];
-// Hold-Steps (5) — Erwerb, Strategie, Bestand, Sicherung, Fundament (3D-Icons)
+// Hold-Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
 const holdStepIcons = [icons3d.key, icons3d.compassLight, icons3d.building, icons3d.shieldLight, icons3d.foundationLight];
-// Principles (4) — 3D-Icons (Dialog, Fairness, Dokumentation, Orientierung)
-const principleIcons = [icons3d.dialogueLight, icons3d.scaleLight, icons3d.documentLight, icons3d.orientationLight];
 
 const HowItWorks = () => {
   const { t } = useLanguage();
@@ -54,16 +50,18 @@ const HowItWorks = () => {
         >
           <div className="container-premium">
             <SectionHeader title={w.segmentsTitle} intro={w.segmentsIntro} />
-            <div className="grid gap-6 md:gap-7 md:grid-cols-3">
+            <div className="grid gap-8 md:gap-10 md:grid-cols-3">
               {w.segments.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <ProofCard
-                    iconImage={segmentIcons[i % segmentIcons.length]}
-                    iconAlt={s.title}
-                    index={i}
-                    title={s.title}
-                    text={s.desc}
-                  />
+                  <div className="border-l border-accent/40 pl-6">
+                    <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-3 text-[1.05rem] font-heading font-semibold text-primary leading-snug">
+                      {s.title}
+                    </h3>
+                    <p className="mt-2 text-[0.88rem] leading-[1.75] text-muted-foreground">{s.desc}</p>
+                  </div>
                 </Reveal>
               ))}
             </div>
@@ -100,16 +98,17 @@ const HowItWorks = () => {
           <div className="container-premium">
             <SectionHeader title={w.principlesTitle} intro={w.principlesIntro} />
             <Reveal delay={0.1}>
-              <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {w.principles.map((p, i) => (
-                  <ProofCard
-                    key={i}
-                    iconImage={principleIcons[i % principleIcons.length]}
-                    iconAlt={p.title}
-                    index={i}
-                    title={p.title}
-                    text={p.text}
-                  />
+                  <div key={i} className="border-l border-accent/40 pl-5">
+                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{p.text}</p>
+                  </div>
                 ))}
               </div>
             </Reveal>
