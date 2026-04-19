@@ -1,10 +1,10 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import { Link } from "react-router-dom";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
 import ObjectionCard from "@/components/sections/ObjectionCard";
-import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
