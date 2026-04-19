@@ -9,6 +9,7 @@ import ConsentMap from "@/components/ConsentMap";
 import PremiumContactModule from "@/components/contact/PremiumContactModule";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { supabase } from "@/integrations/supabase/client";
+import { trackEvent } from "@/lib/analytics";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -47,10 +48,13 @@ const Contact = () => {
 
     if (dbError) {
       console.error("Contact form error:", dbError);
+      trackEvent("form_submit_error", { form: "contact" });
       setError(t.common.formError);
       return;
     }
 
+    trackEvent("form_submit", { form: "contact" });
+    trackEvent("generate_lead", { form: "contact" });
     setSubmitted(true);
   };
 
