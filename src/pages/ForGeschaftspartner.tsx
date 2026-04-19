@@ -2,11 +2,16 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
-import EditorialPoint from "@/components/sections/EditorialPoint";
+
+import ProcessStep from "@/components/sections/ProcessStep";
 import FinalCta from "@/components/sections/FinalCta";
-import FaqHint from "@/components/sections/FaqHint";
+import { Link } from "react-router-dom";
 import { heroSets } from "@/assets/heroImages";
+import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
+
+// Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
+const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
 
 const ForGeschaftspartner = () => {
   const { t } = useLanguage();
@@ -26,112 +31,102 @@ const ForGeschaftspartner = () => {
       />
 
       <div className="page-shell">
-        {/* DEZENTER RECHTLICHER HINWEIS — ruhige Hairline-Leiste */}
-        <section className="surface-stone hairline-b">
-          <div className="container-premium py-5">
-            <p className="mx-auto max-w-3xl text-[0.78rem] leading-[1.75] text-muted-foreground text-center">
-              <span className="font-medium text-foreground/80">{p.legalNoticeLabel}:</span>{" "}
-              {p.legalNoticeText}
+        {/* DEZENTER RECHTLICHER HINWEIS */}
+        <section className="border-b border-border/40 bg-muted/30">
+          <div className="container-premium py-4">
+            <p className="mx-auto max-w-3xl text-[0.78rem] leading-[1.7] text-muted-foreground text-center">
+              <span className="font-medium text-foreground/80">{p.legalNoticeLabel}:</span> {p.legalNoticeText}
             </p>
           </div>
         </section>
 
-        {/* ═══════════════════════════════════════════════════════════
-            1) KOOPERATIONSFORMEN — EditorialPoint-Liste auf Paper
-            ─────────────────────────────────────────────────────────── */}
-        <section className="surface-paper section-y-lux">
+        {/* KOOPERATIONSFORMEN */}
+        <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
-            <SectionHeader
-              eyebrow="Formen der Zusammenarbeit"
-              title={p.formsTitle}
-              intro={p.formsIntro}
-            />
-            <div className="grid gap-y-10 gap-x-10 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+            <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
+            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <EditorialPoint
-                    index={i}
-                    title={f.title}
-                    text={f.desc}
-                  />
+                  <div className="border-l border-accent/40 pl-5">
+                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                      {f.title}
+                    </h3>
+                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{f.desc}</p>
+                  </div>
                 </Reveal>
               ))}
             </div>
           </div>
         </section>
 
-        {/* ═══════════════════════════════════════════════════════════
-            2) GRUNDLAGEN — Navy-Editorial mit asymmetrischer Spalte
-            ─────────────────────────────────────────────────────────── */}
-        <section className="surface-ink section-y-base">
+        {/* GRUNDLAGEN (Navy) */}
+        <section className="section-premium section-navy text-white">
           <div className="container-premium">
-            <div className="grid gap-12 md:gap-16 md:grid-cols-12 items-start">
-              <Reveal>
-                <div className="md:col-span-5">
-                  <p className="eyebrow eyebrow--dark mb-5">Unsere Grundlagen</p>
-                  <h2 className="font-heading font-medium text-white leading-[1.12] tracking-[-0.01em] text-balance text-[1.7rem] md:text-[2.25rem] lg:text-[2.45rem]">
-                    {p.principlesTitle}
-                  </h2>
-                  <p className="mt-6 max-w-md text-[0.95rem] leading-[1.85] text-white/70">
-                    {p.principlesText}
-                  </p>
-                </div>
-              </Reveal>
-
-              <div className="md:col-span-7 grid gap-y-10 gap-x-10 sm:grid-cols-2">
+            <SectionHeader title={p.principlesTitle} intro={p.principlesText} tone="dark" />
+            <Reveal delay={0.1}>
+              <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {p.principles.map((pr, i) => (
-                  <Reveal key={i} delay={0.1 + i * 0.06}>
-                    <EditorialPoint
-                      index={i}
-                      title={pr.title}
-                      text={pr.text}
-                      tone="dark"
-                    />
-                  </Reveal>
+                  <div key={i} className="border-l border-accent/50 pl-5">
+                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-white leading-snug">
+                      {pr.title}
+                    </h3>
+                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-white/75">{pr.text}</p>
+                  </div>
                 ))}
               </div>
-            </div>
+            </Reveal>
           </div>
         </section>
 
-        {/* ═══════════════════════════════════════════════════════════
-            3) ABLAUF — Stone-Layer, EditorialPoint-Liste
-            ─────────────────────────────────────────────────────────── */}
+        {/* ABLAUF */}
         <section
           id="ablauf"
-          className="bg-gradient-stone-cream section-y-base scroll-mt-24"
+          className="section-premium scroll-mt-24"
+          style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
           <div className="container-premium">
-            <SectionHeader
-              eyebrow="So entsteht eine Zusammenarbeit"
-              title={p.stepsTitle}
-            />
-            <div className="grid gap-y-10 gap-x-10 sm:grid-cols-2 lg:grid-cols-5 max-w-6xl mx-auto">
+            <SectionHeader title={p.stepsTitle} />
+            <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-5">
               {p.steps.map((s, i) => (
-                <Reveal key={i} delay={i * 0.06}>
-                  <EditorialPoint
-                    index={i}
-                    title={s.title}
-                    text={s.desc}
-                  />
-                </Reveal>
+                <ProcessStep
+                  key={i}
+                  index={i}
+                  total={p.steps.length}
+                  title={s.title}
+                  desc={s.desc}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={s.title}
+                />
               ))}
             </div>
             <Reveal delay={0.3}>
-              <p className="mt-12 mx-auto max-w-2xl text-center text-[0.85rem] leading-[1.85] text-muted-foreground italic">
+              <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
                 {p.stepsNote}
               </p>
             </Reveal>
           </div>
         </section>
 
-        {/* 4) FAQ-Hinweis */}
-        <FaqHint />
+        {/* Hinweis auf zentrale FAQ */}
+        <section className="bg-gradient-warm">
+          <div className="container-premium py-10 md:py-12 text-center">
+            <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
+              Weitere Fragen beantworten wir in unseren{" "}
+              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
+                FAQ
+              </Link>
+              .
+            </p>
+          </div>
+        </section>
 
-        {/* 5) Final CTA — editorial Split */}
         <FinalCta
-          variant="split"
-          eyebrow="Nächster Schritt"
           title={p.finalCtaTitle}
           text={p.finalCtaText}
           buttonLabel={p.finalCtaButton}

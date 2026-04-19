@@ -6,24 +6,25 @@ import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
 import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { icons3d } from "@/assets/icons3d";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
 import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
-import EditorialPoint from "@/components/sections/EditorialPoint";
 import FinalCta from "@/components/sections/FinalCta";
-import FaqHint from "@/components/sections/FaqHint";
-import { icons3d } from "@/assets/icons3d";
 
 const HomePage = () => {
   const { t } = useLanguage();
 
-  // Areas (3 Wege)
+  // Areas (3 Wege) — Notlagen, Erbe/Konflikt, Direktankauf
   const areaImages = cardImages.areas;
   const areaLinks = ["/fuer-eigentumer-in-not", "/kontakt", "/fuer-kaeufer"];
 
-  // Schritte — dezente 3D-Icons
+  // ProofPoints (4 Versprechen, auf Navy) — bleiben als 3D-Light-Icons (Navy-Sektion)
+  const proofIconImages = [icons3d.shieldLight, icons3d.scaleLight, icons3d.foundationLight, icons3d.documentLight];
+
+  // Schritte (3) — Erstkontakt, Prüfung, Angebot (3D-Icons statt Fotos)
   const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract];
 
   return (
@@ -40,169 +41,157 @@ const HomePage = () => {
         imagePosition="62% center"
       />
 
-      {/* ═══════════════════════════════════════════════════════════
-          1) DREI WEGE — editoriale Areas-Sektion (luxuriöser Rhythmus)
-          ─────────────────────────────────────────────────────────── */}
-      <section className="surface-paper section-y-lux">
-        <div className="container-premium">
-          <SectionHeader
-            eyebrow={t.home.areasEyebrow ?? "Drei Wege"}
-            title={t.home.areasTitle}
-            intro={t.home.areasIntro}
-          />
-          <div className="grid gap-10 md:gap-12 lg:gap-14 sm:grid-cols-2 lg:grid-cols-3">
-            {t.home.areas.map((path, i) => (
-              <Reveal key={i} delay={i * 0.08}>
-                <ProofCard
-                  editorial
-                  image={areaImages[i % areaImages.length]}
-                  imageAlt={path.title}
-                  index={i}
-                  title={path.title}
-                  text={path.desc}
-                  cta={{ label: path.cta, to: areaLinks[i] }}
-                />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          2) PRINZIPIEN — Navy-Editorial (typografisch, ohne Icons)
-          ─────────────────────────────────────────────────────────── */}
-      <section className="surface-ink section-y-base relative">
-        <div className="container-premium">
-          <div className="grid gap-12 md:gap-16 md:grid-cols-12 items-start">
-            {/* Linke Spalte — Eyebrow + Headline */}
-            <Reveal>
-              <div className="md:col-span-5">
-                <p className="eyebrow eyebrow--dark mb-5">
-                  {t.home.trustEyebrow ?? "Unsere Prinzipien"}
-                </p>
-                <h2 className="font-heading font-medium text-white leading-[1.12] tracking-[-0.01em] text-balance text-[1.7rem] md:text-[2.25rem] lg:text-[2.45rem]">
-                  {t.home.trustTitle}
-                </h2>
-                <p className="mt-6 max-w-md text-[0.95rem] leading-[1.85] text-white/70">
-                  {t.home.trustText}
-                </p>
-              </div>
-            </Reveal>
-
-            {/* Rechte Spalte — typografische Liste */}
-            {t.home.proofPoints && t.home.proofPoints.length > 0 && (
-              <div className="md:col-span-7 grid gap-y-10 gap-x-10 sm:grid-cols-2">
-                {t.home.proofPoints.map((point, i) => (
-                  <Reveal key={i} delay={0.1 + i * 0.06}>
-                    <EditorialPoint
-                      index={i}
-                      title={point.title}
-                      text={point.text}
-                      tone="dark"
-                    />
-                  </Reveal>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* Vertraulichkeits-Insel — ruhige editoriale Inschrift */}
-          <Reveal delay={0.25}>
-            <div className="mt-16 md:mt-20 max-w-3xl mx-auto text-center">
-              <div className="h-px w-12 mx-auto bg-accent/50 mb-6" aria-hidden="true" />
-              <h3 className="font-heading text-[1.15rem] md:text-[1.35rem] font-medium text-white leading-snug">
-                {t.home.trustClaimTitle}
-              </h3>
-              <p className="mt-4 text-[0.95rem] leading-[1.85] text-white/72">
-                {t.home.trustClaimText}
-              </p>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          3) ABLAUF — Stone-Layer, asymmetrisch eingefasst
-          ─────────────────────────────────────────────────────────── */}
-      <section
-        id="ablauf"
-        className="bg-gradient-stone-cream section-y-base scroll-mt-24"
-      >
-        <div className="container-premium">
-          <SectionHeader
-            eyebrow={t.home.stepsEyebrow ?? "So arbeiten wir"}
-            title={t.home.stepsTitle}
-          />
-          <div className="grid gap-8 md:gap-10 sm:grid-cols-3">
-            {t.home.steps.map((item, i) => (
-              <ProcessStep
-                key={i}
-                index={i}
-                total={t.home.steps.length}
-                title={item.title}
-                desc={item.desc}
-                iconImage={stepIcons[i % stepIcons.length]}
-                iconAlt={item.title}
-              />
-            ))}
-          </div>
-
-          <Reveal delay={0.3}>
-            <div className="mt-12 md:mt-14 max-w-2xl mx-auto text-center">
-              <p className="text-[0.85rem] leading-[1.85] text-muted-foreground italic">
-                {t.home.stepsNote}
-              </p>
-              <Link
-                to="/wie-es-funktioniert"
-                className="mt-6 inline-flex items-center gap-2 text-[0.74rem] font-semibold uppercase tracking-[0.16em] text-primary border-b border-accent/60 pb-1 transition-colors hover:text-accent hover:border-accent"
-              >
-                {t.home.stepsLink}
-                <ArrowRight size={13} className="text-accent" />
-              </Link>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ═══════════════════════════════════════════════════════════
-          4) HALTUNG / EINWANDBEHANDLUNG — editorialer Text-Block
-          ─────────────────────────────────────────────────────────── */}
-      {t.home.objections && t.home.objections.length > 0 && (
-        <section className="surface-cream section-y-base">
+      <div className="page-shell">
+        {/* DIE 3 BEREICHE */}
+        <section className="section-premium bg-gradient-warm pt-10 md:pt-16">
           <div className="container-premium">
-            <SectionHeader
-              eyebrow={t.home.objectionsEyebrow ?? "Was Eigentümer fragen"}
-              title={t.home.objectionsTitle ?? ""}
-              intro={t.home.objectionsIntro}
-              align="left"
-            />
-            <div className="grid gap-x-12 gap-y-10 md:grid-cols-2 max-w-5xl">
-              {t.home.objections.map((item, i) => (
+            <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} />
+            <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
+              {t.home.areas.map((path, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <ObjectionCard q={item.q} a={item.a} />
+                  <ProofCard
+                    image={areaImages[i % areaImages.length]}
+                    imageAlt={path.title}
+                    index={i}
+                    title={path.title}
+                    text={path.desc}
+                    cta={{ label: path.cta, to: areaLinks[i] }}
+                  />
                 </Reveal>
               ))}
             </div>
           </div>
         </section>
-      )}
 
-      {/* ═══════════════════════════════════════════════════════════
-          5) FAQ-HINWEIS — websiteweit einheitlich
-          ─────────────────────────────────────────────────────────── */}
-      <FaqHint />
+        {/* TRUST */}
+        <section className="section-premium section-navy text-white">
+          <div className="container-premium">
+            <SectionHeader title={t.home.trustTitle} intro={t.home.trustText} tone="dark" />
 
-      {/* ═══════════════════════════════════════════════════════════
-          6) FINAL CTA — editorialer Split (Cream + Navy-Insel)
-          ─────────────────────────────────────────────────────────── */}
-      <FinalCta
-        variant="split"
-        eyebrow={t.home.finalCtaEyebrow ?? "Nächster Schritt"}
-        title={t.home.finalCtaTitle}
-        text={t.home.finalCtaText}
-        buttonLabel={t.home.finalCtaButton}
-        buttonTo="/kontakt"
-      />
+            {t.home.proofPoints && t.home.proofPoints.length > 0 && (
+              <Reveal delay={0.1}>
+                <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+                  {t.home.proofPoints.map((point, i) => (
+                    <ProofCard
+                      key={i}
+                      iconImage={proofIconImages[i % proofIconImages.length]}
+                      iconAlt={point.title}
+                      index={i}
+                      title={point.title}
+                      text={point.text}
+                    />
+                  ))}
+                </div>
+              </Reveal>
+            )}
+
+            <Reveal delay={0.15}>
+              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[260px_1fr] gap-0 overflow-hidden">
+                <div className="relative h-48 md:h-auto min-h-[200px] overflow-hidden">
+                  <img
+                    src={editorial.notaryQuiet}
+                    alt="Ruhige Bibliothek mit Messinglampe und Marmoroberfläche – sinnbildlich für vertrauliche, gewissenhafte Bearbeitung"
+                    loading="lazy"
+                    width={520}
+                    height={520}
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[hsl(212_52%_12%_/_0.55)]" aria-hidden="true" />
+                </div>
+                <div className="p-8 md:p-10">
+                  <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
+                    {t.home.trustClaimTitle}
+                  </h3>
+                  <p className="text-[0.93rem] leading-[1.85] text-white/70">
+                    {t.home.trustClaimText}
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* 3-SCHRITT-TEASER */}
+        <section
+          id="ablauf"
+          className="section-premium scroll-mt-24"
+          style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
+        >
+          <div className="container-premium">
+            <SectionHeader title={t.home.stepsTitle} />
+            <div className="grid gap-6 md:gap-10 sm:grid-cols-3">
+              {t.home.steps.map((item, i) => (
+                <ProcessStep
+                  key={i}
+                  index={i}
+                  total={t.home.steps.length}
+                  title={item.title}
+                  desc={item.desc}
+                  iconImage={stepIcons[i % stepIcons.length]}
+                  iconAlt={item.title}
+                />
+              ))}
+            </div>
+
+            <Reveal delay={0.3}>
+              <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
+                {t.home.stepsNote}
+              </p>
+            </Reveal>
+
+            <Reveal delay={0.35}>
+              <div className="mt-6 text-center">
+                <Link
+                  to="/wie-es-funktioniert"
+                  className="inline-flex items-center gap-2 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-primary hover:text-primary/80 transition-colors"
+                >
+                  {t.home.stepsLink}
+                  <ArrowRight size={13} className="text-[hsl(45_70%_45%)]" />
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        {/* EINWANDBEHANDLUNG */}
+        {t.home.objections && t.home.objections.length > 0 && (
+          <section className="section-premium bg-gradient-warm">
+            <div className="container-premium">
+              <SectionHeader
+                title={t.home.objectionsTitle ?? ""}
+                intro={t.home.objectionsIntro}
+              />
+              <div className="grid gap-5 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+                {t.home.objections.map((item, i) => (
+                  <Reveal key={i} delay={i * 0.08}>
+                    <ObjectionCard q={item.q} a={item.a} />
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Hinweis auf zentrale FAQ */}
+        <section className="bg-gradient-warm">
+          <div className="container-premium py-10 md:py-12 text-center">
+            <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
+              Weitere Fragen beantworten wir in unseren{" "}
+              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
+                FAQ
+              </Link>
+              .
+            </p>
+          </div>
+        </section>
+
+        <FinalCta
+          title={t.home.finalCtaTitle}
+          text={t.home.finalCtaText}
+          buttonLabel={t.home.finalCtaButton}
+          buttonTo="/kontakt"
+        />
+      </div>
     </Layout>
   );
 };

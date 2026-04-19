@@ -308,7 +308,6 @@ const de: Translations = {
     heroSecondaryCta: "Wie wir vorgehen",
     heroTrustLine: "Unverbindlich · Persönliche Rückmeldung in 2 Werktagen",
     areasLabel: "Leistungen",
-    areasEyebrow: "Drei Wege",
     areasTitle: "Drei Wege, wie wir Eigentümer entlasten",
     areasIntro: "Wir sind Käufer – keine Vermittler. Drei typische Situationen, in denen wir Immobilien übernehmen.",
     areas: [
@@ -316,7 +315,6 @@ const de: Translations = {
       { title: "Erb- und Konfliktfälle", desc: "Erbengemeinschaften, Streit um Anteile, blockierte Verkäufe. Wir kaufen ganze Anteile oder einzelne Erbteile und bringen festgefahrene Prozesse wieder in Bewegung.", cta: "Fall vertraulich besprechen" },
       { title: "Direktankauf ohne Notlage", desc: "Sie möchten ohne Druck verkaufen? Wir prüfen passende Objekte und kaufen direkt – ohne Maklerprovision, ohne Besichtigungsmarathon, ohne Finanzierungsvorbehalt.", cta: "Objekt anfragen" },
     ],
-    trustEyebrow: "Unsere Haltung",
     trustTitle: "Was wir tun – und was nicht",
     trustText: "Aurelia kauft Immobilien ausschließlich auf eigene Rechnung. Keine Kredite, keine Finanzprodukte, keine Beteiligungsmodelle.",
     trustClaimTitle: "Unsere vier Versprechen",
@@ -327,7 +325,6 @@ const de: Translations = {
       { title: "Langfristigkeit", text: "Wir denken über den Verkauf hinaus – tragfähig für beide Seiten." },
       { title: "Klarheit", text: "Klare Absage oder begründetes Angebot. Kein Vielleicht." },
     ],
-    stepsEyebrow: "So arbeiten wir",
     stepsTitle: "So läuft eine Anfrage bei uns ab",
     steps: [
       { title: "Sie schildern den Fall", desc: "Kurz, formlos, vertraulich per Telefon oder Formular." },
@@ -336,7 +333,6 @@ const de: Translations = {
     ],
     stepsNote: "Erstgespräch und Prüfung sind kostenfrei – auch wenn am Ende kein Kauf zustande kommt. Entscheidend ist, wie schnell die Unterlagen vorliegen und ob sich mit den Gläubigern rechtzeitig eine Lösung abstimmen lässt.",
     stepsLink: "Vollständigen Ablauf ansehen",
-    objectionsEyebrow: "Klartext",
     objectionsTitle: "Was Eigentümer uns oft als Erstes fragen",
     objectionsIntro: "Drei berechtigte Bedenken – und unsere Antwort, in Klartext.",
     objections: [
@@ -354,7 +350,6 @@ const de: Translations = {
       { q: "Kann ich nach dem Verkauf wohnen bleiben?", a: "In Einzelfällen lässt sich ein Mietverhältnis vereinbaren – abhängig von Objekt, Markt und Ihren Zielen." },
       { q: "Bleibt meine Anfrage vertraulich?", a: "Ja. Alle Informationen werden streng vertraulich behandelt." },
     ],
-    finalCtaEyebrow: "Nächster Schritt",
     finalCtaTitle: "Jetzt kostenlose Ersteinschätzung sichern",
     finalCtaText: "Wir prüfen Ihren Fall unverbindlich und melden uns innerhalb von zwei Werktagen mit einer klaren Aussage.",
     finalCtaButton: "Vertraulich anfragen",
