@@ -50,16 +50,18 @@ const HowItWorks = () => {
         >
           <div className="container-premium">
             <SectionHeader title={w.segmentsTitle} intro={w.segmentsIntro} />
-            <div className="grid gap-6 md:gap-7 md:grid-cols-3">
+            <div className="grid gap-8 md:gap-10 md:grid-cols-3">
               {w.segments.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <ProofCard
-                    iconImage={segmentIcons[i % segmentIcons.length]}
-                    iconAlt={s.title}
-                    index={i}
-                    title={s.title}
-                    text={s.desc}
-                  />
+                  <div className="border-l border-accent/40 pl-6">
+                    <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-3 text-[1.05rem] font-heading font-semibold text-primary leading-snug">
+                      {s.title}
+                    </h3>
+                    <p className="mt-2 text-[0.88rem] leading-[1.75] text-muted-foreground">{s.desc}</p>
+                  </div>
                 </Reveal>
               ))}
             </div>
