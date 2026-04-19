@@ -2,11 +2,18 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
-import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
-import { ArrowRight, Phone } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Compass,
+  Target,
+  Lock,
+  Handshake,
+  Zap,
+  Scale,
+} from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const About = () => {
@@ -17,7 +24,7 @@ const About = () => {
     document.title = `${a.hero.title} – Aurelia Grundbesitz GmbH`;
   }, [a.hero.title]);
 
-  // Editorial text section: optional thin image strip above headline, thin gold rule, restrained typography
+  // Editorial text section (used for the existing narrative blocks)
   const TextBlock = ({
     headline,
     children,
@@ -58,6 +65,16 @@ const About = () => {
     </section>
   );
 
+  // Icons for the 4 values cards (mapped semantically)
+  const valueIcons = [Lock, Handshake, Zap, Scale];
+
+  // Visual motifs for the 3 typology cards (uses existing editorial assets)
+  const caseImages = [
+    { src: editorial.facadeDetail, alt: "Bestandsfassade – sinnbildlich für Notlagen" },
+    { src: editorial.interiorCalm, alt: "Ruhiger Innenraum – sinnbildlich für Erbengemeinschaften" },
+    { src: editorial.notaryQuiet, alt: "Notarieller Schreibtisch – sinnbildlich für direkten Ankauf" },
+  ];
+
   return (
     <Layout>
       {/* HERO – ruhig, ohne CTA-Stack */}
@@ -96,45 +113,218 @@ const About = () => {
         </div>
       </section>
 
+      {/* SEKTION 1 – Qualitative Kennzahlen-Leiste (Navy, Gold-Akzente) */}
+      {a.metricsBar && (
+        <section className="bg-primary py-12 md:py-14 border-t border-accent/20">
+          <div className="container-premium">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6">
+              {a.metricsBar.items.map((item, idx) => (
+                <Reveal key={idx} delay={idx * 0.05}>
+                  <div className="text-center px-2">
+                    <div className="mx-auto mb-3 h-px w-6 bg-accent" aria-hidden="true" />
+                    <p className="font-heading font-semibold text-accent text-[1.05rem] md:text-[1.2rem] leading-tight">
+                      {item.value}
+                    </p>
+                    <p className="mt-2 text-[12px] md:text-[13px] leading-[1.55] text-white/75">
+                      {item.label}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <div className="page-shell">
-        {/* 1 – Unternehmensprofil: Warum Aurelia bei festgefahrenen Lagen relevant ist */}
+        {/* Bestehend – Warum Aurelia bei festgefahrenen Lagen relevant ist */}
         <TextBlock
           headline={a.companyProfile.headline}
           tone="light"
           image={editorial.caseReviewDesk}
-          imageAlt="Ruhiger Arbeitsplatz mit geordneten Unterlagen – sinnbildlich für strukturierte Fallprüfung"
+          imageAlt="Ruhiger Arbeitsplatz mit geordneten Unterlagen"
         >
           <p>{a.companyProfile.body}</p>
         </TextBlock>
 
-        {/* 2 – Wofür Aurelia steht */}
-        <TextBlock
-          headline={a.profile.headline}
-          tone="muted"
-        >
+        {/* Bestehend – Wofür Aurelia steht */}
+        <TextBlock headline={a.profile.headline} tone="muted">
           <p>{a.profile.body1}</p>
           <p>{a.profile.body2}</p>
         </TextBlock>
 
-        {/* 3 – In welchen Situationen wir tätig werden */}
-        <TextBlock
-          headline={a.situations.headline}
-          tone="light"
-        >
+        {/* SEKTION 2 – Das Team hinter Aurelia (zweispaltig) */}
+        {a.team && (
+          <section className="py-20 md:py-28 bg-background">
+            <div className="container-premium">
+              <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+                <Reveal>
+                  <div>
+                    <div className="mb-4 h-px w-8 bg-accent" aria-hidden="true" />
+                    <h2 className="mb-6 font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
+                      {a.team.headline}
+                    </h2>
+                    <p className="text-[15px] md:text-[16px] leading-[1.85] text-foreground/80">
+                      {a.team.body}
+                    </p>
+                  </div>
+                </Reveal>
+                <Reveal delay={0.1}>
+                  <div className="overflow-hidden rounded-sm border border-border/40">
+                    <img
+                      src={editorial.cooperationMeeting}
+                      alt={a.team.imageAlt}
+                      loading="lazy"
+                      className="block w-full h-auto aspect-[4/3] object-cover"
+                    />
+                  </div>
+                </Reveal>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* SEKTION 3 – Vision & Mission (2 Karten auf Navy) */}
+        {a.visionMission && (
+          <section className="py-20 md:py-28 bg-primary">
+            <div className="container-premium">
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
+                {[
+                  { icon: Compass, title: a.visionMission.visionTitle, text: a.visionMission.visionText },
+                  { icon: Target, title: a.visionMission.missionTitle, text: a.visionMission.missionText },
+                ].map((card, idx) => {
+                  const Icon = card.icon;
+                  return (
+                    <Reveal key={idx} delay={idx * 0.08}>
+                      <div className="h-full p-8 md:p-10 border border-white/10 bg-primary/40 rounded-sm">
+                        <div
+                          className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-full"
+                          style={{ backgroundColor: "hsl(var(--highlight))" }}
+                        >
+                          <Icon size={20} strokeWidth={1.75} className="text-white" />
+                        </div>
+                        <h3 className="mb-4 font-heading font-semibold text-accent text-[1.15rem] md:text-[1.3rem] leading-tight">
+                          {card.title}
+                        </h3>
+                        <p className="text-[14px] md:text-[15px] leading-[1.8] text-white/85">
+                          {card.text}
+                        </p>
+                      </div>
+                    </Reveal>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* SEKTION 4 – Unsere Werte (4 Icon-Karten, Off-White) */}
+        {a.values && (
+          <section className="py-20 md:py-28 bg-secondary/40">
+            <div className="container-premium">
+              <Reveal>
+                <div className="text-center mb-12 md:mb-14">
+                  <div className="mx-auto mb-4 h-px w-8 bg-accent" aria-hidden="true" />
+                  <h2 className="font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
+                    {a.values.headline}
+                  </h2>
+                </div>
+              </Reveal>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 max-w-6xl mx-auto">
+                {a.values.items.map((item, idx) => {
+                  const Icon = valueIcons[idx] ?? Lock;
+                  return (
+                    <Reveal key={idx} delay={idx * 0.05}>
+                      <div className="h-full p-6 md:p-7 bg-background border border-border/40 rounded-sm text-center">
+                        <div
+                          className="mx-auto mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full"
+                          style={{ backgroundColor: "hsl(var(--highlight))" }}
+                        >
+                          <Icon size={20} strokeWidth={1.75} className="text-white" />
+                        </div>
+                        <h3 className="mb-3 font-heading font-semibold text-accent text-[1rem] md:text-[1.1rem] leading-tight">
+                          {item.title}
+                        </h3>
+                        <p className="text-[13px] md:text-[14px] leading-[1.75] text-foreground/80">
+                          {item.text}
+                        </p>
+                      </div>
+                    </Reveal>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Bestehend – In welchen Situationen wir tätig werden */}
+        <TextBlock headline={a.situations.headline} tone="light">
           <p>{a.situations.body1}</p>
           <p>{a.situations.body2}</p>
         </TextBlock>
 
-        {/* 4 – Wie wir Fälle prüfen */}
-        <TextBlock
-          headline={a.review.headline}
-          tone="muted"
-        >
+        {/* SEKTION 5 – Fall-Typologien (3 Karten mit Bild) */}
+        {a.cases && (
+          <section className="py-20 md:py-28 bg-secondary/40">
+            <div className="container-premium">
+              <Reveal>
+                <div className="text-center mb-12 md:mb-14 max-w-2xl mx-auto">
+                  <div className="mx-auto mb-4 h-px w-8 bg-accent" aria-hidden="true" />
+                  <h2 className="font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
+                    {a.cases.headline}
+                  </h2>
+                </div>
+              </Reveal>
+              <div className="grid md:grid-cols-3 gap-6 md:gap-7 max-w-6xl mx-auto">
+                {a.cases.items.map((item, idx) => {
+                  const img = caseImages[idx] ?? caseImages[0];
+                  return (
+                    <Reveal key={idx} delay={idx * 0.06}>
+                      <article className="h-full bg-background border border-border/40 rounded-sm overflow-hidden flex flex-col">
+                        <div className="overflow-hidden">
+                          <img
+                            src={img.src}
+                            alt={img.alt}
+                            loading="lazy"
+                            className="block w-full h-auto aspect-[4/3] object-cover"
+                          />
+                        </div>
+                        <div className="p-6 md:p-7 flex flex-col flex-1">
+                          <span
+                            className="self-start mb-4 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] rounded-sm"
+                            style={{
+                              backgroundColor: "hsl(var(--highlight) / 0.9)",
+                              color: "hsl(var(--primary-foreground))",
+                            }}
+                          >
+                            {item.label}
+                          </span>
+                          <h3 className="mb-3 font-heading font-semibold text-primary text-[1.05rem] md:text-[1.15rem] leading-tight">
+                            {item.title}
+                          </h3>
+                          <p className="text-[13px] md:text-[14px] leading-[1.75] text-foreground/80">
+                            {item.text}
+                          </p>
+                        </div>
+                      </article>
+                    </Reveal>
+                  );
+                })}
+              </div>
+              <p className="mt-10 text-center text-[12px] md:text-[13px] italic text-muted-foreground">
+                {a.cases.note}
+              </p>
+            </div>
+          </section>
+        )}
+
+        {/* Bestehend – Wie wir Fälle prüfen */}
+        <TextBlock headline={a.review.headline} tone="light">
           <p>{a.review.body1}</p>
           <p>{a.review.body2}</p>
         </TextBlock>
 
-        {/* 5 – Abschluss-CTA (Steel Blue, ruhig) mit goldener Trennlinie zum Navy-Footer */}
+        {/* Abschluss-CTA */}
         <section style={{ backgroundColor: "hsl(var(--highlight))" }} className="px-0">
           <div className="container-premium" style={{ paddingTop: 80, paddingBottom: 80 }}>
             <Reveal>
@@ -168,7 +358,6 @@ const About = () => {
               </div>
             </Reveal>
           </div>
-          {/* Goldene Trennlinie zum Navy-Footer */}
           <div className="h-px w-full bg-accent" aria-hidden="true" />
         </section>
       </div>
