@@ -1,25 +1,21 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageSquare, Search, FileText, Handshake } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
-import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FaqBlock from "@/components/sections/FaqBlock";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
-import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
-// Proof (4) — Verifiziert, Fair, Bestätigt, Dokumentiert → semantische 3D-Icons
-const proofIcons = [icons3d.userCheckLight, icons3d.scaleLight, icons3d.checkCircleLight, icons3d.documentLight];
-// Steps (4) — Erstkontakt, Prüfung, Angebot, Notar/Übergabe (3D-Icons)
-const stepIcons = [icons3d.dialogueLight, icons3d.magnifier, icons3d.contract, icons3d.handshakeLight];
+// Steps (4) — kleine, zurückhaltende Lucide-Icons für die Prozess-Schritte
+const stepIcons = [MessageSquare, Search, FileText, Handshake];
 
 const ForBuyers = () => {
   const { t } = useLanguage();
@@ -78,47 +74,55 @@ const ForBuyers = () => {
           </div>
         </section>
 
-        {/* GRUNDE / PROOF POINTS */}
+        {/* GRUNDE / PROOF POINTS — typografisch, ohne Icons */}
         <section
           className="section-premium"
           style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
           <div className="container-premium">
             <SectionHeader title={b.proofTitle} intro={b.proofIntro} />
-            <Reveal delay={0.1}>
-              <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {b.proofPoints.map((p, i) => (
-                  <ProofCard
-                    key={i}
-                    iconImage={proofIcons[i % proofIcons.length]}
-                    iconAlt={p.title}
-                    index={i}
-                    title={p.title}
-                    text={p.text}
-                    compact
-                  />
-                ))}
-              </div>
-            </Reveal>
+            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              {b.proofPoints.map((p, i) => (
+                <Reveal key={i} delay={i * 0.06}>
+                  <div className="border-l border-accent/40 pl-5">
+                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                      {String(i + 1).padStart(2, "0")}
+                    </div>
+                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{p.text}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* ABLAUF */}
+        {/* ABLAUF — kleine, zurückhaltende Prozess-Icons */}
         <section id="ablauf" className="section-premium bg-gradient-warm scroll-mt-24">
           <div className="container-premium">
             <SectionHeader title={b.stepsTitle} />
-            <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              {b.steps.map((s, i) => (
-                <ProcessStep
-                  key={i}
-                  index={i}
-                  total={b.steps.length}
-                  title={s.title}
-                  desc={s.desc}
-                  iconImage={stepIcons[i % stepIcons.length]}
-                  iconAlt={s.title}
-                />
-              ))}
+            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              {b.steps.map((s, i) => {
+                const Icon = stepIcons[i % stepIcons.length];
+                return (
+                  <Reveal key={i} delay={i * 0.06}>
+                    <div>
+                      <div className="flex items-center gap-3">
+                        <Icon size={16} strokeWidth={1.5} className="text-accent/80" aria-hidden="true" />
+                        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <h3 className="mt-3 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                        {s.title}
+                      </h3>
+                      <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{s.desc}</p>
+                    </div>
+                  </Reveal>
+                );
+              })}
             </div>
             <Reveal delay={0.3}>
               <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
