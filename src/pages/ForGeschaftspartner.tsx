@@ -33,9 +33,9 @@ const ForGeschaftspartner = () => {
 
       <div className="page-shell">
         {/* KOOPERATIONSFORMEN – Legal-Hinweis ist sauber in die erste Folgefläche integriert */}
-        <section className="section-premium bg-gradient-warm !pt-10 md:!pt-14">
+        <section className="section-premium bg-gradient-warm !pt-6 md:!pt-8">
           <div className="container-premium">
-            <p className="mx-auto mb-8 md:mb-10 max-w-3xl text-[0.78rem] leading-[1.7] text-muted-foreground text-center">
+            <p className="mx-auto mb-6 md:mb-8 max-w-3xl text-[0.78rem] leading-[1.7] text-muted-foreground text-center">
               <span className="font-medium text-foreground/80">{p.legalNoticeLabel}:</span> {p.legalNoticeText}
             </p>
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
