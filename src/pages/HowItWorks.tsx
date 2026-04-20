@@ -37,7 +37,7 @@ const HowItWorks = () => {
 
       <div className="page-shell">
         {/* INTRO */}
-        <section className="section-premium bg-gradient-warm">
+        <section className="section-premium bg-gradient-warm !pt-12 md:!pt-16">
           <div className="container-premium">
             <SectionHeader title={w.introTitle} intro={w.introText} />
           </div>

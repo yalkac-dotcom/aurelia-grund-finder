@@ -41,7 +41,7 @@ const ForGeschaftspartner = () => {
         </section>
 
         {/* KOOPERATIONSFORMEN */}
-        <section className="section-premium bg-gradient-warm">
+        <section className="section-premium bg-gradient-warm !pt-12 md:!pt-16">
           <div className="container-premium">
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
             <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
