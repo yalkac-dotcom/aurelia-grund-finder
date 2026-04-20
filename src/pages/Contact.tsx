@@ -86,11 +86,11 @@ const Contact = () => {
               {t.contact.hereForYou}
             </h2>
             <a
-              href="tel:+4921169583033"
+              href="mailto:info@aureliaestates.de"
               className="inline-block text-[1.05rem] md:text-[1.2rem] font-semibold tracking-tight transition-colors"
               style={{ color: "hsl(var(--highlight))" }}
             >
-              📞 +49 211 69583033
+              info@aureliaestates.de
             </a>
             <p className="mt-2 text-[0.85rem] text-muted-foreground">
               Mo–Fr, auch kurzfristig bei laufenden Verfahren
