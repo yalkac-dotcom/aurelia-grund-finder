@@ -430,6 +430,9 @@ export interface Translations {
     subject: string;
     message: string;
     send: string;
+    requiredHint: string;
+    consentNotice: string;
+    consentNoticeLink: string;
     successTitle: string;
     successText: string;
     subjectOptions: string[];
