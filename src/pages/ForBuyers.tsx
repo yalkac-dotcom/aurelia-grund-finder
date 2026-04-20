@@ -39,7 +39,7 @@ const ForBuyers = () => {
         {/* MERKMALE */}
         <section className="section-premium bg-gradient-warm !pt-0 md:!pt-0">
           <div className="container-premium">
-            <SectionHeader title={b.featuresTitle} intro={b.featuresIntro} />
+            <SectionHeader title={b.featuresTitle} intro={b.featuresIntro} disableOffset />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
               {b.features.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
