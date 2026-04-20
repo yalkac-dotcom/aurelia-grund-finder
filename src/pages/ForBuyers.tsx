@@ -37,7 +37,7 @@ const ForBuyers = () => {
 
       <div className="page-shell">
         {/* MERKMALE */}
-        <section className="section-premium bg-gradient-warm !pt-16 md:!pt-20">
+        <section className="section-premium bg-gradient-warm !pt-10 md:!pt-12">
           <div className="container-premium">
             <SectionHeader title={b.featuresTitle} intro={b.featuresIntro} />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
