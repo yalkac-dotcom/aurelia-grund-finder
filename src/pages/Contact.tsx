@@ -3,7 +3,8 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
-import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown } from "lucide-react";
+import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown, AlertCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";
 import PremiumContactModule from "@/components/contact/PremiumContactModule";
@@ -202,12 +203,14 @@ const Contact = () => {
                     />
                   </div>
 
-                  {error && <p className="text-destructive text-sm">{error}</p>}
+                  {error && (
+                    <div role="alert" className="flex items-start gap-2 rounded-md border border-destructive/30 bg-destructive/5 px-3 py-2.5">
+                      <AlertCircle className="text-destructive mt-0.5 shrink-0" size={14} />
+                      <p className="text-destructive text-sm leading-[1.5]">{error}</p>
+                    </div>
+                  )}
 
-                  <div className="flex items-center justify-between pt-1">
-                    <p className="text-xs text-muted-foreground">
-                      <span className="text-accent">*</span> {t.common.requiredFields}
-                    </p>
+                  <div className="pt-1">
                     <button
                       type="submit"
                       disabled={submitting}
@@ -226,7 +229,16 @@ const Contact = () => {
                       )}
                     </button>
                   </div>
-                  <p className="text-muted-foreground/70 text-xs text-right mt-1">{t.contact.privacyNote}</p>
+                  <p className="text-muted-foreground text-xs leading-[1.65] mt-3">
+                    {t.contact.consentNotice}{" "}
+                    <Link to="/datenschutz" className="text-accent hover:underline">
+                      {t.contact.consentNoticeLink}
+                    </Link>
+                    .
+                  </p>
+                  <p className="text-muted-foreground/70 text-xs mt-1">
+                    {t.contact.requiredHint}
+                  </p>
                 </form>
               )}
             </div>
