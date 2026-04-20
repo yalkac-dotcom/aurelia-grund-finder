@@ -273,3 +273,52 @@ const Contact = () => {
     </Layout>
   );
 };
+
+const ContactFAQ = () => {
+  const { t } = useLanguage();
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  return (
+    <section className="py-6 md:py-10 bg-secondary/30">
+      <div className="container max-w-3xl">
+        <Reveal>
+          <div className={`${panelBase} ${panelPadding}`}>
+            <div className="section-shell-accent mb-8">
+              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.contact.faqLabel}</p>
+              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
+                {t.contact.faqTitle}
+              </h2>
+            </div>
+            <p className="text-muted-foreground text-sm leading-[1.7] mb-6">
+              {t.contact.faqSubtitle}
+            </p>
+            <div className="space-y-3">
+              {t.contact.faqItems.map((item, i) => (
+                <div key={i} className="bg-secondary/40 rounded-[1.1rem] overflow-hidden">
+                  <button
+                    type="button"
+                    onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                    className="w-full flex items-center justify-between px-7 py-5 text-left gap-4 group"
+                  >
+                    <span className="text-sm font-heading font-semibold text-foreground group-hover:text-accent transition-colors">{item.q}</span>
+                    <ChevronDown
+                      size={14}
+                      className={`shrink-0 text-muted-foreground transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {openIndex === i && (
+                    <p className="text-muted-foreground text-sm leading-[1.8] px-7 pb-5 -mt-1">
+                      {item.a}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
