@@ -628,6 +628,15 @@ export interface Translations {
     formSubjectOption: string;
     formPrivacyNote: string;
   };
+  faqPage: {
+    kicker: string;
+    title: string;
+    intro: string;
+    items: { q: string; a: string }[];
+    ctaTitle: string;
+    ctaText: string;
+    ctaButton: string;
+  };
 }
 
 export const languageNames: Record<Language, string> = {
