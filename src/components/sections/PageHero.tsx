@@ -35,7 +35,7 @@ const PageHero = ({
   primaryCta,
   secondaryCta,
   trustLine,
-  imagePosition = "center",
+  imagePosition,
   phoneLine,
   size = "default",
 }: PageHeroProps) => (
@@ -50,7 +50,10 @@ const PageHero = ({
         sizes={image.sizes}
         alt={imageAlt}
         className="hero-media h-full w-full object-cover"
-        style={{ objectPosition: imagePosition }}
+        // Inline-objectPosition nur setzen, wenn die Seite explizit einen
+        // Fokuspunkt vorgibt. Sonst greifen die zentral in index.css
+        // gepflegten Breakpoint-Defaults von .hero-media.
+        style={imagePosition ? { objectPosition: imagePosition } : undefined}
         priority
       />
       {/* Single read-protection gradient (merged from previous double layer) */}
