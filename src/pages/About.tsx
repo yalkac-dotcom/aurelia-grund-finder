@@ -78,7 +78,7 @@ const About = () => {
       {/* HERO – ruhig, ohne CTA-Stack */}
       <section
         id="hero"
-        className="relative flex h-[58svh] min-h-[400px] items-center md:h-[64vh] md:min-h-[460px] bg-primary"
+        className="relative flex h-[82svh] min-h-[520px] items-center md:h-[86vh] md:min-h-[620px] bg-primary"
       >
         <div className="absolute inset-0 overflow-hidden bg-primary">
           <img
