@@ -32,6 +32,7 @@ const ForBuyers = () => {
         primaryCta={{ label: b.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: b.heroSecondaryCta, href: "#ablauf" }}
         trustLine={b.heroTrustLine}
+        size="compact"
       />
 
       <div className="page-shell">

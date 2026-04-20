@@ -33,11 +33,12 @@ const HowItWorks = () => {
         primaryCta={{ label: w.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: w.heroSecondaryCta, href: "#ablauf" }}
         trustLine={w.heroTrustLine}
+        size="compact"
       />
 
       <div className="page-shell">
         {/* INTRO */}
-        <section className="section-premium bg-gradient-warm !pt-12 md:!pt-16">
+        <section className="section-premium bg-gradient-warm !pt-10 md:!pt-14 !pb-12 md:!pb-16">
           <div className="container-premium">
             <SectionHeader title={w.introTitle} intro={w.introText} />
           </div>
