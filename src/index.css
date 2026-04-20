@@ -804,10 +804,10 @@
 @media (min-width: 768px) {
   .hero-media {
     filter: brightness(1.06) saturate(0.98) contrast(1.02);
+    /* Tablet / kleines Desktop: leicht über Mitte, ruhiger Bildbereich
+       hinter dem Text-Block links. */
+    object-position: 50% 45%;
   }
-
-
-
 
   .hero-kicker {
     margin-bottom: 0.95rem;
@@ -819,6 +819,31 @@
 
   .hero-trust {
     align-items: center;
+  }
+}
+
+/* Standard-Desktop (Laptop ~13–15", 1280–1535px) */
+@media (min-width: 1280px) {
+  .hero-media {
+    object-position: 50% 42%;
+  }
+}
+
+/* Großer Desktop (16–21", 1536–1919px) — Fokus etwas weiter nach rechts,
+   damit Architektur-/Fassadendetail bei breiteren Crops nicht zu weit
+   nach außen rutscht und der Text-Block links vor ruhigem Bildbereich liegt. */
+@media (min-width: 1536px) {
+  .hero-media {
+    object-position: 55% 40%;
+  }
+}
+
+/* Ultra-wide / 24"+ (1920px+) — gleicher Effekt verstärkt, damit
+   das Hauptmotiv mittig im sichtbaren Crop bleibt und nicht nach
+   rechts „wegläuft". */
+@media (min-width: 1920px) {
+  .hero-media {
+    object-position: 58% 40%;
   }
 }
 
