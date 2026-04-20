@@ -71,10 +71,10 @@ const Footer = () => {
                 {t.footer.phoneLabel}: +49 211 69583033
               </a>
               <a
-                href="mailto:info@aureliaestates.de"
+                href="mailto:office@aureliaestates.de"
                 className="text-white/65 hover:text-accent transition-colors duration-200"
               >
-                {t.footer.emailLabel}: info@aureliaestates.de
+                {t.footer.emailLabel}: office@aureliaestates.de
               </a>
             </div>
 

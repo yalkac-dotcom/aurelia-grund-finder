@@ -33,8 +33,8 @@ const PremiumContactModule = () => {
               </p>
               <p className="text-[0.93rem] text-foreground leading-[1.7] mt-2">
                 E-Mail:{" "}
-                <a href="mailto:info@aureliaestates.de" className="font-medium text-highlight hover:text-accent transition-colors">
-                  info@aureliaestates.de
+                <a href="mailto:office@aureliaestates.de" className="font-medium text-highlight hover:text-accent transition-colors">
+                  office@aureliaestates.de
                 </a>
               </p>
             </div>
@@ -56,14 +56,14 @@ const PremiumContactModule = () => {
 
             <div className="flex flex-wrap gap-x-6 gap-y-1 mt-5">
               <a
-                href={`mailto:info@aureliaestates.de?subject=${encodeURIComponent(t.contact.callbackSubject)}`}
+                href={`mailto:office@aureliaestates.de?subject=${encodeURIComponent(t.contact.callbackSubject)}`}
                 className="inline-flex items-center gap-1.5 text-muted-foreground text-xs hover:text-accent transition-colors"
               >
                 <PhoneCall size={12} strokeWidth={1.5} />
                 {t.contact.moduleCta2}
               </a>
               <a
-                href={`mailto:info@aureliaestates.de?subject=${encodeURIComponent(t.contact.appointmentSubject)}`}
+                href={`mailto:office@aureliaestates.de?subject=${encodeURIComponent(t.contact.appointmentSubject)}`}
                 className="inline-flex items-center gap-1.5 text-muted-foreground text-xs hover:text-accent transition-colors"
               >
                 <CalendarDays size={12} strokeWidth={1.5} />
