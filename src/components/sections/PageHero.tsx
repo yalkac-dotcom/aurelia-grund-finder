@@ -22,8 +22,8 @@ interface PageHeroProps {
 }
 
 const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
-  default: "h-[100svh] min-h-[600px] md:h-screen md:min-h-[680px]",
-  compact: "h-[100svh] min-h-[600px] md:h-screen md:min-h-[680px]",
+  default: "h-[85svh] min-h-[540px] md:h-[89vh] md:min-h-[640px]",
+  compact: "h-[85svh] min-h-[540px] md:h-[89vh] md:min-h-[640px]",
 };
 
 const PageHero = ({

@@ -75,65 +75,63 @@ const About = () => {
 
   return (
     <Layout>
-      <div className="bg-primary">
-        {/* HERO – ruhig, ohne CTA-Stack */}
-        <section
-          id="hero"
-          className="relative flex min-h-[calc(100svh-208px)] items-center bg-primary md:min-h-[calc(100vh-188px)]"
-        >
-          <div className="absolute inset-0 overflow-hidden bg-primary">
-            <img
-              src={editorial.notaryQuiet}
-              alt={a.hero.title}
-              loading="eager"
-              className="hero-media h-full w-full object-cover object-center"
-            />
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(to right, hsl(var(--primary) / 0.92) 0%, hsl(var(--primary) / 0.82) 35%, hsl(var(--primary) / 0.50) 65%, hsl(var(--primary) / 0.32) 100%)",
-              }}
-            />
-          </div>
+      {/* HERO – ruhig, ohne CTA-Stack */}
+      <section
+        id="hero"
+        className="relative flex h-[58svh] min-h-[400px] items-center md:h-[64vh] md:min-h-[460px] bg-primary"
+      >
+        <div className="absolute inset-0 overflow-hidden bg-primary">
+          <img
+            src={editorial.notaryQuiet}
+            alt={a.hero.title}
+            loading="eager"
+            className="hero-media h-full w-full object-cover object-center"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to right, hsl(var(--primary) / 0.92) 0%, hsl(var(--primary) / 0.82) 35%, hsl(var(--primary) / 0.50) 65%, hsl(var(--primary) / 0.32) 100%)",
+            }}
+          />
+        </div>
 
-          <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
-            <div className="hero-copy-shell">
-              <Reveal>
-                <p className="hero-kicker">{a.hero.kicker}</p>
-                <h1 className="hero-title">{a.hero.title}</h1>
-                <p className="hero-description">{a.hero.subtitle}</p>
-                <p className="mt-5 max-w-2xl text-[15px] md:text-[16px] leading-[1.8] text-white/85">
-                  {a.hero.body}
-                </p>
-              </Reveal>
+        <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
+          <div className="hero-copy-shell">
+            <Reveal>
+              <p className="hero-kicker">{a.hero.kicker}</p>
+              <h1 className="hero-title">{a.hero.title}</h1>
+              <p className="hero-description">{a.hero.subtitle}</p>
+              <p className="mt-5 max-w-2xl text-[15px] md:text-[16px] leading-[1.8] text-white/85">
+                {a.hero.body}
+              </p>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* SEKTION 1 – Qualitative Kennzahlen-Leiste (Navy, Gold-Akzente) */}
+      {a.metricsBar && (
+        <section className="bg-primary py-14 md:py-16 border-t border-accent/20">
+          <div className="container-premium">
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
+              {a.metricsBar.items.map((item, idx) => (
+                <Reveal key={idx} delay={idx * 0.05}>
+                  <div className="text-center px-4 py-6 md:py-2">
+                    <p className="font-heading font-medium text-accent text-[0.95rem] md:text-[1.05rem] leading-tight tracking-wide">
+                      {item.value}
+                    </p>
+                    <div className="mx-auto my-3 h-px w-5 bg-accent/50" aria-hidden="true" />
+                    <p className="text-[11px] md:text-[12px] leading-[1.6] text-white/65 uppercase tracking-[0.12em]">
+                      {item.label}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
-
-        {/* SEKTION 1 – Qualitative Kennzahlen-Leiste (Navy, Gold-Akzente) */}
-        {a.metricsBar && (
-          <section className="border-t border-accent/20 bg-primary py-14 md:py-16">
-            <div className="container-premium">
-              <div className="grid grid-cols-2 divide-y divide-white/10 md:grid-cols-4 md:divide-x md:divide-y-0">
-                {a.metricsBar.items.map((item, idx) => (
-                  <Reveal key={idx} delay={idx * 0.05}>
-                    <div className="px-4 py-6 text-center md:py-2">
-                      <p className="font-heading text-[0.95rem] font-medium leading-tight tracking-wide text-accent md:text-[1.05rem]">
-                        {item.value}
-                      </p>
-                      <div className="mx-auto my-3 h-px w-5 bg-accent/50" aria-hidden="true" />
-                      <p className="text-[11px] uppercase leading-[1.6] tracking-[0.12em] text-white/65 md:text-[12px]">
-                        {item.label}
-                      </p>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </div>
+      )}
 
       <div className="page-shell">
         {/* Bestehend – Warum Aurelia bei festgefahrenen Lagen relevant ist */}
