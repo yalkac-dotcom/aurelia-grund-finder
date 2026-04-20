@@ -576,6 +576,15 @@
 /* Hero system */
 .hero-media {
   filter: brightness(1.05) saturate(0.98) contrast(1.01);
+  /*
+   * Kontrollierter Bildfokus für object-fit: cover.
+   * Default-Fokus liegt leicht oberhalb der Bildmitte, damit
+   * Architektur/Himmel-Anteil bei Standard-Heroes ruhig bleibt
+   * und der Text-Block links nicht über unruhige Bildbereiche fällt.
+   * Inline-style="object-position: …" auf einer Seite (z. B. Start-
+   * seite) überschreibt diesen Default gezielt.
+   */
+  object-position: 50% 42%;
 }
 
 .hero-overlay-base {
