@@ -3,62 +3,16 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { ChevronDown, ArrowRight } from "lucide-react";
-
-const faqs = [
-  // — Eigentümer in besonderen Lagen —
-  {
-    q: "Geht ein Verkauf auch im laufenden Zwangsversteigerungsverfahren noch?",
-    a: "In vielen Fällen ja – solange der Versteigerungstermin nicht abgeschlossen ist. Ein freihändiger Verkauf kann auch in dieser Phase noch eine bessere Lösung sein als die Verwertung. Wir prüfen das kurzfristig und sagen Ihnen ehrlich, ob es realistisch ist.",
-  },
-  {
-    q: "Was bedeutet „Ankauf auf eigene Rechnung“?",
-    a: "Wir kaufen die Immobilie selbst – nicht im Auftrag Dritter. Es gibt keine Maklerprovision, keine Finanzierungsvorbehalte und keine Käuferkette, die noch entscheiden muss.",
-  },
-  {
-    q: "Wie schnell können Sie reagieren?",
-    a: "Eine erste Einschätzung erhalten Sie in der Regel innerhalb weniger Tage. In dringenden Fällen schneller.",
-  },
-  {
-    q: "Was passiert mit Mietern, falls die Immobilie vermietet ist?",
-    a: "Bestehende Mietverhältnisse werden respektiert. Wir treten nach dem Kauf in die Vermieterrolle ein – an den Verträgen ändert sich nichts.",
-  },
-  // — Allgemein —
-  {
-    q: "Wie schnell erfolgt die Abwicklung?",
-    a: "Nach Vertragsabschluss erfolgt die Abwicklung gemäß vertraglicher Vereinbarung. Genaue Zeitrahmen werden individuell festgelegt und sind abhängig von der jeweiligen Situation. Eine typische Abwicklung dauert mehrere Wochen bis Monate.",
-  },
-  {
-    q: "Ist der Prozess diskret?",
-    a: "Ja, Aurelia behandelt alle Informationen vertraulich und professionell. Wir besprechen Details nur mit den beteiligten Parteien.",
-  },
-  {
-    q: "Kann ich meine Immobilie behalten?",
-    a: "Beim diskreten Ankauf geht die Immobilie auf Aurelia über. Wenn Sie alternative Lösungen suchen, sprechen Sie uns gerne an — wir prüfen den jeweiligen Einzelfall.",
-  },
-  {
-    q: "Welche Gebühren fallen an?",
-    a: "Alle Gebühren werden transparent kommuniziert. Es gibt keine versteckten Kosten. Details werden in der Vereinbarung schriftlich festgehalten.",
-  },
-  {
-    q: "Wie bewertet Aurelia eine Immobilie?",
-    a: "Wir verwenden objektive Marktstandards und berücksichtigen Lage, Zustand, Markttrends und vergleichbare Objekte. Die Bewertung erfolgt nachvollziehbar und wird Ihnen erläutert.",
-  },
-  {
-    q: "Was passiert mit der Immobilie nach dem Ankauf?",
-    a: "Aurelia entscheidet je nach Marktsituation über Renovierung, Verkauf, Vermietung oder langfristige Bestandsverwaltung — immer mit Blick auf wirtschaftlich sinnvolle Verwertung.",
-  },
-  {
-    q: "Sind die Geschäftspartnerschaften eine Finanzanlage?",
-    a: "Nein. Geschäftspartnerschaften mit Aurelia sind keine Finanzanlage und kein reguliertes Finanzprodukt. Es handelt sich um individuelle, projektbezogene Vereinbarungen mit erheblichen Risiken (bis hin zu Kapitalverlust). Details siehe Geschäftspartner-Seite.",
-  },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const FAQ = () => {
   const [open, setOpen] = useState<number | null>(null);
+  const { t } = useLanguage();
+  const f = t.faqPage;
 
   useEffect(() => {
-    document.title = "FAQ – Aurelia Grundbesitz GmbH";
-  }, []);
+    document.title = `${f.title} – Aurelia Grundbesitz GmbH`;
+  }, [f.title]);
 
   return (
     <Layout>
@@ -67,13 +21,13 @@ const FAQ = () => {
         <div className="container-premium py-16 md:py-20 text-center">
           <Reveal>
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent mb-3">
-              Häufige Fragen
+              {f.kicker}
             </p>
             <h1 className="font-heading font-semibold text-primary text-[1.85rem] md:text-[2.4rem] leading-tight tracking-tight mb-4">
-              FAQ
+              {f.title}
             </h1>
             <p className="mx-auto max-w-xl text-[0.95rem] leading-[1.75] text-muted-foreground">
-              Antworten auf die wichtigsten Fragen.
+              {f.intro}
             </p>
           </Reveal>
         </div>
@@ -84,7 +38,7 @@ const FAQ = () => {
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <div className="mx-auto max-w-3xl space-y-4">
-              {faqs.map((item, i) => {
+              {f.items.map((item, i) => {
                 const isOpen = open === i;
                 return (
                   <Reveal key={i} delay={i * 0.04}>
@@ -99,11 +53,11 @@ const FAQ = () => {
                         </h3>
                         <ChevronDown
                           size={20}
-                          className={`text-teal-600 transition-transform duration-300 shrink-0 mt-0.5 ${isOpen ? "rotate-180" : ""}`}
+                          className={`text-accent transition-transform duration-300 shrink-0 mt-0.5 ${isOpen ? "rotate-180" : ""}`}
                         />
                       </div>
                       {isOpen && (
-                        <div className="mt-4 pt-4 border-t border-teal-100/60">
+                        <div className="mt-4 pt-4 border-t border-border/40">
                           <p className="text-[0.88rem] leading-[1.8] text-muted-foreground">
                             {item.a}
                           </p>
@@ -122,15 +76,15 @@ const FAQ = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
           <div className="container-premium relative text-center">
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">Noch offene Fragen?</h2>
+              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{f.ctaTitle}</h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                Sprechen Sie uns an — die erste Beratung ist kostenlos und unverbindlich.
+                {f.ctaText}
               </p>
               <Link
                 to="/kontakt"
-                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
+                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-primary shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
               >
-                Termin vereinbaren
+                {f.ctaButton}
                 <ArrowRight size={13} />
               </Link>
             </Reveal>
