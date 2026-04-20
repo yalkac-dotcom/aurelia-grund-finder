@@ -3,7 +3,8 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
-import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown } from "lucide-react";
+import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown, AlertCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import ConsentMap from "@/components/ConsentMap";
 import PremiumContactModule from "@/components/contact/PremiumContactModule";
@@ -202,12 +203,14 @@ const Contact = () => {
                     />
                   </div>
 
-                  {error && <p className="text-destructive text-sm">{error}</p>}
+                  {error && (
+                    <div role="alert" className="flex items-start gap-2 rounded-md border border-destructive/30 bg-destructive/5 px-3 py-2.5">
+                      <AlertCircle className="text-destructive mt-0.5 shrink-0" size={14} />
+                      <p className="text-destructive text-sm leading-[1.5]">{error}</p>
+                    </div>
+                  )}
 
-                  <div className="flex items-center justify-between pt-1">
-                    <p className="text-xs text-muted-foreground">
-                      <span className="text-accent">*</span> {t.common.requiredFields}
-                    </p>
+                  <div className="pt-1">
                     <button
                       type="submit"
                       disabled={submitting}
@@ -226,7 +229,16 @@ const Contact = () => {
                       )}
                     </button>
                   </div>
-                  <p className="text-muted-foreground/70 text-xs text-right mt-1">{t.contact.privacyNote}</p>
+                  <p className="text-muted-foreground text-xs leading-[1.65] mt-3">
+                    {t.contact.consentNotice}{" "}
+                    <Link to="/datenschutz" className="text-accent hover:underline">
+                      {t.contact.consentNoticeLink}
+                    </Link>
+                    .
+                  </p>
+                  <p className="text-muted-foreground/70 text-xs mt-1">
+                    {t.contact.requiredHint}
+                  </p>
                 </form>
               )}
             </div>
@@ -261,52 +273,3 @@ const Contact = () => {
     </Layout>
   );
 };
-
-const ContactFAQ = () => {
-  const { t } = useLanguage();
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  return (
-    <section className="py-6 md:py-10 bg-secondary/30">
-      <div className="container max-w-3xl">
-        <Reveal>
-          <div className={`${panelBase} ${panelPadding}`}>
-            <div className="section-shell-accent mb-8">
-              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.contact.faqLabel}</p>
-              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
-                {t.contact.faqTitle}
-              </h2>
-            </div>
-            <p className="text-muted-foreground text-sm leading-[1.7] mb-6">
-              {t.contact.faqSubtitle}
-            </p>
-            <div className="space-y-3">
-              {t.contact.faqItems.map((item, i) => (
-                <div key={i} className="bg-secondary/40 rounded-[1.1rem] overflow-hidden">
-                  <button
-                    type="button"
-                    onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                    className="w-full flex items-center justify-between px-7 py-5 text-left gap-4 group"
-                  >
-                    <span className="text-sm font-heading font-semibold text-foreground group-hover:text-accent transition-colors">{item.q}</span>
-                    <ChevronDown
-                      size={14}
-                      className={`shrink-0 text-muted-foreground transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`}
-                    />
-                  </button>
-                  {openIndex === i && (
-                    <p className="text-muted-foreground text-sm leading-[1.8] px-7 pb-5 -mt-1">
-                      {item.a}
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-};
-
-export default Contact;
