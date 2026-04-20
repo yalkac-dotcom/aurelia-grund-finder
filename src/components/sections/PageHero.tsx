@@ -21,9 +21,11 @@ interface PageHeroProps {
   size?: "default" | "compact";
 }
 
+// Einheitliches Hero-Höhensystem für alle Hauptseiten.
+// Etwas mehr Höhe + ruhiger unterer Abschluss durch konsistentes Bottom-Padding (siehe unten).
 const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
-  default: "h-[85svh] min-h-[540px] md:h-[89vh] md:min-h-[640px]",
-  compact: "h-[85svh] min-h-[540px] md:h-[89vh] md:min-h-[640px]",
+  default: "min-h-[640px] h-[90svh] md:min-h-[720px] md:h-[94vh]",
+  compact: "min-h-[640px] h-[90svh] md:min-h-[720px] md:h-[94vh]",
 };
 
 const PageHero = ({
@@ -63,7 +65,7 @@ const PageHero = ({
       />
     </div>
 
-    <div className="page-frame-hero relative pt-16 pb-0 md:pt-20 md:pb-0">
+    <div className="page-frame-hero relative pt-20 pb-12 md:pt-24 md:pb-16">
       <div className="hero-copy-shell max-w-2xl">
         {/* Above-the-fold: render synchronously without Reveal so H1 contributes to LCP immediately. */}
         <p className="hero-kicker">{kicker}</p>
