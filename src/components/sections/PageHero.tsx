@@ -63,7 +63,7 @@ const PageHero = ({
       />
     </div>
 
-    <div className="page-frame-hero relative pt-0 pb-0 md:pt-0 md:pb-0">
+    <div className="page-frame-hero relative pt-16 pb-0 md:pt-20 md:pb-0">
       <div className="hero-copy-shell max-w-2xl">
         {/* Above-the-fold: render synchronously without Reveal so H1 contributes to LCP immediately. */}
         <p className="hero-kicker">{kicker}</p>
