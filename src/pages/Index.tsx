@@ -118,18 +118,18 @@ const HomePage = () => {
             )}
 
             <Reveal delay={0.15}>
-              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[360px_1fr] gap-0 overflow-hidden">
-                <div className="relative h-56 md:h-auto min-h-[240px] overflow-hidden bg-[hsl(212_52%_12%)]">
+              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[320px_1fr] gap-0 overflow-hidden items-stretch">
+                <div className="relative bg-[hsl(212_52%_10%)] flex items-center justify-center p-6 md:p-8 min-h-[260px]">
                   <img
                     src={editorial.fourPromises}
                     alt="Vier klassische Säulen in symmetrischer Komposition – sinnbildlich für unsere vier Versprechen: Diskretion, Substanz, Langfristigkeit und Klarheit"
                     loading="lazy"
                     width={520}
                     height={520}
-                    className="absolute inset-0 h-full w-full object-contain object-center"
+                    className="block max-h-[240px] md:max-h-[260px] w-auto h-auto object-contain"
                   />
                 </div>
-                <div className="p-8 md:p-10">
+                <div className="p-8 md:p-10 flex flex-col justify-center">
                   <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
                     {t.home.trustClaimTitle}
                   </h3>
