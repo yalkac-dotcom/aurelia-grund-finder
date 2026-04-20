@@ -1,14 +1,19 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { initGA, trackPageView } from "@/lib/analytics";
+import { initClarity } from "@/lib/clarity";
 
 const AnalyticsTracker = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const onConsentChange = () => initGA();
+    const onConsentChange = () => {
+      initGA();
+      initClarity();
+    };
     window.addEventListener("consent-change", onConsentChange);
     initGA();
+    initClarity();
     return () => window.removeEventListener("consent-change", onConsentChange);
   }, []);
 
