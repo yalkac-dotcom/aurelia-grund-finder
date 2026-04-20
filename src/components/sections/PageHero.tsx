@@ -70,7 +70,7 @@ const PageHero = ({
         <h1 className="hero-title">{title}</h1>
         <p className="hero-description max-w-xl">{description}</p>
         {(primaryCta || secondaryCta) && (
-          <div className="mt-7 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:gap-4">
+          <div className="mt-7 flex flex-row flex-wrap gap-3 items-center sm:gap-4">
             {primaryCta && (
               <Link
                 to={primaryCta.to}
