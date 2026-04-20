@@ -743,6 +743,9 @@
 @media (max-width: 767px) {
   .hero-media {
     filter: brightness(1.02) saturate(0.96) contrast(1.01);
+    /* Mobile: Fokus etwas tiefer, damit das Hauptmotiv (Fassade) sichtbar bleibt
+       und nicht oben abgeschnitten wird, wenn das Bild hochkant gestaucht wird. */
+    object-position: 55% 50%;
   }
 
   .hero-overlay-base {
