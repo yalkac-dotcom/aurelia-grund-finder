@@ -1233,6 +1233,27 @@ const en: Translations = {
       ],
     },
   },
+  faqPage: {
+    kicker: "Frequently asked questions",
+    title: "FAQ",
+    intro: "Answers to the most important questions.",
+    items: [
+      { q: "Is a sale still possible during ongoing foreclosure proceedings?", a: "In many cases, yes – as long as the auction date has not been concluded. A private sale can still be a better solution than the auction itself. We assess the situation quickly and tell you honestly whether it is realistic." },
+      { q: "What does \"purchase on our own account\" mean?", a: "We buy the property ourselves – not on behalf of third parties. There is no broker commission, no financing condition and no chain of buyers still to decide." },
+      { q: "How quickly can you respond?", a: "You usually receive an initial assessment within a few days. Faster in urgent cases." },
+      { q: "What happens to tenants if the property is let?", a: "Existing tenancies are respected. After the purchase, we step into the landlord role – the contracts remain unchanged." },
+      { q: "How quickly is the transaction processed?", a: "After signing, the process follows the contractual agreement. Exact timeframes are set individually and depend on the situation. A typical transaction takes several weeks to months." },
+      { q: "Is the process discreet?", a: "Yes, Aurelia treats all information confidentially and professionally. Details are only discussed with the involved parties." },
+      { q: "Can I keep my property?", a: "With a discreet purchase, the property is transferred to Aurelia. If you are looking for alternative solutions, please contact us — we review each case individually." },
+      { q: "What fees apply?", a: "All fees are communicated transparently. There are no hidden costs. Details are recorded in writing in the agreement." },
+      { q: "How does Aurelia value a property?", a: "We use objective market standards and consider location, condition, market trends and comparable properties. The valuation is comprehensible and is explained to you." },
+      { q: "What happens to the property after the purchase?", a: "Depending on the market situation, Aurelia decides on renovation, sale, letting or long-term portfolio management — always with a view to economically sensible use." },
+      { q: "Are partnerships a financial investment?", a: "No. Partnerships with Aurelia are not a financial investment and not a regulated financial product. They are individual, project-based agreements with substantial risks (up to total loss of capital). For details see the partners page." },
+    ],
+    ctaTitle: "Still have questions?",
+    ctaText: "Get in touch — the first consultation is free and non-binding.",
+    ctaButton: "Schedule a meeting",
+  },
 };
 
 export default en;

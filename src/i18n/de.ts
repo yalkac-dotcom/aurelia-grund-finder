@@ -1274,6 +1274,27 @@ const de: Translations = {
       ],
     },
   },
+  faqPage: {
+    kicker: "Häufige Fragen",
+    title: "FAQ",
+    intro: "Antworten auf die wichtigsten Fragen.",
+    items: [
+      { q: "Geht ein Verkauf auch im laufenden Zwangsversteigerungsverfahren noch?", a: "In vielen Fällen ja – solange der Versteigerungstermin nicht abgeschlossen ist. Ein freihändiger Verkauf kann auch in dieser Phase noch eine bessere Lösung sein als die Verwertung. Wir prüfen das kurzfristig und sagen Ihnen ehrlich, ob es realistisch ist." },
+      { q: "Was bedeutet „Ankauf auf eigene Rechnung\"?", a: "Wir kaufen die Immobilie selbst – nicht im Auftrag Dritter. Es gibt keine Maklerprovision, keine Finanzierungsvorbehalte und keine Käuferkette, die noch entscheiden muss." },
+      { q: "Wie schnell können Sie reagieren?", a: "Eine erste Einschätzung erhalten Sie in der Regel innerhalb weniger Tage. In dringenden Fällen schneller." },
+      { q: "Was passiert mit Mietern, falls die Immobilie vermietet ist?", a: "Bestehende Mietverhältnisse werden respektiert. Wir treten nach dem Kauf in die Vermieterrolle ein – an den Verträgen ändert sich nichts." },
+      { q: "Wie schnell erfolgt die Abwicklung?", a: "Nach Vertragsabschluss erfolgt die Abwicklung gemäß vertraglicher Vereinbarung. Genaue Zeitrahmen werden individuell festgelegt und sind abhängig von der jeweiligen Situation. Eine typische Abwicklung dauert mehrere Wochen bis Monate." },
+      { q: "Ist der Prozess diskret?", a: "Ja, Aurelia behandelt alle Informationen vertraulich und professionell. Wir besprechen Details nur mit den beteiligten Parteien." },
+      { q: "Kann ich meine Immobilie behalten?", a: "Beim diskreten Ankauf geht die Immobilie auf Aurelia über. Wenn Sie alternative Lösungen suchen, sprechen Sie uns gerne an — wir prüfen den jeweiligen Einzelfall." },
+      { q: "Welche Gebühren fallen an?", a: "Alle Gebühren werden transparent kommuniziert. Es gibt keine versteckten Kosten. Details werden in der Vereinbarung schriftlich festgehalten." },
+      { q: "Wie bewertet Aurelia eine Immobilie?", a: "Wir verwenden objektive Marktstandards und berücksichtigen Lage, Zustand, Markttrends und vergleichbare Objekte. Die Bewertung erfolgt nachvollziehbar und wird Ihnen erläutert." },
+      { q: "Was passiert mit der Immobilie nach dem Ankauf?", a: "Aurelia entscheidet je nach Marktsituation über Renovierung, Verkauf, Vermietung oder langfristige Bestandsverwaltung — immer mit Blick auf wirtschaftlich sinnvolle Verwertung." },
+      { q: "Sind die Geschäftspartnerschaften eine Finanzanlage?", a: "Nein. Geschäftspartnerschaften mit Aurelia sind keine Finanzanlage und kein reguliertes Finanzprodukt. Es handelt sich um individuelle, projektbezogene Vereinbarungen mit erheblichen Risiken (bis hin zu Kapitalverlust). Details siehe Geschäftspartner-Seite." },
+    ],
+    ctaTitle: "Noch offene Fragen?",
+    ctaText: "Sprechen Sie uns an — die erste Beratung ist kostenlos und unverbindlich.",
+    ctaButton: "Termin vereinbaren",
+  },
 };
 
 export default de;

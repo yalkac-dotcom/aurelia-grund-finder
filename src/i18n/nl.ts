@@ -1201,6 +1201,27 @@ const nl: Translations = {
       ],
     },
   },
+  faqPage: {
+    kicker: "Veelgestelde vragen",
+    title: "FAQ",
+    intro: "Antwoorden op de belangrijkste vragen.",
+    items: [
+      { q: "Is een verkoop ook mogelijk tijdens een lopende executieveiling?", a: "In veel gevallen ja – zolang de veilingdatum niet is afgesloten. Een onderhandse verkoop kan ook in deze fase een betere oplossing zijn dan de veiling. Wij beoordelen dat snel en zeggen u eerlijk of het realistisch is." },
+      { q: "Wat betekent „aankoop voor eigen rekening\"?", a: "Wij kopen het pand zelf – niet in opdracht van derden. Er is geen makelaarscourtage, geen financieringsvoorbehoud en geen koperketen die nog moet beslissen." },
+      { q: "Hoe snel kunt u reageren?", a: "Een eerste inschatting ontvangt u doorgaans binnen enkele dagen. Sneller in dringende gevallen." },
+      { q: "Wat gebeurt er met huurders als het pand verhuurd is?", a: "Bestaande huurovereenkomsten worden gerespecteerd. Na de koop nemen wij de rol van verhuurder over – aan de contracten verandert niets." },
+      { q: "Hoe snel verloopt de afwikkeling?", a: "Na ondertekening verloopt het proces volgens de contractuele afspraak. Exacte termijnen worden individueel bepaald en hangen af van de situatie. Een typische afwikkeling duurt enkele weken tot maanden." },
+      { q: "Is het proces discreet?", a: "Ja, Aurelia behandelt alle informatie vertrouwelijk en professioneel. Details bespreken wij uitsluitend met de betrokken partijen." },
+      { q: "Kan ik mijn pand behouden?", a: "Bij een discrete aankoop gaat het pand over op Aurelia. Zoekt u alternatieve oplossingen, neem dan contact met ons op — wij beoordelen elke situatie individueel." },
+      { q: "Welke kosten zijn er?", a: "Alle kosten worden transparant gecommuniceerd. Er zijn geen verborgen kosten. Details worden schriftelijk in de overeenkomst vastgelegd." },
+      { q: "Hoe waardeert Aurelia een pand?", a: "Wij hanteren objectieve marktstandaarden en houden rekening met locatie, staat, markttrends en vergelijkbare panden. De waardering is navolgbaar en wordt aan u toegelicht." },
+      { q: "Wat gebeurt er met het pand na de aankoop?", a: "Afhankelijk van de markt beslist Aurelia over renovatie, verkoop, verhuur of langetermijnbeheer — altijd met het oog op een economisch zinvolle benutting." },
+      { q: "Zijn samenwerkingen een financiële belegging?", a: "Nee. Samenwerkingen met Aurelia zijn geen financiële belegging en geen gereguleerd financieel product. Het zijn individuele, projectgebonden overeenkomsten met aanzienlijke risico's (tot en met kapitaalverlies). Details vindt u op de partnerspagina." },
+    ],
+    ctaTitle: "Nog vragen?",
+    ctaText: "Neem contact op — het eerste gesprek is gratis en vrijblijvend.",
+    ctaButton: "Afspraak maken",
+  },
 };
 
 export default nl;

@@ -57,20 +57,11 @@ const About = () => {
 
   // Icons removed for editorial calm — values are purely typographic now.
 
-  // Visual motifs for the 3 typology cards (themed Unsplash photography, no persons)
+  // Visual motifs for the 3 typology cards (project-internal, license-clean editorial photography)
   const caseImages = [
-    {
-      src: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
-      alt: "Zwangsversteigerungsverfahren",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=800&q=80",
-      alt: "Erbschaftsdokumente",
-    },
-    {
-      src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
-      alt: "Direktankauf Immobilie",
-    },
+    { src: editorial.notaryQuiet, alt: a.cases?.items?.[0]?.title ?? "" },
+    { src: editorial.caseReviewDesk, alt: a.cases?.items?.[1]?.title ?? "" },
+    { src: editorial.townhouseClassical, alt: a.cases?.items?.[2]?.title ?? "" },
   ];
 
   return (
