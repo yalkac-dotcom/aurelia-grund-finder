@@ -9,10 +9,32 @@ declare global {
     dataLayer: unknown[];
     gtag: (...args: unknown[]) => void;
     __ga4Loaded?: boolean;
+    __ga4Debug?: boolean;
   }
 }
 
+const isDebugForce = (): boolean => {
+  if (typeof window === "undefined") return false;
+  try {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("_ga_force") === "1";
+  } catch {
+    return false;
+  }
+};
+
+const isDebugMode = (): boolean => {
+  if (typeof window === "undefined") return false;
+  try {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("_ga_debug") === "1";
+  } catch {
+    return false;
+  }
+};
+
 export const hasAnalyticsConsent = (): boolean => {
+  if (isDebugForce()) return true;
   try {
     return localStorage.getItem(ANALYTICS_KEY) === "true";
   } catch {
@@ -24,6 +46,9 @@ export const initGA = () => {
   if (typeof window === "undefined") return;
   if (window.__ga4Loaded) return;
   if (!hasAnalyticsConsent()) return;
+
+  const debug = isDebugMode();
+  window.__ga4Debug = debug;
 
   window.__ga4Loaded = true;
   window.dataLayer = window.dataLayer || [];
@@ -39,12 +64,18 @@ export const initGA = () => {
   window.gtag("config", GA_MEASUREMENT_ID, {
     anonymize_ip: true,
     send_page_view: false, // we send manually so SPA route changes are tracked
+    ...(debug ? { debug_mode: true } : {}),
   });
 
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
   document.head.appendChild(script);
+
+  if (debug) {
+    // eslint-disable-next-line no-console
+    console.log("GA4 loaded");
+  }
 
   // Send the initial page_view immediately after init so consent-on-first-load
   // (or consent given mid-session) results in a real-time hit without waiting
@@ -54,7 +85,18 @@ export const initGA = () => {
       page_path: window.location.pathname + window.location.search,
       page_title: document.title,
       page_location: window.location.href,
+      ...(debug ? { debug_mode: true } : {}),
     });
+    if (debug) {
+      // eslint-disable-next-line no-console
+      console.log("GA4 page_view sent");
+      window.gtag("event", "ga_probe", {
+        debug_mode: true,
+        probe_ts: Date.now(),
+      });
+      // eslint-disable-next-line no-console
+      console.log("GA4 ga_probe sent");
+    }
   }
 };
 
@@ -64,6 +106,7 @@ export const trackPageView = (path: string, title?: string) => {
     page_path: path,
     page_title: title ?? document.title,
     page_location: window.location.href,
+    ...(window.__ga4Debug ? { debug_mode: true } : {}),
   });
 };
 
@@ -72,5 +115,8 @@ export const trackEvent = (
   params: Record<string, unknown> = {},
 ) => {
   if (!hasAnalyticsConsent() || typeof window === "undefined" || !window.gtag) return;
-  window.gtag("event", name, params);
+  window.gtag("event", name, {
+    ...params,
+    ...(window.__ga4Debug ? { debug_mode: true } : {}),
+  });
 };
