@@ -118,22 +118,30 @@ const HomePage = () => {
             )}
 
             <Reveal delay={0.15}>
-              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[320px_1fr] gap-0 overflow-hidden items-stretch">
-                <div className="relative bg-[hsl(212_52%_10%)] flex items-center justify-center p-6 md:p-8 min-h-[260px]">
+              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-12 gap-0 overflow-hidden items-stretch max-w-5xl mx-auto">
+                {/* Bildspalte: randlos, Bild füllt die Fläche, Säulen mittig im Fokus */}
+                <div className="md:col-span-5 relative min-h-[280px] md:min-h-[340px] overflow-hidden">
                   <img
                     src={editorial.fourPromises}
                     alt="Vier klassische Säulen in symmetrischer Komposition – sinnbildlich für unsere vier Versprechen: Diskretion, Substanz, Langfristigkeit und Klarheit"
                     loading="lazy"
                     width={520}
                     height={520}
-                    className="block max-h-[240px] md:max-h-[260px] w-auto h-auto object-contain"
+                    className="absolute inset-0 h-full w-full object-cover object-center"
+                  />
+                  {/* sanfter Übergang zur Textspalte */}
+                  <div
+                    className="absolute inset-y-0 right-0 w-16 hidden md:block"
+                    style={{ background: "linear-gradient(to right, transparent, hsl(212 52% 12% / 0.85))" }}
+                    aria-hidden="true"
                   />
                 </div>
-                <div className="p-8 md:p-10 flex flex-col justify-center">
+                {/* Textspalte: kompakt, vertikal mittig, mit ruhiger Lesebreite */}
+                <div className="md:col-span-7 p-8 md:p-12 flex flex-col justify-center">
                   <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
                     {t.home.trustClaimTitle}
                   </h3>
-                  <p className="text-[0.93rem] leading-[1.85] text-white/70">
+                  <p className="text-[0.93rem] leading-[1.85] text-white/70 max-w-prose">
                     {t.home.trustClaimText}
                   </p>
                 </div>
