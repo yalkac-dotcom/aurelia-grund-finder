@@ -43,7 +43,7 @@ const Bildnachweise = () => {
                 <h2 className="text-[0.93rem] font-heading font-semibold text-foreground mb-2">Kontakt bei Rückfragen</h2>
                 <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">
                   Aurelia Grundbesitz GmbH<br />
-                  <a href="mailto:info@aureliaestates.de" className="text-accent hover:underline">info@aureliaestates.de</a>
+                  <a href="mailto:office@aureliaestates.de" className="text-accent hover:underline">office@aureliaestates.de</a>
                 </p>
               </div>
             </div>

@@ -86,11 +86,11 @@ const Contact = () => {
               {t.contact.hereForYou}
             </h2>
             <a
-              href="mailto:info@aureliaestates.de"
+              href="mailto:office@aureliaestates.de"
               className="inline-block text-[1.05rem] md:text-[1.2rem] font-semibold tracking-tight transition-colors"
               style={{ color: "hsl(var(--highlight))" }}
             >
-              info@aureliaestates.de
+              office@aureliaestates.de
             </a>
             <p className="mt-2 text-[0.85rem] text-muted-foreground">
               Mo–Fr, auch kurzfristig bei laufenden Verfahren
@@ -125,8 +125,8 @@ const Contact = () => {
                     <Mail className="text-accent" size={13} />
                     <h3 className="text-[0.95rem] font-heading font-semibold text-foreground">{t.contact.email}</h3>
                   </div>
-                  <a href="mailto:info@aureliaestates.de" className="text-muted-foreground text-sm hover:text-accent transition-colors">
-                    info@aureliaestates.de
+                  <a href="mailto:office@aureliaestates.de" className="text-muted-foreground text-sm hover:text-accent transition-colors">
+                    office@aureliaestates.de
                   </a>
                 </div>
                 <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 last:pb-0">
