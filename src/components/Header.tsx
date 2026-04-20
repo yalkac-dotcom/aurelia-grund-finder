@@ -137,57 +137,80 @@ const Header = () => {
         </div>
       </div>
 
-      {mobileOpen && (
-        <nav className="md:hidden bg-primary text-white">
-          <div className="pt-4 pb-2 px-6">
-            {navItems.map((item) =>
-              item.hash ? (
+      {mobileOpen && typeof document !== "undefined" &&
+        createPortal(
+          <div className="md:hidden fixed inset-0 z-[9999]">
+            {/* Backdrop */}
+            <div
+              className="absolute inset-0 bg-black/60"
+              onClick={() => setMobileOpen(false)}
+              aria-hidden="true"
+            />
+            {/* Panel */}
+            <nav
+              className="absolute inset-0 bg-primary text-white flex flex-col overflow-y-auto overscroll-contain"
+              style={{ height: "100dvh" }}
+            >
+              <div className="flex items-center justify-end px-6 h-16 shrink-0">
                 <button
-                  key={item.label}
-                  onClick={() => handleHashNav(item)}
-                  className="block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors text-white/80 hover:text-accent w-full text-left min-h-0 min-w-0"
-                >
-                  {item.label}
-                </button>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path}
+                  className="p-1.5 text-white"
                   onClick={() => setMobileOpen(false)}
-                  className={`block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors hover:text-accent ${
-                    isActive(item) ? "text-accent font-medium" : "text-white/80"
-                  }`}
+                  aria-label={t.common.navigationOpenAria}
                 >
-                  {item.label}
+                  <X size={20} />
+                </button>
+              </div>
+              <div className="pt-2 pb-2 px-6">
+                {navItems.map((item) =>
+                  item.hash ? (
+                    <button
+                      key={item.label}
+                      onClick={() => handleHashNav(item)}
+                      className="block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors text-white/80 hover:text-accent w-full text-left min-h-0 min-w-0"
+                    >
+                      {item.label}
+                    </button>
+                  ) : (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      onClick={() => setMobileOpen(false)}
+                      className={`block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors hover:text-accent ${
+                        isActive(item) ? "text-accent font-medium" : "text-white/80"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  )
+                )}
+                <Link
+                  to="/kontakt"
+                  onClick={() => setMobileOpen(false)}
+                  className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold bg-accent text-primary rounded-sm"
+                >
+                  {t.nav.ctaConfidential}
                 </Link>
-              )
-            )}
-            <Link
-              to="/kontakt"
-              onClick={() => setMobileOpen(false)}
-              className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold bg-accent text-primary rounded-sm"
-            >
-              {t.nav.ctaConfidential}
-            </Link>
-          </div>
-          <div className="border-t border-white/10 mx-6 mt-1 pt-3 pb-4 flex items-center gap-4">
-            <Link
-              to="/impressum"
-              onClick={() => setMobileOpen(false)}
-              className="text-white/55 text-[10px] tracking-[0.08em]"
-            >
-              {t.footer.imprint}
-            </Link>
-            <Link
-              to="/datenschutz"
-              onClick={() => setMobileOpen(false)}
-              className="text-white/55 text-[10px] tracking-[0.08em]"
-            >
-              {t.footer.privacy}
-            </Link>
-          </div>
-        </nav>
-      )}
+              </div>
+              <div className="border-t border-white/10 mx-6 mt-1 pt-3 pb-6 flex items-center gap-4">
+                <Link
+                  to="/impressum"
+                  onClick={() => setMobileOpen(false)}
+                  className="text-white/55 text-[10px] tracking-[0.08em]"
+                >
+                  {t.footer.imprint}
+                </Link>
+                <Link
+                  to="/datenschutz"
+                  onClick={() => setMobileOpen(false)}
+                  className="text-white/55 text-[10px] tracking-[0.08em]"
+                >
+                  {t.footer.privacy}
+                </Link>
+              </div>
+            </nav>
+          </div>,
+          document.body
+        )}
     </header>
   );
 };
