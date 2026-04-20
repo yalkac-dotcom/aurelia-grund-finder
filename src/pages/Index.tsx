@@ -121,8 +121,8 @@ const HomePage = () => {
               <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[260px_1fr] gap-0 overflow-hidden">
                 <div className="relative h-48 md:h-auto min-h-[200px] overflow-hidden">
                   <img
-                    src={editorial.fourPromises}
-                    alt="Vier ruhige Marmorsäulen in lichtdurchflutetem Raum – sinnbildlich für unsere vier Versprechen: Diskretion, Substanz, Langfristigkeit und Klarheit"
+                    src={editorial.notaryQuiet}
+                    alt="Ruhige Bibliothek mit Messinglampe und Marmoroberfläche – sinnbildlich für vertrauliche, gewissenhafte Bearbeitung"
                     loading="lazy"
                     width={520}
                     height={520}
