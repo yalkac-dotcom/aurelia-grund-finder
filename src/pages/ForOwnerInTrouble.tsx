@@ -35,7 +35,7 @@ const ForOwnerInTrouble = () => {
 
       <div className="page-shell">
         {/* SITUATIONEN – filigrane editoriale Kacheln */}
-        <section className="section-premium bg-gradient-warm !pt-6 md:!pt-8">
+        <section className="section-premium bg-gradient-warm !pt-16 md:!pt-20">
           <div className="container-premium">
             <SectionHeader title={o.situationsTitle} intro={o.situationsIntro} />
             <div className="grid gap-8 md:gap-10 sm:grid-cols-2 max-w-5xl mx-auto">
