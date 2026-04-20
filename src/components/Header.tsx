@@ -26,6 +26,25 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Scroll-Lock when mobile menu is open
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const { body, documentElement } = document;
+    const prevBodyOverflow = body.style.overflow;
+    const prevHtmlOverflow = documentElement.style.overflow;
+    body.style.overflow = "hidden";
+    documentElement.style.overflow = "hidden";
+    return () => {
+      body.style.overflow = prevBodyOverflow;
+      documentElement.style.overflow = prevHtmlOverflow;
+    };
+  }, [mobileOpen]);
+
+  // Close menu on route change
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location.pathname]);
+
   const navItems: NavItem[] = [
     { label: t.nav.home, path: "/" },
     { label: t.nav.ownerInTrouble, path: "/fuer-eigentumer-in-not" },
