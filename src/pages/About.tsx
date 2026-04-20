@@ -152,9 +152,9 @@ const About = () => {
 
         {/* SEKTION 2 – Das Team hinter Aurelia (zweispaltig) */}
         {a.team && (
-          <section className="pt-6 pb-16 md:pt-8 md:pb-20 bg-background">
+          <section className="py-20 md:py-28 bg-background">
             <div className="container-premium">
-              <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-start">
+              <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
                 <Reveal>
                   <div>
                     <div className="mb-4 h-px w-8 bg-accent" aria-hidden="true" />
@@ -169,7 +169,7 @@ const About = () => {
                 <Reveal delay={0.1}>
                   <div className="overflow-hidden rounded-sm border border-border/40">
                     <img
-                      src={editorial.teamReview}
+                      src={editorial.cooperationMeeting}
                       alt={a.team.imageAlt}
                       loading="lazy"
                       className="block w-full h-auto aspect-[4/3] object-cover"
