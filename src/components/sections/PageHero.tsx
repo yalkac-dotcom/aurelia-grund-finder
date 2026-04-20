@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import OptimizedImg from "@/components/OptimizedImg";
-import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { trackEvent } from "@/lib/analytics";
 
 interface PageHeroProps {
@@ -15,7 +14,17 @@ interface PageHeroProps {
   trustLine?: string;
   imagePosition?: string;
   phoneLine?: { href: string; label: string };
+  /**
+   * "default" – größerer Hero (Startseite, Eigentümer)
+   * "compact" – kompakterer Hero (Käufer, Geschäftspartner, Wie wir arbeiten) – Referenz: /ueber-uns
+   */
+  size?: "default" | "compact";
 }
+
+const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
+  default: "h-[60svh] min-h-[400px] md:h-[66vh] md:min-h-[460px]",
+  compact: "h-[54svh] min-h-[380px] md:h-[58vh] md:min-h-[420px]",
+};
 
 const PageHero = ({
   image,
@@ -28,10 +37,11 @@ const PageHero = ({
   trustLine,
   imagePosition = "center",
   phoneLine,
+  size = "default",
 }: PageHeroProps) => (
   <section
     id="hero"
-    className="relative flex h-[62svh] min-h-[420px] items-center md:h-[70vh] md:min-h-[480px] bg-primary"
+    className={`relative flex items-center bg-primary ${SIZE_CLASSES[size]}`}
   >
     <div className="absolute inset-0 overflow-hidden">
       <OptimizedImg
@@ -106,7 +116,6 @@ const PageHero = ({
         )}
         {trustLine && <p className="mt-4 text-[0.78rem] text-white/75">{trustLine}</p>}
       </div>
-      <HeroScrollIndicator />
     </div>
   </section>
 );

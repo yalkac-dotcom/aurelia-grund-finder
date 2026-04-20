@@ -28,21 +28,16 @@ const ForGeschaftspartner = () => {
         primaryCta={{ label: p.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: p.heroSecondaryCta, href: "#ablauf" }}
         trustLine={p.heroTrustLine}
+        size="compact"
       />
 
       <div className="page-shell">
-        {/* DEZENTER RECHTLICHER HINWEIS */}
-        <section className="border-b border-border/40 bg-muted/30">
-          <div className="container-premium py-4">
-            <p className="mx-auto max-w-3xl text-[0.78rem] leading-[1.7] text-muted-foreground text-center">
+        {/* KOOPERATIONSFORMEN – Legal-Hinweis ist sauber in die erste Folgefläche integriert */}
+        <section className="section-premium bg-gradient-warm !pt-10 md:!pt-14">
+          <div className="container-premium">
+            <p className="mx-auto mb-8 md:mb-10 max-w-3xl text-[0.78rem] leading-[1.7] text-muted-foreground text-center">
               <span className="font-medium text-foreground/80">{p.legalNoticeLabel}:</span> {p.legalNoticeText}
             </p>
-          </div>
-        </section>
-
-        {/* KOOPERATIONSFORMEN */}
-        <section className="section-premium bg-gradient-warm !pt-12 md:!pt-16">
-          <div className="container-premium">
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
             <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {p.forms.map((f, i) => (
