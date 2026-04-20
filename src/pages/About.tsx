@@ -112,7 +112,7 @@ const About = () => {
 
       {/* SEKTION 1 – Qualitative Kennzahlen-Leiste (Navy, Gold-Akzente) */}
       {a.metricsBar && (
-        <section className="bg-primary py-14 md:py-16 border-t border-accent/20">
+        <section className="bg-primary py-8 md:py-10 border-t border-accent/20">
           <div className="container-premium">
             <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
               {a.metricsBar.items.map((item, idx) => (
