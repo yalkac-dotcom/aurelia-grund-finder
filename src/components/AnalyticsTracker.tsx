@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { initGA, trackPageView } from "@/lib/analytics";
 import { initClarity } from "@/lib/clarity";
-import GaDiagPanel from "./GaDiagPanel";
 
 const AnalyticsTracker = () => {
   const location = useLocation();
@@ -25,7 +24,7 @@ const AnalyticsTracker = () => {
     trackPageView(location.pathname + location.search);
   }, [location.pathname, location.search]);
 
-  return <GaDiagPanel />;
+  return null;
 };
 
 export default AnalyticsTracker;
