@@ -40,7 +40,7 @@ const HowItWorks = () => {
         {/* INTRO */}
         <section className="section-premium bg-gradient-warm !pt-0 md:!pt-0 !pb-12 md:!pb-16">
           <div className="container-premium">
-            <SectionHeader title={w.introTitle} intro={w.introText} />
+            <SectionHeader title={w.introTitle} intro={w.introText} disableOffset />
           </div>
         </section>
 

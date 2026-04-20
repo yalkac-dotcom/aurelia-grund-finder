@@ -5,13 +5,14 @@ interface SectionHeaderProps {
   intro?: string;
   align?: "center" | "left";
   tone?: "light" | "dark";
+  disableOffset?: boolean;
 }
 
-const SectionHeader = ({ title, intro, align = "center", tone = "light" }: SectionHeaderProps) => {
+const SectionHeader = ({ title, intro, align = "center", tone = "light", disableOffset = false }: SectionHeaderProps) => {
   const isCenter = align === "center";
   const isDark = tone === "dark";
   return (
-    <Reveal>
+    <Reveal disableOffset={disableOffset}>
       <div className={`mb-10 ${isCenter ? "text-center" : ""}`}>
         <div
           className={`mb-3 h-[2px] w-10 ${isCenter ? "mx-auto" : ""}`}

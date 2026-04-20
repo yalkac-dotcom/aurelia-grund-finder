@@ -38,7 +38,7 @@ const ForGeschaftspartner = () => {
             <p className="mx-auto mb-6 md:mb-8 max-w-3xl text-[0.78rem] leading-[1.7] text-muted-foreground text-center">
               <span className="font-medium text-foreground/80">{p.legalNoticeLabel}:</span> {p.legalNoticeText}
             </p>
-            <SectionHeader title={p.formsTitle} intro={p.formsIntro} />
+            <SectionHeader title={p.formsTitle} intro={p.formsIntro} disableOffset />
             <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
