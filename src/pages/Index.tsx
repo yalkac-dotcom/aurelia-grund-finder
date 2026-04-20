@@ -118,17 +118,16 @@ const HomePage = () => {
             )}
 
             <Reveal delay={0.15}>
-              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[260px_1fr] gap-0 overflow-hidden">
-                <div className="relative h-48 md:h-auto min-h-[200px] overflow-hidden">
+              <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[360px_1fr] gap-0 overflow-hidden">
+                <div className="relative h-56 md:h-auto min-h-[240px] overflow-hidden bg-[hsl(212_52%_12%)]">
                   <img
-                    src={editorial.notaryQuiet}
-                    alt="Ruhige Bibliothek mit Messinglampe und Marmoroberfläche – sinnbildlich für vertrauliche, gewissenhafte Bearbeitung"
+                    src={editorial.fourPromises}
+                    alt="Vier klassische Säulen in symmetrischer Komposition – sinnbildlich für unsere vier Versprechen: Diskretion, Substanz, Langfristigkeit und Klarheit"
                     loading="lazy"
                     width={520}
                     height={520}
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="absolute inset-0 h-full w-full object-contain object-center"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[hsl(212_52%_12%_/_0.55)]" aria-hidden="true" />
                 </div>
                 <div className="p-8 md:p-10">
                   <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
