@@ -11,7 +11,11 @@ const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "onboarding@resend.dev";
 const FROM_NAME = "Aurelia Grundbesitz GmbH";
 const REPLY_TO = "office@aureliaestates.de";
-const NOTIFY_TO = "office@aureliaestates.de";
+// Solange Resend-Domain noch nicht verifiziert ist, gehen alle Mails an die verifizierte Test-Adresse.
+// Nach Domain-Verifizierung: NOTIFY_TO auf "office@aureliaestates.de" zurücksetzen und Bestätigungs-Block reaktivieren.
+const NOTIFY_TO = "y.alkac@googlemail.com";
+const SANDBOX_MODE = true;
+const SANDBOX_TEST_RECIPIENT = "y.alkac@googlemail.com";
 
 interface ContactPayload {
   name: string;
@@ -174,17 +178,24 @@ ${body.message}`;
       reply_to: body.email,
     });
 
-    // Dann Bestätigung an Absender (Fehler hier blockiert nicht den Erfolg)
-    try {
-      await sendEmail({
-        to: [body.email],
-        subject: "Vielen Dank für Ihre Anfrage",
-        html: confirmationHtml,
-        text: confirmationText,
-        reply_to: REPLY_TO,
-      });
-    } catch (e) {
-      console.error("Confirmation email failed (non-blocking):", e);
+    // Bestätigung an Absender — im Sandbox-Modus nur, wenn Absender = Test-Adresse,
+    // sonst lehnt Resend die Mail mit 403 ab. Fehler hier blockieren nie den Erfolg.
+    const canSendConfirmation =
+      !SANDBOX_MODE || body.email.toLowerCase() === SANDBOX_TEST_RECIPIENT.toLowerCase();
+    if (canSendConfirmation) {
+      try {
+        await sendEmail({
+          to: [body.email],
+          subject: "Vielen Dank für Ihre Anfrage",
+          html: confirmationHtml,
+          text: confirmationText,
+          reply_to: REPLY_TO,
+        });
+      } catch (e) {
+        console.error("Confirmation email failed (non-blocking):", e);
+      }
+    } else {
+      console.log("Skipping confirmation email in sandbox mode for:", body.email);
     }
 
     return new Response(JSON.stringify({ success: true }), {
