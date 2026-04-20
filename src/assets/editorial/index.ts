@@ -4,6 +4,7 @@ import interiorCalm from "./interior-calm.jpg";
 import cooperationMeeting from "./cooperation-meeting.jpg";
 import townhouseClassical from "./townhouse-classical.jpg";
 import caseReviewDesk from "./case-review-desk.jpg";
+import fourPromises from "./four-promises.jpg";
 
 export const editorial = {
   facadeDetail,
@@ -12,4 +13,5 @@ export const editorial = {
   cooperationMeeting,
   townhouseClassical,
   caseReviewDesk,
+  fourPromises,
 };
