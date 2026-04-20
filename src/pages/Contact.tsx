@@ -157,6 +157,21 @@ const Contact = () => {
                 </h2>
               </div>
 
+              {!submitted && (
+                <div className="mb-7 flex flex-wrap items-center gap-3 rounded-md border border-accent/25 bg-accent/5 px-4 py-3.5">
+                  <p className="text-[0.9rem] text-foreground/85 leading-[1.55] flex-1 min-w-[180px]">
+                    Lieber persönlich? Vereinbaren Sie ein vertrauliches Erstgespräch.
+                  </p>
+                  <a
+                    href={`mailto:office@aureliaestates.de?subject=${encodeURIComponent("Kostenloses Erstgespräch anfordern")}`}
+                    className="inline-flex items-center gap-2 border border-accent/60 text-accent px-4 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors duration-300 rounded-sm"
+                  >
+                    Kostenloses Erstgespräch
+                    <ArrowRight size={11} />
+                  </a>
+                </div>
+              )}
+
               {submitted ? (
                 <div className="py-6 text-center">
                   <CheckCircle className="text-accent mx-auto mb-3" size={24} />
