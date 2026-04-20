@@ -21,9 +21,11 @@ interface PageHeroProps {
   size?: "default" | "compact";
 }
 
+// Einheitliches Hero-Höhensystem für alle Hauptseiten.
+// Etwas mehr Höhe + ruhiger unterer Abschluss durch konsistentes Bottom-Padding (siehe unten).
 const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
-  default: "h-[85svh] min-h-[540px] md:h-[89vh] md:min-h-[640px]",
-  compact: "h-[85svh] min-h-[540px] md:h-[89vh] md:min-h-[640px]",
+  default: "min-h-[640px] h-[90svh] md:min-h-[720px] md:h-[94vh]",
+  compact: "min-h-[640px] h-[90svh] md:min-h-[720px] md:h-[94vh]",
 };
 
 const PageHero = ({
