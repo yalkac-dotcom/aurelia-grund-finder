@@ -15,7 +15,7 @@ const tr: Translations = {
     partners: "İş ortakları için",
     howItWorks: "Nasıl çalışıyoruz",
     faq: "SSS",
-    ctaConfidential: "Gizli olarak sor",
+    ctaConfidential: "GÜVENLİ SORABİLİSİNİZ",
   },
   footer: {
     navigation: "Navigasyon",
