@@ -356,16 +356,6 @@
   }
 }
 
-/* Erster Inhaltsblock direkt unter dem Hero – Top-Padding deutlich reduzieren,
-   damit der Übergang vom Hero zum Content ruhig und nicht zu großräumig wirkt. */
-.section-after-hero {
-  padding-top: 2.5rem;
-}
-@media (min-width: 768px) {
-  .section-after-hero {
-    padding-top: 3.5rem;
-  }
-}
 
 .container-premium {
   max-width: 1200px;
