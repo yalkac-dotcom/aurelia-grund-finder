@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { editorial } from "@/assets/editorial";
 import { ArrowRight, Phone, Compass, Target } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -108,7 +107,6 @@ const About = () => {
               </p>
             </Reveal>
           </div>
-          <HeroScrollIndicator />
         </div>
       </section>
 
