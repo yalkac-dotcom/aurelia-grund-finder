@@ -36,20 +36,45 @@ const Contact = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    const { error: dbError } = await supabase.from("contact_submissions").insert({
+    const payload = {
       first_name: formData.get("name") as string,
       last_name: "",
       email: formData.get("email") as string,
       phone: (formData.get("phone") as string) || null,
       property_type: (formData.get("property_type") as string) || null,
       message: formData.get("message") as string,
-    });
+    };
+
+    // 1) In Datenbank speichern (Backup / Audit)
+    const { error: dbError } = await supabase.from("contact_submissions").insert(payload);
+
+    if (dbError) {
+      console.error("Contact form DB error:", dbError);
+      trackEvent("form_submit_error", { form: "contact", stage: "db" });
+      setSubmitting(false);
+      setError(t.common.formError);
+      return;
+    }
+
+    // 2) E-Mail-Versand (Benachrichtigung + Bestätigung)
+    const { data: emailData, error: emailError } = await supabase.functions.invoke(
+      "send-contact-email",
+      {
+        body: {
+          name: payload.first_name,
+          email: payload.email,
+          phone: payload.phone,
+          property_type: payload.property_type,
+          message: payload.message,
+        },
+      }
+    );
 
     setSubmitting(false);
 
-    if (dbError) {
-      console.error("Contact form error:", dbError);
-      trackEvent("form_submit_error", { form: "contact" });
+    if (emailError || (emailData && emailData.success === false)) {
+      console.error("Contact form email error:", emailError || emailData);
+      trackEvent("form_submit_error", { form: "contact", stage: "email" });
       setError(t.common.formError);
       return;
     }
