@@ -150,33 +150,34 @@ const About = () => {
           <p>{a.profile.body2}</p>
         </TextBlock>
 
-        {/* SEKTION 2 – Das Team hinter Aurelia (zweispaltig) */}
+        {/* SEKTION 2 – Das Team hinter Aurelia */}
         {a.team && (
           <section className="py-20 md:py-28 bg-background">
-            <div className="container-premium">
-              <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-                <Reveal>
+            <div className="container-premium max-w-5xl">
+              <Reveal>
+                <div className="overflow-hidden rounded-sm border border-border/40">
+                  <img
+                    src={editorial.cooperationMeeting}
+                    alt={a.team.imageAlt}
+                    loading="lazy"
+                    className="block w-full h-auto aspect-[16/9] object-cover"
+                  />
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.08}>
+                <div className="mt-10 md:mt-12 grid gap-8 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-12 items-start">
                   <div>
                     <div className="mb-4 h-px w-8 bg-accent" aria-hidden="true" />
-                    <h2 className="mb-6 font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
+                    <h2 className="font-heading font-semibold text-primary text-[1.4rem] md:text-[1.875rem] leading-[1.25] tracking-tight">
                       {a.team.headline}
                     </h2>
-                    <p className="text-[15px] md:text-[16px] leading-[1.85] text-foreground/80">
-                      {a.team.body}
-                    </p>
                   </div>
-                </Reveal>
-                <Reveal delay={0.1}>
-                  <div className="overflow-hidden rounded-sm border border-border/40">
-                    <img
-                      src={editorial.cooperationMeeting}
-                      alt={a.team.imageAlt}
-                      loading="lazy"
-                      className="block w-full h-auto aspect-[4/3] object-cover"
-                    />
-                  </div>
-                </Reveal>
-              </div>
+                  <p className="text-[15px] md:text-[16px] leading-[1.85] text-foreground/80">
+                    {a.team.body}
+                  </p>
+                </div>
+              </Reveal>
             </div>
           </section>
         )}
