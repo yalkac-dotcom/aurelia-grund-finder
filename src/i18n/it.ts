@@ -1200,6 +1200,27 @@ const it: Translations = {
       ],
     },
   },
+  faqPage: {
+    kicker: "Domande frequenti",
+    title: "FAQ",
+    intro: "Risposte alle domande più importanti.",
+    items: [
+      { q: "È possibile vendere anche durante un procedimento di asta in corso?", a: "In molti casi sì – finché la data dell'asta non è conclusa. Una vendita privata può ancora essere una soluzione migliore della vendita all'asta. Valutiamo rapidamente e le diciamo onestamente se è realistico." },
+      { q: "Cosa significa „acquisto per conto proprio\"?", a: "Acquistiamo l'immobile direttamente – non per conto di terzi. Nessuna provvigione di mediatore, nessuna riserva di finanziamento e nessuna catena di acquirenti ancora da decidere." },
+      { q: "Quanto rapidamente potete rispondere?", a: "Una prima valutazione viene fornita di norma entro pochi giorni. Più rapidamente nei casi urgenti." },
+      { q: "Cosa succede agli inquilini se l'immobile è locato?", a: "I contratti di locazione esistenti vengono rispettati. Dopo l'acquisto subentriamo nel ruolo di locatore – i contratti restano invariati." },
+      { q: "Quanto rapidamente avviene la transazione?", a: "Dopo la firma il processo segue gli accordi contrattuali. I tempi esatti sono individuali e dipendono dalla situazione. Una transazione tipica richiede da alcune settimane a mesi." },
+      { q: "Il processo è discreto?", a: "Sì, Aurelia tratta tutte le informazioni in modo riservato e professionale. I dettagli vengono discussi solo con le parti coinvolte." },
+      { q: "Posso mantenere il mio immobile?", a: "Con l'acquisto discreto la proprietà passa ad Aurelia. Se cerca soluzioni alternative, ci contatti — valutiamo ogni caso individualmente." },
+      { q: "Quali costi sono previsti?", a: "Tutti i costi sono comunicati in modo trasparente. Non ci sono costi nascosti. I dettagli sono fissati per iscritto nell'accordo." },
+      { q: "Come valuta Aurelia un immobile?", a: "Utilizziamo standard di mercato oggettivi e consideriamo posizione, stato, andamento del mercato e immobili comparabili. La valutazione è tracciabile e le viene illustrata." },
+      { q: "Cosa succede all'immobile dopo l'acquisto?", a: "A seconda del mercato Aurelia decide tra ristrutturazione, vendita, locazione o gestione a lungo termine — sempre in un'ottica di utilizzo economicamente sensato." },
+      { q: "Le partnership sono un investimento finanziario?", a: "No. Le partnership con Aurelia non sono un investimento finanziario né un prodotto finanziario regolamentato. Sono accordi individuali, legati a progetti, con rischi significativi (fino alla perdita totale del capitale). Dettagli sulla pagina partner." },
+    ],
+    ctaTitle: "Altre domande?",
+    ctaText: "Ci contatti — la prima consulenza è gratuita e non vincolante.",
+    ctaButton: "Fissa un appuntamento",
+  },
 };
 
 export default it;

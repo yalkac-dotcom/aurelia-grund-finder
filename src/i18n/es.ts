@@ -1200,6 +1200,27 @@ const es: Translations = {
       ],
     },
   },
+  faqPage: {
+    kicker: "Preguntas frecuentes",
+    title: "FAQ",
+    intro: "Respuestas a las preguntas más importantes.",
+    items: [
+      { q: "¿Es posible vender también durante un procedimiento de subasta en curso?", a: "En muchos casos sí – siempre que la fecha de subasta no haya concluido. Una venta privada puede seguir siendo mejor que la subasta. Lo evaluamos con rapidez y le decimos honestamente si es realista." },
+      { q: "¿Qué significa „compra por cuenta propia\"?", a: "Compramos la propiedad nosotros mismos – no por cuenta de terceros. Sin comisión de intermediario, sin reserva de financiación y sin cadena de compradores pendiente." },
+      { q: "¿Con qué rapidez pueden responder?", a: "Una primera evaluación suele entregarse en pocos días. Más rápido en casos urgentes." },
+      { q: "¿Qué ocurre con los inquilinos si la propiedad está alquilada?", a: "Los contratos de alquiler existentes se respetan. Tras la compra asumimos el rol de arrendador – los contratos permanecen sin cambios." },
+      { q: "¿Con qué rapidez se realiza la transacción?", a: "Tras la firma el proceso sigue lo acordado contractualmente. Los plazos exactos son individuales y dependen de la situación. Una transacción típica dura varias semanas o meses." },
+      { q: "¿Es discreto el proceso?", a: "Sí, Aurelia trata toda la información de forma confidencial y profesional. Los detalles solo se discuten con las partes involucradas." },
+      { q: "¿Puedo conservar mi propiedad?", a: "Con la compra discreta la propiedad pasa a Aurelia. Si busca soluciones alternativas, contáctenos — evaluamos cada caso individualmente." },
+      { q: "¿Qué costes se aplican?", a: "Todos los costes se comunican de forma transparente. No hay costes ocultos. Los detalles se fijan por escrito en el acuerdo." },
+      { q: "¿Cómo valora Aurelia un inmueble?", a: "Utilizamos estándares de mercado objetivos y consideramos ubicación, estado, tendencias del mercado e inmuebles comparables. La valoración es trazable y se le explica." },
+      { q: "¿Qué ocurre con el inmueble tras la compra?", a: "Según la situación del mercado Aurelia decide entre renovación, venta, alquiler o gestión a largo plazo — siempre con vistas a un uso económicamente razonable." },
+      { q: "¿Son las colaboraciones una inversión financiera?", a: "No. Las colaboraciones con Aurelia no son una inversión financiera ni un producto financiero regulado. Son acuerdos individuales, vinculados a proyectos, con riesgos importantes (hasta la pérdida total del capital). Detalles en la página de socios." },
+    ],
+    ctaTitle: "¿Aún tiene preguntas?",
+    ctaText: "Póngase en contacto — la primera consulta es gratuita y sin compromiso.",
+    ctaButton: "Concertar una cita",
+  },
 };
 
 export default es;

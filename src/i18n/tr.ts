@@ -1200,6 +1200,27 @@ const tr: Translations = {
       ],
     },
   },
+  faqPage: {
+    kicker: "Sık sorulan sorular",
+    title: "SSS",
+    intro: "En önemli soruların yanıtları.",
+    items: [
+      { q: "Devam eden icra ihalesi sürecinde de satış mümkün mü?", a: "Çoğu durumda evet – ihale tarihi sonuçlanmadığı sürece. Serbest satış bu aşamada da ihaleden daha iyi bir çözüm olabilir. Durumu hızla değerlendirir ve gerçekçi olup olmadığını dürüstçe söyleriz." },
+      { q: "„Kendi hesabımıza satın alma\" ne demektir?", a: "Mülkü doğrudan biz satın alırız – üçüncü taraflar adına değil. Komisyon yok, finansman koşulu yok ve karar verecek bir alıcı zinciri yok." },
+      { q: "Ne kadar hızlı yanıt verebilirsiniz?", a: "İlk değerlendirmeyi genellikle birkaç gün içinde alırsınız. Acil durumlarda daha hızlı." },
+      { q: "Mülk kiradaysa kiracılara ne olur?", a: "Mevcut kira sözleşmelerine saygı gösterilir. Satın alma sonrasında ev sahibi rolünü üstleniriz – sözleşmeler değişmez." },
+      { q: "İşlem ne kadar sürede tamamlanır?", a: "Sözleşme imzalandıktan sonra süreç sözleşmeye göre ilerler. Kesin süreler bireyseldir ve duruma bağlıdır. Tipik bir işlem birkaç hafta ile ay arasında sürer." },
+      { q: "Süreç gizli mi?", a: "Evet, Aurelia tüm bilgileri gizli ve profesyonel biçimde ele alır. Ayrıntılar yalnızca ilgili taraflarla görüşülür." },
+      { q: "Mülkümü tutabilir miyim?", a: "Gizli satın alma ile mülk Aurelia'ya geçer. Alternatif çözümler arıyorsanız bize ulaşın — her durumu bireysel değerlendiririz." },
+      { q: "Hangi ücretler geçerlidir?", a: "Tüm ücretler şeffaf biçimde bildirilir. Gizli maliyet yoktur. Ayrıntılar sözleşmede yazılı olarak tespit edilir." },
+      { q: "Aurelia bir mülkü nasıl değerlendirir?", a: "Konumu, durumu, piyasa eğilimlerini ve karşılaştırılabilir mülkleri dikkate alarak nesnel piyasa standartları kullanırız. Değerleme izlenebilirdir ve size açıklanır." },
+      { q: "Satın alma sonrasında mülke ne olur?", a: "Piyasa durumuna göre Aurelia; yenileme, satış, kiralama veya uzun vadeli portföy yönetimine karar verir — daima ekonomik olarak makul kullanım gözetilerek." },
+      { q: "Ortaklıklar bir finansal yatırım mıdır?", a: "Hayır. Aurelia ile ortaklıklar bir finansal yatırım veya düzenlenmiş bir finansal ürün değildir. Bunlar, önemli riskler (sermaye kaybına kadar) içeren bireysel, projeye bağlı anlaşmalardır. Ayrıntılar için iş ortakları sayfasına bakın." },
+    ],
+    ctaTitle: "Hâlâ sorunuz var mı?",
+    ctaText: "Bize ulaşın — ilk görüşme ücretsiz ve bağlayıcı değildir.",
+    ctaButton: "Randevu alın",
+  },
 };
 
 export default tr;
