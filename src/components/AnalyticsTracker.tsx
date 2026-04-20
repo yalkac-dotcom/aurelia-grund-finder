@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { initGA, trackPageView } from "@/lib/analytics";
 import { initClarity } from "@/lib/clarity";
+import GaDiagPanel from "./GaDiagPanel";
 
 const AnalyticsTracker = () => {
   const location = useLocation();
@@ -10,6 +11,9 @@ const AnalyticsTracker = () => {
     const onConsentChange = () => {
       initGA();
       initClarity();
+      // Ensure a page_view fires immediately after consent is granted,
+      // even if the route hasn't changed.
+      trackPageView(window.location.pathname + window.location.search);
     };
     window.addEventListener("consent-change", onConsentChange);
     initGA();
@@ -21,7 +25,7 @@ const AnalyticsTracker = () => {
     trackPageView(location.pathname + location.search);
   }, [location.pathname, location.search]);
 
-  return null;
+  return <GaDiagPanel />;
 };
 
 export default AnalyticsTracker;

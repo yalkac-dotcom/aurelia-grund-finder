@@ -13,25 +13,17 @@ declare global {
   }
 }
 
-const isDebugForce = (): boolean => {
+const hasParam = (key: string, val = "1"): boolean => {
   if (typeof window === "undefined") return false;
   try {
-    const params = new URLSearchParams(window.location.search);
-    return params.get("_ga_force") === "1";
+    return new URLSearchParams(window.location.search).get(key) === val;
   } catch {
     return false;
   }
 };
 
-const isDebugMode = (): boolean => {
-  if (typeof window === "undefined") return false;
-  try {
-    const params = new URLSearchParams(window.location.search);
-    return params.get("_ga_debug") === "1";
-  } catch {
-    return false;
-  }
-};
+const isDebugForce = (): boolean => hasParam("_ga_force") || hasParam("_ga_diag");
+const isDebugMode = (): boolean => hasParam("_ga_debug") || hasParam("_ga_diag");
 
 export const hasAnalyticsConsent = (): boolean => {
   if (isDebugForce()) return true;
