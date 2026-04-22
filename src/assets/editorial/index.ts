@@ -5,6 +5,7 @@ import cooperationMeeting from "./cooperation-meeting.jpg";
 import townhouseClassical from "./townhouse-classical.jpg";
 import caseReviewDesk from "./case-review-desk.jpg";
 import fourPromises from "./four-promises.jpg";
+import settledHome from "./settled-home.jpg";
 
 export const editorial = {
   facadeDetail,
@@ -14,4 +15,5 @@ export const editorial = {
   townhouseClassical,
   caseReviewDesk,
   fourPromises,
+  settledHome,
 };

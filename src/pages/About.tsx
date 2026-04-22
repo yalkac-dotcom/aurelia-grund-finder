@@ -129,8 +129,8 @@ const About = () => {
         <TextBlock
           headline={a.companyProfile.headline}
           tone="light"
-          image={editorial.caseReviewDesk}
-          imageAlt="Ruhiger Arbeitsplatz mit geordneten Unterlagen"
+          image={editorial.settledHome}
+          imageAlt="Gepflegtes klassisches Stadthaus im warmen Abendlicht – sinnbildlich für eine geordnete, getragene Lösung nach festgefahrener Lage"
         >
           <p>{a.companyProfile.body}</p>
         </TextBlock>
