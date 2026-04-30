@@ -5,11 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import AnalyticsTracker from "./components/AnalyticsTracker";
-import Index from "./pages/Index";
-import ForOwnerInTrouble from "./pages/ForOwnerInTrouble";
-import ForBuyers from "./pages/ForBuyers";
-import ForGeschaftspartner from "./pages/ForGeschaftspartner";
-import HowItWorks from "./pages/HowItWorks";
+import ComingSoon from "./pages/ComingSoon";
 
 const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/Services"));
