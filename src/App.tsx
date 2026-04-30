@@ -37,30 +37,11 @@ const App = () => (
           <AnalyticsTracker />
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/ueber-uns" element={<About />} />
-              <Route path="/leistungen" element={<Services />} />
-              <Route path="/steuervorteile" element={<TaxBenefits />} />
-              <Route path="/steuervorteile/afa" element={<AfaPage />} />
-              <Route path="/steuervorteile/energetisch" element={<EnergetischPage />} />
-              <Route path="/steuervorteile/kfw" element={<KfwPage />} />
-              <Route path="/steuervorteile/bafa" element={<BafaPage />} />
-              <Route path="/steuervorteile/glossar" element={<GlossarPage />} />
-              <Route path="/immobilien-glossar" element={<InvestorGlossar />} />
-              <Route path="/investoren-glossar" element={<InvestorGlossar />} />
-              <Route path="/investoren" element={<ForGeschaftspartner />} />
-              <Route path="/kontakt" element={<Contact />} />
-              <Route path="/wie-es-funktioniert" element={<HowItWorks />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
-              <Route path="/fuer-kaeufer" element={<ForBuyers />} />
-              <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />
-              <Route path="/fuer-investoren" element={<ForGeschaftspartner />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/datenschutz" element={<Privacy />} />
+              {/* Coming-Soon: Impressum & Datenschutz bleiben erreichbar */}
               <Route path="/impressum" element={<Impressum />} />
-              <Route path="/bildnachweise" element={<Bildnachweise />} />
-              <Route path="*" element={<NotFound />} />
+              <Route path="/datenschutz" element={<Privacy />} />
+              {/* Alle anderen Routen → Coming-Soon */}
+              <Route path="*" element={<ComingSoon />} />
             </Routes>
           </Suspense>
         </BrowserRouter>
