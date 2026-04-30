@@ -37,10 +37,7 @@ const App = () => (
           <AnalyticsTracker />
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
-              {/* Coming-Soon: Impressum & Datenschutz bleiben erreichbar */}
-              <Route path="/impressum" element={<Impressum />} />
-              <Route path="/datenschutz" element={<Privacy />} />
-              {/* Alle anderen Routen → Coming-Soon */}
+              {/* Alle Routen → Coming-Soon */}
               <Route path="*" element={<ComingSoon />} />
             </Routes>
           </Suspense>
