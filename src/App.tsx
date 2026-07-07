@@ -5,7 +5,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import AnalyticsTracker from "./components/AnalyticsTracker";
-import Layout from "./components/Layout";
 import Index from "./pages/Index";
 import ForOwnerInTrouble from "./pages/ForOwnerInTrouble";
 import ForBuyers from "./pages/ForBuyers";
@@ -41,29 +40,27 @@ const App = () => (
           <AnalyticsTracker />
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
-              <Route element={<Layout />}>
-                <Route path="/" element={<Index />} />
-                <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
-                <Route path="/fuer-kaeufer" element={<ForBuyers />} />
-                <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />
-                <Route path="/wie-es-funktioniert" element={<HowItWorks />} />
-                <Route path="/ueber-uns" element={<About />} />
-                <Route path="/leistungen" element={<Services />} />
-                <Route path="/steuervorteile" element={<TaxBenefits />} />
-                <Route path="/steuervorteile/afa" element={<AfaPage />} />
-                <Route path="/steuervorteile/energetisch" element={<EnergetischPage />} />
-                <Route path="/steuervorteile/kfw" element={<KfwPage />} />
-                <Route path="/steuervorteile/bafa" element={<BafaPage />} />
-                <Route path="/steuervorteile/glossar" element={<GlossarPage />} />
-                <Route path="/immobilien-glossar" element={<InvestorGlossar />} />
-                <Route path="/portfolio" element={<Portfolio />} />
-                <Route path="/faq" element={<FAQ />} />
-                <Route path="/kontakt" element={<Contact />} />
-                <Route path="/impressum" element={<Impressum />} />
-                <Route path="/datenschutz" element={<Privacy />} />
-                <Route path="/bildnachweise" element={<Bildnachweise />} />
-                <Route path="*" element={<NotFound />} />
-              </Route>
+              <Route path="/" element={<Index />} />
+              <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
+              <Route path="/fuer-kaeufer" element={<ForBuyers />} />
+              <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />
+              <Route path="/wie-es-funktioniert" element={<HowItWorks />} />
+              <Route path="/ueber-uns" element={<About />} />
+              <Route path="/leistungen" element={<Services />} />
+              <Route path="/steuervorteile" element={<TaxBenefits />} />
+              <Route path="/steuervorteile/afa" element={<AfaPage />} />
+              <Route path="/steuervorteile/energetisch" element={<EnergetischPage />} />
+              <Route path="/steuervorteile/kfw" element={<KfwPage />} />
+              <Route path="/steuervorteile/bafa" element={<BafaPage />} />
+              <Route path="/steuervorteile/glossar" element={<GlossarPage />} />
+              <Route path="/immobilien-glossar" element={<InvestorGlossar />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/kontakt" element={<Contact />} />
+              <Route path="/impressum" element={<Impressum />} />
+              <Route path="/datenschutz" element={<Privacy />} />
+              <Route path="/bildnachweise" element={<Bildnachweise />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </BrowserRouter>
