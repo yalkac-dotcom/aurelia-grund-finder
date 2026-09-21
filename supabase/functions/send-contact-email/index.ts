@@ -27,9 +27,9 @@ interface ContactPayload {
   files?: { name: string; path: string; size: number; type: string }[];
 }
 
-type Locale = "de" | "en" | "nl" | "it" | "es" | "tr";
+type Locale = "de" | "en" | "nl" | "it" | "es" | "tr" | "fr";
 
-const LOCALES: Locale[] = ["de", "en", "nl", "it", "es", "tr"];
+const LOCALES: Locale[] = ["de", "en", "nl", "it", "es", "tr", "fr"];
 
 const LANGUAGE_NAMES_DE: Record<Locale, string> = {
   de: "Deutsch",
@@ -38,6 +38,7 @@ const LANGUAGE_NAMES_DE: Record<Locale, string> = {
   it: "Italienisch",
   es: "Spanisch",
   tr: "Türkisch",
+  fr: "Französisch",
 };
 
 // Erkennt sowohl Locale-Codes ("de", "de-DE") als auch Klartext-Namen
@@ -49,6 +50,7 @@ const LANGUAGE_ALIASES: Record<string, Locale> = {
   italiano: "it", italienisch: "it", italian: "it", italiaans: "it", italyanca: "it",
   español: "es", espanol: "es", spanisch: "es", spanish: "es", spaans: "es", spagnolo: "es", "i̇spanyolca": "es", ispanyolca: "es",
   türkçe: "tr", turkce: "tr", türkisch: "tr", turkish: "tr", turks: "tr", turco: "tr",
+  français: "fr", francais: "fr", französisch: "fr", franzoesisch: "fr", french: "fr", frans: "fr", francese: "fr", francés: "fr", frances: "fr", fransızca: "fr", fransizca: "fr",
 };
 
 function resolveLocale(value?: string | null): Locale {
@@ -148,6 +150,19 @@ const CONFIRMATIONS: Record<Locale, ConfirmationTemplate> = {
     country: "Alemania",
     phoneLabel: "Teléfono",
     emailLabel: "Correo electrónico",
+  },
+  fr: {
+    subject: "Merci pour votre demande – Aurelia Grundbesitz GmbH",
+    greeting: "Madame, Monsieur,",
+    paragraphs: [
+      "nous vous remercions pour votre demande et pour l'intérêt que vous portez à Aurelia Grundbesitz GmbH.",
+      "Nous avons bien reçu votre message. Nous allons examiner les informations transmises et vous contacter personnellement dans les meilleurs délais.",
+      "Si vous souhaitez nous transmettre entre-temps des informations ou des documents complémentaires, vous pouvez simplement répondre à cet e-mail.",
+    ],
+    closing: "Cordialement,",
+    country: "Allemagne",
+    phoneLabel: "Téléphone",
+    emailLabel: "E-mail",
   },
 };
 

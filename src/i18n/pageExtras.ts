@@ -108,6 +108,35 @@ export const pageExtras: Record<Language, PageExtras> = {
     },
     accessibility: { chooseLetters: "Elegir una letra", homeHeroAlt: "Edificio residencial bien cuidado en una calle tranquila a la luz del día", promisesAlt: "Cuatro columnas de mármol en un espacio luminoso como símbolo de nuestros cuatro compromisos" },
   },
+  fr: {
+    imageCredits: {
+      first: "Toutes les images utilisées sur ce site ont été générées par intelligence artificielle et sont libres de droits. Elles ont été créées spécifiquement pour Aurelia Grundbesitz GmbH et servent uniquement à des fins d'illustration.",
+      second: "Nous n'utilisons aucune image de tiers payante ou dont le statut de licence serait incertain. Si vous estimez néanmoins que des droits de tiers pourraient être concernés, nous vous prions de bien vouloir nous contacter immédiatement.",
+      contact: "Contact pour toute question",
+    },
+    contact: {
+      availabilityShort: "Du lundi au vendredi, y compris à court terme en cas de procédure en cours",
+      personalPrompt: "Vous préférez un échange personnel ? Convenez d'un premier entretien confidentiel.",
+      consultation: "Premier entretien gratuit",
+      consultationSubject: "Demander un premier entretien gratuit",
+      phone: "Téléphone",
+      email: "E-mail",
+    },
+    portfolio: {
+      seoTitle: "Portefeuille – Aurelia Grundbesitz GmbH", heroKicker: "Portefeuille", heroTitle: "Biens immobiliers actuels", heroDescription: "Des biens contrôlés en termes de qualité à Düsseldorf et ses environs.", heroAlt: "Portefeuille immobilier Aurelia",
+      introTitle: "Une sélection qui évolue régulièrement", introText: "Aurelia dispose d'un portefeuille en constante évolution de biens contrôlés en termes de qualité à Düsseldorf et ses environs. Notre portefeuille étant géré de manière confidentielle et évoluant continuellement, nous ne présentons des biens concrets que sur demande directe.",
+      categoriesTitle: "Catégories de biens", categoriesIntro: "Notre portefeuille couvre différentes classes d'actifs ; la disponibilité varie.",
+      categories: [
+        { title: "Appartements en copropriété", description: "Unités individuelles et immeubles résidentiels à plusieurs étages.", alt: "Immeuble résidentiel moderne avec balcons" },
+        { title: "Maisons individuelles", description: "Biens à différents états de rénovation.", alt: "Maison individuelle indépendante" },
+        { title: "Terrains", description: "Terrains constructibles et surfaces libres à fort potentiel de développement.", alt: "Vue aérienne d'un terrain constructible" },
+        { title: "Immobilier commercial", description: "Commerces, bureaux et usages mixtes.", alt: "Vue extérieure d'un immeuble de bureaux" },
+      ],
+      regionTitle: "Focus régional", regionText: "Düsseldorf, Mettmann, Neuss, Ratingen, Hilden et d'autres localités de Rhénanie offrant solidité, demande et potentiel de développement.",
+      ctaTitle: "Demander des biens concrets", ctaText: "Décrivez-nous brièvement ce que vous recherchez — nous examinerons quels biens de notre portefeuille actuel pourraient vous convenir.", ctaButton: "Demander le portefeuille",
+    },
+    accessibility: { chooseLetters: "Choisir une lettre", homeHeroAlt: "Rue résidentielle calme avec un immeuble bien entretenu en plein jour", promisesAlt: "Quatre colonnes de marbre dans une pièce baignée de lumière, symbole de nos quatre engagements" },
+  },
 };
 
 export const taxExternalLinkLabels: Record<Language, {
@@ -122,4 +151,5 @@ export const taxExternalLinkLabels: Record<Language, {
   it: { afa: ["Ministero federale delle Finanze", "Ufficio delle imposte (ELSTER)"], energy: ["Ministero federale delle Finanze", "Ministero federale – Efficienza energetica"], kfw: ["Banca di sviluppo KfW", "Ricerca prodotti KfW"], bafa: ["BAFA", "Panoramica degli incentivi BAFA"] },
   es: { afa: ["Ministerio Federal de Finanzas", "Agencia tributaria (ELSTER)"], energy: ["Ministerio Federal de Finanzas", "Ministerio Federal – Eficiencia energética"], kfw: ["Banco de desarrollo KfW", "Buscador de productos KfW"], bafa: ["BAFA", "Resumen de ayudas BAFA"] },
   tr: { afa: ["Federal Maliye Bakanlığı", "Vergi dairesi (ELSTER)"], energy: ["Federal Maliye Bakanlığı", "Federal Bakanlık – Enerji verimliliği"], kfw: ["KfW kalkınma bankası", "KfW ürün arama"], bafa: ["BAFA", "BAFA teşvik programları"] },
+  fr: { afa: ["Ministère fédéral des Finances", "Administration fiscale (ELSTER)"], energy: ["Ministère fédéral des Finances", "Ministère fédéral – Efficacité énergétique"], kfw: ["Banque de développement KfW", "Recherche de produits KfW"], bafa: ["BAFA", "Aperçu des aides BAFA"] },
 };

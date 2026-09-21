@@ -57,7 +57,7 @@ export interface TurkeyPropertiesTranslations {
   legalNotice: string;
 }
 
-export type Language = "de" | "en" | "it" | "es" | "tr" | "nl";
+export type Language = "de" | "en" | "it" | "es" | "tr" | "nl" | "fr";
 
 export interface Translations {
   nav: {
@@ -690,6 +690,7 @@ export const languageNames: Record<Language, string> = {
   es: "Español",
   tr: "Türkçe",
   nl: "Nederlands",
+  fr: "Français",
 };
 
-export const languageCodes: Language[] = ["de", "en", "nl", "it", "es", "tr"];
+export const languageCodes: Language[] = ["de", "en", "nl", "it", "es", "tr", "fr"];

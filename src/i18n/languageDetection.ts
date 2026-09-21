@@ -1,6 +1,6 @@
 import type { Language } from "./types";
 
-export const SUPPORTED_LANGUAGES: Language[] = ["de", "en", "nl", "it", "es", "tr"];
+export const SUPPORTED_LANGUAGES: Language[] = ["de", "en", "nl", "it", "es", "tr", "fr"];
 export const STORAGE_KEY = "aurelia-lang";
 export const COUNTRY_CACHE_KEY = "aurelia-geo-country";
 
@@ -9,6 +9,9 @@ export const isLanguage = (value: unknown): value is Language =>
 
 /** Country (ISO-3166 alpha-2) -> Aurelia language. Country level only, no precise location. */
 const countryLanguageMap: Record<string, Language> = {
+  // French (France + reliably French-speaking overseas territories)
+  FR: "fr", GP: "fr", MQ: "fr", GF: "fr", RE: "fr", YT: "fr", PM: "fr",
+  BL: "fr", MF: "fr", WF: "fr", PF: "fr", NC: "fr",
   // German
   DE: "de", AT: "de", CH: "de", LI: "de", LU: "de",
   // Turkish
@@ -26,11 +29,21 @@ const countryLanguageMap: Record<string, Language> = {
   SG: "en", MT: "en", NG: "en", KE: "en", GH: "en", PH: "en", JM: "en", TT: "en",
 };
 
+/**
+ * Multilingual countries: never assign French (or any single language) from the IP alone.
+ * A supported browser language decides here; otherwise the default mapping above applies.
+ */
+const MULTILINGUAL_COUNTRIES = new Set(["BE", "CH", "LU", "CA"]);
+
 /** Unknown/unmapped country -> English (per spec). */
 export const languageForCountry = (country?: string | null): Language | null => {
   if (!country) return null;
   const code = country.trim().toUpperCase();
   if (code.length !== 2) return null;
+  if (MULTILINGUAL_COUNTRIES.has(code)) {
+    const fromBrowser = languageFromBrowser();
+    if (fromBrowser) return fromBrowser;
+  }
   return countryLanguageMap[code] ?? "en";
 };
 

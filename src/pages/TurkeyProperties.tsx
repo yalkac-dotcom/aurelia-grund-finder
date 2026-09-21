@@ -85,7 +85,7 @@ const TurkeyProperties = () => {
   const { t, language } = useLanguage();
   const { toast } = useToast();
   const page = t.turkeyProperties;
-  const languageOptionIndex = { de: 0, tr: 1, en: 2, nl: 3, it: 4, es: 5 } as const;
+  const languageOptionIndex = { de: 0, tr: 1, en: 2, nl: 3, it: 4, es: 5, fr: 6 } as const;
   const defaultLanguage = useMemo(() => page.form.languageOptions[languageOptionIndex[language]] ?? page.form.languageOptions[0] ?? "Deutsch", [language, page.form.languageOptions]);
   const [form, setForm] = useState<FormState>(() => getInitialForm(defaultLanguage));
   const [files, setFiles] = useState<File[]>([]);
