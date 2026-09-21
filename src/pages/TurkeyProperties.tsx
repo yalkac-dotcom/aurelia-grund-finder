@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, FileText, Home, Landmark, MapPin, ShieldCheck, Upload } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -85,9 +85,11 @@ const TurkeyProperties = () => {
   const { t, language } = useLanguage();
   const { toast } = useToast();
   const page = t.turkeyProperties;
-  const defaultLanguage = useMemo(() => page.form.languageOptions[language === "tr" ? 1 : 0] ?? page.form.languageOptions[0] ?? "Deutsch", [language, page.form.languageOptions]);
+  const languageOptionIndex = { de: 0, tr: 1, en: 2, nl: 3, it: 4, es: 5 } as const;
+  const defaultLanguage = useMemo(() => page.form.languageOptions[languageOptionIndex[language]] ?? page.form.languageOptions[0] ?? "Deutsch", [language, page.form.languageOptions]);
   const [form, setForm] = useState<FormState>(() => getInitialForm(defaultLanguage));
   const [files, setFiles] = useState<File[]>([]);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const [errors, setErrors] = useState<Partial<Record<keyof FormState | "files", boolean>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -107,7 +109,7 @@ const TurkeyProperties = () => {
   }, [page.seoDescription, page.seoTitle]);
 
   useEffect(() => {
-    setForm((current) => ({ ...current, preferredLanguage: current.preferredLanguage || defaultLanguage }));
+    setForm((current) => ({ ...current, preferredLanguage: defaultLanguage }));
   }, [defaultLanguage]);
 
   const updateField = <K extends keyof FormState>(field: K, value: FormState[K]) => {
@@ -228,6 +230,7 @@ const TurkeyProperties = () => {
       setIsSuccess(true);
       setForm(getInitialForm(defaultLanguage));
       setFiles([]);
+      if (fileInputRef.current) fileInputRef.current.value = "";
       toast({ title: page.form.successTitle, description: page.form.successText });
     } catch (error) {
       console.error("Turkey property submission failed:", error);
@@ -389,17 +392,22 @@ const TurkeyProperties = () => {
                   <label className={labelClass}>{page.form.ownership}<select className={fieldClass("ownership")} value={form.ownership} onChange={(event) => updateField("ownership", event.target.value)}><option value="">{page.form.selectPlaceholder}</option>{page.form.ownershipOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
                   <label className={`${labelClass} md:col-span-2`}>{page.form.priceExpectation}<input className={fieldClass("priceExpectation")} value={form.priceExpectation} onChange={(event) => updateField("priceExpectation", event.target.value)} /></label>
                   <label className={`${labelClass} md:col-span-2`}>{page.form.description}<textarea className={`${fieldClass("description")} min-h-36 resize-y`} value={form.description} onChange={(event) => updateField("description", event.target.value)} maxLength={1800} /></label>
-                  <label className={`${labelClass} md:col-span-2`}>
+                  <div className={`${labelClass} md:col-span-2`}>
                     <span className="flex items-center gap-2"><Upload size={15} className="text-accent" />{page.form.files}</span>
-                    <input className={fieldClass("files")} type="file" multiple accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" onChange={(event) => onFilesChange(event.target.files)} />
+                    <input ref={fileInputRef} className="sr-only" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" onChange={(event) => onFilesChange(event.target.files)} />
+                    <div className={`mt-2 flex min-h-12 flex-col gap-3 rounded-sm border bg-background px-4 py-3 sm:flex-row sm:items-center ${errors.files ? "border-destructive" : "border-border"}`}>
+                      <Button type="button" variant="outline" onClick={() => fileInputRef.current?.click()} className="min-h-11 shrink-0 rounded-sm">
+                        <Upload size={15} className="mr-2 text-accent" />
+                        {page.form.uploadChoose}
+                      </Button>
+                      <span className="normal-case tracking-normal text-[0.82rem] font-normal text-muted-foreground">
+                        {files.length === 0 ? page.form.uploadEmpty : `${page.form.uploadSelected} ${files.map((file) => file.name).join(", ")}`}
+                      </span>
+                    </div>
                     <span className="mt-2 block text-[0.78rem] normal-case text-muted-foreground">{page.form.uploadHelp}</span>
-                  </label>
-                </div>
-                {files.length > 0 && (
-                  <div className="mt-4 space-y-2 text-[0.82rem] text-muted-foreground">
-                    {files.map((file) => <p key={`${file.name}-${file.size}`}>{file.name} · {formatSize(file.size)}</p>)}
                   </div>
-                )}
+                </div>
+                {files.length > 0 && <p className="mt-3 text-[0.78rem] text-muted-foreground">{files.map((file) => `${file.name} · ${formatSize(file.size)}`).join(" · ")}</p>}
                 <label className="mt-6 flex items-start gap-3 text-[0.86rem] leading-[1.7] text-muted-foreground">
                   <input type="checkbox" checked={form.privacy} onChange={(event) => updateField("privacy", event.target.checked)} className={`mt-1 h-4 w-4 rounded-sm border ${errors.privacy ? "border-destructive" : "border-border"}`} />
                   <span>{page.form.privacy} <Link to="/datenschutz" className="text-primary underline-offset-4 hover:underline">{page.form.privacyLink}</Link></span>

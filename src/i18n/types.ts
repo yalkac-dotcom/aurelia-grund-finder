@@ -34,6 +34,9 @@ export interface TurkeyPropertiesTranslations {
     description: string;
     files: string;
     uploadHelp: string;
+    uploadChoose: string;
+    uploadEmpty: string;
+    uploadSelected: string;
     privacy: string;
     privacyLink: string;
     button: string;
