@@ -9,6 +9,9 @@ export const isLanguage = (value: unknown): value is Language =>
 
 /** Country (ISO-3166 alpha-2) -> Aurelia language. Country level only, no precise location. */
 const countryLanguageMap: Record<string, Language> = {
+  // French (France + reliably French-speaking overseas territories)
+  FR: "fr", GP: "fr", MQ: "fr", GF: "fr", RE: "fr", YT: "fr", PM: "fr",
+  BL: "fr", MF: "fr", WF: "fr", PF: "fr", NC: "fr",
   // German
   DE: "de", AT: "de", CH: "de", LI: "de", LU: "de",
   // Turkish
