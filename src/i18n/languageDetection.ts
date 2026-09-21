@@ -119,10 +119,15 @@ export const fetchCountry = async (signal?: AbortSignal): Promise<string | null>
  * Returns the language to use plus whether it came from an explicit (manual/URL) source.
  */
 export const resolveInitialLanguage = (): { language: Language; explicit: boolean } => {
+  const fromUrl = languageFromUrl();
+  if (fromUrl) {
+    try {
+      localStorage.setItem(STORAGE_KEY, fromUrl);
+    } catch {}
+    return { language: fromUrl, explicit: true };
+  }
   const stored = storedLanguage();
   if (stored) return { language: stored, explicit: true };
-  const fromUrl = languageFromUrl();
-  if (fromUrl) return { language: fromUrl, explicit: true };
   const country = cachedCountry();
   const fromCountry = languageForCountry(country);
   if (fromCountry) return { language: fromCountry, explicit: false };
