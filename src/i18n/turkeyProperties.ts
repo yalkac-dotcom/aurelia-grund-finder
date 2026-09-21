@@ -175,7 +175,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       button: "Ücretsiz ön değerlendirme talep et",
       submitting: "Başvuru iletiliyor …",
       successTitle: "Teşekkür ederiz.",
-      successText: "Başvurunuz başarıyla iletildi. Bilgilerinizi inceledikten sonra sizinle kişisel olarak iletişime geçeceğiz.",
+      successText: "Talebiniz için teşekkür ederiz. Mesajınız tarafımıza ulaştı. E-posta adresinize bir onay mesajı gönderildi. En kısa sürede sizinle iletişime geçeceğiz.",
       errorText: "Başvurunuz iletilemedi. Lütfen tekrar deneyin veya doğrudan e-posta yoluyla bizimle iletişime geçin.",
       validationError: "Lütfen işaretli zorunlu alanları kontrol edin.",
       fileError: "Lütfen yalnızca PDF, JPG, JPEG veya PNG dosyaları yükleyin. Dosya başına en fazla 10 MB.",
