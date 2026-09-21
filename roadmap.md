@@ -9,3 +9,4 @@
 - [x] Canonical + og:url pro Route (useCanonicalUrl)
 - [x] Crawl 6 Sprachen x 21 Seiten, Breiten 390–1920
 - [x] Kontaktformular (Telefon-Pflicht, 6 Sprachen) und Türkei-Formular inkl. Upload real getestet
+- [x] Französische Sprachversion (fr): fr.ts, pageExtras, turkeyProperties, Sprachumschalter, Geo-IP (FR + Überseegebiete; BE/CH/LU/CA über Browsersprache), hreflang/og:locale, französische Bestätigungsmail, Formulartests inkl. Upload
