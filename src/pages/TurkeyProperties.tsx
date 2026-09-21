@@ -255,7 +255,14 @@ const TurkeyProperties = () => {
           fetchPriority="high"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--primary)/0.9)_0%,hsl(var(--primary)/0.78)_42%,hsl(var(--primary)/0.42)_100%)]" aria-hidden="true" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, hsl(var(--primary) / 0.9) 0%, hsl(var(--primary) / 0.78) 42%, hsl(var(--primary) / 0.42) 100%)",
+          }}
+          aria-hidden="true"
+        />
         <div className="page-frame-hero relative py-16 md:py-20">
           <div className="max-w-3xl">
             <p className="hero-kicker">{page.hero.kicker}</p>
@@ -385,7 +392,7 @@ const TurkeyProperties = () => {
                   <label className={`${labelClass} md:col-span-2`}>
                     <span className="flex items-center gap-2"><Upload size={15} className="text-accent" />{page.form.files}</span>
                     <input className={fieldClass("files")} type="file" multiple accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" onChange={(event) => onFilesChange(event.target.files)} />
-                    <span className="mt-2 block text-[0.78rem] normal-case tracking-0 text-muted-foreground">{page.form.uploadHelp}</span>
+                    <span className="mt-2 block text-[0.78rem] normal-case text-muted-foreground">{page.form.uploadHelp}</span>
                   </label>
                 </div>
                 {files.length > 0 && (
