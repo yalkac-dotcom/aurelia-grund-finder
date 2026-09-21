@@ -63,6 +63,7 @@ const OptimizedImg = ({
   if (priority) {
     return (
       <img
+        ref={imgRef}
         src={src}
         srcSet={srcSet}
         sizes={sizes}
@@ -71,6 +72,7 @@ const OptimizedImg = ({
         decoding="sync"
         fetchPriority="high"
         className={className}
+        onError={() => setFailed(true)}
         {...props}
       />
     );
@@ -87,6 +89,7 @@ const OptimizedImg = ({
       decoding="async"
       fetchPriority="auto"
       onLoad={() => setLoaded(true)}
+      onError={() => setFailed(true)}
       className={`${className ?? ""} transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
       {...props}
     />
