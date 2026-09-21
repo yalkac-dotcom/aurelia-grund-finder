@@ -27,8 +27,133 @@ interface ContactPayload {
   property_type?: string | null;
   message: string;
   language?: string | null;
+  preferred_language?: string | null;
   files?: { name: string; path: string; size: number; type: string }[];
 }
+
+type Locale = "de" | "en" | "nl" | "it" | "es" | "tr";
+
+const LOCALES: Locale[] = ["de", "en", "nl", "it", "es", "tr"];
+
+const LANGUAGE_NAMES_DE: Record<Locale, string> = {
+  de: "Deutsch",
+  en: "Englisch",
+  nl: "Niederländisch",
+  it: "Italienisch",
+  es: "Spanisch",
+  tr: "Türkisch",
+};
+
+// Erkennt sowohl Locale-Codes ("de", "de-DE") als auch Klartext-Namen
+// aus dem Formularfeld "bevorzugte Sprache" ("Türkçe", "Nederlands", ...).
+const LANGUAGE_ALIASES: Record<string, Locale> = {
+  deutsch: "de", german: "de", duits: "de", tedesco: "de", alemán: "de", aleman: "de", almanca: "de",
+  english: "en", englisch: "en", engels: "en", inglese: "en", inglés: "en", ingles: "en", ingilizce: "en", "i̇ngilizce": "en",
+  nederlands: "nl", niederländisch: "nl", niederlaendisch: "nl", dutch: "nl", olandese: "nl", neerlandés: "nl", neerlandes: "nl", felemenkçe: "nl",
+  italiano: "it", italienisch: "it", italian: "it", italiaans: "it", italiano_es: "it", italyanca: "it",
+  español: "es", espanol: "es", spanisch: "es", spanish: "es", spaans: "es", spagnolo: "es", "i̇spanyolca": "es", ispanyolca: "es",
+  türkçe: "tr", turkce: "tr", türkisch: "tr", turkish: "tr", turks: "tr", turco: "tr",
+};
+
+function resolveLocale(value?: string | null): Locale {
+  if (!value || typeof value !== "string") return "de";
+  const raw = value.trim().toLowerCase();
+  if (!raw) return "de";
+  const base = raw.split(/[-_]/)[0];
+  if ((LOCALES as string[]).includes(base)) return base as Locale;
+  return LANGUAGE_ALIASES[raw] ?? "de";
+}
+
+interface ConfirmationTemplate {
+  subject: string;
+  greeting: string;
+  paragraphs: string[];
+  closing: string;
+  country: string;
+  phoneLabel: string;
+  emailLabel: string;
+}
+
+const CONFIRMATIONS: Record<Locale, ConfirmationTemplate> = {
+  de: {
+    subject: "Vielen Dank für Ihre Anfrage – Aurelia Grundbesitz GmbH",
+    greeting: "Sehr geehrte Damen und Herren,",
+    paragraphs: [
+      "vielen Dank für Ihre Anfrage und Ihr Interesse an der Aurelia Grundbesitz GmbH.",
+      "Wir haben Ihre Nachricht erhalten und werden Ihre Angaben prüfen. Wir werden uns schnellstmöglich persönlich mit Ihnen in Verbindung setzen.",
+      "Sollten Sie uns zwischenzeitlich noch weitere Informationen oder Unterlagen zukommen lassen wollen, können Sie jederzeit auf diese E-Mail antworten.",
+    ],
+    closing: "Mit freundlichen Grüßen",
+    country: "",
+    phoneLabel: "Telefon",
+    emailLabel: "E-Mail",
+  },
+  tr: {
+    subject: "Talebinizi aldık – Aurelia Grundbesitz GmbH",
+    greeting: "Sayın Yetkili,",
+    paragraphs: [
+      "talebiniz ve Aurelia Grundbesitz GmbH'ye gösterdiğiniz ilgi için teşekkür ederiz.",
+      "Mesajınız tarafımıza ulaşmıştır. Bilgilerinizi inceleyerek en kısa sürede sizinle kişisel olarak iletişime geçeceğiz.",
+      "Bu süre içerisinde ek bilgi veya belge göndermek isterseniz bu e-postayı doğrudan yanıtlayabilirsiniz.",
+    ],
+    closing: "Saygılarımızla",
+    country: "Almanya",
+    phoneLabel: "Telefon",
+    emailLabel: "E-posta",
+  },
+  en: {
+    subject: "Thank you for your enquiry – Aurelia Grundbesitz GmbH",
+    greeting: "Dear Sir or Madam,",
+    paragraphs: [
+      "thank you for your enquiry and your interest in Aurelia Grundbesitz GmbH.",
+      "We have received your message and will review the information you provided. We will contact you personally as soon as possible.",
+      "If you would like to send us any additional information or documents in the meantime, you can simply reply to this email.",
+    ],
+    closing: "Kind regards",
+    country: "Germany",
+    phoneLabel: "Phone",
+    emailLabel: "Email",
+  },
+  nl: {
+    subject: "Bedankt voor uw aanvraag – Aurelia Grundbesitz GmbH",
+    greeting: "Geachte heer/mevrouw,",
+    paragraphs: [
+      "hartelijk dank voor uw aanvraag en uw interesse in Aurelia Grundbesitz GmbH.",
+      "Wij hebben uw bericht ontvangen en zullen de door u verstrekte gegevens beoordelen. Wij nemen zo spoedig mogelijk persoonlijk contact met u op.",
+      "Wilt u in de tussentijd aanvullende informatie of documenten toesturen, dan kunt u eenvoudig op deze e-mail antwoorden.",
+    ],
+    closing: "Met vriendelijke groet",
+    country: "Duitsland",
+    phoneLabel: "Telefoon",
+    emailLabel: "E-mail",
+  },
+  it: {
+    subject: "Grazie per la sua richiesta – Aurelia Grundbesitz GmbH",
+    greeting: "Gentili Signore e Signori,",
+    paragraphs: [
+      "la ringraziamo per la sua richiesta e per l'interesse dimostrato verso Aurelia Grundbesitz GmbH.",
+      "Abbiamo ricevuto il suo messaggio ed esamineremo le informazioni trasmesse. La contatteremo personalmente nel più breve tempo possibile.",
+      "Se nel frattempo desidera inviarci ulteriori informazioni o documenti, può semplicemente rispondere a questa e-mail.",
+    ],
+    closing: "Cordiali saluti",
+    country: "Germania",
+    phoneLabel: "Telefono",
+    emailLabel: "E-mail",
+  },
+  es: {
+    subject: "Gracias por su consulta – Aurelia Grundbesitz GmbH",
+    greeting: "Estimados señores y señoras:",
+    paragraphs: [
+      "le agradecemos su consulta y su interés en Aurelia Grundbesitz GmbH.",
+      "Hemos recibido su mensaje y revisaremos la información facilitada. Nos pondremos en contacto con usted personalmente lo antes posible.",
+      "Si mientras tanto desea enviarnos información o documentación adicional, puede responder directamente a este correo electrónico.",
+    ],
+    closing: "Atentamente",
+    country: "Alemania",
+    phoneLabel: "Teléfono",
+    emailLabel: "Correo electrónico",
+  },
+};
 
 function escapeHtml(str: string): string {
   return str
