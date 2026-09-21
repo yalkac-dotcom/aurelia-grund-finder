@@ -1,6 +1,6 @@
 import type { Language } from "./types";
 
-export const SUPPORTED_LANGUAGES: Language[] = ["de", "en", "nl", "it", "es", "tr"];
+export const SUPPORTED_LANGUAGES: Language[] = ["de", "en", "nl", "it", "es", "tr", "fr"];
 export const STORAGE_KEY = "aurelia-lang";
 export const COUNTRY_CACHE_KEY = "aurelia-geo-country";
 
