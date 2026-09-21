@@ -16,6 +16,9 @@ const REPLY_TO = "office@aureliaestates.de";
 const NOTIFY_TO = "y.alkac@googlemail.com";
 const SANDBOX_MODE = true;
 const SANDBOX_TEST_RECIPIENT = "y.alkac@googlemail.com";
+const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
+const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+const TURKEY_DOCUMENT_BUCKET = "turkey-property-documents";
 
 interface ContactPayload {
   name: string;
@@ -23,6 +26,8 @@ interface ContactPayload {
   phone?: string | null;
   property_type?: string | null;
   message: string;
+  language?: string | null;
+  files?: { name: string; path: string; size: number; type: string }[];
 }
 
 function escapeHtml(str: string): string {
@@ -74,6 +79,33 @@ async function sendEmail(payload: {
   return data;
 }
 
+async function createSignedDocumentLinks(files: ContactPayload["files"]): Promise<string[]> {
+  if (!files || files.length === 0 || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) return [];
+
+  const links: string[] = [];
+  for (const file of files.slice(0, 10)) {
+    if (!file?.path || typeof file.path !== "string" || file.path.includes("..")) continue;
+    const res = await fetch(
+      `${SUPABASE_URL}/storage/v1/object/sign/${TURKEY_DOCUMENT_BUCKET}/${encodeURI(file.path)}`,
+      {
+        method: "POST",
+        headers: {
+          apikey: SUPABASE_SERVICE_ROLE_KEY,
+          Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ expiresIn: 60 * 60 * 24 * 7 }),
+      },
+    );
+    if (!res.ok) continue;
+    const data = await res.json();
+    if (typeof data?.signedURL === "string") {
+      links.push(`${file.name}: ${SUPABASE_URL}/storage/v1${data.signedURL}`);
+    }
+  }
+  return links;
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
@@ -101,6 +133,15 @@ Deno.serve(async (req) => {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
+
+    const documentLinks = await createSignedDocumentLinks(body.files);
+    const documentLinksText = documentLinks.length > 0 ? `\n\nDokumente (Links gültig 7 Tage):\n${documentLinks.join("\n")}` : "";
+    const documentLinksHtml = documentLinks.length > 0
+      ? `<hr style="border:none;border-top:1px solid #e5e7eb;margin:20px 0;"/><p style="font-size:13px;color:#6b7280;margin:0 0 6px;">Dokumente (Links gültig 7 Tage):</p><ul style="font-size:14px;line-height:1.7;padding-left:18px;">${documentLinks.map((link) => {
+          const [fileName, url] = link.split(": ");
+          return `<li><a href="${escapeHtml(url ?? "")}">${escapeHtml(fileName ?? "Dokument")}</a></li>`;
+        }).join("")}</ul>`
+      : "";
 
     const name = escapeHtml(body.name);
     const email = escapeHtml(body.email);
@@ -158,6 +199,7 @@ office@aureliaestates.de`;
     <hr style="border:none;border-top:1px solid #e5e7eb;margin:20px 0;"/>
     <p style="font-size:13px;color:#6b7280;margin:0 0 6px;">Nachricht:</p>
     <div style="font-size:14px;line-height:1.7;">${message}</div>
+    ${documentLinksHtml}
   </div>
 </body></html>`.trim();
 
@@ -167,7 +209,7 @@ Name: ${body.name}
 E-Mail: ${body.email}
 ${body.phone ? `Telefon: ${body.phone}\n` : ""}${body.property_type ? `Thema: ${body.property_type}\n` : ""}
 Nachricht:
-${body.message}`;
+${body.message}${documentLinksText}`;
 
     // Erst Benachrichtigung an office@ senden — dies ist kritisch
     await sendEmail({
