@@ -6,16 +6,16 @@ const corsHeaders = {
 
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 
-// Verifizierte Domain in Resend? Dann hier auf 'office@aureliaestates.de' umstellen.
-// Solange Domain noch nicht verifiziert ist, nutzen wir Resend's Test-Absender.
-const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "onboarding@resend.dev";
+// Produktiver Absender/Empfänger. Solange die Resend-Domain noch nicht verifiziert ist,
+// weicht sendEmail() automatisch auf den Resend-Testabsender und die Kontoadresse aus,
+// damit keine Anfrage verloren geht. Sobald die DNS-Einträge gesetzt sind, greift
+// automatisch der produktive Weg — ohne weitere Codeänderung.
+const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "office@aureliaestates.de";
 const FROM_NAME = "Aurelia Grundbesitz GmbH";
 const REPLY_TO = "office@aureliaestates.de";
-// Solange Resend-Domain noch nicht verifiziert ist, gehen alle Mails an die verifizierte Test-Adresse.
-// Nach Domain-Verifizierung: NOTIFY_TO auf "office@aureliaestates.de" zurücksetzen und Bestätigungs-Block reaktivieren.
-const NOTIFY_TO = "y.alkac@googlemail.com";
-const SANDBOX_MODE = true;
-const SANDBOX_TEST_RECIPIENT = "y.alkac@googlemail.com";
+const NOTIFY_TO = "office@aureliaestates.de";
+const FALLBACK_FROM_EMAIL = "onboarding@resend.dev";
+const FALLBACK_TO = "y.alkac@googlemail.com";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
 const TURKEY_DOCUMENT_BUCKET = "turkey-property-documents";
