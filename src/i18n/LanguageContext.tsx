@@ -4,7 +4,6 @@ import {
   STORAGE_KEY,
   fetchCountry,
   languageForCountry,
-  languageFromBrowser,
   resolveInitialLanguage,
 } from "./languageDetection";
 import de from "./de";
@@ -56,7 +55,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     (async () => {
       const country = await fetchCountry(controller.signal);
       if (cancelled || explicitChoice.current) return;
-      const detected = languageForCountry(country) ?? languageFromBrowser() ?? "de";
+      const detected = languageForCountry(country) ?? "de";
       setLang((current) => (current === detected ? current : detected));
     })();
     return () => {
