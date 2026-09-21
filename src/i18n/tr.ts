@@ -700,6 +700,7 @@ const tr: Translations = {
     name: "İsim",
     email: "E-posta adresi",
     phone: "Telefon numarası",
+    phoneRequired: "Lütfen telefon numaranızı girin.",
     subject: "Konu",
     message: "Mesajınız",
     send: "Talep gönder",

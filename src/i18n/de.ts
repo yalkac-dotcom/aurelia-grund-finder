@@ -775,6 +775,7 @@ const de: Translations = {
     name: "Name",
     email: "E-Mail-Adresse",
     phone: "Telefonnummer",
+    phoneRequired: "Bitte geben Sie Ihre Telefonnummer ein.",
     subject: "Betreff",
     message: "Ihre Nachricht",
     send: "Anfrage senden",

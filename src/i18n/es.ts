@@ -700,6 +700,7 @@ const es: Translations = {
     name: "Nombre",
     email: "Correo electrónico",
     phone: "Teléfono",
+    phoneRequired: "Introduzca su número de teléfono.",
     subject: "Asunto",
     message: "Su mensaje",
     send: "Enviar consulta",
