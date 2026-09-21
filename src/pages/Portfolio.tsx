@@ -85,10 +85,10 @@ const Portfolio = () => {
                 return (
                   <Reveal key={i} delay={i * 0.08}>
                     <div className="glass-card overflow-hidden h-full" style={{ borderRadius: 12 }}>
-                      <img
+                      <OptimizedImg
                         src={images[i]}
                         alt={item.alt}
-                        loading="lazy"
+                        fallbackLabel={item.title}
                         className="block w-full"
                         style={{ height: 180, objectFit: "cover", borderRadius: "8px 8px 0 0" }}
                       />
