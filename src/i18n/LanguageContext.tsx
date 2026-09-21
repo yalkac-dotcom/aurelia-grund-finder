@@ -1,5 +1,12 @@
-import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from "react";
+import { createContext, useContext, useState, useCallback, ReactNode, useEffect, useRef } from "react";
 import { Language, Translations } from "./types";
+import {
+  STORAGE_KEY,
+  fetchCountry,
+  languageForCountry,
+  languageFromBrowser,
+  resolveInitialLanguage,
+} from "./languageDetection";
 import de from "./de";
 import en from "./en";
 import nl from "./nl";
@@ -22,14 +29,16 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLang] = useState<Language>(() => {
-    const stored = localStorage.getItem("aurelia-lang") as Language | null;
-    return stored && translationsMap[stored] ? stored : "de";
-  });
+  const initial = useRef(resolveInitialLanguage()).current;
+  const [language, setLang] = useState<Language>(initial.language);
+  const explicitChoice = useRef(initial.explicit);
 
   const setLanguage = useCallback((lang: Language) => {
+    explicitChoice.current = true;
     setLang(lang);
-    localStorage.setItem("aurelia-lang", lang);
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch {}
     document.documentElement.lang = lang;
     // Fire analytics event (no-op if no consent / not loaded)
     try {
@@ -37,6 +46,23 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
         window.gtag("event", "language_change", { language: lang });
       }
     } catch {}
+  }, []);
+
+  // First visit only: coarse country detection (no stored manual choice, no explicit URL language)
+  useEffect(() => {
+    if (explicitChoice.current) return;
+    const controller = new AbortController();
+    let cancelled = false;
+    (async () => {
+      const country = await fetchCountry(controller.signal);
+      if (cancelled || explicitChoice.current) return;
+      const detected = languageForCountry(country) ?? languageFromBrowser() ?? "de";
+      setLang((current) => (current === detected ? current : detected));
+    })();
+    return () => {
+      cancelled = true;
+      controller.abort();
+    };
   }, []);
 
   // Sync OG/Twitter meta tags with current language
