@@ -362,11 +362,12 @@ Web: www.aureliaestates.de`;
   </div>
 </body></html>`.trim();
 
-    const notifyText = `Neue Kontaktanfrage
+    const notifyText = `${notifyHeadline}
 
 Name: ${body.name}
 E-Mail: ${body.email}
 ${body.phone ? `Telefon: ${body.phone}\n` : ""}${body.property_type ? `Thema: ${body.property_type}\n` : ""}Sprache des Interessenten: ${languageName}
+Eingang: ${receivedAt} Uhr
 
 Nachricht:
 ${body.message}${documentLinksText}`;
