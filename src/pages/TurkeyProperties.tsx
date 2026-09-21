@@ -222,6 +222,10 @@ const TurkeyProperties = () => {
           property_type: "Immobilien in der Türkei",
           message,
           language,
+          preferred_language:
+            (["de", "tr", "en", "nl", "it", "es"] as const)[
+              page.form.languageOptions.indexOf(form.preferredLanguage)
+            ] ?? language,
           files: uploadedFiles,
         },
       });

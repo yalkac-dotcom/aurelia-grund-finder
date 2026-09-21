@@ -26,7 +26,7 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -66,6 +66,7 @@ const Contact = () => {
           phone: payload.phone,
           property_type: payload.property_type,
           message: payload.message,
+          language,
         },
       }
     );

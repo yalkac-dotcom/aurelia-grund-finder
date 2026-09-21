@@ -27,8 +27,133 @@ interface ContactPayload {
   property_type?: string | null;
   message: string;
   language?: string | null;
+  preferred_language?: string | null;
   files?: { name: string; path: string; size: number; type: string }[];
 }
+
+type Locale = "de" | "en" | "nl" | "it" | "es" | "tr";
+
+const LOCALES: Locale[] = ["de", "en", "nl", "it", "es", "tr"];
+
+const LANGUAGE_NAMES_DE: Record<Locale, string> = {
+  de: "Deutsch",
+  en: "Englisch",
+  nl: "Niederländisch",
+  it: "Italienisch",
+  es: "Spanisch",
+  tr: "Türkisch",
+};
+
+// Erkennt sowohl Locale-Codes ("de", "de-DE") als auch Klartext-Namen
+// aus dem Formularfeld "bevorzugte Sprache" ("Türkçe", "Nederlands", ...).
+const LANGUAGE_ALIASES: Record<string, Locale> = {
+  deutsch: "de", german: "de", duits: "de", tedesco: "de", alemán: "de", aleman: "de", almanca: "de",
+  english: "en", englisch: "en", engels: "en", inglese: "en", inglés: "en", ingles: "en", ingilizce: "en", "i̇ngilizce": "en",
+  nederlands: "nl", niederländisch: "nl", niederlaendisch: "nl", dutch: "nl", olandese: "nl", neerlandés: "nl", neerlandes: "nl", felemenkçe: "nl",
+  italiano: "it", italienisch: "it", italian: "it", italiaans: "it", italyanca: "it",
+  español: "es", espanol: "es", spanisch: "es", spanish: "es", spaans: "es", spagnolo: "es", "i̇spanyolca": "es", ispanyolca: "es",
+  türkçe: "tr", turkce: "tr", türkisch: "tr", turkish: "tr", turks: "tr", turco: "tr",
+};
+
+function resolveLocale(value?: string | null): Locale {
+  if (!value || typeof value !== "string") return "de";
+  const raw = value.trim().toLowerCase();
+  if (!raw) return "de";
+  const base = raw.split(/[-_]/)[0];
+  if ((LOCALES as string[]).includes(base)) return base as Locale;
+  return LANGUAGE_ALIASES[raw] ?? "de";
+}
+
+interface ConfirmationTemplate {
+  subject: string;
+  greeting: string;
+  paragraphs: string[];
+  closing: string;
+  country: string;
+  phoneLabel: string;
+  emailLabel: string;
+}
+
+const CONFIRMATIONS: Record<Locale, ConfirmationTemplate> = {
+  de: {
+    subject: "Vielen Dank für Ihre Anfrage – Aurelia Grundbesitz GmbH",
+    greeting: "Sehr geehrte Damen und Herren,",
+    paragraphs: [
+      "vielen Dank für Ihre Anfrage und Ihr Interesse an der Aurelia Grundbesitz GmbH.",
+      "Wir haben Ihre Nachricht erhalten und werden Ihre Angaben prüfen. Wir werden uns schnellstmöglich persönlich mit Ihnen in Verbindung setzen.",
+      "Sollten Sie uns zwischenzeitlich noch weitere Informationen oder Unterlagen zukommen lassen wollen, können Sie jederzeit auf diese E-Mail antworten.",
+    ],
+    closing: "Mit freundlichen Grüßen",
+    country: "",
+    phoneLabel: "Telefon",
+    emailLabel: "E-Mail",
+  },
+  tr: {
+    subject: "Talebinizi aldık – Aurelia Grundbesitz GmbH",
+    greeting: "Sayın Yetkili,",
+    paragraphs: [
+      "talebiniz ve Aurelia Grundbesitz GmbH'ye gösterdiğiniz ilgi için teşekkür ederiz.",
+      "Mesajınız tarafımıza ulaşmıştır. Bilgilerinizi inceleyerek en kısa sürede sizinle kişisel olarak iletişime geçeceğiz.",
+      "Bu süre içerisinde ek bilgi veya belge göndermek isterseniz bu e-postayı doğrudan yanıtlayabilirsiniz.",
+    ],
+    closing: "Saygılarımızla",
+    country: "Almanya",
+    phoneLabel: "Telefon",
+    emailLabel: "E-posta",
+  },
+  en: {
+    subject: "Thank you for your enquiry – Aurelia Grundbesitz GmbH",
+    greeting: "Dear Sir or Madam,",
+    paragraphs: [
+      "thank you for your enquiry and your interest in Aurelia Grundbesitz GmbH.",
+      "We have received your message and will review the information you provided. We will contact you personally as soon as possible.",
+      "If you would like to send us any additional information or documents in the meantime, you can simply reply to this email.",
+    ],
+    closing: "Kind regards",
+    country: "Germany",
+    phoneLabel: "Phone",
+    emailLabel: "Email",
+  },
+  nl: {
+    subject: "Bedankt voor uw aanvraag – Aurelia Grundbesitz GmbH",
+    greeting: "Geachte heer/mevrouw,",
+    paragraphs: [
+      "hartelijk dank voor uw aanvraag en uw interesse in Aurelia Grundbesitz GmbH.",
+      "Wij hebben uw bericht ontvangen en zullen de door u verstrekte gegevens beoordelen. Wij nemen zo spoedig mogelijk persoonlijk contact met u op.",
+      "Wilt u in de tussentijd aanvullende informatie of documenten toesturen, dan kunt u eenvoudig op deze e-mail antwoorden.",
+    ],
+    closing: "Met vriendelijke groet",
+    country: "Duitsland",
+    phoneLabel: "Telefoon",
+    emailLabel: "E-mail",
+  },
+  it: {
+    subject: "Grazie per la sua richiesta – Aurelia Grundbesitz GmbH",
+    greeting: "Gentili Signore e Signori,",
+    paragraphs: [
+      "la ringraziamo per la sua richiesta e per l'interesse dimostrato verso Aurelia Grundbesitz GmbH.",
+      "Abbiamo ricevuto il suo messaggio ed esamineremo le informazioni trasmesse. La contatteremo personalmente nel più breve tempo possibile.",
+      "Se nel frattempo desidera inviarci ulteriori informazioni o documenti, può semplicemente rispondere a questa e-mail.",
+    ],
+    closing: "Cordiali saluti",
+    country: "Germania",
+    phoneLabel: "Telefono",
+    emailLabel: "E-mail",
+  },
+  es: {
+    subject: "Gracias por su consulta – Aurelia Grundbesitz GmbH",
+    greeting: "Estimados señores y señoras:",
+    paragraphs: [
+      "le agradecemos su consulta y su interés en Aurelia Grundbesitz GmbH.",
+      "Hemos recibido su mensaje y revisaremos la información facilitada. Nos pondremos en contacto con usted personalmente lo antes posible.",
+      "Si mientras tanto desea enviarnos información o documentación adicional, puede responder directamente a este correo electrónico.",
+    ],
+    closing: "Atentamente",
+    country: "Alemania",
+    phoneLabel: "Teléfono",
+    emailLabel: "Correo electrónico",
+  },
+};
 
 function escapeHtml(str: string): string {
   return str
@@ -149,39 +274,49 @@ Deno.serve(async (req) => {
     const propertyType = body.property_type ? escapeHtml(body.property_type) : "";
     const message = escapeHtml(body.message).replace(/\n/g, "<br/>");
 
-    // 1) Bestätigung an Absender (Deutsch, seriös)
+    // 1) Bestätigung an Absender — in der Sprache des Interessenten
+    const locale = resolveLocale(body.preferred_language ?? body.language);
+    const tpl = CONFIRMATIONS[locale];
+
+    const paragraphsHtml = tpl.paragraphs
+      .map((p) => `<p style="font-size:15px;line-height:1.7;margin:0 0 18px;">${escapeHtml(p)}</p>`)
+      .join("");
+
     const confirmationHtml = `
 <!doctype html>
-<html lang="de"><head><meta charset="utf-8"></head>
+<html lang="${locale}"><head><meta charset="utf-8"></head>
 <body style="margin:0;padding:0;background:#ffffff;font-family:Georgia,'Times New Roman',serif;color:#1a2238;">
   <div style="max-width:560px;margin:0 auto;padding:40px 28px;">
-    <p style="font-size:15px;line-height:1.7;margin:0 0 18px;">Guten Tag,</p>
-    <p style="font-size:15px;line-height:1.7;margin:0 0 18px;">vielen Dank für Ihre Anfrage und Ihr Vertrauen.</p>
-    <p style="font-size:15px;line-height:1.7;margin:0 0 18px;">
-      Ihre Nachricht ist bei uns eingegangen und wird vertraulich bearbeitet.
-      Wir melden uns schnellstmöglich bei Ihnen zurück.
-    </p>
-    <p style="font-size:15px;line-height:1.7;margin:28px 0 0;">Mit freundlichen Grüßen<br/>Aurelia Grundbesitz GmbH</p>
+    <p style="font-size:15px;line-height:1.7;margin:0 0 18px;">${escapeHtml(tpl.greeting)}</p>
+    ${paragraphsHtml}
+    <p style="font-size:15px;line-height:1.7;margin:28px 0 0;">${escapeHtml(tpl.closing)}<br/>Aurelia Grundbesitz GmbH</p>
     <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0 16px;"/>
     <p style="font-size:12px;line-height:1.6;color:#6b7280;margin:0;">
-      Aurelia Grundbesitz GmbH · Grevenbroicher Weg 2 · 40547 Düsseldorf<br/>
-      office@aureliaestates.de
+      Aurelia Grundbesitz GmbH<br/>
+      Grevenbroicher Weg 2<br/>
+      40547 Düsseldorf${tpl.country ? `<br/>${escapeHtml(tpl.country)}` : ""}<br/><br/>
+      ${escapeHtml(tpl.phoneLabel)}: +49 211 69583033<br/>
+      ${escapeHtml(tpl.emailLabel)}: office@aureliaestates.de<br/>
+      Web: www.aureliaestates.de
     </p>
   </div>
 </body></html>`.trim();
 
-    const confirmationText = `Guten Tag,
+    const confirmationText = `${tpl.greeting}
 
-vielen Dank für Ihre Anfrage und Ihr Vertrauen.
+${tpl.paragraphs.join("\n\n")}
 
-Ihre Nachricht ist bei uns eingegangen und wird vertraulich bearbeitet. Wir melden uns schnellstmöglich bei Ihnen zurück.
+${tpl.closing}
 
-Mit freundlichen Grüßen
 Aurelia Grundbesitz GmbH
+Grevenbroicher Weg 2
+40547 Düsseldorf${tpl.country ? `\n${tpl.country}` : ""}
 
-—
-Aurelia Grundbesitz GmbH · Grevenbroicher Weg 2 · 40547 Düsseldorf
-office@aureliaestates.de`;
+${tpl.phoneLabel}: +49 211 69583033
+${tpl.emailLabel}: office@aureliaestates.de
+Web: www.aureliaestates.de`;
+
+    const languageName = LANGUAGE_NAMES_DE[locale];
 
     // 2) Benachrichtigung an office@
     const notifyHtml = `
@@ -191,10 +326,11 @@ office@aureliaestates.de`;
   <div style="max-width:600px;margin:0 auto;padding:32px 24px;">
     <h2 style="font-size:18px;margin:0 0 18px;">Neue Kontaktanfrage</h2>
     <table style="width:100%;border-collapse:collapse;font-size:14px;">
-      <tr><td style="padding:6px 0;color:#6b7280;width:140px;">Name</td><td style="padding:6px 0;">${name}</td></tr>
+      <tr><td style="padding:6px 0;color:#6b7280;width:180px;">Name</td><td style="padding:6px 0;">${name}</td></tr>
       <tr><td style="padding:6px 0;color:#6b7280;">E-Mail</td><td style="padding:6px 0;"><a href="mailto:${email}">${email}</a></td></tr>
       ${phone ? `<tr><td style="padding:6px 0;color:#6b7280;">Telefon</td><td style="padding:6px 0;">${phone}</td></tr>` : ""}
       ${propertyType ? `<tr><td style="padding:6px 0;color:#6b7280;">Thema</td><td style="padding:6px 0;">${propertyType}</td></tr>` : ""}
+      <tr><td style="padding:6px 0;color:#6b7280;">Sprache des Interessenten</td><td style="padding:6px 0;"><strong>${escapeHtml(languageName)}</strong></td></tr>
     </table>
     <hr style="border:none;border-top:1px solid #e5e7eb;margin:20px 0;"/>
     <p style="font-size:13px;color:#6b7280;margin:0 0 6px;">Nachricht:</p>
@@ -207,7 +343,8 @@ office@aureliaestates.de`;
 
 Name: ${body.name}
 E-Mail: ${body.email}
-${body.phone ? `Telefon: ${body.phone}\n` : ""}${body.property_type ? `Thema: ${body.property_type}\n` : ""}
+${body.phone ? `Telefon: ${body.phone}\n` : ""}${body.property_type ? `Thema: ${body.property_type}\n` : ""}Sprache des Interessenten: ${languageName}
+
 Nachricht:
 ${body.message}${documentLinksText}`;
 
@@ -228,7 +365,7 @@ ${body.message}${documentLinksText}`;
       try {
         await sendEmail({
           to: [body.email],
-          subject: "Vielen Dank für Ihre Anfrage",
+          subject: tpl.subject,
           html: confirmationHtml,
           text: confirmationText,
           reply_to: REPLY_TO,
