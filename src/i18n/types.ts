@@ -429,35 +429,14 @@ export interface Translations {
     principles: { title: string; text: string }[];
   };
   aboutV2: {
-    hero: { kicker: string; title: string; subtitle: string; body: string; cta: string };
-    intro: { body: string };
-    companyProfile: { headline: string; body: string };
-    profile: { headline: string; body1: string; body2: string };
-    approach: {
-      headline: string;
-      items: { title: string; text: string }[];
-    };
-    situations: { headline: string; body1: string; body2: string };
-    review: { headline: string; body1: string; body2: string };
-    cases: {
-      headline: string;
-      note: string;
-      items: { label: string; title: string; text: string; results: string[] }[];
-    };
-    closing: { headline: string; body: string; note: string; cta: string };
-    // New sections (qualitative, BaFin-konform)
-    metricsBar?: { items: { value: string; label: string }[] };
-    team?: { headline: string; body: string; imageAlt: string };
-    visionMission?: {
-      visionTitle: string;
-      visionText: string;
-      missionTitle: string;
-      missionText: string;
-    };
-    values?: {
-      headline: string;
-      items: { title: string; text: string }[];
-    };
+    seoTitle: string;
+    seoDescription: string;
+    hero: { kicker: string; title: string; subtitle: string; body: string[]; imageAlt: string };
+    trustTiles: { title: string; text: string }[];
+    standing: { headline: string; body: string[]; values: { title: string; text: string }[] };
+    approach: { headline: string; body: string[]; imageAlt: string };
+    situations: { headline: string; items: string[] };
+    closing: { headline: string; body: string; primary: string; secondary: string };
   };
   services: {
     heroTitle: string;
