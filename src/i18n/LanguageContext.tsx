@@ -22,14 +22,16 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLang] = useState<Language>(() => {
-    const stored = localStorage.getItem("aurelia-lang") as Language | null;
-    return stored && translationsMap[stored] ? stored : "de";
-  });
+  const initial = useRef(resolveInitialLanguage()).current;
+  const [language, setLang] = useState<Language>(initial.language);
+  const explicitChoice = useRef(initial.explicit);
 
   const setLanguage = useCallback((lang: Language) => {
+    explicitChoice.current = true;
     setLang(lang);
-    localStorage.setItem("aurelia-lang", lang);
+    try {
+      localStorage.setItem(STORAGE_KEY, lang);
+    } catch {}
     document.documentElement.lang = lang;
     // Fire analytics event (no-op if no consent / not loaded)
     try {
