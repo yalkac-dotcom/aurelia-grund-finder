@@ -93,6 +93,7 @@ const TurkeyProperties = () => {
   const [errors, setErrors] = useState<Partial<Record<keyof FormState | "files", boolean>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [confirmationSent, setConfirmationSent] = useState(false);
 
   useEffect(() => {
     document.title = page.seoTitle;
@@ -191,6 +192,7 @@ const TurkeyProperties = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsSuccess(false);
+    setConfirmationSent(false);
     if (!validateForm()) {
       toast({ title: page.form.validationError, description: page.form.errorText, variant: "destructive" });
       return;
@@ -214,7 +216,7 @@ const TurkeyProperties = () => {
       });
       if (insertError) throw insertError;
 
-      const { error: functionError } = await supabase.functions.invoke("send-contact-email", {
+      const { data: functionResult, error: functionError } = await supabase.functions.invoke("send-contact-email", {
         body: {
           name: form.fullName.trim(),
           email: form.email.trim(),
@@ -230,12 +232,20 @@ const TurkeyProperties = () => {
         },
       });
       if (functionError) throw functionError;
+      if (!functionResult?.success || !functionResult?.internalMailResult?.accepted) {
+        throw new Error("Internal enquiry email was not accepted");
+      }
 
       setIsSuccess(true);
+      const wasConfirmationAccepted = functionResult?.customerConfirmationResult?.accepted === true;
+      setConfirmationSent(wasConfirmationAccepted);
       setForm(getInitialForm(defaultLanguage));
       setFiles([]);
       if (fileInputRef.current) fileInputRef.current.value = "";
-      toast({ title: page.form.successTitle, description: page.form.successText });
+      toast({
+        title: page.form.successTitle,
+        description: wasConfirmationAccepted ? page.form.successText : page.form.confirmationWarning,
+      });
     } catch (error) {
       console.error("Turkey property submission failed:", error);
       toast({ title: page.form.validationError, description: page.form.errorText, variant: "destructive" });
@@ -419,7 +429,7 @@ const TurkeyProperties = () => {
                 {isSuccess && (
                   <div className="mt-6 border-l-2 border-l-accent bg-secondary/60 p-4 text-[0.9rem] leading-[1.7] text-primary">
                     <strong className="block font-heading">{page.form.successTitle}</strong>
-                    <span>{page.form.successText}</span>
+                     <span>{confirmationSent ? page.form.successText : page.form.confirmationWarning}</span>
                   </div>
                 )}
                 <div className="mt-7">
