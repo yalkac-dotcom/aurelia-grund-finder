@@ -327,6 +327,18 @@ ${tpl.emailLabel}: office@aureliaestates.de
 Web: www.aureliaestates.de`;
 
     const languageName = LANGUAGE_NAMES_DE[locale];
+    const isTurkeyEnquiry = (body.property_type ?? "").toLowerCase().includes("türkei") ||
+      (body.message ?? "").startsWith("Türkei-Immobilienanfrage");
+    const notifyHeadline = isTurkeyEnquiry ? "Neue Türkei-Immobilienanfrage" : "Neue Kontaktanfrage";
+    const notifySubject = isTurkeyEnquiry
+      ? `Neue Türkei-Immobilienanfrage von ${body.name}`
+      : `Neue Anfrage von ${body.name} – Aurelia Grundbesitz`;
+    const receivedAt = new Intl.DateTimeFormat("de-DE", {
+      dateStyle: "medium",
+      timeStyle: "short",
+      timeZone: "Europe/Berlin",
+    }).format(new Date());
+
 
     // 2) Benachrichtigung an office@
     const notifyHtml = `
