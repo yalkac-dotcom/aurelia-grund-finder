@@ -1134,110 +1134,14 @@ const en: Translations = {
     formPrivacyNote: "Your inquiry will be used exclusively to process your request and will be treated confidentially. Further information can be found in our privacy policy.",
   },
   aboutV2: {
-    hero: {
-      kicker: "About Aurelia",
-      title: "About Aurelia Grundbesitz",
-      subtitle: "Discreet, substance-driven, long-term.",
-      body: "Aurelia Grundbesitz specialises in acquiring real estate in particular, sensitive and time-critical situations. We act exclusively on our own account and review cases where conventional sales processes can no longer offer a viable solution.",
-      cta: "Get in touch",
-    },
-    intro: {
-      body: "When a property is stuck, what's needed is not a long marketing process – but a realistic next step. Aurelia supports owners, communities of heirs and business partners in situations where time pressure, financial burdens or blocked structures require a clear decision. Our approach is not sales-driven, but structured, discreet and focused on what can actually be implemented.",
-    },
-    companyProfile: {
-      headline: "Why Aurelia matters when property situations are stuck",
-      body: "When a property is stuck, what is needed is not a long marketing process – but a realistic next step. Aurelia supports owners, communities of heirs and business partners in situations where time pressure, financial burdens or blocked structures require a clear decision. Our approach is not sales-driven, but structured, discreet and focused on what can actually be implemented.",
-    },
-    profile: {
-      headline: "What Aurelia stands for",
-      body1: "Aurelia is neither an estate agency nor an intermediary between several parties. We do not buy on behalf of third parties and do not work with non-binding financing commitments. When we review a case, we do so with the aim of assessing it reliably and – where feasible – acquiring it ourselves.",
-      body2: "For owners and contacts this means: no public marketing, no forwarding to a chain of prospective buyers, and no unnecessary ambiguity in the process. Conversations remain confidential, decisions remain comprehensible and the next step remains realistic.",
-    },
-    approach: {
-      headline: "Our approach",
-      items: [
-        {
-          title: "Direct acquisition",
-          text: "We buy with our own funds, take clear decisions and accompany the process through to notarial completion. No broker, no financing condition, no onward placement.",
-        },
-        {
-          title: "Maximum discretion",
-          text: "Sensitive property situations require confidentiality. We avoid public marketing, unnecessary visibility and any form of activism. Conversations and documents stay where they belong: in a protected setting.",
-        },
-        {
-          title: "Fast response",
-          text: "You receive an initial assessment within 48 hours, faster in urgent cases. Anyone in a difficult situation does not need delay, but an honest and reliable response.",
-        },
-      ],
-    },
-    situations: {
-      headline: "Situations in which we act",
-      body1: "Aurelia is engaged above all where properties need to be carefully assessed before they are sold. Typical cases include pending or ongoing foreclosure proceedings, pressure from banks or creditors, communities of heirs with blocked decisions, distressed properties, or sales where discretion matters more than reach.",
-      body2: "No two situations are alike. What they have in common, however, is that standard processes often fall short. This is precisely where we step in: with a sober assessment of the situation and a reliable plan for the next steps.",
-    },
-    review: {
-      headline: "How we review cases",
-      body1: "We look not only at the property itself, but also at the structure behind it: land register encumbrances, economic pressure, time frames, parties involved, and the actual feasibility of an acquisition. A property can only be solved meaningfully when the overall picture is understood.",
-      body2: "That is why we do not work with blanket statements. Each case is reviewed individually. Where an acquisition is possible, we act promptly and bindingly. Where it is not feasible, we say so early and openly.",
-    },
-    cases: {
-      headline: "Typical constellations",
-      note: "Illustrative case typologies — not specific transactions.",
-      items: [
-        {
-          label: "Distress",
-          title: "Pending or ongoing foreclosure",
-          text: "Owners under economic pressure, with bank or creditor proceedings already initiated. Aurelia examines whether an acquisition before the auction date is feasible and creates an orderly way out.",
-          results: [],
-        },
-        {
-          label: "Community of heirs",
-          title: "Blocked sale decision",
-          text: "Several heirs with diverging interests, sale stuck for some time. Aurelia can take over individual inheritance shares or acquire the entire property to enable a viable solution.",
-          results: [],
-        },
-        {
-          label: "Direct acquisition",
-          title: "Discreet sale without marketing",
-          text: "Owners or business partners seeking an orderly sale without public visibility. Aurelia acts directly as buyer — no broker chain, no financing condition.",
-          results: [],
-        },
-      ],
-    },
-    closing: {
-      headline: "Let us assess your case.",
-      body: "Aurelia Grundbesitz stands for direct purchase decisions in situations where reliability matters more than outward presentation. When a property needs not just a buyer, but above all a realistic next step, we review the case confidentially, in a structured way and without detours.",
-      note: "A confidential initial conversation is non-binding and free of charge. We will tell you honestly what is possible.",
-      cta: "Confidential enquiry",
-    },
-    metricsBar: {
-      items: [
-        { value: "Experienced team", label: "Real estate, capital markets, structured transactions" },
-        { value: "Own substance", label: "Acquisition on our own account — no external capital" },
-        { value: "Prompt response", label: "Initial assessment promptly, faster in urgent cases" },
-        { value: "Discreet & binding", label: "Confidential review, clear decisions" },
-      ],
-    },
-    team: {
-      headline: "The team behind Aurelia",
-      body: "Aurelia Grundbesitz was built by a team that brings together long-standing experience in real estate, capital markets and structured transactions. We work with a proven network of specialist lawyers, advisors and experienced professionals in foreclosure and insolvency law. No external capital, no commission logic — just direct decisions from our own substance.",
-      imageAlt: "Quiet meeting room with neatly arranged documents",
-    },
-    visionMission: {
-      visionTitle: "Our vision",
-      visionText: "A real estate market where owners in exceptional situations find a fair, discreet and decisive partner — without detours, without pressure.",
-      missionTitle: "Our mission",
-      missionText: "We buy real estate on our own account — binding, discreet, without financing conditions. Our goal: a clear solution in every situation, not just an offer.",
-    },
-    values: {
-      headline: "Our values",
-      items: [
-        { title: "Discretion", text: "No public marketing. No referrals. Conversations stay between you and us." },
-        { title: "Commitment", text: "Our offer is not a broker's brochure — it is a purchase decision from our own substance." },
-        { title: "Responsiveness", text: "Prompt response. Faster in urgent cases. No bureaucratic delay." },
-        { title: "Fairness", text: "No pressure. No deadline. You decide — we inform honestly." },
-      ],
-    },
+    seoTitle: "About us | Aurelia Grundbesitz GmbH",
+    seoDescription: "Aurelia Grundbesitz assesses and acquires properties and land on its own account – discreetly, reliably and through short decision paths.",
+    hero: { kicker: "About us", title: "Aurelia Grundbesitz", subtitle: "Discreet. Reliable. Solution-oriented.", body: ["Aurelia Grundbesitz specialises in the acquisition and structured assessment of real estate in particular, complex or time-critical situations.", "We act on our own account and base our decisions on a clear commercial assessment. Our aim is a personal, transparent and discreet process with short decision paths.", "We focus in particular on properties and land for which conventional sales processes are not the best fit, or where owners are looking for a swift and reliable solution."], imageAlt: "Bright modern property office with large windows and city views" },
+    trustTiles: [{ title: "Experience & market insight", text: "Sound assessment of properties, land and complex starting situations." }, { title: "Independent decision-making", text: "We acquire on our own account and require no external financing or investor approval." }, { title: "Short decision paths", text: "Direct assessment, clear communication and prompt feedback on suitable properties." }, { title: "Discretion & reliability", text: "Confidential assessment, transparent processes and clearly reasoned decisions." }],
+    standing: { headline: "What we stand for", body: ["Our approach is deliberately clear and pragmatic: we assess every property individually, considering not only its location and substance but also the owner's specific circumstances.", "We value reliability, discretion and realistic solutions. We do not promise a standard answer for every property; we make transparent decisions based on the relevant commercial and legal framework."], values: [{ title: "Reliability", text: "We communicate clearly and honour the agreements we make." }, { title: "Discretion", text: "We handle sensitive situations and documents confidentially." }, { title: "Pragmatism", text: "We focus on workable solutions rather than complicated processes." }, { title: "Long-term thinking", text: "Decisions are considered from a commercial and sustainable perspective." }] },
+    approach: { headline: "Our approach", body: ["Aurelia Grundbesitz does not see itself as a conventional estate agent.", "We assess properties for potential acquisition on our own account and structure the subsequent process individually.", "This allows decisions to be made more directly and, in suitable cases, processes to be shortened considerably."], imageAlt: "High-quality modern residential architecture with natural stone, timber and a landscaped courtyard" },
+    situations: { headline: "When Aurelia Grundbesitz may be the right contact", items: ["Properties requiring action at short notice", "Estate and inheritance situations", "Vacant properties or properties in need of refurbishment", "Difficult tenancy or usage situations", "Land with development potential", "Complex ownership or realisation situations", "Owners who prefer a discreet and direct solution"] },
+    closing: { headline: "Would you like to discuss a property with us?", body: "Send us the key information about your property without obligation. We will assess the situation and contact you personally.", primary: "Submit a property", secondary: "Contact us" },
   },
   turkeyProperties: turkeyPropertiesTranslations.en,
   faqPage: {

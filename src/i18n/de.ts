@@ -1175,111 +1175,48 @@ const de: Translations = {
     formPrivacyNote: "Ihre Anfrage wird ausschließlich zur Bearbeitung Ihres Anliegens verwendet und vertraulich behandelt. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
   },
   aboutV2: {
+    seoTitle: "Über uns | Aurelia Grundbesitz GmbH",
+    seoDescription: "Aurelia Grundbesitz prüft und erwirbt Immobilien und Grundstücke auf eigene Rechnung – diskret, verbindlich und mit kurzen Entscheidungswegen.",
     hero: {
-      kicker: "Über uns",
-      title: "Über Aurelia Grundbesitz",
-      subtitle: "Diskret, substanzorientiert, langfristig.",
-      body: "Aurelia Grundbesitz ist auf den Ankauf von Immobilien in besonderen, sensiblen und zeitkritischen Situationen spezialisiert. Wir handeln ausschließlich auf eigene Rechnung und prüfen Fälle dort, wo klassische Verkaufsprozesse oft keine tragfähige Lösung mehr bieten.",
-      cta: "Kontakt aufnehmen",
+      kicker: "Über uns", title: "Aurelia Grundbesitz", subtitle: "Diskret. Verlässlich. Lösungsorientiert.",
+      body: [
+        "Aurelia Grundbesitz ist auf den Ankauf und die strukturierte Prüfung von Immobilien in besonderen, komplexen oder zeitkritischen Situationen spezialisiert.",
+        "Wir handeln auf eigene Rechnung und treffen Entscheidungen auf Basis einer klaren wirtschaftlichen Prüfung. Unser Anspruch ist eine persönliche, nachvollziehbare und diskrete Abwicklung mit kurzen Entscheidungswegen.",
+        "Wir konzentrieren uns insbesondere auf Immobilien und Grundstücke, bei denen klassische Verkaufsprozesse nicht optimal funktionieren oder Eigentümer eine schnelle, verbindliche Lösung suchen.",
+      ],
+      imageAlt: "Helles modernes Immobilienbüro mit großen Fenstern und Stadtblick",
     },
-    intro: {
-      body: "Wenn eine Immobilie feststeckt, braucht es keinen langen Vermarktungsprozess. Sondern einen realistischen nächsten Schritt. Aurelia begleitet Eigentümer, Erbengemeinschaften und Geschäftspartner in Konstellationen, in denen Zeitdruck, Belastungen oder blockierte Strukturen eine klare Entscheidung erfordern. Unser Ansatz ist nicht vertriebsgetrieben, sondern strukturiert, diskret und auf Umsetzbarkeit ausgerichtet.",
-    },
-    companyProfile: {
-      headline: "Warum Aurelia bei festgefahrenen Immobilienlagen relevant ist",
-      body: "Wenn eine Immobilie feststeckt, braucht es keinen langen Vermarktungsprozess – sondern einen realistischen nächsten Schritt. Aurelia begleitet Eigentümer, Erbengemeinschaften und Geschäftspartner in Konstellationen, in denen Zeitdruck, Belastungen oder blockierte Strukturen eine klare Entscheidung erfordern. Unser Ansatz ist nicht vertriebsgetrieben, sondern strukturiert, diskret und auf Umsetzbarkeit ausgerichtet.",
-    },
-    profile: {
-      headline: "Wofür Aurelia steht",
-      body1: "Aurelia ist kein Maklerhaus und kein Vermittler zwischen mehreren Parteien. Wir kaufen nicht im Auftrag Dritter und arbeiten nicht mit unverbindlichen Finanzierungszusagen. Wenn wir einen Fall prüfen, dann mit dem Ziel, ihn belastbar einzuordnen und — wenn er darstellbar ist — selbst anzukaufen.",
-      body2: "Das bedeutet für Eigentümer und Ansprechpartner: keine öffentliche Vermarktung, keine Weitergabe an eine Kette von Interessenten und keine unnötige Unklarheit im Prozess. Gespräche bleiben vertraulich, Entscheidungen nachvollziehbar und der nächste Schritt realistisch.",
+    trustTiles: [
+      { title: "Erfahrung & Marktverständnis", text: "Fundierte Einschätzung von Immobilien, Grundstücken und komplexen Ausgangssituationen." },
+      { title: "Eigene Entscheidungskompetenz", text: "Wir kaufen auf eigene Rechnung und benötigen keine externe Finanzierungs- oder Investorenfreigabe." },
+      { title: "Kurze Entscheidungswege", text: "Direkte Prüfung, klare Kommunikation und schnelle Rückmeldung bei geeigneten Objekten." },
+      { title: "Diskretion & Verbindlichkeit", text: "Vertrauliche Prüfung, transparente Abläufe und nachvollziehbare Entscheidungen." },
+    ],
+    standing: {
+      headline: "Wofür wir stehen",
+      body: [
+        "Unser Ansatz ist bewusst klar und pragmatisch: Wir prüfen jedes Objekt individuell und bewerten nicht nur Lage und Substanz, sondern auch die konkrete Ausgangssituation des Eigentümers.",
+        "Dabei legen wir Wert auf Verlässlichkeit, Diskretion und realistische Lösungen. Wir versprechen keine Standardlösung für jedes Objekt, sondern treffen nachvollziehbare Entscheidungen auf Basis der jeweiligen wirtschaftlichen und rechtlichen Rahmenbedingungen.",
+      ],
+      values: [
+        { title: "Verbindlichkeit", text: "Wir kommunizieren klar und halten getroffene Vereinbarungen ein." },
+        { title: "Diskretion", text: "Sensible Situationen und Unterlagen behandeln wir vertraulich." },
+        { title: "Pragmatismus", text: "Wir konzentrieren uns auf umsetzbare Lösungen statt komplizierter Prozesse." },
+        { title: "Langfristiges Denken", text: "Entscheidungen werden wirtschaftlich und nachhaltig betrachtet." },
+      ],
     },
     approach: {
       headline: "Unser Ansatz",
-      items: [
-        {
-          title: "Direkter Ankauf",
-          text: "Wir kaufen aus eigenen Mitteln, treffen klare Entscheidungen und begleiten den Prozess bis zur notariellen Umsetzung. Kein Makler, kein Finanzierungsvorbehalt, keine Weitervermittlung.",
-        },
-        {
-          title: "Maximale Diskretion",
-          text: "Sensible Immobilienlagen brauchen Vertraulichkeit. Deshalb vermeiden wir öffentliche Vermarktung, unnötige Sichtbarkeit und jede Form von Aktionismus. Gespräche und Unterlagen bleiben dort, wo sie hingehören: in einem geschützten Rahmen.",
-        },
-        {
-          title: "Schnelle Reaktion",
-          text: "Innerhalb von 48 Stunden erhalten Sie eine erste Einschätzung, in dringenden Fällen schneller. Wer sich in einer schwierigen Situation befindet, braucht keine Verzögerung, sondern eine ehrliche und belastbare Rückmeldung.",
-        },
-      ],
+      body: ["Aurelia Grundbesitz versteht sich nicht als klassischer Immobilienmakler.", "Wir prüfen Immobilien für einen möglichen Ankauf auf eigene Rechnung und strukturieren die weitere Abwicklung individuell.", "Dadurch können Entscheidungen direkter getroffen und Prozesse in geeigneten Fällen deutlich verkürzt werden."],
+      imageAlt: "Hochwertige moderne Wohnarchitektur mit Naturstein, Holz und begrüntem Innenhof",
     },
     situations: {
-      headline: "In welchen Situationen wir tätig werden",
-      body1: "Aurelia wird vor allem dort eingeschaltet, wo Immobilien nicht nur verkauft, sondern zunächst sauber eingeordnet werden müssen. Typische Fälle sind drohende oder laufende Zwangsversteigerungen, Druck durch Banken oder Gläubiger, Erbengemeinschaften mit blockierten Entscheidungen, notleidende Objekte oder Verkäufe, bei denen Diskretion wichtiger ist als Reichweite.",
-      body2: "Nicht jede Situation ist gleich. Gemeinsam ist diesen Fällen jedoch, dass Standardprozesse häufig nicht ausreichen. Genau hier setzen wir an: mit einer nüchternen Bewertung der Lage und einem belastbaren weiteren Vorgehen.",
+      headline: "Wann Aurelia Grundbesitz der richtige Ansprechpartner sein kann",
+      items: ["Immobilien mit kurzfristigem Handlungsbedarf", "Nachlass- und Erbschaftssituationen", "Leerstehende oder renovierungsbedürftige Objekte", "Schwierige Miet- oder Nutzungssituationen", "Grundstücke mit Entwicklungspotenzial", "Komplexe Eigentums- oder Verwertungssituationen", "Eigentümer, die eine diskrete und direkte Lösung bevorzugen"],
     },
-    review: {
-      headline: "Wie wir Fälle prüfen",
-      body1: "Wir betrachten nicht nur die Immobilie selbst, sondern auch die Struktur dahinter: Belastungen im Grundbuch, wirtschaftlicher Druck, Zeitrahmen, Beteiligte und die tatsächliche Umsetzbarkeit eines Ankaufs. Eine Immobilie lässt sich nur dann sinnvoll lösen, wenn das Gesamtbild verstanden wird.",
-      body2: "Deshalb arbeiten wir nicht mit pauschalen Aussagen. Jeder Fall wird einzeln geprüft. Wo ein Ankauf möglich ist, handeln wir zügig und verbindlich. Wo er nicht darstellbar ist, sagen wir das früh und offen.",
-    },
-    cases: {
-      headline: "Typische Konstellationen",
-      note: "Beispielhafte Fall-Typologien — keine konkreten Transaktionen.",
-      items: [
-        {
-          label: "Notlage",
-          title: "Drohende oder laufende Zwangsversteigerung",
-          text: "Eigentümer unter wirtschaftlichem Druck, Bank- oder Gläubigerverfahren bereits eingeleitet. Aurelia prüft, ob ein Ankauf vor dem Termin möglich ist und schafft einen geordneten Ausweg.",
-          results: [],
-        },
-        {
-          label: "Erbengemeinschaft",
-          title: "Blockierte Verkaufsentscheidung",
-          text: "Mehrere Erben mit unterschiedlichen Interessen, Verkauf seit längerem festgefahren. Aurelia kann einzelne Erbteile übernehmen oder die Gesamtimmobilie ankaufen, um eine tragfähige Lösung zu ermöglichen.",
-          results: [],
-        },
-        {
-          label: "Direktankauf",
-          title: "Diskreter Verkauf ohne Vermarktung",
-          text: "Eigentümer oder Geschäftspartner, die einen geordneten Verkauf ohne öffentliche Sichtbarkeit anstreben. Aurelia tritt direkt als Käufer auf — ohne Maklerkette, ohne Finanzierungsvorbehalt.",
-          results: [],
-        },
-      ],
-    },
-    closing: {
-      headline: "Lassen Sie uns Ihren Fall einordnen.",
-      body: "Aurelia Grundbesitz steht für direkte Kaufentscheidungen in Situationen, in denen Belastbarkeit wichtiger ist als Außendarstellung. Wenn eine Immobilie nicht nur einen Käufer, sondern vor allem einen realistischen nächsten Schritt braucht, prüfen wir den Fall vertraulich, strukturiert und ohne Umwege.",
-      note: "Ein vertrauliches Erstgespräch ist unverbindlich und kostenfrei. Wir sagen Ihnen ehrlich, was möglich ist.",
-      cta: "Vertraulich anfragen",
-    },
-    metricsBar: {
-      items: [
-        { value: "Erfahrenes Team", label: "Immobilien, Kapitalmärkte, strukturierte Transaktionen" },
-        { value: "Eigene Substanz", label: "Ankauf auf eigene Rechnung — kein externes Kapital" },
-        { value: "Kurzfristige Rückmeldung", label: "Erste Einordnung zeitnah, in Eilfällen schneller" },
-        { value: "Diskret & verbindlich", label: "Vertrauliche Prüfung, klare Entscheidungen" },
-      ],
-    },
-    team: {
-      headline: "Das Team hinter Aurelia",
-      body: "Aurelia Grundbesitz wurde von einem Team aufgebaut, das langjährige Erfahrung in Immobilien, Kapitalmärkten und strukturierten Transaktionen zusammenführt. Wir arbeiten mit einem eingespielten Netzwerk aus spezialisierten Rechtsanwälten, Beratern und erfahrenen Fachleuten im Zwangsversteigerungs- und Insolvenzrecht. Kein externes Kapital, keine Provisionslogik — sondern direkte Entscheidungen aus eigener Substanz.",
-      imageAlt: "Ruhiger Besprechungsraum mit geordneten Unterlagen",
-    },
-    visionMission: {
-      visionTitle: "Unsere Vision",
-      visionText: "Eine Immobilienwirtschaft, in der Eigentümer in Ausnahmesituationen einen fairen, diskreten und entscheidungsfähigen Partner finden — ohne Umwege, ohne Druck.",
-      missionTitle: "Unsere Mission",
-      missionText: "Wir kaufen Immobilien auf eigene Rechnung — verbindlich, diskret und ohne Finanzierungsvorbehalt. Unser Ziel: in jeder Situation eine klare Lösung, nicht nur ein Angebot.",
-    },
-    values: {
-      headline: "Unsere Werte",
-      items: [
-        { title: "Diskretion", text: "Keine öffentliche Vermarktung. Keine Weitergabe. Gespräche bleiben zwischen Ihnen und uns." },
-        { title: "Verbindlichkeit", text: "Unser Angebot ist kein Maklerexposé — es ist eine Kaufentscheidung aus eigener Substanz." },
-        { title: "Reaktionsgeschwindigkeit", text: "Kurzfristige Rückmeldung. In Eilfällen schneller. Kein bürokratischer Verzug." },
-        { title: "Fairness", text: "Kein Druck. Kein Zeitlimit. Sie entscheiden — wir informieren ehrlich." },
-      ],
-    },
+    closing: { headline: "Sie möchten eine Immobilie mit uns besprechen?", body: "Senden Sie uns unverbindlich die wichtigsten Informationen zu Ihrem Objekt. Wir prüfen die Ausgangssituation und melden uns persönlich bei Ihnen.", primary: "Immobilie anbieten", secondary: "Kontakt aufnehmen" },
   },
+
   turkeyProperties: turkeyPropertiesTranslations.de,
   faqPage: {
     kicker: "Häufige Fragen",

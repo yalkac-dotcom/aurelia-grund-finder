@@ -7,4 +7,4 @@
 - Desktop header navigation labels, spacing, and responsive breakpoint: complete.
 - Separate internal/customer email status handling, Yahoo diagnosis, and six-language delivery verification: complete.
 
-- Über-uns-Seite: neue Bildsprache, Inhalte, sechs Sprachen, SEO und Responsive-Prüfung: in Arbeit.
+- Über-uns-Seite: neue Bildsprache, Inhalte, sechs Sprachen, SEO und Responsive-Prüfung: complete.
