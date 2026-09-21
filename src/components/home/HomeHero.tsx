@@ -3,9 +3,10 @@ import { CheckCircle } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { pageExtras } from "@/i18n/pageExtras";
 
 const HomeHero = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const handleScrollToProcess = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -20,7 +21,7 @@ const HomeHero = () => {
           src={heroSets.premium.src}
           srcSet={heroSets.premium.srcSet}
           sizes={heroSets.premium.sizes}
-          alt="Gepflegtes Mehrfamilienhaus in einer ruhigen Wohnstraße"
+          alt={pageExtras[language].accessibility.homeHeroAlt}
           className="hero-media h-full w-full object-cover object-[62%_center] md:object-center"
           priority
         />

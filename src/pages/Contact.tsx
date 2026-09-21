@@ -11,6 +11,7 @@ import PremiumContactModule from "@/components/contact/PremiumContactModule";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { supabase } from "@/integrations/supabase/client";
 import { trackEvent } from "@/lib/analytics";
+import { pageExtras } from "@/i18n/pageExtras";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -27,6 +28,7 @@ const Contact = () => {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const { t, language } = useLanguage();
+  const contactCopy = pageExtras[language].contact;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -120,7 +122,7 @@ const Contact = () => {
               office@aureliaestates.de
             </a>
             <p className="mt-2 text-[0.85rem] text-muted-foreground">
-              Mo–Fr, auch kurzfristig bei laufenden Verfahren
+              {contactCopy.availabilityShort}
             </p>
           </div>
         </div>
@@ -186,13 +188,13 @@ const Contact = () => {
               {!submitted && (
                 <div className="mb-7 flex flex-wrap items-center gap-3 rounded-md border border-accent/25 bg-accent/5 px-4 py-3.5">
                   <p className="text-[0.9rem] text-foreground/85 leading-[1.55] flex-1 min-w-[180px]">
-                    Lieber persönlich? Vereinbaren Sie ein vertrauliches Erstgespräch.
+                    {contactCopy.personalPrompt}
                   </p>
                   <a
-                    href={`mailto:office@aureliaestates.de?subject=${encodeURIComponent("Kostenloses Erstgespräch anfordern")}`}
+                    href={`mailto:office@aureliaestates.de?subject=${encodeURIComponent(contactCopy.consultationSubject)}`}
                     className="inline-flex items-center gap-2 border border-accent/60 text-accent px-4 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors duration-300 rounded-sm"
                   >
-                    Kostenloses Erstgespräch
+                    {contactCopy.consultation}
                     <ArrowRight size={11} />
                   </a>
                 </div>

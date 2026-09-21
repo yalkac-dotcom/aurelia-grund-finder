@@ -49,13 +49,11 @@ const CookieConsent = () => {
 
   if (!visible) return null;
 
-  const labelAcceptAll = t.common.cookieAcceptAll ?? "Alle akzeptieren";
-  const labelRejectAll = t.common.cookieNecessaryOnly ?? "Nur notwendige";
-  const labelSave = t.common.cookieSaveSelection ?? "Auswahl speichern";
-  const labelAnalytics = t.common.cookieAnalyticsLabel ?? "Analytisches Tracking zulassen";
-  const labelAnalyticsHint =
-    t.common.cookieAnalyticsHint ??
-    "Hilft uns, die Website anonym zu verbessern. Wird erst nach Ihrer Zustimmung geladen.";
+  const labelAcceptAll = t.common.cookieAcceptAll;
+  const labelRejectAll = t.common.cookieNecessaryOnly;
+  const labelSave = t.common.cookieSaveSelection;
+  const labelAnalytics = t.common.cookieAnalyticsLabel;
+  const labelAnalyticsHint = t.common.cookieAnalyticsHint;
 
   return (
     <div

@@ -3,6 +3,7 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { pageExtras } from "@/i18n/pageExtras";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -12,6 +13,7 @@ const panelPadding = "px-6 py-7 md:px-12 md:py-10";
 const Impressum = () => {
   const { t, language } = useLanguage();
   const imp = t.impressum;
+  const contactCopy = pageExtras[language].contact;
 
   return (
     <Layout>
@@ -50,8 +52,8 @@ const Impressum = () => {
                 <div className="py-6">
                   <h3 className="text-[0.93rem] font-heading font-semibold text-foreground mb-1.5">{imp.contactTitle}</h3>
                   <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">
-                    Telefon: <a href="tel:+4921169583033" className="text-highlight hover:text-accent transition-colors">+49 211 69583033</a><br />
-                    E-Mail: <a href="mailto:office@aureliaestates.de" className="text-highlight hover:text-accent transition-colors">office@aureliaestates.de</a>
+                    {contactCopy.phone}: <a href="tel:+4921169583033" className="text-highlight hover:text-accent transition-colors">+49 211 69583033</a><br />
+                    {contactCopy.email}: <a href="mailto:office@aureliaestates.de" className="text-highlight hover:text-accent transition-colors">office@aureliaestates.de</a>
                   </p>
                 </div>
                 <div className="py-6">

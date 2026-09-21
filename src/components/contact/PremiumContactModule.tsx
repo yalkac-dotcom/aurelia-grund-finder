@@ -1,6 +1,7 @@
 import { PhoneCall, CalendarDays, ArrowDown } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import Reveal from "@/components/Reveal";
+import { pageExtras } from "@/i18n/pageExtras";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -8,7 +9,8 @@ const panelBase =
 const panelPadding = "px-6 py-7 md:px-12 md:py-10";
 
 const PremiumContactModule = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const copy = pageExtras[language].contact;
 
   return (
     <section className="py-10 md:py-16 bg-secondary/30">
@@ -23,16 +25,16 @@ const PremiumContactModule = () => {
 
             <div className="mb-5 rounded-lg border border-border/40 bg-secondary/40 px-4 py-3.5">
               <p className="text-[0.93rem] text-foreground leading-[1.7]">
-                Telefon:{" "}
+                {copy.phone}:{" "}
                 <a href="tel:+4921169583033" className="font-medium text-highlight hover:text-accent transition-colors">
                   +49 211 69583033
                 </a>
                 <span className="block text-xs text-muted-foreground/80 mt-0.5">
-                  (Montag–Freitag, auch kurzfristig bei laufenden Verfahren)
+                  ({copy.availabilityShort})
                 </span>
               </p>
               <p className="text-[0.93rem] text-foreground leading-[1.7] mt-2">
-                E-Mail:{" "}
+                {copy.email}:{" "}
                 <a href="mailto:office@aureliaestates.de" className="font-medium text-highlight hover:text-accent transition-colors">
                   office@aureliaestates.de
                 </a>

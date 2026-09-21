@@ -170,10 +170,10 @@ export interface Translations {
     cookieTitle: string;
     submitting: string;
     formError: string;
-    skipToContent?: string;
-    cookieSaveSelection?: string;
-    cookieAnalyticsLabel?: string;
-    cookieAnalyticsHint?: string;
+    skipToContent: string;
+    cookieSaveSelection: string;
+    cookieAnalyticsLabel: string;
+    cookieAnalyticsHint: string;
   };
   index: {
     bulletTitle: string;

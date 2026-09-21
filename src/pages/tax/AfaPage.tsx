@@ -5,18 +5,19 @@ import { heroSets } from "@/assets/heroImages";
 import { BadgePercent, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { taxExternalLinkLabels } from "@/i18n/pageExtras";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
 const panelPadding = "px-6 py-7 md:px-12 md:py-10";
 
-const links = [
-  { label: "Bundesfinanzministerium", url: "https://www.bundesfinanzministerium.de" },
-  { label: "Finanzamt (Elster)", url: "https://www.elster.de" },
-];
-
 const AfaPage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const labels = taxExternalLinkLabels[language].afa;
+  const links = [
+    { label: labels[0], url: "https://www.bundesfinanzministerium.de" },
+    { label: labels[1], url: "https://www.elster.de" },
+  ];
 
   return (
     <Layout>

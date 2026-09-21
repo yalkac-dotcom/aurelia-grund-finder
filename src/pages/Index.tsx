@@ -13,6 +13,7 @@ import ProofCard from "@/components/sections/ProofCard";
 import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
+import { pageExtras } from "@/i18n/pageExtras";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
 // Reihenfolge in i18n bleibt führend; jeder Eintrag bekommt zusätzlich einen
@@ -24,7 +25,8 @@ type ProofKey = "diskretion" | "substanz" | "langfristigkeit" | "klarheit";
 type StepKey = "kontakt" | "pruefung" | "angebot";
 
 const HomePage = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const extras = pageExtras[language];
 
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
   const areaKeys: AreaKey[] = ["notlagen", "erbe", "direktankauf"];
@@ -56,12 +58,12 @@ const HomePage = () => {
     <Layout>
       <PageHero
         image={heroSets.premium}
-        imageAlt="Ruhige Wohnstraße mit gepflegtem Mehrfamilienhaus bei Tageslicht – sinnbildlich für diskrete Immobilienlösungen in besonderen Situationen"
+        imageAlt={extras.accessibility.homeHeroAlt}
         kicker={t.home.heroKicker}
         title={t.home.heroTitle}
         description={t.home.heroDescription}
         primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/kontakt" }}
-        secondaryCta={{ label: t.home.heroSecondaryCta ?? "Wie wir vorgehen", href: "#ablauf" }}
+        secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#ablauf" } : undefined}
         trustLine={t.home.heroTrustLine}
         imagePosition="62% center"
       />
@@ -153,7 +155,7 @@ const HomePage = () => {
                 <div className="relative h-48 md:h-auto min-h-[200px] overflow-hidden">
                   <img
                     src={editorial.fourPromises}
-                    alt="Vier ruhige Marmorsäulen in lichtdurchflutetem Raum – sinnbildlich für unsere vier Versprechen: Diskretion, Substanz, Langfristigkeit und Klarheit"
+                    alt={extras.accessibility.promisesAlt}
                     loading="lazy"
                     width={520}
                     height={520}
