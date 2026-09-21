@@ -23,6 +23,7 @@ interface ContactPayload {
   message: string;
   language?: string | null;
   preferred_language?: string | null;
+  form_type?: "general_contact" | "turkey_property" | null;
   files?: { name: string; path: string; size: number; type: string }[];
 }
 
@@ -270,6 +271,15 @@ Deno.serve(async (req) => {
     }
     if (!body?.email || !isValidEmail(body.email)) {
       return new Response(JSON.stringify({ error: "Invalid email" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    if (
+      body.form_type === "general_contact" &&
+      (!body.phone || typeof body.phone !== "string" || body.phone.trim().length === 0 || body.phone.length > 50)
+    ) {
+      return new Response(JSON.stringify({ error: "Invalid phone" }), {
         status: 400,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });

@@ -701,6 +701,7 @@ const nl: Translations = {
     name: "Naam",
     email: "E-mailadres",
     phone: "Telefoonnummer",
+    phoneRequired: "Vul alstublieft uw telefoonnummer in.",
     subject: "Onderwerp",
     message: "Uw bericht",
     send: "Aanvraag verzenden",

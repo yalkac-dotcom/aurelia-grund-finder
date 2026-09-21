@@ -733,6 +733,7 @@ const en: Translations = {
     name: "Name",
     email: "Email address",
     phone: "Phone number",
+    phoneRequired: "Please enter your phone number.",
     subject: "Subject",
     message: "Your message",
     send: "Send enquiry",

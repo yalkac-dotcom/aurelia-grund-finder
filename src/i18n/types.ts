@@ -467,6 +467,7 @@ export interface Translations {
     name: string;
     email: string;
     phone: string;
+    phoneRequired: string;
     subject: string;
     message: string;
     send: string;

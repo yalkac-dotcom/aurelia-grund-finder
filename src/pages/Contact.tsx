@@ -12,6 +12,7 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { supabase } from "@/integrations/supabase/client";
 import { trackEvent } from "@/lib/analytics";
 import { pageExtras } from "@/i18n/pageExtras";
+import { z } from "zod";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -32,17 +33,27 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitting(true);
     setError(null);
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+    const phone = String(formData.get("phone") ?? "").trim();
+    const phoneValidation = z.string().trim().min(1).max(50).safeParse(phone);
+
+    if (!phoneValidation.success) {
+      setError(t.contact.phoneRequired);
+      const phoneInput = form.elements.namedItem("phone");
+      if (phoneInput instanceof HTMLInputElement) phoneInput.focus();
+      return;
+    }
+
+    setSubmitting(true);
 
     const payload = {
       first_name: formData.get("name") as string,
       last_name: "",
       email: formData.get("email") as string,
-      phone: (formData.get("phone") as string) || null,
+      phone: phoneValidation.data,
       property_type: (formData.get("property_type") as string) || null,
       message: formData.get("message") as string,
     };
@@ -69,6 +80,7 @@ const Contact = () => {
           property_type: payload.property_type,
           message: payload.message,
           language,
+          form_type: "general_contact",
         },
       }
     );
@@ -222,9 +234,24 @@ const Contact = () => {
                   </div>
                   <div>
                     <label htmlFor="phone" className={labelClasses}>
-                      {t.contact.phone}
+                      {t.contact.phone} <span className="text-accent">*</span>
                     </label>
-                    <input id="phone" name="phone" type="tel" className={inputClasses} />
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      required
+                      maxLength={50}
+                      aria-describedby="phone-error"
+                      className={inputClasses}
+                      onInvalid={(event) => event.currentTarget.setCustomValidity(t.contact.phoneRequired)}
+                      onInput={(event) => event.currentTarget.setCustomValidity("")}
+                    />
+                    {error === t.contact.phoneRequired && (
+                      <p id="phone-error" role="alert" className="mt-1.5 text-sm text-destructive">
+                        {t.contact.phoneRequired}
+                      </p>
+                    )}
                   </div>
                   <div>
                     <label htmlFor="property_type" className={labelClasses}>{t.contact.propertyType}</label>
