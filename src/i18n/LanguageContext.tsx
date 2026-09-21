@@ -12,8 +12,9 @@ import nl from "./nl";
 import it from "./it";
 import es from "./es";
 import tr from "./tr";
+import fr from "./fr";
 
-const translationsMap: Record<Language, Translations> = { de, en, nl, it, es, tr };
+const translationsMap: Record<Language, Translations> = { de, en, nl, it, es, tr, fr };
 
 interface LanguageContextType {
   language: Language;
