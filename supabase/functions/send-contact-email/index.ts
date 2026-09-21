@@ -168,7 +168,8 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length <= 254;
 }
 
-async function sendEmail(payload: {
+async function postEmail(payload: {
+  from: string;
   to: string[];
   subject: string;
   html: string;
@@ -187,21 +188,50 @@ async function sendEmail(payload: {
       Authorization: `Bearer ${LOVABLE_API_KEY}`,
       "X-Connection-Api-Key": RESEND_API_KEY,
     },
-    body: JSON.stringify({
-      from: `${FROM_NAME} <${FROM_EMAIL}>`,
-      to: payload.to,
-      subject: payload.subject,
-      html: payload.html,
-      text: payload.text,
-      reply_to: payload.reply_to,
-    }),
+    body: JSON.stringify(payload),
   });
 
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(`Resend error [${res.status}]: ${JSON.stringify(data)}`);
+  const data = await res.json().catch(() => ({}));
+  return { ok: res.ok, status: res.status, data };
+}
+
+// Sendet produktiv von office@aureliaestates.de. Falls die Domain bei Resend noch
+// nicht verifiziert ist (403), wird die Mail über den Resend-Testabsender an die
+// Kontoadresse zugestellt, damit keine Anfrage verloren geht.
+async function sendEmail(payload: {
+  to: string[];
+  subject: string;
+  html: string;
+  text: string;
+  reply_to?: string;
+}) {
+  const primary = await postEmail({
+    from: `${FROM_NAME} <${FROM_EMAIL}>`,
+    ...payload,
+  });
+  if (primary.ok) return primary.data;
+
+  if (primary.status !== 403) {
+    throw new Error(`Resend error [${primary.status}]: ${JSON.stringify(primary.data)}`);
   }
-  return data;
+
+  console.warn(
+    "Resend-Domain noch nicht verifiziert — Fallback-Versand:",
+    JSON.stringify(primary.data),
+  );
+
+  const fallback = await postEmail({
+    from: `${FROM_NAME} <${FALLBACK_FROM_EMAIL}>`,
+    to: [FALLBACK_TO],
+    subject: `[Weiterleitung an ${payload.to.join(", ")}] ${payload.subject}`,
+    html: payload.html,
+    text: `Ursprünglicher Empfänger: ${payload.to.join(", ")}\n\n${payload.text}`,
+    reply_to: payload.reply_to,
+  });
+  if (!fallback.ok) {
+    throw new Error(`Resend error [${fallback.status}]: ${JSON.stringify(fallback.data)}`);
+  }
+  return fallback.data;
 }
 
 async function createSignedDocumentLinks(files: ContactPayload["files"]): Promise<string[]> {
