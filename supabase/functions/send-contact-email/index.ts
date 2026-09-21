@@ -353,6 +353,7 @@ Web: www.aureliaestates.de`;
       ${phone ? `<tr><td style="padding:6px 0;color:#6b7280;">Telefon</td><td style="padding:6px 0;">${phone}</td></tr>` : ""}
       ${propertyType ? `<tr><td style="padding:6px 0;color:#6b7280;">Thema</td><td style="padding:6px 0;">${propertyType}</td></tr>` : ""}
       <tr><td style="padding:6px 0;color:#6b7280;">Sprache des Interessenten</td><td style="padding:6px 0;"><strong>${escapeHtml(languageName)}</strong></td></tr>
+      <tr><td style="padding:6px 0;color:#6b7280;">Eingang</td><td style="padding:6px 0;">${escapeHtml(receivedAt)} Uhr</td></tr>
     </table>
     <hr style="border:none;border-top:1px solid #e5e7eb;margin:20px 0;"/>
     <p style="font-size:13px;color:#6b7280;margin:0 0 6px;">Nachricht:</p>
