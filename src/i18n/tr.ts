@@ -1101,110 +1101,24 @@ const tr: Translations = {
     formPrivacyNote: "Talebiniz yalnızca başvurunuzun işlenmesi için kullanılacak ve gizli tutulacaktır. Daha fazla bilgiyi gizlilik politikamızda bulabilirsiniz.",
   },
   aboutV2: {
-    hero: {
-      kicker: "Hakkımızda",
-      title: "Aurelia Grundbesitz Hakkında",
-      subtitle: "Gizli, öze odaklı, uzun vadeli.",
-      body: "Aurelia Grundbesitz, özel, hassas ve zaman açısından kritik durumlarda gayrimenkul alımına odaklanmıştır. Yalnızca kendi hesabımıza hareket eder ve klasik satış süreçlerinin artık uygulanabilir bir çözüm sunmadığı durumları inceleriz.",
-      cta: "İletişime geçin",
-    },
-    intro: {
-      body: "Bir gayrimenkul tıkandığında uzun bir pazarlama sürecine değil, gerçekçi bir sonraki adıma ihtiyaç vardır. Aurelia; mülk sahiplerine, miras topluluklarına ve iş ortaklarına, zaman baskısı, yükler veya tıkanmış yapıların net bir karar gerektirdiği durumlarda eşlik eder. Yaklaşımımız satış odaklı değil, yapılandırılmış, gizli ve uygulanabilirliğe yöneliktir.",
-    },
-    companyProfile: {
-      headline: "Tıkanmış gayrimenkul durumlarında Aurelia neden önemlidir",
-      body: "Bir gayrimenkul tıkandığında uzun bir pazarlama sürecine değil, gerçekçi bir sonraki adıma ihtiyaç vardır. Aurelia; mülk sahiplerine, miras topluluklarına ve iş ortaklarına, zaman baskısı, yükler veya tıkanmış yapıların net bir karar gerektirdiği durumlarda eşlik eder. Yaklaşımımız satış odaklı değil, yapılandırılmış, gizli ve uygulanabilirliğe yöneliktir.",
-    },
-    profile: {
-      headline: "Aurelia neyi temsil eder",
-      body1: "Aurelia bir emlak ofisi veya birden fazla taraf arasında aracı değildir. Üçüncü kişiler adına satın almıyor ve bağlayıcı olmayan finansman sözleriyle çalışmıyoruz. Bir durumu incelediğimizde amacımız onu güvenilir biçimde sınıflandırmak ve uygulanabilirse kendimiz satın almaktır.",
-      body2: "Mülk sahipleri ve muhataplar için bu şu anlama gelir: kamuya açık pazarlama yok, bir dizi potansiyel alıcıya bilgi aktarımı yok ve süreçte gereksiz belirsizlik yok. Görüşmeler gizli, kararlar anlaşılır ve sonraki adım gerçekçi kalır.",
-    },
-    approach: {
-      headline: "Yaklaşımımız",
-      items: [
-        {
-          title: "Doğrudan satın alma",
-          text: "Kendi öz kaynağımızla satın alır, net kararlar veririz ve süreci noter aşamasına kadar takip ederiz. Emlakçı yok, finansman şartı yok, başkasına aktarma yok.",
-        },
-        {
-          title: "Azami gizlilik",
-          text: "Hassas gayrimenkul durumları gizlilik gerektirir. Bu nedenle kamuya açık pazarlamadan, gereksiz görünürlükten ve her türlü hareketlilikten kaçınırız. Görüşmeler ve belgeler ait oldukları yerde kalır: korunan bir çerçevede.",
-        },
-        {
-          title: "Hızlı geri dönüş",
-          text: "İlk değerlendirmeyi 48 saat içinde, acil durumlarda daha hızlı alırsınız. Zor bir durumda olan biri gecikme değil, dürüst ve sağlam bir geri bildirim ister.",
-        },
-      ],
-    },
-    situations: {
-      headline: "Hangi durumlarda devreye giriyoruz",
-      body1: "Aurelia özellikle gayrimenkullerin önce sağlam biçimde değerlendirilmesi gereken yerlerde devreye girer. Tipik durumlar: yaklaşan veya süren cebri icra süreçleri, banka veya alacaklı baskısı, kararları tıkanmış miras toplulukları, sorunlu objeler ve gizliliğin erişimden daha önemli olduğu satışlar.",
-      body2: "Her durum farklıdır. Ortak olan ise standart süreçlerin çoğu kez yetersiz kalmasıdır. Tam burada devreye gireriz: durumun serinkanlı bir değerlendirmesi ve sağlam bir sonraki adım planıyla.",
-    },
-    review: {
-      headline: "Durumları nasıl inceliyoruz",
-      body1: "Yalnızca gayrimenkulün kendisine değil, arkasındaki yapıya da bakıyoruz: tapu kütüğündeki yükler, ekonomik baskı, zaman çerçevesi, ilgili taraflar ve bir satın almanın gerçek uygulanabilirliği. Bir gayrimenkul ancak bütünsel resim anlaşıldığında anlamlı biçimde çözülebilir.",
-      body2: "Bu nedenle genel ifadelerle çalışmıyoruz. Her durum ayrı ayrı incelenir. Satın alma mümkünse hızlı ve bağlayıcı şekilde hareket ederiz. Mümkün değilse bunu erken ve açık biçimde söyleriz.",
-    },
-    cases: {
-      headline: "Tipik konstellasyonlar",
-      note: "Örnek vaka tipolojileri — somut işlemler değildir.",
-      items: [
-        {
-          label: "Zor durum",
-          title: "Yaklaşan veya devam eden cebri icra",
-          text: "Ekonomik baskı altındaki mülk sahipleri, banka veya alacaklı süreçleri başlatılmış. Aurelia, ihale tarihinden önce satın almanın mümkün olup olmadığını inceler ve düzenli bir çıkış yolu oluşturur.",
-          results: [],
-        },
-        {
-          label: "Miras topluluğu",
-          title: "Tıkanmış satış kararı",
-          text: "Farklı çıkarlara sahip birden fazla mirasçı, uzun süredir tıkanmış satış. Aurelia, uygulanabilir bir çözüm sağlamak için tek tek miras paylarını devralabilir veya tüm mülkü satın alabilir.",
-          results: [],
-        },
-        {
-          label: "Doğrudan satın alma",
-          title: "Pazarlama olmadan diskret satış",
-          text: "Kamuya açık görünürlük olmadan düzenli bir satış arayan mülk sahipleri veya iş ortakları. Aurelia doğrudan alıcı olarak hareket eder — emlakçı zinciri yok, finansman koşulu yok.",
-          results: [],
-        },
-      ],
-    },
-    closing: {
-      headline: "Durumunuzu birlikte değerlendirelim.",
-      body: "Aurelia Grundbesitz, dış görünüşten çok dayanıklılığın önemli olduğu durumlarda doğrudan satın alma kararlarını temsil eder. Bir gayrimenkul yalnızca bir alıcıya değil, her şeyden önce gerçekçi bir sonraki adıma ihtiyaç duyduğunda; durumu gizli, yapılandırılmış ve dolambaçsız biçimde inceleriz.",
-      note: "Gizli bir ilk görüşme bağlayıcı değildir ve ücretsizdir. Size dürüstçe nelerin mümkün olduğunu söyleriz.",
-      cta: "Gizli başvuru",
-    },
-    metricsBar: {
-      items: [
-        { value: "Deneyimli ekip", label: "Gayrimenkul, sermaye piyasaları, yapılandırılmış işlemler" },
-        { value: "Öz kaynak", label: "Kendi hesabımıza satın alma — dış sermaye yok" },
-        { value: "Hızlı geri dönüş", label: "Kısa sürede ilk değerlendirme, acil durumlarda daha hızlı" },
-        { value: "Diskret ve bağlayıcı", label: "Gizli inceleme, net kararlar" },
-      ],
-    },
-    team: {
-      headline: "Aurelia'nın arkasındaki ekip",
-      body: "Aurelia Grundbesitz, gayrimenkul, sermaye piyasaları ve yapılandırılmış işlemler alanında uzun yıllara dayanan deneyimi bir araya getiren bir ekip tarafından kurulmuştur. Cebri icra ve iflas hukukunda uzmanlaşmış avukatlar, danışmanlar ve deneyimli profesyonellerden oluşan köklü bir ağla çalışıyoruz. Dış sermaye yok, komisyon mantığı yok — yalnızca kendi öz kaynağımızdan alınan doğrudan kararlar.",
-      imageAlt: "Düzenli belgelerin bulunduğu sakin toplantı odası",
-    },
-    visionMission: {
-      visionTitle: "Vizyonumuz",
-      visionText: "İstisnai durumlardaki mülk sahiplerinin adil, gizli ve kararlı bir ortak bulabildiği bir gayrimenkul piyasası — dolambaçsız, baskısız.",
-      missionTitle: "Misyonumuz",
-      missionText: "Gayrimenkulleri kendi hesabımıza satın alıyoruz — bağlayıcı, gizli, finansman koşulu olmadan. Hedefimiz: her durumda net bir çözüm, sadece bir teklif değil.",
-    },
-    values: {
-      headline: "Değerlerimiz",
-      items: [
-        { title: "Gizlilik", text: "Kamuya açık pazarlama yok. Aktarım yok. Görüşmeler yalnızca aramızda kalır." },
-        { title: "Bağlılık", text: "Teklifimiz bir emlakçı broşürü değildir — kendi öz kaynağımızdan alınmış bir satın alma kararıdır." },
-        { title: "Yanıt hızı", text: "Hızlı geri dönüş. Acil durumlarda daha hızlı. Bürokratik gecikme yok." },
-        { title: "Adalet", text: "Baskı yok. Süre sınırı yok. Siz karar verin — biz dürüstçe bilgilendiririz." },
-      ],
-    },
+    seoTitle: "Hakkımızda | Aurelia Grundbesitz GmbH",
+    seoDescription: "Aurelia Grundbesitz, gayrimenkul ve arsaları kendi hesabına inceler ve satın alır – gizli, güvenilir ve kısa karar süreçleriyle.",
+    hero: { kicker: "Hakkımızda", title: "Aurelia Grundbesitz", subtitle: "Gizli. Güvenilir. Çözüm odaklı.", body: ["Aurelia Grundbesitz, özel, karmaşık veya zaman açısından kritik durumlarda gayrimenkullerin satın alınması ve yapılandırılmış biçimde incelenmesi konusunda uzmanlaşmıştır.", "Kendi hesabımıza hareket eder ve kararlarımızı açık bir ekonomik incelemeye dayanarak veririz. Amacımız; kişisel, anlaşılır ve gizli bir süreç ile kısa karar yolları sunmaktır.", "Özellikle klasik satış süreçlerinin uygun sonuç vermediği ya da mülk sahiplerinin hızlı ve bağlayıcı bir çözüm aradığı gayrimenkul ve arsalara odaklanıyoruz."], imageAlt: "Büyük pencereleri ve şehir manzarası bulunan aydınlık modern gayrimenkul ofisi" },
+    trustTiles: [
+      { title: "Deneyim ve piyasa bilgisi", text: "Gayrimenkullerin, arsaların ve karmaşık başlangıç durumlarının sağlam biçimde değerlendirilmesi." },
+      { title: "Kendi karar yetkimiz", text: "Kendi hesabımıza satın alırız; dış finansman veya yatırımcı onayına ihtiyaç duymayız." },
+      { title: "Kısa karar süreçleri", text: "Uygun gayrimenkullerde doğrudan inceleme, açık iletişim ve hızlı geri dönüş." },
+      { title: "Gizlilik ve bağlayıcılık", text: "Gizli inceleme, şeffaf süreçler ve anlaşılır kararlar." },
+    ],
+    standing: { headline: "Neyi temsil ediyoruz", body: ["Yaklaşımımız bilinçli olarak açık ve pratiktir: Her gayrimenkulü ayrı ayrı inceler; yalnızca konumunu ve fiziksel niteliğini değil, mülk sahibinin somut durumunu da değerlendiririz.", "Güvenilirliğe, gizliliğe ve gerçekçi çözümlere önem veririz. Her gayrimenkul için standart bir çözüm vadetmeyiz; kararlarımızı ilgili ekonomik ve hukuki koşullar temelinde anlaşılır biçimde alırız."], values: [
+      { title: "Bağlayıcılık", text: "Açık iletişim kurar ve yaptığımız anlaşmalara uyarız." },
+      { title: "Gizlilik", text: "Hassas durumları ve belgeleri gizli tutarız." },
+      { title: "Pragmatizm", text: "Karmaşık süreçler yerine uygulanabilir çözümlere odaklanırız." },
+      { title: "Uzun vadeli düşünce", text: "Kararları ekonomik ve sürdürülebilir bir bakışla değerlendiririz." },
+    ] },
+    approach: { headline: "Yaklaşımımız", body: ["Aurelia Grundbesitz klasik bir emlakçı değildir.", "Gayrimenkulleri kendi hesabımıza olası bir satın alma amacıyla inceler ve sonraki süreci duruma özel olarak yapılandırırız.", "Bu sayede kararlar daha doğrudan alınabilir ve uygun vakalarda süreçler belirgin ölçüde kısaltılabilir."], imageAlt: "Doğal taş, ahşap ve yeşil avluya sahip nitelikli modern konut mimarisi" },
+    situations: { headline: "Aurelia Grundbesitz hangi durumlarda doğru muhatap olabilir?", items: ["Kısa sürede harekete geçilmesi gereken gayrimenkuller", "Tereke ve miras durumları", "Boş veya yenilenmesi gereken gayrimenkuller", "Zorlu kira veya kullanım durumları", "Geliştirme potansiyeli taşıyan arsalar", "Karmaşık mülkiyet veya değerlendirme durumları", "Gizli ve doğrudan bir çözümü tercih eden mülk sahipleri"] },
+    closing: { headline: "Bir gayrimenkulü bizimle görüşmek ister misiniz?", body: "Gayrimenkulünüzle ilgili en önemli bilgileri bağlayıcı olmadan bize gönderin. Başlangıç durumunu inceleyip sizinle kişisel olarak iletişime geçelim.", primary: "Gayrimenkulü sun", secondary: "İletişime geç" },
   },
   turkeyProperties: turkeyPropertiesTranslations.tr,
   faqPage: {

@@ -1101,110 +1101,14 @@ const it: Translations = {
     formPrivacyNote: "La sua richiesta sarà utilizzata esclusivamente per elaborare il suo caso e sarà trattata in modo riservato. Ulteriori informazioni sono disponibili nella nostra informativa sulla privacy.",
   },
   aboutV2: {
-    hero: {
-      kicker: "Chi siamo",
-      title: "Chi siamo – Aurelia Grundbesitz",
-      subtitle: "Discreti, orientati alla sostanza, di lungo periodo.",
-      body: "Aurelia Grundbesitz è specializzata nell'acquisto di immobili in situazioni particolari, sensibili e con tempi stretti. Operiamo esclusivamente per conto proprio ed esaminiamo i casi laddove i processi di vendita classici non offrono più una soluzione praticabile.",
-      cta: "Contattaci",
-    },
-    intro: {
-      body: "Quando un immobile si blocca, non serve un lungo processo di commercializzazione – ma un passo successivo realistico. Aurelia accompagna proprietari, comunioni ereditarie e partner commerciali in situazioni in cui pressione temporale, oneri o strutture bloccate richiedono una decisione chiara. Il nostro approccio non è orientato alla vendita, ma è strutturato, discreto e focalizzato sulla fattibilità.",
-    },
-    companyProfile: {
-      headline: "Perché Aurelia è rilevante in situazioni immobiliari bloccate",
-      body: "Quando un immobile si blocca, non serve un lungo processo di commercializzazione – ma un passo successivo realistico. Aurelia accompagna proprietari, comunioni ereditarie e partner commerciali in situazioni in cui pressione temporale, oneri o strutture bloccate richiedono una decisione chiara. Il nostro approccio non è orientato alla vendita, ma è strutturato, discreto e focalizzato sulla fattibilità.",
-    },
-    profile: {
-      headline: "Cosa rappresenta Aurelia",
-      body1: "Aurelia non è né un'agenzia immobiliare né un intermediario tra più parti. Non acquistiamo per conto di terzi e non lavoriamo con impegni di finanziamento non vincolanti. Quando esaminiamo un caso, lo facciamo con l'obiettivo di valutarlo in modo affidabile e – ove fattibile – acquistarlo direttamente.",
-      body2: "Per proprietari e referenti significa: nessuna commercializzazione pubblica, nessuna trasmissione a una catena di interessati e nessuna ambiguità inutile nel processo. Le conversazioni restano riservate, le decisioni comprensibili e il passo successivo realistico.",
-    },
-    approach: {
-      headline: "Il nostro approccio",
-      items: [
-        {
-          title: "Acquisto diretto",
-          text: "Acquistiamo con mezzi propri, prendiamo decisioni chiare e accompagniamo il processo fino al rogito notarile. Nessun mediatore, nessuna riserva di finanziamento, nessuna intermediazione successiva.",
-        },
-        {
-          title: "Massima discrezione",
-          text: "Le situazioni immobiliari sensibili richiedono riservatezza. Per questo evitiamo la commercializzazione pubblica, la visibilità inutile e ogni forma di attivismo. Conversazioni e documenti restano dove devono restare: in un contesto protetto.",
-        },
-        {
-          title: "Risposta rapida",
-          text: "Riceve una prima valutazione entro 48 ore, più rapidamente nei casi urgenti. Chi si trova in una situazione difficile non ha bisogno di ritardi, ma di un riscontro onesto e affidabile.",
-        },
-      ],
-    },
-    situations: {
-      headline: "In quali situazioni interveniamo",
-      body1: "Aurelia interviene soprattutto laddove gli immobili devono essere prima inquadrati con precisione. Casi tipici sono procedure esecutive incombenti o in corso, pressioni di banche o creditori, comunioni ereditarie con decisioni bloccate, immobili problematici o vendite in cui la discrezione conta più della visibilità.",
-      body2: "Non tutte le situazioni sono uguali. Hanno però in comune il fatto che i processi standard spesso non bastano. È proprio qui che interveniamo: con una valutazione sobria della situazione e una linea d'azione affidabile.",
-    },
-    review: {
-      headline: "Come esaminiamo i casi",
-      body1: "Consideriamo non solo l'immobile, ma anche la struttura che vi sta dietro: oneri nel registro fondiario, pressione economica, tempistiche, parti coinvolte e l'effettiva fattibilità di un acquisto. Un immobile può essere risolto in modo sensato solo se si comprende il quadro complessivo.",
-      body2: "Per questo non lavoriamo con affermazioni generiche. Ogni caso è esaminato individualmente. Dove un acquisto è possibile, agiamo rapidamente e in modo vincolante. Dove non è praticabile, lo diciamo in tempo e in modo aperto.",
-    },
-    cases: {
-      headline: "Costellazioni tipiche",
-      note: "Tipologie di casi illustrative — non transazioni concrete.",
-      items: [
-        {
-          label: "Emergenza",
-          title: "Esecuzione forzata imminente o in corso",
-          text: "Proprietari sotto pressione economica, procedimenti bancari o di creditori già avviati. Aurelia verifica se un acquisto prima dell'asta è praticabile e crea una via d'uscita ordinata.",
-          results: [],
-        },
-        {
-          label: "Comunione ereditaria",
-          title: "Decisione di vendita bloccata",
-          text: "Più eredi con interessi divergenti, vendita ferma da tempo. Aurelia può rilevare singole quote ereditarie o acquisire l'intero immobile per consentire una soluzione praticabile.",
-          results: [],
-        },
-        {
-          label: "Acquisto diretto",
-          title: "Vendita riservata senza commercializzazione",
-          text: "Proprietari o partner commerciali che cercano una vendita ordinata senza visibilità pubblica. Aurelia agisce direttamente come acquirente — senza catena di mediatori, senza condizioni di finanziamento.",
-          results: [],
-        },
-      ],
-    },
-    closing: {
-      headline: "Inquadriamo insieme il suo caso.",
-      body: "Aurelia Grundbesitz rappresenta decisioni di acquisto dirette in situazioni in cui l'affidabilità conta più della rappresentazione esterna. Quando un immobile non ha bisogno solo di un acquirente, ma soprattutto di un passo successivo realistico, esaminiamo il caso in modo riservato, strutturato e senza deviazioni.",
-      note: "Un colloquio iniziale riservato è senza impegno e gratuito. Le diciamo onestamente cosa è possibile.",
-      cta: "Richiesta riservata",
-    },
-    metricsBar: {
-      items: [
-        { value: "Team esperto", label: "Immobiliare, mercati dei capitali, transazioni strutturate" },
-        { value: "Sostanza propria", label: "Acquisto per conto proprio — nessun capitale esterno" },
-        { value: "Risposta tempestiva", label: "Prima valutazione in tempi brevi, più rapida in casi urgenti" },
-        { value: "Discreto e vincolante", label: "Esame riservato, decisioni chiare" },
-      ],
-    },
-    team: {
-      headline: "Il team dietro Aurelia",
-      body: "Aurelia Grundbesitz è stata costruita da un team che riunisce una lunga esperienza nel settore immobiliare, nei mercati dei capitali e nelle transazioni strutturate. Lavoriamo con una rete consolidata di avvocati specializzati, consulenti e professionisti esperti nel diritto delle esecuzioni e delle insolvenze. Nessun capitale esterno, nessuna logica di commissione — solo decisioni dirette dalla nostra propria sostanza.",
-      imageAlt: "Sala riunioni tranquilla con documenti ordinati",
-    },
-    visionMission: {
-      visionTitle: "La nostra visione",
-      visionText: "Un mercato immobiliare in cui i proprietari in situazioni eccezionali trovino un partner equo, discreto e decisivo — senza deviazioni, senza pressione.",
-      missionTitle: "La nostra missione",
-      missionText: "Acquistiamo immobili per conto proprio — in modo vincolante, discreto, senza condizioni di finanziamento. Il nostro obiettivo: una soluzione chiara in ogni situazione, non solo un'offerta.",
-    },
-    values: {
-      headline: "I nostri valori",
-      items: [
-        { title: "Discrezione", text: "Nessuna commercializzazione pubblica. Nessuna trasmissione. Le conversazioni restano tra lei e noi." },
-        { title: "Impegno", text: "La nostra offerta non è una brochure di mediatore — è una decisione d'acquisto dalla nostra propria sostanza." },
-        { title: "Reattività", text: "Risposta tempestiva. Più rapida in casi urgenti. Nessun ritardo burocratico." },
-        { title: "Equità", text: "Nessuna pressione. Nessuna scadenza. Lei decide — noi informiamo onestamente." },
-      ],
-    },
+    seoTitle: "Chi siamo | Aurelia Grundbesitz GmbH",
+    seoDescription: "Aurelia Grundbesitz valuta e acquista immobili e terreni per conto proprio – con discrezione, affidabilità e processi decisionali rapidi.",
+    hero: { kicker: "Chi siamo", title: "Aurelia Grundbesitz", subtitle: "Discreti. Affidabili. Orientati alle soluzioni.", body: ["Aurelia Grundbesitz è specializzata nell'acquisto e nella valutazione strutturata di immobili in situazioni particolari, complesse o con tempi stretti.", "Operiamo per conto proprio e prendiamo decisioni sulla base di una chiara analisi economica. Il nostro obiettivo è una gestione personale, trasparente e riservata, con processi decisionali rapidi.", "Ci concentriamo in particolare su immobili e terreni per i quali i processi di vendita tradizionali non risultano ottimali o i proprietari cercano una soluzione rapida e affidabile."], imageAlt: "Luminoso ufficio immobiliare moderno con ampie finestre e vista sulla città" },
+    trustTiles: [{ title: "Esperienza e conoscenza del mercato", text: "Valutazione fondata di immobili, terreni e situazioni di partenza complesse." }, { title: "Autonomia decisionale", text: "Acquistiamo per conto proprio e non necessitiamo di approvazioni esterne di finanziatori o investitori." }, { title: "Processi decisionali rapidi", text: "Valutazione diretta, comunicazione chiara e risposta tempestiva per gli immobili idonei." }, { title: "Discrezione e affidabilità", text: "Valutazione riservata, procedure trasparenti e decisioni comprensibili." }],
+    standing: { headline: "I nostri valori", body: ["Il nostro approccio è volutamente chiaro e pragmatico: valutiamo ogni immobile individualmente, considerando non solo posizione e caratteristiche, ma anche la situazione concreta del proprietario.", "Attribuiamo grande importanza ad affidabilità, discrezione e soluzioni realistiche. Non promettiamo una soluzione standard per ogni immobile, ma prendiamo decisioni trasparenti sulla base delle specifiche condizioni economiche e giuridiche."], values: [{ title: "Affidabilità", text: "Comunichiamo con chiarezza e rispettiamo gli accordi presi." }, { title: "Discrezione", text: "Trattiamo in modo riservato situazioni e documenti sensibili." }, { title: "Pragmatismo", text: "Ci concentriamo su soluzioni realizzabili anziché su processi complessi." }, { title: "Visione a lungo termine", text: "Le decisioni vengono valutate secondo criteri economici e sostenibili." }] },
+    approach: { headline: "Il nostro approccio", body: ["Aurelia Grundbesitz non si considera un'agenzia immobiliare tradizionale.", "Valutiamo gli immobili per un possibile acquisto per conto proprio e strutturiamo individualmente le fasi successive.", "Questo consente decisioni più dirette e, nei casi idonei, processi notevolmente più brevi."], imageAlt: "Architettura residenziale moderna di pregio con pietra naturale, legno e corte verde" },
+    situations: { headline: "Quando Aurelia Grundbesitz può essere l'interlocutore giusto", items: ["Immobili che richiedono un intervento in tempi brevi", "Situazioni successorie ed ereditarie", "Immobili sfitti o da ristrutturare", "Situazioni locative o di utilizzo difficili", "Terreni con potenziale di sviluppo", "Situazioni proprietarie o di valorizzazione complesse", "Proprietari che preferiscono una soluzione discreta e diretta"] },
+    closing: { headline: "Desidera parlarci di un immobile?", body: "Ci invii senza impegno le informazioni principali sul suo immobile. Valuteremo la situazione e la contatteremo personalmente.", primary: "Proponi un immobile", secondary: "Contattaci" },
   },
   turkeyProperties: turkeyPropertiesTranslations.it,
   faqPage: {
