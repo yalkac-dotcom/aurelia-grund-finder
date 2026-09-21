@@ -151,6 +151,19 @@ const CONFIRMATIONS: Record<Locale, ConfirmationTemplate> = {
     phoneLabel: "Teléfono",
     emailLabel: "Correo electrónico",
   },
+  fr: {
+    subject: "Merci pour votre demande – Aurelia Grundbesitz GmbH",
+    greeting: "Madame, Monsieur,",
+    paragraphs: [
+      "nous vous remercions pour votre demande et pour l'intérêt que vous portez à Aurelia Grundbesitz GmbH.",
+      "Nous avons bien reçu votre message. Nous allons examiner les informations transmises et vous contacter personnellement dans les meilleurs délais.",
+      "Si vous souhaitez nous transmettre entre-temps des informations ou des documents complémentaires, vous pouvez simplement répondre à cet e-mail.",
+    ],
+    closing: "Cordialement,",
+    country: "Allemagne",
+    phoneLabel: "Téléphone",
+    emailLabel: "E-mail",
+  },
 };
 
 function escapeHtml(str: string): string {
