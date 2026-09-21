@@ -27,9 +27,9 @@ interface ContactPayload {
   files?: { name: string; path: string; size: number; type: string }[];
 }
 
-type Locale = "de" | "en" | "nl" | "it" | "es" | "tr";
+type Locale = "de" | "en" | "nl" | "it" | "es" | "tr" | "fr";
 
-const LOCALES: Locale[] = ["de", "en", "nl", "it", "es", "tr"];
+const LOCALES: Locale[] = ["de", "en", "nl", "it", "es", "tr", "fr"];
 
 const LANGUAGE_NAMES_DE: Record<Locale, string> = {
   de: "Deutsch",
@@ -38,6 +38,7 @@ const LANGUAGE_NAMES_DE: Record<Locale, string> = {
   it: "Italienisch",
   es: "Spanisch",
   tr: "Türkisch",
+  fr: "Französisch",
 };
 
 // Erkennt sowohl Locale-Codes ("de", "de-DE") als auch Klartext-Namen
