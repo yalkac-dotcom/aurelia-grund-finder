@@ -42,7 +42,8 @@ const Contact = () => {
 
     if (!phoneValidation.success) {
       setError(t.contact.phoneRequired);
-      form.elements.namedItem("phone") instanceof HTMLInputElement && form.elements.namedItem("phone")?.focus();
+      const phoneInput = form.elements.namedItem("phone");
+      if (phoneInput instanceof HTMLInputElement) phoneInput.focus();
       return;
     }
 
