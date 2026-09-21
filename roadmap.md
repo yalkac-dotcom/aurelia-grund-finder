@@ -3,3 +3,4 @@
 - Secure uploads, saved enquiries, and email delivery connection: complete.
 - Desktop, mobile, and language checks: complete.
 - Turkey-page wording, active-language default, and localized upload control: complete.
+- Final six-language quality control, direct-purchase positioning, and form verification: complete.
