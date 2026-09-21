@@ -90,13 +90,13 @@ const Header = () => {
         </Link>
 
         <div className="ml-8 hidden min-w-0 flex-1 items-center gap-5 min-[1360px]:flex 2xl:ml-12 2xl:gap-7">
-          <nav className="flex min-w-0 flex-1 items-center justify-between gap-3 2xl:gap-5">
+          <nav className="flex min-w-0 flex-1 items-center justify-between gap-2.5 2xl:gap-5">
             {navItems.map((item) =>
               item.hash ? (
                 <button
                   key={item.label}
                   onClick={() => handleHashNav(item)}
-                  className="min-h-0 min-w-0 whitespace-nowrap text-[13px] leading-none tracking-wide text-primary/75 transition-colors duration-300 hover:text-accent 2xl:text-sm"
+                  className="min-h-0 min-w-0 whitespace-nowrap text-[12px] leading-none tracking-wide text-primary/75 transition-colors duration-300 hover:text-accent 2xl:text-sm"
                 >
                   {item.label}
                 </button>
@@ -104,7 +104,7 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`whitespace-nowrap text-[13px] leading-none tracking-wide transition-colors duration-300 hover:text-accent 2xl:text-sm ${
+                  className={`whitespace-nowrap text-[12px] leading-none tracking-wide transition-colors duration-300 hover:text-accent 2xl:text-sm ${
                     isActive(item)
                       ? "text-primary font-medium border-b-2 border-accent pb-0.5"
                       : "text-primary/75"
