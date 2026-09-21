@@ -3,7 +3,7 @@ import { turkeyPropertiesTranslations } from "./turkeyProperties";
 
 const nl: Translations = {
   nav: {
-    home: "Startpagina",
+    home: "Start",
     about: "Over Aurelia",
     services: "Diensten",
     taxBenefits: "Belastingvoordelen",
@@ -11,11 +11,11 @@ const nl: Translations = {
     glossar: "Glossarium",
     contact: "Contact",
     workApproach: "Werkwijze",
-    ownerInTrouble: "Eigenaren in nood",
-    turkeyProperties: "Vastgoed in Turkije",
-    buyers: "Voor kopers",
-    partners: "Voor zakenpartners",
-    howItWorks: "Hoe wij werken",
+    ownerInTrouble: "Eigenaren",
+    turkeyProperties: "Vastgoed Turkije",
+    buyers: "Kopers",
+    partners: "Zakenpartners",
+    howItWorks: "Werkwijze",
     faq: "FAQ",
     ctaConfidential: "Vertrouwelijk aanvragen",
   },

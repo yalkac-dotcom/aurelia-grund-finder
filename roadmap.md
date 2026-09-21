@@ -4,3 +4,4 @@
 - Desktop, mobile, and language checks: complete.
 - Turkey-page wording, active-language default, and localized upload control: complete.
 - Final six-language quality control, direct-purchase positioning, and form verification: complete.
+- Desktop header navigation labels, spacing, and responsive breakpoint: in progress.
