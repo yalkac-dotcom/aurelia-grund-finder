@@ -6,10 +6,7 @@ const corsHeaders = {
 
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 
-// Produktiver Absender/Empfänger. Solange die Resend-Domain noch nicht verifiziert ist,
-// weicht sendEmail() automatisch auf den Resend-Testabsender und die Kontoadresse aus,
-// damit keine Anfrage verloren geht. Sobald die DNS-Einträge gesetzt sind, greift
-// automatisch der produktive Weg — ohne weitere Codeänderung.
+// Produktiver Versand über die verifizierte Domain aureliaestates.de.
 const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "office@aureliaestates.de";
 const FROM_NAME = "Aurelia Grundbesitz GmbH";
 const REPLY_TO = "office@aureliaestates.de";
@@ -200,16 +197,31 @@ async function sendEmail(payload: {
   html: string;
   text: string;
   reply_to?: string;
-}) {
+}, mailType: "internal" | "customer_confirmation") {
   const primary = await postEmail({
     from: `${FROM_NAME} <${FROM_EMAIL}>`,
     ...payload,
   });
-  if (primary.ok) return primary.data;
+  const messageId = typeof primary.data?.id === "string" ? primary.data.id : null;
+  if (primary.ok && messageId) {
+    console.log(JSON.stringify({
+      event: "email_accepted",
+      mailType,
+      recipient: payload.to,
+      resendId: messageId,
+      providerStatus: primary.status,
+    }));
+    return { accepted: true as const, id: messageId, providerStatus: primary.status };
+  }
 
   console.error(
-    `Resend-Versand fehlgeschlagen [${primary.status}] an ${payload.to.join(", ")}:`,
-    JSON.stringify(primary.data),
+    JSON.stringify({
+      event: "email_rejected",
+      mailType,
+      recipient: payload.to,
+      providerStatus: primary.status,
+      providerError: primary.data,
+    }),
   );
   throw new Error(`Resend error [${primary.status}]: ${JSON.stringify(primary.data)}`);
 }
@@ -372,30 +384,44 @@ Eingang: ${receivedAt} Uhr
 Nachricht:
 ${body.message}${documentLinksText}`;
 
-    // Erst Benachrichtigung an office@ senden — dies ist kritisch
-    await sendEmail({
+    // Beide E-Mails sind getrennte Versandvorgänge mit eigenem Ergebnis.
+    const internalMailResult = await sendEmail({
       to: [NOTIFY_TO],
       subject: notifySubject,
       html: notifyHtml,
       text: notifyText,
       reply_to: body.email,
-    });
+    }, "internal");
 
-    // Bestätigung an den Interessenten in seiner Sprache.
-    // Fehler hier blockieren nie den Erfolg der Anfrage.
+    let customerConfirmationResult:
+      | { accepted: true; id: string; providerStatus: number }
+      | { accepted: false; error: string };
     try {
-      await sendEmail({
+      customerConfirmationResult = await sendEmail({
         to: [body.email],
         subject: tpl.subject,
         html: confirmationHtml,
         text: confirmationText,
         reply_to: REPLY_TO,
-      });
+      }, "customer_confirmation");
     } catch (e) {
-      console.error("Confirmation email failed (non-blocking):", e);
+      const confirmationError = e instanceof Error ? e.message : "Unknown confirmation error";
+      console.error(JSON.stringify({
+        event: "customer_confirmation_failed",
+        recipient: body.email,
+        locale,
+        error: confirmationError,
+      }));
+      customerConfirmationResult = { accepted: false, error: confirmationError };
     }
 
-    return new Response(JSON.stringify({ success: true }), {
+    return new Response(JSON.stringify({
+      success: true,
+      internalMailResult,
+      customerConfirmationResult,
+      confirmationSent: customerConfirmationResult.accepted,
+      locale,
+    }), {
       status: 200,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });

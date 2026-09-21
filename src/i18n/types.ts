@@ -43,6 +43,7 @@ export interface TurkeyPropertiesTranslations {
     submitting: string;
     successTitle: string;
     successText: string;
+    confirmationWarning: string;
     errorText: string;
     validationError: string;
     fileError: string;
