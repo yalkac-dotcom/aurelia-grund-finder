@@ -4,9 +4,11 @@ import ScrollToTop from "./ScrollToTop";
 import TrustBar from "./home/TrustBar";
 import CookieConsent from "./CookieConsent";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useCanonicalUrl } from "@/hooks/useCanonicalUrl";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const { t } = useLanguage();
+  useCanonicalUrl();
   return (
     <div className="min-h-screen flex flex-col">
       <a
