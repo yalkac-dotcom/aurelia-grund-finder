@@ -387,24 +387,18 @@ ${body.message}${documentLinksText}`;
       reply_to: body.email,
     });
 
-    // Bestätigung an Absender — im Sandbox-Modus nur, wenn Absender = Test-Adresse,
-    // sonst lehnt Resend die Mail mit 403 ab. Fehler hier blockieren nie den Erfolg.
-    const canSendConfirmation =
-      !SANDBOX_MODE || body.email.toLowerCase() === SANDBOX_TEST_RECIPIENT.toLowerCase();
-    if (canSendConfirmation) {
-      try {
-        await sendEmail({
-          to: [body.email],
-          subject: tpl.subject,
-          html: confirmationHtml,
-          text: confirmationText,
-          reply_to: REPLY_TO,
-        });
-      } catch (e) {
-        console.error("Confirmation email failed (non-blocking):", e);
-      }
-    } else {
-      console.log("Skipping confirmation email in sandbox mode for:", body.email);
+    // Bestätigung an den Interessenten in seiner Sprache.
+    // Fehler hier blockieren nie den Erfolg der Anfrage.
+    try {
+      await sendEmail({
+        to: [body.email],
+        subject: tpl.subject,
+        html: confirmationHtml,
+        text: confirmationText,
+        reply_to: REPLY_TO,
+      });
+    } catch (e) {
+      console.error("Confirmation email failed (non-blocking):", e);
     }
 
     return new Response(JSON.stringify({ success: true }), {
