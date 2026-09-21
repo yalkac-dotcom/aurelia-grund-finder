@@ -14,8 +14,6 @@ const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "office@aureliaestates.d
 const FROM_NAME = "Aurelia Grundbesitz GmbH";
 const REPLY_TO = "office@aureliaestates.de";
 const NOTIFY_TO = "office@aureliaestates.de";
-const FALLBACK_FROM_EMAIL = "onboarding@resend.dev";
-const FALLBACK_TO = "y.alkac@googlemail.com";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
 const TURKEY_DOCUMENT_BUCKET = "turkey-property-documents";
@@ -195,9 +193,7 @@ async function postEmail(payload: {
   return { ok: res.ok, status: res.status, data };
 }
 
-// Sendet produktiv von office@aureliaestates.de. Falls die Domain bei Resend noch
-// nicht verifiziert ist (403), wird die Mail über den Resend-Testabsender an die
-// Kontoadresse zugestellt, damit keine Anfrage verloren geht.
+// Produktiver Versand über die verifizierte Domain aureliaestates.de.
 async function sendEmail(payload: {
   to: string[];
   subject: string;
@@ -211,27 +207,11 @@ async function sendEmail(payload: {
   });
   if (primary.ok) return primary.data;
 
-  if (primary.status !== 403) {
-    throw new Error(`Resend error [${primary.status}]: ${JSON.stringify(primary.data)}`);
-  }
-
-  console.warn(
-    "Resend-Domain noch nicht verifiziert — Fallback-Versand:",
+  console.error(
+    `Resend-Versand fehlgeschlagen [${primary.status}] an ${payload.to.join(", ")}:`,
     JSON.stringify(primary.data),
   );
-
-  const fallback = await postEmail({
-    from: `${FROM_NAME} <${FALLBACK_FROM_EMAIL}>`,
-    to: [FALLBACK_TO],
-    subject: `[Weiterleitung an ${payload.to.join(", ")}] ${payload.subject}`,
-    html: payload.html,
-    text: `Ursprünglicher Empfänger: ${payload.to.join(", ")}\n\n${payload.text}`,
-    reply_to: payload.reply_to,
-  });
-  if (!fallback.ok) {
-    throw new Error(`Resend error [${fallback.status}]: ${JSON.stringify(fallback.data)}`);
-  }
-  return fallback.data;
+  throw new Error(`Resend error [${primary.status}]: ${JSON.stringify(primary.data)}`);
 }
 
 async function createSignedDocumentLinks(files: ContactPayload["files"]): Promise<string[]> {
@@ -347,6 +327,18 @@ ${tpl.emailLabel}: office@aureliaestates.de
 Web: www.aureliaestates.de`;
 
     const languageName = LANGUAGE_NAMES_DE[locale];
+    const isTurkeyEnquiry = (body.property_type ?? "").toLowerCase().includes("türkei") ||
+      (body.message ?? "").startsWith("Türkei-Immobilienanfrage");
+    const notifyHeadline = isTurkeyEnquiry ? "Neue Türkei-Immobilienanfrage" : "Neue Kontaktanfrage";
+    const notifySubject = isTurkeyEnquiry
+      ? `Neue Türkei-Immobilienanfrage von ${body.name}`
+      : `Neue Anfrage von ${body.name} – Aurelia Grundbesitz`;
+    const receivedAt = new Intl.DateTimeFormat("de-DE", {
+      dateStyle: "medium",
+      timeStyle: "short",
+      timeZone: "Europe/Berlin",
+    }).format(new Date());
+
 
     // 2) Benachrichtigung an office@
     const notifyHtml = `
@@ -354,13 +346,14 @@ Web: www.aureliaestates.de`;
 <html lang="de"><head><meta charset="utf-8"></head>
 <body style="margin:0;padding:0;background:#ffffff;font-family:Arial,sans-serif;color:#1a2238;">
   <div style="max-width:600px;margin:0 auto;padding:32px 24px;">
-    <h2 style="font-size:18px;margin:0 0 18px;">Neue Kontaktanfrage</h2>
+    <h2 style="font-size:18px;margin:0 0 18px;">${notifyHeadline}</h2>
     <table style="width:100%;border-collapse:collapse;font-size:14px;">
       <tr><td style="padding:6px 0;color:#6b7280;width:180px;">Name</td><td style="padding:6px 0;">${name}</td></tr>
       <tr><td style="padding:6px 0;color:#6b7280;">E-Mail</td><td style="padding:6px 0;"><a href="mailto:${email}">${email}</a></td></tr>
       ${phone ? `<tr><td style="padding:6px 0;color:#6b7280;">Telefon</td><td style="padding:6px 0;">${phone}</td></tr>` : ""}
       ${propertyType ? `<tr><td style="padding:6px 0;color:#6b7280;">Thema</td><td style="padding:6px 0;">${propertyType}</td></tr>` : ""}
       <tr><td style="padding:6px 0;color:#6b7280;">Sprache des Interessenten</td><td style="padding:6px 0;"><strong>${escapeHtml(languageName)}</strong></td></tr>
+      <tr><td style="padding:6px 0;color:#6b7280;">Eingang</td><td style="padding:6px 0;">${escapeHtml(receivedAt)} Uhr</td></tr>
     </table>
     <hr style="border:none;border-top:1px solid #e5e7eb;margin:20px 0;"/>
     <p style="font-size:13px;color:#6b7280;margin:0 0 6px;">Nachricht:</p>
@@ -369,11 +362,12 @@ Web: www.aureliaestates.de`;
   </div>
 </body></html>`.trim();
 
-    const notifyText = `Neue Kontaktanfrage
+    const notifyText = `${notifyHeadline}
 
 Name: ${body.name}
 E-Mail: ${body.email}
 ${body.phone ? `Telefon: ${body.phone}\n` : ""}${body.property_type ? `Thema: ${body.property_type}\n` : ""}Sprache des Interessenten: ${languageName}
+Eingang: ${receivedAt} Uhr
 
 Nachricht:
 ${body.message}${documentLinksText}`;
@@ -381,7 +375,7 @@ ${body.message}${documentLinksText}`;
     // Erst Benachrichtigung an office@ senden — dies ist kritisch
     await sendEmail({
       to: [NOTIFY_TO],
-      subject: `Neue Kontaktanfrage von ${body.name}`,
+      subject: notifySubject,
       html: notifyHtml,
       text: notifyText,
       reply_to: body.email,
