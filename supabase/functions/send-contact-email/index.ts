@@ -385,8 +385,19 @@ Nachricht:
 ${body.message}${documentLinksText}`;
 
     // Beide E-Mails sind getrennte Versandvorgänge mit eigenem Ergebnis.
+    // Sicherheitsnetz: die interne Mail geht ausschließlich an office@,
+    // die Bestätigung ausschließlich an die Adresse aus dem Formular.
+    const internalRecipients = [NOTIFY_TO];
+    const customerRecipients = [body.email.trim()];
+    if (internalRecipients.some((r) => r.toLowerCase() !== NOTIFY_TO)) {
+      throw new Error("Internal recipient guard violated");
+    }
+    if (customerRecipients.length !== 1 || !isValidEmail(customerRecipients[0])) {
+      throw new Error("Customer recipient guard violated");
+    }
+
     const internalMailResult = await sendEmail({
-      to: [NOTIFY_TO],
+      to: internalRecipients,
       subject: notifySubject,
       html: notifyHtml,
       text: notifyText,
@@ -397,8 +408,15 @@ ${body.message}${documentLinksText}`;
       | { accepted: true; id: string; providerStatus: number }
       | { accepted: false; error: string };
     try {
+      if (
+        documentLinks.some((link) => confirmationHtml.includes(link) || confirmationText.includes(link)) ||
+        confirmationHtml.includes("storage/v1") ||
+        confirmationText.includes("storage/v1")
+      ) {
+        throw new Error("Confirmation content guard violated: internal data detected");
+      }
       customerConfirmationResult = await sendEmail({
-        to: [body.email],
+        to: customerRecipients,
         subject: tpl.subject,
         html: confirmationHtml,
         text: confirmationText,
