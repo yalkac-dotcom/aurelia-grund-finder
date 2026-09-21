@@ -385,8 +385,19 @@ Nachricht:
 ${body.message}${documentLinksText}`;
 
     // Beide E-Mails sind getrennte Versandvorgänge mit eigenem Ergebnis.
+    // Sicherheitsnetz: die interne Mail geht ausschließlich an office@,
+    // die Bestätigung ausschließlich an die Adresse aus dem Formular.
+    const internalRecipients = [NOTIFY_TO];
+    const customerRecipients = [body.email.trim()];
+    if (internalRecipients.some((r) => r.toLowerCase() !== NOTIFY_TO)) {
+      throw new Error("Internal recipient guard violated");
+    }
+    if (customerRecipients.length !== 1 || !isValidEmail(customerRecipients[0])) {
+      throw new Error("Customer recipient guard violated");
+    }
+
     const internalMailResult = await sendEmail({
-      to: [NOTIFY_TO],
+      to: internalRecipients,
       subject: notifySubject,
       html: notifyHtml,
       text: notifyText,
