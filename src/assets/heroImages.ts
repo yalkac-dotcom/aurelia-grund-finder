@@ -69,6 +69,11 @@ import about1024 from "@/assets/hero-about-1024w.webp";
 import about1440 from "@/assets/hero-about-1440w.webp";
 import about1920 from "@/assets/hero-about-1920w.webp";
 
+import partners640 from "@/assets/hero-partners-640w.webp";
+import partners1024 from "@/assets/hero-partners-1024w.webp";
+import partners1440 from "@/assets/hero-partners-1440w.webp";
+import partners1920 from "@/assets/hero-partners-1920w.webp";
+
 // Tighter sizes hint: at common desktop widths (≤1440), the 1024w variant is sufficient
 // for a hero image behind a dark overlay — saves ~110 KB on LCP payload vs. forcing 1440w.
 const SIZES = "(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px";
@@ -94,4 +99,5 @@ export const heroSets = {
   glossar:       { src: glossar1440,       srcSet: srcSet(glossar640, glossar1024, glossar1440, glossar1920),               sizes: SIZES },
   arbeitsweise:  { src: arbeitsweise1440,  srcSet: srcSet(arbeitsweise640, arbeitsweise1024, arbeitsweise1440, arbeitsweise1920), sizes: SIZES },
   about:         { src: about1440,         srcSet: srcSet(about640, about1024, about1440, about1920),                           sizes: SIZES },
+  partners:      { src: partners1440,      srcSet: srcSet(partners640, partners1024, partners1440, partners1920),               sizes: SIZES },
 } as const;
