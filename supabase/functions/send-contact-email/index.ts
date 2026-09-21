@@ -6,16 +6,16 @@ const corsHeaders = {
 
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 
-// Verifizierte Domain in Resend? Dann hier auf 'office@aureliaestates.de' umstellen.
-// Solange Domain noch nicht verifiziert ist, nutzen wir Resend's Test-Absender.
-const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "onboarding@resend.dev";
+// Produktiver Absender/Empfänger. Solange die Resend-Domain noch nicht verifiziert ist,
+// weicht sendEmail() automatisch auf den Resend-Testabsender und die Kontoadresse aus,
+// damit keine Anfrage verloren geht. Sobald die DNS-Einträge gesetzt sind, greift
+// automatisch der produktive Weg — ohne weitere Codeänderung.
+const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "office@aureliaestates.de";
 const FROM_NAME = "Aurelia Grundbesitz GmbH";
 const REPLY_TO = "office@aureliaestates.de";
-// Solange Resend-Domain noch nicht verifiziert ist, gehen alle Mails an die verifizierte Test-Adresse.
-// Nach Domain-Verifizierung: NOTIFY_TO auf "office@aureliaestates.de" zurücksetzen und Bestätigungs-Block reaktivieren.
-const NOTIFY_TO = "y.alkac@googlemail.com";
-const SANDBOX_MODE = true;
-const SANDBOX_TEST_RECIPIENT = "y.alkac@googlemail.com";
+const NOTIFY_TO = "office@aureliaestates.de";
+const FALLBACK_FROM_EMAIL = "onboarding@resend.dev";
+const FALLBACK_TO = "y.alkac@googlemail.com";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
 const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
 const TURKEY_DOCUMENT_BUCKET = "turkey-property-documents";
@@ -168,7 +168,8 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length <= 254;
 }
 
-async function sendEmail(payload: {
+async function postEmail(payload: {
+  from: string;
   to: string[];
   subject: string;
   html: string;
@@ -187,21 +188,50 @@ async function sendEmail(payload: {
       Authorization: `Bearer ${LOVABLE_API_KEY}`,
       "X-Connection-Api-Key": RESEND_API_KEY,
     },
-    body: JSON.stringify({
-      from: `${FROM_NAME} <${FROM_EMAIL}>`,
-      to: payload.to,
-      subject: payload.subject,
-      html: payload.html,
-      text: payload.text,
-      reply_to: payload.reply_to,
-    }),
+    body: JSON.stringify(payload),
   });
 
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(`Resend error [${res.status}]: ${JSON.stringify(data)}`);
+  const data = await res.json().catch(() => ({}));
+  return { ok: res.ok, status: res.status, data };
+}
+
+// Sendet produktiv von office@aureliaestates.de. Falls die Domain bei Resend noch
+// nicht verifiziert ist (403), wird die Mail über den Resend-Testabsender an die
+// Kontoadresse zugestellt, damit keine Anfrage verloren geht.
+async function sendEmail(payload: {
+  to: string[];
+  subject: string;
+  html: string;
+  text: string;
+  reply_to?: string;
+}) {
+  const primary = await postEmail({
+    from: `${FROM_NAME} <${FROM_EMAIL}>`,
+    ...payload,
+  });
+  if (primary.ok) return primary.data;
+
+  if (primary.status !== 403) {
+    throw new Error(`Resend error [${primary.status}]: ${JSON.stringify(primary.data)}`);
   }
-  return data;
+
+  console.warn(
+    "Resend-Domain noch nicht verifiziert — Fallback-Versand:",
+    JSON.stringify(primary.data),
+  );
+
+  const fallback = await postEmail({
+    from: `${FROM_NAME} <${FALLBACK_FROM_EMAIL}>`,
+    to: [FALLBACK_TO],
+    subject: `[Weiterleitung an ${payload.to.join(", ")}] ${payload.subject}`,
+    html: payload.html,
+    text: `Ursprünglicher Empfänger: ${payload.to.join(", ")}\n\n${payload.text}`,
+    reply_to: payload.reply_to,
+  });
+  if (!fallback.ok) {
+    throw new Error(`Resend error [${fallback.status}]: ${JSON.stringify(fallback.data)}`);
+  }
+  return fallback.data;
 }
 
 async function createSignedDocumentLinks(files: ContactPayload["files"]): Promise<string[]> {
@@ -357,24 +387,18 @@ ${body.message}${documentLinksText}`;
       reply_to: body.email,
     });
 
-    // Bestätigung an Absender — im Sandbox-Modus nur, wenn Absender = Test-Adresse,
-    // sonst lehnt Resend die Mail mit 403 ab. Fehler hier blockieren nie den Erfolg.
-    const canSendConfirmation =
-      !SANDBOX_MODE || body.email.toLowerCase() === SANDBOX_TEST_RECIPIENT.toLowerCase();
-    if (canSendConfirmation) {
-      try {
-        await sendEmail({
-          to: [body.email],
-          subject: tpl.subject,
-          html: confirmationHtml,
-          text: confirmationText,
-          reply_to: REPLY_TO,
-        });
-      } catch (e) {
-        console.error("Confirmation email failed (non-blocking):", e);
-      }
-    } else {
-      console.log("Skipping confirmation email in sandbox mode for:", body.email);
+    // Bestätigung an den Interessenten in seiner Sprache.
+    // Fehler hier blockieren nie den Erfolg der Anfrage.
+    try {
+      await sendEmail({
+        to: [body.email],
+        subject: tpl.subject,
+        html: confirmationHtml,
+        text: confirmationText,
+        reply_to: REPLY_TO,
+      });
+    } catch (e) {
+      console.error("Confirmation email failed (non-blocking):", e);
     }
 
     return new Response(JSON.stringify({ success: true }), {
