@@ -89,7 +89,7 @@ const Header = () => {
           />
         </Link>
 
-        <div className="ml-8 hidden min-w-0 flex-1 items-center gap-5 xl:flex 2xl:ml-12 2xl:gap-7">
+        <div className="ml-8 hidden min-w-0 flex-1 items-center gap-5 min-[1360px]:flex 2xl:ml-12 2xl:gap-7">
           <nav className="flex min-w-0 flex-1 items-center justify-between gap-3 2xl:gap-5">
             {navItems.map((item) =>
               item.hash ? (
@@ -126,7 +126,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="flex items-center gap-3 xl:hidden">
+        <div className="flex items-center gap-3 min-[1360px]:hidden">
           <LanguageSwitcher />
           <button
             className="p-1.5 text-primary"
@@ -140,7 +140,7 @@ const Header = () => {
 
       {mobileOpen && typeof document !== "undefined" &&
         createPortal(
-          <div className="fixed inset-0 z-[9999] xl:hidden">
+          <div className="fixed inset-0 z-[9999] min-[1360px]:hidden">
             {/* Backdrop */}
             <div
               className="absolute inset-0 bg-black/60"
