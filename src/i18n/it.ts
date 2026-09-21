@@ -573,7 +573,7 @@ const it: Translations = {
     heroPrimaryCta: "Discutere la costellazione",
     heroSecondaryCta: "Come operiamo",
     heroTrustLine: "Riservato · Caso per caso · Contatto diretto con la direzione",
-    heroImageAlt: "Ambiente professionale tranquillo – simbolo di collaborazioni di progetto chiaramente strutturate",
+    heroImageAlt: "Palazzo d'epoca e edificio per uffici moderno in luce chiara – simbolo di collaborazioni di progetto chiaramente strutturate",
     legalNoticeLabel: "Nota",
     legalNoticeText:
       "Questa pagina non costituisce un'offerta pubblica di prodotti d'investimento né un invito a investire. Eventuali accordi vengono presi esclusivamente su base individuale e di progetto, previa specifica valutazione.",
