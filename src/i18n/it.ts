@@ -493,7 +493,7 @@ const it: Translations = {
     heroPrimaryCta: "Richiedi una consulenza",
     heroSecondaryCta: "Come procediamo",
     heroTrustLine: "Acquisto diretto · Senza provvigione · Assistenza notarile",
-    heroImageAlt: "Immobile residenziale del portafoglio Aurelia – simbolo di qualità verificata e condizioni trasparenti",
+    heroImageAlt: "Edificio residenziale moderno e ben curato in piena luce diurna – qualità verificata e condizioni trasparenti",
     featuresTitle: "Cosa potete aspettarvi da Aurelia",
     featuresIntro:
       "Aurelia vende esclusivamente immobili del proprio portafoglio. Questo garantisce iter brevi, responsabilità chiare e condizioni trasparenti.",

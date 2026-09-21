@@ -526,7 +526,7 @@ const en: Translations = {
     heroPrimaryCta: "Request a consultation",
     heroSecondaryCta: "How we proceed",
     heroTrustLine: "Direct purchase · No agent commission · Notarial support",
-    heroImageAlt: "Residential property from the Aurelia portfolio – representing vetted quality and transparent terms",
+    heroImageAlt: "Well-maintained modern residential building in bright daylight – vetted quality and transparent terms",
     featuresTitle: "What to expect at Aurelia",
     featuresIntro:
       "Aurelia only sells properties from its own portfolio. This ensures short paths, clear responsibilities and transparent terms.",

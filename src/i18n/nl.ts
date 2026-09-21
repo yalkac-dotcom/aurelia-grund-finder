@@ -494,7 +494,7 @@ const nl: Translations = {
     heroPrimaryCta: "Advies aanvragen",
     heroSecondaryCta: "Hoe wij werken",
     heroTrustLine: "Directe aankoop · Zonder makelaarscourtage · Notariële begeleiding",
-    heroImageAlt: "Woonobject uit de Aurelia-portefeuille – symbool voor gecontroleerde kwaliteit en transparante voorwaarden",
+    heroImageAlt: "Goed onderhouden modern woongebouw in helder daglicht – gecontroleerde kwaliteit en transparante voorwaarden",
     featuresTitle: "Wat u bij Aurelia kunt verwachten",
     featuresIntro:
       "Aurelia verkoopt uitsluitend objecten uit de eigen portefeuille. Dat zorgt voor korte lijnen, duidelijke verantwoordelijkheden en transparante voorwaarden.",
