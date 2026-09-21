@@ -1184,7 +1184,7 @@ const de: Translations = {
         "Wir handeln auf eigene Rechnung und treffen Entscheidungen auf Basis einer klaren wirtschaftlichen Prüfung. Unser Anspruch ist eine persönliche, nachvollziehbare und diskrete Abwicklung mit kurzen Entscheidungswegen.",
         "Wir konzentrieren uns insbesondere auf Immobilien und Grundstücke, bei denen klassische Verkaufsprozesse nicht optimal funktionieren oder Eigentümer eine schnelle, verbindliche Lösung suchen.",
       ],
-      imageAlt: "Helles modernes Immobilienbüro mit großen Fenstern und Stadtblick",
+      imageAlt: "Helles, modernes Wohnambiente mit Blick auf die Düsseldorfer Skyline, Rheinturm und Rhein",
     },
     trustTiles: [
       { title: "Erfahrung & Marktverständnis", text: "Fundierte Einschätzung von Immobilien, Grundstücken und komplexen Ausgangssituationen." },
