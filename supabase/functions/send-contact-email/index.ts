@@ -50,6 +50,7 @@ const LANGUAGE_ALIASES: Record<string, Locale> = {
   italiano: "it", italienisch: "it", italian: "it", italiaans: "it", italyanca: "it",
   español: "es", espanol: "es", spanisch: "es", spanish: "es", spaans: "es", spagnolo: "es", "i̇spanyolca": "es", ispanyolca: "es",
   türkçe: "tr", turkce: "tr", türkisch: "tr", turkish: "tr", turks: "tr", turco: "tr",
+  français: "fr", francais: "fr", französisch: "fr", franzoesisch: "fr", french: "fr", frans: "fr", francese: "fr", francés: "fr", frances: "fr", fransızca: "fr", fransizca: "fr",
 };
 
 function resolveLocale(value?: string | null): Locale {
