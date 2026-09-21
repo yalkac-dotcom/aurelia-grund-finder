@@ -301,3 +301,352 @@ const fr: Translations = {
       "Créances et positions liées à l’immobilier sélectionnées",
     ],
   },
+  home: {
+    heroKicker: "Aurelia Grundbesitz",
+    heroTitle: "Lorsqu’un bien devient un fardeau, ce n’est pas d’un courtier dont vous avez besoin — mais d’un acheteur.",
+    heroDescription: "Saisie immobilière, pression des créanciers, indivisions successorales bloquées : nous achetons votre bien pour notre propre compte — discret, structuré, engageant.",
+    heroPrimaryCta: "Première évaluation gratuite",
+    heroSecondaryCta: "Comment nous travaillons",
+    heroTrustLine: "Sans engagement · Réponse personnelle sous 2 jours ouvrés",
+    areasLabel: "Services",
+    areasTitle: "Trois façons de soulager les propriétaires",
+    areasIntro: "Nous sommes des acheteurs — pas des courtiers. Trois situations typiques dans lesquelles nous reprenons des biens.",
+    areas: [
+      { title: "Situations de détresse", desc: "Saisie imminente ou en cours, pression des banques ou d’autres créanciers. Nous évaluons rapidement, échangeons directement avec les créanciers et achetons à un prix compréhensible. Peu avant une date d’adjudication, une vente ordonnée peut être plus judicieuse qu’une adjudication en procédure.", cta: "Décrire votre situation" },
+      { title: "Successions & conflits", desc: "Indivisions successorales, litiges sur les parts, ventes bloquées. Nous achetons des biens entiers ou des parts successorales individuelles et relançons des processus au point mort.", cta: "En discuter confidentiellement" },
+      { title: "Achat direct sans détresse", desc: "Vous souhaitez vendre sans pression ? Nous évaluons les biens adaptés et achetons directement — sans commission de courtage, sans marathon de visites, sans réserve de financement.", cta: "Soumettre un bien" },
+    ],
+    trustTitle: "Ce que nous faisons — et ce que nous ne faisons pas",
+    trustText: "Aurelia achète des biens exclusivement pour son propre compte. Aucun prêt, aucun produit financier, aucun modèle de participation.",
+    trustClaimTitle: "Nos quatre engagements",
+    trustClaimText: "Discrétion, solidité, vision de long terme et clarté. Après l’examen, vous recevez soit un refus clair, soit un chiffre justifié — jamais de « peut-être ».",
+    proofPoints: [
+      { title: "Discrétion", text: "Aucune annonce, aucun affichage, aucune transmission de vos données." },
+      { title: "Solidité", text: "Des décisions fondées sur les chiffres, l’emplacement et une évaluation réaliste." },
+      { title: "Vision long terme", text: "Nous pensons au-delà de la vente — de manière durable pour les deux parties." },
+      { title: "Clarté", text: "Refus clair ou offre justifiée. Jamais de peut-être." },
+    ],
+    stepsTitle: "Comment se déroule une demande chez nous",
+    steps: [
+      { title: "Vous décrivez votre cas", desc: "Brièvement, sans formalité, en toute confidentialité par téléphone ou via le formulaire." },
+      { title: "Nous examinons et revenons vers vous", desc: "Sous deux jours ouvrés, nous vous indiquons si un achat est réaliste et quels documents nous avons besoin. Nous examinons aussi votre cas si une date de vente aux enchères est déjà fixée." },
+      { title: "Offre concrète, traitement clair", desc: "Après évaluation et échanges avec les créanciers, vous recevez une offre d’achat ; l’acte est signé chez le notaire." },
+    ],
+    stepsNote: "L’entretien initial et l’examen sont gratuits — même si aucun achat n’est finalement conclu. L’essentiel est la rapidité avec laquelle les documents sont disponibles et la possibilité de trouver une solution à temps avec les créanciers.",
+    stepsLink: "Voir l’intégralité du processus",
+    objectionsTitle: "Ce que les propriétaires nous demandent souvent en premier",
+    objectionsIntro: "Trois préoccupations légitimes — et nos réponses franches.",
+    objections: [
+      { q: "Vais-je finalement perdre mon logement et me retrouver sans rien ?", a: "Notre objectif est une sortie ordonnée, pas une vente de détresse. Nous calculons ouvertement ce qu’il reste après règlement des dettes. La possibilité de continuer à y habiter est examinée avant toute signature de contrat." },
+      { q: "Vais-je être désavantagé dans ma situation ?", a: "Nous exposons notre évaluation : emplacement, état, charges, marché. Vous voyez comment se forme le prix et pouvez le faire vérifier de manière indépendante à tout moment." },
+      { q: "S’agit-il d’un service financier réglementé ?", a: "Non. C’est un contrat de vente : vous vendez un bien, nous payons avec nos propres fonds. Aucune opération de crédit, aucune opération financière." },
+    ],
+    faqTitle: "Questions fréquentes",
+    faqIntro: "L’essentiel avant un premier entretien.",
+    faqItems: [
+      { q: "Comment se déroule la collaboration ?", a: "Vous décrivez le cas, nous revenons vers vous sous deux jours ouvrés avec une évaluation. En cas de vente, nous nous chargeons de l’évaluation, des échanges avec les créanciers et du rendez-vous notarial." },
+      { q: "De quels documents avez-vous besoin ?", a: "Pour la première évaluation, une brève description suffit. Pour une offre ferme : extrait de registre foncier actuel, relevés de créances et, en cas de succession, le certificat d’hérédité. Nous vous aidons à les obtenir." },
+      { q: "Puis-je encore vendre pendant une saisie immobilière en cours ?", a: "Cela peut rester possible jusqu’à l’adjudication — à condition que le cas soit examiné à temps et que les créanciers concernés soient d’accord. Dans les procédures avancées, chaque jour compte." },
+      { q: "Des frais surviennent-ils si je ne vends pas ?", a: "Non. L’examen et le premier entretien sont gratuits. Des frais n’apparaissent qu’avec un contrat de vente." },
+      { q: "Puis-je continuer à y habiter après la vente ?", a: "Dans certains cas, un bail peut être convenu — selon le bien, le marché et vos objectifs." },
+      { q: "Ma demande reste-t-elle confidentielle ?", a: "Oui. Toutes les informations sont traitées en toute confidentialité." },
+    ],
+    finalCtaTitle: "Obtenez dès maintenant votre première évaluation gratuite",
+    finalCtaText: "Nous examinons votre cas sans engagement et revenons vers vous sous deux jours ouvrés avec une réponse claire.",
+    finalCtaButton: "Nous contacter en toute confidentialité",
+  },
+  ownerInTrouble: {
+    heroKicker: "Pour les propriétaires en situation particulière",
+    heroTitle: "Lorsqu’une vente ne se déroule plus comme prévu.",
+    heroDescription:
+      "Aurelia examine en toute confidentialité les situations de propriété difficiles – même lorsqu’une procédure de saisie immobilière est déjà en cours. Nous écoutons, faisons le point et vous disons honnêtement ce qui reste possible.",
+    heroPrimaryCta: "Nous contacter en toute confidentialité",
+    heroSecondaryCta: "Comment nous travaillons",
+    heroTrustLine: "Discret · Pour notre propre compte · Sans frais de courtage",
+    heroImageAlt: "Rue résidentielle calme avec un immeuble bien entretenu – symbole de solutions discrètes dans des situations de propriété particulières",
+    situationsTitle: "Situations dans lesquelles nous pouvons aider",
+    situationsIntro:
+      "Chaque cas est différent. Nous évaluons chaque constellation individuellement – y compris lorsque d’autres ont déjà décliné.",
+    situations: [
+      {
+        title: "Structures de propriété complexes",
+        desc: "Indivisions successorales, plusieurs propriétaires, décisions bloquées – nous clarifions la situation et créons du mouvement.",
+      },
+      {
+        title: "Pression financière",
+        desc: "Dettes élevées, prêts résiliés, saisie imminente – nous examinons si un achat direct constitue une solution viable.",
+      },
+      {
+        title: "Conflits entre propriétaires",
+        desc: "Lorsque des copropriétaires ne parviennent pas à s’entendre, un tiers objectif aide – avec une évaluation claire et une offre ferme.",
+      },
+      {
+        title: "Procédure de saisie immobilière en cours",
+        desc: "Même en procédure en cours, une vente reste souvent possible – tant que la date d’adjudication n’est pas atteinte. Nous évaluons rapidement si une vente de gré à gré est encore réalisable.",
+      },
+    ],
+    solutionTitle: "Comment nous soulageons les propriétaires",
+    solutionText:
+      "Nous achetons directement et pour notre propre compte. Aucun courtier, aucun carrousel de visites, aucune commercialisation publique. Vous parlez avec les personnes qui décident aussi.",
+    proofPoints: [
+      { title: "Discrétion", text: "Aucune commercialisation publique, aucune pancarte, aucune annonce. Les échanges restent confidentiels." },
+      { title: "Évaluation équitable", text: "Une appréciation orientée marché – expliquée clairement, sans enjoliver." },
+      { title: "Accord clair", text: "Offre ferme, conditions transparentes, traitement notarial." },
+      { title: "Exécution fiable", text: "Nous agissons pour notre propre compte – aucune réserve de financement, aucun retrait de dernière minute." },
+    ],
+    stepsTitle: "Comment nous procédons",
+    steps: [
+      { title: "Premier contact", desc: "Vous décrivez la situation – par téléphone ou via le formulaire. Confidentiel et sans engagement." },
+      { title: "Évaluation", desc: "Nous examinons les documents et situons la situation de manière réaliste." },
+      { title: "Estimation & offre", desc: "Vous recevez une évaluation écrite et – le cas échéant – une offre ferme." },
+      { title: "Accord", desc: "En cas d’accord, nous fixons clairement les conditions et préparons le rendez-vous notarial." },
+      { title: "Exécution", desc: "Traitement ferme via le notaire. Nous nous occupons ensuite de la suite." },
+    ],
+    stepsNote:
+      "Les délais indiqués sont des valeurs indicatives. Dans les cas urgents – comme les procédures en cours – nous travaillons nettement plus vite.",
+    objectionsTitle: "Ce que les propriétaires demandent souvent",
+    objectionsIntro: "Trois préoccupations que nous entendons particulièrement souvent. Voici notre réponse honnête.",
+    objections: [
+      {
+        q: "Est-il trop tard une fois la procédure engagée ?",
+        a: "Pas nécessairement. Tant que la date d’adjudication n’est pas atteinte, une vente de gré à gré peut souvent rester la meilleure solution. Nous pouvons l’évaluer rapidement.",
+      },
+      {
+        q: "Quelqu’un en aura-t-il connaissance ?",
+        a: "Non. Nous ne commercialisons rien publiquement. Les échanges restent entre vous, nous et – si nécessaire – les parties concernées.",
+      },
+      {
+        q: "Combien coûte le premier examen ?",
+        a: "Rien. Le premier entretien et l’évaluation sont sans engagement et gratuits pour vous.",
+      },
+    ],
+    faqTitle: "Questions fréquentes",
+    faqIntro: "Si votre question ne trouve pas de réponse ici, contactez-nous directement.",
+    faqItems: [
+      {
+        q: "Une vente reste-t-elle possible pendant une procédure de saisie immobilière en cours ?",
+        a: "Dans de nombreux cas oui – tant que la date d’adjudication n’est pas atteinte. Une vente de gré à gré peut rester une meilleure solution que la vente aux enchères à ce stade. Nous l’évaluons rapidement et vous disons honnêtement si c’est réaliste.",
+      },
+      {
+        q: "Que signifie « achat pour notre propre compte » ?",
+        a: "Nous achetons le bien nous-mêmes – pas pour le compte de tiers. Il n’y a aucune commission de courtage, aucune réserve de financement et aucune chaîne d’acheteurs devant encore se décider.",
+      },
+      {
+        q: "À quelle vitesse pouvez-vous réagir ?",
+        a: "Vous recevez généralement une première évaluation en quelques jours. Plus rapidement dans les cas urgents.",
+      },
+      {
+        q: "Qu’advient-il des locataires si le bien est loué ?",
+        a: "Les baux existants sont respectés. Après l’achat, nous endossons le rôle de bailleur – les contrats eux-mêmes ne changent pas.",
+      },
+    ],
+    finalCtaTitle: "Laissez-nous situer votre cas.",
+    finalCtaText:
+      "Un premier entretien confidentiel est sans engagement et gratuit. Nous vous disons honnêtement ce qui est possible – même lorsque le temps presse.",
+    finalCtaButton: "Nous contacter en toute confidentialité",
+  },
+  howItWorks: {
+    heroKicker: "Comment nous travaillons",
+    heroTitle: "Trois domaines d’activité, un même principe.",
+    heroDescription:
+      "Aurelia réunit trois domaines d’activité sous une exigence unique et claire : l’acquisition de créances, la vente de biens issus de notre portefeuille et les coopérations sur projet – chacun structuré avec soin et documenté de manière vérifiable.",
+    heroPrimaryCta: "Discuter de notre approche",
+    heroSecondaryCta: "Voir le processus",
+    heroTrustLine: "Processus structurés · Responsabilités claires · Confidentiel",
+    heroImageAlt: "Environnement professionnel calme et lumineux – symbole de la méthode de travail structurée d’Aurelia",
+    introTitle: "Une exigence, trois voies",
+    introText:
+      "Toutes les activités d’Aurelia reposent sur les mêmes principes : des conditions équitables, une communication transparente et une perspective de long terme. Ce qui diffère, ce n’est pas le principe – c’est la situation de l’interlocuteur.",
+    segmentsTitle: "Nos trois domaines d’activité",
+    segmentsIntro: "Selon la situation, différentes voies s’ouvrent. La logique sous-jacente reste cohérente.",
+    segments: [
+      {
+        title: "Acquisition de créances",
+        desc: "Pour les propriétaires en situation difficile. Nous examinons la constellation, formulons une offre compréhensible et prenons en charge le traitement ordonné.",
+      },
+      {
+        title: "Vente de biens",
+        desc: "Pour les acheteurs intéressés par des biens vérifiés issus de notre portefeuille. Directement du propriétaire, avec une base de prix transparente et sans commission de courtage.",
+      },
+      {
+        title: "Coopérations sur projet",
+        desc: "Pour les partenaires d’affaires à vision de long terme. Convenues individuellement, liées à un projet, confidentielles – sans modèle d’investissement public.",
+      },
+    ],
+    holdTitle: "Détenir en portefeuille – la stratégie sereine",
+    holdIntro:
+      "Tous les biens ne sont pas vendus à court terme. Une partie du portefeuille reste détenue à long terme et développée sereinement.",
+    holdSteps: [
+      { title: "Acquisition", desc: "Reprise examinée selon des critères clairement documentés." },
+      { title: "Structuration", desc: "Valorisation structurelle et juridique lorsque cela est pertinent." },
+      { title: "Location", desc: "Construction de relations locatives stables avec des structures sereines." },
+      { title: "Préservation de la valeur", desc: "Entretien continu et gestion objective." },
+      { title: "Détention à long terme", desc: "Le portefeuille demeure – comme un actif qui croît sereinement." },
+    ],
+    holdNote:
+      "Description de la démarche générale. Les décisions concrètes sont prises exclusivement bien par bien. Les conditions de marché peuvent évoluer.",
+    principlesTitle: "Ce qui vaut pour l’ensemble de nos domaines",
+    principlesIntro: "Quatre principes qui façonnent notre travail – indépendamment du domaine d’activité.",
+    principles: [
+      { title: "Communication transparente", text: "Un langage clair. Aucune promesse que nous ne pourrions tenir." },
+      { title: "Conditions équitables", text: "Des calculs vérifiables fondés sur des chiffres objectifs." },
+      { title: "Documentation rigoureuse", text: "Toutes les étapes sont consignées par écrit et restent vérifiables." },
+      { title: "Perspective de long terme", text: "Pas de spéculation, mais un développement serein et durable." },
+    ],
+    faqTitle: "Questions fréquentes sur notre approche",
+    faqIntro: "Si votre question ne trouve pas de réponse ici, contactez-nous directement.",
+    faqItems: [
+      {
+        q: "En quoi les trois domaines diffèrent-ils au premier contact ?",
+        a: "La question de départ diffère – notre attitude reste la même. Propriétaires, acheteurs et partenaires d’affaires sont abordés de manière objective et confidentielle, sans pression et sans procédure standardisée.",
+      },
+      {
+        q: "Qui décide si un projet se concrétise ?",
+        a: "Les deux parties. Nous examinons la constellation avec soin et ne concluons que des accords viables pour les deux parties.",
+      },
+      {
+        q: "Les biens du portefeuille finissent-ils par être vendus ?",
+        a: "C’est possible, mais ce n’est pas la règle. Pour nous, détenir signifie détenir à long terme. Les ventes n’ont lieu que lorsque cela est pertinent pour la constellation concernée.",
+      },
+      {
+        q: "Comment la confidentialité est-elle garantie ?",
+        a: "Les premiers échanges sont confidentiels par défaut. Le contenu n’est pas transmis. Sur demande, nous travaillons avec des accords de confidentialité.",
+      },
+    ],
+    finalCtaTitle: "Des questions sur notre approche ?",
+    finalCtaText:
+      "Nous nous ferons un plaisir d’expliquer les différentes étapes lors d’un entretien personnel – de manière objective, confidentielle et sans engagement.",
+    finalCtaButton: "Nous contacter sans engagement",
+  },
+  buyers: {
+    heroKicker: "Pour les acheteurs",
+    heroTitle: "Des biens de qualité à des prix transparents.",
+    heroDescription:
+      "Directement issus de notre portefeuille, sans intermédiaire. Biens vérifiés, conditions équitables, processus clairement documenté.",
+    heroPrimaryCta: "Demander une consultation",
+    heroSecondaryCta: "Comment nous procédons",
+    heroTrustLine: "Achat direct · Sans commission de courtage · Accompagnement notarial",
+    heroImageAlt: "Bien résidentiel du portefeuille Aurelia – symbole d’une qualité vérifiée et de conditions transparentes",
+    featuresTitle: "Ce qui vous attend chez Aurelia",
+    featuresIntro:
+      "Aurelia vend uniquement des biens issus de son propre portefeuille. Cela garantit des circuits courts, des responsabilités claires et des conditions transparentes.",
+    features: [
+      { title: "Prix transparents", desc: "Un calcul équitable fondé sur des chiffres vérifiables – sans coûts cachés." },
+      { title: "Aucuns frais de courtage", desc: "Vous achetez directement au propriétaire. La commission de courtage habituelle ne s’applique pas." },
+      { title: "Portefeuille vérifié", desc: "Chaque bien a été examiné, documenté et correctement structuré au préalable." },
+      { title: "Processus clair", desc: "Un déroulement structuré, du premier contact jusqu’à l’acte notarié." },
+    ],
+    portfolioTitle: "Notre offre actuelle",
+    portfolioText:
+      "Aurelia gère un portefeuille régulièrement renouvelé de biens vérifiés dans la région de Düsseldorf. Les biens actuels et leurs détails sont disponibles sur demande.",
+    portfolioCta: "Voir le portefeuille",
+    proofTitle: "Pourquoi acheter directement chez Aurelia",
+    proofIntro: "Quatre points qui font la différence par rapport à une transaction classique avec un courtier.",
+    proofPoints: [
+      { title: "Propriétaire direct", text: "Vous vous entretenez directement avec le vendeur – sans intermédiaire." },
+      { title: "Documents complets", text: "L’extrait de registre foncier, le dossier de présentation et tous les documents pertinents sont disponibles." },
+      { title: "Base de prix réaliste", text: "Nous calculons en accord avec le marché – sans excès." },
+      { title: "Processus fiable", text: "Notaire, rendez-vous, remise – structurés et documentés proprement." },
+    ],
+    stepsTitle: "Comment se déroule l’achat",
+    steps: [
+      { title: "Premier contact", desc: "Vous nous contactez – nous clarifions vos souhaits et le cadre." },
+      { title: "Visite", desc: "Rendez-vous sur place avec les documents complets et une appréciation honnête." },
+      { title: "Négociation", desc: "Échange ouvert sur le prix, les conditions et la date de remise." },
+      { title: "Acte & remise", desc: "Acte notarié, paiement du prix d’achat, remise ordonnée." },
+    ],
+    stepsNote:
+      "Les délais indiqués sont indicatifs. Les conditions concrètes sont discutées exclusivement au cas par cas.",
+    objectionsTitle: "Ce que les acheteurs demandent souvent",
+    objectionsIntro: "Des préoccupations typiques – auxquelles nous répondons de manière objective.",
+    objections: [
+      {
+        q: "Les biens sont-ils réellement vérifiés ?",
+        a: "Oui. Chaque bien du portefeuille est examiné, documenté et – si nécessaire – valorisé sur le plan structurel avant l’acquisition.",
+      },
+      {
+        q: "Sans courtier – qui défend mes intérêts ?",
+        a: "La sécurité juridique est assurée par le notaire, qui accompagne les deux parties de manière neutre. Vous pouvez à tout moment faire appel à vos propres conseillers ou experts.",
+      },
+      {
+        q: "Les prix sont-ils négociables ?",
+        a: "Nous calculons de manière transparente et en accord avec le marché. Dans ce cadre, une négociation objective est bien entendu possible.",
+      },
+    ],
+    faqTitle: "Questions fréquentes",
+    faqIntro: "Si votre question ne trouve pas de réponse ici, contactez-nous directement.",
+    faqItems: [
+      {
+        q: "Quels types de biens Aurelia vend-elle ?",
+        a: "Principalement des biens résidentiels dans la région de Düsseldorf – appartements, immeubles multifamiliaux et biens individuels sélectionnés.",
+      },
+      {
+        q: "Un financement peut-il être organisé via Aurelia ?",
+        a: "Nous ne proposons pas de financement, mais pouvons, sur demande, vous recommander des banques et conseillers en financement expérimentés de notre réseau.",
+      },
+      {
+        q: "En combien de temps une visite est-elle possible ?",
+        a: "En général sous quelques jours après votre demande – selon la disponibilité et la situation du bien.",
+      },
+      {
+        q: "Que se passe-t-il après le rendez-vous notarial ?",
+        a: "Une fois le prix d’achat payé et la propriété transférée, la remise ordonnée du bien a lieu, avec tous les documents pertinents.",
+      },
+    ],
+    finalCtaTitle: "Intéressé(e) par un bien précis ?",
+    finalCtaText:
+      "Parlez-nous de vos souhaits – nous vérifierons quels biens de notre portefeuille pourraient vous convenir.",
+    finalCtaButton: "Nous contacter sans engagement",
+  },
+  partners: {
+    heroKicker: "Pour les partenaires d’affaires",
+    heroTitle: "Des coopérations sur projet dans un cadre clair.",
+    heroDescription:
+      "Dans certains cas, nous examinons des coopérations individuelles liées à un projet. Pas de modèles standards – mais des accords clairement structurés, adaptés à la situation spécifique.",
+    heroPrimaryCta: "Discuter de la constellation",
+    heroSecondaryCta: "Comment nous travaillons",
+    heroTrustLine: "Confidentiel · Au cas par cas · Contact direct avec la direction",
+    heroImageAlt: "Cadre professionnel calme – symbole de coopérations clairement structurées et liées à un projet",
+    legalNoticeLabel: "Remarque",
+    legalNoticeText:
+      "Cette page ne constitue ni une offre publique de produits d’investissement ni une incitation à investir. Tout accord est conclu exclusivement de manière individuelle, liée à un projet, après un examen distinct.",
+    formsTitle: "Formes de coopération possibles",
+    formsIntro:
+      "Chaque coopération naît d’un projet concret. Les constellations suivantes sont les plus fréquentes en pratique.",
+    forms: [
+      { title: "Coopération liée à un projet", desc: "Collaboration autour d’un projet immobilier concret – de l’acquisition à sa réalisation." },
+      { title: "Plusieurs projets", desc: "Accompagnement sur une période plus longue, avec une coordination régulière et sereine sur l’avancement des projets." },
+      { title: "Accord individuel", desc: "Pas de modèles standards. Chaque constellation est élaborée sur la base de la situation concrète." },
+      { title: "Échange direct", desc: "Contact confidentiel avec la direction. Communication claire, coordination objective." },
+    ],
+    principlesTitle: "Les fondements d’une bonne coopération",
+    principlesText: "Nous travaillons avec des partenaires à vision de long terme. Quatre points nous importent.",
+    principles: [
+      { title: "Communication claire", text: "Un échange ouvert sur les objectifs, le cadre et les attentes." },
+      { title: "Perspective de long terme", text: "Pas de spéculation, mais une coopération sereine et durable." },
+      { title: "Cadre fiable", text: "Des conditions stables et prévisibles pour les deux parties." },
+      { title: "Vision partagée", text: "Une compréhension commune d’un travail rigoureux et lié au projet." },
+    ],
+    stepsTitle: "Comment nous procédons",
+    steps: [
+      { title: "Premier contact", desc: "Vous nous décrivez la constellation – en toute confidentialité et sans engagement." },
+      { title: "Évaluation", desc: "Nous examinons si un projet commun est fondamentalement adapté." },
+      { title: "Coordination", desc: "Le contenu, le cadre et les attentes sont discutés en détail." },
+      { title: "Accord", desc: "Nous consignons tout par écrit et correctement." },
+      { title: "Mise en œuvre", desc: "Accompagnement et coordination sereine tout au long du projet." },
+    ],
+    stepsNote:
+      "Les délais indiqués sont des valeurs indicatives. Le contenu et les conditions sont discutés exclusivement au cas par cas.",
+    faqTitle: "Questions fréquentes",
+    faqIntro: "Si votre question ne trouve pas de réponse ici, contactez-nous directement.",
+    faqItems: [
+      { q: "Proposez-vous des modèles de participation standardisés ?", a: "Non. Nous ne proposons ni produits d’investissement publics ni modèles standardisés. Chaque coopération naît de manière individuelle et liée à un projet." },
+      { q: "À qui s’adresse cette page ?", a: "Aux partenaires à vision de long terme en lien avec le secteur immobilier, intéressés par une coopération liée à un projet." },
+      { q: "Comment se déroule le premier contact ?", a: "En toute confidentialité et sans engagement. Vous décrivez la constellation ; nous évaluons si une coopération est fondamentalement adaptée." },
+      { q: "Comment les accords sont-ils documentés ?", a: "Par écrit et de manière rigoureuse. Le contenu, le cadre et les conditions sont discutés exclusivement au cas par cas." },
+    ],
+    finalCtaTitle: "Discutons de la constellation en toute confidentialité.",
+    finalCtaText:
+      "Si une coopération liée à un projet est envisageable pour vous, nous nous réjouissons d’un échange serein et sans engagement.",
+    finalCtaButton: "Nous contacter sans engagement",
+  },
