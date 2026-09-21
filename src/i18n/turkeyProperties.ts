@@ -16,7 +16,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       subtitle: "Sie leben in Deutschland und besitzen eine Wohnung, ein Haus, ein Grundstück oder eine andere Immobilie in der Türkei? Aurelia Grundbesitz unterstützt Sie bei der Prüfung, Bewertung und strukturierten Abwicklung Ihres Immobilienanliegens – mit einem persönlichen Ansprechpartner in Deutschland.",
       primaryCta: "Immobilie unverbindlich anbieten",
       secondaryCta: "Persönlich Kontakt aufnehmen",
-      imageAlt: "Moderne Wohnimmobilie mit Blick auf eine türkische Stadtlandschaft – sinnbildlich für Immobilien in der Türkei und persönliche Betreuung aus Deutschland",
+      imageAlt: "Blick über den Rhein auf die Düsseldorfer Skyline mit Rheinturm und Altstadt – Ihr persönlicher Ansprechpartner in Deutschland für Ihre Immobilie in der Türkei",
     },
     problem: {
       title: "Immobilieneigentum in der Türkei – Abwicklung aus Deutschland",
@@ -113,7 +113,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       subtitle: "Almanya'da yaşıyor ve Türkiye'de bir daire, ev, arsa veya başka bir gayrimenkule mi sahipsiniz? Aurelia Grundbesitz, gayrimenkulünüzün incelenmesi, değerlendirilmesi ve işlemlerin düzenli şekilde yürütülmesi konusunda size Almanya'daki kişisel muhatabınız olarak destek olur.",
       primaryCta: "Gayrimenkulümü sunmak istiyorum",
       secondaryCta: "Bizimle iletişime geçin",
-      imageAlt: "Türkiye'de modern bir konut ve şehir manzarası – Almanya'dan kişisel gayrimenkul desteğini simgeler",
+      imageAlt: "Ren üzerinden Düsseldorf silüeti, Rheinturm ve Altstadt ile – Türkiye'deki gayrimenkulünüz için Almanya'daki kişisel ortağınız",
     },
     problem: {
       title: "Türkiye'deki gayrimenkulünüz – işlemlerinizi Almanya'dan yönetin",
