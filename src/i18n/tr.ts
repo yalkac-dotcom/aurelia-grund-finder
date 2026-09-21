@@ -1,4 +1,5 @@
 import { Translations } from "./types";
+import { turkeyPropertiesTranslations } from "./turkeyProperties";
 
 const tr: Translations = {
   nav: {
@@ -11,6 +12,7 @@ const tr: Translations = {
     contact: "İletişim",
     workApproach: "Çalışma yöntemi",
     ownerInTrouble: "Zor durumdaki mülk sahipleri",
+    turkeyProperties: "Türkiye'deki Gayrimenkuller",
     buyers: "Alıcılar için",
     partners: "İş ortakları için",
     howItWorks: "Nasıl çalışıyoruz",
@@ -35,6 +37,7 @@ const tr: Translations = {
       { label: "Ana Sayfa", path: "/" },
       { label: "Zor Durumdaki Mülk Sahipleri", path: "/fuer-eigentumer-in-not" },
       { label: "Alıcılar İçin", path: "/fuer-kaeufer" },
+      { label: "Türkiye'deki Gayrimenkuller", path: "/immobilien-tuerkei" },
       { label: "İş Ortakları İçin", path: "/fuer-geschaeftspartner" },
       { label: "Portföy", path: "/portfolio" },
       { label: "Aurelia Hakkında", path: "/ueber-uns" },
@@ -1203,6 +1206,7 @@ const tr: Translations = {
       ],
     },
   },
+  turkeyProperties: turkeyPropertiesTranslations.tr,
   faqPage: {
     kicker: "Sık sorulan sorular",
     title: "SSS",

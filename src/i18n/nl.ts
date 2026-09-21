@@ -1,4 +1,5 @@
 import { Translations } from "./types";
+import { turkeyPropertiesTranslations } from "./turkeyProperties";
 
 const nl: Translations = {
   nav: {
@@ -11,6 +12,7 @@ const nl: Translations = {
     contact: "Contact",
     workApproach: "Werkwijze",
     ownerInTrouble: "Eigenaren in nood",
+    turkeyProperties: "Vastgoed in Turkije",
     buyers: "Voor kopers",
     partners: "Voor zakenpartners",
     howItWorks: "Hoe wij werken",
@@ -35,6 +37,7 @@ const nl: Translations = {
       { label: "Home", path: "/" },
       { label: "Eigenaren in nood", path: "/fuer-eigentumer-in-not" },
       { label: "Voor kopers", path: "/fuer-kaeufer" },
+      { label: "Vastgoed in Turkije", path: "/immobilien-tuerkei" },
       { label: "Voor partners", path: "/fuer-geschaeftspartner" },
       { label: "Portfolio", path: "/portfolio" },
       { label: "Over Aurelia", path: "/ueber-uns" },
@@ -1204,6 +1207,7 @@ const nl: Translations = {
       ],
     },
   },
+  turkeyProperties: turkeyPropertiesTranslations.nl,
   faqPage: {
     kicker: "Veelgestelde vragen",
     title: "FAQ",

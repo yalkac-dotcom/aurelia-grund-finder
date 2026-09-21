@@ -1,4 +1,5 @@
 import { Translations } from "./types";
+import { turkeyPropertiesTranslations } from "./turkeyProperties";
 
 const it: Translations = {
   nav: {
@@ -11,6 +12,7 @@ const it: Translations = {
     contact: "Contatti",
     workApproach: "Come lavoriamo",
     ownerInTrouble: "Proprietari in difficoltà",
+    turkeyProperties: "Immobili in Turchia",
     buyers: "Per acquirenti",
     partners: "Per partner commerciali",
     howItWorks: "Come lavoriamo",
@@ -35,6 +37,7 @@ const it: Translations = {
       { label: "Home", path: "/" },
       { label: "Proprietari in difficoltà", path: "/fuer-eigentumer-in-not" },
       { label: "Per acquirenti", path: "/fuer-kaeufer" },
+      { label: "Immobili in Turchia", path: "/immobilien-tuerkei" },
       { label: "Per partner", path: "/fuer-geschaeftspartner" },
       { label: "Portfolio", path: "/portfolio" },
       { label: "Chi è Aurelia", path: "/ueber-uns" },
@@ -1203,6 +1206,7 @@ const it: Translations = {
       ],
     },
   },
+  turkeyProperties: turkeyPropertiesTranslations.it,
   faqPage: {
     kicker: "Domande frequenti",
     title: "FAQ",

@@ -49,6 +49,7 @@ const Header = () => {
     { label: t.nav.home, path: "/" },
     { label: t.nav.ownerInTrouble, path: "/fuer-eigentumer-in-not" },
     { label: t.nav.buyers, path: "/fuer-kaeufer" },
+    { label: t.nav.turkeyProperties, path: "/immobilien-tuerkei" },
     { label: t.nav.partners, path: "/fuer-geschaeftspartner" },
     { label: t.nav.howItWorks, path: "/wie-es-funktioniert" },
     { label: t.nav.about, path: "/ueber-uns" },
@@ -88,8 +89,8 @@ const Header = () => {
           />
         </Link>
 
-        <div className="hidden md:flex items-baseline gap-9">
-          <nav className="flex items-baseline gap-9">
+        <div className="hidden md:flex items-baseline gap-5 xl:gap-9">
+          <nav className="flex items-baseline gap-5 xl:gap-9">
             {navItems.map((item) =>
               item.hash ? (
                 <button

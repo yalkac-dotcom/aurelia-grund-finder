@@ -1,3 +1,58 @@
+export interface TurkeyPropertiesTranslations {
+  seoTitle: string;
+  seoDescription: string;
+  teaser: { eyebrow: string; title: string; text: string; button: string };
+  hero: { kicker: string; title: string; subtitle: string; primaryCta: string; secondaryCta: string; imageAlt: string };
+  problem: { title: string; paragraphs: string[] };
+  servicesTitle: string;
+  servicesIntro: string;
+  services: { title: string; text: string }[];
+  propertyTypesTitle: string;
+  propertyTypesIntro: string;
+  propertyTypes: string[];
+  propertyTypesExtra: string;
+  processTitle: string;
+  process: { title: string; text: string }[];
+  trust: { title: string; text: string; points: string[] };
+  form: {
+    title: string;
+    intro: string;
+    requiredHint: string;
+    fullName: string;
+    phone: string;
+    email: string;
+    preferredLanguage: string;
+    propertyType: string;
+    provinceCity: string;
+    district: string;
+    area: string;
+    rooms: string;
+    yearBuilt: string;
+    rented: string;
+    ownership: string;
+    priceExpectation: string;
+    description: string;
+    files: string;
+    uploadHelp: string;
+    privacy: string;
+    privacyLink: string;
+    button: string;
+    submitting: string;
+    successTitle: string;
+    successText: string;
+    errorText: string;
+    validationError: string;
+    fileError: string;
+    selectPlaceholder: string;
+    languageOptions: string[];
+    propertyTypeOptions: string[];
+    rentedOptions: string[];
+    ownershipOptions: string[];
+  };
+  cta: { title: string; text: string; primary: string; secondary: string };
+  legalNotice: string;
+}
+
 export type Language = "de" | "en" | "it" | "es" | "tr" | "nl";
 
 export interface Translations {
@@ -12,6 +67,7 @@ export interface Translations {
     workApproach: string;
     ownerInTrouble: string;
     buyers: string;
+    turkeyProperties: string;
     partners: string;
     howItWorks: string;
     faq: string;
@@ -227,6 +283,7 @@ export interface Translations {
     finalCtaText: string;
     finalCtaButton: string;
   };
+  turkeyProperties: TurkeyPropertiesTranslations;
   ownerInTrouble: {
     heroKicker: string;
     heroTitle: string;
