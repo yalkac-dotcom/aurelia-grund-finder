@@ -4,7 +4,6 @@ import {
   STORAGE_KEY,
   fetchCountry,
   languageForCountry,
-  languageFromBrowser,
   resolveInitialLanguage,
 } from "./languageDetection";
 import de from "./de";
