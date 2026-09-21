@@ -2,3 +2,4 @@
 - Navigation item and homepage teaser: complete.
 - Secure uploads, saved enquiries, and email delivery connection: complete.
 - Desktop, mobile, and language checks: complete.
+- Turkey-page wording, active-language default, and localized upload control: in progress.
