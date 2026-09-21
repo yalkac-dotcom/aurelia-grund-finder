@@ -1,10 +1,3 @@
-- Turkey real estate business page in all six languages: complete.
-- Navigation item and homepage teaser: complete.
-- Secure uploads, saved enquiries, and email delivery connection: complete.
-- Desktop, mobile, and language checks: complete.
-- Turkey-page wording, active-language default, and localized upload control: complete.
-- Final six-language quality control, direct-purchase positioning, and form verification: complete.
-- Desktop header navigation labels, spacing, and responsive breakpoint: complete.
-- Separate internal/customer email status handling, Yahoo diagnosis, and six-language delivery verification: complete.
+# Roadmap
 
-- Über-uns-Seite: neue Bildsprache, Inhalte, sechs Sprachen, SEO und Responsive-Prüfung: complete.
+- [ ] Vollständige Sprach-Endabnahme für alle aktiven Sprachen und Routen
