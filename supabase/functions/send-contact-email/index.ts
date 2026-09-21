@@ -346,7 +346,7 @@ Web: www.aureliaestates.de`;
 <html lang="de"><head><meta charset="utf-8"></head>
 <body style="margin:0;padding:0;background:#ffffff;font-family:Arial,sans-serif;color:#1a2238;">
   <div style="max-width:600px;margin:0 auto;padding:32px 24px;">
-    <h2 style="font-size:18px;margin:0 0 18px;">Neue Kontaktanfrage</h2>
+    <h2 style="font-size:18px;margin:0 0 18px;">${notifyHeadline}</h2>
     <table style="width:100%;border-collapse:collapse;font-size:14px;">
       <tr><td style="padding:6px 0;color:#6b7280;width:180px;">Name</td><td style="padding:6px 0;">${name}</td></tr>
       <tr><td style="padding:6px 0;color:#6b7280;">E-Mail</td><td style="padding:6px 0;"><a href="mailto:${email}">${email}</a></td></tr>
