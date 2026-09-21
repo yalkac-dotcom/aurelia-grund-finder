@@ -57,7 +57,7 @@ export interface TurkeyPropertiesTranslations {
   legalNotice: string;
 }
 
-export type Language = "de" | "en" | "it" | "es" | "tr" | "nl";
+export type Language = "de" | "en" | "it" | "es" | "tr" | "nl" | "fr";
 
 export interface Translations {
   nav: {
