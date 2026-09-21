@@ -165,7 +165,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       ownership: "Tapuda malik olarak kayıtlı mısınız?",
       priceExpectation: "Fiyat beklentiniz",
       description: "Açıklama / ek bilgiler",
-      files: "Tapu, fotoğraf ve belgeleri yükleyin",
+      files: "Tapu, fotoğraf veya belge yükleyin",
       uploadHelp: "Birden fazla dosya yüklenebilir: PDF, JPG, JPEG veya PNG. Dosya başına en fazla 10 MB.",
       uploadChoose: "Dosya seç",
       uploadEmpty: "Henüz dosya seçilmedi",
