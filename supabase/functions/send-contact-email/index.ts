@@ -50,7 +50,7 @@ const LANGUAGE_ALIASES: Record<string, Locale> = {
   deutsch: "de", german: "de", duits: "de", tedesco: "de", alemán: "de", aleman: "de", almanca: "de",
   english: "en", englisch: "en", engels: "en", inglese: "en", inglés: "en", ingles: "en", ingilizce: "en", "i̇ngilizce": "en",
   nederlands: "nl", niederländisch: "nl", niederlaendisch: "nl", dutch: "nl", olandese: "nl", neerlandés: "nl", neerlandes: "nl", felemenkçe: "nl",
-  italiano: "it", italienisch: "it", italian: "it", italiaans: "it", italiano_es: "it", italyanca: "it",
+  italiano: "it", italienisch: "it", italian: "it", italiaans: "it", italyanca: "it",
   español: "es", espanol: "es", spanisch: "es", spanish: "es", spaans: "es", spagnolo: "es", "i̇spanyolca": "es", ispanyolca: "es",
   türkçe: "tr", turkce: "tr", türkisch: "tr", turkish: "tr", turks: "tr", turco: "tr",
 };
