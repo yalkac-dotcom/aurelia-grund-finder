@@ -79,8 +79,8 @@ const Header = () => {
 
   return (
     <header className={headerClass}>
-      <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="flex items-center">
+      <div className="mx-auto flex h-16 w-full max-w-[1600px] items-center justify-between px-6 md:h-20 xl:px-8">
+        <Link to="/" className="flex shrink-0 items-center">
           <img
             src={logoImg}
             alt="Aurelia Grundbesitz GmbH"
@@ -89,14 +89,14 @@ const Header = () => {
           />
         </Link>
 
-        <div className="hidden md:flex items-baseline gap-5 xl:gap-9">
-          <nav className="flex items-baseline gap-5 xl:gap-9">
+        <div className="ml-8 hidden min-w-0 flex-1 items-center gap-5 xl:flex 2xl:ml-12 2xl:gap-7">
+          <nav className="flex min-w-0 flex-1 items-center justify-between gap-2.5 2xl:gap-5">
             {navItems.map((item) =>
               item.hash ? (
                 <button
                   key={item.label}
                   onClick={() => handleHashNav(item)}
-                  className="text-[12px] tracking-wide text-primary/75 hover:text-accent transition-colors duration-300 leading-none min-h-0 min-w-0"
+                  className="min-h-0 min-w-0 whitespace-nowrap text-[12px] leading-none tracking-wide text-primary/75 transition-colors duration-300 hover:text-accent 2xl:text-sm"
                 >
                   {item.label}
                 </button>
@@ -104,7 +104,7 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-[12px] tracking-wide transition-colors duration-300 leading-none hover:text-accent ${
+                  className={`whitespace-nowrap text-[12px] leading-none tracking-wide transition-colors duration-300 hover:text-accent 2xl:text-sm ${
                     isActive(item)
                       ? "text-primary font-medium border-b-2 border-accent pb-0.5"
                       : "text-primary/75"
@@ -115,18 +115,18 @@ const Header = () => {
               )
             )}
           </nav>
-          <div className="ml-3 pl-5 border-l border-border/60">
+          <div className="flex shrink-0 items-center border-l border-border/60 pl-5">
             <LanguageSwitcher />
           </div>
           <Link
             to="/kontakt"
-            className="ml-2 inline-flex items-center px-5 py-2.5 text-[11px] font-semibold tracking-[0.12em] uppercase btn-gradient rounded-sm transition-all duration-300"
+            className="inline-flex shrink-0 items-center whitespace-nowrap px-5 py-2.5 text-[11px] font-semibold tracking-[0.12em] uppercase btn-gradient rounded-sm transition-all duration-300"
           >
             {t.nav.ctaConfidential}
           </Link>
         </div>
 
-        <div className="md:hidden flex items-center gap-3">
+        <div className="flex items-center gap-3 min-[1360px]:hidden">
           <LanguageSwitcher />
           <button
             className="p-1.5 text-primary"
@@ -140,7 +140,7 @@ const Header = () => {
 
       {mobileOpen && typeof document !== "undefined" &&
         createPortal(
-          <div className="md:hidden fixed inset-0 z-[9999]">
+          <div className="fixed inset-0 z-[9999] min-[1360px]:hidden">
             {/* Backdrop */}
             <div
               className="absolute inset-0 bg-black/60"

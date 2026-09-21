@@ -11,13 +11,13 @@ const es: Translations = {
     glossar: "Glosario",
     contact: "Contacto",
     workApproach: "Método de trabajo",
-    ownerInTrouble: "Propietarios en apuros",
-    turkeyProperties: "Inmuebles en Turquía",
-    buyers: "Para compradores",
-    partners: "Para socios comerciales",
-    howItWorks: "Cómo trabajamos",
+    ownerInTrouble: "Propietarios",
+    turkeyProperties: "Turquía",
+    buyers: "Compradores",
+    partners: "Socios",
+    howItWorks: "Método",
     faq: "FAQ",
-    ctaConfidential: "Consulta confidencial",
+    ctaConfidential: "Contacto",
   },
   footer: {
     navigation: "Navegación",
@@ -41,7 +41,7 @@ const es: Translations = {
       { label: "Para socios", path: "/fuer-geschaeftspartner" },
       { label: "Portafolio", path: "/portfolio" },
       { label: "Sobre Aurelia", path: "/ueber-uns" },
-      { label: "Cómo trabajamos", path: "/wie-es-funktioniert" },
+      { label: "Método", path: "/wie-es-funktioniert" },
       { label: "Contacto", path: "/kontakt" },
     ],
     legalItems: [
@@ -235,7 +235,7 @@ const es: Translations = {
     refBeforeLabel: "Situación inicial",
     refAfterLabel: "Medida",
     refResultLabel: "Resultado",
-    processLabel: "Cómo trabajamos",
+    processLabel: "Método",
     processTitle: "Estructurado, confidencial, comprensible",
     processSubtitle: "Desde el primer contacto hasta el siguiente paso concreto.",
     processSteps: [
@@ -306,7 +306,7 @@ const es: Translations = {
     heroTitle: "Cuando un inmueble se convierte en una carga, no necesita un intermediario, sino un comprador.",
     heroDescription: "Subasta judicial, presión de acreedores, comunidades hereditarias bloqueadas: compramos su inmueble por cuenta propia — discreto, estructurado, vinculante.",
     heroPrimaryCta: "Primera valoración gratuita",
-    heroSecondaryCta: "Cómo trabajamos",
+    heroSecondaryCta: "Método",
     heroTrustLine: "Sin compromiso · Respuesta personal en 2 días laborables",
     areasLabel: "Servicios",
     areasTitle: "Tres formas en que aliviamos a los propietarios",
@@ -361,7 +361,7 @@ const es: Translations = {
     heroDescription:
       "Aurelia analiza con confidencialidad situaciones difíciles de propiedad – también cuando ya está en curso un procedimiento de subasta judicial. Escuchamos, ordenamos la situación y decimos honestamente qué es posible.",
     heroPrimaryCta: "Consulta confidencial",
-    heroSecondaryCta: "Cómo trabajamos",
+    heroSecondaryCta: "Método",
     heroTrustLine: "Discreto · Por cuenta propia · Sin comisión de agencia",
     heroImageAlt: "Calle residencial tranquila con un edificio plurifamiliar bien cuidado – símbolo de soluciones discretas en situaciones especiales de propiedad",
     situationsTitle: "Situaciones en las que podemos ayudar",
@@ -413,7 +413,7 @@ const es: Translations = {
     finalCtaButton: "Consulta confidencial",
   },
   howItWorks: {
-    heroKicker: "Cómo trabajamos",
+    heroKicker: "Método",
     heroTitle: "Tres ámbitos de actividad, un principio común.",
     heroDescription:
       "Aurelia agrupa tres ámbitos bajo una misma exigencia clara: compra de créditos, venta de inmuebles desde nuestro portafolio y cooperaciones por proyecto – todos ellos estructurados con orden y documentados de forma verificable.",
@@ -571,7 +571,7 @@ const es: Translations = {
     heroDescription:
       "En casos seleccionados examinamos cooperaciones individuales y por proyecto. Sin modelos estándar – sino acuerdos claramente estructurados que se ajustan a la situación concreta.",
     heroPrimaryCta: "Conversar sobre la constelación",
-    heroSecondaryCta: "Cómo trabajamos",
+    heroSecondaryCta: "Método",
     heroTrustLine: "Confidencial · Caso por caso · Contacto directo con la dirección",
     heroImageAlt: "Entorno profesional sereno – símbolo de cooperaciones por proyecto claramente estructuradas",
     legalNoticeLabel: "Aviso",

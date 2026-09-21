@@ -3,21 +3,21 @@ import { turkeyPropertiesTranslations } from "./turkeyProperties";
 
 const nl: Translations = {
   nav: {
-    home: "Startpagina",
+    home: "Start",
     about: "Over Aurelia",
     services: "Diensten",
     taxBenefits: "Belastingvoordelen",
     investors: "Voor investeerders",
     glossar: "Glossarium",
     contact: "Contact",
-    workApproach: "Werkwijze",
-    ownerInTrouble: "Eigenaren in nood",
-    turkeyProperties: "Vastgoed in Turkije",
-    buyers: "Voor kopers",
-    partners: "Voor zakenpartners",
-    howItWorks: "Hoe wij werken",
+    workApproach: "Proces",
+    ownerInTrouble: "Eigenaren",
+    turkeyProperties: "Turkije",
+    buyers: "Kopers",
+    partners: "Partner",
+    howItWorks: "Proces",
     faq: "FAQ",
-    ctaConfidential: "Vertrouwelijk aanvragen",
+    ctaConfidential: "Contact",
   },
   footer: {
     navigation: "Navigatie",
@@ -236,7 +236,7 @@ const nl: Translations = {
     refBeforeLabel: "Uitgangssituatie",
     refAfterLabel: "Aanpak",
     refResultLabel: "Resultaat",
-    processLabel: "Werkwijze",
+    processLabel: "Proces",
     processTitle: "Gestructureerd, vertrouwelijk, navolgbaar",
     processSubtitle: "Van het eerste contact tot de volgende concrete stap.",
     processSteps: [
