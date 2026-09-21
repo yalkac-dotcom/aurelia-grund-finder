@@ -29,11 +29,21 @@ const countryLanguageMap: Record<string, Language> = {
   SG: "en", MT: "en", NG: "en", KE: "en", GH: "en", PH: "en", JM: "en", TT: "en",
 };
 
+/**
+ * Multilingual countries: never assign French (or any single language) from the IP alone.
+ * A supported browser language decides here; otherwise the default mapping above applies.
+ */
+const MULTILINGUAL_COUNTRIES = new Set(["BE", "CH", "LU", "CA"]);
+
 /** Unknown/unmapped country -> English (per spec). */
 export const languageForCountry = (country?: string | null): Language | null => {
   if (!country) return null;
   const code = country.trim().toUpperCase();
   if (code.length !== 2) return null;
+  if (MULTILINGUAL_COUNTRIES.has(code)) {
+    const fromBrowser = languageFromBrowser();
+    if (fromBrowser) return fromBrowser;
+  }
   return countryLanguageMap[code] ?? "en";
 };
 
