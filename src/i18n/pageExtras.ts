@@ -151,4 +151,5 @@ export const taxExternalLinkLabels: Record<Language, {
   it: { afa: ["Ministero federale delle Finanze", "Ufficio delle imposte (ELSTER)"], energy: ["Ministero federale delle Finanze", "Ministero federale – Efficienza energetica"], kfw: ["Banca di sviluppo KfW", "Ricerca prodotti KfW"], bafa: ["BAFA", "Panoramica degli incentivi BAFA"] },
   es: { afa: ["Ministerio Federal de Finanzas", "Agencia tributaria (ELSTER)"], energy: ["Ministerio Federal de Finanzas", "Ministerio Federal – Eficiencia energética"], kfw: ["Banco de desarrollo KfW", "Buscador de productos KfW"], bafa: ["BAFA", "Resumen de ayudas BAFA"] },
   tr: { afa: ["Federal Maliye Bakanlığı", "Vergi dairesi (ELSTER)"], energy: ["Federal Maliye Bakanlığı", "Federal Bakanlık – Enerji verimliliği"], kfw: ["KfW kalkınma bankası", "KfW ürün arama"], bafa: ["BAFA", "BAFA teşvik programları"] },
+  fr: { afa: ["Ministère fédéral des Finances", "Administration fiscale (ELSTER)"], energy: ["Ministère fédéral des Finances", "Ministère fédéral – Efficacité énergétique"], kfw: ["Banque de développement KfW", "Recherche de produits KfW"], bafa: ["BAFA", "Aperçu des aides BAFA"] },
 };
