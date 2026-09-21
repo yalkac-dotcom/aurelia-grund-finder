@@ -574,7 +574,7 @@ const nl: Translations = {
     heroPrimaryCta: "Constellatie bespreken",
     heroSecondaryCta: "Hoe wij werken",
     heroTrustLine: "Vertrouwelijk · Per geval · Direct contact met de directie",
-    heroImageAlt: "Rustige zakelijke setting – symbool voor helder gestructureerde, projectgerichte samenwerkingen",
+    heroImageAlt: "Statig pand en modern kantoorgebouw in helder licht – symbool voor helder gestructureerde, projectgerichte samenwerkingen",
     legalNoticeLabel: "Let op",
     legalNoticeText:
       "Deze pagina vormt geen openbaar aanbod van beleggingen en geen uitnodiging tot investering. Eventuele afspraken vinden uitsluitend individueel en projectgericht plaats, na afzonderlijke beoordeling.",

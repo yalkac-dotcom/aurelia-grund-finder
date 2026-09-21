@@ -573,7 +573,7 @@ const tr: Translations = {
     heroPrimaryCta: "Yapıyı görüşelim",
     heroSecondaryCta: "Nasıl çalışıyoruz",
     heroTrustLine: "Gizli · Vakaya özel · Yönetimle doğrudan temas",
-    heroImageAlt: "Sakin bir iş ortamı – net biçimde yapılandırılmış, projeye dayalı işbirliklerinin simgesi",
+    heroImageAlt: "Aydınlık ışıkta tarihi bir bina ve modern bir ofis binası – net biçimde yapılandırılmış, projeye dayalı işbirliklerinin simgesi",
     legalNoticeLabel: "Not",
     legalNoticeText:
       "Bu sayfa, kamuya açık bir yatırım ürünü teklifi veya yatırıma davet niteliği taşımaz. Olası mutabakatlar yalnızca bireysel olarak, projeye dayalı şekilde ve ayrı bir değerlendirme sonrasında yapılır.",

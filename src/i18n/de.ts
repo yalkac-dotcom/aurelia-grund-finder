@@ -623,7 +623,7 @@ const de: Translations = {
     heroPrimaryCta: "Konstellation besprechen",
     heroSecondaryCta: "Wie wir vorgehen",
     heroTrustLine: "Vertraulich · Im Einzelfall · Direkter Kontakt zur Geschäftsleitung",
-    heroImageAlt: "Ruhige Geschäftsumgebung – sinnbildlich für klar strukturierte, projektbezogene Kooperationen",
+    heroImageAlt: "Gepflegter Altbau und modernes Bürogebäude in hellem Licht – sinnbildlich für klar strukturierte, projektbezogene Kooperationen",
     legalNoticeLabel: "Hinweis",
     legalNoticeText:
       "Diese Seite stellt kein öffentliches Angebot von Vermögensanlagen und keine Aufforderung zur Investition dar. Etwaige Vereinbarungen erfolgen ausschließlich individuell, projektbezogen und nach gesonderter Prüfung.",

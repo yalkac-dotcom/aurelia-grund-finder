@@ -606,7 +606,7 @@ const en: Translations = {
     heroPrimaryCta: "Discuss the constellation",
     heroSecondaryCta: "How we work",
     heroTrustLine: "Confidential · Case-by-case · Direct contact with management",
-    heroImageAlt: "Quiet business setting – symbolising clearly structured, project-based cooperations",
+    heroImageAlt: "Elegant period building and modern office building in bright light – symbolising clearly structured, project-based cooperations",
     legalNoticeLabel: "Note",
     legalNoticeText:
       "This page does not constitute a public offer of investment products or an invitation to invest. Any agreements are made exclusively on an individual, project-based basis after a separate review.",
