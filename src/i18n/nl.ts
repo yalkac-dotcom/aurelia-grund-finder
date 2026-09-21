@@ -494,7 +494,7 @@ const nl: Translations = {
     heroPrimaryCta: "Advies aanvragen",
     heroSecondaryCta: "Hoe wij werken",
     heroTrustLine: "Directe aankoop · Zonder makelaarscourtage · Notariële begeleiding",
-    heroImageAlt: "Goed onderhouden appartementengebouw in een rustige woonwijk, helder daglicht – gecontroleerde kwaliteit en transparante voorwaarden",
+    heroImageAlt: "Woonobject uit de Aurelia-portefeuille – symbool voor gecontroleerde kwaliteit en transparante voorwaarden",
     featuresTitle: "Wat u bij Aurelia kunt verwachten",
     featuresIntro:
       "Aurelia verkoopt uitsluitend objecten uit de eigen portefeuille. Dat zorgt voor korte lijnen, duidelijke verantwoordelijkheden en transparante voorwaarden.",
@@ -574,7 +574,7 @@ const nl: Translations = {
     heroPrimaryCta: "Constellatie bespreken",
     heroSecondaryCta: "Hoe wij werken",
     heroTrustLine: "Vertrouwelijk · Per geval · Direct contact met de directie",
-    heroImageAlt: "Statig pand en modern kantoorgebouw in helder licht – symbool voor helder gestructureerde, projectgerichte samenwerkingen",
+    heroImageAlt: "Rustige zakelijke setting – symbool voor helder gestructureerde, projectgerichte samenwerkingen",
     legalNoticeLabel: "Let op",
     legalNoticeText:
       "Deze pagina vormt geen openbaar aanbod van beleggingen en geen uitnodiging tot investering. Eventuele afspraken vinden uitsluitend individueel en projectgericht plaats, na afzonderlijke beoordeling.",

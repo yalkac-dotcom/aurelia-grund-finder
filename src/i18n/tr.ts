@@ -493,7 +493,7 @@ const tr: Translations = {
     heroPrimaryCta: "Görüşme talep edin",
     heroSecondaryCta: "Nasıl çalışıyoruz",
     heroTrustLine: "Doğrudan satın alma · Emlakçı komisyonu yok · Noter eşliğinde",
-    heroImageAlt: "Sakin bir konut bölgesinde bakımlı apartman binası, aydınlık gün ışığı – incelenmiş kalite ve şeffaf koşullar",
+    heroImageAlt: "Aurelia portföyünden bir konut – incelenmiş kalite ve şeffaf koşulların simgesi",
     featuresTitle: "Aurelia'da sizi neler bekliyor",
     featuresIntro:
       "Aurelia yalnızca kendi portföyündeki gayrimenkulleri satar. Bu, kısa süreçler, net sorumluluklar ve şeffaf koşullar sağlar.",
@@ -573,7 +573,7 @@ const tr: Translations = {
     heroPrimaryCta: "Yapıyı görüşelim",
     heroSecondaryCta: "Nasıl çalışıyoruz",
     heroTrustLine: "Gizli · Vakaya özel · Yönetimle doğrudan temas",
-    heroImageAlt: "Aydınlık ışıkta tarihi bir bina ve modern bir ofis binası – net biçimde yapılandırılmış, projeye dayalı işbirliklerinin simgesi",
+    heroImageAlt: "Sakin bir iş ortamı – net biçimde yapılandırılmış, projeye dayalı işbirliklerinin simgesi",
     legalNoticeLabel: "Not",
     legalNoticeText:
       "Bu sayfa, kamuya açık bir yatırım ürünü teklifi veya yatırıma davet niteliği taşımaz. Olası mutabakatlar yalnızca bireysel olarak, projeye dayalı şekilde ve ayrı bir değerlendirme sonrasında yapılır.",

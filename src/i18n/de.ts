@@ -542,7 +542,7 @@ const de: Translations = {
     heroPrimaryCta: "Beratung anfragen",
     heroSecondaryCta: "Wie wir vorgehen",
     heroTrustLine: "Direkter Ankauf · Ohne Maklerprovision · Notarielle Begleitung",
-    heroImageAlt: "Gepflegtes Mehrfamilienhaus in ruhiger Wohnlage, helles Tageslicht – geprüfte Qualität und transparente Konditionen",
+    heroImageAlt: "Wohnimmobilie aus dem Aurelia-Bestand – sinnbildlich für geprüfte Qualität und transparente Konditionen",
     featuresTitle: "Was Sie bei Aurelia erwartet",
     featuresIntro:
       "Aurelia verkauft ausschließlich Objekte aus dem eigenen Bestand. Das schafft kurze Wege, klare Verantwortlichkeiten und transparente Konditionen.",
@@ -623,7 +623,7 @@ const de: Translations = {
     heroPrimaryCta: "Konstellation besprechen",
     heroSecondaryCta: "Wie wir vorgehen",
     heroTrustLine: "Vertraulich · Im Einzelfall · Direkter Kontakt zur Geschäftsleitung",
-    heroImageAlt: "Gepflegter Altbau und modernes Bürogebäude in hellem Licht – sinnbildlich für klar strukturierte, projektbezogene Kooperationen",
+    heroImageAlt: "Ruhige Geschäftsumgebung – sinnbildlich für klar strukturierte, projektbezogene Kooperationen",
     legalNoticeLabel: "Hinweis",
     legalNoticeText:
       "Diese Seite stellt kein öffentliches Angebot von Vermögensanlagen und keine Aufforderung zur Investition dar. Etwaige Vereinbarungen erfolgen ausschließlich individuell, projektbezogen und nach gesonderter Prüfung.",

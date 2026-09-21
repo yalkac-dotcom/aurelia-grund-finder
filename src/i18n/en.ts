@@ -526,7 +526,7 @@ const en: Translations = {
     heroPrimaryCta: "Request a consultation",
     heroSecondaryCta: "How we proceed",
     heroTrustLine: "Direct purchase · No agent commission · Notarial support",
-    heroImageAlt: "Well-maintained apartment building in a quiet residential area, bright daylight – vetted quality and transparent terms",
+    heroImageAlt: "Residential property from the Aurelia portfolio – representing vetted quality and transparent terms",
     featuresTitle: "What to expect at Aurelia",
     featuresIntro:
       "Aurelia only sells properties from its own portfolio. This ensures short paths, clear responsibilities and transparent terms.",
@@ -606,7 +606,7 @@ const en: Translations = {
     heroPrimaryCta: "Discuss the constellation",
     heroSecondaryCta: "How we work",
     heroTrustLine: "Confidential · Case-by-case · Direct contact with management",
-    heroImageAlt: "Elegant period building and modern office building in bright light – symbolising clearly structured, project-based cooperations",
+    heroImageAlt: "Quiet business setting – symbolising clearly structured, project-based cooperations",
     legalNoticeLabel: "Note",
     legalNoticeText:
       "This page does not constitute a public offer of investment products or an invitation to invest. Any agreements are made exclusively on an individual, project-based basis after a separate review.",

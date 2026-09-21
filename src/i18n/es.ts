@@ -493,7 +493,7 @@ const es: Translations = {
     heroPrimaryCta: "Solicitar asesoramiento",
     heroSecondaryCta: "Cómo procedemos",
     heroTrustLine: "Compra directa · Sin comisión de agencia · Acompañamiento notarial",
-    heroImageAlt: "Edificio residencial cuidado en una zona tranquila, plena luz del día – calidad verificada y condiciones transparentes",
+    heroImageAlt: "Inmueble residencial del portafolio Aurelia – símbolo de calidad verificada y condiciones transparentes",
     featuresTitle: "Lo que puede esperar de Aurelia",
     featuresIntro:
       "Aurelia vende exclusivamente inmuebles de su propio portafolio. Esto garantiza vías cortas, responsabilidades claras y condiciones transparentes.",
@@ -573,7 +573,7 @@ const es: Translations = {
     heroPrimaryCta: "Conversar sobre la constelación",
     heroSecondaryCta: "Método",
     heroTrustLine: "Confidencial · Caso por caso · Contacto directo con la dirección",
-    heroImageAlt: "Edificio clásico y edificio de oficinas moderno con luz clara – símbolo de cooperaciones por proyecto claramente estructuradas",
+    heroImageAlt: "Entorno profesional sereno – símbolo de cooperaciones por proyecto claramente estructuradas",
     legalNoticeLabel: "Aviso",
     legalNoticeText:
       "Esta página no constituye una oferta pública de productos de inversión ni una invitación a invertir. Los eventuales acuerdos se establecen exclusivamente de forma individual y por proyecto, previa revisión específica.",
