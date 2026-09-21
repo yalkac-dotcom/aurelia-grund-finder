@@ -408,8 +408,15 @@ ${body.message}${documentLinksText}`;
       | { accepted: true; id: string; providerStatus: number }
       | { accepted: false; error: string };
     try {
+      if (
+        documentLinks.some((link) => confirmationHtml.includes(link) || confirmationText.includes(link)) ||
+        confirmationHtml.includes("storage/v1") ||
+        confirmationText.includes("storage/v1")
+      ) {
+        throw new Error("Confirmation content guard violated: internal data detected");
+      }
       customerConfirmationResult = await sendEmail({
-        to: [body.email],
+        to: customerRecipients,
         subject: tpl.subject,
         html: confirmationHtml,
         text: confirmationText,
