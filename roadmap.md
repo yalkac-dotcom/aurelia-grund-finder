@@ -1,4 +1,4 @@
-- Add the Turkey real estate business page in all six languages.
-- Add the new navigation item and homepage teaser.
-- Connect the Turkey form to secure uploads, saved enquiries, and existing email delivery.
-- Verify desktop, mobile, and language switching for the new page.
+- Turkey real estate business page in all six languages: complete.
+- Navigation item and homepage teaser: complete.
+- Secure uploads, saved enquiries, and email delivery connection: complete.
+- Desktop, mobile, and language checks: complete.
