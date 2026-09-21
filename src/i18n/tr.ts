@@ -14,10 +14,10 @@ const tr: Translations = {
     ownerInTrouble: "Mülk Sahipleri",
     turkeyProperties: "Türkiye",
     buyers: "Alıcılar",
-    partners: "İş Ortakları",
-    howItWorks: "Nasıl Çalışıyoruz",
+    partners: "Ortaklar",
+    howItWorks: "Süreç",
     faq: "SSS",
-    ctaConfidential: "İLETİŞİM",
+    ctaConfidential: "İletişim",
   },
   footer: {
     navigation: "Navigasyon",

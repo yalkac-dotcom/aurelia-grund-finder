@@ -10,14 +10,14 @@ const it: Translations = {
     investors: "Per investitori",
     glossar: "Glossario",
     contact: "Contatti",
-    workApproach: "Come lavoriamo",
+    workApproach: "Metodo",
     ownerInTrouble: "Proprietari",
     turkeyProperties: "Turchia",
     buyers: "Acquirenti",
     partners: "Partner",
-    howItWorks: "Come lavoriamo",
+    howItWorks: "Metodo",
     faq: "FAQ",
-    ctaConfidential: "Richiesta",
+    ctaConfidential: "Contatti",
   },
   footer: {
     navigation: "Navigazione",
@@ -41,7 +41,7 @@ const it: Translations = {
       { label: "Per partner", path: "/fuer-geschaeftspartner" },
       { label: "Portfolio", path: "/portfolio" },
       { label: "Chi è Aurelia", path: "/ueber-uns" },
-      { label: "Come lavoriamo", path: "/wie-es-funktioniert" },
+      { label: "Metodo", path: "/wie-es-funktioniert" },
       { label: "Contatti", path: "/kontakt" },
     ],
     legalItems: [
@@ -235,7 +235,7 @@ const it: Translations = {
     refBeforeLabel: "Situazione iniziale",
     refAfterLabel: "Intervento",
     refResultLabel: "Risultato",
-    processLabel: "Come lavoriamo",
+    processLabel: "Metodo",
     processTitle: "Strutturato, riservato, comprensibile",
     processSubtitle: "Dal primo contatto al prossimo passo concreto.",
     processSteps: [
@@ -306,7 +306,7 @@ const it: Translations = {
     heroTitle: "Quando un immobile diventa un peso, non vi serve un mediatore — ma un acquirente.",
     heroDescription: "Asta giudiziaria, pressione dei creditori, comunità ereditarie bloccate: acquistiamo il vostro immobile per conto proprio — discreto, strutturato, vincolante.",
     heroPrimaryCta: "Valutazione iniziale gratuita",
-    heroSecondaryCta: "Come lavoriamo",
+    heroSecondaryCta: "Metodo",
     heroTrustLine: "Senza impegno · Risposta personale entro 2 giorni lavorativi",
     areasLabel: "Servizi",
     areasTitle: "Tre modi in cui alleggeriamo i proprietari",
@@ -413,7 +413,7 @@ const it: Translations = {
     finalCtaButton: "Richiesta riservata",
   },
   howItWorks: {
-    heroKicker: "Come lavoriamo",
+    heroKicker: "Metodo",
     heroTitle: "Tre ambiti di attività, un principio comune.",
     heroDescription:
       "Aurelia riunisce tre ambiti sotto un'unica chiara impostazione: acquisto di crediti, vendita di immobili dal proprio portafoglio e cooperazioni progettuali – ciascuno strutturato con cura e documentato in modo verificabile.",

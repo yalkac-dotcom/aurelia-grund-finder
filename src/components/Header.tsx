@@ -89,7 +89,7 @@ const Header = () => {
           />
         </Link>
 
-        <div className="ml-8 hidden min-w-0 flex-1 items-center gap-5 min-[1360px]:flex 2xl:ml-12 2xl:gap-7">
+        <div className="ml-8 hidden min-w-0 flex-1 items-center gap-5 xl:flex 2xl:ml-12 2xl:gap-7">
           <nav className="flex min-w-0 flex-1 items-center justify-between gap-2.5 2xl:gap-5">
             {navItems.map((item) =>
               item.hash ? (
