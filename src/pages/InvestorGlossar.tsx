@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { pageExtras } from "@/i18n/pageExtras";
 import { BookOpen, ArrowLeft, ChevronsUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useState, useRef, useCallback } from "react";
@@ -8,7 +9,7 @@ import { useEffect, useState, useRef, useCallback } from "react";
 const LETTER_BAR_ID = "glossar-letter-bar";
 
 const InvestorGlossar = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const inv = t.investors;
   const letters = inv.glossaryLetters;
   const entries = inv.glossaryEntries;
@@ -174,7 +175,7 @@ const InvestorGlossar = () => {
       {showJump && (
         <button
           onClick={scrollToBar}
-          aria-label="Buchstaben wählen"
+          aria-label={pageExtras[language].accessibility.chooseLetters}
           className="fixed bottom-20 right-14 md:bottom-8 md:right-8 z-40 w-10 h-10 md:w-11 md:h-11 flex items-center justify-center bg-accent/90 text-white border border-accent/60 backdrop-blur-sm shadow-lg hover:bg-accent transition-all duration-300 animate-in fade-in"
         >
           <ChevronsUp size={16} strokeWidth={1.5} />

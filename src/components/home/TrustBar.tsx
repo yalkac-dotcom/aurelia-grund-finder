@@ -8,7 +8,7 @@ const TrustBar = () => {
 
   return (
     <section
-      aria-label="Trust"
+      aria-label={t.home.trustTitle}
       className="w-full"
       style={{ backgroundColor: "#4A7FA5" }}
     >
