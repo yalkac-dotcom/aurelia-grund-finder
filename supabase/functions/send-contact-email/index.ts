@@ -375,7 +375,7 @@ ${body.message}${documentLinksText}`;
     // Erst Benachrichtigung an office@ senden — dies ist kritisch
     await sendEmail({
       to: [NOTIFY_TO],
-      subject: `Neue Kontaktanfrage von ${body.name}`,
+      subject: notifySubject,
       html: notifyHtml,
       text: notifyText,
       reply_to: body.email,
