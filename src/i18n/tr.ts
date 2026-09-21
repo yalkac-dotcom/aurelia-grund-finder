@@ -493,7 +493,7 @@ const tr: Translations = {
     heroPrimaryCta: "Görüşme talep edin",
     heroSecondaryCta: "Nasıl çalışıyoruz",
     heroTrustLine: "Doğrudan satın alma · Emlakçı komisyonu yok · Noter eşliğinde",
-    heroImageAlt: "Aurelia portföyünden bir konut – incelenmiş kalite ve şeffaf koşulların simgesi",
+    heroImageAlt: "Aydınlık gün ışığında bakımlı modern bir konut binası – incelenmiş kalite ve şeffaf koşullar",
     featuresTitle: "Aurelia'da sizi neler bekliyor",
     featuresIntro:
       "Aurelia yalnızca kendi portföyündeki gayrimenkulleri satar. Bu, kısa süreçler, net sorumluluklar ve şeffaf koşullar sağlar.",

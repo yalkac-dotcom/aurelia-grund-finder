@@ -542,7 +542,7 @@ const de: Translations = {
     heroPrimaryCta: "Beratung anfragen",
     heroSecondaryCta: "Wie wir vorgehen",
     heroTrustLine: "Direkter Ankauf · Ohne Maklerprovision · Notarielle Begleitung",
-    heroImageAlt: "Wohnimmobilie aus dem Aurelia-Bestand – sinnbildlich für geprüfte Qualität und transparente Konditionen",
+    heroImageAlt: "Gepflegtes modernes Wohngebäude in hellem Tageslicht – geprüfte Qualität und transparente Konditionen",
     featuresTitle: "Was Sie bei Aurelia erwartet",
     featuresIntro:
       "Aurelia verkauft ausschließlich Objekte aus dem eigenen Bestand. Das schafft kurze Wege, klare Verantwortlichkeiten und transparente Konditionen.",
