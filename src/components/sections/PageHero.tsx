@@ -75,7 +75,7 @@ const PageHero = ({
         {/* Above-the-fold: render synchronously without Reveal so H1 contributes to LCP immediately. */}
         <p className="hero-kicker">{kicker}</p>
         <h1 className="hero-title">{title}</h1>
-        <p className="hero-description max-w-xl">{description}</p>
+        <p className="hero-description max-w-xl whitespace-pre-line">{description}</p>
         {(primaryCta || secondaryCta) && (
           <div className="mt-7 flex flex-row flex-wrap gap-3 items-center sm:gap-4">
             {primaryCta && (

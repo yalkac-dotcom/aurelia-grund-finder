@@ -27,7 +27,7 @@ const SectionHeader = ({ title, intro, align = "center", tone = "light", disable
         </h2>
         {intro && (
           <p
-            className={`mx-auto max-w-2xl text-[0.93rem] leading-[1.85] ${
+            className={`mx-auto max-w-2xl whitespace-pre-line text-[0.93rem] leading-[1.85] ${
               isDark ? "text-white/75" : "text-muted-foreground"
             }`}
           >

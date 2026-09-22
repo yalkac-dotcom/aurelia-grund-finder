@@ -86,9 +86,9 @@ const de: Translations = {
   },
   trustBar: {
     items: [
-      "Diskret & vertraulich",
-      "Persönlicher Ansprechpartner",
-      "Strukturierte Abwicklung",
+      "Persönlich",
+      "Vertraulich",
+      "Direkt",
     ],
   },
   common: {

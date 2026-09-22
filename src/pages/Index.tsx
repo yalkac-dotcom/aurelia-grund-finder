@@ -46,6 +46,11 @@ const HomePage = () => {
     langfristigkeit: icons3d.horizonLight,     // Horizont / Langfristigkeit
     klarheit:        icons3d.checkLight,       // Klare Entscheidung
   };
+  // Bei drei Versprechen entfällt der Langfristigkeits-Schlüssel.
+  const proofKeysActive: ProofKey[] =
+    t.home.proofPoints && t.home.proofPoints.length === 3
+      ? ["diskretion", "substanz", "klarheit"]
+      : proofKeys;
 
   // 3 Schritte – stabile Schlüssel; einheitliche Stilfamilie (Standard, nicht-light),
   // weil keine Light-Variante für magnifier/contract existiert.
@@ -63,7 +68,7 @@ const HomePage = () => {
         imageAlt={extras.accessibility.homeHeroAlt}
         kicker={t.home.heroKicker}
         title={t.home.heroTitle}
-        description={t.home.heroDescription}
+        description={t.home.heroIntro ?? t.home.heroDescription}
         primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/immobilie-anbieten" }}
         secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#ablauf" } : undefined}
         trustLine={t.home.heroTrustLine}
@@ -104,9 +109,9 @@ const HomePage = () => {
 
             {t.home.proofPoints && t.home.proofPoints.length > 0 && (
               <Reveal delay={0.1}>
-                <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+                <div className={`grid gap-5 md:gap-6 sm:grid-cols-2 ${t.home.proofPoints.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"} ${t.home.trustClaimTitle ? "mb-8" : ""}`}>
                   {t.home.proofPoints.map((point, i) => {
-                    const key = proofKeys[i];
+                    const key = proofKeysActive[i];
                     return (
                       <ProofCard
                         key={key}
@@ -122,6 +127,7 @@ const HomePage = () => {
               </Reveal>
             )}
 
+            {t.home.trustClaimTitle && t.home.trustClaimText && (
             <Reveal delay={0.15}>
               <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[260px_1fr] gap-0 overflow-hidden">
                 <div className="relative h-48 md:h-auto min-h-[200px] overflow-hidden">
@@ -145,6 +151,7 @@ const HomePage = () => {
                 </div>
               </div>
             </Reveal>
+            )}
           </div>
         </section>
 
