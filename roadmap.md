@@ -60,7 +60,7 @@
 - [x] Portfolio auf regionale Altformulierungen prüfen
 - [x] Absolute Bestands- und Prüfzusagen auf der Käufer-Seite in sieben Sprachen neutralisieren
 - [x] Startseite, Über uns und Firmendaten gegen die aktuelle Positionierung prüfen
-- [ ] Änderungen in allen sieben Sprachen technisch und sichtbar verifizieren
+- [x] Änderungen in allen sieben Sprachen technisch und sichtbar verifizieren
 
 # Gezielte Inhaltskorrekturen vor Veröffentlichung
 
@@ -69,4 +69,4 @@
 - [x] Portfolio auf regionale Altformulierungen prüfen
 - [x] Absolute Bestands- und Prüfzusagen auf der Käufer-Seite in sieben Sprachen neutralisieren
 - [x] Startseite, Über uns und Firmendaten gegen die aktuelle Positionierung prüfen
-- [ ] Änderungen in allen sieben Sprachen technisch und sichtbar verifizieren
+- [x] Änderungen in allen sieben Sprachen technisch und sichtbar verifizieren
