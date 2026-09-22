@@ -78,3 +78,13 @@
 - [x] Mehrsprachige mobile Anruf-/Angebotsleiste auf passenden Inhaltsseiten vereinheitlichen
 - [x] Rechtliche und unpassende Seiten von der Leiste ausschließen
 - [x] Mobile, Tablet- und Desktopdarstellung sowie Links in sieben Sprachen prüfen
+
+# Sprach-, Link- und Formularprüfung
+
+- [x] Anführungszeichen der Startseitenfragen in sieben Sprachen korrigieren
+- [x] Antwortzeit der Startseite ohne neue Frist sprachlich angleichen
+- [x] Angebotslink auf der Über-uns-Seite korrigieren
+- [x] Deutschen Cookie-Begriff und BfDI-Link korrigieren
+- [x] Eigentümerlinks im italienischen und spanischen Footer neutral benennen
+- [x] Alle Seiten in sieben Sprachen bei 390 px prüfen
+- [x] Beide Formulare samt Pflichtfeldern, Versand und Dateiupload testen
