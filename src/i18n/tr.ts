@@ -693,7 +693,7 @@ const tr: Translations = {
     title: "İletişim",
     subtitle: "Sizin için buradayız",
     hereForYou: "Sizin için buradayız",
-    introText: "Gayrimenkulünüzü bize yazın. 24-48 saat içinde ilk, bağlayıcı bir değerlendirme alacaksınız – ücretsiz, gizli, bağlayıcı değil.",
+    introText: "İster gayrimenkul talebi, ister somut bir konu veya randevu talebi – bize yazın. Size kişisel olarak ve zamanında dönüş yapacağız.",
     salutation: "Hitap",
     firstName: "Ad",
     lastName: "Soyad",

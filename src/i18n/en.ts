@@ -726,7 +726,7 @@ const en: Translations = {
     title: "Contact",
     subtitle: "We are here for you",
     hereForYou: "We are here for you",
-    introText: "Tell us about your property. Within 24-48 hours you will receive an initial, binding assessment – free of charge, discreet, no obligation.",
+    introText: "Whether a property enquiry, a specific matter or an appointment request – write to us. We will get back to you personally and promptly.",
     salutation: "Salutation",
     firstName: "First name",
     lastName: "Last name",

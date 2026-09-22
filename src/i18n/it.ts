@@ -693,7 +693,7 @@ const it: Translations = {
     title: "Contatti",
     subtitle: "Siamo a vostra disposizione",
     hereForYou: "Siamo qui per voi",
-    introText: "Descrivete il vostro immobile. Entro 24-48 ore riceverete una prima valutazione vincolante – gratuita, discreta, senza impegno.",
+    introText: "Che si tratti di una richiesta immobiliare, di un quesito concreto o di una richiesta di appuntamento – scriveteci. Vi ricontatteremo personalmente e tempestivamente.",
     salutation: "Titolo",
     firstName: "Nome",
     lastName: "Cognome",

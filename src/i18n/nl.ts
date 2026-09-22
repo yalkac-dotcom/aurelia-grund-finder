@@ -694,7 +694,7 @@ const nl: Translations = {
     title: "Contact",
     subtitle: "Wij staan voor u klaar",
     hereForYou: "Wij zijn er voor u",
-    introText: "Beschrijf uw vastgoed. Binnen 24-48 uur ontvangt u een eerste, vrijblijvende inschatting – gratis, discreet, zonder verplichting.",
+    introText: "Of het een vastgoedaanvraag, een concreet verzoek of een afspraakverzoek betreft – schrijf ons. Wij nemen persoonlijk en tijdig contact met u op.",
     salutation: "Aanhef",
     firstName: "Voornaam",
     lastName: "Achternaam",

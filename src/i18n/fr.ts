@@ -726,7 +726,7 @@ const fr: Translations = {
     title: "Contact",
     subtitle: "Nous sommes à votre disposition",
     hereForYou: "Nous sommes à votre disposition",
-    introText: "Parlez-nous de votre bien. Sous 24 à 48 heures, vous recevez une première évaluation ferme – gratuite, discrète, sans engagement.",
+    introText: "Qu'il s'agisse d'une demande immobilière, d'un sujet concret ou d'une demande de rendez-vous – écrivez-nous. Nous vous recontacterons personnellement et rapidement.",
     salutation: "Civilité",
     firstName: "Prénom",
     lastName: "Nom",
