@@ -126,11 +126,9 @@ const en: Translations = {
     scrollTopAria: "Scroll to top",
     heroMeta: "Substantial expertise · Owner-led · Long-term perspective",
     initialAssessmentNote: "No obligation · Personal response after initial review",
-    cookieText: "This website uses technically necessary functions. Your consent is required for the integration of external services (e.g. map display).",
+    cookieText: "This website uses technically necessary functions. Analytics services are loaded only after your explicit consent.",
     cookieAccept: "Accept",
     cookieReject: "Decline",
-    mapConsentText: "Google Maps is used to display the map. By loading, you agree to Google's privacy policy.",
-    mapConsentBtn: "Load map",
     cookieTitle: "Cookie Settings",
     skipToContent: "Skip to content",
     cookieSaveSelection: "Save selection",
@@ -522,29 +520,29 @@ const en: Translations = {
     heroKicker: "For Buyers",
     heroTitle: "Quality properties at transparent prices.",
     heroDescription:
-      "Directly from our portfolio, without an agent. Vetted properties, fair terms, clearly documented process.",
+      "Selected properties from our own portfolio and project-based cooperations. Transparent information, fair terms and clearly documented processes.",
     heroPrimaryCta: "Request a consultation",
     heroSecondaryCta: "How we proceed",
-    heroTrustLine: "Direct purchase · No agent commission · Notarial support",
+    heroTrustLine: "Clear terms · Transparent information · Notarial support",
     heroImageAlt: "Residential property from the Aurelia portfolio – representing vetted quality and transparent terms",
     featuresTitle: "What to expect at Aurelia",
     featuresIntro:
-      "Aurelia only sells properties from its own portfolio. This ensures short paths, clear responsibilities and transparent terms.",
+      "Aurelia presents selected properties from its own portfolio as well as offers from project-based cooperations. The origin, contacts and terms are stated transparently for each property.",
     features: [
       { title: "Transparent pricing", desc: "Fair calculation based on verifiable figures – no hidden costs." },
-      { title: "No agent fees", desc: "You buy directly from the owner. The usual agent commission does not apply." },
-      { title: "Vetted portfolio", desc: "Every property has been reviewed, documented and properly structured in advance." },
+      { title: "Clear terms", desc: "Contacts, contractual structure and possible costs are stated transparently for each offer." },
+      { title: "Traceable documents", desc: "The available documentation and review status are stated transparently for each offer." },
       { title: "Clear process", desc: "Structured workflow from initial contact to notarial deed." },
     ],
     portfolioTitle: "Our current offering",
     portfolioText:
-      "Aurelia maintains a regularly updated portfolio of vetted properties in the Düsseldorf region. Current objects and details are available on request.",
+      "Aurelia presents a regularly changing selection from its own portfolio and project-based cooperations in Germany and Turkey. Current properties and details are available on request.",
     portfolioCta: "View portfolio",
     proofTitle: "Why buy directly from Aurelia",
     proofIntro: "Four points that make the difference compared with a classic agent transaction.",
     proofPoints: [
-      { title: "Direct owner", text: "You speak with the seller directly – without intermediaries." },
-      { title: "Complete documents", text: "Land register extract, exposé and all relevant documents are available." },
+      { title: "Clear contacts", text: "For each offer, you are informed who the owner, seller and contact person are." },
+      { title: "Transparent documents", text: "Available property documents and their current status are provided transparently." },
       { title: "Realistic price basis", text: "We calculate in line with the market – not overstretched." },
       { title: "Reliable process", text: "Notary, appointment, handover – cleanly structured and documented." },
     ],
@@ -562,7 +560,7 @@ const en: Translations = {
     objections: [
       {
         q: "Are the properties really vetted?",
-        a: "Yes. Every property in the portfolio is reviewed, documented and – where necessary – structurally improved before acquisition.",
+        a: "The review, documentation and any refurbishment status are stated transparently for each property.",
       },
       {
         q: "Without an agent – who represents my interests?",
@@ -578,7 +576,7 @@ const en: Translations = {
     faqItems: [
       {
         q: "What types of property does Aurelia sell?",
-        a: "Primarily residential properties in the Düsseldorf region – apartments, multi-family houses and selected individual properties.",
+        a: "Selected residential and commercial properties and land from our own portfolio or project-based cooperations in Germany and Turkey, subject to availability.",
       },
       {
         q: "Can financing be arranged through Aurelia?",
@@ -595,7 +593,7 @@ const en: Translations = {
     ],
     finalCtaTitle: "Interested in a specific property?",
     finalCtaText:
-      "Talk to us about your wishes – we will check which properties from our portfolio might suit you.",
+      "Talk to us about your wishes – we will check which current offers might suit you.",
     finalCtaButton: "Get in touch without obligation",
   },
   partners: {
@@ -932,7 +930,7 @@ const en: Translations = {
     contactPrivacyTitle: "11. Data Protection Contact",
     contactPrivacyText: "For questions about data protection, please contact us at:\nEmail: office@aureliaestates.de",
     externalLinksDisclaimer: "This page contains links to third-party websites (including dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). We have no influence over their content. The respective provider or operator is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Permanent content monitoring of the linked pages is not reasonable without concrete evidence of a legal violation. Upon becoming aware of legal violations, we will remove such links immediately.",
-    lastUpdated: "Last updated: March 2026",
+    lastUpdated: "Last updated: September 2026",
   },
   notFound: {
     title: "Page not found",

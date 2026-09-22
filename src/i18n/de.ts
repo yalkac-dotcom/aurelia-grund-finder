@@ -127,11 +127,9 @@ const de: Translations = {
     scrollTopAria: "Nach oben scrollen",
     heroMeta: "Substanzielle Immobilienkompetenz · Inhabergeführt · Langfristige Perspektive",
     initialAssessmentNote: "Kostenlose Ersteinschätzung · Unverbindlich · Persönliche Rückmeldung nach erster Prüfung",
-    cookieText: "Diese Website verwendet technisch notwendige Funktionen. Für die Einbindung externer Dienste (z. B. Kartenanzeige) ist Ihre Zustimmung erforderlich.",
+    cookieText: "Diese Website verwendet technisch notwendige Funktionen. Analysedienste werden nur nach Ihrer ausdrücklichen Zustimmung geladen.",
     cookieAccept: "Akzeptieren",
     cookieReject: "Ablehnen",
-    mapConsentText: "Für die Anzeige der Karte wird Google Maps eingebunden. Mit dem Laden stimmen Sie der Datenschutzerklärung von Google zu.",
-    mapConsentBtn: "Karte laden",
     cookieTitle: "Cookie-Einstellungen",
     skipToContent: "Zum Inhalt springen",
     cookieSaveSelection: "Auswahl speichern",
@@ -538,30 +536,30 @@ const de: Translations = {
     heroKicker: "Für Käufer",
     heroTitle: "Qualitätsimmobilien zu transparenten Preisen.",
     heroDescription:
-      "Direkt aus unserem Bestand, ohne Makler. Geprüfte Objekte, faire Konditionen, klar dokumentierte Abwicklung.",
+      "Ausgewählte Immobilien aus unserem Bestand und aus projektbezogenen Kooperationen. Transparente Angaben, faire Konditionen und klar dokumentierte Abläufe.",
     heroPrimaryCta: "Beratung anfragen",
     heroSecondaryCta: "Wie wir vorgehen",
-    heroTrustLine: "Direkter Ankauf · Ohne Maklerprovision · Notarielle Begleitung",
+    heroTrustLine: "Klare Konditionen · Transparente Angaben · Notarielle Begleitung",
     heroImageAlt: "Wohnimmobilie aus dem Aurelia-Bestand – sinnbildlich für geprüfte Qualität und transparente Konditionen",
     featuresTitle: "Was Sie bei Aurelia erwartet",
     featuresIntro:
-      "Aurelia verkauft ausschließlich Objekte aus dem eigenen Bestand. Das schafft kurze Wege, klare Verantwortlichkeiten und transparente Konditionen.",
+      "Aurelia präsentiert ausgewählte Immobilien aus dem eigenen Bestand sowie Angebote aus projektbezogenen Kooperationen. Herkunft, Ansprechpartner und Konditionen werden beim jeweiligen Objekt transparent ausgewiesen.",
     features: [
       { title: "Transparente Preise", desc: "Faire Kalkulation auf Basis nachvollziehbarer Kennzahlen – ohne versteckte Kosten." },
-      { title: "Keine Maklergebühren", desc: "Sie kaufen direkt vom Eigentümer. Die übliche Maklerprovision entfällt." },
-      { title: "Geprüfter Bestand", desc: "Jedes Objekt wurde im Vorfeld geprüft, dokumentiert und sauber strukturiert." },
+      { title: "Klare Konditionen", desc: "Ansprechpartner, Vertragskonstellation und mögliche Kosten werden beim jeweiligen Angebot transparent dargestellt." },
+      { title: "Nachvollziehbare Unterlagen", desc: "Der verfügbare Dokumentations- und Prüfstand wird für jedes Angebot transparent ausgewiesen." },
       { title: "Klare Abwicklung", desc: "Strukturierter Ablauf vom Erstgespräch bis zur notariellen Beurkundung." },
     ],
     portfolioTitle: "Unser aktuelles Angebot",
     portfolioText:
-      "Aurelia verfügt über ein regelmäßig wechselndes Portfolio geprüfter Immobilien aus dem eigenen Bestand. Aktuelle Objekte und Details erfahren Sie auf Anfrage.",
+      "Aurelia präsentiert eine regelmäßig wechselnde Auswahl aus dem eigenen Bestand und aus projektbezogenen Kooperationen. Aktuelle Objekte und Details erfahren Sie auf Anfrage.",
     portfolioCta: "Zum Portfolio",
     proofTitle: "Warum direkt bei Aurelia kaufen",
     proofIntro:
       "Vier Punkte, die den Unterschied zu einer klassischen Maklertransaktion ausmachen.",
     proofPoints: [
-      { title: "Direkter Eigentümer", text: "Sie sprechen mit dem Verkäufer selbst – ohne Zwischenstation." },
-      { title: "Vollständige Unterlagen", text: "Grundbuchauszug, Exposé und relevante Dokumente liegen vor." },
+      { title: "Klare Ansprechpartner", text: "Sie erfahren beim jeweiligen Angebot, wer Eigentümer, Verkäufer und Ansprechpartner ist." },
+      { title: "Transparente Unterlagen", text: "Verfügbare Objektunterlagen und ihr jeweiliger Stand werden nachvollziehbar bereitgestellt." },
       { title: "Realistische Preisbasis", text: "Wir kalkulieren am Markt orientiert, nicht überreizt." },
       { title: "Verlässliche Abwicklung", text: "Notar, Termin, Übergabe – sauber strukturiert und dokumentiert." },
     ],
@@ -579,7 +577,7 @@ const de: Translations = {
     objections: [
       {
         q: "Sind die Objekte wirklich geprüft?",
-        a: "Ja. Jedes Objekt im Bestand wurde vor dem Ankauf geprüft, dokumentiert und – wo nötig – baulich aufgearbeitet.",
+        a: "Der jeweilige Prüf-, Dokumentations- und gegebenenfalls Aufarbeitungsstand wird objektbezogen transparent ausgewiesen.",
       },
       {
         q: "Ohne Makler – wer vertritt meine Interessen?",
@@ -595,7 +593,7 @@ const de: Translations = {
     faqItems: [
       {
         q: "Welche Objekttypen verkauft Aurelia?",
-        a: "Ausgewählte Wohn- und Gewerbeimmobilien sowie Grundstücke aus dem eigenen Bestand – abhängig von der aktuellen Verfügbarkeit.",
+        a: "Ausgewählte Wohn- und Gewerbeimmobilien sowie Grundstücke aus dem eigenen Bestand oder aus projektbezogenen Kooperationen – abhängig von der aktuellen Verfügbarkeit.",
       },
       {
         q: "Kann ich eine Finanzierung über Aurelia vermittelt bekommen?",
@@ -612,7 +610,7 @@ const de: Translations = {
     ],
     finalCtaTitle: "Interesse an einem konkreten Objekt?",
     finalCtaText:
-      "Sprechen Sie mit uns über Ihre Wünsche – wir prüfen, welche Objekte aus unserem Bestand für Sie passen könnten.",
+      "Sprechen Sie mit uns über Ihre Wünsche – wir prüfen, welche aktuellen Angebote für Sie passen könnten.",
     finalCtaButton: "Unverbindlich Kontakt aufnehmen",
   },
   partners: {
@@ -974,7 +972,7 @@ const de: Translations = {
     contactPrivacyTitle: "11. Kontakt zum Datenschutz",
     contactPrivacyText: "Bei Fragen zum Datenschutz erreichen Sie uns unter:\nE-Mail: office@aureliaestates.de",
     externalLinksDisclaimer: "Diese Seite enthält Links zu externen Websites Dritter (u. a. dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). Auf deren Inhalte haben wir keinen Einfluss. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
-    lastUpdated: "Stand: März 2026",
+    lastUpdated: "Stand: September 2026",
   },
   notFound: {
     title: "Seite nicht gefunden",

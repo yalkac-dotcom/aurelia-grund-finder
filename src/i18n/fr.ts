@@ -126,11 +126,9 @@ const fr: Translations = {
     scrollTopAria: "Revenir en haut",
     heroMeta: "Expertise immobilière solide · Dirigée par son fondateur · Perspective de long terme",
     initialAssessmentNote: "Sans engagement · Réponse personnelle après un premier examen",
-    cookieText: "Ce site utilise des fonctions techniquement nécessaires. Votre consentement est requis pour l’intégration de services externes (par ex. l’affichage de cartes).",
+    cookieText: "Ce site utilise des fonctions techniquement nécessaires. Les services d’analyse ne sont chargés qu’après votre consentement explicite.",
     cookieAccept: "Accepter",
     cookieReject: "Refuser",
-    mapConsentText: "Google Maps est utilisé pour afficher la carte. En la chargeant, vous acceptez la politique de confidentialité de Google.",
-    mapConsentBtn: "Charger la carte",
     cookieTitle: "Paramètres des cookies",
     skipToContent: "Passer au contenu",
     cookieSaveSelection: "Enregistrer la sélection",
@@ -522,29 +520,29 @@ const fr: Translations = {
     heroKicker: "Pour les acheteurs",
     heroTitle: "Des biens de qualité à des prix transparents.",
     heroDescription:
-      "Directement issus de notre portefeuille, sans intermédiaire. Biens vérifiés, conditions équitables, processus clairement documenté.",
+      "Des biens sélectionnés issus de notre propre portefeuille et de coopérations par projet. Informations transparentes, conditions équitables et processus clairement documentés.",
     heroPrimaryCta: "Demander une consultation",
     heroSecondaryCta: "Comment nous procédons",
-    heroTrustLine: "Achat direct · Sans commission de courtage · Accompagnement notarial",
+    heroTrustLine: "Conditions claires · Informations transparentes · Accompagnement notarial",
     heroImageAlt: "Bien résidentiel du portefeuille Aurelia – symbole d’une qualité vérifiée et de conditions transparentes",
     featuresTitle: "Ce qui vous attend chez Aurelia",
     featuresIntro:
-      "Aurelia vend uniquement des biens issus de son propre portefeuille. Cela garantit des circuits courts, des responsabilités claires et des conditions transparentes.",
+      "Aurelia présente des biens sélectionnés issus de son propre portefeuille ainsi que des offres provenant de coopérations par projet. L’origine, les interlocuteurs et les conditions sont indiqués de manière transparente pour chaque bien.",
     features: [
       { title: "Prix transparents", desc: "Un calcul équitable fondé sur des chiffres vérifiables – sans coûts cachés." },
-      { title: "Aucuns frais de courtage", desc: "Vous achetez directement au propriétaire. La commission de courtage habituelle ne s’applique pas." },
-      { title: "Portefeuille vérifié", desc: "Chaque bien a été examiné, documenté et correctement structuré au préalable." },
+      { title: "Conditions claires", desc: "Les interlocuteurs, la structure contractuelle et les éventuels coûts sont indiqués de manière transparente pour chaque offre." },
+      { title: "Documents traçables", desc: "La documentation disponible et le niveau de vérification sont indiqués de manière transparente pour chaque offre." },
       { title: "Processus clair", desc: "Un déroulement structuré, du premier contact jusqu’à l’acte notarié." },
     ],
     portfolioTitle: "Notre offre actuelle",
     portfolioText:
-      "Aurelia gère un portefeuille régulièrement renouvelé de biens vérifiés issus de son propre patrimoine. Les biens actuels et leurs détails sont disponibles sur demande.",
+      "Aurelia présente une sélection régulièrement renouvelée issue de son propre portefeuille et de coopérations par projet en Allemagne et en Turquie. Les biens actuels et leurs détails sont disponibles sur demande.",
     portfolioCta: "Voir le portefeuille",
     proofTitle: "Pourquoi acheter directement chez Aurelia",
     proofIntro: "Quatre points qui font la différence par rapport à une transaction classique avec un courtier.",
     proofPoints: [
-      { title: "Propriétaire direct", text: "Vous vous entretenez directement avec le vendeur – sans intermédiaire." },
-      { title: "Documents complets", text: "L’extrait de registre foncier, le dossier de présentation et tous les documents pertinents sont disponibles." },
+      { title: "Interlocuteurs clairement identifiés", text: "Pour chaque offre, le propriétaire, le vendeur et l’interlocuteur sont clairement indiqués." },
+      { title: "Documents transparents", text: "Les documents disponibles sur le bien et leur état actuel sont fournis de manière transparente." },
       { title: "Base de prix réaliste", text: "Nous calculons en accord avec le marché – sans excès." },
       { title: "Processus fiable", text: "Notaire, rendez-vous, remise – structurés et documentés proprement." },
     ],
@@ -562,7 +560,7 @@ const fr: Translations = {
     objections: [
       {
         q: "Les biens sont-ils réellement vérifiés ?",
-        a: "Oui. Chaque bien du portefeuille est examiné, documenté et – si nécessaire – valorisé sur le plan structurel avant l’acquisition.",
+        a: "Le niveau de vérification, de documentation et d’éventuels travaux est indiqué de manière transparente pour chaque bien.",
       },
       {
         q: "Sans courtier – qui défend mes intérêts ?",
@@ -578,7 +576,7 @@ const fr: Translations = {
     faqItems: [
       {
         q: "Quels types de biens Aurelia vend-elle ?",
-        a: "Des biens résidentiels et commerciaux sélectionnés ainsi que des terrains issus de notre propre portefeuille, selon les disponibilités.",
+        a: "Des biens résidentiels et commerciaux sélectionnés ainsi que des terrains issus de notre propre portefeuille ou de coopérations par projet en Allemagne et en Turquie, selon les disponibilités.",
       },
       {
         q: "Un financement peut-il être organisé via Aurelia ?",
@@ -932,7 +930,7 @@ const fr: Translations = {
     contactPrivacyTitle: "11. Contact en matière de protection des données",
     contactPrivacyText: "Pour toute question relative à la protection des données, veuillez nous contacter à :\nE-mail : office@aureliaestates.de",
     externalLinksDisclaimer: "Cette page contient des liens vers des sites tiers (notamment dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). Nous n'avons aucune influence sur leur contenu. Le fournisseur ou exploitant respectif est toujours responsable du contenu des pages liées. Les pages liées ont été vérifiées au moment de la création du lien afin d'exclure d'éventuelles infractions légales. Une surveillance permanente du contenu des pages liées n'est pas raisonnablement exigible sans indice concret d'infraction. Dès connaissance d'infractions légales, nous supprimerons immédiatement ces liens.",
-    lastUpdated: "Dernière mise à jour : mars 2026",
+    lastUpdated: "Dernière mise à jour : septembre 2026",
   },
   notFound: {
     title: "Page introuvable",

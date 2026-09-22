@@ -126,11 +126,9 @@ const es: Translations = {
     scrollTopAria: "Volver arriba",
     heroMeta: "Competencia sustancial · Dirigida por propietarios · Perspectiva a largo plazo",
     initialAssessmentNote: "Sin compromiso · Respuesta personal tras la primera revisión",
-    cookieText: "Este sitio web utiliza funciones técnicamente necesarias. Se requiere su consentimiento para la integración de servicios externos (p. ej., visualización de mapas).",
+    cookieText: "Este sitio web utiliza funciones técnicamente necesarias. Los servicios de análisis solo se cargan tras su consentimiento expreso.",
     cookieAccept: "Aceptar",
     cookieReject: "Rechazar",
-    mapConsentText: "Para mostrar el mapa se utiliza Google Maps. Al cargarlo, acepta la política de privacidad de Google.",
-    mapConsentBtn: "Cargar mapa",
     cookieTitle: "Configuración de cookies",
     skipToContent: "Saltar al contenido",
     cookieSaveSelection: "Guardar selección",
@@ -489,29 +487,29 @@ const es: Translations = {
     heroKicker: "Para compradores",
     heroTitle: "Inmuebles de calidad a precios transparentes.",
     heroDescription:
-      "Directamente desde nuestro portafolio, sin intermediarios. Inmuebles verificados, condiciones justas, proceso claramente documentado.",
+      "Inmuebles seleccionados de nuestra cartera y de cooperaciones por proyecto. Información transparente, condiciones justas y procesos claramente documentados.",
     heroPrimaryCta: "Solicitar asesoramiento",
     heroSecondaryCta: "Cómo procedemos",
-    heroTrustLine: "Compra directa · Sin comisión de agencia · Acompañamiento notarial",
+    heroTrustLine: "Condiciones claras · Información transparente · Acompañamiento notarial",
     heroImageAlt: "Inmueble residencial del portafolio Aurelia – símbolo de calidad verificada y condiciones transparentes",
     featuresTitle: "Lo que puede esperar de Aurelia",
     featuresIntro:
-      "Aurelia vende exclusivamente inmuebles de su propio portafolio. Esto garantiza vías cortas, responsabilidades claras y condiciones transparentes.",
+      "Aurelia presenta inmuebles seleccionados de su propia cartera y ofertas de cooperaciones por proyecto. El origen, los interlocutores y las condiciones se indican de forma transparente para cada inmueble.",
     features: [
       { title: "Precios transparentes", desc: "Cálculo justo basado en parámetros verificables – sin costes ocultos." },
-      { title: "Sin comisiones de agencia", desc: "Compra directamente al propietario. La habitual comisión de agencia no se aplica." },
-      { title: "Portafolio verificado", desc: "Cada inmueble ha sido revisado, documentado y estructurado previamente." },
+      { title: "Condiciones claras", desc: "Los interlocutores, la estructura contractual y los posibles costes se indican de forma transparente para cada oferta." },
+      { title: "Documentación trazable", desc: "La documentación disponible y el estado de revisión se indican de forma transparente para cada oferta." },
       { title: "Proceso claro", desc: "Flujo estructurado desde el primer contacto hasta la escritura notarial." },
     ],
     portfolioTitle: "Nuestra oferta actual",
     portfolioText:
-      "Aurelia dispone de una selección en constante actualización de inmuebles verificados de su propia cartera. Los objetos y detalles actuales se facilitan bajo solicitud.",
+      "Aurelia presenta una selección en constante actualización de su propia cartera y de cooperaciones por proyecto en Alemania y Turquía. Los inmuebles y detalles actuales se facilitan previa consulta.",
     portfolioCta: "Ver portafolio",
     proofTitle: "Por qué comprar directamente a Aurelia",
     proofIntro: "Cuatro puntos que marcan la diferencia frente a una transacción clásica con agencia.",
     proofPoints: [
-      { title: "Propietario directo", text: "Habla directamente con el vendedor – sin intermediarios." },
-      { title: "Documentación completa", text: "Extracto registral, expediente y documentos relevantes están disponibles." },
+      { title: "Interlocutores claros", text: "En cada oferta se indica quiénes son el propietario, el vendedor y el interlocutor." },
+      { title: "Documentación transparente", text: "Los documentos disponibles del inmueble y su estado actual se facilitan de forma transparente." },
       { title: "Base de precio realista", text: "Calculamos de forma alineada al mercado – sin excesos." },
       { title: "Proceso fiable", text: "Notario, cita, entrega – todo estructurado y documentado." },
     ],
@@ -529,7 +527,7 @@ const es: Translations = {
     objections: [
       {
         q: "¿Los inmuebles están realmente verificados?",
-        a: "Sí. Cada inmueble del portafolio se ha revisado, documentado y, cuando ha sido necesario, mejorado estructuralmente antes de la compra.",
+        a: "El estado de revisión, documentación y posibles mejoras se indica de forma transparente para cada inmueble.",
       },
       {
         q: "Sin agencia – ¿quién representa mis intereses?",
@@ -545,7 +543,7 @@ const es: Translations = {
     faqItems: [
       {
         q: "¿Qué tipos de inmueble vende Aurelia?",
-        a: "Inmuebles residenciales y comerciales seleccionados y terrenos de nuestra cartera propia, según disponibilidad.",
+        a: "Inmuebles residenciales y comerciales seleccionados y terrenos de nuestra cartera propia o de cooperaciones por proyecto en Alemania y Turquía, según disponibilidad.",
       },
       {
         q: "¿Aurelia gestiona la financiación?",
@@ -562,7 +560,7 @@ const es: Translations = {
     ],
     finalCtaTitle: "¿Interesado en un inmueble concreto?",
     finalCtaText:
-      "Háblenos de sus preferencias – comprobaremos qué inmuebles de nuestro portafolio podrían encajar.",
+      "Háblenos de sus preferencias – comprobaremos qué ofertas actuales podrían encajar.",
     finalCtaButton: "Contacte sin compromiso",
   },
   partners: {
@@ -899,7 +897,7 @@ const es: Translations = {
     contactPrivacyTitle: "11. Contacto sobre protección de datos",
     contactPrivacyText: "Para consultas sobre protección de datos puede contactarnos en:\nCorreo electrónico: office@aureliaestates.de",
     externalLinksDisclaimer: "Esta página contiene enlaces a sitios web de terceros (entre otros dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). No tenemos influencia sobre su contenido. El proveedor u operador respectivo es siempre responsable del contenido de las páginas enlazadas. Las páginas enlazadas fueron verificadas en el momento de su vinculación en busca de posibles infracciones legales. Un control permanente del contenido de las páginas enlazadas no es razonable sin indicios concretos de una infracción legal. En caso de tener conocimiento de infracciones legales, eliminaremos dichos enlaces de inmediato.",
-    lastUpdated: "Última actualización: marzo de 2026",
+    lastUpdated: "Última actualización: septiembre de 2026",
   },
   notFound: {
     title: "Página no encontrada",
