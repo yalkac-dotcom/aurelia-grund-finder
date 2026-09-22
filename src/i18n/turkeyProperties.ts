@@ -13,7 +13,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
     hero: {
       kicker: "IMMOBILIEN IN DER TÜRKEI",
       title: "Ihre Immobilie ist in der Türkei. Ihr Ansprechpartner ist in Deutschland.",
-      subtitle: "Sie leben in Deutschland und besitzen eine Wohnung, ein Haus, ein Grundstück oder eine andere Immobilie in der Türkei? Aurelia Grundbesitz unterstützt Sie bei der Prüfung, Bewertung und strukturierten Abwicklung Ihres Immobilienanliegens – mit einem persönlichen Ansprechpartner in Deutschland.",
+      subtitle: "Sie leben in Deutschland oder einem anderen europäischen Land und besitzen eine Wohnung, ein Haus oder ein Grundstück in der Türkei? Dann können Sie Ihr Anliegen zunächst ganz in Ruhe mit uns in Deutschland besprechen.\n\nWir schauen uns Ihre Immobilie und Ihre Situation an und klären gemeinsam mit Ihnen, welche nächsten Schritte infrage kommen.",
       primaryCta: "Immobilie unverbindlich anbieten",
       secondaryCta: "Persönlich Kontakt aufnehmen",
       imageAlt: "Blick über den Bosporus auf die Istanbuler Skyline mit Galata-Turm – Ihr persönlicher Ansprechpartner in Deutschland für Ihre Immobilie in der Türkei",
@@ -26,7 +26,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       ],
     },
     servicesTitle: "Was wir für Sie prüfen können",
-    servicesIntro: "Unsere Prüfung ist vertraulich, unverbindlich und auf den konkreten Einzelfall ausgerichtet.",
+    servicesIntro: "Für den Anfang reichen uns die wichtigsten Informationen zur Immobilie. Danach sehen wir, welche Unterlagen bereits vorhanden sind und was für eine weitere Prüfung noch benötigt wird.",
     services: [
       { title: "Objektprüfung", text: "Erste Einordnung von Immobilie, Lage, Nutzung und Angaben anhand Ihrer Unterlagen und Informationen." },
       { title: "Markteinschätzung", text: "Realistische Betrachtung von Standort, Objektart, Zustand und möglichem Marktinteresse." },
@@ -36,9 +36,9 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       { title: "Direktankauf", text: "In geeigneten Fällen prüfen wir einen möglichen Ankauf auf eigene Rechnung – diskret und ohne öffentliche Vermarktung." },
     ],
     propertyTypesTitle: "Für welche Immobilien?",
-    propertyTypesIntro: "Wir prüfen unterschiedliche Immobilienarten in der Türkei – von der Wohnung bis zum Grundstück.",
+    propertyTypesIntro: "Sie können uns unterschiedliche Immobilien in der Türkei anbieten – von der Eigentumswohnung über Häuser und Gewerbeimmobilien bis zum Grundstück.",
     propertyTypes: ["Eigentumswohnungen", "Häuser und Mehrfamilienhäuser", "Grundstücke", "Ferienimmobilien", "Geerbte Immobilien", "Gewerbeimmobilien"],
-    propertyTypesExtra: "Auch besondere oder ungeklärte Situationen können unverbindlich angefragt werden. Entscheidend ist immer die Prüfung des Einzelfalls.",
+    propertyTypesExtra: "Auch wenn die Eigentumsverhältnisse oder andere Punkte noch nicht vollständig geklärt sind, können Sie uns zunächst ansprechen. Was möglich ist, lässt sich erst nach Prüfung der konkreten Situation beurteilen.",
     processTitle: "So einfach beginnt die Prüfung",
     process: [
       { title: "Immobilie übermitteln", text: "Sie senden uns erste Angaben, Tapu, Fotos und vorhandene Unterlagen." },
@@ -48,12 +48,12 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
     ],
     trust: {
       title: "Ihre Immobilie in der Türkei. Ihr persönlicher Ansprechpartner in Deutschland.",
-      text: "Der erste Kontakt erfolgt für Sie bequem aus Deutschland. Wir kommunizieren auf Deutsch und Türkisch, prüfen Ihre Angaben vertraulich und begleiten die nächsten Schritte mit ruhiger, strukturierter Abstimmung.",
-      points: ["Persönlicher Ansprechpartner in Deutschland", "Kommunikation auf Deutsch und Türkisch", "Vertrauliche und unverbindliche Erstprüfung"],
+      text: "Sie müssen den ersten Schritt nicht in der Türkei machen. Sie können uns von Deutschland aus ansprechen und Ihre Situation auf Deutsch oder Türkisch mit uns besprechen. Wir sehen uns Ihre Angaben an und klären anschließend mit Ihnen, wie es weitergehen kann.",
+      points: ["Ansprechpartner in Deutschland", "Deutsch und Türkisch", "Erste Prüfung Ihrer Anfrage"],
     },
     form: {
       title: "Immobilie in der Türkei unverbindlich anbieten",
-      intro: "Senden Sie uns erste Angaben zu Ihrer Immobilie. Wir prüfen Ihre Informationen vertraulich und melden uns persönlich bei Ihnen.",
+      intro: "Schicken Sie uns zunächst die wichtigsten Angaben zu Ihrer Immobilie. Wenn Sie bereits ein Tapu, Fotos oder andere Unterlagen haben, können Sie diese direkt mitsenden. Wir sehen uns Ihre Anfrage an und melden uns persönlich bei Ihnen.",
       requiredHint: "Pflichtfelder sind mit * gekennzeichnet.",
       fullName: "Vorname und Nachname",
       phone: "Telefonnummer",
@@ -92,7 +92,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
     },
     cta: {
       title: "Sie besitzen eine Immobilie in der Türkei?",
-      text: "Senden Sie uns erste Informationen. Wir geben Ihnen eine vertrauliche, unverbindliche Ersteinschätzung zu möglichen nächsten Schritten.",
+      text: "Dann erzählen Sie uns kurz, worum es geht. Für den ersten Kontakt reichen einige Angaben zur Immobilie. Alles Weitere können wir anschließend persönlich besprechen.",
       primary: "Immobilie anbieten",
       secondary: "+49 211 69583033 anrufen",
     },
