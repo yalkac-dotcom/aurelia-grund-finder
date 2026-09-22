@@ -501,7 +501,11 @@ const TurkeyProperties = () => {
               <h2 className="font-heading text-[1.75rem] font-bold leading-[1.2] text-primary md:text-[2.25rem]">{page.cta.title}</h2>
               <p className="mx-auto mt-4 max-w-2xl text-[0.94rem] leading-[1.85] text-muted-foreground">{page.cta.text}</p>
               <div className="mt-7 flex flex-wrap justify-center gap-3">
-                <a href="#tuerkei-formular" className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></a>
+                {language === "de" ? (
+                  <Link to="/immobilie-anbieten" className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></Link>
+                ) : (
+                  <a href="#tuerkei-formular" className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></a>
+                )}
                 <a href="tel:+4921169583033" className="btn-secondary">{page.cta.secondary}</a>
               </div>
               <p className="mx-auto mt-8 max-w-3xl text-[0.78rem] leading-[1.75] text-muted-foreground">{page.legalNotice}</p>
