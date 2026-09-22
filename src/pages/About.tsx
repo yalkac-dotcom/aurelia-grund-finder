@@ -37,7 +37,7 @@ const About = () => {
             loading="eager"
             width={1600}
             height={1008}
-            className="hero-media h-full w-full object-cover object-[66%_center] md:object-center"
+            className="img-tone hero-media h-full w-full object-cover object-[66%_center] md:object-center"
           />
           <div
             className="absolute inset-0"
@@ -116,7 +116,7 @@ const About = () => {
           </Reveal>
           <Reveal delay={0.08}>
             <div className="overflow-hidden rounded-sm">
-              <img src={editorial.aboutApproachArchitecture} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="aspect-[4/3] h-auto w-full object-cover" />
+              <img src={editorial.aboutApproachArchitecture} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="img-tone aspect-[4/3] h-auto w-full object-cover" />
             </div>
           </Reveal>
           </div>
