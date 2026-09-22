@@ -1,11 +1,6 @@
 import { createContext, useContext, useState, useCallback, ReactNode, useEffect, useRef } from "react";
 import { Language, Translations } from "./types";
-import {
-  STORAGE_KEY,
-  fetchCountry,
-  languageForCountry,
-  resolveInitialLanguage,
-} from "./languageDetection";
+import { STORAGE_KEY, resolveInitialLanguage } from "./languageDetection";
 import de from "./de";
 import en from "./en";
 import nl from "./nl";
@@ -70,22 +65,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     } catch {}
   }, []);
 
-  // First visit only: coarse country detection (no stored manual choice, no explicit URL language)
-  useEffect(() => {
-    if (explicitChoice.current) return;
-    const controller = new AbortController();
-    let cancelled = false;
-    (async () => {
-      const country = await fetchCountry(controller.signal);
-      if (cancelled || explicitChoice.current) return;
-      const detected = languageForCountry(country) ?? "en";
-      setLang((current) => (current === detected ? current : detected));
-    })();
-    return () => {
-      cancelled = true;
-      controller.abort();
-    };
-  }, []);
 
   // Sync OG/Twitter meta tags with current language
   useEffect(() => {
