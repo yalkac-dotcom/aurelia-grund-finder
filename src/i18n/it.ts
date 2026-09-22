@@ -692,7 +692,7 @@ const it: Translations = {
   contact: {
     title: "Contatti",
     subtitle: "Siamo a vostra disposizione",
-    hereForYou: "Siamo qui per voi",
+    hereForYou: "Personalmente per la vostra richiesta",
     introText: "Che si tratti di una richiesta immobiliare, di un quesito concreto o di una richiesta di appuntamento – scriveteci. Vi ricontatteremo personalmente e tempestivamente.",
     salutation: "Titolo",
     firstName: "Nome",
