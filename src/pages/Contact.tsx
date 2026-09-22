@@ -102,9 +102,9 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative h-[36vh] min-h-[260px] flex items-end">
+      <section className="relative h-[36vh] min-h-[260px] md:h-[52vh] min-[1360px]:h-[62vh] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Ansprechpartnerin der Aurelia Grundbesitz GmbH in einem modernen Duesseldorfer Buero mit Blick auf Rheinturm und Medienhafen" className="w-full h-full object-cover object-[55%_65%] min-[1360px]:object-[55%_46%] min-[1700px]:object-[55%_42%]" priority />
+          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Ansprechpartnerin der Aurelia Grundbesitz GmbH am Schreibtisch in einem modernen Duesseldorfer Buero mit Blick auf Rheinturm und Rhein" className="w-full h-full object-cover object-[50%_50%] md:object-[50%_45%] min-[1360px]:object-[50%_38%]" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/90 via-[hsl(218 46% 14%)]/50 to-transparent" />
         </div>
         <div className="relative container pb-10 md:pb-12">
