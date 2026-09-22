@@ -14,3 +14,6 @@
 - [x] Alte Notlagen-, Düsseldorf- und NRW-Positionierung in Marketingtexten ersetzen
 - [x] Footer, Metadaten, OpenGraph, Canonical, Hreflang und Sitemap aktualisieren
 - [x] Design der Über-uns-Seite an Käufer, Kontakt und Ablauf angleichen
+- [ ] Spezielles Immobilienformular für Deutschland und Türkei wiederherstellen
+- [ ] Alle Angebots- und Kontakt-Buttons korrekt trennen
+- [ ] E-Mail-, Upload- und Sprachlogik für drei Anfragewege prüfen
