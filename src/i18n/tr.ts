@@ -723,7 +723,7 @@ const tr: Translations = {
     privacyNote: "Verileriniz gizli tutulur · 24-48 saat içinde yanıt",
     moduleHeading: "İletişim",
     moduleIntro: "Mesajınızı bekliyoruz.",
-    moduleIntro2: "İlk bir talep, somut bir konu veya randevu isteği – size en uygun yoldan bizimle iletişime geçebilirsiniz.",
+    moduleIntro2: "Satış, alım, Türkiye'deki gayrimenkulünüz veya iş birliği – talebinizi kısaca aktarın. Gizlilik içinde inceliyor ve size kişisel olarak dönüş yapıyoruz.",
     moduleGoToForm: "Forma git",
     moduleCta2: "Geri arama talep et",
     moduleCta3: "Randevu al",

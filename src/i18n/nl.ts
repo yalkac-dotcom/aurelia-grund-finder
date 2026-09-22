@@ -693,7 +693,7 @@ const nl: Translations = {
   contact: {
     title: "Contact",
     subtitle: "Wij staan voor u klaar",
-    hereForYou: "Wij zijn er voor u",
+    hereForYou: "Persoonlijk voor uw vraag",
     introText: "Of het een vastgoedaanvraag, een concreet verzoek of een afspraakverzoek betreft – schrijf ons. Wij nemen persoonlijk en tijdig contact met u op.",
     salutation: "Aanhef",
     firstName: "Voornaam",
