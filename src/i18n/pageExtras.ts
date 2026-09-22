@@ -10,7 +10,7 @@ type PageExtras = {
     regionTitle: string; regionText: string; ctaTitle: string; ctaText: string; ctaButton: string;
   };
   accessibility: { chooseLetters: string; homeHeroAlt: string; promisesAlt: string };
-  shared: { faqPrompt: string; call: string; enquire: string; faqHeroAlt: string };
+  shared: { faqPrompt: string; call: string; enquire: string; offerProperty: string; faqHeroAlt: string };
 };
 
 export const pageExtras: Record<Language, PageExtras> = {
@@ -43,7 +43,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       ctaTitle: "Sie suchen eine Immobilie?", ctaText: "Sagen Sie uns kurz, wonach Sie suchen. Wir prüfen, ob sich aktuell ein passendes Objekt in unserem Bestand befindet oder angeboten werden kann.", ctaButton: "Portfolio anfragen",
     },
     accessibility: { chooseLetters: "Buchstaben wählen", homeHeroAlt: "Ruhige Wohnstraße mit gepflegtem Mehrfamilienhaus bei Tageslicht", promisesAlt: "Vier Marmorsäulen in einem lichtdurchfluteten Raum als Sinnbild für unsere vier Versprechen" },
-    shared: { faqPrompt: "Weitere Fragen beantworten wir in unseren FAQ.", call: "Anrufen", enquire: "Anfragen", faqHeroAlt: "Ruhiger Besprechungsraum mit Immobilienunterlagen" },
+    shared: { faqPrompt: "Weitere Fragen beantworten wir in unseren FAQ.", call: "Anrufen", enquire: "Anfragen", offerProperty: "Immobilie anbieten", faqHeroAlt: "Ruhiger Besprechungsraum mit Immobilienunterlagen" },
   },
   tr: {
     imageCredits: {
@@ -66,7 +66,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       ctaTitle: "Bir gayrimenkul mü arıyorsunuz?", ctaText: "Aradığınız gayrimenkulü kısaca bize anlatın. Portföyümüzde şu anda uygun bir gayrimenkul olup olmadığını ya da sunulup sunulamayacağını kontrol edelim.", ctaButton: "Portföy hakkında bilgi alın",
     },
     accessibility: { chooseLetters: "Harf seçin", homeHeroAlt: "Gün ışığında, sakin bir sokakta bakımlı apartman", promisesAlt: "Dört taahhüdümüzü simgeleyen, aydınlık bir mekândaki dört mermer sütun" },
-    shared: { faqPrompt: "Diğer sorularınızı SSS bölümümüzde yanıtlıyoruz.", call: "Arayın", enquire: "Talep gönderin", faqHeroAlt: "Gayrimenkul belgelerinin bulunduğu sakin bir toplantı odası" },
+    shared: { faqPrompt: "Diğer sorularınızı SSS bölümümüzde yanıtlıyoruz.", call: "Arayın", enquire: "Talep gönderin", offerProperty: "Gayrimenkul sunun", faqHeroAlt: "Gayrimenkul belgelerinin bulunduğu sakin bir toplantı odası" },
   },
   en: {
     imageCredits: { first: "All images used on this website were generated using artificial intelligence and are royalty-free. They were created specifically for Aurelia Grundbesitz GmbH and are used solely for illustrative purposes.", second: "We do not use third-party images that require payment or have an unclear licensing status. If you nevertheless believe that third-party rights may be affected, please contact us immediately.", contact: "Contact for enquiries" },
@@ -78,7 +78,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       regionTitle: "Our markets", regionText: "Our focus is on Germany. In addition, we deal with properties in Turkey and work with selected business partners on suitable projects.", ctaTitle: "Looking for a property?", ctaText: "Briefly tell us what you are looking for. We will check whether a suitable property is currently available in our portfolio or can be offered.", ctaButton: "Enquire about our portfolio",
     },
     accessibility: { chooseLetters: "Choose a letter", homeHeroAlt: "Well-maintained apartment building on a quiet residential street in daylight", promisesAlt: "Four marble columns in a light-filled room symbolising our four commitments" },
-    shared: { faqPrompt: "We answer further questions in our FAQ.", call: "Call", enquire: "Enquire", faqHeroAlt: "Calm meeting room with property documents" },
+    shared: { faqPrompt: "We answer further questions in our FAQ.", call: "Call", enquire: "Enquire", offerProperty: "Submit a property", faqHeroAlt: "Calm meeting room with property documents" },
   },
   nl: {
     imageCredits: { first: "Alle afbeeldingen op deze website zijn met kunstmatige intelligentie gegenereerd en rechtenvrij. Ze zijn speciaal voor Aurelia Grundbesitz GmbH gemaakt en dienen uitsluitend ter illustratie.", second: "Wij gebruiken geen afbeeldingen van derden waarvoor betaald moet worden of waarvan de licentiestatus onduidelijk is. Denkt u desondanks dat rechten van derden mogelijk zijn geraakt, neem dan onmiddellijk contact met ons op.", contact: "Contact bij vragen" },
@@ -90,7 +90,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       regionTitle: "Onze markten", regionText: "Onze focus ligt op Duitsland. Daarnaast houden wij ons bezig met vastgoed in Turkije en werken wij bij passende projecten samen met geselecteerde zakenpartners.", ctaTitle: "Op zoek naar vastgoed?", ctaText: "Vertel ons kort waarnaar u op zoek bent. Wij kijken of er momenteel een passend object in onze portefeuille beschikbaar is of aangeboden kan worden.", ctaButton: "Portefeuille aanvragen",
     },
     accessibility: { chooseLetters: "Kies een letter", homeHeroAlt: "Goed onderhouden appartementencomplex in een rustige woonstraat bij daglicht", promisesAlt: "Vier marmeren zuilen in een lichte ruimte als symbool voor onze vier beloften" },
-    shared: { faqPrompt: "Meer vragen beantwoorden wij in onze FAQ.", call: "Bellen", enquire: "Aanvragen", faqHeroAlt: "Rustige vergaderruimte met vastgoeddocumenten" },
+    shared: { faqPrompt: "Meer vragen beantwoorden wij in onze FAQ.", call: "Bellen", enquire: "Aanvragen", offerProperty: "Vastgoed aanbieden", faqHeroAlt: "Rustige vergaderruimte met vastgoeddocumenten" },
   },
   it: {
     imageCredits: { first: "Tutte le immagini utilizzate su questo sito sono state generate con l'intelligenza artificiale e sono esenti da diritti di licenza. Sono state create appositamente per Aurelia Grundbesitz GmbH e sono utilizzate esclusivamente a scopo illustrativo.", second: "Non utilizziamo immagini di terzi a pagamento o con una situazione di licenza incerta. Qualora ritenesse comunque che possano essere stati lesi diritti di terzi, la preghiamo di contattarci immediatamente.", contact: "Contatti per informazioni" },
@@ -102,7 +102,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       regionTitle: "I nostri mercati", regionText: "Il nostro focus è la Germania. Ci occupiamo inoltre di immobili in Turchia e collaboriamo con partner commerciali selezionati per progetti idonei.", ctaTitle: "Sta cercando un immobile?", ctaText: "Ci dica brevemente cosa sta cercando. Verificheremo se nel nostro patrimonio è attualmente disponibile un immobile adatto o se può esserle proposto.", ctaButton: "Richiedi il portafoglio",
     },
     accessibility: { chooseLetters: "Scegli una lettera", homeHeroAlt: "Edificio residenziale ben tenuto in una tranquilla strada di giorno", promisesAlt: "Quattro colonne di marmo in un ambiente luminoso, simbolo dei nostri quattro impegni" },
-    shared: { faqPrompt: "Rispondiamo ad altre domande nelle nostre FAQ.", call: "Chiama", enquire: "Invia richiesta", faqHeroAlt: "Sala riunioni tranquilla con documenti immobiliari" },
+    shared: { faqPrompt: "Rispondiamo ad altre domande nelle nostre FAQ.", call: "Chiama", enquire: "Invia richiesta", offerProperty: "Proponi un immobile", faqHeroAlt: "Sala riunioni tranquilla con documenti immobiliari" },
   },
   es: {
     imageCredits: { first: "Todas las imágenes utilizadas en este sitio web han sido generadas mediante inteligencia artificial y están libres de derechos de licencia. Se crearon específicamente para Aurelia Grundbesitz GmbH y se utilizan únicamente con fines ilustrativos.", second: "No utilizamos imágenes de terceros de pago o cuya situación de licencia sea incierta. Si, pese a ello, considera que podrían verse afectados derechos de terceros, le rogamos que se ponga en contacto con nosotros de inmediato.", contact: "Contacto para consultas" },
@@ -114,7 +114,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       regionTitle: "Nuestros mercados", regionText: "Nuestro foco está en Alemania. Además, nos ocupamos de inmuebles en Turquía y colaboramos con socios comerciales seleccionados en proyectos adecuados.", ctaTitle: "¿Busca un inmueble?", ctaText: "Cuéntenos brevemente qué busca. Comprobaremos si actualmente hay un inmueble adecuado en nuestra cartera o si puede ofrecérsele uno.", ctaButton: "Consultar la cartera",
     },
     accessibility: { chooseLetters: "Elegir una letra", homeHeroAlt: "Edificio residencial bien cuidado en una calle tranquila a la luz del día", promisesAlt: "Cuatro columnas de mármol en un espacio luminoso como símbolo de nuestros cuatro compromisos" },
-    shared: { faqPrompt: "Respondemos a otras preguntas en nuestras FAQ.", call: "Llamar", enquire: "Consultar", faqHeroAlt: "Sala de reuniones tranquila con documentación inmobiliaria" },
+    shared: { faqPrompt: "Respondemos a otras preguntas en nuestras FAQ.", call: "Llamar", enquire: "Consultar", offerProperty: "Ofrecer un inmueble", faqHeroAlt: "Sala de reuniones tranquila con documentación inmobiliaria" },
   },
   fr: {
     imageCredits: {
@@ -145,7 +145,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       ctaTitle: "Vous cherchez un bien ?", ctaText: "Dites-nous brièvement ce que vous recherchez. Nous vérifierons si un bien adapté est actuellement disponible dans notre portefeuille ou peut être proposé.", ctaButton: "Demander le portefeuille",
     },
     accessibility: { chooseLetters: "Choisir une lettre", homeHeroAlt: "Rue résidentielle calme avec un immeuble bien entretenu en plein jour", promisesAlt: "Quatre colonnes de marbre dans une pièce baignée de lumière, symbole de nos quatre engagements" },
-    shared: { faqPrompt: "Nous répondons à vos autres questions dans notre FAQ.", call: "Appeler", enquire: "Faire une demande", faqHeroAlt: "Salle de réunion calme avec des documents immobiliers" },
+    shared: { faqPrompt: "Nous répondons à vos autres questions dans notre FAQ.", call: "Appeler", enquire: "Faire une demande", offerProperty: "Proposer un bien", faqHeroAlt: "Salle de réunion calme avec des documents immobiliers" },
   },
 };
 
