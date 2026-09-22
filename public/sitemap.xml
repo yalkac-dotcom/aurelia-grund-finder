@@ -252,4 +252,16 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aureliaestates.de/bildnachweise" />
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://www.aureliaestates.de/immobilie-anbieten</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.aureliaestates.de/immobilie-anbieten" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aureliaestates.de/immobilie-anbieten?lang=en" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.aureliaestates.de/immobilie-anbieten?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.aureliaestates.de/immobilie-anbieten?lang=it" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.aureliaestates.de/immobilie-anbieten?lang=es" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.aureliaestates.de/immobilie-anbieten?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.aureliaestates.de/immobilie-anbieten?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aureliaestates.de/immobilie-anbieten" />
+    <priority>0.9</priority>
+  </url>
 </urlset>
