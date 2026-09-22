@@ -107,7 +107,7 @@ const fr: Translations = {
     ourTeam: "Notre équipe attentive",
     teamDescription: "Notre équipe expérimentée se tient à votre disposition pour toute question immobilière – de manière personnelle, compétente et discrète.",
     availability: "Disponibilité",
-    availabilityText: "Étant régulièrement sur le terrain pour des projets et des rendez-vous, nous vous remercions de nous contacter par e-mail. Nous conviendrons ensuite volontiers d’un rendez-vous adapté.",
+    availabilityText: "Étant régulièrement en déplacement pour des rendez-vous, nous vous recommandons de nous contacter d’abord par e-mail, c’est le moyen le plus sûr de nous joindre. Pour un entretien personnel, nous convenons volontiers d’un rendez-vous adapté.",
     monFri: "Lundi – vendredi",
     saturday: "Samedi",
     sunday: "Dimanche",
@@ -445,7 +445,7 @@ const fr: Translations = {
   },
   howItWorks: {
     heroKicker: "Comment nous travaillons",
-    heroTitle: "Trois domaines d’activité, un même principe.",
+    heroTitle: "Trois domaines d’activité – et toujours le bien immobilier concret en premier lieu.",
     heroDescription:
       "Aurelia réunit trois domaines d’activité sous une exigence unique et claire : l’acquisition de créances, la vente de biens issus de notre portefeuille et les coopérations sur projet – chacun structuré avec soin et documenté de manière vérifiable.",
     heroPrimaryCta: "Discuter de notre approche",

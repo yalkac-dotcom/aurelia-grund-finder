@@ -107,7 +107,7 @@ const it: Translations = {
     ourTeam: "Il nostro team cordiale",
     teamDescription: "Il nostro team esperto è a vostra disposizione per tutte le domande relative a immobili – in modo personale, competente e discreto.",
     availability: "Orari di disponibilità",
-    availabilityText: "Poiché siamo regolarmente impegnati in progetti e appuntamenti sul posto, vi preghiamo di contattarci via e-mail. Saremo lieti di concordare un appuntamento adeguato.",
+    availabilityText: "Poiché siamo regolarmente impegnati in appuntamenti fuori sede, il modo più affidabile per raggiungerci è inizialmente l'e-mail. Per un colloquio personale concordiamo volentieri un appuntamento adeguato.",
     monFri: "Lunedì – Venerdì",
     saturday: "Sabato",
     sunday: "Domenica",
@@ -412,12 +412,12 @@ const it: Translations = {
   },
   howItWorks: {
     heroKicker: "Metodo",
-    heroTitle: "Tre ambiti di attività, un principio comune.",
+    heroTitle: "Tre ambiti di attività – e sempre prima l'immobile concreto.",
     heroDescription:
       "Aurelia riunisce tre ambiti sotto un'unica chiara impostazione: acquisto di crediti, vendita di immobili dal proprio portafoglio e cooperazioni progettuali – ciascuno strutturato con cura e documentato in modo verificabile.",
     heroPrimaryCta: "Discutere il nostro approccio",
     heroSecondaryCta: "Vedere il processo",
-    heroTrustLine: "Processi strutturati · Responsabilità chiare · Riservato",
+    heroTrustLine: "Contatto personale · Verifica diretta · Trattamento riservato",
     heroImageAlt: "Ambiente professionale tranquillo e luminoso – simbolo del modo di lavorare strutturato di Aurelia",
     introTitle: "Un'unica impostazione, tre percorsi",
     introText:
@@ -450,13 +450,12 @@ const it: Translations = {
     ],
     holdNote:
       "Descrizione dell'approccio generale. Le decisioni concrete vengono prese esclusivamente su base oggettuale. Le condizioni di mercato possono variare.",
-    principlesTitle: "Ciò che vale in tutti gli ambiti",
-    principlesIntro: "Quattro principi che caratterizzano il nostro lavoro – indipendentemente dall'ambito.",
+    principlesTitle: "Ciò che per noi conta nella collaborazione",
+    principlesIntro: "",
     principles: [
-      { title: "Comunicazione trasparente", text: "Linguaggio chiaro. Nessuna promessa che non possiamo mantenere." },
-      { title: "Condizioni eque", text: "Calcolo verificabile basato su parametri concreti." },
-      { title: "Documentazione accurata", text: "Tutte le fasi vengono registrate per iscritto e in modo verificabile." },
-      { title: "Prospettiva di lungo termine", text: "Nessuna speculazione, ma sviluppo tranquillo e sostenibile." },
+      { title: "Parlare apertamente", text: "Vi diciamo cosa possiamo valutare, così come quando mancano ancora informazioni o qualcosa non è per noi percorribile." },
+      { title: "Mettere per iscritto gli accordi", text: "Gli accordi importanti e i passi successivi vengono documentati in modo che tutte le parti coinvolte sappiano a che punto si trovano." },
+      { title: "Restare realistici", text: "Non ogni immobile e non ogni progetto è adatto a noi. Per questo non promettiamo nulla prima di aver verificato la situazione concreta." },
     ],
     faqTitle: "Domande frequenti sull'approccio",
     faqIntro: "Se la vostra domanda non è qui, contattateci direttamente.",
@@ -478,9 +477,9 @@ const it: Translations = {
         a: "I primi colloqui sono per principio riservati. I contenuti non vengono divulgati. Su richiesta lavoriamo con accordi di riservatezza.",
       },
     ],
-    finalCtaTitle: "Domande sull'approccio?",
+    finalCtaTitle: "Vuole sapere come potrebbe proseguire nel suo caso?",
     finalCtaText:
-      "Vi illustriamo volentieri le singole fasi in un colloquio personale – concreto, riservato e senza impegno.",
+      "Ci descriva brevemente di cosa si tratta. Esamineremo la sua richiesta e discuteremo personalmente con lei i passi successivi.",
     finalCtaButton: "Contattateci senza impegno",
   },
   buyers: {
