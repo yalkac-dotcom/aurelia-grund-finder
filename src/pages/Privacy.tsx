@@ -157,7 +157,11 @@ const Privacy = () => {
                     ))}
                   </ul>
                   <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.rightsSupervisory}</p>
-                  <p className="text-xs text-muted-foreground/60 mt-2">{p.rightsSupervisoryLinkHint}</p>
+                  <p className="mt-2">
+                    <a href="https://www.bfdi.bund.de/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-accent">
+                      {p.rightsSupervisoryLinkHint} <ExternalLink size={10} />
+                    </a>
+                  </p>
                 </div>
 
                 <div className="py-6">

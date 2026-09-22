@@ -35,7 +35,7 @@ const es: Translations = {
     subline: "Alemania · Turquía · Cartera y cooperaciones",
     navItems: [
       { label: "Inicio", path: "/" },
-      { label: "Propietarios en dificultad", path: "/fuer-eigentumer-in-not" },
+      { label: "Propietarios", path: "/fuer-eigentumer-in-not" },
       { label: "Para compradores", path: "/fuer-kaeufer" },
       { label: "Inmuebles en Turquía", path: "/immobilien-tuerkei" },
       { label: "Para socios", path: "/fuer-geschaeftspartner" },
@@ -305,7 +305,7 @@ const es: Translations = {
     heroDescription: "Subasta judicial, presión de acreedores, comunidades hereditarias bloqueadas: compramos su inmueble por cuenta propia — discreto, estructurado, vinculante.",
     heroPrimaryCta: "Primera valoración gratuita",
     heroSecondaryCta: "Método",
-    heroTrustLine: "Sin compromiso · Respuesta personal en 2 días laborables",
+    heroTrustLine: "Directo · Discreto · Personal en Alemania y Turquía",
     areasLabel: "Servicios",
     areasTitle: "Tres formas en que aliviamos a los propietarios",
     areasIntro: "Somos compradores — no intermediarios. Tres situaciones típicas en las que asumimos inmuebles.",
@@ -327,7 +327,7 @@ const es: Translations = {
     stepsTitle: "Así se desarrolla una consulta con nosotros",
     steps: [
       { title: "Usted nos describe el caso", desc: "Breve, informal y confidencial, por teléfono o mediante el formulario." },
-      { title: "Revisamos y le respondemos", desc: "En un plazo de dos días laborables le indicamos si la compra es realista y qué documentos necesitamos. Revisamos su caso también si ya se ha fijado una fecha de subasta." },
+      { title: "Revisamos y le respondemos", desc: "Le indicamos si la compra es realista y qué documentos necesitamos. Revisamos su caso también si ya se ha fijado una fecha de subasta." },
       { title: "Oferta concreta, gestión clara", desc: "Tras la valoración y las conversaciones con los acreedores recibe una oferta de compra; la formalización se realiza ante notario." },
     ],
     stepsNote: "La primera conversación y la revisión son gratuitas — incluso si finalmente no se concreta una compra. Lo decisivo es la rapidez con la que estén disponibles los documentos y si puede acordarse a tiempo una solución con los acreedores.",
@@ -342,7 +342,7 @@ const es: Translations = {
     faqTitle: "Preguntas frecuentes",
     faqIntro: "Lo esencial antes de una primera conversación.",
     faqItems: [
-      { q: "¿Cómo se desarrolla la colaboración?", a: "Usted nos describe el caso, le respondemos en dos días laborables con una valoración. Si hay venta, nos encargamos de la valoración, las conversaciones con acreedores y la formalización ante notario." },
+      { q: "¿Cómo se desarrolla la colaboración?", a: "Usted nos describe el caso y le respondemos con una valoración. Si hay venta, nos encargamos de la valoración, las conversaciones con acreedores y la formalización ante notario." },
       { q: "¿Qué documentos necesitan?", a: "Para la primera valoración basta una breve descripción. Para una oferta vinculante: extracto actualizado del registro de la propiedad, relaciones de créditos y — en casos hereditarios — el certificado de herencia. Le ayudamos a obtenerlos." },
       { q: "¿Puedo vender también durante una subasta judicial en curso?", a: "Puede seguir siendo posible hasta la adjudicación — siempre que el caso se revise a tiempo y los acreedores implicados estén de acuerdo. En procedimientos avanzados cada día cuenta." },
       { q: "¿Tendré costes si no vendo?", a: "No. La revisión y la primera conversación son gratuitas. Solo hay costes con un contrato de compraventa." },
@@ -350,7 +350,7 @@ const es: Translations = {
       { q: "¿Mi consulta se mantiene confidencial?", a: "Sí. Toda la información se trata de forma estrictamente confidencial." },
     ],
     finalCtaTitle: "Solicite ahora su primera valoración gratuita",
-    finalCtaText: "Revisamos su caso sin compromiso y le respondemos en dos días laborables con una respuesta clara.",
+    finalCtaText: "Revisamos su caso sin compromiso y le respondemos con una respuesta clara.",
     finalCtaButton: "Consulta confidencial",
   },
   ownerInTrouble: {

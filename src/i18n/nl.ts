@@ -306,7 +306,7 @@ const nl: Translations = {
     heroDescription: "Executieverkoop, druk van schuldeisers, vastgelopen erfgemeenschappen: wij kopen uw vastgoed voor eigen rekening — discreet, gestructureerd, verbindend.",
     heroPrimaryCta: "Gratis eerste beoordeling",
     heroSecondaryCta: "Hoe wij werken",
-    heroTrustLine: "Vrijblijvend · Persoonlijk antwoord binnen 2 werkdagen",
+    heroTrustLine: "Direct · Discreet · Persoonlijk in Duitsland en Turkije",
     areasLabel: "Diensten",
     areasTitle: "Drie manieren waarop wij eigenaren ontlasten",
     areasIntro: "Wij zijn kopers — geen makelaars. Drie typische situaties waarin wij vastgoed overnemen.",
@@ -328,7 +328,7 @@ const nl: Translations = {
     stepsTitle: "Zo verloopt een aanvraag bij ons",
     steps: [
       { title: "U schetst de zaak", desc: "Kort, vormvrij, vertrouwelijk telefonisch of via het formulier." },
-      { title: "Wij beoordelen en koppelen terug", desc: "Binnen twee werkdagen laten wij weten of een aankoop realistisch is en welke documenten wij nodig hebben. Wij beoordelen uw zaak ook wanneer een veilingdatum al is vastgesteld." },
+      { title: "Wij beoordelen en koppelen terug", desc: "Wij laten weten of een aankoop realistisch is en welke documenten wij nodig hebben. Wij beoordelen uw zaak ook wanneer een veilingdatum al is vastgesteld." },
       { title: "Concreet aanbod, duidelijke afwikkeling", desc: "Na waardering en gesprekken met schuldeisers ontvangt u een koopaanbod; de notariële vastlegging gebeurt bij de notaris." },
     ],
     stepsNote: "Eerste gesprek en beoordeling zijn kosteloos — ook als er uiteindelijk geen koop tot stand komt. Beslissend is hoe snel de documenten beschikbaar zijn en of er tijdig met de schuldeisers een oplossing kan worden afgestemd.",
@@ -343,7 +343,7 @@ const nl: Translations = {
     faqTitle: "Veelgestelde vragen",
     faqIntro: "Het belangrijkste vóór een eerste gesprek.",
     faqItems: [
-      { q: "Hoe verloopt de samenwerking?", a: "U schetst de zaak, wij koppelen binnen twee werkdagen terug met een inschatting. Bij verkoop verzorgen wij waardering, gesprekken met schuldeisers en notariële afspraak." },
+      { q: "Hoe verloopt de samenwerking?", a: "U schetst de zaak en wij koppelen terug met een inschatting. Bij verkoop verzorgen wij waardering, gesprekken met schuldeisers en notariële afspraak." },
       { q: "Welke documenten heeft u nodig?", a: "Voor de eerste beoordeling volstaat een korte beschrijving. Voor een bindend aanbod: actueel uittreksel uit het Grundbuch, vorderingoverzichten en bij erfeniszaken de erfrechtverklaring. Wij helpen bij het verkrijgen." },
       { q: "Kan ik ook tijdens een lopende executieverkoop nog verkopen?", a: "Dat kan tot aan de gunning nog mogelijk zijn — mits de zaak tijdig wordt beoordeeld en de betrokken schuldeisers ermee instemmen. In gevorderde procedures telt elke dag." },
       { q: "Maak ik kosten als ik niet verkoop?", a: "Nee. Beoordeling en eerste gesprek zijn gratis. Kosten ontstaan pas bij een koopovereenkomst." },
@@ -351,7 +351,7 @@ const nl: Translations = {
       { q: "Blijft mijn aanvraag vertrouwelijk?", a: "Ja. Alle informatie wordt strikt vertrouwelijk behandeld." },
     ],
     finalCtaTitle: "Vraag nu uw gratis eerste beoordeling aan",
-    finalCtaText: "Wij beoordelen uw zaak vrijblijvend en koppelen binnen twee werkdagen terug met een duidelijke uitspraak.",
+    finalCtaText: "Wij beoordelen uw zaak vrijblijvend en koppelen terug met een duidelijke uitspraak.",
     finalCtaButton: "Vertrouwelijk aanvragen",
   },
   ownerInTrouble: {
