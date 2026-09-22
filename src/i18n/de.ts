@@ -798,7 +798,7 @@ const de: Translations = {
     privacyNote: "Ihre Daten werden vertraulich behandelt · Antwort innerhalb von 24-48 Stunden",
     moduleHeading: "Kontakt",
     moduleIntro: "Wir freuen uns auf Ihre Nachricht.",
-    moduleIntro2: "Ob erste Anfrage, konkretes Anliegen oder Terminwunsch – kontaktieren Sie uns gerne auf dem für Sie passenden Weg.",
+    moduleIntro2: "Ob Verkauf, Ankauf, Türkei-Immobilie oder Kooperation – schildern Sie uns kurz Ihr Anliegen. Wir prüfen es vertraulich und melden uns persönlich bei Ihnen.",
     moduleGoToForm: "Zum Formular",
     moduleCta2: "Rückruf anfragen",
     moduleCta3: "Termin vereinbaren",

@@ -725,7 +725,7 @@ const en: Translations = {
   contact: {
     title: "Contact",
     subtitle: "We are here for you",
-    hereForYou: "We are here for you",
+    hereForYou: "Personally at your side",
     introText: "Whether a property enquiry, a specific matter or an appointment request – write to us. We will get back to you personally and promptly.",
     salutation: "Salutation",
     firstName: "First name",
