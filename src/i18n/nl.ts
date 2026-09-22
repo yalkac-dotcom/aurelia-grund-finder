@@ -31,11 +31,11 @@ const nl: Translations = {
     disclaimer:
       "Let op: De inhoud van deze website dient uitsluitend ter algemene informatie en vormt geen juridisch, fiscaal of financieel advies.",
     brandLine:
-      "Aurelia Grundbesitz koopt vastgoed en vastgoedgerelateerde vorderingen uitsluitend voor eigen rekening — discreet, gestructureerd en verbindend.",
-    subline: "Discreet · Voor eigen rekening · Verbindend",
+      "Vastgoedaankoop in Duitsland, vastgoedoplossingen in Turkije, verkoop uit eigen portefeuille en projectgebonden samenwerking.",
+    subline: "Duitsland · Turkije · Portefeuille en samenwerking",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Eigenaren in nood", path: "/fuer-eigentumer-in-not" },
+      { label: "Voor eigenaren", path: "/fuer-eigentumer-in-not" },
       { label: "Voor kopers", path: "/fuer-kaeufer" },
       { label: "Vastgoed in Turkije", path: "/immobilien-tuerkei" },
       { label: "Voor partners", path: "/fuer-geschaeftspartner" },
@@ -58,7 +58,7 @@ const nl: Translations = {
     socialLinkedinAria: "LinkedIn (binnenkort)",
     socialInstagramAria: "Instagram (binnenkort)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle rechten voorbehouden.",
-    kwgDisclaimer: "Wij treden uitsluitend op als koper voor eigen rekening. Wij zijn geen kredietinstelling en bieden geen financiële diensten, leningen of participatiemodellen aan.",
+    kwgDisclaimer: "Bij directe aankopen handelen wij voor eigen rekening. Wij zijn geen kredietinstelling en bieden geen financiële diensten, leningen of participatiemodellen aan.",
     phoneLabel: "Telefoon",
     emailLabel: "E-mail",
   },
@@ -211,7 +211,7 @@ const nl: Translations = {
     ],
     projectsLabel: "Locatiefocus",
     projectsTitle: "Locaties met substantie",
-    projectsText: "Onze focus ligt op Noordrijn-Westfalen en geselecteerde locaties in Turkije – met lokale marktkennis, betrouwbare netwerken en een realistische blik op potentieel.",
+    projectsText: "Onze markten zijn Duitsland en geselecteerde locaties in Turkije – met lokale marktkennis, betrouwbare netwerken en een realistische blik op potentieel.",
     stats: [
       { value: "Substantie", label: "Vastgoedexpertise" },
       { value: "DE", label: "Focus op Duitsland" },
@@ -506,7 +506,7 @@ const nl: Translations = {
     ],
     portfolioTitle: "Ons actuele aanbod",
     portfolioText:
-      "Aurelia beschikt over een regelmatig wisselende portefeuille gecontroleerde woningen in de regio Düsseldorf en omgeving. Actuele objecten en details worden op aanvraag verstrekt.",
+      "Aurelia beschikt over een regelmatig wisselende selectie gecontroleerd vastgoed uit de eigen portefeuille. Actuele objecten en details worden op aanvraag verstrekt.",
     portfolioCta: "Naar de portefeuille",
     proofTitle: "Waarom rechtstreeks bij Aurelia kopen",
     proofIntro: "Vier punten die het verschil maken met een klassieke makelaarstransactie.",
@@ -546,7 +546,7 @@ const nl: Translations = {
     faqItems: [
       {
         q: "Welke soorten objecten verkoopt Aurelia?",
-        a: "Voornamelijk woonobjecten in de regio Düsseldorf en omgeving – appartementen, meergezinswoningen en geselecteerde individuele objecten.",
+        a: "Geselecteerd woon- en commercieel vastgoed en percelen uit de eigen portefeuille, afhankelijk van de beschikbaarheid.",
       },
       {
         q: "Kan een financiering via Aurelia worden bemiddeld?",
@@ -737,7 +737,7 @@ const nl: Translations = {
     faqItems: [
       { q: "Is de eerste beoordeling echt gratis?", a: "Ja. Wij beoordelen uw aanvraag kosteloos en nemen binnen 48 uur persoonlijk contact met u op." },
       { q: "Welk type vastgoed behandelt u?", a: "Wij werken met vastgoed in bijzondere situaties – waaronder erfenissen, echtscheidingsobjecten, renovatieobjecten en leegstaande panden." },
-      { q: "Hoe verloopt het eerste gesprek?", a: "Per telefoon of videogesprek – op verzoek ook persoonlijk in Düsseldorf. Duur: ca. 20–30 minuten." },
+      { q: "Hoe verloopt het eerste gesprek?", a: "Per telefoon of videogesprek – op verzoek ook persoonlijk op afspraak. Duur: ca. 20–30 minuten." },
       { q: "Werkt u landelijk?", a: "Onze focus ligt op Duitsland, met bijzondere nadruk op de metropoolregio's." },
       { q: "Hoe discreet wordt mijn aanvraag behandeld?", a: "Alle informatie wordt strikt vertrouwelijk behandeld. Wij delen geen gegevens." },
     ],
@@ -1108,7 +1108,7 @@ const nl: Translations = {
   aboutV2: {
     seoTitle: "Over ons | Aurelia Grundbesitz GmbH",
     seoDescription: "Aurelia Grundbesitz beoordeelt en koopt vastgoed en grond voor eigen rekening – discreet, betrouwbaar en met korte beslislijnen.",
-    hero: { kicker: "Over ons", title: "Aurelia Grundbesitz", subtitle: "Discreet. Betrouwbaar. Oplossingsgericht.", body: ["Aurelia Grundbesitz is gespecialiseerd in de aankoop en gestructureerde beoordeling van vastgoed in bijzondere, complexe of tijdkritische situaties.", "Wij handelen voor eigen rekening en baseren onze beslissingen op een heldere economische beoordeling. Wij staan voor een persoonlijke, inzichtelijke en discrete afwikkeling met korte beslislijnen.", "Wij richten ons vooral op vastgoed en grond waarvoor klassieke verkoopprocessen niet optimaal werken of waarvoor eigenaren een snelle, bindende oplossing zoeken."], imageAlt: "Licht, modern kantoor met uitzicht op de skyline van Düsseldorf, de Rheinturm en de Rijn" },
+    hero: { kicker: "Over ons", title: "Aurelia Grundbesitz", subtitle: "Discreet. Betrouwbaar. Oplossingsgericht.", body: ["Aurelia Grundbesitz is gespecialiseerd in de aankoop en gestructureerde beoordeling van vastgoed in bijzondere, complexe of tijdkritische situaties.", "Wij handelen voor eigen rekening en baseren onze beslissingen op een heldere economische beoordeling. Wij staan voor een persoonlijke, inzichtelijke en discrete afwikkeling met korte beslislijnen.", "Wij richten ons vooral op vastgoed en grond waarvoor klassieke verkoopprocessen niet optimaal werken of waarvoor eigenaren een snelle, bindende oplossing zoeken."], imageAlt: "Licht, modern kantoor als symbool voor persoonlijk en grensoverschrijdend vastgoedwerk" },
     trustTiles: [{ title: "Ervaring & marktkennis", text: "Gedegen beoordeling van vastgoed, grond en complexe uitgangssituaties." }, { title: "Eigen beslissingsbevoegdheid", text: "Wij kopen voor eigen rekening en hebben geen externe financierings- of investeerdersgoedkeuring nodig." }, { title: "Korte beslislijnen", text: "Directe beoordeling, heldere communicatie en snelle terugkoppeling bij geschikte objecten." }, { title: "Discretie & betrouwbaarheid", text: "Vertrouwelijke beoordeling, transparante processen en navolgbare beslissingen." }],
     standing: { headline: "Waar wij voor staan", body: ["Onze aanpak is bewust helder en pragmatisch: wij beoordelen elk object individueel en kijken niet alleen naar locatie en kwaliteit, maar ook naar de concrete situatie van de eigenaar.", "Wij hechten waarde aan betrouwbaarheid, discretie en realistische oplossingen. Wij beloven geen standaardoplossing voor elk object, maar nemen navolgbare beslissingen op basis van de relevante economische en juridische omstandigheden."], values: [{ title: "Betrouwbaarheid", text: "Wij communiceren helder en komen gemaakte afspraken na." }, { title: "Discretie", text: "Wij behandelen gevoelige situaties en documenten vertrouwelijk." }, { title: "Pragmatisme", text: "Wij richten ons op uitvoerbare oplossingen in plaats van ingewikkelde processen." }, { title: "Langetermijndenken", text: "Beslissingen worden economisch en duurzaam afgewogen." }] },
     approach: { headline: "Onze aanpak", body: ["Aurelia Grundbesitz ziet zichzelf niet als een klassieke makelaar.", "Wij beoordelen vastgoed met het oog op een mogelijke aankoop voor eigen rekening en structureren de verdere afwikkeling individueel.", "Daardoor kunnen beslissingen directer worden genomen en processen in geschikte gevallen aanzienlijk worden verkort."], imageAlt: "Hoogwaardige moderne woonarchitectuur met natuursteen, hout en een groene binnenhof" },

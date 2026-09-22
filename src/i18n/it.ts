@@ -31,8 +31,8 @@ const it: Translations = {
     disclaimer:
       "Avviso: i contenuti di questo sito sono forniti esclusivamente a scopo informativo e non costituiscono consulenza legale, fiscale o finanziaria.",
     brandLine:
-      "Aurelia Grundbesitz acquista immobili e crediti immobiliari esclusivamente per conto proprio — in modo discreto, strutturato e vincolante.",
-    subline: "Discreto · Per conto proprio · Vincolante",
+      "Acquisto immobiliare in Germania, soluzioni in Turchia, vendita dal patrimonio e collaborazioni progettuali.",
+    subline: "Germania · Turchia · Patrimonio e collaborazioni",
     navItems: [
       { label: "Home", path: "/" },
       { label: "Proprietari in difficoltà", path: "/fuer-eigentumer-in-not" },
@@ -58,7 +58,7 @@ const it: Translations = {
     socialLinkedinAria: "LinkedIn (in arrivo)",
     socialInstagramAria: "Instagram (in arrivo)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Tutti i diritti riservati.",
-    kwgDisclaimer: "Agiamo esclusivamente in qualità di acquirente per conto proprio. Non siamo un istituto di credito e non offriamo servizi finanziari, prestiti o modelli di partecipazione.",
+    kwgDisclaimer: "Negli acquisti diretti agiamo per conto proprio. Non siamo un istituto di credito e non offriamo servizi finanziari, prestiti o modelli di partecipazione.",
     phoneLabel: "Telefono",
     emailLabel: "E-mail",
   },
@@ -210,7 +210,7 @@ const it: Translations = {
     ],
     projectsLabel: "Focus geografico",
     projectsTitle: "Località con sostanza",
-    projectsText: "Ci concentriamo sulla Renania Settentrionale-Vestfalia e su località selezionate in Turchia, con conoscenza del mercato locale, reti affidabili e una valutazione realistica del potenziale.",
+    projectsText: "I nostri mercati sono la Germania e località selezionate in Turchia, con conoscenza locale, reti affidabili e una valutazione realistica del potenziale.",
     stats: [
       { value: "Sostanza", label: "Competenza nel mercato immobiliare" },
       { value: "DE", label: "Focus sulla Germania" },
@@ -505,7 +505,7 @@ const it: Translations = {
     ],
     portfolioTitle: "La nostra offerta attuale",
     portfolioText:
-      "Aurelia dispone di un portafoglio in costante aggiornamento di immobili verificati nella regione di Düsseldorf e dintorni. Oggetti e dettagli attuali su richiesta.",
+      "Aurelia dispone di una selezione in costante aggiornamento di immobili verificati del proprio patrimonio. Oggetti e dettagli attuali su richiesta.",
     portfolioCta: "Vai al portafoglio",
     proofTitle: "Perché acquistare direttamente da Aurelia",
     proofIntro: "Quattro punti che fanno la differenza rispetto a una classica transazione tramite agenzia.",
@@ -545,7 +545,7 @@ const it: Translations = {
     faqItems: [
       {
         q: "Che tipo di immobili vende Aurelia?",
-        a: "Principalmente immobili residenziali nella regione di Düsseldorf e dintorni – appartamenti, immobili plurifamiliari e singoli oggetti selezionati.",
+        a: "Immobili residenziali e commerciali selezionati e terreni del nostro patrimonio, secondo la disponibilità.",
       },
       {
         q: "È possibile ottenere un finanziamento tramite Aurelia?",
@@ -736,7 +736,7 @@ const it: Translations = {
     faqItems: [
       { q: "La prima valutazione è davvero gratuita?", a: "Sì. Esaminiamo la vostra richiesta senza alcun costo e vi contatteremo personalmente entro 48 ore." },
       { q: "Che tipo di immobili trattate?", a: "Lavoriamo con immobili in situazioni particolari: successioni, divorzi, edifici da ristrutturare e immobili sfitti." },
-      { q: "Come si svolge il primo colloquio?", a: "Per telefono o videochiamata – su richiesta anche di persona a Düsseldorf. Durata: ca. 20–30 minuti." },
+      { q: "Come si svolge il primo colloquio?", a: "Per telefono o videochiamata – su richiesta anche di persona previo appuntamento. Durata: ca. 20–30 minuti." },
       { q: "Operate a livello nazionale?", a: "Il nostro focus è la Germania, con particolare attenzione alle aree metropolitane." },
       { q: "Con quanta discrezione viene trattata la mia richiesta?", a: "Tutte le informazioni vengono trattate in modo strettamente riservato. Non condividiamo alcun dato." },
     ],

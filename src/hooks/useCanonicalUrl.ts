@@ -15,7 +15,7 @@ export const useCanonicalUrl = () => {
 
   useEffect(() => {
     const route = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
-    const url = `${SITE_ORIGIN}${route}?lang=${language}`;
+    const url = language === "de" ? `${SITE_ORIGIN}${route}` : `${SITE_ORIGIN}${route}?lang=${language}`;
 
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonical) {
@@ -34,10 +34,10 @@ export const useCanonicalUrl = () => {
         alternate.hreflang = lang;
         document.head.appendChild(alternate);
       }
-      alternate.href = `${SITE_ORIGIN}${route}?lang=${lang}`;
+      alternate.href = lang === "de" ? `${SITE_ORIGIN}${route}` : `${SITE_ORIGIN}${route}?lang=${lang}`;
     }
     const fallback = document.querySelector<HTMLLinkElement>('link[rel="alternate"][hreflang="x-default"]');
-    if (fallback) fallback.href = `${SITE_ORIGIN}${route}?lang=en`;
+    if (fallback) fallback.href = `${SITE_ORIGIN}${route}`;
 
     const ogUrl = document.querySelector<HTMLMetaElement>('meta[property="og:url"]');
     if (ogUrl) ogUrl.content = url;

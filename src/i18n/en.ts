@@ -31,8 +31,8 @@ const en: Translations = {
     disclaimer:
       "Disclaimer: The content of this website is provided for general information only and does not constitute legal, tax, or financial advice.",
     brandLine:
-      "Aurelia Grundbesitz buys properties and property-related claims exclusively for its own account — discreet, structured and binding.",
-    subline: "Discreet · For our own account · Binding",
+      "Property acquisition in Germany, property solutions in Turkey, sales from our own portfolio and project-based cooperation.",
+    subline: "Germany · Turkey · Portfolio & cooperation",
     navItems: [
       { label: "Home", path: "/" },
       { label: "For Owners", path: "/fuer-eigentumer-in-not" },
@@ -58,7 +58,7 @@ const en: Translations = {
     socialLinkedinAria: "LinkedIn (coming soon)",
     socialInstagramAria: "Instagram (coming soon)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. All rights reserved.",
-    kwgDisclaimer: "We act solely as a buyer for our own account. We are not a credit institution and do not offer financial services, loans or participation models.",
+    kwgDisclaimer: "For direct acquisitions, we act for our own account. We are not a credit institution and do not offer financial services, loans or participation models.",
     phoneLabel: "Phone",
     emailLabel: "Email",
   },
@@ -210,7 +210,7 @@ const en: Translations = {
     ],
     projectsLabel: "Location focus",
     projectsTitle: "Locations with substance",
-    projectsText: "Our focus is on North Rhine-Westphalia and selected locations in Turkey – backed by local market knowledge, reliable networks and a realistic view of potential.",
+    projectsText: "Our markets are Germany and selected locations in Turkey – backed by local market knowledge, reliable networks and a realistic view of potential.",
     stats: [
       { value: "Selected", label: "Projects reviewed carefully" },
       { value: "Long-term", label: "Thinking in sustainable structures" },
@@ -769,7 +769,7 @@ const en: Translations = {
     faqItems: [
       { q: "Is the initial assessment really free?", a: "Yes. We review your enquiry at no cost and will get back to you personally within 48 hours." },
       { q: "What types of properties do you handle?", a: "We work with properties in special situations — including inherited properties, divorce assets, buildings in need of renovation, and vacant properties." },
-      { q: "How does the initial consultation work?", a: "By phone or video call — or in person in Düsseldorf if preferred. Duration: approx. 20–30 minutes." },
+      { q: "How does the initial consultation work?", a: "By phone or video call — or in person by appointment if preferred. Duration: approx. 20–30 minutes." },
       { q: "Do you operate nationwide?", a: "Our focus is Germany, with particular emphasis on metropolitan regions." },
       { q: "How confidentially is my enquiry treated?", a: "All information is treated in strict confidence. We do not share any data." },
     ],

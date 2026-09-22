@@ -31,11 +31,11 @@ const tr: Translations = {
     disclaimer:
       "Uyarı: Bu web sitesindeki içerikler yalnızca genel bilgilendirme amacı taşır ve hukuki, vergisel veya finansal danışmanlık niteliğinde değildir.",
     brandLine:
-      "Aurelia Grundbesitz, gayrimenkulleri ve gayrimenkule bağlı alacakları yalnızca kendi hesabına satın alır — gizli, yapılandırılmış ve bağlayıcı.",
-    subline: "Gizli · Kendi hesabına · Bağlayıcı",
+      "Almanya’da gayrimenkul alımı, Türkiye’de gayrimenkul çözümleri, kendi portföyümüzden satışlar ve proje bazlı iş birlikleri.",
+    subline: "Almanya · Türkiye · Portföy ve iş birlikleri",
     navItems: [
       { label: "Ana Sayfa", path: "/" },
-      { label: "Zor Durumdaki Mülk Sahipleri", path: "/fuer-eigentumer-in-not" },
+      { label: "Mülk Sahipleri İçin", path: "/fuer-eigentumer-in-not" },
       { label: "Alıcılar İçin", path: "/fuer-kaeufer" },
       { label: "Türkiye'deki Gayrimenkuller", path: "/immobilien-tuerkei" },
       { label: "İş Ortakları İçin", path: "/fuer-geschaeftspartner" },
@@ -58,7 +58,7 @@ const tr: Translations = {
     socialLinkedinAria: "LinkedIn (yakında)",
     socialInstagramAria: "Instagram (yakında)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Tüm hakları saklıdır.",
-    kwgDisclaimer: "Yalnızca kendi hesabımıza alıcı olarak hareket ederiz. Bir kredi kuruluşu değiliz; finansal hizmet, kredi veya ortaklık modeli sunmayız.",
+    kwgDisclaimer: "Doğrudan alımlarda kendi hesabımıza hareket ederiz. Bir kredi kuruluşu değiliz; finansal hizmet, kredi veya ortaklık modeli sunmayız.",
     phoneLabel: "Telefon",
     emailLabel: "E-posta",
   },
@@ -210,7 +210,7 @@ const tr: Translations = {
     ],
     projectsLabel: "Konum odağı",
     projectsTitle: "Özü olan lokasyonlar",
-    projectsText: "Kuzey Ren-Vestfalya ve Türkiye'deki seçili lokasyonlara; yerel pazar bilgisi, güvenilir ağlar ve potansiyele gerçekçi bir bakışla odaklanıyoruz.",
+    projectsText: "Almanya ve Türkiye'deki seçili lokasyonlara; yerel pazar bilgisi, güvenilir ağlar ve potansiyele gerçekçi bir bakışla odaklanıyoruz.",
     stats: [
       { value: "Seçici", label: "Dikkatle incelenen projeler" },
       { value: "Uzun vadeli", label: "Sürdürülebilir yapılarda düşünürüz" },
