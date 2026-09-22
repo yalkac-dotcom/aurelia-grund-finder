@@ -306,7 +306,7 @@ const TurkeyProperties = () => {
           <div className="max-w-3xl">
             <p className="hero-kicker">{page.hero.kicker}</p>
             <h1 className="hero-title">{page.hero.title}</h1>
-            <p className="hero-description max-w-2xl">{page.hero.subtitle}</p>
+            <p className="hero-description max-w-2xl whitespace-pre-line">{page.hero.subtitle}</p>
             <div className="mt-7 flex flex-row flex-wrap items-center gap-3 sm:gap-4">
               <Link to="/immobilie-anbieten?land=tuerkei" className="btn-primary">
                 {page.hero.primaryCta}
