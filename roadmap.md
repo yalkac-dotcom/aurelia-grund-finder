@@ -70,3 +70,11 @@
 - [x] Absolute Bestands- und Prüfzusagen auf der Käufer-Seite in sieben Sprachen neutralisieren
 - [x] Startseite, Über uns und Firmendaten gegen die aktuelle Positionierung prüfen
 - [x] Änderungen in allen sieben Sprachen technisch und sichtbar verifizieren
+
+# Mobile Darstellung und Kontaktleiste
+
+- [ ] Mobile Hero-Überlappungen bei 360–430 px beheben
+- [ ] Hauptüberschrift im Über-uns-Hero in vorhandenem Aurelia-Gold darstellen
+- [ ] Mehrsprachige mobile Anruf-/Angebotsleiste auf passenden Inhaltsseiten vereinheitlichen
+- [ ] Rechtliche und unpassende Seiten von der Leiste ausschließen
+- [ ] Mobile, Tablet- und Desktopdarstellung sowie Links in sieben Sprachen prüfen
