@@ -210,7 +210,7 @@ const es: Translations = {
     ],
     projectsLabel: "Foco geográfico",
     projectsTitle: "Ubicaciones con sustancia",
-    projectsText: "Nos centramos en ubicaciones de Alemania que combinan sustancia, demanda y potencial de desarrollo.",
+    projectsText: "Nos centramos en Renania del Norte-Westfalia y en ubicaciones seleccionadas de Turquía, con conocimiento del mercado local, redes fiables y una visión realista del potencial.",
     stats: [
       { value: "Sustancia", label: "Competencia inmobiliaria" },
       { value: "DE", label: "Enfoque en Alemania" },
@@ -714,7 +714,7 @@ const es: Translations = {
     successText: "Hemos recibido su consulta y nos pondremos en contacto con usted en un plazo de 24-48 horas.",
     subjectOptions: ["Consulta general", "Oferta de compra", "Consulta de inversores", "Solicitud de devolución de llamada", "Otro asunto"],
     propertyType: "Tema de su consulta",
-    propertyTypeOptions: ["Ejecución hipotecaria", "Herencia / Sucesión", "Insolvencia", "Otro"],
+    propertyTypeOptions: ["Ejecución hipotecaria", "Herencia / Sucesión", "Insolvencia", "Compra directa (sin situación de dificultad)", "Otro"],
     company: "Empresa / Institución",
     messagePlaceholder: "Describa brevemente su consulta …",
     formLabel: "Formulario de contacto",

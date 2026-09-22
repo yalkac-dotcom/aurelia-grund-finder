@@ -210,7 +210,7 @@ const en: Translations = {
     ],
     projectsLabel: "Location focus",
     projectsTitle: "Locations with substance",
-    projectsText: "We focus on locations in Germany that combine substance, demand, and development potential.",
+    projectsText: "Our focus is on North Rhine-Westphalia and selected locations in Turkey – backed by local market knowledge, reliable networks and a realistic view of potential.",
     stats: [
       { value: "Selected", label: "Projects reviewed carefully" },
       { value: "Long-term", label: "Thinking in sustainable structures" },
@@ -747,7 +747,7 @@ const en: Translations = {
     successText: "We have received your enquiry and will get back to you within 24-48 hours.",
     subjectOptions: ["General enquiry", "Acquisition offer", "Investor enquiry", "Callback request", "Other matter"],
     propertyType: "Subject of your enquiry",
-    propertyTypeOptions: ["Foreclosure", "Estate / Inheritance", "Insolvency", "Other"],
+    propertyTypeOptions: ["Foreclosure", "Estate / Inheritance", "Insolvency", "Direct purchase (without distress)", "Other"],
     company: "Company / Institution",
     messagePlaceholder: "Briefly describe your enquiry …",
     formLabel: "Contact form",

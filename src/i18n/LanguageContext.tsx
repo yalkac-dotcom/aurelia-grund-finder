@@ -56,7 +56,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     (async () => {
       const country = await fetchCountry(controller.signal);
       if (cancelled || explicitChoice.current) return;
-      const detected = languageForCountry(country) ?? "de";
+      const detected = languageForCountry(country) ?? "en";
       setLang((current) => (current === detected ? current : detected));
     })();
     return () => {

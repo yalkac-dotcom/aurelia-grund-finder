@@ -271,7 +271,7 @@ const TurkeyProperties = () => {
           width={1600}
           height={1000}
           loading="eager"
-          fetchPriority="high"
+          {...({ fetchpriority: "high" } as React.HTMLAttributes<HTMLImageElement>)}
           className="absolute inset-0 h-full w-full object-cover object-center"
         />
         <div

@@ -211,7 +211,7 @@ const nl: Translations = {
     ],
     projectsLabel: "Locatiefocus",
     projectsTitle: "Locaties met substantie",
-    projectsText: "Wij richten ons op locaties in Duitsland die substantie, vraag en ontwikkelingspotentieel combineren.",
+    projectsText: "Onze focus ligt op Noordrijn-Westfalen en geselecteerde locaties in Turkije – met lokale marktkennis, betrouwbare netwerken en een realistische blik op potentieel.",
     stats: [
       { value: "Substantie", label: "Vastgoedexpertise" },
       { value: "DE", label: "Focus op Duitsland" },
@@ -715,7 +715,7 @@ const nl: Translations = {
     successText: "Wij hebben uw aanvraag ontvangen en nemen binnen 24-48 uur contact met u op.",
     subjectOptions: ["Algemene aanvraag", "Aankoopaanbod", "Investeerdersaanvraag", "Terugbelverzoek", "Overige kwestie"],
     propertyType: "Onderwerp van uw aanvraag",
-    propertyTypeOptions: ["Executieveiling", "Nalatenschap / Erfenis", "Insolventie", "Overig"],
+    propertyTypeOptions: ["Executieveiling", "Nalatenschap / Erfenis", "Insolventie", "Directe aankoop (zonder noodsituatie)", "Overig"],
     company: "Bedrijf / Instelling",
     messagePlaceholder: "Beschrijf kort uw aanvraag …",
     formLabel: "Contactformulier",
