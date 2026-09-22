@@ -186,7 +186,7 @@ const Header = () => {
                   )
                 )}
                 <Link
-                  to="/kontakt"
+                  to="/kontakt#kontaktformular"
                   onClick={() => setMobileOpen(false)}
                   className="block py-3 mt-2 text-center text-[11px] tracking-[0.13em] uppercase font-semibold bg-accent text-primary rounded-sm"
                 >
