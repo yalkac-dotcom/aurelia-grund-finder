@@ -3,26 +3,19 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
-import { MapPin, Mail, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown, AlertCircle } from "lucide-react";
+import { MapPin, Mail, Phone, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown, AlertCircle, PhoneCall, CalendarDays } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
-import ConsentMap from "@/components/ConsentMap";
-import PremiumContactModule from "@/components/contact/PremiumContactModule";
-import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { supabase } from "@/integrations/supabase/client";
 import { trackEvent } from "@/lib/analytics";
 import { pageExtras } from "@/i18n/pageExtras";
 import { z } from "zod";
-
-const panelBase =
-  "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
-
-const panelPadding = "px-6 py-7 md:px-12 md:py-10";
+import { Button } from "@/components/ui/button";
 
 const inputClasses =
-  "w-full border border-border bg-background px-3.5 py-2.5 text-base text-foreground rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary placeholder:text-muted-foreground/60";
+  "w-full border-0 border-b border-border bg-transparent px-0 py-3 text-base text-foreground rounded-none transition-colors focus:outline-none focus:ring-0 focus:border-accent placeholder:text-muted-foreground/55";
 
-const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-foreground/70 mb-1.5 font-medium";
+const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-foreground/70 mb-1 font-medium";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -142,146 +135,90 @@ const Contact = () => {
 
   return (
     <Layout>
-      {/* Hero */}
-      <section className="relative h-[calc(100svh-152px)] min-h-[320px] md:h-[calc(100svh-130px)] min-[1360px]:h-[calc(100svh-128px)] flex items-end">
+      <section className="relative flex h-[48svh] min-h-[360px] max-h-[520px] items-end overflow-hidden md:h-[52vh] md:min-h-[430px]">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Freundliche Ansprechpartnerin der Aurelia Grundbesitz GmbH mit Headset am Schreibtisch in einem hochwertigen Buero" className="w-full h-full object-cover object-[62%_26%] md:object-[46%_36%] min-[1360px]:object-[50%_34%]" priority />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to right, hsl(var(--primary) / 0.62) 0%, hsl(var(--primary) / 0.50) 35%, hsl(var(--primary) / 0.22) 65%, hsl(var(--primary) / 0.08) 100%)",
-            }}
-          />
+          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Freundliche Ansprechpartnerin der Aurelia Grundbesitz GmbH mit Headset am Schreibtisch in einem hochwertigen Buero" className="h-full w-full object-cover object-[66%_30%] md:object-[52%_34%]" priority />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-primary/15" />
         </div>
-        <div className="relative container pb-10 md:pb-12">
+        <div className="container-premium relative pb-10 md:pb-14">
           <Reveal>
-            <p className="text-white/90 font-sans text-xs font-medium tracking-[0.16em] uppercase mb-2">{t.contact.title}</p>
-            <h1 className="text-[1.6rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.1] max-w-lg text-balance">
+            <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/80">{t.contact.title}</p>
+            <h1 className="max-w-xl text-balance font-heading text-[2rem] font-semibold leading-[1.1] text-primary-foreground md:text-[3rem]">
               {t.contact.subtitle}
             </h1>
-          </Reveal>
-          <HeroScrollIndicator />
-        </div>
-      </section>
-
-      {/* Direkter Telefon-Kontakt — direkt unter Hero */}
-      <section className="pt-8 md:pt-10">
-        <div className="container max-w-3xl">
-          <div className="text-center">
-            <h2 className="text-[1.4rem] md:text-[1.85rem] font-heading font-bold text-primary leading-[1.2] mb-3">
-              <span className="block mx-auto mb-3 h-[2px] w-10 bg-accent" aria-hidden="true" />
-              {t.contact.hereForYou}
-            </h2>
-            <a
-              href="mailto:office@aureliaestates.de"
-              className="inline-block text-[1.05rem] md:text-[1.2rem] font-semibold tracking-tight transition-colors"
-              style={{ color: "hsl(var(--highlight))" }}
-            >
-              office@aureliaestates.de
-            </a>
-            <p className="mt-2 text-[0.85rem] text-muted-foreground">
-              {contactCopy.availabilityShort}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Premium Contact Module */}
-      <PremiumContactModule />
-
-      {/* Contact Info */}
-      <section className="py-6 md:py-10">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="divide-y divide-border/40">
-                <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 first:pt-0">
-                  <div className="flex items-center gap-2.5">
-                    <MapPin className="text-accent" size={13} />
-                    <h3 className="text-[0.95rem] font-heading font-semibold text-foreground">{t.common.address}</h3>
-                  </div>
-                  <address className="not-italic text-muted-foreground text-sm leading-[1.75]">
-                    Aurelia Grundbesitz GmbH<br />
-                    Grevenbroicher Weg 2<br />
-                    40547 Düsseldorf<br />
-                    {t.common.country}
-                  </address>
-                </div>
-                <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5">
-                  <div className="flex items-center gap-2.5">
-                    <Mail className="text-accent" size={13} />
-                    <h3 className="text-[0.95rem] font-heading font-semibold text-foreground">{t.contact.email}</h3>
-                  </div>
-                  <a href="mailto:office@aureliaestates.de" className="text-muted-foreground text-sm hover:text-accent transition-colors">
-                    office@aureliaestates.de
-                  </a>
-                </div>
-                <div className="grid md:grid-cols-[1fr_2fr] gap-1.5 md:gap-8 py-5 last:pb-0">
-                  <div className="flex items-center gap-2.5">
-                    <Clock className="text-accent" size={13} />
-                    <h3 className="text-[0.95rem] font-heading font-semibold text-foreground">{t.common.availability}</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm leading-[1.75]">
-                    {t.common.availabilityText}
-                  </p>
-                </div>
-              </div>
-            </div>
+            <p className="mt-4 max-w-lg text-[0.95rem] leading-[1.7] text-primary-foreground/80 md:text-base">{t.contact.introText}</p>
           </Reveal>
         </div>
       </section>
 
-      {/* Form */}
-      <section id="kontaktformular" className="py-6 md:py-10 bg-secondary/30">
-        <div className="container max-w-2xl">
+      <section id="kontaktformular" className="bg-secondary/55 py-12 md:py-20">
+        <div className="container-premium">
           <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-8">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.contact.formLabel}</p>
-                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
-                  {t.contact.formTitle}
-                </h2>
-              </div>
+            <div className="mx-auto grid max-w-6xl overflow-hidden rounded-lg border border-border bg-card shadow-[0_26px_70px_-34px_hsl(var(--primary)/0.35)] lg:grid-cols-[0.78fr_1.22fr]">
+              <aside className="flex flex-col justify-between bg-primary px-7 py-9 text-primary-foreground md:px-10 md:py-12 lg:px-12 lg:py-14">
+                <div>
+                  <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-accent">{t.contact.moduleHeading}</p>
+                  <h2 className="max-w-sm text-balance font-heading text-[1.8rem] font-semibold leading-[1.18] md:text-[2.2rem]">{t.contact.hereForYou}</h2>
+                  <p className="mt-4 max-w-sm text-sm leading-[1.8] text-primary-foreground/72">{t.contact.moduleIntro2}</p>
 
-              {!submitted && (
-                <div className="mb-7 flex flex-wrap items-center gap-3 rounded-md border border-accent/25 bg-accent/5 px-4 py-3.5">
-                  <p className="text-[0.9rem] text-foreground/85 leading-[1.55] flex-1 min-w-[180px]">
-                    {contactCopy.personalPrompt}
-                  </p>
-                  <a
-                    href={`mailto:office@aureliaestates.de?subject=${encodeURIComponent(contactCopy.consultationSubject)}`}
-                    className="inline-flex items-center gap-2 border border-accent/60 text-accent px-4 py-2 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent hover:text-accent-foreground transition-colors duration-300 rounded-sm"
-                  >
-                    {contactCopy.consultation}
-                    <ArrowRight size={11} />
-                  </a>
+                  <div className="mt-9 divide-y divide-primary-foreground/12 border-y border-primary-foreground/12">
+                    <ContactDetail icon={Mail} label={contactCopy.email}>
+                      <a href="mailto:office@aureliaestates.de" className="break-all text-sm text-primary-foreground transition-colors hover:text-accent">office@aureliaestates.de</a>
+                    </ContactDetail>
+                    <ContactDetail icon={Phone} label={contactCopy.phone}>
+                      <a href="tel:+4921169583033" className="text-sm text-primary-foreground transition-colors hover:text-accent">+49 211 69583033</a>
+                    </ContactDetail>
+                    <ContactDetail icon={Clock} label={t.common.availability}>
+                      <p className="text-sm leading-[1.65] text-primary-foreground/72">{t.common.availabilityText}</p>
+                    </ContactDetail>
+                    <ContactDetail icon={MapPin} label={t.common.address}>
+                      <address className="not-italic text-sm leading-[1.65] text-primary-foreground/72">Aurelia Grundbesitz GmbH<br />Grevenbroicher Weg 2<br />40547 Düsseldorf · {t.common.country}</address>
+                    </ContactDetail>
+                  </div>
                 </div>
-              )}
+
+                <div className="mt-10 border-t border-primary-foreground/15 pt-7">
+                  <p className="mb-4 text-xs uppercase tracking-[0.16em] text-accent">{contactCopy.personalPrompt}</p>
+                  <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap lg:flex-col xl:flex-row">
+                    <a href={`mailto:office@aureliaestates.de?subject=${encodeURIComponent(t.contact.callbackSubject)}`} className="inline-flex min-h-11 items-center gap-2 text-sm text-primary-foreground/80 transition-colors hover:text-accent"><PhoneCall size={15} />{t.contact.moduleCta2}</a>
+                    <a href={`mailto:office@aureliaestates.de?subject=${encodeURIComponent(t.contact.appointmentSubject)}`} className="inline-flex min-h-11 items-center gap-2 text-sm text-primary-foreground/80 transition-colors hover:text-accent"><CalendarDays size={15} />{t.contact.moduleCta3}</a>
+                  </div>
+                </div>
+              </aside>
+
+              <div className="bg-card px-6 py-9 md:px-12 md:py-12 lg:px-14 lg:py-14">
+                <div className="mb-9">
+                  <p className="mb-2 text-xs font-medium uppercase tracking-[0.18em] text-accent">{t.contact.formLabel}</p>
+                  <h2 className="text-balance font-heading text-[1.8rem] font-semibold leading-[1.2] text-foreground md:text-[2.25rem]">{t.contact.formTitle}</h2>
+                  <p className="mt-3 max-w-xl text-sm leading-[1.75] text-muted-foreground">{t.contact.moduleIntro}</p>
+                </div>
 
               {submitted ? (
-                <div className="py-6 text-center">
-                  <CheckCircle className="text-accent mx-auto mb-3" size={24} />
-                  <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1.5">{t.contact.successTitle}</h3>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.7] max-w-sm mx-auto">
+                <div className="border-y border-border py-12 text-center">
+                  <CheckCircle className="mx-auto mb-4 text-accent" size={28} />
+                  <h3 className="mb-2 font-heading text-lg font-semibold text-foreground">{t.contact.successTitle}</h3>
+                  <p className="mx-auto max-w-sm text-[0.93rem] leading-[1.7] text-muted-foreground">
                     {confirmationWarning ? contactCopy.confirmationWarning : t.contact.successText}
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid gap-6 sm:grid-cols-2 sm:gap-8">
+                    <div>
                     <label htmlFor="name" className={labelClasses}>
                       {t.contact.name} <span className="text-accent">*</span>
                     </label>
                     <input id="name" name="name" type="text" required className={inputClasses} />
-                  </div>
-                  <div>
+                    </div>
+                    <div>
                     <label htmlFor="email" className={labelClasses}>
                       {t.contact.email} <span className="text-accent">*</span>
                     </label>
                     <input id="email" name="email" type="email" required className={inputClasses} />
+                    </div>
                   </div>
-                  <div>
+                  <div className="grid gap-6 sm:grid-cols-2 sm:gap-8">
+                    <div>
                     <label htmlFor="phone" className={labelClasses}>
                       {t.contact.phone} <span className="text-accent">*</span>
                     </label>
@@ -301,8 +238,8 @@ const Contact = () => {
                         {t.contact.phoneRequired}
                       </p>
                     )}
-                  </div>
-                  <div>
+                    </div>
+                    <div>
                     <label htmlFor="subject" className={labelClasses}>
                       {t.contact.subject} <span className="text-accent">*</span>
                     </label>
@@ -326,8 +263,10 @@ const Contact = () => {
                         {t.contact.subjectRequired}
                       </p>
                     )}
+                    </div>
                   </div>
-                  <div>
+                  <div className="grid gap-6 sm:grid-cols-2 sm:gap-8">
+                    <div>
                     <label htmlFor="property_location" className={labelClasses}>{t.contact.propertyLocation ?? ""}</label>
                     <select id="property_location" name="property_location" className={inputClasses} value={propertyLocation} onChange={(event) => setPropertyLocation(event.target.value)}>
                       <option value="">{t.common.pleaseSelect}</option>
@@ -338,8 +277,8 @@ const Contact = () => {
                         {t.contact.turkeyFormHint} <Link to="/immobilie-anbieten?land=tuerkei" className="font-semibold text-primary hover:text-accent">{t.contact.turkeyFormCta}</Link>
                       </div>
                     )}
-                  </div>
-                  <div>
+                    </div>
+                    <div>
                     <label htmlFor="property_type" className={labelClasses}>{t.contact.propertyType}</label>
                     <select id="property_type" name="property_type" className={inputClasses}>
                       <option value="">{t.common.pleaseSelect}</option>
@@ -347,6 +286,7 @@ const Contact = () => {
                         <option key={opt} value={opt}>{opt}</option>
                       ))}
                     </select>
+                    </div>
                   </div>
                   <div>
                     <label htmlFor="message" className={labelClasses}>
@@ -354,7 +294,7 @@ const Contact = () => {
                     </label>
                     <textarea
                       id="message" name="message" rows={4} required
-                      className={`${inputClasses} resize-none`}
+                      className={`${inputClasses} min-h-28 resize-none`}
                       placeholder={t.contact.messagePlaceholder}
                     />
                   </div>
@@ -394,10 +334,10 @@ const Contact = () => {
                   )}
 
                   <div className="pt-1">
-                    <button
+                    <Button
                       type="submit"
                       disabled={submitting}
-                      className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-5 py-2.5 text-xs font-medium tracking-[0.15em] uppercase hover:bg-accent/85 transition-colors duration-300 rounded-sm disabled:opacity-60"
+                      className="h-12 w-full rounded-sm bg-accent px-8 text-xs uppercase tracking-[0.15em] text-accent-foreground hover:bg-accent/85 sm:w-auto"
                     >
                       {submitting ? (
                         <>
@@ -410,7 +350,7 @@ const Contact = () => {
                           <ArrowRight size={11} />
                         </>
                       )}
-                    </button>
+                    </Button>
                   </div>
                   <p className="text-muted-foreground text-xs leading-[1.65] mt-3">
                     {t.contact.consentNotice}{" "}
@@ -424,73 +364,62 @@ const Contact = () => {
                   </p>
                 </form>
               )}
+              </div>
             </div>
           </Reveal>
         </div>
       </section>
 
-      {/* FAQ */}
       <ContactFAQ />
-
-      {/* Map */}
-      <section className="py-6 md:py-10">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <div className={`${panelBase} ${panelPadding}`}>
-              <div className="section-shell-accent mb-6">
-                <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.common.address}</p>
-                <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
-                  {t.common.ourLocation}
-                </h2>
-              </div>
-              <div className="overflow-hidden rounded-xl">
-                <ConsentMap
-                  title={`${t.common.ourLocation} – Aurelia Grundbesitz GmbH`}
-                  src="https://www.google.com/maps?q=Grevenbroicher+Weg+2,+40547+D%C3%BCsseldorf&output=embed"
-                />
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
     </Layout>
   );
 };
+
+const ContactDetail = ({ icon: Icon, label, children }: { icon: typeof Mail; label: string; children: React.ReactNode }) => (
+  <div className="grid grid-cols-[1.5rem_1fr] gap-3 py-5">
+    <Icon className="mt-0.5 text-accent" size={16} aria-hidden="true" />
+    <div>
+      <h3 className="mb-1.5 text-[0.68rem] font-medium uppercase tracking-[0.16em] text-primary-foreground/55">{label}</h3>
+      {children}
+    </div>
+  </div>
+);
 
 const ContactFAQ = () => {
   const { t } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-6 md:py-10 bg-secondary/30">
-      <div className="container max-w-3xl">
+    <section className="bg-background py-12 md:py-16">
+      <div className="container-premium max-w-4xl">
         <Reveal>
-          <div className={`${panelBase} ${panelPadding}`}>
-            <div className="section-shell-accent mb-8">
-              <p className="text-accent font-sans text-xs font-medium tracking-[0.18em] uppercase mb-2">{t.contact.faqLabel}</p>
-              <h2 className="text-[1.2rem] md:text-[1.55rem] font-heading font-semibold text-foreground leading-[1.2] mb-0 text-balance">
+          <div>
+            <div className="mb-7 text-center">
+              <p className="mb-2 font-sans text-xs font-medium uppercase tracking-[0.18em] text-accent">{t.contact.faqLabel}</p>
+              <h2 className="font-heading text-[1.55rem] font-semibold leading-[1.2] text-foreground md:text-[1.9rem]">
                 {t.contact.faqTitle}
               </h2>
             </div>
-            <p className="text-muted-foreground text-sm leading-[1.7] mb-6">
+            <p className="mx-auto mb-7 max-w-2xl text-center text-sm leading-[1.7] text-muted-foreground">
               {t.contact.faqSubtitle}
             </p>
-            <div className="space-y-3">
+            <div className="divide-y divide-border border-y border-border">
               {t.contact.faqItems.map((item, i) => (
-                <div key={i} className="bg-secondary/40 rounded-[1.1rem] overflow-hidden">
-                  <button
+                <div key={i}>
+                  <Button
                     type="button"
+                    variant="ghost"
                     onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                    className="w-full flex items-center justify-between px-7 py-5 text-left gap-4 group"
+                    className="h-auto min-h-14 w-full justify-between rounded-none px-1 py-4 text-left hover:bg-secondary/45"
                   >
-                    <span className="text-sm font-heading font-semibold text-foreground group-hover:text-accent transition-colors">{item.q}</span>
+                    <span className="whitespace-normal font-heading text-sm font-semibold leading-[1.5] text-foreground">{item.q}</span>
                     <ChevronDown
                       size={14}
                       className={`shrink-0 text-muted-foreground transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`}
                     />
-                  </button>
+                  </Button>
                   {openIndex === i && (
-                    <p className="text-muted-foreground text-sm leading-[1.8] px-7 pb-5 -mt-1">
+                    <p className="max-w-3xl px-1 pb-5 text-sm leading-[1.8] text-muted-foreground">
                       {item.a}
                     </p>
                   )}
