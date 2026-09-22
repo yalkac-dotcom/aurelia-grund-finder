@@ -57,10 +57,7 @@ const HowItWorks = () => {
               {w.segments.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <div className="border-l border-accent/40 pl-6">
-                    <div className="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-accent">
-                      {String(i + 1).padStart(2, "0")}
-                    </div>
-                    <h3 className="mt-3 text-[1.05rem] font-heading font-semibold text-primary leading-snug">
+                    <h3 className="text-[1.05rem] font-heading font-semibold text-primary leading-snug">
                       {s.title}
                     </h3>
                     <p className="mt-2 text-[0.88rem] leading-[1.75] text-muted-foreground">{s.desc}</p>
@@ -104,10 +101,7 @@ const HowItWorks = () => {
               <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {w.principles.map((p, i) => (
                   <div key={i} className="border-l border-accent/40 pl-5">
-                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
-                      {String(i + 1).padStart(2, "0")}
-                    </div>
-                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                    <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                       {p.title}
                     </h3>
                     <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{p.text}</p>

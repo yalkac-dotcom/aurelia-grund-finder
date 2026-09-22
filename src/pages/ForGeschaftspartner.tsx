@@ -45,10 +45,7 @@ const ForGeschaftspartner = () => {
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <div className="border-l border-accent/40 pl-5">
-                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
-                      {String(i + 1).padStart(2, "0")}
-                    </div>
-                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                    <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                       {f.title}
                     </h3>
                     <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{f.desc}</p>
@@ -67,10 +64,7 @@ const ForGeschaftspartner = () => {
               <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {p.principles.map((pr, i) => (
                   <div key={i} className="border-l border-accent/50 pl-5">
-                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
-                      {String(i + 1).padStart(2, "0")}
-                    </div>
-                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-white leading-snug">
+                    <h3 className="text-[0.98rem] font-heading font-semibold text-white leading-snug">
                       {pr.title}
                     </h3>
                     <p className="mt-2 text-[0.85rem] leading-[1.75] text-white/75">{pr.text}</p>

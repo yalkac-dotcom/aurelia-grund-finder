@@ -15,7 +15,6 @@ interface ProcessStepProps {
 
 const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, imageAlt }: ProcessStepProps) => {
   const id = `step-${index}-title`;
-  const numeral = String(index + 1).padStart(2, "0");
 
   return (
     <Reveal delay={index * 0.06}>
@@ -34,7 +33,7 @@ const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, ima
                 aria-hidden="true"
               />
             </div>
-          ) : (
+          ) : iconImage ? (
             <div className="proof-card__visual">
               {iconImage ? (
                 <span
@@ -52,11 +51,8 @@ const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, ima
                   />
                 </span>
               ) : null}
-              <span className="proof-card__numeral" aria-hidden="true">
-                {numeral}
-              </span>
             </div>
-          )}
+          ) : null}
           <div className="proof-card__body">
             <h3 id={id} className="text-[0.95rem] font-heading font-semibold text-primary leading-snug">
               {title}

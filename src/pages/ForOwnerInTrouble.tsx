@@ -77,10 +77,7 @@ const ForOwnerInTrouble = () => {
               {o.proofPoints.map((p, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <div className="border-l border-accent/50 pl-5">
-                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
-                      {String(i + 1).padStart(2, "0")}
-                    </div>
-                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-white leading-snug">
+                    <h3 className="text-[0.98rem] font-heading font-semibold text-white leading-snug">
                       {p.title}
                     </h3>
                     <p className="mt-2 text-[0.85rem] leading-[1.75] text-white/75">{p.text}</p>
@@ -111,7 +108,7 @@ const ForOwnerInTrouble = () => {
                           {String(i + 1).padStart(2, "0")}
                         </span>
                       </div>
-                      <h3 className="mt-3 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                      <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                         {s.title}
                       </h3>
                       <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{s.desc}</p>
