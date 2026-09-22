@@ -24,7 +24,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const showMobileContactBar = MOBILE_CONTACT_ROUTES.has(location.pathname);
   useCanonicalUrl();
   return (
-    <div className={`min-h-screen flex flex-col ${showMobileContactBar ? "pb-[calc(3.5rem+env(safe-area-inset-bottom))] md:pb-0" : ""}`}>
+    <div className="min-h-screen flex flex-col">
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[10000] focus:rounded-sm focus:bg-teal-700 focus:px-4 focus:py-2 focus:text-[0.78rem] focus:font-semibold focus:uppercase focus:tracking-[0.12em] focus:text-white focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-white"
@@ -35,6 +35,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <TrustBar />
       <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
       <Footer />
+      {showMobileContactBar && <div className="h-14 shrink-0 md:hidden" aria-hidden="true" />}
       <ScrollToTop />
       <CookieConsent />
       {showMobileContactBar && <MobileContactBar />}
