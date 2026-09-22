@@ -725,7 +725,7 @@ const fr: Translations = {
   contact: {
     title: "Contact",
     subtitle: "Nous sommes à votre disposition",
-    hereForYou: "Nous sommes à votre disposition",
+    hereForYou: "Personnellement pour votre demande",
     introText: "Qu'il s'agisse d'une demande immobilière, d'un sujet concret ou d'une demande de rendez-vous – écrivez-nous. Nous vous recontacterons personnellement et rapidement.",
     salutation: "Civilité",
     firstName: "Prénom",
