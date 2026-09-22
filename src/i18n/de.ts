@@ -619,7 +619,7 @@ const de: Translations = {
       "In ausgewählten Fällen prüfen wir individuelle, objektbezogene Kooperationen. Keine Standardmodelle – sondern klar strukturierte Vereinbarungen, die zur jeweiligen Situation passen.",
     heroPrimaryCta: "Konstellation besprechen",
     heroSecondaryCta: "Wie wir vorgehen",
-    heroTrustLine: "Vertraulich · Im Einzelfall · Direkter Kontakt zur Geschäftsleitung",
+    heroTrustLine: "Projektbezogene Zusammenarbeit · Direkter Austausch · Klare Zuständigkeiten",
     heroImageAlt: "Ruhige Geschäftsumgebung – sinnbildlich für klar strukturierte, projektbezogene Kooperationen",
     legalNoticeLabel: "Hinweis",
     legalNoticeText:
