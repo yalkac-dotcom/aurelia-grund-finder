@@ -756,7 +756,7 @@ const en: Translations = {
     privacyNote: "Your data will be treated confidentially · Response within 24-48 hours",
     moduleHeading: "Contact",
     moduleIntro: "We look forward to hearing from you.",
-    moduleIntro2: "Whether an initial enquiry, a specific matter or a meeting request – please feel free to reach out in the way that suits you best.",
+    moduleIntro2: "Whether a sale, a purchase, a property in Turkey or a cooperation – tell us briefly about your matter. We will review it confidentially and get back to you personally.",
     moduleGoToForm: "Go to form",
     moduleCta2: "Request a callback",
     moduleCta3: "Schedule a meeting",

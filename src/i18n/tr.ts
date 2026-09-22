@@ -692,7 +692,7 @@ const tr: Translations = {
   contact: {
     title: "İletişim",
     subtitle: "Sizin için buradayız",
-    hereForYou: "Sizin için buradayız",
+    hereForYou: "Talebiniz için kişisel olarak yanınızdayız",
     introText: "İster gayrimenkul talebi, ister somut bir konu veya randevu talebi – bize yazın. Size kişisel olarak ve zamanında dönüş yapacağız.",
     salutation: "Hitap",
     firstName: "Ad",
