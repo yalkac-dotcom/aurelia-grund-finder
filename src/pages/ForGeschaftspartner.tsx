@@ -22,7 +22,7 @@ const ForGeschaftspartner = () => {
   return (
     <Layout>
       <PageHero
-        image={heroSets.investors}
+        image={heroSets.partner}
         imageAlt={p.heroImageAlt}
         kicker={p.heroKicker}
         title={p.heroTitle}
