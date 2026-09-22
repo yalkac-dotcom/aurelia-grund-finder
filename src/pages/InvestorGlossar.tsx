@@ -91,11 +91,11 @@ const InvestorGlossar = () => {
       <section className="py-4">
         <div className="container max-w-4xl">
           <Link
-            to="/investoren"
+            to="/"
             className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent/80 transition-colors"
           >
             <ArrowLeft size={13} />
-            {t.nav.investors}
+            {t.nav.home}
           </Link>
         </div>
       </section>

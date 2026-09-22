@@ -89,13 +89,6 @@ const Privacy = () => {
                 </div>
 
                 <div className="py-6">
-                  <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.googleMapsTitle}</h2>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.googleMapsText}</p>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.googleMapsLegal}</p>
-                  <p className="text-xs text-muted-foreground/60 mt-2">{p.googleMapsLinkHint}</p>
-                </div>
-
-                <div className="py-6">
                   <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.retentionTitle}</h2>
                   <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.retentionText}</p>
                 </div>
