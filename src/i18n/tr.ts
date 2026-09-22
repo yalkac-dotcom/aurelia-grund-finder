@@ -305,7 +305,7 @@ const tr: Translations = {
     heroDescription: "Cebri icra, alacaklı baskısı, tıkanmış miras toplulukları: gayrimenkulünüzü kendi hesabımıza satın alırız — gizli, yapılandırılmış, bağlayıcı.",
     heroPrimaryCta: "Ücretsiz ilk değerlendirme",
     heroSecondaryCta: "Nasıl çalışıyoruz",
-    heroTrustLine: "Bağlayıcı değil · 2 iş günü içinde kişisel geri bildirim",
+    heroTrustLine: "Doğrudan · Gizli · Almanya ve Türkiye'de kişisel",
     areasLabel: "Hizmetler",
     areasTitle: "Mülk sahiplerini rahatlatmanın üç yolu",
     areasIntro: "Biz alıcıyız — aracı değil. Gayrimenkulleri devraldığımız üç tipik durum.",
@@ -327,7 +327,7 @@ const tr: Translations = {
     stepsTitle: "Bir başvuru bizde nasıl ilerler",
     steps: [
       { title: "Durumu siz anlatırsınız", desc: "Kısa, gayri resmi, gizli; telefonla veya formla." },
-      { title: "İnceler ve geri döneriz", desc: "İki iş günü içinde satın almanın gerçekçi olup olmadığını ve hangi belgelere ihtiyaç duyduğumuzu bildiririz. Bir ihale tarihi belirlenmiş olsa bile vakanızı inceleriz." },
+      { title: "İnceler ve geri döneriz", desc: "Satın almanın gerçekçi olup olmadığını ve hangi belgelere ihtiyaç duyduğumuzu bildiririz. Bir ihale tarihi belirlenmiş olsa bile vakanızı inceleriz." },
       { title: "Somut teklif, açık süreç", desc: "Değerleme ve alacaklı görüşmelerinin ardından bir alım teklifi alırsınız; resmi tasdik noterde yapılır." },
     ],
     stepsNote: "İlk görüşme ve inceleme ücretsizdir — sonunda satın alma gerçekleşmese bile. Belirleyici olan, belgelerin ne kadar hızlı temin edilebildiği ve alacaklılarla zamanında bir çözüm üzerinde anlaşılıp anlaşılamayacağıdır.",
@@ -342,7 +342,7 @@ const tr: Translations = {
     faqTitle: "Sıkça sorulan sorular",
     faqIntro: "İlk görüşmeden önce bilinmesi gereken temel bilgiler.",
     faqItems: [
-      { q: "İşbirliği nasıl yürür?", a: "Durumu anlatırsınız, iki iş günü içinde değerlendirmeyle döneriz. Satış olursa değerleme, alacaklı görüşmeleri ve noter işlemlerini biz üstleniriz." },
+      { q: "İşbirliği nasıl yürür?", a: "Durumu anlatırsınız, değerlendirmemizle size geri döneriz. Satış olursa değerleme, alacaklı görüşmeleri ve noter işlemlerini biz üstleniriz." },
       { q: "Hangi belgelere ihtiyacınız var?", a: "İlk değerlendirme için kısa bir tarif yeterlidir. Bağlayıcı bir teklif için: güncel tapu kaydı, alacak dökümleri ve — miras vakalarında — veraset belgesi. Temin etmenize yardımcı oluruz." },
       { q: "Devam eden bir cebri icrada da satabilir miyim?", a: "Bu, ihaleye karar verilene kadar hâlâ mümkün olabilir — koşulu, vakanın zamanında incelenmesi ve ilgili alacaklıların onay vermesidir. İlerlemiş prosedürlerde her gün önemlidir." },
       { q: "Satmazsam masrafım olur mu?", a: "Hayır. İnceleme ve ilk görüşme ücretsizdir. Masraflar yalnızca bir satış sözleşmesi yapıldığında doğar." },
@@ -350,7 +350,7 @@ const tr: Translations = {
       { q: "Başvurum gizli kalır mı?", a: "Evet. Tüm bilgiler kesin gizlilikle ele alınır." },
     ],
     finalCtaTitle: "Şimdi ücretsiz ilk değerlendirmenizi alın",
-    finalCtaText: "Vakanızı bağlayıcı olmadan inceler ve iki iş günü içinde net bir geri bildirimle dönüş yaparız.",
+    finalCtaText: "Vakanızı bağlayıcı olmadan inceler ve net bir geri bildirimle dönüş yaparız.",
     finalCtaButton: "Gizli olarak sor",
   },
   ownerInTrouble: {

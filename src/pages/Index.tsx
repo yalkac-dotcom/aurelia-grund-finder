@@ -26,6 +26,16 @@ type AreaKey = "deutschland" | "tuerkei";
 type ProofKey = "diskretion" | "substanz" | "langfristigkeit" | "klarheit";
 type StepKey = "kontakt" | "pruefung" | "angebot";
 
+const quoteMarks = {
+  de: ["„", "“"],
+  en: ["“", "”"],
+  nl: ["‘", "’"],
+  it: ["«", "»"],
+  es: ["«", "»"],
+  fr: ["« ", " »"],
+  tr: ["“", "”"],
+} as const;
+
 const HomePage = () => {
   const { t, language } = useLanguage();
   usePageSeo(`${t.home.heroTitle} | Aurelia Grundbesitz`, t.home.heroDescription);
@@ -212,7 +222,7 @@ const HomePage = () => {
               <div className="grid gap-5 md:gap-6 md:grid-cols-3 max-w-5xl mx-auto">
                 {t.home.objections.map((item, i) => (
                   <Reveal key={i} delay={i * 0.08}>
-                    <ObjectionCard q={item.q} a={item.a} />
+                    <ObjectionCard q={item.q} a={item.a} quoteMarks={quoteMarks[language]} />
                   </Reveal>
                 ))}
               </div>

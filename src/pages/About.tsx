@@ -138,7 +138,7 @@ const About = () => {
             <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-[1.8] text-highlight-foreground/85 md:text-[16px]">{a.closing.body}</p>
             <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
               <Button asChild size="lg" className="rounded-sm border border-accent/70 bg-primary px-7 text-[12px] font-semibold uppercase tracking-[0.1em] text-primary-foreground hover:bg-primary/90">
-                <Link to="/kontakt#kontaktformular">{a.closing.primary}<ArrowRight size={14} className="text-accent" /></Link>
+                <Link to="/immobilie-anbieten">{a.closing.primary}<ArrowRight size={14} className="text-accent" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-sm border-highlight-foreground/50 bg-transparent px-7 text-[12px] font-semibold uppercase tracking-[0.1em] text-highlight-foreground hover:bg-highlight-foreground hover:text-highlight">
                 <Link to="/kontakt">{a.closing.secondary}</Link>

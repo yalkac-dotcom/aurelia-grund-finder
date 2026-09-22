@@ -305,7 +305,7 @@ const fr: Translations = {
     heroDescription: "Saisie immobilière, pression des créanciers, indivisions successorales bloquées : nous achetons votre bien pour notre propre compte — discret, structuré, engageant.",
     heroPrimaryCta: "Première évaluation gratuite",
     heroSecondaryCta: "Comment nous travaillons",
-    heroTrustLine: "Sans engagement · Réponse personnelle sous 2 jours ouvrés",
+    heroTrustLine: "Direct · Discret · Personnel en Allemagne et en Turquie",
     areasLabel: "Services",
     areasTitle: "Trois façons de soulager les propriétaires",
     areasIntro: "Nous sommes des acheteurs — pas des courtiers. Trois situations typiques dans lesquelles nous reprenons des biens.",
@@ -327,7 +327,7 @@ const fr: Translations = {
     stepsTitle: "Comment se déroule une demande chez nous",
     steps: [
       { title: "Vous décrivez votre cas", desc: "Brièvement, sans formalité, en toute confidentialité par téléphone ou via le formulaire." },
-      { title: "Nous examinons et revenons vers vous", desc: "Sous deux jours ouvrés, nous vous indiquons si un achat est réaliste et quels documents nous avons besoin. Nous examinons aussi votre cas si une date de vente aux enchères est déjà fixée." },
+      { title: "Nous examinons et revenons vers vous", desc: "Nous vous indiquons si un achat est réaliste et de quels documents nous avons besoin. Nous examinons aussi votre cas si une date de vente aux enchères est déjà fixée." },
       { title: "Offre concrète, traitement clair", desc: "Après évaluation et échanges avec les créanciers, vous recevez une offre d’achat ; l’acte est signé chez le notaire." },
     ],
     stepsNote: "L’entretien initial et l’examen sont gratuits — même si aucun achat n’est finalement conclu. L’essentiel est la rapidité avec laquelle les documents sont disponibles et la possibilité de trouver une solution à temps avec les créanciers.",
@@ -342,7 +342,7 @@ const fr: Translations = {
     faqTitle: "Questions fréquentes",
     faqIntro: "L’essentiel avant un premier entretien.",
     faqItems: [
-      { q: "Comment se déroule la collaboration ?", a: "Vous décrivez le cas, nous revenons vers vous sous deux jours ouvrés avec une évaluation. En cas de vente, nous nous chargeons de l’évaluation, des échanges avec les créanciers et du rendez-vous notarial." },
+      { q: "Comment se déroule la collaboration ?", a: "Vous décrivez le cas et nous revenons vers vous avec une évaluation. En cas de vente, nous nous chargeons de l’évaluation, des échanges avec les créanciers et du rendez-vous notarial." },
       { q: "De quels documents avez-vous besoin ?", a: "Pour la première évaluation, une brève description suffit. Pour une offre ferme : extrait de registre foncier actuel, relevés de créances et, en cas de succession, le certificat d’hérédité. Nous vous aidons à les obtenir." },
       { q: "Puis-je encore vendre pendant une saisie immobilière en cours ?", a: "Cela peut rester possible jusqu’à l’adjudication — à condition que le cas soit examiné à temps et que les créanciers concernés soient d’accord. Dans les procédures avancées, chaque jour compte." },
       { q: "Des frais surviennent-ils si je ne vends pas ?", a: "Non. L’examen et le premier entretien sont gratuits. Des frais n’apparaissent qu’avec un contrat de vente." },
@@ -350,7 +350,7 @@ const fr: Translations = {
       { q: "Ma demande reste-t-elle confidentielle ?", a: "Oui. Toutes les informations sont traitées en toute confidentialité." },
     ],
     finalCtaTitle: "Obtenez dès maintenant votre première évaluation gratuite",
-    finalCtaText: "Nous examinons votre cas sans engagement et revenons vers vous sous deux jours ouvrés avec une réponse claire.",
+    finalCtaText: "Nous examinons votre cas sans engagement et revenons vers vous avec une réponse claire.",
     finalCtaButton: "Nous contacter en toute confidentialité",
   },
   ownerInTrouble: {

@@ -35,7 +35,7 @@ const it: Translations = {
     subline: "Germania · Turchia · Patrimonio e collaborazioni",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Proprietari in difficoltà", path: "/fuer-eigentumer-in-not" },
+      { label: "Proprietari", path: "/fuer-eigentumer-in-not" },
       { label: "Per acquirenti", path: "/fuer-kaeufer" },
       { label: "Immobili in Turchia", path: "/immobilien-tuerkei" },
       { label: "Per partner", path: "/fuer-geschaeftspartner" },
@@ -305,7 +305,7 @@ const it: Translations = {
     heroDescription: "Asta giudiziaria, pressione dei creditori, comunità ereditarie bloccate: acquistiamo il vostro immobile per conto proprio — discreto, strutturato, vincolante.",
     heroPrimaryCta: "Valutazione iniziale gratuita",
     heroSecondaryCta: "Metodo",
-    heroTrustLine: "Senza impegno · Risposta personale entro 2 giorni lavorativi",
+    heroTrustLine: "Diretto · Riservato · Personale in Germania e Turchia",
     areasLabel: "Servizi",
     areasTitle: "Tre modi in cui alleggeriamo i proprietari",
     areasIntro: "Siamo acquirenti — non mediatori. Tre situazioni tipiche in cui rileviamo immobili.",
@@ -327,7 +327,7 @@ const it: Translations = {
     stepsTitle: "Come si svolge una richiesta da noi",
     steps: [
       { title: "Ci descrivete il caso", desc: "Brevemente, informalmente, in modo riservato per telefono o tramite il modulo." },
-      { title: "Verifichiamo e vi rispondiamo", desc: "Entro due giorni lavorativi vi diciamo se un acquisto è realistico e quali documenti ci servono. Esaminiamo il vostro caso anche se è già stata fissata una data d'asta." },
+      { title: "Verifichiamo e vi rispondiamo", desc: "Vi comunichiamo se un acquisto è realistico e quali documenti ci servono. Esaminiamo il vostro caso anche se è già stata fissata una data d'asta." },
       { title: "Offerta concreta, esecuzione chiara", desc: "Dopo valutazione e colloqui con i creditori ricevete un'offerta d'acquisto; l'atto si stipula davanti al notaio." },
     ],
     stepsNote: "Il primo colloquio e la verifica sono gratuiti — anche se alla fine l'acquisto non si concretizza. È decisivo quanto velocemente sono disponibili i documenti e se è possibile concordare per tempo una soluzione con i creditori.",
@@ -342,7 +342,7 @@ const it: Translations = {
     faqTitle: "Domande frequenti",
     faqIntro: "L'essenziale prima di un primo colloquio.",
     faqItems: [
-      { q: "Come si svolge la collaborazione?", a: "Ci descrivete il caso, vi rispondiamo entro due giorni lavorativi con una valutazione. In caso di vendita ci occupiamo di valutazione, colloqui con i creditori e atto notarile." },
+      { q: "Come si svolge la collaborazione?", a: "Ci descrivete il caso e noi vi rispondiamo con una valutazione. In caso di vendita ci occupiamo di valutazione, colloqui con i creditori e atto notarile." },
       { q: "Quali documenti vi servono?", a: "Per la valutazione iniziale basta una breve descrizione. Per un'offerta vincolante: estratto aggiornato del registro fondiario, distinte dei crediti e — in caso di successione — il certificato di eredità. Vi aiutiamo a procurarli." },
       { q: "Posso vendere anche durante un'asta giudiziaria in corso?", a: "Può essere ancora possibile fino all'aggiudicazione — a condizione che il caso venga esaminato per tempo e che i creditori coinvolti siano d'accordo. Nelle procedure avanzate ogni giorno conta." },
       { q: "Avrò costi se non vendo?", a: "No. Verifica e primo colloquio sono gratuiti. I costi insorgono solo con un contratto di compravendita." },
@@ -350,7 +350,7 @@ const it: Translations = {
       { q: "La mia richiesta resta riservata?", a: "Sì. Trattiamo tutte le informazioni in modo strettamente riservato." },
     ],
     finalCtaTitle: "Richiedete ora la vostra valutazione iniziale gratuita",
-    finalCtaText: "Esaminiamo il vostro caso senza impegno e vi rispondiamo entro due giorni lavorativi con un parere chiaro.",
+    finalCtaText: "Esaminiamo il vostro caso senza impegno e vi rispondiamo con un parere chiaro.",
     finalCtaButton: "Richiesta riservata",
   },
   ownerInTrouble: {
