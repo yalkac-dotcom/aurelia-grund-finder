@@ -212,7 +212,7 @@ const de: Translations = {
     ],
     projectsLabel: "Standortfokus",
     projectsTitle: "Standorte mit Substanz",
-    projectsText: "Wir konzentrieren uns auf Standorte in Deutschland, die Substanz, Nachfrage und Entwicklungspotenzial miteinander verbinden.",
+    projectsText: "Unser Fokus liegt auf Nordrhein-Westfalen und ausgewählten Standorten in der Türkei – mit lokaler Marktkenntnis, belastbaren Netzwerken und einem realistischen Blick auf Potenziale.",
     stats: [
       { value: "Substanz", label: "Immobilienkompetenz" },
       { value: "DE", label: "Fokus auf Deutschland" },

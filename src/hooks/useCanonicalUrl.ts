@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { useLanguage } from "@/i18n/LanguageContext";
+import type { Language } from "@/i18n/types";
 
 const SITE_ORIGIN = "https://www.aureliaestates.de";
 
@@ -9,9 +11,11 @@ const SITE_ORIGIN = "https://www.aureliaestates.de";
  */
 export const useCanonicalUrl = () => {
   const { pathname } = useLocation();
+  const { language } = useLanguage();
 
   useEffect(() => {
-    const url = `${SITE_ORIGIN}${pathname === "/" ? "/" : pathname.replace(/\/+$/, "")}`;
+    const route = pathname === "/" ? "/" : pathname.replace(/\/+$/, "");
+    const url = `${SITE_ORIGIN}${route}?lang=${language}`;
 
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!canonical) {
@@ -21,7 +25,21 @@ export const useCanonicalUrl = () => {
     }
     canonical.href = url;
 
+    const languages: Language[] = ["de", "tr", "en", "nl", "it", "es", "fr"];
+    for (const lang of languages) {
+      let alternate = document.querySelector<HTMLLinkElement>(`link[rel="alternate"][hreflang="${lang}"]`);
+      if (!alternate) {
+        alternate = document.createElement("link");
+        alternate.rel = "alternate";
+        alternate.hreflang = lang;
+        document.head.appendChild(alternate);
+      }
+      alternate.href = `${SITE_ORIGIN}${route}?lang=${lang}`;
+    }
+    const fallback = document.querySelector<HTMLLinkElement>('link[rel="alternate"][hreflang="x-default"]');
+    if (fallback) fallback.href = `${SITE_ORIGIN}${route}?lang=en`;
+
     const ogUrl = document.querySelector<HTMLMetaElement>('meta[property="og:url"]');
     if (ogUrl) ogUrl.content = url;
-  }, [pathname]);
+  }, [language, pathname]);
 };

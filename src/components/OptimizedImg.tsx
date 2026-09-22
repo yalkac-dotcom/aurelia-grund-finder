@@ -70,7 +70,7 @@ const OptimizedImg = ({
         alt={alt ?? ""}
         loading="eager"
         decoding="sync"
-        fetchPriority="high"
+        {...({ fetchpriority: "high" } as React.HTMLAttributes<HTMLImageElement>)}
         className={className}
         onError={() => setFailed(true)}
         {...props}
@@ -87,7 +87,7 @@ const OptimizedImg = ({
       alt={alt ?? ""}
       loading="lazy"
       decoding="async"
-      fetchPriority="auto"
+      {...({ fetchpriority: "auto" } as React.HTMLAttributes<HTMLImageElement>)}
       onLoad={() => setLoaded(true)}
       onError={() => setFailed(true)}
       className={`${className ?? ""} transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}

@@ -210,7 +210,7 @@ const tr: Translations = {
     ],
     projectsLabel: "Konum odağı",
     projectsTitle: "Özü olan lokasyonlar",
-    projectsText: "Almanya'da öz, talep ve gelişim potansiyelini birleştiren lokasyonlara odaklanıyoruz.",
+    projectsText: "Kuzey Ren-Vestfalya ve Türkiye'deki seçili lokasyonlara; yerel pazar bilgisi, güvenilir ağlar ve potansiyele gerçekçi bir bakışla odaklanıyoruz.",
     stats: [
       { value: "Seçici", label: "Dikkatle incelenen projeler" },
       { value: "Uzun vadeli", label: "Sürdürülebilir yapılarda düşünürüz" },
@@ -714,7 +714,7 @@ const tr: Translations = {
     successText: "Talebinizi aldık ve 24-48 saat içinde size geri döneceğiz.",
     subjectOptions: ["Genel talep", "Satın alma teklifi", "Yatırımcı talebi", "Geri arama talebi", "Diğer konu"],
     propertyType: "Talebinizin konusu",
-    propertyTypeOptions: ["Cebri icra", "Miras / Veraset", "İflas", "Diğer"],
+    propertyTypeOptions: ["Cebri icra", "Miras / Veraset", "İflas", "Acil durum olmadan doğrudan satın alma", "Diğer"],
     company: "Şirket / Kurum",
     messagePlaceholder: "Talebinizi kısaca açıklayın …",
     formLabel: "İletişim formu",

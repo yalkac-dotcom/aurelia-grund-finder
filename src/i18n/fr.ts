@@ -210,7 +210,7 @@ const fr: Translations = {
     ],
     projectsLabel: "Ancrage territorial",
     projectsTitle: "Des localisations solides",
-    projectsText: "Nous nous concentrons sur des localisations en Allemagne qui allient solidité, demande et potentiel de développement.",
+    projectsText: "Nous nous concentrons sur la Rhénanie-du-Nord-Westphalie et sur des sites sélectionnés en Turquie, avec une connaissance locale du marché, des réseaux fiables et une vision réaliste des potentiels.",
     stats: [
       { value: "Sélectifs", label: "Projets examinés avec soin" },
       { value: "Long terme", label: "Une pensée fondée sur des structures durables" },
@@ -747,7 +747,7 @@ const fr: Translations = {
     successText: "Nous avons bien reçu votre demande et reviendrons vers vous sous 24 à 48 heures.",
     subjectOptions: ["Demande générale", "Offre d’acquisition", "Demande d’investisseur", "Demande de rappel", "Autre sujet"],
     propertyType: "Objet de votre demande",
-    propertyTypeOptions: ["Saisie immobilière", "Succession / héritage", "Insolvabilité", "Autre"],
+    propertyTypeOptions: ["Saisie immobilière", "Succession / héritage", "Insolvabilité", "Achat direct (hors situation difficile)", "Autre"],
     company: "Entreprise / institution",
     messagePlaceholder: "Décrivez brièvement votre demande…",
     formLabel: "Formulaire de contact",

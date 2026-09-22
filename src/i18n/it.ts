@@ -210,7 +210,7 @@ const it: Translations = {
     ],
     projectsLabel: "Focus geografico",
     projectsTitle: "Località con sostanza",
-    projectsText: "Ci concentriamo su località in Germania che uniscono sostanza, domanda e potenziale di sviluppo.",
+    projectsText: "Ci concentriamo sulla Renania Settentrionale-Vestfalia e su località selezionate in Turchia, con conoscenza del mercato locale, reti affidabili e una valutazione realistica del potenziale.",
     stats: [
       { value: "Sostanza", label: "Competenza nel mercato immobiliare" },
       { value: "DE", label: "Focus sulla Germania" },
@@ -714,7 +714,7 @@ const it: Translations = {
     successText: "Abbiamo ricevuto la vostra richiesta e vi risponderemo entro 24-48 ore.",
     subjectOptions: ["Richiesta generale", "Offerta di acquisto", "Richiesta investitori", "Richiesta di richiamata", "Altra questione"],
     propertyType: "Oggetto della richiesta",
-    propertyTypeOptions: ["Esecuzione forzata", "Eredità / Successione", "Insolvenza", "Altro"],
+    propertyTypeOptions: ["Esecuzione forzata", "Eredità / Successione", "Insolvenza", "Acquisto diretto (senza situazione di difficoltà)", "Altro"],
     company: "Azienda / Istituzione",
     messagePlaceholder: "Descrivete brevemente la vostra richiesta …",
     formLabel: "Modulo di contatto",

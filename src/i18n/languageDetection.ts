@@ -128,7 +128,7 @@ export const fetchCountry = async (signal?: AbortSignal): Promise<string | null>
 };
 
 /**
- * Priority: explicit URL language > stored manual choice > GeoIP country > German (technical fallback).
+ * Priority: explicit URL language > stored manual choice > GeoIP country > English fallback.
  * Returns the language to use plus whether it came from an explicit (manual/URL) source.
  */
 export const resolveInitialLanguage = (): { language: Language; explicit: boolean } => {
@@ -144,5 +144,5 @@ export const resolveInitialLanguage = (): { language: Language; explicit: boolea
   const country = cachedCountry();
   const fromCountry = languageForCountry(country);
   if (fromCountry) return { language: fromCountry, explicit: false };
-  return { language: "de", explicit: false };
+  return { language: "en", explicit: false };
 };

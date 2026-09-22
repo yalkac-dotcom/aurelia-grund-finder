@@ -26,6 +26,7 @@ interface ContactPayload {
   preferred_language?: string | null;
   form_type?: "general_contact" | "turkey_property" | null;
   files?: { name: string; path: string; size: number; type: string }[];
+  privacy_consent?: boolean;
 }
 
 type Locale = "de" | "en" | "nl" | "it" | "es" | "tr" | "fr";
@@ -292,10 +293,25 @@ Deno.serve(async (req) => {
       });
     }
     if (
-      body.form_type === "general_contact" &&
+      (body.form_type === "general_contact" || body.form_type === "turkey_property") &&
       (!body.phone || typeof body.phone !== "string" || body.phone.trim().length === 0 || body.phone.length > 50)
     ) {
       return new Response(JSON.stringify({ error: "Invalid phone" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    if (body.privacy_consent !== true) {
+      return new Response(JSON.stringify({ error: "Privacy consent required" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    if (
+      body.form_type === "general_contact" &&
+      (!body.subject || typeof body.subject !== "string" || body.subject.trim().length === 0 || body.subject.length > 120)
+    ) {
+      return new Response(JSON.stringify({ error: "Invalid subject" }), {
         status: 400,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });

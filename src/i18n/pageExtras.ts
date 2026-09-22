@@ -2,7 +2,7 @@ import type { Language } from "./types";
 
 type PageExtras = {
   imageCredits: { first: string; second: string; contact: string };
-  contact: { availabilityShort: string; personalPrompt: string; consultation: string; consultationSubject: string; phone: string; email: string };
+  contact: { availabilityShort: string; personalPrompt: string; consultation: string; consultationSubject: string; phone: string; email: string; confirmationWarning: string };
   portfolio: {
     seoTitle: string; heroKicker: string; heroTitle: string; heroDescription: string; heroAlt: string;
     introTitle: string; introText: string; categoriesTitle: string; categoriesIntro: string;
@@ -10,6 +10,7 @@ type PageExtras = {
     regionTitle: string; regionText: string; ctaTitle: string; ctaText: string; ctaButton: string;
   };
   accessibility: { chooseLetters: string; homeHeroAlt: string; promisesAlt: string };
+  shared: { faqPrompt: string; call: string; enquire: string; faqHeroAlt: string };
 };
 
 export const pageExtras: Record<Language, PageExtras> = {
@@ -26,6 +27,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       consultationSubject: "Kostenloses Erstgespräch anfordern",
       phone: "Telefon",
       email: "E-Mail",
+      confirmationWarning: "Ihre Anfrage ist eingegangen. Die automatische E-Mail-Bestätigung konnte derzeit nicht zugestellt werden.",
     },
     portfolio: {
       seoTitle: "Portfolio – Aurelia Grundbesitz GmbH", heroKicker: "Portfolio", heroTitle: "Aktuelle Immobilien", heroDescription: "Qualitätsgeprüfte Objekte in Düsseldorf und Umland.", heroAlt: "Aurelia Immobilien-Portfolio",
@@ -41,6 +43,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       ctaTitle: "Konkrete Objekte anfragen", ctaText: "Beschreiben Sie uns kurz, wonach Sie suchen — wir prüfen, welche Objekte aus unserem aktuellen Bestand für Sie in Frage kommen.", ctaButton: "Portfolio anfragen",
     },
     accessibility: { chooseLetters: "Buchstaben wählen", homeHeroAlt: "Ruhige Wohnstraße mit gepflegtem Mehrfamilienhaus bei Tageslicht", promisesAlt: "Vier Marmorsäulen in einem lichtdurchfluteten Raum als Sinnbild für unsere vier Versprechen" },
+    shared: { faqPrompt: "Weitere Fragen beantworten wir in unseren FAQ.", call: "Anrufen", enquire: "Anfragen", faqHeroAlt: "Ruhiger Besprechungsraum mit Immobilienunterlagen" },
   },
   tr: {
     imageCredits: {
@@ -48,7 +51,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       second: "Ücretli veya lisans durumu belirsiz üçüncü taraf görseller kullanılmamaktadır. Buna rağmen üçüncü kişilere ait hakların etkilenmiş olabileceğini düşünüyorsanız, lütfen derhal bizimle iletişime geçin.",
       contact: "Sorularınız için iletişim",
     },
-    contact: { availabilityShort: "Pazartesi–Cuma; devam eden işlemlerde kısa sürede de ulaşabilirsiniz", personalPrompt: "Yüz yüze görüşmeyi mi tercih edersiniz? Gizli bir ilk görüşme planlayın.", consultation: "Ücretsiz ilk görüşme", consultationSubject: "Ücretsiz ilk görüşme talebi", phone: "Telefon", email: "E-posta" },
+    contact: { availabilityShort: "Pazartesi–Cuma; devam eden işlemlerde kısa sürede de ulaşabilirsiniz", personalPrompt: "Yüz yüze görüşmeyi mi tercih edersiniz? Gizli bir ilk görüşme planlayın.", consultation: "Ücretsiz ilk görüşme", consultationSubject: "Ücretsiz ilk görüşme talebi", phone: "Telefon", email: "E-posta", confirmationWarning: "Talebiniz bize ulaştı. Otomatik e-posta onayı şu anda teslim edilemedi." },
     portfolio: {
       seoTitle: "Portföy – Aurelia Grundbesitz GmbH", heroKicker: "Portföy", heroTitle: "Güncel gayrimenkuller", heroDescription: "Düsseldorf ve çevresinde özenle incelenmiş gayrimenkuller.", heroAlt: "Aurelia gayrimenkul portföyü",
       introTitle: "Düzenli olarak yenilenen seçenekler", introText: "Aurelia, Düsseldorf ve çevresinde özenle incelenmiş gayrimenkullerden oluşan ve düzenli olarak yenilenen bir portföye sahiptir. Portföyümüz gizlilik içinde yönetildiği ve sürekli değiştiği için somut gayrimenkulleri yalnızca doğrudan talep üzerine sunuyoruz.",
@@ -63,10 +66,11 @@ export const pageExtras: Record<Language, PageExtras> = {
       ctaTitle: "Belirli gayrimenkuller hakkında bilgi alın", ctaText: "Aradığınız gayrimenkulü kısaca açıklayın; güncel portföyümüzde size uygun seçenekleri inceleyelim.", ctaButton: "Portföy hakkında bilgi alın",
     },
     accessibility: { chooseLetters: "Harf seçin", homeHeroAlt: "Gün ışığında, sakin bir sokakta bakımlı apartman", promisesAlt: "Dört taahhüdümüzü simgeleyen, aydınlık bir mekândaki dört mermer sütun" },
+    shared: { faqPrompt: "Diğer sorularınızı SSS bölümümüzde yanıtlıyoruz.", call: "Arayın", enquire: "Talep gönderin", faqHeroAlt: "Gayrimenkul belgelerinin bulunduğu sakin bir toplantı odası" },
   },
   en: {
     imageCredits: { first: "All images used on this website were generated using artificial intelligence and are royalty-free. They were created specifically for Aurelia Grundbesitz GmbH and are used solely for illustrative purposes.", second: "We do not use third-party images that require payment or have an unclear licensing status. If you nevertheless believe that third-party rights may be affected, please contact us immediately.", contact: "Contact for enquiries" },
-    contact: { availabilityShort: "Monday–Friday, including at short notice during ongoing proceedings", personalPrompt: "Prefer to speak in person? Arrange a confidential initial consultation.", consultation: "Free initial consultation", consultationSubject: "Request a free initial consultation", phone: "Phone", email: "Email" },
+    contact: { availabilityShort: "Monday–Friday, including at short notice during ongoing proceedings", personalPrompt: "Prefer to speak in person? Arrange a confidential initial consultation.", consultation: "Free initial consultation", consultationSubject: "Request a free initial consultation", phone: "Phone", email: "Email", confirmationWarning: "Your enquiry has been received. The automatic email confirmation could not be delivered at this time." },
     portfolio: {
       seoTitle: "Portfolio – Aurelia Grundbesitz GmbH", heroKicker: "Portfolio", heroTitle: "Current properties", heroDescription: "Quality-reviewed properties in Düsseldorf and the surrounding area.", heroAlt: "Aurelia property portfolio",
       introTitle: "A selection that changes regularly", introText: "Aurelia maintains a regularly changing portfolio of quality-reviewed properties in Düsseldorf and the surrounding area. As our portfolio is managed confidentially and changes continuously, we present specific properties only upon direct enquiry.", categoriesTitle: "Property categories", categoriesIntro: "Our portfolio covers various asset classes; availability varies.",
@@ -74,10 +78,11 @@ export const pageExtras: Record<Language, PageExtras> = {
       regionTitle: "Our markets", regionText: "Germany with a focus on North Rhine-Westphalia, as well as properties and land in Turkey. We review attractive locations, special situations and properties with development or value-appreciation potential.", ctaTitle: "Enquire about specific properties", ctaText: "Briefly tell us what you are looking for, and we will review which properties in our current portfolio may be suitable for you.", ctaButton: "Enquire about our portfolio",
     },
     accessibility: { chooseLetters: "Choose a letter", homeHeroAlt: "Well-maintained apartment building on a quiet residential street in daylight", promisesAlt: "Four marble columns in a light-filled room symbolising our four commitments" },
+    shared: { faqPrompt: "We answer further questions in our FAQ.", call: "Call", enquire: "Enquire", faqHeroAlt: "Calm meeting room with property documents" },
   },
   nl: {
     imageCredits: { first: "Alle afbeeldingen op deze website zijn met kunstmatige intelligentie gegenereerd en rechtenvrij. Ze zijn speciaal voor Aurelia Grundbesitz GmbH gemaakt en dienen uitsluitend ter illustratie.", second: "Wij gebruiken geen afbeeldingen van derden waarvoor betaald moet worden of waarvan de licentiestatus onduidelijk is. Denkt u desondanks dat rechten van derden mogelijk zijn geraakt, neem dan onmiddellijk contact met ons op.", contact: "Contact bij vragen" },
-    contact: { availabilityShort: "Maandag–vrijdag, ook op korte termijn bij lopende procedures", personalPrompt: "Liever persoonlijk contact? Plan een vertrouwelijk eerste gesprek.", consultation: "Gratis eerste gesprek", consultationSubject: "Gratis eerste gesprek aanvragen", phone: "Telefoon", email: "E-mail" },
+    contact: { availabilityShort: "Maandag–vrijdag, ook op korte termijn bij lopende procedures", personalPrompt: "Liever persoonlijk contact? Plan een vertrouwelijk eerste gesprek.", consultation: "Gratis eerste gesprek", consultationSubject: "Gratis eerste gesprek aanvragen", phone: "Telefoon", email: "E-mail", confirmationWarning: "Uw aanvraag is ontvangen. De automatische e-mailbevestiging kon momenteel niet worden bezorgd." },
     portfolio: {
       seoTitle: "Portefeuille – Aurelia Grundbesitz GmbH", heroKicker: "Portefeuille", heroTitle: "Actueel vastgoed", heroDescription: "Op kwaliteit beoordeeld vastgoed in Düsseldorf en omgeving.", heroAlt: "Vastgoedportefeuille van Aurelia",
       introTitle: "Regelmatig wisselend aanbod", introText: "Aurelia beschikt over een regelmatig wisselende portefeuille van op kwaliteit beoordeeld vastgoed in Düsseldorf en omgeving. Omdat ons aanbod vertrouwelijk wordt beheerd en voortdurend verandert, presenteren wij concrete objecten uitsluitend op directe aanvraag.", categoriesTitle: "Vastgoedcategorieën", categoriesIntro: "Onze portefeuille omvat diverse vastgoedklassen; de beschikbaarheid varieert.",
@@ -85,10 +90,11 @@ export const pageExtras: Record<Language, PageExtras> = {
       regionTitle: "Onze markten", regionText: "Duitsland met een zwaartepunt in Noordrijn-Westfalen, evenals vastgoed en grondpercelen in Turkije. Wij beoordelen aantrekkelijke locaties, bijzondere uitgangssituaties en objecten met ontwikkelings- of waardestijgingspotentieel.", ctaTitle: "Vraag naar concrete objecten", ctaText: "Vertel ons kort wat u zoekt; wij bekijken welke objecten uit onze actuele portefeuille bij u passen.", ctaButton: "Portefeuille aanvragen",
     },
     accessibility: { chooseLetters: "Kies een letter", homeHeroAlt: "Goed onderhouden appartementencomplex in een rustige woonstraat bij daglicht", promisesAlt: "Vier marmeren zuilen in een lichte ruimte als symbool voor onze vier beloften" },
+    shared: { faqPrompt: "Meer vragen beantwoorden wij in onze FAQ.", call: "Bellen", enquire: "Aanvragen", faqHeroAlt: "Rustige vergaderruimte met vastgoeddocumenten" },
   },
   it: {
     imageCredits: { first: "Tutte le immagini utilizzate su questo sito sono state generate con l'intelligenza artificiale e sono esenti da diritti di licenza. Sono state create appositamente per Aurelia Grundbesitz GmbH e sono utilizzate esclusivamente a scopo illustrativo.", second: "Non utilizziamo immagini di terzi a pagamento o con una situazione di licenza incerta. Qualora ritenesse comunque che possano essere stati lesi diritti di terzi, la preghiamo di contattarci immediatamente.", contact: "Contatti per informazioni" },
-    contact: { availabilityShort: "Dal lunedì al venerdì, anche con breve preavviso per procedure in corso", personalPrompt: "Preferisce un contatto personale? Fissi un primo colloquio riservato.", consultation: "Primo colloquio gratuito", consultationSubject: "Richiesta di primo colloquio gratuito", phone: "Telefono", email: "E-mail" },
+    contact: { availabilityShort: "Dal lunedì al venerdì, anche con breve preavviso per procedure in corso", personalPrompt: "Preferisce un contatto personale? Fissi un primo colloquio riservato.", consultation: "Primo colloquio gratuito", consultationSubject: "Richiesta di primo colloquio gratuito", phone: "Telefono", email: "E-mail", confirmationWarning: "La sua richiesta è stata ricevuta. Al momento non è stato possibile recapitare la conferma automatica via e-mail." },
     portfolio: {
       seoTitle: "Portafoglio – Aurelia Grundbesitz GmbH", heroKicker: "Portafoglio", heroTitle: "Immobili attuali", heroDescription: "Immobili selezionati e verificati a Düsseldorf e dintorni.", heroAlt: "Portafoglio immobiliare Aurelia",
       introTitle: "Una selezione in costante aggiornamento", introText: "Aurelia dispone di un portafoglio in costante aggiornamento di immobili selezionati e verificati a Düsseldorf e dintorni. Poiché il nostro patrimonio viene gestito in modo riservato e cambia continuamente, presentiamo immobili specifici esclusivamente su richiesta diretta.", categoriesTitle: "Categorie di immobili", categoriesIntro: "Il nostro portafoglio comprende diverse classi di immobili; la disponibilità varia.",
@@ -96,10 +102,11 @@ export const pageExtras: Record<Language, PageExtras> = {
       regionTitle: "I nostri mercati", regionText: "Germania con focus sulla Renania Settentrionale-Vestfalia, nonché immobili e terreni in Turchia. Valutiamo località interessanti, situazioni particolari e immobili con potenziale di sviluppo o di rivalutazione.", ctaTitle: "Richieda informazioni su immobili specifici", ctaText: "Ci descriva brevemente ciò che cerca: verificheremo quali immobili del nostro portafoglio attuale possono essere adatti alle sue esigenze.", ctaButton: "Richiedi il portafoglio",
     },
     accessibility: { chooseLetters: "Scegli una lettera", homeHeroAlt: "Edificio residenziale ben tenuto in una tranquilla strada di giorno", promisesAlt: "Quattro colonne di marmo in un ambiente luminoso, simbolo dei nostri quattro impegni" },
+    shared: { faqPrompt: "Rispondiamo ad altre domande nelle nostre FAQ.", call: "Chiama", enquire: "Invia richiesta", faqHeroAlt: "Sala riunioni tranquilla con documenti immobiliari" },
   },
   es: {
     imageCredits: { first: "Todas las imágenes utilizadas en este sitio web han sido generadas mediante inteligencia artificial y están libres de derechos de licencia. Se crearon específicamente para Aurelia Grundbesitz GmbH y se utilizan únicamente con fines ilustrativos.", second: "No utilizamos imágenes de terceros de pago o cuya situación de licencia sea incierta. Si, pese a ello, considera que podrían verse afectados derechos de terceros, le rogamos que se ponga en contacto con nosotros de inmediato.", contact: "Contacto para consultas" },
-    contact: { availabilityShort: "De lunes a viernes, también con poca antelación en procedimientos en curso", personalPrompt: "¿Prefiere hablar personalmente? Concierte una primera consulta confidencial.", consultation: "Primera consulta gratuita", consultationSubject: "Solicitar una primera consulta gratuita", phone: "Teléfono", email: "Correo electrónico" },
+    contact: { availabilityShort: "De lunes a viernes, también con poca antelación en procedimientos en curso", personalPrompt: "¿Prefiere hablar personalmente? Concierte una primera consulta confidencial.", consultation: "Primera consulta gratuita", consultationSubject: "Solicitar una primera consulta gratuita", phone: "Teléfono", email: "Correo electrónico", confirmationWarning: "Hemos recibido su consulta. En este momento no ha sido posible entregar la confirmación automática por correo electrónico." },
     portfolio: {
       seoTitle: "Cartera – Aurelia Grundbesitz GmbH", heroKicker: "Cartera", heroTitle: "Inmuebles actuales", heroDescription: "Inmuebles revisados en Düsseldorf y sus alrededores.", heroAlt: "Cartera inmobiliaria de Aurelia",
       introTitle: "Una selección que se actualiza regularmente", introText: "Aurelia cuenta con una cartera en constante actualización de inmuebles revisados en Düsseldorf y sus alrededores. Como gestionamos nuestra cartera de forma confidencial y cambia continuamente, presentamos inmuebles concretos únicamente previa consulta directa.", categoriesTitle: "Categorías de inmuebles", categoriesIntro: "Nuestra cartera abarca distintas clases de activos; la disponibilidad puede variar.",
@@ -107,6 +114,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       regionTitle: "Nuestros mercados", regionText: "Alemania con especial atención a Renania del Norte-Westfalia, así como inmuebles y terrenos en Turquía. Analizamos ubicaciones atractivas, situaciones especiales e inmuebles con potencial de desarrollo o de revalorización.", ctaTitle: "Consulte inmuebles concretos", ctaText: "Descríbanos brevemente qué busca y comprobaremos qué inmuebles de nuestra cartera actual pueden ajustarse a sus necesidades.", ctaButton: "Consultar la cartera",
     },
     accessibility: { chooseLetters: "Elegir una letra", homeHeroAlt: "Edificio residencial bien cuidado en una calle tranquila a la luz del día", promisesAlt: "Cuatro columnas de mármol en un espacio luminoso como símbolo de nuestros cuatro compromisos" },
+    shared: { faqPrompt: "Respondemos a otras preguntas en nuestras FAQ.", call: "Llamar", enquire: "Consultar", faqHeroAlt: "Sala de reuniones tranquila con documentación inmobiliaria" },
   },
   fr: {
     imageCredits: {
@@ -121,6 +129,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       consultationSubject: "Demander un premier entretien gratuit",
       phone: "Téléphone",
       email: "E-mail",
+      confirmationWarning: "Votre demande a bien été reçue. La confirmation automatique par e-mail n'a pas pu être délivrée pour le moment.",
     },
     portfolio: {
       seoTitle: "Portefeuille – Aurelia Grundbesitz GmbH", heroKicker: "Portefeuille", heroTitle: "Biens immobiliers actuels", heroDescription: "Des biens contrôlés en termes de qualité à Düsseldorf et ses environs.", heroAlt: "Portefeuille immobilier Aurelia",
@@ -136,6 +145,7 @@ export const pageExtras: Record<Language, PageExtras> = {
       ctaTitle: "Demander des biens concrets", ctaText: "Décrivez-nous brièvement ce que vous recherchez — nous examinerons quels biens de notre portefeuille actuel pourraient vous convenir.", ctaButton: "Demander le portefeuille",
     },
     accessibility: { chooseLetters: "Choisir une lettre", homeHeroAlt: "Rue résidentielle calme avec un immeuble bien entretenu en plein jour", promisesAlt: "Quatre colonnes de marbre dans une pièce baignée de lumière, symbole de nos quatre engagements" },
+    shared: { faqPrompt: "Nous répondons à vos autres questions dans notre FAQ.", call: "Appeler", enquire: "Faire une demande", faqHeroAlt: "Salle de réunion calme avec des documents immobiliers" },
   },
 };
 

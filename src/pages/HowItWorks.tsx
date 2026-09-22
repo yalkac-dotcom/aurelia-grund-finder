@@ -10,13 +10,15 @@ import { Link } from "react-router-dom";
 import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
+import { pageExtras } from "@/i18n/pageExtras";
 
 // Hold-Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
 const holdStepIcons = [icons3d.key, icons3d.compassLight, icons3d.building, icons3d.shieldLight, icons3d.foundationLight];
 
 const HowItWorks = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const w = t.howItWorks;
+  const extras = pageExtras[language];
 
   useEffect(() => {
     document.title = `${w.heroTitle} – Aurelia Grundbesitz GmbH`;
@@ -120,11 +122,7 @@ const HowItWorks = () => {
         <section className="bg-gradient-warm">
           <div className="container-premium py-10 md:py-12 text-center">
             <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
-              Weitere Fragen beantworten wir in unseren{" "}
-              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
-                FAQ
-              </Link>
-              .
+              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">{extras.shared.faqPrompt}</Link>
             </p>
           </div>
         </section>

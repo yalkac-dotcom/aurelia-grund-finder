@@ -10,6 +10,7 @@ import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, MessageSquare, Compass, Scale, FileText, Handshake } from "lucide-react";
+import { pageExtras } from "@/i18n/pageExtras";
 
 // Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht (Fotos beibehalten)
 const situationImages = cardImages.ownerSituations;
@@ -17,8 +18,9 @@ const situationImages = cardImages.ownerSituations;
 const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
 
 const ForOwnerInTrouble = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const o = t.ownerInTrouble;
+  const extras = pageExtras[language];
 
   return (
     <Layout>
@@ -132,11 +134,7 @@ const ForOwnerInTrouble = () => {
         <section className="bg-gradient-warm">
           <div className="container-premium py-10 md:py-12 text-center">
             <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
-              Weitere Fragen beantworten wir in unseren{" "}
-              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
-                FAQ
-              </Link>
-              .
+              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">{extras.shared.faqPrompt}</Link>
             </p>
           </div>
         </section>
@@ -160,13 +158,13 @@ const ForOwnerInTrouble = () => {
           style={{ borderRight: "1px solid rgba(255,255,255,0.2)" }}
         >
           <Phone size={15} strokeWidth={1.75} />
-          Anrufen
+          {extras.shared.call}
         </a>
         <a
           href="/kontakt"
           className="flex flex-1 items-center justify-center text-white text-[13px] font-semibold uppercase tracking-[0.08em]"
         >
-          Anfragen
+          {extras.shared.enquire}
         </a>
       </div>
       <div className="md:hidden" style={{ height: 56 }} aria-hidden="true" />
