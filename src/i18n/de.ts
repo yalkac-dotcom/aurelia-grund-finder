@@ -460,12 +460,12 @@ const de: Translations = {
   },
   howItWorks: {
     heroKicker: "Wie wir arbeiten",
-    heroTitle: "Drei Geschäftsbereiche, ein gemeinsames Prinzip.",
+    heroTitle: "Drei Bereiche – und immer zuerst die konkrete Immobilie.",
     heroDescription:
       "Aurelia bündelt drei Tätigkeitsfelder unter einem klaren Anspruch: Diskreter Ankauf, Immobilienverkauf aus dem Bestand und projektbezogene Kooperationen – jeweils sauber strukturiert und nachvollziehbar dokumentiert.",
     heroPrimaryCta: "Vorgehen besprechen",
     heroSecondaryCta: "Ablauf ansehen",
-    heroTrustLine: "Strukturierte Prozesse · Klare Verantwortlichkeiten · Vertraulich",
+    heroTrustLine: "Persönlicher Kontakt · Direkte Prüfung · Vertrauliche Behandlung",
     heroImageAlt: "Ruhige, lichtdurchflutete Geschäftsumgebung – sinnbildlich für die strukturierte Arbeitsweise von Aurelia",
     introTitle: "Ein Anspruch, drei Wege",
     introText:
@@ -499,13 +499,12 @@ const de: Translations = {
     ],
     holdNote:
       "Beschreibung des allgemeinen Vorgehens. Konkrete Entscheidungen werden ausschließlich objektbezogen getroffen. Marktbedingungen können sich verändern.",
-    principlesTitle: "Was über alle Bereiche hinweg gilt",
-    principlesIntro: "Vier Grundsätze, die unsere Arbeit prägen – unabhängig vom Tätigkeitsfeld.",
+    principlesTitle: "Was uns bei der Zusammenarbeit wichtig ist",
+    principlesIntro: "",
     principles: [
-      { title: "Transparente Kommunikation", text: "Klare Sprache. Keine Versprechen, die wir nicht halten können." },
-      { title: "Faire Konditionen", text: "Nachvollziehbare Kalkulation auf Basis sachlicher Kennzahlen." },
-      { title: "Saubere Dokumentation", text: "Alle Schritte werden schriftlich und prüfbar festgehalten." },
-      { title: "Langfristige Perspektive", text: "Keine Spekulation, sondern ruhige, nachhaltige Entwicklung." },
+      { title: "Offen sprechen", text: "Wir sagen, was wir einschätzen können, und ebenso, wenn noch Informationen fehlen oder etwas für uns nicht infrage kommt." },
+      { title: "Vereinbarungen festhalten", text: "Wichtige Absprachen und die nächsten Schritte werden so festgehalten, dass die Beteiligten wissen, woran sie sind." },
+      { title: "Realistisch bleiben", text: "Nicht jede Immobilie und nicht jedes Projekt passt zu uns. Deshalb versprechen wir nichts, bevor wir die tatsächliche Situation geprüft haben." },
     ],
     faqTitle: "Häufige Fragen zum Vorgehen",
     faqIntro: "Wenn Ihre Frage hier nicht beantwortet ist, sprechen Sie uns direkt an.",
@@ -527,9 +526,9 @@ const de: Translations = {
         a: "Erstgespräche sind grundsätzlich vertraulich. Inhalte werden nicht weitergegeben. Auf Wunsch arbeiten wir mit Vertraulichkeitsvereinbarungen.",
       },
     ],
-    finalCtaTitle: "Fragen zum Vorgehen?",
+    finalCtaTitle: "Sie möchten wissen, wie es in Ihrem Fall weitergehen könnte?",
     finalCtaText:
-      "Wir erläutern Ihnen die einzelnen Schritte gerne im persönlichen Gespräch – sachlich, vertraulich und ohne Verpflichtung.",
+      "Schildern Sie uns kurz, worum es geht. Wir sehen uns Ihre Anfrage an und besprechen die nächsten Schritte persönlich mit Ihnen.",
     finalCtaButton: "Unverbindlich Kontakt aufnehmen",
   },
   buyers: {

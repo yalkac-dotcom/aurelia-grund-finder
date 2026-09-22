@@ -68,19 +68,19 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       finalCtaTitle: "Immobilie in Deutschland anbieten", finalCtaText: "Schicken Sie uns zunächst die wichtigsten Angaben zu Ihrer Immobilie. Wir sehen uns Ihre Anfrage an und melden uns persönlich bei Ihnen.", finalCtaButton: "Anfrage starten",
     },
     howItWorks: {
-      heroDescription: "Aurelia verbindet direkten Immobilienankauf in Deutschland, Immobilienlösungen in der Türkei sowie Verkauf aus eigenem Bestand und projektbezogene Kooperationen.",
-      introTitle: "Drei Geschäftsbereiche, ein gemeinsames Prinzip", introText: "Wir prüfen persönlich, kommunizieren klar und wählen den Weg, der zum Objekt und zur konkreten Ausgangssituation passt.",
-      segmentsTitle: "Unsere drei Geschäftsbereiche", segmentsIntro: "Deutschland und Türkei werden mit klaren Ansprechpartnern und nachvollziehbaren Abläufen verbunden.",
+      heroDescription: "Aurelia kauft Immobilien in Deutschland, ist Ansprechpartner für Eigentümer mit Immobilien in der Türkei und bietet ausgewählte Objekte aus dem eigenen Bestand oder aus Kooperationen an.",
+      introTitle: "Nicht jede Immobilie braucht denselben Weg", introText: "Ob Ankauf in Deutschland, eine Immobilie in der Türkei oder ein Objekt aus unserem Bestand: Am Anfang steht immer die Frage, worum es konkret geht. Erst danach entscheiden wir, welcher Weg sinnvoll sein kann.",
+      segmentsTitle: "Unsere drei Geschäftsbereiche", segmentsIntro: "Unsere Arbeit konzentriert sich auf drei Bereiche:",
       segments: [
-        { title: "Direkter Immobilienankauf", desc: "Immobilien und Grundstücke in Deutschland – auch bei komplexen oder zeitkritischen Situationen. Aurelia prüft und kauft geeignete Objekte auf eigene Rechnung." },
-        { title: "Immobilien in der Türkei", desc: "Prüfung, möglicher Ankauf oder strukturierte Abwicklung für Eigentümer mit Lebensmittelpunkt in Deutschland oder Europa – gemeinsam mit geeigneten Partnern vor Ort." },
-        { title: "Verkauf & Kooperationen", desc: "Verkauf ausgewählter Immobilien aus dem eigenen Bestand sowie Zusammenarbeit mit Investoren, Projektentwicklern und ausgewählten Partnern." },
+        { title: "Immobilienankauf in Deutschland", desc: "Wir prüfen Häuser, Wohnungen, Grundstücke und Gewerbeimmobilien für einen möglichen Ankauf auf eigene Rechnung. Auch Immobilien mit Renovierungsbedarf oder schwierigeren Ausgangssituationen können Sie uns anbieten." },
+        { title: "Immobilien in der Türkei", desc: "Eigentümer, die in Deutschland oder einem anderen europäischen Land leben, können ihre Immobilie in der Türkei zunächst mit uns besprechen. Wenn Unterstützung vor Ort erforderlich ist, können geeignete Partner und Fachleute in der Türkei einbezogen werden." },
+        { title: "Verkauf & Kooperationen", desc: "Wir verkaufen ausgewählte Immobilien aus unserem eigenen Bestand und arbeiten bei passenden Projekten mit Immobilienunternehmen, Investoren und anderen professionellen Partnern zusammen." },
       ],
-      holdTitle: "Vom Erstkontakt zur passenden Lösung", holdIntro: "Der konkrete Ablauf richtet sich nach Geschäftsbereich, Objekt und Beteiligten.",
+      holdTitle: "Was nach Ihrer Anfrage passiert", holdIntro: "Der genaue Ablauf hängt davon ab, worum es geht. Die ersten Schritte sind jedoch meistens ähnlich.",
       holdSteps: [
-        { title: "Anfrage", desc: "Sie übermitteln die wichtigsten Angaben zu Objekt und Ziel." }, { title: "Prüfung", desc: "Wir sichten Unterlagen, Ausgangslage und wirtschaftliche Eckdaten." }, { title: "Gespräch", desc: "Offene Fragen und realistische Wege werden persönlich besprochen." }, { title: "Entscheidung", desc: "Wir klären direkten Ankauf, Bestandsverkauf oder Kooperation." }, { title: "Abwicklung", desc: "Verträge und weitere Schritte werden fallbezogen und nachvollziehbar koordiniert." },
+        { title: "Anfrage", desc: "Sie schicken uns die wichtigsten Informationen zur Immobilie oder zu Ihrem Anliegen." }, { title: "Erste Prüfung", desc: "Wir sehen uns Ihre Angaben und die vorhandenen Unterlagen an. Falls etwas Wichtiges fehlt, melden wir uns bei Ihnen." }, { title: "Persönliches Gespräch", desc: "Wir besprechen offene Fragen und erfahren mehr darüber, was Sie erreichen möchten." }, { title: "Entscheidung", desc: "Danach können wir besser beurteilen, ob und in welcher Form Aurelia tätig werden kann." }, { title: "Weitere Schritte", desc: "Wenn es weitergeht, besprechen wir mit Ihnen, was als Nächstes erforderlich ist und wer gegebenenfalls zusätzlich einbezogen werden muss." },
       ],
-      holdNote: "Bei rechtlichen, steuerlichen oder fachlichen Fragen werden bei Bedarf geeignete externe Berater eingebunden.",
+      holdNote: "Wenn rechtliche, steuerliche oder andere fachliche Fragen geklärt werden müssen, können dafür geeignete externe Fachleute hinzugezogen werden.",
     },
     partners: {
       heroTitle: "Gemeinsam an passenden Immobilienprojekten arbeiten.", heroDescription: "Nicht jedes Immobiliengeschäft lässt sich allein sinnvoll umsetzen. Deshalb arbeiten wir bei passenden Projekten mit Unternehmen und Fachleuten zusammen, die ihre Erfahrung, Marktkenntnis oder besondere Expertise einbringen.",
