@@ -29,6 +29,7 @@ const Contact = () => {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [confirmationWarning, setConfirmationWarning] = useState(false);
+  const [propertyLocation, setPropertyLocation] = useState("");
   const { t, language } = useLanguage();
   const contactCopy = pageExtras[language].contact;
 
@@ -73,7 +74,7 @@ const Contact = () => {
       email: formData.get("email") as string,
       phone: phoneValidation.data,
       property_type: (formData.get("property_type") as string) || null,
-      message: `${t.contact.subject}: ${subject}\n\n${rawMessage}`,
+      message: `${t.contact.propertyLocation}: ${String(formData.get("property_location") ?? "")}\n${t.contact.subject}: ${subject}\n\n${rawMessage}`,
     };
 
     // 1) In Datenbank speichern (Backup / Audit)
@@ -305,6 +306,18 @@ const Contact = () => {
                       <p id="subject-error" role="alert" className="mt-1.5 text-sm text-destructive">
                         {t.contact.subjectRequired}
                       </p>
+                    )}
+                  </div>
+                  <div>
+                    <label htmlFor="property_location" className={labelClasses}>{t.contact.propertyLocation}</label>
+                    <select id="property_location" name="property_location" className={inputClasses} value={propertyLocation} onChange={(event) => setPropertyLocation(event.target.value)}>
+                      <option value="">{t.common.pleaseSelect}</option>
+                      {t.contact.propertyLocationOptions.map((opt) => <option key={opt} value={opt}>{opt}</option>)}
+                    </select>
+                    {propertyLocation === t.contact.propertyLocationOptions[1] && (
+                      <div className="mt-3 border-l-2 border-accent bg-secondary/50 px-4 py-3 text-sm leading-relaxed text-foreground/80">
+                        {t.contact.turkeyFormHint} <Link to="/immobilien-tuerkei#tuerkei-formular" className="font-semibold text-primary hover:text-accent">{t.contact.turkeyFormCta}</Link>
+                      </div>
                     )}
                   </div>
                   <div>

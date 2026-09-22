@@ -382,8 +382,8 @@ ${tpl.emailLabel}: office@aureliaestates.de
 Web: www.aureliaestates.de`;
 
     const languageName = LANGUAGE_NAMES_DE[locale];
-    const isTurkeyEnquiry = (body.property_type ?? "").toLowerCase().includes("türkei") ||
-      (body.message ?? "").startsWith("Türkei-Immobilienanfrage");
+    const isTurkeyEnquiry = body.form_type === "turkey_property" ||
+      (body.property_type ?? "").toLocaleLowerCase("de").includes("türkei");
     const notifyHeadline = isTurkeyEnquiry ? "Neue Türkei-Immobilienanfrage" : "Neue Kontaktanfrage";
     const notifySubject = isTurkeyEnquiry
       ? `Neue Türkei-Immobilienanfrage von ${body.name}`

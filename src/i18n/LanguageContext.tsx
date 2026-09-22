@@ -13,8 +13,29 @@ import it from "./it";
 import es from "./es";
 import tr from "./tr";
 import fr from "./fr";
+import { contentRestructure } from "./contentRestructure";
+import { journeyEnhancements } from "./journeyEnhancements";
 
-const translationsMap: Record<Language, Translations> = { de, en, nl, it, es, tr, fr };
+const deepMerge = <T extends Record<string, unknown>>(base: T, ...overrides: Record<string, unknown>[]): T => {
+  const result: Record<string, unknown> = { ...base };
+  for (const override of overrides) {
+    for (const [key, value] of Object.entries(override)) {
+      const current = result[key];
+      result[key] = value && typeof value === "object" && !Array.isArray(value) && current && typeof current === "object" && !Array.isArray(current)
+        ? deepMerge(current as Record<string, unknown>, value as Record<string, unknown>)
+        : value;
+    }
+  }
+  return result as T;
+};
+
+const baseTranslations: Record<Language, Translations> = { de, en, nl, it, es, tr, fr };
+const translationsMap = Object.fromEntries(
+  Object.entries(baseTranslations).map(([language, translation]) => [
+    language,
+    deepMerge(translation as unknown as Record<string, unknown>, contentRestructure[language as Language] as Record<string, unknown>, journeyEnhancements[language as Language] as Record<string, unknown>),
+  ]),
+) as unknown as Record<Language, Translations>;
 
 interface LanguageContextType {
   language: Language;

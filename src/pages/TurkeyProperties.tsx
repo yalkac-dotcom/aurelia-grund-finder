@@ -17,6 +17,8 @@ type FormState = {
   phone: string;
   email: string;
   preferredLanguage: string;
+  ownerLocation: string;
+  ownerCount: string;
   propertyType: string;
   provinceCity: string;
   district: string;
@@ -46,6 +48,8 @@ const getInitialForm = (preferredLanguage: string): FormState => ({
   phone: "",
   email: "",
   preferredLanguage,
+  ownerLocation: "",
+  ownerCount: "",
   propertyType: "",
   provinceCity: "",
   district: "",
@@ -154,6 +158,8 @@ const TurkeyProperties = () => {
     const lines = [
       "Türkei-Immobilienanfrage",
       `Bevorzugte Sprache: ${form.preferredLanguage}`,
+      form.ownerLocation ? `Aktueller Aufenthaltsort: ${form.ownerLocation}` : "",
+      form.ownerCount ? `Anzahl Eigentümer: ${form.ownerCount}` : "",
       `Immobilienart: ${form.propertyType}`,
       `Provinz / Stadt: ${form.provinceCity}`,
       form.district ? `Stadtteil / Bezirk: ${form.district}` : "",
@@ -355,11 +361,23 @@ const TurkeyProperties = () => {
         <section className="section-premium bg-background">
           <div className="container-premium">
             <SectionHeader title={page.processTitle} />
-            <div className="grid gap-6 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {page.process.map((step, index) => (
                 <ProcessStep key={step.title} index={index} total={page.process.length} title={step.title} desc={step.text} />
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section-premium bg-gradient-warm">
+          <div className="container-premium">
+            <Reveal>
+              <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
+                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">{page.crossLink.title}</h2>
+                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">{page.crossLink.text}</p>
+                <Link to="/fuer-eigentumer-in-not" className="mt-5 inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{page.crossLink.cta}</Link>
+              </div>
+            </Reveal>
           </div>
         </section>
 
@@ -398,6 +416,8 @@ const TurkeyProperties = () => {
                   <label className={labelClass}>{page.form.phone} *<input className={fieldClass("phone")} value={form.phone} onChange={(event) => updateField("phone", event.target.value)} autoComplete="tel" /></label>
                   <label className={labelClass}>{page.form.email} *<input className={fieldClass("email")} value={form.email} onChange={(event) => updateField("email", event.target.value)} autoComplete="email" inputMode="email" /></label>
                   <label className={labelClass}>{page.form.preferredLanguage}<select className={fieldClass("preferredLanguage")} value={form.preferredLanguage} onChange={(event) => updateField("preferredLanguage", event.target.value)}>{page.form.languageOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
+                  <label className={labelClass}>{page.form.ownerLocation}<input className={fieldClass("ownerLocation")} value={form.ownerLocation} onChange={(event) => updateField("ownerLocation", event.target.value)} maxLength={120} /></label>
+                  <label className={labelClass}>{page.form.ownerCount}<input className={fieldClass("ownerCount")} value={form.ownerCount} onChange={(event) => updateField("ownerCount", event.target.value)} inputMode="numeric" maxLength={3} /></label>
                   <label className={labelClass}>{page.form.propertyType} *<select className={fieldClass("propertyType")} value={form.propertyType} onChange={(event) => updateField("propertyType", event.target.value)}><option value="">{page.form.selectPlaceholder}</option>{page.form.propertyTypeOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
                   <label className={labelClass}>{page.form.provinceCity} *<input className={fieldClass("provinceCity")} value={form.provinceCity} onChange={(event) => updateField("provinceCity", event.target.value)} /></label>
                   <label className={labelClass}>{page.form.district}<input className={fieldClass("district")} value={form.district} onChange={(event) => updateField("district", event.target.value)} /></label>
