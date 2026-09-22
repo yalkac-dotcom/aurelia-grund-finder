@@ -1,6 +1,7 @@
 import type { Language } from "./types";
 
 export type PageSeoKey =
+  | "portfolio"
   | "owners"
   | "buyers"
   | "partners"
@@ -24,6 +25,7 @@ export type PageSeoEntry = { title: string; description: string };
 
 export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
   de: {
+    portfolio: { title: "Portfolio – Aurelia Grundbesitz", description: 'Aktuelle Immobilien und Objekte aus dem Bestand der Aurelia Grundbesitz GmbH im Überblick.' },
     owners: { title: "Für Eigentümer – Immobilie in Deutschland | Aurelia Grundbesitz", description: "Aurelia Grundbesitz prüft Immobilien in Deutschland persönlich und diskret – vom normalen Verkauf bis zu besonderen Situationen." },
     buyers: { title: "Für Käufer – Immobilien aus unserem Bestand | Aurelia Grundbesitz", description: "Informationen für Käufer: Objekte aus eigenem Bestand und projektbezogene Angebote von Aurelia Grundbesitz." },
     partners: { title: "Partner und Kooperationen | Aurelia Grundbesitz", description: "Zusammenarbeit mit Maklern, Verwaltern und Projektpartnern – projektbezogen, strukturiert und verbindlich." },
@@ -44,6 +46,7 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
     notFound: { title: "Seite nicht gefunden | Aurelia Grundbesitz", description: "Die aufgerufene Seite existiert nicht. Nutzen Sie die Navigation, um zurück zur Website zu gelangen." },
   },
   en: {
+    portfolio: { title: "Portfolio – Aurelia Grundbesitz", description: 'An overview of current properties and objects held by Aurelia Grundbesitz GmbH.' },
     owners: { title: "For owners – property in Germany | Aurelia Grundbesitz", description: "Aurelia Grundbesitz reviews property in Germany personally and discreetly – from a standard sale to particular situations." },
     buyers: { title: "For buyers – properties from our holdings | Aurelia Grundbesitz", description: "Information for buyers: properties from our own holdings and project-related offers from Aurelia Grundbesitz." },
     partners: { title: "Partners and cooperations | Aurelia Grundbesitz", description: "Working with agents, managers and project partners – project-related, structured and reliable." },
@@ -64,6 +67,7 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
     notFound: { title: "Page not found | Aurelia Grundbesitz", description: "The page you requested does not exist. Please use the navigation to return to the website." },
   },
   nl: {
+    portfolio: { title: "Portefeuille – Aurelia Grundbesitz", description: 'Overzicht van actueel vastgoed en objecten uit het bezit van Aurelia Grundbesitz GmbH.' },
     owners: { title: "Voor eigenaren – vastgoed in Duitsland | Aurelia Grundbesitz", description: "Aurelia Grundbesitz beoordeelt vastgoed in Duitsland persoonlijk en discreet – van een normale verkoop tot bijzondere situaties." },
     buyers: { title: "Voor kopers – vastgoed uit eigen bezit | Aurelia Grundbesitz", description: "Informatie voor kopers: objecten uit eigen bezit en projectgebonden aanbiedingen van Aurelia Grundbesitz." },
     partners: { title: "Partners en samenwerkingen | Aurelia Grundbesitz", description: "Samenwerking met makelaars, beheerders en projectpartners – projectgebonden, gestructureerd en betrouwbaar." },
@@ -84,6 +88,7 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
     notFound: { title: "Pagina niet gevonden | Aurelia Grundbesitz", description: "De opgevraagde pagina bestaat niet. Gebruik de navigatie om terug te keren naar de website." },
   },
   it: {
+    portfolio: { title: "Portafoglio – Aurelia Grundbesitz", description: 'Panoramica degli immobili attuali e degli oggetti del portafoglio di Aurelia Grundbesitz GmbH.' },
     owners: { title: "Per proprietari – immobili in Germania | Aurelia Grundbesitz", description: "Aurelia Grundbesitz esamina immobili in Germania in modo personale e riservato – dalla vendita ordinaria alle situazioni particolari." },
     buyers: { title: "Per acquirenti – immobili del nostro portafoglio | Aurelia Grundbesitz", description: "Informazioni per gli acquirenti: immobili di proprietà e offerte legate a singoli progetti di Aurelia Grundbesitz." },
     partners: { title: "Partner e collaborazioni | Aurelia Grundbesitz", description: "Collaborazione con agenti, amministratori e partner di progetto – su base progettuale, strutturata e affidabile." },
@@ -104,6 +109,7 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
     notFound: { title: "Pagina non trovata | Aurelia Grundbesitz", description: "La pagina richiesta non esiste. Utilizzate la navigazione per tornare al sito." },
   },
   es: {
+    portfolio: { title: "Cartera – Aurelia Grundbesitz", description: 'Resumen de los inmuebles actuales y objetos de la cartera de Aurelia Grundbesitz GmbH.' },
     owners: { title: "Para propietarios – inmuebles en Alemania | Aurelia Grundbesitz", description: "Aurelia Grundbesitz revisa inmuebles en Alemania de forma personal y discreta, desde una venta normal hasta situaciones especiales." },
     buyers: { title: "Para compradores – inmuebles de nuestra cartera | Aurelia Grundbesitz", description: "Información para compradores: inmuebles de cartera propia y ofertas vinculadas a proyectos de Aurelia Grundbesitz." },
     partners: { title: "Socios y cooperaciones | Aurelia Grundbesitz", description: "Colaboración con agentes, administradores y socios de proyecto: vinculada a proyectos, estructurada y fiable." },
@@ -124,6 +130,7 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
     notFound: { title: "Página no encontrada | Aurelia Grundbesitz", description: "La página solicitada no existe. Utilice la navegación para volver al sitio web." },
   },
   tr: {
+    portfolio: { title: "Portföy – Aurelia Grundbesitz", description: 'Aurelia Grundbesitz GmbH portföyündeki güncel gayrimenkullere genel bakış.' },
     owners: { title: "Mal sahipleri için – Almanya'da gayrimenkul | Aurelia Grundbesitz", description: "Aurelia Grundbesitz, Almanya'daki gayrimenkulleri kişisel ve gizli biçimde inceler; normal satıştan özel durumlara kadar." },
     buyers: { title: "Alıcılar için – kendi portföyümüzden gayrimenkuller | Aurelia Grundbesitz", description: "Alıcılar için bilgiler: kendi portföyümüzdeki gayrimenkuller ve projeye bağlı teklifler." },
     partners: { title: "Ortaklar ve iş birlikleri | Aurelia Grundbesitz", description: "Emlak danışmanları, yöneticiler ve proje ortaklarıyla projeye bağlı, yapılandırılmış ve güvenilir iş birliği." },
@@ -144,6 +151,7 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
     notFound: { title: "Sayfa bulunamadı | Aurelia Grundbesitz", description: "İstenen sayfa mevcut değil. Siteye dönmek için menüyü kullanın." },
   },
   fr: {
+    portfolio: { title: "Portefeuille – Aurelia Grundbesitz", description: "Aperçu des biens actuels et des objets du portefeuille d'Aurelia Grundbesitz GmbH." },
     owners: { title: "Pour les propriétaires – biens en Allemagne | Aurelia Grundbesitz", description: "Aurelia Grundbesitz examine les biens en Allemagne de manière personnelle et discrète, de la vente classique aux situations particulières." },
     buyers: { title: "Pour les acquéreurs – biens de notre portefeuille | Aurelia Grundbesitz", description: "Informations pour les acquéreurs : biens de notre propre portefeuille et offres liées à des projets." },
     partners: { title: "Partenaires et coopérations | Aurelia Grundbesitz", description: "Coopération avec des agents, gestionnaires et partenaires de projet : liée aux projets, structurée et fiable." },

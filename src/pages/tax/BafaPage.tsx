@@ -6,6 +6,8 @@ import { Banknote, ExternalLink, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { taxExternalLinkLabels } from "@/i18n/pageExtras";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -13,6 +15,7 @@ const panelPadding = "px-6 py-7 md:px-12 md:py-10";
 
 const BafaPage = () => {
   const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].taxBafa.title, pageSeo[language].taxBafa.description);
   const labels = taxExternalLinkLabels[language].bafa;
   const links = [
     { label: labels[0], url: "https://www.bafa.de" },

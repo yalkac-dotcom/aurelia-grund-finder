@@ -11,6 +11,8 @@ import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, MessageSquare, Compass, Scale, FileText, Handshake } from "lucide-react";
 import { pageExtras } from "@/i18n/pageExtras";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 // Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht (Fotos beibehalten)
 const situationImages = cardImages.ownerSituations;
@@ -19,6 +21,7 @@ const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
 
 const ForOwnerInTrouble = () => {
   const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].owners.title, pageSeo[language].owners.description);
   const o = t.ownerInTrouble;
   const extras = pageExtras[language];
 

@@ -11,18 +11,17 @@ import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 import { pageExtras } from "@/i18n/pageExtras";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 // Hold-Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
 const holdStepIcons = [icons3d.key, icons3d.compassLight, icons3d.building, icons3d.shieldLight, icons3d.foundationLight];
 
 const HowItWorks = () => {
   const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].howItWorks.title, pageSeo[language].howItWorks.description);
   const w = t.howItWorks;
   const extras = pageExtras[language];
-
-  useEffect(() => {
-    document.title = `${w.heroTitle} – Aurelia Grundbesitz GmbH`;
-  }, [w.heroTitle]);
 
   return (
     <Layout>

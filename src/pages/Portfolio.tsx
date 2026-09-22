@@ -8,14 +8,14 @@ import { heroSets } from "@/assets/heroImages";
 import { ArrowRight, MapPin, Building2, TreePine, Store } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 const Portfolio = () => {
   const { language } = useLanguage();
   const copy = pageExtras[language].portfolio;
 
-  useEffect(() => {
-    document.title = copy.seoTitle;
-  }, [copy.seoTitle]);
+  usePageSeo(copy.seoTitle, pageSeo[language].portfolio.description);
 
   return (
     <Layout>

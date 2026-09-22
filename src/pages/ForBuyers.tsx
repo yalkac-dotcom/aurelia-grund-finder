@@ -11,6 +11,8 @@ import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
@@ -20,6 +22,7 @@ const stepIcons = [MessageSquare, Eye, Handshake, FileSignature];
 
 const ForBuyers = () => {
   const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].buyers.title, pageSeo[language].buyers.description);
   const b = t.buyers;
   const extras = pageExtras[language];
 
