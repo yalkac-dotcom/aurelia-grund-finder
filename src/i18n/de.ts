@@ -768,7 +768,7 @@ const de: Translations = {
     title: "Kontakt",
     subtitle: "Wir sind für Sie da",
     hereForYou: "Wir sind für Sie da",
-    introText: "Schreiben Sie uns Ihre Immobilie. Innerhalb von 24-48 Stunden erhalten Sie eine erste, verbindliche Einschätzung – kostenlos, diskret, unverbindlich.",
+    introText: "Ob Immobilienanfrage, konkretes Anliegen oder Terminwunsch – schreiben Sie uns. Wir melden uns persönlich und zeitnah bei Ihnen.",
     salutation: "Anrede",
     firstName: "Vorname",
     lastName: "Nachname",
