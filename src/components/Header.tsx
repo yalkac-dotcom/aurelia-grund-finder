@@ -120,7 +120,7 @@ const Header = () => {
             <LanguageSwitcher />
           </div>
           <Link
-            to="/kontakt"
+            to="/kontakt#kontaktformular"
             className="inline-flex shrink-0 items-center whitespace-nowrap px-5 py-2.5 text-[11px] font-semibold tracking-[0.12em] uppercase btn-gradient rounded-sm transition-all duration-300"
           >
             {t.nav.ctaConfidential}
