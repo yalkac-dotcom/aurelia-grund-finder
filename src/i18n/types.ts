@@ -169,8 +169,6 @@ export interface Translations {
     cookieText: string;
     cookieAccept: string;
     cookieReject: string;
-    mapConsentText: string;
-    mapConsentBtn: string;
     cookieTitle: string;
     submitting: string;
     formError: string;

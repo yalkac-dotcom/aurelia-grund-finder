@@ -52,3 +52,12 @@
 - [x] Allgemeinen Hero-Text ohne feste Reaktionszeit einsetzen
 - [x] Bestehendes Bild mit mehr Luft und vollständig sichtbarem Kopf neu positionieren
 - [x] Hero auf Desktop und Mobil visuell prüfen
+
+# Gezielte Inhaltskorrekturen vor Veröffentlichung
+
+- [x] Google-Maps-Nutzung technisch und auf der veröffentlichten Website prüfen
+- [x] Veraltete Kartenhinweise entfernen und Datenschutzdatum aktualisieren
+- [x] Portfolio auf regionale Altformulierungen prüfen
+- [x] Absolute Bestands- und Prüfzusagen auf der Käufer-Seite in sieben Sprachen neutralisieren
+- [x] Startseite, Über uns und Firmendaten gegen die aktuelle Positionierung prüfen
+- [ ] Änderungen in allen sieben Sprachen technisch und sichtbar verifizieren
