@@ -18,6 +18,7 @@ import ownerForeclosure from "./owner-foreclosure.jpg";
 import ownerFinancial from "./owner-financial.jpg";
 import ownerHeirs from "./owner-heirs.jpg";
 import ownerLegal from "./owner-legal.jpg";
+import ownerDirectSale from "./aurelia-direkter-verkaufswunsch.png.asset.json";
 
 // Buyers — 4 Features + 4 Proof Points
 import buyerDirect from "./buyer-direct.jpg";
@@ -75,3 +76,5 @@ export const cardImages = {
   holdSteps: [holdAcquisition, holdStrategy, holdInventory, holdSecurity, holdFoundation],
   principles: [principleDialogue, principleFairness, principleDocumentation, principleOrientation],
 };
+
+export const ownerDirectSaleImage = ownerDirectSale.url;
