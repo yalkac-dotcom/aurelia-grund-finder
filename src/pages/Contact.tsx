@@ -64,13 +64,14 @@ const Contact = () => {
 
     setSubmitting(true);
 
+    const rawMessage = formData.get("message") as string;
     const payload = {
       first_name: formData.get("name") as string,
       last_name: "",
       email: formData.get("email") as string,
       phone: phoneValidation.data,
       property_type: (formData.get("property_type") as string) || null,
-      message: `${t.contact.subject}: ${subject}\n\n${formData.get("message") as string}`,
+      message: `${t.contact.subject}: ${subject}\n\n${rawMessage}`,
     };
 
     // 1) In Datenbank speichern (Backup / Audit)
@@ -93,7 +94,8 @@ const Contact = () => {
           email: payload.email,
           phone: payload.phone,
           property_type: payload.property_type,
-          message: payload.message,
+          subject,
+          message: rawMessage,
           language,
           form_type: "general_contact",
         },
