@@ -104,8 +104,8 @@ const Contact = () => {
       {/* Hero */}
       <section className="relative h-[36vh] min-h-[260px] flex items-end">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Duesseldorfer Rheinufer als Hintergrundbild der Kontaktseite" className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
+          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Freundliche Ansprechpartnerin der Aurelia Grundbesitz GmbH in einem modernen Büro" className="w-full h-full object-cover object-[50%_12%]" priority />
+          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/90 via-[hsl(218 46% 14%)]/50 to-transparent" />
         </div>
         <div className="relative container pb-10 md:pb-12">
           <Reveal>
