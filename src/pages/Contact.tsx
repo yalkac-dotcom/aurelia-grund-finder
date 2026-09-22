@@ -47,6 +47,21 @@ const Contact = () => {
       return;
     }
 
+    const subject = String(formData.get("subject") ?? "").trim();
+    if (!z.string().trim().min(1).max(120).safeParse(subject).success) {
+      setError(t.contact.subjectRequired);
+      const subjectInput = form.elements.namedItem("subject");
+      if (subjectInput instanceof HTMLSelectElement) subjectInput.focus();
+      return;
+    }
+
+    if (!formData.get("privacy_consent")) {
+      setError(t.contact.consentRequired);
+      const consentInput = form.elements.namedItem("privacy_consent");
+      if (consentInput instanceof HTMLInputElement) consentInput.focus();
+      return;
+    }
+
     setSubmitting(true);
 
     const payload = {
@@ -55,7 +70,7 @@ const Contact = () => {
       email: formData.get("email") as string,
       phone: phoneValidation.data,
       property_type: (formData.get("property_type") as string) || null,
-      message: formData.get("message") as string,
+      message: `${t.contact.subject}: ${subject}\n\n${formData.get("message") as string}`,
     };
 
     // 1) In Datenbank speichern (Backup / Audit)
