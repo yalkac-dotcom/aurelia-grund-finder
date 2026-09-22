@@ -13,3 +13,4 @@
 - [x] Produktionsinhalte mit Quelltext in allen sieben Sprachen abgleichen
 - [x] Alte Notlagen-, Düsseldorf- und NRW-Positionierung in Marketingtexten ersetzen
 - [x] Footer, Metadaten, OpenGraph, Canonical, Hreflang und Sitemap aktualisieren
+- [x] Design der Über-uns-Seite an Käufer, Kontakt und Ablauf angleichen

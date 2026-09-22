@@ -29,7 +29,7 @@ const About = () => {
 
   return (
     <Layout>
-      <section id="hero" className="relative flex min-h-[680px] items-center bg-primary md:min-h-[660px]">
+      <section id="hero" className="relative flex h-[83svh] min-h-[535px] items-center bg-primary md:h-[87vh] md:min-h-[615px]">
         <div className="absolute inset-0 overflow-hidden bg-primary">
           <img
             src={editorial.aboutHeroOffice}
@@ -37,24 +37,24 @@ const About = () => {
             loading="eager"
             width={1600}
             height={1008}
-            className="h-full w-full object-cover object-[63%_center] md:object-center"
+            className="hero-media h-full w-full object-cover object-[66%_center] md:object-center"
           />
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to right, hsl(var(--primary) / 0.94) 0%, hsl(var(--primary) / 0.84) 36%, hsl(var(--primary) / 0.48) 67%, hsl(var(--primary) / 0.22) 100%)",
+                "linear-gradient(to right, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.78) 35%, hsl(var(--primary) / 0.45) 65%, hsl(var(--primary) / 0.30) 100%)",
             }}
           />
         </div>
 
-        <div className="page-frame-hero relative py-24 md:py-28">
-          <div className="hero-copy-shell max-w-[680px]">
+        <div className="page-frame-hero relative pb-0 pt-16 md:pb-0 md:pt-20">
+          <div className="hero-copy-shell max-w-2xl">
             <Reveal disableOffset>
               <p className="hero-kicker">{a.hero.kicker}</p>
               <h1 className="hero-title">{a.hero.title}</h1>
-              <p className="mt-4 font-heading text-[1.15rem] font-semibold leading-relaxed text-accent md:text-[1.35rem]">{a.hero.subtitle}</p>
-              <div className="mt-6 max-w-2xl space-y-4 text-[14px] leading-[1.8] text-primary-foreground/85 md:text-[15px]">
+              <p className="mt-4 font-heading text-[1.05rem] font-semibold leading-relaxed text-accent md:text-[1.2rem]">{a.hero.subtitle}</p>
+              <div className="mt-5 max-w-xl space-y-3 text-[13px] leading-[1.7] text-primary-foreground/85 md:text-[14px]">
                 {a.hero.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </div>
             </Reveal>
@@ -62,21 +62,25 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-primary py-8 md:py-10" aria-label={a.hero.kicker}>
-        <div className="container-premium grid gap-px overflow-hidden rounded-sm bg-primary-foreground/10 sm:grid-cols-2 xl:grid-cols-4">
-          {a.trustTiles.map((item, index) => (
-            <Reveal key={item.title} delay={index * 0.04}>
-              <article className="h-full bg-primary px-6 py-6 md:px-7">
-                <p className="font-heading text-[1rem] font-semibold leading-snug text-accent">{item.title}</p>
-                <p className="mt-3 text-[12px] leading-[1.7] text-primary-foreground/70">{item.text}</p>
-              </article>
-            </Reveal>
-          ))}
-        </div>
-      </section>
+      <div className="page-shell">
+        <section className="section-premium bg-gradient-warm !pt-14 md:!pt-20" aria-label={a.hero.kicker}>
+          <div className="container-premium">
+            <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-4 md:gap-5">
+              {a.trustTiles.map((item, index) => (
+                <Reveal key={item.title} delay={index * 0.04}>
+                  <article className="relative h-full overflow-hidden rounded-sm bg-primary px-6 py-7 shadow-sm md:px-7 md:py-8">
+                    <div className="absolute inset-x-0 top-0 h-px bg-accent/70" aria-hidden="true" />
+                    <p className="font-heading text-[1rem] font-semibold leading-snug text-accent">{item.title}</p>
+                    <p className="mt-3 text-[12px] leading-[1.75] text-primary-foreground/80">{item.text}</p>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
 
-      <section className="bg-background py-20 md:py-28">
-        <div className="container-premium">
+        <section className="section-premium bg-background">
+          <div className="container-premium">
           <Reveal className="max-w-3xl">
             <div className="mb-5 h-px w-9 bg-accent" aria-hidden="true" />
             <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{a.standing.headline}</h2>
@@ -98,11 +102,11 @@ const About = () => {
               );
             })}
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      <section className="bg-secondary/45 py-20 md:py-28">
-        <div className="container-premium grid items-center gap-10 md:grid-cols-2 md:gap-14 lg:gap-20">
+        <section className="section-premium bg-secondary/45">
+          <div className="container-premium grid items-center gap-10 md:grid-cols-2 md:gap-14 lg:gap-20">
           <Reveal>
             <div className="mb-5 h-px w-9 bg-accent" aria-hidden="true" />
             <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{a.approach.headline}</h2>
@@ -115,11 +119,11 @@ const About = () => {
               <img src={editorial.aboutApproachArchitecture} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="aspect-[4/3] h-auto w-full object-cover" />
             </div>
           </Reveal>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      <section className="bg-background py-20 md:py-28">
-        <div className="container-premium">
+        <section className="section-premium bg-background">
+          <div className="container-premium">
           <Reveal className="mx-auto max-w-3xl text-center">
             <div className="mx-auto mb-5 h-px w-9 bg-accent" aria-hidden="true" />
             <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{a.situations.headline}</h2>
@@ -134,11 +138,11 @@ const About = () => {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
 
-      <section className="bg-highlight py-20 md:py-24">
-        <div className="container-premium">
+        <section className="section-premium bg-highlight">
+          <div className="container-premium">
           <Reveal className="mx-auto max-w-3xl text-center">
             <div className="mx-auto mb-5 h-px w-9 bg-accent" aria-hidden="true" />
             <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-highlight-foreground md:text-[2.2rem]">{a.closing.headline}</h2>
@@ -152,8 +156,9 @@ const About = () => {
               </Button>
             </div>
           </Reveal>
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 };
