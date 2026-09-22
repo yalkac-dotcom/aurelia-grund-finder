@@ -87,8 +87,8 @@ const tr: Translations = {
   trustBar: {
     items: [
       "Gizli ve güvenilir",
-      "Kendi hesabımıza satın alım",
-      "Bağlayıcı karar",
+      "Kişisel irtibat kişisi",
+      "Yapılandırılmış süreç",
     ],
   },
   common: {

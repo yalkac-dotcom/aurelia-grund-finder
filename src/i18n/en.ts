@@ -87,8 +87,8 @@ const en: Translations = {
   trustBar: {
     items: [
       "Discreet & confidential",
-      "Purchase for our own account",
-      "Binding decision",
+      "Personal point of contact",
+      "Structured process",
     ],
   },
   common: {
