@@ -40,6 +40,15 @@ const Contact = () => {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+    const contactSchema = z.object({
+      name: z.string().trim().min(2).max(200),
+      email: z.string().trim().email().max(254),
+      phone: z.string().trim().min(1).max(50),
+      subject: z.string().trim().min(1).max(120),
+      propertyLocation: z.string().trim().max(80),
+      propertyType: z.string().trim().max(120),
+      message: z.string().trim().min(1).max(5000),
+    });
     const phone = String(formData.get("phone") ?? "").trim();
     const phoneValidation = z.string().trim().min(1).max(50).safeParse(phone);
 
@@ -62,6 +71,16 @@ const Contact = () => {
       setError(t.contact.consentRequired);
       const consentInput = form.elements.namedItem("privacy_consent");
       if (consentInput instanceof HTMLInputElement) consentInput.focus();
+      return;
+    }
+
+    const parsedContact = contactSchema.safeParse({
+      name: formData.get("name"), email: formData.get("email"), phone,
+      subject, propertyLocation: formData.get("property_location") ?? "",
+      propertyType: formData.get("property_type") ?? "", message: formData.get("message"),
+    });
+    if (!parsedContact.success) {
+      setError(t.common.formError);
       return;
     }
 
@@ -98,7 +117,7 @@ const Contact = () => {
           phone: payload.phone,
           property_type: payload.property_type,
           subject,
-          message: rawMessage,
+          message: payload.message,
           language,
           form_type: "general_contact",
           privacy_consent: true,

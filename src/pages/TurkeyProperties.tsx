@@ -385,6 +385,22 @@ const TurkeyProperties = () => {
 
         <section className="section-premium bg-background">
           <div className="container-premium">
+            <SectionHeader title={page.audience.title} intro={page.audience.text} />
+            <div className="mx-auto grid max-w-5xl gap-x-10 gap-y-3 md:grid-cols-2">
+              {page.audience.items.map((item, index) => (
+                <Reveal key={item} delay={(index % 2) * 0.04}>
+                  <div className="flex min-h-14 items-start gap-3 py-2">
+                    <CheckCircle2 className="mt-1 shrink-0 text-accent" size={17} />
+                    <p className="text-[0.92rem] leading-[1.75] text-muted-foreground">{item}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section-premium bg-background">
+          <div className="container-premium">
             <SectionHeader title={page.processTitle} />
             <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {page.process.map((step, index) => (
