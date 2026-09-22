@@ -35,4 +35,4 @@
 
 - [x] Deutschland-Motiv als geordnete mitteleuropäische Altbau-Wohnimmobilie differenzieren
 - [x] Türkei-Motiv als warmen, urbanen türkischen Wohnkontext differenzieren
-- [ ] Beide Karten gemeinsam auf Desktop und Mobil visuell prüfen
+- [x] Beide Karten gemeinsam auf Desktop und Mobil visuell prüfen
