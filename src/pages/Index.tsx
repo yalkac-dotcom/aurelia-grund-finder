@@ -4,9 +4,10 @@ import Reveal from "@/components/Reveal";
 import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
-import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
+import germanyPropertyImage from "@/assets/property-offer-germany.jpg";
+import turkeyPropertyImage from "@/assets/property-offer-turkey.jpg";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
@@ -31,8 +32,8 @@ const HomePage = () => {
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
   const areaKeys: AreaKey[] = ["deutschland", "tuerkei"];
   const areaAssets: Record<AreaKey, { image: string; link: string }> = {
-    deutschland: { image: cardImages.areas[0], link: "/immobilie-anbieten?land=deutschland" },
-    tuerkei: { image: cardImages.areas[1], link: "/immobilie-anbieten?land=tuerkei" },
+    deutschland: { image: germanyPropertyImage, link: "/immobilie-anbieten?land=deutschland" },
+    tuerkei: { image: turkeyPropertyImage, link: "/immobilie-anbieten?land=tuerkei" },
   };
 
   // 4 Versprechen – stabile Schlüssel, Icon pro Schlüssel (Light-Familie für Navy-Sektion)
