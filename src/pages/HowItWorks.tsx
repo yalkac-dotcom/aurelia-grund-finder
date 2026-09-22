@@ -97,7 +97,7 @@ const HowItWorks = () => {
           <div className="container-premium">
             <SectionHeader title={w.principlesTitle} intro={w.principlesIntro} />
             <Reveal delay={0.1}>
-              <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 {w.principles.map((p, i) => (
                   <div key={i} className="border-l border-accent/40 pl-5">
                     <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
