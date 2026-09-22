@@ -22,7 +22,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     },
     contact: {
       availabilityShort: "Mo–Fr, auch kurzfristig bei laufenden Verfahren",
-      personalPrompt: "Lieber persönlich? Vereinbaren Sie ein vertrauliches Erstgespräch.",
+      personalPrompt: "Sie möchten persönlich mit uns sprechen? Vereinbaren Sie gerne einen Termin.",
       consultation: "Kostenloses Erstgespräch",
       consultationSubject: "Kostenloses Erstgespräch anfordern",
       phone: "Telefon",
