@@ -21,6 +21,8 @@ interface PageHeroProps {
    * "compact" – kompakterer Hero (Käufer, Geschäftspartner, Wie wir arbeiten) – Referenz: /ueber-uns
    */
   size?: "default" | "compact";
+  /** Keeps the mobile home hero entirely content-driven with extra space below its CTAs. */
+  mobileHomeFlow?: boolean;
 }
 
 const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
@@ -41,10 +43,11 @@ const PageHero = ({
   overlayGradient,
   phoneLine,
   size = "default",
+  mobileHomeFlow = false,
 }: PageHeroProps) => (
   <section
     id="hero"
-    className={`relative flex items-center bg-primary ${SIZE_CLASSES[size]}`}
+    className={`relative flex bg-primary ${mobileHomeFlow ? "min-h-0 items-start md:items-center" : `items-center ${SIZE_CLASSES[size]}`}`}
   >
     <div className="absolute inset-0 overflow-hidden">
       <OptimizedImg
@@ -70,7 +73,7 @@ const PageHero = ({
       />
     </div>
 
-    <div className="page-frame-hero relative pb-24 pt-20 md:pb-0 md:pt-20">
+    <div className={`page-frame-hero relative pt-20 md:pb-0 md:pt-20 ${mobileHomeFlow ? "pb-32" : "pb-24"}`}>
       <div className="hero-copy-shell max-w-2xl">
         {/* Above-the-fold: render synchronously without Reveal so H1 contributes to LCP immediately. */}
         <p className="hero-kicker">{kicker}</p>
