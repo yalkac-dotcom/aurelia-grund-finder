@@ -45,4 +45,4 @@
 - [x] Formular als hochwertigen Hauptbereich neu ordnen, Funktionen erhalten
 - [x] Standort- und Kartenbereich vollständig entfernen
 - [x] FAQ kompakter und zurückhaltender integrieren
-- [ ] Desktop, Tablet und Mobil visuell sowie funktional prüfen
+- [x] Desktop, Tablet und Mobil visuell sowie funktional prüfen
