@@ -7,8 +7,9 @@ const corsHeaders = {
 const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 
 // Produktiver Versand über die verifizierte Domain aureliaestates.de.
-const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "office@aureliaestates.de";
-const FROM_NAME = "Aurelia Grundbesitz GmbH";
+const FROM_EMAIL = Deno.env.get("RESEND_FROM_EMAIL") ?? "formular@aureliaestates.de";
+const FROM_NAME = "Aurelia Website";
+const CUSTOMER_FROM_NAME = "Aurelia Grundbesitz GmbH";
 const REPLY_TO = "office@aureliaestates.de";
 const NOTIFY_TO = "office@aureliaestates.de";
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
