@@ -24,8 +24,8 @@ interface PageHeroProps {
 }
 
 const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
-  default: "h-[83svh] min-h-[535px] md:h-[87vh] md:min-h-[615px]",
-  compact: "h-[83svh] min-h-[535px] md:h-[87vh] md:min-h-[615px]",
+  default: "min-h-[535px] md:h-[87vh] md:min-h-[615px]",
+  compact: "min-h-[535px] md:h-[87vh] md:min-h-[615px]",
 };
 
 const PageHero = ({
@@ -70,7 +70,7 @@ const PageHero = ({
       />
     </div>
 
-    <div className="page-frame-hero relative pt-16 pb-0 md:pt-20 md:pb-0">
+    <div className="page-frame-hero relative py-20 md:pt-20 md:pb-0">
       <div className="hero-copy-shell max-w-2xl">
         {/* Above-the-fold: render synchronously without Reveal so H1 contributes to LCP immediately. */}
         <p className="hero-kicker">{kicker}</p>

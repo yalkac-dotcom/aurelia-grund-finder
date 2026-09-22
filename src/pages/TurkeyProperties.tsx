@@ -284,7 +284,7 @@ const TurkeyProperties = () => {
 
   return (
     <Layout>
-      <section className="relative flex min-h-[83svh] items-center overflow-hidden bg-primary pt-20 md:min-h-[87vh]">
+      <section className="relative flex min-h-[535px] items-center overflow-hidden bg-primary md:min-h-[87vh]">
         <img
           src={heroTurkeyProperties}
           alt={page.hero.imageAlt}

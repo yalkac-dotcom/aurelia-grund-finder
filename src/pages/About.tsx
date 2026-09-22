@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <Layout>
-      <section id="hero" className="relative flex h-[83svh] min-h-[535px] items-center bg-primary md:h-[87vh] md:min-h-[615px]">
+      <section id="hero" className="relative flex min-h-[535px] items-center bg-primary md:h-[87vh] md:min-h-[615px]">
         <div className="absolute inset-0 overflow-hidden bg-primary">
           <img
             src={editorial.aboutHeroOffice}
@@ -37,11 +37,11 @@ const About = () => {
           />
         </div>
 
-        <div className="page-frame-hero relative pb-0 pt-16 md:pb-0 md:pt-20">
+        <div className="page-frame-hero relative py-20 md:pb-0 md:pt-20">
           <div className="hero-copy-shell max-w-2xl">
             <Reveal disableOffset>
               <p className="hero-kicker">{a.hero.kicker}</p>
-              <h1 className="hero-title">{a.hero.title}</h1>
+              <h1 className="hero-title !text-accent">{a.hero.title}</h1>
               <p className="mt-4 font-heading text-[1.05rem] font-semibold leading-relaxed text-accent md:text-[1.2rem]">{a.hero.subtitle}</p>
               <div className="mt-5 max-w-xl space-y-3 text-[13px] leading-[1.7] text-primary-foreground/85 md:text-[14px]">
                 {a.hero.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
