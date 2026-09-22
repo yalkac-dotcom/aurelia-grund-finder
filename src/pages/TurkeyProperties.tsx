@@ -319,10 +319,10 @@ const TurkeyProperties = () => {
             <h1 className="hero-title">{page.hero.title}</h1>
             <p className="hero-description max-w-2xl">{page.hero.subtitle}</p>
             <div className="mt-7 flex flex-row flex-wrap items-center gap-3 sm:gap-4">
-              <a href="#tuerkei-formular" className="btn-primary">
+              <Link to="/immobilie-anbieten?land=tuerkei" className="btn-primary">
                 {page.hero.primaryCta}
                 <ArrowRight size={13} className="ml-2 text-accent" />
-              </a>
+              </Link>
               <Link to="/kontakt" className="btn-secondary">
                 {page.hero.secondaryCta}
               </Link>

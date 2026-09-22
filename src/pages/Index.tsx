@@ -31,8 +31,8 @@ const HomePage = () => {
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
   const areaKeys: AreaKey[] = ["deutschland", "tuerkei"];
   const areaAssets: Record<AreaKey, { image: string; link: string }> = {
-    deutschland: { image: cardImages.areas[0], link: "/fuer-eigentumer-in-not" },
-    tuerkei: { image: cardImages.areas[1], link: "/immobilien-tuerkei" },
+    deutschland: { image: cardImages.areas[0], link: "/immobilie-anbieten?land=deutschland" },
+    tuerkei: { image: cardImages.areas[1], link: "/immobilie-anbieten?land=tuerkei" },
   };
 
   // 4 Versprechen – stabile Schlüssel, Icon pro Schlüssel (Light-Familie für Navy-Sektion)
@@ -61,7 +61,7 @@ const HomePage = () => {
         kicker={t.home.heroKicker}
         title={t.home.heroTitle}
         description={t.home.heroDescription}
-        primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/kontakt" }}
+        primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/immobilie-anbieten" }}
         secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#ablauf" } : undefined}
         trustLine={t.home.heroTrustLine}
         imagePosition="62% center"
@@ -221,7 +221,7 @@ const HomePage = () => {
           title={t.home.finalCtaTitle}
           text={t.home.finalCtaText}
           buttonLabel={t.home.finalCtaButton}
-          buttonTo="/kontakt"
+          buttonTo="/immobilie-anbieten"
         />
       </div>
     </Layout>

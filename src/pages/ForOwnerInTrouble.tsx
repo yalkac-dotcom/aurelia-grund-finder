@@ -30,7 +30,7 @@ const ForOwnerInTrouble = () => {
         kicker={o.heroKicker}
         title={o.heroTitle}
         description={o.heroDescription}
-        primaryCta={{ label: o.heroPrimaryCta, to: "/kontakt" }}
+        primaryCta={{ label: o.heroPrimaryCta, to: "/immobilie-anbieten?land=deutschland" }}
         secondaryCta={{ label: o.heroSecondaryCta, href: "#ablauf" }}
         trustLine={o.heroTrustLine}
       />
@@ -63,7 +63,7 @@ const ForOwnerInTrouble = () => {
               <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
                 <h2 className="font-heading text-[1.55rem] font-semibold text-primary">{o.crossLink.title}</h2>
                 <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">{o.crossLink.text}</p>
-                <Link to="/immobilien-tuerkei" className="mt-5 inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{o.crossLink.cta}</Link>
+                <Link to="/immobilie-anbieten?land=tuerkei" className="mt-5 inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{o.crossLink.cta}</Link>
               </div>
             </Reveal>
           </div>
@@ -155,7 +155,7 @@ const ForOwnerInTrouble = () => {
           title={o.finalCtaTitle}
           text={o.finalCtaText}
           buttonLabel={o.finalCtaButton}
-          buttonTo="/kontakt"
+          buttonTo="/immobilie-anbieten?land=deutschland"
         />
       </div>
 
