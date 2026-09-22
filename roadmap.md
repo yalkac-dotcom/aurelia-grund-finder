@@ -46,3 +46,9 @@
 - [x] Standort- und Kartenbereich vollständig entfernen
 - [x] FAQ kompakter und zurückhaltender integrieren
 - [x] Desktop, Tablet und Mobil visuell sowie funktional prüfen
+
+# Kontaktseite: Hero-Feinschliff
+
+- [x] Allgemeinen Hero-Text ohne feste Reaktionszeit einsetzen
+- [x] Bestehendes Bild mit mehr Luft und vollständig sichtbarem Kopf neu positionieren
+- [x] Hero auf Desktop und Mobil visuell prüfen

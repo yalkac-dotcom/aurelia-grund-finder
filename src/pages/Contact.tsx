@@ -135,12 +135,12 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="relative flex h-[48svh] min-h-[360px] max-h-[520px] items-end overflow-hidden md:h-[52vh] md:min-h-[430px]">
-        <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Freundliche Ansprechpartnerin der Aurelia Grundbesitz GmbH mit Headset am Schreibtisch in einem hochwertigen Buero" className="h-full w-full object-cover object-[66%_30%] md:object-[52%_34%]" priority />
+      <section className="relative flex h-[48svh] min-h-[360px] max-h-[520px] items-end overflow-hidden bg-primary md:h-[52vh] md:min-h-[430px]">
+        <div className="absolute inset-0 overflow-hidden">
+          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Freundliche Ansprechpartnerin der Aurelia Grundbesitz GmbH mit Headset am Schreibtisch in einem hochwertigen Buero" className="absolute bottom-0 right-0 h-full w-auto max-w-none object-contain" priority />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/60 to-primary/15" />
         </div>
-        <div className="container-premium relative pb-10 md:pb-14">
+        <div className="container-premium relative w-full pb-10 md:pb-14">
           <Reveal>
             <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/80">{t.contact.title}</p>
             <h1 className="max-w-xl text-balance font-heading text-[2rem] font-semibold leading-[1.1] text-primary-foreground md:text-[3rem]">
