@@ -445,12 +445,12 @@ const en: Translations = {
   },
   howItWorks: {
     heroKicker: "How we work",
-    heroTitle: "Three business areas, one shared principle.",
+    heroTitle: "Three areas – always starting with the specific property.",
     heroDescription:
       "Aurelia combines three areas of activity under a single clear standard: claims acquisition, sale of properties from our portfolio, and project-based cooperations – each cleanly structured and verifiably documented.",
     heroPrimaryCta: "Discuss our approach",
     heroSecondaryCta: "See the process",
-    heroTrustLine: "Structured processes · Clear responsibilities · Confidential",
+    heroTrustLine: "Personal contact · Direct assessment · Confidential handling",
     heroImageAlt: "Calm, light-filled business environment – representing Aurelia's structured way of working",
     introTitle: "One standard, three paths",
     introText:
@@ -483,13 +483,12 @@ const en: Translations = {
     ],
     holdNote:
       "Description of the general approach. Specific decisions are taken exclusively on a property-by-property basis. Market conditions may change.",
-    principlesTitle: "What applies across all areas",
-    principlesIntro: "Four principles that shape our work – regardless of the area of activity.",
+    principlesTitle: "What matters to us in working together",
+    principlesIntro: "",
     principles: [
-      { title: "Transparent communication", text: "Clear language. No promises we cannot keep." },
-      { title: "Fair terms", text: "Verifiable calculations based on factual figures." },
-      { title: "Proper documentation", text: "All steps are recorded in writing and remain verifiable." },
-      { title: "Long-term perspective", text: "No speculation, but calm and sustainable development." },
+      { title: "Speaking openly", text: "We tell you what we can assess, and equally when information is still missing or something is not an option for us." },
+      { title: "Recording agreements", text: "Important agreements and next steps are documented so that everyone involved knows where they stand." },
+      { title: "Staying realistic", text: "Not every property and not every project is right for us. That is why we do not promise anything before we have reviewed the actual situation." },
     ],
     faqTitle: "Frequently asked questions about our approach",
     faqIntro: "If your question is not answered here, please get in touch directly.",
@@ -511,9 +510,9 @@ const en: Translations = {
         a: "Initial discussions are confidential by default. Content is not passed on. On request, we work with confidentiality agreements.",
       },
     ],
-    finalCtaTitle: "Questions about our approach?",
+    finalCtaTitle: "Would you like to know how things could proceed in your case?",
     finalCtaText:
-      "We are happy to explain the individual steps in a personal conversation – factual, confidential and without obligation.",
+      "Tell us briefly what it concerns. We will review your enquiry and discuss the next steps with you personally.",
     finalCtaButton: "Get in touch without obligation",
   },
   buyers: {

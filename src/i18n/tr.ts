@@ -412,12 +412,12 @@ const tr: Translations = {
   },
   howItWorks: {
     heroKicker: "Nasıl çalışıyoruz",
-    heroTitle: "Üç iş alanı, ortak bir ilke.",
+    heroTitle: "Üç alan – ve her zaman önce somut gayrimenkul.",
     heroDescription:
       "Aurelia üç faaliyet alanını net bir anlayış altında birleştirir: alacak satın alma, kendi portföyünden gayrimenkul satışı ve projeye dayalı işbirlikleri – her biri düzenli biçimde yapılandırılmış ve doğrulanabilir biçimde belgelenmiştir.",
     heroPrimaryCta: "Yaklaşımımızı görüşün",
     heroSecondaryCta: "Süreci görün",
-    heroTrustLine: "Yapılandırılmış süreçler · Net sorumluluklar · Gizli",
+    heroTrustLine: "Kişisel temas · Doğrudan inceleme · Gizli değerlendirme",
     heroImageAlt: "Sakin ve aydınlık bir profesyonel ortam – Aurelia'nın yapılandırılmış çalışma biçiminin simgesi",
     introTitle: "Tek anlayış, üç yol",
     introText:
@@ -450,13 +450,12 @@ const tr: Translations = {
     ],
     holdNote:
       "Genel yaklaşımın açıklaması. Somut kararlar yalnızca obje bazında alınır. Piyasa koşulları değişebilir.",
-    principlesTitle: "Tüm alanlarda geçerli olan",
-    principlesIntro: "Faaliyet alanından bağımsız olarak çalışmamızı belirleyen dört ilke.",
+    principlesTitle: "İşbirliğinde bizim için önemli olan",
+    principlesIntro: "",
     principles: [
-      { title: "Şeffaf iletişim", text: "Açık dil. Tutamayacağımız söz vermeyiz." },
-      { title: "Adil koşullar", text: "Nesnel verilere dayalı doğrulanabilir hesaplama." },
-      { title: "Düzgün belgeleme", text: "Tüm adımlar yazılı ve doğrulanabilir biçimde kayıt altına alınır." },
-      { title: "Uzun vadeli bakış", text: "Spekülasyon değil, sakin ve sürdürülebilir gelişim." },
+      { title: "Açık konuşmak", text: "Neyi değerlendirebildiğimizi söyleriz; bilgi eksikse veya bir konu bizim için uygun değilse bunu da açıkça belirtiriz." },
+      { title: "Mutabakatları kayıt altına almak", text: "Önemli görüşmeler ve sonraki adımlar, taraflar nerede durduklarını bilecek şekilde kayıt altına alınır." },
+      { title: "Gerçekçi kalmak", text: "Her gayrimenkul ve her proje bize uygun değildir. Bu yüzden gerçek durumu inceleyene kadar hiçbir söz vermeyiz." },
     ],
     faqTitle: "Yaklaşımımıza dair sıkça sorulan sorular",
     faqIntro: "Sorunuzun yanıtını burada bulamazsanız bize doğrudan ulaşın.",
@@ -478,9 +477,9 @@ const tr: Translations = {
         a: "İlk görüşmeler ilke olarak gizlidir. İçerikler aktarılmaz. Talep üzerine gizlilik anlaşmalarıyla çalışırız.",
       },
     ],
-    finalCtaTitle: "Yaklaşımla ilgili sorularınız mı var?",
+    finalCtaTitle: "Gayrimenkulünüzle ilgili bizimle görüşmek ister misiniz?",
     finalCtaText:
-      "Adımları kişisel bir görüşmede memnuniyetle açıklarız – nesnel, gizli ve yükümlülük olmadan.",
+      "Bize önce nesneyle ilgili birkaç bilgi gönderin. Talebinizi inceleyip size kişisel olarak dönüş yaparız.",
     finalCtaButton: "Yükümlülük olmadan iletişime geçin",
   },
   buyers: {
