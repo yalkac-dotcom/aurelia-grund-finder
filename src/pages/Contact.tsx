@@ -139,7 +139,7 @@ const Contact = () => {
         <div className="flex min-h-[350px] items-center bg-primary px-6 py-14 sm:min-h-[390px] sm:px-10 sm:py-16 lg:min-h-0 lg:py-20 lg:pl-[max(3rem,calc((100vw-1080px)/2-2.5rem))] lg:pr-10 xl:pr-12">
           <Reveal>
             <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/80">{t.contact.title}</p>
-            <h1 className="max-w-[29rem] text-balance font-heading text-[2rem] font-semibold leading-[1.1] text-primary-foreground md:text-[3rem]">
+            <h1 className="max-w-[29rem] text-balance font-heading text-[2rem] font-semibold leading-[1.1] text-primary-foreground md:text-[3rem] lg:max-w-[19rem]">
               {t.contact.subtitle}
             </h1>
             <p className="mt-5 max-w-[27rem] text-[0.95rem] leading-[1.8] text-primary-foreground/80 md:text-base">{t.contact.introText}</p>
