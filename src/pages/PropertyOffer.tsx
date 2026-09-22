@@ -8,6 +8,8 @@ import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { propertyOfferCopy } from "@/i18n/propertyOffer";
 import { supabase } from "@/integrations/supabase/client";
+import germanyPropertyImage from "@/assets/property-offer-germany.jpg";
+import turkeyPropertyImage from "@/assets/property-offer-turkey.jpg";
 
 type Country = "germany" | "turkey";
 type FormState = Record<string, string> & { privacy: string };
@@ -15,6 +17,10 @@ type UploadedFile = { name: string; path: string; size: number; type: string };
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 const acceptedTypes = new Set(["application/pdf", "image/jpeg", "image/png", ""]);
 const acceptedExtensions = new Set(["pdf", "jpg", "jpeg", "png"]);
+const countryImages: Record<Country, string> = {
+  germany: germanyPropertyImage,
+  turkey: turkeyPropertyImage,
+};
 const initialForm: FormState = { firstName:"", lastName:"", phone:"", email:"", location:"", street:"", propertyType:"", area:"", units:"", rooms:"", yearBuilt:"", rented:"", ownerStatus:"", price:"", situation:"", details:"", province:"", district:"", tapu:"", ownerCount:"", ownerResidence:"", preferredLanguage:"", privacy:"" };
 const schema = z.object({ firstName:z.string().trim().min(1).max(100), lastName:z.string().trim().min(1).max(100), phone:z.string().trim().min(5).max(50), email:z.string().trim().email().max(254), propertyType:z.string().trim().min(1).max(120) });
 const safeFileName = (name:string) => name.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9._-]/g, "-").replace(/-+/g,"-").slice(0,120);
@@ -94,7 +100,7 @@ const PropertyOffer = () => {
 
   return <Layout><main className="bg-gradient-warm pt-28 md:pt-36"><section className="container-premium pb-10 text-center md:pb-14"><p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent">{c.kicker}</p><h1 className="mt-4 font-heading text-4xl font-semibold text-primary md:text-5xl">{c.title}</h1><p className="mx-auto mt-5 max-w-3xl text-[0.98rem] leading-[1.85] text-muted-foreground">{c.intro}</p></section>
   <section className="container-premium pb-20 md:pb-28"><form onSubmit={submit} noValidate className="mx-auto max-w-5xl rounded-sm border border-border bg-card p-5 shadow-sm sm:p-8 md:p-12">
-    <fieldset><legend className="font-heading text-2xl font-semibold text-primary">{c.countryQuestion}</legend><div className="mt-5 grid gap-3 sm:grid-cols-2">{(["germany","turkey"] as Country[]).map(item=><label key={item} className={`flex min-h-14 cursor-pointer items-center gap-3 rounded-sm border px-5 py-4 font-semibold ${country===item ? "border-accent bg-secondary text-primary" : "border-border bg-background text-muted-foreground"}`}><input type="radio" name="country" checked={country===item} onChange={()=>setCountry(item)} className="h-4 w-4 accent-primary"/>{item==="germany"?c.germany:c.turkey}</label>)}</div></fieldset>
+    <fieldset><legend className="font-heading text-2xl font-semibold text-primary">{c.countryQuestion}</legend><div className="mt-5 grid gap-4 sm:grid-cols-2">{(["germany","turkey"] as Country[]).map(item=><label key={item} className={`group cursor-pointer overflow-hidden rounded-sm border bg-background transition-colors ${country===item ? "border-accent ring-2 ring-accent/20" : "border-border"}`}><span className="relative block aspect-[16/9] overflow-hidden"><img src={countryImages[item]} alt="" loading="lazy" width={1280} height={800} className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.015]"/><span className="absolute inset-0 bg-primary/10" aria-hidden="true"/></span><span className={`flex min-h-14 items-center gap-3 px-5 py-4 font-semibold ${country===item ? "bg-secondary text-primary" : "text-muted-foreground"}`}><input type="radio" name="country" checked={country===item} onChange={()=>setCountry(item)} className="h-4 w-4 accent-primary"/>{item==="germany"?c.germany:c.turkey}</span></label>)}</div></fieldset>
     <p className="mt-5 text-sm text-muted-foreground">{c.requiredHint}</p><div className="my-8 h-px bg-border"/>
     <div className="grid gap-6 md:grid-cols-2"><Field name="firstName" label={c.firstName} requiredField/><Field name="lastName" label={c.lastName} requiredField/><Field name="phone" label={c.phone} type="tel" requiredField/><Field name="email" label={c.email} type="email" requiredField/>
     {country==="germany" ? <><Field name="location" label={c.location} requiredField/><Field name="street" label={c.street}/></> : <><Field name="province" label={c.province} requiredField/><Field name="district" label={c.district}/></>}
