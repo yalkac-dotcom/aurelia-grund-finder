@@ -76,7 +76,7 @@ const ForOwnerInTrouble = () => {
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
             <SectionHeader title={o.solutionTitle} intro={o.solutionText} tone="dark" />
-            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className={`grid gap-8 md:gap-10 sm:grid-cols-2 ${o.proofPoints.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}>
               {o.proofPoints.map((p, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <div className="border-l border-accent/50 pl-5">
