@@ -435,7 +435,7 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
-        <section id="tuerkei-formular" className="section-premium scroll-mt-24 bg-gradient-warm">
+        {language !== "de" && <section id="tuerkei-formular" className="section-premium scroll-mt-24 bg-gradient-warm">
           <div className="container-premium">
             <div className="mx-auto max-w-4xl">
               <SectionHeader title={page.form.title} intro={page.form.intro} />
@@ -492,7 +492,21 @@ const TurkeyProperties = () => {
               </form>
             </div>
           </div>
-        </section>
+        </section>}
+        {language === "de" && <section id="tuerkei-formular" className="section-premium scroll-mt-24 bg-gradient-warm">
+          <div className="container-premium">
+            <Reveal>
+              <div className="mx-auto max-w-4xl border-l-2 border-accent bg-card px-6 py-10 md:px-10">
+                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Möchten Sie Ihre Immobilie anbieten?</h2>
+                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Nutzen Sie dafür unsere zentrale Immobilienanfrage. Wählen Sie dort einfach „Türkei“ aus und senden Sie uns die wichtigsten Angaben zu Ihrer Immobilie.</p>
+                <Link to="/immobilie-anbieten?land=tuerkei" className="btn-primary mt-7">
+                  IMMOBILIE IN DER TÜRKEI ANBIETEN
+                  <ArrowRight size={13} className="ml-2 text-accent" />
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </section>}
 
         <section className="section-premium bg-background">
           <div className="container-premium">
