@@ -54,7 +54,7 @@ const About = () => {
       <div className="page-shell">
         <section className="section-premium bg-gradient-warm !pt-14 md:!pt-20" aria-label={a.hero.kicker}>
           <div className="container-premium">
-            <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-4 md:gap-5">
+            <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-5">
               {a.trustTiles.map((item, index) => (
                 <Reveal key={item.title} delay={index * 0.04}>
                   <article className="relative h-full overflow-hidden rounded-sm bg-primary px-6 py-7 shadow-sm md:px-7 md:py-8">
@@ -77,7 +77,7 @@ const About = () => {
               {a.standing.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
           </Reveal>
-          <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {a.standing.values.map((value, index) => {
               const Icon = valueIcons[index] ?? Eye;
               return (
