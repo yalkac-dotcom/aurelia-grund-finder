@@ -68,7 +68,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       finalCtaTitle: "Immobilie in Deutschland anbieten", finalCtaText: "Schicken Sie uns zunächst die wichtigsten Angaben zu Ihrer Immobilie. Wir sehen uns Ihre Anfrage an und melden uns persönlich bei Ihnen.", finalCtaButton: "Anfrage starten",
     },
     howItWorks: {
-      heroDescription: "Aurelia verbindet direkten Immobilienankauf in Deutschland, Immobilienlösungen in der Türkei sowie Verkauf aus eigenem Bestand und projektbezogene Kooperationen.",
+      heroDescription: "Aurelia kauft Immobilien in Deutschland, ist Ansprechpartner für Eigentümer mit Immobilien in der Türkei und bietet ausgewählte Objekte aus dem eigenen Bestand oder aus Kooperationen an.",
       introTitle: "Nicht jede Immobilie braucht denselben Weg", introText: "Ob Ankauf in Deutschland, eine Immobilie in der Türkei oder ein Objekt aus unserem Bestand: Am Anfang steht immer die Frage, worum es konkret geht. Erst danach entscheiden wir, welcher Weg sinnvoll sein kann.",
       segmentsTitle: "Unsere drei Geschäftsbereiche", segmentsIntro: "Unsere Arbeit konzentriert sich auf drei Bereiche:",
       segments: [
