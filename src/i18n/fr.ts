@@ -450,7 +450,7 @@ const fr: Translations = {
       "Aurelia réunit trois domaines d’activité sous une exigence unique et claire : l’acquisition de créances, la vente de biens issus de notre portefeuille et les coopérations sur projet – chacun structuré avec soin et documenté de manière vérifiable.",
     heroPrimaryCta: "Discuter de notre approche",
     heroSecondaryCta: "Voir le processus",
-    heroTrustLine: "Processus structurés · Responsabilités claires · Confidentiel",
+    heroTrustLine: "Contact personnel · Examen direct · Traitement confidentiel",
     heroImageAlt: "Environnement professionnel calme et lumineux – symbole de la méthode de travail structurée d’Aurelia",
     introTitle: "Une exigence, trois voies",
     introText:
@@ -483,13 +483,12 @@ const fr: Translations = {
     ],
     holdNote:
       "Description de la démarche générale. Les décisions concrètes sont prises exclusivement bien par bien. Les conditions de marché peuvent évoluer.",
-    principlesTitle: "Ce qui vaut pour l’ensemble de nos domaines",
-    principlesIntro: "Quatre principes qui façonnent notre travail – indépendamment du domaine d’activité.",
+    principlesTitle: "Ce qui compte pour nous dans une collaboration",
+    principlesIntro: "",
     principles: [
-      { title: "Communication transparente", text: "Un langage clair. Aucune promesse que nous ne pourrions tenir." },
-      { title: "Conditions équitables", text: "Des calculs vérifiables fondés sur des chiffres objectifs." },
-      { title: "Documentation rigoureuse", text: "Toutes les étapes sont consignées par écrit et restent vérifiables." },
-      { title: "Perspective de long terme", text: "Pas de spéculation, mais un développement serein et durable." },
+      { title: "Parler ouvertement", text: "Nous disons ce que nous pouvons évaluer, et tout aussi clairement lorsque des informations manquent encore ou qu'un projet ne nous convient pas." },
+      { title: "Consigner les accords", text: "Les accords importants et les prochaines étapes sont consignés de manière à ce que chacun sache où il en est." },
+      { title: "Rester réaliste", text: "Tous les biens et tous les projets ne nous conviennent pas. C'est pourquoi nous ne promettons rien avant d'avoir examiné la situation réelle." },
     ],
     faqTitle: "Questions fréquentes sur notre approche",
     faqIntro: "Si votre question ne trouve pas de réponse ici, contactez-nous directement.",
@@ -511,9 +510,9 @@ const fr: Translations = {
         a: "Les premiers échanges sont confidentiels par défaut. Le contenu n’est pas transmis. Sur demande, nous travaillons avec des accords de confidentialité.",
       },
     ],
-    finalCtaTitle: "Des questions sur notre approche ?",
+    finalCtaTitle: "Vous souhaitez savoir comment évoluer dans votre cas ?",
     finalCtaText:
-      "Nous nous ferons un plaisir d’expliquer les différentes étapes lors d’un entretien personnel – de manière objective, confidentielle et sans engagement.",
+      "Décrivez-nous brièvement votre situation. Nous examinerons votre demande et discuterons personnellement des prochaines étapes avec vous.",
     finalCtaButton: "Nous contacter sans engagement",
   },
   buyers: {

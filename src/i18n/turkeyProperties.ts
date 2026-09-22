@@ -145,12 +145,12 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
     ],
     trust: {
       title: "Gayrimenkulünüz Türkiye'de. Kişisel muhatabınız Almanya'da.",
-      text: "Almanca ve Türkçe iletişim kuruyor, bilgilerinizi gizli şekilde değerlendiriyor ve sonraki adımları şeffaf ve düzenli bir süreç içinde koordine ediyoruz.",
-      points: ["Almanya'da kişisel muhatap", "Almanca ve Türkçe iletişim", "Gizli ve ücretsiz ilk değerlendirme"],
+      text: "İlk adımı Türkiye'de atmanıza gerek yok. Bize Almanya'dan ulaşabilir, durumunuzu Almanca veya Türkçe olarak bizimle konuşabilirsiniz. Bilgilerinizi inceleyip ardından nasıl devam edilebileceğini sizinle birlikte netleştiriyoruz.",
+      points: ["Almanya'da muhatap", "Almanca ve Türkçe", "Talebinizin ilk incelemesi"],
     },
     form: {
       title: "Türkiye'deki gayrimenkulünüzü bize sunun",
-      intro: "İlk değerlendirme ücretsiz ve bağlayıcı değildir. Gayrimenkulünüzle ilgili ilk bilgileri bize gönderin. Bilgilerinizi gizli şekilde inceleyip sizinle kişisel olarak iletişime geçeceğiz.",
+      intro: "Öncelikle gayrimenkulünüzle ilgili en önemli bilgileri bize gönderin. Elinizde tapu, fotoğraf veya başka belgeler varsa, bunları da doğrudan ekleyebilirsiniz. Talebinizi inceleyip sizinle kişisel olarak iletişime geçeceğiz.",
       requiredHint: "Zorunlu alanlar * ile işaretlenmiştir.",
       fullName: "Adınız ve soyadınız",
       phone: "Telefon numaranız",
@@ -188,8 +188,8 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       ownershipOptions: ["Evet", "Hayır", "Hisseli tapu", "Miras", "Diğer"],
     },
     cta: {
-      title: "Türkiye'de gayrimenkulünüz mü var?",
-      text: "İlk bilgileri bize gönderin. Size gizli ve ücretsiz bir ilk değerlendirme sunarız.",
+      title: "Türkiye'deki gayrimenkulünüzü bize sunmak mı istiyorsunuz?",
+      text: "Öncelikle gayrimenkulünüzle ilgili birkaç bilgi gönderin. Talebinizi inceleyip sizinle kişisel olarak iletişime geçeceğiz.",
       primary: "Gayrimenkulümü sunmak istiyorum",
       secondary: "+49 211 69583033 Ara",
     },
