@@ -127,11 +127,9 @@ const nl: Translations = {
     scrollTopAria: "Naar boven scrollen",
     heroMeta: "Substantiële expertise · Eigenaargestuurd · Langetermijnperspectief",
     initialAssessmentNote: "Vrijblijvend · Persoonlijke reactie na eerste beoordeling",
-    cookieText: "Deze website maakt gebruik van technisch noodzakelijke functies. Voor de integratie van externe diensten (bijv. kaartweergave) is uw toestemming vereist.",
+    cookieText: "Deze website maakt gebruik van technisch noodzakelijke functies. Analysediensten worden uitsluitend na uw uitdrukkelijke toestemming geladen.",
     cookieAccept: "Accepteren",
     cookieReject: "Weigeren",
-    mapConsentText: "Voor de weergave van de kaart wordt Google Maps gebruikt. Door te laden stemt u in met het privacybeleid van Google.",
-    mapConsentBtn: "Kaart laden",
     cookieTitle: "Cookie-instellingen",
     skipToContent: "Naar de inhoud gaan",
     cookieSaveSelection: "Selectie opslaan",
@@ -490,29 +488,29 @@ const nl: Translations = {
     heroKicker: "Voor kopers",
     heroTitle: "Kwaliteitsvastgoed tegen transparante prijzen.",
     heroDescription:
-      "Rechtstreeks uit onze portefeuille, zonder makelaar. Gecontroleerde objecten, eerlijke voorwaarden, duidelijk gedocumenteerde afwikkeling.",
+      "Geselecteerd vastgoed uit onze eigen portefeuille en projectgebonden samenwerkingen. Transparante informatie, eerlijke voorwaarden en duidelijk gedocumenteerde processen.",
     heroPrimaryCta: "Advies aanvragen",
     heroSecondaryCta: "Hoe wij werken",
-    heroTrustLine: "Directe aankoop · Zonder makelaarscourtage · Notariële begeleiding",
+    heroTrustLine: "Heldere voorwaarden · Transparante informatie · Notariële begeleiding",
     heroImageAlt: "Woonobject uit de Aurelia-portefeuille – symbool voor gecontroleerde kwaliteit en transparante voorwaarden",
     featuresTitle: "Wat u bij Aurelia kunt verwachten",
     featuresIntro:
-      "Aurelia verkoopt uitsluitend objecten uit de eigen portefeuille. Dat zorgt voor korte lijnen, duidelijke verantwoordelijkheden en transparante voorwaarden.",
+      "Aurelia presenteert geselecteerd vastgoed uit de eigen portefeuille en aanbod uit projectgebonden samenwerkingen. Herkomst, aanspreekpunten en voorwaarden worden per object transparant vermeld.",
     features: [
       { title: "Transparante prijzen", desc: "Eerlijke berekening op basis van controleerbare kengetallen – zonder verborgen kosten." },
-      { title: "Geen makelaarskosten", desc: "U koopt rechtstreeks van de eigenaar. De gebruikelijke makelaarscourtage vervalt." },
-      { title: "Gecontroleerde portefeuille", desc: "Elk object is vooraf gecontroleerd, gedocumenteerd en netjes gestructureerd." },
+      { title: "Heldere voorwaarden", desc: "Aanspreekpunten, contractvorm en mogelijke kosten worden per aanbod transparant vermeld." },
+      { title: "Inzichtelijke documenten", desc: "De beschikbare documentatie en controlestatus worden per aanbod transparant vermeld." },
       { title: "Heldere afwikkeling", desc: "Gestructureerd verloop van eerste gesprek tot notariële akte." },
     ],
     portfolioTitle: "Ons actuele aanbod",
     portfolioText:
-      "Aurelia beschikt over een regelmatig wisselende selectie gecontroleerd vastgoed uit de eigen portefeuille. Actuele objecten en details worden op aanvraag verstrekt.",
+      "Aurelia presenteert een regelmatig wisselende selectie uit de eigen portefeuille en projectgebonden samenwerkingen in Duitsland en Turkije. Actuele objecten en details worden op aanvraag verstrekt.",
     portfolioCta: "Naar de portefeuille",
     proofTitle: "Waarom rechtstreeks bij Aurelia kopen",
     proofIntro: "Vier punten die het verschil maken met een klassieke makelaarstransactie.",
     proofPoints: [
-      { title: "Directe eigenaar", text: "U spreekt met de verkoper zelf – zonder tussenpersoon." },
-      { title: "Volledige documenten", text: "Kadasteruittreksel, brochure en relevante documenten zijn beschikbaar." },
+      { title: "Duidelijke aanspreekpunten", text: "Per aanbod wordt vermeld wie de eigenaar, verkoper en contactpersoon is." },
+      { title: "Transparante documenten", text: "Beschikbare objectdocumenten en hun actuele status worden inzichtelijk verstrekt." },
       { title: "Realistische prijsbasis", text: "Wij rekenen marktconform – niet overspannen." },
       { title: "Betrouwbare afwikkeling", text: "Notaris, afspraak, oplevering – netjes gestructureerd en gedocumenteerd." },
     ],
@@ -530,7 +528,7 @@ const nl: Translations = {
     objections: [
       {
         q: "Zijn de objecten echt gecontroleerd?",
-        a: "Ja. Elk object in de portefeuille is vóór aankoop gecontroleerd, gedocumenteerd en – waar nodig – bouwkundig opgewaardeerd.",
+        a: "De status van controle, documentatie en eventuele renovatie wordt per object transparant vermeld.",
       },
       {
         q: "Zonder makelaar – wie behartigt mijn belangen?",
@@ -546,7 +544,7 @@ const nl: Translations = {
     faqItems: [
       {
         q: "Welke soorten objecten verkoopt Aurelia?",
-        a: "Geselecteerd woon- en commercieel vastgoed en percelen uit de eigen portefeuille, afhankelijk van de beschikbaarheid.",
+        a: "Geselecteerd woon- en commercieel vastgoed en percelen uit de eigen portefeuille of projectgebonden samenwerkingen in Duitsland en Turkije, afhankelijk van de beschikbaarheid.",
       },
       {
         q: "Kan een financiering via Aurelia worden bemiddeld?",
@@ -563,7 +561,7 @@ const nl: Translations = {
     ],
     finalCtaTitle: "Geïnteresseerd in een concreet object?",
     finalCtaText:
-      "Bespreek uw wensen met ons – wij beoordelen welke objecten uit onze portefeuille bij u passen.",
+      "Bespreek uw wensen met ons – wij beoordelen welk actueel aanbod bij u past.",
     finalCtaButton: "Vrijblijvend contact opnemen",
   },
   partners: {
@@ -900,7 +898,7 @@ const nl: Translations = {
     contactPrivacyTitle: "11. Contact inzake gegevensbescherming",
     contactPrivacyText: "Voor vragen over gegevensbescherming kunt u ons bereiken via:\nE-mail: office@aureliaestates.de",
     externalLinksDisclaimer: "Deze pagina bevat links naar externe websites van derden (waaronder dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). Op de inhoud daarvan hebben wij geen invloed. Voor de inhoud van de gelinkte pagina's is steeds de betreffende aanbieder of exploitant verantwoordelijk. De gelinkte pagina's zijn op het moment van plaatsing gecontroleerd op mogelijke rechtsovertredingen. Een permanente inhoudelijke controle van de gelinkte pagina's is zonder concrete aanwijzingen van een rechtsovertreding niet redelijkerwijs te verwachten. Bij het bekend worden van rechtsovertredingen zullen wij dergelijke links onmiddellijk verwijderen.",
-    lastUpdated: "Stand: maart 2026",
+    lastUpdated: "Stand: september 2026",
   },
   notFound: {
     title: "Pagina niet gevonden",

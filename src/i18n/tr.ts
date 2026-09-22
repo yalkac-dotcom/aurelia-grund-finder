@@ -126,11 +126,9 @@ const tr: Translations = {
     scrollTopAria: "Yukarı kaydır",
     heroMeta: "Köklü yetkinlik · Sahipleri tarafından yönetilir · Uzun vadeli perspektif",
     initialAssessmentNote: "Bağlayıcılık yok · İlk inceleme sonrası kişisel geri dönüş",
-    cookieText: "Bu web sitesi teknik olarak gerekli işlevler kullanmaktadır. Harici hizmetlerin (ör. harita görüntüleme) entegrasyonu için onayınız gerekmektedir.",
+    cookieText: "Bu web sitesi teknik olarak gerekli işlevler kullanmaktadır. Analiz hizmetleri yalnızca açık onayınızdan sonra yüklenir.",
     cookieAccept: "Kabul et",
     cookieReject: "Reddet",
-    mapConsentText: "Haritanın görüntülenmesi için Google Maps kullanılmaktadır. Yükleyerek Google'ın gizlilik politikasını kabul etmiş olursunuz.",
-    mapConsentBtn: "Haritayı yükle",
     cookieTitle: "Çerez Ayarları",
     skipToContent: "İçeriğe geç",
     cookieSaveSelection: "Seçimi kaydet",
@@ -489,29 +487,29 @@ const tr: Translations = {
     heroKicker: "Alıcılar İçin",
     heroTitle: "Şeffaf fiyatlarla nitelikli gayrimenkuller.",
     heroDescription:
-      "Aracısız, doğrudan kendi portföyümüzden. İncelenmiş gayrimenkuller, adil koşullar, açıkça belgelenmiş süreç.",
+      "Kendi portföyümüzden ve proje bazlı iş birliklerinden seçilmiş gayrimenkuller. Şeffaf bilgiler, adil koşullar ve açıkça belgelenmiş süreçler.",
     heroPrimaryCta: "Görüşme talep edin",
     heroSecondaryCta: "Nasıl çalışıyoruz",
-    heroTrustLine: "Doğrudan satın alma · Emlakçı komisyonu yok · Noter eşliğinde",
+    heroTrustLine: "Net koşullar · Şeffaf bilgiler · Noter eşliğinde",
     heroImageAlt: "Aurelia portföyünden bir konut – incelenmiş kalite ve şeffaf koşulların simgesi",
     featuresTitle: "Aurelia'da sizi neler bekliyor",
     featuresIntro:
-      "Aurelia yalnızca kendi portföyündeki gayrimenkulleri satar. Bu, kısa süreçler, net sorumluluklar ve şeffaf koşullar sağlar.",
+      "Aurelia, kendi portföyünden seçilmiş gayrimenkullerin yanı sıra proje bazlı iş birliklerinden gelen teklifleri sunar. Kaynak, muhataplar ve koşullar her gayrimenkul için şeffaf biçimde belirtilir.",
     features: [
       { title: "Şeffaf fiyatlandırma", desc: "Doğrulanabilir verilere dayalı adil hesaplama – gizli maliyet yok." },
-      { title: "Emlakçı ücreti yok", desc: "Doğrudan mal sahibinden satın alırsınız. Olağan emlakçı komisyonu uygulanmaz." },
-      { title: "İncelenmiş portföy", desc: "Her gayrimenkul önceden incelenmiş, belgelenmiş ve düzenli biçimde yapılandırılmıştır." },
+      { title: "Net koşullar", desc: "Muhataplar, sözleşme yapısı ve olası maliyetler her teklif için şeffaf biçimde belirtilir." },
+      { title: "İzlenebilir belgeler", desc: "Mevcut belgeler ve inceleme durumu her teklif için şeffaf biçimde belirtilir." },
       { title: "Net süreç", desc: "İlk görüşmeden noter senedine kadar yapılandırılmış akış." },
     ],
     portfolioTitle: "Mevcut sunumumuz",
     portfolioText:
-      "Aurelia, Düsseldorf bölgesi ve çevresinde sürekli güncellenen, incelenmiş bir gayrimenkul portföyüne sahiptir. Güncel objeler ve ayrıntılar talep üzerine paylaşılır.",
+      "Aurelia, Almanya ve Türkiye'de kendi portföyünden ve proje bazlı iş birliklerinden düzenli olarak değişen bir seçki sunar. Güncel gayrimenkuller ve ayrıntılar talep üzerine paylaşılır.",
     portfolioCta: "Portföye git",
     proofTitle: "Neden doğrudan Aurelia'dan satın almalı",
     proofIntro: "Klasik bir emlakçı işlemine kıyasla farkı yaratan dört nokta.",
     proofPoints: [
-      { title: "Doğrudan mal sahibi", text: "Doğrudan satıcının kendisiyle konuşursunuz – aracı olmadan." },
-      { title: "Eksiksiz belgeler", text: "Tapu kaydı, broşür ve ilgili tüm belgeler hazırdır." },
+      { title: "Net muhataplar", text: "Her teklifte malik, satıcı ve muhatabın kim olduğu belirtilir." },
+      { title: "Şeffaf belgeler", text: "Mevcut gayrimenkul belgeleri ve güncel durumları anlaşılır biçimde sunulur." },
       { title: "Gerçekçi fiyat tabanı", text: "Piyasaya uygun hesaplarız – abartısız." },
       { title: "Güvenilir süreç", text: "Noter, randevu, teslim – düzenli ve belgelenmiş." },
     ],
@@ -529,7 +527,7 @@ const tr: Translations = {
     objections: [
       {
         q: "Gayrimenkuller gerçekten incelendi mi?",
-        a: "Evet. Portföydeki her gayrimenkul, satın alımdan önce incelenmiş, belgelenmiş ve gerektiğinde yapısal olarak iyileştirilmiştir.",
+        a: "İnceleme, belgeleme ve varsa yenileme durumu her gayrimenkul için şeffaf biçimde belirtilir.",
       },
       {
         q: "Emlakçısız – haklarımı kim temsil edecek?",
@@ -545,7 +543,7 @@ const tr: Translations = {
     faqItems: [
       {
         q: "Aurelia ne tür gayrimenkuller satar?",
-        a: "Ağırlıklı olarak Düsseldorf bölgesi ve çevresindeki konutlar – daireler, çok aileli binalar ve seçili tekil objeler.",
+        a: "Almanya ve Türkiye'de kendi portföyümüzden veya proje bazlı iş birliklerinden seçilmiş konut, ticari gayrimenkul ve arsalar; güncel uygunluğa bağlıdır.",
       },
       {
         q: "Aurelia üzerinden finansman sağlanabilir mi?",
@@ -562,7 +560,7 @@ const tr: Translations = {
     ],
     finalCtaTitle: "Belirli bir gayrimenkulle mi ilgileniyorsunuz?",
     finalCtaText:
-      "İsteklerinizi bizimle paylaşın – portföyümüzdeki hangi objelerin size uygun olabileceğini değerlendirelim.",
+      "İsteklerinizi bizimle paylaşın – hangi güncel tekliflerin size uygun olabileceğini değerlendirelim.",
     finalCtaButton: "Yükümlülük olmadan iletişime geçin",
   },
   partners: {
@@ -899,7 +897,7 @@ const tr: Translations = {
     contactPrivacyTitle: "11. Veri koruma iletişim",
     contactPrivacyText: "Veri koruma ile ilgili sorularınız için bize aşağıdaki adresten ulaşabilirsiniz:\nE-posta: office@aureliaestates.de",
     externalLinksDisclaimer: "Bu sayfa üçüncü taraf web sitelerine bağlantılar içermektedir (aralarında dsgvo-gesetz.de, gesetze-im-internet.de, bfdi.bund.de, policies.google.com). İçerikleri üzerinde hiçbir etkimiz yoktur. Bağlantılı sayfaların içeriğinden her zaman ilgili sağlayıcı veya işletmeci sorumludur. Bağlantılı sayfalar, bağlantı kurulduğu sırada olası hukuki ihlaller açısından kontrol edilmiştir. Bağlantılı sayfaların sürekli içerik kontrolü, somut hukuki ihlal belirtileri olmaksızın makul değildir. Hukuki ihlallerin tespit edilmesi halinde bu tür bağlantılar derhal kaldırılacaktır.",
-    lastUpdated: "Son güncelleme: Mart 2026",
+    lastUpdated: "Son güncelleme: Eylül 2026",
   },
   notFound: {
     title: "Sayfa bulunamadı",
