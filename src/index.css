@@ -991,3 +991,12 @@
 .cookie-btn-secondary:hover {
   background: hsl(var(--secondary));
 }
+
+/* Einheitliche, sehr dezente Bildabstimmung (Navy/Creme/Gold-Farbwelt) */
+.img-tone {
+  filter: saturate(0.93) contrast(0.98) brightness(1.005) hue-rotate(-4deg);
+}
+
+.img-tone-soft {
+  filter: saturate(0.97) contrast(0.995) brightness(1.01) hue-rotate(-2deg);
+}
