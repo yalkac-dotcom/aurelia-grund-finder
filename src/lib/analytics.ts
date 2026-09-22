@@ -56,6 +56,25 @@ export const initGA = () => {
   });
 };
 
+/**
+ * Immediate revocation: signals denied consent to gtag and stops further hits.
+ * Existing trackPageView/trackEvent calls are additionally consent-gated.
+ */
+export const revokeGA = () => {
+  if (typeof window === "undefined" || typeof window.gtag !== "function") return;
+  try {
+    window.gtag("consent", "update", {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+    });
+    (window as unknown as Record<string, boolean>)[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
+  } catch {
+    // ignore – nothing further to send
+  }
+};
+
 export const trackPageView = (path: string, title?: string) => {
   if (!hasAnalyticsConsent() || typeof window === "undefined" || !window.gtag) return;
   window.gtag("event", "page_view", {
