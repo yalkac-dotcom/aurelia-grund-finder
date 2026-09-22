@@ -1,13 +1,12 @@
 // Hero image imports with WebP srcSet variants
 // Each hero has 4 widths: 640, 1024, 1440, 1920
 
-// NOTE: hero-premium uses stable /public/heroes URLs (not Vite-imported) so the
-// <link rel="preload"> in index.html matches the same URL the <img> requests.
+// NOTE: Startseiten-Hero verwendet ein vom Kunden geliefertes Bild unter
+// stabilen /heroes/ URLs (nicht Vite-importiert) so the <link rel="preload">
+// in index.html matches the same URL the <img> requests.
 // This is critical for LCP on the homepage.
-const premium640 = "/heroes/hero-premium-v6-640w.webp";
-const premium1024 = "/heroes/hero-premium-v6-1024w.webp";
-const premium1440 = "/heroes/hero-premium-v6-1440w.webp";
-const premium1920 = "/heroes/hero-premium-v6-1920w.webp";
+const premiumSrc = "/heroes/aurelia-hero.jpg";
+const premiumSrcSet = `${premiumSrc} 1920w`;
 
 import building640 from "@/assets/hero-building-640w.webp";
 import building1024 from "@/assets/hero-building-1024w.webp";
@@ -91,7 +90,7 @@ function srcSet(w640: string, w1024: string, w1440: string, w1920: string) {
 // optimal width from `srcSet` based on `sizes` + DPR — this only affects the very
 // first byte that gets requested when srcSet is unsupported (rare).
 export const heroSets = {
-  premium:       { src: premium1024,       srcSet: srcSet(premium640, premium1024, premium1440, premium1920),             sizes: SIZES },
+  premium:       { src: premiumSrc,        srcSet: premiumSrcSet,                                                           sizes: SIZES },
   building:      { src: building1440,      srcSet: srcSet(building640, building1024, building1440, building1920),           sizes: SIZES },
   contact:       { src: contact1440,       srcSet: srcSet(contact640, contact1024, contact1440, contact1920),               sizes: SIZES },
   buyers:        { src: buyers1440,        srcSet: srcSet(buyers640, buyers1024, buyers1440, buyers1920),                   sizes: SIZES },
