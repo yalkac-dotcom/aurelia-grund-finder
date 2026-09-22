@@ -87,8 +87,8 @@ const ProofCard = ({
       <p
         className={
           compact
-            ? "mt-2 text-[0.82rem] md:text-[0.85rem] leading-[1.75] text-muted-foreground"
-            : "mt-1.5 text-[0.82rem] leading-[1.7] text-muted-foreground"
+            ? "mt-2 whitespace-pre-line text-[0.82rem] md:text-[0.85rem] leading-[1.75] text-muted-foreground"
+            : "mt-1.5 whitespace-pre-line text-[0.82rem] leading-[1.7] text-muted-foreground"
         }
       >
         {text}
