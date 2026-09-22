@@ -30,7 +30,6 @@ const ProofCard = ({
   compact = false,
 }: ProofCardProps) => {
   const id = `proof-${index}-title`;
-  const numeral = String(index + 1).padStart(2, "0");
 
   const visual = image ? (
     <div
@@ -48,7 +47,7 @@ const ProofCard = ({
         aria-hidden="true"
       />
     </div>
-  ) : (
+  ) : Icon || iconImage ? (
     <div className="proof-card__visual">
       {Icon ? (
         <span className="proof-card__icon" aria-hidden="true">
@@ -70,11 +69,8 @@ const ProofCard = ({
           />
         </span>
       ) : null}
-      <span className="proof-card__numeral" aria-hidden="true">
-        {numeral}
-      </span>
     </div>
-  );
+  ) : null;
 
   const body = (
     <div className={compact ? "px-5 pt-4 pb-5 md:px-6 md:pt-5 md:pb-6" : "proof-card__body"}>
