@@ -645,7 +645,7 @@ const tr: Translations = {
     principles: [
       { title: "Gizlilik", text: "Kamuya açık pazarlama yok. İlan yok. Bilgi paylaşımı yok." },
       { title: "Bağlayıcılık", text: "Teklifimiz bir emlakçı broşürü değil – bir satış sözleşmesidir." },
-      { title: "Hız", text: "48 saatlik geri dönüş. Acil durumlarda hemen." },
+      { title: "Net yanıt", text: "Bilgileri inceledikten sonra ilerleyip ilerleyemeyeceğimizi ve nasıl ilerleyebileceğimizi açıkça bildiririz." },
       { title: "Adalet", text: "Baskı yok. Süre sınırı yok. Karar sizin." },
     ],
   },

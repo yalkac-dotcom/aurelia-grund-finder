@@ -646,7 +646,7 @@ const nl: Translations = {
     principles: [
       { title: "Discretie", text: "Geen openbare marketing. Geen advertenties. Geen openbaarmaking." },
       { title: "Bindendheid", text: "Ons aanbod is geen makelaarsbrochure – het is een koopovereenkomst." },
-      { title: "Snelheid", text: "Reactie binnen 48 uur. In spoedgevallen direct." },
+      { title: "Duidelijk antwoord", text: "Na beoordeling van de informatie laten wij u open weten of en hoe wij verder kunnen gaan." },
       { title: "Eerlijkheid", text: "Geen druk. Geen tijdslimiet. U beslist." },
     ],
   },

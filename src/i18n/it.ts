@@ -645,7 +645,7 @@ const it: Translations = {
     principles: [
       { title: "Discrezione", text: "Nessuna commercializzazione pubblica. Nessun annuncio. Nessuna divulgazione." },
       { title: "Vincolatività", text: "La nostra offerta non è un dossier d'agenzia – è un contratto di acquisto." },
-      { title: "Velocità", text: "Risposta in 48 ore. Immediatamente nei casi urgenti." },
+      { title: "Risposta chiara", text: "Dopo aver esaminato le informazioni, le diciamo apertamente se e come possiamo procedere." },
       { title: "Equità", text: "Nessuna pressione. Nessun limite di tempo. Decide lei." },
     ],
   },
@@ -730,10 +730,10 @@ const it: Translations = {
     faqTitle: "Domande frequenti",
     faqSubtitle: "Risposte alle domande più importanti prima del primo contatto.",
     faqItems: [
-      { q: "La prima valutazione è davvero gratuita?", a: "Sì. Esaminiamo la vostra richiesta senza alcun costo e vi contatteremo personalmente entro 48 ore." },
+      { q: "La prima valutazione è davvero gratuita?", a: "Sì. Non addebitiamo alcun costo per la prima verifica della richiesta. Dopo aver esaminato le informazioni, la ricontatteremo." },
       { q: "Che tipo di immobili trattate?", a: "Lavoriamo con immobili in situazioni particolari: successioni, divorzi, edifici da ristrutturare e immobili sfitti." },
       { q: "Come si svolge il primo colloquio?", a: "Per telefono o videochiamata – su richiesta anche di persona previo appuntamento. Durata: ca. 20–30 minuti." },
-      { q: "Operate a livello nazionale?", a: "Il nostro focus è la Germania, con particolare attenzione alle aree metropolitane." },
+      { q: "Operate in tutta la Germania?", a: "In linea di principio esaminiamo immobili in Germania indipendentemente dalla località. Decidiamo se un immobile è di nostro interesse dopo aver valutato il caso concreto." },
       { q: "Con quanta discrezione viene trattata la mia richiesta?", a: "Tutte le informazioni vengono trattate in modo strettamente riservato. Non condividiamo alcun dato." },
     ],
   },

@@ -678,7 +678,7 @@ const en: Translations = {
     principles: [
       { title: "Discretion", text: "No public marketing. No listings. No disclosure." },
       { title: "Commitment", text: "Our offer is not a broker exposé – it is a purchase contract." },
-      { title: "Speed", text: "48-hour response. Immediately in urgent cases." },
+      { title: "Clear response", text: "After reviewing the information, we will tell you openly whether and how we can proceed." },
       { title: "Fairness", text: "No pressure. No time limit. You decide." },
     ],
   },
