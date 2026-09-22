@@ -88,10 +88,7 @@ const ForBuyers = () => {
               {b.proofPoints.map((p, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <div className="border-l border-accent/40 pl-5">
-                    <div className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
-                      {String(i + 1).padStart(2, "0")}
-                    </div>
-                    <h3 className="mt-2.5 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                    <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                       {p.title}
                     </h3>
                     <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{p.text}</p>
@@ -112,13 +109,8 @@ const ForBuyers = () => {
                 return (
                   <Reveal key={i} delay={i * 0.06}>
                     <div>
-                      <div className="flex items-center gap-3">
-                        <Icon size={16} strokeWidth={1.5} className="text-accent/80" aria-hidden="true" />
-                        <span className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-accent">
-                          {String(i + 1).padStart(2, "0")}
-                        </span>
-                      </div>
-                      <h3 className="mt-3 text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                      <Icon size={16} strokeWidth={1.5} className="text-accent/80" aria-hidden="true" />
+                      <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                         {s.title}
                       </h3>
                       <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{s.desc}</p>
