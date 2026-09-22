@@ -1218,22 +1218,20 @@ const de: Translations = {
       imageAlt: "Heller, moderner Büroraum als Sinnbild für persönliche und grenzüberschreitende Immobilienarbeit",
     },
     trustTiles: [
-      { title: "Erfahrung & Marktverständnis", text: "Fundierte Einschätzung von Immobilien, Grundstücken und komplexen Ausgangssituationen." },
-      { title: "Eigene Entscheidungskompetenz", text: "Wir kaufen auf eigene Rechnung und benötigen keine externe Finanzierungs- oder Investorenfreigabe." },
-      { title: "Kurze Entscheidungswege", text: "Direkte Prüfung, klare Kommunikation und schnelle Rückmeldung bei geeigneten Objekten." },
-      { title: "Diskretion & Verbindlichkeit", text: "Vertrauliche Prüfung, transparente Abläufe und nachvollziehbare Entscheidungen." },
+      { title: "Wir entscheiden selbst", text: "Geeignete Immobilien kaufen wir auf eigene Rechnung. Ob ein Objekt grundsätzlich zu uns passt, prüfen wir deshalb direkt im Unternehmen." },
+      { title: "Wir schauen genauer hin", text: "Nicht jede Immobilie muss bezugsfertig sein. Auch Objekte mit Renovierungsbedarf oder einer komplizierteren Ausgangssituation können für uns interessant sein." },
+      { title: "Wir sagen, woran Sie sind", text: "Nach der Prüfung geben wir eine klare Rückmeldung. Wenn wir weitere Informationen benötigen oder ein Ankauf nicht infrage kommt, sagen wir das ebenfalls." },
     ],
     standing: {
       headline: "Wofür wir stehen",
       body: [
-        "Unser Ansatz ist bewusst klar und pragmatisch: Wir prüfen jedes Objekt individuell und bewerten nicht nur Lage und Substanz, sondern auch die konkrete Ausgangssituation des Eigentümers.",
-        "Dabei legen wir Wert auf Verlässlichkeit, Diskretion und realistische Lösungen. Wir versprechen keine Standardlösung für jedes Objekt, sondern treffen nachvollziehbare Entscheidungen auf Basis der jeweiligen wirtschaftlichen und rechtlichen Rahmenbedingungen.",
+        "Bei Immobilien gibt es selten nur Zahlen und Quadratmeter. Hinter einem Verkauf stehen Menschen, unterschiedliche Interessen und manchmal auch Situationen, die schnell geklärt werden müssen. Deshalb betrachten wir jedes Objekt einzeln.",
+        "Wir möchten lieber eine realistische Einschätzung geben als etwas versprechen, das sich später nicht halten lässt. Entscheidend ist für uns, ob eine Lösung tatsächlich umsetzbar ist.",
       ],
       values: [
-        { title: "Verbindlichkeit", text: "Wir kommunizieren klar und halten getroffene Vereinbarungen ein." },
-        { title: "Diskretion", text: "Sensible Situationen und Unterlagen behandeln wir vertraulich." },
-        { title: "Pragmatismus", text: "Wir konzentrieren uns auf umsetzbare Lösungen statt komplizierter Prozesse." },
-        { title: "Langfristiges Denken", text: "Entscheidungen werden wirtschaftlich und nachhaltig betrachtet." },
+        { title: "Verbindlich kommunizieren", text: "Was wir zusagen, soll auch Bestand haben. Deshalb klären wir wichtige Punkte lieber vorher als erst kurz vor dem Abschluss." },
+        { title: "Vertraulich mit Informationen umgehen", text: "Persönliche Angaben und Unterlagen zu einer Immobilie behandeln wir mit der erforderlichen Vertraulichkeit." },
+        { title: "Praktische Lösungen suchen", text: "Wir konzentrieren uns darauf, was in der konkreten Situation tatsächlich machbar ist, statt unnötig komplizierte Wege zu schaffen." },
       ],
     },
     approach: {
@@ -1245,7 +1243,7 @@ const de: Translations = {
       headline: "Wann Aurelia Grundbesitz der richtige Ansprechpartner sein kann",
       items: ["Immobilien mit kurzfristigem Handlungsbedarf", "Nachlass- und Erbschaftssituationen", "Leerstehende oder renovierungsbedürftige Objekte", "Schwierige Miet- oder Nutzungssituationen", "Grundstücke mit Entwicklungspotenzial", "Komplexe Eigentums- oder Verwertungssituationen", "Eigentümer, die eine diskrete und direkte Lösung bevorzugen"],
     },
-    closing: { headline: "Sie möchten eine Immobilie mit uns besprechen?", body: "Senden Sie uns unverbindlich die wichtigsten Informationen zu Ihrem Objekt. Wir prüfen die Ausgangssituation und melden uns persönlich bei Ihnen.", primary: "Immobilie anbieten", secondary: "Kontakt aufnehmen" },
+    closing: { headline: "Sie möchten eine Immobilie mit uns besprechen?", body: "Erzählen Sie uns kurz, um welche Immobilie es geht und was Sie vorhaben. Wir sehen uns Ihre Angaben an und melden uns persönlich bei Ihnen.", primary: "Immobilie anbieten", secondary: "Kontakt aufnehmen" },
   },
 
   turkeyProperties: turkeyPropertiesTranslations.de,
