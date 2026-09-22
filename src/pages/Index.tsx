@@ -7,7 +7,7 @@ import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 import germanyPropertyImage from "@/assets/home-country-germany.jpg";
-import turkeyPropertyImage from "@/assets/home-country-turkey.jpg";
+import turkeyPropertyImage from "@/assets/home-country-turkey-distinct.jpg";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
