@@ -13,6 +13,8 @@ interface PageHeroProps {
   secondaryCta?: { label: string; href: string };
   trustLine?: string;
   imagePosition?: string;
+  /** Optionaler individueller Overlay-Verlauf (z. B. Startseite: rechts deutlich schwächer). */
+  overlayGradient?: string;
   phoneLine?: { href: string; label: string };
   /**
    * "default" – größerer Hero (Startseite, Eigentümer)
@@ -36,6 +38,7 @@ const PageHero = ({
   secondaryCta,
   trustLine,
   imagePosition,
+  overlayGradient,
   phoneLine,
   size = "default",
 }: PageHeroProps) => (
@@ -61,6 +64,7 @@ const PageHero = ({
         className="absolute inset-0"
         style={{
           background:
+            overlayGradient ??
             "linear-gradient(to right, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.78) 35%, hsl(var(--primary) / 0.45) 65%, hsl(var(--primary) / 0.30) 100%)",
         }}
       />
