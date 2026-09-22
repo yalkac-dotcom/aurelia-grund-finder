@@ -91,8 +91,8 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       ownershipOptions: ["Ja", "Nein", "Miteigentümer", "Erbfall", "Sonstiges"],
     },
     cta: {
-      title: "Sie besitzen eine Immobilie in der Türkei?",
-      text: "Dann erzählen Sie uns kurz, worum es geht. Für den ersten Kontakt reichen einige Angaben zur Immobilie. Alles Weitere können wir anschließend persönlich besprechen.",
+      title: "Sie möchten uns eine Immobilie in der Türkei anbieten?",
+      text: "Schicken Sie uns zunächst einige Angaben zu Ihrer Immobilie. Wir sehen uns Ihre Anfrage an und melden uns persönlich bei Ihnen.",
       primary: "Immobilie anbieten",
       secondary: "+49 211 69583033 anrufen",
     },
