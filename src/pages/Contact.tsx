@@ -126,7 +126,7 @@ const Contact = () => {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to right, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.78) 35%, hsl(var(--primary) / 0.45) 65%, hsl(var(--primary) / 0.30) 100%)",
+                "linear-gradient(to right, hsl(var(--primary) / 0.62) 0%, hsl(var(--primary) / 0.50) 35%, hsl(var(--primary) / 0.22) 65%, hsl(var(--primary) / 0.08) 100%)",
             }}
           />
         </div>
