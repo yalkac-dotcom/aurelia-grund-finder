@@ -25,6 +25,25 @@ const initialForm: FormState = { firstName:"", lastName:"", phone:"", email:"", 
 const schema = z.object({ firstName:z.string().trim().min(1).max(100), lastName:z.string().trim().min(1).max(100), phone:z.string().trim().min(5).max(50), email:z.string().trim().email().max(254), propertyType:z.string().trim().min(1).max(120) });
 const safeFileName = (name:string) => name.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9._-]/g, "-").replace(/-+/g,"-").slice(0,120);
 
+const labelClass = "text-[0.76rem] font-semibold uppercase tracking-[0.11em] text-primary";
+const fieldClass = (hasError:boolean) => `mt-2 w-full rounded-sm border bg-background px-4 py-3 text-[0.92rem] outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 ${hasError ? "border-destructive" : "border-border"}`;
+
+type BaseFieldProps = { name:string; label:string; value:string; error?:string; onChange:(name:string,value:string)=>void; requiredField?:boolean };
+
+const Field = ({name,label,value,error,onChange,type="text",requiredField=false}:BaseFieldProps & {type?:string}) => (
+  <label className={labelClass}>{label}{requiredField && " *"}
+    <input type={type} value={value} onChange={e=>onChange(name,e.target.value)} className={fieldClass(Boolean(error))} aria-invalid={Boolean(error)}/>
+    {error && <span className="mt-1 block normal-case tracking-normal text-destructive">{error}</span>}
+  </label>
+);
+
+const SelectField = ({name,label,value,error,onChange,options,requiredField=false}:BaseFieldProps & {options:string[]}) => (
+  <label className={labelClass}>{label}{requiredField && " *"}
+    <select value={value} onChange={e=>onChange(name,e.target.value)} className={fieldClass(Boolean(error))}><option value="">—</option>{options.map(option=><option key={option}>{option}</option>)}</select>
+    {error && <span className="mt-1 block normal-case tracking-normal text-destructive">{error}</span>}
+  </label>
+);
+
 const PropertyOffer = () => {
   const { language, t } = useLanguage();
   const c = propertyOfferCopy[language];
