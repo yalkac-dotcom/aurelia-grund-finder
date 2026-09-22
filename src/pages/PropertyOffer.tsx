@@ -112,10 +112,7 @@ const PropertyOffer = () => {
     } catch (error) { console.error("Property offer submission failed", error); toast({title:c.errorTitle,description:c.errorText,variant:"destructive"}); }
     finally { setSubmitting(false); }
   };
-  const fieldClass = (name:string) => `mt-2 w-full rounded-sm border bg-background px-4 py-3 text-[0.92rem] outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 ${errors[name] ? "border-destructive" : "border-border"}`;
-  const labelClass = "text-[0.76rem] font-semibold uppercase tracking-[0.11em] text-primary";
-  const Field = ({name,label,type="text",requiredField=false}:{name:string;label:string;type?:string;requiredField?:boolean}) => <label className={labelClass}>{label}{requiredField && " *"}<input type={type} value={form[name]} onChange={e=>update(name,e.target.value)} className={fieldClass(name)} aria-invalid={Boolean(errors[name])}/>{errors[name] && <span className="mt-1 block normal-case tracking-normal text-destructive">{errors[name]}</span>}</label>;
-  const Select = ({name,label,options,requiredField=false}:{name:string;label:string;options:string[];requiredField?:boolean}) => <label className={labelClass}>{label}{requiredField && " *"}<select value={form[name]} onChange={e=>update(name,e.target.value)} className={fieldClass(name)}><option value="">—</option>{options.map(option=><option key={option}>{option}</option>)}</select>{errors[name] && <span className="mt-1 block normal-case tracking-normal text-destructive">{errors[name]}</span>}</label>;
+  const fp = (name:string) => ({ name, value: form[name] ?? "", error: errors[name], onChange: update });
 
   return <Layout><main className="bg-gradient-warm pt-28 md:pt-36"><section className="container-premium pb-10 text-center md:pb-14"><p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent">{c.kicker}</p><h1 className="mt-4 font-heading text-4xl font-semibold text-primary md:text-5xl">{c.title}</h1><p className="mx-auto mt-5 max-w-3xl text-[0.98rem] leading-[1.85] text-muted-foreground">{c.intro}</p></section>
   <section className="container-premium pb-20 md:pb-28"><form onSubmit={submit} noValidate className="mx-auto max-w-5xl rounded-sm border border-border bg-card p-5 shadow-sm sm:p-8 md:p-12">
