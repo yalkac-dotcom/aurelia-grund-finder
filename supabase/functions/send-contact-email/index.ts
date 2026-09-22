@@ -181,6 +181,21 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length <= 254;
 }
 
+const ALLOWED_FILE_TYPES = new Set(["application/pdf", "image/jpeg", "image/png", "application/octet-stream"]);
+const ALLOWED_FILE_EXTENSIONS = new Set(["pdf", "jpg", "jpeg", "png"]);
+
+function hasValidFiles(files: ContactPayload["files"]): boolean {
+  if (!files) return true;
+  if (!Array.isArray(files) || files.length > 10) return false;
+  return files.every((file) => {
+    const extension = file?.name?.split(".").pop()?.toLowerCase() ?? "";
+    return typeof file?.name === "string" && file.name.length <= 180 &&
+      typeof file?.path === "string" && file.path.length <= 500 && !file.path.includes("..") &&
+      typeof file?.size === "number" && file.size > 0 && file.size <= 10 * 1024 * 1024 &&
+      typeof file?.type === "string" && ALLOWED_FILE_TYPES.has(file.type) && ALLOWED_FILE_EXTENSIONS.has(extension);
+  });
+}
+
 async function postEmail(payload: {
   from: string;
   to: string[];
@@ -322,6 +337,12 @@ Deno.serve(async (req) => {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
+    if (!hasValidFiles(body.files)) {
+      return new Response(JSON.stringify({ error: "Invalid files" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
 
     const documentLinks = await createSignedDocumentLinks(body.files);
     const documentLinksText = documentLinks.length > 0 ? `\n\nDokumente (Links gültig 7 Tage):\n${documentLinks.join("\n")}` : "";
@@ -382,8 +403,8 @@ ${tpl.emailLabel}: office@aureliaestates.de
 Web: www.aureliaestates.de`;
 
     const languageName = LANGUAGE_NAMES_DE[locale];
-    const isTurkeyEnquiry = (body.property_type ?? "").toLowerCase().includes("türkei") ||
-      (body.message ?? "").startsWith("Türkei-Immobilienanfrage");
+    const isTurkeyEnquiry = body.form_type === "turkey_property" ||
+      (body.property_type ?? "").toLocaleLowerCase("de").includes("türkei");
     const notifyHeadline = isTurkeyEnquiry ? "Neue Türkei-Immobilienanfrage" : "Neue Kontaktanfrage";
     const notifySubject = isTurkeyEnquiry
       ? `Neue Türkei-Immobilienanfrage von ${body.name}`

@@ -11,12 +11,15 @@ import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import heroTurkeyProperties from "@/assets/hero-turkey-properties.jpg";
+import { z } from "zod";
 
 type FormState = {
   fullName: string;
   phone: string;
   email: string;
   preferredLanguage: string;
+  ownerLocation: string;
+  ownerCount: string;
   propertyType: string;
   provinceCity: string;
   district: string;
@@ -46,6 +49,8 @@ const getInitialForm = (preferredLanguage: string): FormState => ({
   phone: "",
   email: "",
   preferredLanguage,
+  ownerLocation: "",
+  ownerCount: "",
   propertyType: "",
   provinceCity: "",
   district: "",
@@ -60,6 +65,25 @@ const getInitialForm = (preferredLanguage: string): FormState => ({
 });
 
 const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length <= 254;
+const turkeyFormSchema = z.object({
+  fullName: z.string().trim().min(2).max(200),
+  phone: z.string().trim().min(5).max(50),
+  email: z.string().trim().email().max(254),
+  preferredLanguage: z.string().trim().min(1).max(50),
+  ownerLocation: z.string().trim().max(120),
+  ownerCount: z.string().trim().regex(/^$|^[1-9]\d{0,2}$/),
+  propertyType: z.string().trim().min(1).max(120),
+  provinceCity: z.string().trim().min(2).max(120),
+  district: z.string().trim().max(120),
+  area: z.string().trim().max(80),
+  rooms: z.string().trim().max(50),
+  yearBuilt: z.string().trim().regex(/^$|^\d{4}$/),
+  rented: z.string().trim().max(80),
+  ownership: z.string().trim().max(80),
+  priceExpectation: z.string().trim().max(120),
+  description: z.string().trim().max(1800),
+  privacy: z.literal(true),
+});
 
 const sanitizeFileName = (fileName: string) =>
   fileName
@@ -137,13 +161,18 @@ const TurkeyProperties = () => {
   };
 
   const validateForm = () => {
+    const parsed = turkeyFormSchema.safeParse(form);
+    const issueFields = new Set(parsed.success ? [] : parsed.error.issues.map((issue) => String(issue.path[0])));
     const nextErrors: Partial<Record<keyof FormState | "files", boolean>> = {
-      fullName: form.fullName.trim().length < 2,
-      phone: form.phone.trim().length < 5,
-      email: !isValidEmail(form.email.trim()),
-      propertyType: !form.propertyType,
-      provinceCity: form.provinceCity.trim().length < 2,
-      privacy: !form.privacy,
+      fullName: issueFields.has("fullName"),
+      phone: issueFields.has("phone"),
+      email: issueFields.has("email"),
+      propertyType: issueFields.has("propertyType"),
+      provinceCity: issueFields.has("provinceCity"),
+      ownerLocation: issueFields.has("ownerLocation"),
+      ownerCount: issueFields.has("ownerCount"),
+      yearBuilt: issueFields.has("yearBuilt"),
+      privacy: issueFields.has("privacy"),
       files: !validateFiles(files),
     };
     setErrors(nextErrors);
@@ -154,6 +183,8 @@ const TurkeyProperties = () => {
     const lines = [
       "Türkei-Immobilienanfrage",
       `Bevorzugte Sprache: ${form.preferredLanguage}`,
+      form.ownerLocation ? `Aktueller Aufenthaltsort: ${form.ownerLocation}` : "",
+      form.ownerCount ? `Anzahl Eigentümer: ${form.ownerCount}` : "",
       `Immobilienart: ${form.propertyType}`,
       `Provinz / Stadt: ${form.provinceCity}`,
       form.district ? `Stadtteil / Bezirk: ${form.district}` : "",
@@ -301,7 +332,7 @@ const TurkeyProperties = () => {
       </section>
 
       <div className="page-shell">
-        <section className="section-premium bg-gradient-warm">
+        {page.crossLink && <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <div className="mx-auto max-w-4xl">
               <SectionHeader title={page.problem.title} align="left" disableOffset />
@@ -314,7 +345,7 @@ const TurkeyProperties = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section>}
 
         <section className="section-premium bg-background">
           <div className="container-premium">
@@ -352,14 +383,42 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
+        {page.audience && <section className="section-premium bg-background">
+          <div className="container-premium">
+            <SectionHeader title={page.audience.title} intro={page.audience.text} />
+            <div className="mx-auto grid max-w-5xl gap-x-10 gap-y-3 md:grid-cols-2">
+              {page.audience.items.map((item, index) => (
+                <Reveal key={item} delay={(index % 2) * 0.04}>
+                  <div className="flex min-h-14 items-start gap-3 py-2">
+                    <CheckCircle2 className="mt-1 shrink-0 text-accent" size={17} />
+                    <p className="text-[0.92rem] leading-[1.75] text-muted-foreground">{item}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>}
+
         <section className="section-premium bg-background">
           <div className="container-premium">
             <SectionHeader title={page.processTitle} />
-            <div className="grid gap-6 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {page.process.map((step, index) => (
                 <ProcessStep key={step.title} index={index} total={page.process.length} title={step.title} desc={step.text} />
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section-premium bg-gradient-warm">
+          <div className="container-premium">
+            <Reveal>
+              <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
+                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">{page.crossLink.title}</h2>
+                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">{page.crossLink.text}</p>
+                <Link to="/fuer-eigentumer-in-not" className="mt-5 inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{page.crossLink.cta}</Link>
+              </div>
+            </Reveal>
           </div>
         </section>
 
@@ -394,14 +453,16 @@ const TurkeyProperties = () => {
               <form onSubmit={handleSubmit} className="bg-card p-6 shadow-[0_16px_48px_-34px_hsl(var(--primary)/0.5)] md:p-8">
                 <p className="mb-6 text-[0.82rem] text-muted-foreground">{page.form.requiredHint}</p>
                 <div className="grid gap-5 md:grid-cols-2">
-                  <label className={labelClass}>{page.form.fullName} *<input className={fieldClass("fullName")} value={form.fullName} onChange={(event) => updateField("fullName", event.target.value)} autoComplete="name" /></label>
-                  <label className={labelClass}>{page.form.phone} *<input className={fieldClass("phone")} value={form.phone} onChange={(event) => updateField("phone", event.target.value)} autoComplete="tel" /></label>
-                  <label className={labelClass}>{page.form.email} *<input className={fieldClass("email")} value={form.email} onChange={(event) => updateField("email", event.target.value)} autoComplete="email" inputMode="email" /></label>
+                  <label className={labelClass}>{page.form.fullName} *<input className={fieldClass("fullName")} value={form.fullName} onChange={(event) => updateField("fullName", event.target.value)} autoComplete="name" maxLength={200} /></label>
+                  <label className={labelClass}>{page.form.phone} *<input className={fieldClass("phone")} value={form.phone} onChange={(event) => updateField("phone", event.target.value)} autoComplete="tel" maxLength={50} /></label>
+                  <label className={labelClass}>{page.form.email} *<input className={fieldClass("email")} value={form.email} onChange={(event) => updateField("email", event.target.value)} autoComplete="email" inputMode="email" maxLength={254} /></label>
                   <label className={labelClass}>{page.form.preferredLanguage}<select className={fieldClass("preferredLanguage")} value={form.preferredLanguage} onChange={(event) => updateField("preferredLanguage", event.target.value)}>{page.form.languageOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
+                  <label className={labelClass}>{page.form.ownerLocation ?? ""}<input className={fieldClass("ownerLocation")} value={form.ownerLocation} onChange={(event) => updateField("ownerLocation", event.target.value)} maxLength={120} /></label>
+                  <label className={labelClass}>{page.form.ownerCount ?? ""}<input className={fieldClass("ownerCount")} value={form.ownerCount} onChange={(event) => updateField("ownerCount", event.target.value)} inputMode="numeric" maxLength={3} /></label>
                   <label className={labelClass}>{page.form.propertyType} *<select className={fieldClass("propertyType")} value={form.propertyType} onChange={(event) => updateField("propertyType", event.target.value)}><option value="">{page.form.selectPlaceholder}</option>{page.form.propertyTypeOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
-                  <label className={labelClass}>{page.form.provinceCity} *<input className={fieldClass("provinceCity")} value={form.provinceCity} onChange={(event) => updateField("provinceCity", event.target.value)} /></label>
-                  <label className={labelClass}>{page.form.district}<input className={fieldClass("district")} value={form.district} onChange={(event) => updateField("district", event.target.value)} /></label>
-                  <label className={labelClass}>{page.form.area}<input className={fieldClass("area")} value={form.area} onChange={(event) => updateField("area", event.target.value)} /></label>
+                  <label className={labelClass}>{page.form.provinceCity} *<input className={fieldClass("provinceCity")} value={form.provinceCity} onChange={(event) => updateField("provinceCity", event.target.value)} maxLength={120} /></label>
+                  <label className={labelClass}>{page.form.district}<input className={fieldClass("district")} value={form.district} onChange={(event) => updateField("district", event.target.value)} maxLength={120} /></label>
+                  <label className={labelClass}>{page.form.area}<input className={fieldClass("area")} value={form.area} onChange={(event) => updateField("area", event.target.value)} maxLength={80} /></label>
                   <label className={labelClass}>{page.form.rooms}<input className={fieldClass("rooms")} value={form.rooms} onChange={(event) => updateField("rooms", event.target.value)} /></label>
                   <label className={labelClass}>{page.form.yearBuilt}<input className={fieldClass("yearBuilt")} value={form.yearBuilt} onChange={(event) => updateField("yearBuilt", event.target.value)} inputMode="numeric" /></label>
                   <label className={labelClass}>{page.form.rented}<select className={fieldClass("rented")} value={form.rented} onChange={(event) => updateField("rented", event.target.value)}><option value="">{page.form.selectPlaceholder}</option>{page.form.rentedOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>

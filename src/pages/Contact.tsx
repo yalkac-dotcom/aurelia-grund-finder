@@ -29,6 +29,7 @@ const Contact = () => {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [confirmationWarning, setConfirmationWarning] = useState(false);
+  const [propertyLocation, setPropertyLocation] = useState("");
   const { t, language } = useLanguage();
   const contactCopy = pageExtras[language].contact;
 
@@ -39,6 +40,15 @@ const Contact = () => {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+    const contactSchema = z.object({
+      name: z.string().trim().min(2).max(200),
+      email: z.string().trim().email().max(254),
+      phone: z.string().trim().min(1).max(50),
+      subject: z.string().trim().min(1).max(120),
+      propertyLocation: z.string().trim().max(80),
+      propertyType: z.string().trim().max(120),
+      message: z.string().trim().min(1).max(5000),
+    });
     const phone = String(formData.get("phone") ?? "").trim();
     const phoneValidation = z.string().trim().min(1).max(50).safeParse(phone);
 
@@ -64,6 +74,16 @@ const Contact = () => {
       return;
     }
 
+    const parsedContact = contactSchema.safeParse({
+      name: formData.get("name"), email: formData.get("email"), phone,
+      subject, propertyLocation: formData.get("property_location") ?? "",
+      propertyType: formData.get("property_type") ?? "", message: formData.get("message"),
+    });
+    if (!parsedContact.success) {
+      setError(t.common.formError);
+      return;
+    }
+
     setSubmitting(true);
 
     const rawMessage = formData.get("message") as string;
@@ -73,7 +93,7 @@ const Contact = () => {
       email: formData.get("email") as string,
       phone: phoneValidation.data,
       property_type: (formData.get("property_type") as string) || null,
-      message: `${t.contact.subject}: ${subject}\n\n${rawMessage}`,
+      message: `${t.contact.propertyLocation ?? "Property location"}: ${String(formData.get("property_location") ?? "")}\n${t.contact.subject}: ${subject}\n\n${rawMessage}`,
     };
 
     // 1) In Datenbank speichern (Backup / Audit)
@@ -97,7 +117,7 @@ const Contact = () => {
           phone: payload.phone,
           property_type: payload.property_type,
           subject,
-          message: rawMessage,
+          message: payload.message,
           language,
           form_type: "general_contact",
           privacy_consent: true,
@@ -305,6 +325,18 @@ const Contact = () => {
                       <p id="subject-error" role="alert" className="mt-1.5 text-sm text-destructive">
                         {t.contact.subjectRequired}
                       </p>
+                    )}
+                  </div>
+                  <div>
+                    <label htmlFor="property_location" className={labelClasses}>{t.contact.propertyLocation ?? ""}</label>
+                    <select id="property_location" name="property_location" className={inputClasses} value={propertyLocation} onChange={(event) => setPropertyLocation(event.target.value)}>
+                      <option value="">{t.common.pleaseSelect}</option>
+                      {(t.contact.propertyLocationOptions ?? []).map((opt) => <option key={opt} value={opt}>{opt}</option>)}
+                    </select>
+                    {propertyLocation === t.contact.propertyLocationOptions?.[1] && (
+                      <div className="mt-3 border-l-2 border-accent bg-secondary/50 px-4 py-3 text-sm leading-relaxed text-foreground/80">
+                        {t.contact.turkeyFormHint} <Link to="/immobilien-tuerkei#tuerkei-formular" className="font-semibold text-primary hover:text-accent">{t.contact.turkeyFormCta}</Link>
+                      </div>
                     )}
                   </div>
                   <div>

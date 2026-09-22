@@ -11,8 +11,10 @@ export interface TurkeyPropertiesTranslations {
   propertyTypesIntro: string;
   propertyTypes: string[];
   propertyTypesExtra: string;
+  audience?: { title: string; text: string; items: string[] };
   processTitle: string;
   process: { title: string; text: string }[];
+  crossLink?: { title: string; text: string; cta: string };
   trust: { title: string; text: string; points: string[] };
   form: {
     title: string;
@@ -22,6 +24,8 @@ export interface TurkeyPropertiesTranslations {
     phone: string;
     email: string;
     preferredLanguage: string;
+    ownerLocation?: string;
+    ownerCount?: string;
     propertyType: string;
     provinceCity: string;
     district: string;
@@ -314,6 +318,7 @@ export interface Translations {
     finalCtaTitle: string;
     finalCtaText: string;
     finalCtaButton: string;
+    crossLink?: { title: string; text: string; cta: string };
   };
   howItWorks: {
     heroKicker: string;
@@ -482,6 +487,10 @@ export interface Translations {
     subjectOptions: string[];
     propertyType: string;
     propertyTypeOptions: string[];
+    propertyLocation?: string;
+    propertyLocationOptions?: string[];
+    turkeyFormHint?: string;
+    turkeyFormCta?: string;
     company: string;
     messagePlaceholder: string;
     formLabel: string;

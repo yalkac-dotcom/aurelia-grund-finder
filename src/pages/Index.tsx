@@ -20,7 +20,7 @@ import { pageExtras } from "@/i18n/pageExtras";
 // stabilen Schlüssel und ein dediziertes Asset – Sprach-/Reihenfolgewechsel
 // können die Bedeutung damit nicht mehr kippen.
 
-type AreaKey = "notlagen" | "erbe" | "direktankauf";
+type AreaKey = "deutschland" | "tuerkei";
 type ProofKey = "diskretion" | "substanz" | "langfristigkeit" | "klarheit";
 type StepKey = "kontakt" | "pruefung" | "angebot";
 
@@ -29,11 +29,10 @@ const HomePage = () => {
   const extras = pageExtras[language];
 
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
-  const areaKeys: AreaKey[] = ["notlagen", "erbe", "direktankauf"];
+  const areaKeys: AreaKey[] = ["deutschland", "tuerkei"];
   const areaAssets: Record<AreaKey, { image: string; link: string }> = {
-    notlagen:      { image: cardImages.areas[0], link: "/fuer-eigentumer-in-not" },
-    erbe:          { image: cardImages.areas[1], link: "/kontakt" },
-    direktankauf:  { image: cardImages.areas[2], link: "/fuer-kaeufer" },
+    deutschland: { image: cardImages.areas[0], link: "/fuer-eigentumer-in-not" },
+    tuerkei: { image: cardImages.areas[1], link: "/immobilien-tuerkei" },
   };
 
   // 4 Versprechen – stabile Schlüssel, Icon pro Schlüssel (Light-Familie für Navy-Sektion)
@@ -73,7 +72,7 @@ const HomePage = () => {
         <section className="section-premium bg-gradient-warm !pt-0 md:!pt-0">
           <div className="container-premium">
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} disableOffset />
-            <div className="grid gap-6 md:gap-7 sm:grid-cols-3">
+            <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 md:gap-7">
               {t.home.areas.map((path, i) => {
                 const key = areaKeys[i];
                 const asset = areaAssets[key];
@@ -93,38 +92,6 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-
-
-
-        <section className="section-premium bg-background">
-          <div className="container-premium">
-            <Reveal>
-              <div className="grid items-center gap-8 md:grid-cols-[0.9fr_1.1fr] border-l-2 border-l-accent bg-card px-6 py-8 shadow-[0_12px_36px_-24px_hsl(var(--primary)/0.35)] md:px-10 md:py-10">
-                <div>
-                  <p className="mb-3 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-accent">
-                    {t.turkeyProperties.teaser.eyebrow}
-                  </p>
-                  <h2 className="font-heading text-[1.55rem] font-semibold leading-[1.2] text-primary md:text-[2rem]">
-                    {t.turkeyProperties.teaser.title}
-                  </h2>
-                </div>
-                <div>
-                  <p className="mb-6 text-[0.94rem] leading-[1.8] text-muted-foreground">
-                    {t.turkeyProperties.teaser.text}
-                  </p>
-                  <Link
-                    to="/immobilien-tuerkei"
-                    className="inline-flex items-center gap-2 text-[0.78rem] font-semibold uppercase tracking-[0.12em] text-primary transition-colors hover:text-accent"
-                  >
-                    {t.turkeyProperties.teaser.button}
-                    <ArrowRight size={13} className="text-accent" />
-                  </Link>
-                </div>
-              </div>
-            </Reveal>
-          </div>
-        </section>
-
         {/* TRUST */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
