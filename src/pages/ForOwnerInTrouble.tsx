@@ -57,7 +57,7 @@ const ForOwnerInTrouble = () => {
           </div>
         </section>
 
-        <section className="section-premium bg-background">
+        {o.crossLink && <section className="section-premium bg-background">
           <div className="container-premium">
             <Reveal>
               <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
@@ -67,7 +67,7 @@ const ForOwnerInTrouble = () => {
               </div>
             </Reveal>
           </div>
-        </section>
+        </section>}
 
         {/* UNSERE LÖSUNG (Navy) — typografisch, ohne Icons */}
         <section className="section-premium section-navy text-white">

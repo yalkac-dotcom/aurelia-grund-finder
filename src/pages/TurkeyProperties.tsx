@@ -332,7 +332,7 @@ const TurkeyProperties = () => {
       </section>
 
       <div className="page-shell">
-        <section className="section-premium bg-gradient-warm">
+        {page.crossLink && <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <div className="mx-auto max-w-4xl">
               <SectionHeader title={page.problem.title} align="left" disableOffset />
@@ -345,7 +345,7 @@ const TurkeyProperties = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section>}
 
         <section className="section-premium bg-background">
           <div className="container-premium">
@@ -441,8 +441,8 @@ const TurkeyProperties = () => {
                   <label className={labelClass}>{page.form.phone} *<input className={fieldClass("phone")} value={form.phone} onChange={(event) => updateField("phone", event.target.value)} autoComplete="tel" maxLength={50} /></label>
                   <label className={labelClass}>{page.form.email} *<input className={fieldClass("email")} value={form.email} onChange={(event) => updateField("email", event.target.value)} autoComplete="email" inputMode="email" maxLength={254} /></label>
                   <label className={labelClass}>{page.form.preferredLanguage}<select className={fieldClass("preferredLanguage")} value={form.preferredLanguage} onChange={(event) => updateField("preferredLanguage", event.target.value)}>{page.form.languageOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
-                  <label className={labelClass}>{page.form.ownerLocation}<input className={fieldClass("ownerLocation")} value={form.ownerLocation} onChange={(event) => updateField("ownerLocation", event.target.value)} maxLength={120} /></label>
-                  <label className={labelClass}>{page.form.ownerCount}<input className={fieldClass("ownerCount")} value={form.ownerCount} onChange={(event) => updateField("ownerCount", event.target.value)} inputMode="numeric" maxLength={3} /></label>
+                  <label className={labelClass}>{page.form.ownerLocation ?? ""}<input className={fieldClass("ownerLocation")} value={form.ownerLocation} onChange={(event) => updateField("ownerLocation", event.target.value)} maxLength={120} /></label>
+                  <label className={labelClass}>{page.form.ownerCount ?? ""}<input className={fieldClass("ownerCount")} value={form.ownerCount} onChange={(event) => updateField("ownerCount", event.target.value)} inputMode="numeric" maxLength={3} /></label>
                   <label className={labelClass}>{page.form.propertyType} *<select className={fieldClass("propertyType")} value={form.propertyType} onChange={(event) => updateField("propertyType", event.target.value)}><option value="">{page.form.selectPlaceholder}</option>{page.form.propertyTypeOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
                   <label className={labelClass}>{page.form.provinceCity} *<input className={fieldClass("provinceCity")} value={form.provinceCity} onChange={(event) => updateField("provinceCity", event.target.value)} maxLength={120} /></label>
                   <label className={labelClass}>{page.form.district}<input className={fieldClass("district")} value={form.district} onChange={(event) => updateField("district", event.target.value)} maxLength={120} /></label>
