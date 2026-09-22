@@ -435,64 +435,6 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
-        {language !== "de" && <section id="tuerkei-formular" className="section-premium scroll-mt-24 bg-gradient-warm">
-          <div className="container-premium">
-            <div className="mx-auto max-w-4xl">
-              <SectionHeader title={page.form.title} intro={page.form.intro} />
-              <form onSubmit={handleSubmit} className="bg-card p-6 shadow-[0_16px_48px_-34px_hsl(var(--primary)/0.5)] md:p-8">
-                <p className="mb-6 text-[0.82rem] text-muted-foreground">{page.form.requiredHint}</p>
-                <div className="grid gap-5 md:grid-cols-2">
-                  <label className={labelClass}>{page.form.fullName} *<input className={fieldClass("fullName")} value={form.fullName} onChange={(event) => updateField("fullName", event.target.value)} autoComplete="name" maxLength={200} /></label>
-                  <label className={labelClass}>{page.form.phone} *<input className={fieldClass("phone")} value={form.phone} onChange={(event) => updateField("phone", event.target.value)} autoComplete="tel" maxLength={50} /></label>
-                  <label className={labelClass}>{page.form.email} *<input className={fieldClass("email")} value={form.email} onChange={(event) => updateField("email", event.target.value)} autoComplete="email" inputMode="email" maxLength={254} /></label>
-                  <label className={labelClass}>{page.form.preferredLanguage}<select className={fieldClass("preferredLanguage")} value={form.preferredLanguage} onChange={(event) => updateField("preferredLanguage", event.target.value)}>{page.form.languageOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
-                  <label className={labelClass}>{page.form.ownerLocation ?? ""}<input className={fieldClass("ownerLocation")} value={form.ownerLocation} onChange={(event) => updateField("ownerLocation", event.target.value)} maxLength={120} /></label>
-                  <label className={labelClass}>{page.form.ownerCount ?? ""}<input className={fieldClass("ownerCount")} value={form.ownerCount} onChange={(event) => updateField("ownerCount", event.target.value)} inputMode="numeric" maxLength={3} /></label>
-                  <label className={labelClass}>{page.form.propertyType} *<select className={fieldClass("propertyType")} value={form.propertyType} onChange={(event) => updateField("propertyType", event.target.value)}><option value="">{page.form.selectPlaceholder}</option>{page.form.propertyTypeOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
-                  <label className={labelClass}>{page.form.provinceCity} *<input className={fieldClass("provinceCity")} value={form.provinceCity} onChange={(event) => updateField("provinceCity", event.target.value)} maxLength={120} /></label>
-                  <label className={labelClass}>{page.form.district}<input className={fieldClass("district")} value={form.district} onChange={(event) => updateField("district", event.target.value)} maxLength={120} /></label>
-                  <label className={labelClass}>{page.form.area}<input className={fieldClass("area")} value={form.area} onChange={(event) => updateField("area", event.target.value)} maxLength={80} /></label>
-                  <label className={labelClass}>{page.form.rooms}<input className={fieldClass("rooms")} value={form.rooms} onChange={(event) => updateField("rooms", event.target.value)} /></label>
-                  <label className={labelClass}>{page.form.yearBuilt}<input className={fieldClass("yearBuilt")} value={form.yearBuilt} onChange={(event) => updateField("yearBuilt", event.target.value)} inputMode="numeric" /></label>
-                  <label className={labelClass}>{page.form.rented}<select className={fieldClass("rented")} value={form.rented} onChange={(event) => updateField("rented", event.target.value)}><option value="">{page.form.selectPlaceholder}</option>{page.form.rentedOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
-                  <label className={labelClass}>{page.form.ownership}<select className={fieldClass("ownership")} value={form.ownership} onChange={(event) => updateField("ownership", event.target.value)}><option value="">{page.form.selectPlaceholder}</option>{page.form.ownershipOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
-                  <label className={`${labelClass} md:col-span-2`}>{page.form.priceExpectation}<input className={fieldClass("priceExpectation")} value={form.priceExpectation} onChange={(event) => updateField("priceExpectation", event.target.value)} /></label>
-                  <label className={`${labelClass} md:col-span-2`}>{page.form.description}<textarea className={`${fieldClass("description")} min-h-36 resize-y`} value={form.description} onChange={(event) => updateField("description", event.target.value)} maxLength={1800} /></label>
-                  <div className={`${labelClass} md:col-span-2`}>
-                    <span className="flex items-center gap-2"><Upload size={15} className="text-accent" />{page.form.files}</span>
-                    <input ref={fileInputRef} className="sr-only" type="file" multiple accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" onChange={(event) => onFilesChange(event.target.files)} />
-                    <div className={`mt-2 flex min-h-12 flex-col gap-3 rounded-sm border bg-background px-4 py-3 sm:flex-row sm:items-center ${errors.files ? "border-destructive" : "border-border"}`}>
-                      <Button type="button" variant="outline" onClick={() => fileInputRef.current?.click()} className="min-h-11 shrink-0 rounded-sm">
-                        <Upload size={15} className="mr-2 text-accent" />
-                        {page.form.uploadChoose}
-                      </Button>
-                      <span className="normal-case tracking-normal text-[0.82rem] font-normal text-muted-foreground">
-                        {files.length === 0 ? page.form.uploadEmpty : `${page.form.uploadSelected} ${files.map((file) => file.name).join(", ")}`}
-                      </span>
-                    </div>
-                    <span className="mt-2 block text-[0.78rem] normal-case text-muted-foreground">{page.form.uploadHelp}</span>
-                  </div>
-                </div>
-                {files.length > 0 && <p className="mt-3 text-[0.78rem] text-muted-foreground">{files.map((file) => `${file.name} · ${formatSize(file.size)}`).join(" · ")}</p>}
-                <label className="mt-6 flex items-start gap-3 text-[0.86rem] leading-[1.7] text-muted-foreground">
-                  <input type="checkbox" checked={form.privacy} onChange={(event) => updateField("privacy", event.target.checked)} className={`mt-1 h-4 w-4 rounded-sm border ${errors.privacy ? "border-destructive" : "border-border"}`} />
-                  <span>{page.form.privacy} <Link to="/datenschutz" className="text-primary underline-offset-4 hover:underline">{page.form.privacyLink}</Link></span>
-                </label>
-                {isSuccess && (
-                  <div className="mt-6 border-l-2 border-l-accent bg-secondary/60 p-4 text-[0.9rem] leading-[1.7] text-primary">
-                    <strong className="block font-heading">{page.form.successTitle}</strong>
-                     <span>{confirmationSent ? page.form.successText : page.form.confirmationWarning}</span>
-                  </div>
-                )}
-                <div className="mt-7">
-                  <Button type="submit" disabled={isSubmitting} className="min-h-11 rounded-sm bg-primary px-6 text-primary-foreground hover:bg-primary/90">
-                    {isSubmitting ? page.form.submitting : page.form.button}
-                  </Button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>}
 
         <section className="section-premium bg-background">
           <div className="container-premium">
@@ -501,11 +443,7 @@ const TurkeyProperties = () => {
               <h2 className="font-heading text-[1.75rem] font-bold leading-[1.2] text-primary md:text-[2.25rem]">{page.cta.title}</h2>
               <p className="mx-auto mt-4 max-w-2xl text-[0.94rem] leading-[1.85] text-muted-foreground">{page.cta.text}</p>
               <div className="mt-7 flex flex-wrap justify-center gap-3">
-                {language === "de" ? (
-                  <Link to="/immobilie-anbieten" className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></Link>
-                ) : (
-                  <a href="#tuerkei-formular" className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></a>
-                )}
+                <Link to="/immobilie-anbieten" className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></Link>
                 <a href="tel:+4921169583033" className="btn-secondary">{page.cta.secondary}</a>
               </div>
               <p className="mx-auto mt-8 max-w-3xl text-[0.78rem] leading-[1.75] text-muted-foreground">{page.legalNotice}</p>
