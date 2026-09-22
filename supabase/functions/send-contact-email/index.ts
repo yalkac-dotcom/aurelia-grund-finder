@@ -181,6 +181,21 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length <= 254;
 }
 
+const ALLOWED_FILE_TYPES = new Set(["application/pdf", "image/jpeg", "image/png", "application/octet-stream"]);
+const ALLOWED_FILE_EXTENSIONS = new Set(["pdf", "jpg", "jpeg", "png"]);
+
+function hasValidFiles(files: ContactPayload["files"]): boolean {
+  if (!files) return true;
+  if (!Array.isArray(files) || files.length > 10) return false;
+  return files.every((file) => {
+    const extension = file?.name?.split(".").pop()?.toLowerCase() ?? "";
+    return typeof file?.name === "string" && file.name.length <= 180 &&
+      typeof file?.path === "string" && file.path.length <= 500 && !file.path.includes("..") &&
+      typeof file?.size === "number" && file.size > 0 && file.size <= 10 * 1024 * 1024 &&
+      typeof file?.type === "string" && ALLOWED_FILE_TYPES.has(file.type) && ALLOWED_FILE_EXTENSIONS.has(extension);
+  });
+}
+
 async function postEmail(payload: {
   from: string;
   to: string[];
@@ -318,6 +333,12 @@ Deno.serve(async (req) => {
     }
     if (!body?.message || typeof body.message !== "string" || body.message.length > 5000) {
       return new Response(JSON.stringify({ error: "Invalid message" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    if (!hasValidFiles(body.files)) {
+      return new Response(JSON.stringify({ error: "Invalid files" }), {
         status: 400,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
