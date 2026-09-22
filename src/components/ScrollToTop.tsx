@@ -6,12 +6,26 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
   const [direction, setDirection] = useState<"down" | "up">("down");
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   const { t } = useLanguage();
 
   useEffect(() => {
+    if (hash) {
+      const id = hash.replace("#", "");
+      const scrollToTarget = () => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          return true;
+        }
+        return false;
+      };
+      if (scrollToTarget()) return;
+      const timer = window.setTimeout(scrollToTarget, 300);
+      return () => window.clearTimeout(timer);
+    }
     window.scrollTo({ top: 0, left: 0 });
-  }, [pathname]);
+  }, [pathname, hash]);
 
   useEffect(() => {
     const onScroll = () => {
