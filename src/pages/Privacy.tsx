@@ -89,6 +89,76 @@ const Privacy = () => {
                 </div>
 
                 <div className="py-6">
+                  <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.consentTitle}</h2>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.consentText}</p>
+                  <ul className="list-disc pl-5 space-y-1.5 mt-2 text-muted-foreground text-[0.93rem] leading-[1.85]">
+                    {p.consentItems.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.consentNote}</p>
+                </div>
+
+                <div className="py-6">
+                  <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.analyticsTitle}</h2>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.analyticsText}</p>
+                  <ul className="list-disc pl-5 space-y-0.5 mt-2 text-muted-foreground text-[0.93rem]">
+                    {p.analyticsItems.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.analyticsAnon}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.analyticsLegal}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.analyticsProvider}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.analyticsTransfer}</p>
+                  <p className="mt-2">
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-accent inline-flex items-center gap-1 text-[0.93rem]">
+                      {p.analyticsLinkLabel} <ExternalLink size={10} />
+                    </a>
+                  </p>
+                </div>
+
+                <div className="py-6">
+                  <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.clarityTitle}</h2>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.clarityText}</p>
+                  <ul className="list-disc pl-5 space-y-0.5 mt-2 text-muted-foreground text-[0.93rem]">
+                    {p.clarityItems.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.clarityLegal}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.clarityProvider}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.clarityTransfer}</p>
+                  <p className="mt-2">
+                    <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener noreferrer" className="text-accent inline-flex items-center gap-1 text-[0.93rem]">
+                      {p.clarityLinkLabel} <ExternalLink size={10} />
+                    </a>
+                  </p>
+                </div>
+
+                <div className="py-6">
+                  <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.geoTitle}</h2>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.geoText}</p>
+                  <ul className="list-disc pl-5 space-y-1.5 mt-2 text-muted-foreground text-[0.93rem] leading-[1.85]">
+                    {p.geoItems.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.geoLegal}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.geoCloudflareProvider}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.geoIpapiProvider}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.geoTransfer}</p>
+                  <p className="mt-2 flex flex-wrap gap-x-5 gap-y-1">
+                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" className="text-accent inline-flex items-center gap-1 text-[0.93rem]">
+                      {p.geoCloudflareLinkLabel} <ExternalLink size={10} />
+                    </a>
+                    <a href="https://ipapi.co/privacy/" target="_blank" rel="noopener noreferrer" className="text-accent inline-flex items-center gap-1 text-[0.93rem]">
+                      {p.geoIpapiLinkLabel} <ExternalLink size={10} />
+                    </a>
+                  </p>
+                </div>
+
+                <div className="py-6">
                   <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.retentionTitle}</h2>
                   <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.retentionText}</p>
                 </div>
