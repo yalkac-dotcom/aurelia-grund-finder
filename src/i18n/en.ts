@@ -107,7 +107,7 @@ const en: Translations = {
     ourTeam: "Our friendly team",
     teamDescription: "Our experienced team is available for all questions regarding real estate – personal, competent, and discreet.",
     availability: "Availability",
-    availabilityText: "As we are regularly on-site for projects and appointments, we kindly ask you to contact us by email. We will then be happy to arrange a suitable meeting.",
+    availabilityText: "As we regularly attend appointments away from the office, the most reliable way to reach us is by email. For a personal conversation, we will be happy to arrange a suitable time.",
     monFri: "Monday – Friday",
     saturday: "Saturday",
     sunday: "Sunday",
