@@ -763,7 +763,7 @@ const de: Translations = {
     title: "Kontakt",
     subtitle: "Sprechen Sie mit uns",
     hereForYou: "So erreichen Sie uns",
-    introText: "Sie möchten eine Immobilie anbieten, interessieren sich für ein Objekt oder möchten ein anderes Anliegen mit uns besprechen? Schreiben Sie uns oder rufen Sie uns an.",
+    introText: "Sie möchten eine Immobilie anbieten, interessieren sich für ein Objekt oder möchten ein anderes Anliegen mit uns besprechen? Schreiben oder rufen Sie uns einfach an.",
     salutation: "Anrede",
     firstName: "Vorname",
     lastName: "Nachname",
