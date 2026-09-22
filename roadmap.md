@@ -26,7 +26,7 @@
 
 # Startseite: Bilder der Länderauswahl
 
-- [ ] Tatsächlich gerenderte Bildquellen der Startseitenkarten identifizieren
-- [ ] Deutschland- und Türkei-Bild ausschließlich in diesen Karten ersetzen
-- [ ] Dezente einheitliche Bildfilterung beibehalten
-- [ ] Gerenderte Startseite auf Desktop und Mobil visuell prüfen
+- [x] Tatsächlich gerenderte Bildquellen der Startseitenkarten identifizieren
+- [x] Deutschland- und Türkei-Bild ausschließlich in diesen Karten ersetzen
+- [x] Dezente einheitliche Bildfilterung beibehalten
+- [x] Gerenderte Startseite auf Desktop und Mobil visuell prüfen
