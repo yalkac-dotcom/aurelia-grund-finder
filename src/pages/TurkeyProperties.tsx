@@ -334,7 +334,7 @@ const TurkeyProperties = () => {
               </div>
             </div>
           </div>
-        </section>}
+        </section>
 
         <section className="section-premium bg-background">
           <div className="container-premium">
