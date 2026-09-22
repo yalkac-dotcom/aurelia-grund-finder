@@ -89,6 +89,7 @@ export const heroSets = {
   premium:       { src: premium1024,       srcSet: srcSet(premium640, premium1024, premium1440, premium1920),             sizes: SIZES },
   building:      { src: building1440,      srcSet: srcSet(building640, building1024, building1440, building1920),           sizes: SIZES },
   contact:       { src: contact1440,       srcSet: srcSet(contact640, contact1024, contact1440, contact1920),               sizes: SIZES },
+  buyers:        { src: buyers1440,        srcSet: srcSet(buyers640, buyers1024, buyers1440, buyers1920),                   sizes: SIZES },
   services:      { src: services1440,      srcSet: srcSet(services640, services1024, services1440, services1920),           sizes: SIZES },
   investors:     { src: investors1440,     srcSet: srcSet(investors640, investors1024, investors1440, investors1920),       sizes: SIZES },
   steuervorteile:{ src: steuervorteile1440,srcSet: srcSet(steuervorteile640, steuervorteile1024, steuervorteile1440, steuervorteile1920), sizes: SIZES },
