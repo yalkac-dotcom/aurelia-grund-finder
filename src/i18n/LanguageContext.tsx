@@ -1,11 +1,6 @@
 import { createContext, useContext, useState, useCallback, ReactNode, useEffect, useRef } from "react";
 import { Language, Translations } from "./types";
-import {
-  STORAGE_KEY,
-  fetchCountry,
-  languageForCountry,
-  resolveInitialLanguage,
-} from "./languageDetection";
+import { STORAGE_KEY, resolveInitialLanguage } from "./languageDetection";
 import de from "./de";
 import en from "./en";
 import nl from "./nl";

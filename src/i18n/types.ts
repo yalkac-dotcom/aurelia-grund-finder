@@ -598,15 +598,6 @@ export interface Translations {
     clarityProvider: string;
     clarityTransfer: string;
     clarityLinkLabel: string;
-    geoTitle: string;
-    geoText: string;
-    geoItems: string[];
-    geoLegal: string;
-    geoCloudflareProvider: string;
-    geoIpapiProvider: string;
-    geoTransfer: string;
-    geoCloudflareLinkLabel: string;
-    geoIpapiLinkLabel: string;
     retentionTitle: string;
     retentionText: string;
     rightsTitle: string;

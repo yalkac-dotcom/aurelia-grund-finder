@@ -137,28 +137,6 @@ const Privacy = () => {
                 </div>
 
                 <div className="py-6">
-                  <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.geoTitle}</h2>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.geoText}</p>
-                  <ul className="list-disc pl-5 space-y-1.5 mt-2 text-muted-foreground text-[0.93rem] leading-[1.85]">
-                    {p.geoItems.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.geoLegal}</p>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.geoCloudflareProvider}</p>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.geoIpapiProvider}</p>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mt-2">{p.geoTransfer}</p>
-                  <p className="mt-2 flex flex-wrap gap-x-5 gap-y-1">
-                    <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer" className="text-accent inline-flex items-center gap-1 text-[0.93rem]">
-                      {p.geoCloudflareLinkLabel} <ExternalLink size={10} />
-                    </a>
-                    <a href="https://ipapi.co/privacy/" target="_blank" rel="noopener noreferrer" className="text-accent inline-flex items-center gap-1 text-[0.93rem]">
-                      {p.geoIpapiLinkLabel} <ExternalLink size={10} />
-                    </a>
-                  </p>
-                </div>
-
-                <div className="py-6">
                   <h2 className="text-[0.95rem] font-heading font-semibold text-foreground mb-2">{p.retentionTitle}</h2>
                   <p className="text-muted-foreground text-[0.93rem] leading-[1.85]">{p.retentionText}</p>
                 </div>
