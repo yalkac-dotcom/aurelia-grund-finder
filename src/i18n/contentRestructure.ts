@@ -6,6 +6,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
   de: {
     home: {
       heroTitle: "Immobilien einfach und direkt lösen – in Deutschland und in der Türkei.",
+      heroDescription: "Wir kaufen Immobilien in Deutschland auf eigene Rechnung und begleiten besondere Verkaufssituationen. Für Eigentümer mit Immobilien in der Türkei sind wir die persönliche Anlaufstelle in Deutschland – mit erfahrenen Partnern vor Ort.",
       heroIntro: "Wir kaufen Immobilien in Deutschland selbst an und beschäftigen uns auch mit Verkaufssituationen, bei denen nicht alles nach Schema F läuft.\n\nSie besitzen eine Immobilie in der Türkei und leben in Deutschland oder Europa? Auch dann können Sie sich direkt an uns wenden. Sie haben einen Ansprechpartner in Deutschland, während wir bei Bedarf mit erfahrenen Partnern vor Ort zusammenarbeiten.",
       heroPrimaryCta: "Immobilie anbieten", heroSecondaryCta: "Unsere Bereiche", heroTrustLine: "",
       areasTitle: "Wo befindet sich Ihre Immobilie?", areasIntro: "Wählen Sie einfach den Bereich, um den es geht. Für eine erste Einschätzung reichen uns einige Angaben zur Immobilie und zu Ihrer Situation.",
