@@ -51,4 +51,4 @@
 
 - [x] Allgemeinen Hero-Text ohne feste Reaktionszeit einsetzen
 - [x] Bestehendes Bild mit mehr Luft und vollständig sichtbarem Kopf neu positionieren
-- [ ] Hero auf Desktop und Mobil visuell prüfen
+- [x] Hero auf Desktop und Mobil visuell prüfen
