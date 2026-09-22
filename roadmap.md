@@ -30,3 +30,9 @@
 - [x] Deutschland- und Türkei-Bild ausschließlich in diesen Karten ersetzen
 - [x] Dezente einheitliche Bildfilterung beibehalten
 - [x] Gerenderte Startseite auf Desktop und Mobil visuell prüfen
+
+# Startseite: Länderwirkung der Kartenbilder
+
+- [x] Deutschland-Motiv als geordnete mitteleuropäische Altbau-Wohnimmobilie differenzieren
+- [x] Türkei-Motiv als warmen, urbanen türkischen Wohnkontext differenzieren
+- [ ] Beide Karten gemeinsam auf Desktop und Mobil visuell prüfen
