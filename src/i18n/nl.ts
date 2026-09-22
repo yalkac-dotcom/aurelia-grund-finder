@@ -87,8 +87,8 @@ const nl: Translations = {
   trustBar: {
     items: [
       "Discreet & vertrouwelijk",
-      "Aankoop voor eigen rekening",
-      "Bindende beslissing",
+      "Persoonlijk aanspreekpunt",
+      "Gestructureerde afhandeling",
     ],
   },
   common: {

@@ -87,8 +87,8 @@ const de: Translations = {
   trustBar: {
     items: [
       "Diskret & vertraulich",
-      "Ankauf auf eigene Rechnung",
-      "Verbindliche Entscheidung",
+      "Persönlicher Ansprechpartner",
+      "Strukturierte Abwicklung",
     ],
   },
   common: {
