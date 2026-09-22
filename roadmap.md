@@ -23,3 +23,10 @@
 - [x] Zwei stilistisch abgestimmte Immobilienbilder für Deutschland und Türkei erstellen
 - [x] Nur die Bilder und ihre dezente Filterung austauschen
 - [x] Darstellung auf Desktop und Mobil prüfen
+
+# Startseite: Bilder der Länderauswahl
+
+- [x] Tatsächlich gerenderte Bildquellen der Startseitenkarten identifizieren
+- [x] Deutschland- und Türkei-Bild ausschließlich in diesen Karten ersetzen
+- [x] Dezente einheitliche Bildfilterung beibehalten
+- [x] Gerenderte Startseite auf Desktop und Mobil visuell prüfen
