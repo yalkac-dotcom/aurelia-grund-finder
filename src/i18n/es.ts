@@ -210,7 +210,7 @@ const es: Translations = {
     ],
     projectsLabel: "Foco geográfico",
     projectsTitle: "Ubicaciones con sustancia",
-    projectsText: "Nos centramos en Renania del Norte-Westfalia y en ubicaciones seleccionadas de Turquía, con conocimiento del mercado local, redes fiables y una visión realista del potencial.",
+    projectsText: "Nuestros mercados son Alemania y ubicaciones seleccionadas de Turquía, con conocimiento local, redes fiables y una visión realista del potencial.",
     stats: [
       { value: "Sustancia", label: "Competencia inmobiliaria" },
       { value: "DE", label: "Enfoque en Alemania" },
@@ -505,7 +505,7 @@ const es: Translations = {
     ],
     portfolioTitle: "Nuestra oferta actual",
     portfolioText:
-      "Aurelia dispone de un portafolio en constante actualización de inmuebles verificados en la región de Düsseldorf y alrededores. Objetos y detalles actuales bajo solicitud.",
+      "Aurelia dispone de una selección en constante actualización de inmuebles verificados de su propia cartera. Los objetos y detalles actuales se facilitan bajo solicitud.",
     portfolioCta: "Ver portafolio",
     proofTitle: "Por qué comprar directamente a Aurelia",
     proofIntro: "Cuatro puntos que marcan la diferencia frente a una transacción clásica con agencia.",
@@ -545,7 +545,7 @@ const es: Translations = {
     faqItems: [
       {
         q: "¿Qué tipos de inmueble vende Aurelia?",
-        a: "Principalmente inmuebles residenciales en la región de Düsseldorf y alrededores – pisos, edificios plurifamiliares y objetos individuales seleccionados.",
+        a: "Inmuebles residenciales y comerciales seleccionados y terrenos de nuestra cartera propia, según disponibilidad.",
       },
       {
         q: "¿Aurelia gestiona la financiación?",
@@ -736,7 +736,7 @@ const es: Translations = {
     faqItems: [
       { q: "¿Es realmente gratuita la primera valoración?", a: "Sí. Revisamos su consulta sin coste alguno y nos pondremos en contacto personalmente en un plazo de 48 horas." },
       { q: "¿Qué tipo de inmuebles gestionan?", a: "Trabajamos con inmuebles en situaciones especiales: herencias, divorcios, edificios que necesitan renovación y propiedades vacías." },
-      { q: "¿Cómo funciona la primera consulta?", a: "Por teléfono o videollamada, o presencialmente en Düsseldorf si lo prefiere. Duración: aprox. 20–30 minutos." },
+      { q: "¿Cómo funciona la primera consulta?", a: "Por teléfono o videollamada, o presencialmente con cita previa. Duración: aprox. 20–30 minutos." },
       { q: "¿Operan a nivel nacional?", a: "Nuestro foco es Alemania, con especial énfasis en las regiones metropolitanas." },
       { q: "¿Con qué discreción se trata mi consulta?", a: "Toda la información se trata con estricta confidencialidad. No compartimos ningún dato." },
     ],
@@ -1107,7 +1107,7 @@ const es: Translations = {
   aboutV2: {
     seoTitle: "Sobre nosotros | Aurelia Grundbesitz GmbH",
     seoDescription: "Aurelia Grundbesitz evalúa y adquiere inmuebles y terrenos por cuenta propia, con discreción, fiabilidad y procesos de decisión ágiles.",
-    hero: { kicker: "Sobre nosotros", title: "Aurelia Grundbesitz", subtitle: "Discretos. Fiables. Orientados a soluciones.", body: ["Aurelia Grundbesitz está especializada en la adquisición y evaluación estructurada de inmuebles en situaciones particulares, complejas o con plazos críticos.", "Actuamos por cuenta propia y tomamos decisiones basadas en un análisis económico claro. Aspiramos a una gestión personal, transparente y discreta, con procesos de decisión ágiles.", "Nos centramos especialmente en inmuebles y terrenos para los que los procesos de venta tradicionales no son la mejor opción o cuyos propietarios buscan una solución rápida y vinculante."], imageAlt: "Oficina moderna y luminosa con vistas al perfil de Düsseldorf, la Rheinturm y el Rin" },
+    hero: { kicker: "Sobre nosotros", title: "Aurelia Grundbesitz", subtitle: "Discretos. Fiables. Orientados a soluciones.", body: ["Aurelia Grundbesitz está especializada en la adquisición y evaluación estructurada de inmuebles en situaciones particulares, complejas o con plazos críticos.", "Actuamos por cuenta propia y tomamos decisiones basadas en un análisis económico claro. Aspiramos a una gestión personal, transparente y discreta, con procesos de decisión ágiles.", "Nos centramos especialmente en inmuebles y terrenos para los que los procesos de venta tradicionales no son la mejor opción o cuyos propietarios buscan una solución rápida y vinculante."], imageAlt: "Oficina moderna y luminosa como símbolo de un trabajo inmobiliario personal y transfronterizo" },
     trustTiles: [{ title: "Experiencia y conocimiento del mercado", text: "Valoración fundamentada de inmuebles, terrenos y situaciones de partida complejas." }, { title: "Capacidad de decisión propia", text: "Compramos por cuenta propia y no necesitamos aprobación externa de financiación ni de inversores." }, { title: "Procesos de decisión ágiles", text: "Evaluación directa, comunicación clara y respuesta rápida para inmuebles adecuados." }, { title: "Discreción y fiabilidad", text: "Evaluación confidencial, procesos transparentes y decisiones comprensibles." }],
     standing: { headline: "Nuestros principios", body: ["Nuestro enfoque es deliberadamente claro y pragmático: evaluamos cada inmueble individualmente y consideramos no solo su ubicación y características, sino también la situación concreta del propietario.", "Valoramos la fiabilidad, la discreción y las soluciones realistas. No prometemos una solución estándar para cada inmueble; tomamos decisiones comprensibles basadas en las condiciones económicas y jurídicas de cada caso."], values: [{ title: "Fiabilidad", text: "Comunicamos con claridad y cumplimos los acuerdos alcanzados." }, { title: "Discreción", text: "Tratamos de forma confidencial las situaciones y los documentos sensibles." }, { title: "Pragmatismo", text: "Nos centramos en soluciones viables en lugar de procesos complicados." }, { title: "Visión a largo plazo", text: "Las decisiones se valoran desde una perspectiva económica y sostenible." }] },
     approach: { headline: "Nuestro enfoque", body: ["Aurelia Grundbesitz no se considera una agencia inmobiliaria tradicional.", "Evaluamos inmuebles para su posible adquisición por cuenta propia y estructuramos individualmente la tramitación posterior.", "Así, las decisiones pueden tomarse de forma más directa y, en los casos adecuados, los procesos pueden acortarse considerablemente."], imageAlt: "Arquitectura residencial moderna de alta calidad con piedra natural, madera y patio ajardinado" },

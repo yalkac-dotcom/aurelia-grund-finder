@@ -212,7 +212,7 @@ const de: Translations = {
     ],
     projectsLabel: "Standortfokus",
     projectsTitle: "Standorte mit Substanz",
-    projectsText: "Unser Fokus liegt auf Nordrhein-Westfalen und ausgewählten Standorten in der Türkei – mit lokaler Marktkenntnis, belastbaren Netzwerken und einem realistischen Blick auf Potenziale.",
+    projectsText: "Unsere Märkte sind Deutschland und ausgewählte Standorte in der Türkei – mit lokaler Marktkenntnis, belastbaren Netzwerken und einem realistischen Blick auf Potenziale.",
     stats: [
       { value: "Substanz", label: "Immobilienkompetenz" },
       { value: "DE", label: "Fokus auf Deutschland" },
@@ -811,7 +811,7 @@ const de: Translations = {
     faqItems: [
       { q: "Ist die Ersteinschätzung wirklich kostenlos?", a: "Ja. Wir prüfen Ihre Anfrage ohne Berechnung und melden uns innerhalb von 48 Stunden persönlich bei Ihnen." },
       { q: "Welche Objekte prüfen Sie?", a: "Wir bearbeiten Immobilien in Sondersituationen – darunter Erbschaftsobjekte, Scheidungsimmobilien, sanierungsbedürftige Bestände und Leerstandsobjekte." },
-      { q: "Wie läuft das Erstgespräch ab?", a: "Per Telefon oder Videocall – auf Wunsch auch persönlich in Düsseldorf. Dauer: ca. 20–30 Minuten." },
+      { q: "Wie läuft das Erstgespräch ab?", a: "Per Telefon oder Videocall – auf Wunsch auch persönlich nach Vereinbarung. Dauer: ca. 20–30 Minuten." },
       { q: "Arbeiten Sie bundesweit?", a: "Schwerpunkt ist Deutschland, mit besonderem Fokus auf die Metropolregionen." },
       { q: "Wie diskret wird meine Anfrage behandelt?", a: "Alle Informationen werden streng vertraulich behandelt. Wir geben keine Daten weiter." },
     ],

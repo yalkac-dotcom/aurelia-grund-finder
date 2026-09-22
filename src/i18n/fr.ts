@@ -210,7 +210,7 @@ const fr: Translations = {
     ],
     projectsLabel: "Ancrage territorial",
     projectsTitle: "Des localisations solides",
-    projectsText: "Nous nous concentrons sur la Rhénanie-du-Nord-Westphalie et sur des sites sélectionnés en Turquie, avec une connaissance locale du marché, des réseaux fiables et une vision réaliste des potentiels.",
+    projectsText: "Nos marchés sont l’Allemagne et des sites sélectionnés en Turquie, avec une connaissance locale, des réseaux fiables et une vision réaliste des potentiels.",
     stats: [
       { value: "Sélectifs", label: "Projets examinés avec soin" },
       { value: "Long terme", label: "Une pensée fondée sur des structures durables" },
@@ -769,7 +769,7 @@ const fr: Translations = {
     faqItems: [
       { q: "La première évaluation est-elle vraiment gratuite ?", a: "Oui. Nous examinons votre demande sans frais et revenons vers vous personnellement sous 48 heures." },
       { q: "Quels types de biens traitez-vous ?", a: "Nous travaillons avec des biens en situation particulière — successions, biens issus de divorce, immeubles à rénover et biens vacants." },
-      { q: "Comment se déroule la première consultation ?", a: "Par téléphone ou par appel vidéo — ou en personne à Düsseldorf si vous le préférez. Durée : environ 20 à 30 minutes." },
+      { q: "Comment se déroule la première consultation ?", a: "Par téléphone ou par appel vidéo — ou en personne sur rendez-vous. Durée : environ 20 à 30 minutes." },
       { q: "Intervenez-vous dans tout le pays ?", a: "Notre priorité est l’Allemagne, avec un accent particulier sur les régions métropolitaines." },
       { q: "Ma demande est-elle traitée en toute confidentialité ?", a: "Toutes les informations sont traitées en toute confidentialité. Nous ne transmettons aucune donnée." },
     ],

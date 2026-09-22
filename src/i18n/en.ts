@@ -769,7 +769,7 @@ const en: Translations = {
     faqItems: [
       { q: "Is the initial assessment really free?", a: "Yes. We review your enquiry at no cost and will get back to you personally within 48 hours." },
       { q: "What types of properties do you handle?", a: "We work with properties in special situations — including inherited properties, divorce assets, buildings in need of renovation, and vacant properties." },
-      { q: "How does the initial consultation work?", a: "By phone or video call — or in person in Düsseldorf if preferred. Duration: approx. 20–30 minutes." },
+      { q: "How does the initial consultation work?", a: "By phone or video call — or in person by appointment if preferred. Duration: approx. 20–30 minutes." },
       { q: "Do you operate nationwide?", a: "Our focus is Germany, with particular emphasis on metropolitan regions." },
       { q: "How confidentially is my enquiry treated?", a: "All information is treated in strict confidence. We do not share any data." },
     ],
