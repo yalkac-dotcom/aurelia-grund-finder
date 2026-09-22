@@ -35,5 +35,5 @@
 
 - [x] Deutschland-Motiv als geordnete mitteleuropäische Altbau-Wohnimmobilie differenzieren
 - [x] Türkei-Motiv als warmen, urbanen türkischen Wohnkontext differenzieren
-- [ ] Türkei-Motiv durch einen unverwechselbaren Istanbuler Wohnkontext verstärken
-- [ ] Beide Karten erneut gemeinsam auf Desktop und Mobil visuell prüfen
+- [x] Türkei-Motiv durch einen unverwechselbaren Istanbuler Wohnkontext verstärken
+- [x] Beide Karten erneut gemeinsam auf Desktop und Mobil visuell prüfen
