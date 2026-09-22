@@ -83,10 +83,10 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       holdNote: "Bei rechtlichen, steuerlichen oder fachlichen Fragen werden bei Bedarf geeignete externe Berater eingebunden.",
     },
     partners: {
-      heroTitle: "Kooperationen in Deutschland und der Türkei.", heroDescription: "Wir arbeiten projektbezogen mit Projektentwicklern, Immobilienunternehmen, Investoren, Maklern, lokalen Immobilienpartnern, Fachberatern, Rechtsanwälten und weiteren Spezialisten.",
-      formsTitle: "Partner für unterschiedliche Aufgaben", formsIntro: "Jede Zusammenarbeit wird passend zu Land, Objekt und Verantwortungsbereich vereinbart.",
+      heroTitle: "Gemeinsam an passenden Immobilienprojekten arbeiten.", heroDescription: "Nicht jedes Immobiliengeschäft lässt sich allein sinnvoll umsetzen. Deshalb arbeiten wir bei passenden Projekten mit Unternehmen und Fachleuten zusammen, die ihre Erfahrung, Marktkenntnis oder besondere Expertise einbringen.",
+      formsTitle: "Partner für unterschiedliche Aufgaben", formsIntro: "Welche Form der Zusammenarbeit sinnvoll ist, hängt vom jeweiligen Objekt und Projekt ab. Dabei kommen unterschiedliche Partner infrage.",
       forms: [
-        { title: "Projektentwickler & Immobilienunternehmen", desc: "Kooperation bei Ankauf, Entwicklung, Bestand und Verkauf geeigneter Projekte." }, { title: "Investoren", desc: "Individuelle, projektbezogene Zusammenarbeit mit klar dokumentiertem Rahmen." }, { title: "Makler & lokale Immobilienpartner", desc: "Marktkenntnis, Objektzugang und koordinierte Umsetzung in Deutschland und der Türkei." }, { title: "Fachberater & Rechtsanwälte", desc: "Externe Spezialisten werden eingebunden, wenn der konkrete Fall fachliche oder rechtliche Begleitung erfordert." },
+        { title: "Projektentwickler & Immobilienunternehmen", desc: "Bei geeigneten Objekten kann eine Zusammenarbeit beim Ankauf, bei der Entwicklung, im Bestand oder beim späteren Verkauf infrage kommen." }, { title: "Investoren", desc: "Bei einzelnen Projekten können individuelle Kooperationen mit professionellen Investoren geprüft werden. Grundlage dafür ist immer eine gesonderte Vereinbarung für das konkrete Projekt." }, { title: "Makler & lokale Immobilienpartner", desc: "Gute Marktkenntnis und verlässliche Kontakte vor Ort sind besonders dann wichtig, wenn Immobilien nicht in unserem unmittelbaren Tätigkeitsgebiet liegen. Das gilt insbesondere auch für Projekte in der Türkei." }, { title: "Fachberater & Rechtsanwälte", desc: "Wenn ein Projekt rechtliche, steuerliche, technische oder andere besondere Fragen aufwirft, können geeignete externe Fachleute hinzugezogen werden." },
       ],
     },
     aboutV2: {

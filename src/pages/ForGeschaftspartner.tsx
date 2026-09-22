@@ -64,7 +64,7 @@ const ForGeschaftspartner = () => {
           <div className="container-premium">
             <SectionHeader title={p.principlesTitle} intro={p.principlesText} tone="dark" />
             <Reveal delay={0.1}>
-              <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              <div className={`grid gap-8 md:gap-10 sm:grid-cols-2 ${p.principles.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}>
                 {p.principles.map((pr, i) => (
                   <div key={i} className="border-l border-accent/50 pl-5">
                     <h3 className="text-[0.98rem] font-heading font-semibold text-white leading-snug">
