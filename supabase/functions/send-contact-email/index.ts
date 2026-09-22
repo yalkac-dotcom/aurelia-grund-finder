@@ -233,7 +233,8 @@ async function sendEmail(payload: {
   reply_to?: string;
 }, mailType: "internal" | "customer_confirmation") {
   const primary = await postEmail({
-    from: `${FROM_NAME} <${FROM_EMAIL}>`,
+    from: `${mailType === "internal" ? FROM_NAME : CUSTOMER_FROM_NAME} <${FROM_EMAIL}>`,
+
     ...payload,
   });
   const messageId = typeof primary.data?.id === "string" ? primary.data.id : null;
