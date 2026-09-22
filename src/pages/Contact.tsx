@@ -135,7 +135,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="grid overflow-hidden bg-primary lg:h-[580px] lg:grid-cols-[0.86fr_1.14fr] xl:h-[620px]">
+      <section className="grid overflow-hidden bg-primary lg:h-[calc(100svh-129px)] lg:min-h-[580px] lg:grid-cols-[0.86fr_1.14fr]">
         <div className="flex min-h-[350px] items-center bg-primary px-6 py-14 sm:min-h-[390px] sm:px-10 sm:py-16 lg:min-h-0 lg:py-20 lg:pl-[max(3rem,calc((100vw-1080px)/2-2.5rem))] lg:pr-10 xl:pr-12">
           <Reveal>
             <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/80">{t.contact.title}</p>
