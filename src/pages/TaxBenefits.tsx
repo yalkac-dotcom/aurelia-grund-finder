@@ -6,6 +6,8 @@ import { Landmark, Leaf, Banknote, BadgePercent, BookOpen, ArrowRight } from "lu
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -13,7 +15,8 @@ const panelBase =
 const panelPadding = "px-6 py-7 md:px-12 md:py-10";
 
 const TaxBenefits = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].taxBenefits.title, pageSeo[language].taxBenefits.description);
 
   const topics = [
     { id: "afa", category: t.tax.categoryTax, icon: BadgePercent, title: t.tax.afaTitle, shortDesc: t.tax.afaShortDesc, path: "/steuervorteile/afa" },

@@ -7,16 +7,15 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
 import { pageExtras } from "@/i18n/pageExtras";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 const FAQ = () => {
   const [open, setOpen] = useState<number | null>(null);
   const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].faq.title, pageSeo[language].faq.description);
   const f = t.faqPage;
   const extras = pageExtras[language];
-
-  useEffect(() => {
-    document.title = `${f.title} – Aurelia Grundbesitz GmbH`;
-  }, [f.title]);
 
   return (
     <Layout>

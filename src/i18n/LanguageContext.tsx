@@ -70,23 +70,27 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   useEffect(() => {
     document.documentElement.lang = language;
     const currentT = translationsMap[language];
-    const title = document.querySelector("title");
-    const seoTitle = `${currentT.home.heroTitle} | Aurelia Grundbesitz`;
-    if (title) title.textContent = seoTitle;
+    // Pages that define their own SEO keep it; only the generic fallback is handled here.
+    if (!document.documentElement.dataset.pageSeo) {
+      const title = document.querySelector("title");
+      const seoTitle = `${currentT.home.heroTitle} | Aurelia Grundbesitz`;
+      if (title) title.textContent = seoTitle;
 
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    const twTitle = document.querySelector('meta[name="twitter:title"]');
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    const twDesc = document.querySelector('meta[name="twitter:description"]');
-    const metaDesc = document.querySelector('meta[name="description"]');
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      const twTitle = document.querySelector('meta[name="twitter:title"]');
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      const twDesc = document.querySelector('meta[name="twitter:description"]');
+      const metaDesc = document.querySelector('meta[name="description"]');
 
-    const descText = currentT.home.heroDescription;
+      const descText = currentT.home.heroDescription;
 
-    ogTitle?.setAttribute("content", seoTitle);
-    twTitle?.setAttribute("content", seoTitle);
-    ogDesc?.setAttribute("content", descText);
-    twDesc?.setAttribute("content", descText);
-    metaDesc?.setAttribute("content", descText);
+      ogTitle?.setAttribute("content", seoTitle);
+      twTitle?.setAttribute("content", seoTitle);
+      ogDesc?.setAttribute("content", descText);
+      twDesc?.setAttribute("content", descText);
+      metaDesc?.setAttribute("content", descText);
+    }
+
 
     const localeMap: Record<Language, string> = { de: "de_DE", en: "en_US", nl: "nl_NL", it: "it_IT", es: "es_ES", tr: "tr_TR", fr: "fr_FR" };
     const ogLocale = document.querySelector('meta[property="og:locale"]');

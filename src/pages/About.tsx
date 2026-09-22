@@ -6,24 +6,13 @@ import { editorial } from "@/assets/editorial";
 import { ArrowRight, Check, Eye, Handshake, Scale, ShieldCheck, Sprout } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
+import { usePageSeo } from "@/hooks/usePageSeo";
 
 const About = () => {
   const { t } = useLanguage();
   const a = t.aboutV2;
 
-  useEffect(() => {
-    document.title = a.seoTitle;
-    const description = document.querySelector('meta[name="description"]');
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    const ogDescription = document.querySelector('meta[property="og:description"]');
-    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-    description?.setAttribute("content", a.seoDescription);
-    ogTitle?.setAttribute("content", a.seoTitle);
-    ogDescription?.setAttribute("content", a.seoDescription);
-    twitterTitle?.setAttribute("content", a.seoTitle);
-    twitterDescription?.setAttribute("content", a.seoDescription);
-  }, [a.seoDescription, a.seoTitle]);
+  usePageSeo(a.seoTitle, a.seoDescription);
 
   const valueIcons = [Handshake, ShieldCheck, Scale, Sprout];
 

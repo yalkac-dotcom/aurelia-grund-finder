@@ -2,13 +2,16 @@ import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import Layout from "@/components/Layout";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
 
 const NotFound = () => {
   const location = useLocation();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].notFound.title, pageSeo[language].notFound.description);
 
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);

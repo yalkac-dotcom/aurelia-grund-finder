@@ -10,12 +10,15 @@ import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 // Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
 const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
 
 const ForGeschaftspartner = () => {
   const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].partners.title, pageSeo[language].partners.description);
   const p = t.partners;
   const extras = pageExtras[language];
 

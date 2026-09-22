@@ -12,6 +12,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import heroTurkeyProperties from "@/assets/hero-turkey-properties.jpg";
 import { z } from "zod";
+import { usePageSeo } from "@/hooks/usePageSeo";
 
 type FormState = {
   fullName: string;
@@ -119,19 +120,7 @@ const TurkeyProperties = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [confirmationSent, setConfirmationSent] = useState(false);
 
-  useEffect(() => {
-    document.title = page.seoTitle;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    const twTitle = document.querySelector('meta[name="twitter:title"]');
-    const twDesc = document.querySelector('meta[name="twitter:description"]');
-    metaDesc?.setAttribute("content", page.seoDescription);
-    ogTitle?.setAttribute("content", page.seoTitle);
-    ogDesc?.setAttribute("content", page.seoDescription);
-    twTitle?.setAttribute("content", page.seoTitle);
-    twDesc?.setAttribute("content", page.seoDescription);
-  }, [page.seoDescription, page.seoTitle]);
+  usePageSeo(page.seoTitle, page.seoDescription);
 
   useEffect(() => {
     setForm((current) => ({ ...current, preferredLanguage: defaultLanguage }));

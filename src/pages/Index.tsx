@@ -15,6 +15,7 @@ import ProcessStep from "@/components/sections/ProcessStep";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
+import { usePageSeo } from "@/hooks/usePageSeo";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
 // Reihenfolge in i18n bleibt führend; jeder Eintrag bekommt zusätzlich einen
@@ -27,6 +28,7 @@ type StepKey = "kontakt" | "pruefung" | "angebot";
 
 const HomePage = () => {
   const { t, language } = useLanguage();
+  usePageSeo(`${t.home.heroTitle} | Aurelia Grundbesitz`, t.home.heroDescription);
   const extras = pageExtras[language];
 
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel

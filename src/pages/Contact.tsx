@@ -11,6 +11,8 @@ import { trackEvent } from "@/lib/analytics";
 import { pageExtras } from "@/i18n/pageExtras";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 const inputClasses =
   "w-full border-0 border-b border-border bg-transparent px-0 py-3 text-base text-foreground rounded-none transition-colors focus:outline-none focus:ring-0 focus:border-accent placeholder:text-muted-foreground/55";
@@ -24,6 +26,7 @@ const Contact = () => {
   const [confirmationWarning, setConfirmationWarning] = useState(false);
   const [propertyLocation, setPropertyLocation] = useState("");
   const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].contact.title, pageSeo[language].contact.description);
   const contactCopy = pageExtras[language].contact;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -386,7 +389,7 @@ const ContactDetail = ({ icon: Icon, label, children }: { icon: typeof Mail; lab
 );
 
 const ContactFAQ = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (

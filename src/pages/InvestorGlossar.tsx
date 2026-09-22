@@ -5,23 +5,20 @@ import { pageExtras } from "@/i18n/pageExtras";
 import { BookOpen, ArrowLeft, ChevronsUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useState, useRef, useCallback } from "react";
+import { usePageSeo } from "@/hooks/usePageSeo";
+import { pageSeo } from "@/i18n/pageSeo";
 
 const LETTER_BAR_ID = "glossar-letter-bar";
 
 const InvestorGlossar = () => {
   const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].investorGlossar.title, pageSeo[language].investorGlossar.description);
   const inv = t.investors;
   const letters = inv.glossaryLetters;
   const entries = inv.glossaryEntries;
   const [activeLetter, setActiveLetter] = useState<string>("");
   const [showJump, setShowJump] = useState(false);
   const sectionRefs = useRef<Map<string, HTMLDivElement>>(new Map());
-
-  useEffect(() => {
-    document.title = inv.glossaryTitle + " – Aurelia Grundbesitz GmbH";
-    const desc = document.querySelector('meta[name="description"]');
-    desc?.setAttribute("content", inv.glossaryDisclaimer);
-  }, [inv]);
 
   // Track which letter section is currently visible
   useEffect(() => {
