@@ -5,8 +5,15 @@
 // stabilen /heroes/ URLs (nicht Vite-importiert) so the <link rel="preload">
 // in index.html matches the same URL the <img> requests.
 // This is critical for LCP on the homepage.
+// Gleiches Muster für die kundengelieferten Bilder auf „Eigentümer" und „Partner".
 const premiumSrc = "/heroes/aurelia-hero.jpg";
 const premiumSrcSet = `${premiumSrc} 1920w`;
+
+const eigentuemerSrc = "/heroes/aurelia-eigentuemer.jpg";
+const eigentuemerSrcSet = `${eigentuemerSrc} 950w`;
+
+const partnerSrc = "/heroes/aurelia-partner.jpg";
+const partnerSrcSet = `${partnerSrc} 950w`;
 
 import building640 from "@/assets/hero-building-640w.webp";
 import building1024 from "@/assets/hero-building-1024w.webp";
@@ -92,6 +99,8 @@ function srcSet(w640: string, w1024: string, w1440: string, w1920: string) {
 export const heroSets = {
   premium:       { src: premiumSrc,        srcSet: premiumSrcSet,                                                           sizes: SIZES },
   building:      { src: building1440,      srcSet: srcSet(building640, building1024, building1440, building1920),           sizes: SIZES },
+  eigentuemer:   { src: eigentuemerSrc,    srcSet: eigentuemerSrcSet,                                                           sizes: SIZES },
+  partner:       { src: partnerSrc,        srcSet: partnerSrcSet,                                                               sizes: SIZES },
   contact:       { src: contact1440,       srcSet: srcSet(contact640, contact1024, contact1440, contact1920),               sizes: SIZES },
   buyers:        { src: buyers1440,        srcSet: srcSet(buyers640, buyers1024, buyers1440, buyers1920),                   sizes: SIZES },
   services:      { src: services1440,      srcSet: srcSet(services640, services1024, services1440, services1920),           sizes: SIZES },

@@ -25,7 +25,7 @@ const ForOwnerInTrouble = () => {
   return (
     <Layout>
       <PageHero
-        image={heroSets.building}
+        image={heroSets.eigentuemer}
         imageAlt={o.heroImageAlt}
         kicker={o.heroKicker}
         title={o.heroTitle}
