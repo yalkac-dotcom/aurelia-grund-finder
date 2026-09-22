@@ -26,7 +26,7 @@ const schema = z.object({ firstName:z.string().trim().min(1).max(100), lastName:
 const safeFileName = (name:string) => name.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9._-]/g, "-").replace(/-+/g,"-").slice(0,120);
 
 const PropertyOffer = () => {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const c = propertyOfferCopy[language];
   const { toast } = useToast();
   const [params] = useSearchParams();
@@ -108,7 +108,7 @@ const PropertyOffer = () => {
     {country==="germany" ? <><Select name="ownerStatus" label={c.ownerStatus} options={c.ownerStatuses}/><Select name="situation" label={c.situation} options={c.situations}/></> : <><Select name="tapu" label={c.tapu} options={[c.yes,c.no]}/><Field name="ownerCount" label={c.ownerCount}/><Field name="ownerResidence" label={c.ownerResidence}/><Select name="preferredLanguage" label={c.preferredLanguage} options={c.languages} requiredField/></>}<Field name="price" label={c.price}/></div>
     <label className={`${labelClass} mt-6 block`}>{c.details}<textarea value={form.details} onChange={e=>update("details",e.target.value)} rows={5} maxLength={1800} className={fieldClass("details")}/></label>
     <div className="mt-6"><label className={labelClass}>{c.files}<span className="mt-2 flex cursor-pointer items-center justify-center gap-3 rounded-sm border border-dashed border-accent/60 bg-secondary px-5 py-7 normal-case tracking-normal text-primary"><Upload size={18}/>{files.length ? `${files.length} Datei(en)` : c.uploadHelp}<input ref={inputRef} type="file" multiple accept=".pdf,.jpg,.jpeg,.png" className="sr-only" onChange={e=>{const next=Array.from(e.target.files??[]);setFiles(validFiles(next)?next:[]);setErrors(current=>({...current,files:validFiles(next)?"":c.fileError}));}}/></span></label>{errors.files&&<p className="mt-2 text-sm text-destructive">{errors.files}</p>}{files.map(file=><p key={`${file.name}-${file.size}`} className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><FileText size={14}/>{file.name}</p>)}</div>
-    <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground"><input type="checkbox" checked={form.privacy==="yes"} onChange={e=>update("privacy",e.target.checked?"yes":"")} className="mt-1 h-4 w-4 accent-primary"/><span>{c.privacy} <Link to="/datenschutz" className="font-semibold text-primary underline">Datenschutz</Link></span></label>{errors.privacy&&<p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}
+    <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground"><input type="checkbox" checked={form.privacy==="yes"} onChange={e=>update("privacy",e.target.checked?"yes":"")} className="mt-1 h-4 w-4 accent-primary"/><span>{c.privacy} <Link to="/datenschutz" className="font-semibold text-primary underline">{t.footer.privacy}</Link></span></label>{errors.privacy&&<p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}
     {success&&<div className="mt-7 flex gap-3 rounded-sm bg-secondary p-5 text-primary"><CheckCircle2 className="mt-0.5 shrink-0 text-accent"/><p>{confirmationSent?c.successText:c.confirmationWarning}</p></div>}
     <Button type="submit" disabled={submitting} size="lg" className="mt-8 min-h-12 w-full rounded-sm uppercase tracking-[0.12em] sm:w-auto">{submitting?c.submitting:c.submit}</Button>
   </form></section></main></Layout>;
