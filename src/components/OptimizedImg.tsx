@@ -10,6 +10,8 @@ interface OptimizedImgProps extends ImgHTMLAttributes<HTMLImageElement> {
   sizes?: string;
   /** Short caption shown inside the placeholder when the image cannot be loaded */
   fallbackLabel?: string;
+  /** Unified Aurelia colour grading: default subtle tone, "soft" lighter, "none" untouched */
+  tone?: "default" | "soft" | "none";
 }
 
 const OptimizedImg = ({
@@ -20,8 +22,10 @@ const OptimizedImg = ({
   srcSet,
   sizes,
   fallbackLabel,
+  tone = "default",
   ...props
 }: OptimizedImgProps) => {
+  const toneClass = tone === "none" ? "" : tone === "soft" ? "img-tone-soft" : "img-tone";
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
@@ -71,7 +75,7 @@ const OptimizedImg = ({
         loading="eager"
         decoding="sync"
         {...({ fetchpriority: "high" } as React.HTMLAttributes<HTMLImageElement>)}
-        className={className}
+        className={`${className ?? ""} ${toneClass}`}
         onError={() => setFailed(true)}
         {...props}
       />
@@ -90,7 +94,7 @@ const OptimizedImg = ({
       {...({ fetchpriority: "auto" } as React.HTMLAttributes<HTMLImageElement>)}
       onLoad={() => setLoaded(true)}
       onError={() => setFailed(true)}
-      className={`${className ?? ""} transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
+      className={`${className ?? ""} ${toneClass} transition-opacity duration-500 ${loaded ? "opacity-100" : "opacity-0"}`}
       {...props}
     />
   );

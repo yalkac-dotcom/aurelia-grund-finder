@@ -35,7 +35,7 @@ const AreaCard = ({
             loading="lazy"
             width={1024}
             height={768}
-            className="h-44 md:h-48 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+            className="img-tone h-44 md:h-48 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
           />
         </div>
       ) : Icon ? (

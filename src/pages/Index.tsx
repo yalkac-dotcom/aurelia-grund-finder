@@ -129,7 +129,7 @@ const HomePage = () => {
                     loading="lazy"
                     width={520}
                     height={520}
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="img-tone absolute inset-0 h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[hsl(212_52%_12%_/_0.55)]" aria-hidden="true" />
                 </div>
