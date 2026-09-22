@@ -69,12 +69,12 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
     },
     howItWorks: {
       heroDescription: "Aurelia verbindet direkten Immobilienankauf in Deutschland, Immobilienlösungen in der Türkei sowie Verkauf aus eigenem Bestand und projektbezogene Kooperationen.",
-      introTitle: "Drei Geschäftsbereiche, ein gemeinsames Prinzip", introText: "Wir prüfen persönlich, kommunizieren klar und wählen den Weg, der zum Objekt und zur konkreten Ausgangssituation passt.",
-      segmentsTitle: "Unsere drei Geschäftsbereiche", segmentsIntro: "Deutschland und Türkei werden mit klaren Ansprechpartnern und nachvollziehbaren Abläufen verbunden.",
+      introTitle: "Nicht jede Immobilie braucht denselben Weg", introText: "Ob Ankauf in Deutschland, eine Immobilie in der Türkei oder ein Objekt aus unserem Bestand: Am Anfang steht immer die Frage, worum es konkret geht. Erst danach entscheiden wir, welcher Weg sinnvoll sein kann.",
+      segmentsTitle: "Unsere drei Geschäftsbereiche", segmentsIntro: "Unsere Arbeit konzentriert sich auf drei Bereiche:",
       segments: [
-        { title: "Direkter Immobilienankauf", desc: "Immobilien und Grundstücke in Deutschland – auch bei komplexen oder zeitkritischen Situationen. Aurelia prüft und kauft geeignete Objekte auf eigene Rechnung." },
-        { title: "Immobilien in der Türkei", desc: "Prüfung, möglicher Ankauf oder strukturierte Abwicklung für Eigentümer mit Lebensmittelpunkt in Deutschland oder Europa – gemeinsam mit geeigneten Partnern vor Ort." },
-        { title: "Verkauf & Kooperationen", desc: "Verkauf ausgewählter Immobilien aus dem eigenen Bestand sowie Zusammenarbeit mit Investoren, Projektentwicklern und ausgewählten Partnern." },
+        { title: "Immobilienankauf in Deutschland", desc: "Wir prüfen Häuser, Wohnungen, Grundstücke und Gewerbeimmobilien für einen möglichen Ankauf auf eigene Rechnung. Auch Immobilien mit Renovierungsbedarf oder schwierigeren Ausgangssituationen können Sie uns anbieten." },
+        { title: "Immobilien in der Türkei", desc: "Eigentümer, die in Deutschland oder einem anderen europäischen Land leben, können ihre Immobilie in der Türkei zunächst mit uns besprechen. Wenn Unterstützung vor Ort erforderlich ist, können geeignete Partner und Fachleute in der Türkei einbezogen werden." },
+        { title: "Verkauf & Kooperationen", desc: "Wir verkaufen ausgewählte Immobilien aus unserem eigenen Bestand und arbeiten bei passenden Projekten mit Immobilienunternehmen, Investoren und anderen professionellen Partnern zusammen." },
       ],
       holdTitle: "Vom Erstkontakt zur passenden Lösung", holdIntro: "Der konkrete Ablauf richtet sich nach Geschäftsbereich, Objekt und Beteiligten.",
       holdSteps: [
