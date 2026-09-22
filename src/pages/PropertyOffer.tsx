@@ -8,8 +8,8 @@ import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { propertyOfferCopy } from "@/i18n/propertyOffer";
 import { supabase } from "@/integrations/supabase/client";
-import germanyPropertyImage from "@/assets/home-country-germany.jpg";
-import turkeyPropertyImage from "@/assets/home-country-turkey-distinct.jpg";
+import germanyPropertyImage from "@/assets/country-germany-v2.jpg";
+import turkeyPropertyImage from "@/assets/country-turkey-v2.jpg";
 
 type Country = "germany" | "turkey";
 type FormState = Record<string, string> & { privacy: string };
