@@ -6,7 +6,7 @@
 // in index.html matches the same URL the <img> requests.
 // This is critical for LCP on the homepage.
 // Gleiches Muster für die kundengelieferten Bilder auf „Eigentümer" und „Partner".
-const premiumSrc = "/heroes/aurelia-hero.jpg";
+const premiumSrc = "/heroes/aurelia-hero-duesseldorf.png";
 const premiumSrcSet = `${premiumSrc} 1920w`;
 
 const eigentuemerSrc = "/heroes/aurelia-eigentuemer.jpg";
