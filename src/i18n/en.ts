@@ -210,7 +210,7 @@ const en: Translations = {
     ],
     projectsLabel: "Location focus",
     projectsTitle: "Locations with substance",
-    projectsText: "Our focus is on North Rhine-Westphalia and selected locations in Turkey – backed by local market knowledge, reliable networks and a realistic view of potential.",
+    projectsText: "Our markets are Germany and selected locations in Turkey – backed by local market knowledge, reliable networks and a realistic view of potential.",
     stats: [
       { value: "Selected", label: "Projects reviewed carefully" },
       { value: "Long-term", label: "Thinking in sustainable structures" },

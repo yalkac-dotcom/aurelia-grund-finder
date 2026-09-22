@@ -210,7 +210,7 @@ const tr: Translations = {
     ],
     projectsLabel: "Konum odağı",
     projectsTitle: "Özü olan lokasyonlar",
-    projectsText: "Kuzey Ren-Vestfalya ve Türkiye'deki seçili lokasyonlara; yerel pazar bilgisi, güvenilir ağlar ve potansiyele gerçekçi bir bakışla odaklanıyoruz.",
+    projectsText: "Almanya ve Türkiye'deki seçili lokasyonlara; yerel pazar bilgisi, güvenilir ağlar ve potansiyele gerçekçi bir bakışla odaklanıyoruz.",
     stats: [
       { value: "Seçici", label: "Dikkatle incelenen projeler" },
       { value: "Uzun vadeli", label: "Sürdürülebilir yapılarda düşünürüz" },
