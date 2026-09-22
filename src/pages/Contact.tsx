@@ -145,8 +145,8 @@ const Contact = () => {
             <p className="mt-4 max-w-lg text-[0.95rem] leading-[1.7] text-primary-foreground/80 md:text-base">{t.contact.introText}</p>
           </Reveal>
         </div>
-        <div className="relative aspect-[16/9] min-h-[230px] overflow-hidden sm:min-h-[360px] lg:aspect-auto lg:min-h-0">
-          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Freundliche Ansprechpartnerin der Aurelia Grundbesitz GmbH mit Headset am Schreibtisch in einem hochwertigen Buero" className="absolute inset-0 h-full w-full object-cover object-[62%_center] sm:object-center lg:object-[63%_center]" priority />
+        <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto">
+          <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Freundliche Ansprechpartnerin der Aurelia Grundbesitz GmbH mit Headset am Schreibtisch in einem hochwertigen Buero" className="absolute inset-0 h-full w-full object-cover object-center lg:object-right" priority />
           <div className="absolute inset-0 bg-primary/10" />
         </div>
       </section>
