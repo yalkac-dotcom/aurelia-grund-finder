@@ -647,23 +647,22 @@ const de: Translations = {
     ],
     principlesTitle: "Grundlagen einer guten Zusammenarbeit",
     principlesText:
-      "Wir arbeiten mit langfristig orientierten Partnern. Vier Punkte sind uns dabei wichtig.",
+      "Für uns beginnt eine gute Zusammenarbeit damit, dass Aufgaben, Erwartungen und Verantwortlichkeiten von Anfang an offen besprochen werden.",
     principles: [
-      { title: "Klare Kommunikation", text: "Offener Austausch über Ziele, Rahmen und Erwartungen." },
-      { title: "Langfristige Perspektive", text: "Keine Spekulation, sondern ruhige, nachhaltige Zusammenarbeit." },
-      { title: "Verlässlicher Rahmen", text: "Stabile, planbare Voraussetzungen auf beiden Seiten." },
-      { title: "Geteiltes Verständnis", text: "Gemeinsames Verständnis für sorgfältige, projektbezogene Arbeit." },
+      { title: "Offener Austausch", text: "Wir sprechen früh darüber, worum es bei einem Projekt geht, wer welche Aufgabe übernimmt und welche Erwartungen bestehen." },
+      { title: "Klare Zuständigkeiten", text: "Jeder Beteiligte sollte wissen, wofür er verantwortlich ist und welche Entscheidungen gemeinsam getroffen werden müssen." },
+      { title: "Verlässliche Vereinbarungen", text: "Was für ein konkretes Projekt vereinbart wird, halten wir nachvollziehbar fest. So wissen alle Beteiligten, woran sie sind." },
     ],
     stepsTitle: "So gehen wir vor",
     steps: [
-      { title: "Erstkontakt", desc: "Sie schildern uns die Konstellation – vertraulich und unverbindlich." },
-      { title: "Einordnung", desc: "Wir prüfen, ob ein gemeinsames Projekt grundsätzlich passt." },
-      { title: "Abstimmung", desc: "Inhalte, Rahmen und Erwartungen werden im Detail besprochen." },
-      { title: "Vereinbarung", desc: "Wir halten alles schriftlich und sauber dokumentiert fest." },
-      { title: "Umsetzung", desc: "Begleitung und ruhige Abstimmung über die gesamte Projektlaufzeit." },
+      { title: "Erstkontakt", desc: "Sie stellen uns das Projekt, die Immobilie oder Ihre Idee für eine mögliche Zusammenarbeit kurz vor." },
+      { title: "Erste Prüfung", desc: "Wir schauen uns an, ob das Vorhaben grundsätzlich zu unserem Tätigkeitsbereich und unserer Arbeitsweise passt." },
+      { title: "Gemeinsames Gespräch", desc: "Wenn eine Zusammenarbeit grundsätzlich interessant erscheint, besprechen wir Aufgaben, Erwartungen und die wesentlichen Eckpunkte." },
+      { title: "Vereinbarung", desc: "Kommt eine Zusammenarbeit zustande, werden die für das konkrete Projekt erforderlichen Vereinbarungen schriftlich festgehalten." },
+      { title: "Umsetzung", desc: "Danach arbeiten die Beteiligten entsprechend der vereinbarten Aufgaben und Zuständigkeiten zusammen." },
     ],
     stepsNote:
-      "Zeitrahmen sind Richtwerte. Inhalte und Konditionen werden ausschließlich im Einzelfall besprochen.",
+      "Art, Umfang und Konditionen einer Zusammenarbeit werden für jedes Projekt gesondert vereinbart.",
     faqTitle: "Häufige Fragen",
     faqIntro: "Wenn Ihre Frage hier nicht beantwortet ist, sprechen Sie uns direkt an.",
     faqItems: [
@@ -684,9 +683,9 @@ const de: Translations = {
         a: "Schriftlich und sauber dokumentiert. Inhalte, Rahmen und Konditionen werden ausschließlich im Einzelfall besprochen.",
       },
     ],
-    finalCtaTitle: "Konstellation vertraulich besprechen.",
+    finalCtaTitle: "Sie möchten ein Projekt mit uns besprechen?",
     finalCtaText:
-      "Wenn eine projektbezogene Zusammenarbeit für Sie grundsätzlich denkbar ist, freuen wir uns über einen ruhigen, unverbindlichen Austausch.",
+      "Wenn Sie eine Immobilie, ein Projekt oder einen konkreten Ansatz für eine Zusammenarbeit haben, können Sie uns gerne ansprechen. Wir schauen uns zunächst an, ob das Vorhaben grundsätzlich zu uns passt.",
     finalCtaButton: "Unverbindlich Kontakt aufnehmen",
   },
   about: {
