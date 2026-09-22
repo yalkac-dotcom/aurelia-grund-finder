@@ -263,6 +263,8 @@ export interface Translations {
     heroKicker: string;
     heroTitle: string;
     heroDescription: string;
+    /** Sichtbare Hero-Einleitung der Startseite (Meta-Beschreibung bleibt heroDescription). */
+    heroIntro?: string;
     heroPrimaryCta?: string;
     heroSecondaryCta?: string;
     heroTrustLine?: string;
