@@ -54,6 +54,7 @@ const Header = () => {
     { label: t.nav.howItWorks, path: "/wie-es-funktioniert" },
     { label: t.nav.about, path: "/ueber-uns" },
     { label: t.nav.faq, path: "/faq" },
+    { label: t.nav.contact, path: "/kontakt" },
   ];
 
   const handleHashNav = (item: NavItem) => {
