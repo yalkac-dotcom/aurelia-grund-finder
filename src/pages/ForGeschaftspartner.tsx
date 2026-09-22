@@ -9,13 +9,15 @@ import { Link } from "react-router-dom";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { pageExtras } from "@/i18n/pageExtras";
 
 // Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
 const stepIcons = [icons3d.dialogueLight, icons3d.compassLight, icons3d.scaleLight, icons3d.contract, icons3d.handshakeLight];
 
 const ForGeschaftspartner = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const p = t.partners;
+  const extras = pageExtras[language];
 
   return (
     <Layout>
@@ -112,11 +114,7 @@ const ForGeschaftspartner = () => {
         <section className="bg-gradient-warm">
           <div className="container-premium py-10 md:py-12 text-center">
             <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
-              Weitere Fragen beantworten wir in unseren{" "}
-              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
-                FAQ
-              </Link>
-              .
+              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">{extras.shared.faqPrompt}</Link>
             </p>
           </div>
         </section>

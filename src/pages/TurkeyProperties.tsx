@@ -225,9 +225,11 @@ const TurkeyProperties = () => {
           message,
           language,
           preferred_language:
-            (["de", "tr", "en", "nl", "it", "es"] as const)[
+            (["de", "tr", "en", "nl", "it", "es", "fr"] as const)[
               page.form.languageOptions.indexOf(form.preferredLanguage)
             ] ?? language,
+          form_type: "turkey_property",
+          privacy_consent: true,
           files: uploadedFiles,
         },
       });

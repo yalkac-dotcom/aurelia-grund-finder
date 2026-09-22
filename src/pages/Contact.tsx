@@ -28,12 +28,14 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [confirmationWarning, setConfirmationWarning] = useState(false);
   const { t, language } = useLanguage();
   const contactCopy = pageExtras[language].contact;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
+    setConfirmationWarning(false);
 
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -98,6 +100,7 @@ const Contact = () => {
           message: rawMessage,
           language,
           form_type: "general_contact",
+          privacy_consent: true,
         },
       }
     );
@@ -113,6 +116,7 @@ const Contact = () => {
 
     trackEvent("form_submit", { form: "contact" });
     trackEvent("generate_lead", { form: "contact" });
+    setConfirmationWarning(emailData?.confirmationSent === false);
     setSubmitted(true);
   };
 
@@ -239,7 +243,9 @@ const Contact = () => {
                 <div className="py-6 text-center">
                   <CheckCircle className="text-accent mx-auto mb-3" size={24} />
                   <h3 className="text-[0.95rem] font-heading font-semibold text-foreground mb-1.5">{t.contact.successTitle}</h3>
-                  <p className="text-muted-foreground text-[0.93rem] leading-[1.7] max-w-sm mx-auto">{t.contact.successText}</p>
+                  <p className="text-muted-foreground text-[0.93rem] leading-[1.7] max-w-sm mx-auto">
+                    {confirmationWarning ? contactCopy.confirmationWarning : t.contact.successText}
+                  </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">

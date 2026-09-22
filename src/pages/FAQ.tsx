@@ -4,11 +4,15 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import OptimizedImg from "@/components/OptimizedImg";
+import { heroSets } from "@/assets/heroImages";
+import { pageExtras } from "@/i18n/pageExtras";
 
 const FAQ = () => {
   const [open, setOpen] = useState<number | null>(null);
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const f = t.faqPage;
+  const extras = pageExtras[language];
 
   useEffect(() => {
     document.title = `${f.title} – Aurelia Grundbesitz GmbH`;
@@ -16,17 +20,21 @@ const FAQ = () => {
 
   return (
     <Layout>
-      {/* HERO – schlank, ruhig */}
-      <section className="bg-gradient-warm border-b border-border/40">
-        <div className="container-premium py-16 md:py-20 text-center">
+      {/* HERO – bewusst niedriger als die übrigen Hauptseiten */}
+      <section className="relative flex h-[42svh] min-h-[300px] max-h-[430px] items-end overflow-hidden bg-primary md:h-[48vh]">
+        <div className="absolute inset-0">
+          <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center" priority />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/65 to-primary/25" aria-hidden="true" />
+        </div>
+        <div className="container-premium relative py-10 text-left md:py-14">
           <Reveal>
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent mb-3">
               {f.kicker}
             </p>
-            <h1 className="font-heading font-semibold text-primary text-[1.85rem] md:text-[2.4rem] leading-tight tracking-tight mb-4">
+            <h1 className="font-heading font-semibold text-primary-foreground text-[1.85rem] md:text-[2.4rem] leading-tight tracking-tight mb-4">
               {f.title}
             </h1>
-            <p className="mx-auto max-w-xl text-[0.95rem] leading-[1.75] text-muted-foreground">
+            <p className="max-w-xl text-[0.95rem] leading-[1.75] text-primary-foreground/85">
               {f.intro}
             </p>
           </Reveal>

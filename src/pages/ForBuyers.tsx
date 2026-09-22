@@ -10,6 +10,7 @@ import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { pageExtras } from "@/i18n/pageExtras";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
@@ -18,8 +19,9 @@ const featureImages = cardImages.buyerFeatures;
 const stepIcons = [MessageSquare, Eye, Handshake, FileSignature];
 
 const ForBuyers = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const b = t.buyers;
+  const extras = pageExtras[language];
 
   return (
     <Layout>
@@ -154,11 +156,7 @@ const ForBuyers = () => {
         <section className="bg-gradient-warm">
           <div className="container-premium py-10 md:py-12 text-center">
             <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
-              Weitere Fragen beantworten wir in unseren{" "}
-              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">
-                FAQ
-              </Link>
-              .
+              <Link to="/faq" className="text-primary underline-offset-4 hover:underline">{extras.shared.faqPrompt}</Link>
             </p>
           </div>
         </section>
