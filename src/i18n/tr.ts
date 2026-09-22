@@ -692,7 +692,7 @@ const tr: Translations = {
   contact: {
     title: "İletişim",
     subtitle: "Sizin için buradayız",
-    hereForYou: "Sizin için buradayız",
+    hereForYou: "Talebiniz için kişisel olarak yanınızdayız",
     introText: "İster gayrimenkul talebi, ister somut bir konu veya randevu talebi – bize yazın. Size kişisel olarak ve zamanında dönüş yapacağız.",
     salutation: "Hitap",
     firstName: "Ad",
@@ -723,7 +723,7 @@ const tr: Translations = {
     privacyNote: "Verileriniz gizli tutulur · 24-48 saat içinde yanıt",
     moduleHeading: "İletişim",
     moduleIntro: "Mesajınızı bekliyoruz.",
-    moduleIntro2: "İlk bir talep, somut bir konu veya randevu isteği – size en uygun yoldan bizimle iletişime geçebilirsiniz.",
+    moduleIntro2: "Satış, alım, Türkiye'deki gayrimenkulünüz veya iş birliği – talebinizi kısaca aktarın. Gizlilik içinde inceliyor ve size kişisel olarak dönüş yapıyoruz.",
     moduleGoToForm: "Forma git",
     moduleCta2: "Geri arama talep et",
     moduleCta3: "Randevu al",

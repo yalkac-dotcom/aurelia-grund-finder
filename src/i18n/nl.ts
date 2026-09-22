@@ -693,7 +693,7 @@ const nl: Translations = {
   contact: {
     title: "Contact",
     subtitle: "Wij staan voor u klaar",
-    hereForYou: "Wij zijn er voor u",
+    hereForYou: "Persoonlijk voor uw vraag",
     introText: "Of het een vastgoedaanvraag, een concreet verzoek of een afspraakverzoek betreft – schrijf ons. Wij nemen persoonlijk en tijdig contact met u op.",
     salutation: "Aanhef",
     firstName: "Voornaam",
@@ -724,7 +724,7 @@ const nl: Translations = {
     privacyNote: "Uw gegevens worden vertrouwelijk behandeld · Antwoord binnen 24-48 uur",
     moduleHeading: "Contact",
     moduleIntro: "Wij kijken uit naar uw bericht.",
-    moduleIntro2: "Of het nu gaat om een eerste vraag, een concreet verzoek of een afspraak – neem gerust contact met ons op via de weg die u het beste past.",
+    moduleIntro2: "Of het nu om een verkoop, aankoop, Turks vastgoed of een samenwerking gaat – schets kort uw vraag. Wij beoordelen deze vertrouwelijk en nemen persoonlijk contact met u op.",
     moduleGoToForm: "Naar het formulier",
     moduleCta2: "Terugbelverzoek",
     moduleCta3: "Afspraak maken",

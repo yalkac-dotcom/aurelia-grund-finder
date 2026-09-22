@@ -692,7 +692,7 @@ const es: Translations = {
   contact: {
     title: "Contacto",
     subtitle: "Estamos a su disposición",
-    hereForYou: "Estamos aquí para usted",
+    hereForYou: "Personalmente para su consulta",
     introText: "Ya sea una consulta inmobiliaria, un asunto concreto o una solicitud de cita – escríbanos. Nos pondremos en contacto con usted personalmente y con prontitud.",
     salutation: "Tratamiento",
     firstName: "Nombre",
@@ -723,7 +723,7 @@ const es: Translations = {
     privacyNote: "Sus datos se tratarán de forma confidencial · Respuesta en 24-48 horas",
     moduleHeading: "Contacto",
     moduleIntro: "Esperamos su mensaje con interés.",
-    moduleIntro2: "Ya se trate de una primera consulta, un asunto concreto o una solicitud de cita – no dude en contactarnos por la vía que le resulte más conveniente.",
+    moduleIntro2: "Ya sea una venta, una compra, un inmueble en Turquía o una colaboración – descríbanos brevemente su consulta. La revisaremos de forma confidencial y le contactaremos personalmente.",
     moduleGoToForm: "Ir al formulario",
     moduleCta2: "Solicitar llamada",
     moduleCta3: "Concertar cita",
