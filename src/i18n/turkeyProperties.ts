@@ -110,7 +110,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
     hero: {
       kicker: "TÜRKİYE'DEKİ GAYRİMENKULLER",
       title: "Gayrimenkulünüz Türkiye'de. Muhatabınız Almanya'da.",
-      subtitle: "Almanya'da yaşıyor ve Türkiye'de bir daire, ev, arsa veya başka bir gayrimenkule mi sahipsiniz? Aurelia Grundbesitz, gayrimenkulünüzün incelenmesi, değerlendirilmesi ve işlemlerin düzenli şekilde yürütülmesi konusunda size Almanya'daki kişisel muhatabınız olarak destek olur.",
+      subtitle: "Almanya'da veya başka bir Avrupa ülkesinde yaşıyor ve Türkiye'de bir daire, ev ya da arsaya mı sahipsiniz? O zaman konunuzu önce sakin sakin, burada Almanya'da bizimle konuşabilirsiniz.\n\nGayrimenkulünüze ve durumunuza birlikte bakıyor, hangi adımların uygun olabileceğini sizinle birlikte belirliyoruz.",
       primaryCta: "Gayrimenkulümü sunmak istiyorum",
       secondaryCta: "Bizimle iletişime geçin",
       imageAlt: "Boğaz üzerinden Galata Kulesi ile İstanbul silüeti – Türkiye'deki gayrimenkulünüz için Almanya'daki kişisel ortağınız",
@@ -123,7 +123,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       ],
     },
     servicesTitle: "Sizin için neleri inceleyebiliriz?",
-    servicesIntro: "İncelememiz gizli, ücretsiz ve ilgili durumun somut koşullarına göre yapılır.",
+    servicesIntro: "Başlangıç için gayrimenkulle ilgili en önemli bilgiler bize yeterlidir. Ardından hangi belgelerin zaten mevcut olduğuna ve daha ayrıntılı bir inceleme için nelere ihtiyaç duyulduğuna bakarız.",
     services: [
       { title: "Gayrimenkul incelemesi", text: "Gayrimenkul, konum, kullanım ve bilgilerinizin ilk değerlendirmesi." },
       { title: "Piyasa değerlendirmesi", text: "Lokasyon, gayrimenkul türü, durum ve olası piyasa ilgisinin gerçekçi analizi." },
@@ -133,9 +133,9 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       { title: "Doğrudan satın alma", text: "Uygun durumlarda, kendi hesabımıza doğrudan satın alma imkânını gizli ve kamuya açık pazarlama olmadan inceleriz." },
     ],
     propertyTypesTitle: "Hangi gayrimenkuller için?",
-    propertyTypesIntro: "Türkiye'deki farklı gayrimenkul türlerini değerlendiriyoruz.",
+    propertyTypesIntro: "Türkiye'deki farklı gayrimenkullerinizi bize sunabilirsiniz – dairelerden evlere, ticari gayrimenkullere ve arsalara kadar.",
     propertyTypes: ["Daireler", "Müstakil evler ve apartmanlar", "Arsalar", "Yazlıklar", "Miras kalan gayrimenkuller", "Ticari gayrimenkuller"],
-    propertyTypesExtra: "Özel veya henüz netleşmemiş durumlar için de bağlayıcı olmayan ilk başvuru yapabilirsiniz. Belirleyici olan her zaman somut vakanın incelenmesidir.",
+    propertyTypesExtra: "Mülkiyet durumu veya başka konular henüz tam olarak netleşmemiş olsa bile, öncelikle bizimle iletişime geçebilirsiniz. Nelerin mümkün olduğu, ancak somut durumun incelenmesinden sonra değerlendirilebilir.",
     processTitle: "Süreç nasıl başlıyor?",
     process: [
       { title: "Gayrimenkul bilgilerini gönderin", text: "İlk bilgileri, tapuyu, fotoğrafları ve mevcut belgeleri bize iletin." },
