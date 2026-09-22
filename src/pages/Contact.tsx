@@ -335,7 +335,7 @@ const Contact = () => {
                     </select>
                     {propertyLocation === t.contact.propertyLocationOptions?.[1] && (
                       <div className="mt-3 border-l-2 border-accent bg-secondary/50 px-4 py-3 text-sm leading-relaxed text-foreground/80">
-                        {t.contact.turkeyFormHint} <Link to="/immobilien-tuerkei#tuerkei-formular" className="font-semibold text-primary hover:text-accent">{t.contact.turkeyFormCta}</Link>
+                        {t.contact.turkeyFormHint} <Link to="/immobilie-anbieten?land=tuerkei" className="font-semibold text-primary hover:text-accent">{t.contact.turkeyFormCta}</Link>
                       </div>
                     )}
                   </div>
