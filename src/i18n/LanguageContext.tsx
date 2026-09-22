@@ -92,7 +92,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     document.documentElement.lang = language;
     const currentT = translationsMap[language];
     const title = document.querySelector("title");
-    const seoTitle = `Aurelia Grundbesitz – ${currentT.hero.slogan}`;
+    const seoTitle = `${currentT.home.heroTitle} | Aurelia Grundbesitz`;
     if (title) title.textContent = seoTitle;
 
     const ogTitle = document.querySelector('meta[property="og:title"]');
@@ -101,7 +101,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     const twDesc = document.querySelector('meta[name="twitter:description"]');
     const metaDesc = document.querySelector('meta[name="description"]');
 
-    const descText = currentT.landing.heroSubtitle;
+    const descText = currentT.home.heroDescription;
 
     ogTitle?.setAttribute("content", seoTitle);
     twTitle?.setAttribute("content", seoTitle);
