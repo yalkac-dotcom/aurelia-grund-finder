@@ -767,7 +767,7 @@ const de: Translations = {
   contact: {
     title: "Kontakt",
     subtitle: "Wir sind für Sie da",
-    hereForYou: "Wir sind für Sie da",
+    hereForYou: "Persönlich für Ihr Anliegen",
     introText: "Ob Immobilienanfrage, konkretes Anliegen oder Terminwunsch – schreiben Sie uns. Wir melden uns persönlich und zeitnah bei Ihnen.",
     salutation: "Anrede",
     firstName: "Vorname",
