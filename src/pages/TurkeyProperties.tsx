@@ -399,7 +399,7 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
-        <section className="section-premium bg-gradient-warm">
+        {page.crossLink && <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <Reveal>
               <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
@@ -409,7 +409,7 @@ const TurkeyProperties = () => {
               </div>
             </Reveal>
           </div>
-        </section>
+        </section>}
 
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
