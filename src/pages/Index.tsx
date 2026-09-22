@@ -65,7 +65,8 @@ const HomePage = () => {
         primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/immobilie-anbieten" }}
         secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#ablauf" } : undefined}
         trustLine={t.home.heroTrustLine}
-        imagePosition="62% center"
+        imagePosition="50% center"
+        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.90) 0%, hsl(var(--primary) / 0.80) 32%, hsl(var(--primary) / 0.42) 60%, hsl(var(--primary) / 0.18) 100%)"
       />
 
       <div className="page-shell">

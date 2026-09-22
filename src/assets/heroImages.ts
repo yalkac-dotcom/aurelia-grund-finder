@@ -4,10 +4,10 @@
 // NOTE: hero-premium uses stable /public/heroes URLs (not Vite-imported) so the
 // <link rel="preload"> in index.html matches the same URL the <img> requests.
 // This is critical for LCP on the homepage.
-const premium640 = "/heroes/hero-premium-v2-640w.webp";
-const premium1024 = "/heroes/hero-premium-v2-1024w.webp";
-const premium1440 = "/heroes/hero-premium-v2-1440w.webp";
-const premium1920 = "/heroes/hero-premium-v2-1920w.webp";
+const premium640 = "/heroes/hero-premium-v3-640w.webp";
+const premium1024 = "/heroes/hero-premium-v3-1024w.webp";
+const premium1440 = "/heroes/hero-premium-v3-1440w.webp";
+const premium1920 = "/heroes/hero-premium-v3-1920w.webp";
 
 import building640 from "@/assets/hero-building-640w.webp";
 import building1024 from "@/assets/hero-building-1024w.webp";
