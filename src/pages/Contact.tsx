@@ -151,7 +151,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="kontaktformular" className="bg-secondary/55 py-9 md:py-12 lg:py-16">
+      <section id="kontaktformular" className="bg-secondary/55 pb-9 pt-6 md:pb-12 md:pt-6 lg:pb-16 lg:pt-8">
         <div className="container-premium">
           <Reveal>
             <div className="mx-auto grid max-w-[1080px] overflow-hidden rounded-lg border border-border bg-card shadow-[0_26px_70px_-34px_hsl(var(--primary)/0.35)] lg:grid-cols-[0.78fr_1.22fr]">
