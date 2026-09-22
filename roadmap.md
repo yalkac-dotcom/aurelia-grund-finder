@@ -16,4 +16,4 @@
 - [x] Design der Über-uns-Seite an Käufer, Kontakt und Ablauf angleichen
 - [x] Spezielles Immobilienformular für Deutschland und Türkei wiederherstellen
 - [x] Alle Angebots- und Kontakt-Buttons korrekt trennen
-- [ ] E-Mail-, Upload- und Sprachlogik für drei Anfragewege prüfen
+- [x] E-Mail-, Upload- und Sprachlogik für drei Anfragewege prüfen
