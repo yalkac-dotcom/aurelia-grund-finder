@@ -31,8 +31,8 @@ const en: Translations = {
     disclaimer:
       "Disclaimer: The content of this website is provided for general information only and does not constitute legal, tax, or financial advice.",
     brandLine:
-      "Aurelia Grundbesitz buys properties and property-related claims exclusively for its own account — discreet, structured and binding.",
-    subline: "Discreet · For our own account · Binding",
+      "Property acquisition in Germany, property solutions in Turkey, sales from our own portfolio and project-based cooperation.",
+    subline: "Germany · Turkey · Portfolio & cooperation",
     navItems: [
       { label: "Home", path: "/" },
       { label: "For Owners", path: "/fuer-eigentumer-in-not" },
@@ -58,7 +58,7 @@ const en: Translations = {
     socialLinkedinAria: "LinkedIn (coming soon)",
     socialInstagramAria: "Instagram (coming soon)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. All rights reserved.",
-    kwgDisclaimer: "We act solely as a buyer for our own account. We are not a credit institution and do not offer financial services, loans or participation models.",
+    kwgDisclaimer: "For direct acquisitions, we act for our own account. We are not a credit institution and do not offer financial services, loans or participation models.",
     phoneLabel: "Phone",
     emailLabel: "Email",
   },

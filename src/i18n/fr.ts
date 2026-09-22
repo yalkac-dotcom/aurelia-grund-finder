@@ -31,8 +31,8 @@ const fr: Translations = {
     disclaimer:
       "Avertissement : le contenu de ce site est fourni à titre d’information générale et ne constitue pas un conseil juridique, fiscal ou financier.",
     brandLine:
-      "Aurelia Grundbesitz achète des biens immobiliers et des créances liées à l’immobilier exclusivement pour son propre compte — avec discrétion, méthode et engagement.",
-    subline: "Discrétion · Pour notre propre compte · Engagement ferme",
+      "Achat immobilier en Allemagne, solutions en Turquie, vente du portefeuille propre et coopérations par projet.",
+    subline: "Allemagne · Turquie · Portefeuille et coopérations",
     navItems: [
       { label: "Accueil", path: "/" },
       { label: "Pour les propriétaires", path: "/fuer-eigentumer-in-not" },
@@ -58,7 +58,7 @@ const fr: Translations = {
     socialLinkedinAria: "LinkedIn (bientôt disponible)",
     socialInstagramAria: "Instagram (bientôt disponible)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Tous droits réservés.",
-    kwgDisclaimer: "Nous intervenons uniquement en tant qu’acheteur pour notre propre compte. Nous ne sommes pas un établissement de crédit et ne proposons ni services financiers, ni prêts, ni modèles de participation.",
+    kwgDisclaimer: "Pour les acquisitions directes, nous agissons pour notre propre compte. Nous ne sommes pas un établissement de crédit et ne proposons ni services financiers, ni prêts, ni modèles de participation.",
     phoneLabel: "Téléphone",
     emailLabel: "E-mail",
   },

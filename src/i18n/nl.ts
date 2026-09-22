@@ -31,11 +31,11 @@ const nl: Translations = {
     disclaimer:
       "Let op: De inhoud van deze website dient uitsluitend ter algemene informatie en vormt geen juridisch, fiscaal of financieel advies.",
     brandLine:
-      "Aurelia Grundbesitz koopt vastgoed en vastgoedgerelateerde vorderingen uitsluitend voor eigen rekening — discreet, gestructureerd en verbindend.",
-    subline: "Discreet · Voor eigen rekening · Verbindend",
+      "Vastgoedaankoop in Duitsland, vastgoedoplossingen in Turkije, verkoop uit eigen portefeuille en projectgebonden samenwerking.",
+    subline: "Duitsland · Turkije · Portefeuille en samenwerking",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Eigenaren in nood", path: "/fuer-eigentumer-in-not" },
+      { label: "Voor eigenaren", path: "/fuer-eigentumer-in-not" },
       { label: "Voor kopers", path: "/fuer-kaeufer" },
       { label: "Vastgoed in Turkije", path: "/immobilien-tuerkei" },
       { label: "Voor partners", path: "/fuer-geschaeftspartner" },
@@ -58,7 +58,7 @@ const nl: Translations = {
     socialLinkedinAria: "LinkedIn (binnenkort)",
     socialInstagramAria: "Instagram (binnenkort)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle rechten voorbehouden.",
-    kwgDisclaimer: "Wij treden uitsluitend op als koper voor eigen rekening. Wij zijn geen kredietinstelling en bieden geen financiële diensten, leningen of participatiemodellen aan.",
+    kwgDisclaimer: "Bij directe aankopen handelen wij voor eigen rekening. Wij zijn geen kredietinstelling en bieden geen financiële diensten, leningen of participatiemodellen aan.",
     phoneLabel: "Telefoon",
     emailLabel: "E-mail",
   },
