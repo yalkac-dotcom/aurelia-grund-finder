@@ -24,7 +24,7 @@ const ForBuyers = () => {
   return (
     <Layout>
       <PageHero
-        image={heroSets.contact}
+        image={heroSets.buyers}
         imageAlt={b.heroImageAlt}
         kicker={b.heroKicker}
         title={b.heroTitle}
