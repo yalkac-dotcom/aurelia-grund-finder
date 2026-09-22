@@ -73,8 +73,8 @@
 
 # Mobile Darstellung und Kontaktleiste
 
-- [ ] Mobile Hero-Überlappungen bei 360–430 px beheben
-- [ ] Hauptüberschrift im Über-uns-Hero in vorhandenem Aurelia-Gold darstellen
-- [ ] Mehrsprachige mobile Anruf-/Angebotsleiste auf passenden Inhaltsseiten vereinheitlichen
-- [ ] Rechtliche und unpassende Seiten von der Leiste ausschließen
-- [ ] Mobile, Tablet- und Desktopdarstellung sowie Links in sieben Sprachen prüfen
+- [x] Mobile Hero-Überlappungen bei 360–430 px beheben
+- [x] Hauptüberschrift im Über-uns-Hero in vorhandenem Aurelia-Gold darstellen
+- [x] Mehrsprachige mobile Anruf-/Angebotsleiste auf passenden Inhaltsseiten vereinheitlichen
+- [x] Rechtliche und unpassende Seiten von der Leiste ausschließen
+- [x] Mobile, Tablet- und Desktopdarstellung sowie Links in sieben Sprachen prüfen

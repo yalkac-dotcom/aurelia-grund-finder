@@ -20,7 +20,7 @@ const FAQ = () => {
   return (
     <Layout>
       {/* HERO – bewusst niedriger als die übrigen Hauptseiten */}
-      <section className="relative flex h-[42svh] min-h-[300px] max-h-[430px] items-end overflow-hidden bg-primary md:h-[48vh]">
+      <section className="relative flex min-h-[300px] items-end overflow-hidden bg-primary md:h-[48vh] md:max-h-[430px]">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center" priority />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/65 to-primary/25" aria-hidden="true" />
