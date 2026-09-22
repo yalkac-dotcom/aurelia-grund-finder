@@ -756,7 +756,7 @@ const fr: Translations = {
     privacyNote: "Vos données sont traitées de manière confidentielle · Réponse sous 24 à 48 heures",
     moduleHeading: "Contact",
     moduleIntro: "Nous nous réjouissons de votre message.",
-    moduleIntro2: "Qu’il s’agisse d’une première demande, d’un sujet précis ou d’une demande de rendez-vous – n’hésitez pas à nous contacter par le moyen qui vous convient le mieux.",
+    moduleIntro2: "Qu'il s'agisse d'une vente, d'un achat, d'un bien en Turquie ou d'une coopération – décrivez brièvement votre demande. Nous l'examinerons en toute confidentialité et reviendrons personnellement vers vous.",
     moduleGoToForm: "Accéder au formulaire",
     moduleCta2: "Demander un rappel",
     moduleCta3: "Planifier un rendez-vous",
