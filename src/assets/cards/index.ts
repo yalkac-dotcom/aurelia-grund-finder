@@ -19,6 +19,7 @@ import ownerFinancial from "./owner-financial.jpg";
 import ownerHeirs from "./owner-heirs.jpg";
 import ownerLegal from "./owner-legal.jpg";
 import ownerDirectSale from "./aurelia-direkter-verkaufswunsch.png.asset.json";
+import ownerVacancy from "./owner-vacancy.jpg.asset.json";
 
 // Buyers — 4 Features + 4 Proof Points
 import buyerDirect from "./buyer-direct.jpg";
@@ -78,3 +79,4 @@ export const cardImages = {
 };
 
 export const ownerDirectSaleImage = ownerDirectSale.url;
+export const ownerVacancyImage = ownerVacancy.url;
