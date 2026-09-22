@@ -17,3 +17,9 @@
 - [x] Spezielles Immobilienformular für Deutschland und Türkei wiederherstellen
 - [x] Alle Angebots- und Kontakt-Buttons korrekt trennen
 - [x] E-Mail-, Upload- und Sprachlogik für drei Anfragewege prüfen
+# Bildaustausch Länderauswahl
+
+- [x] Aktuelle Länderkarten und Bildzuschnitte prüfen
+- [x] Zwei stilistisch abgestimmte Immobilienbilder für Deutschland und Türkei erstellen
+- [x] Nur die Bilder und ihre dezente Filterung austauschen
+- [x] Darstellung auf Desktop und Mobil prüfen
