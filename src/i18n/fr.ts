@@ -538,7 +538,7 @@ const fr: Translations = {
     ],
     portfolioTitle: "Notre offre actuelle",
     portfolioText:
-      "Aurelia gère un portefeuille régulièrement renouvelé de biens vérifiés dans la région de Düsseldorf. Les biens actuels et leurs détails sont disponibles sur demande.",
+      "Aurelia gère un portefeuille régulièrement renouvelé de biens vérifiés issus de son propre patrimoine. Les biens actuels et leurs détails sont disponibles sur demande.",
     portfolioCta: "Voir le portefeuille",
     proofTitle: "Pourquoi acheter directement chez Aurelia",
     proofIntro: "Quatre points qui font la différence par rapport à une transaction classique avec un courtier.",
@@ -578,7 +578,7 @@ const fr: Translations = {
     faqItems: [
       {
         q: "Quels types de biens Aurelia vend-elle ?",
-        a: "Principalement des biens résidentiels dans la région de Düsseldorf – appartements, immeubles multifamiliaux et biens individuels sélectionnés.",
+        a: "Des biens résidentiels et commerciaux sélectionnés ainsi que des terrains issus de notre propre portefeuille, selon les disponibilités.",
       },
       {
         q: "Un financement peut-il être organisé via Aurelia ?",
@@ -1140,7 +1140,7 @@ const fr: Translations = {
   aboutV2: {
     seoTitle: "À propos | Aurelia Grundbesitz GmbH",
     seoDescription: "Aurelia Grundbesitz évalue et acquiert des biens et terrains pour son propre compte — de manière discrète, fiable et avec des circuits de décision courts.",
-    hero: { kicker: "À propos", title: "Aurelia Grundbesitz", subtitle: "Discret. Fiable. Orienté solution.", body: ["Aurelia Grundbesitz est spécialisée dans l'acquisition et l'évaluation structurée de biens immobiliers dans des situations particulières, complexes ou urgentes.", "Nous agissons pour notre propre compte et fondons nos décisions sur une évaluation commerciale claire. Notre objectif est un processus personnel, transparent et discret, avec des circuits de décision courts.", "Nous nous concentrons en particulier sur des biens et terrains pour lesquels les processus de vente classiques ne conviennent pas, ou pour lesquels les propriétaires recherchent une solution rapide et fiable."], imageAlt: "Bureau moderne et lumineux avec vue sur la skyline de Düsseldorf, la tour du Rhin et le fleuve" },
+    hero: { kicker: "À propos", title: "Aurelia Grundbesitz", subtitle: "Discret. Fiable. Orienté solution.", body: ["Aurelia Grundbesitz est spécialisée dans l'acquisition et l'évaluation structurée de biens immobiliers dans des situations particulières, complexes ou urgentes.", "Nous agissons pour notre propre compte et fondons nos décisions sur une évaluation commerciale claire. Notre objectif est un processus personnel, transparent et discret, avec des circuits de décision courts.", "Nous nous concentrons en particulier sur des biens et terrains pour lesquels les processus de vente classiques ne conviennent pas, ou pour lesquels les propriétaires recherchent une solution rapide et fiable."], imageAlt: "Bureau moderne et lumineux, symbole d’un travail immobilier personnel et transfrontalier" },
     trustTiles: [{ title: "Expérience et connaissance du marché", text: "Évaluation rigoureuse des biens, terrains et situations de départ complexes." }, { title: "Décision indépendante", text: "Nous acquérons pour notre propre compte et n'avons besoin ni de financement externe ni de l'accord d'un investisseur." }, { title: "Circuits de décision courts", text: "Évaluation directe, communication claire et retour rapide sur les biens adaptés." }, { title: "Discrétion et fiabilité", text: "Évaluation confidentielle, processus transparents et décisions clairement motivées." }],
     standing: { headline: "Ce que nous défendons", body: ["Notre démarche est délibérément claire et pragmatique : nous évaluons chaque bien individuellement, en tenant compte non seulement de son emplacement et de sa substance, mais aussi de la situation particulière du propriétaire.", "Nous accordons une grande importance à la fiabilité, la discrétion et des solutions réalistes. Nous ne promettons pas de réponse standard pour chaque bien ; nous prenons des décisions transparentes fondées sur le cadre commercial et juridique pertinent."], values: [{ title: "Fiabilité", text: "Nous communiquons clairement et respectons les accords conclus." }, { title: "Discrétion", text: "Nous traitons les situations et documents sensibles de manière confidentielle." }, { title: "Pragmatisme", text: "Nous privilégions des solutions concrètes plutôt que des processus compliqués." }, { title: "Vision à long terme", text: "Les décisions sont envisagées d'un point de vue commercial et durable." }] },
     approach: { headline: "Notre approche", body: ["Aurelia Grundbesitz ne se considère pas comme une agence immobilière classique.", "Nous évaluons les biens en vue d'une acquisition potentielle pour notre propre compte et structurons individuellement la suite du processus.", "Cela permet des décisions plus directes et, dans les cas appropriés, des processus considérablement raccourcis."], imageAlt: "Architecture résidentielle moderne et haut de gamme, avec pierre naturelle, bois et cour paysagère" },

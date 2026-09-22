@@ -31,8 +31,8 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Aurelia Grundbesitz kauft Immobilien und immobilienbezogene Forderungen ausschließlich auf eigene Rechnung – diskret, strukturiert und verbindlich.",
-    subline: "Diskret · Auf eigene Rechnung · Verbindlich",
+      "Immobilienankauf in Deutschland, Immobilienlösungen in der Türkei sowie Verkauf aus eigenem Bestand und projektbezogene Kooperationen.",
+    subline: "Deutschland · Türkei · Bestand & Kooperationen",
     navItems: [
       { label: "Startseite", path: "/" },
       { label: "Für Eigentümer", path: "/fuer-eigentumer-in-not" },
@@ -58,7 +58,7 @@ const de: Translations = {
     socialLinkedinAria: "LinkedIn (folgt)",
     socialInstagramAria: "Instagram (folgt)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle Rechte vorbehalten.",
-    kwgDisclaimer: "Wir handeln nur als Käufer auf eigene Rechnung. Wir sind kein Kreditinstitut und bieten keine Finanzdienstleistungen, Darlehen oder Beteiligungsmodelle an.",
+    kwgDisclaimer: "Bei direkten Ankäufen handeln wir auf eigene Rechnung. Wir sind kein Kreditinstitut und bieten keine Finanzdienstleistungen, Darlehen oder Beteiligungsmodelle an.",
     phoneLabel: "Telefon",
     emailLabel: "E-Mail",
   },
@@ -554,7 +554,7 @@ const de: Translations = {
     ],
     portfolioTitle: "Unser aktuelles Angebot",
     portfolioText:
-      "Aurelia verfügt über ein regelmäßig wechselndes Portfolio geprüfter Immobilien in der Region Düsseldorf und Umland. Aktuelle Objekte und Details erfahren Sie auf Anfrage.",
+      "Aurelia verfügt über ein regelmäßig wechselndes Portfolio geprüfter Immobilien aus dem eigenen Bestand. Aktuelle Objekte und Details erfahren Sie auf Anfrage.",
     portfolioCta: "Zum Portfolio",
     proofTitle: "Warum direkt bei Aurelia kaufen",
     proofIntro:
@@ -595,7 +595,7 @@ const de: Translations = {
     faqItems: [
       {
         q: "Welche Objekttypen verkauft Aurelia?",
-        a: "Schwerpunktmäßig Wohnimmobilien in der Region Düsseldorf und Umland – Eigentumswohnungen, Mehrfamilienhäuser und ausgewählte Einzelobjekte.",
+        a: "Ausgewählte Wohn- und Gewerbeimmobilien sowie Grundstücke aus dem eigenen Bestand – abhängig von der aktuellen Verfügbarkeit.",
       },
       {
         q: "Kann ich eine Finanzierung über Aurelia vermittelt bekommen?",
@@ -1188,7 +1188,7 @@ const de: Translations = {
         "Wir handeln auf eigene Rechnung und treffen Entscheidungen auf Basis einer klaren wirtschaftlichen Prüfung. Unser Anspruch ist eine persönliche, nachvollziehbare und diskrete Abwicklung mit kurzen Entscheidungswegen.",
         "Wir konzentrieren uns insbesondere auf Immobilien und Grundstücke, bei denen klassische Verkaufsprozesse nicht optimal funktionieren oder Eigentümer eine schnelle, verbindliche Lösung suchen.",
       ],
-      imageAlt: "Heller, moderner Blick aus dem Büro auf die Düsseldorfer Skyline mit Rheinturm und Rhein",
+      imageAlt: "Heller, moderner Büroraum als Sinnbild für persönliche und grenzüberschreitende Immobilienarbeit",
     },
     trustTiles: [
       { title: "Erfahrung & Marktverständnis", text: "Fundierte Einschätzung von Immobilien, Grundstücken und komplexen Ausgangssituationen." },
