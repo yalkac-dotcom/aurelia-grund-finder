@@ -76,11 +76,11 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
         { title: "Immobilien in der Türkei", desc: "Eigentümer, die in Deutschland oder einem anderen europäischen Land leben, können ihre Immobilie in der Türkei zunächst mit uns besprechen. Wenn Unterstützung vor Ort erforderlich ist, können geeignete Partner und Fachleute in der Türkei einbezogen werden." },
         { title: "Verkauf & Kooperationen", desc: "Wir verkaufen ausgewählte Immobilien aus unserem eigenen Bestand und arbeiten bei passenden Projekten mit Immobilienunternehmen, Investoren und anderen professionellen Partnern zusammen." },
       ],
-      holdTitle: "Vom Erstkontakt zur passenden Lösung", holdIntro: "Der konkrete Ablauf richtet sich nach Geschäftsbereich, Objekt und Beteiligten.",
+      holdTitle: "Was nach Ihrer Anfrage passiert", holdIntro: "Der genaue Ablauf hängt davon ab, worum es geht. Die ersten Schritte sind jedoch meistens ähnlich.",
       holdSteps: [
-        { title: "Anfrage", desc: "Sie übermitteln die wichtigsten Angaben zu Objekt und Ziel." }, { title: "Prüfung", desc: "Wir sichten Unterlagen, Ausgangslage und wirtschaftliche Eckdaten." }, { title: "Gespräch", desc: "Offene Fragen und realistische Wege werden persönlich besprochen." }, { title: "Entscheidung", desc: "Wir klären direkten Ankauf, Bestandsverkauf oder Kooperation." }, { title: "Abwicklung", desc: "Verträge und weitere Schritte werden fallbezogen und nachvollziehbar koordiniert." },
+        { title: "Anfrage", desc: "Sie schicken uns die wichtigsten Informationen zur Immobilie oder zu Ihrem Anliegen." }, { title: "Erste Prüfung", desc: "Wir sehen uns Ihre Angaben und die vorhandenen Unterlagen an. Falls etwas Wichtiges fehlt, melden wir uns bei Ihnen." }, { title: "Persönliches Gespräch", desc: "Wir besprechen offene Fragen und erfahren mehr darüber, was Sie erreichen möchten." }, { title: "Entscheidung", desc: "Danach können wir besser beurteilen, ob und in welcher Form Aurelia tätig werden kann." }, { title: "Weitere Schritte", desc: "Wenn es weitergeht, besprechen wir mit Ihnen, was als Nächstes erforderlich ist und wer gegebenenfalls zusätzlich einbezogen werden muss." },
       ],
-      holdNote: "Bei rechtlichen, steuerlichen oder fachlichen Fragen werden bei Bedarf geeignete externe Berater eingebunden.",
+      holdNote: "Wenn rechtliche, steuerliche oder andere fachliche Fragen geklärt werden müssen, können dafür geeignete externe Fachleute hinzugezogen werden.",
     },
     partners: {
       heroTitle: "Gemeinsam an passenden Immobilienprojekten arbeiten.", heroDescription: "Nicht jedes Immobiliengeschäft lässt sich allein sinnvoll umsetzen. Deshalb arbeiten wir bei passenden Projekten mit Unternehmen und Fachleuten zusammen, die ihre Erfahrung, Marktkenntnis oder besondere Expertise einbringen.",
