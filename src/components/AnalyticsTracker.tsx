@@ -1,13 +1,19 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { initGA, trackPageView } from "@/lib/analytics";
-import { initClarity } from "@/lib/clarity";
+import { hasAnalyticsConsent, initGA, revokeGA, trackPageView } from "@/lib/analytics";
+import { initClarity, revokeClarity } from "@/lib/clarity";
 
 const AnalyticsTracker = () => {
   const location = useLocation();
 
   useEffect(() => {
     const onConsentChange = () => {
+      if (!hasAnalyticsConsent()) {
+        // Immediate withdrawal: stop GA and signal the revocation to Clarity.
+        revokeGA();
+        revokeClarity();
+        return;
+      }
       initGA();
       initClarity();
       // Ensure a page_view fires immediately after consent is granted,
