@@ -37,3 +37,12 @@
 - [x] Türkei-Motiv als warmen, urbanen türkischen Wohnkontext differenzieren
 - [x] Türkei-Motiv durch einen unverwechselbaren Istanbuler Wohnkontext verstärken
 - [x] Beide Karten erneut gemeinsam auf Desktop und Mobil visuell prüfen
+
+# Kontaktseite: Editorial-Neugestaltung
+
+- [x] Kompakten Kontakt-Hero und klare Seitenhierarchie gestalten
+- [x] Kontaktinformationen, Rückruf und Termin in einer ruhigen Informationsspalte bündeln
+- [x] Formular als hochwertigen Hauptbereich neu ordnen, Funktionen erhalten
+- [x] Standort- und Kartenbereich vollständig entfernen
+- [x] FAQ kompakter und zurückhaltender integrieren
+- [ ] Desktop, Tablet und Mobil visuell sowie funktional prüfen
