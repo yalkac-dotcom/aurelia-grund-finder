@@ -7,7 +7,7 @@ import ProofCard from "@/components/sections/ProofCard";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
-import { cardImages } from "@/assets/cards";
+import { cardImages, ownerDirectSaleImage } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, MessageSquare, Compass, Scale, FileText, Handshake } from "lucide-react";
 import { pageExtras } from "@/i18n/pageExtras";
@@ -47,7 +47,7 @@ const ForOwnerInTrouble = () => {
               {o.situations.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
                   <ProofCard
-                    image={situationImages[i % situationImages.length]}
+                    image={language === "de" && i === 0 ? ownerDirectSaleImage : situationImages[i % situationImages.length]}
                     imageAlt={s.title}
                     index={i}
                     title={s.title}
