@@ -10,3 +10,6 @@
 - [x] Kontakt- und Türkei-Formulare logisch verzahnen und neue Angaben sicher validieren
 - [x] Sämtliche neuen Inhalte in DE, TR, EN, NL, IT, ES und FR lokalisieren
 - [x] Navigation, CTAs, Formulare und Seiten auf Desktop, Tablet und Mobile prüfen
+- [x] Produktionsinhalte mit Quelltext in allen sieben Sprachen abgleichen
+- [x] Alte Notlagen-, Düsseldorf- und NRW-Positionierung in Marketingtexten ersetzen
+- [x] Footer, Metadaten, OpenGraph, Canonical, Hreflang und Sitemap aktualisieren
