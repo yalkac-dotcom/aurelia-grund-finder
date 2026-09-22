@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative h-[36vh] min-h-[260px] flex items-end">
+      <section className="relative min-h-[260px] flex items-end md:h-[36vh]">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.services.src} srcSet={heroSets.services.srcSet} sizes={heroSets.services.sizes} alt={t.services.heroTitle} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
