@@ -645,7 +645,7 @@ const es: Translations = {
     principles: [
       { title: "Discreción", text: "Sin comercialización pública. Sin anuncios. Sin divulgación." },
       { title: "Compromiso", text: "Nuestra oferta no es un dossier inmobiliario – es un contrato de compra." },
-      { title: "Rapidez", text: "Respuesta en 48 horas. De inmediato en casos urgentes." },
+      { title: "Respuesta clara", text: "Tras revisar la información, le indicamos abiertamente si podemos avanzar y de qué manera." },
       { title: "Equidad", text: "Sin presión. Sin límite de tiempo. Usted decide." },
     ],
   },

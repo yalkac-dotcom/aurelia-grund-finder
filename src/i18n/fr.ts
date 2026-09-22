@@ -678,7 +678,7 @@ const fr: Translations = {
     principles: [
       { title: "Discrétion", text: "Aucune commercialisation publique. Aucune annonce. Aucune divulgation." },
       { title: "Engagement", text: "Notre offre n’est pas un dossier de courtier – c’est un contrat de vente." },
-      { title: "Rapidité", text: "Réponse sous 48 heures. Immédiatement dans les cas urgents." },
+      { title: "Réponse claire", text: "Après examen des informations, nous vous indiquons clairement si nous pouvons poursuivre et de quelle manière." },
       { title: "Équité", text: "Aucune pression. Aucun délai imposé. Vous décidez." },
     ],
   },
@@ -763,10 +763,10 @@ const fr: Translations = {
     faqTitle: "Questions fréquentes",
     faqSubtitle: "Réponses aux questions les plus importantes avant votre premier contact.",
     faqItems: [
-      { q: "La première évaluation est-elle vraiment gratuite ?", a: "Oui. Nous examinons votre demande sans frais et revenons vers vous personnellement sous 48 heures." },
+      { q: "La première évaluation est-elle vraiment gratuite ?", a: "Oui. Nous ne facturons rien pour le premier examen de votre demande. Après avoir pris connaissance de vos informations, nous revenons vers vous." },
       { q: "Quels types de biens traitez-vous ?", a: "Nous travaillons avec des biens en situation particulière — successions, biens issus de divorce, immeubles à rénover et biens vacants." },
       { q: "Comment se déroule la première consultation ?", a: "Par téléphone ou par appel vidéo — ou en personne sur rendez-vous. Durée : environ 20 à 30 minutes." },
-      { q: "Intervenez-vous dans tout le pays ?", a: "Notre priorité est l’Allemagne, avec un accent particulier sur les régions métropolitaines." },
+      { q: "Intervenez-vous dans toute l’Allemagne ?", a: "Nous examinons en principe les biens situés en Allemagne indépendamment de leur localisation. Nous décidons si un bien peut nous intéresser après avoir étudié le bien concerné." },
       { q: "Ma demande est-elle traitée en toute confidentialité ?", a: "Toutes les informations sont traitées en toute confidentialité. Nous ne transmettons aucune donnée." },
     ],
   },
