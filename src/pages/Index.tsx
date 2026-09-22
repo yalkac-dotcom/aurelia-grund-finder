@@ -74,8 +74,9 @@ const HomePage = () => {
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} disableOffset />
             <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 md:gap-7">
               {t.home.areas.map((path, i) => {
-                const key = areaKeys[i];
+                const key = areaKeys[i % areaKeys.length];
                 const asset = areaAssets[key];
+                if (!asset) return null;
                 return (
                   <Reveal key={key} delay={i * 0.06}>
                     <ProofCard
