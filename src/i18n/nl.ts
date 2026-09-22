@@ -108,7 +108,7 @@ const nl: Translations = {
     ourTeam: "Ons team staat voor u klaar",
     teamDescription: "Ons ervaren team is beschikbaar voor al uw vragen over vastgoed — persoonlijk, deskundig en discreet.",
     availability: "Bereikbaarheid",
-    availabilityText: "Omdat wij regelmatig ter plaatse zijn voor projecten en afspraken, verzoeken wij u ons per e-mail te benaderen. Vervolgens maken wij graag een passende afspraak.",
+    availabilityText: "Omdat wij regelmatig afspraken buiten kantoor hebben, bereikt u ons het meest betrouwbaar per e-mail. Voor een persoonlijk gesprek maken wij graag een passende afspraak.",
     monFri: "Maandag – vrijdag",
     saturday: "Zaterdag",
     sunday: "Zondag",
@@ -413,12 +413,12 @@ const nl: Translations = {
   },
   howItWorks: {
     heroKicker: "Hoe wij werken",
-    heroTitle: "Drie werkterreinen, één gemeenschappelijk principe.",
+    heroTitle: "Drie werkterreinen – en altijd eerst het concrete object.",
     heroDescription:
       "Aurelia bundelt drie activiteiten onder één heldere maatstaf: aankoop van vorderingen, verkoop van objecten uit eigen portefeuille en projectgebonden samenwerkingen – telkens netjes gestructureerd en verifieerbaar gedocumenteerd.",
     heroPrimaryCta: "Werkwijze bespreken",
     heroSecondaryCta: "Bekijk het proces",
-    heroTrustLine: "Gestructureerde processen · Heldere verantwoordelijkheden · Vertrouwelijk",
+    heroTrustLine: "Persoonlijk contact · Directe beoordeling · Vertrouwelijke behandeling",
     heroImageAlt: "Rustige, lichtrijke zakelijke omgeving – symbool voor de gestructureerde werkwijze van Aurelia",
     introTitle: "Eén maatstaf, drie wegen",
     introText:
@@ -451,13 +451,12 @@ const nl: Translations = {
     ],
     holdNote:
       "Beschrijving van de algemene werkwijze. Concrete beslissingen worden uitsluitend per object genomen. Marktomstandigheden kunnen veranderen.",
-    principlesTitle: "Wat over alle werkterreinen geldt",
-    principlesIntro: "Vier uitgangspunten die ons werk bepalen – ongeacht het werkterrein.",
+    principlesTitle: "Wat wij belangrijk vinden in de samenwerking",
+    principlesIntro: "",
     principles: [
-      { title: "Transparante communicatie", text: "Heldere taal. Geen beloften die wij niet kunnen waarmaken." },
-      { title: "Eerlijke voorwaarden", text: "Navolgbare berekening op basis van zakelijke kengetallen." },
-      { title: "Goede documentatie", text: "Alle stappen worden schriftelijk en verifieerbaar vastgelegd." },
-      { title: "Langetermijnperspectief", text: "Geen speculatie, maar rustige, duurzame ontwikkeling." },
+      { title: "Open communiceren", text: "Wij zeggen wat wij kunnen inschatten, en ook wanneer informatie nog ontbreekt of iets voor ons niet in aanmerking komt." },
+      { title: "Afspraken vastleggen", text: "Belangrijke afspraken en de volgende stappen worden zo vastgelegd dat alle betrokkenen weten waar zij aan toe zijn." },
+      { title: "Realistisch blijven", text: "Niet elk object en niet elk project past bij ons. Daarom beloven wij niets voordat wij de daadwerkelijke situatie hebben beoordeeld." },
     ],
     faqTitle: "Veelgestelde vragen over onze werkwijze",
     faqIntro: "Als uw vraag hier niet wordt beantwoord, neem dan rechtstreeks contact met ons op.",
@@ -479,9 +478,9 @@ const nl: Translations = {
         a: "Eerste gesprekken zijn standaard vertrouwelijk. Inhoud wordt niet doorgegeven. Op verzoek werken wij met geheimhoudingsovereenkomsten.",
       },
     ],
-    finalCtaTitle: "Vragen over de werkwijze?",
+    finalCtaTitle: "Wilt u weten hoe het in uw geval verder kan gaan?",
     finalCtaText:
-      "Wij lichten de afzonderlijke stappen graag toe in een persoonlijk gesprek – zakelijk, vertrouwelijk en vrijblijvend.",
+      "Vertel ons kort waar het om gaat. Wij bekijken uw aanvraag en bespreken de volgende stappen persoonlijk met u.",
     finalCtaButton: "Vrijblijvend contact opnemen",
   },
   buyers: {
