@@ -19,6 +19,11 @@ import contact1024 from "@/assets/hero-contact-1024w.webp";
 import contact1440 from "@/assets/hero-contact-1440w.webp";
 import contact1920 from "@/assets/hero-contact-1920w.webp";
 
+import buyers640 from "@/assets/hero-buyers-640w.webp";
+import buyers1024 from "@/assets/hero-buyers-1024w.webp";
+import buyers1440 from "@/assets/hero-buyers-1440w.webp";
+import buyers1920 from "@/assets/hero-buyers-1920w.webp";
+
 import services640 from "@/assets/hero-services-640w.webp";
 import services1024 from "@/assets/hero-services-1024w.webp";
 import services1440 from "@/assets/hero-services-1440w.webp";
