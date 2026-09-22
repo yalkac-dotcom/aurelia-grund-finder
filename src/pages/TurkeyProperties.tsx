@@ -321,7 +321,7 @@ const TurkeyProperties = () => {
       </section>
 
       <div className="page-shell">
-        {page.crossLink && <section className="section-premium bg-gradient-warm">
+        <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
             <div className="mx-auto max-w-4xl">
               <SectionHeader title={page.problem.title} align="left" disableOffset />
