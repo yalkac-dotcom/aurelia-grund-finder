@@ -136,13 +136,13 @@ const Contact = () => {
   return (
     <Layout>
       <section className="grid overflow-hidden bg-primary lg:h-[580px] lg:grid-cols-[0.86fr_1.14fr] xl:h-[620px]">
-        <div className="flex min-h-[350px] items-center bg-primary px-6 py-14 sm:min-h-[390px] sm:px-10 sm:py-16 lg:min-h-0 lg:px-[max(3rem,calc((100vw-1080px)/2))] lg:py-20 lg:pr-12 xl:pr-16">
+        <div className="flex min-h-[350px] items-center bg-primary px-6 py-14 sm:min-h-[390px] sm:px-10 sm:py-16 lg:min-h-0 lg:py-20 lg:pl-[max(3rem,calc((100vw-1080px)/2-2.5rem))] lg:pr-10 xl:pr-12">
           <Reveal>
             <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.16em] text-primary-foreground/80">{t.contact.title}</p>
-            <h1 className="max-w-xl text-balance font-heading text-[2rem] font-semibold leading-[1.1] text-primary-foreground md:text-[3rem]">
+            <h1 className="max-w-[29rem] text-balance font-heading text-[2rem] font-semibold leading-[1.1] text-primary-foreground md:text-[3rem] lg:max-w-[19rem]">
               {t.contact.subtitle}
             </h1>
-            <p className="mt-4 max-w-lg text-[0.95rem] leading-[1.7] text-primary-foreground/80 md:text-base">{t.contact.introText}</p>
+            <p className="mt-5 max-w-[27rem] text-[0.95rem] leading-[1.8] text-primary-foreground/80 md:text-base">{t.contact.introText}</p>
           </Reveal>
         </div>
         <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto">
@@ -151,10 +151,10 @@ const Contact = () => {
         </div>
       </section>
 
-      <section id="kontaktformular" className="bg-secondary/55 py-12 md:py-20">
+      <section id="kontaktformular" className="bg-secondary/55 py-9 md:py-12 lg:py-16">
         <div className="container-premium">
           <Reveal>
-            <div className="mx-auto grid max-w-6xl overflow-hidden rounded-lg border border-border bg-card shadow-[0_26px_70px_-34px_hsl(var(--primary)/0.35)] lg:grid-cols-[0.78fr_1.22fr]">
+            <div className="mx-auto grid max-w-[1080px] overflow-hidden rounded-lg border border-border bg-card shadow-[0_26px_70px_-34px_hsl(var(--primary)/0.35)] lg:grid-cols-[0.78fr_1.22fr]">
               <aside className="flex flex-col justify-between bg-primary px-7 py-9 text-primary-foreground md:px-10 md:py-12 lg:px-12 lg:py-14">
                 <div>
                   <p className="mb-3 text-xs font-medium uppercase tracking-[0.18em] text-accent">{t.contact.moduleHeading}</p>
