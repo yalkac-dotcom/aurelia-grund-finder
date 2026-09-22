@@ -47,15 +47,31 @@ const Contact = () => {
       return;
     }
 
+    const subject = String(formData.get("subject") ?? "").trim();
+    if (!z.string().trim().min(1).max(120).safeParse(subject).success) {
+      setError(t.contact.subjectRequired);
+      const subjectInput = form.elements.namedItem("subject");
+      if (subjectInput instanceof HTMLSelectElement) subjectInput.focus();
+      return;
+    }
+
+    if (!formData.get("privacy_consent")) {
+      setError(t.contact.consentRequired);
+      const consentInput = form.elements.namedItem("privacy_consent");
+      if (consentInput instanceof HTMLInputElement) consentInput.focus();
+      return;
+    }
+
     setSubmitting(true);
 
+    const rawMessage = formData.get("message") as string;
     const payload = {
       first_name: formData.get("name") as string,
       last_name: "",
       email: formData.get("email") as string,
       phone: phoneValidation.data,
       property_type: (formData.get("property_type") as string) || null,
-      message: formData.get("message") as string,
+      message: `${t.contact.subject}: ${subject}\n\n${rawMessage}`,
     };
 
     // 1) In Datenbank speichern (Backup / Audit)
@@ -78,7 +94,8 @@ const Contact = () => {
           email: payload.email,
           phone: payload.phone,
           property_type: payload.property_type,
-          message: payload.message,
+          subject,
+          message: rawMessage,
           language,
           form_type: "general_contact",
         },
@@ -254,6 +271,31 @@ const Contact = () => {
                     )}
                   </div>
                   <div>
+                    <label htmlFor="subject" className={labelClasses}>
+                      {t.contact.subject} <span className="text-accent">*</span>
+                    </label>
+                    <select
+                      id="subject"
+                      name="subject"
+                      required
+                      defaultValue=""
+                      aria-describedby="subject-error"
+                      className={inputClasses}
+                      onInvalid={(event) => event.currentTarget.setCustomValidity(t.contact.subjectRequired)}
+                      onChange={(event) => event.currentTarget.setCustomValidity("")}
+                    >
+                      <option value="" disabled>{t.common.pleaseSelect}</option>
+                      {t.contact.subjectOptions.map((opt) => (
+                        <option key={opt} value={opt}>{opt}</option>
+                      ))}
+                    </select>
+                    {error === t.contact.subjectRequired && (
+                      <p id="subject-error" role="alert" className="mt-1.5 text-sm text-destructive">
+                        {t.contact.subjectRequired}
+                      </p>
+                    )}
+                  </div>
+                  <div>
                     <label htmlFor="property_type" className={labelClasses}>{t.contact.propertyType}</label>
                     <select id="property_type" name="property_type" className={inputClasses}>
                       <option value="">{t.common.pleaseSelect}</option>
@@ -272,6 +314,33 @@ const Contact = () => {
                       placeholder={t.contact.messagePlaceholder}
                     />
                   </div>
+
+                  <div className="pt-1">
+                    <label htmlFor="privacy_consent" className="flex items-start gap-3 cursor-pointer">
+                      <input
+                        id="privacy_consent"
+                        name="privacy_consent"
+                        type="checkbox"
+                        required
+                        aria-describedby="consent-error"
+                        className="mt-0.5 h-4 w-4 shrink-0 accent-[hsl(var(--accent))]"
+                        onInvalid={(event) => event.currentTarget.setCustomValidity(t.contact.consentRequired)}
+                        onChange={(event) => event.currentTarget.setCustomValidity("")}
+                      />
+                      <span className="text-[0.85rem] leading-[1.6] text-foreground/85">
+                        {t.contact.consentCheckbox} <span className="text-accent">*</span>{" "}
+                        <Link to="/datenschutz" className="text-accent hover:underline">
+                          {t.contact.consentNoticeLink}
+                        </Link>
+                      </span>
+                    </label>
+                    {error === t.contact.consentRequired && (
+                      <p id="consent-error" role="alert" className="mt-1.5 text-sm text-destructive">
+                        {t.contact.consentRequired}
+                      </p>
+                    )}
+                  </div>
+
 
                   {error && (
                     <div role="alert" className="flex items-start gap-2 rounded-md border border-destructive/30 bg-destructive/5 px-3 py-2.5">

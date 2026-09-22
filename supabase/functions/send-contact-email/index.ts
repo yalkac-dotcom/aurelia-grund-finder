@@ -20,6 +20,7 @@ interface ContactPayload {
   email: string;
   phone?: string | null;
   property_type?: string | null;
+  subject?: string | null;
   message: string;
   language?: string | null;
   preferred_language?: string | null;
@@ -319,6 +320,7 @@ Deno.serve(async (req) => {
     const email = escapeHtml(body.email);
     const phone = body.phone ? escapeHtml(body.phone) : "";
     const propertyType = body.property_type ? escapeHtml(body.property_type) : "";
+    const subjectLine = body.subject ? escapeHtml(body.subject) : "";
     const message = escapeHtml(body.message).replace(/\n/g, "<br/>");
 
     // 1) Bestätigung an Absender — in der Sprache des Interessenten
@@ -388,6 +390,7 @@ Web: www.aureliaestates.de`;
       <tr><td style="padding:6px 0;color:#6b7280;width:180px;">Name</td><td style="padding:6px 0;">${name}</td></tr>
       <tr><td style="padding:6px 0;color:#6b7280;">E-Mail</td><td style="padding:6px 0;"><a href="mailto:${email}">${email}</a></td></tr>
       ${phone ? `<tr><td style="padding:6px 0;color:#6b7280;">Telefon</td><td style="padding:6px 0;">${phone}</td></tr>` : ""}
+      ${subjectLine ? `<tr><td style="padding:6px 0;color:#6b7280;">Anliegen</td><td style="padding:6px 0;"><strong>${subjectLine}</strong></td></tr>` : ""}
       ${propertyType ? `<tr><td style="padding:6px 0;color:#6b7280;">Thema</td><td style="padding:6px 0;">${propertyType}</td></tr>` : ""}
       <tr><td style="padding:6px 0;color:#6b7280;">Sprache des Interessenten</td><td style="padding:6px 0;"><strong>${escapeHtml(languageName)}</strong></td></tr>
       <tr><td style="padding:6px 0;color:#6b7280;">Eingang</td><td style="padding:6px 0;">${escapeHtml(receivedAt)} Uhr</td></tr>
@@ -403,7 +406,7 @@ Web: www.aureliaestates.de`;
 
 Name: ${body.name}
 E-Mail: ${body.email}
-${body.phone ? `Telefon: ${body.phone}\n` : ""}${body.property_type ? `Thema: ${body.property_type}\n` : ""}Sprache des Interessenten: ${languageName}
+${body.phone ? `Telefon: ${body.phone}\n` : ""}${body.subject ? `Anliegen: ${body.subject}\n` : ""}${body.property_type ? `Thema: ${body.property_type}\n` : ""}Sprache des Interessenten: ${languageName}
 Eingang: ${receivedAt} Uhr
 
 Nachricht:

@@ -474,6 +474,9 @@ export interface Translations {
     requiredHint: string;
     consentNotice: string;
     consentNoticeLink: string;
+    subjectRequired: string;
+    consentCheckbox: string;
+    consentRequired: string;
     successTitle: string;
     successText: string;
     subjectOptions: string[];
