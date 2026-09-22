@@ -383,7 +383,7 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
-        <section className="section-premium bg-background">
+        {page.audience && <section className="section-premium bg-background">
           <div className="container-premium">
             <SectionHeader title={page.audience.title} intro={page.audience.text} />
             <div className="mx-auto grid max-w-5xl gap-x-10 gap-y-3 md:grid-cols-2">
@@ -397,7 +397,7 @@ const TurkeyProperties = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section>}
 
         <section className="section-premium bg-background">
           <div className="container-premium">

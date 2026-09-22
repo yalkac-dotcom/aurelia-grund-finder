@@ -11,7 +11,7 @@ export interface TurkeyPropertiesTranslations {
   propertyTypesIntro: string;
   propertyTypes: string[];
   propertyTypesExtra: string;
-  audience: { title: string; text: string; items: string[] };
+  audience?: { title: string; text: string; items: string[] };
   processTitle: string;
   process: { title: string; text: string }[];
   crossLink?: { title: string; text: string; cta: string };
