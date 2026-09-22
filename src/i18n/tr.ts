@@ -1135,22 +1135,20 @@ const tr: Translations = {
   aboutV2: {
     seoTitle: "Hakkımızda | Aurelia Grundbesitz GmbH",
     seoDescription: "Aurelia Grundbesitz, gayrimenkul ve arsaları kendi hesabına inceler ve satın alır – gizli, güvenilir ve kısa karar süreçleriyle.",
-    hero: { kicker: "Hakkımızda", title: "Aurelia Grundbesitz", subtitle: "Gizli. Güvenilir. Çözüm odaklı.", body: ["Aurelia Grundbesitz, özel, karmaşık veya zaman açısından kritik durumlarda gayrimenkullerin satın alınması ve yapılandırılmış biçimde incelenmesi konusunda uzmanlaşmıştır.", "Kendi hesabımıza hareket eder ve kararlarımızı açık bir ekonomik incelemeye dayanarak veririz. Amacımız; kişisel, anlaşılır ve gizli bir süreç ile kısa karar yolları sunmaktır.", "Özellikle klasik satış süreçlerinin uygun sonuç vermediği ya da mülk sahiplerinin hızlı ve bağlayıcı bir çözüm aradığı gayrimenkul ve arsalara odaklanıyoruz."], imageAlt: "Düsseldorf silüeti, Rheinturm ve Rhein manzaralı aydınlık, modern bir ofisten bakış" },
+    hero: { kicker: "Hakkımızda", title: "Aurelia Grundbesitz", subtitle: "Gayrimenkuller bizim için standart bir mesele değildir.", body: ["Aurelia Grundbesitz, özel, karmaşık veya zaman açısından kritik durumlarda gayrimenkullerin satın alınması ve yapılandırılmış biçimde incelenmesi konusunda uzmanlaşmıştır.", "Kendi hesabımıza hareket eder ve kararlarımızı açık bir ekonomik incelemeye dayanarak veririz. Amacımız; kişisel, anlaşılır ve gizli bir süreç ile kısa karar yolları sunmaktır.", "Özellikle klasik satış süreçlerinin uygun sonuç vermediği ya da mülk sahiplerinin hızlı ve bağlayıcı bir çözüm aradığı gayrimenkul ve arsalara odaklanıyoruz."], imageAlt: "Düsseldorf silüeti, Rheinturm ve Rhein manzaralı aydınlık, modern bir ofisten bakış" },
     trustTiles: [
-      { title: "Deneyim ve piyasa bilgisi", text: "Gayrimenkullerin, arsaların ve karmaşık başlangıç durumlarının sağlam biçimde değerlendirilmesi." },
-      { title: "Kendi karar yetkimiz", text: "Kendi hesabımıza satın alırız; dış finansman veya yatırımcı onayına ihtiyaç duymayız." },
-      { title: "Kısa karar süreçleri", text: "Uygun gayrimenkullerde doğrudan inceleme, açık iletişim ve hızlı geri dönüş." },
-      { title: "Gizlilik ve bağlayıcılık", text: "Gizli inceleme, şeffaf süreçler ve anlaşılır kararlar." },
+      { title: "Kararı kendimiz veriyoruz", text: "Uygun gayrimenkulleri kendi hesabımıza satın alırız. Bir nesnenin ilkesel olarak bize uygun olup olmadığını bu yüzden doğrudan şirket içinde değerlendiririz." },
+      { title: "Daha yakından bakıyoruz", text: "Her gayrimenkulün oturuma hazır olması gerekmez. Yenileme ihtiyacı olan veya daha karmaşık bir başlangıç durumuna sahip nesneler de bizim için ilgi çekici olabilir." },
+      { title: "Nerede durduğunuzu söylüyoruz", text: "İncelemenin ardından net bir geri dönüş yaparız. Ek bilgiye ihtiyacımız olduğunda veya bir satın alma söz konusu olmadığında bunu da söyleriz." },
     ],
-    standing: { headline: "Neyi temsil ediyoruz", body: ["Yaklaşımımız bilinçli olarak açık ve pratiktir: Her gayrimenkulü ayrı ayrı inceler; yalnızca konumunu ve fiziksel niteliğini değil, mülk sahibinin somut durumunu da değerlendiririz.", "Güvenilirliğe, gizliliğe ve gerçekçi çözümlere önem veririz. Her gayrimenkul için standart bir çözüm vadetmeyiz; kararlarımızı ilgili ekonomik ve hukuki koşullar temelinde anlaşılır biçimde alırız."], values: [
-      { title: "Bağlayıcılık", text: "Açık iletişim kurar ve yaptığımız anlaşmalara uyarız." },
-      { title: "Gizlilik", text: "Hassas durumları ve belgeleri gizli tutarız." },
-      { title: "Pragmatizm", text: "Karmaşık süreçler yerine uygulanabilir çözümlere odaklanırız." },
-      { title: "Uzun vadeli düşünce", text: "Kararları ekonomik ve sürdürülebilir bir bakışla değerlendiririz." },
+    standing: { headline: "Neyi temsil ediyoruz", body: ["Gayrimenkullerde nadiren yalnızca rakamlar ve metrekareler söz konusudur. Bir satışın arkasında insanlar, farklı çıkarlar ve bazen hızlıca çözülmesi gereken durumlar bulunur. Bu yüzden her nesneyi ayrı ayrı ele alırız.", "Sonradan yerine getiremeyeceğimiz bir şey vadetmek yerine gerçekçi bir değerlendirme sunmayı tercih ederiz. Bizim için belirleyici olan, bir çözümün gerçekten uygulanabilir olup olmadığıdır."], values: [
+      { title: "Bağlayıcı iletişim kurmak", text: "Söz verdiğimiz şeyin geçerliliğini korumasını isteriz. Bu yüzden önemli noktaları, işlemin sonuna yaklaşmadan önce netleştirmeyi tercih ederiz." },
+      { title: "Bilgilere gizlilikle yaklaşmak", text: "Bir gayrimenkule ilişkin kişisel bilgileri ve belgeleri gereken gizlilikle ele alırız." },
+      { title: "Pratik çözümler aramak", text: "Gereksiz yere karmaşık yollar yaratmak yerine, somut durumda gerçekten uygulanabilir olana odaklanırız." },
     ] },
     approach: { headline: "Yaklaşımımız", body: ["Aurelia Grundbesitz klasik bir emlakçı değildir.", "Gayrimenkulleri kendi hesabımıza olası bir satın alma amacıyla inceler ve sonraki süreci duruma özel olarak yapılandırırız.", "Bu sayede kararlar daha doğrudan alınabilir ve uygun vakalarda süreçler belirgin ölçüde kısaltılabilir."], imageAlt: "Doğal taş, ahşap ve yeşil avluya sahip nitelikli modern konut mimarisi" },
     situations: { headline: "Aurelia Grundbesitz hangi durumlarda doğru muhatap olabilir?", items: ["Kısa sürede harekete geçilmesi gereken gayrimenkuller", "Tereke ve miras durumları", "Boş veya yenilenmesi gereken gayrimenkuller", "Zorlu kira veya kullanım durumları", "Geliştirme potansiyeli taşıyan arsalar", "Karmaşık mülkiyet veya değerlendirme durumları", "Gizli ve doğrudan bir çözümü tercih eden mülk sahipleri"] },
-    closing: { headline: "Bir gayrimenkulü bizimle görüşmek ister misiniz?", body: "Gayrimenkulünüzle ilgili en önemli bilgileri bağlayıcı olmadan bize gönderin. Başlangıç durumunu inceleyip sizinle kişisel olarak iletişime geçelim.", primary: "Gayrimenkulü sun", secondary: "İletişime geç" },
+    closing: { headline: "Bir gayrimenkulü bizimle görüşmek ister misiniz?", body: "Hangi gayrimenkulün söz konusu olduğunu ve ne düşündüğünüzü bize kısaca anlatın. Bilgilerinizi inceleyip sizinle kişisel olarak iletişime geçeriz.", primary: "Gayrimenkulü sun", secondary: "İletişime geç" },
   },
   turkeyProperties: turkeyPropertiesTranslations.tr,
   faqPage: {
