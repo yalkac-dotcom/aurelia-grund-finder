@@ -151,6 +151,7 @@ const HomePage = () => {
                 </div>
               </div>
             </Reveal>
+            )}
           </div>
         </section>
 
