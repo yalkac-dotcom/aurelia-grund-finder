@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 import { heroSets } from "@/assets/heroImages";
 import { MapPin, Mail, Phone, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown, AlertCircle, PhoneCall, CalendarDays } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -151,6 +152,7 @@ const Contact = () => {
         <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto">
           <OptimizedImg src={heroSets.contact.src} srcSet={heroSets.contact.srcSet} sizes={heroSets.contact.sizes} alt="Freundliche Ansprechpartnerin der Aurelia Grundbesitz GmbH mit Headset am Schreibtisch in einem hochwertigen Buero" className="absolute inset-0 h-full w-full object-cover object-center lg:object-right" tone="soft" priority />
           <div className="absolute inset-0 bg-primary/10" />
+          <AiImageDisclosure type="illustrative" />
         </div>
       </section>
 
