@@ -108,7 +108,7 @@ const HomePage = () => {
                       title={path.title}
                       text={path.desc}
                       cta={{ label: path.cta, to: asset.link }}
-                      aiDisclosure={key === "tuerkei" ? "standard" : undefined}
+                      aiDisclosure="standard"
                     />
                   </Reveal>
                 );
