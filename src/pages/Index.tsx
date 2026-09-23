@@ -6,7 +6,7 @@ import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
-import germanyPropertyImage from "@/assets/aurelia-country-germany.jpg";
+import germanyPropertyImageAsset from "@/assets/cards/aurelia-deutschland-mehrfamilienhaus.png.asset.json";
 import turkeyPropertyImage from "@/assets/aurelia-country-turkey.jpg";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
@@ -44,7 +44,7 @@ const HomePage = () => {
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
   const areaKeys: AreaKey[] = ["deutschland", "tuerkei"];
   const areaAssets: Record<AreaKey, { image: string; link: string }> = {
-    deutschland: { image: germanyPropertyImage, link: "/immobilie-anbieten?land=deutschland" },
+    deutschland: { image: germanyPropertyImageAsset.url, link: "/immobilie-anbieten?land=deutschland" },
     tuerkei: { image: turkeyPropertyImage, link: "/immobilie-anbieten?land=tuerkei" },
   };
 
