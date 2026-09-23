@@ -9,6 +9,7 @@ import { heroSets } from "@/assets/heroImages";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 const FAQ = () => {
   const [open, setOpen] = useState<number | null>(null);
@@ -24,6 +25,7 @@ const FAQ = () => {
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center" priority />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/65 to-primary/25" aria-hidden="true" />
+          <AiImageDisclosure />
         </div>
         <div className="container-premium relative py-10 text-left md:py-14">
           <Reveal>
