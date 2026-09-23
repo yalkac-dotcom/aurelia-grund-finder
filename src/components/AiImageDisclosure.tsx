@@ -17,7 +17,7 @@ const AiImageDisclosure = ({ type = "standard" }: { type?: AiDisclosureType }) =
   const { language } = useLanguage();
 
   return (
-    <span className="ai-image-disclosure" aria-label={labels[language][type]}>
+    <span className="ai-image-disclosure" aria-label={labels[language][type]} data-ai-disclosure={type}>
       {labels[language][type]}
     </span>
   );
