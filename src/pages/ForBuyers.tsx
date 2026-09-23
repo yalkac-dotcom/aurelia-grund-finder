@@ -38,6 +38,7 @@ const ForBuyers = () => {
         secondaryCta={{ label: b.heroSecondaryCta, href: "#ablauf" }}
         trustLine={b.heroTrustLine}
         size="compact"
+        aiDisclosure="illustrative"
       />
 
       <div className="page-shell">
@@ -55,6 +56,7 @@ const ForBuyers = () => {
                     title={f.title}
                     text={f.desc}
                     compact
+                    aiDisclosure="standard"
                   />
                 </Reveal>
               ))}

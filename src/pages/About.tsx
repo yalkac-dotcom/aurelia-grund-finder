@@ -7,6 +7,7 @@ import { ArrowRight, Check, Eye, Handshake, Scale, ShieldCheck, Sprout } from "l
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 const About = () => {
   const { t } = useLanguage();
@@ -35,6 +36,7 @@ const About = () => {
                 "linear-gradient(to right, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.78) 35%, hsl(var(--primary) / 0.45) 65%, hsl(var(--primary) / 0.30) 100%)",
             }}
           />
+          <AiImageDisclosure type="illustrative" />
         </div>
 
         <div className="page-frame-hero relative py-20 md:pb-0 md:pt-20">
@@ -104,8 +106,9 @@ const About = () => {
             </div>
           </Reveal>
           <Reveal delay={0.08}>
-            <div className="overflow-hidden rounded-sm">
+            <div className="relative overflow-hidden rounded-sm">
               <img src={editorial.aboutApproachArchitecture} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="img-tone aspect-[4/3] h-auto w-full object-cover" />
+              <AiImageDisclosure />
             </div>
           </Reveal>
           </div>
