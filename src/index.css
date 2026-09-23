@@ -43,6 +43,33 @@
 @tailwind components;
 @tailwind utilities;
 
+.ai-image-disclosure {
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.55rem;
+  z-index: 20;
+  color: hsl(var(--primary-foreground) / 0.62);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 1px 2px hsl(var(--foreground) / 0.45);
+}
+
+@media (min-width: 768px) {
+  .ai-image-disclosure {
+    right: 0.55rem;
+    bottom: 0.7rem;
+    font-size: 0.66rem;
+  }
+}
+
 @layer base {
   :root {
     /* === Aurelia Core Palette (Final, harmonisiert) ===
