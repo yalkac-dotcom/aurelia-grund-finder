@@ -35,6 +35,7 @@ const HowItWorks = () => {
         secondaryCta={{ label: w.heroSecondaryCta, href: "#ablauf" }}
         trustLine={w.heroTrustLine}
         size="compact"
+        aiDisclosure="standard"
       />
 
       <div className="page-shell">

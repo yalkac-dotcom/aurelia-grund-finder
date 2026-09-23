@@ -36,6 +36,7 @@ const ForOwnerInTrouble = () => {
         primaryCta={{ label: o.heroPrimaryCta, to: "/immobilie-anbieten?land=deutschland" }}
         secondaryCta={{ label: o.heroSecondaryCta, href: "#ablauf" }}
         trustLine={o.heroTrustLine}
+        aiDisclosure="standard"
       />
 
       <div className="page-shell">
@@ -53,6 +54,7 @@ const ForOwnerInTrouble = () => {
                     title={s.title}
                     text={s.desc}
                     compact
+                    aiDisclosure="standard"
                   />
                 </Reveal>
               ))}

@@ -16,6 +16,7 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
 // Reihenfolge in i18n bleibt führend; jeder Eintrag bekommt zusätzlich einen
@@ -85,6 +86,7 @@ const HomePage = () => {
         imagePosition="50% center"
         overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.90) 0%, hsl(var(--primary) / 0.80) 32%, hsl(var(--primary) / 0.42) 60%, hsl(var(--primary) / 0.18) 100%)"
         mobileHomeFlow
+        aiDisclosure="standard"
       />
 
       <div className="page-shell">
@@ -106,6 +108,7 @@ const HomePage = () => {
                       title={path.title}
                       text={path.desc}
                       cta={{ label: path.cta, to: asset.link }}
+                      aiDisclosure={key === "tuerkei" ? "standard" : undefined}
                     />
                   </Reveal>
                 );
@@ -151,6 +154,7 @@ const HomePage = () => {
                     className="img-tone absolute inset-0 h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[hsl(212_52%_12%_/_0.55)]" aria-hidden="true" />
+                  <AiImageDisclosure />
                 </div>
                 <div className="p-8 md:p-10">
                   <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import OptimizedImg from "@/components/OptimizedImg";
+import AiImageDisclosure, { AiDisclosureType } from "@/components/AiImageDisclosure";
 import { trackEvent } from "@/lib/analytics";
 
 interface PageHeroProps {
@@ -23,6 +24,7 @@ interface PageHeroProps {
   size?: "default" | "compact";
   /** Keeps the mobile home hero entirely content-driven with extra space below its CTAs. */
   mobileHomeFlow?: boolean;
+  aiDisclosure?: AiDisclosureType;
 }
 
 const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
@@ -44,6 +46,7 @@ const PageHero = ({
   phoneLine,
   size = "default",
   mobileHomeFlow = false,
+  aiDisclosure,
 }: PageHeroProps) => (
   <section
     id="hero"
@@ -71,6 +74,7 @@ const PageHero = ({
             "linear-gradient(to right, hsl(var(--primary) / 0.88) 0%, hsl(var(--primary) / 0.78) 35%, hsl(var(--primary) / 0.45) 65%, hsl(var(--primary) / 0.30) 100%)",
         }}
       />
+      {aiDisclosure && <AiImageDisclosure type={aiDisclosure} />}
     </div>
 
     <div className={`page-frame-hero relative pt-20 md:pb-0 md:pt-20 ${mobileHomeFlow ? "pb-32" : "pb-24"}`}>

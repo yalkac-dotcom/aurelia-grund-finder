@@ -13,6 +13,7 @@ import { supabase } from "@/integrations/supabase/client";
 import heroTurkeyProperties from "@/assets/hero-turkey-properties.jpg";
 import { z } from "zod";
 import { usePageSeo } from "@/hooks/usePageSeo";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 type FormState = {
   fullName: string;
@@ -302,6 +303,7 @@ const TurkeyProperties = () => {
           }}
           aria-hidden="true"
         />
+        <AiImageDisclosure />
         <div className="page-frame-hero relative py-16 md:py-20">
           <div className="max-w-3xl">
             <p className="hero-kicker">{page.hero.kicker}</p>

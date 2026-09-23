@@ -4,6 +4,7 @@ import { heroSets } from "@/assets/heroImages";
 import OptimizedImg from "@/components/OptimizedImg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 const HomeHero = () => {
   const { t, language } = useLanguage();
@@ -29,6 +30,7 @@ const HomeHero = () => {
         <div className="hero-overlay-protect absolute inset-0" />
         {/* Teal gradient accent overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-teal-900/20 via-transparent to-transparent" />
+        <AiImageDisclosure />
       </div>
 
       <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">

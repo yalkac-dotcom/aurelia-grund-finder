@@ -34,6 +34,7 @@ const ForGeschaftspartner = () => {
         secondaryCta={{ label: p.heroSecondaryCta, href: "#ablauf" }}
         trustLine={p.heroTrustLine}
         size="compact"
+        aiDisclosure="standard"
       />
 
       <div className="page-shell">

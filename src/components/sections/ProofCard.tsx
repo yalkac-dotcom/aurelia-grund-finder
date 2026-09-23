@@ -1,6 +1,7 @@
 import { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import AiImageDisclosure, { AiDisclosureType } from "@/components/AiImageDisclosure";
 
 interface ProofCardProps {
   icon?: LucideIcon;
@@ -15,6 +16,7 @@ interface ProofCardProps {
   cta?: { label: string; to: string };
   /** Editorial / filigree variant: smaller image, lighter shadow, semibold heading, tighter padding. */
   compact?: boolean;
+  aiDisclosure?: AiDisclosureType;
 }
 
 const ProofCard = ({
@@ -28,6 +30,7 @@ const ProofCard = ({
   text,
   cta,
   compact = false,
+  aiDisclosure,
 }: ProofCardProps) => {
   const id = `proof-${index}-title`;
 
@@ -46,6 +49,7 @@ const ProofCard = ({
         className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"
         aria-hidden="true"
       />
+      {aiDisclosure && <AiImageDisclosure type={aiDisclosure} />}
     </div>
   ) : Icon || iconImage ? (
     <div className="proof-card__visual">

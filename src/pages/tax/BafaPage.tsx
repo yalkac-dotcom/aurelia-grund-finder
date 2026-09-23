@@ -8,6 +8,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { taxExternalLinkLabels } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -28,6 +29,7 @@ const BafaPage = () => {
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.bafa.src} srcSet={heroSets.bafa.srcSet} sizes={heroSets.bafa.sizes} alt={t.tax.bafaTitle} className="w-full h-full object-cover" priority />
           <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
+          <AiImageDisclosure />
         </div>
         <div className="relative container pb-8 md:pb-10">
           <Reveal>

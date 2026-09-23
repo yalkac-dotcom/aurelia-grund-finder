@@ -10,6 +10,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 const Portfolio = () => {
   const { language } = useLanguage();
@@ -32,6 +33,7 @@ const Portfolio = () => {
           />
           <div className="hero-overlay-base absolute inset-0" />
           <div className="hero-overlay-protect absolute inset-0" />
+          <AiImageDisclosure type="standard" />
         </div>
 
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
@@ -85,13 +87,15 @@ const Portfolio = () => {
                 return (
                   <Reveal key={i} delay={i * 0.08}>
                     <div className="glass-card overflow-hidden h-full" style={{ borderRadius: 12 }}>
-                      <OptimizedImg
-                        src={images[i]}
-                        alt={item.alt}
-                        fallbackLabel={item.title}
-                        className="block w-full"
-                        style={{ height: 180, objectFit: "cover", borderRadius: "8px 8px 0 0" }}
-                      />
+                      <div className="relative h-[180px] overflow-hidden rounded-t-lg">
+                        <OptimizedImg
+                          src={images[i]}
+                          alt={item.alt}
+                          fallbackLabel={item.title}
+                          className="block h-full w-full object-cover"
+                        />
+                        <AiImageDisclosure type="illustrative" />
+                      </div>
                       <div className="p-7">
                         <CategoryIcon className="mb-4 text-teal-600" size={28} />
                         <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
