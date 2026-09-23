@@ -88,3 +88,11 @@
 - [x] Eigentümerlinks im italienischen und spanischen Footer neutral benennen
 - [x] Alle Seiten in sieben Sprachen bei 390 px prüfen
 - [x] Beide Formulare samt Pflichtfeldern, Versand und Dateiupload testen
+
+# KI-Bildkennzeichnung
+
+- [ ] Gemeinsames vertikales, sprachabhängiges Overlay für KI-Bilder ergänzen
+- [ ] Alle ausdrücklich genannten Standard- und Symbolbilder kennzeichnen
+- [ ] Transparenzhinweis auf den Bildnachweisen in sieben Sprachen ergänzen
+- [ ] Ausgeschlossene Grafiken und nicht genannte Bilder unverändert lassen
+- [ ] Alle sieben Sprachen bei 390 px, 768 px und 1440 px gerendert prüfen
