@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import type { Language } from "@/i18n/types";
 
@@ -13,14 +14,16 @@ const labels: Record<Language, Record<AiDisclosureType, string>> = {
   tr: { standard: "Yapay Zeka", illustrative: "Yapay Zeka · Temsili" },
 };
 
-const AiImageDisclosure = ({ type = "standard" }: { type?: AiDisclosureType }) => {
+const AiImageDisclosure = forwardRef<HTMLSpanElement, { type?: AiDisclosureType }>(({ type = "standard" }, ref) => {
   const { language } = useLanguage();
 
   return (
-    <span className="ai-image-disclosure" aria-label={labels[language][type]} data-ai-disclosure={type}>
+    <span ref={ref} className="ai-image-disclosure" aria-label={labels[language][type]} data-ai-disclosure={type}>
       {labels[language][type]}
     </span>
   );
-};
+});
+
+AiImageDisclosure.displayName = "AiImageDisclosure";
 
 export default AiImageDisclosure;
