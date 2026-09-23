@@ -91,8 +91,8 @@
 
 # KI-Bildkennzeichnung
 
-- [ ] Gemeinsames vertikales, sprachabhängiges Overlay für KI-Bilder ergänzen
-- [ ] Alle ausdrücklich genannten Standard- und Symbolbilder kennzeichnen
-- [ ] Transparenzhinweis auf den Bildnachweisen in sieben Sprachen ergänzen
-- [ ] Ausgeschlossene Grafiken und nicht genannte Bilder unverändert lassen
+- [x] Gemeinsames vertikales, sprachabhängiges Overlay für KI-Bilder ergänzen
+- [x] Alle ausdrücklich genannten Standard- und Symbolbilder kennzeichnen
+- [x] Transparenzhinweis auf den Bildnachweisen in sieben Sprachen ergänzen
+- [x] Ausgeschlossene Grafiken und nicht genannte Bilder unverändert lassen
 - [ ] Alle sieben Sprachen bei 390 px, 768 px und 1440 px gerendert prüfen

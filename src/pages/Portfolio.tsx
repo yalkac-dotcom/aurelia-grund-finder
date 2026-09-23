@@ -33,7 +33,7 @@ const Portfolio = () => {
           />
           <div className="hero-overlay-base absolute inset-0" />
           <div className="hero-overlay-protect absolute inset-0" />
-          <AiImageDisclosure />
+          <AiImageDisclosure type="standard" />
         </div>
 
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
