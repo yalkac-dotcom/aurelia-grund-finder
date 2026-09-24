@@ -6,8 +6,6 @@ import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
-import germanyPropertyImage from "@/assets/cards/aurelia-deutschland-mehrfamilienhaus.jpg";
-import turkeyPropertyImage from "@/assets/aurelia-country-turkey.jpg";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
@@ -50,9 +48,9 @@ const HomePage = () => {
 
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
   const areaKeys: AreaKey[] = ["deutschland", "tuerkei"];
-  const areaAssets: Record<AreaKey, { image: string; link: string }> = {
-    deutschland: { image: germanyPropertyImage, link: "/immobilie-anbieten?land=deutschland" },
-    tuerkei: { image: turkeyPropertyImage, link: "/immobilie-anbieten?land=tuerkei" },
+  const areaAssets: Record<AreaKey, { image: string; imagePosition?: string; link: string }> = {
+    deutschland: { image: "/cards/AdobeStock_368296755.jpeg", link: "/immobilie-anbieten?land=deutschland" },
+    tuerkei: { image: "/cards/pexels-aydinjpg-39511030.jpg", imagePosition: "50% 58%", link: "/immobilie-anbieten?land=tuerkei" },
   };
 
   // 4 Versprechen – stabile Schlüssel, Icon pro Schlüssel (Light-Familie für Navy-Sektion)
@@ -109,12 +107,12 @@ const HomePage = () => {
                   <Reveal key={key} delay={i * 0.06}>
                     <ProofCard
                       image={asset.image}
+                      imagePosition={asset.imagePosition}
                       imageAlt={path.title}
                       index={i}
                       title={path.title}
                       text={path.desc}
                       cta={{ label: path.cta, to: asset.link }}
-                      aiDisclosure="standard"
                     />
                   </Reveal>
                 );
