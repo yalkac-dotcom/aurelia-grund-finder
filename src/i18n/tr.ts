@@ -414,7 +414,7 @@ const tr: Translations = {
     heroKicker: "Nasıl çalışıyoruz",
     heroTitle: "Üç alan – ve her zaman önce somut gayrimenkul.",
     heroDescription:
-      "Aurelia üç faaliyet alanını net bir anlayış altında birleştirir: alacak satın alma, kendi portföyünden gayrimenkul satışı ve projeye dayalı işbirlikleri – her biri düzenli biçimde yapılandırılmış ve doğrulanabilir biçimde belgelenmiştir.",
+      "Aurelia üç faaliyet alanını net bir anlayış altında birleştirir: alacak satın alma, kendi portföyünden gayrimenkul satışı ve projeye dayalı iş birlikleri – her biri düzenli biçimde yapılandırılmış ve doğrulanabilir biçimde belgelenmiştir.",
     heroPrimaryCta: "Yaklaşımımızı görüşün",
     heroSecondaryCta: "Süreci görün",
     heroTrustLine: "Kişisel temas · Doğrudan inceleme · Gizli değerlendirme",
@@ -434,7 +434,7 @@ const tr: Translations = {
         desc: "Portföyümüzdeki incelenmiş objelerle ilgilenen alıcılar için. Doğrudan mal sahibinden, şeffaf fiyat tabanıyla ve emlakçı komisyonu olmadan.",
       },
       {
-        title: "Proje işbirlikleri",
+        title: "Proje iş birlikleri",
         desc: "Uzun vadeli düşünen iş ortakları için. Bireysel olarak kararlaştırılmış, projeye bağlı, gizli – kamuya açık yatırım modelleri yok.",
       },
     ],
@@ -564,13 +564,13 @@ const tr: Translations = {
   },
   partners: {
     heroKicker: "İş ortakları için",
-    heroTitle: "Net çerçevede, projeye dayalı işbirlikleri.",
+    heroTitle: "Net çerçevede, projeye dayalı iş birlikleri.",
     heroDescription:
-      "Seçili durumlarda bireysel, projeye dayalı işbirliklerini değerlendiririz. Standart modeller yok – yalnızca duruma uygun, net biçimde yapılandırılmış mutabakatlar.",
+      "Seçili durumlarda bireysel, projeye dayalı iş birliklerini değerlendiririz. Standart modeller yok – yalnızca duruma uygun, net biçimde yapılandırılmış mutabakatlar.",
     heroPrimaryCta: "Yapıyı görüşelim",
     heroSecondaryCta: "Nasıl çalışıyoruz",
     heroTrustLine: "Projeye bağlı iş birliği · Doğrudan temas · Net sorumluluklar",
-    heroImageAlt: "Sakin bir iş ortamı – net biçimde yapılandırılmış, projeye dayalı işbirliklerinin simgesi",
+    heroImageAlt: "Sakin bir iş ortamı – net biçimde yapılandırılmış, projeye dayalı iş birliklerinin simgesi",
     legalNoticeLabel: "Not",
     legalNoticeText:
       "Bu sayfa, kamuya açık bir yatırım ürünü teklifi veya yatırıma davet niteliği taşımaz. Olası mutabakatlar yalnızca bireysel olarak, projeye dayalı şekilde ve ayrı bir değerlendirme sonrasında yapılır.",
