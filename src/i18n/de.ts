@@ -546,7 +546,7 @@ const de: Translations = {
     features: [
       { title: "Preis und Konditionen", desc: "Die wesentlichen Konditionen werden beim jeweiligen Angebot genannt und im persönlichen Gespräch erläutert." },
       { title: "Ansprechpartner", desc: "Sie wissen, mit wem Sie über die Immobilie sprechen und in welcher Konstellation das Objekt angeboten wird." },
-      { title: "Unterlagen zum Objekt", desc: "Welche Unterlagen bereits vorliegen und welche Informationen zum Objekt verfügbar sind, teilen wir Ihnen im Rahmen der jeweiligen Anfrage mit." },
+      { title: "Unterlagen zum Objekt", desc: "Wir stellen Ihnen auf Anfrage alle vorliegenden Grundbuchauszüge, Grundrisse und Kennzahlen transparent in einem übersichtlichen Exposé zur Verfügung." },
       { title: "Kaufabwicklung", desc: "Wenn Sie sich für ein Objekt entscheiden und beide Seiten sich einigen, wird der Immobilienkauf über einen Notar abgewickelt." },
     ],
     portfolioTitle: "Unser aktuelles Angebot",
