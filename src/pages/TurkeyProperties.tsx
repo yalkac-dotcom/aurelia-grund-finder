@@ -411,9 +411,16 @@ const TurkeyProperties = () => {
         <section id="ablauf" className="section-premium bg-background scroll-mt-24">
           <div className="container-premium">
             <SectionHeader title={page.processTitle} />
-            <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className={`grid gap-6 md:gap-8 sm:grid-cols-2 ${page.process.length === 4 ? "" : "lg:grid-cols-3"}`}>
               {page.process.map((step, index) => (
-                <ProcessStep key={step.title} index={index} total={page.process.length} title={step.title} desc={step.text} />
+                <ProcessStep
+                  key={step.title}
+                  index={index}
+                  total={page.process.length}
+                  title={step.title}
+                  desc={step.text}
+                  arrowDirection={page.process.length === 4 && index === 1 ? "down" : "right"}
+                />
               ))}
             </div>
           </div>
