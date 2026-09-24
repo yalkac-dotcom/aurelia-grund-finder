@@ -25,7 +25,7 @@ const Privacy = () => {
 
   return (
     <Layout>
-      {isDe ? (
+      {true ? (
         <section className="relative w-full overflow-hidden h-[240px] md:h-[380px]" style={{ background: "rgb(10,32,58)" }}>
           <img
             src={datenschutzHeader}
@@ -34,13 +34,13 @@ const Privacy = () => {
             height={720}
             className="absolute inset-0 h-full w-full object-cover object-[68%_center] md:object-center"
           />
-          <span
+          {isDe && <span
             aria-hidden="true"
             style={{ color: "#F1DBA5" }}
             className="absolute font-heading font-semibold leading-none select-none text-[1.2rem] md:text-[1.9rem] [text-shadow:0_1px_6px_rgba(6,20,38,0.85),0_0_2px_rgba(6,20,38,0.9)] left-[8%] top-[62%] md:left-[19%] md:top-[68%]"
           >
             DSGVO
-          </span>
+          </span>}
           <h1 className="sr-only">{p.title}</h1>
         </section>
       ) : (

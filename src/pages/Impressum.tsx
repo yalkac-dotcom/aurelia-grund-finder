@@ -24,7 +24,7 @@ const Impressum = () => {
 
   return (
     <Layout>
-      {isDe ? (
+      {true ? (
         <section className="relative w-full overflow-hidden" style={{ background: "rgb(13,38,70)" }}>
           <img
             src={impressumHeaderFinal}
