@@ -10,6 +10,7 @@ interface ProofCardProps {
   /** Optional thematic photo shown as full-width header (16:10 default, 21:9 when compact). */
   image?: string;
   imageAlt?: string;
+  imagePosition?: string;
   index: number;
   title: string;
   text: string;
@@ -25,6 +26,7 @@ const ProofCard = ({
   iconAlt,
   image,
   imageAlt,
+  imagePosition,
   index,
   title,
   text,
@@ -44,6 +46,7 @@ const ProofCard = ({
         alt={imageAlt ?? iconAlt ?? ""}
         loading="lazy"
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+        style={imagePosition ? { objectPosition: imagePosition } : undefined}
       />
       <div
         className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"
