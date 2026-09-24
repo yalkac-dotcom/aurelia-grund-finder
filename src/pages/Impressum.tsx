@@ -31,14 +31,25 @@ const Impressum = () => {
           ) : (
             <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
           )}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: isDe
-                ? "linear-gradient(to top, rgba(27,42,74,0.60) 0%, rgba(27,42,74,0.34) 55%, rgba(27,42,74,0.30) 100%)"
-                : "linear-gradient(to top, rgba(19,30,53,0.94) 0%, rgba(19,30,53,0.80) 60%, rgba(19,30,53,0.38) 100%)",
-            }}
-          />
+          {isDe ? (
+            <>
+              <div className="absolute inset-0" style={{ background: "hsl(218 45% 24%)", mixBlendMode: "color" }} />
+              <div
+                className="absolute inset-0"
+                style={{
+                  background: "linear-gradient(to top, rgba(27,42,74,0.78) 0%, rgba(27,42,74,0.58) 55%, rgba(27,42,74,0.50) 100%)",
+                }}
+              />
+              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.55 }} />
+            </>
+          ) : (
+            <div
+              className="absolute inset-0"
+              style={{
+                background: "linear-gradient(to top, rgba(19,30,53,0.94) 0%, rgba(19,30,53,0.80) 60%, rgba(19,30,53,0.38) 100%)",
+              }}
+            />
+          )}
           {!isDe && <AiImageDisclosure type="illustrative" />}
         </div>
         <div className="relative container pb-8 md:pb-10">
