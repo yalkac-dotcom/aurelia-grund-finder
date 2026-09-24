@@ -8,6 +8,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
+import { aureliaCard } from "@/lib/cardStyle";
 
 const About = () => {
   const { t, language } = useLanguage();
