@@ -53,7 +53,7 @@ const HowItWorksHero = ({
         </div>
       ))}
     </div>
-    <div className="page-frame-hero flex min-h-[inherit] items-end justify-center pb-6 pt-32 md:pb-8 md:pt-40">
+    <div className="page-frame-hero flex min-h-[inherit] items-end justify-center pb-3 pt-32 md:pb-4 md:pt-40">
       <div
         className="w-full max-w-3xl rounded-sm border border-gold px-5 py-6 text-center md:px-10 md:py-8"
         style={{ background: "hsl(var(--background) / 0.78)", backdropFilter: "blur(1px)" }}
