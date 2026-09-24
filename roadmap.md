@@ -130,5 +130,5 @@
 
 # Startseite: Bildzuordnung TR, FR und ES
 
-- [ ] Die doppelte Deutschland-Bildzuordnung ausschließlich in TR, FR und ES an die deutsche Zuordnung angleichen.
-- [ ] TR, FR und ES bei 390 px, 768 px und 1440 px prüfen; übrige Sprachen unverändert lassen.
+- [x] Die doppelte Deutschland-Bildzuordnung ausschließlich in TR, FR und ES an die deutsche Zuordnung angleichen.
+- [x] TR, FR und ES bei 390 px, 768 px und 1440 px prüfen; übrige Sprachen unverändert lassen.
