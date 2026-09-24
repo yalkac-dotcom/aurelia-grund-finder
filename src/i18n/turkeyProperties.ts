@@ -146,7 +146,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
     trust: {
       title: "Gayrimenkulünüz Türkiye'de. Kişisel muhatabınız Almanya'da.",
       text: "İlk adımı Türkiye'de atmanıza gerek yok. Bize Almanya'dan ulaşabilir, durumunuzu Almanca veya Türkçe olarak bizimle konuşabilirsiniz. Bilgilerinizi inceleyip ardından nasıl devam edilebileceğini sizinle birlikte netleştiriyoruz.",
-      points: ["Almanya'da muhatap", "Almanca ve Türkçe", "Talebinizin ilk incelemesi"],
+      points: ["Almanya'da muhatap", "Almanca ve Türkçe", "Talebinizin ilk değerlendirmesi"],
     },
     form: {
       title: "Türkiye'deki gayrimenkulünüzü bize sunun",
