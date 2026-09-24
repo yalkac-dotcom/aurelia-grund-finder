@@ -24,7 +24,7 @@ const Impressum = () => {
 
   return (
     <Layout>
-      <section className={`relative h-[30vh] min-h-[220px] flex items-end ${isDe ? "bg-primary" : ""}`}>
+      <section className={`relative h-[30vh] min-h-[220px] flex items-end ${isDe ? "" : "bg-primary"}`} style={isDe ? { background: "linear-gradient(to bottom, rgb(16,50,88) 0%, rgb(10,35,68) 100%)" } : undefined}>
         <div className="absolute inset-0">
           {isDe ? (
             <>
