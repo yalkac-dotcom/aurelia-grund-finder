@@ -15,6 +15,34 @@ import { pageSeo } from "@/i18n/pageSeo";
 
 // Situations (4) — Zwangsversteigerung, Finanznot, Erben, Recht (Fotos beibehalten)
 const situationImages = cardImages.ownerSituations;
+const replacementSituationImages = {
+  vacancy: { image: "/cards/pexels-strannik-sk-32992049.jpg", imagePosition: "50% 72%" },
+  legal: { image: "/cards/AdobeStock_536875854.jpeg", imagePosition: "50% 50%" },
+  foreclosure: { image: "/cards/AdobeStock_277630125.jpeg", imagePosition: "50% 52%" },
+  financial: { image: "/cards/AdobeStock_247256556.jpeg", imagePosition: "50% 58%" },
+} as const;
+
+const normalizeSituationTitle = (title: string) =>
+  title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase();
+
+const getReplacementSituationImage = (title: string) => {
+  const normalizedTitle = normalizeSituationTitle(title);
+
+  if (/leerstand|renovierungsbedarf|vacancy|renovation needs|leegstand|renovatiebehoefte|sfitta|ristrutturazione|desocupacion|reforma|vacance|renovation|bosluk|tadilat ihtiyaci/.test(normalizedTitle)) {
+    return replacementSituationImages.vacancy;
+  }
+  if (/rechtliche situation|rechtslage|legal situation|legal position|juridische situatie|situazione giuridica|situacion juridica|situation juridique|hukuki durum/.test(normalizedTitle)) {
+    return replacementSituationImages.legal;
+  }
+  if (/zwangsversteigerung|foreclosure|gedwongen verkoop|asta giudiziaria|subasta forzosa|vente forcee|icra yoluyla satis/.test(normalizedTitle)) {
+    return replacementSituationImages.foreclosure;
+  }
+  if (/finanzielle situation|financial situation|financiele situatie|situazione finanziaria|situacion financiera|situation financiere|mali durum/.test(normalizedTitle)) {
+    return replacementSituationImages.financial;
+  }
+
+  return undefined;
+};
 // Steps (5) — kleine, zurückhaltende Lucide-Icons für die Prozess-Schritte
 const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
 
@@ -52,19 +80,29 @@ const ForOwnerInTrouble = () => {
           <div className="container-premium">
             <SectionHeader title={o.situationsTitle} intro={o.situationsIntro} disableOffset />
             <div className="grid gap-8 md:gap-10 sm:grid-cols-2 max-w-5xl mx-auto">
-              {o.situations.map((s, i) => (
-                <Reveal key={i} delay={i * 0.06}>
-                  <ProofCard
-                    image={language === "de" && i === 0 ? ownerDirectSaleImage : language === "de" && i === 1 ? ownerVacancyImage : situationImages[i % situationImages.length]}
-                    imageAlt={s.title}
-                    index={i}
-                    title={s.title}
-                    text={s.desc}
-                    compact
-                    aiDisclosure="standard"
-                  />
-                </Reveal>
-              ))}
+              {o.situations.map((s, i) => {
+                const replacement = getReplacementSituationImage(s.title);
+                const existingImage = language === "de" && i === 0
+                  ? ownerDirectSaleImage
+                  : language === "de" && i === 1
+                    ? ownerVacancyImage
+                    : situationImages[i % situationImages.length];
+
+                return (
+                  <Reveal key={i} delay={i * 0.06}>
+                    <ProofCard
+                      image={replacement?.image ?? existingImage}
+                      imageAlt={s.title}
+                      imagePosition={replacement?.imagePosition}
+                      index={i}
+                      title={s.title}
+                      text={s.desc}
+                      compact
+                      aiDisclosure={replacement ? undefined : "standard"}
+                    />
+                  </Reveal>
+                );
+              })}
             </div>
           </div>
         </section>
