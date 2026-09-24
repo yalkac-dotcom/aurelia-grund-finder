@@ -7,6 +7,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
+import datenschutzHeader from "@/assets/datenschutz-header.jpg";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
@@ -20,22 +21,44 @@ const Privacy = () => {
   usePageSeo(pageSeo[language].privacy.title, pageSeo[language].privacy.description);
   const p = t.privacy;
 
+  const isDe = language === "de";
+
   return (
     <Layout>
-      <section className="relative h-[30vh] min-h-[220px] flex items-end">
-        <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={p.title} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
-          <AiImageDisclosure type="illustrative" />
-        </div>
-        <div className="relative container pb-8 md:pb-10">
-          <Reveal>
-            <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1]">
-              {p.title}
-            </h1>
-          </Reveal>
-        </div>
-      </section>
+      {isDe ? (
+        <section className="relative w-full overflow-hidden h-[240px] md:h-[380px]" style={{ background: "rgb(10,32,58)" }}>
+          <img
+            src={datenschutzHeader}
+            alt="Data Protection – DSGVO"
+            width={1920}
+            height={720}
+            className="absolute inset-0 h-full w-full object-cover object-[68%_center] md:object-center"
+          />
+          <span
+            aria-hidden="true"
+            style={{ color: "#F1DBA5" }}
+            className="absolute font-heading font-semibold leading-none select-none text-[1.2rem] md:text-[1.9rem] [text-shadow:0_1px_6px_rgba(6,20,38,0.85),0_0_2px_rgba(6,20,38,0.9)] left-[51%] top-[31%] md:left-[57.5%] md:top-[30%]"
+          >
+            DSGVO
+          </span>
+          <h1 className="sr-only">{p.title}</h1>
+        </section>
+      ) : (
+        <section className="relative h-[30vh] min-h-[220px] flex items-end">
+          <div className="absolute inset-0">
+            <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={p.title} className="w-full h-full object-cover" priority />
+            <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
+            <AiImageDisclosure type="illustrative" />
+          </div>
+          <div className="relative container pb-8 md:pb-10">
+            <Reveal>
+              <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1]">
+                {p.title}
+              </h1>
+            </Reveal>
+          </div>
+        </section>
+      )}
 
       <section className="py-6 md:py-10">
         <div className="container max-w-3xl">
