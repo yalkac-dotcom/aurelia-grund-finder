@@ -6,7 +6,6 @@ import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
-import { heroSets } from "@/assets/heroImages";
 import { cardImages, ownerDirectSaleImage, ownerVacancyImage } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { MessageSquare, Compass, Scale, FileText, Handshake } from "lucide-react";
@@ -19,6 +18,13 @@ const situationImages = cardImages.ownerSituations;
 // Steps (5) — kleine, zurückhaltende Lucide-Icons für die Prozess-Schritte
 const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
 
+// Echter Adobe-Stock-Hero (Datei-Nr. 368296755) — ausschließlich Eigentümer-Hero
+const ownerHeroImage = {
+  src: "/heroes/AdobeStock_368296755.jpeg",
+  srcSet: "/heroes/AdobeStock_368296755.jpeg 2048w",
+  sizes: "(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px",
+};
+
 const ForOwnerInTrouble = () => {
   const { t, language } = useLanguage();
   usePageSeo(pageSeo[language].owners.title, pageSeo[language].owners.description);
@@ -28,15 +34,16 @@ const ForOwnerInTrouble = () => {
   return (
     <Layout>
       <PageHero
-        image={heroSets.eigentuemer}
+        image={ownerHeroImage}
         imageAlt={o.heroImageAlt}
+        imagePosition="50% 62%"
+        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.72) 0%, hsl(var(--primary) / 0.52) 35%, hsl(var(--primary) / 0.16) 68%, hsl(var(--primary) / 0.06) 100%)"
         kicker={o.heroKicker}
         title={o.heroTitle}
         description={o.heroDescription}
         primaryCta={{ label: o.heroPrimaryCta, to: "/immobilie-anbieten?land=deutschland" }}
         secondaryCta={{ label: o.heroSecondaryCta, href: "#ablauf" }}
         trustLine={o.heroTrustLine}
-        aiDisclosure="standard"
       />
 
       <div className="page-shell">
