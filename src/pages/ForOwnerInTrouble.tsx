@@ -6,7 +6,6 @@ import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
 import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
-import { heroSets } from "@/assets/heroImages";
 import { cardImages, ownerDirectSaleImage, ownerVacancyImage } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { MessageSquare, Compass, Scale, FileText, Handshake } from "lucide-react";
@@ -18,6 +17,13 @@ import { pageSeo } from "@/i18n/pageSeo";
 const situationImages = cardImages.ownerSituations;
 // Steps (5) — kleine, zurückhaltende Lucide-Icons für die Prozess-Schritte
 const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
+
+// Echter Adobe-Stock-Hero (Datei-Nr. 368296755) — ausschließlich Eigentümer-Hero
+const ownerHeroImage = {
+  src: "/heroes/AdobeStock_368296755.jpeg",
+  srcSet: "/heroes/AdobeStock_368296755.jpeg 2048w",
+  sizes: heroSizes,
+};
 
 const ForOwnerInTrouble = () => {
   const { t, language } = useLanguage();
