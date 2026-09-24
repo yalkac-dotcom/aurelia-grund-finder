@@ -7,9 +7,9 @@ export const turkeyPageDe: Partial<Record<Language, DeepPartial<Translations>>> 
   de: {
     turkeyProperties: {
       hero: {
-        title: "Türkei-Immobilien bequem und persönlich von Deutschland aus verkaufen.",
+        title: "Ihre Türkei-Immobilie bequem und persönlich von Deutschland aus verkaufen.",
         subtitle:
-          "Sie besitzen eine Immobilie in der Türkei und leben in Deutschland oder einem anderen europäischen Land? Aurelia Grundbesitz ist Ihr Ansprechpartner in Deutschland und begleitet Sie bei der Vorbereitung und Koordination des Verkaufs – transparent, vertraulich und mit klaren Ansprechpartnern.",
+          "Sie besitzen eine Wohnung, ein Haus oder ein Grundstück in der Türkei und leben in Deutschland oder einem anderen europäischen Land? Aurelia Grundbesitz ist Ihr Ansprechpartner in Deutschland und begleitet Sie bei der Vorbereitung und Koordination des Verkaufs – transparent, vertraulich und mit klaren Ansprechpartnern.",
         primaryCta: "Kostenfreie Ersteinschätzung anfragen",
         secondaryCta: "Ablauf & Vorteile kennenlernen",
       },
@@ -29,7 +29,7 @@ export const turkeyPageDe: Partial<Record<Language, DeepPartial<Translations>>> 
           text: "Gerade aus der Ferne ist es nicht immer einfach, den örtlichen Markt, den Zustand einer Immobilie und die einzelnen Schritte einer Veräußerung einzuschätzen.\n\nWir betrachten Lage, Zustand und die vorhandenen Unterlagen und besprechen mit Ihnen eine realistische Vorgehensweise. Die einzelnen Schritte des Verkaufs und der Zahlungsabwicklung werden vorab transparent abgestimmt. Je nach Fall kann die Abwicklung auch so strukturiert werden, dass Zahlungen und Abstimmungen über Deutschland erfolgen.",
         },
       ],
-      processTitle: "In vier Schritten zur möglichen Veräußerung.",
+      processTitle: "In vier Schritten zum Verkauf Ihrer Immobilie in der Türkei.",
       process: [
         { title: "Erstkontakt und Objektdaten", text: "Teilen Sie uns zunächst die wichtigsten Eckdaten Ihrer Immobilie mit, zum Beispiel Ort, Immobilienart und aktuellen Zustand. Für das erste Gespräch benötigen Sie noch keine vollständigen Unterlagen." },
         { title: "Prüfung und erste Einschätzung", text: "Wir prüfen Ihre Angaben und vorhandenen Unterlagen und verschaffen uns einen Überblick über die Immobilie und die Ausgangssituation. Anschließend erhalten Sie eine nachvollziehbare Rückmeldung." },
