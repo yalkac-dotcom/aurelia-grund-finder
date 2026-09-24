@@ -17,6 +17,7 @@ import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
+import homeHeroStock from "@/assets/stock/AdobeStock_141562359.jpeg.asset.json";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
 // Reihenfolge in i18n bleibt führend; jeder Eintrag bekommt zusätzlich einen
@@ -36,6 +37,12 @@ const quoteMarks = {
   fr: ["« ", " »"],
   tr: ["“", "”"],
 } as const;
+
+const homeHeroImage = {
+  src: homeHeroStock.url,
+  srcSet: `${homeHeroStock.url} 1920w`,
+  sizes: heroSets.premium.sizes,
+};
 
 const HomePage = () => {
   const { t, language } = useLanguage();
@@ -75,7 +82,7 @@ const HomePage = () => {
   return (
     <Layout>
       <PageHero
-        image={heroSets.premium}
+        image={homeHeroImage}
         imageAlt={extras.accessibility.homeHeroAlt}
         kicker={t.home.heroKicker}
         title={t.home.heroTitle}
@@ -83,10 +90,9 @@ const HomePage = () => {
         primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/immobilie-anbieten" }}
         secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#ablauf" } : undefined}
         trustLine={t.home.heroTrustLine}
-        imagePosition="50% center"
+        imagePosition="55% center"
         overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.90) 0%, hsl(var(--primary) / 0.80) 32%, hsl(var(--primary) / 0.42) 60%, hsl(var(--primary) / 0.18) 100%)"
         mobileHomeFlow
-        aiDisclosure="standard"
       />
 
       <div className="page-shell">
