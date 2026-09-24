@@ -110,3 +110,9 @@
 - [ ] „Preise und Konditionen“ in sieben Sprachen mit Adobe Stock 461475949 ersetzen
 - [ ] KI-Kennzeichnung nur an dieser Karte entfernen und Bildnachweise ergänzen
 - [ ] Zuschnitt, Bildladung und unveränderte Unterlagen-Karte auf Desktop und Mobil prüfen
+
+# Käufer-Seite: Unterlagen-Karte
+
+- [ ] „Unterlagen zum Objekt“ in sieben Sprachen mit Adobe Stock 541665662 ersetzen
+- [ ] KI-Kennzeichnung nur an dieser Karte entfernen und Bildnachweise ergänzen
+- [ ] Beide neuen Karten sowie den gesamten Käufer-Bildstand auf Desktop und Mobil prüfen
