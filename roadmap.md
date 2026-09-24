@@ -123,7 +123,7 @@
 - [x] KI-Kennzeichnung nur am Partner-Hero entfernen und Bildnachweise ergänzen
 - [x] Desktop, Mobil, sieben Sprachen und Typcheck prüfen
 ## Current-site completion audit
-- [ ] Inventory all rendered images and reconcile seven-language credits.
-- [ ] Verify and minimally correct existing image crops and required AI labels at 390, 768, and 1440 px.
-- [ ] Check every route for image failures, 404s, overlaps, clipped controls/text, navigation, and language switching.
-- [ ] Run targeted tests and typecheck; report release readiness and any remaining concrete issue.
+- [x] Inventory all rendered images and reconcile seven-language credits.
+- [x] Verify and minimally correct existing image crops and required AI labels at 390, 768, and 1440 px.
+- [x] Check every route for image failures, 404s, overlaps, clipped controls/text, navigation, and language switching.
+- [x] Run targeted tests and typecheck; report release readiness and any remaining concrete issue.
