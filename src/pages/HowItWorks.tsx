@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import { aureliaCard } from "@/lib/cardStyle";
 import HowItWorksHero from "@/components/sections/HowItWorksHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 
@@ -50,7 +51,7 @@ const HowItWorks = () => {
             <div className="grid gap-8 md:gap-10 md:grid-cols-3">
               {w.segments.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <div className="border-l border-accent/40 pl-6">
+                  <div className={language === "de" ? `h-full p-6 md:p-7 ${aureliaCard}` : "border-l border-accent/40 pl-6"}>
                     <h3 className="text-[1.05rem] font-heading font-semibold text-primary leading-snug">
                       {s.title}
                     </h3>

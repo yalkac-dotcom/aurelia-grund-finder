@@ -352,7 +352,7 @@ const TurkeyProperties = () => {
             <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {page.services.map((service, index) => (
                 <Reveal key={service.title} delay={index * 0.04}>
-                  <ProofCard index={index} title={service.title} text={service.text} compact />
+                  <ProofCard index={index} title={service.title} text={service.text} compact frame={language === "de"} />
                 </Reveal>
               ))}
             </div>
