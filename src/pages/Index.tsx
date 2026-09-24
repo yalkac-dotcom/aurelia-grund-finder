@@ -46,7 +46,10 @@ const homeHeroImage = {
 
 const HomePage = () => {
   const { t, language } = useLanguage();
-  usePageSeo(`${t.home.heroTitle} | Aurelia Grundbesitz`, t.home.heroDescription);
+  usePageSeo(
+    language === "de" ? "Immobilien verkaufen in DE & TR | Aurelia Grundbesitz" : `${t.home.heroTitle} | Aurelia Grundbesitz`,
+    language === "de" ? "Immobilie direkt und vertraulich in Deutschland oder der Türkei verkaufen. Transparente Lösungen auch bei besonderen Situationen. Jetzt kostenfrei anfragen." : t.home.heroDescription,
+  );
   const extras = pageExtras[language];
 
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
