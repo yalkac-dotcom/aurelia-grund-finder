@@ -21,22 +21,43 @@ const Privacy = () => {
   usePageSeo(pageSeo[language].privacy.title, pageSeo[language].privacy.description);
   const p = t.privacy;
 
+  const isDe = language === "de";
+
   return (
     <Layout>
-      <section className="relative h-[30vh] min-h-[220px] flex items-end">
-        <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={p.title} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
-          <AiImageDisclosure type="illustrative" />
-        </div>
-        <div className="relative container pb-8 md:pb-10">
-          <Reveal>
-            <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1]">
-              {p.title}
-            </h1>
-          </Reveal>
-        </div>
-      </section>
+      {isDe ? (
+        <section className="relative w-full overflow-hidden h-[240px] md:h-[380px]" style={{ background: "rgb(10,32,58)" }}>
+          <img
+            src={datenschutzHeader.url}
+            alt="Data Protection – DSGVO"
+            width={1920}
+            height={720}
+            className="absolute inset-0 h-full w-full object-cover object-[68%_center] md:object-center"
+          />
+          <span
+            aria-hidden="true"
+            className="absolute font-heading font-semibold text-[#F1DBA5] leading-none select-none text-[1.35rem] md:text-[2.1rem] [text-shadow:0_1px_6px_rgba(6,20,38,0.85),0_0_2px_rgba(6,20,38,0.9)] left-[41.5%] top-[39%] md:left-[43%] md:top-[37%]"
+          >
+            DSGVO
+          </span>
+          <h1 className="sr-only">{p.title}</h1>
+        </section>
+      ) : (
+        <section className="relative h-[30vh] min-h-[220px] flex items-end">
+          <div className="absolute inset-0">
+            <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={p.title} className="w-full h-full object-cover" priority />
+            <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
+            <AiImageDisclosure type="illustrative" />
+          </div>
+          <div className="relative container pb-8 md:pb-10">
+            <Reveal>
+              <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1]">
+                {p.title}
+              </h1>
+            </Reveal>
+          </div>
+        </section>
+      )}
 
       <section className="py-6 md:py-10">
         <div className="container max-w-3xl">
