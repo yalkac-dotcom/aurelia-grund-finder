@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { prefetchHandlers } from "@/lib/heroPrefetch";
 import { Menu, X } from "lucide-react";
 import logoImg from "@/assets/aurelia-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -81,7 +82,7 @@ const Header = () => {
   return (
     <header className={headerClass}>
       <div className="mx-auto flex h-16 w-full max-w-[1600px] items-center justify-between px-6 md:h-20 xl:px-8">
-        <Link to="/" className="flex shrink-0 items-center">
+        <Link to="/" {...prefetchHandlers("/")} className="flex shrink-0 items-center">
           <img
             src={logoImg}
             alt="Aurelia Grundbesitz GmbH"
@@ -105,6 +106,7 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
+                  {...prefetchHandlers(item.path)}
                   className={`whitespace-nowrap text-[12px] leading-none tracking-wide transition-colors duration-300 hover:text-accent 2xl:text-sm ${
                     isActive(item)
                       ? "text-primary font-medium border-b-2 border-accent pb-0.5"
@@ -176,6 +178,7 @@ const Header = () => {
                     <Link
                       key={item.path}
                       to={item.path}
+                      {...prefetchHandlers(item.path)}
                       onClick={() => setMobileOpen(false)}
                       className={`block py-2.5 text-[11px] tracking-[0.13em] uppercase transition-colors hover:text-accent ${
                         isActive(item) ? "text-accent font-medium" : "text-white/80"
