@@ -13,6 +13,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import { aureliaCard } from "@/lib/cardStyle";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
@@ -94,6 +95,7 @@ const ForBuyers = () => {
                       title={f.title}
                       text={f.desc}
                       compact
+                      frame={language === "de"}
                       aiDisclosure={replacement ? undefined : "standard"}
                     />
                   </Reveal>
@@ -162,7 +164,7 @@ const ForBuyers = () => {
                 const Icon = stepIcons[i % stepIcons.length];
                 return (
                   <Reveal key={i} delay={i * 0.06}>
-                    <div>
+                    <div className={language === "de" ? `h-full p-6 md:p-7 ${aureliaCard}` : undefined}>
                       <Icon size={16} strokeWidth={1.5} className="text-accent/80" aria-hidden="true" />
                       <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                         {s.title}

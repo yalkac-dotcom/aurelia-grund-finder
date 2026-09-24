@@ -2,6 +2,7 @@ import { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import AiImageDisclosure, { AiDisclosureType } from "@/components/AiImageDisclosure";
+import { aureliaCard } from "@/lib/cardStyle";
 
 interface ProofCardProps {
   icon?: LucideIcon;
@@ -18,6 +19,8 @@ interface ProofCardProps {
   /** Editorial / filigree variant: smaller image, lighter shadow, semibold heading, tighter padding. */
   compact?: boolean;
   aiDisclosure?: AiDisclosureType;
+  /** Einheitlicher Aurelia-Kartenrahmen (FAQ-Stil). */
+  frame?: boolean;
 }
 
 const ProofCard = ({
@@ -33,6 +36,7 @@ const ProofCard = ({
   cta,
   compact = false,
   aiDisclosure,
+  frame = false,
 }: ProofCardProps) => {
   const id = `proof-${index}-title`;
 
@@ -108,7 +112,9 @@ const ProofCard = ({
     </div>
   );
 
-  const cardClass = compact
+  const cardClass = frame
+    ? `group h-full overflow-hidden ${aureliaCard}`
+    : compact
     ? "group h-full overflow-hidden bg-card border border-border/50 rounded-md transition-colors duration-300 hover:border-accent/40"
     : "proof-card group h-full overflow-hidden";
 
