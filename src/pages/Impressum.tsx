@@ -28,7 +28,7 @@ const Impressum = () => {
         <div className="absolute inset-0">
           {isDe ? (
             <>
-              <OptimizedImg src={impressumHero} alt={imp.title} className="w-full h-full object-cover max-md:object-contain [filter:hue-rotate(35deg)_saturate(0.5)_brightness(0.88)]" priority />
+              <OptimizedImg src={impressumHero} alt={imp.title} tone="none" style={{ filter: "hue-rotate(35deg) saturate(0.5) brightness(0.88)" }} className="w-full h-full object-cover max-md:object-contain" priority />
               <div
                 className="absolute inset-0"
                 style={{
