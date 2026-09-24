@@ -96,3 +96,11 @@
 - [x] Transparenzhinweis auf den Bildnachweisen in sieben Sprachen ergänzen
 - [x] Ausgeschlossene Grafiken und nicht genannte Bilder unverändert lassen
 - [ ] Alle sieben Sprachen bei 390 px, 768 px und 1440 px gerendert prüfen
+
+# Käufer-Seite: drei Stockfotos
+
+- [x] Käufer-Hero durch Adobe Stock 302581671 ersetzen und lokal zuschneiden
+- [x] Nur die Karten „Ansprechpartner“ und „Kaufabwicklung“ semantisch in sieben Sprachen ersetzen
+- [x] KI-Kennzeichnung ausschließlich an den drei ersetzten Bildplätzen entfernen
+- [x] Drei Käufer-Bildnachweise in sieben Sprachen ergänzen
+- [x] Käufer-Seite bei 1440 px und 390 px sowie per Typcheck prüfen

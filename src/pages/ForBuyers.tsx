@@ -16,6 +16,30 @@ import { pageSeo } from "@/i18n/pageSeo";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
+const buyersHeroImage = {
+  src: "/heroes/AdobeStock_302581671.jpeg",
+  srcSet: "/heroes/AdobeStock_302581671.jpeg 2048w",
+  sizes: heroSets.buyers.sizes,
+};
+
+const replacementFeatureImages = {
+  contact: { image: "/cards/AdobeStock_356467514.jpeg", imagePosition: "50% 45%" },
+  purchase: { image: "/cards/AdobeStock_586889892.jpeg", imagePosition: "50% 58%" },
+} as const;
+
+const normalizeFeatureTitle = (title: string) =>
+  title.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase();
+
+const getReplacementFeatureImage = (title: string) => {
+  const normalizedTitle = normalizeFeatureTitle(title);
+  if (/ansprechpartner|point of contact|muhatab|aanspreekpunt|referente|interlocutor|interlocuteur/.test(normalizedTitle)) {
+    return replacementFeatureImages.contact;
+  }
+  if (/kaufabwicklung|purchase process|satın alma islemi|koopafwikkeling|svolgimento dell'acquisto|tramitacion de la compra|deroulement de l'achat/.test(normalizedTitle)) {
+    return replacementFeatureImages.purchase;
+  }
+  return undefined;
+};
 // Steps (4) — themenbezogene, zurückhaltende Lucide-Icons:
 // Erstkontakt (Gespräch), Besichtigung (Auge), Verhandlung (Handshake), Beurkundung & Übergabe (Urkunde)
 const stepIcons = [MessageSquare, Eye, Handshake, FileSignature];
@@ -29,7 +53,7 @@ const ForBuyers = () => {
   return (
     <Layout>
       <PageHero
-        image={heroSets.buyers}
+        image={buyersHeroImage}
         imageAlt={b.heroImageAlt}
         kicker={b.heroKicker}
         title={b.heroTitle}
@@ -38,7 +62,8 @@ const ForBuyers = () => {
         secondaryCta={{ label: b.heroSecondaryCta, href: "#ablauf" }}
         trustLine={b.heroTrustLine}
         size="compact"
-        aiDisclosure="illustrative"
+        imagePosition="50% 58%"
+        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.72) 0%, hsl(var(--primary) / 0.58) 36%, hsl(var(--primary) / 0.20) 68%, hsl(var(--primary) / 0.06) 100%)"
       />
 
       <div className="page-shell">
@@ -47,19 +72,23 @@ const ForBuyers = () => {
           <div className="container-premium">
             <SectionHeader title={b.featuresTitle} intro={b.featuresIntro} disableOffset />
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
-              {b.features.map((f, i) => (
-                <Reveal key={i} delay={i * 0.06}>
-                  <ProofCard
-                    image={featureImages[i % featureImages.length]}
-                    imageAlt={f.title}
-                    index={i}
-                    title={f.title}
-                    text={f.desc}
-                    compact
-                    aiDisclosure="standard"
-                  />
-                </Reveal>
-              ))}
+              {b.features.map((f, i) => {
+                const replacement = getReplacementFeatureImage(f.title);
+                return (
+                  <Reveal key={i} delay={i * 0.06}>
+                    <ProofCard
+                      image={replacement?.image ?? featureImages[i % featureImages.length]}
+                      imageAlt={f.title}
+                      imagePosition={replacement?.imagePosition}
+                      index={i}
+                      title={f.title}
+                      text={f.desc}
+                      compact
+                      aiDisclosure={replacement ? undefined : "standard"}
+                    />
+                  </Reveal>
+                );
+              })}
             </div>
           </div>
         </section>
