@@ -88,7 +88,7 @@ const HomePage = () => {
         title={t.home.heroTitle}
         description={t.home.heroIntro ?? t.home.heroDescription}
         primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/immobilie-anbieten" }}
-        secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#bereiche" } : undefined}
+        secondaryCta={t.home.heroSecondaryCta ? (language === "de" ? { label: t.home.heroSecondaryCta, href: "/wie-es-funktioniert" } : { label: t.home.heroSecondaryCta, href: "#bereiche" }) : undefined}
         trustLine={t.home.heroTrustLine}
         imagePosition="55% 70%"
         overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.46) 0%, hsl(var(--primary) / 0.32) 32%, hsl(var(--primary) / 0.10) 60%, hsl(var(--primary) / 0.01) 100%)"
