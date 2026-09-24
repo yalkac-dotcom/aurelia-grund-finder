@@ -38,9 +38,9 @@ const Footer = () => {
 
           {/* Col 2 — Navigation */}
           <div>
-            <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/60 mb-4">
+            <h2 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/60 mb-4">
               {t.footer.navigation}
-            </h4>
+            </h2>
             <ul className="space-y-2">
               {t.footer.navItems.map((item) => (
                 <li key={item.path}>
@@ -57,9 +57,9 @@ const Footer = () => {
 
           {/* Col 3 — Informationen + Legal */}
           <div>
-            <h4 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/60 mb-4">
+            <h2 className="text-[10px] md:text-xs font-sans uppercase tracking-[0.2em] text-white/60 mb-4">
               {t.footer.information}
-            </h4>
+            </h2>
             <div className="flex flex-col items-start gap-1.5 text-[11px] md:text-xs leading-[1.7] mb-5">
               <p className="text-white/85 font-medium">Aurelia Grundbesitz GmbH</p>
               <p className="text-white/65">Grevenbroicher Weg 2</p>

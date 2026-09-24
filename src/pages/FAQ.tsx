@@ -55,9 +55,9 @@ const FAQ = () => {
                       aria-expanded={isOpen}
                     >
                       <div className="flex items-start justify-between gap-4">
-                        <h3 className="text-[0.95rem] md:text-[1rem] font-heading font-semibold text-foreground">
+                        <h2 className="text-[0.95rem] md:text-[1rem] font-heading font-semibold text-foreground">
                           {item.q}
-                        </h3>
+                        </h2>
                         <ChevronDown
                           size={20}
                           className={`text-accent transition-transform duration-300 shrink-0 mt-0.5 ${isOpen ? "rotate-180" : ""}`}

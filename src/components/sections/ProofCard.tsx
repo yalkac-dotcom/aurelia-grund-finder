@@ -63,12 +63,12 @@ const ProofCard = ({
       ) : iconImage ? (
         <span
           className="proof-card__icon proof-card__icon--image"
-          aria-hidden={iconAlt ? undefined : "true"}
+          aria-hidden="true"
           style={{ ["--icon-float-delay" as string]: `${(index % 6) * 0.45}s` }}
         >
           <img
             src={iconImage}
-            alt={iconAlt ?? ""}
+            alt=""
             loading="lazy"
             width={128}
             height={128}
@@ -81,7 +81,7 @@ const ProofCard = ({
 
   const body = (
     <div className={compact ? "px-5 pt-4 pb-5 md:px-6 md:pt-5 md:pb-6" : "proof-card__body"}>
-      <h4
+      <h3
         id={id}
         className={
           compact
@@ -90,7 +90,7 @@ const ProofCard = ({
         }
       >
         {title}
-      </h4>
+      </h3>
       <p
         className={
           compact

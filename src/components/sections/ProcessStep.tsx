@@ -38,12 +38,12 @@ const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, ima
               {iconImage ? (
                 <span
                   className="proof-card__icon proof-card__icon--image"
-                  aria-hidden={iconAlt ? undefined : "true"}
+                  aria-hidden="true"
                   style={{ ["--icon-float-delay" as string]: `${(index % 6) * 0.45}s` }}
                 >
                   <img
                     src={iconImage}
-                    alt={iconAlt ?? ""}
+                    alt=""
                     loading="lazy"
                     width={128}
                     height={128}

@@ -143,9 +143,9 @@ const InvestorGlossar = () => {
                   className="scroll-mt-[8.5rem] md:scroll-mt-[10rem]"
                   ref={refCallback(letter)}
                 >
-                  <h3 className="text-base font-heading font-semibold text-accent mb-3">
+                  <h2 className="text-base font-heading font-semibold text-accent mb-3">
                     {letter}
-                  </h3>
+                  </h2>
                   <div className="space-y-2.5">
                     {items.map((item) => (
                       <div
