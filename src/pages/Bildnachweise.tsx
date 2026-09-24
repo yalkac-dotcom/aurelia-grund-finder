@@ -19,8 +19,8 @@ const Bildnachweise = () => {
 
   return (
     <Layout>
-      <section className="relative h-[32vh] min-h-[220px] md:h-[38vh] md:min-h-[300px]">
-        <img src={headerImg} alt={t.footer.imageCredits} className="absolute inset-0 w-full h-full object-cover" />
+      <section className="relative bg-[hsl(218_45%_10%)]">
+        <img src={headerImg} alt={t.footer.imageCredits} className="w-full h-auto max-h-[38vh] object-cover md:object-cover object-contain" />
         <AiImageDisclosure type="illustrative" />
         <h1 className="sr-only">{t.footer.imageCredits}</h1>
       </section>
