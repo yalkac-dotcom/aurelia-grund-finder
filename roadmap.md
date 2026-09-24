@@ -104,3 +104,9 @@
 - [x] KI-Kennzeichnung ausschließlich an den drei ersetzten Bildplätzen entfernen
 - [x] Drei Käufer-Bildnachweise in sieben Sprachen ergänzen
 - [x] Käufer-Seite bei 1440 px und 390 px sowie per Typcheck prüfen
+
+# Käufer-Seite: Preiskarte
+
+- [ ] „Preise und Konditionen“ in sieben Sprachen mit Adobe Stock 461475949 ersetzen
+- [ ] KI-Kennzeichnung nur an dieser Karte entfernen und Bildnachweise ergänzen
+- [ ] Zuschnitt, Bildladung und unveränderte Unterlagen-Karte auf Desktop und Mobil prüfen
