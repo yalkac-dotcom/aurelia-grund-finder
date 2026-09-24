@@ -24,12 +24,12 @@ const Impressum = () => {
       <section className="relative h-[30vh] min-h-[220px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/70 via-[hsl(218 46% 14%)]/25 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/90 via-[hsl(218 46% 14%)]/55 to-[hsl(218 46% 14%)]/25" />
           <AiImageDisclosure type="illustrative" />
         </div>
         <div className="relative container pb-8 md:pb-10">
           <Reveal>
-            <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1]">
+            <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1] [text-shadow:0_1px_3px_hsl(218_46%_10%/0.55)]">
               {imp.title}
             </h1>
           </Reveal>
