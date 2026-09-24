@@ -163,7 +163,7 @@ const ForBuyers = () => {
                 const Icon = stepIcons[i % stepIcons.length];
                 return (
                   <Reveal key={i} delay={i * 0.06}>
-                    <div>
+                    <div className={language === "de" ? `h-full p-6 md:p-7 ${aureliaCard}` : undefined}>
                       <Icon size={16} strokeWidth={1.5} className="text-accent/80" aria-hidden="true" />
                       <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                         {s.title}
