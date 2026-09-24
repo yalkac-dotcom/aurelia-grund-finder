@@ -15,7 +15,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
         { title: "Verkauf in der Türkei – bequem aus Deutschland geregelt", desc: "Sie leben in Deutschland oder Europa und besitzen eine Immobilie oder Grundbesitz in der Türkei? Wir begleiten Sie von Deutschland aus und koordinieren die notwendigen Schritte gemeinsam mit unseren Ansprechpartnern in der Türkei. So haben Sie während des gesamten Prozesses einen festen Ansprechpartner.", cta: "Immobilie in der Türkei anbieten" },
       ],
       trustTitle: "Transparenz, Diskretion und persönliche Begleitung.",
-      trustText: "Ein Immobilienverkauf ist Vertrauenssache. Egal ob Sie eine Immobilie in Deutschland direkt an uns veräußern möchten oder Unterstützung bei einer Immobilie in der Türkei benötigen: Wir legen Wert auf eine verständliche Abstimmung und eine Zusammenarbeit auf Augenhöhe.",
+      trustText: "Ein Immobilienverkauf ist Vertrauenssache. Egal ob Sie eine Immobilie in Deutschland direkt an uns veräußern möchten oder Unterstützung bei einer Immobilie in der Türkei benötigen: Wir legen Wert auf eine verständliche Abstimmung und eine Zusammenarbeit auf Augenhöhe. Persönliche und objektbezogene Angaben behandeln wir vertraulich.",
       trustClaimTitle: "", trustClaimText: "",
       proofPoints: [
         { title: "Direkter Ansprechpartner", text: "Kein anonymes Portal, sondern persönliche Betreuung aus Düsseldorf." },
