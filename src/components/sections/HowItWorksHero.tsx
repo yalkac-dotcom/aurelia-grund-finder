@@ -52,16 +52,32 @@ const HowItWorksHero = ({
         </div>
       ))}
     </div>
-    {/* Local scrim only behind the text: mobile full-width soft, desktop left-limited */}
-    <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-primary/85 via-primary/70 to-primary/30 md:hidden" />
-    <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-0 -z-10 hidden w-[58%] bg-gradient-to-r from-primary/85 via-primary/60 to-transparent md:block" />
+    {/* Soft, text-local navy focus: no full-photo darkening, fades to transparent at the edges */}
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 -z-10 md:hidden"
+      style={{ background: "radial-gradient(ellipse 115% 82% at 50% 50%, hsl(var(--primary) / 0.85) 0%, hsl(var(--primary) / 0.62) 60%, hsl(var(--primary) / 0.3) 85%, hsl(var(--primary) / 0) 100%)" }}
+    />
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 -z-10 hidden md:block"
+      style={{ background: "radial-gradient(ellipse 42% 78% at 50% 50%, hsl(var(--primary) / 0.8) 0%, hsl(var(--primary) / 0.52) 55%, hsl(var(--primary) / 0) 100%)" }}
+    />
 
-    <div className="page-frame-hero flex min-h-[inherit] items-center pb-12 pt-28 md:pb-16 md:pt-32">
-      <div className="max-w-2xl">
-        <p className="hero-kicker">{kicker}</p>
-        <h1 className="hero-title">{title}</h1>
-        <p className="hero-description max-w-xl whitespace-pre-line">{description}</p>
-        <div className="mt-7 flex flex-row flex-wrap items-center gap-3 sm:gap-4">
+    <div className="page-frame-hero flex min-h-[inherit] items-center justify-center pb-12 pt-28 md:pb-16 md:pt-32">
+      <div className="max-w-2xl text-center">
+        <p className="hero-kicker" style={{ color: "hsl(var(--gold-light) / 0.95)", borderColor: "hsl(var(--gold) / 0.35)" }}>{kicker}</p>
+        <h1
+          className="hero-title"
+          style={{
+            color: "hsl(var(--gold))",
+            textShadow: "0 1px 2px hsl(var(--primary) / 0.8), 0 0 20px hsl(var(--primary) / 0.5)",
+          }}
+        >
+          {title}
+        </h1>
+        <p className="hero-description mx-auto whitespace-pre-line" style={{ textShadow: "0 1px 3px hsl(var(--primary) / 0.7)" }}>{description}</p>
+        <div className="mt-7 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
           <Link
             to="/kontakt"
             className="btn-primary"
@@ -78,7 +94,7 @@ const HowItWorksHero = ({
             {secondaryCta}
           </a>
         </div>
-        <p className="mt-3 text-[0.78rem] text-primary-foreground/85">{trustLine}</p>
+        <p className="mt-3 text-[0.78rem] text-primary-foreground/85" style={{ textShadow: "0 1px 3px hsl(var(--primary) / 0.7)" }}>{trustLine}</p>
       </div>
     </div>
   </section>
