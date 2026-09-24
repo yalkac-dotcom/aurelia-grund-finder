@@ -135,7 +135,7 @@
 
 # Headerbilder: reine Ladeoptimierung
 
-- [ ] Sichtbare Headerbilder und Browser-Ladeverhalten inventarisieren.
-- [ ] Fehlende responsive Varianten ausschließlich aus vorhandenen Originalen erzeugen und korrekt ausliefern.
-- [ ] Startseiten-Preload auf die responsive Quelle abstimmen.
-- [ ] Mobil/Desktop, Bildanfragen, Darstellung und Typcheck prüfen.
+- [x] Sichtbare Headerbilder und Browser-Ladeverhalten inventarisieren.
+- [x] Fehlende responsive Varianten ausschließlich aus vorhandenen Originalen erzeugen und korrekt ausliefern.
+- [x] Startseiten-Preload auf die responsive Quelle abstimmen.
+- [x] Mobil/Desktop, Bildanfragen, Darstellung und Typcheck prüfen.
