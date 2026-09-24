@@ -23,7 +23,9 @@ const buyersHeroImage = {
 };
 
 const replacementFeatureImages = {
+  pricing: { image: "/cards/AdobeStock_461475949.jpeg", imagePosition: "50% 53%" },
   contact: { image: "/cards/AdobeStock_356467514.jpeg", imagePosition: "50% 45%" },
+  documents: { image: "/cards/AdobeStock_541665662.jpeg", imagePosition: "50% 62%" },
   purchase: { image: "/cards/AdobeStock_586889892.jpeg", imagePosition: "50% 58%" },
 } as const;
 
@@ -32,8 +34,14 @@ const normalizeFeatureTitle = (title: string) =>
 
 const getReplacementFeatureImage = (title: string) => {
   const normalizedTitle = normalizeFeatureTitle(title);
+  if (/preis und konditionen|price and terms|fiyat ve kosullar|prijs en voorwaarden|prezzo e condizioni|precio y condiciones|prix et conditions/.test(normalizedTitle)) {
+    return replacementFeatureImages.pricing;
+  }
   if (/ansprechpartner|point of contact|muhatab|aanspreekpunt|referente|interlocutor|interlocuteur/.test(normalizedTitle)) {
     return replacementFeatureImages.contact;
+  }
+  if (/unterlagen zum objekt|property documents|nesneye dair belgeler|documenten over het object|documentazione sull'immobile|documentacion del inmueble|documents relatifs au bien/.test(normalizedTitle)) {
+    return replacementFeatureImages.documents;
   }
   if (/kaufabwicklung|purchase process|satın alma islemi|koopafwikkeling|svolgimento dell'acquisto|tramitacion de la compra|deroulement de l'achat/.test(normalizedTitle)) {
     return replacementFeatureImages.purchase;
