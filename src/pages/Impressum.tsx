@@ -28,14 +28,15 @@ const Impressum = () => {
         <div className="absolute inset-0">
           {isDe ? (
             <>
-              <OptimizedImg src={impressumHero} alt={imp.title} tone="none" style={{ filter: "hue-rotate(35deg) saturate(0.5) brightness(0.88)" }} className="w-full h-full object-cover max-md:object-contain" priority />
+              <OptimizedImg src={impressumHero} alt={imp.title} tone="none" style={{ filter: "saturate(0.45) hue-rotate(35deg) brightness(0.8)" }} className="w-full h-full object-cover max-md:object-contain" priority />
               <div
                 className="absolute inset-0"
                 style={{
-                  background: "linear-gradient(to top, rgba(27,42,74,0.55) 0%, rgba(27,42,74,0.42) 55%, rgba(27,42,74,0.36) 100%)",
+                  background: "linear-gradient(to top, rgba(27,42,74,0.68) 0%, rgba(27,42,74,0.56) 55%, rgba(27,42,74,0.50) 100%)",
                 }}
               />
-              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.85 }} />
+              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 1 }} />
+              <div className="absolute inset-0" style={{ background: "rgba(247,226,180,0.35)", mixBlendMode: "color" }} />
             </>
           ) : (
             <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
