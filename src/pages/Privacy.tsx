@@ -7,7 +7,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
-import datenschutzHeader from "@/assets/datenschutz-header.jpg.asset.json";
+import datenschutzHeader from "@/assets/datenschutz-header.jpg";
 
 const panelBase =
   "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
