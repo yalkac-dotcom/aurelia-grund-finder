@@ -28,15 +28,15 @@ const Impressum = () => {
         <div className="absolute inset-0">
           {isDe ? (
             <>
-              <OptimizedImg src={impressumHero} alt={imp.title} tone="none" style={{ filter: "saturate(0.6) hue-rotate(35deg) brightness(0.66)" }} className="w-full h-full object-cover max-md:object-contain" priority />
+              <OptimizedImg src={impressumHero} alt={imp.title} tone="none" style={{ filter: "saturate(0.6) hue-rotate(35deg) brightness(0.55)" }} className="w-full h-full object-cover max-md:object-contain" priority />
               <div
                 className="absolute inset-0"
                 style={{
-                  background: "linear-gradient(to top, rgba(27,42,74,0.58) 0%, rgba(27,42,74,0.48) 55%, rgba(27,42,74,0.42) 100%)",
+                  background: "linear-gradient(to top, rgba(27,42,74,0.5) 0%, rgba(27,42,74,0.42) 55%, rgba(27,42,74,0.36) 100%)",
                 }}
               />
-              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.75 }} />
-              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.9)", mixBlendMode: "overlay", opacity: 0.6 }} />
+              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.4 }} />
+              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.9)", mixBlendMode: "overlay", opacity: 0.35 }} />
             </>
           ) : (
             <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
