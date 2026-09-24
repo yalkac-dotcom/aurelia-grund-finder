@@ -13,10 +13,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import { usePageSeo } from "@/hooks/usePageSeo";
 
-const heroTurkeyProperties = "/heroes/AdobeStock_502929748-1024w.webp";
-const heroTurkeyPropertiesSrcSet = [640, 1024, 1440, 2048]
-  .map((width) => `/heroes/AdobeStock_502929748-${width}w.webp ${width}w`)
-  .join(", ");
+const heroTurkeyProperties = "/heroes/AdobeStock_502929748.jpeg";
 
 type FormState = {
   fullName: string;
@@ -291,8 +288,6 @@ const TurkeyProperties = () => {
       <section className="relative flex min-h-[535px] items-center overflow-hidden bg-primary md:min-h-[87vh]">
         <img
           src={heroTurkeyProperties}
-          srcSet={heroTurkeyPropertiesSrcSet}
-          sizes="(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px"
           alt={page.hero.imageAlt}
           width={2048}
           height={751}

@@ -17,10 +17,8 @@ import { pageSeo } from "@/i18n/pageSeo";
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
 const buyersHeroImage = {
-  src: "/heroes/AdobeStock_302581671-1024w.webp",
-  srcSet: [640, 1024, 1440, 2048]
-    .map((width) => `/heroes/AdobeStock_302581671-${width}w.webp ${width}w`)
-    .join(", "),
+  src: "/heroes/AdobeStock_302581671.jpeg",
+  srcSet: "/heroes/AdobeStock_302581671.jpeg 2048w",
   sizes: heroSets.buyers.sizes,
 };
 

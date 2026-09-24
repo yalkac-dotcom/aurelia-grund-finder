@@ -37,10 +37,8 @@ const quoteMarks = {
 } as const;
 
 const homeHeroImage = {
-  src: "/heroes/AdobeStock_141562359-1024w.webp",
-  srcSet: [640, 1024, 1440, 1920]
-    .map((width) => `/heroes/AdobeStock_141562359-${width}w.webp ${width}w`)
-    .join(", "),
+  src: "/heroes/AdobeStock_141562359.jpeg",
+  srcSet: "/heroes/AdobeStock_141562359.jpeg 1920w",
   sizes: heroSets.premium.sizes,
 };
 
