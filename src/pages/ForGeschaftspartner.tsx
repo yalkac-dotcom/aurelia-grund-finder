@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
+import { aureliaCard } from "@/lib/cardStyle";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 
@@ -50,7 +51,7 @@ const ForGeschaftspartner = () => {
             <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {p.forms.map((f, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <div className="border-l border-accent/40 pl-5">
+                  <div className={language === "de" ? `h-full p-6 md:p-7 ${aureliaCard}` : "border-l border-accent/40 pl-5"}>
                     <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                       {f.title}
                     </h3>
