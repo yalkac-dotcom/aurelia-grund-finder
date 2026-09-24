@@ -127,3 +127,8 @@
 - [x] Verify and minimally correct existing image crops and required AI labels at 390, 768, and 1440 px.
 - [x] Check every route for image failures, 404s, overlaps, clipped controls/text, navigation, and language switching.
 - [x] Run targeted tests and typecheck; report release readiness and any remaining concrete issue.
+
+# Startseite: Bildzuordnung TR, FR und ES
+
+- [ ] Die doppelte Deutschland-Bildzuordnung ausschließlich in TR, FR und ES an die deutsche Zuordnung angleichen.
+- [ ] TR, FR und ES bei 390 px, 768 px und 1440 px prüfen; übrige Sprachen unverändert lassen.
