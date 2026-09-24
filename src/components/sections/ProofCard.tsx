@@ -18,6 +18,8 @@ interface ProofCardProps {
   /** Editorial / filigree variant: smaller image, lighter shadow, semibold heading, tighter padding. */
   compact?: boolean;
   aiDisclosure?: AiDisclosureType;
+  /** Einheitlicher Aurelia-Kartenrahmen (FAQ-Stil). */
+  frame?: boolean;
 }
 
 const ProofCard = ({
