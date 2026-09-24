@@ -9,13 +9,13 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       heroDescription: "Wir kaufen Immobilien in Deutschland auf eigene Rechnung und begleiten besondere Verkaufssituationen. Für Eigentümer mit Immobilien in der Türkei sind wir die persönliche Anlaufstelle in Deutschland – mit erfahrenen Partnern vor Ort.",
       heroIntro: "Wir schaffen klare Lösungen, wenn der Immobilienverkauf nicht nach Schema F verläuft. Ob bei einer besonderen Ausgangslage in Deutschland oder beim Verkauf einer Immobilie in der Türkei von Europa aus: Sie erhalten eine persönliche, transparente Begleitung mit klaren Ansprechpartnern.",
       heroPrimaryCta: "Kostenfreie Ersteinschätzung anfragen", heroSecondaryCta: "Über uns & unsere Arbeitsweise", heroTrustLine: "",
-      areasTitle: "Wo befindet sich Ihre Immobilie?", areasIntro: "Wählen Sie einfach den Bereich, um den es geht. Für eine erste Einschätzung reichen uns einige Angaben zur Immobilie und zu Ihrer Situation.",
+      areasTitle: "Wo befindet sich Ihre Immobilie?", areasIntro: "Ob in Deutschland oder in der Türkei: Wählen Sie den passenden Bereich und erfahren Sie, wie wir Sie bei Ihrem Immobilienanliegen unterstützen können.",
       areas: [
         { title: "Direktankauf in Deutschland", desc: "Sie möchten ein Haus, eine Wohnung, ein Grundstück oder ein Gewerbeobjekt veräußern? Auch bei rechtlichen, finanziellen oder persönlichen Herausforderungen prüfen wir gemeinsam mit Ihnen, welche Lösung möglich ist. Passende Immobilien kaufen wir direkt auf eigene Rechnung an.", cta: "Immobilie in Deutschland anbieten" },
         { title: "Verkauf in der Türkei – bequem aus Deutschland geregelt", desc: "Sie leben in Deutschland oder Europa und besitzen eine Immobilie oder Grundbesitz in der Türkei? Wir begleiten Sie von Deutschland aus und koordinieren die notwendigen Schritte gemeinsam mit unseren Ansprechpartnern in der Türkei. So haben Sie während des gesamten Prozesses einen festen Ansprechpartner.", cta: "Immobilie in der Türkei anbieten" },
       ],
       trustTitle: "Verlässlichkeit, Diskretion und Transparenz auf Augenhöhe.",
-      trustText: "Nicht jede Immobilie passt zu uns und nicht für jede Situation gibt es dieselbe Lösung.\n\nJe nach Objekt kaufen wir selbst oder prüfen, ob eine Abwicklung gemeinsam mit einem unserer Partner sinnvoll ist. Entscheidend sind für uns die Immobilie, ihre Lage, ihr Zustand und die konkrete Situation des Eigentümers.",
+      trustText: "Ein Immobilienverkauf ist oft mit wichtigen persönlichen und wirtschaftlichen Entscheidungen verbunden. Deshalb legen wir Wert auf klare Kommunikation, nachvollziehbare Abläufe und einen persönlichen Ansprechpartner.",
       trustClaimTitle: "", trustClaimText: "",
       proofPoints: [
         { title: "Vertraulicher Umgang", text: "Wir behandeln Ihre Anfrage und die von Ihnen übermittelten persönlichen sowie objektbezogenen Informationen vertraulich und verwenden sie ausschließlich im Rahmen der jeweiligen Anfrage und Abwicklung." },
@@ -28,7 +28,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
         { title: "Unverbindliche Prüfung und Gespräch", desc: "Wir prüfen Ihre Angaben vertraulich und besprechen anschließend mit Ihnen die Ausgangssituation und das mögliche weitere Vorgehen." },
         { title: "Angebot und weitere Abwicklung", desc: "Kommt ein Ankauf infrage, erhalten Sie ein nachvollziehbares Kaufangebot. Die weiteren Schritte werden transparent mit Ihnen abgestimmt, bevor Sie eine Entscheidung treffen." },
       ],
-      stepsNote: "Die erste Prüfung ist unverbindlich. Ob ein Ankauf oder eine andere Vorgehensweise möglich ist, können wir erst beurteilen, wenn wir die Immobilie und die Situation kennen.",
+      stepsNote: "Die erste Kontaktaufnahme und Prüfung ist für Sie unverbindlich. Welche weiteren Schritte sinnvoll sind, hängt von der Immobilie und Ihrer individuellen Situation ab.",
       objectionsTitle: "Antworten auf wichtige Fragen.", objectionsIntro: "",
       objections: [
         { q: "Was passiert bei bestehenden Verbindlichkeiten oder wenn ich weiterhin in der Immobilie wohnen möchte?", a: "Bestehende Verbindlichkeiten und besondere persönliche Wünsche können bereits bei der ersten Prüfung berücksichtigt werden. Welche Möglichkeiten im konkreten Fall bestehen, hängt von der jeweiligen Immobilie und der individuellen Ausgangssituation ab." },
