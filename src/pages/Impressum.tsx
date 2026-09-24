@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
-import impressumHero from "@/assets/adobe-482785126-impressum.jpeg.asset.json";
+import impressumHero from "@/assets/impressum-justitia.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
