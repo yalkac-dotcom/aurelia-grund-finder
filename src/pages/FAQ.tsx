@@ -26,7 +26,7 @@ const FAQ = () => {
         </div>
         <h1 className="sr-only">{f.title}</h1>
         {/* Text im Header, ganz links, unten bündig auf Endhöhe des FAQ-Schriftzugs im Bild */}
-        <div className="relative w-full pb-2 pl-4 md:pb-[92px] md:pl-6 lg:pl-8">
+        <div className="relative w-full pb-2 pl-4 md:pb-[122px] md:pl-4 lg:pl-4">
           <Reveal>
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary">
               {f.kicker}
