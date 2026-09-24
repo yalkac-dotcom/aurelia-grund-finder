@@ -318,9 +318,13 @@ const TurkeyProperties = () => {
                 {page.hero.primaryCta}
                 <ArrowRight size={13} className="ml-2 text-accent" />
               </Link>
-              <Link to="/kontakt" className="btn-secondary">
-                {page.hero.secondaryCta}
-              </Link>
+              {language === "de" ? (
+                <a href="#ablauf" className="btn-secondary">{page.hero.secondaryCta}</a>
+              ) : (
+                <Link to="/kontakt" className="btn-secondary">
+                  {page.hero.secondaryCta}
+                </Link>
+              )}
             </div>
           </div>
         </div>
@@ -394,7 +398,7 @@ const TurkeyProperties = () => {
           </div>
         </section>}
 
-        <section className="section-premium bg-background">
+        <section id="ablauf" className="section-premium bg-background scroll-mt-24">
           <div className="container-premium">
             <SectionHeader title={page.processTitle} />
             <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -404,6 +408,24 @@ const TurkeyProperties = () => {
             </div>
           </div>
         </section>
+
+        {page.faq && <section className="section-premium bg-gradient-warm">
+          <div className="container-premium">
+            <div className="mx-auto max-w-4xl">
+              <SectionHeader title={page.faq.title} align="left" disableOffset />
+              <div className="space-y-8">
+                {page.faq.items.map((item) => (
+                  <Reveal key={item.q}>
+                    <div className="border-l-2 border-accent pl-5">
+                      <h3 className="font-heading text-[1.1rem] font-semibold leading-snug text-primary">{item.q}</h3>
+                      <p className="mt-2 text-[0.94rem] leading-[1.8] text-muted-foreground">{item.a}</p>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>}
 
         {page.crossLink && <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
@@ -449,7 +471,7 @@ const TurkeyProperties = () => {
               <h2 className="font-heading text-[1.75rem] font-bold leading-[1.2] text-primary md:text-[2.25rem]">{page.cta.title}</h2>
               <p className="mx-auto mt-4 max-w-2xl text-[0.94rem] leading-[1.85] text-muted-foreground">{page.cta.text}</p>
               <div className="mt-7 flex flex-wrap justify-center gap-3">
-                <Link to="/immobilie-anbieten" className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></Link>
+                <Link to={language === "de" ? "/immobilie-anbieten?land=tuerkei" : "/immobilie-anbieten"} className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></Link>
                 <a href="tel:+4921169583033" className="btn-secondary">{page.cta.secondary}</a>
               </div>
               <p className="mx-auto mt-8 max-w-3xl text-[0.78rem] leading-[1.75] text-muted-foreground">{page.legalNotice}</p>
