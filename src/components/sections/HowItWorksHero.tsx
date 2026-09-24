@@ -64,7 +64,7 @@ const HowItWorksHero = ({
       {photos.map((photo, index) => (
         <div
           key={photo.src}
-          className={index === 0 ? "overflow-hidden" : "overflow-hidden border-t-4 border-background md:border-l-4 md:border-t-0"}
+          className={index === 0 ? "overflow-hidden" : "overflow-hidden border-t-[3px] border-gold md:border-l-[3px] md:border-t-0"}
         >
           <OptimizedImg
             src={photo.src}
