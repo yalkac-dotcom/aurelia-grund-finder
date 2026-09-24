@@ -33,7 +33,8 @@ const HowItWorksHero = ({
   secondaryCta,
   trustLine,
 }: HowItWorksHeroProps) => (
-  <section id="hero" className="relative isolate overflow-hidden bg-primary text-primary-foreground min-h-[640px] md:min-h-[max(62svh,560px)]">
+  <>
+  <section id="hero" className="relative isolate overflow-hidden bg-primary min-h-[980px] md:min-h-[max(62svh,560px)]">
     <div aria-hidden="true" className="absolute inset-0 -z-10 grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1">
       {photos.map((photo, index) => (
         <div
@@ -52,20 +53,15 @@ const HowItWorksHero = ({
         </div>
       ))}
     </div>
-    <div className="page-frame-hero flex min-h-[inherit] items-center justify-center pb-12 pt-28 md:pb-16 md:pt-32">
-      <div className="max-w-2xl text-center">
-        <p className="hero-kicker" style={{ color: "hsl(var(--gold-light) / 0.95)", borderColor: "hsl(var(--gold) / 0.35)" }}>{kicker}</p>
-        <h1
-          className="hero-title"
-          style={{
-            color: "hsl(var(--gold))",
-            textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 14px hsl(var(--primary) / 0.6), 0 0 32px hsl(var(--primary) / 0.5)",
-          }}
-        >
-          <span className="px-2 rounded-sm" style={{ background: "hsl(var(--primary) / 0.6)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{title}</span>
-        </h1>
-        <p className="hero-description mx-auto whitespace-pre-line" style={{ textShadow: "0 1px 3px hsl(var(--primary) / 0.7)" }}><span className="px-1.5 rounded-sm" style={{ background: "hsl(var(--primary) / 0.42)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{description}</span></p>
-        <div className="mt-7 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
+    <div className="page-frame-hero flex min-h-[inherit] items-end justify-center pb-6 pt-32 md:pb-8 md:pt-40">
+      <div
+        className="w-full max-w-3xl rounded-sm border border-gold px-5 py-6 text-center md:px-10 md:py-8"
+        style={{ background: "hsl(var(--background) / 0.78)", backdropFilter: "blur(1px)" }}
+      >
+        <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-primary">{kicker}</p>
+        <h1 className="mt-3 font-heading text-[1.7rem] leading-tight text-primary md:text-[2.3rem]">{title}</h1>
+        <p className="mx-auto mt-4 max-w-2xl whitespace-pre-line text-[0.92rem] font-medium leading-[1.7] text-primary md:text-[0.98rem]">{description}</p>
+        <div className="mt-6 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
           <Link
             to="/kontakt"
             className="btn-primary"
@@ -76,16 +72,19 @@ const HowItWorksHero = ({
           </Link>
           <a
             href="#ablauf"
-            className="btn-secondary"
+            className="btn-primary"
             onClick={() => trackEvent("cta_click", { cta_type: "secondary", cta_location: "page_hero", cta_label: secondaryCta, cta_target: "#ablauf" })}
           >
             {secondaryCta}
           </a>
         </div>
-        <p className="mt-3 text-[0.78rem] text-primary-foreground/90" style={{ textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 10px hsl(var(--primary) / 0.75), 0 0 22px hsl(var(--primary) / 0.55)" }}><span className="px-1.5 rounded-sm" style={{ background: "hsl(var(--primary) / 0.42)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{trustLine}</span></p>
       </div>
     </div>
   </section>
+  <div className="bg-background px-4 py-4 text-center">
+    <p className="text-[0.82rem] text-muted-foreground">{trustLine}</p>
+  </div>
+  </>
 );
 
 export default HowItWorksHero;
