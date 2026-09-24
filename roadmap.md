@@ -132,10 +132,3 @@
 
 - [x] Die doppelte Deutschland-Bildzuordnung ausschließlich in TR, FR und ES an die deutsche Zuordnung angleichen.
 - [x] TR, FR und ES bei 390 px, 768 px und 1440 px prüfen; übrige Sprachen unverändert lassen.
-
-# Headerbilder: reine Ladeoptimierung
-
-- [x] Sichtbare Headerbilder und Browser-Ladeverhalten inventarisieren.
-- [x] Fehlende responsive Varianten ausschließlich aus vorhandenen Originalen erzeugen und korrekt ausliefern.
-- [x] Startseiten-Preload auf die responsive Quelle abstimmen.
-- [x] Mobil/Desktop, Bildanfragen, Darstellung und Typcheck prüfen.

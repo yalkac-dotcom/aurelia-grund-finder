@@ -52,10 +52,8 @@ const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
 
 // Echter Adobe-Stock-Hero (Datei-Nr. 368296755) — ausschließlich Eigentümer-Hero
 const ownerHeroImage = {
-  src: "/heroes/AdobeStock_368296755-1024w.webp",
-  srcSet: [640, 1024, 1440, 2048]
-    .map((width) => `/heroes/AdobeStock_368296755-${width}w.webp ${width}w`)
-    .join(", "),
+  src: "/heroes/AdobeStock_368296755.jpeg",
+  srcSet: "/heroes/AdobeStock_368296755.jpeg 2048w",
   sizes: "(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px",
 };
 
