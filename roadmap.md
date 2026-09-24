@@ -116,3 +116,9 @@
 - [x] „Unterlagen zum Objekt“ in sieben Sprachen mit Adobe Stock 541665662 ersetzen
 - [x] KI-Kennzeichnung nur an dieser Karte entfernen und Bildnachweise ergänzen
 - [x] Beide neuen Karten sowie den gesamten Käufer-Bildstand auf Desktop und Mobil prüfen
+
+# Geschäftspartner-Seite: Headerfoto
+
+- [ ] Nur den Hero mit Adobe Stock 364445283 ersetzen und lokal zuschneiden
+- [ ] KI-Kennzeichnung nur am Partner-Hero entfernen und Bildnachweise ergänzen
+- [ ] Desktop, Mobil, sieben Sprachen und Typcheck prüfen
