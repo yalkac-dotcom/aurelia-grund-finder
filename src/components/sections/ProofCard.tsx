@@ -2,6 +2,7 @@ import { LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import AiImageDisclosure, { AiDisclosureType } from "@/components/AiImageDisclosure";
+import { aureliaCard } from "@/lib/cardStyle";
 
 interface ProofCardProps {
   icon?: LucideIcon;
