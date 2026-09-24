@@ -89,8 +89,8 @@ const HomePage = () => {
         primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/immobilie-anbieten" }}
         secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#ablauf" } : undefined}
         trustLine={t.home.heroTrustLine}
-        imagePosition="55% center"
-        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.66) 0%, hsl(var(--primary) / 0.52) 32%, hsl(var(--primary) / 0.26) 60%, hsl(var(--primary) / 0.08) 100%)"
+        imagePosition="55% 90%"
+        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.46) 0%, hsl(var(--primary) / 0.32) 32%, hsl(var(--primary) / 0.10) 60%, hsl(var(--primary) / 0.01) 100%)"
         mobileHomeFlow
       />
 
