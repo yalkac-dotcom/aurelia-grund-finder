@@ -40,7 +40,7 @@ const Impressum = () => {
                 style={{
                   background: "rgba(250,233,198,0.9)",
                   mixBlendMode: "soft-light",
-                  opacity: 1,
+                  opacity: 0.75,
                   maskImage: "linear-gradient(to bottom, transparent 18%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.9) 62%, transparent 84%)",
                   WebkitMaskImage: "linear-gradient(to bottom, transparent 18%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.9) 62%, transparent 84%)",
                 }}
