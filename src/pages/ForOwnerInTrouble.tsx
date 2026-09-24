@@ -28,7 +28,7 @@ const normalizeSituationTitle = (title: string) =>
 const getReplacementSituationImage = (title: string) => {
   const normalizedTitle = normalizeSituationTitle(title);
 
-  if (/leerstand|renovierungsbedarf|vacancy|renovation needs|leegstand|renovatiebehoefte|sfitta|ristrutturazione|desocupacion|reforma|vacance|renovation|bosluk|tadilat/.test(normalizedTitle)) {
+  if (/wohnverbleib|leerstand|renovierungsbedarf|vacancy|renovation needs|leegstand|renovatiebehoefte|sfitta|ristrutturazione|desocupacion|reforma|vacance|renovation|bosluk|tadilat/.test(normalizedTitle)) {
     return replacementSituationImages.vacancy;
   }
 
@@ -37,7 +37,7 @@ const getReplacementSituationImage = (title: string) => {
     return replacementSituationImages.complex;
   }
 
-  if (/direkter verkaufswunsch|direct wish to sell|dogrudan|directe verkoopwens|vendita diretta|venta directa|vente directe/.test(normalizedTitle)) {
+  if (/direktankauf ohne|direkter verkaufswunsch|direct wish to sell|dogrudan|directe verkoopwens|vendita diretta|venta directa|vente directe/.test(normalizedTitle)) {
     return replacementSituationImages.directSale;
   }
 
@@ -152,7 +152,7 @@ const ForOwnerInTrouble = () => {
         >
           <div className="container-premium">
             <SectionHeader title={o.stepsTitle} />
-            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-5">
+            <div className={`grid gap-8 md:gap-10 sm:grid-cols-2 ${o.steps.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-5"}`}>
               {o.steps.map((s, i) => {
                 const Icon = stepIcons[i % stepIcons.length];
                 return (
