@@ -11,9 +11,11 @@ interface ProcessStepProps {
   /** Optional thematic photo shown as full-width header (16:10). Replaces the icon visual. */
   image?: string;
   imageAlt?: string;
+  /** Direction of the connector arrow shown on desktop (default: "right"). */
+  arrowDirection?: "right" | "down";
 }
 
-const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, imageAlt }: ProcessStepProps) => {
+const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, imageAlt, arrowDirection = "right" }: ProcessStepProps) => {
   const id = `step-${index}-title`;
 
   return (
