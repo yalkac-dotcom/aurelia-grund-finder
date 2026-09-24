@@ -86,7 +86,7 @@ const HomePage = () => {
         title={t.home.heroTitle}
         description={t.home.heroIntro ?? t.home.heroDescription}
         primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/immobilie-anbieten" }}
-        secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#ablauf" } : undefined}
+        secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#bereiche" } : undefined}
         trustLine={t.home.heroTrustLine}
         imagePosition="55% 70%"
         overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.46) 0%, hsl(var(--primary) / 0.32) 32%, hsl(var(--primary) / 0.10) 60%, hsl(var(--primary) / 0.01) 100%)"
@@ -96,7 +96,7 @@ const HomePage = () => {
 
       <div className="page-shell">
         {/* DIE 3 BEREICHE */}
-        <section className="section-premium bg-gradient-warm !pt-0 md:!pt-0">
+        <section id="bereiche" className="section-premium bg-gradient-warm !pt-0 md:!pt-0 scroll-mt-24">
           <div className="container-premium">
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} disableOffset />
             <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 md:gap-7">
