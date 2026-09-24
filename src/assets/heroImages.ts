@@ -12,8 +12,8 @@ const premiumSrcSet = `${premiumSrc} 1920w`;
 const eigentuemerSrc = "/heroes/aurelia-eigentuemer.jpg";
 const eigentuemerSrcSet = `${eigentuemerSrc} 950w`;
 
-const partnerSrc = "/heroes/aurelia-partner.jpg";
-const partnerSrcSet = `${partnerSrc} 950w`;
+const partnerSrc = "/heroes/AdobeStock_364445283.jpeg";
+const partnerSrcSet = `${partnerSrc} 2048w`;
 
 import building640 from "@/assets/hero-building-640w.webp";
 import building1024 from "@/assets/hero-building-1024w.webp";

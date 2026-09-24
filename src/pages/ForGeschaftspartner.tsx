@@ -33,8 +33,9 @@ const ForGeschaftspartner = () => {
         primaryCta={{ label: p.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: p.heroSecondaryCta, href: "#ablauf" }}
         trustLine={p.heroTrustLine}
+        imagePosition="50% 48%"
+        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.75) 0%, hsl(var(--primary) / 0.58) 35%, hsl(var(--primary) / 0.22) 65%, hsl(var(--primary) / 0.08) 100%)"
         size="compact"
-        aiDisclosure="standard"
       />
 
       <div className="page-shell">
