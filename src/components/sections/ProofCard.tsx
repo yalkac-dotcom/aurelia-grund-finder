@@ -111,7 +111,9 @@ const ProofCard = ({
     </div>
   );
 
-  const cardClass = compact
+  const cardClass = frame
+    ? `group h-full overflow-hidden ${aureliaCard}`
+    : compact
     ? "group h-full overflow-hidden bg-card border border-border/50 rounded-md transition-colors duration-300 hover:border-accent/40"
     : "proof-card group h-full overflow-hidden";
 
