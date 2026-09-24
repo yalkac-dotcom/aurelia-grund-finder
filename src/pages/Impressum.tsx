@@ -37,10 +37,11 @@ const Impressum = () => {
               <div
                 className="absolute inset-0"
                 style={{
-                  background: "linear-gradient(to top, rgba(27,42,74,0.78) 0%, rgba(27,42,74,0.58) 55%, rgba(27,42,74,0.50) 100%)",
+                  background: "linear-gradient(to top, rgba(27,42,74,0.88) 0%, rgba(27,42,74,0.72) 55%, rgba(27,42,74,0.64) 100%)",
                 }}
               />
-              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.55 }} />
+              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.9 }} />
+              <div className="absolute inset-0" style={{ background: "rgba(255,238,206,0.12)", mixBlendMode: "screen" }} />
             </>
           ) : (
             <div
