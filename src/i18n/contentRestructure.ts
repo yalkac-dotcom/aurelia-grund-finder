@@ -21,6 +21,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
         { title: "Direkter Ansprechpartner", text: "Kein anonymes Portal, sondern persönliche Betreuung aus Düsseldorf." },
         { title: "Nachvollziehbare Bewertung", text: "Wir erläutern Ihnen verständlich, wie unsere Einschätzung zustande kommt." },
         { title: "Keine versteckten Kosten", text: "Unsere Erstprüfung und das Erstgespräch sind für Sie kostenfrei und unverbindlich." },
+        { title: "Ankauf auf eigene Rechnung", text: "Passende Immobilien können wir direkt auf eigene Rechnung erwerben. Auch bei Immobilien in der Türkei kann die Abwicklung so strukturiert werden, dass Zahlungen und Abstimmungen über Deutschland erfolgen. Aurelia Grundbesitz ist kein Kreditinstitut und bietet keine Darlehen oder Finanzdienstleistungen an." },
       ],
       stepsTitle: "In drei Schritten zur Lösung", steps: [
         { title: "Anfrage senden", desc: "Teilen Sie uns die wichtigsten Eckdaten zu Ihrer Immobilie und Ihrer Situation mit." },
