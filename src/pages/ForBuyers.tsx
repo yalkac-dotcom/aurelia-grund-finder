@@ -23,6 +23,7 @@ const buyersHeroImage = {
 };
 
 const replacementFeatureImages = {
+  pricing: { image: "/cards/AdobeStock_461475949.jpeg", imagePosition: "50% 53%" },
   contact: { image: "/cards/AdobeStock_356467514.jpeg", imagePosition: "50% 45%" },
   purchase: { image: "/cards/AdobeStock_586889892.jpeg", imagePosition: "50% 58%" },
 } as const;
@@ -32,6 +33,9 @@ const normalizeFeatureTitle = (title: string) =>
 
 const getReplacementFeatureImage = (title: string) => {
   const normalizedTitle = normalizeFeatureTitle(title);
+  if (/preis und konditionen|price and terms|fiyat ve kosullar|prijs en voorwaarden|prezzo e condizioni|precio y condiciones|prix et conditions/.test(normalizedTitle)) {
+    return replacementFeatureImages.pricing;
+  }
   if (/ansprechpartner|point of contact|muhatab|aanspreekpunt|referente|interlocutor|interlocuteur/.test(normalizedTitle)) {
     return replacementFeatureImages.contact;
   }
