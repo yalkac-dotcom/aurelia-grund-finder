@@ -24,32 +24,50 @@ const Impressum = () => {
 
   return (
     <Layout>
-      <section className={`relative h-[30vh] min-h-[220px] flex items-end ${isDe ? "" : "bg-primary"}`} style={isDe ? { background: "linear-gradient(to bottom, rgb(16,50,88) 0%, rgb(10,35,68) 100%)" } : undefined}>
-        <div className="absolute inset-0">
-          {isDe ? (
-            <>
-              <OptimizedImg src={impressumHero} alt={imp.title} tone="none" className="w-full h-full object-cover max-md:object-contain" priority />
-            </>
-
-          ) : (
+      {isDe ? (
+        <section
+          className="relative h-[340px] overflow-hidden md:h-[440px]"
+          style={{ background: "linear-gradient(115deg, rgb(17,48,86) 0%, rgb(10,34,66) 100%)" }}
+        >
+          <div className="absolute inset-x-0 top-0 h-[60%] [mask-image:linear-gradient(to_bottom,black_50%,transparent_98%)] md:inset-y-0 md:left-0 md:right-auto md:h-full md:w-[44%] md:[mask-image:linear-gradient(to_right,black_52%,transparent_99%)]">
+            <img
+              src={impressumHero}
+              alt=""
+              className="h-full w-full object-cover object-[50%_15%] md:object-center"
+              style={{ filter: "saturate(0.55) brightness(0.95)" }}
+            />
+            <div className="absolute inset-0" style={{ background: "rgb(23,56,97)", mixBlendMode: "color" }} />
+            <div
+              className="absolute inset-0"
+              style={{ background: "linear-gradient(to right, rgba(13,38,70,0.12) 35%, rgba(13,38,70,0.62) 100%)" }}
+            />
+          </div>
+          <div className="relative flex h-full flex-col items-center justify-end pb-9 md:flex-row md:items-center md:justify-center md:pb-0 md:pl-[46%] md:pr-[3%]">
+            <Reveal>
+              <h1
+                className="font-heading text-[2.4rem] font-semibold leading-none md:text-[3.4rem]"
+                style={{ color: "#F1DBA5", textShadow: "0 2px 16px rgba(8,26,52,0.55)" }}
+              >
+                {imp.title}
+              </h1>
+            </Reveal>
+          </div>
+        </section>
+      ) : (
+        <section className="relative h-[30vh] min-h-[220px] flex items-end bg-primary">
+          <div className="absolute inset-0">
             <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
-          )}
-          {!isDe && <AiImageDisclosure type="illustrative" />}
-        </div>
-        <div className="relative container pb-8 md:pb-10">
-          <Reveal>
-            <h1
-              className={
-                isDe
-                  ? "sr-only"
-                  : "text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1] [text-shadow:0_1px_3px_hsl(218_46%_10%/0.55)]"
-              }
-            >
-              {imp.title}
-            </h1>
-          </Reveal>
-        </div>
-      </section>
+            <AiImageDisclosure type="illustrative" />
+          </div>
+          <div className="relative container pb-8 md:pb-10">
+            <Reveal>
+              <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1] [text-shadow:0_1px_3px_hsl(218_46%_10%/0.55)]">
+                {imp.title}
+              </h1>
+            </Reveal>
+          </div>
+        </section>
+      )}
 
       <section className="py-6 md:py-10">
         <div className="container max-w-3xl">
