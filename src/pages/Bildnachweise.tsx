@@ -6,7 +6,20 @@ import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
 import headerImg from "@/assets/bildnachweise-header.webp";
-...
+
+const panelBase =
+  "bg-card rounded-[1.5rem] shadow-[0_10px_50px_-10px_hsl(212_55%_20%/0.07),0_4px_16px_-6px_hsl(212_55%_20%/0.04)] border border-border/8";
+
+const panelPadding = "px-6 py-7 md:px-12 md:py-10";
+
+const Bildnachweise = () => {
+  const { t, language } = useLanguage();
+  usePageSeo(pageSeo[language].bildnachweise.title, pageSeo[language].bildnachweise.description);
+  const copy = pageExtras[language].imageCredits;
+
+  return (
+    <Layout>
+      <section className="relative h-[32vh] min-h-[220px] md:h-[38vh] md:min-h-[300px]">
         <img src={headerImg} alt={t.footer.imageCredits} className="absolute inset-0 w-full h-full object-cover" />
         <AiImageDisclosure type="illustrative" />
         <h1 className="sr-only">{t.footer.imageCredits}</h1>
