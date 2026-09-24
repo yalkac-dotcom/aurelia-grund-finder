@@ -27,29 +27,18 @@ const Impressum = () => {
       <section className={`relative h-[30vh] min-h-[220px] flex items-end ${isDe ? "bg-primary" : ""}`}>
         <div className="absolute inset-0">
           {isDe ? (
-            <OptimizedImg src={impressumHero} alt={imp.title} className="w-full h-full object-cover max-md:object-contain" priority />
-          ) : (
-            <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
-          )}
-          {isDe ? (
             <>
-              <div className="absolute inset-0" style={{ background: "hsl(218 45% 24%)", mixBlendMode: "color" }} />
+              <OptimizedImg src={impressumHero} alt={imp.title} className="w-full h-full object-cover max-md:object-contain [filter:hue-rotate(35deg)_saturate(0.5)_brightness(0.88)]" priority />
               <div
                 className="absolute inset-0"
                 style={{
-                  background: "linear-gradient(to top, rgba(27,42,74,0.88) 0%, rgba(27,42,74,0.72) 55%, rgba(27,42,74,0.64) 100%)",
+                  background: "linear-gradient(to top, rgba(27,42,74,0.55) 0%, rgba(27,42,74,0.42) 55%, rgba(27,42,74,0.36) 100%)",
                 }}
               />
-              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.9 }} />
-              <div className="absolute inset-0" style={{ background: "rgba(255,238,206,0.12)", mixBlendMode: "screen" }} />
+              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.85 }} />
             </>
           ) : (
-            <div
-              className="absolute inset-0"
-              style={{
-                background: "linear-gradient(to top, rgba(19,30,53,0.94) 0%, rgba(19,30,53,0.80) 60%, rgba(19,30,53,0.38) 100%)",
-              }}
-            />
+            <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
           )}
           {!isDe && <AiImageDisclosure type="illustrative" />}
         </div>
