@@ -395,6 +395,16 @@ const TurkeyProperties = () => {
                 </Reveal>
               ))}
             </div>
+            {language === "de" && (
+              <Reveal delay={0.1}>
+                <div className="mt-10 flex justify-center">
+                  <Link to="/immobilie-anbieten?land=tuerkei" className="btn-primary">
+                    Unverbindliche Erstanfrage für Türkei-Immobilie stellen
+                    <ArrowRight size={13} className="ml-2 text-accent" />
+                  </Link>
+                </div>
+              </Reveal>
+            )}
           </div>
         </section>}
 
@@ -454,7 +464,7 @@ const TurkeyProperties = () => {
                   {page.trust.points.map((point) => (
                     <div key={point} className="flex items-start gap-3">
                       <CheckCircle2 className="mt-0.5 shrink-0 text-accent" size={18} strokeWidth={1.7} />
-                      <p className="text-[0.94rem] leading-[1.7] text-white/85">{point}</p>
+                      <p className={language === "de" && point === "Deutsch und Türkisch" ? "text-[0.94rem] leading-[1.7] font-semibold text-white" : "text-[0.94rem] leading-[1.7] text-white/85"}>{point}</p>
                     </div>
                   ))}
                 </div>
