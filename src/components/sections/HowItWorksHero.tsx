@@ -62,7 +62,7 @@ const HowItWorksHero = ({
             textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 14px hsl(var(--primary) / 0.6), 0 0 32px hsl(var(--primary) / 0.5)",
           }}
         >
-          <span className="px-2 rounded-sm" style={{ background: "hsl(var(--primary) / 0.42)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{title}</span>
+          <span className="px-2 rounded-sm" style={{ background: "hsl(var(--primary) / 0.6)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{title}</span>
         </h1>
         <p className="hero-description mx-auto whitespace-pre-line" style={{ textShadow: "0 1px 3px hsl(var(--primary) / 0.7)" }}><span className="px-1.5 rounded-sm" style={{ background: "hsl(var(--primary) / 0.42)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{description}</span></p>
         <div className="mt-7 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
