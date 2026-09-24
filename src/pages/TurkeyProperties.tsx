@@ -13,7 +13,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import { usePageSeo } from "@/hooks/usePageSeo";
 
-const heroTurkeyProperties = "/heroes/AdobeStock_201542905_2.jpeg";
+const heroTurkeyProperties = "/heroes/AdobeStock_502929748.jpeg";
 
 type FormState = {
   fullName: string;
@@ -290,7 +290,7 @@ const TurkeyProperties = () => {
           src={heroTurkeyProperties}
           alt={page.hero.imageAlt}
           width={2048}
-          height={460}
+          height={751}
           loading="eager"
           {...({ fetchpriority: "high" } as React.HTMLAttributes<HTMLImageElement>)}
           className="img-tone absolute inset-0 h-full w-full object-cover object-[68%_center]"
@@ -299,7 +299,7 @@ const TurkeyProperties = () => {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, hsl(var(--primary) / 0.9) 0%, hsl(var(--primary) / 0.78) 42%, hsl(var(--primary) / 0.42) 100%)",
+              "linear-gradient(to right, hsl(var(--primary) / 0.78) 0%, hsl(var(--primary) / 0.62) 42%, hsl(var(--primary) / 0.14) 100%)",
           }}
           aria-hidden="true"
         />
