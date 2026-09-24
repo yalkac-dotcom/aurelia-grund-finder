@@ -20,13 +20,13 @@ const FAQ = () => {
   return (
     <Layout>
       {/* HERO – bewusst niedriger als die übrigen Hauptseiten */}
-      <section className="relative flex min-h-[300px] items-end overflow-hidden bg-background md:h-[48vh] md:max-h-[430px]">
-        <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center max-md:object-[86%_center]" priority />
+      <section className="relative flex min-h-[300px] items-end overflow-hidden bg-background max-md:pt-[180px] md:h-[48vh] md:max-h-[430px]">
+        <div className="absolute inset-0 max-md:bottom-auto max-md:h-[180px]">
+          <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center max-md:object-contain" priority />
         </div>
         <h1 className="sr-only">{f.title}</h1>
         {/* Text im Header, ganz links, unten bündig auf Endhöhe des FAQ-Schriftzugs im Bild */}
-        <div className="relative w-full pb-2 pl-4 md:pb-[122px] md:pl-4 lg:pl-4">
+        <div className="relative w-full px-4 py-4 md:pb-[122px] md:pl-4 md:pr-0 md:pt-0 lg:pl-4">
           <Reveal>
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary">
               {f.kicker}
