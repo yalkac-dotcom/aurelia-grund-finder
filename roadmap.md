@@ -119,6 +119,6 @@
 
 # Geschäftspartner-Seite: Headerfoto
 
-- [ ] Nur den Hero mit Adobe Stock 364445283 ersetzen und lokal zuschneiden
-- [ ] KI-Kennzeichnung nur am Partner-Hero entfernen und Bildnachweise ergänzen
-- [ ] Desktop, Mobil, sieben Sprachen und Typcheck prüfen
+- [x] Nur den Hero mit Adobe Stock 364445283 ersetzen und lokal zuschneiden
+- [x] KI-Kennzeichnung nur am Partner-Hero entfernen und Bildnachweise ergänzen
+- [x] Desktop, Mobil, sieben Sprachen und Typcheck prüfen
