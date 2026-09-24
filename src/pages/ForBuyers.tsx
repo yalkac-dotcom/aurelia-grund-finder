@@ -94,6 +94,7 @@ const ForBuyers = () => {
                       title={f.title}
                       text={f.desc}
                       compact
+                      frame={language === "de"}
                       aiDisclosure={replacement ? undefined : "standard"}
                     />
                   </Reveal>
