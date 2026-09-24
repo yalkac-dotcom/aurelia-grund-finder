@@ -45,6 +45,16 @@ const Impressum = () => {
                   WebkitMaskImage: "linear-gradient(to bottom, transparent 18%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.9) 62%, transparent 84%)",
                 }}
               />
+              <div
+                className="absolute inset-0"
+                style={{
+                  background: "rgba(243,219,158,0.9)",
+                  mixBlendMode: "overlay",
+                  opacity: 0.45,
+                  maskImage: "linear-gradient(to bottom, transparent 22%, rgba(0,0,0,0.8) 42%, rgba(0,0,0,0.8) 60%, transparent 80%)",
+                  WebkitMaskImage: "linear-gradient(to bottom, transparent 22%, rgba(0,0,0,0.8) 42%, rgba(0,0,0,0.8) 60%, transparent 80%)",
+                }}
+              />
             </>
           ) : (
             <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
