@@ -95,7 +95,7 @@ const HowItWorksHero = ({
             {secondaryCta}
           </a>
         </div>
-        <p className="mt-3 text-[0.78rem] text-primary-foreground/85" style={{ textShadow: "0 1px 3px hsl(var(--primary) / 0.7)" }}>{trustLine}</p>
+        <p className="mt-3 text-[0.78rem] text-primary-foreground/90" style={{ textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 10px hsl(var(--primary) / 0.75), 0 0 22px hsl(var(--primary) / 0.55)" }}>{trustLine}</p>
       </div>
     </div>
   </section>
