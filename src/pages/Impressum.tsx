@@ -48,9 +48,9 @@ const Impressum = () => {
               <div
                 className="absolute inset-0"
                 style={{
-                  background: "rgba(243,219,158,0.9)",
-                  mixBlendMode: "overlay",
-                  opacity: 0.45,
+                  background: "rgba(240,198,132,0.9)",
+                  mixBlendMode: "soft-light",
+                  opacity: 0.9,
                   maskImage: "linear-gradient(to bottom, transparent 22%, rgba(0,0,0,0.8) 42%, rgba(0,0,0,0.8) 60%, transparent 80%)",
                   WebkitMaskImage: "linear-gradient(to bottom, transparent 22%, rgba(0,0,0,0.8) 42%, rgba(0,0,0,0.8) 60%, transparent 80%)",
                 }}
