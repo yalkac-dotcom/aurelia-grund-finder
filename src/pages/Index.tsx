@@ -96,7 +96,7 @@ const HomePage = () => {
 
       <div className="page-shell">
         {/* DIE 3 BEREICHE */}
-        <section className="section-premium bg-gradient-warm !pt-0 md:!pt-0">
+        <section id="bereiche" className="section-premium bg-gradient-warm !pt-0 md:!pt-0 scroll-mt-24">
           <div className="container-premium">
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} disableOffset />
             <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 md:gap-7">
