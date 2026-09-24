@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
+import impressumHero from "@/assets/adobe-482785126-impressum.jpeg.asset.json";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
@@ -19,17 +20,36 @@ const Impressum = () => {
   const imp = t.impressum;
   const contactCopy = pageExtras[language].contact;
 
+  const isDe = language === "de";
+
   return (
     <Layout>
-      <section className="relative h-[30vh] min-h-[220px] flex items-end">
+      <section className={`relative h-[30vh] min-h-[220px] flex items-end ${isDe ? "bg-primary" : ""}`}>
         <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(19,30,53,0.94) 0%, rgba(19,30,53,0.80) 60%, rgba(19,30,53,0.38) 100%)" }} />
-          <AiImageDisclosure type="illustrative" />
+          {isDe ? (
+            <OptimizedImg src={impressumHero.url} alt={imp.title} className="w-full h-full object-cover max-md:object-contain" priority />
+          ) : (
+            <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
+          )}
+          <div
+            className="absolute inset-0"
+            style={{
+              background: isDe
+                ? "linear-gradient(to top, rgba(27,42,74,0.60) 0%, rgba(27,42,74,0.34) 55%, rgba(27,42,74,0.30) 100%)"
+                : "linear-gradient(to top, rgba(19,30,53,0.94) 0%, rgba(19,30,53,0.80) 60%, rgba(19,30,53,0.38) 100%)",
+            }}
+          />
+          {!isDe && <AiImageDisclosure type="illustrative" />}
         </div>
         <div className="relative container pb-8 md:pb-10">
           <Reveal>
-            <h1 className="text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1] [text-shadow:0_1px_3px_hsl(218_46%_10%/0.55)]">
+            <h1
+              className={
+                isDe
+                  ? "sr-only"
+                  : "text-[1.6rem] md:text-[2rem] font-heading font-semibold text-white leading-[1.1] [text-shadow:0_1px_3px_hsl(218_46%_10%/0.55)]"
+              }
+            >
               {imp.title}
             </h1>
           </Reveal>
