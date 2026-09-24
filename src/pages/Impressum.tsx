@@ -29,11 +29,11 @@ const Impressum = () => {
           className="relative h-[340px] overflow-hidden md:h-[440px]"
           style={{ background: "linear-gradient(115deg, rgb(17,48,86) 0%, rgb(10,34,66) 100%)" }}
         >
-          <div className="absolute inset-x-0 top-0 h-[60%] [mask-image:linear-gradient(to_bottom,black_50%,transparent_98%)] md:inset-y-0 md:left-0 md:right-auto md:h-full md:w-[44%] md:[mask-image:linear-gradient(to_right,black_52%,transparent_99%)]">
+          <div className="absolute inset-x-0 top-0 h-[60%] [mask-image:linear-gradient(to_bottom,black_50%,transparent_98%)] md:inset-y-0 md:left-0 md:right-auto md:h-full md:w-[min(44%,546px)] md:[mask-image:linear-gradient(to_right,black_52%,transparent_99%)]">
             <img
               src={impressumHero}
               alt=""
-              className="h-full w-full object-cover object-[50%_15%] md:object-center"
+              className="h-full w-full object-cover object-top md:object-center"
               style={{ filter: "saturate(0.55) brightness(0.95)" }}
             />
             <div className="absolute inset-0" style={{ background: "rgb(23,56,97)", mixBlendMode: "color" }} />
