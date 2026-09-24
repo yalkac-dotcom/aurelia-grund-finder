@@ -10,7 +10,7 @@ import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 const About = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const a = t.aboutV2;
 
   usePageSeo(a.seoTitle, a.seoDescription);
