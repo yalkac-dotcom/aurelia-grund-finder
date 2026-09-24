@@ -41,7 +41,7 @@ const tr: Translations = {
       { label: "İş Ortakları İçin", path: "/fuer-geschaeftspartner" },
       { label: "Portföy", path: "/portfolio" },
       { label: "Aurelia Hakkında", path: "/ueber-uns" },
-      { label: "Çalışma Şeklimiz", path: "/wie-es-funktioniert" },
+      { label: "Süreç", path: "/wie-es-funktioniert" },
       { label: "İletişim", path: "/kontakt" },
     ],
     legalItems: [
@@ -342,7 +342,7 @@ const tr: Translations = {
     faqTitle: "Sıkça sorulan sorular",
     faqIntro: "İlk görüşmeden önce bilinmesi gereken temel bilgiler.",
     faqItems: [
-      { q: "İşbirliği nasıl yürür?", a: "Durumu anlatırsınız, değerlendirmemizle size geri döneriz. Satış olursa değerleme, alacaklı görüşmeleri ve noter işlemlerini biz üstleniriz." },
+      { q: "İş birliği nasıl yürür?", a: "Durumu anlatırsınız, değerlendirmemizle size geri döneriz. Satış olursa değerleme, alacaklı görüşmeleri ve noter işlemlerini biz üstleniriz." },
       { q: "Hangi belgelere ihtiyacınız var?", a: "İlk değerlendirme için kısa bir tarif yeterlidir. Bağlayıcı bir teklif için: güncel tapu kaydı, alacak dökümleri ve — miras vakalarında — veraset belgesi. Temin etmenize yardımcı oluruz." },
       { q: "Devam eden bir cebri icrada da satabilir miyim?", a: "Bu, ihaleye karar verilene kadar hâlâ mümkün olabilir — koşulu, vakanın zamanında incelenmesi ve ilgili alacaklıların onay vermesidir. İlerlemiş prosedürlerde her gün önemlidir." },
       { q: "Satmazsam masrafım olur mu?", a: "Hayır. İnceleme ve ilk görüşme ücretsizdir. Masraflar yalnızca bir satış sözleşmesi yapıldığında doğar." },
@@ -450,7 +450,7 @@ const tr: Translations = {
     ],
     holdNote:
       "Genel yaklaşımın açıklaması. Somut kararlar yalnızca obje bazında alınır. Piyasa koşulları değişebilir.",
-    principlesTitle: "İşbirliğinde bizim için önemli olan",
+    principlesTitle: "İş birliğinde bizim için önemli olan",
     principlesIntro: "",
     principles: [
       { title: "Açık konuşmak", text: "Neyi değerlendirebildiğimizi söyleriz; bilgi eksikse veya bir konu bizim için uygun değilse bunu da açıkça belirtiriz." },
@@ -574,17 +574,17 @@ const tr: Translations = {
     legalNoticeLabel: "Not",
     legalNoticeText:
       "Bu sayfa, kamuya açık bir yatırım ürünü teklifi veya yatırıma davet niteliği taşımaz. Olası mutabakatlar yalnızca bireysel olarak, projeye dayalı şekilde ve ayrı bir değerlendirme sonrasında yapılır.",
-    formsTitle: "Olası işbirliği biçimleri",
+    formsTitle: "Olası iş birliği biçimleri",
     formsIntro:
-      "Her işbirliği somut projeden doğar. Pratikte en sık karşılaşılan yapılar şunlardır.",
+      "Her iş birliği somut projeden doğar. Pratikte en sık karşılaşılan yapılar şunlardır.",
     forms: [
-      { title: "Projeye dayalı işbirliği", desc: "Somut bir gayrimenkul projesi etrafında işbirliği – alımdan değerlendirmeye." },
+      { title: "Projeye dayalı iş birliği", desc: "Somut bir gayrimenkul projesi etrafında iş birliği – alımdan değerlendirmeye." },
       { title: "Birden fazla proje", desc: "Daha uzun bir dönem boyunca eşlik; projelerin durumuna ilişkin düzenli ve sakin uyum." },
       { title: "Bireysel mutabakat", desc: "Standart model yok. Her yapı somut duruma göre hazırlanır." },
       { title: "Doğrudan diyalog", desc: "Yönetimle gizli temas. Net iletişim, nesnel uyum." },
     ],
-    principlesTitle: "Sağlam bir işbirliğinin temelleri",
-    principlesText: "Bizim için iyi bir işbirliği, görevlerin, beklentilerin ve sorumlulukların en başından itibaren açıkça konuşulmasıyla başlar.",
+    principlesTitle: "Sağlam bir iş birliğinin temelleri",
+    principlesText: "Bizim için iyi bir iş birliği, görevlerin, beklentilerin ve sorumlulukların en başından itibaren açıkça konuşulmasıyla başlar.",
     principles: [
       { title: "Açık alışveriş", text: "Bir projede neyin söz konusu olduğunu, kimin hangi görevi üstleneceğini ve hangi beklentilerin bulunduğunu erkenden konuşuruz." },
       { title: "Net sorumluluklar", text: "Her katılımcı, neden sorumlu olduğunu ve hangi kararların birlikte alınması gerektiğini bilmelidir." },
@@ -592,25 +592,25 @@ const tr: Translations = {
     ],
     stepsTitle: "Nasıl ilerliyoruz",
     steps: [
-      { title: "İlk temas", desc: "Projeyi, gayrimenkulü veya olası bir işbirliği fikrinizi bize kısaca tanıtırsınız." },
+      { title: "İlk temas", desc: "Projeyi, gayrimenkulü veya olası bir iş birliği fikrinizi bize kısaca tanıtırsınız." },
       { title: "İlk inceleme", desc: "Fikrin, ilkesel olarak faaliyet alanımıza ve çalışma biçimimize uyup uymadığına bakarız." },
-      { title: "Ortak görüşme", desc: "Bir işbirliği ilkesel olarak ilgi çekici görünüyorsa, görevleri, beklentileri ve temel ayrıntıları konuşuruz." },
-      { title: "Mutabakat", desc: "Bir işbirliği gerçekleşecekse, somut proje için gereken anlaşmalar yazılı olarak kayıt altına alınır." },
+      { title: "Ortak görüşme", desc: "Bir iş birliği ilkesel olarak ilgi çekici görünüyorsa, görevleri, beklentileri ve temel ayrıntıları konuşuruz." },
+      { title: "Mutabakat", desc: "Bir iş birliği gerçekleşecekse, somut proje için gereken anlaşmalar yazılı olarak kayıt altına alınır." },
       { title: "Uygulama", desc: "Ardından taraflar, üzerinde anlaşılan görev ve sorumluluklara göre birlikte çalışır." },
     ],
     stepsNote:
-      "Bir işbirliğinin türü, kapsamı ve koşulları her proje için ayrıca kararlaştırılır.",
+      "Bir iş birliğinin türü, kapsamı ve koşulları her proje için ayrıca kararlaştırılır.",
     faqTitle: "Sık sorulan sorular",
     faqIntro: "Sorunuzun yanıtı burada yoksa doğrudan bize ulaşın.",
     faqItems: [
-      { q: "Standart katılım modelleri sunuyor musunuz?", a: "Hayır. Kamuya açık yatırım ürünleri veya standart modeller sunmuyoruz. Her işbirliği projeye dayalı ve bireysel olarak ortaya çıkar." },
-      { q: "Bu sayfa kime yönelik?", a: "Gayrimenkul alanıyla bağlantılı, uzun vadeli bakış açısına sahip ve projeye dayalı işbirliğine ilgi duyan ortaklara." },
-      { q: "İlk temas nasıl ilerler?", a: "Gizli ve bağlayıcı değildir. Yapıyı siz aktarırsınız; biz işbirliğinin ilkesel olarak uygun olup olmadığını değerlendiririz." },
+      { q: "Standart katılım modelleri sunuyor musunuz?", a: "Hayır. Kamuya açık yatırım ürünleri veya standart modeller sunmuyoruz. Her iş birliği projeye dayalı ve bireysel olarak ortaya çıkar." },
+      { q: "Bu sayfa kime yönelik?", a: "Gayrimenkul alanıyla bağlantılı, uzun vadeli bakış açısına sahip ve projeye dayalı iş birliğine ilgi duyan ortaklara." },
+      { q: "İlk temas nasıl ilerler?", a: "Gizli ve bağlayıcı değildir. Yapıyı siz aktarırsınız; biz iş birliğinin ilkesel olarak uygun olup olmadığını değerlendiririz." },
       { q: "Mutabakatlar nasıl belgelenir?", a: "Yazılı ve özenle belgelenir. İçerik, çerçeve ve koşullar yalnızca vakaya özel olarak konuşulur." },
     ],
     finalCtaTitle: "Bizimle bir proje görüşmek ister misiniz?",
     finalCtaText:
-      "Bir gayrimenkulünüz, bir projeniz veya işbirliği için somut bir fikriniz varsa bize memnuniyetle ulaşabilirsiniz. Öncelikle fikrin ilkesel olarak bize uygun olup olmadığına bakarız.",
+      "Bir gayrimenkulünüz, bir projeniz veya iş birliği için somut bir fikriniz varsa bize memnuniyetle ulaşabilirsiniz. Öncelikle fikrin ilkesel olarak bize uygun olup olmadığına bakarız.",
     finalCtaButton: "Bağlayıcı olmadan iletişime geçin",
   },
   about: {
@@ -730,7 +730,7 @@ const tr: Translations = {
     faqTitle: "Sık Sorulan Sorular",
     faqSubtitle: "İlk görüşme öncesinde bize sıkça sorulan bazı sorular.",
     faqItems: [
-      { q: "İlk değerlendirme gerçekten ücretsiz mi?", a: "Evet. Talebinizin ilk incelemesi için sizden herhangi bir ücret almıyoruz. Bilgilerinizi inceledikten sonra sizinle iletişime geçiyoruz." },
+      { q: "İlk değerlendirme gerçekten ücretsiz mi?", a: "Evet. Talebinizin ilk değerlendirmesi için sizden herhangi bir ücret almıyoruz. Bilgilerinizi inceledikten sonra sizinle iletişime geçiyoruz." },
       { q: "Hangi nesneleri inceliyorsunuz?", a: "Farklı gayrimenkul ve arsaları inceliyoruz. Bunlara boş duran, yenileme gerektiren veya miras kalan gayrimenkuller ile daha zor satış durumundaki nesneler de dahildir." },
       { q: "İlk görüşme nasıl gerçekleşir?", a: "İlk görüşme telefonla, görüntülü görüşme yoluyla veya anlaşarak yüz yüze yapılabilir. Bu görüşmede öncelikle durumunuzu ve gayrimenkulünüzü tanımak amaçlanır." },
       { q: "Türkiye genelinde faaliyet gösteriyor musunuz?", a: "Almanya'daki gayrimenkulleri ilke olarak konumdan bağımsız olarak inceliyoruz. Bir nesnenin bizim için uygun olup olmadığına, ilgili gayrimenkulü inceledikten sonra karar veriyoruz." },
@@ -1110,14 +1110,14 @@ const tr: Translations = {
     },
     faqBadge: "Sık sorulan sorular",
     faqTitle: "Sık sorulan sorular",
-    faqIntro: "Aşağıda, seçilmiş projeler ve olası bir işbirliği kapsamında sıkça sorulan sorulara ilk yanıtlar bulacaksınız.",
+    faqIntro: "Aşağıda, seçilmiş projeler ve olası bir iş birliği kapsamında sıkça sorulan sorulara ilk yanıtlar bulacaksınız.",
     faqItems: [
       { q: "Yatırımcı sayfası kime yöneliktir?", a: "Sayfa, Almanya'daki özü olan gayrimenkul projelerine ilgi duyan deneyimli yatırımcılara, aile ofislerine ve kurumsal ortaklara yöneliktir. İlk içeriksel yönlendirme işlevi görür – halka açık bir teklif değildir." },
       { q: "İçerikler somut bir yatırım teklifi midir?", a: "Hayır. Sunulan tüm bilgiler yalnızca genel yönlendirme amaçlıdır. Somut bir teklif veya katılım daveti niteliği taşımaz." },
       { q: "Gösterilen getiriler veya sonuçlar bağlayıcı mıdır?", a: "Hayır. Getiriler, sonuçlar veya finansal göstergelere ilişkin tüm veriler, tamamlanmış veya planlanan bireysel vakalara atıfta bulunur ve başka projelere aktarılamaz. Geçmiş sonuçlar, gelecekteki gelişmeler için güvenilir bir gösterge değildir." },
       { q: "Aurelia projeleri nasıl seçer?", a: "Aurelia, özel durumlardaki gayrimenkullere odaklanır – tanınabilir öz, geliştirme potansiyeli ve net bir stratejik perspektifle. Seçim; konum, durum, kullanım potansiyeli ve ekonomik sınıflandırmanın kapsamlı bir değerlendirmesine dayanır." },
       { q: "Hazırlık aşamasındaki projeler de sunulabilir mi?", a: "Evet. Aurelia bu sayfada, yapılandırılmış hazırlığın erken aşamasında bulunan seçilmiş projeleri de sunar. Bu açıklamalar tamamen bilgilendirme amaçlıdır ve herhangi bir taahhüt içermez." },
-      { q: "İlk iletişim nasıl gerçekleşir?", a: "Bu sayfadaki iletişim formu aracılığıyla veya doğrudan başvuru yoluyla. Aurelia tüm başvuruları gizli tutar ve bir işbirliğinin uygun olup olmadığını bireysel olarak değerlendirir." },
+      { q: "İlk iletişim nasıl gerçekleşir?", a: "Bu sayfadaki iletişim formu aracılığıyla veya doğrudan başvuru yoluyla. Aurelia tüm başvuruları gizli tutar ve bir iş birliğinin uygun olup olmadığını bireysel olarak değerlendirir." },
       { q: "Bu sayfa hukuki veya vergisel danışmanlığın yerini alır mı?", a: "Hayır. İçerikler bireysel hukuki, vergisel veya yatırım danışmanlığının yerini almaz. İlgili taraflar her zaman kendi nitelikli danışmanlarından destek almalıdır." },
       { q: "Tüm devam eden projeler bu sayfada gösteriliyor mu?", a: "Hayır. Sayfa yalnızca çalışma yaklaşımını örneklemek için uygun olan seçilmiş projeleri gösterir. Her proje kamuya açık olarak sunulmaz." },
     ],
