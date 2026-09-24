@@ -44,6 +44,48 @@ const FAQ = () => {
         {/* FAQ-LISTE */}
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
+            {language === "de" ? (
+            <div className="mx-auto max-w-[760px]">
+              <div aria-hidden="true" className="mx-auto mb-10 h-px w-16 bg-accent md:mb-12" />
+              <div className="space-y-5 md:space-y-6">
+              {f.items.map((item, i) => {
+                const isOpen = open === i;
+                return (
+                  <Reveal key={i} delay={i * 0.04}>
+                    <div
+                      className={`rounded-xl border bg-card transition-all duration-300 shadow-[0_6px_24px_-12px_hsl(var(--primary)/0.18)] ${isOpen ? "border-accent/60 shadow-[0_12px_36px_-14px_hsl(var(--primary)/0.25)]" : "border-primary/15 hover:border-accent/50"}`}
+                    >
+                      <button
+                        onClick={() => setOpen(isOpen ? null : i)}
+                        className="flex w-full items-center justify-between gap-5 px-5 py-5 text-left md:px-8 md:py-6"
+                        aria-expanded={isOpen}
+                      >
+                        <span className="flex items-start gap-4">
+                          <span aria-hidden="true" className="mt-[0.35rem] hidden h-4 w-px shrink-0 bg-accent md:block" />
+                          <h2 className="text-[1rem] font-heading font-semibold leading-snug text-primary md:text-[1.08rem]">
+                            {item.q}
+                          </h2>
+                        </span>
+                        <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-colors duration-300 ${isOpen ? "border-accent bg-accent/10" : "border-primary/20"}`}>
+                          <ChevronDown size={18} className={`text-accent transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+                        </span>
+                      </button>
+                      {isOpen && (
+                        <div className="px-5 pb-6 md:px-8 md:pb-8">
+                          <div className="border-t border-accent/30 pt-5 md:pl-5">
+                            <p className="text-[0.93rem] leading-[1.85] text-foreground/85">
+                              {item.a}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </Reveal>
+                );
+              })}
+              </div>
+            </div>
+            ) : (
             <div className="mx-auto max-w-3xl space-y-4">
               {f.items.map((item, i) => {
                 const isOpen = open === i;
@@ -75,6 +117,7 @@ const FAQ = () => {
                 );
               })}
             </div>
+            )}
           </div>
         </section>
 
