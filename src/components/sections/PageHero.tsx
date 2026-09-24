@@ -48,6 +48,7 @@ const PageHero = ({
   phoneLine,
   size = "default",
   mobileHomeFlow = false,
+  descriptionClassName,
   aiDisclosure,
 }: PageHeroProps) => (
   <section
