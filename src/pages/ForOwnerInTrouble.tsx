@@ -17,6 +17,7 @@ import { pageSeo } from "@/i18n/pageSeo";
 const situationImages = cardImages.ownerSituations;
 const replacementSituationImages = {
   vacancy: { image: "/cards/pexels-strannik-sk-32992049.jpg", imagePosition: "50% 72%" },
+  complex: { image: "/cards/AdobeStock_536875854.jpeg", imagePosition: "50% 45%" },
 } as const;
 
 const normalizeSituationTitle = (title: string) =>
@@ -25,8 +26,13 @@ const normalizeSituationTitle = (title: string) =>
 const getReplacementSituationImage = (title: string) => {
   const normalizedTitle = normalizeSituationTitle(title);
 
-  if (/leerstand|renovierungsbedarf|vacancy|renovation needs|leegstand|renovatiebehoefte|sfitta|ristrutturazione|desocupacion|reforma|vacance|renovation|bosluk|tadilat ihtiyaci/.test(normalizedTitle)) {
+  if (/leerstand|renovierungsbedarf|vacancy|renovation needs|leegstand|renovatiebehoefte|sfitta|ristrutturazione|desocupacion|reforma|vacance|renovation|bosluk|tadilat/.test(normalizedTitle)) {
     return replacementSituationImages.vacancy;
+  }
+
+  // „Komplexe oder zeitkritische Situation" und Entsprechungen in allen Sprachen
+  if (/komplexe|zeitkritisch|complex|tijdkritische|complessa|compleja|karmas/.test(normalizedTitle)) {
+    return replacementSituationImages.complex;
   }
 
   return undefined;
