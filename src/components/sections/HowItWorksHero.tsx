@@ -34,7 +34,7 @@ const HowItWorksHero = ({
   trustLine,
 }: HowItWorksHeroProps) => (
   <>
-  <section id="hero" className="relative isolate overflow-hidden bg-primary min-h-[680px] md:min-h-[max(62svh,560px)]">
+  <section id="hero" className="relative isolate overflow-hidden bg-primary min-h-[980px] md:min-h-[max(62svh,560px)]">
     <div aria-hidden="true" className="absolute inset-0 -z-10 grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1">
       {photos.map((photo, index) => (
         <div
