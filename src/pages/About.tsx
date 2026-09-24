@@ -84,7 +84,7 @@ const About = () => {
               const Icon = valueIcons[index] ?? Eye;
               return (
                 <Reveal key={value.title} delay={index * 0.05}>
-                  <article className="h-full rounded-sm border border-border/70 bg-card p-6 md:p-7">
+                  <article className={language === "de" ? `h-full p-6 md:p-7 ${aureliaCard}` : "h-full rounded-sm border border-border/70 bg-card p-6 md:p-7"}>
                     <div className="icon-tile icon-tile-light mb-5"><Icon size={20} aria-hidden="true" /></div>
                     <h3 className="font-heading text-[1.08rem] font-semibold text-primary">{value.title}</h3>
                     <p className="mt-3 text-[14px] leading-[1.75] text-foreground/75">{value.text}</p>
