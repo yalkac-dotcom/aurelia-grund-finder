@@ -8,7 +8,7 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
 import { cardImages, ownerDirectSaleImage, ownerVacancyImage } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { MessageSquare, Compass, Scale, FileText, Handshake } from "lucide-react";
+import { MessageSquare, Compass, Scale, FileText, Handshake, ArrowRight } from "lucide-react";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
@@ -177,6 +177,14 @@ const ForOwnerInTrouble = () => {
               <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
                 {o.stepsNote}
               </p>
+              {language === "de" && (
+                <div className="mt-6 flex justify-center">
+                  <Link to="/immobilie-anbieten?land=deutschland" className="btn-primary">
+                    Kostenfreie Erstprüfung anfragen
+                    <ArrowRight size={13} className="ml-2 text-accent" />
+                  </Link>
+                </div>
+              )}
             </Reveal>
           </div>
         </section>
