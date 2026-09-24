@@ -1,13 +1,11 @@
-import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
-import PageHero from "@/components/sections/PageHero";
+import HowItWorksHero from "@/components/sections/HowItWorksHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 
 import ProcessStep from "@/components/sections/ProcessStep";
 import FinalCta from "@/components/sections/FinalCta";
 import { Link } from "react-router-dom";
-import { heroSets } from "@/assets/heroImages";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 import { pageExtras } from "@/i18n/pageExtras";
@@ -25,17 +23,13 @@ const HowItWorks = () => {
 
   return (
     <Layout>
-      <PageHero
-        image={heroSets.arbeitsweise}
-        imageAlt={w.heroImageAlt}
+      <HowItWorksHero
         kicker={w.heroKicker}
         title={w.heroTitle}
         description={w.heroDescription}
-        primaryCta={{ label: w.heroPrimaryCta, to: "/kontakt" }}
-        secondaryCta={{ label: w.heroSecondaryCta, href: "#ablauf" }}
+        primaryCta={w.heroPrimaryCta}
+        secondaryCta={w.heroSecondaryCta}
         trustLine={w.heroTrustLine}
-        size="compact"
-        aiDisclosure="standard"
       />
 
       <div className="page-shell">
