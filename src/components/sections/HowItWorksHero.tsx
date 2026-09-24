@@ -55,13 +55,13 @@ const HowItWorksHero = ({
     </div>
     <div className="flex min-h-[inherit] w-full items-end justify-center pb-3 pt-32 md:pb-4 md:pt-40">
       <div
-        className="w-full border border-gold border-x-0 px-4 py-2.5 text-center md:px-8 md:py-3"
+        className="w-full border border-gold border-x-0 px-4 py-3 text-center md:px-8 md:py-4"
         style={{ background: "hsl(var(--background) / 0.78)", backdropFilter: "blur(1px)" }}
       >
-        <p className="text-[0.66rem] font-semibold uppercase tracking-[0.2em] text-primary">{kicker}</p>
-        <h1 className="mt-1 font-heading text-[1.45rem] font-extrabold leading-tight text-primary md:text-[1.9rem]">{title}</h1>
-        <p className="mx-auto mt-1.5 max-w-2xl whitespace-pre-line text-[0.84rem] font-medium leading-[1.6] text-primary md:text-[0.88rem]">{description}</p>
-        <div className="mt-3 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
+        <p className="text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-primary md:text-[0.66rem] md:tracking-[0.2em]">{kicker}</p>
+        <h1 className="mx-auto mt-1.5 max-w-2xl font-heading text-[1.42rem] font-extrabold leading-[1.25] tracking-tight text-balance text-primary md:mt-2 md:text-[1.9rem]">{title}</h1>
+        <p className="mx-auto mt-2 max-w-2xl whitespace-pre-line text-[0.84rem] font-medium leading-[1.65] text-pretty text-primary md:mt-2.5 md:text-[0.88rem] md:leading-[1.6]">{description}</p>
+        <div className="mt-3.5 flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2.5 sm:gap-x-4 md:mt-4">
           <Link
             to="/kontakt"
             className="btn-primary"
