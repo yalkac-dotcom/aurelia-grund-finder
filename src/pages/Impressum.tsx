@@ -24,38 +24,13 @@ const Impressum = () => {
 
   return (
     <Layout>
-      <section className={`relative h-[30vh] min-h-[220px] flex items-end ${isDe ? "bg-primary" : ""}`}>
+      <section className={`relative h-[30vh] min-h-[220px] flex items-end ${isDe ? "" : "bg-primary"}`} style={isDe ? { background: "linear-gradient(to bottom, rgb(16,50,88) 0%, rgb(10,35,68) 100%)" } : undefined}>
         <div className="absolute inset-0">
           {isDe ? (
             <>
-              <OptimizedImg src={impressumHero} alt={imp.title} tone="none" style={{ filter: "saturate(0.6) hue-rotate(35deg) brightness(0.55)" }} className="w-full h-full object-cover max-md:object-contain" priority />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: "linear-gradient(to top, rgba(27,42,74,0.5) 0%, rgba(27,42,74,0.42) 55%, rgba(27,42,74,0.36) 100%)",
-                }}
-              />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: "rgba(250,233,198,0.9)",
-                  mixBlendMode: "soft-light",
-                  opacity: 0.75,
-                  maskImage: "linear-gradient(to bottom, transparent 18%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.9) 62%, transparent 84%)",
-                  WebkitMaskImage: "linear-gradient(to bottom, transparent 18%, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.9) 62%, transparent 84%)",
-                }}
-              />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: "rgba(240,198,132,0.9)",
-                  mixBlendMode: "soft-light",
-                  opacity: 0.9,
-                  maskImage: "linear-gradient(to bottom, transparent 22%, rgba(0,0,0,0.8) 42%, rgba(0,0,0,0.8) 60%, transparent 80%)",
-                  WebkitMaskImage: "linear-gradient(to bottom, transparent 22%, rgba(0,0,0,0.8) 42%, rgba(0,0,0,0.8) 60%, transparent 80%)",
-                }}
-              />
+              <OptimizedImg src={impressumHero} alt={imp.title} tone="none" className="w-full h-full object-cover max-md:object-contain" priority />
             </>
+
           ) : (
             <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
           )}
