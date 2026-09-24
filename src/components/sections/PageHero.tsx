@@ -24,6 +24,8 @@ interface PageHeroProps {
   size?: "default" | "compact";
   /** Keeps the mobile home hero entirely content-driven with extra space below its CTAs. */
   mobileHomeFlow?: boolean;
+  /** Optionale Zusatzklassen nur für den Beschreibungstext (z. B. Startseite: kräftiger Lesetext). */
+  descriptionClassName?: string;
   aiDisclosure?: AiDisclosureType;
 }
 
