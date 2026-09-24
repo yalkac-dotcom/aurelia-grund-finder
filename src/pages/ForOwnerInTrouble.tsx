@@ -18,6 +18,8 @@ const situationImages = cardImages.ownerSituations;
 const replacementSituationImages = {
   vacancy: { image: "/cards/pexels-strannik-sk-32992049.jpg", imagePosition: "50% 72%" },
   complex: { image: "/cards/AdobeStock_536875854.jpeg", imagePosition: "50% 45%" },
+  directSale: { image: "/cards/pexels-kampus-8439664.jpg", imagePosition: "50% 45%" },
+  inheritance: { image: "/cards/pexels-pavel-danilyuk-8204941.jpg", imagePosition: "50% 48%" },
 } as const;
 
 const normalizeSituationTitle = (title: string) =>
@@ -33,6 +35,14 @@ const getReplacementSituationImage = (title: string) => {
   // „Komplexe oder zeitkritische Situation" und Entsprechungen in allen Sprachen
   if (/komplexe|zeitkritisch|complex|tijdkritische|complessa|compleja|karmas/.test(normalizedTitle)) {
     return replacementSituationImages.complex;
+  }
+
+  if (/direkter verkaufswunsch|direct wish to sell|dogrudan satis|directe verkoopwens|vendita diretta|venta directa|vente directe/.test(normalizedTitle)) {
+    return replacementSituationImages.directSale;
+  }
+
+  if (/erbfall|inheritance|miras|erfenis|eredita|herencia|succession/.test(normalizedTitle)) {
+    return replacementSituationImages.inheritance;
   }
 
   return undefined;
