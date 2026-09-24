@@ -6,6 +6,7 @@ import SectionHeader from "@/components/sections/SectionHeader";
 import ProcessStep from "@/components/sections/ProcessStep";
 import FinalCta from "@/components/sections/FinalCta";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { icons3d } from "@/assets/icons3d";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -105,6 +106,14 @@ const ForGeschaftspartner = () => {
               <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
                 {p.stepsNote}
               </p>
+              {language === "de" && (
+                <div className="mt-6 flex justify-center">
+                  <Link to="/kontakt#kontaktformular" className="btn-primary">
+                    B2B-Kooperation unverbindlich anfragen
+                    <ArrowRight size={13} className="ml-2 text-accent" />
+                  </Link>
+                </div>
+              )}
             </Reveal>
           </div>
         </section>
