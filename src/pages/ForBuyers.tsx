@@ -100,6 +100,16 @@ const ForBuyers = () => {
                 );
               })}
             </div>
+            {language === "de" && (
+              <Reveal delay={0.2}>
+                <div className="mt-10 flex justify-center">
+                  <Link to="/kontakt#kontaktformular" className="btn-primary">
+                    Detailliertes Exposé & Objektliste anfragen
+                    <ArrowRight size={13} className="ml-2 text-accent" />
+                  </Link>
+                </div>
+              </Reveal>
+            )}
           </div>
         </section>
 
