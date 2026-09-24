@@ -24,7 +24,7 @@ const Impressum = () => {
       <section className="relative h-[30vh] min-h-[220px] flex items-end">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
-          <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218 46% 14%)]/90 via-[hsl(218 46% 14%)]/55 to-[hsl(218 46% 14%)]/25" />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(19,30,53,0.92) 0%, rgba(19,30,53,0.65) 45%, rgba(19,30,53,0.30) 100%)" }} />
           <AiImageDisclosure type="illustrative" />
         </div>
         <div className="relative container pb-8 md:pb-10">
