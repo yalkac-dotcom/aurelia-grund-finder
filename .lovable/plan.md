@@ -1,18 +1,20 @@
-# Drei Käufer-Bilder gezielt ersetzen
+# Finish the current website state
 
-## Umsetzung
-- Die drei hochgeladenen Original-JPEGs als stabile lokale Website-Dateien ablegen.
-- Nur den Käufer-Hero durch Adobe Stock 302581671 ersetzen, den Bildfokus für Haus und Balkone optimieren und den lokalen Verlauf nur bei Bedarf moderat aufhellen.
-- Die Karten sprachübergreifend über ihre Bedeutung zuordnen: „Ansprechpartner“ erhält Adobe Stock 356467514, „Kaufabwicklung“ Adobe Stock 586889892.
-- Für diese drei ersetzten Bildplätze die KI-Kennzeichnung entfernen; „Preise und Konditionen“ sowie „Unterlagen zum Objekt“ und sämtliche anderen Bilder unverändert lassen.
-- Die bestehenden Bildnachweise in allen sieben Sprachen um genau diese drei tatsächlich verwendeten Adobe-Dateinummern an den Käufer-Bildplätzen ergänzen beziehungsweise dortige Altangaben ersetzen.
+## Scope
+- Preserve all selected imagery, copy, layouts, navigation, forms, and existing design decisions.
+- Do not source, generate, purchase, or introduce any new image.
+- Complete only missing image wiring, responsive crops, required AI labels, and factual image credits.
 
-## Technische Details
-- Die Karten werden nicht über starre Sprachindizes, sondern über normalisierte Titelbegriffe aller sieben Sprachfassungen erkannt.
-- Bildgrößen, Kartenformat, Texte, Links, Abstände und übrige Käufer-Seitenstruktur bleiben unverändert; nur lokale `object-position`-Werte werden pro neuem Foto gesetzt.
-- Keine globalen Stiländerungen und keine Veröffentlichung.
+## Implementation
+- Inventory every image currently rendered across the site and reconcile it with the image-credits page in all seven languages.
+- Keep or add the existing localized AI disclosure variants only where required; remove neither valid labels nor labels from unrelated images.
+- Adjust only image-specific crop positions or existing local overlays when viewport checks reveal a concrete issue at approximately 390, 768, or 1440 px.
+- Correct broken or incomplete image paths and remove stale credit entries only when confirmed unused.
+- Preserve the German homepage and all unrelated content and styling.
 
-## Prüfung
-- Käufer-Seite bei 1440 px und 390 px in allen sieben Sprachen prüfen.
-- Bildladung, Hero-Zuschnitt, Karten-Zuschnitte und ausschließlich entfernte KI-Hinweise kontrollieren.
-- Typcheck ausführen und die Vorschau-URL nennen.
+## Verification
+- Exercise all current routes at 390, 768, and 1440 px, including image loading, clipping, overlaps, and control fit.
+- Verify navigation and all seven language selections remain functional.
+- Confirm no image request returns 404 and no used image is absent from credits.
+- Run the TypeScript typecheck and report any remaining concrete issue.
+- Do not publish or deploy.
