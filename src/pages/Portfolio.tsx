@@ -27,7 +27,7 @@ const Portfolio = () => {
     srcSet: `${portfolioHero640} 640w, ${portfolioHero1024} 1024w, ${portfolioHero1440} 1440w`,
     sizes: "(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px",
   };
-  const heroSet = isGerman ? portfolioHeroSet : heroSets.premium;
+  const heroSet = portfolioHeroSet;
 
   usePageSeo(copy.seoTitle, pageSeo[language].portfolio.description);
 
@@ -46,7 +46,6 @@ const Portfolio = () => {
           />
           <div className="hero-overlay-base absolute inset-0" />
           <div className="hero-overlay-protect absolute inset-0" />
-          {!isGerman && <AiImageDisclosure type="standard" />}
         </div>
 
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
