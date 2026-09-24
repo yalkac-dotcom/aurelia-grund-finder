@@ -22,7 +22,7 @@ const stepIcons = [MessageSquare, Compass, Scale, FileText, Handshake];
 const ownerHeroImage = {
   src: "/heroes/AdobeStock_368296755.jpeg",
   srcSet: "/heroes/AdobeStock_368296755.jpeg 2048w",
-  sizes: heroSizes,
+  sizes: "(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px",
 };
 
 const ForOwnerInTrouble = () => {
@@ -34,15 +34,16 @@ const ForOwnerInTrouble = () => {
   return (
     <Layout>
       <PageHero
-        image={heroSets.eigentuemer}
+        image={ownerHeroImage}
         imageAlt={o.heroImageAlt}
+        imagePosition="50% 62%"
+        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.72) 0%, hsl(var(--primary) / 0.52) 35%, hsl(var(--primary) / 0.16) 68%, hsl(var(--primary) / 0.06) 100%)"
         kicker={o.heroKicker}
         title={o.heroTitle}
         description={o.heroDescription}
         primaryCta={{ label: o.heroPrimaryCta, to: "/immobilie-anbieten?land=deutschland" }}
         secondaryCta={{ label: o.heroSecondaryCta, href: "#ablauf" }}
         trustLine={o.heroTrustLine}
-        aiDisclosure="standard"
       />
 
       <div className="page-shell">
