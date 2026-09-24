@@ -17,7 +17,6 @@ import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
-import homeHeroStock from "@/assets/stock/AdobeStock_141562359.jpeg.asset.json";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
 // Reihenfolge in i18n bleibt führend; jeder Eintrag bekommt zusätzlich einen
@@ -39,8 +38,8 @@ const quoteMarks = {
 } as const;
 
 const homeHeroImage = {
-  src: homeHeroStock.url,
-  srcSet: `${homeHeroStock.url} 1920w`,
+  src: "/heroes/AdobeStock_141562359.jpeg",
+  srcSet: "/heroes/AdobeStock_141562359.jpeg 1920w",
   sizes: heroSets.premium.sizes,
 };
 
