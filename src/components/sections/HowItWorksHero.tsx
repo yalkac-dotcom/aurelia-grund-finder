@@ -61,7 +61,7 @@ const HowItWorksHero = ({
         <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-primary">{kicker}</p>
         <h1 className="mt-2 font-heading text-[1.7rem] leading-tight text-primary md:text-[2.3rem]">{title}</h1>
         <p className="mx-auto mt-3 max-w-2xl whitespace-pre-line text-[0.92rem] font-medium leading-[1.7] text-primary md:text-[0.98rem]">{description}</p>
-        <div className="mt-6 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
+        <div className="mt-5 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
           <Link
             to="/kontakt"
             className="btn-primary"
