@@ -165,6 +165,11 @@
     color: #fff !important;
   }
 
+  /* Ausnahme: Überschriften in hellen Karten innerhalb dunkelblauer Bereiche bleiben dunkelblau. */
+  #main-content :is(.section-navy, .bg-primary, [style*="--highlight"]) :is(.proof-card, .bg-card, .glass-card, .glass-card-dark) :is(h1, h2, h3, h4, h5, h6, legend, span.font-heading, dt.font-heading, th.font-heading) {
+    color: hsl(var(--primary)) !important;
+  }
+
   /* Accessible focus states for keyboard navigation */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-accent;
