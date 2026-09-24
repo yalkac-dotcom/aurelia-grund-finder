@@ -20,13 +20,13 @@ const FAQ = () => {
   return (
     <Layout>
       {/* HERO – bewusst niedriger als die übrigen Hauptseiten */}
-      <section className="relative flex min-h-[300px] items-end overflow-hidden bg-background md:h-[48vh] md:max-h-[430px] md:items-center">
+      <section className="relative flex min-h-[300px] items-end overflow-hidden bg-background md:h-[48vh] md:max-h-[430px]">
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center max-md:object-[86%_center]" priority />
         </div>
         <h1 className="sr-only">{f.title}</h1>
-        {/* Text im Header, ganz links, auf Höhe des FAQ-Schriftzugs im Bild */}
-        <div className="container-premium relative w-full pb-4 md:pb-0">
+        {/* Text im Header, ganz links, unten bündig auf Endhöhe des FAQ-Schriftzugs im Bild */}
+        <div className="relative w-full pb-4 pl-6 md:pb-[60px] md:pl-12 lg:pl-16">
           <Reveal>
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary">
               {f.kicker}
