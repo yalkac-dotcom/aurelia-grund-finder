@@ -36,7 +36,8 @@ const Privacy = () => {
           />
           <span
             aria-hidden="true"
-            className="absolute font-heading font-semibold text-[#F1DBA5] leading-none select-none text-[1.35rem] md:text-[2.1rem] [text-shadow:0_1px_6px_rgba(6,20,38,0.85),0_0_2px_rgba(6,20,38,0.9)] left-[41.5%] top-[39%] md:left-[43%] md:top-[37%]"
+            style={{ color: "#F1DBA5" }}
+            className="absolute font-heading font-semibold leading-none select-none text-[1.2rem] md:text-[1.9rem] [text-shadow:0_1px_6px_rgba(6,20,38,0.85),0_0_2px_rgba(6,20,38,0.9)] left-[50%] top-[21%] md:left-[57.5%] md:top-[30%]"
           >
             DSGVO
           </span>
