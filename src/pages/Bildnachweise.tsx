@@ -33,7 +33,7 @@ const Bildnachweise = () => {
         <img src={headerImg} alt="" className="w-full h-auto max-h-[38vh] object-cover" />
         <div className="absolute inset-0 flex items-center pl-[3%] pr-[38%] pb-[6%]">
           <h1
-            className="uppercase leading-none tracking-[0.08em] text-[clamp(1.1rem,4.6vw,4.5rem)] bg-gradient-to-b from-[hsl(42_70%_78%)] via-[hsl(40_58%_62%)] to-[hsl(36_50%_46%)] bg-clip-text text-transparent"
+            className="uppercase leading-none tracking-[0.03em] md:tracking-[0.08em] text-[clamp(0.8rem,3.4vw,4.5rem)] md:text-[clamp(1.1rem,4.4vw,4.5rem)] bg-gradient-to-b from-[hsl(42_70%_78%)] via-[hsl(40_58%_62%)] to-[hsl(36_50%_46%)] bg-clip-text text-transparent"
             style={{ fontFamily: "'Playfair Display', serif", fontWeight: 400 }}
           >
             {headingByLang[language] ?? t.footer.imageCredits}
