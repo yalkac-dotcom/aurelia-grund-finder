@@ -293,7 +293,7 @@ const TurkeyProperties = () => {
           height={460}
           loading="eager"
           {...({ fetchpriority: "high" } as React.HTMLAttributes<HTMLImageElement>)}
-          className="img-tone absolute inset-0 h-full w-full object-cover object-[68%_center] md:object-center"
+          className="img-tone absolute inset-0 h-full w-full object-cover object-[68%_center]"
         />
         <div
           className="absolute inset-0"
