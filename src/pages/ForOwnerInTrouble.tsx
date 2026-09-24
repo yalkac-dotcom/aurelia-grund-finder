@@ -31,7 +31,7 @@ const getReplacementSituationImage = (title: string) => {
   }
 
   // „Komplexe oder zeitkritische Situation" und Entsprechungen in allen Sprachen
-  if (/komplexe|zeitkritisch|complex|tijdkritische|complessa|compleja|karmasik/.test(normalizedTitle)) {
+  if (/komplexe|zeitkritisch|complex|tijdkritische|complessa|compleja|karmas/.test(normalizedTitle)) {
     return replacementSituationImages.complex;
   }
 
