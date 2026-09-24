@@ -27,7 +27,7 @@ const Impressum = () => {
       <section className={`relative h-[30vh] min-h-[220px] flex items-end ${isDe ? "bg-primary" : ""}`}>
         <div className="absolute inset-0">
           {isDe ? (
-            <OptimizedImg src={impressumHero.url} alt={imp.title} className="w-full h-full object-cover max-md:object-contain" priority />
+            <OptimizedImg src={impressumHero} alt={imp.title} className="w-full h-full object-cover max-md:object-contain" priority />
           ) : (
             <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
           )}
