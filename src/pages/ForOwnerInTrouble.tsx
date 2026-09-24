@@ -17,9 +17,6 @@ import { pageSeo } from "@/i18n/pageSeo";
 const situationImages = cardImages.ownerSituations;
 const replacementSituationImages = {
   vacancy: { image: "/cards/pexels-strannik-sk-32992049.jpg", imagePosition: "50% 72%" },
-  legal: { image: "/cards/AdobeStock_536875854.jpeg", imagePosition: "50% 50%" },
-  foreclosure: { image: "/cards/AdobeStock_277630125.jpeg", imagePosition: "50% 52%" },
-  financial: { image: "/cards/AdobeStock_247256556.jpeg", imagePosition: "50% 58%" },
 } as const;
 
 const normalizeSituationTitle = (title: string) =>
@@ -30,15 +27,6 @@ const getReplacementSituationImage = (title: string) => {
 
   if (/leerstand|renovierungsbedarf|vacancy|renovation needs|leegstand|renovatiebehoefte|sfitta|ristrutturazione|desocupacion|reforma|vacance|renovation|bosluk|tadilat ihtiyaci/.test(normalizedTitle)) {
     return replacementSituationImages.vacancy;
-  }
-  if (/rechtliche situation|rechtslage|legal situation|legal position|juridische situatie|situazione giuridica|situacion juridica|situation juridique|hukuki durum/.test(normalizedTitle)) {
-    return replacementSituationImages.legal;
-  }
-  if (/zwangsversteigerung|foreclosure|gedwongen verkoop|asta giudiziaria|subasta forzosa|vente forcee|icra yoluyla satis/.test(normalizedTitle)) {
-    return replacementSituationImages.foreclosure;
-  }
-  if (/finanzielle situation|financial situation|financiele situatie|situazione finanziaria|situacion financiera|situation financiere|mali durum/.test(normalizedTitle)) {
-    return replacementSituationImages.financial;
   }
 
   return undefined;
