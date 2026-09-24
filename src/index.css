@@ -147,11 +147,14 @@
   }
 
   /* Einheitliche Aurelia-Typografie für hervorgehobene Inhalte unterhalb der Hero-Bereiche. */
-  #main-content h2:not([class*="text-white"]):not([class*="text-highlight-foreground"]),
-  #main-content h3:not([class*="text-white"]):not([class*="text-highlight-foreground"]),
-  #main-content h4:not([class*="text-white"]):not([class*="text-highlight-foreground"]),
-  #main-content h5:not([class*="text-white"]):not([class*="text-highlight-foreground"]),
-  #main-content h6:not([class*="text-white"]):not([class*="text-highlight-foreground"]),
+  #main-content h2:not([class*="text-white"]):not([class*="text-highlight-foreground"]):not([class*="text-primary-foreground"]),
+  #main-content h3:not([class*="text-white"]):not([class*="text-highlight-foreground"]):not([class*="text-primary-foreground"]),
+  #main-content h4:not([class*="text-white"]):not([class*="text-highlight-foreground"]):not([class*="text-primary-foreground"]),
+  #main-content h5:not([class*="text-white"]):not([class*="text-highlight-foreground"]):not([class*="text-primary-foreground"]),
+  #main-content h6:not([class*="text-white"]):not([class*="text-highlight-foreground"]):not([class*="text-primary-foreground"]),
+  #main-content span.font-heading:not([class*="text-white"]):not([class*="text-highlight-foreground"]):not([class*="text-primary-foreground"]),
+  #main-content dt.font-heading:not([class*="text-white"]):not([class*="text-highlight-foreground"]):not([class*="text-primary-foreground"]),
+  #main-content th.font-heading:not([class*="text-white"]):not([class*="text-highlight-foreground"]):not([class*="text-primary-foreground"]),
   #main-content legend {
     font-family: 'Playfair Display', Georgia, serif;
     color: hsl(var(--primary));
