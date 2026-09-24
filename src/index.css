@@ -160,6 +160,11 @@
     color: hsl(var(--primary));
   }
 
+  /* Überschriften in dunkelblauen Bereichen: reines Weiß */
+  #main-content :is(.section-navy, .bg-primary, .footer-premium, [style*="--highlight"]) :is(h1, h2, h3, h4, h5, h6, legend, span.font-heading, dt.font-heading, th.font-heading) {
+    color: #fff !important;
+  }
+
   /* Accessible focus states for keyboard navigation */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-accent;
