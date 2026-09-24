@@ -35,6 +35,7 @@ const ProofCard = ({
   cta,
   compact = false,
   aiDisclosure,
+  frame = false,
 }: ProofCardProps) => {
   const id = `proof-${index}-title`;
 
