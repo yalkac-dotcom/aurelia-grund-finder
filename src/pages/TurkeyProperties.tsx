@@ -10,10 +10,10 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
-import heroTurkeyProperties from "@/assets/hero-turkey-properties.jpg";
 import { z } from "zod";
 import { usePageSeo } from "@/hooks/usePageSeo";
-import AiImageDisclosure from "@/components/AiImageDisclosure";
+
+const heroTurkeyProperties = "/heroes/AdobeStock_201542905_2.jpeg";
 
 type FormState = {
   fullName: string;
@@ -289,11 +289,11 @@ const TurkeyProperties = () => {
         <img
           src={heroTurkeyProperties}
           alt={page.hero.imageAlt}
-          width={1600}
-          height={1000}
+          width={2048}
+          height={460}
           loading="eager"
           {...({ fetchpriority: "high" } as React.HTMLAttributes<HTMLImageElement>)}
-          className="img-tone absolute inset-0 h-full w-full object-cover object-center"
+          className="img-tone absolute inset-0 h-full w-full object-cover object-[68%_center]"
         />
         <div
           className="absolute inset-0"
@@ -303,7 +303,6 @@ const TurkeyProperties = () => {
           }}
           aria-hidden="true"
         />
-        <AiImageDisclosure />
         <div className="page-frame-hero relative py-16 md:py-20">
           <div className="max-w-3xl">
             <p className="hero-kicker">{page.hero.kicker}</p>
