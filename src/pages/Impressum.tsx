@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import { heroSets } from "@/assets/heroImages";
-import impressumHero from "@/assets/impressum-justitia.jpg";
+import impressumHeaderFinal from "@/assets/impressum-header-final.webp";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
@@ -25,33 +25,15 @@ const Impressum = () => {
   return (
     <Layout>
       {isDe ? (
-        <section
-          className="relative h-[340px] overflow-hidden md:h-[440px]"
-          style={{ background: "linear-gradient(115deg, rgb(17,48,86) 0%, rgb(10,34,66) 100%)" }}
-        >
-          <div className="absolute inset-x-0 top-0 h-[60%] [mask-image:linear-gradient(to_bottom,black_50%,transparent_98%)] md:inset-y-0 md:left-0 md:right-auto md:h-full md:w-[min(44%,546px)] md:[mask-image:linear-gradient(to_right,black_52%,transparent_99%)]">
-            <img
-              src={impressumHero}
-              alt=""
-              className="h-full w-full object-cover object-top md:object-center"
-              style={{ filter: "saturate(0.55) brightness(0.95)" }}
-            />
-            <div className="absolute inset-0" style={{ background: "rgb(23,56,97)", mixBlendMode: "color" }} />
-            <div
-              className="absolute inset-0"
-              style={{ background: "linear-gradient(to right, rgba(13,38,70,0.12) 35%, rgba(13,38,70,0.62) 100%)" }}
-            />
-          </div>
-          <div className="relative flex h-full flex-col items-center justify-end pb-9 md:flex-row md:items-center md:justify-center md:pb-0 md:pl-[46%] md:pr-[3%]">
-            <Reveal>
-              <h1
-                className="font-heading text-[2.4rem] font-semibold leading-none md:text-[3.4rem]"
-                style={{ color: "#F1DBA5", textShadow: "0 2px 16px rgba(8,26,52,0.55)" }}
-              >
-                {imp.title}
-              </h1>
-            </Reveal>
-          </div>
+        <section className="relative w-full overflow-hidden" style={{ background: "rgb(13,38,70)" }}>
+          <img
+            src={impressumHeaderFinal}
+            alt="Justitia – Impressum"
+            width={1896}
+            height={829}
+            className="block h-auto w-full"
+          />
+          <h1 className="sr-only">{imp.title}</h1>
         </section>
       ) : (
         <section className="relative h-[30vh] min-h-[220px] flex items-end bg-primary">
