@@ -52,16 +52,17 @@ const HowItWorksHero = ({
         </div>
       ))}
     </div>
-    {/* Soft, text-local navy focus: no full-photo darkening, fades to transparent at the edges */}
+    {/* Soft, text-local navy focus: tight enough to fade out before the photo thirds,
+        so the Germany and Adobe photos stay bright; fades to transparent at the edges */}
     <div
       aria-hidden="true"
       className="pointer-events-none absolute inset-0 -z-10 md:hidden"
-      style={{ background: "radial-gradient(ellipse 115% 82% at 50% 50%, hsl(var(--primary) / 0.85) 0%, hsl(var(--primary) / 0.62) 60%, hsl(var(--primary) / 0.3) 85%, hsl(var(--primary) / 0) 100%)" }}
+      style={{ background: "radial-gradient(ellipse 120% 46% at 50% 52%, hsl(var(--primary) / 0.8) 0%, hsl(var(--primary) / 0.52) 55%, hsl(var(--primary) / 0) 100%)" }}
     />
     <div
       aria-hidden="true"
       className="pointer-events-none absolute inset-0 -z-10 hidden md:block"
-      style={{ background: "radial-gradient(ellipse 42% 78% at 50% 50%, hsl(var(--primary) / 0.8) 0%, hsl(var(--primary) / 0.52) 55%, hsl(var(--primary) / 0) 100%)" }}
+      style={{ background: "radial-gradient(ellipse 30% 78% at 50% 50%, hsl(var(--primary) / 0.75) 0%, hsl(var(--primary) / 0.48) 55%, hsl(var(--primary) / 0) 100%)" }}
     />
 
     <div className="page-frame-hero flex min-h-[inherit] items-center justify-center pb-12 pt-28 md:pb-16 md:pt-32">
@@ -71,7 +72,7 @@ const HowItWorksHero = ({
           className="hero-title"
           style={{
             color: "hsl(var(--gold))",
-            textShadow: "0 1px 2px hsl(var(--primary) / 0.8), 0 0 20px hsl(var(--primary) / 0.5)",
+            textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 14px hsl(var(--primary) / 0.6), 0 0 32px hsl(var(--primary) / 0.5)",
           }}
         >
           {title}
@@ -94,7 +95,7 @@ const HowItWorksHero = ({
             {secondaryCta}
           </a>
         </div>
-        <p className="mt-3 text-[0.78rem] text-primary-foreground/85" style={{ textShadow: "0 1px 3px hsl(var(--primary) / 0.7)" }}>{trustLine}</p>
+        <p className="mt-3 text-[0.78rem] text-primary-foreground/90" style={{ textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 10px hsl(var(--primary) / 0.75), 0 0 22px hsl(var(--primary) / 0.55)" }}>{trustLine}</p>
       </div>
     </div>
   </section>
