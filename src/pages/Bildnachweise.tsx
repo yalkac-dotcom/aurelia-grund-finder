@@ -48,6 +48,9 @@ const Bildnachweise = () => {
               <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mb-8">
                 {copy.aiDisclosure}
               </p>
+              <p className="text-muted-foreground text-[0.93rem] leading-[1.85] mb-8">
+                {copy.stockCredit}
+              </p>
 
               <div className="border-t border-border/20 pt-6">
                 <h2 className="text-[0.93rem] font-heading font-semibold text-foreground mb-2">{copy.contact}</h2>
