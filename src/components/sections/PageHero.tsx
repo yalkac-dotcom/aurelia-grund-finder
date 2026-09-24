@@ -24,6 +24,8 @@ interface PageHeroProps {
   size?: "default" | "compact";
   /** Keeps the mobile home hero entirely content-driven with extra space below its CTAs. */
   mobileHomeFlow?: boolean;
+  /** Optionale Zusatzklassen nur für den Beschreibungstext (z. B. Startseite: kräftiger Lesetext). */
+  descriptionClassName?: string;
   aiDisclosure?: AiDisclosureType;
 }
 
@@ -46,6 +48,7 @@ const PageHero = ({
   phoneLine,
   size = "default",
   mobileHomeFlow = false,
+  descriptionClassName,
   aiDisclosure,
 }: PageHeroProps) => (
   <section
@@ -82,7 +85,7 @@ const PageHero = ({
         {/* Above-the-fold: render synchronously without Reveal so H1 contributes to LCP immediately. */}
         <p className="hero-kicker">{kicker}</p>
         <h1 className="hero-title">{title}</h1>
-        <p className="hero-description max-w-xl whitespace-pre-line">{description}</p>
+        <p className={`hero-description max-w-xl whitespace-pre-line ${descriptionClassName ?? ""}`}>{description}</p>
         {(primaryCta || secondaryCta) && (
           <div className="mt-7 flex flex-row flex-wrap gap-3 items-center sm:gap-4">
             {primaryCta && (
