@@ -145,6 +145,7 @@ const HomePage = () => {
                         index={i}
                         title={point.title}
                         text={point.text}
+                        frame={language === "de"}
                       />
                     );
                   })}
