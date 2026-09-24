@@ -9,7 +9,6 @@ import { heroSets } from "@/assets/heroImages";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
-import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 const FAQ = () => {
   const [open, setOpen] = useState<number | null>(null);
@@ -21,22 +20,15 @@ const FAQ = () => {
   return (
     <Layout>
       {/* HERO – bewusst niedriger als die übrigen Hauptseiten */}
-      <section className="relative flex min-h-[300px] items-end overflow-hidden bg-primary md:h-[48vh] md:max-h-[430px]">
+      <section className="relative flex min-h-[300px] items-end overflow-hidden bg-background md:h-[48vh] md:max-h-[430px]">
         <div className="absolute inset-0">
-          <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center" priority />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/65 to-primary/25" aria-hidden="true" />
-          <AiImageDisclosure />
+          <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center max-md:object-[86%_center]" priority />
         </div>
-        <div className="container-premium relative py-10 text-left md:py-14">
+        <div className="container-premium relative pb-4 text-left md:pb-6">
           <Reveal>
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent mb-3">
+            <h1 className="sr-only">{f.title}</h1>
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary">
               {f.kicker}
-            </p>
-            <h1 className="font-heading font-semibold text-primary-foreground text-[1.85rem] md:text-[2.4rem] leading-tight tracking-tight mb-4">
-              {f.title}
-            </h1>
-            <p className="max-w-xl text-[0.95rem] leading-[1.75] text-primary-foreground/85">
-              {f.intro}
             </p>
           </Reveal>
         </div>
