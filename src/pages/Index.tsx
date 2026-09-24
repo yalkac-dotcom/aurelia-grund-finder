@@ -53,12 +53,6 @@ const HomePage = () => {
     deutschland: { image: "/cards/pexels-aibek-skakov-22081475.jpg", imagePosition: "50% 85%", link: "/immobilie-anbieten?land=deutschland" },
     tuerkei: { image: "/cards/pexels-aydinjpg-39511030.jpg", imagePosition: "50% 58%", link: "/immobilie-anbieten?land=tuerkei" },
   };
-  const legacyAreaLinks = [
-    "/fuer-eigentumer-in-not",
-    "/kontakt",
-    "/fuer-kaeufer",
-  ];
-  const usesLegacyThreeAreaCards = language === "tr" || language === "fr" || language === "es";
 
   // 4 Versprechen – stabile Schlüssel, Icon pro Schlüssel (Light-Familie für Navy-Sektion)
   const proofKeys: ProofKey[] = ["diskretion", "substanz", "langfristigkeit", "klarheit"];
@@ -107,23 +101,7 @@ const HomePage = () => {
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} disableOffset />
             <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 md:gap-7">
               {t.home.areas.map((path, i) => {
-                if (usesLegacyThreeAreaCards) {
-                  const image = cardImages.areas[i];
-                  const link = legacyAreaLinks[i];
-                  if (!image || !link) return null;
-                  return (
-                    <Reveal key={`${language}-${path.title}`} delay={i * 0.06}>
-                      <ProofCard
-                        image={image}
-                        imageAlt={path.title}
-                        index={i}
-                        title={path.title}
-                        text={path.desc}
-                        cta={{ label: path.cta, to: link }}
-                      />
-                    </Reveal>
-                  );
-                }
+                if (i >= areaKeys.length) return null;
                 const key = areaKeys[i % areaKeys.length];
                 const asset = areaAssets[key];
                 if (!asset) return null;
