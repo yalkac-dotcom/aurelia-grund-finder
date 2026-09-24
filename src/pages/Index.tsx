@@ -49,7 +49,7 @@ const HomePage = () => {
   // 3 Bereiche – stabile Schlüssel, Assets + Routen pro Schlüssel
   const areaKeys: AreaKey[] = ["deutschland", "tuerkei"];
   const areaAssets: Record<AreaKey, { image: string; imagePosition?: string; link: string }> = {
-    deutschland: { image: "/cards/AdobeStock_368296755.jpeg", link: "/immobilie-anbieten?land=deutschland" },
+    deutschland: { image: "/cards/pexels-aibek-skakov-22081475.jpg", imagePosition: "50% 85%", link: "/immobilie-anbieten?land=deutschland" },
     tuerkei: { image: "/cards/pexels-aydinjpg-39511030.jpg", imagePosition: "50% 58%", link: "/immobilie-anbieten?land=tuerkei" },
   };
 
