@@ -99,8 +99,8 @@
 
 # Käufer-Seite: drei Stockfotos
 
-- [ ] Käufer-Hero durch Adobe Stock 302581671 ersetzen und lokal zuschneiden
-- [ ] Nur die Karten „Ansprechpartner“ und „Kaufabwicklung“ semantisch in sieben Sprachen ersetzen
-- [ ] KI-Kennzeichnung ausschließlich an den drei ersetzten Bildplätzen entfernen
-- [ ] Drei Käufer-Bildnachweise in sieben Sprachen ergänzen
-- [ ] Käufer-Seite bei 1440 px und 390 px sowie per Typcheck prüfen
+- [x] Käufer-Hero durch Adobe Stock 302581671 ersetzen und lokal zuschneiden
+- [x] Nur die Karten „Ansprechpartner“ und „Kaufabwicklung“ semantisch in sieben Sprachen ersetzen
+- [x] KI-Kennzeichnung ausschließlich an den drei ersetzten Bildplätzen entfernen
+- [x] Drei Käufer-Bildnachweise in sieben Sprachen ergänzen
+- [x] Käufer-Seite bei 1440 px und 390 px sowie per Typcheck prüfen
