@@ -5,6 +5,9 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
+import portfolioHero640 from "@/assets/hero-portfolio-640w.webp";
+import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
+import portfolioHero1440 from "@/assets/hero-portfolio-1440w.webp";
 import { ArrowRight, MapPin, Building2, TreePine, Store } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
@@ -16,6 +19,16 @@ const Portfolio = () => {
   const { language } = useLanguage();
   const copy = pageExtras[language].portfolio;
 
+  // DE-only header image (real photo, Pexels 32992049). All other languages
+  // keep the previous hero image.
+  const isGerman = language === "de";
+  const portfolioHeroSet = {
+    src: portfolioHero1440,
+    srcSet: `${portfolioHero640} 640w, ${portfolioHero1024} 1024w, ${portfolioHero1440} 1440w`,
+    sizes: "(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px",
+  };
+  const heroSet = isGerman ? portfolioHeroSet : heroSets.premium;
+
   usePageSeo(copy.seoTitle, pageSeo[language].portfolio.description);
 
   return (
@@ -24,16 +37,16 @@ const Portfolio = () => {
       <section id="hero" className="relative flex min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
         <div className="absolute inset-0 overflow-hidden">
           <OptimizedImg
-            src={heroSets.premium.src}
-            srcSet={heroSets.premium.srcSet}
-            sizes={heroSets.premium.sizes}
+            src={heroSet.src}
+            srcSet={heroSet.srcSet}
+            sizes={heroSet.sizes}
             alt={copy.heroAlt}
             className="hero-media h-full w-full object-cover object-center"
             priority
           />
           <div className="hero-overlay-base absolute inset-0" />
           <div className="hero-overlay-protect absolute inset-0" />
-          <AiImageDisclosure type="standard" />
+          {!isGerman && <AiImageDisclosure type="standard" />}
         </div>
 
         <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
