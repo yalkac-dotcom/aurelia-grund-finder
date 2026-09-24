@@ -1,12 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import cooperation1280 from "@/assets/how-it-works/cooperations-1280w.webp.asset.json";
-import cooperation768 from "@/assets/how-it-works/cooperations-768w.webp.asset.json";
-import germany1280 from "@/assets/how-it-works/germany-1280w.webp.asset.json";
-import germany768 from "@/assets/how-it-works/germany-768w.webp.asset.json";
-import turkey1280 from "@/assets/how-it-works/turkey-1280w.webp.asset.json";
-import turkey768 from "@/assets/how-it-works/turkey-768w.webp.asset.json";
+import cooperation1280 from "@/assets/how-it-works/cooperations-1280w.webp";
+import cooperation768 from "@/assets/how-it-works/cooperations-768w.webp";
+import germany1280 from "@/assets/how-it-works/germany-1280w.webp";
+import germany768 from "@/assets/how-it-works/germany-768w.webp";
+import turkey1280 from "@/assets/how-it-works/turkey-1280w.webp";
+import turkey768 from "@/assets/how-it-works/turkey-768w.webp";
 import OptimizedImg from "@/components/OptimizedImg";
 import { trackEvent } from "@/lib/analytics";
 
@@ -20,9 +20,9 @@ interface HowItWorksHeroProps {
 }
 
 const photos = [
-  { src: germany1280.url, srcSet: `${germany768.url} 768w, ${germany1280.url} 1280w` },
-  { src: turkey1280.url, srcSet: `${turkey768.url} 768w, ${turkey1280.url} 1280w` },
-  { src: cooperation1280.url, srcSet: `${cooperation768.url} 768w, ${cooperation1280.url} 1280w` },
+  { src: germany1280, srcSet: `${germany768} 768w, ${germany1280} 1280w` },
+  { src: turkey1280, srcSet: `${turkey768} 768w, ${turkey1280} 1280w` },
+  { src: cooperation1280, srcSet: `${cooperation768} 768w, ${cooperation1280} 1280w` },
 ];
 
 const HowItWorksHero = ({
