@@ -43,7 +43,7 @@ const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, ima
                 >
                   <img
                     src={iconImage}
-                    alt={iconAlt ?? ""}
+                    alt=""
                     loading="lazy"
                     width={128}
                     height={128}

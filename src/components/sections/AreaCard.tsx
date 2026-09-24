@@ -54,8 +54,8 @@ const AreaCard = ({
         <div className="mb-6 flex h-20 w-20 items-center justify-center transition-transform duration-500 ease-out group-hover:-translate-y-0.5">
           <img
             src={iconImage}
-            alt={iconAlt ?? ""}
-            aria-hidden={iconAlt ? undefined : "true"}
+            alt=""
+            aria-hidden="true"
             loading="lazy"
             width={160}
             height={160}
