@@ -35,8 +35,8 @@ const Impressum = () => {
                   background: "linear-gradient(to top, rgba(27,42,74,0.68) 0%, rgba(27,42,74,0.56) 55%, rgba(27,42,74,0.50) 100%)",
                 }}
               />
-              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 1 }} />
-              <div className="absolute inset-0" style={{ background: "rgba(247,226,180,0.35)", mixBlendMode: "color" }} />
+              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.85)", mixBlendMode: "soft-light", opacity: 0.6 }} />
+              <div className="absolute inset-0" style={{ background: "rgba(250,233,198,0.9)", mixBlendMode: "overlay", opacity: 0.5 }} />
             </>
           ) : (
             <OptimizedImg src={heroSets.building.src} srcSet={heroSets.building.srcSet} sizes={heroSets.building.sizes} alt={imp.title} className="w-full h-full object-cover" priority />
