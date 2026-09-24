@@ -90,7 +90,7 @@ const HomePage = () => {
         secondaryCta={t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#ablauf" } : undefined}
         trustLine={t.home.heroTrustLine}
         imagePosition="55% center"
-        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.90) 0%, hsl(var(--primary) / 0.80) 32%, hsl(var(--primary) / 0.42) 60%, hsl(var(--primary) / 0.18) 100%)"
+        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.66) 0%, hsl(var(--primary) / 0.52) 32%, hsl(var(--primary) / 0.26) 60%, hsl(var(--primary) / 0.08) 100%)"
         mobileHomeFlow
       />
 
