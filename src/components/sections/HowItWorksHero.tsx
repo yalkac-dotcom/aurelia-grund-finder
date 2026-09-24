@@ -34,7 +34,7 @@ const HowItWorksHero = ({
   trustLine,
 }: HowItWorksHeroProps) => (
   <section id="hero" className="bg-primary text-primary-foreground">
-    <div className="page-frame-hero pb-10 pt-28 md:pb-12 md:pt-32">
+    <div className="page-frame-hero pb-7 pt-14 md:pb-9 md:pt-20">
       <div className="max-w-2xl">
         <p className="hero-kicker">{kicker}</p>
         <h1 className="hero-title">{title}</h1>
@@ -56,11 +56,11 @@ const HowItWorksHero = ({
             {secondaryCta}
           </a>
         </div>
-        <p className="mt-4 text-[0.78rem] text-primary-foreground/75">{trustLine}</p>
+        <p className="mt-3 text-[0.78rem] text-primary-foreground/75">{trustLine}</p>
       </div>
     </div>
 
-    <div className="grid w-full grid-cols-1 overflow-hidden md:h-[clamp(250px,24vw,360px)] md:grid-cols-3">
+    <div className="grid w-full grid-cols-1 overflow-hidden md:h-[clamp(260px,20vw,300px)] md:grid-cols-3">
       {photos.map((photo, index) => (
         <div
           key={photo.src}
