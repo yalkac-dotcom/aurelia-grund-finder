@@ -37,7 +37,7 @@ const getReplacementSituationImage = (title: string) => {
     return replacementSituationImages.complex;
   }
 
-  if (/direkter verkaufswunsch|direct wish to sell|dogrudan satis|directe verkoopwens|vendita diretta|venta directa|vente directe/.test(normalizedTitle)) {
+  if (/direkter verkaufswunsch|direct wish to sell|dogrudan|directe verkoopwens|vendita diretta|venta directa|vente directe/.test(normalizedTitle)) {
     return replacementSituationImages.directSale;
   }
 
