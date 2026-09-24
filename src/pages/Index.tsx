@@ -6,6 +6,7 @@ import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
+import { cardImages } from "@/assets/cards";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
@@ -52,6 +53,12 @@ const HomePage = () => {
     deutschland: { image: "/cards/pexels-aibek-skakov-22081475.jpg", imagePosition: "50% 85%", link: "/immobilie-anbieten?land=deutschland" },
     tuerkei: { image: "/cards/pexels-aydinjpg-39511030.jpg", imagePosition: "50% 58%", link: "/immobilie-anbieten?land=tuerkei" },
   };
+  const legacyAreaLinks = [
+    "/immobilie-anbieten?land=deutschland",
+    "/immobilie-anbieten?land=deutschland",
+    "/immobilie-anbieten?land=deutschland",
+  ];
+  const usesLegacyThreeAreaCards = language === "tr" || language === "fr" || language === "es";
 
   // 4 Versprechen – stabile Schlüssel, Icon pro Schlüssel (Light-Familie für Navy-Sektion)
   const proofKeys: ProofKey[] = ["diskretion", "substanz", "langfristigkeit", "klarheit"];
@@ -100,6 +107,23 @@ const HomePage = () => {
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} disableOffset />
             <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 md:gap-7">
               {t.home.areas.map((path, i) => {
+                if (usesLegacyThreeAreaCards) {
+                  const image = cardImages.areas[i];
+                  const link = legacyAreaLinks[i];
+                  if (!image || !link) return null;
+                  return (
+                    <Reveal key={`${language}-${path.title}`} delay={i * 0.06}>
+                      <ProofCard
+                        image={image}
+                        imageAlt={path.title}
+                        index={i}
+                        title={path.title}
+                        text={path.desc}
+                        cta={{ label: path.cta, to: link }}
+                      />
+                    </Reveal>
+                  );
+                }
                 const key = areaKeys[i % areaKeys.length];
                 const asset = areaAssets[key];
                 if (!asset) return null;
