@@ -28,7 +28,7 @@ const Privacy = () => {
       {isDe ? (
         <section className="relative w-full overflow-hidden h-[240px] md:h-[380px]" style={{ background: "rgb(10,32,58)" }}>
           <img
-            src={datenschutzHeader.url}
+            src={datenschutzHeader}
             alt="Data Protection – DSGVO"
             width={1920}
             height={720}
