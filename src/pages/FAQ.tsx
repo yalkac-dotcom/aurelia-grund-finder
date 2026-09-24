@@ -24,20 +24,26 @@ const FAQ = () => {
         <div className="absolute inset-0">
           <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center max-md:object-[86%_center]" priority />
         </div>
-        <div className="container-premium relative pb-4 text-left md:pb-6">
-          <Reveal>
-            <h1 className="sr-only">{f.title}</h1>
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary">
-              {f.kicker}
-            </p>
-          </Reveal>
-        </div>
+        <h1 className="sr-only">{f.title}</h1>
+        {/* Feine blaue Abschlusslinie unten am Header */}
+        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-px bg-primary/40" />
       </section>
 
       <div className="page-shell">
         {/* FAQ-LISTE */}
         <section className="section-premium bg-gradient-warm">
           <div className="container-premium">
+            {/* Einleitung – früher links im Header, jetzt ohne „FAQ"-Titel */}
+            <Reveal>
+              <div className="mb-10 md:mb-12">
+                <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary">
+                  {f.kicker}
+                </p>
+                <p className="mt-3 max-w-xl text-[0.98rem] leading-[1.75] text-foreground/85">
+                  {f.intro}
+                </p>
+              </div>
+            </Reveal>
             <div className="mx-auto max-w-3xl space-y-4">
               {f.items.map((item, i) => {
                 const isOpen = open === i;
