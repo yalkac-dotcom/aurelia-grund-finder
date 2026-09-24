@@ -26,7 +26,7 @@ export const turkeyPageDe: Partial<Record<Language, DeepPartial<Translations>>> 
         },
         {
           title: "Bewertung und Verkaufsabwicklung",
-          text: "Gerade aus der Ferne ist es nicht immer einfach, den örtlichen Markt, den Zustand einer Immobilie und die einzelnen Schritte einer Veräußerung einzuschätzen.\n\nWir betrachten Lage, Zustand und die vorhandenen Unterlagen und besprechen mit Ihnen eine realistische Vorgehensweise. Die einzelnen Schritte des Verkaufs und der Zahlungsabwicklung werden vorab transparent abgestimmt.",
+          text: "Gerade aus der Ferne ist es nicht immer einfach, den örtlichen Markt, den Zustand einer Immobilie und die einzelnen Schritte einer Veräußerung einzuschätzen.\n\nWir betrachten Lage, Zustand und die vorhandenen Unterlagen und besprechen mit Ihnen eine realistische Vorgehensweise. Die einzelnen Schritte des Verkaufs und der Zahlungsabwicklung werden vorab transparent abgestimmt. Je nach Fall kann die Abwicklung auch so strukturiert werden, dass Zahlungen und Abstimmungen über Deutschland erfolgen.",
         },
       ],
       processTitle: "In vier Schritten zur möglichen Veräußerung.",
