@@ -52,19 +52,6 @@ const HowItWorksHero = ({
         </div>
       ))}
     </div>
-    {/* Soft, text-local navy focus: tight enough to fade out before the photo thirds,
-        so the Germany and Adobe photos stay bright; fades to transparent at the edges */}
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 -z-10 md:hidden"
-      style={{ background: "radial-gradient(ellipse 120% 46% at 50% 52%, hsl(var(--primary) / 0.8) 0%, hsl(var(--primary) / 0.52) 55%, hsl(var(--primary) / 0) 100%)" }}
-    />
-    <div
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 -z-10 hidden md:block"
-      style={{ background: "radial-gradient(ellipse 30% 78% at 50% 50%, hsl(var(--primary) / 0.75) 0%, hsl(var(--primary) / 0.48) 55%, hsl(var(--primary) / 0) 100%)" }}
-    />
-
     <div className="page-frame-hero flex min-h-[inherit] items-center justify-center pb-12 pt-28 md:pb-16 md:pt-32">
       <div className="max-w-2xl text-center">
         <p className="hero-kicker" style={{ color: "hsl(var(--gold-light) / 0.95)", borderColor: "hsl(var(--gold) / 0.35)" }}>{kicker}</p>
@@ -75,9 +62,9 @@ const HowItWorksHero = ({
             textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 14px hsl(var(--primary) / 0.6), 0 0 32px hsl(var(--primary) / 0.5)",
           }}
         >
-          {title}
+          <span className="px-2 rounded-sm" style={{ background: "hsl(var(--primary) / 0.6)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{title}</span>
         </h1>
-        <p className="hero-description mx-auto whitespace-pre-line" style={{ textShadow: "0 1px 3px hsl(var(--primary) / 0.7)" }}>{description}</p>
+        <p className="hero-description mx-auto whitespace-pre-line" style={{ textShadow: "0 1px 3px hsl(var(--primary) / 0.7)" }}><span className="px-1.5 rounded-sm" style={{ background: "hsl(var(--primary) / 0.42)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{description}</span></p>
         <div className="mt-7 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
           <Link
             to="/kontakt"
@@ -95,7 +82,7 @@ const HowItWorksHero = ({
             {secondaryCta}
           </a>
         </div>
-        <p className="mt-3 text-[0.78rem] text-primary-foreground/90" style={{ textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 10px hsl(var(--primary) / 0.75), 0 0 22px hsl(var(--primary) / 0.55)" }}>{trustLine}</p>
+        <p className="mt-3 text-[0.78rem] text-primary-foreground/90" style={{ textShadow: "0 1px 2px hsl(var(--primary) / 0.9), 0 0 10px hsl(var(--primary) / 0.75), 0 0 22px hsl(var(--primary) / 0.55)" }}><span className="px-1.5 rounded-sm" style={{ background: "hsl(var(--primary) / 0.42)", WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" }}>{trustLine}</span></p>
       </div>
     </div>
   </section>
