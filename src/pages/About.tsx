@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
 import { aureliaCard } from "@/lib/cardStyle";
+import AureliaKompakt from "@/components/sections/AureliaKompakt";
 
 const About = () => {
   const { t, language } = useLanguage();
@@ -151,6 +152,7 @@ const About = () => {
           </Reveal>
           </div>
         </section>
+        {language === "de" && <AureliaKompakt />}
       </div>
     </Layout>
   );
