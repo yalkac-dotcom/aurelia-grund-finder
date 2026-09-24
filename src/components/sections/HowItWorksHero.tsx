@@ -53,15 +53,15 @@ const HowItWorksHero = ({
         </div>
       ))}
     </div>
-    <div className="page-frame-hero flex min-h-[inherit] items-end justify-center pb-3 pt-32 md:pb-4 md:pt-40">
+    <div className="flex min-h-[inherit] w-full items-end justify-center pb-3 pt-32 md:pb-4 md:pt-40">
       <div
-        className="w-full max-w-3xl rounded-sm border border-gold px-5 py-6 text-center md:px-10 md:py-8"
+        className="w-full border border-gold border-x-0 px-5 py-4 text-center md:px-10 md:py-5"
         style={{ background: "hsl(var(--background) / 0.78)", backdropFilter: "blur(1px)" }}
       >
         <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-primary">{kicker}</p>
-        <h1 className="mt-3 font-heading text-[1.7rem] leading-tight text-primary md:text-[2.3rem]">{title}</h1>
-        <p className="mx-auto mt-4 max-w-2xl whitespace-pre-line text-[0.92rem] font-medium leading-[1.7] text-primary md:text-[0.98rem]">{description}</p>
-        <div className="mt-6 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
+        <h1 className="mt-2 font-heading text-[1.7rem] leading-tight text-primary md:text-[2.3rem]">{title}</h1>
+        <p className="mx-auto mt-3 max-w-2xl whitespace-pre-line text-[0.92rem] font-medium leading-[1.7] text-primary md:text-[0.98rem]">{description}</p>
+        <div className="mt-5 flex flex-row flex-wrap items-center justify-center gap-3 sm:gap-4">
           <Link
             to="/kontakt"
             className="btn-primary"
