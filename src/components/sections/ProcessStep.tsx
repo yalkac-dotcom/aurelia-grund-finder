@@ -62,9 +62,14 @@ const ProcessStep = ({ index, total, title, desc, iconImage, iconAlt, image, ima
             <p className="mt-1.5 text-[0.82rem] leading-[1.7] text-muted-foreground">{desc}</p>
           </div>
         </article>
-        {index < total - 1 && (
+        {index < total - 1 && arrowDirection === "right" && (
           <div className="hidden lg:flex absolute top-1/2 -right-5 w-5 h-5 -translate-y-1/2 items-center justify-center">
             <ArrowRight className="text-accent" size={18} aria-hidden="true" />
+          </div>
+        )}
+        {index < total - 1 && arrowDirection === "down" && (
+          <div className="hidden lg:flex absolute -bottom-5 left-1/2 -translate-x-1/2 w-5 h-5 items-center justify-center">
+            <ArrowRight className="text-accent rotate-90" size={18} aria-hidden="true" />
           </div>
         )}
       </div>
