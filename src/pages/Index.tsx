@@ -54,9 +54,9 @@ const HomePage = () => {
     tuerkei: { image: "/cards/pexels-aydinjpg-39511030.jpg", imagePosition: "50% 58%", link: "/immobilie-anbieten?land=tuerkei" },
   };
   const legacyAreaLinks = [
-    "/immobilie-anbieten?land=deutschland",
-    "/immobilie-anbieten?land=deutschland",
-    "/immobilie-anbieten?land=deutschland",
+    "/fuer-eigentumer-in-not",
+    "/kontakt",
+    "/fuer-kaeufer",
   ];
   const usesLegacyThreeAreaCards = language === "tr" || language === "fr" || language === "es";
 
