@@ -41,7 +41,7 @@ const getReplacementSituationImage = (title: string) => {
     return replacementSituationImages.directSale;
   }
 
-  if (/erbfall|inheritance|miras|erfenis|eredita|herencia|succession/.test(normalizedTitle)) {
+  if (/erbfall|erbschaft|inheritance|miras|erfenis|eredita|herencia|succession/.test(normalizedTitle)) {
     return replacementSituationImages.inheritance;
   }
 
