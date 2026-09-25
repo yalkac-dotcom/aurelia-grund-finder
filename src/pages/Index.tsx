@@ -16,6 +16,7 @@ import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
+import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
 // Reihenfolge in i18n bleibt führend; jeder Eintrag bekommt zusätzlich einen
@@ -88,10 +89,10 @@ const HomePage = () => {
         image={homeHeroImage}
         imageAlt={extras.accessibility.homeHeroAlt}
         kicker={t.home.heroKicker}
-        title={t.home.heroTitle}
-        description={t.home.heroIntro ?? t.home.heroDescription}
-        primaryCta={{ label: t.home.heroPrimaryCta ?? t.home.finalCtaButton, to: "/immobilie-anbieten" }}
-        secondaryCta={t.home.heroSecondaryCta ? (language === "de" ? { label: t.home.heroSecondaryCta, href: "/wie-es-funktioniert" } : { label: t.home.heroSecondaryCta, href: "#bereiche" }) : undefined}
+        title={language === "de" ? "Ausgewählte Immobilien in Deutschland, der Türkei und Europa." : t.home.heroTitle}
+        description={language === "de" ? "Aurelia erwirbt Immobilien auf eigene Rechnung, entwickelt einen eigenen Bestand und bietet ausgewählte Bestandsobjekte Kaufinteressenten in verschiedenen europäischen Märkten an." : (t.home.heroIntro ?? t.home.heroDescription)}
+        primaryCta={{ label: language === "de" ? "Immobilie zum Ankauf anbieten" : (t.home.heroPrimaryCta ?? t.home.finalCtaButton), to: "/immobilie-anbieten" }}
+        secondaryCta={language === "de" ? { label: "Kaufinteresse hinterlegen", href: "/fuer-kaeufer#kaufinteresse" } : t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#bereiche" } : undefined}
         trustLine={t.home.heroTrustLine}
         imagePosition="55% 70%"
         overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.46) 0%, hsl(var(--primary) / 0.32) 32%, hsl(var(--primary) / 0.10) 60%, hsl(var(--primary) / 0.01) 100%)"
@@ -103,6 +104,23 @@ const HomePage = () => {
         {/* DIE 3 BEREICHE */}
         <section id="bereiche" className="section-premium bg-gradient-warm !pt-0 md:!pt-0 scroll-mt-24">
           <div className="container-premium">
+            {language === "de" ? (
+              <>
+                <SectionHeader title="Drei klare Wege zu Aurelia" intro="Schwerpunkt Deutschland und Türkei – ergänzt um ausgewählte europäische Märkte." disableOffset />
+                <div className="grid gap-6 md:grid-cols-3 md:gap-7">
+                  {[
+                    { title: "Immobilie anbieten", text: "Sie möchten eine Immobilie verkaufen? Aurelia prüft ausgewählte Objekte für einen möglichen Erwerb auf eigene Rechnung.", cta: "Immobilie zum Ankauf anbieten", to: "/immobilie-anbieten", image: areaAssets.deutschland.image, pos: areaAssets.deutschland.imagePosition },
+                    { title: "Kaufinteresse hinterlegen", text: "Teilen Sie uns mit, für welche Länder, Regionen und Objektarten Sie sich interessieren. Wenn Aurelia ein entsprechendes Objekt im eigenen Bestand hält oder erwirbt, können wir Sie darüber informieren.", cta: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse", image: areaAssets.tuerkei.image, pos: areaAssets.tuerkei.imagePosition },
+                    { title: "Eigener Bestand", text: "Ausgewählte Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", cta: "Unser Bestand", to: "/portfolio", image: portfolioHero1024, pos: "50% 50%" },
+                  ].map((card, i) => (
+                    <Reveal key={card.title} delay={i * 0.06}>
+                      <ProofCard image={card.image} imagePosition={card.pos} imageAlt={card.title} index={i} title={card.title} text={card.text} cta={{ label: card.cta, to: card.to }} />
+                    </Reveal>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <>
             <SectionHeader title={t.home.areasTitle} intro={t.home.areasIntro} disableOffset />
             <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2 md:gap-7">
               {t.home.areas.map((path, i) => {
@@ -125,15 +143,18 @@ const HomePage = () => {
                 );
               })}
             </div>
+              </>
+            )}
             {language === "de" && (
               <Reveal delay={0.12}>
                 <p className="mx-auto mt-8 max-w-3xl border-l-2 border-accent/60 pl-5 text-[0.9rem] leading-[1.8] text-muted-foreground">
-                  Ausgewählte Immobilien aus unserem eigenen Bestand oder aus Kooperationen bieten wir grenzüberschreitend an. Dazu gehören Immobilien in Deutschland für Kaufinteressenten aus der Türkei ebenso wie ausgewählte Objekte in der Türkei für Interessenten aus Deutschland und anderen europäischen Ländern. Aurelia baut dabei schrittweise einen eigenen Immobilienbestand in Deutschland und der Türkei auf.
+                  Unser Schwerpunkt liegt auf Deutschland und der Türkei. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden. Immobilien aus unserem eigenen Bestand können Kaufinteressenten grenzüberschreitend angeboten werden.
                 </p>
               </Reveal>
             )}
           </div>
         </section>
+
         {/* TRUST */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">

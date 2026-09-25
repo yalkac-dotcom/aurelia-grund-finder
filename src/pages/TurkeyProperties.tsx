@@ -460,16 +460,16 @@ const TurkeyProperties = () => {
           <div className="container-premium">
             <Reveal>
               <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
-                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Auch Interesse an Immobilien in Deutschland?</h2>
-                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Neben der Betreuung von Eigentümern mit Immobilien in der Türkei bietet Aurelia ausgewählte Immobilien aus dem eigenen Bestand oder aus Kooperationen in Deutschland an. Auch Interessenten aus der Türkei können verfügbare Objekte bei uns anfragen.</p>
-                <Link to="/fuer-kaeufer" className="mt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">Immobilien in Deutschland anfragen<ArrowRight size={13} className="text-accent" /></Link>
+                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Immobilie in der Türkei zum Ankauf anbieten</h2>
+                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Aurelia prüft ausgewählte Immobilien in der Türkei für einen möglichen Erwerb auf eigene Rechnung.</p>
+                <Link to="/immobilie-anbieten?land=tuerkei" className="mt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">Immobilie zum Ankauf anbieten<ArrowRight size={13} className="text-accent" /></Link>
               </div>
             </Reveal>
             <Reveal delay={0.08}>
               <div className="mt-6 border-l-2 border-accent bg-card px-6 py-8 md:px-10">
-                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Ausgewählte Immobilien in der Türkei</h2>
-                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Aurelia plant und prüft auch den Erwerb ausgewählter Immobilien in Istanbul und weiteren Standorten in der Türkei. Eigene oder verfügbare Objekte können Interessenten aus Deutschland, anderen europäischen Ländern und der Türkei angeboten werden.</p>
-                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Welche Immobilien aktuell verfügbar sind, hängt vom jeweiligen Bestand und laufenden Projekten ab.</p>
+                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Interesse an Immobilien aus unserem Türkei-Bestand?</h2>
+                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Wenn Aurelia passende Immobilien in Istanbul oder anderen ausgewählten Standorten im eigenen Bestand hält, können Kaufinteressenten aus der Türkei, Deutschland und anderen europäischen Ländern darüber informiert werden.</p>
+                <Link to="/fuer-kaeufer#kaufinteresse" className="mt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">Kaufinteresse hinterlegen<ArrowRight size={13} className="text-accent" /></Link>
               </div>
             </Reveal>
           </div>

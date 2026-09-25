@@ -10,17 +10,25 @@ import { propertyOfferCopy } from "@/i18n/propertyOffer";
 import { supabase } from "@/integrations/supabase/client";
 import { usePageSeo } from "@/hooks/usePageSeo";
 
-type Country = "germany" | "turkey";
+type Country = "germany" | "turkey" | "italy" | "spain" | "france" | "netherlands";
+const extraCountries: { key: Country; label: string; param: string }[] = [
+  { key: "italy", label: "Italien", param: "italien" },
+  { key: "spain", label: "Spanien", param: "spanien" },
+  { key: "france", label: "Frankreich", param: "frankreich" },
+  { key: "netherlands", label: "Niederlande", param: "niederlande" },
+];
+const countryNameDe: Record<Country, string> = { germany: "Deutschland", turkey: "Türkei", italy: "Italien", spain: "Spanien", france: "Frankreich", netherlands: "Niederlande" };
+const fromParam = (p: string | null): Country => p === "tuerkei" ? "turkey" : (extraCountries.find(c => c.param === p)?.key ?? "germany");
 type FormState = Record<string, string> & { privacy: string };
 type UploadedFile = { name: string; path: string; size: number; type: string };
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 const acceptedTypes = new Set(["application/pdf", "image/jpeg", "image/png", ""]);
 const acceptedExtensions = new Set(["pdf", "jpg", "jpeg", "png"]);
-const countryImages: Record<Country, string> = {
+const countryImages: Record<"germany" | "turkey", string> = {
   germany: "/cards/pexels-aibek-skakov-22081475.jpg",
   turkey: "/cards/pexels-aydinjpg-39511030.jpg",
 };
-const countryImagePositions: Record<Country, string> = {
+const countryImagePositions: Record<"germany" | "turkey", string> = {
   germany: "50% 85%",
   turkey: "50% 58%",
 };
@@ -50,10 +58,11 @@ const SelectField = ({name,label,value,error,onChange,options,requiredField=fals
 const PropertyOffer = () => {
   const { language, t } = useLanguage();
   const c = propertyOfferCopy[language];
+  const isDe = language === "de";
   const { toast } = useToast();
   const [params] = useSearchParams();
   const requested = params.get("land");
-  const [country, setCountry] = useState<Country>(requested === "tuerkei" ? "turkey" : "germany");
+  const [country, setCountry] = useState<Country>(fromParam(requested));
   const [form, setForm] = useState<FormState>({ ...initialForm, preferredLanguage: c.languages[["de","tr","en","nl","it","es","fr"].indexOf(language)] ?? c.languages[0] });
   const [files, setFiles] = useState<File[]>([]);
   const [errors, setErrors] = useState<Record<string,string>>({});
@@ -63,10 +72,10 @@ const PropertyOffer = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   usePageSeo(c.seoTitle, c.seoDescription);
-  useEffect(() => setCountry(requested === "tuerkei" ? "turkey" : "germany"), [requested]);
+  useEffect(() => setCountry(fromParam(requested)), [requested]);
   const update = (name:string, value:string) => { setForm(current => ({...current,[name]:value})); setErrors(current => ({...current,[name]:""})); };
   const validFiles = (list:File[]) => list.length <= 10 && list.every(file => file.size > 0 && file.size <= MAX_FILE_SIZE && acceptedTypes.has(file.type) && acceptedExtensions.has(file.name.split(".").pop()?.toLowerCase() ?? ""));
-  const required = useMemo(() => country === "germany" ? ["firstName","lastName","phone","email","location","propertyType"] : ["firstName","lastName","phone","email","province","propertyType","preferredLanguage"], [country]);
+  const required = useMemo(() => country !== "turkey" ? ["firstName","lastName","phone","email","location","propertyType"] : ["firstName","lastName","phone","email","province","propertyType","preferredLanguage"], [country]);
   const validate = () => {
     const next:Record<string,string> = {};
     const parsed = schema.safeParse(form);
@@ -89,9 +98,9 @@ const PropertyOffer = () => {
     return uploaded;
   };
   const buildMessage = (uploaded:UploadedFile[]) => [
-    `Immobilienanfrage – ${country === "germany" ? "Deutschland" : "Türkei"}`,
+    `Immobilienanfrage – ${countryNameDe[country]}`,
     `Vorname: ${form.firstName}`, `Nachname: ${form.lastName}`, `Telefon: ${form.phone}`, `E-Mail: ${form.email}`,
-    country === "germany" ? `Ort / PLZ: ${form.location}` : `Provinz / Stadt: ${form.province}`,
+    country !== "turkey" ? `Ort / PLZ: ${form.location}` : `Provinz / Stadt: ${form.province}`,
     form.street && `Straße / Lage: ${form.street}`, form.district && `Bezirk / Stadtteil: ${form.district}`,
     `Immobilienart: ${form.propertyType}`, form.area && `Fläche: ${form.area}`, form.units && `Einheiten: ${form.units}`,
     form.rooms && `Zimmer: ${form.rooms}`, form.yearBuilt && `Baujahr: ${form.yearBuilt}`, form.rented && `Vermietet: ${form.rented}`,
@@ -105,10 +114,10 @@ const PropertyOffer = () => {
     event.preventDefault(); setSuccess(false); if (!validate()) { toast({title:c.errorTitle,description:c.requiredError,variant:"destructive"}); return; }
     setSubmitting(true);
     try {
-      const uploaded = await uploadFiles(); const message = buildMessage(uploaded); const propertyType = country === "germany" ? "Immobilie in Deutschland" : "Immobilie in der Türkei";
+      const uploaded = await uploadFiles(); const message = buildMessage(uploaded); const propertyType = country === "germany" ? "Immobilie in Deutschland" : country === "turkey" ? "Immobilie in der Türkei" : `Immobilie in ${countryNameDe[country]}`;
       const { error:insertError } = await supabase.from("contact_submissions").insert({ first_name:form.firstName.trim(), last_name:form.lastName.trim(), email:form.email.trim(), phone:form.phone.trim(), property_type:propertyType, subject:form.propertyType, message, callback_requested:true });
       if (insertError) throw insertError;
-      const { data, error } = await supabase.functions.invoke("send-contact-email", { body:{ name:`${form.firstName.trim()} ${form.lastName.trim()}`, email:form.email.trim(), phone:form.phone.trim(), property_type:propertyType, subject:form.propertyType, message, language, preferred_language:form.preferredLanguage || language, form_type:country === "germany" ? "germany_property" : "turkey_property", privacy_consent:true, files:uploaded } });
+      const { data, error } = await supabase.functions.invoke("send-contact-email", { body:{ name:`${form.firstName.trim()} ${form.lastName.trim()}`, email:form.email.trim(), phone:form.phone.trim(), property_type:propertyType, subject:form.propertyType, message, language, preferred_language:form.preferredLanguage || language, form_type:country === "turkey" ? "turkey_property" : "germany_property", privacy_consent:true, files:uploaded } });
       if (error || !data?.success || !data?.internalMailResult?.accepted) throw error ?? new Error("Internal email was not accepted");
       const accepted = data.customerConfirmationResult?.accepted === true; setConfirmationSent(accepted); setSuccess(true); setFiles([]); setForm({...initialForm, preferredLanguage:c.languages[["de","tr","en","nl","it","es","fr"].indexOf(language)] ?? c.languages[0]}); if(inputRef.current) inputRef.current.value="";
       toast({title:c.successTitle,description:accepted ? c.successText : c.confirmationWarning});
@@ -117,14 +126,14 @@ const PropertyOffer = () => {
   };
   const fp = (name:string) => ({ name, value: form[name] ?? "", error: errors[name], onChange: update });
 
-  return <Layout><main className="bg-gradient-warm pt-28 md:pt-36"><section className="container-premium pb-10 text-center md:pb-14"><p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent">{c.kicker}</p><h1 className="mt-4 font-heading text-4xl font-semibold text-primary md:text-5xl">{c.title}</h1><p className="mx-auto mt-5 max-w-3xl text-[0.98rem] leading-[1.85] text-muted-foreground">{c.intro}</p></section>
+  return <Layout><main className="bg-gradient-warm pt-28 md:pt-36"><section className="container-premium pb-10 text-center md:pb-14"><p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent">{c.kicker}</p><h1 className="mt-4 font-heading text-4xl font-semibold text-primary md:text-5xl">{isDe ? "Immobilie zum Ankauf anbieten." : c.title}</h1><p className="mx-auto mt-5 max-w-3xl text-[0.98rem] leading-[1.85] text-muted-foreground">{isDe ? "Aurelia prüft ausgewählte Immobilien für einen möglichen Erwerb auf eigene Rechnung." : c.intro}</p>{isDe && <p className="mx-auto mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Der Schwerpunkt liegt auf Deutschland und der Türkei. Darüber hinaus können ausgewählte Immobilien in weiteren europäischen Märkten geprüft werden.</p>}</section>
   <section className="container-premium pb-20 md:pb-28"><form onSubmit={submit} noValidate className="mx-auto max-w-5xl rounded-sm border border-border bg-card p-5 shadow-sm sm:p-8 md:p-12">
-    <fieldset><legend className="font-heading text-2xl font-semibold text-primary">{c.countryQuestion}</legend><div className="mt-5 grid gap-4 sm:grid-cols-2">{(["germany","turkey"] as Country[]).map(item=><label key={item} className={`group cursor-pointer overflow-hidden rounded-sm border bg-background transition-colors ${country===item ? "border-accent ring-2 ring-accent/20" : "border-border"}`}><span className="relative block aspect-[16/9] overflow-hidden"><img src={countryImages[item]} alt={item==="germany"?c.germanyImageAlt:c.turkeyImageAlt} loading="lazy" width={1280} height={800} className="img-tone h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.015]" style={{ objectPosition: countryImagePositions[item] }}/><span className="absolute inset-0 bg-primary/10" aria-hidden="true"/></span><span className={`flex min-h-14 items-center gap-3 px-5 py-4 font-semibold ${country===item ? "bg-secondary text-primary" : "text-muted-foreground"}`}><input type="radio" name="country" checked={country===item} onChange={()=>setCountry(item)} className="h-4 w-4 accent-primary"/>{item==="germany"?c.germany:c.turkey}</span></label>)}</div></fieldset>
+    <fieldset><legend className="font-heading text-2xl font-semibold text-primary">{c.countryQuestion}</legend><div className="mt-5 grid gap-4 sm:grid-cols-2">{(["germany","turkey"] as const).map(item=><label key={item} className={`group cursor-pointer overflow-hidden rounded-sm border bg-background transition-colors ${country===item ? "border-accent ring-2 ring-accent/20" : "border-border"}`}><span className="relative block aspect-[16/9] overflow-hidden"><img src={countryImages[item]} alt={item==="germany"?c.germanyImageAlt:c.turkeyImageAlt} loading="lazy" width={1280} height={800} className="img-tone h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.015]" style={{ objectPosition: countryImagePositions[item] }}/><span className="absolute inset-0 bg-primary/10" aria-hidden="true"/></span><span className={`flex min-h-14 items-center gap-3 px-5 py-4 font-semibold ${country===item ? "bg-secondary text-primary" : "text-muted-foreground"}`}><input type="radio" name="country" checked={country===item} onChange={()=>setCountry(item)} className="h-4 w-4 accent-primary"/>{item==="germany"?c.germany:c.turkey}</span></label>)}</div>{isDe&&<div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">{extraCountries.map(item=><label key={item.key} className={`flex min-h-12 cursor-pointer items-center gap-3 rounded-sm border bg-background px-4 py-3 font-semibold transition-colors ${country===item.key ? "border-accent bg-secondary text-primary ring-2 ring-accent/20" : "border-border text-muted-foreground"}`}><input type="radio" name="country" checked={country===item.key} onChange={()=>setCountry(item.key)} className="h-4 w-4 accent-primary"/>{item.label}</label>)}</div>}</fieldset>
     <p className="mt-5 text-sm text-muted-foreground">{c.requiredHint}</p><div className="my-8 h-px bg-border"/>
     <div className="grid gap-6 md:grid-cols-2"><Field {...fp("firstName")} label={c.firstName} requiredField/><Field {...fp("lastName")} label={c.lastName} requiredField/><Field {...fp("phone")} label={c.phone} type="tel" requiredField/><Field {...fp("email")} label={c.email} type="email" requiredField/>
-    {country==="germany" ? <><Field {...fp("location")} label={c.location} requiredField/><Field {...fp("street")} label={c.street}/></> : <><Field {...fp("province")} label={c.province} requiredField/><Field {...fp("district")} label={c.district}/></>}
-    <SelectField {...fp("propertyType")} label={c.propertyType} options={c.propertyTypes} requiredField/><Field {...fp("area")} label={c.area}/>{country==="germany"&&<Field {...fp("units")} label={c.units}/>}<Field {...fp("rooms")} label={c.rooms}/><Field {...fp("yearBuilt")} label={c.yearBuilt}/><SelectField {...fp("rented")} label={c.rented} options={[c.yes,c.no]}/>
-    {country==="germany" ? <><SelectField {...fp("ownerStatus")} label={c.ownerStatus} options={c.ownerStatuses}/><SelectField {...fp("situation")} label={c.situation} options={c.situations}/></> : <><SelectField {...fp("tapu")} label={c.tapu} options={[c.yes,c.no]}/><Field {...fp("ownerCount")} label={c.ownerCount}/><Field {...fp("ownerResidence")} label={c.ownerResidence}/><SelectField {...fp("preferredLanguage")} label={c.preferredLanguage} options={c.languages} requiredField/></>}<Field {...fp("price")} label={c.price}/></div>
+    {country!=="turkey" ? <><Field {...fp("location")} label={c.location} requiredField/><Field {...fp("street")} label={c.street}/></> : <><Field {...fp("province")} label={c.province} requiredField/><Field {...fp("district")} label={c.district}/></>}
+    <SelectField {...fp("propertyType")} label={c.propertyType} options={c.propertyTypes} requiredField/><Field {...fp("area")} label={c.area}/>{country!=="turkey"&&<Field {...fp("units")} label={c.units}/>}<Field {...fp("rooms")} label={c.rooms}/><Field {...fp("yearBuilt")} label={c.yearBuilt}/><SelectField {...fp("rented")} label={c.rented} options={[c.yes,c.no]}/>
+    {country!=="turkey" ? <><SelectField {...fp("ownerStatus")} label={c.ownerStatus} options={c.ownerStatuses}/><SelectField {...fp("situation")} label={c.situation} options={c.situations}/></> : <><SelectField {...fp("tapu")} label={c.tapu} options={[c.yes,c.no]}/><Field {...fp("ownerCount")} label={c.ownerCount}/><Field {...fp("ownerResidence")} label={c.ownerResidence}/><SelectField {...fp("preferredLanguage")} label={c.preferredLanguage} options={c.languages} requiredField/></>}<Field {...fp("price")} label={c.price}/></div>
     <label className={`${labelClass} mt-6 block`}>{c.details}<textarea value={form.details} onChange={e=>update("details",e.target.value)} rows={5} maxLength={1800} className={fieldClass(Boolean(errors.details))}/></label>
     <div className="mt-6"><label className={labelClass}>{c.files}<span className="mt-2 flex cursor-pointer items-center justify-center gap-3 rounded-sm border border-dashed border-accent/60 bg-secondary px-5 py-7 normal-case tracking-normal text-primary"><Upload size={18}/>{files.length ? `${files.length} · ${c.files}` : c.uploadHelp}<input ref={inputRef} type="file" multiple accept=".pdf,.jpg,.jpeg,.png" className="sr-only" onChange={e=>{const next=Array.from(e.target.files??[]);setFiles(validFiles(next)?next:[]);setErrors(current=>({...current,files:validFiles(next)?"":c.fileError}));}}/></span></label>{errors.files&&<p className="mt-2 text-sm text-destructive">{errors.files}</p>}{files.map(file=><p key={`${file.name}-${file.size}`} className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><FileText size={14}/>{file.name}</p>)}</div>
     <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground"><input type="checkbox" checked={form.privacy==="yes"} onChange={e=>update("privacy",e.target.checked?"yes":"")} className="mt-1 h-4 w-4 accent-primary"/><span>{c.privacy} <Link to="/datenschutz" className="font-semibold text-primary underline">{t.footer.privacy}</Link></span></label>{errors.privacy&&<p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}

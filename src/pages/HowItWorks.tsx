@@ -41,8 +41,38 @@ const HowItWorks = () => {
           </div>
         </section>
 
+        {/* DREI PROZESSE (nur DE) */}
+        {language === "de" && (
+          <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}>
+            <div className="container-premium">
+              <SectionHeader title="Drei Prozesse – klar getrennt" intro="Aurelia erwirbt Immobilien auf eigene Rechnung und bietet sie aus dem eigenen Bestand an. Eine Vermittlung fremder Immobilien findet nicht statt." />
+              <div className="grid gap-6 md:gap-8 md:grid-cols-3">
+                {[
+                  { title: "Für Eigentümer", steps: ["Immobilie anbieten", "Prüfung", "mögliche Einigung", "Erwerb durch Aurelia auf eigene Rechnung"] },
+                  { title: "Für Kaufinteressenten", steps: ["Kaufinteresse hinterlegen", "unverbindliche Vormerkung", "passendes Aurelia-Bestandsobjekt verfügbar", "direkte Kontaktaufnahme durch Aurelia"] },
+                  { title: "Eigener Bestand", steps: ["Aurelia erwirbt", "hält / entwickelt", "entscheidet über weiteren Bestand oder Verkauf", "Verkauf aus eigenem Bestand"] },
+                ].map((proc, i) => (
+                  <Reveal key={proc.title} delay={i * 0.06}>
+                    <div className={`h-full p-6 md:p-7 ${aureliaCard}`}>
+                      <h3 className="text-[1.05rem] font-heading font-semibold text-primary leading-snug">{proc.title}</h3>
+                      <ol className="mt-4 space-y-3">
+                        {proc.steps.map((step, n) => (
+                          <li key={step} className="flex items-start gap-3 text-[0.88rem] leading-[1.6] text-muted-foreground">
+                            <span className="flex size-6 shrink-0 items-center justify-center rounded-full border border-accent/60 text-[0.72rem] font-semibold text-primary">{n + 1}</span>
+                            <span className="pt-0.5">{step}</span>
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* SEGMENTE */}
-        <section
+        {language !== "de" && <section
           className="section-premium"
           style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
@@ -51,7 +81,7 @@ const HowItWorks = () => {
             <div className="grid gap-8 md:gap-10 md:grid-cols-3">
               {w.segments.map((s, i) => (
                 <Reveal key={i} delay={i * 0.06}>
-                  <div className={language === "de" ? `h-full p-6 md:p-7 ${aureliaCard}` : "border-l border-accent/40 pl-6"}>
+                  <div className={"border-l border-accent/40 pl-6"}>
                     <h3 className="text-[1.05rem] font-heading font-semibold text-primary leading-snug">
                       {s.title}
                     </h3>
@@ -61,7 +91,7 @@ const HowItWorks = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section>}
 
         {/* BESTAND-STRATEGIE (Navy + Steps) */}
         <section id="ablauf" className="section-premium section-navy text-white scroll-mt-24">
