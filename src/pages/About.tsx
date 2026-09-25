@@ -72,6 +72,18 @@ const About = () => {
           </div>
         </section>
 
+        {language === "de" && (
+          <section className="section-premium bg-background !pb-0">
+            <div className="container-premium">
+              <Reveal className="max-w-3xl border-l-2 border-accent pl-6">
+                <p className="font-heading text-[1.2rem] font-semibold leading-[1.5] text-primary md:text-[1.4rem]">Aurelia Grundbesitz GmbH konzentriert sich auf den Erwerb ausgewählter Immobilien auf eigene Rechnung sowie den Aufbau, die Entwicklung und den Verkauf eines eigenen Immobilienbestands.</p>
+                <p className="mt-4 text-[15px] leading-[1.85] text-foreground/80">Unser Schwerpunkt liegt auf Deutschland und der Türkei. Darüber hinaus prüfen wir ausgewählte Immobilienmöglichkeiten in weiteren europäischen Märkten.</p>
+                <p className="mt-2 text-[15px] leading-[1.85] text-foreground/80">Immobilien aus unserem eigenen Bestand können Kaufinteressenten grenzüberschreitend angeboten werden.</p>
+              </Reveal>
+            </div>
+          </section>
+        )}
+
         <section className="section-premium bg-background">
           <div className="container-premium">
           <Reveal className="max-w-3xl">
