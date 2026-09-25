@@ -14,6 +14,7 @@ import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
 import { aureliaCard } from "@/lib/cardStyle";
+import BuyerInterestForm from "@/components/sections/BuyerInterestForm";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
@@ -60,6 +61,7 @@ const ForBuyers = () => {
   usePageSeo(pageSeo[language].buyers.title, pageSeo[language].buyers.description);
   const b = t.buyers;
   const extras = pageExtras[language];
+  const isDe = language === "de";
 
   return (
     <Layout>
@@ -67,9 +69,9 @@ const ForBuyers = () => {
         image={buyersHeroImage}
         imageAlt={b.heroImageAlt}
         kicker={b.heroKicker}
-        title={b.heroTitle}
-        description={b.heroDescription}
-        primaryCta={{ label: b.heroPrimaryCta, to: "/kontakt" }}
+        title={isDe ? "Kaufinteresse für Immobilien aus unserem Bestand." : b.heroTitle}
+        description={isDe ? "Teilen Sie uns unverbindlich mit, welche Länder, Regionen und Immobilienarten für Sie interessant sind." : b.heroDescription}
+        primaryCta={isDe ? { label: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" } : { label: b.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: b.heroSecondaryCta, href: "#ablauf" }}
         trustLine={b.heroTrustLine}
         size="compact"
@@ -82,10 +84,10 @@ const ForBuyers = () => {
         <section className="section-premium bg-gradient-warm !pt-0 md:!pt-0">
           <div className="container-premium">
             <SectionHeader title={b.featuresTitle} intro={b.featuresIntro} disableOffset />
-            {language === "de" && (
+            {isDe && (
               <Reveal>
                 <p className="-mt-4 mb-10 mx-auto max-w-3xl text-center text-[0.94rem] leading-[1.8] text-muted-foreground">
-                  Unsere verfügbaren Immobilien in Deutschland richten sich nicht nur an Interessenten aus Deutschland. Auch Kaufinteressenten aus der Türkei können ausgewählte Objekte aus unserem eigenen Bestand oder aus ausgewählten Kooperationen anfragen.
+                  Wenn Aurelia ein entsprechendes Objekt auf eigene Rechnung erwirbt oder bereits im eigenen Bestand hält, können wir Sie darüber informieren.
                 </p>
               </Reveal>
             )}
@@ -102,40 +104,32 @@ const ForBuyers = () => {
                       title={f.title}
                       text={f.desc}
                       compact
-                      frame={language === "de"}
+                      frame={isDe}
                       aiDisclosure={replacement ? undefined : "standard"}
                     />
                   </Reveal>
                 );
               })}
             </div>
-            {language === "de" && (
-              <Reveal delay={0.2}>
-                <div className="mt-10 flex justify-center">
-                  <Link to="/kontakt#kontaktformular" className="btn-primary">
-                    Detailliertes Exposé & Objektliste anfragen
-                    <ArrowRight size={13} className="ml-2 text-accent" />
-                  </Link>
-                </div>
-              </Reveal>
-            )}
           </div>
         </section>
 
-        {language === "de" && (
-          <section className="section-premium bg-background">
+        {isDe && (
+          <section id="kaufinteresse" className="section-premium bg-background scroll-mt-24">
             <div className="container-premium">
+              <SectionHeader title="Kaufinteresse hinterlegen" intro="Teilen Sie uns mit, für welche Länder, Regionen und Objektarten Sie sich interessieren. Wenn Aurelia ein entsprechendes Objekt im eigenen Bestand hält oder erwirbt, können wir Sie darüber informieren." />
               <Reveal>
-                <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
-                  <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Immobilien in Deutschland und der Türkei für internationale Kaufinteressenten</h2>
-                  <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Unsere verfügbaren Immobilien richten sich nicht nur an Interessenten aus dem jeweiligen Land. Ausgewählte Immobilien in Deutschland können auch Kaufinteressenten aus der Türkei angeboten werden. Ebenso können ausgewählte Objekte aus unserem Bestand oder aus Kooperationen in der Türkei Interessenten aus Deutschland und anderen europäischen Ländern vorgestellt werden.</p>
-                  <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Sie leben in der Türkei und interessieren sich für eine Immobilie in Deutschland? Wir stellen Ihnen verfügbare Objekte aus unserem Bestand oder aus ausgewählten Kooperationen vor und koordinieren die erforderlichen Informationen und Unterlagen.</p>
-                  <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Verfügbarkeit, Unterlagen und konkrete Kaufabwicklung richten sich nach dem jeweiligen Objekt, Standort und den rechtlichen Voraussetzungen des betreffenden Landes.</p>
+                <div className="mx-auto mb-10 max-w-5xl border-l-2 border-accent bg-card px-6 py-6 md:px-8">
+                  <p className="text-[0.94rem] font-medium leading-[1.8] text-primary">
+                    Die Hinterlegung eines Kaufinteresses stellt keinen Makler-, Vermittlungs- oder Suchauftrag dar. Aurelia Grundbesitz sucht keine Immobilien im Auftrag von Interessenten und vermittelt keine fremden Objekte.
+                  </p>
                 </div>
               </Reveal>
+              <BuyerInterestForm />
             </div>
           </section>
         )}
+
 
 
         {/* PORTFOLIO TEASER (Navy) */}
