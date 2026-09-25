@@ -72,21 +72,27 @@ interface ConfirmationTemplate {
   country: string;
   phoneLabel: string;
   emailLabel: string;
+  showFooterCompany?: boolean;
+  showPhone?: boolean;
+  showWeb?: boolean;
 }
 
 const CONFIRMATIONS: Record<Locale, ConfirmationTemplate> = {
   de: {
-    subject: "Vielen Dank für Ihre Anfrage – Aurelia Grundbesitz GmbH",
-    greeting: "Sehr geehrte Damen und Herren,",
+    subject: "Vielen Dank für Ihre Anfrage",
+    greeting: "Guten Tag,",
     paragraphs: [
-      "vielen Dank für Ihre Anfrage und Ihr Interesse an der Aurelia Grundbesitz GmbH.",
-      "Wir haben Ihre Nachricht erhalten und werden Ihre Angaben prüfen. Wir werden uns schnellstmöglich persönlich mit Ihnen in Verbindung setzen.",
-      "Sollten Sie uns zwischenzeitlich noch weitere Informationen oder Unterlagen zukommen lassen wollen, können Sie jederzeit auf diese E-Mail antworten.",
+      "vielen Dank für Ihre Nachricht an die Aurelia Grundbesitz GmbH.",
+      "Wir haben Ihre Angaben erhalten und werden uns Ihr Anliegen ansehen. Anschließend melden wir uns persönlich bei Ihnen.",
+      "Falls Sie uns zwischenzeitlich weitere Informationen oder Unterlagen zukommen lassen möchten, können Sie jederzeit auf diese E-Mail antworten.",
     ],
     closing: "Mit freundlichen Grüßen",
     country: "",
     phoneLabel: "Telefon",
     emailLabel: "E-Mail",
+    showFooterCompany: false,
+    showPhone: false,
+    showWeb: false,
   },
   tr: {
     subject: "Talebinizi aldık – Aurelia Grundbesitz GmbH",
