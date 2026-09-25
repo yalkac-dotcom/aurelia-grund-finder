@@ -27,10 +27,10 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
   de: {
     portfolio: { title: "Portfolio – Aurelia Grundbesitz", description: 'Aktuelle Immobilien und Objekte aus dem Bestand der Aurelia Grundbesitz GmbH im Überblick.' },
     owners: { title: "Immobilie direkt verkaufen in DE | Aurelia Grundbesitz", description: "Direktankauf auf eigene Rechnung ohne klassischen Vermittlungsprozess. Zügig und diskret verkaufen – auch bei besonderen Ausgangssituationen." },
-    buyers: { title: "Immobilien aus Bestand & Kooperationen | Aurelia", description: "Ausgewählte Immobilien aus eigenem Bestand und projektbezogenen Kooperationen in Deutschland und der Türkei. Exposés und Objektunterlagen anfragen." },
-    partners: { title: "B2B Immobilien-Kooperationen | Aurelia Grundbesitz", description: "Projektbezogene Zusammenarbeit mit Maklern, Entwicklern, Investoren und weiteren Partnern in Deutschland und der Türkei." },
+    buyers: { title: "Immobilien aus unserem eigenen Bestand | Aurelia", description: "Ausgewählte Immobilien aus unserem eigenen Bestand in Deutschland und der Türkei. Exposés und Objektunterlagen anfragen." },
+    partners: { title: "B2B Immobilien-Kooperationen | Aurelia Grundbesitz", description: "Projektbezogene Zusammenarbeit mit Entwicklern, Investoren und externen Fach- und Geschäftspartnern in Deutschland und der Türkei – keine Vermittlung fremder Immobilien." },
     howItWorks: { title: "Ablauf – So gehen wir vor | Aurelia Grundbesitz", description: "Von der ersten Anfrage bis zur Abwicklung: der strukturierte Ablauf einer Immobilienanfrage bei Aurelia Grundbesitz." },
-    services: { title: "Leistungen | Aurelia Grundbesitz", description: "Direkter Immobilienankauf in Deutschland, Immobilien in der Türkei und projektbezogene Kooperationen im Überblick." },
+    services: { title: "Leistungen | Aurelia Grundbesitz", description: "Direkter Immobilienankauf in Deutschland, Immobilien in der Türkei und Verkauf aus eigenem Bestand im Überblick." },
     taxBenefits: { title: "Steuerliche Themen bei Immobilien | Aurelia Grundbesitz", description: "Überblick zu AfA, energetischer Sanierung, KfW und BAFA mit Verweisen auf offizielle Quellen. Keine Steuerberatung." },
     taxAfa: { title: "AfA – Abschreibung bei Immobilien | Aurelia Grundbesitz", description: "Grundlagen zur Abschreibung (AfA) bei Immobilien mit Verweisen auf offizielle Quellen. Keine Steuerberatung." },
     taxEnergetisch: { title: "Energetische Sanierung | Aurelia Grundbesitz", description: "Überblick zu energetischen Sanierungsmaßnahmen bei Immobilien mit Verweisen auf offizielle Quellen." },

@@ -8,9 +8,10 @@ interface FinalCtaProps {
   text: string;
   buttonLabel: string;
   buttonTo: string;
+  secondary?: { label: string; to: string };
 }
 
-const FinalCta = ({ title, text, buttonLabel, buttonTo }: FinalCtaProps) => (
+const FinalCta = ({ title, text, buttonLabel, buttonTo, secondary }: FinalCtaProps) => (
   <section
     className="relative section-premium text-white overflow-hidden"
     style={{ backgroundColor: "hsl(var(--highlight))" }}
@@ -22,6 +23,7 @@ const FinalCta = ({ title, text, buttonLabel, buttonTo }: FinalCtaProps) => (
           {title}
         </h2>
         <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/90">{text}</p>
+        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
         <Link
           to={buttonTo}
           className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-primary transition-colors duration-300 hover:bg-white/95"
@@ -37,6 +39,16 @@ const FinalCta = ({ title, text, buttonLabel, buttonTo }: FinalCtaProps) => (
           {buttonLabel}
           <ArrowRight size={13} className="text-accent" />
         </Link>
+        {secondary && (
+          <Link
+            to={secondary.to}
+            className="inline-flex items-center gap-2.5 rounded-sm border border-white/60 px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-white/10"
+          >
+            {secondary.label}
+            <ArrowRight size={13} className="text-accent" />
+          </Link>
+        )}
+        </div>
       </Reveal>
     </div>
     {/* Goldene Trennlinie zum Navy-Footer */}
