@@ -106,7 +106,7 @@ const Portfolio = () => {
                           fallbackLabel={item.title}
                           className="block h-full w-full object-cover"
                         />
-                        <AiImageDisclosure type="illustrative" />
+                        {i === 0 && <AiImageDisclosure type="illustrative" />}
                       </div>
                       <div className="p-7">
                         <CategoryIcon className="mb-4 text-teal-600" size={28} />
