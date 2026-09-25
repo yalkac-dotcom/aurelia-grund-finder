@@ -40,7 +40,7 @@ const ChipGroup = ({ legend, options, selected, onToggle, error }: { legend: str
         const active = selected.includes(o);
         return (
           <label key={o} className={`inline-flex min-h-11 cursor-pointer items-center gap-2 rounded-sm border px-4 py-2 text-[0.88rem] transition-colors ${active ? "border-accent bg-secondary text-primary ring-2 ring-accent/20" : "border-border bg-background text-muted-foreground hover:border-accent/60"}`}>
-            <input type="checkbox" checked={active} onChange={() => onToggle(o)} className="h-4 w-4 accent-primary" />
+            <input type="checkbox" checked={active} onChange={() => onToggle(o)} className="!h-4 !w-4 !min-h-0 !min-w-0 shrink-0 accent-primary" />
             {o}
           </label>
         );
@@ -166,7 +166,7 @@ const BuyerInterestForm = () => {
         <Select label="Bevorzugte Sprache" value={lang} options={languages} onChange={(v) => setLang(v || "Deutsch")} />
       </div>
       <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground">
-        <input type="checkbox" checked={privacy} onChange={(e) => { setPrivacy(e.target.checked); setErrors((er) => ({ ...er, privacy: "" })); }} className="mt-1 h-4 w-4 accent-primary" />
+        <input type="checkbox" checked={privacy} onChange={(e) => { setPrivacy(e.target.checked); setErrors((er) => ({ ...er, privacy: "" })); }} className="mt-1 !h-4 !w-4 !min-h-0 !min-w-0 shrink-0 accent-primary" />
         <span>Ich habe die <Link to="/datenschutz" className="font-semibold text-primary underline">Datenschutzerklärung</Link> gelesen und stimme der Verarbeitung meiner Angaben zu.</span>
       </label>
       {errors.privacy && <p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}
