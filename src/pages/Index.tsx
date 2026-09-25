@@ -125,6 +125,13 @@ const HomePage = () => {
                 );
               })}
             </div>
+            {language === "de" && (
+              <Reveal delay={0.12}>
+                <p className="mx-auto mt-8 max-w-3xl border-l-2 border-accent/60 pl-5 text-[0.9rem] leading-[1.8] text-muted-foreground">
+                  Ausgewählte Immobilien aus unserem eigenen Bestand oder aus Kooperationen bieten wir auch Kaufinteressenten aus der Türkei an. So entsteht eine direkte Verbindung zwischen Immobilienangeboten in Deutschland und Interessenten in beiden Ländern.
+                </p>
+              </Reveal>
+            )}
           </div>
         </section>
         {/* TRUST */}
