@@ -171,7 +171,7 @@
   }
 
   /* Ausnahme: H1 im hellen Text-Panel des „Wie es funktioniert"-Hero bleibt dunkelblau. */
-  #main-content :is(.section-navy, .bg-primary) .hero-panel-title {
+  #main-content :is(.section-navy, .bg-primary) h1.hero-panel-title {
     color: hsl(var(--primary)) !important;
   }
 
