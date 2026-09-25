@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { useLanguage } from "@/i18n/LanguageContext";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/i18n/LanguageContext";
@@ -33,6 +34,12 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
+// Alte deutsche Seite „Für Eigentümer“ → neue Seite „Immobilie anbieten“ (nur Deutsch)
+const ForOwnerInTroubleDe = () => {
+  const { language } = useLanguage();
+  return language === "de" ? <Navigate to="/immobilie-anbieten" replace /> : <ForOwnerInTrouble />;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -43,7 +50,7 @@ const App = () => (
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
+              <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTroubleDe />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
               <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />
               <Route path="/wie-es-funktioniert" element={<HowItWorks />} />
