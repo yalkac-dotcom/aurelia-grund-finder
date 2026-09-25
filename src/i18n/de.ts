@@ -31,8 +31,8 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Immobilienankauf in Deutschland, Immobilienlösungen in der Türkei sowie Verkauf aus eigenem Bestand und projektbezogene Kooperationen.",
-    subline: "Deutschland · Türkei · Bestand & Kooperationen",
+      "Erwerb auf eigene Rechnung in Deutschland und der Türkei. Eigener Immobilienbestand und projektbezogene Zusammenarbeit mit externen Fach- und Geschäftspartnern.",
+    subline: "Deutschland · Türkei · Eigener Bestand",
     navItems: [
       { label: "Startseite", path: "/" },
       { label: "Für Eigentümer", path: "/fuer-eigentumer-in-not" },
@@ -462,7 +462,7 @@ const de: Translations = {
     heroKicker: "Wie wir arbeiten",
     heroTitle: "Drei Bereiche – und immer zuerst die konkrete Immobilie.",
     heroDescription:
-      "Aurelia bündelt drei Tätigkeitsfelder unter einem klaren Anspruch: Diskreter Ankauf, Immobilienverkauf aus dem Bestand und projektbezogene Kooperationen – jeweils sauber strukturiert und nachvollziehbar dokumentiert.",
+      "Aurelia bündelt drei Tätigkeitsfelder unter einem klaren Anspruch: Diskreter Ankauf auf eigene Rechnung, Verkauf aus dem eigenen Bestand und projektbezogene Zusammenarbeit mit externen Fach- und Geschäftspartnern – jeweils sauber strukturiert und nachvollziehbar dokumentiert.",
     heroPrimaryCta: "Vorgehen besprechen",
     heroSecondaryCta: "Ablauf ansehen",
     heroTrustLine: "Persönlicher Kontakt · Direkte Prüfung · Vertrauliche Behandlung",
@@ -533,7 +533,7 @@ const de: Translations = {
   },
   buyers: {
     heroKicker: "Für Käufer",
-    heroTitle: "Immobilien aus unserem Bestand und ausgewählten Kooperationen.",
+    heroTitle: "Immobilien aus unserem eigenen Bestand.",
     heroDescription:
       "Sie interessieren sich für eine Immobilie von Aurelia? Wir stellen Ihnen die verfügbaren Informationen zum jeweiligen Objekt zur Verfügung und besprechen mit Ihnen persönlich die Konditionen und den weiteren Ablauf.",
     heroPrimaryCta: "Beratung anfragen",
@@ -542,7 +542,7 @@ const de: Translations = {
     heroImageAlt: "Wohnimmobilie aus dem Aurelia-Bestand – sinnbildlich für geprüfte Qualität und transparente Konditionen",
     featuresTitle: "Was Sie bei Aurelia erwartet",
     featuresIntro:
-      "Wir bieten ausgewählte Immobilien aus unserem eigenen Bestand an und präsentieren außerdem Objekte aus projektbezogenen Kooperationen. Bei jedem Angebot soll für Sie erkennbar sein, um welches Objekt es geht, wer Ihr Ansprechpartner ist und welche Konditionen gelten.",
+      "Wir bieten ausgewählte Immobilien aus unserem eigenen Bestand an. Bei jedem Angebot soll für Sie erkennbar sein, um welches Objekt es geht, wer Ihr Ansprechpartner ist und welche Konditionen gelten.",
     features: [
       { title: "Preis und Konditionen", desc: "Die wesentlichen Konditionen werden beim jeweiligen Angebot genannt und im persönlichen Gespräch erläutert." },
       { title: "Ansprechpartner", desc: "Sie wissen, mit wem Sie über die Immobilie sprechen und in welcher Konstellation das Objekt angeboten wird." },
@@ -551,7 +551,7 @@ const de: Translations = {
     ],
     portfolioTitle: "Unser aktuelles Angebot",
     portfolioText:
-      "Unser Immobilienbestand verändert sich regelmäßig. Hinzu kommen einzelne Objekte aus projektbezogenen Kooperationen. Welche Immobilien aktuell angeboten werden, erfahren Sie über unser Portfolio oder direkt auf Anfrage.",
+      "Unser Immobilienbestand verändert sich regelmäßig. Welche Immobilien aktuell angeboten werden, erfahren Sie über unser Portfolio oder direkt auf Anfrage.",
     portfolioCta: "Zum Portfolio",
     proofTitle: "Wenn Sie sich für ein Objekt interessieren",
     proofIntro: "",
@@ -591,7 +591,7 @@ const de: Translations = {
     faqItems: [
       {
         q: "Welche Objekttypen verkauft Aurelia?",
-        a: "Ausgewählte Wohn- und Gewerbeimmobilien sowie Grundstücke aus dem eigenen Bestand oder aus projektbezogenen Kooperationen – abhängig von der aktuellen Verfügbarkeit.",
+        a: "Ausgewählte Wohn- und Gewerbeimmobilien sowie Grundstücke aus unserem eigenen Bestand – abhängig von der aktuellen Verfügbarkeit.",
       },
       {
         q: "Kann ich eine Finanzierung über Aurelia vermittelt bekommen?",

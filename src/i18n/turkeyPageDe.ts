@@ -41,7 +41,7 @@ export const turkeyPageDe: Partial<Record<Language, DeepPartial<Translations>>> 
         items: [
           { q: "Muss ich für den Grundbuchtermin persönlich in die Türkei reisen?", a: "Das hängt vom konkreten Fall und den erforderlichen Vollmachten ab. In vielen Fällen können bestimmte Schritte über eine ordnungsgemäß erteilte Vollmacht durchgeführt werden. Wir klären mit Ihnen vorab, welche Möglichkeiten für Ihre Situation bestehen." },
           { q: "Welche Unterlagen werden für die erste Prüfung benötigt?", a: "Für den Einstieg reichen in der Regel grundlegende Angaben zur Immobilie, zum Beispiel eine Tapu-Kopie, Fotos und der Standort. Welche weiteren Dokumente benötigt werden, klären wir anschließend gemeinsam mit Ihnen." },
-          { q: "Kaufen Sie die Immobilie selbst oder vermitteln Sie den Verkauf?", a: "Je nach Objekt und Ausgangssituation prüfen wir, ob ein Ankauf, eine Veräußerung über geeignete Kooperationspartner oder eine andere Vorgehensweise infrage kommt. Aurelia Grundbesitz bleibt dabei Ihr Ansprechpartner in Deutschland." },
+          { q: "Kaufen Sie die Immobilie selbst oder vermitteln Sie den Verkauf?", a: "Wir prüfen, ob ein Erwerb durch Aurelia auf eigene Rechnung grundsätzlich infrage kommt. Die konkrete Prüfung hängt von der Immobilie, den Unterlagen und den jeweiligen rechtlichen Voraussetzungen ab." },
         ],
       },
       cta: {

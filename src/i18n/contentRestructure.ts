@@ -15,27 +15,27 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
         { title: "Verkauf in der Türkei – bequem aus Deutschland geregelt", desc: "Sie leben in Deutschland oder Europa und besitzen eine Immobilie oder Grundbesitz in der Türkei? Wir begleiten Sie von Deutschland aus und koordinieren die notwendigen Schritte gemeinsam mit unseren Ansprechpartnern in der Türkei. So haben Sie während des gesamten Prozesses einen festen Ansprechpartner.", cta: "Immobilie in der Türkei anbieten" },
       ],
       trustTitle: "Transparenz, Diskretion und persönliche Begleitung.",
-      trustText: "Ein Immobilienverkauf ist Vertrauenssache. Egal ob Sie eine Immobilie in Deutschland direkt an uns veräußern möchten oder Unterstützung bei einer Immobilie in der Türkei benötigen: Wir legen Wert auf eine verständliche Abstimmung und eine Zusammenarbeit auf Augenhöhe. Persönliche und objektbezogene Angaben behandeln wir vertraulich.",
+      trustText: "Immobiliengeschäfte sind Vertrauenssache. Ob Sie Aurelia eine Immobilie zum möglichen Ankauf anbieten oder sich für ein Objekt aus unserem eigenen Bestand interessieren: Wir legen Wert auf klare Abläufe, persönliche Kommunikation und eine nachvollziehbare Prüfung. Personen- und objektbezogene Angaben behandeln wir vertraulich.",
       trustClaimTitle: "", trustClaimText: "",
       proofPoints: [
         { title: "Direkter Ansprechpartner", text: "Kein anonymes Portal, sondern persönliche Betreuung aus Düsseldorf." },
         { title: "Nachvollziehbare Bewertung", text: "Wir erläutern Ihnen verständlich, wie unsere Einschätzung zustande kommt." },
         { title: "Keine versteckten Kosten", text: "Unsere Erstprüfung und das Erstgespräch sind für Sie kostenfrei und unverbindlich." },
-        { title: "Ankauf auf eigene Rechnung", text: "Passende Immobilien können wir direkt auf eigene Rechnung erwerben. Auch bei Immobilien in der Türkei kann – je nach Einzelfall und soweit rechtlich und organisatorisch möglich – geprüft werden, ob Zahlungen und Abstimmungen über Deutschland erfolgen können. Aurelia Grundbesitz ist kein Kreditinstitut und bietet keine Darlehen oder Finanzdienstleistungen an." },
+        { title: "Ankauf auf eigene Rechnung", text: "Passende Immobilien prüfen wir für einen möglichen Erwerb auf eigene Rechnung. Welche Möglichkeiten bestehen, hängt vom Objekt, dem Standort und den jeweiligen rechtlichen Voraussetzungen ab." },
       ],
-      stepsTitle: "In drei Schritten zur Lösung", steps: [
-        { title: "Anfrage senden", desc: "Teilen Sie uns die wichtigsten Eckdaten zu Ihrer Immobilie und Ihrer Situation mit." },
-        { title: "Vertrauliche Erstprüfung", desc: "Wir prüfen Ihre Angaben und besprechen gemeinsam mit Ihnen die Möglichkeiten." },
-        { title: "Angebot & Umsetzung", desc: "Sie erhalten eine klare Rückmeldung und entscheiden in Ruhe über die nächsten Schritte." },
+      stepsTitle: "Immobilie zum Ankauf anbieten – in drei Schritten", steps: [
+        { title: "Immobilie anbieten", desc: "Teilen Sie uns die wichtigsten Eckdaten zu Ihrer Immobilie mit." },
+        { title: "Vertrauliche Erstprüfung", desc: "Wir prüfen die Angaben und klären, ob ein Erwerb auf eigene Rechnung grundsätzlich infrage kommt." },
+        { title: "Rückmeldung & weiteres Vorgehen", desc: "Sie erhalten eine klare Rückmeldung. Bei grundsätzlichem Interesse besprechen wir die nächsten Schritte." },
       ],
       stepsNote: "Die erste Kontaktaufnahme und Prüfung ist für Sie unverbindlich. Welche weiteren Schritte sinnvoll sind, hängt von der Immobilie und Ihrer individuellen Situation ab.",
       objectionsTitle: "Häufige Fragen", objectionsIntro: "",
       objections: [
         { q: "Entstehen für mich Kosten bei der Erstprüfung?", a: "Nein. Die Erstprüfung Ihrer Angaben und das erste Gespräch sind für Sie kostenfrei und unverbindlich." },
-        { q: "Wie unterscheidet sich Aurelia von einem klassischen Makler?", a: "Bei passenden Objekten prüfen wir einen direkten Ankauf auf eigene Rechnung oder andere geeignete Vorgehensweisen. Dabei legen wir Wert auf transparente Abläufe und eine klare Abstimmung." },
-        { q: "Kann ich auch komplexe Fälle, zum Beispiel Erbschaften oder Auslandsimmobilien, anfragen?", a: "Ja. Auch besondere Ausgangssituationen können geprüft werden. Wir betrachten die jeweilige Situation individuell und klären, welche Möglichkeiten infrage kommen." },
+        { q: "Wie unterscheidet sich Aurelia von einem klassischen Makler?", a: "Aurelia vermittelt keine fremden Immobilien. Wir prüfen ausgewählte Immobilien für einen möglichen Erwerb auf eigene Rechnung und verkaufen Immobilien aus unserem eigenen Bestand." },
+        { q: "Kann ich Aurelia auch eine Immobilie mit einer besonderen oder komplexen Ausgangslage anbieten?", a: "Ja. Auch besondere Ausgangssituationen können geprüft werden. Entscheidend ist immer die konkrete Immobilie und ob ein Erwerb durch Aurelia auf eigene Rechnung grundsätzlich infrage kommt." },
       ],
-      finalCtaTitle: "Bereit für das erste unverbindliche Gespräch?", finalCtaText: "Sprechen Sie mit dem Team der Aurelia Grundbesitz GmbH in Düsseldorf über Ihr Immobilienanliegen in Deutschland oder der Türkei.", finalCtaButton: "Jetzt kostenfreie Ersteinschätzung anfragen",
+      finalCtaTitle: "Sie möchten eine Immobilie anbieten oder Kaufinteresse hinterlegen?", finalCtaText: "Wählen Sie den passenden Weg und teilen Sie uns Ihr Anliegen unverbindlich mit.", finalCtaButton: "Immobilie zum Ankauf anbieten",
     },
     ownerInTrouble: {
       heroKicker: "Für Eigentümer in Deutschland", heroTitle: "Immobilien in Deutschland direkt verkaufen – zügig, diskret und transparent.", heroDescription: "Sie suchen einen verlässlichen Käufer oder stehen vor einer nicht alltäglichen Verkaufssituation? Ob Einfamilienhaus, Eigentumswohnung, Grundstück oder Gewerbeobjekt: Wir prüfen den direkten Ankauf Ihrer Immobilie auf eigene Rechnung – vertraulich, nachvollziehbar und ohne klassischen Vermittlungsprozess.", heroPrimaryCta: "Immobilie in Deutschland unverbindlich anbieten", heroSecondaryCta: "Ablauf & Voraussetzungen erfahren", heroTrustLine: "Direkter Ankauf · Persönlicher Kontakt · Klare Entscheidung",
@@ -69,13 +69,13 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       finalCtaTitle: "Sprechen Sie unverbindlich mit uns über Ihre Immobilie in Deutschland.", finalCtaText: "Teilen Sie uns einige grundlegende Eckdaten zu Ihrer Immobilie mit. Das Team der Aurelia Grundbesitz GmbH in Düsseldorf prüft Ihre Anfrage vertraulich und nimmt anschließend persönlich Kontakt mit Ihnen auf.", finalCtaButton: "Immobilie jetzt anbieten",
     },
     howItWorks: {
-      heroDescription: "Aurelia kauft Immobilien in Deutschland, ist Ansprechpartner für Eigentümer mit Immobilien in der Türkei und bietet ausgewählte Objekte aus dem eigenen Bestand oder aus Kooperationen an.",
+      heroDescription: "Aurelia kauft Immobilien in Deutschland, ist Ansprechpartner für Eigentümer mit Immobilien in der Türkei und bietet ausgewählte Immobilien aus dem eigenen Bestand an.",
       introTitle: "Nicht jede Immobilie braucht denselben Weg", introText: "Ob Ankauf in Deutschland, eine Immobilie in der Türkei oder ein Objekt aus unserem Bestand: Am Anfang steht immer die Frage, worum es konkret geht. Erst danach entscheiden wir, welcher Weg sinnvoll sein kann.",
       segmentsTitle: "Unsere drei Geschäftsbereiche", segmentsIntro: "Unsere Arbeit konzentriert sich auf drei Bereiche:",
       segments: [
         { title: "Immobilienankauf in Deutschland", desc: "Wir prüfen Häuser, Wohnungen, Grundstücke und Gewerbeimmobilien für einen möglichen Ankauf auf eigene Rechnung. Auch Immobilien mit Renovierungsbedarf oder schwierigeren Ausgangssituationen können Sie uns anbieten." },
         { title: "Immobilien in der Türkei", desc: "Eigentümer, die in Deutschland oder einem anderen europäischen Land leben, können ihre Immobilie in der Türkei zunächst mit uns besprechen. Wenn Unterstützung vor Ort erforderlich ist, können geeignete Partner und Fachleute in der Türkei einbezogen werden." },
-        { title: "Bestand, Verkauf & internationale Käufer", desc: "Verkauf ausgewählter Immobilien aus unserem eigenen Bestand oder aus Kooperationen in Deutschland und der Türkei – auch grenzüberschreitend an Kaufinteressenten in beiden Märkten. Bei passenden Projekten arbeiten wir mit Immobilienunternehmen, Investoren und anderen professionellen Partnern zusammen." },
+        { title: "Bestand, Verkauf & internationale Käufer", desc: "Verkauf ausgewählter Immobilien aus unserem eigenen Bestand in Deutschland und der Türkei – auch grenzüberschreitend an Kaufinteressenten in beiden Märkten. Angeboten werden ausschließlich Immobilien, die Aurelia selbst erworben hat." },
       ],
       holdTitle: "Was nach Ihrer Anfrage passiert", holdIntro: "Der genaue Ablauf hängt davon ab, worum es geht. Die ersten Schritte sind jedoch meistens ähnlich.",
       holdSteps: [
@@ -85,9 +85,9 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
     },
     partners: {
       heroTitle: "Gemeinsam an passenden Immobilienprojekten arbeiten.", heroDescription: "Nicht jedes Immobiliengeschäft lässt sich allein sinnvoll umsetzen. Deshalb arbeiten wir bei passenden Projekten mit Unternehmen und Fachleuten zusammen, die ihre Erfahrung, Marktkenntnis oder besondere Expertise einbringen.",
-      formsTitle: "Partner für unterschiedliche Aufgaben", formsIntro: "Welche Form der Zusammenarbeit sinnvoll ist, hängt vom jeweiligen Objekt und Projekt ab. Dabei kommen unterschiedliche Partner infrage.",
+      formsTitle: "Partner für unterschiedliche Aufgaben", formsIntro: "Welche Form der Zusammenarbeit sinnvoll ist, hängt vom jeweiligen Objekt und Projekt ab. Aus einer projektbezogenen Zusammenarbeit folgt keine Vermittlung fremder Immobilien an Kaufinteressenten.",
       forms: [
-        { title: "Projektentwickler & Immobilienunternehmen", desc: "Bei geeigneten Objekten kann eine Zusammenarbeit beim Ankauf, bei der Entwicklung, im Bestand oder beim späteren Verkauf infrage kommen." }, { title: "Investoren", desc: "Bei einzelnen Projekten können individuelle Kooperationen mit professionellen Investoren geprüft werden. Grundlage dafür ist immer eine gesonderte Vereinbarung für das konkrete Projekt." }, { title: "Makler & lokale Immobilienpartner", desc: "Gute Marktkenntnis und verlässliche Kontakte vor Ort sind besonders dann wichtig, wenn Immobilien nicht in unserem unmittelbaren Tätigkeitsgebiet liegen. Das gilt insbesondere auch für Projekte in der Türkei." }, { title: "Fachberater & Rechtsanwälte", desc: "Wenn ein Projekt rechtliche, steuerliche, technische oder andere besondere Fragen aufwirft, können geeignete externe Fachleute hinzugezogen werden." },
+        { title: "Projektentwickler & Immobilienunternehmen", desc: "Bei geeigneten Objekten kann eine Zusammenarbeit beim Ankauf, bei der Entwicklung, im Bestand oder beim späteren Verkauf infrage kommen." }, { title: "Investoren", desc: "Bei einzelnen Projekten können individuelle Kooperationen mit professionellen Investoren geprüft werden. Grundlage dafür ist immer eine gesonderte Vereinbarung für das konkrete Projekt." }, { title: "Makler & lokale Immobilienpartner", desc: "Gute Marktkenntnis und verlässliche Kontakte vor Ort sind besonders dann wichtig, wenn Immobilien nicht in unserem unmittelbaren Tätigkeitsgebiet liegen. Makler sind für uns externe Geschäftspartner – kein Vertriebskanal für fremde Objekte im Aurelia-Angebot." }, { title: "Fachberater & Rechtsanwälte", desc: "Wenn ein Projekt rechtliche, steuerliche, technische oder andere besondere Fragen aufwirft, können geeignete externe Fachleute hinzugezogen werden." },
       ],
     },
     aboutV2: {
