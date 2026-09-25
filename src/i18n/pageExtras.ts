@@ -42,7 +42,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Grundstücke", description: "Grundstücke und Flächen mit unterschiedlichen Nutzungsmöglichkeiten.", alt: "Luftbild eines Baugrundstücks" },
         { title: "Gewerbeimmobilien", description: "Gewerblich genutzte Immobilien und Objekte mit gemischter Nutzung.", alt: "Außenansicht eines Bürogebäudes" },
       ],
-      regionTitle: "Unsere Märkte", regionText: "Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilienmöglichkeiten in Italien, Spanien, Frankreich und den Niederlanden.",
+      regionTitle: "Unsere Märkte", regionText: "Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden.",
       ctaTitle: "Sie suchen eine Immobilie?", ctaText: "Sagen Sie uns kurz, wonach Sie suchen. Wir prüfen, ob sich aktuell ein passendes Objekt in unserem Bestand befindet oder angeboten werden kann.", ctaButton: "Portfolio anfragen",
     },
     accessibility: { chooseLetters: "Buchstaben wählen", homeHeroAlt: "Ruhige Wohnstraße mit gepflegtem Mehrfamilienhaus bei Tageslicht", promisesAlt: "Vier Marmorsäulen in einem lichtdurchfluteten Raum als Sinnbild für unsere vier Versprechen" },
