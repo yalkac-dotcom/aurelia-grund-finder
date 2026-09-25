@@ -134,17 +134,17 @@
 - [x] TR, FR und ES bei 390 px, 768 px und 1440 px prüfen; übrige Sprachen unverändert lassen.
 
 # Master-Prompt: Neuausrichtung deutsche Website (nur DE, nicht veröffentlichen)
-- [ ] Startseite (H1, 3 Bereiche, besondere Situationen, Eigentümer im Ausland)
-- [ ] Immobilie anbieten (Wohnsitz separat, besondere Situation, Hinweis)
-- [ ] Zwangsversteigerung-Bereich DE + Türkei-Schwierigkeiten
-- [ ] Für Kaufinteressenten + Formular
-- [ ] Unser Bestand
-- [ ] Türkei-Seite drei Bereiche
-- [ ] Wie wir arbeiten
-- [ ] Über uns + Märkte
-- [ ] Geschäftspartner
-- [ ] FAQ 14 Fragen
-- [ ] Aurelia kompakt: Video ausblenden, Präsentation folgt (blockiert: PDF fehlt)
-- [ ] Navigation + Anfrage-Auswahl
-- [ ] Footer, SEO
-- [ ] Altlogik-Suche, responsive Prüfung (Formulare nicht absenden)
+- [x] Startseite (H1, 3 Bereiche, besondere Situationen, Eigentümer im Ausland)
+- [x] Immobilie anbieten (Wohnsitz separat, besondere Situation, Hinweis)
+- [x] Zwangsversteigerung-Bereich DE + Türkei-Schwierigkeiten
+- [x] Für Kaufinteressenten + Formular
+- [x] Unser Bestand
+- [x] Türkei-Seite drei Bereiche
+- [x] Wie wir arbeiten
+- [x] Über uns + Märkte
+- [x] Geschäftspartner
+- [x] FAQ 14 Fragen
+- [~] Aurelia kompakt: Video ausblenden, Präsentation folgt (wartet auf neue Präsentation)
+- [x] Navigation + Anfrage-Auswahl
+- [x] Footer, SEO
+- [x] Altlogik-Suche, responsive Prüfung (Formulare nicht absenden)
