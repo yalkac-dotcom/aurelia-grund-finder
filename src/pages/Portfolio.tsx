@@ -142,9 +142,9 @@ const Portfolio = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
           <div className="container-premium relative text-center">
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{isGerman ? "Kein passendes Bestandsobjekt dabei?" : copy.ctaTitle}</h2>
+              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{isGerman ? "Kein passendes Objekt dabei?" : copy.ctaTitle}</h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                {isGerman ? "Hinterlegen Sie Ihr Kaufinteresse. Wenn Aurelia ein passendes Objekt im eigenen Bestand hält oder erwirbt, können wir Sie darüber informieren." : copy.ctaText}
+                {isGerman ? "Kaufinteresse hinterlegen. Wenn Aurelia ein passendes Objekt im eigenen Bestand hält oder später erwirbt, können wir Sie darüber informieren." : copy.ctaText}
               </p>
               <Link
                 to={isGerman ? "/fuer-kaeufer#kaufinteresse" : "/kontakt"}

@@ -31,17 +31,18 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Erwerb auf eigene Rechnung in Deutschland und der Türkei. Eigener Immobilienbestand und projektbezogene Zusammenarbeit mit externen Fach- und Geschäftspartnern.",
-    subline: "Deutschland · Türkei · Eigener Bestand",
+      "Aurelia Grundbesitz GmbH ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf. Wir kaufen ausgewählte Immobilien auf eigene Rechnung, bauen einen eigenen Bestand auf und verkaufen Immobilien aus diesem Bestand.",
+    subline: "Schwerpunkt: Deutschland und Türkei · ausgewählte Möglichkeiten in Italien, Spanien, Frankreich und den Niederlanden.",
     navItems: [
       { label: "Startseite", path: "/" },
-      { label: "Für Eigentümer", path: "/fuer-eigentumer-in-not" },
-      { label: "Für Käufer", path: "/fuer-kaeufer" },
-      { label: "Immobilien in der Türkei", path: "/immobilien-tuerkei" },
-      { label: "Für Geschäftspartner", path: "/fuer-geschaeftspartner" },
-      { label: "Portfolio", path: "/portfolio" },
-      { label: "Über uns", path: "/ueber-uns" },
+      { label: "Immobilie anbieten", path: "/immobilie-anbieten" },
+      { label: "Für Kaufinteressenten", path: "/fuer-kaeufer" },
+      { label: "Unser Bestand", path: "/portfolio" },
+      { label: "Türkei", path: "/immobilien-tuerkei" },
+      { label: "Geschäftspartner", path: "/fuer-geschaeftspartner" },
       { label: "Wie wir arbeiten", path: "/wie-es-funktioniert" },
+      { label: "Über uns", path: "/ueber-uns" },
+      { label: "FAQ", path: "/faq" },
       { label: "Kontakt", path: "/kontakt" },
     ],
     legalItems: [
@@ -460,7 +461,7 @@ const de: Translations = {
   },
   howItWorks: {
     heroKicker: "Wie wir arbeiten",
-    heroTitle: "Drei Bereiche – und immer zuerst die konkrete Immobilie.",
+    heroTitle: "Wie wir arbeiten – einfach erklärt.",
     heroDescription:
       "Aurelia bündelt drei Tätigkeitsfelder unter einem klaren Anspruch: Diskreter Ankauf auf eigene Rechnung, Verkauf aus dem eigenen Bestand und projektbezogene Zusammenarbeit mit externen Fach- und Geschäftspartnern – jeweils sauber strukturiert und nachvollziehbar dokumentiert.",
     heroPrimaryCta: "Vorgehen besprechen",

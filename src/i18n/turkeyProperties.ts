@@ -2,8 +2,8 @@ import type { Language, TurkeyPropertiesTranslations } from "./types";
 
 export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTranslations> = {
   de: {
-    seoTitle: "Türkei-Immobilie aus Deutschland verkaufen | Aurelia",
-    seoDescription: "Immobilie in der Türkei von Deutschland oder Europa aus verkaufen. Persönlicher Ansprechpartner auf Deutsch und Türkisch. Jetzt unverbindlich anfragen.",
+    seoTitle: "Immobilie in der Türkei zum Ankauf anbieten | Aurelia",
+    seoDescription: "Aurelia prüft Immobilien in der Türkei für einen Ankauf auf eigene Rechnung. Auch wer in der Türkei lebt, kann uns eine Immobilie in Deutschland anbieten.",
     teaser: {
       eyebrow: "DEUTSCHLAND · TÜRKEI",
       title: "Immobilie in der Türkei?",

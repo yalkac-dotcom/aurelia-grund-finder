@@ -69,8 +69,8 @@ const ForBuyers = () => {
         image={buyersHeroImage}
         imageAlt={b.heroImageAlt}
         kicker={b.heroKicker}
-        title={isDe ? "Kaufinteresse für Immobilien aus unserem Bestand." : b.heroTitle}
-        description={isDe ? "Teilen Sie uns unverbindlich mit, welche Länder, Regionen und Immobilienarten für Sie interessant sind." : b.heroDescription}
+        title={isDe ? "Kaufinteresse für Immobilien aus unserem Bestand" : b.heroTitle}
+        description={isDe ? "Sie interessieren sich für eine Immobilie aus unserem Bestand? Teilen Sie uns unverbindlich mit, welche Länder, Regionen und Objektarten für Sie interessant sind." : b.heroDescription}
         primaryCta={isDe ? { label: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" } : { label: b.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: b.heroSecondaryCta, href: "#ablauf" }}
         trustLine={b.heroTrustLine}
@@ -87,7 +87,7 @@ const ForBuyers = () => {
             {isDe && (
               <Reveal>
                 <p className="-mt-4 mb-10 mx-auto max-w-3xl text-center text-[0.94rem] leading-[1.8] text-muted-foreground">
-                  Wenn Aurelia ein entsprechendes Objekt auf eigene Rechnung erwirbt oder bereits im eigenen Bestand hält, können wir Sie darüber informieren.
+                  Wenn Aurelia ein entsprechendes Objekt im eigenen Bestand hält oder später erwirbt, können wir Sie darüber informieren.
                 </p>
               </Reveal>
             )}
@@ -117,11 +117,11 @@ const ForBuyers = () => {
         {isDe && (
           <section id="kaufinteresse" className="section-premium bg-background scroll-mt-24">
             <div className="container-premium">
-              <SectionHeader title="Kaufinteresse hinterlegen" intro="Teilen Sie uns mit, für welche Länder, Regionen und Objektarten Sie sich interessieren. Wenn Aurelia ein entsprechendes Objekt im eigenen Bestand hält oder erwirbt, können wir Sie darüber informieren." />
+              <SectionHeader title="Kaufinteresse hinterlegen" intro="Sie interessieren sich für eine Immobilie aus unserem Bestand? Teilen Sie uns unverbindlich mit, welche Länder, Regionen und Objektarten für Sie interessant sind. Wenn Aurelia ein entsprechendes Objekt im eigenen Bestand hält oder später erwirbt, können wir Sie darüber informieren." />
               <Reveal>
                 <div className="mx-auto mb-10 max-w-5xl border-l-2 border-accent bg-card px-6 py-6 md:px-8">
                   <p className="text-[0.94rem] font-medium leading-[1.8] text-primary">
-                    Die Hinterlegung eines Kaufinteresses stellt keinen Makler-, Vermittlungs- oder Suchauftrag dar. Aurelia Grundbesitz sucht keine Immobilien im Auftrag von Interessenten und vermittelt keine fremden Objekte.
+                    Die Hinterlegung eines Kaufinteresses stellt keinen Makler-, Vermittlungs- oder Suchauftrag dar. Aurelia sucht keine Immobilien im Auftrag von Interessenten und vermittelt keine fremden Objekte.
                   </p>
                 </div>
               </Reveal>

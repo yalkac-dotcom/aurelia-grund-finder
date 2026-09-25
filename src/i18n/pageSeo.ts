@@ -25,11 +25,11 @@ export type PageSeoEntry = { title: string; description: string };
 
 export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
   de: {
-    portfolio: { title: "Portfolio – Aurelia Grundbesitz", description: 'Aktuelle Immobilien und Objekte aus dem Bestand der Aurelia Grundbesitz GmbH im Überblick.' },
-    owners: { title: "Immobilie direkt verkaufen in DE | Aurelia Grundbesitz", description: "Direktankauf auf eigene Rechnung ohne klassischen Vermittlungsprozess. Zügig und diskret verkaufen – auch bei besonderen Ausgangssituationen." },
-    buyers: { title: "Immobilien aus unserem eigenen Bestand | Aurelia", description: "Ausgewählte Immobilien aus unserem eigenen Bestand in Deutschland und der Türkei. Exposés und Objektunterlagen anfragen." },
-    partners: { title: "B2B Immobilien-Kooperationen | Aurelia Grundbesitz", description: "Projektbezogene Zusammenarbeit mit Entwicklern, Investoren und externen Fach- und Geschäftspartnern in Deutschland und der Türkei – keine Vermittlung fremder Immobilien." },
-    howItWorks: { title: "Ablauf – So gehen wir vor | Aurelia Grundbesitz", description: "Von der ersten Anfrage bis zur Abwicklung: der strukturierte Ablauf einer Immobilienanfrage bei Aurelia Grundbesitz." },
+    portfolio: { title: "Unser Bestand – Immobilien aus eigenem Bestand | Aurelia", description: 'Ausgewählte Immobilien, die Aurelia Grundbesitz selbst erworben hat und aus dem eigenen Bestand anbietet – in Deutschland und der Türkei.' },
+    owners: { title: "Immobilie direkt verkaufen – Direktankauf | Aurelia Grundbesitz", description: "Immobilie zum Ankauf anbieten: Aurelia kauft auf eigene Rechnung – auch bei drohender Zwangsversteigerung oder schwierigen Situationen. Deutschland und Türkei." },
+    buyers: { title: "Kaufinteresse für Immobilien aus eigenem Bestand | Aurelia", description: "Hinterlegen Sie unverbindlich Ihr Kaufinteresse für Immobilien aus dem eigenen Bestand von Aurelia – Deutschland, Türkei und ausgewählte europäische Märkte." },
+    partners: { title: "Geschäftspartner | Aurelia Grundbesitz", description: "Zusammenarbeit mit Rechtsanwälten, Notaren, Architekten, Projektentwicklern und lokalen Partnern bei eigenen Ankäufen und Projekten." },
+    howItWorks: { title: "Wie wir arbeiten – Ankauf & eigener Bestand | Aurelia", description: "Einfach erklärt: wie Aurelia Immobilien auf eigene Rechnung kauft, den eigenen Bestand entwickelt und aus diesem Bestand verkauft." },
     services: { title: "Leistungen | Aurelia Grundbesitz", description: "Direkter Immobilienankauf in Deutschland, Immobilien in der Türkei und Verkauf aus eigenem Bestand im Überblick." },
     taxBenefits: { title: "Steuerliche Themen bei Immobilien | Aurelia Grundbesitz", description: "Überblick zu AfA, energetischer Sanierung, KfW und BAFA mit Verweisen auf offizielle Quellen. Keine Steuerberatung." },
     taxAfa: { title: "AfA – Abschreibung bei Immobilien | Aurelia Grundbesitz", description: "Grundlagen zur Abschreibung (AfA) bei Immobilien mit Verweisen auf offizielle Quellen. Keine Steuerberatung." },
@@ -38,7 +38,7 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
     taxBafa: { title: "BAFA-Förderung bei Immobilien | Aurelia Grundbesitz", description: "Überblick zu BAFA-Förderungen rund um Immobilien mit Verweisen auf offizielle Quellen." },
     taxGlossar: { title: "Glossar steuerlicher Begriffe | Aurelia Grundbesitz", description: "Erläuterungen zu steuerlichen Begriffen rund um Immobilien, alphabetisch geordnet." },
     investorGlossar: { title: "Immobilien-Glossar | Aurelia Grundbesitz", description: "Begriffe aus der Immobilienpraxis verständlich erklärt – alphabetisch geordnetes Glossar." },
-    faq: { title: "Häufige Fragen | Aurelia Grundbesitz", description: "Antworten auf häufige Fragen zu Verkauf, Ablauf und Zusammenarbeit mit Aurelia Grundbesitz." },
+    faq: { title: "Häufige Fragen – Direktankauf & Kaufinteresse | Aurelia", description: "Antworten zu Direktankauf, Verkauf vor der Zwangsversteigerung, Kaufinteresse und Immobilien in Deutschland und der Türkei." },
     contact: { title: "Kontakt | Aurelia Grundbesitz", description: "Nehmen Sie Kontakt zu Aurelia Grundbesitz in Düsseldorf auf – persönlich, diskret und unverbindlich." },
     impressum: { title: "Impressum | Aurelia Grundbesitz", description: "Impressum und Anbieterkennzeichnung der Aurelia Grundbesitz GmbH, Düsseldorf." },
     privacy: { title: "Datenschutzerklärung | Aurelia Grundbesitz", description: "Informationen zur Verarbeitung personenbezogener Daten auf der Website der Aurelia Grundbesitz GmbH." },

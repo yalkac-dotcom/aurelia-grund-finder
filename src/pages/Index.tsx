@@ -16,6 +16,7 @@ import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
+import HomeDeSections from "@/components/home/HomeDeSections";
 import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
@@ -48,8 +49,8 @@ const homeHeroImage = {
 const HomePage = () => {
   const { t, language } = useLanguage();
   usePageSeo(
-    language === "de" ? "Immobilien verkaufen in DE & TR | Aurelia Grundbesitz" : `${t.home.heroTitle} | Aurelia Grundbesitz`,
-    language === "de" ? "Immobilie direkt und vertraulich in Deutschland oder der Türkei verkaufen. Transparente Lösungen auch bei besonderen Situationen. Jetzt kostenfrei anfragen." : t.home.heroDescription,
+    language === "de" ? "Immobilie direkt verkaufen & Kaufinteresse | Aurelia Grundbesitz" : `${t.home.heroTitle} | Aurelia Grundbesitz`,
+    language === "de" ? "Aurelia kauft Immobilien auf eigene Rechnung – auch vor einer Zwangsversteigerung. Immobilie zum Ankauf anbieten oder Kaufinteresse für den eigenen Bestand hinterlegen. Deutschland & Türkei." : t.home.heroDescription,
   );
   const extras = pageExtras[language];
 
@@ -89,8 +90,8 @@ const HomePage = () => {
         image={homeHeroImage}
         imageAlt={extras.accessibility.homeHeroAlt}
         kicker={t.home.heroKicker}
-        title={language === "de" ? "Ausgewählte Immobilien in Deutschland, der Türkei und Europa." : t.home.heroTitle}
-        description={language === "de" ? "Aurelia erwirbt Immobilien auf eigene Rechnung, entwickelt einen eigenen Bestand und bietet ausgewählte Bestandsobjekte Kaufinteressenten in verschiedenen europäischen Märkten an." : (t.home.heroIntro ?? t.home.heroDescription)}
+        title={language === "de" ? "Immobilien kaufen und verkaufen – persönlich und auf eigene Rechnung." : t.home.heroTitle}
+        description={language === "de" ? "Aurelia kauft ausgewählte Immobilien für den eigenen Bestand. Eigentümer können uns ihre Immobilie direkt anbieten. Kaufinteressenten können ihr Interesse an Immobilien aus unserem Bestand hinterlegen." : (t.home.heroIntro ?? t.home.heroDescription)}
         primaryCta={{ label: language === "de" ? "Immobilie zum Ankauf anbieten" : (t.home.heroPrimaryCta ?? t.home.finalCtaButton), to: "/immobilie-anbieten" }}
         secondaryCta={language === "de" ? { label: "Kaufinteresse hinterlegen", href: "/fuer-kaeufer#kaufinteresse" } : t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#bereiche" } : undefined}
         trustLine={t.home.heroTrustLine}
@@ -106,12 +107,12 @@ const HomePage = () => {
           <div className="container-premium">
             {language === "de" ? (
               <>
-                <SectionHeader title="Drei klare Wege zu Aurelia" intro="Schwerpunkt Deutschland und Türkei – ergänzt um ausgewählte europäische Märkte." disableOffset />
+                <SectionHeader title="Was Sie bei Aurelia tun können" intro="Schwerpunkt Deutschland und Türkei – ergänzt um ausgewählte Möglichkeiten in weiteren europäischen Ländern." disableOffset />
                 <div className="grid gap-6 md:grid-cols-3 md:gap-7">
                   {[
-                    { title: "Immobilie anbieten", text: "Sie möchten eine Immobilie verkaufen? Aurelia prüft ausgewählte Objekte für einen möglichen Erwerb auf eigene Rechnung.", cta: "Immobilie zum Ankauf anbieten", to: "/immobilie-anbieten", image: areaAssets.deutschland.image, pos: areaAssets.deutschland.imagePosition },
-                    { title: "Kaufinteresse hinterlegen", text: "Teilen Sie uns mit, für welche Länder, Regionen und Objektarten Sie sich interessieren. Wenn Aurelia ein entsprechendes Objekt im eigenen Bestand hält oder erwirbt, können wir Sie darüber informieren.", cta: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse", image: areaAssets.tuerkei.image, pos: areaAssets.tuerkei.imagePosition },
-                    { title: "Eigener Bestand", text: "Ausgewählte Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", cta: "Unser Bestand", to: "/portfolio", image: portfolioHero1024, pos: "50% 50%" },
+                    { title: "Immobilie anbieten", text: "Sie möchten eine Immobilie verkaufen? Wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung grundsätzlich möglich ist.", cta: "Immobilie anbieten", to: "/immobilie-anbieten", image: areaAssets.deutschland.image, pos: areaAssets.deutschland.imagePosition },
+                    { title: "Kaufinteresse hinterlegen", text: "Teilen Sie uns mit, welche Länder, Regionen und Immobilienarten für Sie interessant sind. Wenn ein passendes Objekt aus unserem eigenen Bestand verfügbar ist, können wir Sie informieren.", cta: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse", image: areaAssets.tuerkei.image, pos: areaAssets.tuerkei.imagePosition },
+                    { title: "Unser Bestand", text: "Ausgewählte Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", cta: "Unseren Bestand ansehen", to: "/portfolio", image: portfolioHero1024, pos: "50% 50%" },
                   ].map((card, i) => (
                     <Reveal key={card.title} delay={i * 0.06}>
                       <ProofCard image={card.image} imagePosition={card.pos} imageAlt={card.title} index={i} title={card.title} text={card.text} cta={{ label: card.cta, to: card.to }} />
@@ -154,6 +155,8 @@ const HomePage = () => {
             )}
           </div>
         </section>
+
+        {language === "de" && <HomeDeSections />}
 
         {/* TRUST */}
         <section className="section-premium section-navy text-white">
