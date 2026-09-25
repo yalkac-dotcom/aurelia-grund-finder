@@ -127,8 +127,10 @@ const ForBuyers = () => {
             <div className="container-premium">
               <Reveal>
                 <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
-                  <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Immobilien in Deutschland für Interessenten aus der Türkei</h2>
-                  <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Sie leben in der Türkei und interessieren sich für eine Immobilie in Deutschland? Wir stellen Ihnen verfügbare Objekte aus unserem Bestand oder aus ausgewählten Kooperationen vor und koordinieren die erforderlichen Informationen und Unterlagen. Die konkrete Kaufabwicklung richtet sich nach dem jeweiligen Objekt und den rechtlichen Voraussetzungen.</p>
+                  <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Immobilien in Deutschland und der Türkei für internationale Kaufinteressenten</h2>
+                  <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Unsere verfügbaren Immobilien richten sich nicht nur an Interessenten aus dem jeweiligen Land. Ausgewählte Immobilien in Deutschland können auch Kaufinteressenten aus der Türkei angeboten werden. Ebenso können ausgewählte Objekte aus unserem Bestand oder aus Kooperationen in der Türkei Interessenten aus Deutschland und anderen europäischen Ländern vorgestellt werden.</p>
+                  <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Sie leben in der Türkei und interessieren sich für eine Immobilie in Deutschland? Wir stellen Ihnen verfügbare Objekte aus unserem Bestand oder aus ausgewählten Kooperationen vor und koordinieren die erforderlichen Informationen und Unterlagen.</p>
+                  <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Verfügbarkeit, Unterlagen und konkrete Kaufabwicklung richten sich nach dem jeweiligen Objekt, Standort und den rechtlichen Voraussetzungen des betreffenden Landes.</p>
                 </div>
               </Reveal>
             </div>

@@ -465,6 +465,13 @@ const TurkeyProperties = () => {
                 <Link to="/fuer-kaeufer" className="mt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">Immobilien in Deutschland anfragen<ArrowRight size={13} className="text-accent" /></Link>
               </div>
             </Reveal>
+            <Reveal delay={0.08}>
+              <div className="mt-6 border-l-2 border-accent bg-card px-6 py-8 md:px-10">
+                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Ausgewählte Immobilien in der Türkei</h2>
+                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Aurelia plant und prüft auch den Erwerb ausgewählter Immobilien in Istanbul und weiteren Standorten in der Türkei. Eigene oder verfügbare Objekte können Interessenten aus Deutschland, anderen europäischen Ländern und der Türkei angeboten werden.</p>
+                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Welche Immobilien aktuell verfügbar sind, hängt vom jeweiligen Bestand und laufenden Projekten ab.</p>
+              </div>
+            </Reveal>
           </div>
         </section>}
 
