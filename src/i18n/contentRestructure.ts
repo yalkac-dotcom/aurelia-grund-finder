@@ -106,7 +106,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
         headline: "Familiengeführt. Persönlich. Langfristig.",
         body: [
           "Aurelia Grundbesitz ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf.",
-          "Seit rund 30 Jahren beschäftigen wir uns unternehmerisch mit Immobilien und wirtschaftlichen Entscheidungen rund um Ankauf, Bestand und Entwicklung.",
+          "Die unternehmerische Erfahrung hinter Aurelia reicht rund 30 Jahre zurück und umfasst insbesondere Immobilienankäufe, Zwangsversteigerungen, freihändige Erwerbe, Bestandsentwicklung und wirtschaftliche Entscheidungen.",
           "Ein wesentlicher Teil unserer Erfahrung stammt aus Immobilien in schwierigen Situationen – insbesondere aus Zwangsversteigerungen und freihändigen Ankäufen vor einer Versteigerung.",
           "Heute kaufen wir ausgewählte Immobilien auf eigene Rechnung und bauen Schritt für Schritt einen eigenen Bestand auf.",
           "Nach dem Kauf entscheiden wir je nach Immobilie, ob wir renovieren, langfristig halten oder später wieder aus unserem eigenen Bestand verkaufen.",
