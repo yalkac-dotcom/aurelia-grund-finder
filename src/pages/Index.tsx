@@ -91,7 +91,7 @@ const HomePage = () => {
         imageAlt={extras.accessibility.homeHeroAlt}
         kicker={t.home.heroKicker}
         title={language === "de" ? "Immobilien kaufen und verkaufen – persönlich und auf eigene Rechnung." : t.home.heroTitle}
-        description={language === "de" ? "Aurelia kauft ausgewählte Immobilien für den eigenen Bestand. Sie möchten verkaufen? Dann können Sie uns Ihre Immobilie direkt anbieten. Sie interessieren sich für ein Objekt aus unserem Bestand? Dann hinterlegen Sie einfach Ihr Kaufinteresse." : (t.home.heroIntro ?? t.home.heroDescription)}
+        description={language === "de" ? "Aurelia kauft ausgewählte Immobilien für den eigenen Bestand. Sie möchten verkaufen? Dann können Sie uns Ihre Immobilie direkt anbieten. Sie interessieren sich für ein Objekt aus unserem Bestand?\u00a0\nDann hinterlegen Sie einfach Ihr Kaufinteresse." : (t.home.heroIntro ?? t.home.heroDescription)}
         primaryCta={{ label: language === "de" ? "Immobilie zum Ankauf anbieten" : (t.home.heroPrimaryCta ?? t.home.finalCtaButton), to: "/immobilie-anbieten" }}
         secondaryCta={language === "de" ? { label: "Kaufinteresse hinterlegen", href: "/fuer-kaeufer#kaufinteresse" } : t.home.heroSecondaryCta ? { label: t.home.heroSecondaryCta, href: "#bereiche" } : undefined}
         trustLine={t.home.heroTrustLine}
