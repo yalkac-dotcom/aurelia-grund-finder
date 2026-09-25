@@ -399,8 +399,7 @@ ${tpl.paragraphs.join("\n\n")}
 
 ${tpl.closing}
 
-Aurelia Grundbesitz GmbH
-Grevenbroicher Weg 2
+${tpl.showFooterCompany === false ? "" : "Aurelia Grundbesitz GmbH\n"}Grevenbroicher Weg 2
 40547 Düsseldorf${tpl.country ? `\n${tpl.country}` : ""}${tpl.showPhone === false ? "" : `
 
 ${tpl.phoneLabel}: +49 211 69583033`}
