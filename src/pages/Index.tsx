@@ -112,7 +112,7 @@ const HomePage = () => {
                   {[
                     { title: "Immobilie anbieten", text: "Sie möchten eine Immobilie verkaufen? Wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung grundsätzlich möglich ist.", cta: "Immobilie anbieten", to: "/immobilie-anbieten", image: areaAssets.deutschland.image, pos: areaAssets.deutschland.imagePosition },
                     { title: "Kaufinteresse hinterlegen", text: "Teilen Sie uns mit, welche Länder, Regionen und Immobilienarten für Sie interessant sind. Wenn ein passendes Objekt aus unserem eigenen Bestand verfügbar ist, können wir Sie informieren.", cta: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse", image: areaAssets.tuerkei.image, pos: areaAssets.tuerkei.imagePosition },
-                    { title: "Unser Bestand", text: "Ausgewählte Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", cta: "Unseren Bestand ansehen", to: "/portfolio", image: portfolioHero1024, pos: "50% 50%" },
+                    { title: "Unser Bestand", text: "Hier finden Sie ausgewählte Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", cta: "Unseren Bestand ansehen", to: "/portfolio", image: portfolioHero1024, pos: "50% 50%" },
                   ].map((card, i) => (
                     <Reveal key={card.title} delay={i * 0.06}>
                       <ProofCard image={card.image} imagePosition={card.pos} imageAlt={card.title} index={i} title={card.title} text={card.text} cta={{ label: card.cta, to: card.to }} />
