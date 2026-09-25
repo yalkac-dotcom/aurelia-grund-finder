@@ -50,7 +50,7 @@ const App = () => (
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTrouble />} />
+              <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTroubleDe />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
               <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />
               <Route path="/wie-es-funktioniert" element={<HowItWorks />} />
