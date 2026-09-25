@@ -35,7 +35,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Unser Bestand – Immobilien aus eigenem Bestand | Aurelia Grundbesitz", heroKicker: "Unser Bestand", heroTitle: "Ausgewählte Immobilien aus unserem Bestand", heroDescription: "Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", heroAlt: "Aurelia Immobilien-Portfolio",
       introTitle: "Unser Bestand verändert sich", introText: "Immobilien werden gekauft und wieder verkauft. Deshalb verändert sich auch unser Bestand. Nicht jedes Objekt wird öffentlich auf unserer Website angeboten. Wenn Sie nach einer bestimmten Immobilie suchen, können Sie uns direkt ansprechen.",
-      categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien, Lager- und Logistikobjekte sowie Entwicklungsobjekte verfügbar sein. Es handelt sich ausschließlich um Objekte, die Aurelia selbst erworben hat.",
+      categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können zum Beispiel Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien, Lager- und Logistikobjekte sowie Entwicklungsobjekte verfügbar sein. Es handelt sich ausschließlich um Objekte, die Aurelia selbst erworben hat.",
       categories: [
         { title: "Eigentumswohnungen", description: "Einzelne Wohnungen und Wohnobjekte unterschiedlicher Größe.", alt: "Modernes Wohngebäude mit Balkonen" },
         { title: "Einfamilienhäuser", description: "Wohnhäuser in unterschiedlichem Zustand und verschiedenen Lagen.", alt: "Freistehendes Einfamilienhaus" },
