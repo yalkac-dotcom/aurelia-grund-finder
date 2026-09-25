@@ -149,7 +149,7 @@ const HomePage = () => {
             {language === "de" && (
               <Reveal delay={0.12}>
                 <p className="mx-auto mt-8 max-w-3xl border-l-2 border-accent/60 pl-5 text-[0.9rem] leading-[1.8] text-muted-foreground">
-                  Unser Schwerpunkt liegt auf Deutschland und der Türkei. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden. Immobilien aus unserem eigenen Bestand können Kaufinteressenten grenzüberschreitend angeboten werden.
+                  Unser Schwerpunkt liegt auf Deutschland und der Türkei. Auch in Italien, Spanien, Frankreich und den Niederlanden prüfen wir ausgewählte Immobilien. Ob ein Objekt zu unserem Bestand passt, entscheiden wir immer im Einzelfall.
                 </p>
               </Reveal>
             )}
