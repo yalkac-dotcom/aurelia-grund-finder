@@ -288,6 +288,7 @@ const HomePage = () => {
           text={t.home.finalCtaText}
           buttonLabel={t.home.finalCtaButton}
           buttonTo="/immobilie-anbieten"
+          secondary={language === "de" ? { label: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" } : undefined}
         />
       </div>
     </Layout>
