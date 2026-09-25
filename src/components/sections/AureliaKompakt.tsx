@@ -13,6 +13,10 @@ const btn =
 const btnOutline =
   "rounded-sm border-primary/40 bg-transparent px-6 text-[12px] font-semibold uppercase tracking-[0.1em] text-primary hover:bg-primary hover:text-primary-foreground";
 
+// Video und altes Strategy-Dossier vorerst ausgeblendet (nicht gelöscht).
+// Neue Präsentation wird eingesetzt, sobald sie vorliegt.
+const SHOW_MEDIA = false;
+
 const AureliaKompakt = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [pdfOpen, setPdfOpen] = useState(false);
@@ -33,11 +37,11 @@ const AureliaKompakt = () => {
             Aurelia kompakt
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-[1.8] text-foreground/80 md:text-[16px]">
-            Lernen Sie unsere Arbeitsweise, unsere Geschäftsbereiche und den Ablauf einer Immobilienanfrage kompakt kennen – als Video oder in unserer Unternehmenspräsentation.
+            Hier erfahren Sie kurz und verständlich, wie Aurelia arbeitet, welche Immobilien wir kaufen und wie unser eigener Bestand aufgebaut wird.
           </p>
         </Reveal>
 
-        <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 md:gap-8">
+        {SHOW_MEDIA && <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 md:gap-8">
           <Reveal className="h-full">
             <article className={`flex h-full flex-col p-6 md:p-8 ${aureliaCard}`}>
               <div className="mb-4 h-px w-8 bg-accent" aria-hidden="true" />
@@ -100,7 +104,7 @@ const AureliaKompakt = () => {
               </div>
             </article>
           </Reveal>
-        </div>
+        </div>}
       </div>
 
       <Dialog open={pdfOpen} onOpenChange={setPdfOpen}>

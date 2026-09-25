@@ -76,9 +76,8 @@ const About = () => {
           <section className="section-premium bg-background !pb-0">
             <div className="container-premium">
               <Reveal className="max-w-3xl border-l-2 border-accent pl-6">
-                <p className="font-heading text-[1.2rem] font-semibold leading-[1.5] text-primary md:text-[1.4rem]">Aurelia Grundbesitz GmbH konzentriert sich auf den Erwerb ausgewählter Immobilien auf eigene Rechnung sowie den Aufbau, die Entwicklung und den Verkauf eines eigenen Immobilienbestands.</p>
-                <p className="mt-4 text-[15px] leading-[1.85] text-foreground/80">Unser Schwerpunkt liegt auf Deutschland und der Türkei. Darüber hinaus prüfen wir ausgewählte Immobilienmöglichkeiten in weiteren europäischen Märkten.</p>
-                <p className="mt-2 text-[15px] leading-[1.85] text-foreground/80">Immobilien aus unserem eigenen Bestand können Kaufinteressenten grenzüberschreitend angeboten werden.</p>
+                <h2 className="font-heading text-[1.4rem] font-semibold leading-[1.4] text-primary md:text-[1.6rem]">Unsere Märkte</h2>
+                <p className="mt-4 text-[15px] leading-[1.85] text-foreground/80">Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilienmöglichkeiten in Italien, Spanien, Frankreich und den Niederlanden.</p>
               </Reveal>
             </div>
           </section>
@@ -158,7 +157,7 @@ const About = () => {
                 <Link to="/immobilie-anbieten">{a.closing.primary}<ArrowRight size={14} className="text-accent" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-sm border-highlight-foreground/50 bg-transparent px-7 text-[12px] font-semibold uppercase tracking-[0.1em] text-highlight-foreground hover:bg-highlight-foreground hover:text-highlight">
-                <Link to="/kontakt">{a.closing.secondary}</Link>
+                <Link to={language === "de" ? "/fuer-kaeufer#kaufinteresse" : "/kontakt"}>{a.closing.secondary}</Link>
               </Button>
             </div>
           </Reveal>

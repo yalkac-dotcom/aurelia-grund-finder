@@ -45,12 +45,12 @@ const HowItWorks = () => {
         {language === "de" && (
           <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}>
             <div className="container-premium">
-              <SectionHeader title="Drei Prozesse – klar getrennt" intro="Aurelia erwirbt Immobilien auf eigene Rechnung und bietet sie aus dem eigenen Bestand an. Eine Vermittlung fremder Immobilien findet nicht statt." />
+              <SectionHeader title="So arbeiten wir – ganz einfach erklärt" intro="Aurelia kauft Immobilien auf eigene Rechnung und verkauft ausschließlich aus dem eigenen Bestand. Fremde Immobilien vermitteln wir nicht." />
               <div className="grid gap-6 md:gap-8 md:grid-cols-3">
                 {[
-                  { title: "Für Eigentümer", steps: ["Immobilie anbieten", "Prüfung", "mögliche Einigung", "Erwerb durch Aurelia auf eigene Rechnung"] },
-                  { title: "Für Kaufinteressenten", steps: ["Kaufinteresse hinterlegen", "unverbindliche Vormerkung", "passendes Aurelia-Bestandsobjekt verfügbar", "direkte Kontaktaufnahme durch Aurelia"] },
-                  { title: "Eigener Bestand", steps: ["Aurelia erwirbt", "hält / entwickelt", "entscheidet über weiteren Bestand oder Verkauf", "Verkauf aus eigenem Bestand"] },
+                  { title: "Für Eigentümer", steps: ["Immobilie anbieten", "Wir prüfen die Angaben", "Wenn es grundsätzlich passt, besprechen wir den möglichen Ankauf", "Bei Einigung kauft Aurelia auf eigene Rechnung"] },
+                  { title: "Für Kaufinteressenten", steps: ["Kaufinteresse hinterlegen", "Wünsche und Märkte werden vorgemerkt", "Ein passendes Aurelia-Bestandsobjekt wird verfügbar", "Aurelia nimmt persönlich Kontakt auf"] },
+                  { title: "Unser Bestand", steps: ["Aurelia kauft", "Wir renovieren, entwickeln oder halten", "Wir entscheiden langfristig über das Objekt", "Wenn wir verkaufen, verkaufen wir aus unserem eigenen Bestand"] },
                 ].map((proc, i) => (
                   <Reveal key={proc.title} delay={i * 0.06}>
                     <div className={`h-full p-6 md:p-7 ${aureliaCard}`}>

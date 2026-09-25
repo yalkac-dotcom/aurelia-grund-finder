@@ -132,3 +132,19 @@
 
 - [x] Die doppelte Deutschland-Bildzuordnung ausschließlich in TR, FR und ES an die deutsche Zuordnung angleichen.
 - [x] TR, FR und ES bei 390 px, 768 px und 1440 px prüfen; übrige Sprachen unverändert lassen.
+
+# Master-Prompt: Neuausrichtung deutsche Website (nur DE, nicht veröffentlichen)
+- [ ] Startseite (H1, 3 Bereiche, besondere Situationen, Eigentümer im Ausland)
+- [ ] Immobilie anbieten (Wohnsitz separat, besondere Situation, Hinweis)
+- [ ] Zwangsversteigerung-Bereich DE + Türkei-Schwierigkeiten
+- [ ] Für Kaufinteressenten + Formular
+- [ ] Unser Bestand
+- [ ] Türkei-Seite drei Bereiche
+- [ ] Wie wir arbeiten
+- [ ] Über uns + Märkte
+- [ ] Geschäftspartner
+- [ ] FAQ 14 Fragen
+- [ ] Aurelia kompakt: Video ausblenden, Präsentation folgt (blockiert: PDF fehlt)
+- [ ] Navigation + Anfrage-Auswahl
+- [ ] Footer, SEO
+- [ ] Altlogik-Suche, responsive Prüfung (Formulare nicht absenden)

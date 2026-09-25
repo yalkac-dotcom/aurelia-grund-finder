@@ -458,18 +458,30 @@ const TurkeyProperties = () => {
 
         {language === "de" && <section className="section-premium bg-background">
           <div className="container-premium">
-            <Reveal>
-              <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
-                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Immobilie in der Türkei zum Ankauf anbieten</h2>
-                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Aurelia prüft ausgewählte Immobilien in der Türkei für einen möglichen Erwerb auf eigene Rechnung.</p>
-                <Link to="/immobilie-anbieten?land=tuerkei" className="mt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">Immobilie zum Ankauf anbieten<ArrowRight size={13} className="text-accent" /></Link>
-              </div>
-            </Reveal>
-            <Reveal delay={0.08}>
-              <div className="mt-6 border-l-2 border-accent bg-card px-6 py-8 md:px-10">
-                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Interesse an Immobilien aus unserem Türkei-Bestand?</h2>
-                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Wenn Aurelia passende Immobilien in Istanbul oder anderen ausgewählten Standorten im eigenen Bestand hält, können Kaufinteressenten aus der Türkei, Deutschland und anderen europäischen Ländern darüber informiert werden.</p>
-                <Link to="/fuer-kaeufer#kaufinteresse" className="mt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">Kaufinteresse hinterlegen<ArrowRight size={13} className="text-accent" /></Link>
+            <div className="grid gap-6 lg:grid-cols-3">
+              {[
+                { h: "Immobilie in der Türkei zum Ankauf anbieten", p: "Sie besitzen eine Immobilie in der Türkei und möchten verkaufen? Aurelia prüft ausgewählte Objekte für einen möglichen Erwerb auf eigene Rechnung.", cta: "Immobilie anbieten", to: "/immobilie-anbieten?land=tuerkei" },
+                { h: "Sie leben in der Türkei und besitzen eine Immobilie in Deutschland?", p: "Auch aus der Türkei können Sie Aurelia Ihre Immobilie in Deutschland zum möglichen Ankauf anbieten. Viele Unterlagen und Abstimmungen können je nach Fall aus der Ferne vorbereitet werden.", note: "Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, hängt vom jeweiligen Einzelfall ab.", cta: "Immobilie in Deutschland anbieten", to: "/immobilie-anbieten?land=deutschland" },
+                { h: "Interesse an Immobilien aus unserem Bestand?", p: "Kaufinteressenten können unverbindlich hinterlegen, für welche Aurelia-Bestandsobjekte und Märkte sie sich interessieren.", cta: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" },
+              ].map((b, i) => (
+                <Reveal key={b.h} delay={i * 0.06}>
+                  <div className="flex h-full flex-col border-l-2 border-accent bg-card px-6 py-8">
+                    <h2 className="font-heading text-[1.25rem] font-semibold leading-snug text-primary">{b.h}</h2>
+                    <p className="mt-3 text-[0.92rem] leading-[1.8] text-muted-foreground">{b.p}</p>
+                    {b.note && <p className="mt-3 text-[0.84rem] italic leading-[1.7] text-muted-foreground">{b.note}</p>}
+                    <Link to={b.to} className="mt-auto pt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{b.cta}<ArrowRight size={13} className="text-accent" /></Link>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+            <Reveal delay={0.1}>
+              <div className="mx-auto mt-10 max-w-3xl border-l-2 border-accent/60 pl-6">
+                <h2 className="font-heading text-[1.35rem] font-semibold text-primary">Auch bei schwierigen Situationen in der Türkei</h2>
+                <div className="mt-3 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
+                  <p>Auch in der Türkei gibt es Eigentümer, die eine Immobilie aus finanziellen oder persönlichen Gründen kurzfristig verkaufen möchten.</p>
+                  <p>Aurelia prüft ausgewählte Immobilien auch dort für einen möglichen Erwerb auf eigene Rechnung.</p>
+                  <p>Ob ein Ankauf möglich ist, hängt von der Immobilie, der Eigentumssituation und den rechtlichen Voraussetzungen vor Ort ab.</p>
+                </div>
               </div>
             </Reveal>
           </div>

@@ -5,7 +5,7 @@
 - **Modell (BaFin-safe)**: Eigenbestand. Aurelia kauft Forderungen mit eigenem Kapital, wird Eigentümer, trägt Risiko. KEINE Investitionsangebote, KEINE Renditeversprechen, KEINE konkreten Zahlen (%, p.a., ROI) auf öffentlichen Seiten.
 - **Colors**: Navy Blue (primary), White, Yellow (subtle accents/hover). NEVER use dark, black-gold, or heavy luxury aesthetics.
 - **Rules**: NO placeholders ("XXX") — remove incomplete sections entirely. NO 1px section borders.
-- **Constraints**: Founded 2023 — NEVER use earlier dates. NO numeric claims ("30 years", "200+ projects").
+- **Constraints**: Founded 2023 (GmbH). DE site may state "rund 30 Jahre unternehmerische Erfahrung" (user-approved 2026-09). No other numeric claims.
 - **Languages**: 6 languages (DE, EN, NL, IT, ES, TR). DE is master. Sync SEO & hreflang dynamically.
 - **Investor area**: Removed. Only `/immobilien-glossar` (formerly `/investoren-glossar`) remains as educational resource. `/investoren` redirects to `/fuer-geschaeftspartner`.
 
