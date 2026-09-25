@@ -72,21 +72,27 @@ interface ConfirmationTemplate {
   country: string;
   phoneLabel: string;
   emailLabel: string;
+  showFooterCompany?: boolean;
+  showPhone?: boolean;
+  showWeb?: boolean;
 }
 
 const CONFIRMATIONS: Record<Locale, ConfirmationTemplate> = {
   de: {
-    subject: "Vielen Dank für Ihre Anfrage – Aurelia Grundbesitz GmbH",
-    greeting: "Sehr geehrte Damen und Herren,",
+    subject: "Vielen Dank für Ihre Anfrage",
+    greeting: "Guten Tag,",
     paragraphs: [
-      "vielen Dank für Ihre Anfrage und Ihr Interesse an der Aurelia Grundbesitz GmbH.",
-      "Wir haben Ihre Nachricht erhalten und werden Ihre Angaben prüfen. Wir werden uns schnellstmöglich persönlich mit Ihnen in Verbindung setzen.",
-      "Sollten Sie uns zwischenzeitlich noch weitere Informationen oder Unterlagen zukommen lassen wollen, können Sie jederzeit auf diese E-Mail antworten.",
+      "vielen Dank für Ihre Nachricht an die Aurelia Grundbesitz GmbH.",
+      "Wir haben Ihre Angaben erhalten und werden uns Ihr Anliegen ansehen. Anschließend melden wir uns persönlich bei Ihnen.",
+      "Falls Sie uns zwischenzeitlich weitere Informationen oder Unterlagen zukommen lassen möchten, können Sie jederzeit auf diese E-Mail antworten.",
     ],
     closing: "Mit freundlichen Grüßen",
     country: "",
     phoneLabel: "Telefon",
     emailLabel: "E-Mail",
+    showFooterCompany: false,
+    showPhone: false,
+    showWeb: false,
   },
   tr: {
     subject: "Talebinizi aldık – Aurelia Grundbesitz GmbH",
@@ -378,12 +384,11 @@ Deno.serve(async (req) => {
     <p style="font-size:15px;line-height:1.7;margin:28px 0 0;">${escapeHtml(tpl.closing)}<br/>Aurelia Grundbesitz GmbH</p>
     <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0 16px;"/>
     <p style="font-size:12px;line-height:1.6;color:#6b7280;margin:0;">
-      Aurelia Grundbesitz GmbH<br/>
+      ${tpl.showFooterCompany === false ? "" : "Aurelia Grundbesitz GmbH<br/>"}
       Grevenbroicher Weg 2<br/>
-      40547 Düsseldorf${tpl.country ? `<br/>${escapeHtml(tpl.country)}` : ""}<br/><br/>
-      ${escapeHtml(tpl.phoneLabel)}: +49 211 69583033<br/>
-      ${escapeHtml(tpl.emailLabel)}: office@aureliaestates.de<br/>
-      Web: www.aureliaestates.de
+      40547 Düsseldorf${tpl.country ? `<br/>${escapeHtml(tpl.country)}` : ""}${tpl.showPhone === false ? "" : `<br/><br/>
+      ${escapeHtml(tpl.phoneLabel)}: +49 211 69583033`}<br/>
+      ${escapeHtml(tpl.emailLabel)}: office@aureliaestates.de${tpl.showWeb === false ? "" : "<br/>Web: www.aureliaestates.de"}
     </p>
   </div>
 </body></html>`.trim();
@@ -394,13 +399,12 @@ ${tpl.paragraphs.join("\n\n")}
 
 ${tpl.closing}
 
-Aurelia Grundbesitz GmbH
-Grevenbroicher Weg 2
-40547 Düsseldorf${tpl.country ? `\n${tpl.country}` : ""}
+${tpl.showFooterCompany === false ? "" : "Aurelia Grundbesitz GmbH\n"}Grevenbroicher Weg 2
+40547 Düsseldorf${tpl.country ? `\n${tpl.country}` : ""}${tpl.showPhone === false ? "" : `
 
-${tpl.phoneLabel}: +49 211 69583033
-${tpl.emailLabel}: office@aureliaestates.de
-Web: www.aureliaestates.de`;
+${tpl.phoneLabel}: +49 211 69583033`}
+
+${tpl.emailLabel}: office@aureliaestates.de${tpl.showWeb === false ? "" : "\nWeb: www.aureliaestates.de"}`;
 
     const languageName = LANGUAGE_NAMES_DE[locale];
     const isTurkeyEnquiry = body.form_type === "turkey_property" ||
