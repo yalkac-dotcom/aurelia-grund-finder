@@ -170,6 +170,11 @@
     color: hsl(var(--primary)) !important;
   }
 
+  /* Ausnahme: H1 im hellen Text-Panel des „Wie es funktioniert"-Hero bleibt dunkelblau. */
+  #main-content :is(.section-navy, .bg-primary) .hero-panel-title {
+    color: hsl(var(--primary)) !important;
+  }
+
   /* Accessible focus states for keyboard navigation */
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-accent;
