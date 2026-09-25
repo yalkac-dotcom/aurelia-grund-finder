@@ -59,7 +59,7 @@ const HowItWorksHero = ({
         style={{ background: "hsl(var(--background) / 0.78)", backdropFilter: "blur(1px)" }}
       >
         <p className="text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-primary md:text-[0.66rem] md:tracking-[0.2em]">{kicker}</p>
-        <h1 className="mx-auto mt-1.5 max-w-2xl font-heading text-[1.42rem] font-extrabold leading-[1.25] tracking-tight text-balance text-primary md:mt-2 md:text-[1.9rem]">{title}</h1>
+        <h1 className="hero-panel-title mx-auto mt-1.5 max-w-2xl font-heading text-[1.42rem] font-extrabold leading-[1.25] tracking-tight text-balance text-primary md:mt-2 md:text-[1.9rem]">{title}</h1>
         <p className="mx-auto mt-2 max-w-2xl whitespace-pre-line text-[0.84rem] font-medium leading-[1.65] text-pretty text-primary md:mt-2.5 md:text-[0.88rem] md:leading-[1.6]">{description}</p>
         <div className="mt-3.5 flex flex-row flex-wrap items-center justify-center gap-x-3 gap-y-2.5 sm:gap-x-4 md:mt-4">
           <Link
