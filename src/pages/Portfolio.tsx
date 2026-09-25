@@ -13,7 +13,6 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
-import AiImageDisclosure from "@/components/AiImageDisclosure";
 
 const Portfolio = () => {
   const { language } = useLanguage();
@@ -106,7 +105,7 @@ const Portfolio = () => {
                           fallbackLabel={item.title}
                           className="block h-full w-full object-cover"
                         />
-                        {i === 0 && <AiImageDisclosure type="illustrative" />}
+                        
                       </div>
                       <div className="p-7">
                         <CategoryIcon className="mb-4 text-teal-600" size={28} />
