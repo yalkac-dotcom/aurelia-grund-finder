@@ -406,11 +406,15 @@ Web: www.aureliaestates.de`;
     const isTurkeyEnquiry = body.form_type === "turkey_property" ||
       (body.property_type ?? "").toLocaleLowerCase("de").includes("türkei");
     const isGermanyPropertyEnquiry = body.form_type === "germany_property";
-    const notifyHeadline = isTurkeyEnquiry ? "Neue Türkei-Immobilienanfrage" : isGermanyPropertyEnquiry ? "Neue Deutschland-Immobilienanfrage" : "Neue Kontaktanfrage";
-    const notifySubject = isTurkeyEnquiry
-      ? `Neue Türkei-Immobilienanfrage von ${body.name}`
-      : isGermanyPropertyEnquiry
-      ? `Neue Deutschland-Immobilienanfrage von ${body.name}`
+    const countryMap: Record<string, string> = { deutschland: "Deutschland", "türkei": "Türkei", italien: "Italien", spanien: "Spanien", frankreich: "Frankreich", niederlande: "Niederlande", "den niederlanden": "Niederlande" };
+    const ptMatch = (body.property_type ?? "").match(/^Immobilie in (?:der )?(.+)$/i);
+    const offerCountry = isTurkeyEnquiry ? "Türkei" : (ptMatch && countryMap[ptMatch[1].trim().toLocaleLowerCase("de")]) || (isGermanyPropertyEnquiry ? "Deutschland" : "");
+    const isBuyerInterest = (body.property_type ?? "").startsWith("Kaufinteresse");
+    const notifyHeadline = offerCountry && (isTurkeyEnquiry || isGermanyPropertyEnquiry) ? `Neues Immobilienangebot – ${offerCountry}` : isBuyerInterest ? "Neues Kaufinteresse (Bestand)" : "Neue Kontaktanfrage";
+    const notifySubject = offerCountry && (isTurkeyEnquiry || isGermanyPropertyEnquiry)
+      ? `Immobilienangebot – ${offerCountry} von ${body.name}`
+      : isBuyerInterest
+      ? `Kaufinteresse von ${body.name} – Aurelia Grundbesitz`
       : `Neue Anfrage von ${body.name} – Aurelia Grundbesitz`;
     const receivedAt = new Intl.DateTimeFormat("de-DE", {
       dateStyle: "medium",
