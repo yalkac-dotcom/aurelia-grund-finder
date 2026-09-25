@@ -384,12 +384,11 @@ Deno.serve(async (req) => {
     <p style="font-size:15px;line-height:1.7;margin:28px 0 0;">${escapeHtml(tpl.closing)}<br/>Aurelia Grundbesitz GmbH</p>
     <hr style="border:none;border-top:1px solid #e5e7eb;margin:32px 0 16px;"/>
     <p style="font-size:12px;line-height:1.6;color:#6b7280;margin:0;">
-      Aurelia Grundbesitz GmbH<br/>
+      ${tpl.showFooterCompany === false ? "" : "Aurelia Grundbesitz GmbH<br/>"}
       Grevenbroicher Weg 2<br/>
-      40547 Düsseldorf${tpl.country ? `<br/>${escapeHtml(tpl.country)}` : ""}<br/><br/>
-      ${escapeHtml(tpl.phoneLabel)}: +49 211 69583033<br/>
-      ${escapeHtml(tpl.emailLabel)}: office@aureliaestates.de<br/>
-      Web: www.aureliaestates.de
+      40547 Düsseldorf${tpl.country ? `<br/>${escapeHtml(tpl.country)}` : ""}${tpl.showPhone === false ? "" : `<br/><br/>
+      ${escapeHtml(tpl.phoneLabel)}: +49 211 69583033`}<br/>
+      ${escapeHtml(tpl.emailLabel)}: office@aureliaestates.de${tpl.showWeb === false ? "" : "<br/>Web: www.aureliaestates.de"}
     </p>
   </div>
 </body></html>`.trim();
@@ -402,11 +401,11 @@ ${tpl.closing}
 
 Aurelia Grundbesitz GmbH
 Grevenbroicher Weg 2
-40547 Düsseldorf${tpl.country ? `\n${tpl.country}` : ""}
+40547 Düsseldorf${tpl.country ? `\n${tpl.country}` : ""}${tpl.showPhone === false ? "" : `
 
-${tpl.phoneLabel}: +49 211 69583033
-${tpl.emailLabel}: office@aureliaestates.de
-Web: www.aureliaestates.de`;
+${tpl.phoneLabel}: +49 211 69583033`}
+
+${tpl.emailLabel}: office@aureliaestates.de${tpl.showWeb === false ? "" : "\nWeb: www.aureliaestates.de"}`;
 
     const languageName = LANGUAGE_NAMES_DE[locale];
     const isTurkeyEnquiry = body.form_type === "turkey_property" ||
