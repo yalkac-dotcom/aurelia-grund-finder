@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { useLanguage } from "@/i18n/LanguageContext";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/i18n/LanguageContext";
@@ -32,6 +33,12 @@ const Bildnachweise = lazy(() => import("./pages/Bildnachweise"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
+
+// Alte deutsche Seite „Für Eigentümer“ → neue Seite „Immobilie anbieten“ (nur Deutsch)
+const ForOwnerInTroubleDe = () => {
+  const { language } = useLanguage();
+  return language === "de" ? <Navigate to="/immobilie-anbieten" replace /> : <ForOwnerInTrouble />;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
