@@ -82,6 +82,13 @@ const ForBuyers = () => {
         <section className="section-premium bg-gradient-warm !pt-0 md:!pt-0">
           <div className="container-premium">
             <SectionHeader title={b.featuresTitle} intro={b.featuresIntro} disableOffset />
+            {language === "de" && (
+              <Reveal>
+                <p className="-mt-4 mb-10 mx-auto max-w-3xl text-center text-[0.94rem] leading-[1.8] text-muted-foreground">
+                  Unsere verfügbaren Immobilien in Deutschland richten sich nicht nur an Interessenten aus Deutschland. Auch Kaufinteressenten aus der Türkei können ausgewählte Objekte aus unserem eigenen Bestand oder aus ausgewählten Kooperationen anfragen.
+                </p>
+              </Reveal>
+            )}
             <div className="grid gap-6 md:gap-7 sm:grid-cols-2 lg:grid-cols-4">
               {b.features.map((f, i) => {
                 const replacement = getReplacementFeatureImage(f.title);
@@ -114,6 +121,20 @@ const ForBuyers = () => {
             )}
           </div>
         </section>
+
+        {language === "de" && (
+          <section className="section-premium bg-background">
+            <div className="container-premium">
+              <Reveal>
+                <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
+                  <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Immobilien in Deutschland für Interessenten aus der Türkei</h2>
+                  <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Sie leben in der Türkei und interessieren sich für eine Immobilie in Deutschland? Wir stellen Ihnen verfügbare Objekte aus unserem Bestand oder aus ausgewählten Kooperationen vor und koordinieren die erforderlichen Informationen und Unterlagen. Die konkrete Kaufabwicklung richtet sich nach dem jeweiligen Objekt und den rechtlichen Voraussetzungen.</p>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+        )}
+
 
         {/* PORTFOLIO TEASER (Navy) */}
         <section className="section-premium section-navy text-white">

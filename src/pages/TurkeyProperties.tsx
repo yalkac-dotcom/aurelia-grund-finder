@@ -456,6 +456,19 @@ const TurkeyProperties = () => {
           </div>
         </section>}
 
+        {language === "de" && <section className="section-premium bg-background">
+          <div className="container-premium">
+            <Reveal>
+              <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
+                <h2 className="font-heading text-[1.55rem] font-semibold text-primary">Auch Interesse an Immobilien in Deutschland?</h2>
+                <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">Neben der Betreuung von Eigentümern mit Immobilien in der Türkei bietet Aurelia ausgewählte Immobilien aus dem eigenen Bestand oder aus Kooperationen in Deutschland an. Auch Interessenten aus der Türkei können verfügbare Objekte bei uns anfragen.</p>
+                <Link to="/fuer-kaeufer" className="mt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">Immobilien in Deutschland anfragen<ArrowRight size={13} className="text-accent" /></Link>
+              </div>
+            </Reveal>
+          </div>
+        </section>}
+
+
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
             <div className="grid items-center gap-10 lg:grid-cols-[1fr_0.85fr]">
