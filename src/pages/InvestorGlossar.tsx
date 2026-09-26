@@ -69,8 +69,23 @@ const InvestorGlossar = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-14 md:py-20 bg-secondary/50">
-        <div className="container max-w-4xl">
+      <section className="relative overflow-hidden py-14 md:py-20">
+        <img
+          src={glossarHeroAsset.url}
+          alt={pageExtras[language].shared.glossarHeroAlt}
+          width={1920}
+          height={1146}
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, hsl(var(--primary) / 0.82) 0%, hsl(var(--primary) / 0.55) 40%, hsl(var(--primary) / 0.18) 70%, transparent 100%)",
+          }}
+          aria-hidden="true"
+        />
+        <div className="container relative max-w-4xl">
           <Reveal>
             <div className="flex items-center gap-3 mb-3">
               <BookOpen className="text-accent" size={16} />
@@ -78,7 +93,7 @@ const InvestorGlossar = () => {
                 {inv.glossaryBadge}
               </span>
             </div>
-            <h1 className="text-[1.5rem] md:text-[2.15rem] font-heading font-semibold text-foreground leading-[1.15] mb-4 max-w-lg text-balance">
+            <h1 className="text-[1.5rem] md:text-[2.15rem] font-heading font-semibold text-white leading-[1.15] mb-4 max-w-lg text-balance">
               {inv.glossaryTitle}
             </h1>
           </Reveal>
@@ -95,22 +110,6 @@ const InvestorGlossar = () => {
             <ArrowLeft size={13} />
             {t.nav.home}
           </Link>
-        </div>
-      </section>
-
-      {/* Intro image */}
-      <section className="pb-2 pt-4 md:pt-6">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <img
-              src={glossarHeroAsset.url}
-              alt={pageExtras[language].shared.glossarHeroAlt}
-              width={1920}
-              height={1146}
-              loading="lazy"
-              className="w-full h-auto rounded-md border border-border/30"
-            />
-          </Reveal>
         </div>
       </section>
 
