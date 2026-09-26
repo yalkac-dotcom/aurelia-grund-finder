@@ -35,7 +35,7 @@ const tr: Translations = {
     subline: "Almanya · Türkiye · Portföy ve iş birlikleri",
     navItems: [
       { label: "Ana Sayfa", path: "/" },
-      { label: "Mülk Sahipleri İçin", path: "/fuer-eigentumer-in-not" },
+      { label: "Mülk Sahipleri İçin", path: "/fuer-eigentuemer" },
       { label: "Alıcılar İçin", path: "/fuer-kaeufer" },
       { label: "Türkiye'deki Gayrimenkuller", path: "/immobilien-tuerkei" },
       { label: "İş Ortakları İçin", path: "/fuer-geschaeftspartner" },

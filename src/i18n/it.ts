@@ -35,7 +35,7 @@ const it: Translations = {
     subline: "Germania · Turchia · Patrimonio e collaborazioni",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Proprietari", path: "/fuer-eigentumer-in-not" },
+      { label: "Proprietari", path: "/fuer-eigentuemer" },
       { label: "Per acquirenti", path: "/fuer-kaeufer" },
       { label: "Immobili in Turchia", path: "/immobilien-tuerkei" },
       { label: "Per partner", path: "/fuer-geschaeftspartner" },

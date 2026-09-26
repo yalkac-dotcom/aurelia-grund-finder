@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
@@ -40,6 +40,12 @@ const ForOwnerInTroubleDe = () => {
   return language === "de" ? <Navigate to="/immobilie-anbieten" replace /> : <ForOwnerInTrouble />;
 };
 
+// Alte URL /fuer-eigentumer-in-not → neue neutrale URL /fuer-eigentuemer (Query/Hash bleiben erhalten)
+const LegacyOwnerRedirect = () => {
+  const { search, hash } = useLocation();
+  return <Navigate to={`/fuer-eigentuemer${search}${hash}`} replace />;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -50,7 +56,8 @@ const App = () => (
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/fuer-eigentumer-in-not" element={<ForOwnerInTroubleDe />} />
+              <Route path="/fuer-eigentuemer" element={<ForOwnerInTroubleDe />} />
+              <Route path="/fuer-eigentumer-in-not" element={<LegacyOwnerRedirect />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
               <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />
               <Route path="/wie-es-funktioniert" element={<HowItWorks />} />

@@ -35,7 +35,7 @@ const fr: Translations = {
     subline: "Allemagne · Turquie · Portefeuille et coopérations",
     navItems: [
       { label: "Accueil", path: "/" },
-      { label: "Pour les propriétaires", path: "/fuer-eigentumer-in-not" },
+      { label: "Pour les propriétaires", path: "/fuer-eigentuemer" },
       { label: "Pour les acheteurs", path: "/fuer-kaeufer" },
       { label: "Immobilier en Turquie", path: "/immobilien-tuerkei" },
       { label: "Pour les partenaires", path: "/fuer-geschaeftspartner" },

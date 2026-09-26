@@ -35,7 +35,7 @@ const nl: Translations = {
     subline: "Duitsland · Turkije · Portefeuille en samenwerking",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Voor eigenaren", path: "/fuer-eigentumer-in-not" },
+      { label: "Voor eigenaren", path: "/fuer-eigentuemer" },
       { label: "Voor kopers", path: "/fuer-kaeufer" },
       { label: "Vastgoed in Turkije", path: "/immobilien-tuerkei" },
       { label: "Voor partners", path: "/fuer-geschaeftspartner" },

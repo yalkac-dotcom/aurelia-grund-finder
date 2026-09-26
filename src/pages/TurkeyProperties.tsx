@@ -450,7 +450,7 @@ const TurkeyProperties = () => {
               <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
                 <h2 className="font-heading text-[1.55rem] font-semibold text-primary">{page.crossLink.title}</h2>
                 <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">{page.crossLink.text}</p>
-                <Link to="/fuer-eigentumer-in-not" className="mt-5 inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{page.crossLink.cta}</Link>
+                <Link to="/fuer-eigentuemer" className="mt-5 inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{page.crossLink.cta}</Link>
               </div>
             </Reveal>
           </div>

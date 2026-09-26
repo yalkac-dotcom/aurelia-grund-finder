@@ -35,7 +35,7 @@ const en: Translations = {
     subline: "Germany · Turkey · Portfolio & cooperation",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "For Owners", path: "/fuer-eigentumer-in-not" },
+      { label: "For Owners", path: "/fuer-eigentuemer" },
       { label: "For Buyers", path: "/fuer-kaeufer" },
       { label: "Property in Turkey", path: "/immobilien-tuerkei" },
       { label: "For Partners", path: "/fuer-geschaeftspartner" },

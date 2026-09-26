@@ -35,7 +35,7 @@ const es: Translations = {
     subline: "Alemania · Turquía · Cartera y cooperaciones",
     navItems: [
       { label: "Inicio", path: "/" },
-      { label: "Propietarios", path: "/fuer-eigentumer-in-not" },
+      { label: "Propietarios", path: "/fuer-eigentuemer" },
       { label: "Para compradores", path: "/fuer-kaeufer" },
       { label: "Inmuebles en Turquía", path: "/immobilien-tuerkei" },
       { label: "Para socios", path: "/fuer-geschaeftspartner" },

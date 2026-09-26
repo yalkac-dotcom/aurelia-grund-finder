@@ -7,7 +7,7 @@ const SIZES = "(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px";
 const HEROES: Record<string, [string, number]> = {
   "/": ["141562359", 1920],
   "/fuer-kaeufer": ["302581671", 2048],
-  "/fuer-eigentumer-in-not": ["368296755", 2048],
+  "/fuer-eigentuemer": ["368296755", 2048],
   "/immobilien-tuerkei": ["502929748", 2048],
   "/fuer-geschaeftspartner": ["364445283", 2048],
 };
