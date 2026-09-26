@@ -610,7 +610,7 @@ const de: Translations = {
     finalCtaTitle: "Interesse an einem konkreten Objekt?",
     finalCtaText:
       "Teilen Sie uns mit, für welches Objekt Sie sich interessieren oder welche Immobilie Sie suchen. Wir prüfen gerne, ob wir Ihnen aktuell ein passendes Angebot vorstellen können.",
-    finalCtaButton: "Unverbindlich Kontakt aufnehmen",
+    finalCtaButton: "UNVERBINDLICH ANFRAGEN",
   },
   partners: {
     heroKicker: "Für Geschäftspartner",
