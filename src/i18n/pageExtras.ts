@@ -34,7 +34,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     },
     portfolio: {
       seoTitle: "Unser Bestand – Immobilien aus eigenem Bestand | Aurelia Grundbesitz", heroKicker: "Unser Bestand", heroTitle: "Ausgewählte Immobilien aus unserem Bestand", heroDescription: "Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", heroAlt: "Aurelia Immobilien-Portfolio",
-      introTitle: "Unser Bestand verändert sich", introText: "Immobilien werden gekauft und wieder verkauft. Deshalb verändert sich auch unser Bestand. Nicht jedes Objekt wird öffentlich auf unserer Website angeboten. Wenn Sie nach einer bestimmten Immobilie suchen, können Sie uns direkt ansprechen.",
+      introTitle: "Ausgewählte Immobilien aus unserem Bestand", introText: "Hier zeigen wir ausgewählte Immobilien, die Aurelia selbst erworben hat und direkt zum Verkauf anbietet. Nicht jedes Bestandsobjekt wird öffentlich dargestellt.",
       categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien sowie Lager- und Logistikobjekte verfügbar sein. Darüber hinaus erwerben wir ausgewählte Immobilien mit Entwicklungspotenzial.", categoriesNote: "Alle hier angebotenen Immobilien befinden sich im eigenen Bestand von Aurelia.",
       categories: [
         { title: "Eigentumswohnungen", description: "Wohnungen verschiedener Größen und Ausstattungen.", alt: "Modernes Wohngebäude mit Balkonen" },
@@ -45,7 +45,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Lager & Logistik", description: "Lagerhallen, Logistikflächen und gewerblich nutzbare Hallenobjekte.", alt: "Lagerhalle mit Logistikflächen" },
       ],
       regionTitle: "Unsere Märkte", regionText: "Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden.",
-      ctaTitle: "Sie suchen eine Immobilie?", ctaText: "Sagen Sie uns kurz, wonach Sie suchen. Wir prüfen, ob sich aktuell ein passendes Objekt in unserem Bestand befindet oder angeboten werden kann.", ctaButton: "Portfolio anfragen",
+      ctaTitle: "Kein passendes Objekt dabei?", ctaText: "Hinterlegen Sie einfach Ihr Kaufinteresse. Wenn wir ein passendes Objekt im eigenen Bestand haben oder zu einem späteren Zeitpunkt erwerben, melden wir uns bei Ihnen.", ctaButton: "Kaufinteresse hinterlegen",
     },
     accessibility: { chooseLetters: "Buchstaben wählen", homeHeroAlt: "Ruhige Wohnstraße mit gepflegtem Mehrfamilienhaus bei Tageslicht", promisesAlt: "Vier Marmorsäulen in einem lichtdurchfluteten Raum als Sinnbild für unsere vier Versprechen" },
     shared: { faqPrompt: "Weitere Fragen beantworten wir in unseren FAQ.", call: "Anrufen", enquire: "Anfragen", offerProperty: "Immobilie anbieten", faqHeroAlt: "FAQ-Schriftzug auf hellem Hintergrund" },

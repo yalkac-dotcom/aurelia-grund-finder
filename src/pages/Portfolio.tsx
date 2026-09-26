@@ -20,7 +20,6 @@ const Portfolio = () => {
 
   // DE-only header image (real photo, Pexels 32992049). All other languages
   // keep the previous hero image.
-  const isGerman = language === "de";
   const portfolioHeroSet = {
     src: portfolioHero1440,
     srcSet: `${portfolioHero640} 640w, ${portfolioHero1024} 1024w, ${portfolioHero1440} 1440w`,
@@ -51,7 +50,7 @@ const Portfolio = () => {
           <div className="hero-copy-shell">
             <Reveal>
               <p className="hero-kicker">{copy.heroKicker}</p>
-              <h1 className="hero-title">{isGerman ? "Ausgewählte Immobilien aus unserem Bestand" : copy.heroTitle}</h1>
+              <h1 className="hero-title">{copy.heroTitle}</h1>
               <p className="hero-description">{copy.heroDescription}</p>
             </Reveal>
           </div>
@@ -66,10 +65,10 @@ const Portfolio = () => {
             <Reveal>
               <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
               <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
-                {isGerman ? "Ausgewählte Immobilien aus unserem Bestand" : copy.introTitle}
+                {copy.introTitle}
               </h2>
               <p className="mx-auto max-w-3xl text-[0.93rem] leading-[1.85] text-muted-foreground">
-                {isGerman ? "Hier zeigen wir ausgewählte Immobilien, die Aurelia selbst erworben hat und direkt zum Verkauf anbietet. Nicht jedes Bestandsobjekt wird öffentlich dargestellt." : copy.introText}
+                {copy.introText}
               </p>
             </Reveal>
           </div>
@@ -95,14 +94,10 @@ const Portfolio = () => {
               </div>
             </Reveal>
 
-            <div className={`grid gap-6 sm:grid-cols-2 ${isGerman ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}>
+            <div className={`grid gap-6 sm:grid-cols-2 lg:grid-cols-3`}>
               {copy.categories.map((item, i) => {
-                const icons = isGerman
-                  ? [Building2, Building2, Building2, TreePine, Store, Warehouse]
-                  : [Building2, Building2, TreePine, Store];
-                const categoryImages: (string | null)[] = isGerman
-                  ? ["/images/portfolio-apartments-header.jpg", "/images/portfolio-houses-header.jpg", null, "/images/portfolio-land-header.jpg", "/images/portfolio-commercial-header.jpg", null]
-                  : ["/images/portfolio-apartments-header.jpg", "/images/portfolio-houses-header.jpg", "/images/portfolio-land-header.jpg", "/images/portfolio-commercial-header.jpg"];
+                const icons = [Building2, Building2, Building2, TreePine, Store, Warehouse];
+                const categoryImages: (string | null)[] = ["/images/portfolio-apartments-header.jpg", "/images/portfolio-houses-header.jpg", null, "/images/portfolio-land-header.jpg", "/images/portfolio-commercial-header.jpg", null];
                 const CategoryIcon = icons[i] ?? Building2;
                 const categoryImage = categoryImages[i] ?? null;
                 return (
@@ -158,15 +153,15 @@ const Portfolio = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
           <div className="container-premium relative text-center">
             <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{isGerman ? "Kein passendes Objekt dabei?" : copy.ctaTitle}</h2>
+              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{copy.ctaTitle}</h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                {isGerman ? "Hinterlegen Sie einfach Ihr Kaufinteresse. Wenn wir ein passendes Objekt im eigenen Bestand haben oder zu einem späteren Zeitpunkt erwerben, melden wir uns bei Ihnen." : copy.ctaText}
+                {copy.ctaText}
               </p>
               <Link
-                to={isGerman ? "/fuer-kaeufer#kaufinteresse" : "/kontakt"}
+                to="/fuer-kaeufer#kaufinteresse"
                 className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
               >
-                {isGerman ? "Kaufinteresse hinterlegen" : copy.ctaButton}
+                {copy.ctaButton}
                 <ArrowRight size={13} />
               </Link>
             </Reveal>
