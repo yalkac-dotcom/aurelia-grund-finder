@@ -45,12 +45,12 @@ const HowItWorks = () => {
         {language === "de" && (
           <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}>
             <div className="container-premium">
-              <SectionHeader title="So arbeiten wir – ganz einfach erklärt" intro="Aurelia kauft Immobilien auf eigene Rechnung und verkauft ausschließlich aus dem eigenen Bestand. Fremde Immobilien vermitteln wir nicht." />
+              <SectionHeader title="\n" intro="Aurelia kauft Immobilien auf eigene Rechnung und verkauft ausschließlich aus dem eigenen Bestand. Fremde Immobilien vermitteln wir nicht." />
               <div className="grid gap-6 md:gap-8 md:grid-cols-3">
                 {[
-                  { title: "Für Eigentümer", steps: ["Immobilie anbieten", "Wir prüfen die Angaben", "Wenn es grundsätzlich passt, besprechen wir den möglichen Ankauf", "Bei Einigung kauft Aurelia auf eigene Rechnung"] },
-                  { title: "Für Kaufinteressenten", steps: ["Kaufinteresse hinterlegen", "Wünsche und Märkte werden vorgemerkt", "Ein passendes Aurelia-Bestandsobjekt wird verfügbar", "Aurelia nimmt persönlich Kontakt auf"] },
-                  { title: "Unser Bestand", steps: ["Aurelia kauft", "Wir renovieren, entwickeln oder halten", "Wir entscheiden langfristig über das Objekt", "Wenn wir verkaufen, verkaufen wir aus unserem eigenen Bestand"] },
+                  { title: "Für Eigentümer", steps: ["Immobilie anbieten", "Wir prüfen die Angaben und Unterlagen", "Kommt ein Ankauf infrage, besprechen wir die Konditionen", "Bei Einigung erwirbt Aurelia die Immobilie auf eigene Rechnung"] },
+                  { title: "Für Kaufinteressenten", steps: ["Kaufinteresse hinterlegen", "Wünsche und gesuchte Märkte angeben", "Ein passendes Objekt aus unserem Bestand wird verfügbar", "Aurelia nimmt Kontakt auf"] },
+                  { title: "Unser Bestand", steps: ["Aurelia erwirbt Immobilien", "Wir halten, renovieren oder entwickeln sie", "Wir entscheiden über die weitere Nutzung", "Bei einem Verkauf bieten wir die Immobilie aus unserem eigenen Bestand an"] },
                 ].map((proc, i) => (
                   <Reveal key={proc.title} delay={i * 0.06}>
                     <div className={`h-full p-6 md:p-7 ${aureliaCard}`}>
