@@ -99,8 +99,8 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       hero: { subtitle: "Aurelia Grundbesitz GmbH\n\n", body: ["Aurelia ist ein inhabergeführtes Immobilienunternehmen mit Fokus auf den direkten Ankauf, den eigenen Immobilienbestand und die Entwicklung ausgewählter Objekte.\nWir erwerben Immobilien auf eigene Rechnung, prüfen jedes Objekt individuell und treffen unsere Entscheidungen direkt im Unternehmen.", "Dabei setzen wir auf persönliche Ansprechpartner, nachvollziehbare Abläufe und kurze Entscheidungswege. Neben klassischen Immobilien prüfen wir auch Objekte mit Renovierungsbedarf, Entwicklungspotenzial oder besonderen Ausgangssituationen."] },
       trustTiles: [
         { title: "Wir entscheiden selbst", text: "Geeignete Immobilien kaufen wir auf eigene Rechnung. Ob ein Objekt zu uns passt, entscheiden wir direkt im Unternehmen." },
-        { title: "Wir kennen schwierige Situationen", text: "Ein großer Teil unserer Erfahrung stammt aus Zwangsversteigerungen und freihändigen Ankäufen vor einer Versteigerung." },
-        { title: "Wir sagen, woran Sie sind", text: "Nach der Prüfung geben wir eine klare Rückmeldung – auch wenn ein Ankauf nicht infrage kommt." },
+        { title: "Wir betrachten jedes Objekt individuell", text: "Neben klassischen Wohn- und Gewerbeimmobilien können auch renovierungsbedürftige Objekte, Grundstücke oder Immobilien mit Entwicklungspotenzial für uns interessant sein." },
+        { title: "Wir kommunizieren klar", text: "Nach unserer Prüfung erhalten Sie eine nachvollziehbare Rückmeldung. Fehlen noch Informationen oder kommt ein Ankauf nicht infrage, sprechen wir auch das offen an." },
       ],
       standing: {
         headline: "Familiengeführt. Persönlich. Langfristig.",
