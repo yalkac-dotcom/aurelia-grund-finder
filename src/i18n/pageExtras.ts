@@ -34,7 +34,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     },
     portfolio: {
       seoTitle: "Unser Bestand – Immobilien aus eigenem Bestand | Aurelia Grundbesitz", heroKicker: "Unser Bestand", heroTitle: "Ausgewählte Immobilien aus unserem Bestand", heroDescription: "Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", heroAlt: "Aurelia Immobilien-Portfolio",
-      introTitle: "Ausgewählte Immobilien aus unserem Bestand", introText: "Hier zeigen wir ausgewählte Immobilien, die Aurelia selbst erworben hat und direkt zum Verkauf anbietet. Nicht jedes Bestandsobjekt wird öffentlich dargestellt.",
+      introTitle: "Ausgewählte Immobilien aus unserem Bestand", introText: "Aurelia erwirbt ausgewählte Immobilien auf eigene Rechnung und baut einen eigenen Immobilienbestand auf. Nicht jedes Bestandsobjekt wird öffentlich dargestellt.",
       categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien sowie Lager- und Logistikobjekte verfügbar sein. Darüber hinaus erwerben wir ausgewählte Immobilien mit Entwicklungspotenzial.", categoriesNote: "Alle hier angebotenen Immobilien befinden sich im eigenen Bestand von Aurelia.",
       categories: [
         { title: "Eigentumswohnungen", description: "Wohnungen verschiedener Größen und Ausstattungen.", alt: "Modernes Wohngebäude mit Balkonen" },
@@ -45,7 +45,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Lager & Logistik", description: "Lagerhallen, Logistikflächen und gewerblich nutzbare Hallenobjekte.", alt: "Lagerhalle mit Logistikflächen" },
       ],
       regionTitle: "Unsere Märkte", regionText: "Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden.",
-      ctaTitle: "Kein passendes Objekt dabei?", ctaText: "Hinterlegen Sie einfach Ihr Kaufinteresse. Wenn wir ein passendes Objekt im eigenen Bestand haben oder zu einem späteren Zeitpunkt erwerben, melden wir uns bei Ihnen.", ctaButton: "Kaufinteresse hinterlegen",
+      ctaTitle: "Sie suchen eine Immobilie?", ctaText: "Sie interessieren sich für den Kauf einer Immobilie aus unserem Bestand? Teilen Sie uns mit, welche Art von Immobilie und welche Region für Sie interessant sind. Wenn wir ein passendes Objekt im Bestand haben oder künftig erwerben, können wir Sie kontaktieren.", ctaButton: "Kaufinteresse hinterlegen",
     },
     accessibility: { chooseLetters: "Buchstaben wählen", homeHeroAlt: "Ruhige Wohnstraße mit gepflegtem Mehrfamilienhaus bei Tageslicht", promisesAlt: "Plusieurs mains se tenant mutuellement les avant-bras – symbole de solidarité et de nos quatre engagements" },
     shared: { faqPrompt: "Weitere Fragen beantworten wir in unseren FAQ.", call: "Anrufen", enquire: "Anfragen", offerProperty: "Immobilie anbieten", faqHeroAlt: "FAQ-Schriftzug auf hellem Hintergrund" },
@@ -62,7 +62,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     contact: { availabilityShort: "Pazartesi–Cuma; devam eden işlemlerde kısa sürede de ulaşabilirsiniz", personalPrompt: "Bizimle yüz yüze görüşmek mi istersiniz? Dilerseniz bir randevu ayarlayalım.", consultation: "Ücretsiz ilk görüşme", consultationSubject: "Ücretsiz ilk görüşme talebi", phone: "Telefon", email: "E-posta", confirmationWarning: "Talebiniz bize ulaştı. Otomatik e-posta onayı şu anda teslim edilemedi." },
     portfolio: {
       seoTitle: "Portföy – Aurelia Grundbesitz GmbH", heroKicker: "Portföy", heroTitle: "Portföyümüzden seçili gayrimenkuller", heroDescription: "Şu anda hangi gayrimenkullerin uygun olduğunu doğrudan bizden öğrenebilirsiniz.", heroAlt: "Aurelia gayrimenkul portföyü",
-      introTitle: "Portföyümüzden seçili gayrimenkuller", introText: "Burada Aurelia'nın kendi adına satın aldığı ve doğrudan satışa sunduğu seçili gayrimenkulleri gösteriyoruz. Portföydeki her gayrimenkul herkese açık olarak sunulmaz.",
+      introTitle: "Portföyümüzden seçili gayrimenkuller", introText: "Aurelia, seçili gayrimenkulleri kendi hesabına satın alır ve kendi gayrimenkul portföyünü oluşturur. Portföydeki her gayrimenkul herkese açık olarak sunulmaz.",
       categoriesTitle: "Gayrimenkul kategorileri", categoriesIntro: "Güncel portföye bağlı olarak kat mülkiyetli daireler, müstakil evler, apartmanlar, arsalar, ticari gayrimenkuller ile depo ve lojistik tesisleri mevcut olabilir. Bunun yanı sıra gelişim potansiyeli olan seçili gayrimenkuller de satın alıyoruz.", categoriesNote: "Burada sunulan tüm gayrimenkuller Aurelia'nın kendi portföyündedir.",
       categories: [
         { title: "Kat mülkiyetli daireler", description: "Farklı büyüklük ve donanımda daireler.", alt: "Balkonlu modern konut binası" },
@@ -73,7 +73,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Depo ve lojistik", description: "Depolar, lojistik alanları ve ticari kullanıma uygun hangarlar.", alt: "Lojistik alanlı depo" },
       ],
       regionTitle: "Pazarlarımız", regionText: "Almanya ve Türkiye en önemli pazarlarımızdır. Bunun yanı sıra İtalya, İspanya, Fransa ve Hollanda'daki seçili gayrimenkulleri de inceliyoruz.",
-      ctaTitle: "Uygun bir gayrimenkul bulamadınız mı?", ctaText: "Satın alma ilginizi bize bildirin. Kendi portföyümüzde uygun bir gayrimenkul olduğunda ya da ileride böyle bir gayrimenkul satın aldığımızda sizinle iletişime geçeriz.", ctaButton: "Satın alma ilginizi bildirin",
+      ctaTitle: "Bir gayrimenkul mü arıyorsunuz?", ctaText: "Portföyümüzden bir gayrimenkul satın almakla mı ilgileniyorsunuz? Hangi tür gayrimenkulün ve hangi bölgenin sizin için ilgi çekici olduğunu bize bildirin. Portföyümüzde uygun bir gayrimenkul olduğunda ya da ileride satın aldığımızda sizinle iletişime geçebiliriz.", ctaButton: "Satın alma ilginizi bildirin",
     },
     accessibility: { chooseLetters: "Harf seçin", homeHeroAlt: "Gün ışığında, sakin bir sokakta bakımlı apartman", promisesAlt: "Dört taahhüdümüzü simgeleyen, aydınlık bir mekândaki dört mermer sütun" },
     shared: { faqPrompt: "Diğer sorularınızı SSS bölümümüzde yanıtlıyoruz.", call: "Arayın", enquire: "Talep gönderin", offerProperty: "Gayrimenkul sunun", faqHeroAlt: "Açık zeminde SSS yazısı" },
@@ -83,7 +83,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     contact: { availabilityShort: "Monday–Friday, including at short notice during ongoing proceedings", personalPrompt: "Would you rather speak to us in person? Feel free to arrange an appointment.", consultation: "Free initial consultation", consultationSubject: "Request a free initial consultation", phone: "Phone", email: "Email", confirmationWarning: "Your enquiry has been received. The automatic email confirmation could not be delivered at this time." },
     portfolio: {
       seoTitle: "Portfolio – Aurelia Grundbesitz GmbH", heroKicker: "Portfolio", heroTitle: "Selected properties from our portfolio", heroDescription: "To find out which properties are currently available, please get in touch with us directly.", heroAlt: "Aurelia property portfolio",
-      introTitle: "Selected properties from our portfolio", introText: "Here we present selected properties that Aurelia has acquired itself and offers for sale directly. Not every property in our portfolio is shown publicly.",
+      introTitle: "Selected properties from our portfolio", introText: "Aurelia acquires selected properties for its own account and is building its own property portfolio. Not every property in our portfolio is shown publicly.",
       categoriesTitle: "Property categories", categoriesIntro: "Depending on our current portfolio, condominiums, detached houses, apartment buildings, land, commercial properties and warehouse and logistics properties may be available. We also acquire selected properties with development potential.", categoriesNote: "All properties offered here are held in Aurelia's own portfolio.",
       categories: [
         { title: "Condominiums", description: "Flats of various sizes and standards of fit-out.", alt: "Modern residential building with balconies" },
@@ -94,7 +94,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Warehouse & logistics", description: "Warehouses, logistics space and commercially usable halls.", alt: "Warehouse with logistics space" },
       ],
       regionTitle: "Our markets", regionText: "Germany and Turkey are our most important markets. We also consider selected properties in Italy, Spain, France and the Netherlands.",
-      ctaTitle: "Nothing suitable?", ctaText: "Simply register your interest in buying. If we have a suitable property in our own portfolio, or acquire one later, we will get in touch.", ctaButton: "Register your interest",
+      ctaTitle: "Looking for a property?", ctaText: "Are you interested in buying a property from our portfolio? Let us know which type of property and which region interest you. If we have a suitable property in our portfolio or acquire one in the future, we can contact you.", ctaButton: "Register your interest",
     },
     accessibility: { chooseLetters: "Choose a letter", homeHeroAlt: "Well-maintained apartment building on a quiet residential street in daylight", promisesAlt: "Four marble columns in a light-filled room symbolising our four commitments" },
     shared: { faqPrompt: "We answer further questions in our FAQ.", call: "Call", enquire: "Enquire", offerProperty: "Submit a property", faqHeroAlt: "FAQ lettering on a light background" },
@@ -104,7 +104,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     contact: { availabilityShort: "Maandag–vrijdag, ook op korte termijn bij lopende procedures", personalPrompt: "Wilt u liever persoonlijk met ons spreken? Maak gerust een afspraak.", consultation: "Gratis eerste gesprek", consultationSubject: "Gratis eerste gesprek aanvragen", phone: "Telefoon", email: "E-mail", confirmationWarning: "Uw aanvraag is ontvangen. De automatische e-mailbevestiging kon momenteel niet worden bezorgd." },
     portfolio: {
       seoTitle: "Portefeuille – Aurelia Grundbesitz GmbH", heroKicker: "Portefeuille", heroTitle: "Geselecteerd vastgoed uit onze portefeuille", heroDescription: "Welk vastgoed op dit moment beschikbaar is, verneemt u rechtstreeks van ons.", heroAlt: "Vastgoedportefeuille van Aurelia",
-      introTitle: "Geselecteerd vastgoed uit onze portefeuille", introText: "Hier tonen wij geselecteerd vastgoed dat Aurelia zelf heeft verworven en rechtstreeks te koop aanbiedt. Niet elk object uit onze portefeuille wordt openbaar getoond.",
+      introTitle: "Geselecteerd vastgoed uit onze portefeuille", introText: "Aurelia verwerft geselecteerd vastgoed voor eigen rekening en bouwt een eigen vastgoedportefeuille op. Niet elk object uit onze portefeuille wordt openbaar getoond.",
       categoriesTitle: "Vastgoedcategorieën", categoriesIntro: "Afhankelijk van onze actuele portefeuille kunnen appartementen, eengezinswoningen, meergezinswoningen, percelen, commercieel vastgoed en opslag- en logistiekobjecten beschikbaar zijn. Daarnaast verwerven wij geselecteerd vastgoed met ontwikkelingspotentieel.", categoriesNote: "Al het hier aangeboden vastgoed bevindt zich in de eigen portefeuille van Aurelia.",
       categories: [
         { title: "Appartementen", description: "Woningen van verschillende grootte en afwerking.", alt: "Modern woongebouw met balkons" },
@@ -115,7 +115,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Opslag & logistiek", description: "Opslaghallen, logistieke ruimten en commercieel bruikbare hallen.", alt: "Opslaghal met logistieke ruimte" },
       ],
       regionTitle: "Onze markten", regionText: "Duitsland en Turkije zijn onze belangrijkste markten. Daarnaast bekijken wij geselecteerd vastgoed in Italië, Spanje, Frankrijk en Nederland.",
-      ctaTitle: "Geen passend object gevonden?", ctaText: "Laat eenvoudig uw koopinteresse achter. Hebben wij een passend object in onze eigen portefeuille of verwerven wij er later een, dan nemen wij contact met u op.", ctaButton: "Koopinteresse doorgeven",
+      ctaTitle: "Op zoek naar vastgoed?", ctaText: "Bent u geïnteresseerd in de aankoop van vastgoed uit onze portefeuille? Laat ons weten welk type vastgoed en welke regio u interesseren. Hebben wij een passend object in portefeuille of verwerven wij er in de toekomst een, dan kunnen wij contact met u opnemen.", ctaButton: "Koopinteresse doorgeven",
     },
     accessibility: { chooseLetters: "Kies een letter", homeHeroAlt: "Goed onderhouden appartementencomplex in een rustige woonstraat bij daglicht", promisesAlt: "Vier marmeren zuilen in een lichte ruimte als symbool voor onze vier beloften" },
     shared: { faqPrompt: "Meer vragen beantwoorden wij in onze FAQ.", call: "Bellen", enquire: "Aanvragen", offerProperty: "Vastgoed aanbieden", faqHeroAlt: "FAQ-letters op een lichte achtergrond" },
@@ -125,7 +125,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     contact: { availabilityShort: "Dal lunedì al venerdì, anche con breve preavviso per procedure in corso", personalPrompt: "Preferisce parlare con noi di persona? Fissi pure un appuntamento.", consultation: "Primo colloquio gratuito", consultationSubject: "Richiesta di primo colloquio gratuito", phone: "Telefono", email: "E-mail", confirmationWarning: "La sua richiesta è stata ricevuta. Al momento non è stato possibile recapitare la conferma automatica via e-mail." },
     portfolio: {
       seoTitle: "Portafoglio – Aurelia Grundbesitz GmbH", heroKicker: "Portafoglio", heroTitle: "Immobili selezionati dal nostro patrimonio", heroDescription: "Per sapere quali immobili sono attualmente disponibili, ci contatti direttamente.", heroAlt: "Portafoglio immobiliare Aurelia",
-      introTitle: "Immobili selezionati dal nostro patrimonio", introText: "Qui presentiamo immobili selezionati che Aurelia ha acquistato in proprio e offre direttamente in vendita. Non tutti gli immobili del nostro patrimonio vengono pubblicati.",
+      introTitle: "Immobili selezionati dal nostro patrimonio", introText: "Aurelia acquista immobili selezionati per conto proprio e costruisce un proprio patrimonio immobiliare. Non tutti gli immobili del nostro patrimonio vengono pubblicati.",
       categoriesTitle: "Categorie di immobili", categoriesIntro: "A seconda del patrimonio attuale, possono essere disponibili appartamenti, case unifamiliari, edifici plurifamiliari, terreni, immobili commerciali e immobili per magazzino e logistica. Acquistiamo inoltre immobili selezionati con potenziale di sviluppo.", categoriesNote: "Tutti gli immobili qui proposti fanno parte del patrimonio proprio di Aurelia.",
       categories: [
         { title: "Appartamenti", description: "Appartamenti di diverse dimensioni e finiture.", alt: "Edificio residenziale moderno con balconi" },
@@ -136,7 +136,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Magazzini e logistica", description: "Magazzini, spazi logistici e capannoni a uso commerciale.", alt: "Magazzino con spazi logistici" },
       ],
       regionTitle: "I nostri mercati", regionText: "Germania e Turchia sono i nostri mercati principali. Valutiamo inoltre immobili selezionati in Italia, Spagna, Francia e Paesi Bassi.",
-      ctaTitle: "Nessun immobile adatto?", ctaText: "Ci comunichi semplicemente il suo interesse all'acquisto. Se disponiamo di un immobile adatto nel nostro patrimonio o lo acquistiamo in futuro, la contatteremo.", ctaButton: "Comunicare l'interesse",
+      ctaTitle: "Cerca un immobile?", ctaText: "È interessato all'acquisto di un immobile del nostro patrimonio? Ci indichi quale tipo di immobile e quale regione le interessano. Se disponiamo di un immobile adatto o lo acquisiamo in futuro, potremo contattarla.", ctaButton: "Comunicare l'interesse",
     },
     accessibility: { chooseLetters: "Scegli una lettera", homeHeroAlt: "Edificio residenziale ben tenuto in una tranquilla strada di giorno", promisesAlt: "Quattro colonne di marmo in un ambiente luminoso, simbolo dei nostri quattro impegni" },
     shared: { faqPrompt: "Rispondiamo ad altre domande nelle nostre FAQ.", call: "Chiama", enquire: "Invia richiesta", offerProperty: "Proponi un immobile", faqHeroAlt: "Scritta FAQ su sfondo chiaro" },
@@ -146,7 +146,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     contact: { availabilityShort: "De lunes a viernes, también con poca antelación en procedimientos en curso", personalPrompt: "¿Prefiere hablar con nosotros en persona? Concierte una cita cuando lo desee.", consultation: "Primera consulta gratuita", consultationSubject: "Solicitar una primera consulta gratuita", phone: "Teléfono", email: "Correo electrónico", confirmationWarning: "Hemos recibido su consulta. En este momento no ha sido posible entregar la confirmación automática por correo electrónico." },
     portfolio: {
       seoTitle: "Cartera – Aurelia Grundbesitz GmbH", heroKicker: "Cartera", heroTitle: "Inmuebles seleccionados de nuestra cartera", heroDescription: "Para saber qué inmuebles están disponibles en cada momento, póngase en contacto con nosotros directamente.", heroAlt: "Cartera inmobiliaria de Aurelia",
-      introTitle: "Inmuebles seleccionados de nuestra cartera", introText: "Aquí mostramos inmuebles seleccionados que Aurelia ha adquirido por cuenta propia y ofrece directamente en venta. No todos los inmuebles de nuestra cartera se publican.",
+      introTitle: "Inmuebles seleccionados de nuestra cartera", introText: "Aurelia adquiere inmuebles seleccionados por cuenta propia y está construyendo su propia cartera inmobiliaria. No todos los inmuebles de nuestra cartera se publican.",
       categoriesTitle: "Categorías de inmuebles", categoriesIntro: "Según la cartera actual, pueden estar disponibles viviendas, viviendas unifamiliares, edificios plurifamiliares, terrenos, inmuebles comerciales y naves de almacén y logística. Además, adquirimos inmuebles seleccionados con potencial de desarrollo.", categoriesNote: "Todos los inmuebles ofrecidos aquí forman parte de la cartera propia de Aurelia.",
       categories: [
         { title: "Viviendas", description: "Viviendas de distintos tamaños y calidades.", alt: "Edificio residencial moderno con balcones" },
@@ -157,7 +157,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Almacén y logística", description: "Naves de almacén, superficies logísticas y naves de uso comercial.", alt: "Nave de almacén con superficies logísticas" },
       ],
       regionTitle: "Nuestros mercados", regionText: "Alemania y Turquía son nuestros mercados principales. Además, estudiamos inmuebles seleccionados en Italia, España, Francia y los Países Bajos.",
-      ctaTitle: "¿No encuentra el inmueble adecuado?", ctaText: "Registre su interés de compra. Si tenemos un inmueble adecuado en nuestra cartera propia o lo adquirimos más adelante, nos pondremos en contacto con usted.", ctaButton: "Registrar interés de compra",
+      ctaTitle: "¿Busca un inmueble?", ctaText: "¿Le interesa comprar un inmueble de nuestra cartera? Indíquenos qué tipo de inmueble y qué región le interesan. Si tenemos un inmueble adecuado en cartera o lo adquirimos en el futuro, podremos ponernos en contacto con usted.", ctaButton: "Registrar interés de compra",
     },
     accessibility: { chooseLetters: "Elegir una letra", homeHeroAlt: "Edificio residencial bien cuidado en una calle tranquila a la luz del día", promisesAlt: "Cuatro columnas de mármol en un espacio luminoso como símbolo de nuestros cuatro compromisos" },
     shared: { faqPrompt: "Respondemos a otras preguntas en nuestras FAQ.", call: "Llamar", enquire: "Consultar", offerProperty: "Ofrecer un inmueble", faqHeroAlt: "Letrero de FAQ sobre fondo claro" },
@@ -182,7 +182,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     },
     portfolio: {
       seoTitle: "Portefeuille – Aurelia Grundbesitz GmbH", heroKicker: "Portefeuille", heroTitle: "Biens sélectionnés de notre portefeuille", heroDescription: "Pour savoir quels biens sont actuellement disponibles, contactez-nous directement.", heroAlt: "Portefeuille immobilier Aurelia",
-      introTitle: "Biens sélectionnés de notre portefeuille", introText: "Nous présentons ici des biens sélectionnés qu'Aurelia a acquis elle-même et propose directement à la vente. Tous les biens de notre portefeuille ne sont pas présentés publiquement.",
+      introTitle: "Biens sélectionnés de notre portefeuille", introText: "Aurelia acquiert des biens sélectionnés pour son propre compte et constitue son propre portefeuille immobilier. Tous les biens de notre portefeuille ne sont pas présentés publiquement.",
       categoriesTitle: "Catégories de biens", categoriesIntro: "Selon notre portefeuille actuel, des appartements, maisons individuelles, immeubles collectifs, terrains, biens commerciaux ainsi que des entrepôts et locaux logistiques peuvent être disponibles. Nous acquérons également des biens sélectionnés présentant un potentiel de développement.", categoriesNote: "Tous les biens proposés ici font partie du portefeuille propre d'Aurelia.",
       categories: [
         { title: "Appartements", description: "Appartements de tailles et de standings variés.", alt: "Immeuble résidentiel moderne avec balcons" },
@@ -193,7 +193,7 @@ export const pageExtras: Record<Language, PageExtras> = {
         { title: "Entrepôts & logistique", description: "Entrepôts, surfaces logistiques et halls à usage professionnel.", alt: "Entrepôt avec surfaces logistiques" },
       ],
       regionTitle: "Nos marchés", regionText: "L'Allemagne et la Turquie sont nos principaux marchés. Nous étudions également des biens sélectionnés en Italie, en Espagne, en France et aux Pays-Bas.",
-      ctaTitle: "Aucun bien ne vous convient ?", ctaText: "Indiquez-nous simplement votre intérêt d'achat. Si nous disposons d'un bien adapté dans notre propre portefeuille ou en acquérons un ultérieurement, nous vous contacterons.", ctaButton: "Indiquer mon intérêt d'achat",
+      ctaTitle: "Vous recherchez un bien immobilier ?", ctaText: "Vous souhaitez acheter un bien de notre portefeuille ? Indiquez-nous quel type de bien et quelle région vous intéressent. Si nous disposons d'un bien adapté ou en acquérons un à l'avenir, nous pourrons vous contacter.", ctaButton: "Indiquer mon intérêt d'achat",
     },
     accessibility: { chooseLetters: "Choisir une lettre", homeHeroAlt: "Rue résidentielle calme avec un immeuble bien entretenu en plein jour", promisesAlt: "Quatre colonnes de marbre dans une pièce baignée de lumière, symbole de nos quatre engagements" },
     shared: { faqPrompt: "Nous répondons à vos autres questions dans notre FAQ.", call: "Appeler", enquire: "Faire une demande", offerProperty: "Proposer un bien", faqHeroAlt: "Lettrage FAQ sur fond clair" },
