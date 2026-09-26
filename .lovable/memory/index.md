@@ -9,7 +9,10 @@
 - **Languages**: 6 languages (DE, EN, NL, IT, ES, TR). DE is master. Sync SEO & hreflang dynamically.
 - **Investor area**: Removed. Only `/immobilien-glossar` (formerly `/investoren-glossar`) remains as educational resource. `/investoren` redirects to `/fuer-geschaeftspartner`.
 
+- FINALER DESIGNSTAND seit 26.09.2026: freigegebene Bereiche nie automatisch ändern, nur ausdrücklich Beauftragtes.
+
 ## Memories
+- [Finaler Designstand](mem://constraints/finaler-designstand) — Geschützte Heroes und Änderungsregel nach Endabnahme
 - [BaFin Konformität](mem://constraints/bafin-konformitaet) — No financial product claims, no yield guarantees, partnership wording only
 - [Unternehmensfokus](mem://projekt/unternehmensfokus) — Premium, discrete positioning, special situations
 - [Historie Constraint](mem://constraints/historie) — Handling of foundation year (2023) and illustrative project constellations
