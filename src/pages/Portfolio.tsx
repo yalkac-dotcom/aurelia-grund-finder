@@ -8,7 +8,7 @@ import { heroSets } from "@/assets/heroImages";
 import portfolioHero640 from "@/assets/hero-portfolio-640w.webp";
 import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
 import portfolioHero1440 from "@/assets/hero-portfolio-1440w.webp";
-import { ArrowRight, MapPin, Building2, TreePine, Store } from "lucide-react";
+import { ArrowRight, MapPin, Building2, TreePine, Store, Warehouse } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
