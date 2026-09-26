@@ -5,7 +5,8 @@ import Reveal from "@/components/Reveal";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import OptimizedImg from "@/components/OptimizedImg";
-import faqHeroAsset from "@/assets/faq-hero.jpeg.asset.json";
+import { heroSets } from "@/assets/heroImages";
+import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
 
@@ -14,23 +15,29 @@ const FAQ = () => {
   const { t, language } = useLanguage();
   usePageSeo(pageSeo[language].faq.title, pageSeo[language].faq.description);
   const f = t.faqPage;
+  const extras = pageExtras[language];
 
   return (
     <Layout>
-      {/* HERO – sichtbarer Titel, Bild rein dekorativ */}
-      <section className="relative overflow-hidden bg-background pt-24 pb-8 md:pt-28 md:pb-10">
-        <div aria-hidden="true" className="absolute inset-0">
-          <OptimizedImg src={faqHeroAsset.url} alt="" className="h-full w-full object-cover object-[70%_center]" priority />
+      {/* HERO – bewusst niedriger als die übrigen Hauptseiten */}
+      <section className="relative flex min-h-[300px] items-end overflow-hidden bg-background md:h-[48vh] md:max-h-[430px] md:items-center">
+        <div className="absolute inset-0">
+          <OptimizedImg src={heroSets.faq.src} srcSet={heroSets.faq.srcSet} sizes={heroSets.faq.sizes} alt={extras.shared.faqHeroAlt} className="h-full w-full object-cover object-center max-md:object-[86%_center]" priority />
         </div>
-        {/* Goldton ist im Bild selbst; nur dezenter Lesbarkeits-Verlauf links */}
-        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/25 to-transparent" />
-        <div className="container-premium relative">
+        <h1 className="sr-only">{f.title}</h1>
+        {/* Text im Header, ganz links, auf Höhe des FAQ-Schriftzugs im Bild */}
+        <div className="relative w-full px-5 pb-4 md:px-10 md:pb-0">
           <Reveal>
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent">{f.kicker}</p>
-            <h1 className="mt-3 font-heading text-[2rem] font-semibold leading-tight text-primary md:text-[2.6rem]">{f.title}</h1>
-            <p className="mt-4 max-w-2xl text-[0.95rem] leading-[1.75] text-foreground/80 md:text-[1rem]">{f.intro}</p>
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-primary">
+              {f.kicker}
+            </p>
+            <p className="mt-2 max-w-xl text-[0.95rem] font-medium leading-[1.7] text-primary md:text-[1rem] md:leading-[1.75]">
+              {f.intro}
+            </p>
           </Reveal>
         </div>
+        {/* Feine blaue Abschlusslinie unten am Header */}
+        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-px bg-primary/40" />
       </section>
 
       <div className="page-shell">
