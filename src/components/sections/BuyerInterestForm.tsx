@@ -138,7 +138,7 @@ const BuyerInterestForm = () => {
   };
 
   const input = (k: keyof Text, label: string, type = "text", required = false) => (
-    <label className={labelClass}>{label}{required && " *"}
+    <label className={labelClass}>{label}{required && (k === "name" ? "*" : " *")}
       <input type={type} value={text[k]} onChange={upd(k)} className={fieldClass(Boolean(errors[k]))} aria-invalid={Boolean(errors[k])} />
       {errors[k] && <span className="mt-1 block normal-case tracking-normal text-destructive">{errors[k]}</span>}
     </label>
