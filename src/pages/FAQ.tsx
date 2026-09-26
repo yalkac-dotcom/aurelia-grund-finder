@@ -22,11 +22,8 @@ const FAQ = () => {
         <div aria-hidden="true" className="absolute inset-0">
           <OptimizedImg src={faqHeroAsset.url} alt="" className="h-full w-full object-cover object-[70%_center]" priority />
         </div>
-        {/* dezente Aurelia-Gold-Tönung, 3D-Struktur bleibt erkennbar */}
-        <div aria-hidden="true" className="absolute inset-0 bg-accent/45 mix-blend-multiply" />
-        <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(115deg,transparent_35%,hsl(var(--accent)/0.28)_100%)]" />
-        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/5" />
-        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background" />
+        {/* Goldton ist im Bild selbst; nur dezenter Lesbarkeits-Verlauf links */}
+        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/25 to-transparent" />
         <div className="container-premium relative">
           <Reveal>
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent">{f.kicker}</p>
