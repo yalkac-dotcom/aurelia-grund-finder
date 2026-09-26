@@ -13,7 +13,7 @@ const HomeDeSections = () => (
         <Reveal className="mx-auto max-w-3xl border-l-2 border-accent pl-6">
           <h2 className="font-heading text-[1.6rem] font-semibold leading-tight text-primary md:text-[2rem]">Wer wir sind</h2>
           <div className="mt-5 space-y-4 text-[15px] leading-[1.85] text-foreground/80">
-            <p>Aurelia Grundbesitz ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf.</p>
+            <p>Aurelia Grundbesitz ist ein Inhabergeführtes Immobilienunternehmen aus Düsseldorf.</p>
             <p>Hinter Aurelia stehen rund 30 Jahre unternehmerische Erfahrung mit Immobilien – darunter Ankäufe aus Zwangsversteigerungen, freihändige Käufe vor einer Versteigerung sowie die Entwicklung und Verwaltung eigener Immobilienbestände.</p>
             <p>Ein großer Teil unserer Erfahrung kommt aus Immobilien mit schwieriger Ausgangslage – zum Beispiel aus Zwangsversteigerungen oder aus freihändigen Käufen, bevor es überhaupt zur Versteigerung kam.</p>
             <p>Heute kaufen wir ausgewählte Immobilien auf eigene Rechnung, entwickeln unseren eigenen Bestand weiter und entscheiden bei jedem Objekt individuell, ob wir es langfristig halten, renovieren oder später wieder aus unserem Bestand verkaufen.</p>
