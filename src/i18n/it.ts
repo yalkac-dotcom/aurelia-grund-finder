@@ -571,9 +571,6 @@ const it: Translations = {
     heroSecondaryCta: "Come operiamo",
     heroTrustLine: "Collaborazione di progetto · Scambio diretto · Responsabilità chiare",
     heroImageAlt: "Ambiente professionale tranquillo – simbolo di collaborazioni di progetto chiaramente strutturate",
-    legalNoticeLabel: "Nota",
-    legalNoticeText:
-      "Questa pagina non costituisce un'offerta pubblica di prodotti d'investimento né un invito a investire. Eventuali accordi vengono presi esclusivamente su base individuale e di progetto, previa specifica valutazione.",
     formsTitle: "Possibili forme di collaborazione",
     formsIntro:
       "Ogni collaborazione nasce dal progetto concreto. Le seguenti costellazioni sono le più frequenti nella pratica.",

@@ -389,8 +389,6 @@ export interface Translations {
     heroSecondaryCta: string;
     heroTrustLine: string;
     heroImageAlt: string;
-    legalNoticeLabel: string;
-    legalNoticeText: string;
     formsTitle: string;
     formsIntro: string;
     forms: { title: string; desc: string }[];

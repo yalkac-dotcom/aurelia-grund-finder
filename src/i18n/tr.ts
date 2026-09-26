@@ -571,9 +571,6 @@ const tr: Translations = {
     heroSecondaryCta: "Nasıl çalışıyoruz",
     heroTrustLine: "Projeye bağlı iş birliği · Doğrudan temas · Net sorumluluklar",
     heroImageAlt: "Sakin bir iş ortamı – net biçimde yapılandırılmış, projeye dayalı iş birliklerinin simgesi",
-    legalNoticeLabel: "Not",
-    legalNoticeText:
-      "Bu sayfa, kamuya açık bir yatırım ürünü teklifi veya yatırıma davet niteliği taşımaz. Olası mutabakatlar yalnızca bireysel olarak, projeye dayalı şekilde ve ayrı bir değerlendirme sonrasında yapılır.",
     formsTitle: "Olası iş birliği biçimleri",
     formsIntro:
       "Her iş birliği somut projeden doğar. Pratikte en sık karşılaşılan yapılar şunlardır.",

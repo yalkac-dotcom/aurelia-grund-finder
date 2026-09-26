@@ -621,9 +621,6 @@ const de: Translations = {
     heroSecondaryCta: "Wie wir vorgehen",
     heroTrustLine: "Projektbezogene Zusammenarbeit · Direkter Austausch · Klare Zuständigkeiten",
     heroImageAlt: "Ruhige Geschäftsumgebung – sinnbildlich für klar strukturierte, projektbezogene Kooperationen",
-    legalNoticeLabel: "Hinweis",
-    legalNoticeText:
-      "Diese Seite stellt kein öffentliches Angebot von Vermögensanlagen und keine Aufforderung zur Investition dar. Etwaige Vereinbarungen erfolgen ausschließlich individuell, projektbezogen und nach gesonderter Prüfung.",
     formsTitle: "Mögliche Formen der Zusammenarbeit",
     formsIntro:
       "Jede Kooperation entsteht aus dem konkreten Projekt heraus. Diese Konstellationen kommen in der Praxis am häufigsten vor.",
