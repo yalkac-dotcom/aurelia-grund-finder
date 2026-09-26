@@ -49,6 +49,7 @@ const PageHero = ({
   overlayGradient,
   phoneLine,
   size = "default",
+  fullImage = false,
   mobileHomeFlow = false,
   descriptionClassName,
   aiDisclosure,
