@@ -87,7 +87,7 @@ const ForBuyers = () => {
             {isDe && (
               <Reveal>
                 <p className="-mt-4 mb-10 mx-auto max-w-3xl text-center text-[0.94rem] leading-[1.8] text-muted-foreground">
-                  Wenn Aurelia ein entsprechendes Objekt im eigenen Bestand hält oder später erwirbt, können wir Sie darüber informieren.
+                  Wenn Aurelia ein passendes Objekt im eigenen Bestand hat oder später erwirbt, können wir Sie darüber informieren.
                 </p>
               </Reveal>
             )}
