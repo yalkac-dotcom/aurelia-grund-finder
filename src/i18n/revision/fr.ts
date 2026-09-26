@@ -135,7 +135,7 @@ export const fr: RevisionCopy = {
         "Situations transfrontalières où propriétaire et bien se trouvent dans des pays différents",
       ],
     },
-    closing: { headline: "Vous souhaitez proposer ou acheter un bien ?", body: "Que vous nous proposiez un bien à l'achat ou que vous vous intéressiez à un bien de notre patrimoine – décrivez-nous brièvement votre demande. Nous examinerons vos informations et vous répondrons personnellement.", primary: "Proposer un bien", secondary: "Nous contacter" },
+    closing: { headline: "Vous souhaitez proposer ou acheter un bien ?", body: "Que vous nous proposiez un bien à l'achat ou que vous vous intéressiez à un bien de notre patrimoine – décrivez-nous brièvement votre demande. Nous examinerons vos informations et vous répondrons personnellement.", primary: "Proposer un bien", secondary: "Enregistrer votre intérêt" },
   },
   faqPage: {
     kicker: "FAQ", title: "Questions fréquentes",
