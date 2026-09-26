@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
 import { heroSets } from "@/assets/heroImages";
-import { MapPin, Mail, Phone, Clock, CheckCircle, ArrowRight, Loader2, ChevronDown, AlertCircle, PhoneCall, CalendarDays } from "lucide-react";
+import { MapPin, Mail, Phone, Clock, CheckCircle, ArrowRight, Loader2, AlertCircle, PhoneCall, CalendarDays } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
@@ -17,6 +17,8 @@ import { pageSeo } from "@/i18n/pageSeo";
 
 const inputClasses =
   "w-full border-0 border-b border-border bg-transparent px-0 py-3 text-base text-foreground rounded-none transition-colors focus:outline-none focus:ring-0 focus:border-accent placeholder:text-muted-foreground/55";
+
+const optionalLabel: Record<string, string> = { de: "optional", en: "optional", tr: "isteğe bağlı", nl: "optioneel", it: "facoltativo", es: "opcional", fr: "facultatif" };
 
 const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-foreground/70 mb-1 font-medium";
 
@@ -40,19 +42,16 @@ const Contact = () => {
     const contactSchema = z.object({
       name: z.string().trim().min(2).max(200),
       email: z.string().trim().email().max(254),
-      phone: z.string().trim().min(1).max(50),
+      phone: z.string().trim().max(50),
       subject: z.string().trim().min(1).max(120),
       propertyLocation: z.string().trim().max(80),
       propertyType: z.string().trim().max(120),
       message: z.string().trim().min(1).max(5000),
     });
     const phone = String(formData.get("phone") ?? "").trim();
-    const phoneValidation = z.string().trim().min(1).max(50).safeParse(phone);
-
+    const phoneValidation = z.string().trim().max(50).safeParse(phone);
     if (!phoneValidation.success) {
-      setError(t.contact.phoneRequired);
-      const phoneInput = form.elements.namedItem("phone");
-      if (phoneInput instanceof HTMLInputElement) phoneInput.focus();
+      setError(t.common.formError);
       return;
     }
 
@@ -88,7 +87,7 @@ const Contact = () => {
       first_name: formData.get("name") as string,
       last_name: "",
       email: formData.get("email") as string,
-      phone: phoneValidation.data,
+      phone: phoneValidation.data || null,
       property_type: (formData.get("property_type") as string) || null,
       message: `${t.contact.propertyLocation ?? "Property location"}: ${String(formData.get("property_location") ?? "")}\n${t.contact.subject}: ${subject}\n\n${rawMessage}`,
     };
@@ -111,7 +110,7 @@ const Contact = () => {
         body: {
           name: payload.first_name,
           email: payload.email,
-          phone: payload.phone,
+          phone: payload.phone ?? undefined,
           property_type: payload.property_type,
           subject,
           message: payload.message,
@@ -225,24 +224,9 @@ const Contact = () => {
                   <div className="grid gap-6 sm:grid-cols-2 sm:gap-8">
                     <div>
                     <label htmlFor="phone" className={labelClasses}>
-                      {t.contact.phone} <span className="text-accent">*</span>
+                      {t.contact.phone} <span className="normal-case tracking-normal text-foreground/55">({optionalLabel[language] ?? "optional"})</span>
                     </label>
-                    <input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      required
-                      maxLength={50}
-                      aria-describedby="phone-error"
-                      className={inputClasses}
-                      onInvalid={(event) => event.currentTarget.setCustomValidity(t.contact.phoneRequired)}
-                      onInput={(event) => event.currentTarget.setCustomValidity("")}
-                    />
-                    {error === t.contact.phoneRequired && (
-                      <p id="phone-error" role="alert" className="mt-1.5 text-sm text-destructive">
-                        {t.contact.phoneRequired}
-                      </p>
-                    )}
+                    <input id="phone" name="phone" type="tel" maxLength={50} className={inputClasses} />
                     </div>
                     <div>
                     <label htmlFor="subject" className={labelClasses}>
@@ -357,13 +341,6 @@ const Contact = () => {
                       )}
                     </Button>
                   </div>
-                  <p className="text-muted-foreground text-xs leading-[1.65] mt-3">
-                    {t.contact.consentNotice}{" "}
-                    <Link to="/datenschutz" className="text-accent hover:underline">
-                      {t.contact.consentNoticeLink}
-                    </Link>
-                    .
-                  </p>
                   <p className="text-muted-foreground/70 text-xs mt-1">
                     {t.contact.requiredHint}
                   </p>
@@ -375,7 +352,6 @@ const Contact = () => {
         </div>
       </section>
 
-      <ContactFAQ />
     </Layout>
   );
 };
@@ -389,53 +365,5 @@ const ContactDetail = ({ icon: Icon, label, children }: { icon: typeof Mail; lab
     </div>
   </div>
 );
-
-const ContactFAQ = () => {
-  const { t, language } = useLanguage();
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  return (
-    <section className="bg-background py-12 md:py-16">
-      <div className="container-premium max-w-4xl">
-        <Reveal>
-          <div>
-            <div className="mb-7 text-center">
-              <p className="mb-2 font-sans text-xs font-medium uppercase tracking-[0.18em] text-accent">{t.contact.faqLabel}</p>
-              <h2 className="font-heading text-[1.55rem] font-semibold leading-[1.2] text-foreground md:text-[1.9rem]">
-                {t.contact.faqTitle}
-              </h2>
-            </div>
-            <p className="mx-auto mb-7 max-w-2xl text-center text-sm leading-[1.7] text-muted-foreground">
-              {t.contact.faqSubtitle}
-            </p>
-            <div className="divide-y divide-border border-y border-border">
-              {t.contact.faqItems.map((item, i) => (
-                <div key={i}>
-                  <Button
-                    type="button"
-                    variant="ghost"
-                    onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                    className="h-auto min-h-14 w-full justify-between rounded-none px-1 py-4 text-left hover:bg-secondary/45"
-                  >
-                    <span className="whitespace-normal font-heading text-sm font-semibold leading-[1.5] text-foreground">{item.q}</span>
-                    <ChevronDown
-                      size={14}
-                      className={`shrink-0 text-muted-foreground transition-transform duration-200 ${openIndex === i ? "rotate-180" : ""}`}
-                    />
-                  </Button>
-                  {openIndex === i && (
-                    <p className="max-w-3xl px-1 pb-5 text-sm leading-[1.8] text-muted-foreground">
-                      {item.a}
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-};
 
 export default Contact;
