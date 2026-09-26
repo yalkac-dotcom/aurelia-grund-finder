@@ -121,7 +121,7 @@ const ForBuyers = () => {
               <Reveal>
                 <div className="mx-auto mb-10 max-w-5xl border-l-2 border-accent bg-card px-6 py-6 md:px-8">
                   <p className="text-[0.94rem] font-medium leading-[1.8] text-primary">
-                    Mit Ihrer Anfrage hinterlegen Sie lediglich Ihr Kaufinteresse. Aurelia sucht keine Immobilien in Ihrem Auftrag und vermittelt keine fremden Objekte.
+                    Mit Ihrer Anfrage hinterlegen Sie lediglich Ihr Kaufinteresse.{"\n\u00a0"}Aurelia sucht keine Immobilien in Ihrem Auftrag und vermittelt keine fremden Objekte.
                   </p>
                 </div>
               </Reveal>
