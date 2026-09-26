@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import OptimizedImg from "@/components/OptimizedImg";
@@ -31,7 +32,7 @@ interface PageHeroProps {
    * Optionale Inline-Styles nur für den Text-/CTA-Block-Frame
    * (z. B. Geschäftspartner: Block weiter nach links verschoben).
    */
-  copyFrameStyle?: React.CSSProperties;
+  copyFrameStyle?: CSSProperties;
   /**
    * "fullImage" – Hero-Höhe folgt exakt dem Seitenverhältnis des Bildes
    * (kein Cropping, keine Seitenbalken; Geschäftspartner-Puzzlebild 3:2).
