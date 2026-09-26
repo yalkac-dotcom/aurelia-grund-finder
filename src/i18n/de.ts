@@ -1266,7 +1266,7 @@ const de: Translations = {
       { q: "Sind die Geschäftspartnerschaften eine Finanzanlage?", a: "Nein. Geschäftspartnerschaften mit Aurelia sind keine Finanzanlage und kein reguliertes Finanzprodukt. Es handelt sich um individuelle, projektbezogene Vereinbarungen mit erheblichen Risiken (bis hin zu Kapitalverlust). Details siehe Geschäftspartner-Seite." },
     ],
     ctaTitle: "Noch offene Fragen?",
-    ctaText: "Sprechen Sie uns an — die erste Beratung ist kostenlos und unverbindlich.",
+    ctaText: "Sprechen Sie uns gerne an. Schildern Sie uns kurz Ihr Anliegen – die erste Anfrage ist unverbindlich.",
     ctaButton: "Termin vereinbaren",
   },
 };
