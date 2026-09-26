@@ -1,5 +1,3 @@
-import type { Language } from "@/i18n/languageDetection";
-
 export type UnserAnsatzContent = {
   headline: string;
   body: string[];
@@ -115,4 +113,4 @@ export const aboutUnserAnsatz: Record<string, UnserAnsatzContent> = {
   },
 };
 
-export const getUnserAnsatz = (lang: Language | string) => aboutUnserAnsatz[lang] ?? aboutUnserAnsatz.de;
+export const getUnserAnsatz = (lang: string) => aboutUnserAnsatz[lang] ?? aboutUnserAnsatz.de;
