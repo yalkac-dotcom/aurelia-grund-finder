@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import portfolioHero640 from "@/assets/hero-portfolio-640w.webp";
@@ -113,7 +114,7 @@ const Portfolio = () => {
                             fallbackLabel={item.title}
                             className="block h-full w-full object-cover"
                           />
-                          
+                          {i === 2 && <AiImageDisclosure />}
                         </div>
                       ) : (
                         <div className="flex h-[180px] items-center justify-center rounded-t-lg bg-secondary">
