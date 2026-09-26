@@ -35,7 +35,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Unser Bestand – Immobilien aus eigenem Bestand | Aurelia Grundbesitz", heroKicker: "Unser Bestand", heroTitle: "Ausgewählte Immobilien aus unserem Bestand", heroDescription: "Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", heroAlt: "Aurelia Immobilien-Portfolio",
       introTitle: "Ausgewählte Immobilien aus unserem Bestand", introText: "Aurelia erwirbt ausgewählte Immobilien auf eigene Rechnung und baut einen eigenen Immobilienbestand auf. Nicht jedes Bestandsobjekt wird öffentlich dargestellt.",
-      categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien sowie Lager- und Logistikobjekte verfügbar sein. Darüber hinaus erwerben wir ausgewählte Immobilien mit Entwicklungspotenzial.", categoriesNote: "Alle hier angebotenen Immobilien befinden sich im eigenen Bestand von Aurelia.",
+      categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien sowie Lager- und Logistikobjekte verfügbar sein. Darüber hinaus erwerben wir ausgewählte Immobilien mit Entwicklungspotenzial.", categoriesNote: "Immobilien, die Aurelia zum Verkauf anbietet, stammen aus dem eigenen Bestand.",
       categories: [
         { title: "Eigentumswohnungen", description: "Wohnungen verschiedener Größen und Ausstattungen.", alt: "Modernes Wohngebäude mit Balkonen" },
         { title: "Einfamilienhäuser", description: "Wohnhäuser in unterschiedlichen Lagen und Zuständen.", alt: "Freistehendes Einfamilienhaus" },
@@ -63,7 +63,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Portföy – Aurelia Grundbesitz GmbH", heroKicker: "Portföy", heroTitle: "Portföyümüzden seçili gayrimenkuller", heroDescription: "Şu anda hangi gayrimenkullerin uygun olduğunu doğrudan bizden öğrenebilirsiniz.", heroAlt: "Aurelia gayrimenkul portföyü",
       introTitle: "Portföyümüzden seçili gayrimenkuller", introText: "Aurelia, seçili gayrimenkulleri kendi hesabına satın alır ve kendi gayrimenkul portföyünü oluşturur. Portföydeki her gayrimenkul herkese açık olarak sunulmaz.",
-      categoriesTitle: "Gayrimenkul kategorileri", categoriesIntro: "Güncel portföye bağlı olarak kat mülkiyetli daireler, müstakil evler, apartmanlar, arsalar, ticari gayrimenkuller ile depo ve lojistik tesisleri mevcut olabilir. Bunun yanı sıra gelişim potansiyeli olan seçili gayrimenkuller de satın alıyoruz.", categoriesNote: "Burada sunulan tüm gayrimenkuller Aurelia'nın kendi portföyündedir.",
+      categoriesTitle: "Gayrimenkul kategorileri", categoriesIntro: "Güncel portföye bağlı olarak kat mülkiyetli daireler, müstakil evler, apartmanlar, arsalar, ticari gayrimenkuller ile depo ve lojistik tesisleri mevcut olabilir. Bunun yanı sıra gelişim potansiyeli olan seçili gayrimenkuller de satın alıyoruz.", categoriesNote: "Aurelia'nın satışa sunduğu gayrimenkuller kendi portföyünden gelir.",
       categories: [
         { title: "Kat mülkiyetli daireler", description: "Farklı büyüklük ve donanımda daireler.", alt: "Balkonlu modern konut binası" },
         { title: "Müstakil evler", description: "Farklı konum ve durumlarda konutlar.", alt: "Müstakil ev" },
@@ -84,7 +84,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Portfolio – Aurelia Grundbesitz GmbH", heroKicker: "Portfolio", heroTitle: "Selected properties from our portfolio", heroDescription: "To find out which properties are currently available, please get in touch with us directly.", heroAlt: "Aurelia property portfolio",
       introTitle: "Selected properties from our portfolio", introText: "Aurelia acquires selected properties for its own account and is building its own property portfolio. Not every property in our portfolio is shown publicly.",
-      categoriesTitle: "Property categories", categoriesIntro: "Depending on our current portfolio, condominiums, detached houses, apartment buildings, land, commercial properties and warehouse and logistics properties may be available. We also acquire selected properties with development potential.", categoriesNote: "All properties offered here are held in Aurelia's own portfolio.",
+      categoriesTitle: "Property categories", categoriesIntro: "Depending on our current portfolio, condominiums, detached houses, apartment buildings, land, commercial properties and warehouse and logistics properties may be available. We also acquire selected properties with development potential.", categoriesNote: "Properties offered for sale by Aurelia come from its own portfolio.",
       categories: [
         { title: "Condominiums", description: "Flats of various sizes and standards of fit-out.", alt: "Modern residential building with balconies" },
         { title: "Detached houses", description: "Homes in various locations and conditions.", alt: "Detached family home" },
@@ -105,7 +105,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Portefeuille – Aurelia Grundbesitz GmbH", heroKicker: "Portefeuille", heroTitle: "Geselecteerd vastgoed uit onze portefeuille", heroDescription: "Welk vastgoed op dit moment beschikbaar is, verneemt u rechtstreeks van ons.", heroAlt: "Vastgoedportefeuille van Aurelia",
       introTitle: "Geselecteerd vastgoed uit onze portefeuille", introText: "Aurelia verwerft geselecteerd vastgoed voor eigen rekening en bouwt een eigen vastgoedportefeuille op. Niet elk object uit onze portefeuille wordt openbaar getoond.",
-      categoriesTitle: "Vastgoedcategorieën", categoriesIntro: "Afhankelijk van onze actuele portefeuille kunnen appartementen, eengezinswoningen, meergezinswoningen, percelen, commercieel vastgoed en opslag- en logistiekobjecten beschikbaar zijn. Daarnaast verwerven wij geselecteerd vastgoed met ontwikkelingspotentieel.", categoriesNote: "Al het hier aangeboden vastgoed bevindt zich in de eigen portefeuille van Aurelia.",
+      categoriesTitle: "Vastgoedcategorieën", categoriesIntro: "Afhankelijk van onze actuele portefeuille kunnen appartementen, eengezinswoningen, meergezinswoningen, percelen, commercieel vastgoed en opslag- en logistiekobjecten beschikbaar zijn. Daarnaast verwerven wij geselecteerd vastgoed met ontwikkelingspotentieel.", categoriesNote: "Vastgoed dat Aurelia te koop aanbiedt, komt uit de eigen portefeuille.",
       categories: [
         { title: "Appartementen", description: "Woningen van verschillende grootte en afwerking.", alt: "Modern woongebouw met balkons" },
         { title: "Eengezinswoningen", description: "Woonhuizen op uiteenlopende locaties en in verschillende staat.", alt: "Vrijstaande eengezinswoning" },
@@ -126,7 +126,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Portafoglio – Aurelia Grundbesitz GmbH", heroKicker: "Portafoglio", heroTitle: "Immobili selezionati dal nostro patrimonio", heroDescription: "Per sapere quali immobili sono attualmente disponibili, ci contatti direttamente.", heroAlt: "Portafoglio immobiliare Aurelia",
       introTitle: "Immobili selezionati dal nostro patrimonio", introText: "Aurelia acquista immobili selezionati per conto proprio e costruisce un proprio patrimonio immobiliare. Non tutti gli immobili del nostro patrimonio vengono pubblicati.",
-      categoriesTitle: "Categorie di immobili", categoriesIntro: "A seconda del patrimonio attuale, possono essere disponibili appartamenti, case unifamiliari, edifici plurifamiliari, terreni, immobili commerciali e immobili per magazzino e logistica. Acquistiamo inoltre immobili selezionati con potenziale di sviluppo.", categoriesNote: "Tutti gli immobili qui proposti fanno parte del patrimonio proprio di Aurelia.",
+      categoriesTitle: "Categorie di immobili", categoriesIntro: "A seconda del patrimonio attuale, possono essere disponibili appartamenti, case unifamiliari, edifici plurifamiliari, terreni, immobili commerciali e immobili per magazzino e logistica. Acquistiamo inoltre immobili selezionati con potenziale di sviluppo.", categoriesNote: "Gli immobili che Aurelia offre in vendita provengono dal proprio patrimonio.",
       categories: [
         { title: "Appartamenti", description: "Appartamenti di diverse dimensioni e finiture.", alt: "Edificio residenziale moderno con balconi" },
         { title: "Case unifamiliari", description: "Abitazioni in diverse posizioni e condizioni.", alt: "Casa unifamiliare indipendente" },
@@ -147,7 +147,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Cartera – Aurelia Grundbesitz GmbH", heroKicker: "Cartera", heroTitle: "Inmuebles seleccionados de nuestra cartera", heroDescription: "Para saber qué inmuebles están disponibles en cada momento, póngase en contacto con nosotros directamente.", heroAlt: "Cartera inmobiliaria de Aurelia",
       introTitle: "Inmuebles seleccionados de nuestra cartera", introText: "Aurelia adquiere inmuebles seleccionados por cuenta propia y está construyendo su propia cartera inmobiliaria. No todos los inmuebles de nuestra cartera se publican.",
-      categoriesTitle: "Categorías de inmuebles", categoriesIntro: "Según la cartera actual, pueden estar disponibles viviendas, viviendas unifamiliares, edificios plurifamiliares, terrenos, inmuebles comerciales y naves de almacén y logística. Además, adquirimos inmuebles seleccionados con potencial de desarrollo.", categoriesNote: "Todos los inmuebles ofrecidos aquí forman parte de la cartera propia de Aurelia.",
+      categoriesTitle: "Categorías de inmuebles", categoriesIntro: "Según la cartera actual, pueden estar disponibles viviendas, viviendas unifamiliares, edificios plurifamiliares, terrenos, inmuebles comerciales y naves de almacén y logística. Además, adquirimos inmuebles seleccionados con potencial de desarrollo.", categoriesNote: "Los inmuebles que Aurelia ofrece en venta proceden de su cartera propia.",
       categories: [
         { title: "Viviendas", description: "Viviendas de distintos tamaños y calidades.", alt: "Edificio residencial moderno con balcones" },
         { title: "Viviendas unifamiliares", description: "Casas en distintas ubicaciones y estados.", alt: "Vivienda unifamiliar independiente" },
@@ -183,7 +183,7 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Portefeuille – Aurelia Grundbesitz GmbH", heroKicker: "Portefeuille", heroTitle: "Biens sélectionnés de notre portefeuille", heroDescription: "Pour savoir quels biens sont actuellement disponibles, contactez-nous directement.", heroAlt: "Portefeuille immobilier Aurelia",
       introTitle: "Biens sélectionnés de notre portefeuille", introText: "Aurelia acquiert des biens sélectionnés pour son propre compte et constitue son propre portefeuille immobilier. Tous les biens de notre portefeuille ne sont pas présentés publiquement.",
-      categoriesTitle: "Catégories de biens", categoriesIntro: "Selon notre portefeuille actuel, des appartements, maisons individuelles, immeubles collectifs, terrains, biens commerciaux ainsi que des entrepôts et locaux logistiques peuvent être disponibles. Nous acquérons également des biens sélectionnés présentant un potentiel de développement.", categoriesNote: "Tous les biens proposés ici font partie du portefeuille propre d'Aurelia.",
+      categoriesTitle: "Catégories de biens", categoriesIntro: "Selon notre portefeuille actuel, des appartements, maisons individuelles, immeubles collectifs, terrains, biens commerciaux ainsi que des entrepôts et locaux logistiques peuvent être disponibles. Nous acquérons également des biens sélectionnés présentant un potentiel de développement.", categoriesNote: "Les biens qu'Aurelia propose à la vente proviennent de son propre portefeuille.",
       categories: [
         { title: "Appartements", description: "Appartements de tailles et de standings variés.", alt: "Immeuble résidentiel moderne avec balcons" },
         { title: "Maisons individuelles", description: "Maisons dans des emplacements et états variés.", alt: "Maison individuelle indépendante" },
