@@ -106,7 +106,7 @@ const InvestorGlossar = () => {
               src={glossarHeroAsset.url}
               alt={pageExtras[language].shared.glossarHeroAlt}
               width={1920}
-              height={1145}
+              height={1146}
               loading="lazy"
               className="w-full h-auto rounded-md border border-border/30"
             />
