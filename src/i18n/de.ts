@@ -539,7 +539,7 @@ const de: Translations = {
       "Sie interessieren sich für eine Immobilie von Aurelia? Wir stellen Ihnen die verfügbaren Informationen zum jeweiligen Objekt zur Verfügung und besprechen mit Ihnen persönlich die Konditionen und den weiteren Ablauf.",
     heroPrimaryCta: "Beratung anfragen",
     heroSecondaryCta: "Wie wir vorgehen",
-    heroTrustLine: "Persönlicher Kontakt · Informationen zum Objekt · Notarielle Abwicklung",
+    heroTrustLine: "Persönlicher Kontakt · Informationen zum Objekt · Begleitung bis zum Kaufabschluss",
     heroImageAlt: "Wohnimmobilie aus dem Aurelia-Bestand – sinnbildlich für geprüfte Qualität und transparente Konditionen",
     featuresTitle: "Was Sie bei Aurelia erwartet",
     featuresIntro:
