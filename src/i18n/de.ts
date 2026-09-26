@@ -550,10 +550,10 @@ const de: Translations = {
       { title: "Unterlagen zum Objekt", desc: "Wir stellen Ihnen die vorhandenen Unterlagen und Informationen zum Objekt transparent zur Verfügung." },
       { title: "Kaufabwicklung", desc: "Wenn Sie sich für ein Objekt entscheiden und beide Seiten sich einig sind, wird der Kauf über einen Notar abgewickelt." },
     ],
-    portfolioTitle: "Unser aktuelles Angebot",
+    portfolioTitle: "Immobilien aus unserem Bestand",
     portfolioText:
-      "Unser Immobilienbestand verändert sich regelmäßig. Welche Objekte aktuell verfügbar sind, sehen Sie in unserem Portfolio oder erfahren Sie direkt auf Anfrage.",
-    portfolioCta: "Zum Portfolio",
+      "Unser Immobilienbestand verändert sich regelmäßig und nicht jedes Objekt wird öffentlich dargestellt. Teilen Sie uns Ihr Kaufinteresse mit oder besuchen Sie den Bereich ‚Unser Bestand‘.",
+    portfolioCta: "Unser Bestand",
     proofTitle: "Wenn Sie sich für ein Objekt interessieren",
     proofIntro: "",
     proofPoints: [
@@ -564,7 +564,7 @@ const de: Translations = {
     ],
     stepsTitle: "So läuft der Kauf",
     steps: [
-      { title: "Erstkontakt", desc: "Sie melden sich bei uns und sagen uns, für welches Objekt Sie sich interessieren oder wonach Sie suchen." },
+      { title: "Erstkontakt", desc: "Sie melden sich bei uns und teilen uns mit, für welches Objekt aus unserem Bestand Sie sich interessieren oder welche Art von Immobilie für Sie interessant ist." },
       { title: "Besichtigung und Unterlagen", desc: "Wenn ein passendes Objekt verfügbar ist, vereinbaren wir die nächsten Schritte und stellen Ihnen die vorhandenen Objektinformationen zur Verfügung." },
       { title: "Konditionen besprechen", desc: "Bei ernsthaftem Interesse sprechen wir über Kaufpreis, Bedingungen und den gewünschten Übergabezeitpunkt." },
       { title: "Notar und Übergabe", desc: "Nach der Beurkundung stimmen wir die weiteren Schritte bis zur Übergabe transparent mit Ihnen ab." },
@@ -609,7 +609,7 @@ const de: Translations = {
     ],
     finalCtaTitle: "Sie interessieren sich für eine Immobilie?",
     finalCtaText:
-      "Teilen Sie uns mit, für welches Objekt Sie sich interessieren oder welche Immobilie Sie suchen. Wir prüfen gerne, ob wir Ihnen aktuell ein passendes Angebot vorstellen können.",
+      "Teilen Sie uns mit, für welches Objekt Sie sich interessieren oder welche Art von Immobilie für Sie interessant ist. Wir prüfen gerne, ob wir Ihnen ein passendes Objekt aus unserem Bestand vorstellen können.",
     finalCtaButton: "UNVERBINDLICH ANFRAGEN",
   },
   partners: {
@@ -769,9 +769,9 @@ const de: Translations = {
     consentRequired: "Bitte stimmen Sie der Datenschutzerklärung zu.",
     successTitle: "Vielen Dank für Ihre Nachricht.",
     successText: "Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24-48 Stunden bei Ihnen zurück.",
-    subjectOptions: ["Allgemeine Anfrage", "Ankaufangebot", "Investoren-Anfrage", "Rückrufwunsch", "Sonstiges Anliegen"],
+    subjectOptions: ["Allgemeine Anfrage", "Ankaufangebot", "Kaufinteresse", "Rückrufwunsch", "Sonstiges Anliegen"],
     propertyType: "Thema Ihrer Anfrage",
-    propertyTypeOptions: ["Zwangsversteigerung", "Nachlass / Erbschaft", "Insolvenz / Überschuldung", "Direktankauf (ohne Notlage)", "Sonstiges"],
+    propertyTypeOptions: ["Zwangsversteigerung", "Nachlass / Erbschaft", "Insolvenz / Überschuldung", "Direktankauf", "Sonstiges"],
     company: "Firma / Institution",
     messagePlaceholder: "Beschreiben Sie kurz Ihr Anliegen …",
     formLabel: "Kontaktformular",

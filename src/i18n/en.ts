@@ -533,10 +533,10 @@ const en: Translations = {
       { title: "Property documents", desc: "We inform you as part of your enquiry which documents are already available and what information on the property exists." },
       { title: "Purchase process", desc: "If you decide on a property and both sides reach agreement, the purchase is handled through a notary." },
     ],
-    portfolioTitle: "Our current offering",
+    portfolioTitle: "Properties from our own portfolio",
     portfolioText:
-      "Our property portfolio changes regularly. In addition, there are individual properties from project-based cooperations. You can find out which properties are currently on offer via our portfolio or by contacting us directly.",
-    portfolioCta: "View portfolio",
+      "Our property portfolio changes regularly and not every property is shown publicly. Let us know your purchase interest or visit the section ‘Our properties’.",
+    portfolioCta: "Our properties",
     proofTitle: "If you are interested in a property",
     proofIntro: "",
     proofPoints: [
@@ -547,7 +547,7 @@ const en: Translations = {
     ],
     stepsTitle: "How the purchase works",
     steps: [
-      { title: "Initial contact", desc: "You get in touch and tell us which property interests you or what you are looking for." },
+      { title: "Initial contact", desc: "You get in touch and tell us which property from our own portfolio interests you or which type of property is of interest to you." },
       { title: "Viewing and documents", desc: "If a suitable property is available, we agree on the next steps and provide you with the available property information." },
       { title: "Discussing terms", desc: "If there is genuine interest, we discuss the purchase price, conditions and the desired handover date." },
       { title: "Notary and handover", desc: "After notarisation, we agree the further steps up to handover with you transparently." },
@@ -592,7 +592,7 @@ const en: Translations = {
     ],
     finalCtaTitle: "Interested in a property?",
     finalCtaText:
-      "Let us know which property interests you or what kind of property you are looking for. We will gladly check whether we can currently present a suitable offer.",
+      "Let us know which property interests you or which type of property is of interest to you. We will gladly check whether we can present a suitable property from our own portfolio.",
     finalCtaButton: "Enquire without obligation",
   },
   partners: {
@@ -738,9 +738,9 @@ const en: Translations = {
     consentRequired: "Please agree to the privacy policy.",
     successTitle: "Thank you for your interest.",
     successText: "We have received your enquiry and will get back to you within 24-48 hours.",
-    subjectOptions: ["General enquiry", "Acquisition offer", "Investor enquiry", "Callback request", "Other matter"],
+    subjectOptions: ["General enquiry", "Acquisition offer", "Purchase interest", "Callback request", "Other matter"],
     propertyType: "Subject of your enquiry",
-    propertyTypeOptions: ["Foreclosure", "Estate / Inheritance", "Insolvency", "Direct purchase (without distress)", "Other"],
+    propertyTypeOptions: ["Foreclosure", "Estate / Inheritance", "Insolvency", "Direct purchase", "Other"],
     company: "Company / Institution",
     messagePlaceholder: "Briefly describe your enquiry …",
     formLabel: "Contact form",
