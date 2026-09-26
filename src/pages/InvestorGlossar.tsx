@@ -113,22 +113,6 @@ const InvestorGlossar = () => {
         </div>
       </section>
 
-      {/* Intro image */}
-      <section className="pb-2 pt-4 md:pt-6">
-        <div className="container max-w-4xl">
-          <Reveal>
-            <img
-              src={glossarHeroAsset.url}
-              alt={pageExtras[language].shared.glossarHeroAlt}
-              width={1920}
-              height={1146}
-              loading="lazy"
-              className="w-full h-auto rounded-md border border-border/30"
-            />
-          </Reveal>
-        </div>
-      </section>
-
       {/* Glossary content */}
       <section className="py-10 md:py-14">
         <div className="container max-w-4xl">
