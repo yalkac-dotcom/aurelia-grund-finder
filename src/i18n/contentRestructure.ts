@@ -32,8 +32,8 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       objectionsTitle: "Häufige Fragen", objectionsIntro: "",
       objections: [
         { q: "Entstehen für mich Kosten bei der Erstprüfung?", a: "Nein. Die Erstprüfung Ihrer Angaben und das erste Gespräch sind für Sie kostenfrei und unverbindlich." },
-        { q: "Wie unterscheidet sich Aurelia von einem klassischen Makler?", a: "Aurelia vermittelt keine fremden Immobilien. Wir prüfen ausgewählte Immobilien für einen möglichen Erwerb auf eigene Rechnung und verkaufen Immobilien aus unserem eigenen Bestand." },
-        { q: "Kann ich Aurelia auch eine Immobilie mit einer besonderen oder komplexen Ausgangslage anbieten?", a: "Ja. Auch besondere Ausgangssituationen können geprüft werden. Entscheidend ist immer die konkrete Immobilie und ob ein Erwerb durch Aurelia auf eigene Rechnung grundsätzlich infrage kommt." },
+        { q: "Wie unterscheidet sich Aurelia von einem klassischen Makler?", a: "Aurelia vermittelt keine fremden Immobilien. Wir prüfen ausgewählte Immobilien für einen möglichen Ankauf auf eigene Rechnung und verkaufen ausschließlich Immobilien aus unserem eigenen Bestand." },
+        { q: "Kann ich Aurelia auch eine Immobilie mit einer besonderen oder schwierigen Ausgangslage anbieten?", a: "Ja. Auch besondere Situationen können wir prüfen. Entscheidend ist die konkrete Immobilie und ob ein Ankauf durch Aurelia auf eigene Rechnung grundsätzlich möglich ist." },
       ],
       finalCtaTitle: "Sie möchten eine Immobilie anbieten oder Kaufinteresse hinterlegen?", finalCtaText: "Wählen Sie den passenden Weg und teilen Sie uns Ihr Anliegen unverbindlich mit.", finalCtaButton: "Immobilie zum Ankauf anbieten",
     },
