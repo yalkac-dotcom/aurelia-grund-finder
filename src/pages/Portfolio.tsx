@@ -69,7 +69,7 @@ const Portfolio = () => {
                 {isGerman ? "Ausgewählte Immobilien aus unserem Bestand" : copy.introTitle}
               </h2>
               <p className="mx-auto max-w-3xl text-[0.93rem] leading-[1.85] text-muted-foreground">
-                {isGerman ? "Hier zeigen wir ausgewählte Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet. Nicht jedes Bestandsobjekt wird öffentlich dargestellt." : copy.introText}
+                {isGerman ? "Hier zeigen wir ausgewählte Immobilien, die Aurelia selbst erworben hat und direkt zum Verkauf anbietet. Nicht jedes Bestandsobjekt wird öffentlich dargestellt." : copy.introText}
               </p>
             </Reveal>
           </div>
