@@ -27,6 +27,11 @@ interface PageHeroProps {
   /** Optionale Zusatzklassen nur für den Beschreibungstext (z. B. Startseite: kräftiger Lesetext). */
   descriptionClassName?: string;
   aiDisclosure?: AiDisclosureType;
+  /**
+   * "fullImage" – Hero-Höhe folgt exakt dem Seitenverhältnis des Bildes
+   * (kein Cropping, keine Seitenbalken; Geschäftspartner-Puzzlebild 3:2).
+   */
+  fullImage?: boolean;
 }
 
 const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
