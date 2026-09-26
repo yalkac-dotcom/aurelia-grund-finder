@@ -1210,9 +1210,9 @@ const de: Translations = {
     seoTitle: "Über uns | Aurelia Grundbesitz GmbH",
     seoDescription: "Aurelia Grundbesitz prüft und erwirbt Immobilien und Grundstücke auf eigene Rechnung – diskret, verbindlich und mit kurzen Entscheidungswegen.",
     hero: {
-      kicker: "Über uns", title: "Aurelia Grundbesitz GmbH", subtitle: "Immobilien sind für uns keine Standardsache.",
+      kicker: "Über uns", title: "\n", subtitle: "Aurelia ist ein inhabergeführtes Immobilienunternehmen mit Fokus auf den direkten Ankauf, den eigenen Immobilienbestand und die Entwicklung ausgewählter Objekte.",
       body: [
-        "Aurelia Grundbesitz ist auf den Ankauf und die strukturierte Prüfung von Immobilien in besonderen, komplexen oder zeitkritischen Situationen spezialisiert.",
+        "Dabei setzen wir auf persönliche Ansprechpartner, nachvollziehbare Abläufe und kurze Entscheidungswege. Neben klassischen Immobilien prüfen wir auch Objekte mit Renovierungsbedarf, Entwicklungspotenzial oder besonderen Ausgangssituationen.",
         "Wir handeln auf eigene Rechnung und treffen Entscheidungen auf Basis einer klaren wirtschaftlichen Prüfung. Unser Anspruch ist eine persönliche, nachvollziehbare und diskrete Abwicklung mit kurzen Entscheidungswegen.",
         "Wir konzentrieren uns insbesondere auf Immobilien und Grundstücke, bei denen klassische Verkaufsprozesse nicht optimal funktionieren oder Eigentümer eine schnelle, verbindliche Lösung suchen.",
       ],
