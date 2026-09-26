@@ -15,6 +15,7 @@ const FAQ = () => {
   const { t, language } = useLanguage();
   usePageSeo(pageSeo[language].faq.title, pageSeo[language].faq.description);
   const f = t.faqPage;
+  const extras = pageExtras[language];
 
   return (
     <Layout>
