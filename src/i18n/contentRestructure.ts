@@ -70,7 +70,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
     },
     howItWorks: {
       heroDescription: "Aurelia kauft Immobilien auf eigene Rechnung, baut einen eigenen Bestand auf und verkauft ausschließlich aus diesem Bestand.",
-      introTitle: "Nicht jede Immobilie braucht denselben Weg", introText: "Ob Sie uns eine Immobilie anbieten oder eine Immobilie aus unserem Bestand kaufen möchten: Die Wege sind einfach und klar getrennt.",
+      introTitle: "Nicht jede Immobilie braucht denselben Weg", introText: "Ob Sie uns eine Immobilie zum Ankauf anbieten oder sich für eine Immobilie aus unserem Bestand interessieren: Für beide Anliegen gibt es bei Aurelia einen klaren Ablauf.",
       segmentsTitle: "Unsere drei Geschäftsbereiche", segmentsIntro: "Unsere Arbeit konzentriert sich auf drei Bereiche:",
       segments: [
         { title: "Immobilienankauf in Deutschland", desc: "Wir prüfen Häuser, Wohnungen, Grundstücke und Gewerbeimmobilien für einen möglichen Ankauf auf eigene Rechnung. Auch Immobilien mit Renovierungsbedarf oder schwierigeren Ausgangssituationen können Sie uns anbieten." },
