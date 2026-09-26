@@ -13,6 +13,14 @@ import AiImageDisclosure from "@/components/AiImageDisclosure";
 import { aureliaCard } from "@/lib/cardStyle";
 import AureliaKompakt from "@/components/sections/AureliaKompakt";
 
+// Einheitliches Spacing- & Typografie-System für "Über uns"
+const SEC = "section-premium !py-10 md:!py-14 lg:!py-16";
+const RULE = "mb-3 h-px w-9 bg-accent";
+const H2 = "font-heading text-[1.4rem] font-semibold leading-[1.2] text-primary md:text-[1.75rem]";
+const H3 = "font-heading text-[0.95rem] font-semibold leading-snug text-primary";
+const BODY = "text-[14px] leading-[1.7] text-foreground/80 md:text-[15px]";
+const SMALL = "text-[13px] leading-[1.6] text-foreground/75";
+
 const About = () => {
   const { t, language } = useLanguage();
   const a = t.aboutV2;
@@ -60,15 +68,15 @@ const About = () => {
       </section>
 
       <div className="page-shell">
-        <section className="section-premium bg-gradient-warm !pt-14 md:!pt-20" aria-label={a.hero.kicker}>
+        <section className={`${SEC} bg-gradient-warm`} aria-label={a.hero.kicker}>
           <div className="container-premium">
-            <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3 md:gap-5">
+            <div className="grid auto-rows-fr gap-3 sm:grid-cols-2 lg:grid-cols-3 md:gap-4">
               {a.trustTiles.map((item, index) => (
                 <Reveal key={item.title} delay={index * 0.04}>
-                  <article className="relative h-full overflow-hidden rounded-sm bg-primary px-6 py-7 shadow-sm md:px-7 md:py-8">
+                  <article className="relative h-full overflow-hidden rounded-sm bg-primary px-5 py-5 shadow-sm md:px-6 md:py-6">
                     <div className="absolute inset-x-0 top-0 h-px bg-accent/70" aria-hidden="true" />
-                    <p className="font-heading text-[1rem] font-semibold leading-snug text-accent">{item.title}</p>
-                    <p className="mt-3 text-[12px] leading-[1.75] text-primary-foreground/80">{item.text}</p>
+                    <p className="font-heading text-[0.95rem] font-semibold leading-snug text-accent">{item.title}</p>
+                    <p className="mt-2 text-[12px] leading-[1.65] text-primary-foreground/80">{item.text}</p>
                   </article>
                 </Reveal>
               ))}
@@ -77,34 +85,36 @@ const About = () => {
         </section>
 
         {a.markets && (
-          <section className="section-premium bg-background !pb-0">
+          <section className={`${SEC} bg-background !pb-0`}>
             <div className="container-premium">
-              <Reveal className="max-w-3xl border-l-2 border-accent pl-6">
-                <h2 className="font-heading text-[1.4rem] font-semibold leading-[1.4] text-primary md:text-[1.6rem]">{a.markets.title}</h2>
-                <p className="mt-4 text-[15px] leading-[1.85] text-foreground/80">{a.markets.text}</p>
+              <Reveal className="max-w-3xl border-l-2 border-accent pl-5">
+                <h2 className={H2}>{a.markets.title}</h2>
+                <p className={`mt-3 ${BODY}`}>{a.markets.text}</p>
               </Reveal>
             </div>
           </section>
         )}
 
-        <section className="section-premium bg-background">
+        <section className={`${SEC} bg-background`}>
           <div className="container-premium">
-          <Reveal className="max-w-3xl">
-            <div className="mb-5 h-px w-9 bg-accent" aria-hidden="true" />
-            <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{a.standing.headline}</h2>
-            <div className="mt-6 space-y-4 text-[15px] leading-[1.85] text-foreground/80 md:text-[16px]">
+          <Reveal className="max-w-[46rem]">
+            <div className={RULE} aria-hidden="true" />
+            <h2 className={H2}>{a.standing.headline}</h2>
+            <div className={`mt-3 space-y-2.5 ${BODY}`}>
               {a.standing.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
           </Reveal>
-          <div className="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-8 grid gap-3 md:mt-10 md:grid-cols-2 md:gap-4 xl:grid-cols-3">
             {a.standing.values.map((value, index) => {
               const Icon = valueIcons[index] ?? Eye;
               return (
                 <Reveal key={value.title} delay={index * 0.05}>
-                  <article className={`h-full p-6 md:p-7 ${aureliaCard}`}>
-                    <div className="icon-tile icon-tile-light mb-5"><Icon size={20} aria-hidden="true" /></div>
-                    <h3 className="font-heading text-[1.08rem] font-semibold text-primary">{value.title}</h3>
-                    <p className="mt-3 text-[14px] leading-[1.75] text-foreground/75">{value.text}</p>
+                  <article className={`h-full p-5 ${aureliaCard}`}>
+                    <div className="flex items-center gap-2.5">
+                      <Icon size={18} strokeWidth={1.6} className="shrink-0 text-accent" aria-hidden="true" />
+                      <h3 className={H3}>{value.title}</h3>
+                    </div>
+                    <p className={`mt-2 ${SMALL}`}>{value.text}</p>
                   </article>
                 </Reveal>
               );
@@ -113,40 +123,40 @@ const About = () => {
           </div>
         </section>
 
-        <section className="section-premium bg-secondary/45 !py-14 md:!py-20">
+        <section className={`${SEC} bg-secondary/45`}>
           <div className="container-premium">
-          <Reveal className="max-w-3xl border-l-2 border-accent pl-6 md:pl-8">
-            <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{a.approach.headline}</h2>
-            <div className="mt-5 space-y-4 text-[15px] leading-[1.85] text-foreground/80 md:text-[16px]">
+          <Reveal className="max-w-[46rem] border-l-2 border-accent pl-5 md:pl-7">
+            <h2 className={H2}>{a.approach.headline}</h2>
+            <div className={`mt-3 space-y-2.5 ${BODY}`}>
               {a.approach.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
           </Reveal>
           </div>
         </section>
 
-        <section className="section-premium bg-background !py-14 md:!py-16" aria-labelledby="unser-ansatz-title">
-          <div className="container-premium grid items-center gap-8 md:grid-cols-[44fr_56fr] md:gap-10 lg:gap-12">
+        <section className={`${SEC} bg-background`} aria-labelledby="unser-ansatz-title">
+          <div className="container-premium grid items-center gap-6 md:grid-cols-[44fr_56fr] md:gap-8 lg:gap-10">
             <Reveal>
-              <div className="relative overflow-hidden rounded-xl">
-                <img src={aboutMenschenAsset.url} alt={ansatz.imageAlt} loading="lazy" className="img-tone aspect-[16/10] w-full object-cover md:aspect-[4/3] lg:aspect-[5/4]" />
+              <div className="relative overflow-hidden rounded-lg">
+                <img src={aboutMenschenAsset.url} alt={ansatz.imageAlt} loading="lazy" className="img-tone aspect-[16/9] w-full object-cover md:aspect-[4/3]" />
               </div>
             </Reveal>
             <Reveal delay={0.08}>
-              <div className="mb-4 h-px w-9 bg-accent" aria-hidden="true" />
-              <h2 id="unser-ansatz-title" className="font-heading text-[1.6rem] font-semibold leading-tight text-primary md:text-[2rem]">{ansatz.headline}</h2>
-              <div className="mt-4 space-y-3 text-[14px] leading-[1.7] text-foreground/80 md:text-[15px]">
+              <div className={RULE} aria-hidden="true" />
+              <h2 id="unser-ansatz-title" className={H2}>{ansatz.headline}</h2>
+              <div className={`mt-3 space-y-2.5 ${BODY}`}>
                 {ansatz.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </div>
-              <div className="mt-6 grid auto-rows-fr gap-3 sm:grid-cols-2">
+              <div className="mt-5 grid auto-rows-fr gap-2.5 sm:grid-cols-2">
                 {ansatz.cards.map((card, index) => {
                   const Icon = ansatzIcons[index] ?? Target;
                   return (
-                    <article key={card.title} className="h-full rounded-lg border border-primary/12 bg-secondary/50 px-4 py-3.5">
-                      <div className="flex items-center gap-2.5">
-                        <Icon size={18} strokeWidth={1.6} className="shrink-0 text-accent" aria-hidden="true" />
-                        <h3 className="font-heading text-[0.98rem] font-semibold leading-snug text-primary">{card.title}</h3>
+                    <article key={card.title} className="h-full rounded-md border border-primary/12 bg-secondary/50 px-4 py-3">
+                      <div className="flex items-center gap-2">
+                        <Icon size={16} strokeWidth={1.6} className="shrink-0 text-accent" aria-hidden="true" />
+                        <h3 className={H3}>{card.title}</h3>
                       </div>
-                      <p className="mt-1.5 text-[13px] leading-[1.6] text-foreground/75">{card.text}</p>
+                      <p className={`mt-1 ${SMALL}`}>{card.text}</p>
                     </article>
                   );
                 })}
@@ -155,18 +165,18 @@ const About = () => {
           </div>
         </section>
 
-        <section className="section-premium bg-background">
+        <section className={`${SEC} bg-background !pt-0`}>
           <div className="container-premium">
           <Reveal className="mx-auto max-w-3xl text-center">
-            <div className="mx-auto mb-5 h-px w-9 bg-accent" aria-hidden="true" />
-            <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{a.situations.headline}</h2>
+            <div className={`mx-auto ${RULE}`} aria-hidden="true" />
+            <h2 className={H2}>{a.situations.headline}</h2>
           </Reveal>
-          <div className="mx-auto mt-12 grid max-w-5xl gap-x-12 gap-y-3 md:grid-cols-2">
+          <div className="mx-auto mt-6 grid max-w-5xl gap-x-10 gap-y-1 md:mt-8 md:grid-cols-2">
             {a.situations.items.map((item, index) => (
               <Reveal key={item} delay={(index % 2) * 0.04}>
-                <div className="flex min-h-16 items-start gap-4 py-3">
-                  <span className="mt-0.5 flex size-8 shrink-0 items-center justify-center rounded-sm bg-highlight text-highlight-foreground"><Check size={16} aria-hidden="true" /></span>
-                  <p className="pt-1 text-[14px] leading-[1.7] text-foreground/80 md:text-[15px]">{item}</p>
+                <div className="flex items-start gap-3 py-2">
+                  <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-sm bg-highlight text-highlight-foreground"><Check size={13} aria-hidden="true" /></span>
+                  <p className={BODY}>{item}</p>
                 </div>
               </Reveal>
             ))}
@@ -174,13 +184,13 @@ const About = () => {
           </div>
         </section>
 
-        <section className="section-premium bg-highlight">
+        <section className={`${SEC} bg-highlight`}>
           <div className="container-premium">
           <Reveal className="mx-auto max-w-3xl text-center">
-            <div className="mx-auto mb-5 h-px w-9 bg-accent" aria-hidden="true" />
-            <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-highlight-foreground md:text-[2.2rem]">{a.closing.headline}</h2>
-            <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-[1.8] text-highlight-foreground/85 md:text-[16px]">{a.closing.body}</p>
-            <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+            <div className={`mx-auto ${RULE}`} aria-hidden="true" />
+            <h2 className={`${H2} !text-highlight-foreground`}>{a.closing.headline}</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-[14px] leading-[1.7] text-highlight-foreground/85 md:text-[15px]">{a.closing.body}</p>
+            <div className="mt-6 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
               <Button asChild size="lg" className="rounded-sm border border-accent/70 bg-primary px-7 text-[12px] font-semibold uppercase tracking-[0.1em] text-primary-foreground hover:bg-primary/90">
                 <Link to="/immobilie-anbieten">{a.closing.primary}<ArrowRight size={14} className="text-accent" /></Link>
               </Button>
