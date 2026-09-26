@@ -96,7 +96,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
     aboutV2: {
       seoTitle: "Über uns – familiengeführt aus Düsseldorf | Aurelia Grundbesitz",
       seoDescription: "Aurelia Grundbesitz ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf. Wir kaufen Immobilien auf eigene Rechnung und bauen einen eigenen Bestand auf.",
-      hero: { subtitle: "Familiengeführt. Persönlich. Langfristig.", body: ["Aurelia Grundbesitz ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf.", "Wir kaufen ausgewählte Immobilien auf eigene Rechnung und bauen Schritt für Schritt einen eigenen Bestand auf."] },
+      hero: { subtitle: "Aurelia Grundbesitz GmbH\n\n", body: ["Aurelia ist ein inhabergeführtes Immobilienunternehmen mit Fokus auf den direkten Ankauf, den eigenen Immobilienbestand und die Entwicklung ausgewählter Objekte.\nWir erwerben Immobilien auf eigene Rechnung, prüfen jedes Objekt individuell und treffen unsere Entscheidungen direkt im Unternehmen.", "Dabei setzen wir auf persönliche Ansprechpartner, nachvollziehbare Abläufe und kurze Entscheidungswege. Neben klassischen Immobilien prüfen wir auch Objekte mit Renovierungsbedarf, Entwicklungspotenzial oder besonderen Ausgangssituationen."] },
       trustTiles: [
         { title: "Wir entscheiden selbst", text: "Geeignete Immobilien kaufen wir auf eigene Rechnung. Ob ein Objekt zu uns passt, entscheiden wir direkt im Unternehmen." },
         { title: "Wir kennen schwierige Situationen", text: "Ein großer Teil unserer Erfahrung stammt aus Zwangsversteigerungen und freihändigen Ankäufen vor einer Versteigerung." },
