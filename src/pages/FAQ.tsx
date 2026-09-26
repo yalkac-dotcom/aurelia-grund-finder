@@ -22,7 +22,9 @@ const FAQ = () => {
         <div aria-hidden="true" className="absolute inset-0">
           <OptimizedImg src={faqHeroAsset.url} alt="" className="h-full w-full object-cover object-[70%_center]" priority />
         </div>
-        {/* nur Lesbarkeit links: sanfter heller Verlauf, Foto bleibt original */}
+        {/* frühere dezente Aurelia-Gold-Tönung über dem Originalfoto */}
+        <div aria-hidden="true" className="absolute inset-0 bg-accent/25 mix-blend-multiply" />
+        {/* Lesbarkeit links */}
         <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/35 to-transparent" />
         <div className="container-premium relative">
           <Reveal>

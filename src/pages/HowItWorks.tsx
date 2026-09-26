@@ -1,7 +1,8 @@
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { aureliaCard } from "@/lib/cardStyle";
-import HowItWorksHero from "@/components/sections/HowItWorksHero";
+import PageHero from "@/components/sections/PageHero";
+import { heroSets } from "@/assets/heroImages";
 import SectionHeader from "@/components/sections/SectionHeader";
 
 import ProcessStep from "@/components/sections/ProcessStep";
@@ -24,13 +25,18 @@ const HowItWorks = () => {
 
   return (
     <Layout>
-      <HowItWorksHero
+      <PageHero
+        image={heroSets.partner}
+        imageAlt={t.partners.heroImageAlt}
         kicker={w.heroKicker}
         title={w.heroTitle}
         description={w.heroDescription}
-        primaryCta={w.heroPrimaryCta}
-        secondaryCta={w.heroSecondaryCta}
+        primaryCta={{ label: w.heroPrimaryCta, to: "/kontakt" }}
+        secondaryCta={{ label: w.heroSecondaryCta, href: "#ablauf" }}
         trustLine={w.heroTrustLine}
+        imagePosition="50% 48%"
+        overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.75) 0%, hsl(var(--primary) / 0.58) 35%, hsl(var(--primary) / 0.22) 65%, hsl(var(--primary) / 0.08) 100%)"
+        size="compact"
       />
 
       <div className="page-shell">
