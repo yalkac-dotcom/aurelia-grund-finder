@@ -150,16 +150,16 @@
 - [x] Altlogik-Suche, responsive Prüfung (Formulare nicht absenden)
 
 # Zusammenhängende Überarbeitung (Sep 2026)
-- [ ] 1 Unser Bestand
-- [ ] 2 Für Kaufinteressenten
-- [ ] 3 Türkei-Seite
-- [ ] 4 Geschäftspartner (5. Karte Handwerk)
-- [ ] 5 Wie wir arbeiten
-- [ ] 6 Über uns (7 Punkte, Links)
-- [ ] 7 FAQ (Hero-Fehler, 16 Fragen)
-- [ ] 8 Kontakt (Telefon optional, Datenschutz, FAQ entfernen)
-- [ ] 9 URL /fuer-eigentuemer + Weiterleitung
-- [ ] 10 Falsche Links
-- [ ] 11 Footer
-- [ ] 12 Konsistenz (familiengeführt etc.), alle Sprachen
-- [ ] 13 Test 1440/768/390
+- [x] 1 Unser Bestand
+- [x] 2 Für Kaufinteressenten
+- [x] 3 Türkei-Seite
+- [x] 4 Geschäftspartner (5. Karte Handwerk)
+- [x] 5 Wie wir arbeiten
+- [x] 6 Über uns (7 Punkte, Links)
+- [x] 7 FAQ (Hero-Fehler, 16 Fragen)
+- [x] 8 Kontakt (Telefon optional, Datenschutz, FAQ entfernen)
+- [x] 9 URL /fuer-eigentuemer + Weiterleitung
+- [x] 10 Falsche Links
+- [x] 11 Footer
+- [x] 12 Konsistenz (familiengeführt etc.), alle Sprachen
+- [x] 13 Test 1440/768/390
