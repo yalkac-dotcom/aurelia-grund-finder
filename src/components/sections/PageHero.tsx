@@ -27,6 +27,11 @@ interface PageHeroProps {
   /** Optionale Zusatzklassen nur für den Beschreibungstext (z. B. Startseite: kräftiger Lesetext). */
   descriptionClassName?: string;
   aiDisclosure?: AiDisclosureType;
+  /**
+   * "fullImage" – Hero-Höhe folgt exakt dem Seitenverhältnis des Bildes
+   * (kein Cropping, keine Seitenbalken; Geschäftspartner-Puzzlebild 3:2).
+   */
+  fullImage?: boolean;
 }
 
 const SIZE_CLASSES: Record<NonNullable<PageHeroProps["size"]>, string> = {
@@ -50,10 +55,17 @@ const PageHero = ({
   mobileHomeFlow = false,
   descriptionClassName,
   aiDisclosure,
+  fullImage = false,
 }: PageHeroProps) => (
   <section
     id="hero"
-    className={`relative flex bg-primary ${mobileHomeFlow ? "min-h-0 items-start md:h-[87vh] md:min-h-[615px] md:items-center" : `items-center ${SIZE_CLASSES[size]}`}`}
+    className={`relative flex bg-primary ${
+      fullImage
+        ? "min-h-[535px] items-center md:min-h-0 md:aspect-[3/2]"
+        : mobileHomeFlow
+          ? "min-h-0 items-start md:h-[87vh] md:min-h-[615px] md:items-center"
+          : `items-center ${SIZE_CLASSES[size]}`
+    }`}
   >
     <div className="absolute inset-0 overflow-hidden">
       <OptimizedImg
