@@ -3,11 +3,14 @@ import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import OptimizedImg from "@/components/OptimizedImg";
+import AiImageDisclosure from "@/components/AiImageDisclosure";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
 import portfolioHero640 from "@/assets/hero-portfolio-640w.webp";
 import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
 import portfolioHero1440 from "@/assets/hero-portfolio-1440w.webp";
+import mfhAsset from "@/assets/portfolio-mehrfamilienhaeuser.png.asset.json";
+import lagerAsset from "@/assets/portfolio-lager-logistik.jpeg.asset.json";
 import { ArrowRight, MapPin, Building2, TreePine, Store, Warehouse } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
@@ -97,7 +100,7 @@ const Portfolio = () => {
             <div className={`grid gap-6 sm:grid-cols-2 lg:grid-cols-3`}>
               {copy.categories.map((item, i) => {
                 const icons = [Building2, Building2, Building2, TreePine, Store, Warehouse];
-                const categoryImages: (string | null)[] = ["/images/portfolio-apartments-header.jpg", "/images/portfolio-houses-header.jpg", null, "/images/portfolio-land-header.jpg", "/images/portfolio-commercial-header.jpg", null];
+                const categoryImages: (string | null)[] = ["/images/portfolio-apartments-header.jpg", "/images/portfolio-houses-header.jpg", mfhAsset.url, "/images/portfolio-land-header.jpg", "/images/portfolio-commercial-header.jpg", lagerAsset.url];
                 const CategoryIcon = icons[i] ?? Building2;
                 const categoryImage = categoryImages[i] ?? null;
                 return (
@@ -111,7 +114,7 @@ const Portfolio = () => {
                             fallbackLabel={item.title}
                             className="block h-full w-full object-cover"
                           />
-                          
+                          {i === 2 && <AiImageDisclosure />}
                         </div>
                       ) : (
                         <div className="flex h-[180px] items-center justify-center rounded-t-lg bg-secondary">

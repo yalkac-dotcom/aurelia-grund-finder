@@ -4,6 +4,7 @@ import Reveal from "@/components/Reveal";
 import { ArrowRight } from "lucide-react";
 import { heroSets } from "@/assets/heroImages";
 import { editorial } from "@/assets/editorial";
+import versprechenAsset from "@/assets/versprechen-haende.jpeg.asset.json";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 import { cardImages } from "@/assets/cards";
@@ -15,7 +16,6 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
-import AiImageDisclosure from "@/components/AiImageDisclosure";
 import HomeDeSections from "@/components/home/HomeDeSections";
 import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
 
@@ -189,15 +189,12 @@ const HomePage = () => {
               <div className="glass-card-dark border-l-2 border-l-[hsl(45_70%_55%_/_0.6)] grid md:grid-cols-[260px_1fr] gap-0 overflow-hidden">
                 <div className="relative h-48 md:h-auto min-h-[200px] overflow-hidden">
                   <img
-                    src={editorial.fourPromises}
+                    src={versprechenAsset.url}
                     alt={extras.accessibility.promisesAlt}
                     loading="lazy"
-                    width={520}
-                    height={520}
                     className="img-tone absolute inset-0 h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[hsl(212_52%_12%_/_0.55)]" aria-hidden="true" />
-                  <AiImageDisclosure />
                 </div>
                 <div className="p-8 md:p-10">
                   <h3 className="mb-3 text-[1.1rem] font-heading font-semibold text-white">
