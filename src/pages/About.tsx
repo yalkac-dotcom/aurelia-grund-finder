@@ -3,13 +3,14 @@ import { useEffect } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import { editorial } from "@/assets/editorial";
-import { ArrowRight, Check, Eye, Handshake, Scale, ShieldCheck, Sprout } from "lucide-react";
+import { ArrowRight, Building2, Check, CircleCheck, Eye, Handshake, Network, Scale, ShieldCheck, Sprout, Target, Users } from "lucide-react";
+import aboutMenschenAsset from "@/assets/about-menschen-haende.jpeg.asset.json";
+import { getUnserAnsatz } from "@/i18n/aboutUnserAnsatz";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
 import { aureliaCard } from "@/lib/cardStyle";
-import aboutMenschenAsset from "@/assets/about-menschen-haende.jpeg.asset.json";
 import AureliaKompakt from "@/components/sections/AureliaKompakt";
 
 const About = () => {
@@ -19,6 +20,8 @@ const About = () => {
   usePageSeo(a.seoTitle, a.seoDescription);
 
   const valueIcons = [Handshake, ShieldCheck, Scale, Sprout];
+  const ansatz = getUnserAnsatz(language);
+  const ansatzIcons = [Building2, Users, CircleCheck, Network];
 
   return (
     <Layout>
@@ -121,9 +124,39 @@ const About = () => {
           </Reveal>
           <Reveal delay={0.08}>
             <div className="relative overflow-hidden rounded-sm">
-              <img src={aboutMenschenAsset.url} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="img-tone aspect-[4/3] h-auto w-full object-cover" />
+              <img src={editorial.aboutApproachArchitecture} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="img-tone aspect-[4/3] h-auto w-full object-cover" />
+              <AiImageDisclosure />
             </div>
           </Reveal>
+          </div>
+        </section>
+
+        <section className="section-premium bg-background" aria-labelledby="unser-ansatz-title">
+          <div className="container-premium grid items-stretch gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
+            <Reveal className="h-full">
+              <div className="relative h-full overflow-hidden rounded-xl">
+                <img src={aboutMenschenAsset.url} alt={ansatz.imageAlt} loading="lazy" className="img-tone aspect-[4/3] h-full w-full object-cover lg:aspect-auto lg:min-h-[560px]" />
+              </div>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <div className="mb-5 h-px w-9 bg-accent" aria-hidden="true" />
+              <h2 id="unser-ansatz-title" className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{ansatz.headline}</h2>
+              <div className="mt-6 space-y-4 text-[15px] leading-[1.8] text-foreground/80 md:text-[16px]">
+                {ansatz.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              </div>
+              <div className="mt-8 grid auto-rows-fr gap-4 sm:grid-cols-2">
+                {ansatz.cards.map((card, index) => {
+                  const Icon = ansatzIcons[index] ?? Target;
+                  return (
+                    <article key={card.title} className="h-full rounded-xl border border-primary/12 bg-secondary/50 p-5">
+                      <Icon size={22} strokeWidth={1.6} className="text-accent" aria-hidden="true" />
+                      <h3 className="mt-3 font-heading text-[1.02rem] font-semibold leading-snug text-primary">{card.title}</h3>
+                      <p className="mt-2 text-[14px] leading-[1.65] text-foreground/75">{card.text}</p>
+                    </article>
+                  );
+                })}
+              </div>
+            </Reveal>
           </div>
         </section>
 
