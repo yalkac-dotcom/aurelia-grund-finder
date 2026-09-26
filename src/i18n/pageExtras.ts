@@ -35,12 +35,12 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Unser Bestand – Immobilien aus eigenem Bestand | Aurelia Grundbesitz", heroKicker: "Unser Bestand", heroTitle: "Ausgewählte Immobilien aus unserem Bestand", heroDescription: "Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", heroAlt: "Aurelia Immobilien-Portfolio",
       introTitle: "Unser Bestand verändert sich", introText: "Immobilien werden gekauft und wieder verkauft. Deshalb verändert sich auch unser Bestand. Nicht jedes Objekt wird öffentlich auf unserer Website angeboten. Wenn Sie nach einer bestimmten Immobilie suchen, können Sie uns direkt ansprechen.",
-      categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können zum Beispiel Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien, Lager- und Logistikobjekte sowie Entwicklungsobjekte verfügbar sein. Es handelt sich ausschließlich um Objekte, die Aurelia selbst erworben hat.",
+      categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können beispielsweise Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien, Lager- und Logistikobjekte sowie Entwicklungsobjekte verfügbar sein.",
       categories: [
-        { title: "Eigentumswohnungen", description: "Einzelne Wohnungen und Wohnobjekte unterschiedlicher Größe.", alt: "Modernes Wohngebäude mit Balkonen" },
-        { title: "Einfamilienhäuser", description: "Wohnhäuser in unterschiedlichem Zustand und verschiedenen Lagen.", alt: "Freistehendes Einfamilienhaus" },
-        { title: "Grundstücke", description: "Grundstücke und Flächen mit unterschiedlichen Nutzungsmöglichkeiten.", alt: "Luftbild eines Baugrundstücks" },
-        { title: "Gewerbeimmobilien", description: "Gewerblich genutzte Immobilien und Objekte mit gemischter Nutzung.", alt: "Außenansicht eines Bürogebäudes" },
+        { title: "Eigentumswohnungen", description: "Wohnungen verschiedener Größen und Ausstattungen.", alt: "Modernes Wohngebäude mit Balkonen" },
+        { title: "Einfamilienhäuser", description: "Wohnhäuser in unterschiedlichen Lagen und Zuständen.", alt: "Freistehendes Einfamilienhaus" },
+        { title: "Grundstücke", description: "Grundstücke und Flächen mit unterschiedlichen Nutzungs- und Entwicklungsmöglichkeiten.", alt: "Luftbild eines Baugrundstücks" },
+        { title: "Gewerbeimmobilien", description: "Gewerblich genutzte Immobilien sowie Objekte mit gemischter Nutzung.", alt: "Außenansicht eines Bürogebäudes" },
       ],
       regionTitle: "Unsere Märkte", regionText: "Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden.",
       ctaTitle: "Sie suchen eine Immobilie?", ctaText: "Sagen Sie uns kurz, wonach Sie suchen. Wir prüfen, ob sich aktuell ein passendes Objekt in unserem Bestand befindet oder angeboten werden kann.", ctaButton: "Portfolio anfragen",
