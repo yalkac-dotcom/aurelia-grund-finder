@@ -8,7 +8,7 @@ import { heroSets } from "@/assets/heroImages";
 import portfolioHero640 from "@/assets/hero-portfolio-640w.webp";
 import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
 import portfolioHero1440 from "@/assets/hero-portfolio-1440w.webp";
-import { ArrowRight, MapPin, Building2, TreePine, Store } from "lucide-react";
+import { ArrowRight, MapPin, Building2, TreePine, Store, Warehouse } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
@@ -87,26 +87,42 @@ const Portfolio = () => {
                 <p className="mx-auto max-w-2xl text-[0.93rem] leading-[1.85] text-muted-foreground">
                   {copy.categoriesIntro}
                 </p>
+                {copy.categoriesNote && (
+                  <p className="mx-auto mt-2 max-w-2xl text-[0.93rem] leading-[1.85] text-muted-foreground">
+                    {copy.categoriesNote}
+                  </p>
+                )}
               </div>
             </Reveal>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className={`grid gap-6 sm:grid-cols-2 ${isGerman ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}>
               {copy.categories.map((item, i) => {
-                const icons = [Building2, Building2, TreePine, Store];
-                const images = ["/images/portfolio-apartments-header.jpg", "/images/portfolio-houses-header.jpg", "/images/portfolio-land-header.jpg", "/images/portfolio-commercial-header.jpg"];
+                const icons = isGerman
+                  ? [Building2, Building2, Building2, TreePine, Store, Warehouse]
+                  : [Building2, Building2, TreePine, Store];
+                const categoryImages: (string | null)[] = isGerman
+                  ? ["/images/portfolio-apartments-header.jpg", "/images/portfolio-houses-header.jpg", null, "/images/portfolio-land-header.jpg", "/images/portfolio-commercial-header.jpg", null]
+                  : ["/images/portfolio-apartments-header.jpg", "/images/portfolio-houses-header.jpg", "/images/portfolio-land-header.jpg", "/images/portfolio-commercial-header.jpg"];
                 const CategoryIcon = icons[i] ?? Building2;
+                const categoryImage = categoryImages[i] ?? null;
                 return (
                   <Reveal key={i} delay={i * 0.08}>
                     <div className="glass-card overflow-hidden h-full" style={{ borderRadius: 12 }}>
-                      <div className="relative h-[180px] overflow-hidden rounded-t-lg">
-                        <OptimizedImg
-                          src={images[i]}
-                          alt={item.alt}
-                          fallbackLabel={item.title}
-                          className="block h-full w-full object-cover"
-                        />
-                        
-                      </div>
+                      {categoryImage ? (
+                        <div className="relative h-[180px] overflow-hidden rounded-t-lg">
+                          <OptimizedImg
+                            src={categoryImage}
+                            alt={item.alt}
+                            fallbackLabel={item.title}
+                            className="block h-full w-full object-cover"
+                          />
+                          
+                        </div>
+                      ) : (
+                        <div className="flex h-[180px] items-center justify-center rounded-t-lg bg-secondary">
+                          <CategoryIcon className="text-teal-600/60" size={56} strokeWidth={1.25} />
+                        </div>
+                      )}
                       <div className="p-7">
                         <CategoryIcon className="mb-4 text-teal-600" size={28} />
                         <h3 className="mb-2 text-[1rem] font-heading font-semibold text-foreground">{item.title}</h3>
