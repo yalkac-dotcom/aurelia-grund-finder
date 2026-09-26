@@ -16,7 +16,6 @@ import ObjectionCard from "@/components/sections/ObjectionCard";
 import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
-import AiImageDisclosure from "@/components/AiImageDisclosure";
 import HomeDeSections from "@/components/home/HomeDeSections";
 import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
 
