@@ -69,13 +69,13 @@ const InvestorGlossar = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative overflow-hidden py-14 md:py-20">
+      <section className="relative flex min-h-[260px] items-center overflow-hidden py-10 md:min-h-0 md:h-[310px] md:py-0 lg:h-[380px]">
         <img
           src={glossarHeroAsset.url}
           alt={pageExtras[language].shared.glossarHeroAlt}
           width={1920}
           height={1146}
-          className="absolute inset-0 h-full w-full object-cover object-center"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_62%]"
         />
         <div
           className="absolute inset-0"
