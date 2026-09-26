@@ -60,6 +60,7 @@ const PageHero = ({
   mobileHomeFlow = false,
   descriptionClassName,
   aiDisclosure,
+  copyFrameStyle,
   fullImage = false,
 }: PageHeroProps) => (
   <section
@@ -97,7 +98,7 @@ const PageHero = ({
       {aiDisclosure && <AiImageDisclosure type={aiDisclosure} />}
     </div>
 
-    <div className={`page-frame-hero relative pt-20 md:pb-0 md:pt-20 ${mobileHomeFlow ? "pb-32" : "pb-24"}`}>
+    <div className={`page-frame-hero relative pt-20 md:pb-0 md:pt-20 ${mobileHomeFlow ? "pb-32" : "pb-24"}`} style={copyFrameStyle}>
       <div className="hero-copy-shell max-w-2xl">
         {/* Above-the-fold: render synchronously without Reveal so H1 contributes to LCP immediately. */}
         <p className="hero-kicker">{kicker}</p>
