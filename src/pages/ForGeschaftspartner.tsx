@@ -36,7 +36,6 @@ const ForGeschaftspartner = () => {
         secondaryCta={{ label: p.heroSecondaryCta, href: "#ablauf" }}
         trustLine={p.heroTrustLine}
         imagePosition="50% 48%"
-        fullImage
         overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.72) 0%, hsl(var(--primary) / 0.45) 30%, hsl(var(--primary) / 0.08) 55%, transparent 70%)"
         size="compact"
       />

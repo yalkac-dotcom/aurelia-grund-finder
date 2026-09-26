@@ -22,8 +22,6 @@ interface PageHeroProps {
    * "compact" – kompakterer Hero (Käufer, Geschäftspartner, Wie wir arbeiten) – Referenz: /ueber-uns
    */
   size?: "default" | "compact";
-  /** Zeigt das Hero-Foto vollständig (Proportionen des Heros folgen dem Bildformat, Desktop: 3:2 ohne Beschnitt). */
-  fullImage?: boolean;
   /** Keeps the mobile home hero entirely content-driven with extra space below its CTAs. */
   mobileHomeFlow?: boolean;
   /** Optionale Zusatzklassen nur für den Beschreibungstext (z. B. Startseite: kräftiger Lesetext). */
@@ -49,14 +47,13 @@ const PageHero = ({
   overlayGradient,
   phoneLine,
   size = "default",
-  fullImage = false,
   mobileHomeFlow = false,
   descriptionClassName,
   aiDisclosure,
 }: PageHeroProps) => (
   <section
     id="hero"
-    className={`relative flex bg-primary ${mobileHomeFlow ? "min-h-0 items-start md:h-[87vh] md:min-h-[615px] md:items-center" : fullImage ? "items-center min-h-[535px] md:h-[calc(100svh-8rem)] md:min-h-0" : `items-center ${SIZE_CLASSES[size]}`}`}
+    className={`relative flex bg-primary ${mobileHomeFlow ? "min-h-0 items-start md:h-[87vh] md:min-h-[615px] md:items-center" : `items-center ${SIZE_CLASSES[size]}`}`}
   >
     <div className="absolute inset-0 overflow-hidden">
       <OptimizedImg
@@ -64,7 +61,7 @@ const PageHero = ({
         srcSet={image.srcSet}
         sizes={image.sizes}
         alt={imageAlt}
-        className={`hero-media h-full w-full object-cover ${fullImage ? "md:mx-auto md:block md:w-auto md:max-w-full" : ""}`}
+        className="hero-media h-full w-full object-cover"
         // Inline-objectPosition nur setzen, wenn die Seite explizit einen
         // Fokuspunkt vorgibt. Sonst greifen die zentral in index.css
         // gepflegten Breakpoint-Defaults von .hero-media.
