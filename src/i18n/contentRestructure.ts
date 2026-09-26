@@ -94,7 +94,7 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       ],
     },
     aboutV2: {
-      seoTitle: "Über uns – familiengeführt aus Düsseldorf | Aurelia Grundbesitz",
+      seoTitle: "Über uns – inhabergeführt aus Düsseldorf | Aurelia Grundbesitz",
       seoDescription: "Aurelia Grundbesitz ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf. Wir kaufen Immobilien auf eigene Rechnung und bauen einen eigenen Bestand auf.",
       hero: { subtitle: "Aurelia Grundbesitz GmbH\n\n", body: ["Aurelia ist ein inhabergeführtes Immobilienunternehmen mit Fokus auf den direkten Ankauf, den eigenen Immobilienbestand und die Entwicklung ausgewählter Objekte.\nWir erwerben Immobilien auf eigene Rechnung, prüfen jedes Objekt individuell und treffen unsere Entscheidungen direkt im Unternehmen.", "Dabei setzen wir auf persönliche Ansprechpartner, nachvollziehbare Abläufe und kurze Entscheidungswege. Neben klassischen Immobilien prüfen wir auch Objekte mit Renovierungsbedarf, Entwicklungspotenzial oder besonderen Ausgangssituationen."] },
       trustTiles: [
@@ -103,14 +103,14 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
         { title: "Wir kommunizieren klar", text: "Nach unserer Prüfung erhalten Sie eine nachvollziehbare Rückmeldung. Fehlen noch Informationen oder kommt ein Ankauf nicht infrage, sprechen wir auch das offen an." },
       ],
       standing: {
-        headline: "Familiengeführt. Persönlich. Langfristig.",
+        headline: "Inhabergeführt. Persönlich. Langfristig.",
         body: [
-          "Aurelia Grundbesitz ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf.",
-          "Die unternehmerische Erfahrung hinter Aurelia reicht rund 30 Jahre zurück und umfasst insbesondere Immobilienankäufe, Zwangsversteigerungen, freihändige Erwerbe, Bestandsentwicklung und wirtschaftliche Entscheidungen.",
-          "Ein wesentlicher Teil unserer Erfahrung stammt aus Immobilien in schwierigen Situationen – insbesondere aus Zwangsversteigerungen und freihändigen Ankäufen vor einer Versteigerung.",
-          "Heute kaufen wir ausgewählte Immobilien auf eigene Rechnung und bauen Schritt für Schritt einen eigenen Bestand auf.",
-          "Nach dem Kauf entscheiden wir je nach Immobilie, ob wir renovieren, langfristig halten oder später wieder aus unserem eigenen Bestand verkaufen.",
-          "Unser Ziel ist nicht, möglichst viele Geschäfte abzuwickeln. Wir möchten langfristig einen soliden Immobilienbestand aufbauen.",
+          "Aurelia Grundbesitz ist ein inhabergeführtes Immobilienunternehmen aus Düsseldorf.",
+          "Die unternehmerische Erfahrung hinter Aurelia reicht rund 30 Jahre zurück und umfasst insbesondere Immobilienankäufe, Zwangsversteigerungen, freihändige Erwerbe sowie die Entwicklung und Bewirtschaftung eigener Immobilienbestände.",
+          "Ein Teil dieser Erfahrung stammt aus Immobilien mit besonderen Ausgangssituationen – darunter Zwangsversteigerungen und freihändige Ankäufe im Vorfeld einer Versteigerung. Dieses Wissen fließt heute in die Prüfung und den Erwerb unterschiedlichster Immobilien ein.",
+          "Heute erwirbt Aurelia ausgewählte Immobilien auf eigene Rechnung und baut Schritt für Schritt einen eigenen Bestand auf.",
+          "Nach dem Erwerb entscheiden wir individuell, ob eine Immobilie renoviert, weiterentwickelt, langfristig gehalten oder zu einem späteren Zeitpunkt aus unserem eigenen Bestand verkauft wird.",
+          "Unser Ziel ist nicht die möglichst hohe Zahl an Transaktionen, sondern der langfristige Aufbau eines soliden Immobilienbestands.",
         ],
       },
       approach: { headline: "Bei uns sprechen Sie mit Menschen.", body: ["Wir sind kein anonymes Immobilienportal. Wenn Sie uns eine Immobilie anbieten oder sich für ein Objekt aus unserem Bestand interessieren, haben Sie einen persönlichen Ansprechpartner.", "Wir sind kein Makler und vermitteln keine fremden Immobilien. Rechts-, Steuer- oder Finanzberatung bieten wir nicht an."] },
