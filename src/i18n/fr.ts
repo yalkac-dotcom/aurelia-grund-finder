@@ -604,9 +604,6 @@ const fr: Translations = {
     heroSecondaryCta: "Comment nous travaillons",
     heroTrustLine: "Coopération liée au projet · Échange direct · Responsabilités claires",
     heroImageAlt: "Cadre professionnel calme – symbole de coopérations clairement structurées et liées à un projet",
-    legalNoticeLabel: "Remarque",
-    legalNoticeText:
-      "Cette page ne constitue ni une offre publique de produits d’investissement ni une incitation à investir. Tout accord est conclu exclusivement de manière individuelle, liée à un projet, après un examen distinct.",
     formsTitle: "Formes de coopération possibles",
     formsIntro:
       "Chaque coopération naît d’un projet concret. Les constellations suivantes sont les plus fréquentes en pratique.",

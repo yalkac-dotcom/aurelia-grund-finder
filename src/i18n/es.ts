@@ -571,9 +571,6 @@ const es: Translations = {
     heroSecondaryCta: "Método",
     heroTrustLine: "Colaboración por proyecto · Contacto directo · Responsabilidades claras",
     heroImageAlt: "Entorno profesional sereno – símbolo de cooperaciones por proyecto claramente estructuradas",
-    legalNoticeLabel: "Aviso",
-    legalNoticeText:
-      "Esta página no constituye una oferta pública de productos de inversión ni una invitación a invertir. Los eventuales acuerdos se establecen exclusivamente de forma individual y por proyecto, previa revisión específica.",
     formsTitle: "Posibles formas de cooperación",
     formsIntro:
       "Cada cooperación surge del proyecto concreto. Las siguientes constelaciones son las más frecuentes en la práctica.",

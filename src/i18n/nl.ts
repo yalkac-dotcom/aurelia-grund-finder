@@ -572,9 +572,6 @@ const nl: Translations = {
     heroSecondaryCta: "Hoe wij werken",
     heroTrustLine: "Projectgebonden samenwerking · Direct overleg · Heldere verantwoordelijkheden",
     heroImageAlt: "Rustige zakelijke setting – symbool voor helder gestructureerde, projectgerichte samenwerkingen",
-    legalNoticeLabel: "Let op",
-    legalNoticeText:
-      "Deze pagina vormt geen openbaar aanbod van beleggingen en geen uitnodiging tot investering. Eventuele afspraken vinden uitsluitend individueel en projectgericht plaats, na afzonderlijke beoordeling.",
     formsTitle: "Mogelijke vormen van samenwerking",
     formsIntro:
       "Elke samenwerking ontstaat vanuit het concrete project. De volgende constellaties komen in de praktijk het vaakst voor.",

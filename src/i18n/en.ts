@@ -604,9 +604,6 @@ const en: Translations = {
     heroSecondaryCta: "How we work",
     heroTrustLine: "Project-based cooperation · Direct exchange · Clear responsibilities",
     heroImageAlt: "Quiet business setting – symbolising clearly structured, project-based cooperations",
-    legalNoticeLabel: "Note",
-    legalNoticeText:
-      "This page does not constitute a public offer of investment products or an invitation to invest. Any agreements are made exclusively on an individual, project-based basis after a separate review.",
     formsTitle: "Possible forms of cooperation",
     formsIntro:
       "Every cooperation arises from the specific project. The following constellations are the most common in practice.",

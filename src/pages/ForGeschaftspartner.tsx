@@ -41,12 +41,8 @@ const ForGeschaftspartner = () => {
       />
 
       <div className="page-shell">
-        {/* KOOPERATIONSFORMEN – Legal-Hinweis ist sauber in die erste Folgefläche integriert */}
         <section className="section-premium bg-gradient-warm !pt-0 md:!pt-0">
           <div className="container-premium">
-            <p className="mx-auto mb-6 md:mb-8 max-w-3xl text-[0.78rem] leading-[1.7] text-muted-foreground text-center">
-              <span className="font-medium text-foreground/80">{p.legalNoticeLabel}:</span> {p.legalNoticeText}
-            </p>
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} disableOffset />
             <div className={`grid gap-6 md:gap-8 sm:grid-cols-2 ${p.forms.length === 5 ? "lg:grid-cols-6" : "lg:grid-cols-4"}`}>
               {p.forms.map((f, i) => (
