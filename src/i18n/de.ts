@@ -503,9 +503,9 @@ const de: Translations = {
     principlesTitle: "Was uns bei der Zusammenarbeit wichtig ist",
     principlesIntro: "",
     principles: [
-      { title: "Offen sprechen", text: "Wir sagen, was wir einschätzen können, und ebenso, wenn noch Informationen fehlen oder etwas für uns nicht infrage kommt." },
-      { title: "Vereinbarungen festhalten", text: "Wichtige Absprachen und die nächsten Schritte werden so festgehalten, dass die Beteiligten wissen, woran sie sind." },
-      { title: "Realistisch bleiben", text: "Nicht jede Immobilie und nicht jedes Projekt passt zu uns. Deshalb versprechen wir nichts, bevor wir die tatsächliche Situation geprüft haben." },
+      { title: "Offen sprechen", text: "Wir sagen offen, was wir einschätzen können, welche Informationen noch fehlen und wenn eine Immobilie oder ein Vorhaben für uns nicht infrage kommt." },
+      { title: "Vereinbarungen festhalten", text: "Wichtige Absprachen und die nächsten Schritte halten wir nachvollziehbar fest, damit alle Beteiligten wissen, woran sie sind." },
+      { title: "Realistisch bleiben", text: "Nicht jede Immobilie und nicht jedes Projekt passt zu uns. Deshalb treffen wir keine Zusagen, bevor wir die tatsächliche Situation geprüft haben." },
     ],
     faqTitle: "Häufige Fragen zum Vorgehen",
     faqIntro: "Wenn Ihre Frage hier nicht beantwortet ist, sprechen Sie uns direkt an.",
@@ -529,8 +529,8 @@ const de: Translations = {
     ],
     finalCtaTitle: "Sie möchten wissen, wie es in Ihrem Fall weitergehen könnte?",
     finalCtaText:
-      "Schildern Sie uns kurz, worum es geht. Wir sehen uns Ihre Anfrage an und besprechen die nächsten Schritte persönlich mit Ihnen.",
-    finalCtaButton: "Unverbindlich Kontakt aufnehmen",
+      "Schildern Sie uns kurz Ihr Anliegen. Wir prüfen Ihre Anfrage und besprechen mit Ihnen, welche nächsten Schritte sinnvoll sind.",
+    finalCtaButton: "UNVERBINDLICH KONTAKT AUFNEHMEN",
   },
   buyers: {
     heroKicker: "Für Käufer",
