@@ -37,7 +37,7 @@ const FAQ = () => {
 
       <div className="page-shell">
         {/* FAQ-LISTE */}
-        <section className="section-premium bg-gradient-warm">
+        <section className="section-premium bg-gradient-warm !pt-8 md:!pt-10">
           <div className="container-premium">
             {true ? (
             <div className="mx-auto max-w-[760px]">
