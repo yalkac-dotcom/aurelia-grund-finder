@@ -313,10 +313,17 @@ Deno.serve(async (req) => {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
     }
+    // Telefonnummer: Pflicht bei Immobilienangeboten, optional beim allgemeinen Kontaktformular
     if (
-      (body.form_type === "general_contact" || body.form_type === "germany_property" || body.form_type === "turkey_property") &&
+      (body.form_type === "germany_property" || body.form_type === "turkey_property") &&
       (!body.phone || typeof body.phone !== "string" || body.phone.trim().length === 0 || body.phone.length > 50)
     ) {
+      return new Response(JSON.stringify({ error: "Invalid phone" }), {
+        status: 400,
+        headers: { ...corsHeaders, "Content-Type": "application/json" },
+      });
+    }
+    if (body.phone != null && (typeof body.phone !== "string" || body.phone.length > 50)) {
       return new Response(JSON.stringify({ error: "Invalid phone" }), {
         status: 400,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
