@@ -46,7 +46,7 @@ const About = () => {
             <Reveal disableOffset>
               <p className="hero-kicker">{a.hero.kicker}</p>
               <h1 className="hero-title !text-accent">{a.hero.title}</h1>
-              <p className="mt-4 font-heading text-[1.05rem] font-semibold leading-relaxed text-accent md:text-[1.2rem]">{a.hero.subtitle}</p>
+              {a.hero.subtitle.trim() && <p className="mt-4 font-heading text-[1.05rem] font-semibold leading-relaxed text-accent md:text-[1.2rem]">{a.hero.subtitle}</p>}
               <div className="mt-5 max-w-xl space-y-3 text-[13px] leading-[1.7] text-primary-foreground/85 md:text-[14px]">
                 {a.hero.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </div>
@@ -72,12 +72,12 @@ const About = () => {
           </div>
         </section>
 
-        {language === "de" && (
+        {a.markets && (
           <section className="section-premium bg-background !pb-0">
             <div className="container-premium">
               <Reveal className="max-w-3xl border-l-2 border-accent pl-6">
-                <h2 className="font-heading text-[1.4rem] font-semibold leading-[1.4] text-primary md:text-[1.6rem]">Unsere Märkte</h2>
-                <p className="mt-4 text-[15px] leading-[1.85] text-foreground/80">Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilienmöglichkeiten in Italien, Spanien, Frankreich und den Niederlanden.</p>
+                <h2 className="font-heading text-[1.4rem] font-semibold leading-[1.4] text-primary md:text-[1.6rem]">{a.markets.title}</h2>
+                <p className="mt-4 text-[15px] leading-[1.85] text-foreground/80">{a.markets.text}</p>
               </Reveal>
             </div>
           </section>
@@ -97,7 +97,7 @@ const About = () => {
               const Icon = valueIcons[index] ?? Eye;
               return (
                 <Reveal key={value.title} delay={index * 0.05}>
-                  <article className={language === "de" ? `h-full p-6 md:p-7 ${aureliaCard}` : "h-full rounded-sm border border-border/70 bg-card p-6 md:p-7"}>
+                  <article className={`h-full p-6 md:p-7 ${aureliaCard}`}>
                     <div className="icon-tile icon-tile-light mb-5"><Icon size={20} aria-hidden="true" /></div>
                     <h3 className="font-heading text-[1.08rem] font-semibold text-primary">{value.title}</h3>
                     <p className="mt-3 text-[14px] leading-[1.75] text-foreground/75">{value.text}</p>

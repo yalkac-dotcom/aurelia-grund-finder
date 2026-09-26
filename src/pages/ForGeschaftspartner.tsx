@@ -48,10 +48,10 @@ const ForGeschaftspartner = () => {
               <span className="font-medium text-foreground/80">{p.legalNoticeLabel}:</span> {p.legalNoticeText}
             </p>
             <SectionHeader title={p.formsTitle} intro={p.formsIntro} disableOffset />
-            <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <div className={`grid gap-6 md:gap-8 sm:grid-cols-2 ${p.forms.length === 5 ? "lg:grid-cols-6" : "lg:grid-cols-4"}`}>
               {p.forms.map((f, i) => (
-                <Reveal key={i} delay={i * 0.06}>
-                  <div className={language === "de" ? `h-full p-6 md:p-7 ${aureliaCard}` : "border-l border-accent/40 pl-5"}>
+                <Reveal key={i} delay={i * 0.06} className={p.forms.length === 5 ? (i < 3 ? "lg:col-span-2" : "lg:col-span-3") + (i === 4 ? " sm:col-span-2 lg:col-span-3" : "") : undefined}>
+                  <div className={`h-full p-6 md:p-7 ${aureliaCard}`}>
                     <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
                       {f.title}
                     </h3>
@@ -107,10 +107,10 @@ const ForGeschaftspartner = () => {
               <p className="mt-8 mx-auto max-w-2xl text-center text-[0.78rem] leading-[1.7] text-muted-foreground/80 italic">
                 {p.stepsNote}
               </p>
-              {language === "de" && (
+              {p.b2bCta && (
                 <div className="mt-6 flex justify-center">
                   <Link to="/kontakt#kontaktformular" className="btn-primary">
-                    B2B-Kooperation unverbindlich anfragen
+                    {p.b2bCta}
                     <ArrowRight size={13} className="ml-2 text-accent" />
                   </Link>
                 </div>
