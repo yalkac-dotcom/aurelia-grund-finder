@@ -41,24 +41,20 @@ const HowItWorks = () => {
           </div>
         </section>
 
-        {/* DREI PROZESSE (nur DE) */}
-        {language === "de" && (
+        {/* DREI PROZESSE */}
+        {w.processGroups && w.processGroups.length > 0 && (
           <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}>
             <div className="container-premium">
-              <SectionHeader title="\n" intro="Aurelia kauft Immobilien auf eigene Rechnung und verkauft ausschließlich aus dem eigenen Bestand. Fremde Immobilien vermitteln wir nicht." />
+              {w.processGroupsTitle && <SectionHeader title={w.processGroupsTitle} />}
               <div className="grid gap-6 md:gap-8 md:grid-cols-3">
-                {[
-                  { title: "Für Eigentümer", steps: ["Immobilie anbieten", "Wir prüfen die Angaben und Unterlagen", "Kommt ein Ankauf infrage, besprechen wir die Konditionen", "Bei Einigung erwirbt Aurelia die Immobilie auf eigene Rechnung"] },
-                  { title: "Für Kaufinteressenten", steps: ["Kaufinteresse hinterlegen", "Wünsche und gesuchte Märkte angeben", "Ein passendes Objekt aus unserem Bestand wird verfügbar", "Aurelia nimmt Kontakt auf"] },
-                  { title: "Unser Bestand", steps: ["Aurelia erwirbt Immobilien", "Wir halten, renovieren oder entwickeln sie", "Wir entscheiden über die weitere Nutzung", "Bei einem Verkauf bieten wir die Immobilie aus unserem eigenen Bestand an"] },
-                ].map((proc, i) => (
+                {w.processGroups.map((proc, i) => (
                   <Reveal key={proc.title} delay={i * 0.06}>
                     <div className={`h-full p-6 md:p-7 ${aureliaCard}`}>
                       <h3 className="text-[1.05rem] font-heading font-semibold text-primary leading-snug">{proc.title}</h3>
-                      <ol className="mt-4 space-y-3">
+                      <ol className="mt-4 list-none space-y-3 p-0">
                         {proc.steps.map((step, n) => (
                           <li key={step} className="flex items-start gap-3 text-[0.88rem] leading-[1.6] text-muted-foreground">
-                            <span className="flex size-6 shrink-0 items-center justify-center rounded-full border border-accent/60 text-[0.72rem] font-semibold text-primary">{n + 1}</span>
+                            <span aria-hidden="true" className="flex size-6 shrink-0 items-center justify-center rounded-full border border-accent/60 text-[0.72rem] font-semibold text-primary">{n + 1}</span>
                             <span className="pt-0.5">{step}</span>
                           </li>
                         ))}
@@ -72,7 +68,7 @@ const HowItWorks = () => {
         )}
 
         {/* SEGMENTE */}
-        {language !== "de" && <section
+        {!w.processGroups?.length && <section
           className="section-premium"
           style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}
         >
