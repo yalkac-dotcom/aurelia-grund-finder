@@ -14,6 +14,8 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import BuyerInterestForm from "@/components/sections/BuyerInterestForm";
+import { stockRequestCopy } from "@/i18n/stockRequestCopy";
 
 const Portfolio = () => {
   const { language } = useLanguage();
@@ -129,6 +131,24 @@ const Portfolio = () => {
                 );
               })}
             </div>
+          </div>
+        </section>
+
+        {/* BESTANDSANFRAGE – verkürztes Kaufinteresse-Formular */}
+        <section id="bestandsanfrage" className="section-premium bg-gradient-warm scroll-mt-24">
+          <div className="container-premium">
+            <Reveal>
+              <div className="text-center mb-10">
+                <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+                <h2 className="mb-3 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
+                  {stockRequestCopy[language].title}
+                </h2>
+                <p className="mx-auto max-w-2xl text-[0.93rem] leading-[1.85] text-muted-foreground">
+                  {stockRequestCopy[language].text}
+                </p>
+              </div>
+            </Reveal>
+            <BuyerInterestForm variant="stock" />
           </div>
         </section>
 

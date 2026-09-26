@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { buyerInterestCopy } from "@/i18n/buyerInterestCopy";
+import { stockRequestCopy } from "@/i18n/stockRequestCopy";
 
 // Kaufinteresse-Formular (alle Sprachen) – Interessenten für den
 // EIGENEN Aurelia-Bestand. Kein Makler-, Vermittlungs- oder Suchauftrag.
@@ -17,7 +18,7 @@ const fieldClass = (err: boolean) =>
 
 const schema = z.object({
   name: z.string().trim().min(2).max(160),
-  phone: z.string().trim().min(5).max(50),
+  phone: z.string().trim().max(50).refine((v) => v === "" || v.length >= 5),
   email: z.string().trim().email().max(254),
   regions: z.string().trim().max(500),
   size: z.string().trim().max(120),
@@ -55,10 +56,12 @@ const Select = ({ label, value, options, labels, onChange }: { label: string; va
   </label>
 );
 
-const BuyerInterestForm = () => {
+const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" }) => {
+  const compact = variant === "stock";
   const { toast } = useToast();
   const { language } = useLanguage();
   const c = buyerInterestCopy[language];
+  const sc = stockRequestCopy[language];
   const base = buyerInterestCopy.de;
   const markets = base.marketOptions, propertyTypes = base.typeOptions, budgets = base.budgetOptions, usages = base.usageOptions, languages = base.languageOptions;
   const langIndex = { de: 0, tr: 1, en: 2, it: 3, es: 4, fr: 5, nl: 6 }[language] ?? 0;
@@ -90,8 +93,8 @@ const BuyerInterestForm = () => {
       next[k] = k === "email" ? c.errEmail : c.errField;
     });
     if (!text.name.trim()) next.name = c.errRequired;
-    if (!text.phone.trim()) next.phone = c.errRequired;
-    if (selMarkets.length === 0) next.markets = c.errMarkets;
+    if (!compact && !text.phone.trim()) next.phone = c.errRequired;
+    if (!compact && selMarkets.length === 0) next.markets = c.errMarkets;
     if (!privacy) next.privacy = c.errPrivacy;
     setErrors(next);
     return Object.keys(next).length === 0;
@@ -104,14 +107,15 @@ const BuyerInterestForm = () => {
     setSubmitting(true);
     const message = [
       "Kaufinteresse – Immobilien aus dem Aurelia-Bestand",
-      `Märkte: ${selMarkets.join(", ")}`,
+      compact && "Anfrage über: Unser Bestand",
+      !compact && `Märkte: ${selMarkets.join(", ")}`,
       text.regions && `Regionen / Städte: ${text.regions}`,
       selTypes.length && `Immobilienarten: ${selTypes.join(", ")}`,
       budget && `Kaufpreisrahmen: ${budget}`,
       usage && `Nutzung: ${usage}`,
       text.size && `Gewünschte Größe: ${text.size}`,
       text.timeframe && `Kaufzeitraum: ${text.timeframe}`,
-      `Bevorzugte Sprache: ${lang}`,
+      !compact && `Bevorzugte Sprache: ${lang}`,
       "",
       "Besondere Wünsche:",
       text.wishes || "Keine Angaben.",
@@ -119,12 +123,12 @@ const BuyerInterestForm = () => {
     const [firstName, ...rest] = text.name.trim().split(/\s+/);
     try {
       const { error: dbError } = await supabase.from("contact_submissions").insert({
-        first_name: firstName, last_name: rest.join(" ") || "-", email: text.email.trim(), phone: text.phone.trim(),
-        property_type: "Kaufinteresse – Bestand", subject: "Kaufinteresse", message, callback_requested: false,
+        first_name: firstName, last_name: rest.join(" ") || "-", email: text.email.trim(), phone: text.phone.trim() || null,
+        property_type: "Kaufinteresse – Bestand", subject: compact ? "Kaufinteresse – Anfrage über: Unser Bestand" : "Kaufinteresse", message, callback_requested: false,
       });
       if (dbError) throw dbError;
       const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: { name: text.name.trim(), email: text.email.trim(), phone: text.phone.trim(), property_type: "Kaufinteresse – Bestand", subject: "Kaufinteresse", message, language, preferred_language: lang, form_type: "general_contact", privacy_consent: true },
+        body: { name: text.name.trim(), email: text.email.trim(), phone: text.phone.trim(), property_type: "Kaufinteresse – Bestand", subject: compact ? "Kaufinteresse – Anfrage über: Unser Bestand" : "Kaufinteresse", message, language, preferred_language: compact ? base.languageOptions[langIndex] : lang, form_type: "general_contact", privacy_consent: true },
       });
       if (error || !data?.success) throw error ?? new Error("send failed");
       setSuccess(true);
@@ -149,6 +153,19 @@ const BuyerInterestForm = () => {
     <form onSubmit={submit} noValidate className="mx-auto max-w-5xl rounded-sm border border-border bg-card p-5 shadow-sm sm:p-8 md:p-12">
       <p className="text-sm text-muted-foreground">{c.required}</p>
       <div className="mt-6 grid gap-7 md:grid-cols-2">
+        {compact ? (<>
+        <ChipGroup legend={sc.types} options={propertyTypes.slice(0, 6)} labels={sc.typeLabels} selected={selTypes} onToggle={toggle(selTypes, setSelTypes, "types")} />
+        <label className={`${labelClass} md:col-span-2`}>{sc.region}
+          <input value={text.regions} onChange={upd("regions")} maxLength={500} className={fieldClass(Boolean(errors.regions))} />
+        </label>
+        <Select label={c.budget} value={budget} options={budgets} labels={c.budgetOptions} onChange={setBudget} />
+        {input("name", c.name, "text", true)}
+        {input("email", c.email, "email", true)}
+        {input("phone", c.phone, "tel")}
+        <label className={`${labelClass} md:col-span-2`}>{sc.wishes}
+          <textarea value={text.wishes} onChange={upd("wishes")} rows={4} maxLength={1500} className={fieldClass(false)} />
+        </label>
+        </>) : (<>
         <ChipGroup legend={c.markets} options={markets} labels={c.marketOptions} selected={selMarkets} onToggle={toggle(selMarkets, setSelMarkets, "markets")} error={errors.markets} />
         <label className={`${labelClass} md:col-span-2`}>{c.regions}
           <input value={text.regions} onChange={upd("regions")} maxLength={500} className={fieldClass(Boolean(errors.regions))} />
@@ -165,6 +182,7 @@ const BuyerInterestForm = () => {
         {input("phone", c.phone, "tel", true)}
         {input("email", c.email, "email", true)}
         <Select label={c.language} value={lang} options={languages} labels={c.languageOptions} onChange={(v) => setLang(v || base.languageOptions[langIndex])} />
+        </>)}
       </div>
       <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground">
         <input type="checkbox" checked={privacy} onChange={(e) => { setPrivacy(e.target.checked); setErrors((er) => ({ ...er, privacy: "" })); }} className="mt-1 !h-4 !w-4 !min-h-0 !min-w-0 shrink-0 accent-primary" />
@@ -178,7 +196,7 @@ const BuyerInterestForm = () => {
         </div>
       )}
       <Button type="submit" disabled={submitting} size="lg" className="mt-8 min-h-12 h-auto w-full whitespace-normal rounded-sm px-4 py-3 text-center leading-snug uppercase tracking-[0.1em] sm:w-auto sm:px-8">
-        {submitting ? c.sending : c.submit}
+        {submitting ? c.sending : compact ? sc.submit : c.submit}
       </Button>
       <p className="mt-6 max-w-3xl text-[0.8rem] leading-[1.7] text-muted-foreground">
         {c.disclaimer}
