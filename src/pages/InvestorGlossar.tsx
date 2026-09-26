@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState, useRef, useCallback } from "react";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import glossarHeroAsset from "@/assets/glossar-definition.jpeg.asset.json";
 
 const LETTER_BAR_ID = "glossar-letter-bar";
 
@@ -94,6 +95,22 @@ const InvestorGlossar = () => {
             <ArrowLeft size={13} />
             {t.nav.home}
           </Link>
+        </div>
+      </section>
+
+      {/* Intro image */}
+      <section className="pb-2 pt-4 md:pt-6">
+        <div className="container max-w-4xl">
+          <Reveal>
+            <img
+              src={glossarHeroAsset.url}
+              alt={pageExtras[language].shared.glossarHeroAlt}
+              width={1920}
+              height={1146}
+              loading="lazy"
+              className="w-full h-auto rounded-md border border-border/30"
+            />
+          </Reveal>
         </div>
       </section>
 
