@@ -28,6 +28,11 @@ interface PageHeroProps {
   descriptionClassName?: string;
   aiDisclosure?: AiDisclosureType;
   /**
+   * Optionale Inline-Styles nur für den Text-/CTA-Block-Frame
+   * (z. B. Geschäftspartner: Block weiter nach links verschoben).
+   */
+  copyFrameStyle?: React.CSSProperties;
+  /**
    * "fullImage" – Hero-Höhe folgt exakt dem Seitenverhältnis des Bildes
    * (kein Cropping, keine Seitenbalken; Geschäftspartner-Puzzlebild 3:2).
    */
