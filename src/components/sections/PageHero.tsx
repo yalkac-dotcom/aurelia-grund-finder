@@ -22,6 +22,8 @@ interface PageHeroProps {
    * "compact" – kompakterer Hero (Käufer, Geschäftspartner, Wie wir arbeiten) – Referenz: /ueber-uns
    */
   size?: "default" | "compact";
+  /** Zeigt das Hero-Foto vollständig (Proportionen des Heros folgen dem Bildformat, Desktop: 3:2 ohne Beschnitt). */
+  fullImage?: boolean;
   /** Keeps the mobile home hero entirely content-driven with extra space below its CTAs. */
   mobileHomeFlow?: boolean;
   /** Optionale Zusatzklassen nur für den Beschreibungstext (z. B. Startseite: kräftiger Lesetext). */
@@ -47,13 +49,14 @@ const PageHero = ({
   overlayGradient,
   phoneLine,
   size = "default",
+  fullImage = false,
   mobileHomeFlow = false,
   descriptionClassName,
   aiDisclosure,
 }: PageHeroProps) => (
   <section
     id="hero"
-    className={`relative flex bg-primary ${mobileHomeFlow ? "min-h-0 items-start md:h-[87vh] md:min-h-[615px] md:items-center" : `items-center ${SIZE_CLASSES[size]}`}`}
+    className={`relative flex bg-primary ${mobileHomeFlow ? "min-h-0 items-start md:h-[87vh] md:min-h-[615px] md:items-center" : fullImage ? "items-center min-h-[535px] md:h-auto md:min-h-0 md:aspect-[3/2]" : `items-center ${SIZE_CLASSES[size]}`}`}
   >
     <div className="absolute inset-0 overflow-hidden">
       <OptimizedImg
