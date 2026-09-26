@@ -345,6 +345,8 @@ export interface Translations {
     faqTitle: string;
     faqIntro: string;
     faqItems: { q: string; a: string }[];
+    processGroupsTitle?: string;
+    processGroups?: { title: string; steps: string[] }[];
     finalCtaTitle: string;
     finalCtaText: string;
     finalCtaButton: string;
@@ -398,6 +400,7 @@ export interface Translations {
     stepsTitle: string;
     steps: { title: string; desc: string }[];
     stepsNote: string;
+    b2bCta?: string;
     faqTitle: string;
     faqIntro: string;
     faqItems: { q: string; a: string }[];
@@ -440,6 +443,7 @@ export interface Translations {
     seoDescription: string;
     hero: { kicker: string; title: string; subtitle: string; body: string[]; imageAlt: string };
     trustTiles: { title: string; text: string }[];
+    markets?: { title: string; text: string };
     standing: { headline: string; body: string[]; values: { title: string; text: string }[] };
     approach: { headline: string; body: string[]; imageAlt: string };
     situations: { headline: string; items: string[] };

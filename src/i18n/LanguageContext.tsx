@@ -13,6 +13,7 @@ import { journeyEnhancements } from "./journeyEnhancements";
 import { turkeyJourney } from "./turkeyJourney";
 import { turkeyPageDe } from "./turkeyPageDe";
 import { turkeyPageFinal } from "./turkeyPageFinal";
+import { revisionFinal } from "./revision";
 
 const deepMerge = <T extends Record<string, unknown>>(base: T, ...overrides: Record<string, unknown>[]): T => {
   const result: Record<string, unknown> = { ...base };
@@ -31,7 +32,7 @@ const baseTranslations: Record<Language, Translations> = { de, en, nl, it, es, t
 const translationsMap = Object.fromEntries(
   Object.entries(baseTranslations).map(([language, translation]) => [
     language,
-    deepMerge(translation as unknown as Record<string, unknown>, contentRestructure[language as Language] as Record<string, unknown>, journeyEnhancements[language as Language] as Record<string, unknown>, turkeyJourney[language as Language] as Record<string, unknown>, (turkeyPageDe[language as Language] ?? {}) as Record<string, unknown>, turkeyPageFinal[language as Language] as Record<string, unknown>),
+    deepMerge(translation as unknown as Record<string, unknown>, contentRestructure[language as Language] as Record<string, unknown>, journeyEnhancements[language as Language] as Record<string, unknown>, turkeyJourney[language as Language] as Record<string, unknown>, (turkeyPageDe[language as Language] ?? {}) as Record<string, unknown>, turkeyPageFinal[language as Language] as Record<string, unknown>, revisionFinal[language] as unknown as Record<string, unknown>),
   ]),
 ) as unknown as Record<Language, Translations>;
 
