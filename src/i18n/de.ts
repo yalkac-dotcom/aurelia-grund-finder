@@ -545,7 +545,7 @@ const de: Translations = {
     featuresIntro:
       "Wir bieten ausgewählte Immobilien aus unserem eigenen Bestand an. Bei jedem Objekt sehen Sie klar, worum es geht, wer Ihr Ansprechpartner ist und welche Konditionen gelten.\n\n\n",
     features: [
-      { title: "Preis und Konditionen", desc: "Die wichtigsten Konditionen nennen wir Ihnen klar und besprechen offene Fragen persönlich mit Ihnen." },
+      { title: "Preis und Konditionen", desc: "Die wichtigsten Konditionen nennen wir Ihnen klar. Offene Fragen besprechen wir persönlich mit Ihnen." },
       { title: "Ansprechpartner", desc: "Sie wissen, mit wem Sie über die Immobilie sprechen und wer für Ihr Anliegen zuständig ist." },
       { title: "Unterlagen zum Objekt", desc: "Wir stellen Ihnen die vorhandenen Unterlagen und Informationen zum Objekt transparent zur Verfügung." },
       { title: "Kaufabwicklung", desc: "Wenn Sie sich für ein Objekt entscheiden und beide Seiten sich einig sind, wird der Kauf über einen Notar abgewickelt." },
