@@ -113,45 +113,40 @@ const About = () => {
           </div>
         </section>
 
-        <section className="section-premium bg-secondary/45">
-          <div className="container-premium grid items-center gap-10 md:grid-cols-2 md:gap-14 lg:gap-20">
-          <Reveal>
-            <div className="mb-5 h-px w-9 bg-accent" aria-hidden="true" />
+        <section className="section-premium bg-secondary/45 !py-14 md:!py-20">
+          <div className="container-premium">
+          <Reveal className="max-w-3xl border-l-2 border-accent pl-6 md:pl-8">
             <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{a.approach.headline}</h2>
-            <div className="mt-6 space-y-4 text-[15px] leading-[1.85] text-foreground/80 md:text-[16px]">
+            <div className="mt-5 space-y-4 text-[15px] leading-[1.85] text-foreground/80 md:text-[16px]">
               {a.approach.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-            </div>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <div className="relative overflow-hidden rounded-sm">
-              <img src={editorial.aboutApproachArchitecture} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="img-tone aspect-[4/3] h-auto w-full object-cover" />
-              <AiImageDisclosure />
             </div>
           </Reveal>
           </div>
         </section>
 
-        <section className="section-premium bg-background" aria-labelledby="unser-ansatz-title">
-          <div className="container-premium grid items-stretch gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
-            <Reveal className="h-full">
-              <div className="relative h-full overflow-hidden rounded-xl">
-                <img src={aboutMenschenAsset.url} alt={ansatz.imageAlt} loading="lazy" className="img-tone aspect-[4/3] h-full w-full object-cover lg:aspect-auto lg:min-h-[560px]" />
+        <section className="section-premium bg-background !py-14 md:!py-16" aria-labelledby="unser-ansatz-title">
+          <div className="container-premium grid items-center gap-8 md:grid-cols-[44fr_56fr] md:gap-10 lg:gap-12">
+            <Reveal>
+              <div className="relative overflow-hidden rounded-xl">
+                <img src={aboutMenschenAsset.url} alt={ansatz.imageAlt} loading="lazy" className="img-tone aspect-[16/10] w-full object-cover md:aspect-[4/3] lg:aspect-[5/4]" />
               </div>
             </Reveal>
             <Reveal delay={0.08}>
-              <div className="mb-5 h-px w-9 bg-accent" aria-hidden="true" />
-              <h2 id="unser-ansatz-title" className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{ansatz.headline}</h2>
-              <div className="mt-6 space-y-4 text-[15px] leading-[1.8] text-foreground/80 md:text-[16px]">
+              <div className="mb-4 h-px w-9 bg-accent" aria-hidden="true" />
+              <h2 id="unser-ansatz-title" className="font-heading text-[1.6rem] font-semibold leading-tight text-primary md:text-[2rem]">{ansatz.headline}</h2>
+              <div className="mt-4 space-y-3 text-[14px] leading-[1.7] text-foreground/80 md:text-[15px]">
                 {ansatz.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </div>
-              <div className="mt-8 grid auto-rows-fr gap-4 sm:grid-cols-2">
+              <div className="mt-6 grid auto-rows-fr gap-3 sm:grid-cols-2">
                 {ansatz.cards.map((card, index) => {
                   const Icon = ansatzIcons[index] ?? Target;
                   return (
-                    <article key={card.title} className="h-full rounded-xl border border-primary/12 bg-secondary/50 p-5">
-                      <Icon size={22} strokeWidth={1.6} className="text-accent" aria-hidden="true" />
-                      <h3 className="mt-3 font-heading text-[1.02rem] font-semibold leading-snug text-primary">{card.title}</h3>
-                      <p className="mt-2 text-[14px] leading-[1.65] text-foreground/75">{card.text}</p>
+                    <article key={card.title} className="h-full rounded-lg border border-primary/12 bg-secondary/50 px-4 py-3.5">
+                      <div className="flex items-center gap-2.5">
+                        <Icon size={18} strokeWidth={1.6} className="shrink-0 text-accent" aria-hidden="true" />
+                        <h3 className="font-heading text-[0.98rem] font-semibold leading-snug text-primary">{card.title}</h3>
+                      </div>
+                      <p className="mt-1.5 text-[13px] leading-[1.6] text-foreground/75">{card.text}</p>
                     </article>
                   );
                 })}
