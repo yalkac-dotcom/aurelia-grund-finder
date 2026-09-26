@@ -144,7 +144,7 @@ const Portfolio = () => {
             <Reveal>
               <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{isGerman ? "Kein passendes Objekt dabei?" : copy.ctaTitle}</h2>
               <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                {isGerman ? "Hinterlegen Sie einfach Ihr Kaufinteresse. Wenn wir ein passendes Objekt im eigenen Bestand haben oder später erwerden, melden wir uns bei Ihnen." : copy.ctaText}
+                {isGerman ? "Hinterlegen Sie einfach Ihr Kaufinteresse. Wenn wir ein passendes Objekt im eigenen Bestand haben oder zu einem späteren Zeitpunkt erwerben, melden wir uns bei Ihnen." : copy.ctaText}
               </p>
               <Link
                 to={isGerman ? "/fuer-kaeufer#kaufinteresse" : "/kontakt"}
