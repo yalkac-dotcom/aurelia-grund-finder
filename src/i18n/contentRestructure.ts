@@ -84,13 +84,13 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       holdNote: "Wenn rechtliche, steuerliche oder andere fachliche Fragen geklärt werden müssen, können dafür geeignete externe Fachleute hinzugezogen werden.",
     },
     partners: {
-      heroTitle: "Zusammenarbeit mit Geschäftspartnern.", heroDescription: "Bei eigenen Ankäufen, Renovierungen und Projekten arbeiten wir mit externen Fachleuten und Geschäftspartnern zusammen – in Deutschland und der Türkei.",
-      formsTitle: "Mit wem wir zusammenarbeiten", formsIntro: "Die Zusammenarbeit mit externen Fach- und Geschäftspartnern ändert nichts daran, dass Aurelia auf dieser Website keine fremden Immobilien vermittelt und keine Suchaufträge für Kaufinteressenten übernimmt.",
+      heroTitle: "Gemeinsam Immobilienprojekte umsetzen", heroDescription: "Bei eigenen Ankäufen, Renovierungen und Immobilienprojekten arbeitet Aurelia mit ausgewählten externen Fachleuten und Geschäftspartnern zusammen – je nach Projekt und Standort.",
+      formsTitle: "Mit wem wir zusammenarbeiten", formsIntro: "Je nach Projekt arbeitet Aurelia mit unterschiedlichen Fachleuten und Unternehmen zusammen. Entscheidend sind für uns eine verlässliche Zusammenarbeit, klare Zuständigkeiten und eine professionelle Umsetzung.",
       forms: [
-        { title: "Rechtsanwälte, Notare & Steuerberater", desc: "Wenn rechtliche oder steuerliche Fragen zu klären sind, arbeiten wir mit externen Fachleuten zusammen. Aurelia selbst bietet keine Rechts- oder Steuerberatung an." },
-        { title: "Architekten & technische Fachleute", desc: "Bei Renovierung und Entwicklung eigener Objekte ziehen wir Architekten und technische Fachleute hinzu." },
-        { title: "Projektentwickler & lokale Ansprechpartner", desc: "Bei passenden Projekten arbeiten wir mit Projektentwicklern und Ansprechpartnern vor Ort zusammen – in Deutschland und der Türkei." },
-        { title: "Makler im Rahmen eigener Ankäufe", desc: "Makler können uns Objekte für eigene Ankäufe oder Projekte anbieten. Sie sind für uns externe Geschäftspartner – kein Vertriebsweg für fremde Objekte." },
+        { title: "Rechtsanwälte, Notare & Steuerberater", desc: "Bei rechtlichen, notariellen oder steuerlichen Fragestellungen arbeiten wir mit externen Fachleuten zusammen. Aurelia selbst bietet keine Rechts- oder Steuerberatung an." },
+        { title: "Architekten & technische Fachleute", desc: "Bei Renovierungen, Umbauten und der Entwicklung eigener Immobilien ziehen wir je nach Projekt Architekten und weitere technische Fachleute hinzu." },
+        { title: "Projektentwickler & lokale Ansprechpartner", desc: "Bei geeigneten Projekten arbeiten wir mit Projektentwicklern und lokalen Partnern zusammen – abhängig von Projekt und Standort." },
+        { title: "Makler im Rahmen eigener Ankäufe", desc: "Makler können Aurelia Immobilien für einen möglichen eigenen Ankauf oder für eigene Projekte anbieten. Dabei arbeiten sie mit uns als externe Geschäftspartner zusammen.\u00a0\nAurelia übernimmt keinen Vertrieb fremder Immobilien." },
       ],
     },
     aboutV2: {
