@@ -38,7 +38,7 @@ const ForGeschaftspartner = () => {
         overlayGradient="linear-gradient(to right, hsl(var(--primary) / 0.72) 0%, hsl(var(--primary) / 0.45) 30%, hsl(var(--primary) / 0.08) 55%, transparent 70%)"
         imagePosition="50% 100%"
         size="compact"
-        copyFrameStyle={{ marginLeft: 0 }}
+        copyFrameStyle={{ marginLeft: "max(0px, calc((100vw - 1216px) / 2 - 80px))" }}
       />
 
       <div className="page-shell">
