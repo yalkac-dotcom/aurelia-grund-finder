@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import OptimizedImg from "@/components/OptimizedImg";
-import faqHeroAsset from "@/assets/faq-hero-original.jpeg.asset.json";
+import faqHeroAsset from "@/assets/faq-hero.jpeg.asset.json";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
 
@@ -22,10 +22,11 @@ const FAQ = () => {
         <div aria-hidden="true" className="absolute inset-0">
           <OptimizedImg src={faqHeroAsset.url} alt="" className="h-full w-full object-cover object-[70%_center]" priority />
         </div>
-        {/* frühere dezente Aurelia-Gold-Tönung über dem Originalfoto */}
-        <div aria-hidden="true" className="absolute inset-0 bg-accent/25 mix-blend-multiply" />
-        {/* Lesbarkeit links */}
-        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/35 to-transparent" />
+        {/* dezente Aurelia-Gold-Tönung, 3D-Struktur bleibt erkennbar */}
+        <div aria-hidden="true" className="absolute inset-0 bg-accent/45 mix-blend-multiply" />
+        <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(115deg,transparent_35%,hsl(var(--accent)/0.28)_100%)]" />
+        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/5" />
+        <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background" />
         <div className="container-premium relative">
           <Reveal>
             <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent">{f.kicker}</p>
@@ -37,11 +38,10 @@ const FAQ = () => {
 
       <div className="page-shell">
         {/* FAQ-LISTE */}
-        <section className="section-premium bg-gradient-warm !pt-8 md:!pt-10">
+        <section className="section-premium !pt-8 md:!pt-10">
           <div className="container-premium">
             {true ? (
             <div className="mx-auto max-w-[760px]">
-              <div aria-hidden="true" className="mx-auto mb-10 h-px w-16 bg-accent md:mb-12" />
               <div className="space-y-5 md:space-y-6">
               {f.items.map((item, i) => {
                 const isOpen = open === i;
