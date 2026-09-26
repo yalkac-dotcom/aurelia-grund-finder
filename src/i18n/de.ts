@@ -671,7 +671,7 @@ const de: Translations = {
     ],
     finalCtaTitle: "Sie möchten ein Projekt mit uns besprechen?",
     finalCtaText:
-      "Wenn Sie eine Immobilie, ein Projekt oder eine konkrete Idee für eine Zusammenarbeit haben, sprechen Sie uns gerne an. Wir freuen uns darauf, mehr über Ihr Vorhaben zu erfahren.",
+      "Wenn Sie eine Immobilie, ein Projekt oder eine konkrete Idee für eine Zusammenarbeit haben, sprechen Sie uns gerne an. Wir besprechen mit Ihnen, ob und in welcher Form eine Zusammenarbeit möglich ist.",
     finalCtaButton: "Unverbindlich Kontakt aufnehmen",
   },
   about: {

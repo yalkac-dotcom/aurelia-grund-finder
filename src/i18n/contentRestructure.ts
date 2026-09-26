@@ -83,16 +83,6 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       ],
       holdNote: "Wenn rechtliche, steuerliche oder andere fachliche Fragen geklärt werden müssen, können dafür geeignete externe Fachleute hinzugezogen werden.",
     },
-    partners: {
-      heroTitle: "Gemeinsam Immobilienprojekte umsetzen", heroDescription: "Bei eigenen Ankäufen, Renovierungen und Immobilienprojekten arbeitet Aurelia mit ausgewählten externen Fachleuten und Geschäftspartnern zusammen – je nach Projekt und Standort.",
-      formsTitle: "Mit wem wir zusammenarbeiten", formsIntro: "Je nach Projekt arbeitet Aurelia mit unterschiedlichen Fachleuten und Unternehmen zusammen. Entscheidend sind für uns eine verlässliche Zusammenarbeit, klare Zuständigkeiten und eine professionelle Umsetzung.",
-      forms: [
-        { title: "Rechtsanwälte, Notare & Steuerberater", desc: "Bei rechtlichen, notariellen oder steuerlichen Fragestellungen arbeiten wir mit externen Fachleuten zusammen. Aurelia selbst bietet keine Rechts- oder Steuerberatung an." },
-        { title: "Architekten & technische Fachleute", desc: "Bei Renovierungen, Umbauten und der Entwicklung eigener Immobilien ziehen wir je nach Projekt Architekten und weitere technische Fachleute hinzu." },
-        { title: "Projektentwickler & lokale Ansprechpartner", desc: "Bei geeigneten Projekten arbeiten wir mit Projektentwicklern und lokalen Partnern zusammen – abhängig von Projekt und Standort." },
-        { title: "Makler im Rahmen eigener Ankäufe", desc: "Makler können Aurelia Immobilien für einen möglichen eigenen Ankauf oder für eigene Projekte anbieten. Dabei arbeiten sie mit uns als externe Geschäftspartner zusammen.\u00a0\nAurelia übernimmt keinen Vertrieb fremder Immobilien." },
-      ],
-    },
     aboutV2: {
       seoTitle: "Über uns – inhabergeführt aus Düsseldorf | Aurelia Grundbesitz",
       seoDescription: "Aurelia Grundbesitz ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf. Wir kaufen Immobilien auf eigene Rechnung und bauen einen eigenen Bestand auf.",
