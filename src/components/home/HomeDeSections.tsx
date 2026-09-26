@@ -13,7 +13,7 @@ const HomeDeSections = () => (
         <Reveal className="mx-auto max-w-3xl border-l-2 border-accent pl-6">
           <h2 className="font-heading text-[1.6rem] font-semibold leading-tight text-primary md:text-[2rem]">Wer wir sind</h2>
           <div className="mt-5 space-y-4 text-[15px] leading-[1.85] text-foreground/80">
-            <p>Aurelia Grundbesitz ist ein Inhabergeführtes Immobilienunternehmen aus Düsseldorf.</p>
+            <p>Aurelia Grundbesitz ist ein inhabergeführtes Immobilienunternehmen aus Düsseldorf.</p>
             <p>Hinter Aurelia stehen rund 30 Jahre unternehmerische Erfahrung mit Immobilien – darunter Ankäufe aus Zwangsversteigerungen, freihändige Käufe vor einer Versteigerung sowie die Entwicklung und Verwaltung eigener Immobilienbestände.</p>
             <p>Ein großer Teil unserer Arbeit betraf Immobilien mit schwieriger Ausgangslage – zum Beispiel Zwangsversteigerungen oder freihändige Käufe, bevor es überhaupt zur Versteigerung kam.</p>
             <p>Heute kaufen wir ausgewählte Immobilien auf eigene Rechnung, entwickeln unseren eigenen Bestand weiter und entscheiden bei jedem Objekt individuell, ob wir es langfristig halten, renovieren oder später wieder aus unserem Bestand verkaufen.</p>
@@ -40,8 +40,8 @@ const HomeDeSections = () => (
           <div id="zwangsversteigerung" className={`h-full scroll-mt-24 p-6 md:p-8 ${aureliaCard}`}>
             <h2 className="font-heading text-[1.35rem] font-semibold leading-snug text-primary">Wenn eine Zwangsversteigerung droht</h2>
             <div className="mt-4 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
-              <p>Auch kurz vor einer Zwangsversteigerung kann ein freihändiger Verkauf noch möglich sein. Solche Situationen kennen wir seit vielen Jahren. Wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung erwerben kann.</p>
-              <p>Wenn es grundsätzlich passt, stimmen wir die nächsten Schritte mit Ihnen ab. Soweit es für den Kauf notwendig ist, können dabei auch Gespräche mit beteiligten Banken oder anderen Stellen geführt werden.{"\n\n"}Ob und unter welchen Bedingungen ein Verkauf möglich ist, hängt immer vom jeweiligen Fall ab</p>
+              <p>Auch kurz vor einer Zwangsversteigerung kann ein freihändiger Verkauf noch möglich sein. Solche Situationen kennen wir seit vielen Jahren. Wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung möglich ist.</p>
+              <p>Wenn es grundsätzlich passt, stimmen wir die nächsten Schritte mit Ihnen ab. Soweit es für den Kauf notwendig ist, können dabei auch Gespräche mit beteiligten Banken oder anderen Stellen geführt werden.{"\n\n"}Ob und unter welchen Bedingungen ein Verkauf möglich ist, hängt immer vom jeweiligen Fall ab.</p>
             </div>
           </div>
         </Reveal>
@@ -51,11 +51,11 @@ const HomeDeSections = () => (
     {/* WOHNSITZ ≠ STANDORT */}
     <section className="section-premium bg-background">
       <div className="container-premium">
-        <SectionHeader title="Wo Sie leben, ist nicht entscheidend." intro={"Ihre Immobilie kann in einem anderen Land liegen als Ihr Wohnsitz. \nAuch dann können Sie sie uns zum möglichen Ankauf anbieten"} />
+        <SectionHeader title="Wo Sie leben, ist nicht entscheidend." intro={"Ihre Immobilie kann in einem anderen Land liegen als Ihr Wohnsitz. \nAuch dann können Sie sie uns zum möglichen Ankauf anbieten."} />
         <div className="grid gap-6 md:grid-cols-2 md:gap-8">
           {[
             { t: "Sie leben in der Türkei – Ihre Immobilie ist in Deutschland?", d: "Auch wenn Sie in der Türkei leben, können Sie uns Ihre Immobilie in Deutschland zum möglichen Ankauf anbieten.", to: "/immobilie-anbieten?land=deutschland" },
-            { t: "Sie leben in Deutschland oder Europa – Ihre Immobilie ist in der Türkei?", d: "Auch Immobilien in der Türkei prüfen wir für einen möglichen Ankauf auf eigene Rechnung", to: "/immobilie-anbieten?land=tuerkei" },
+            { t: "Sie leben in Deutschland oder Europa – Ihre Immobilie ist in der Türkei?", d: "Auch Immobilien in der Türkei prüfen wir für einen möglichen Ankauf auf eigene Rechnung.", to: "/immobilie-anbieten?land=tuerkei" },
           ].map((c, i) => (
             <Reveal key={c.t} delay={i * 0.06}>
               <div className="h-full border-l-2 border-accent/60 pl-6">
