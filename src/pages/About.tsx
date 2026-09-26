@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
 import { aureliaCard } from "@/lib/cardStyle";
+import aboutMenschenAsset from "@/assets/about-menschen-haende.jpeg.asset.json";
 import AureliaKompakt from "@/components/sections/AureliaKompakt";
 
 const About = () => {
@@ -120,8 +121,7 @@ const About = () => {
           </Reveal>
           <Reveal delay={0.08}>
             <div className="relative overflow-hidden rounded-sm">
-              <img src={editorial.aboutApproachArchitecture} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="img-tone aspect-[4/3] h-auto w-full object-cover" />
-              <AiImageDisclosure />
+              <img src={aboutMenschenAsset.url} alt={a.approach.imageAlt} loading="lazy" width={1408} height={1056} className="img-tone aspect-[4/3] h-auto w-full object-cover" />
             </div>
           </Reveal>
           </div>
