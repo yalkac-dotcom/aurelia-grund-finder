@@ -37,7 +37,7 @@ const AureliaKompakt = () => {
             Aurelia kompakt
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-[1.8] text-foreground/80 md:text-[16px]">
-            Hier erfahren Sie kurz und verständlich, wie Aurelia arbeitet, welche Immobilien wir kaufen und wie unser eigener Bestand aufgebaut wird.
+            Die wichtigsten Informationen zu Aurelia auf einen Blick: wie wir arbeiten, welche Immobilien wir erwerben und wie wir unseren eigenen Bestand aufbauen und entwickeln.
           </p>
         </Reveal>
 

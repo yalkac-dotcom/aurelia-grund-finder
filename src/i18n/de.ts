@@ -1230,9 +1230,9 @@ const de: Translations = {
         "Wir möchten lieber eine realistische Einschätzung geben als etwas versprechen, das sich später nicht halten lässt. Entscheidend ist für uns, ob eine Lösung tatsächlich umsetzbar ist.",
       ],
       values: [
-        { title: "Verbindlich kommunizieren", text: "Was wir zusagen, soll auch Bestand haben. Deshalb klären wir wichtige Punkte lieber vorher als erst kurz vor dem Abschluss." },
+        { title: "Verbindlich kommunizieren", text: "Was wir vereinbaren, soll nachvollziehbar und verlässlich sein. Deshalb klären wir wesentliche Punkte möglichst frühzeitig." },
         { title: "Vertraulich mit Informationen umgehen", text: "Persönliche Angaben und Unterlagen zu einer Immobilie behandeln wir mit der erforderlichen Vertraulichkeit." },
-        { title: "Praktische Lösungen suchen", text: "Wir konzentrieren uns darauf, was in der konkreten Situation tatsächlich machbar ist, statt unnötig komplizierte Wege zu schaffen." },
+        { title: "Praktische Lösungen suchen", text: "Wir konzentrieren uns auf Lösungen, die zur Immobilie und zur jeweiligen Situation passen und tatsächlich umgesetzt werden können." },
       ],
     },
     approach: {
