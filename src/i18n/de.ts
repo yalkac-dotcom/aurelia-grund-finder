@@ -567,7 +567,7 @@ const de: Translations = {
       { title: "Erstkontakt", desc: "Sie melden sich bei uns und sagen uns, für welches Objekt Sie sich interessieren oder wonach Sie suchen." },
       { title: "Besichtigung und Unterlagen", desc: "Wenn ein passendes Objekt verfügbar ist, vereinbaren wir die nächsten Schritte und stellen Ihnen die vorhandenen Objektinformationen zur Verfügung." },
       { title: "Konditionen besprechen", desc: "Bei ernsthaftem Interesse sprechen wir über Kaufpreis, Bedingungen und den gewünschten Übergabezeitpunkt." },
-      { title: "Notar und Übergabe", desc: "Nach einer Einigung wird der Kaufvertrag notariell beurkundet. Anschließend erfolgt die weitere Abwicklung entsprechend der getroffenen Vereinbarung." },
+      { title: "Notar und Übergabe", desc: "Nach der Beurkundung stimmen wir die weiteren Schritte bis zur Übergabe transparent mit Ihnen ab." },
     ],
     stepsNote:
       "Der genaue Ablauf hängt vom jeweiligen Objekt und der konkreten Vereinbarung ab.",
@@ -580,11 +580,11 @@ const de: Translations = {
       },
       {
         q: "Ohne Makler – wer vertritt meine Interessen?",
-        a: "Der Notar beurkundet den Immobilienkauf neutral und ist nicht Interessenvertreter einer Vertragspartei. Wenn Sie eine eigene rechtliche, technische oder wirtschaftliche Prüfung wünschen, können Sie selbstverständlich eigene Berater oder Sachverständige hinzuziehen.",
+        a: "Aurelia ist Ihr direkter Ansprechpartner rund um das angebotene Objekt. Selbstverständlich können Sie vor dem Kauf zusätzlich eigene rechtliche, technische oder wirtschaftliche Berater hinzuziehen.",
       },
       {
         q: "Sind die Preise verhandelbar?",
-        a: "Das hängt vom jeweiligen Objekt und Angebot ab. Wenn Verhandlungsspielraum besteht, können die Konditionen im persönlichen Gespräch besprochen werden.",
+        a: "Das hängt vom jeweiligen Objekt und Angebot ab. Besteht Verhandlungsspielraum, können die Konditionen im persönlichen Gespräch besprochen werden.",
       },
     ],
     faqTitle: "Häufige Fragen",
@@ -607,7 +607,7 @@ const de: Translations = {
         a: "Nach Kaufpreiszahlung und Eigentumsumschreibung erfolgt die geordnete Übergabe der Immobilie inklusive aller relevanten Unterlagen.",
       },
     ],
-    finalCtaTitle: "Interesse an einem konkreten Objekt?",
+    finalCtaTitle: "Sie interessieren sich für eine Immobilie?",
     finalCtaText:
       "Teilen Sie uns mit, für welches Objekt Sie sich interessieren oder welche Immobilie Sie suchen. Wir prüfen gerne, ob wir Ihnen aktuell ein passendes Angebot vorstellen können.",
     finalCtaButton: "UNVERBINDLICH ANFRAGEN",

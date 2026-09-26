@@ -35,7 +35,7 @@ const en: Translations = {
     subline: "Germany · Turkey · Portfolio & cooperation",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "For Owners", path: "/fuer-eigentumer-in-not" },
+      { label: "For Owners", path: "/fuer-eigentuemer" },
       { label: "For Buyers", path: "/fuer-kaeufer" },
       { label: "Property in Turkey", path: "/immobilien-tuerkei" },
       { label: "For Partners", path: "/fuer-geschaeftspartner" },
@@ -550,7 +550,7 @@ const en: Translations = {
       { title: "Initial contact", desc: "You get in touch and tell us which property interests you or what you are looking for." },
       { title: "Viewing and documents", desc: "If a suitable property is available, we agree on the next steps and provide you with the available property information." },
       { title: "Discussing terms", desc: "If there is genuine interest, we discuss the purchase price, conditions and the desired handover date." },
-      { title: "Notary and handover", desc: "Once agreement is reached, the purchase contract is notarised. The further process then follows the agreement reached." },
+      { title: "Notary and handover", desc: "After notarisation, we agree the further steps up to handover with you transparently." },
     ],
     stepsNote:
       "The exact process depends on the respective property and the specific agreement.",
@@ -563,11 +563,11 @@ const en: Translations = {
       },
       {
         q: "Without an agent – who represents my interests?",
-        a: "The notary certifies the property purchase neutrally and does not represent the interests of either contracting party. If you would like your own legal, technical or economic review, you are of course welcome to bring in your own advisors or experts.",
+        a: "Aurelia is your direct point of contact for the property on offer. You are of course welcome to bring in your own legal, technical or financial advisors before buying.",
       },
       {
         q: "Are the prices negotiable?",
-        a: "That depends on the respective property and offer. If there is room for negotiation, the terms can be discussed in a personal conversation.",
+        a: "That depends on the property and the offer. Where there is room for negotiation, the terms can be discussed in a personal conversation.",
       },
     ],
     faqTitle: "Frequently asked questions",
@@ -590,10 +590,10 @@ const en: Translations = {
         a: "Once the purchase price is paid and ownership is transferred, the orderly handover of the property takes place, including all relevant documents.",
       },
     ],
-    finalCtaTitle: "Interested in a specific property?",
+    finalCtaTitle: "Interested in a property?",
     finalCtaText:
-      "Tell us which property interests you or what you are looking for. We will check whether we currently have a suitable property to offer.",
-    finalCtaButton: "Get in touch without obligation",
+      "Let us know which property interests you or what kind of property you are looking for. We will gladly check whether we can currently present a suitable offer.",
+    finalCtaButton: "Enquire without obligation",
   },
   partners: {
     heroKicker: "For business partners",

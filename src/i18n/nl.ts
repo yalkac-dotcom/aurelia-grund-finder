@@ -35,7 +35,7 @@ const nl: Translations = {
     subline: "Duitsland · Turkije · Portefeuille en samenwerking",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Voor eigenaren", path: "/fuer-eigentumer-in-not" },
+      { label: "Voor eigenaren", path: "/fuer-eigentuemer" },
       { label: "Voor kopers", path: "/fuer-kaeufer" },
       { label: "Vastgoed in Turkije", path: "/immobilien-tuerkei" },
       { label: "Voor partners", path: "/fuer-geschaeftspartner" },
@@ -518,7 +518,7 @@ const nl: Translations = {
       { title: "Eerste contact", desc: "U neemt contact met ons op en laat ons weten voor welk object u interesse heeft of waar u naar op zoek bent." },
       { title: "Bezichtiging en documenten", desc: "Is er een passend object beschikbaar, dan spreken wij de volgende stappen af en stellen wij u de beschikbare objectinformatie ter beschikking." },
       { title: "Voorwaarden bespreken", desc: "Bij serieuze interesse bespreken wij de koopprijs, de voorwaarden en het gewenste opleveringsmoment." },
-      { title: "Notaris en oplevering", desc: "Na overeenstemming wordt de koopovereenkomst notarieel bekrachtigd. Daarna volgt de verdere afwikkeling volgens de gemaakte afspraak." },
+      { title: "Notaris en oplevering", desc: "Na het passeren van de akte stemmen wij de verdere stappen tot de oplevering transparant met u af." },
     ],
     stepsNote:
       "Het precieze verloop hangt af van het betreffende object en de concrete afspraak.",
@@ -531,11 +531,11 @@ const nl: Translations = {
       },
       {
         q: "Zonder makelaar – wie behartigt mijn belangen?",
-        a: "De notaris bekrachtigt de aankoop neutraal en behartigt niet de belangen van één van de partijen. Wenst u een eigen juridische, technische of economische beoordeling, dan kunt u uiteraard uw eigen adviseurs of deskundigen inschakelen.",
+        a: "Aurelia is uw directe aanspreekpunt voor het aangeboden object. Uiteraard kunt u vóór de aankoop ook uw eigen juridische, technische of financiële adviseurs inschakelen.",
       },
       {
         q: "Zijn de prijzen onderhandelbaar?",
-        a: "Dat hangt af van het betreffende object en aanbod. Is er onderhandelingsruimte, dan kunnen de voorwaarden in een persoonlijk gesprek worden besproken.",
+        a: "Dat hangt af van het object en het aanbod. Is er onderhandelingsruimte, dan kunnen de voorwaarden in een persoonlijk gesprek worden besproken.",
       },
     ],
     faqTitle: "Veelgestelde vragen",
@@ -558,10 +558,10 @@ const nl: Translations = {
         a: "Na betaling van de koopsom en eigendomsoverdracht volgt de geordende oplevering van het object inclusief alle relevante documenten.",
       },
     ],
-    finalCtaTitle: "Geïnteresseerd in een concreet object?",
+    finalCtaTitle: "Interesse in een object?",
     finalCtaText:
-      "Laat ons weten voor welk object u interesse heeft of waar u naar op zoek bent. Wij bekijken of wij momenteel een passend object kunnen aanbieden.",
-    finalCtaButton: "Vrijblijvend contact opnemen",
+      "Laat ons weten voor welk object u interesse heeft of welk vastgoed u zoekt. Wij bekijken graag of wij u op dit moment een passend aanbod kunnen doen.",
+    finalCtaButton: "Vrijblijvend aanvragen",
   },
   partners: {
     heroKicker: "Voor zakelijke partners",

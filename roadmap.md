@@ -148,3 +148,18 @@
 - [x] Navigation + Anfrage-Auswahl
 - [x] Footer, SEO
 - [x] Altlogik-Suche, responsive Prüfung (Formulare nicht absenden)
+
+# Zusammenhängende Überarbeitung (Sep 2026)
+- [ ] 1 Unser Bestand
+- [ ] 2 Für Kaufinteressenten
+- [ ] 3 Türkei-Seite
+- [ ] 4 Geschäftspartner (5. Karte Handwerk)
+- [ ] 5 Wie wir arbeiten
+- [ ] 6 Über uns (7 Punkte, Links)
+- [ ] 7 FAQ (Hero-Fehler, 16 Fragen)
+- [ ] 8 Kontakt (Telefon optional, Datenschutz, FAQ entfernen)
+- [ ] 9 URL /fuer-eigentuemer + Weiterleitung
+- [ ] 10 Falsche Links
+- [ ] 11 Footer
+- [ ] 12 Konsistenz (familiengeführt etc.), alle Sprachen
+- [ ] 13 Test 1440/768/390

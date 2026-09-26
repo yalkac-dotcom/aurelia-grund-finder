@@ -35,7 +35,7 @@ const it: Translations = {
     subline: "Germania · Turchia · Patrimonio e collaborazioni",
     navItems: [
       { label: "Home", path: "/" },
-      { label: "Proprietari", path: "/fuer-eigentumer-in-not" },
+      { label: "Proprietari", path: "/fuer-eigentuemer" },
       { label: "Per acquirenti", path: "/fuer-kaeufer" },
       { label: "Immobili in Turchia", path: "/immobilien-tuerkei" },
       { label: "Per partner", path: "/fuer-geschaeftspartner" },
@@ -517,7 +517,7 @@ const it: Translations = {
       { title: "Primo contatto", desc: "Vi mettete in contatto con noi e ci dite per quale immobile siete interessati o cosa state cercando." },
       { title: "Visita e documentazione", desc: "Se è disponibile un immobile adatto, concordiamo i passi successivi e vi mettiamo a disposizione le informazioni disponibili sull'immobile." },
       { title: "Discussione delle condizioni", desc: "In caso di interesse concreto, parliamo del prezzo di acquisto, delle condizioni e della data di consegna desiderata." },
-      { title: "Notaio e consegna", desc: "Dopo l'accordo il contratto di compravendita viene rogato dal notaio. Successivamente lo svolgimento prosegue secondo quanto concordato." },
+      { title: "Notaio e consegna", desc: "Dopo il rogito concordiamo con lei in modo trasparente i passi successivi fino alla consegna." },
     ],
     stepsNote:
       "Lo svolgimento esatto dipende dal rispettivo immobile e dall'accordo concreto.",
@@ -530,11 +530,11 @@ const it: Translations = {
       },
       {
         q: "Senza agenzia – chi tutela i miei interessi?",
-        a: "Il notaio roga la compravendita immobiliare in modo neutrale e non rappresenta gli interessi di una parte contrattuale. Se desiderate una verifica legale, tecnica o economica autonoma, potete naturalmente rivolgervi a vostri consulenti o periti di fiducia.",
+        a: "Aurelia è il suo referente diretto per l'immobile offerto. Prima dell'acquisto può naturalmente avvalersi anche di propri consulenti legali, tecnici o economici.",
       },
       {
         q: "I prezzi sono trattabili?",
-        a: "Dipende dal singolo immobile e dall'offerta. Se esiste un margine di trattativa, le condizioni possono essere discusse nel colloquio personale.",
+        a: "Dipende dal singolo immobile e dall'offerta. Se esiste un margine di trattativa, le condizioni possono essere discusse in un colloquio personale.",
       },
     ],
     faqTitle: "Domande frequenti",
@@ -557,10 +557,10 @@ const it: Translations = {
         a: "Dopo il pagamento del prezzo e il trasferimento di proprietà avviene la consegna ordinata dell'immobile, inclusi tutti i documenti rilevanti.",
       },
     ],
-    finalCtaTitle: "Interessati a un immobile specifico?",
+    finalCtaTitle: "È interessato a un immobile?",
     finalCtaText:
-      "Diteci per quale immobile siete interessati o cosa state cercando. Verifichiamo se possiamo offrirvi attualmente un immobile adatto.",
-    finalCtaButton: "Contattateci senza impegno",
+      "Ci indichi quale immobile le interessa o che tipo di immobile sta cercando. Verificheremo volentieri se al momento possiamo proporle un'offerta adatta.",
+    finalCtaButton: "Richiesta senza impegno",
   },
   partners: {
     heroKicker: "Per partner commerciali",

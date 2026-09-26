@@ -35,7 +35,7 @@ const fr: Translations = {
     subline: "Allemagne · Turquie · Portefeuille et coopérations",
     navItems: [
       { label: "Accueil", path: "/" },
-      { label: "Pour les propriétaires", path: "/fuer-eigentumer-in-not" },
+      { label: "Pour les propriétaires", path: "/fuer-eigentuemer" },
       { label: "Pour les acheteurs", path: "/fuer-kaeufer" },
       { label: "Immobilier en Turquie", path: "/immobilien-tuerkei" },
       { label: "Pour les partenaires", path: "/fuer-geschaeftspartner" },
@@ -550,7 +550,7 @@ const fr: Translations = {
       { title: "Premier contact", desc: "Vous nous contactez et nous indiquez le bien qui vous intéresse ou ce que vous recherchez." },
       { title: "Visite et documents", desc: "Si un bien correspondant est disponible, nous convenons des prochaines étapes et mettons à votre disposition les informations disponibles sur le bien." },
       { title: "Discussion des conditions", desc: "En cas d'intérêt sérieux, nous discutons du prix d'achat, des conditions et de la date de remise souhaitée." },
-      { title: "Acte notarié et remise", desc: "Une fois l'accord conclu, le contrat de vente est authentifié par acte notarié. La suite du processus se déroule ensuite conformément à l'accord conclu." },
+      { title: "Acte notarié et remise", desc: "Après la signature de l'acte, nous convenons avec vous, en toute transparence, des étapes suivantes jusqu'à la remise des clés." },
     ],
     stepsNote:
       "Le déroulement exact dépend du bien concerné et de l'accord conclu.",
@@ -563,11 +563,11 @@ const fr: Translations = {
       },
       {
         q: "Sans courtier – qui défend mes intérêts ?",
-        a: "Le notaire authentifie l'achat immobilier de manière neutre et ne représente les intérêts d'aucune des parties. Si vous souhaitez faire réaliser votre propre examen juridique, technique ou économique, vous pouvez bien entendu faire appel à vos propres conseillers ou experts.",
+        a: "Aurelia est votre interlocuteur direct pour le bien proposé. Vous pouvez bien entendu faire appel, avant l'achat, à vos propres conseillers juridiques, techniques ou financiers.",
       },
       {
         q: "Les prix sont-ils négociables ?",
-        a: "Cela dépend du bien et de l'offre concernés. S'il existe une marge de négociation, les conditions peuvent être discutées lors de l'entretien personnel.",
+        a: "Cela dépend du bien et de l'offre. S'il existe une marge de négociation, les conditions peuvent être discutées lors d'un entretien personnel.",
       },
     ],
     faqTitle: "Questions fréquentes",
@@ -590,10 +590,10 @@ const fr: Translations = {
         a: "Une fois le prix d’achat payé et la propriété transférée, la remise ordonnée du bien a lieu, avec tous les documents pertinents.",
       },
     ],
-    finalCtaTitle: "Intéressé(e) par un bien précis ?",
+    finalCtaTitle: "Un bien vous intéresse ?",
     finalCtaText:
-      "Indiquez-nous le bien qui vous intéresse ou ce que vous recherchez. Nous vérifierons si nous pouvons actuellement vous proposer un bien correspondant.",
-    finalCtaButton: "Nous contacter sans engagement",
+      "Indiquez-nous quel bien vous intéresse ou quel type de bien vous recherchez. Nous vérifierons volontiers si nous pouvons vous présenter une offre adaptée.",
+    finalCtaButton: "Demander sans engagement",
   },
   partners: {
     heroKicker: "Pour les partenaires d’affaires",

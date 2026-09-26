@@ -35,7 +35,7 @@ const es: Translations = {
     subline: "Alemania · Turquía · Cartera y cooperaciones",
     navItems: [
       { label: "Inicio", path: "/" },
-      { label: "Propietarios", path: "/fuer-eigentumer-in-not" },
+      { label: "Propietarios", path: "/fuer-eigentuemer" },
       { label: "Para compradores", path: "/fuer-kaeufer" },
       { label: "Inmuebles en Turquía", path: "/immobilien-tuerkei" },
       { label: "Para socios", path: "/fuer-geschaeftspartner" },
@@ -517,7 +517,7 @@ const es: Translations = {
       { title: "Primer contacto", desc: "Usted se pone en contacto con nosotros y nos indica por qué inmueble está interesado o qué está buscando." },
       { title: "Visita y documentación", desc: "Si hay disponible un inmueble adecuado, acordamos los próximos pasos y le facilitamos la información disponible sobre el objeto." },
       { title: "Negociación de condiciones", desc: "Si existe un interés serio, hablamos sobre el precio de compra, las condiciones y la fecha de entrega deseada." },
-      { title: "Notario y entrega", desc: "Tras llegar a un acuerdo, el contrato de compraventa se formaliza ante notario. A continuación, la tramitación posterior se realiza conforme a lo acordado." },
+      { title: "Notario y entrega", desc: "Tras la firma ante notario, acordamos con usted de forma transparente los siguientes pasos hasta la entrega." },
     ],
     stepsNote:
       "El proceso exacto depende del inmueble concreto y del acuerdo alcanzado.",
@@ -530,11 +530,11 @@ const es: Translations = {
       },
       {
         q: "Sin agencia inmobiliaria, ¿quién representa mis intereses?",
-        a: "El notario formaliza la compraventa de forma neutral y no representa los intereses de ninguna de las partes. Si desea una revisión jurídica, técnica o económica propia, puede recurrir sin problema a sus propios asesores o peritos.",
+        a: "Aurelia es su interlocutor directo para el inmueble ofrecido. Por supuesto, antes de la compra puede recurrir también a sus propios asesores jurídicos, técnicos o económicos.",
       },
       {
         q: "¿Son negociables los precios?",
-        a: "Depende del inmueble y de la oferta concreta. Si existe margen de negociación, las condiciones pueden hablarse en una conversación personal.",
+        a: "Depende del inmueble y de la oferta. Si existe margen de negociación, las condiciones pueden tratarse en una conversación personal.",
       },
     ],
     faqTitle: "Preguntas frecuentes",
@@ -557,10 +557,10 @@ const es: Translations = {
         a: "Tras el pago del precio y la transmisión de la propiedad se realiza la entrega ordenada del inmueble, incluyendo toda la documentación relevante.",
       },
     ],
-    finalCtaTitle: "¿Interesado en un inmueble concreto?",
+    finalCtaTitle: "¿Le interesa un inmueble?",
     finalCtaText:
-      "Díganos por qué inmueble está interesado o qué está buscando. Comprobaremos si actualmente podemos ofrecerle un objeto adecuado.",
-    finalCtaButton: "Contacte sin compromiso",
+      "Indíquenos qué inmueble le interesa o qué tipo de inmueble busca. Comprobaremos con gusto si actualmente podemos presentarle una oferta adecuada.",
+    finalCtaButton: "Consultar sin compromiso",
   },
   partners: {
     heroKicker: "Para socios comerciales",

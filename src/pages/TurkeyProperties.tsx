@@ -318,13 +318,7 @@ const TurkeyProperties = () => {
                 {page.hero.primaryCta}
                 <ArrowRight size={13} className="ml-2 text-accent" />
               </Link>
-              {language === "de" ? (
-                <a href="#ablauf" className="btn-secondary">{page.hero.secondaryCta}</a>
-              ) : (
-                <Link to="/kontakt" className="btn-secondary">
-                  {page.hero.secondaryCta}
-                </Link>
-              )}
+              <a href="#ablauf" className="btn-secondary">{page.hero.secondaryCta}</a>
             </div>
           </div>
         </div>
@@ -450,40 +444,28 @@ const TurkeyProperties = () => {
               <div className="border-l-2 border-accent bg-card px-6 py-8 md:px-10">
                 <h2 className="font-heading text-[1.55rem] font-semibold text-primary">{page.crossLink.title}</h2>
                 <p className="mt-3 max-w-3xl text-[0.94rem] leading-[1.8] text-muted-foreground">{page.crossLink.text}</p>
-                <Link to="/fuer-eigentumer-in-not" className="mt-5 inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{page.crossLink.cta}</Link>
+                <Link to="/fuer-eigentuemer" className="mt-5 inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{page.crossLink.cta}</Link>
               </div>
             </Reveal>
           </div>
         </section>}
 
-        {language === "de" && <section className="section-premium bg-background">
+        {page.closingCards && page.closingCards.length > 0 && <section className="section-premium bg-background">
           <div className="container-premium">
-            <div className="grid gap-6 lg:grid-cols-3">
-              {[
-                { h: "Immobilie in der Türkei zum Ankauf anbieten", p: "Sie besitzen eine Immobilie in der Türkei und möchten verkaufen? Aurelia prüft ausgewählte Immobilien für einen möglichen Erwerb auf eigene Rechnung.", cta: "Immobilie anbieten", to: "/immobilie-anbieten?land=tuerkei" },
-                { h: "Sie leben in der Türkei und besitzen eine Immobilie in Deutschland?", p: "Auch aus der Türkei können Sie Aurelia Ihre Immobilie in Deutschland zum möglichen Ankauf anbieten. Viele Unterlagen und Abstimmungen lassen sich je nach Einzelfall aus der Ferne vorbereiten.", note: "Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, hängt vom jeweiligen Einzelfall ab.", cta: "Immobilie in Deutschland anbieten", to: "/immobilie-anbieten?land=deutschland" },
-                { h: "Interesse an Immobilien aus unserem Bestand?", p: "Kaufinteressenten können unverbindlich hinterlegen, für welche Immobilienarten und Märkte sie sich interessieren. Wenn ein passendes Objekt aus unserem Bestand verfügbar ist, können wir Kontakt aufnehmen.", cta: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" },
-              ].map((b, i) => (
-                <Reveal key={b.h} delay={i * 0.06}>
-                  <div className="flex h-full flex-col border-l-2 border-accent bg-card px-6 py-8">
-                    <h2 className="font-heading text-[1.25rem] font-semibold leading-snug text-primary">{b.h}</h2>
-                    <p className="mt-3 text-[0.92rem] leading-[1.8] text-muted-foreground">{b.p}</p>
-                    {b.note && <p className="mt-3 text-[0.84rem] italic leading-[1.7] text-muted-foreground">{b.note}</p>}
-                    <Link to={b.to} className="mt-auto pt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{b.cta}<ArrowRight size={13} className="text-accent" /></Link>
-                  </div>
-                </Reveal>
-              ))}
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {page.closingCards.map((b, i) => {
+                const targets = ["/immobilie-anbieten?land=tuerkei", "/immobilie-anbieten?land=deutschland", language === "de" ? "/fuer-kaeufer#kaufinteresse" : "/kontakt"];
+                return (
+                  <Reveal key={b.title} delay={i * 0.06}>
+                    <div className="flex h-full flex-col border-l-2 border-accent bg-card px-6 py-8">
+                      <h2 className="font-heading text-[1.25rem] font-semibold leading-snug text-primary">{b.title}</h2>
+                      <p className="mt-3 text-[0.92rem] leading-[1.8] text-muted-foreground">{b.text}</p>
+                      <Link to={targets[i] ?? "/kontakt"} className="mt-auto pt-5 inline-flex min-h-11 items-center gap-2 text-[0.78rem] font-semibold uppercase text-primary hover:text-accent">{b.cta}<ArrowRight size={13} className="text-accent" /></Link>
+                    </div>
+                  </Reveal>
+                );
+              })}
             </div>
-            <Reveal delay={0.1}>
-              <div className="mx-auto mt-10 max-w-3xl border-l-2 border-accent/60 pl-6">
-                <h2 className="font-heading text-[1.35rem] font-semibold text-primary whitespace-pre-line">{"Auch bei schwierigen Situationen in der Türkei.\n\nIhre Immobilie in der Türkei. Ihr persönlicher Ansprechpartner in Deutschland.\n\nMöchten Sie uns eine Immobilie in der Türkei anbieten?\n\n"}</h2>
-                <div className="mt-3 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
-                  <p>Auch in der Türkei gibt es Eigentümer, die eine Immobilie aus finanziellen oder persönlichen Gründen kurzfristig verkaufen möchten.</p>
-                  <p>Aurelia prüft ausgewählte Immobilien auch dort für einen möglichen Erwerb auf eigene Rechnung.</p>
-                  <p>Ob ein Ankauf möglich ist, hängt von der Immobilie, der Eigentumssituation und den rechtlichen Voraussetzungen vor Ort ab.</p>
-                </div>
-              </div>
-            </Reveal>
           </div>
         </section>}
 
@@ -495,7 +477,7 @@ const TurkeyProperties = () => {
                 <div>
                   <div className="mb-4 h-[2px] w-10 bg-accent" />
                   <h2 className="font-heading text-[1.8rem] font-bold leading-[1.2] md:text-[2.35rem]">{page.trust.title}</h2>
-                  <p className="mt-5 text-[0.98rem] leading-[1.9] text-white/75">{page.trust.text}</p>
+                  <p className="mt-5 whitespace-pre-line text-[0.98rem] leading-[1.9] text-white/75">{page.trust.text}</p>
                 </div>
               </Reveal>
               <Reveal delay={0.08}>
@@ -520,7 +502,7 @@ const TurkeyProperties = () => {
               <h2 className="font-heading text-[1.75rem] font-bold leading-[1.2] text-primary md:text-[2.25rem]">{page.cta.title}</h2>
               <p className="mx-auto mt-4 max-w-2xl text-[0.94rem] leading-[1.85] text-muted-foreground">{page.cta.text}</p>
               <div className="mt-7 flex flex-wrap justify-center gap-3">
-                <Link to={language === "de" ? "/immobilie-anbieten?land=tuerkei" : "/immobilie-anbieten"} className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></Link>
+                <Link to="/immobilie-anbieten?land=tuerkei" className="btn-primary">{page.cta.primary}<ArrowRight size={13} className="ml-2 text-accent" /></Link>
                 <a href="tel:+4921169583033" className="btn-secondary">{page.cta.secondary}</a>
               </div>
               <p className="mx-auto mt-8 max-w-3xl text-[0.78rem] leading-[1.75] text-muted-foreground">{page.legalNotice}</p>

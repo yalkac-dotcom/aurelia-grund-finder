@@ -10,7 +10,7 @@ import { useLocation } from "react-router-dom";
 
 const MOBILE_CONTACT_ROUTES = new Set([
   "/",
-  "/fuer-eigentumer-in-not",
+  "/fuer-eigentuemer",
   "/immobilien-tuerkei",
   "/wie-es-funktioniert",
   "/ueber-uns",

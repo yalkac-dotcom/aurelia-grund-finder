@@ -62,7 +62,7 @@ const Header = () => {
     { label: "Kontakt", path: "/kontakt" },
   ] : [
     { label: t.nav.home, path: "/" },
-    { label: t.nav.ownerInTrouble, path: "/fuer-eigentumer-in-not" },
+    { label: t.nav.ownerInTrouble, path: "/fuer-eigentuemer" },
     { label: t.nav.buyers, path: "/fuer-kaeufer" },
     { label: t.nav.turkeyProperties, path: "/immobilien-tuerkei" },
     { label: t.nav.partners, path: "/fuer-geschaeftspartner" },
