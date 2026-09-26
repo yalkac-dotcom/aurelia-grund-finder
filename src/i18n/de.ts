@@ -1224,7 +1224,7 @@ const de: Translations = {
     approach: {
       headline: "Unser Ansatz",
       body: ["Aurelia Grundbesitz versteht sich nicht als klassischer Immobilienmakler.", "Wir prüfen Immobilien für einen möglichen Ankauf auf eigene Rechnung und strukturieren die weitere Abwicklung individuell.", "Dadurch können Entscheidungen direkter getroffen und Prozesse in geeigneten Fällen deutlich verkürzt werden."],
-      imageAlt: "Hochwertige moderne Wohnarchitektur mit Naturstein, Holz und begrüntem Innenhof",
+      imageAlt: "Zwei Hände, die sich im Zeichen der Vereinbarung reichen",
     },
     situations: {
       headline: "Wann Aurelia Grundbesitz der richtige Ansprechpartner sein kann",
