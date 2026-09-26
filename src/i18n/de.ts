@@ -614,33 +614,22 @@ const de: Translations = {
   },
   partners: {
     heroKicker: "Für Geschäftspartner",
-    heroTitle: "Projektbezogene Kooperationen mit klarem Rahmen.",
+    heroTitle: "Gemeinsam Immobilienprojekte umsetzen",
     heroDescription:
-      "In ausgewählten Fällen prüfen wir individuelle, objektbezogene Kooperationen. Keine Standardmodelle – sondern klar strukturierte Vereinbarungen, die zur jeweiligen Situation passen.",
+      "Bei eigenen Ankäufen, Renovierungen und Immobilienprojekten arbeitet Aurelia mit ausgewählten externen Fachleuten und Geschäftspartnern zusammen – je nach Projekt und Standort.",
     heroPrimaryCta: "Konstellation besprechen",
     heroSecondaryCta: "Wie wir vorgehen",
     heroTrustLine: "Projektbezogene Zusammenarbeit · Direkter Austausch · Klare Zuständigkeiten",
     heroImageAlt: "Ruhige Geschäftsumgebung – sinnbildlich für klar strukturierte, projektbezogene Kooperationen",
-    formsTitle: "Mögliche Formen der Zusammenarbeit",
+    formsTitle: "Mit wem wir zusammenarbeiten",
     formsIntro:
-      "Jede Kooperation entsteht aus dem konkreten Projekt heraus. Diese Konstellationen kommen in der Praxis am häufigsten vor.",
+      "Je nach Projekt arbeitet Aurelia mit unterschiedlichen Fachleuten und Unternehmen zusammen. Entscheidend sind für uns eine verlässliche Zusammenarbeit, klare Zuständigkeiten und eine professionelle Umsetzung.",
     forms: [
-      {
-        title: "Objektbezogene Kooperation",
-        desc: "Zusammenarbeit rund um ein konkretes Immobilienprojekt – von Ankauf bis Verwertung.",
-      },
-      {
-        title: "Mehrere Projekte",
-        desc: "Begleitung über einen längeren Zeitraum, mit regelmäßiger, ruhiger Abstimmung zum Stand der Vorhaben.",
-      },
-      {
-        title: "Individuelle Vereinbarung",
-        desc: "Keine Standardmodelle. Jede Konstellation wird auf Basis der konkreten Situation ausgearbeitet.",
-      },
-      {
-        title: "Direkter Austausch",
-        desc: "Vertraulicher Kontakt zur Geschäftsleitung. Klare Kommunikation, sachliche Abstimmung.",
-      },
+      { title: "Rechtsanwälte, Notare & Steuerberater", desc: "Bei rechtlichen, notariellen oder steuerlichen Fragestellungen arbeiten wir mit externen Fachleuten zusammen. Aurelia selbst bietet keine Rechts- oder Steuerberatung an." },
+      { title: "Architekten & technische Fachleute", desc: "Bei Renovierungen, Umbauten und der Entwicklung eigener Immobilien ziehen wir je nach Projekt Architekten und weitere technische Fachleute hinzu." },
+      { title: "Projektentwickler & lokale Partner", desc: "Bei geeigneten Projekten arbeiten wir mit Projektentwicklern und lokalen Partnern zusammen – abhängig von Projekt und Standort." },
+      { title: "Makler bei eigenen Ankäufen", desc: "Makler können Aurelia Immobilien für einen möglichen eigenen Ankauf oder für eigene Projekte anbieten. Dabei arbeiten sie mit uns als externe Geschäftspartner zusammen. Aurelia übernimmt keinen Vertrieb fremder Immobilien." },
+      { title: "Handwerks- & Fachbetriebe", desc: "Für Renovierungen, Instandsetzungen und Arbeiten an eigenen Immobilien arbeiten wir projektbezogen mit qualifizierten Handwerks- und Fachbetrieben zusammen." },
     ],
     principlesTitle: "Grundlagen einer guten Zusammenarbeit",
     principlesText:
@@ -682,7 +671,7 @@ const de: Translations = {
     ],
     finalCtaTitle: "Sie möchten ein Projekt mit uns besprechen?",
     finalCtaText:
-      "Wenn Sie eine Immobilie, ein Projekt oder eine konkrete Idee für eine Zusammenarbeit haben, sprechen Sie uns gerne an. Wir freuen uns darauf, mehr über Ihr Vorhaben zu erfahren.",
+      "Wenn Sie eine Immobilie, ein Projekt oder eine konkrete Idee für eine Zusammenarbeit haben, sprechen Sie uns gerne an. Wir besprechen mit Ihnen, ob und in welcher Form eine Zusammenarbeit möglich ist.",
     finalCtaButton: "Unverbindlich Kontakt aufnehmen",
   },
   about: {
