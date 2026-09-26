@@ -552,15 +552,15 @@ const de: Translations = {
     ],
     portfolioTitle: "Unser aktuelles Angebot",
     portfolioText:
-      "Unser Immobilienbestand verändert sich regelmäßig. Welche Immobilien aktuell angeboten werden, erfahren Sie über unser Portfolio oder direkt auf Anfrage.",
+      "Unser Immobilienbestand verändert sich regelmäßig. Welche Objekte aktuell verfügbar sind, sehen Sie in unserem Portfolio oder erfahren Sie direkt auf Anfrage.",
     portfolioCta: "Zum Portfolio",
     proofTitle: "Wenn Sie sich für ein Objekt interessieren",
     proofIntro: "",
     proofPoints: [
-      { title: "Direkter Kontakt", text: "Beim jeweiligen Angebot erfahren Sie, wer Ihr Ansprechpartner ist und in welcher Konstellation die Immobilie verkauft wird." },
-      { title: "Informationen zum Objekt", text: "Wir stellen Ihnen die vorhandenen Informationen und Unterlagen zur Immobilie zur Verfügung und sagen auch, wenn etwas noch nicht vorliegt." },
-      { title: "Preisvorstellung", text: "Die Preisvorstellung orientiert sich an der jeweiligen Immobilie und ihrer Marktsituation. Über konkrete Konditionen sprechen wir offen mit Ihnen." },
-      { title: "Weitere Abwicklung", text: "Wenn eine Einigung zustande kommt, werden die weiteren Schritte bis zur notariellen Beurkundung und Übergabe gemeinsam abgestimmt." },
+      { title: "Direkter Kontakt", text: "Beim jeweiligen Angebot erfahren Sie, wer Ihr Ansprechpartner ist und wie der Verkauf des Objekts abläuft." },
+      { title: "Informationen zum Objekt", text: "Wir stellen Ihnen die vorhandenen Informationen und Unterlagen zur Immobilie zur Verfügung und sagen offen, wenn etwas noch nicht vorliegt." },
+      { title: "Preisvorstellung", text: "Die Preisvorstellung richtet sich nach der jeweiligen Immobilie und ihrer aktuellen Marktsituation. Über die konkreten Konditionen sprechen wir offen mit Ihnen." },
+      { title: "Weitere Abwicklung", text: "Wenn eine Einigung zustande kommt, stimmen wir die weiteren Schritte bis zum Kaufabschluss gemeinsam mit Ihnen ab." },
     ],
     stepsTitle: "So läuft der Kauf",
     steps: [
