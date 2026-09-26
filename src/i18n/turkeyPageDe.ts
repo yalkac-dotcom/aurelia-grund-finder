@@ -16,9 +16,9 @@ export const turkeyPageDe: Partial<Record<Language, DeepPartial<Translations>>> 
       servicesTitle: "Was bei einer Immobilie in der Türkei wichtig ist.",
       servicesIntro: "",
       services: [
-        { title: "Entfernung und Termine", text: "Wer nicht vor Ort lebt, kann nicht jeden Termin einfach wahrnehmen.\n\nViele Schritte können je nach Einzelfall aus der Ferne vorbereitet und abgestimmt werden. Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, hängt vom jeweiligen Fall ab." },
-        { title: "Unterschiedliche Abläufe", text: "Grundbuch, Vollmachten und Formalitäten unterscheiden sich von den in Deutschland bekannten Abläufen.\n\nWir erklären verständlich, welche Angaben und Unterlagen wir für unsere Prüfung benötigen. Rechts- oder Steuerberatung bieten wir nicht an." },
-        { title: "Prüfung auf eigene Rechnung", text: "Wir sehen uns Lage, Zustand und vorhandene Unterlagen an.\n\nDanach sagen wir Ihnen offen, ob ein Erwerb durch Aurelia auf eigene Rechnung grundsätzlich infrage kommt." },
+        { title: "Entfernung und Termine", text: "Wer nicht vor Ort lebt, kann nicht jeden Termin persönlich wahrnehmen. Viele Schritte lassen sich je nach Einzelfall aus der Ferne vorbereiten und abstimmen. Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, hängt vom jeweiligen Fall ab." },
+        { title: "Unterschiedliche Abläufe", text: "Grundbuch, Vollmachten und weitere Formalitäten unterscheiden sich teilweise von den in Deutschland bekannten Abläufen. Wir erklären Ihnen verständlich, welche Angaben und Unterlagen wir für unsere Prüfung benötigen. Eine Rechts- oder Steuerberatung bieten wir nicht an." },
+        { title: "Prüfung auf eigene Rechnung", text: "Wir prüfen Lage, Zustand und die vorhandenen Unterlagen der Immobilie. Anschließend teilen wir Ihnen offen mit, ob ein Erwerb durch Aurelia auf eigene Rechnung grundsätzlich infrage kommt." },
       ],
       processTitle: "So läuft ein möglicher Ankauf in der Türkei ab.",
       process: [
