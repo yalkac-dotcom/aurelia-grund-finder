@@ -64,7 +64,7 @@ const PageHero = ({
         srcSet={image.srcSet}
         sizes={image.sizes}
         alt={imageAlt}
-        className={`hero-media h-full w-full object-cover ${fullImage ? "md:mx-auto md:w-auto md:max-w-full" : ""}`}
+        className={`hero-media h-full w-full object-cover ${fullImage ? "md:mx-auto md:block md:w-auto md:max-w-full" : ""}`}
         // Inline-objectPosition nur setzen, wenn die Seite explizit einen
         // Fokuspunkt vorgibt. Sonst greifen die zentral in index.css
         // gepflegten Breakpoint-Defaults von .hero-media.
