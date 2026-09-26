@@ -7,9 +7,9 @@ export const turkeyPageDe: Partial<Record<Language, DeepPartial<Translations>>> 
   de: {
     turkeyProperties: {
       hero: {
-        title: "Immobilien in der Türkei – direkt mit Aurelia -",
+        title: "Immobilien in der Türkei – und Eigentümer, die in der Türkei leben.",
         subtitle:
-          "Aurelia prüft ausgewählte Immobilien in der Türkei für einen möglichen Erwerb auf eigene Rechnung. Auch Eigentümer, die in der Türkei leben und eine Immobilie in Deutschland verkaufen möchten, können uns ihr Objekt direkt zum Ankauf anbieten",
+          "Aurelia prüft ausgewählte Immobilien in der Türkei für einen möglichen Erwerb auf eigene Rechnung. Und wer in der Türkei lebt, kann uns auch eine Immobilie in Deutschland zum möglichen Ankauf anbieten.",
         primaryCta: "Immobilie zum Ankauf anbieten",
         secondaryCta: "Ablauf kennenlernen",
       },
