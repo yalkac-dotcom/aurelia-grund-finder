@@ -40,7 +40,7 @@ const HomeDeSections = () => (
           <div id="zwangsversteigerung" className={`h-full scroll-mt-24 p-6 md:p-8 ${aureliaCard}`}>
             <h2 className="font-heading text-[1.35rem] font-semibold leading-snug text-primary">Wenn eine Zwangsversteigerung droht</h2>
             <div className="mt-4 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
-              <p>Auch kurz vor einer Zwangsversteigerung kann ein freihändiger Verkauf noch möglich sein.{"\n\n"}Solche Situationen kennen wir seit vielen Jahren. Wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung infrage kommt.</p>
+              <p>Auch kurz vor einer Zwangsversteigerung kann ein freihändiger Verkauf noch möglich sein. Solche Situationen kennen wir seit vielen Jahren. Wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung erwerben kann.</p>
               <p>Wenn es grundsätzlich passt, stimmen wir die nächsten Schritte mit Ihnen ab. Soweit es für den Kauf notwendig ist, können dabei auch Gespräche mit beteiligten Banken oder anderen Stellen geführt werden.{"\n\n"}Ob und unter welchen Bedingungen ein Verkauf möglich ist, hängt immer vom jeweiligen Fall ab</p>
             </div>
           </div>
