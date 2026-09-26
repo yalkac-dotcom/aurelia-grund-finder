@@ -56,7 +56,7 @@ const PageHero = ({
 }: PageHeroProps) => (
   <section
     id="hero"
-    className={`relative flex bg-primary ${mobileHomeFlow ? "min-h-0 items-start md:h-[87vh] md:min-h-[615px] md:items-center" : `items-center ${SIZE_CLASSES[size]}`}`}
+    className={`relative flex bg-primary ${mobileHomeFlow ? "min-h-0 items-start md:h-[87vh] md:min-h-[615px] md:items-center" : fullImage ? "items-center min-h-[535px] md:h-auto md:min-h-0 md:aspect-[3/2]" : `items-center ${SIZE_CLASSES[size]}`}`}
   >
     <div className="absolute inset-0 overflow-hidden">
       <OptimizedImg
