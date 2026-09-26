@@ -32,7 +32,7 @@ const HomeDeSections = () => (
             <h2 className="font-heading text-[1.35rem] font-semibold leading-snug text-primary">Wenn es nicht ganz einfach ist, schauen wir genauer hin.</h2>
             <div className="mt-4 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
               <p>Nicht jede Immobilie wird unter normalen Bedingungen verkauft. Manchmal gibt es finanzielle Schwierigkeiten, offene Forderungen, mehrere Beteiligte oder eine drohende Zwangsversteigerung.</p>
-              <p>Solche Situationen kennen wir seit vielen Jahren. Wir prüfen, ob ein direkter Ankauf auf eigene Rechnung möglich ist und welche Schritte dafür notwendig wären.</p>
+              <p>Solche Situationen kennen wir seit vielen Jahren. Wir prüfen, ob ein direkter Ankauf auf eigene Rechnung möglich ist und welche Schritte dafür notwendig sind.</p>
             </div>
           </div>
         </Reveal>
@@ -40,10 +40,8 @@ const HomeDeSections = () => (
           <div id="zwangsversteigerung" className={`h-full scroll-mt-24 p-6 md:p-8 ${aureliaCard}`}>
             <h2 className="font-heading text-[1.35rem] font-semibold leading-snug text-primary">Wenn eine Zwangsversteigerung droht</h2>
             <div className="mt-4 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
-              <p>Vor einer Zwangsversteigerung kann je nach Situation noch ein freihändiger Verkauf möglich sein.</p>
-              <p>Aurelia verfügt über langjährige Erfahrung mit solchen Immobilien. Wir prüfen, ob ein direkter Ankauf auf eigene Rechnung möglich ist.</p>
-              <p>Wenn ein Erwerb grundsätzlich infrage kommt, können die notwendigen Abstimmungen im Rahmen des Kaufprozesses mit dem Eigentümer und den beteiligten Stellen vorbereitet werden. Soweit es für den Kauf erforderlich und rechtlich möglich ist, können dabei auch Abstimmungen mit beteiligten Banken oder anderen Stellen erfolgen.</p>
-              <p>Ob und unter welchen Bedingungen ein Verkauf möglich ist, hängt immer vom jeweiligen Fall ab.</p>
+              <p>Auch kurz vor einer Zwangsversteigerung kann ein freihändiger Verkauf noch möglich sein.{"\n\n"}Solche Situationen kennen wir seit vielen Jahren. Wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung infrage kommt.</p>
+              <p>Wenn es grundsätzlich passt, stimmen wir die nächsten Schritte mit Ihnen ab. Soweit es für den Kauf notwendig ist, können dabei auch Gespräche mit beteiligten Banken oder anderen Stellen geführt werden.{"\n\n"}Ob und unter welchen Bedingungen ein Verkauf möglich ist, hängt immer vom jeweiligen Fall ab</p>
             </div>
           </div>
         </Reveal>
