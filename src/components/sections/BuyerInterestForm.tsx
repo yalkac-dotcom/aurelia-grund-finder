@@ -149,18 +149,18 @@ const BuyerInterestForm = () => {
       <p className="text-sm text-muted-foreground">Mit * gekennzeichnete Felder sind Pflichtfelder.</p>
       <div className="mt-6 grid gap-7 md:grid-cols-2">
         <ChipGroup legend="Für welche Märkte interessieren Sie sich? *" options={markets} selected={selMarkets} onToggle={toggle(selMarkets, setSelMarkets, "markets")} error={errors.markets} />
-        <label className={`${labelClass} md:col-span-2`}>Welche Regionen oder Städte interessieren Sie?
+        <label className={`${labelClass} md:col-span-2`}>WELCHE REGIONEN, STÄDTE ODER LAGEN INTERESSIEREN SIE?
           <input value={text.regions} onChange={upd("regions")} maxLength={500} className={fieldClass(Boolean(errors.regions))} />
         </label>
         <ChipGroup legend="Welche Immobilienarten interessieren Sie?" options={propertyTypes} selected={selTypes} onToggle={toggle(selTypes, setSelTypes, "types")} />
         <Select label="Kaufpreisrahmen" value={budget} options={budgets} onChange={setBudget} />
         <Select label="Nutzung" value={usage} options={usages} onChange={setUsage} />
-        {input("size", "Gewünschte Größe")}
+        {input("size", "GEWÜNSCHTE GRÖSSE / FLÄCHE")}
         {input("timeframe", "Kaufzeitraum")}
         <label className={`${labelClass} md:col-span-2`}>Besondere Wünsche
           <textarea value={text.wishes} onChange={upd("wishes")} rows={4} maxLength={1500} className={fieldClass(false)} />
         </label>
-        {input("name", "Name", "text", true)}
+        {input("name", "VOR- UND NACHNAME", "text", true)}
         {input("phone", "Telefon", "tel", true)}
         {input("email", "E-Mail", "email", true)}
         <Select label="Bevorzugte Sprache" value={lang} options={languages} onChange={(v) => setLang(v || "Deutsch")} />
@@ -180,7 +180,7 @@ const BuyerInterestForm = () => {
         {submitting ? "Wird gesendet …" : "Kaufinteresse unverbindlich senden"}
       </Button>
       <p className="mt-6 max-w-3xl text-[0.8rem] leading-[1.7] text-muted-foreground">
-        Ihre Angaben dienen ausschließlich dazu, Sie über möglicherweise passende Immobilien aus dem eigenen Bestand von Aurelia Grundbesitz zu informieren. Es entsteht kein Makler-, Vermittlungs- oder Suchauftrag und kein Anspruch auf ein bestimmtes Objekt.
+        Ihre Angaben dienen ausschließlich dazu, Sie über möglicherweise passende Immobilien aus dem eigenen Bestand von Aurelia Grundbesitz zu informieren. Es entsteht daraus kein Makler-, Vermittlungs- oder Suchauftrag und kein Anspruch auf ein bestimmtes Objekt.
       </p>
     </form>
   );
