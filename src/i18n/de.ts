@@ -59,7 +59,7 @@ const de: Translations = {
     socialLinkedinAria: "LinkedIn (folgt)",
     socialInstagramAria: "Instagram (folgt)",
     copyright: "© {year} Aurelia Grundbesitz GmbH. Alle Rechte vorbehalten.",
-    kwgDisclaimer: "Bei direkten Ankäufen handeln wir auf eigene Rechnung. Wir sind kein Kreditinstitut und bieten keine Finanzdienstleistungen, Darlehen oder Beteiligungsmodelle an.",
+    kwgDisclaimer: "Bei direkten Ankäufen handeln wir auf eigene Rechnung. Aurelia ist kein Kreditinstitut und bietet keine Darlehen, Finanzdienstleistungen oder Beteiligungsmodelle an.",
     phoneLabel: "Telefon",
     emailLabel: "E-Mail",
   },
