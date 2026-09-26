@@ -356,7 +356,7 @@ export const turkeyPageFinal: Record<Language, DeepPartial<Translations>> = {
         secondaryCta: "Conocer el proceso",
       },
       problem: {
-        title: "Usted vive aquí y su inmueble está en Turquía?",
+        title: "¿Usted vive aquí y su inmueble está en Turquía?",
         paragraphs: [
           "Vender un inmueble en Turquía desde Alemania u otro país europeo puede suponer un esfuerzo adicional. La documentación está allí, hay que organizar visitas y coordinar distintos pasos.",
           "Justo ahí intervenimos. Su primer interlocutor es Aurelia en Alemania. Revisamos con usted la información disponible y hablamos de lo que desea hacer con su inmueble. Si hace falta apoyo sobre el terreno, pueden intervenir socios inmobiliarios, asesores especializados o abogados en Turquía.",

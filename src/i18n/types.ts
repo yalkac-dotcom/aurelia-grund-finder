@@ -16,6 +16,7 @@ export interface TurkeyPropertiesTranslations {
   process: { title: string; text: string }[];
   crossLink?: { title: string; text: string; cta: string };
   faq?: { title: string; items: { q: string; a: string }[] };
+  closingCards?: { title: string; text: string; cta: string }[];
   trust: { title: string; text: string; points: string[] };
   form: {
     title: string;
