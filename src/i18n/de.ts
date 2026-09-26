@@ -647,22 +647,22 @@ const de: Translations = {
     ],
     principlesTitle: "Grundlagen einer guten Zusammenarbeit",
     principlesText:
-      "Für uns beginnt eine gute Zusammenarbeit damit, dass Aufgaben, Erwartungen und Verantwortlichkeiten von Anfang an offen besprochen werden.",
+      "Für uns beginnt eine gute Zusammenarbeit mit klaren Absprachen über Aufgaben, Zuständigkeiten und das gemeinsame Vorgehen.",
     principles: [
-      { title: "Offener Austausch", text: "Wir sprechen früh darüber, worum es bei einem Projekt geht, wer welche Aufgabe übernimmt und welche Erwartungen bestehen." },
-      { title: "Klare Zuständigkeiten", text: "Jeder Beteiligte sollte wissen, wofür er verantwortlich ist und welche Entscheidungen gemeinsam getroffen werden müssen." },
-      { title: "Verlässliche Vereinbarungen", text: "Was für ein konkretes Projekt vereinbart wird, halten wir nachvollziehbar fest. So wissen alle Beteiligten, woran sie sind." },
+      { title: "Offener Austausch", text: "Wir besprechen frühzeitig, worum es bei einem Projekt geht, welche Aufgaben anstehen und wie die Zusammenarbeit gestaltet werden soll." },
+      { title: "Klare Zuständigkeiten", text: "Jeder Beteiligte sollte wissen, welche Aufgaben und Verantwortlichkeiten er übernimmt und welche Entscheidungen gemeinsam abgestimmt werden." },
+      { title: "Verlässliche Vereinbarungen", text: "Was für ein konkretes Projekt vereinbart wird, halten wir nachvollziehbar fest. So besteht für alle Beteiligten Klarheit über das weitere Vorgehen." },
     ],
     stepsTitle: "So gehen wir vor",
     steps: [
       { title: "Erstkontakt", desc: "Sie stellen uns das Projekt, die Immobilie oder Ihre Idee für eine mögliche Zusammenarbeit kurz vor." },
-      { title: "Erste Prüfung", desc: "Wir schauen uns an, ob das Vorhaben grundsätzlich zu unserem Tätigkeitsbereich und unserer Arbeitsweise passt." },
-      { title: "Gemeinsames Gespräch", desc: "Wenn eine Zusammenarbeit grundsätzlich interessant erscheint, besprechen wir Aufgaben, Erwartungen und die wesentlichen Eckpunkte." },
-      { title: "Vereinbarung", desc: "Kommt eine Zusammenarbeit zustande, werden die für das konkrete Projekt erforderlichen Vereinbarungen schriftlich festgehalten." },
-      { title: "Umsetzung", desc: "Danach arbeiten die Beteiligten entsprechend der vereinbarten Aufgaben und Zuständigkeiten zusammen." },
+      { title: "Erste Prüfung", desc: "Wir prüfen, ob das Vorhaben zu unserem Tätigkeitsbereich und zu einer möglichen Zusammenarbeit passt." },
+      { title: "Gemeinsames Gespräch", desc: "Wenn eine Zusammenarbeit infrage kommt, besprechen wir die Aufgaben, Zuständigkeiten und wesentlichen Eckpunkte des Projekts." },
+      { title: "Vereinbarung", desc: "Kommt eine Zusammenarbeit zustande, halten wir die für das konkrete Projekt erforderlichen Vereinbarungen schriftlich fest." },
+      { title: "Umsetzung", desc: "Anschließend arbeiten die Beteiligten entsprechend der vereinbarten Aufgaben und Zuständigkeiten zusammen." },
     ],
     stepsNote:
-      "Art, Umfang und Konditionen einer Zusammenarbeit werden für jedes Projekt gesondert vereinbart.",
+      "Art, Umfang und Konditionen der Zusammenarbeit werden für jedes Projekt individuell vereinbart.",
     faqTitle: "Häufige Fragen",
     faqIntro: "Wenn Ihre Frage hier nicht beantwortet ist, sprechen Sie uns direkt an.",
     faqItems: [
@@ -685,7 +685,7 @@ const de: Translations = {
     ],
     finalCtaTitle: "Sie möchten ein Projekt mit uns besprechen?",
     finalCtaText:
-      "Wenn Sie eine Immobilie, ein Projekt oder einen konkreten Ansatz für eine Zusammenarbeit haben, können Sie uns gerne ansprechen. Wir schauen uns zunächst an, ob das Vorhaben grundsätzlich zu uns passt.",
+      "Wenn Sie eine Immobilie, ein Projekt oder eine konkrete Idee für eine Zusammenarbeit haben, sprechen Sie uns gerne an. Wir freuen uns darauf, mehr über Ihr Vorhaben zu erfahren.",
     finalCtaButton: "Unverbindlich Kontakt aufnehmen",
   },
   about: {
