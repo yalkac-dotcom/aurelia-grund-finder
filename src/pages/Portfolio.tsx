@@ -6,9 +6,7 @@ import OptimizedImg from "@/components/OptimizedImg";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { heroSets } from "@/assets/heroImages";
-import portfolioHero640 from "@/assets/hero-portfolio-640w.webp";
-import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
-import portfolioHero1440 from "@/assets/hero-portfolio-1440w.webp";
+import bestandHeroAsset from "@/assets/bestand-hero.jpg.asset.json";
 import mfhAsset from "@/assets/portfolio-mehrfamilienhaeuser.png.asset.json";
 import lagerAsset from "@/assets/portfolio-lager-logistik.jpeg.asset.json";
 import { ArrowRight, MapPin, Building2, TreePine, Store, Warehouse } from "lucide-react";
@@ -24,8 +22,8 @@ const Portfolio = () => {
   // DE-only header image (real photo, Pexels 32992049). All other languages
   // keep the previous hero image.
   const portfolioHeroSet = {
-    src: portfolioHero1440,
-    srcSet: `${portfolioHero640} 640w, ${portfolioHero1024} 1024w, ${portfolioHero1440} 1440w`,
+    src: bestandHeroAsset.url,
+    srcSet: `${bestandHeroAsset.url} 1920w`,
     sizes: "(max-width: 640px) 100vw, (max-width: 1440px) 75vw, 1920px",
   };
   const heroSet = portfolioHeroSet;

@@ -17,8 +17,8 @@ const partnerSrcSet = [640, 1024, 1440, 2048]
   .map((width) => `/heroes/AdobeStock_364445283-${width}w.webp ${width}w`)
   .join(", ");
 
-// Geschäftspartner-Hero: kundengeliefertes Foto (Adobe Stock 364445283, Variante 2)
-import partnerHeroAsset from "@/assets/partner-hero.jpeg.asset.json";
+// Geschäftspartner-Hero: kundengeliefertes Foto (Adobe Stock 598536610, Puzzle)
+import partnerHeroAsset from "@/assets/partner-hero-puzzle.jpeg.asset.json";
 const geschaeftspartnerSrc = partnerHeroAsset.url;
 const geschaeftspartnerSrcSet = `${geschaeftspartnerSrc} 1920w`;
 
