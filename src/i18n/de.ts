@@ -609,7 +609,7 @@ const de: Translations = {
     ],
     finalCtaTitle: "Interesse an einem konkreten Objekt?",
     finalCtaText:
-      "Sagen Sie uns, für welche Immobilie Sie sich interessieren oder wonach Sie suchen. Wir schauen, ob wir aktuell ein passendes Objekt anbieten können.",
+      "Teilen Sie uns mit, für welches Objekt Sie sich interessieren oder welche Immobilie Sie suchen. Wir prüfen gerne, ob wir Ihnen aktuell ein passendes Angebot vorstellen können.",
     finalCtaButton: "Unverbindlich Kontakt aufnehmen",
   },
   partners: {
