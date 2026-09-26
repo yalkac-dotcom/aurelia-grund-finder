@@ -24,11 +24,11 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
         { title: "Ankauf auf eigene Rechnung", text: "Passende Immobilien prüfen wir für einen möglichen Ankauf auf eigene Rechnung. Ob ein Kauf möglich ist, hängt immer von der Immobilie und der jeweiligen Situation ab." },
       ],
       stepsTitle: "Immobilie zum Ankauf anbieten – in drei Schritten", steps: [
-        { title: "Immobilie anbieten", desc: "Teilen Sie uns die wichtigsten Eckdaten zu Ihrer Immobilie mit." },
+        { title: "Immobilie anbieten", desc: "Teilen Sie uns die wichtigsten Angaben zu Ihrer Immobilie und Ihrer Situation mit." },
         { title: "Vertrauliche Erstprüfung", desc: "Wir prüfen die Angaben und klären, ob ein Erwerb auf eigene Rechnung grundsätzlich infrage kommt." },
-        { title: "Rückmeldung & weiteres Vorgehen", desc: "Sie erhalten eine klare Rückmeldung. Bei grundsätzlichem Interesse besprechen wir die nächsten Schritte." },
+        { title: "Rückmeldung & weiteres Vorgehen", desc: "Sie erhalten eine klare Rückmeldung. Wenn es grundsätzlich passt, besprechen wir mit Ihnen die nächsten Schritte." },
       ],
-      stepsNote: "Die erste Kontaktaufnahme und Prüfung ist für Sie unverbindlich. Welche weiteren Schritte sinnvoll sind, hängt von der Immobilie und Ihrer individuellen Situation ab.",
+      stepsNote: "Die erste Kontaktaufnahme und Prüfung sind für Sie unverbindlich. Wie es danach weitergeht, hängt von der Immobilie und Ihrer persönlichen Situation ab.",
       objectionsTitle: "Häufige Fragen", objectionsIntro: "",
       objections: [
         { q: "Entstehen für mich Kosten bei der Erstprüfung?", a: "Nein. Die Erstprüfung Ihrer Angaben und das erste Gespräch sind für Sie kostenfrei und unverbindlich." },
