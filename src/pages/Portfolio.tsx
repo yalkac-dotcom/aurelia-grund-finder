@@ -158,7 +158,7 @@ const Portfolio = () => {
                 {copy.ctaText}
               </p>
               <Link
-                to="/fuer-kaeufer#kaufinteresse"
+                to={language === "de" ? "/fuer-kaeufer#kaufinteresse" : "/kontakt"}
                 className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
               >
                 {copy.ctaButton}
