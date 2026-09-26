@@ -31,7 +31,7 @@ const de: Translations = {
     disclaimer:
       "Diese Website dient der allgemeinen Information und ersetzt keine individuelle Rechts- oder Steuerberatung.",
     brandLine:
-      "Aurelia Grundbesitz GmbH ist ein familiengeführtes Immobilienunternehmen aus Düsseldorf. Wir kaufen ausgewählte Immobilien auf eigene Rechnung, bauen einen eigenen Bestand auf und verkaufen Immobilien aus diesem Bestand.",
+      "Aurelia Grundbesitz GmbH ist ein inhabergeführtes Immobilienunternehmen aus Düsseldorf.\u00a0Wir kaufen ausgewählte Immobilien auf eigene Rechnung, bauen einen eigenen Bestand auf und verkaufen Immobilien aus diesem Bestand.",
     subline: "Schwerpunkt: Deutschland und Türkei · ausgewählte Möglichkeiten in Italien, Spanien, Frankreich und den Niederlanden.",
     navItems: [
       { label: "Startseite", path: "/" },
