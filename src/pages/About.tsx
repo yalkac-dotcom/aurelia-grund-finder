@@ -157,7 +157,7 @@ const About = () => {
                 <Link to="/immobilie-anbieten">{a.closing.primary}<ArrowRight size={14} className="text-accent" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-sm border-highlight-foreground/50 bg-transparent px-7 text-[12px] font-semibold uppercase tracking-[0.1em] text-highlight-foreground hover:bg-highlight-foreground hover:text-highlight">
-                <Link to={language === "de" ? "/fuer-kaeufer#kaufinteresse" : "/kontakt"}>{a.closing.secondary}</Link>
+                <Link to={"/fuer-kaeufer#kaufinteresse"}>{a.closing.secondary}</Link>
               </Button>
             </div>
           </Reveal>

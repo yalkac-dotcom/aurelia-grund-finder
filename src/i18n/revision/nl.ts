@@ -135,7 +135,7 @@ export const nl: RevisionCopy = {
         "Grensoverschrijdende situaties waarin eigenaar en vastgoed zich in verschillende landen bevinden",
       ],
     },
-    closing: { headline: "Wilt u vastgoed aanbieden of kopen?", body: "Of u ons vastgoed ter aankoop aanbiedt of interesse heeft in een object uit onze portefeuille – laat ons kort weten waar het om gaat. Wij beoordelen uw gegevens en nemen persoonlijk contact met u op.", primary: "Vastgoed aanbieden", secondary: "Contact opnemen" },
+    closing: { headline: "Wilt u vastgoed aanbieden of kopen?", body: "Of u ons vastgoed ter aankoop aanbiedt of interesse heeft in een object uit onze portefeuille – laat ons kort weten waar het om gaat. Wij beoordelen uw gegevens en nemen persoonlijk contact met u op.", primary: "Vastgoed aanbieden", secondary: "Interesse registreren" },
   },
   faqPage: {
     kicker: "FAQ", title: "Veelgestelde vragen",

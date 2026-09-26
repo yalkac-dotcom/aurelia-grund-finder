@@ -135,7 +135,7 @@ export const tr: RevisionCopy = {
         "Mülk sahibi ile gayrimenkulün farklı ülkelerde bulunduğu sınır ötesi durumlar",
       ],
     },
-    closing: { headline: "Gayrimenkul teklif etmek veya satın almak mı istiyorsunuz?", body: "İster bize satın alma için bir gayrimenkul teklif edin, ister portföyümüzdeki bir gayrimenkulle ilgilenin – konunuzu kısaca bize bildirin. Bilgilerinizi inceler ve size kişisel olarak dönüş yaparız.", primary: "Gayrimenkul teklif edin", secondary: "İletişime geçin" },
+    closing: { headline: "Gayrimenkul teklif etmek veya satın almak mı istiyorsunuz?", body: "İster bize satın alma için bir gayrimenkul teklif edin, ister portföyümüzdeki bir gayrimenkulle ilgilenin – konunuzu kısaca bize bildirin. Bilgilerinizi inceler ve size kişisel olarak dönüş yaparız.", primary: "Gayrimenkul teklif edin", secondary: "Satın alma ilginizi bildirin" },
   },
   faqPage: {
     kicker: "SSS", title: "Sıkça sorulan sorular",

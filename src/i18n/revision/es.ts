@@ -135,7 +135,7 @@ export const es: RevisionCopy = {
         "Situaciones transfronterizas en las que propietario e inmueble están en países distintos",
       ],
     },
-    closing: { headline: "¿Desea ofrecer o comprar un inmueble?", body: "Tanto si nos ofrece un inmueble para su compra como si le interesa uno de nuestra cartera, cuéntenos brevemente su asunto. Revisaremos sus datos y le responderemos personalmente.", primary: "Ofrecer un inmueble", secondary: "Contactar" },
+    closing: { headline: "¿Desea ofrecer o comprar un inmueble?", body: "Tanto si nos ofrece un inmueble para su compra como si le interesa uno de nuestra cartera, cuéntenos brevemente su asunto. Revisaremos sus datos y le responderemos personalmente.", primary: "Ofrecer un inmueble", secondary: "Registrar su interés" },
   },
   faqPage: {
     kicker: "FAQ", title: "Preguntas frecuentes",

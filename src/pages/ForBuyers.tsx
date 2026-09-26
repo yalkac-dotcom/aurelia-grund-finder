@@ -15,6 +15,7 @@ import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
 import { aureliaCard } from "@/lib/cardStyle";
 import BuyerInterestForm from "@/components/sections/BuyerInterestForm";
+import { buyerInterestCopy } from "@/i18n/buyerInterestCopy";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
 const featureImages = cardImages.buyerFeatures;
@@ -71,7 +72,7 @@ const ForBuyers = () => {
         kicker={b.heroKicker}
         title={isDe ? "Sie interessieren sich für eine Immobilie aus unserem Bestand?" : b.heroTitle}
         description={isDe ? "Teilen Sie uns unverbindlich mit, welche Länder, Regionen und Immobilienarten für Sie interessant sind. Wenn ein passendes Objekt aus unserem eigenen Bestand verfügbar ist, können wir Sie darüber informieren." : b.heroDescription}
-        primaryCta={isDe ? { label: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" } : { label: b.heroPrimaryCta, to: "/kontakt" }}
+        primaryCta={{ label: buyerInterestCopy[language].heroCta, to: "/fuer-kaeufer#kaufinteresse" }}
         secondaryCta={{ label: b.heroSecondaryCta, href: "#ablauf" }}
         trustLine={b.heroTrustLine}
         size="compact"
@@ -114,23 +115,19 @@ const ForBuyers = () => {
           </div>
         </section>
 
-        {isDe && (
-          <section id="kaufinteresse" className="section-premium bg-background scroll-mt-24">
-            <div className="container-premium">
-              <SectionHeader title="Kaufinteresse hinterlegen" intro="Sie interessieren sich für eine Immobilie aus unserem Bestand? Teilen Sie uns unverbindlich mit, welche Länder, Regionen und Objektarten für Sie interessant sind. Wenn Aurelia ein entsprechendes Objekt im eigenen Bestand hält oder später erwirbt, können wir Sie darüber informieren." />
-              <Reveal>
-                <div className="mx-auto mb-10 max-w-5xl border-l-2 border-accent bg-card px-6 py-6 md:px-8">
-                  <p className="text-[0.94rem] font-medium leading-[1.8] text-primary">
-                    Mit Ihrer Anfrage hinterlegen Sie lediglich Ihr Kaufinteresse.{"\n\u00a0"}Aurelia sucht keine Immobilien in Ihrem Auftrag und vermittelt keine fremden Objekte.
-                  </p>
-                </div>
-              </Reveal>
-              <BuyerInterestForm />
-            </div>
-          </section>
-        )}
-
-
+        <section id="kaufinteresse" className="section-premium bg-background scroll-mt-24">
+          <div className="container-premium">
+            <SectionHeader title={buyerInterestCopy[language].sectionTitle} intro={buyerInterestCopy[language].sectionIntro} />
+            <Reveal>
+              <div className="mx-auto mb-10 max-w-5xl border-l-2 border-accent bg-card px-6 py-6 md:px-8">
+                <p className="text-[0.94rem] font-medium leading-[1.8] text-primary">
+                  {buyerInterestCopy[language].notice}
+                </p>
+              </div>
+            </Reveal>
+            <BuyerInterestForm />
+          </div>
+        </section>
 
         {/* PORTFOLIO TEASER (Navy) */}
         <section className="section-premium section-navy text-white">

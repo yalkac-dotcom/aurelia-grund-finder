@@ -135,7 +135,7 @@ export const it: RevisionCopy = {
         "Situazioni transfrontaliere in cui proprietario e immobile si trovano in paesi diversi",
       ],
     },
-    closing: { headline: "Desidera offrire o acquistare un immobile?", body: "Che ci offra un immobile in vendita o sia interessato a un immobile del nostro patrimonio – ci comunichi brevemente la sua esigenza. Esamineremo i suoi dati e la ricontatteremo personalmente.", primary: "Offrire un immobile", secondary: "Contattarci" },
+    closing: { headline: "Desidera offrire o acquistare un immobile?", body: "Che ci offra un immobile in vendita o sia interessato a un immobile del nostro patrimonio – ci comunichi brevemente la sua esigenza. Esamineremo i suoi dati e la ricontatteremo personalmente.", primary: "Offrire un immobile", secondary: "Registrare l'interesse" },
   },
   faqPage: {
     kicker: "FAQ", title: "Domande frequenti",

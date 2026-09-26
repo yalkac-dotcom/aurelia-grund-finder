@@ -454,7 +454,7 @@ const TurkeyProperties = () => {
           <div className="container-premium">
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {page.closingCards.map((b, i) => {
-                const targets = ["/immobilie-anbieten?land=tuerkei", "/immobilie-anbieten?land=deutschland", language === "de" ? "/fuer-kaeufer#kaufinteresse" : "/kontakt"];
+                const targets = ["/immobilie-anbieten?land=tuerkei", "/immobilie-anbieten?land=deutschland", "/fuer-kaeufer#kaufinteresse"];
                 return (
                   <Reveal key={b.title} delay={i * 0.06}>
                     <div className="flex h-full flex-col border-l-2 border-accent bg-card px-6 py-8">
