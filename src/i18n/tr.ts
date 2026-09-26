@@ -517,7 +517,7 @@ const tr: Translations = {
       { title: "İlk iletişim", desc: "Bize ulaşırsınız ve hangi nesneyle ilgilendiğinizi ya da ne aradığınızı belirtirsiniz." },
       { title: "İnceleme ve belgeler", desc: "Uygun bir nesne mevcutsa sonraki adımları birlikte planlar ve mevcut nesne bilgilerini sizinle paylaşırız." },
       { title: "Koşulların görüşülmesi", desc: "Ciddi bir ilgi olması halinde satış fiyatı, koşullar ve istenen teslim tarihi üzerine konuşuruz." },
-      { title: "Noter ve teslim", desc: "Anlaşma sağlandıktan sonra satış sözleşmesi noterde tasdik edilir. Ardından süreç, varılan anlaşmaya göre ilerler." },
+      { title: "Noter ve teslim", desc: "Noter işleminin ardından teslime kadar olan adımları sizinle şeffaf biçimde planlarız." },
     ],
     stepsNote:
       "Sürecin tam olarak nasıl ilerleyeceği, ilgili nesneye ve varılan somut anlaşmaya bağlıdır.",
@@ -530,11 +530,11 @@ const tr: Translations = {
       },
       {
         q: "Emlakçı olmadan – haklarımı kim koruyor?",
-        a: "Gayrimenkul satışını noter tarafsız biçimde tasdik eder ve taraflardan birinin çıkarlarını temsil etmez. Kendi hukuki, teknik veya ekonomik incelemenizi yaptırmak isterseniz, elbette kendi danışmanlarınızı veya uzmanlarınızı sürece dahil edebilirsiniz.",
+        a: "Sunulan gayrimenkulle ilgili doğrudan muhatabınız Aurelia'dır. Satın almadan önce elbette kendi hukuki, teknik veya ekonomik danışmanlarınıza da başvurabilirsiniz.",
       },
       {
         q: "Fiyatlar pazarlığa açık mı?",
-        a: "Bu, ilgili nesneye ve teklife bağlıdır. Pazarlık payı varsa, koşullar kişisel görüşmede ele alınabilir.",
+        a: "Bu, ilgili gayrimenkule ve teklife bağlıdır. Pazarlık payı varsa koşullar kişisel görüşmede ele alınabilir.",
       },
     ],
     faqTitle: "Sıkça sorulan sorular",
@@ -557,10 +557,10 @@ const tr: Translations = {
         a: "Bedel ödendikten ve mülkiyet devri yapıldıktan sonra gayrimenkul, ilgili tüm belgelerle birlikte düzenli biçimde teslim edilir.",
       },
     ],
-    finalCtaTitle: "Belirli bir gayrimenkulle mi ilgileniyorsunuz?",
+    finalCtaTitle: "Bir gayrimenkulle mi ilgileniyorsunuz?",
     finalCtaText:
-      "Hangi gayrimenkulle ilgilendiğinizi ya da ne aradığınızı bize bildirin. Şu an size uygun bir nesne sunup sunamayacağımıza bakalım.",
-    finalCtaButton: "Yükümlülük olmadan iletişime geçin",
+      "Hangi gayrimenkulle ilgilendiğinizi veya nasıl bir gayrimenkul aradığınızı bize bildirin. Size şu anda uygun bir teklif sunup sunamayacağımızı memnuniyetle kontrol ederiz.",
+    finalCtaButton: "Bağlayıcı olmadan talep gönderin",
   },
   partners: {
     heroKicker: "İş ortakları için",
