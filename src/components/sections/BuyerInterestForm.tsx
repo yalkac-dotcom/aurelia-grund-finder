@@ -18,7 +18,7 @@ const fieldClass = (err: boolean) =>
 
 const schema = z.object({
   name: z.string().trim().min(2).max(160),
-  phone: z.string().trim().max(50).refine((v) => v === "" || v.length >= 5),
+  phone: z.string().trim().min(5).max(50),
   email: z.string().trim().email().max(254),
   regions: z.string().trim().max(500),
   size: z.string().trim().max(120),
@@ -93,7 +93,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
       next[k] = k === "email" ? c.errEmail : c.errField;
     });
     if (!text.name.trim()) next.name = c.errRequired;
-    if (!compact && !text.phone.trim()) next.phone = c.errRequired;
+    if (!text.phone.trim()) next.phone = c.errRequired;
     if (!compact && selMarkets.length === 0) next.markets = c.errMarkets;
     if (!privacy) next.privacy = c.errPrivacy;
     setErrors(next);
@@ -123,7 +123,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
     const [firstName, ...rest] = text.name.trim().split(/\s+/);
     try {
       const { error: dbError } = await supabase.from("contact_submissions").insert({
-        first_name: firstName, last_name: rest.join(" ") || "-", email: text.email.trim(), phone: text.phone.trim() || null,
+        first_name: firstName, last_name: rest.join(" ") || "-", email: text.email.trim(), phone: text.phone.trim(),
         property_type: "Kaufinteresse – Bestand", subject: compact ? "Kaufinteresse – Anfrage über: Unser Bestand" : "Kaufinteresse", message, callback_requested: false,
       });
       if (dbError) throw dbError;
@@ -161,7 +161,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
         <Select label={c.budget} value={budget} options={budgets} labels={c.budgetOptions} onChange={setBudget} />
         {input("name", c.name, "text", true)}
         {input("email", c.email, "email", true)}
-        {input("phone", c.phone, "tel")}
+        {input("phone", c.phone, "tel", true)}
         <label className={`${labelClass} md:col-span-2`}>{sc.wishes}
           <textarea value={text.wishes} onChange={upd("wishes")} rows={4} maxLength={1500} className={fieldClass(false)} />
         </label>

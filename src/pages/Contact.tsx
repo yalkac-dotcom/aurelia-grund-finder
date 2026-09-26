@@ -6,6 +6,7 @@ import AiImageDisclosure from "@/components/AiImageDisclosure";
 import { heroSets } from "@/assets/heroImages";
 import { MapPin, Mail, Phone, Clock, CheckCircle, ArrowRight, Loader2, AlertCircle, PhoneCall, CalendarDays } from "lucide-react";
 import { Link } from "react-router-dom";
+import { buyerInterestCopy } from "@/i18n/buyerInterestCopy";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { trackEvent } from "@/lib/analytics";
@@ -49,9 +50,11 @@ const Contact = () => {
       message: z.string().trim().min(1).max(5000),
     });
     const phone = String(formData.get("phone") ?? "").trim();
-    const phoneValidation = z.string().trim().max(50).safeParse(phone);
+    const phoneValidation = z.string().trim().min(1).max(50).safeParse(phone);
     if (!phoneValidation.success) {
-      setError(t.common.formError);
+      setError(phone ? t.common.formError : buyerInterestCopy[language].errRequired);
+      const phoneInput = form.elements.namedItem("phone");
+      if (phoneInput instanceof HTMLInputElement) phoneInput.focus();
       return;
     }
 
@@ -224,9 +227,9 @@ const Contact = () => {
                   <div className="grid gap-6 sm:grid-cols-2 sm:gap-8">
                     <div>
                     <label htmlFor="phone" className={labelClasses}>
-                      {t.contact.phone} <span className="normal-case tracking-normal text-foreground/55">({optionalLabel[language] ?? "optional"})</span>
+                      {t.contact.phone} <span className="text-accent">*</span>
                     </label>
-                    <input id="phone" name="phone" type="tel" maxLength={50} className={inputClasses} />
+                    <input id="phone" name="phone" type="tel" required maxLength={50} className={inputClasses} onInvalid={(e) => e.currentTarget.setCustomValidity(buyerInterestCopy[language].errRequired)} onInput={(e) => e.currentTarget.setCustomValidity("")} />
                     </div>
                     <div>
                     <label htmlFor="subject" className={labelClasses}>
