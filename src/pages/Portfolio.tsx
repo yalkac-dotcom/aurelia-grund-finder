@@ -169,25 +169,6 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="relative section-premium text-white overflow-hidden" style={{ background: "linear-gradient(170deg, hsl(var(--primary)) 0%, hsl(var(--highlight)) 100%)" }}>
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_50%_0%,rgba(255,255,255,0.08)_0%,transparent_70%)] pointer-events-none" />
-          <div className="container-premium relative text-center">
-            <Reveal>
-              <h2 className="mb-6 text-[1.85rem] font-heading font-bold text-white">{copy.ctaTitle}</h2>
-              <p className="mx-auto mb-10 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">
-                {copy.ctaText}
-              </p>
-              <Link
-                to={"/fuer-kaeufer#kaufinteresse"}
-                className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-teal-800 shadow-lg transition-all duration-300 hover:bg-white/90 hover:shadow-xl"
-              >
-                {copy.ctaButton}
-                <ArrowRight size={13} />
-              </Link>
-            </Reveal>
-          </div>
-        </section>
       </div>
     </Layout>
   );
