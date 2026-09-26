@@ -69,8 +69,8 @@ const ForBuyers = () => {
         image={buyersHeroImage}
         imageAlt={b.heroImageAlt}
         kicker={b.heroKicker}
-        title={isDe ? "Kaufinteresse für Immobilien aus unserem Bestand" : b.heroTitle}
-        description={isDe ? "Sie interessieren sich für eine Immobilie aus unserem Bestand? Teilen Sie uns unverbindlich mit, welche Länder, Regionen und Objektarten für Sie interessant sind." : b.heroDescription}
+        title={isDe ? "Sie interessieren sich für eine Immobilie aus unserem Bestand?" : b.heroTitle}
+        description={isDe ? "Teilen Sie uns unverbindlich mit, welche Länder, Regionen und Immobilienarten für Sie interessant sind. Wenn ein passendes Objekt aus unserem eigenen Bestand verfügbar ist, können wir Sie darüber informieren." : b.heroDescription}
         primaryCta={isDe ? { label: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" } : { label: b.heroPrimaryCta, to: "/kontakt" }}
         secondaryCta={{ label: b.heroSecondaryCta, href: "#ablauf" }}
         trustLine={b.heroTrustLine}
