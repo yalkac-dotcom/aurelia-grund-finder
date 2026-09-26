@@ -85,7 +85,7 @@ const InvestorGlossar = () => {
           }}
           aria-hidden="true"
         />
-        <div className="page-frame-hero relative mx-auto md:pb-12">
+        <div className="page-frame-hero relative mx-auto pb-8 md:pb-12">
           <Reveal>
             <div className="flex items-center gap-3 mb-3">
               <BookOpen className="text-accent" size={16} />
