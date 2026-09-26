@@ -36,9 +36,9 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       { title: "Direktankauf", text: "In geeigneten Fällen prüfen wir einen möglichen Ankauf auf eigene Rechnung – diskret und ohne öffentliche Vermarktung." },
     ],
     propertyTypesTitle: "Für welche Immobilien?",
-    propertyTypesIntro: "Sie können uns unterschiedliche Immobilien in der Türkei anbieten – von der Eigentumswohnung über Häuser und Gewerbeimmobilien bis zum Grundstück.",
+    propertyTypesIntro: "Sie können uns unterschiedliche Immobilien in der Türkei zum möglichen Ankauf anbieten. Entscheidend ist, ob die Immobilie nach unserer Prüfung grundsätzlich für einen Erwerb durch Aurelia infrage kommt.",
     propertyTypes: ["Eigentumswohnungen", "Häuser und Mehrfamilienhäuser", "Grundstücke", "Ferienimmobilien", "Geerbte Immobilien", "Gewerbeimmobilien"],
-    propertyTypesExtra: "Auch wenn die Eigentumsverhältnisse oder andere Punkte noch nicht vollständig geklärt sind, können Sie uns zunächst ansprechen. Was möglich ist, lässt sich erst nach Prüfung der konkreten Situation beurteilen.",
+    propertyTypesExtra: "Auch wenn Eigentumsverhältnisse, Unterlagen oder einzelne Punkte noch nicht vollständig geklärt sind, können Sie uns zunächst ansprechen. Ob und unter welchen Voraussetzungen ein Ankauf möglich ist, lässt sich nach Prüfung der konkreten Situation beurteilen.",
     processTitle: "So einfach beginnt die Prüfung",
     process: [
       { title: "Immobilie übermitteln", text: "Sie senden uns erste Angaben, Tapu, Fotos und vorhandene Unterlagen." },
@@ -48,7 +48,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
     ],
     trust: {
       title: "Ihre Immobilie in der Türkei. Ihr persönlicher Ansprechpartner in Deutschland.",
-      text: "Sie müssen den ersten Schritt nicht in der Türkei machen. Sie können uns von Deutschland aus ansprechen und Ihre Situation auf Deutsch oder Türkisch mit uns besprechen. Wir sehen uns Ihre Angaben an und klären anschließend mit Ihnen, wie es weitergehen kann.",
+      text: "Sie möchten eine Immobilie in der Türkei verkaufen? Sprechen Sie uns zunächst von Deutschland aus an. Auf Wunsch können wir Ihre Situation auf Deutsch oder Türkisch besprechen und gemeinsam klären, welche Angaben und Unterlagen für eine erste Prüfung benötigt werden.\n\nAuch bei besonderen persönlichen, finanziellen oder ungeklärten Situationen können Sie uns zunächst unverbindlich ansprechen. Ob ein Ankauf durch Aurelia möglich ist, beurteilen wir nach Prüfung der konkreten Immobilie und Ausgangssituation.",
       points: ["Ansprechpartner in Deutschland", "Deutsch und Türkisch", "Erste Prüfung Ihrer Anfrage"],
     },
     form: {
@@ -96,7 +96,7 @@ export const turkeyPropertiesTranslations: Record<Language, TurkeyPropertiesTran
       primary: "Immobilie anbieten",
       secondary: "+49 211 69583033 anrufen",
     },
-    legalNotice: "Die konkrete rechtliche, notarielle, steuerliche und zahlungsbezogene Gestaltung richtet sich nach dem jeweiligen Einzelfall und den in Deutschland und der Türkei geltenden Vorschriften. Soweit erforderlich, werden geeignete externe Fachleute einbezogen.",
+    legalNotice: "Die konkrete rechtliche, notarielle, steuerliche und zahlungsbezogene Gestaltung richtet sich nach dem jeweiligen Einzelfall und den in Deutschland und der Türkei geltenden Vorschriften. Soweit erforderlich, werden geeignete externe Fachleute einbezogen..",
   },
   tr: {
     seoTitle: "Türkiye'deki Gayrimenkulünüz | Almanya'dan İşlem | Aurelia Grundbesitz",

@@ -460,9 +460,9 @@ const TurkeyProperties = () => {
           <div className="container-premium">
             <div className="grid gap-6 lg:grid-cols-3">
               {[
-                { h: "Immobilie in der Türkei zum Ankauf anbieten", p: "Sie besitzen eine Immobilie in der Türkei und möchten verkaufen? Aurelia prüft ausgewählte Objekte für einen möglichen Erwerb auf eigene Rechnung.", cta: "Immobilie anbieten", to: "/immobilie-anbieten?land=tuerkei" },
-                { h: "Sie leben in der Türkei und besitzen eine Immobilie in Deutschland?", p: "Auch aus der Türkei können Sie Aurelia Ihre Immobilie in Deutschland zum möglichen Ankauf anbieten. Viele Unterlagen und Abstimmungen können je nach Fall aus der Ferne vorbereitet werden.", note: "Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, hängt vom jeweiligen Einzelfall ab.", cta: "Immobilie in Deutschland anbieten", to: "/immobilie-anbieten?land=deutschland" },
-                { h: "Interesse an Immobilien aus unserem Bestand?", p: "Kaufinteressenten können unverbindlich hinterlegen, für welche Aurelia-Bestandsobjekte und Märkte sie sich interessieren.", cta: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" },
+                { h: "Immobilie in der Türkei zum Ankauf anbieten", p: "Sie besitzen eine Immobilie in der Türkei und möchten verkaufen? Aurelia prüft ausgewählte Immobilien für einen möglichen Erwerb auf eigene Rechnung.", cta: "Immobilie anbieten", to: "/immobilie-anbieten?land=tuerkei" },
+                { h: "Sie leben in der Türkei und besitzen eine Immobilie in Deutschland?", p: "Auch aus der Türkei können Sie Aurelia Ihre Immobilie in Deutschland zum möglichen Ankauf anbieten. Viele Unterlagen und Abstimmungen lassen sich je nach Einzelfall aus der Ferne vorbereiten.", note: "Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, hängt vom jeweiligen Einzelfall ab.", cta: "Immobilie in Deutschland anbieten", to: "/immobilie-anbieten?land=deutschland" },
+                { h: "Interesse an Immobilien aus unserem Bestand?", p: "Kaufinteressenten können unverbindlich hinterlegen, für welche Immobilienarten und Märkte sie sich interessieren. Wenn ein passendes Objekt aus unserem Bestand verfügbar ist, können wir Kontakt aufnehmen.", cta: "Kaufinteresse hinterlegen", to: "/fuer-kaeufer#kaufinteresse" },
               ].map((b, i) => (
                 <Reveal key={b.h} delay={i * 0.06}>
                   <div className="flex h-full flex-col border-l-2 border-accent bg-card px-6 py-8">
@@ -476,7 +476,7 @@ const TurkeyProperties = () => {
             </div>
             <Reveal delay={0.1}>
               <div className="mx-auto mt-10 max-w-3xl border-l-2 border-accent/60 pl-6">
-                <h2 className="font-heading text-[1.35rem] font-semibold text-primary">Auch bei schwierigen Situationen in der Türkei</h2>
+                <h2 className="font-heading text-[1.35rem] font-semibold text-primary whitespace-pre-line">{"Auch bei schwierigen Situationen in der Türkei.\n\nIhre Immobilie in der Türkei. Ihr persönlicher Ansprechpartner in Deutschland.\n\nMöchten Sie uns eine Immobilie in der Türkei anbieten?\n\n"}</h2>
                 <div className="mt-3 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
                   <p>Auch in der Türkei gibt es Eigentümer, die eine Immobilie aus finanziellen oder persönlichen Gründen kurzfristig verkaufen möchten.</p>
                   <p>Aurelia prüft ausgewählte Immobilien auch dort für einen möglichen Erwerb auf eigene Rechnung.</p>
