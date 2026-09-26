@@ -17,6 +17,11 @@ const partnerSrcSet = [640, 1024, 1440, 2048]
   .map((width) => `/heroes/AdobeStock_364445283-${width}w.webp ${width}w`)
   .join(", ");
 
+// Geschäftspartner-Hero: kundengeliefertes Foto (Adobe Stock 364445283, Variante 2)
+import partnerHeroAsset from "@/assets/partner-hero.jpeg.asset.json";
+const geschaeftspartnerSrc = partnerHeroAsset.url;
+const geschaeftspartnerSrcSet = `${geschaeftspartnerSrc} 1920w`;
+
 import building640 from "@/assets/hero-building-640w.webp";
 import building1024 from "@/assets/hero-building-1024w.webp";
 import building1440 from "@/assets/hero-building-1440w.webp";
@@ -103,6 +108,7 @@ export const heroSets = {
   building:      { src: building1440,      srcSet: srcSet(building640, building1024, building1440, building1920),           sizes: SIZES },
   eigentuemer:   { src: eigentuemerSrc,    srcSet: eigentuemerSrcSet,                                                           sizes: SIZES },
   partner:       { src: partnerSrc,        srcSet: partnerSrcSet,                                                               sizes: SIZES },
+  geschaeftspartner: { src: geschaeftspartnerSrc, srcSet: geschaeftspartnerSrcSet,                                              sizes: SIZES },
   contact:       { src: contact1440,       srcSet: srcSet(contact640, contact1024, contact1440, contact1920),               sizes: SIZES },
   buyers:        { src: buyers1440,        srcSet: srcSet(buyers640, buyers1024, buyers1440, buyers1920),                   sizes: SIZES },
   services:      { src: services1440,      srcSet: srcSet(services640, services1024, services1440, services1920),           sizes: SIZES },
