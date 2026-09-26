@@ -90,8 +90,8 @@ const Header = () => {
   };
 
   const headerClass = scrolled
-    ? "sticky top-0 z-50 bg-white shadow-[0_2px_12px_rgba(0,0,0,0.08)] transition-all duration-300"
-    : "sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/40 transition-all duration-300";
+    ? "fixed inset-x-0 top-0 z-[1000] bg-white shadow-[0_2px_12px_rgba(0,0,0,0.08)] transition-all duration-300"
+    : "fixed inset-x-0 top-0 z-[1000] bg-background/95 backdrop-blur-sm border-b border-border/40 transition-all duration-300";
 
   return (
     <header className={headerClass}>

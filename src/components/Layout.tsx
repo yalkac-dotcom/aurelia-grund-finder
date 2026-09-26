@@ -32,6 +32,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         {t.common.skipToContent}
       </a>
       <Header />
+      <div className="h-16 shrink-0 md:h-20" aria-hidden="true" />
       <TrustBar />
       <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
       <Footer />
