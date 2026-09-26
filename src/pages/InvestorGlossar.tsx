@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState, useRef, useCallback } from "react";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import glossarHeroAsset from "@/assets/glossar-definition.jpeg.asset.json";
 
 const LETTER_BAR_ID = "glossar-letter-bar";
 
