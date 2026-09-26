@@ -5,7 +5,7 @@ type PageExtras = {
   contact: { availabilityShort: string; personalPrompt: string; consultation: string; consultationSubject: string; phone: string; email: string; confirmationWarning: string };
   portfolio: {
     seoTitle: string; heroKicker: string; heroTitle: string; heroDescription: string; heroAlt: string;
-    introTitle: string; introText: string; categoriesTitle: string; categoriesIntro: string;
+    introTitle: string; introText: string; categoriesTitle: string; categoriesIntro: string; categoriesNote?: string;
     categories: { title: string; description: string; alt: string }[];
     regionTitle: string; regionText: string; ctaTitle: string; ctaText: string; ctaButton: string;
   };
@@ -35,12 +35,14 @@ export const pageExtras: Record<Language, PageExtras> = {
     portfolio: {
       seoTitle: "Unser Bestand – Immobilien aus eigenem Bestand | Aurelia Grundbesitz", heroKicker: "Unser Bestand", heroTitle: "Ausgewählte Immobilien aus unserem Bestand", heroDescription: "Immobilien, die Aurelia selbst erworben hat und aus dem eigenen Bestand anbietet.", heroAlt: "Aurelia Immobilien-Portfolio",
       introTitle: "Unser Bestand verändert sich", introText: "Immobilien werden gekauft und wieder verkauft. Deshalb verändert sich auch unser Bestand. Nicht jedes Objekt wird öffentlich auf unserer Website angeboten. Wenn Sie nach einer bestimmten Immobilie suchen, können Sie uns direkt ansprechen.",
-      categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können beispielsweise Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien, Lager- und Logistikobjekte sowie Entwicklungsobjekte verfügbar sein.",
+      categoriesTitle: "Objektkategorien", categoriesIntro: "Je nach aktuellem Bestand können Eigentumswohnungen, Einfamilienhäuser, Mehrfamilienhäuser, Grundstücke, Gewerbeimmobilien sowie Lager- und Logistikobjekte verfügbar sein. Darüber hinaus erwerben wir ausgewählte Immobilien mit Entwicklungspotenzial.", categoriesNote: "Alle hier angebotenen Immobilien befinden sich im eigenen Bestand von Aurelia.",
       categories: [
         { title: "Eigentumswohnungen", description: "Wohnungen verschiedener Größen und Ausstattungen.", alt: "Modernes Wohngebäude mit Balkonen" },
         { title: "Einfamilienhäuser", description: "Wohnhäuser in unterschiedlichen Lagen und Zuständen.", alt: "Freistehendes Einfamilienhaus" },
+        { title: "Mehrfamilienhäuser", description: "Wohnimmobilien mit mehreren Einheiten und unterschiedlichen Nutzungsmöglichkeiten.", alt: "Wohngebäude mit mehreren Einheiten" },
         { title: "Grundstücke", description: "Grundstücke und Flächen mit unterschiedlichen Nutzungs- und Entwicklungsmöglichkeiten.", alt: "Luftbild eines Baugrundstücks" },
         { title: "Gewerbeimmobilien", description: "Gewerblich genutzte Immobilien sowie Objekte mit gemischter Nutzung.", alt: "Außenansicht eines Bürogebäudes" },
+        { title: "Lager & Logistik", description: "Lagerhallen, Logistikflächen und gewerblich nutzbare Hallenobjekte.", alt: "Lagerhalle mit Logistikflächen" },
       ],
       regionTitle: "Unsere Märkte", regionText: "Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden.",
       ctaTitle: "Sie suchen eine Immobilie?", ctaText: "Sagen Sie uns kurz, wonach Sie suchen. Wir prüfen, ob sich aktuell ein passendes Objekt in unserem Bestand befindet oder angeboten werden kann.", ctaButton: "Portfolio anfragen",
