@@ -533,10 +533,10 @@ const fr: Translations = {
       { title: "Documents relatifs au bien", desc: "Nous vous indiquons, dans le cadre de votre demande, quels documents sont déjà disponibles et quelles informations existent sur le bien." },
       { title: "Déroulement de l'achat", desc: "Si vous vous décidez pour un bien et que les deux parties s'entendent, l'achat est réalisé par acte notarié." },
     ],
-    portfolioTitle: "Notre offre actuelle",
+    portfolioTitle: "Biens issus de notre propre patrimoine",
     portfolioText:
-      "Notre portefeuille immobilier évolue régulièrement. S'y ajoutent certains biens issus de coopérations liées à des projets. Les biens actuellement proposés vous sont communiqués via notre portefeuille ou directement sur demande.",
-    portfolioCta: "Voir le portefeuille",
+      "Notre portefeuille immobilier évolue régulièrement et tous les biens ne sont pas présentés publiquement. Faites-nous part de votre intérêt d’achat ou consultez la rubrique ‘Nos biens’.",
+    portfolioCta: "Nos biens",
     proofTitle: "Si vous vous intéressez à un bien",
     proofIntro: "",
     proofPoints: [
@@ -547,7 +547,7 @@ const fr: Translations = {
     ],
     stepsTitle: "Comment se déroule l’achat",
     steps: [
-      { title: "Premier contact", desc: "Vous nous contactez et nous indiquez le bien qui vous intéresse ou ce que vous recherchez." },
+      { title: "Premier contact", desc: "Vous nous contactez et nous indiquez quel bien de notre patrimoine vous intéresse ou quel type de bien vous intéresse." },
       { title: "Visite et documents", desc: "Si un bien correspondant est disponible, nous convenons des prochaines étapes et mettons à votre disposition les informations disponibles sur le bien." },
       { title: "Discussion des conditions", desc: "En cas d'intérêt sérieux, nous discutons du prix d'achat, des conditions et de la date de remise souhaitée." },
       { title: "Acte notarié et remise", desc: "Après la signature de l'acte, nous convenons avec vous, en toute transparence, des étapes suivantes jusqu'à la remise des clés." },
@@ -592,7 +592,7 @@ const fr: Translations = {
     ],
     finalCtaTitle: "Un bien vous intéresse ?",
     finalCtaText:
-      "Indiquez-nous quel bien vous intéresse ou quel type de bien vous recherchez. Nous vérifierons volontiers si nous pouvons vous présenter une offre adaptée.",
+      "Indiquez-nous quel bien vous intéresse ou quel type de bien vous intéresse. Nous vérifierons volontiers si nous pouvons vous présenter un bien adapté issu de notre patrimoine.",
     finalCtaButton: "Demander sans engagement",
   },
   partners: {
@@ -738,9 +738,9 @@ const fr: Translations = {
     consentRequired: "Veuillez accepter la politique de confidentialité.",
     successTitle: "Merci pour votre intérêt.",
     successText: "Nous avons bien reçu votre demande et reviendrons vers vous sous 24 à 48 heures.",
-    subjectOptions: ["Demande générale", "Offre d’acquisition", "Demande d’investisseur", "Demande de rappel", "Autre sujet"],
+    subjectOptions: ["Demande générale", "Offre d’acquisition", "Intérêt d’achat", "Demande de rappel", "Autre sujet"],
     propertyType: "Objet de votre demande",
-    propertyTypeOptions: ["Saisie immobilière", "Succession / héritage", "Insolvabilité", "Achat direct (hors situation difficile)", "Autre"],
+    propertyTypeOptions: ["Saisie immobilière", "Succession / héritage", "Insolvabilité", "Achat direct", "Autre"],
     company: "Entreprise / institution",
     messagePlaceholder: "Décrivez brièvement votre demande…",
     formLabel: "Formulaire de contact",

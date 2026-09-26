@@ -501,10 +501,10 @@ const nl: Translations = {
       { title: "Documenten over het object", desc: "Welke documenten al beschikbaar zijn en welke informatie over het object voorhanden is, delen wij u mee bij uw aanvraag." },
       { title: "Koopafwikkeling", desc: "Beslist u voor een object en komen beide partijen tot overeenstemming, dan wordt de aankoop via een notaris afgewikkeld." },
     ],
-    portfolioTitle: "Ons actuele aanbod",
+    portfolioTitle: "Vastgoed uit onze eigen portefeuille",
     portfolioText:
-      "Onze vastgoedportefeuille verandert regelmatig. Daarnaast komen er af en toe objecten bij uit projectgebonden samenwerkingen. Welke panden op dit moment worden aangeboden, verneemt u via ons portfolio of rechtstreeks op aanvraag.",
-    portfolioCta: "Naar de portefeuille",
+      "Onze vastgoedportefeuille verandert regelmatig en niet elk object wordt openbaar getoond. Laat ons uw koopinteresse weten of bezoek het onderdeel ‘Ons vastgoed’.",
+    portfolioCta: "Ons vastgoed",
     proofTitle: "Als u interesse heeft in een object",
     proofIntro: "",
     proofPoints: [
@@ -515,7 +515,7 @@ const nl: Translations = {
     ],
     stepsTitle: "Zo verloopt de aankoop",
     steps: [
-      { title: "Eerste contact", desc: "U neemt contact met ons op en laat ons weten voor welk object u interesse heeft of waar u naar op zoek bent." },
+      { title: "Eerste contact", desc: "U neemt contact met ons op en laat ons weten voor welk object uit onze eigen portefeuille u interesse heeft of welk type vastgoed voor u interessant is." },
       { title: "Bezichtiging en documenten", desc: "Is er een passend object beschikbaar, dan spreken wij de volgende stappen af en stellen wij u de beschikbare objectinformatie ter beschikking." },
       { title: "Voorwaarden bespreken", desc: "Bij serieuze interesse bespreken wij de koopprijs, de voorwaarden en het gewenste opleveringsmoment." },
       { title: "Notaris en oplevering", desc: "Na het passeren van de akte stemmen wij de verdere stappen tot de oplevering transparant met u af." },
@@ -560,7 +560,7 @@ const nl: Translations = {
     ],
     finalCtaTitle: "Interesse in een object?",
     finalCtaText:
-      "Laat ons weten voor welk object u interesse heeft of welk vastgoed u zoekt. Wij bekijken graag of wij u op dit moment een passend aanbod kunnen doen.",
+      "Laat ons weten voor welk object u interesse heeft of welk type vastgoed voor u interessant is. Wij bekijken graag of wij u een passend object uit onze eigen portefeuille kunnen voorstellen.",
     finalCtaButton: "Vrijblijvend aanvragen",
   },
   partners: {
@@ -706,9 +706,9 @@ const nl: Translations = {
     consentRequired: "Ga alstublieft akkoord met het privacybeleid.",
     successTitle: "Hartelijk dank voor uw bericht.",
     successText: "Wij hebben uw aanvraag ontvangen en nemen binnen 24-48 uur contact met u op.",
-    subjectOptions: ["Algemene aanvraag", "Aankoopaanbod", "Investeerdersaanvraag", "Terugbelverzoek", "Overige kwestie"],
+    subjectOptions: ["Algemene aanvraag", "Aankoopaanbod", "Koopinteresse", "Terugbelverzoek", "Overige kwestie"],
     propertyType: "Onderwerp van uw aanvraag",
-    propertyTypeOptions: ["Executieveiling", "Nalatenschap / Erfenis", "Insolventie", "Directe aankoop (zonder noodsituatie)", "Overig"],
+    propertyTypeOptions: ["Executieveiling", "Nalatenschap / Erfenis", "Insolventie", "Directe aankoop", "Overig"],
     company: "Bedrijf / Instelling",
     messagePlaceholder: "Beschrijf kort uw aanvraag …",
     formLabel: "Contactformulier",

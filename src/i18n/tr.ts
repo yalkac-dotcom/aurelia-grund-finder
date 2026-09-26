@@ -500,10 +500,10 @@ const tr: Translations = {
       { title: "Nesneye dair belgeler", desc: "Hangi belgelerin mevcut olduğunu ve gayrimenkule dair hangi bilgilerin elimizde bulunduğunu, ilgili talebiniz kapsamında size bildiririz." },
       { title: "Satın alma işlemi", desc: "Bir nesneye karar verip her iki taraf anlaştığında, gayrimenkul satışı noter aracılığıyla gerçekleştirilir." },
     ],
-    portfolioTitle: "Mevcut sunumumuz",
+    portfolioTitle: "Portföyümüzdeki gayrimenkuller",
     portfolioText:
-      "Gayrimenkul portföyümüz düzenli olarak değişir. Buna proje bazlı iş birliklerinden gelen tekil nesneler de eklenir. Hangi gayrimenkullerin güncel olarak sunulduğunu portföyümüz üzerinden veya doğrudan talep ederek öğrenebilirsiniz.",
-    portfolioCta: "Portföye git",
+      "Gayrimenkul portföyümüz düzenli olarak değişir ve her gayrimenkul kamuya açık olarak gösterilmez. Satın alma ilginizi bize bildirin veya ‘Gayrimenkullerimiz’ bölümünü ziyaret edin.",
+    portfolioCta: "Gayrimenkullerimiz",
     proofTitle: "Bir nesneyle ilgilendiğinizde",
     proofIntro: "",
     proofPoints: [
@@ -514,7 +514,7 @@ const tr: Translations = {
     ],
     stepsTitle: "Satın alma süreci",
     steps: [
-      { title: "İlk iletişim", desc: "Bize ulaşırsınız ve hangi nesneyle ilgilendiğinizi ya da ne aradığınızı belirtirsiniz." },
+      { title: "İlk iletişim", desc: "Bize ulaşırsınız ve portföyümüzdeki hangi gayrimenkulle ya da hangi tür gayrimenkulle ilgilendiğinizi bize bildirirsiniz." },
       { title: "İnceleme ve belgeler", desc: "Uygun bir nesne mevcutsa sonraki adımları birlikte planlar ve mevcut nesne bilgilerini sizinle paylaşırız." },
       { title: "Koşulların görüşülmesi", desc: "Ciddi bir ilgi olması halinde satış fiyatı, koşullar ve istenen teslim tarihi üzerine konuşuruz." },
       { title: "Noter ve teslim", desc: "Noter işleminin ardından teslime kadar olan adımları sizinle şeffaf biçimde planlarız." },
@@ -559,7 +559,7 @@ const tr: Translations = {
     ],
     finalCtaTitle: "Bir gayrimenkulle mi ilgileniyorsunuz?",
     finalCtaText:
-      "Hangi gayrimenkulle ilgilendiğinizi veya nasıl bir gayrimenkul aradığınızı bize bildirin. Size şu anda uygun bir teklif sunup sunamayacağımızı memnuniyetle kontrol ederiz.",
+      "Hangi gayrimenkulle veya hangi tür gayrimenkulle ilgilendiğinizi bize bildirin. Portföyümüzden size uygun bir gayrimenkul sunup sunamayacağımızı memnuniyetle kontrol ederiz.",
     finalCtaButton: "Bağlayıcı olmadan talep gönderin",
   },
   partners: {
@@ -705,9 +705,9 @@ const tr: Translations = {
     consentRequired: "Lütfen gizlilik politikasını kabul edin.",
     successTitle: "Mesajınız için teşekkür ederiz.",
     successText: "Talebinizi aldık ve 24-48 saat içinde size geri döneceğiz.",
-    subjectOptions: ["Genel talep", "Satın alma teklifi", "Yatırımcı talebi", "Geri arama talebi", "Diğer konu"],
+    subjectOptions: ["Genel talep", "Satın alma teklifi", "Satın alma ilgisi", "Geri arama talebi", "Diğer konu"],
     propertyType: "Talebinizin konusu",
-    propertyTypeOptions: ["Cebri icra", "Miras / Veraset", "İflas", "Acil durum olmadan doğrudan satın alma", "Diğer"],
+    propertyTypeOptions: ["Cebri icra", "Miras / Veraset", "İflas", "Doğrudan satın alma", "Diğer"],
     company: "Şirket / Kurum",
     messagePlaceholder: "Talebinizi kısaca açıklayın …",
     formLabel: "İletişim formu",

@@ -500,10 +500,10 @@ const it: Translations = {
       { title: "Documentazione sull'immobile", desc: "Vi comunichiamo, nell'ambito della rispettiva richiesta, quali documenti sono già disponibili e quali informazioni sull'immobile esistono." },
       { title: "Svolgimento dell'acquisto", desc: "Se decidete per un immobile e le parti trovano un accordo, l'acquisto viene gestito tramite notaio." },
     ],
-    portfolioTitle: "La nostra offerta attuale",
+    portfolioTitle: "Immobili dal nostro patrimonio",
     portfolioText:
-      "Il nostro patrimonio immobiliare cambia regolarmente. A questo si aggiungono singoli immobili provenienti da collaborazioni progettuali. Quali immobili sono attualmente disponibili lo trovate nel nostro portfolio o su semplice richiesta.",
-    portfolioCta: "Vai al portafoglio",
+      "Il nostro patrimonio immobiliare cambia regolarmente e non tutti gli immobili vengono presentati pubblicamente. Ci comunichi il suo interesse all'acquisto o visiti la sezione ‘I nostri immobili’.",
+    portfolioCta: "I nostri immobili",
     proofTitle: "Se siete interessati a un immobile",
     proofIntro: "",
     proofPoints: [
@@ -514,7 +514,7 @@ const it: Translations = {
     ],
     stepsTitle: "Come si svolge l'acquisto",
     steps: [
-      { title: "Primo contatto", desc: "Vi mettete in contatto con noi e ci dite per quale immobile siete interessati o cosa state cercando." },
+      { title: "Primo contatto", desc: "Vi mettete in contatto con noi e ci comunicate a quale immobile del nostro patrimonio siete interessati o quale tipo di immobile è di vostro interesse." },
       { title: "Visita e documentazione", desc: "Se è disponibile un immobile adatto, concordiamo i passi successivi e vi mettiamo a disposizione le informazioni disponibili sull'immobile." },
       { title: "Discussione delle condizioni", desc: "In caso di interesse concreto, parliamo del prezzo di acquisto, delle condizioni e della data di consegna desiderata." },
       { title: "Notaio e consegna", desc: "Dopo il rogito concordiamo con lei in modo trasparente i passi successivi fino alla consegna." },
@@ -559,7 +559,7 @@ const it: Translations = {
     ],
     finalCtaTitle: "È interessato a un immobile?",
     finalCtaText:
-      "Ci indichi quale immobile le interessa o che tipo di immobile sta cercando. Verificheremo volentieri se al momento possiamo proporle un'offerta adatta.",
+      "Ci indichi quale immobile le interessa o quale tipo di immobile è di suo interesse. Verificheremo volentieri se possiamo proporle un immobile adatto dal nostro patrimonio.",
     finalCtaButton: "Richiesta senza impegno",
   },
   partners: {
@@ -705,9 +705,9 @@ const it: Translations = {
     consentRequired: "Acconsenta all'informativa sulla privacy.",
     successTitle: "Grazie per il vostro messaggio.",
     successText: "Abbiamo ricevuto la vostra richiesta e vi risponderemo entro 24-48 ore.",
-    subjectOptions: ["Richiesta generale", "Offerta di acquisto", "Richiesta investitori", "Richiesta di richiamata", "Altra questione"],
+    subjectOptions: ["Richiesta generale", "Offerta di acquisto", "Interesse all'acquisto", "Richiesta di richiamata", "Altra questione"],
     propertyType: "Oggetto della richiesta",
-    propertyTypeOptions: ["Esecuzione forzata", "Eredità / Successione", "Insolvenza", "Acquisto diretto (senza situazione di difficoltà)", "Altro"],
+    propertyTypeOptions: ["Esecuzione forzata", "Eredità / Successione", "Insolvenza", "Acquisto diretto", "Altro"],
     company: "Azienda / Istituzione",
     messagePlaceholder: "Descrivete brevemente la vostra richiesta …",
     formLabel: "Modulo di contatto",

@@ -500,10 +500,10 @@ const es: Translations = {
       { title: "Documentación del inmueble", desc: "Le informamos, dentro del marco de cada consulta, sobre qué documentación existe ya y qué información está disponible sobre el inmueble." },
       { title: "Tramitación de la compra", desc: "Si se decide por un inmueble y ambas partes llegan a un acuerdo, la compraventa se formaliza ante notario." },
     ],
-    portfolioTitle: "Nuestra oferta actual",
+    portfolioTitle: "Inmuebles de nuestra cartera",
     portfolioText:
-      "Nuestra cartera de inmuebles cambia con regularidad. A ello se suman algunos objetos procedentes de cooperaciones por proyecto. Qué inmuebles se ofrecen actualmente puede consultarlo en nuestro portafolio o directamente bajo petición.",
-    portfolioCta: "Ver portafolio",
+      "Nuestra cartera de inmuebles cambia con regularidad y no todos los inmuebles se presentan públicamente. Comuníquenos su interés de compra o visite la sección ‘Nuestros inmuebles’.",
+    portfolioCta: "Nuestros inmuebles",
     proofTitle: "Si le interesa un inmueble",
     proofIntro: "",
     proofPoints: [
@@ -514,7 +514,7 @@ const es: Translations = {
     ],
     stepsTitle: "Así es la compra",
     steps: [
-      { title: "Primer contacto", desc: "Usted se pone en contacto con nosotros y nos indica por qué inmueble está interesado o qué está buscando." },
+      { title: "Primer contacto", desc: "Usted se pone en contacto con nosotros y nos indica qué inmueble de nuestra cartera le interesa o qué tipo de inmueble es de su interés." },
       { title: "Visita y documentación", desc: "Si hay disponible un inmueble adecuado, acordamos los próximos pasos y le facilitamos la información disponible sobre el objeto." },
       { title: "Negociación de condiciones", desc: "Si existe un interés serio, hablamos sobre el precio de compra, las condiciones y la fecha de entrega deseada." },
       { title: "Notario y entrega", desc: "Tras la firma ante notario, acordamos con usted de forma transparente los siguientes pasos hasta la entrega." },
@@ -559,7 +559,7 @@ const es: Translations = {
     ],
     finalCtaTitle: "¿Le interesa un inmueble?",
     finalCtaText:
-      "Indíquenos qué inmueble le interesa o qué tipo de inmueble busca. Comprobaremos con gusto si actualmente podemos presentarle una oferta adecuada.",
+      "Indíquenos qué inmueble le interesa o qué tipo de inmueble es de su interés. Comprobaremos con gusto si podemos presentarle un inmueble adecuado de nuestra cartera.",
     finalCtaButton: "Consultar sin compromiso",
   },
   partners: {
@@ -705,9 +705,9 @@ const es: Translations = {
     consentRequired: "Acepte la política de privacidad.",
     successTitle: "Gracias por su mensaje.",
     successText: "Hemos recibido su consulta y nos pondremos en contacto con usted en un plazo de 24-48 horas.",
-    subjectOptions: ["Consulta general", "Oferta de compra", "Consulta de inversores", "Solicitud de devolución de llamada", "Otro asunto"],
+    subjectOptions: ["Consulta general", "Oferta de compra", "Interés de compra", "Solicitud de devolución de llamada", "Otro asunto"],
     propertyType: "Tema de su consulta",
-    propertyTypeOptions: ["Ejecución hipotecaria", "Herencia / Sucesión", "Insolvencia", "Compra directa (sin situación de dificultad)", "Otro"],
+    propertyTypeOptions: ["Ejecución hipotecaria", "Herencia / Sucesión", "Insolvencia", "Compra directa", "Otro"],
     company: "Empresa / Institución",
     messagePlaceholder: "Describa brevemente su consulta …",
     formLabel: "Formulario de contacto",
