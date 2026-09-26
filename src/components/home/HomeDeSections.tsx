@@ -51,11 +51,11 @@ const HomeDeSections = () => (
     {/* WOHNSITZ ≠ STANDORT */}
     <section className="section-premium bg-background">
       <div className="container-premium">
-        <SectionHeader title="Wo Sie leben, ist nicht entscheidend." intro="Eine Immobilie kann sich in einem anderen Land befinden als ihr Eigentümer. Auch dann können Sie uns Ihr Objekt zum möglichen Ankauf anbieten." />
+        <SectionHeader title="Wo Sie leben, ist nicht entscheidend." intro={"Ihre Immobilie kann in einem anderen Land liegen als Ihr Wohnsitz. \nAuch dann können Sie sie uns zum möglichen Ankauf anbieten"} />
         <div className="grid gap-6 md:grid-cols-2 md:gap-8">
           {[
-            { t: "Sie leben in der Türkei – Ihre Immobilie ist in Deutschland?", d: "Sie können uns die Immobilie auch aus der Türkei zum möglichen Ankauf anbieten. Unterlagen und viele Abstimmungen können je nach Einzelfall aus der Ferne vorbereitet werden.", to: "/immobilie-anbieten?land=deutschland" },
-            { t: "Sie leben in Deutschland oder Europa – Ihre Immobilie ist in der Türkei?", d: "Auch Immobilien in der Türkei können wir für einen möglichen Erwerb auf eigene Rechnung prüfen. Welche Schritte vor Ort notwendig sind, hängt vom jeweiligen Objekt und der Eigentumssituation ab.", to: "/immobilie-anbieten?land=tuerkei" },
+            { t: "Sie leben in der Türkei – Ihre Immobilie ist in Deutschland?", d: "Auch wenn Sie in der Türkei leben, können Sie uns Ihre Immobilie in Deutschland zum möglichen Ankauf anbieten.", to: "/immobilie-anbieten?land=deutschland" },
+            { t: "Sie leben in Deutschland oder Europa – Ihre Immobilie ist in der Türkei?", d: "Auch Immobilien in der Türkei prüfen wir für einen möglichen Ankauf auf eigene Rechnung", to: "/immobilie-anbieten?land=tuerkei" },
           ].map((c, i) => (
             <Reveal key={c.t} delay={i * 0.06}>
               <div className="h-full border-l-2 border-accent/60 pl-6">

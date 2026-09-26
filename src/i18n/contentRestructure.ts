@@ -19,9 +19,9 @@ export const contentRestructure: Record<Language, DeepPartial<Translations>> = {
       trustClaimTitle: "", trustClaimText: "",
       proofPoints: [
         { title: "Direkter Ansprechpartner", text: "Kein anonymes Portal, sondern persönliche Betreuung aus Düsseldorf." },
-        { title: "Nachvollziehbare Bewertung", text: "Wir erläutern Ihnen verständlich, wie unsere Einschätzung zustande kommt." },
+        { title: "Nachvollziehbare Bewertung", text: "Wir erklären Ihnen verständlich, wie wir die Immobilie einschätzen und welche Punkte für unsere Entscheidung wichtig sind." },
         { title: "Keine versteckten Kosten", text: "Unsere Erstprüfung und das Erstgespräch sind für Sie kostenfrei und unverbindlich." },
-        { title: "Ankauf auf eigene Rechnung", text: "Passende Immobilien prüfen wir für einen möglichen Erwerb auf eigene Rechnung. Welche Möglichkeiten bestehen, hängt vom Objekt, dem Standort und den jeweiligen rechtlichen Voraussetzungen ab." },
+        { title: "Ankauf auf eigene Rechnung", text: "Passende Immobilien prüfen wir für einen möglichen Ankauf auf eigene Rechnung. Ob ein Kauf möglich ist, hängt immer von der Immobilie und der jeweiligen Situation ab." },
       ],
       stepsTitle: "Immobilie zum Ankauf anbieten – in drei Schritten", steps: [
         { title: "Immobilie anbieten", desc: "Teilen Sie uns die wichtigsten Eckdaten zu Ihrer Immobilie mit." },
