@@ -135,33 +135,40 @@ const About = () => {
         </section>
 
         <section className={`${SEC} bg-background`} aria-labelledby="unser-ansatz-title">
-          <div className="container-premium grid items-center gap-6 md:grid-cols-[44fr_56fr] md:gap-8 lg:gap-10">
+          <div className="container-premium">
+          <div className="mx-auto grid max-w-[980px] items-center gap-7 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-12 lg:gap-16">
             <Reveal>
-              <div className="relative overflow-hidden rounded-lg">
-                <img src={aboutMenschenAsset.url} alt={ansatz.imageAlt} loading="lazy" className="img-tone aspect-[16/9] w-full object-cover md:aspect-[4/3]" />
-              </div>
+              <figure className="relative mx-auto w-full max-w-[520px] md:max-w-none">
+                <div className="overflow-hidden rounded-[3px]">
+                  <img src={aboutMenschenAsset.url} alt={ansatz.imageAlt} loading="lazy" className="img-tone aspect-[16/9] w-full object-cover md:aspect-[5/4]" />
+                </div>
+                <span aria-hidden="true" className="absolute -bottom-3 left-4 h-px w-16 bg-accent md:-bottom-4" />
+              </figure>
             </Reveal>
             <Reveal delay={0.08}>
-              <div className={RULE} aria-hidden="true" />
-              <h2 id="unser-ansatz-title" className={H2}>{ansatz.headline}</h2>
-              <div className={`mt-3 space-y-2.5 ${BODY}`}>
-                {ansatz.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-              </div>
-              <div className="mt-5 grid auto-rows-fr gap-2.5 sm:grid-cols-2">
-                {ansatz.cards.map((card, index) => {
-                  const Icon = ansatzIcons[index] ?? Target;
-                  return (
-                    <article key={card.title} className="h-full rounded-md border border-primary/12 bg-secondary/50 px-4 py-3">
-                      <div className="flex items-center gap-2">
-                        <Icon size={16} strokeWidth={1.6} className="shrink-0 text-accent" aria-hidden="true" />
-                        <h3 className={H3}>{card.title}</h3>
-                      </div>
-                      <p className={`mt-1 ${SMALL}`}>{card.text}</p>
-                    </article>
-                  );
-                })}
+              <div className="md:border-l md:border-accent/30 md:pl-8 lg:pl-10">
+                <div className={RULE} aria-hidden="true" />
+                <h2 id="unser-ansatz-title" className="font-heading text-[1.3rem] font-semibold leading-[1.2] text-primary md:text-[1.55rem]">{ansatz.headline}</h2>
+                <div className="mt-3 max-w-[34rem] space-y-2 text-[14px] leading-[1.65] text-foreground/80">
+                  {ansatz.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </div>
+                <div className="mt-5 grid auto-rows-fr gap-2 sm:grid-cols-2">
+                  {ansatz.cards.map((card, index) => {
+                    const Icon = ansatzIcons[index] ?? Target;
+                    return (
+                      <article key={card.title} className="h-full rounded-[3px] border border-accent/20 bg-[hsl(var(--secondary)/0.35)] px-3.5 py-2.5">
+                        <div className="flex items-center gap-2">
+                          <Icon size={13} strokeWidth={1.5} className="shrink-0 text-accent" aria-hidden="true" />
+                          <h3 className="font-heading text-[0.9rem] font-semibold leading-snug text-primary">{card.title}</h3>
+                        </div>
+                        <p className="mt-1 text-[12.5px] leading-[1.55] text-foreground/65">{card.text}</p>
+                      </article>
+                    );
+                  })}
+                </div>
               </div>
             </Reveal>
+          </div>
           </div>
         </section>
 
