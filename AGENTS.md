@@ -1,4 +1,4 @@
 # Project architecture rules
 
 - Keep the shared site header viewport-fixed in `Header` and reserve its responsive 64/80 px height centrally in `Layout`, so every route and language retains identical unobscured navigation.
-- Property-offer country choices show radio + country name only (no flag images), identical across all seven languages.
+- Property-offer country choices show radio + country name only (no flag images), identical across all seven languages.- Keep all seven homepages on one shared structure fed by `src/i18n/homeMaster.ts` (German is the master), so languages cannot drift apart structurally.
