@@ -70,7 +70,7 @@ export const turkeyPageFinal: Record<Language, DeepPartial<Translations>> = {
         primary: "Immobilie zum Ankauf anbieten",
         secondary: "+49 211 69583033 anrufen",
       },
-      legalNotice: "Die konkrete rechtliche, notarielle, steuerliche und zahlungsbezogene Gestaltung richtet sich nach dem jeweiligen Einzelfall und den in Deutschland und der Türkei geltenden Vorschriften. Soweit erforderlich, werden geeignete externe Fachleute einbezogen.",
+      legalNotice: "Die Kaufpreiszahlung kann je nach Vereinbarung in Deutschland oder in der Türkei erfolgen. Die konkrete rechtliche, notarielle, steuerliche und zahlungsbezogene Gestaltung richtet sich nach dem jeweiligen Einzelfall und den in Deutschland und der Türkei geltenden Vorschriften. Soweit erforderlich, werden geeignete externe Fachleute einbezogen.",
     },
   },
   tr: {
@@ -138,7 +138,7 @@ export const turkeyPageFinal: Record<Language, DeepPartial<Translations>> = {
         primary: "Gayrimenkulü satın alınmak üzere sunun",
         secondary: "+49 211 69583033'ü arayın",
       },
-      legalNotice: "Somut hukuki, noterlik, vergisel ve ödemeye ilişkin düzenleme, ilgili duruma ve Almanya ile Türkiye'de geçerli mevzuata göre belirlenir. Gerektiğinde uygun dış uzmanlar sürece dahil edilir.",
+      legalNotice: "Gayrimenkul satış bedelinin ödenmesi, tarafların mutabakatına göre Almanya'da veya Türkiye'de gerçekleştirilebilir. Somut hukuki, noterlik, vergisel ve ödemeye ilişkin düzenleme, ilgili duruma ve Almanya ile Türkiye'de geçerli mevzuata göre belirlenir. Gerektiğinde uygun dış uzmanlar sürece dahil edilir.",
     },
   },
   en: {
@@ -206,7 +206,7 @@ export const turkeyPageFinal: Record<Language, DeepPartial<Translations>> = {
         primary: "Offer a property for purchase",
         secondary: "Call +49 211 69583033",
       },
-      legalNotice: "The specific legal, notarial, tax and payment arrangements depend on the individual case and the regulations applicable in Germany and Turkey. Where necessary, suitable external specialists are involved.",
+      legalNotice: "Depending on the agreement, the purchase price can be paid in Germany or in Turkey. The specific legal, notarial, tax and payment arrangements depend on the individual case and the regulations applicable in Germany and Turkey. Where necessary, suitable external specialists are involved.",
     },
   },
   nl: {
@@ -274,7 +274,7 @@ export const turkeyPageFinal: Record<Language, DeepPartial<Translations>> = {
         primary: "Vastgoed ter aankoop aanbieden",
         secondary: "+49 211 69583033 bellen",
       },
-      legalNotice: "De concrete juridische, notariële, fiscale en betalingsgerelateerde vormgeving hangt af van het individuele geval en de in Duitsland en Turkije geldende voorschriften. Waar nodig worden geschikte externe specialisten ingeschakeld.",
+      legalNotice: "Afhankelijk van de gemaakte afspraken kan de koopsom in Duitsland of in Turkije worden betaald. De concrete juridische, notariële, fiscale en betalingsgerelateerde vormgeving hangt af van het individuele geval en de in Duitsland en Turkije geldende voorschriften. Waar nodig worden geschikte externe specialisten ingeschakeld.",
     },
   },
   it: {
@@ -342,7 +342,7 @@ export const turkeyPageFinal: Record<Language, DeepPartial<Translations>> = {
         primary: "Proporre un immobile per l'acquisto",
         secondary: "Chiamare +49 211 69583033",
       },
-      legalNotice: "L'impostazione concreta sotto il profilo legale, notarile, fiscale e dei pagamenti dipende dal singolo caso e dalle norme vigenti in Germania e in Turchia. Ove necessario vengono coinvolti professionisti esterni qualificati.",
+      legalNotice: "A seconda degli accordi, il pagamento del prezzo di acquisto può essere effettuato in Germania oppure in Turchia. L'impostazione concreta sotto il profilo legale, notarile, fiscale e dei pagamenti dipende dal singolo caso e dalle norme vigenti in Germania e in Turchia. Ove necessario vengono coinvolti professionisti esterni qualificati.",
     },
   },
   es: {
@@ -410,7 +410,7 @@ export const turkeyPageFinal: Record<Language, DeepPartial<Translations>> = {
         primary: "Ofrecer un inmueble para su compra",
         secondary: "Llamar al +49 211 69583033",
       },
-      legalNotice: "La configuración jurídica, notarial, fiscal y de pagos concreta depende de cada caso y de la normativa vigente en Alemania y Turquía. Cuando sea necesario, se incorporan profesionales externos adecuados.",
+      legalNotice: "Según lo acordado, el pago del precio de compra puede efectuarse en Alemania o en Turquía. La configuración jurídica, notarial, fiscal y de pagos concreta depende de cada caso y de la normativa vigente en Alemania y Turquía. Cuando sea necesario, se incorporan profesionales externos adecuados.",
     },
   },
   fr: {
@@ -478,7 +478,7 @@ export const turkeyPageFinal: Record<Language, DeepPartial<Translations>> = {
         primary: "Proposer un bien à l'achat",
         secondary: "Appeler le +49 211 69583033",
       },
-      legalNotice: "L'organisation juridique, notariale, fiscale et relative aux paiements dépend de chaque cas et des réglementations en vigueur en Allemagne et en Turquie. Si nécessaire, des spécialistes externes qualifiés sont associés.",
+      legalNotice: "Selon l'accord convenu, le paiement du prix d'achat peut être effectué en Allemagne ou en Turquie. L'organisation juridique, notariale, fiscale et relative aux paiements dépend de chaque cas et des réglementations en vigueur en Allemagne et en Turquie. Si nécessaire, des spécialistes externes qualifiés sont associés.",
     },
   },
 };
