@@ -49,16 +49,10 @@ const Portfolio = () => {
           <div className="hero-overlay-protect absolute inset-0" />
         </div>
 
-        <div className="page-frame-hero relative pt-16 pb-10 md:pt-20 md:pb-14">
-          <div className="hero-copy-shell">
-            <Reveal>
-              <p className="hero-kicker">{copy.heroKicker}</p>
-              <h1 className="hero-title">{copy.heroTitle}</h1>
-              <p className="hero-description">{copy.heroDescription}</p>
-            </Reveal>
-          </div>
-          <HeroScrollIndicator />
-        </div>
+        {/* Hero text intentionally removed: only the image itself is shown.
+            The heading/text live in the intro section below; the h1 stays
+            visually hidden for SEO. */}
+        <h1 className="sr-only">{copy.heroTitle}</h1>
       </section>
 
       {/* INTRO: the new surface begins only after the complete hero image. */}
