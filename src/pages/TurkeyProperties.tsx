@@ -1,6 +1,6 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, FileText, Home, Landmark, MapPin, ShieldCheck, Upload } from "lucide-react";
+import { ArrowRight, CheckCircle2, Euro, FileText, Home, Landmark, MapPin, ShieldCheck, Upload } from "lucide-react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/sections/SectionHeader";
@@ -417,6 +417,23 @@ const TurkeyProperties = () => {
                 />
               ))}
             </div>
+
+            {page.paymentHighlight && (
+              <Reveal delay={0.08}>
+                <div className="mx-auto mt-12 max-w-3xl rounded-sm border border-accent/60 bg-gradient-warm px-7 py-9 md:mt-14 md:px-12 md:py-11">
+                  <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-7">
+                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-primary text-accent">
+                      <Euro size={20} strokeWidth={1.5} />
+                    </span>
+                    <div>
+                      <h3 className="font-heading text-[1.35rem] font-semibold leading-snug text-primary md:text-[1.5rem]">{page.paymentHighlight.title}</h3>
+                      <div className="mt-2 h-[2px] w-10 bg-accent" />
+                      <p className="mt-3 text-[0.96rem] leading-[1.8] text-muted-foreground">{page.paymentHighlight.text}</p>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            )}
           </div>
         </section>
 
