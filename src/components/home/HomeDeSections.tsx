@@ -12,7 +12,7 @@ const HomeDeSections = ({ m }: { m: HomeMasterCopy }) => (
     {/* UNTERNEHMENSGESCHICHTE */}
     <section className="section-premium bg-background">
       <div className="container-premium">
-        <Reveal id="wer-wir-sind-block" className={`mx-auto max-w-4xl ${aureliaEditorialFrame} !py-5 md:!py-6`}>
+        <Reveal className={`mx-auto max-w-4xl ${aureliaEditorialFrame} !py-5 md:!py-6`}>
           <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{m.whoTitle}</h2>
           <div className={`!mt-2 ${aureliaGoldRule}`} aria-hidden="true" />
           <div className="!mt-3 space-y-2 text-[15px] leading-[1.6] text-foreground/80">
