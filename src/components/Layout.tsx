@@ -33,7 +33,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       </a>
       <Header />
       <div className="h-16 shrink-0 md:h-20" aria-hidden="true" />
-      <TrustBar />
+      {location.pathname !== "/portfolio" && <TrustBar />}
       <main id="main-content" tabIndex={-1} className="flex-1">{children}</main>
       <Footer />
       {showMobileContactBar && <div className="h-14 shrink-0 md:hidden" aria-hidden="true" />}
