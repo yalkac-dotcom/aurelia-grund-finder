@@ -61,9 +61,9 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <div className="page-shell">
-        {/* INTRO */}
-        <section className="section-premium bg-gradient-warm !pt-3 md:!pt-4">
+      {/* INTRO: the new surface begins only after the complete hero image. */}
+      <section className="section-premium bg-gradient-warm !pt-8 md:!pt-10">
+        <div className="page-shell">
           <div className="container-premium text-center">
             <Reveal>
               <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
@@ -75,7 +75,10 @@ const Portfolio = () => {
               </p>
             </Reveal>
           </div>
-        </section>
+        </div>
+      </section>
+
+      <div className="page-shell">
 
         {/* KATEGORIEN */}
         <section className="section-premium" style={{ background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%)" }}>
