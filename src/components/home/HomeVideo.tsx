@@ -14,6 +14,7 @@ const VIDEOS = {
     title: "Aurelia kennenlernen",
     text: "Lernen Sie Aurelia, unsere Arbeitsweise und unsere Immobilienbereiche in wenigen Minuten kennen.",
     play: "Video abspielen",
+    note: "Hinweis: Dieses Unternehmensvideo wurde mit Unterstützung künstlicher Intelligenz erstellt.",
   },
   tr: {
     src: videoTr.url,
@@ -21,6 +22,7 @@ const VIDEOS = {
     title: "Aurelia'yı yakından tanıyın",
     text: "Aurelia'yı, çalışma şeklimizi ve gayrimenkul faaliyet alanlarımızı birkaç dakika içinde yakından tanıyın.",
     play: "Videoyu oynat",
+    note: "Bilgilendirme: Bu kurumsal tanıtım videosu yapay zekâ desteğiyle oluşturulmuştur.",
   },
 } as const;
 
@@ -74,6 +76,9 @@ const HomeVideo = ({ language }: { language: string }) => {
               )}
             </div>
           </div>
+          <p className="mx-auto mt-2.5 text-center text-[12px] leading-[1.5] text-foreground/55 md:mt-3 md:text-[13px]">
+            {v.note}
+          </p>
         </Reveal>
       </div>
     </section>
