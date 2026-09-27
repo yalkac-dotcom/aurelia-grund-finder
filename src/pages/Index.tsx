@@ -121,6 +121,8 @@ const HomePage = () => {
 
         <HomeDeSections m={m} />
 
+        <HomeVideo language={language} />
+
         {/* TRUST */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
