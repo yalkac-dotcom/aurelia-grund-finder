@@ -12,7 +12,7 @@ export const aureliaGoldCard =
 
 /** C) Editorial-Rahmen für längere Unternehmenstexte. */
 export const aureliaEditorialFrame =
-  "rounded-sm border border-accent/35 bg-secondary/20 px-6 py-9 sm:px-10 md:px-14 md:py-12";
+  "rounded-sm border border-accent/35 bg-secondary/20 px-6 py-8 sm:px-10 md:px-14 md:py-9";
 
 /** D) Dezente Info-Card für wichtige Einzelhinweise (mit Eckakzent via InfoCorner). */
 export const aureliaInfoCard =
