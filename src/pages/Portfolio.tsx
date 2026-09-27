@@ -62,7 +62,7 @@ const Portfolio = () => {
       </section>
 
       {/* INTRO: the new surface begins only after the complete hero image. */}
-      <section className="section-premium bg-gradient-warm !mt-0 !pt-10 md:!pt-16">
+      <section className="section-premium bg-gradient-warm !mt-0 !pt-8 md:!pt-10">
         <div className="page-shell !mt-0 !pt-0">
           <div className="container-premium !mt-0 !pt-0 text-center">
             <Reveal>
