@@ -402,20 +402,35 @@
 }
 
 .section-premium {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 @media (min-width: 768px) {
+  .section-premium {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+}
+@media (min-width: 1280px) {
   .section-premium {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
 }
-@media (min-width: 1280px) {
-  .section-premium {
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
-  }
+/* Compact vertical rhythm inside content sections (proportions only) */
+.section-premium :is(.mt-8) { margin-top: 1.75rem; }
+.section-premium :is(.mt-10) { margin-top: 2rem; }
+.section-premium :is(.mt-12) { margin-top: 2.25rem; }
+.section-premium :is(.mt-14, .mt-16) { margin-top: 2.5rem; }
+.section-premium :is(.mt-20) { margin-top: 3rem; }
+.section-premium :is(.mb-10) { margin-bottom: 2rem; }
+.section-premium :is(.mb-12) { margin-bottom: 2.25rem; }
+.section-premium :is(.gap-10) { gap: 2rem; }
+.section-premium :is(.gap-12) { gap: 2.25rem; }
+@media (max-width: 767px) {
+  .section-premium :is(.mt-10, .mt-12, .mt-14, .mt-16) { margin-top: 1.75rem; }
+  .section-premium :is(.mb-10, .mb-12) { margin-bottom: 1.75rem; }
+  .section-premium :is(.gap-10, .gap-12) { gap: 1.75rem; }
 }
 /* Two consecutive sections on the same light background: avoid doubled gap */
 .section-premium.bg-background + .section-premium.bg-background,
