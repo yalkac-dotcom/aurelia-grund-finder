@@ -17,6 +17,8 @@ import FinalCta from "@/components/sections/FinalCta";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import HomeDeSections from "@/components/home/HomeDeSections";
+import { aureliaInfoCard } from "@/lib/cardStyle";
+import InfoCorner from "@/components/sections/InfoCorner";
 import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
@@ -148,9 +150,9 @@ const HomePage = () => {
             )}
             {language === "de" && (
               <Reveal delay={0.12}>
-                <p className="mx-auto mt-8 max-w-3xl border-l-2 border-accent/60 pl-5 text-[0.9rem] leading-[1.8] text-muted-foreground">
+                <div className={`mx-auto mt-10 max-w-3xl ${aureliaInfoCard}`}><InfoCorner /><p className="text-[0.92rem] leading-[1.8] text-foreground/80">
                   Unser Schwerpunkt liegt auf Deutschland und der Türkei. Auch in Italien, Spanien, Frankreich und den Niederlanden prüfen wir ausgewählte Immobilien. Ob ein Objekt zu unserem Bestand passt, entscheiden wir immer im Einzelfall.
-                </p>
+                </p></div>
               </Reveal>
             )}
           </div>
