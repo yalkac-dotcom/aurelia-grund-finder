@@ -352,13 +352,13 @@ const TurkeyProperties = () => {
                   <p className="mx-auto mt-8 max-w-3xl font-heading text-[1.3rem] italic leading-[1.5] text-accent md:text-[1.65rem]">{page.paymentHighlight.text}</p>
                   <div className="mt-10 grid grid-cols-1 items-stretch gap-4 sm:grid-cols-[1fr_auto_1fr] sm:gap-5">
                     {[page.paymentHighlight.germany, page.paymentHighlight.turkey].map((country, i) => (
-                      <div key={country} className={`flex flex-col items-center justify-center rounded-sm border border-accent/40 bg-white/[0.04] px-5 py-7 ${i === 1 ? "sm:order-3" : ""}`}>
+                      <div key={country} className={`flex flex-col items-center justify-center rounded-sm border border-accent/40 bg-white/[0.04] px-5 py-7 ${i === 1 ? "order-3" : "order-1"}`}>
                         <p className="font-heading text-[1.1rem] font-semibold uppercase tracking-[0.16em] md:text-[1.25rem]">{country}</p>
                         <div className="mt-3 h-px w-8 bg-accent/70" />
                         <p className="mt-3 text-[0.9rem] leading-[1.6] text-white/75">{page.paymentHighlight!.sideText}</p>
                       </div>
                     ))}
-                    <div className="flex items-center justify-center sm:order-2" aria-hidden="true">
+                    <div className="flex items-center justify-center order-2" aria-hidden="true">
                       <ArrowLeftRight className="rotate-90 text-accent sm:rotate-0" size={26} strokeWidth={1.4} />
                     </div>
                   </div>
