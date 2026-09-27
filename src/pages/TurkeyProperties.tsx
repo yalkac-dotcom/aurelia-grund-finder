@@ -341,29 +341,29 @@ const TurkeyProperties = () => {
         </section>
 
         {page.paymentHighlight && (
-          <section id="kaufpreiszahlung" className="section-navy scroll-mt-24 py-10 text-white md:py-12 lg:py-14">
+          <section id="kaufpreiszahlung" className="section-navy scroll-mt-24 py-3 text-white md:py-4">
             <div className="container-premium">
               <Reveal>
-                <div className="relative mx-auto max-w-4xl rounded-sm border border-accent/50 px-6 py-8 text-center sm:px-10 md:px-12 md:py-10">
+                <div className="relative mx-auto max-w-4xl rounded-sm border border-accent/50 px-6 py-3.5 text-center sm:px-10 md:px-12 md:py-4">
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-accent">{page.paymentHighlight.kicker}</p>
-                  <h2 className="mt-3 font-heading text-[1.75rem] font-bold leading-[1.2] md:text-[2.4rem]">{page.paymentHighlight.title}</h2>
-                  <div className="mx-auto mt-4 h-[2px] w-14 bg-accent" />
-                  <p className="mx-auto mt-4 max-w-2xl text-[0.98rem] leading-[1.8] text-white/80">{page.paymentHighlight.intro}</p>
-                  <p className="mx-auto mt-5 max-w-3xl font-heading text-[1.3rem] italic leading-[1.5] text-accent md:text-[1.65rem]">{page.paymentHighlight.text}</p>
-                  <div className="!mt-6 grid grid-cols-1 items-stretch gap-3 sm:grid-cols-[1fr_auto_1fr] sm:gap-5">
+                  <h2 className="mt-1.5 font-heading text-[1.6rem] font-bold leading-[1.15] md:text-[1.9rem]">{page.paymentHighlight.title}</h2>
+                  <div className="mx-auto mt-2 h-[2px] w-14 bg-accent" />
+                  <p className="mx-auto mt-2 max-w-2xl text-[0.92rem] leading-[1.5] text-white/80">{page.paymentHighlight.intro}</p>
+                  <p className="mx-auto mt-2.5 max-w-3xl font-heading text-[1.25rem] italic leading-[1.35] text-accent md:text-[1.4rem]">{page.paymentHighlight.text}</p>
+                  <div className="!mt-3 grid grid-cols-1 items-stretch gap-3 sm:grid-cols-[1fr_auto_1fr] sm:gap-5">
                     {[page.paymentHighlight.germany, page.paymentHighlight.turkey].map((country, i) => (
-                      <div key={country} className={`flex flex-col items-center justify-center rounded-sm border border-accent/40 bg-white/[0.04] px-5 py-5 ${i === 1 ? "order-3" : "order-1"}`}>
-                        <p className="font-heading text-[1.1rem] font-semibold uppercase tracking-[0.16em] md:text-[1.25rem]">{country}</p>
-                        <div className="mt-3 h-px w-8 bg-accent/70" />
-                        <p className="mt-3 text-[0.9rem] leading-[1.6] text-white/75">{page.paymentHighlight!.sideText}</p>
+                      <div key={country} className={`flex flex-col items-center justify-center rounded-sm border border-accent/40 bg-white/[0.04] px-5 py-2.5 ${i === 1 ? "order-3" : "order-1"}`}>
+                        <p className="font-heading text-[1.05rem] font-semibold uppercase tracking-[0.16em] md:text-[1.15rem]">{country}</p>
+                        <div className="mt-1.5 h-px w-8 bg-accent/70" />
+                        <p className="mt-1.5 text-[0.85rem] leading-[1.45] text-white/75">{page.paymentHighlight!.sideText}</p>
                       </div>
                     ))}
                     <div className="flex items-center justify-center order-2" aria-hidden="true">
-                      <ArrowLeftRight className="rotate-90 text-accent sm:rotate-0" size={26} strokeWidth={1.4} />
+                      <ArrowLeftRight className="rotate-90 text-accent sm:rotate-0" size={24} strokeWidth={1.4} />
                     </div>
                   </div>
-                  <p className="mx-auto mt-6 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">{page.paymentHighlight.note}</p>
-                  <p className="mx-auto mt-3 max-w-2xl text-[0.76rem] leading-[1.7] text-white/55">{page.paymentHighlight.legal}</p>
+                  <p className="mx-auto mt-3 max-w-2xl text-[0.9rem] leading-[1.5] text-white/80">{page.paymentHighlight.note}</p>
+                  <p className="mx-auto mt-1.5 max-w-2xl text-[0.74rem] leading-[1.5] text-white/55">{page.paymentHighlight.legal}</p>
                 </div>
               </Reveal>
             </div>
