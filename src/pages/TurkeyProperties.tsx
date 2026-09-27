@@ -1,6 +1,6 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Euro, FileText, Home, Landmark, MapPin, ShieldCheck, Upload } from "lucide-react";
+import { ArrowLeftRight, ArrowRight, CheckCircle2, FileText, Home, Landmark, MapPin, ShieldCheck, Upload } from "lucide-react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/sections/SectionHeader";
@@ -340,6 +340,36 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
+        {page.paymentHighlight && (
+          <section id="kaufpreiszahlung" className="section-premium section-navy text-white scroll-mt-24">
+            <div className="container-premium">
+              <Reveal>
+                <div className="relative mx-auto max-w-4xl rounded-sm border border-accent/50 px-6 py-10 text-center sm:px-10 md:px-14 md:py-14">
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-accent">{page.paymentHighlight.kicker}</p>
+                  <h2 className="mt-4 font-heading text-[1.75rem] font-bold leading-[1.2] md:text-[2.4rem]">{page.paymentHighlight.title}</h2>
+                  <div className="mx-auto mt-5 h-[2px] w-14 bg-accent" />
+                  <p className="mx-auto mt-6 max-w-2xl text-[0.98rem] leading-[1.85] text-white/80">{page.paymentHighlight.intro}</p>
+                  <p className="mx-auto mt-8 max-w-3xl font-heading text-[1.3rem] italic leading-[1.5] text-accent md:text-[1.65rem]">{page.paymentHighlight.text}</p>
+                  <div className="mt-10 grid grid-cols-1 items-stretch gap-4 sm:grid-cols-[1fr_auto_1fr] sm:gap-5">
+                    {[page.paymentHighlight.germany, page.paymentHighlight.turkey].map((country, i) => (
+                      <div key={country} className={`flex flex-col items-center justify-center rounded-sm border border-accent/40 bg-white/[0.04] px-5 py-7 ${i === 1 ? "order-3" : "order-1"}`}>
+                        <p className="font-heading text-[1.1rem] font-semibold uppercase tracking-[0.16em] md:text-[1.25rem]">{country}</p>
+                        <div className="mt-3 h-px w-8 bg-accent/70" />
+                        <p className="mt-3 text-[0.9rem] leading-[1.6] text-white/75">{page.paymentHighlight!.sideText}</p>
+                      </div>
+                    ))}
+                    <div className="flex items-center justify-center order-2" aria-hidden="true">
+                      <ArrowLeftRight className="rotate-90 text-accent sm:rotate-0" size={26} strokeWidth={1.4} />
+                    </div>
+                  </div>
+                  <p className="mx-auto mt-9 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">{page.paymentHighlight.note}</p>
+                  <p className="mx-auto mt-6 max-w-2xl text-[0.76rem] leading-[1.7] text-white/55">{page.paymentHighlight.legal}</p>
+                </div>
+              </Reveal>
+            </div>
+          </section>
+        )}
+
         <section className="section-premium bg-background">
           <div className="container-premium">
             <SectionHeader title={page.servicesTitle} intro={page.servicesIntro} />
@@ -418,22 +448,6 @@ const TurkeyProperties = () => {
               ))}
             </div>
 
-            {page.paymentHighlight && (
-              <Reveal delay={0.08}>
-                <div className="mx-auto mt-12 max-w-3xl rounded-sm border border-accent/60 bg-gradient-warm px-7 py-9 md:mt-14 md:px-12 md:py-11">
-                  <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:gap-7">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-primary text-accent">
-                      <Euro size={20} strokeWidth={1.5} />
-                    </span>
-                    <div>
-                      <h3 className="font-heading text-[1.35rem] font-semibold leading-snug text-primary md:text-[1.5rem]">{page.paymentHighlight.title}</h3>
-                      <div className="mt-2 h-[2px] w-10 bg-accent" />
-                      <p className="mt-3 text-[0.96rem] leading-[1.8] text-muted-foreground">{page.paymentHighlight.text}</p>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-            )}
           </div>
         </section>
 
