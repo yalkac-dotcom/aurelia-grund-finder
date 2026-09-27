@@ -62,11 +62,11 @@ const Portfolio = () => {
       </section>
 
       {/* INTRO: the new surface begins only after the complete hero image. */}
-      <section className="section-premium bg-gradient-warm !pt-8 md:!pt-10">
-        <div className="page-shell">
-          <div className="container-premium text-center">
+      <section className="section-premium bg-gradient-warm !mt-0 !pt-6 md:!pt-[30px]">
+        <div className="page-shell !mt-0 !pt-0">
+          <div className="container-premium !mt-0 !pt-0 text-center">
             <Reveal>
-              <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
+              <div data-intro-line className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
               <h2 className="mb-5 text-[1.4rem] font-heading font-semibold leading-[1.18] text-foreground text-balance md:text-[1.9rem]">
                 {copy.introTitle}
               </h2>
