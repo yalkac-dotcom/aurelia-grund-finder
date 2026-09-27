@@ -61,7 +61,7 @@ export interface TurkeyPropertiesTranslations {
   };
   cta: { title: string; text: string; primary: string; secondary: string };
   legalNotice: string;
-  paymentHighlight?: { title: string; text: string };
+  paymentHighlight?: { kicker: string; title: string; intro: string; text: string; germany: string; turkey: string; sideText: string; note: string; legal: string };
 }
 
 export type Language = "de" | "en" | "it" | "es" | "tr" | "nl" | "fr";
