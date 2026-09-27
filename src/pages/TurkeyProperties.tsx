@@ -344,15 +344,15 @@ const TurkeyProperties = () => {
           <section id="kaufpreiszahlung" className="section-premium section-navy text-white scroll-mt-24">
             <div className="container-premium">
               <Reveal>
-                <div className="relative mx-auto max-w-4xl rounded-sm border border-accent/50 px-6 py-10 text-center sm:px-10 md:px-14 md:py-14">
+                <div className="relative mx-auto max-w-4xl rounded-sm border border-accent/50 px-6 py-8 text-center sm:px-10 md:px-12 md:py-10">
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-accent">{page.paymentHighlight.kicker}</p>
-                  <h2 className="mt-4 font-heading text-[1.75rem] font-bold leading-[1.2] md:text-[2.4rem]">{page.paymentHighlight.title}</h2>
-                  <div className="mx-auto mt-5 h-[2px] w-14 bg-accent" />
-                  <p className="mx-auto mt-6 max-w-2xl text-[0.98rem] leading-[1.85] text-white/80">{page.paymentHighlight.intro}</p>
-                  <p className="mx-auto mt-8 max-w-3xl font-heading text-[1.3rem] italic leading-[1.5] text-accent md:text-[1.65rem]">{page.paymentHighlight.text}</p>
-                  <div className="mt-10 grid grid-cols-1 items-stretch gap-4 sm:grid-cols-[1fr_auto_1fr] sm:gap-5">
+                  <h2 className="mt-3 font-heading text-[1.75rem] font-bold leading-[1.2] md:text-[2.4rem]">{page.paymentHighlight.title}</h2>
+                  <div className="mx-auto mt-4 h-[2px] w-14 bg-accent" />
+                  <p className="mx-auto mt-4 max-w-2xl text-[0.98rem] leading-[1.8] text-white/80">{page.paymentHighlight.intro}</p>
+                  <p className="mx-auto mt-5 max-w-3xl font-heading text-[1.3rem] italic leading-[1.5] text-accent md:text-[1.65rem]">{page.paymentHighlight.text}</p>
+                  <div className="!mt-6 grid grid-cols-1 items-stretch gap-3 sm:grid-cols-[1fr_auto_1fr] sm:gap-5">
                     {[page.paymentHighlight.germany, page.paymentHighlight.turkey].map((country, i) => (
-                      <div key={country} className={`flex flex-col items-center justify-center rounded-sm border border-accent/40 bg-white/[0.04] px-5 py-7 ${i === 1 ? "order-3" : "order-1"}`}>
+                      <div key={country} className={`flex flex-col items-center justify-center rounded-sm border border-accent/40 bg-white/[0.04] px-5 py-5 ${i === 1 ? "order-3" : "order-1"}`}>
                         <p className="font-heading text-[1.1rem] font-semibold uppercase tracking-[0.16em] md:text-[1.25rem]">{country}</p>
                         <div className="mt-3 h-px w-8 bg-accent/70" />
                         <p className="mt-3 text-[0.9rem] leading-[1.6] text-white/75">{page.paymentHighlight!.sideText}</p>
@@ -362,8 +362,8 @@ const TurkeyProperties = () => {
                       <ArrowLeftRight className="rotate-90 text-accent sm:rotate-0" size={26} strokeWidth={1.4} />
                     </div>
                   </div>
-                  <p className="mx-auto mt-9 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">{page.paymentHighlight.note}</p>
-                  <p className="mx-auto mt-6 max-w-2xl text-[0.76rem] leading-[1.7] text-white/55">{page.paymentHighlight.legal}</p>
+                  <p className="mx-auto mt-6 max-w-2xl text-[0.95rem] leading-[1.8] text-white/80">{page.paymentHighlight.note}</p>
+                  <p className="mx-auto mt-3 max-w-2xl text-[0.76rem] leading-[1.7] text-white/55">{page.paymentHighlight.legal}</p>
                 </div>
               </Reveal>
             </div>
@@ -508,7 +508,7 @@ const TurkeyProperties = () => {
                 <div>
                   <div className="mb-4 h-[2px] w-10 bg-accent" />
                   <h2 className="font-heading text-[1.8rem] font-bold leading-[1.2] md:text-[2.35rem]">{page.trust.title}</h2>
-                  <p className="mt-5 whitespace-pre-line text-[0.98rem] leading-[1.9] text-white/75">{page.trust.text}</p>
+                  <p className="mt-4 whitespace-pre-line text-[0.98rem] leading-[1.8] text-white/75">{page.trust.text}</p>
                 </div>
               </Reveal>
               <Reveal delay={0.08}>
