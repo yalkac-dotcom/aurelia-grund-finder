@@ -139,7 +139,7 @@ export const homeMaster: Record<Language, HomeMasterCopy> = {
       "İcra satışından kısa süre önce bile serbest bir satış hâlâ mümkün olabilir. Bu tür durumları uzun yıllardır tanıyoruz. Aurelia tarafından kendi hesabına doğrudan bir alımın mümkün olup olmadığını inceleriz.",
       "Genel olarak uygun olması hâlinde sonraki adımları sizinle birlikte belirleriz. Satın alma için gerekli olduğu ölçüde ilgili bankalar veya diğer kurumlarla da görüşmeler yapılabilir.\n\nBir satışın mümkün olup olmadığı ve hangi koşullarda gerçekleşebileceği her zaman somut duruma bağlıdır.",
     ],
-    residenceTitle: "Nerede yaşadığınız belirleyici değildir.",
+    residenceTitle: "Nerede yaşadığınız önemli değildir.",
     residenceIntro: "Gayrimenkulünüz, ikamet ettiğiniz ülkeden farklı bir ülkede bulunabilir. \nBu durumda da onu bize olası bir satın alım için sunabilirsiniz.",
     residenceCards: [
       { title: "Türkiye'de mi yaşıyorsunuz – gayrimenkulünüz Almanya'da mı?", text: "Türkiye'de yaşasanız bile Almanya'daki gayrimenkulünüzü bize olası bir satın alım için sunabilirsiniz." },
