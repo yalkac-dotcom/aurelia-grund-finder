@@ -142,7 +142,7 @@ const Contact = () => {
   return (
     <Layout>
       <section className="grid overflow-hidden bg-primary lg:h-[calc(100svh-129px)] lg:min-h-[580px] lg:grid-cols-[0.86fr_1.14fr]">
-        <div className="flex min-h-[350px] items-center justify-center bg-primary px-6 py-14 text-center sm:min-h-[390px] sm:px-10 sm:py-16 lg:min-h-0 lg:px-12 lg:py-20">
+        <div className="flex items-center justify-center bg-primary px-6 py-12 text-center sm:px-10 sm:py-14 lg:px-12 lg:py-16">
           <Reveal className="w-full">
             <p className="mb-3 font-sans text-xs font-medium uppercase tracking-[0.16em] text-accent">{t.contact.title}</p>
             <h1 className="mx-auto max-w-[29rem] text-balance font-heading text-[2rem] font-semibold leading-[1.1] text-accent md:text-[3rem] lg:max-w-[19rem]">
