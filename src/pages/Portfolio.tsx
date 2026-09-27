@@ -63,7 +63,7 @@ const Portfolio = () => {
 
       <div className="page-shell">
         {/* INTRO */}
-        <section className="section-premium bg-gradient-warm">
+        <section className="section-premium bg-gradient-warm !pt-3 md:!pt-4">
           <div className="container-premium text-center">
             <Reveal>
               <div className="mx-auto mb-4 h-[2px] w-10 rounded-full bg-teal-600/50" />
