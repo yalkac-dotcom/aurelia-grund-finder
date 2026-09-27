@@ -11,6 +11,9 @@ import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import AiImageDisclosure from "@/components/AiImageDisclosure";
 import { aureliaCard } from "@/lib/cardStyle";
+import { aureliaInfoCard, aureliaEditorialFrame, aureliaGoldRule } from "@/lib/cardStyle";
+import InfoCorner from "@/components/sections/InfoCorner";
+import { MapPin } from "lucide-react";
 import AureliaKompakt from "@/components/sections/AureliaKompakt";
 
 // Einheitliches Spacing- & Typografie-System für "Über uns"
@@ -87,9 +90,14 @@ const About = () => {
         {a.markets && (
           <section className={`${SEC} bg-background !pb-0`}>
             <div className="container-premium">
-              <Reveal className="max-w-3xl border-l-2 border-accent pl-5">
-                <h2 className={H2}>{a.markets.title}</h2>
-                <p className={`mt-3 ${BODY}`}>{a.markets.text}</p>
+              <Reveal className={`max-w-3xl ${aureliaInfoCard} md:!px-10 md:!py-9`}>
+                <InfoCorner />
+                <div className="flex items-center gap-3">
+                  <MapPin size={20} strokeWidth={1.6} className="shrink-0 text-accent" aria-hidden="true" />
+                  <h2 className={H2}>{a.markets.title}</h2>
+                </div>
+                <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
+                <p className={`mt-4 ${BODY}`}>{a.markets.text}</p>
               </Reveal>
             </div>
           </section>
@@ -97,10 +105,10 @@ const About = () => {
 
         <section className={`${SEC} bg-background`}>
           <div className="container-premium">
-          <Reveal className="max-w-[46rem]">
-            <div className={RULE} aria-hidden="true" />
-            <h2 className={H2}>{a.standing.headline}</h2>
-            <div className={`mt-3 space-y-2.5 ${BODY}`}>
+          <Reveal className={`max-w-4xl ${aureliaEditorialFrame}`}>
+            <h2 className={`${H2} md:!text-[2rem]`}>{a.standing.headline}</h2>
+            <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
+            <div className={`mt-6 max-w-[46rem] space-y-4 ${BODY}`}>
               {a.standing.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </div>
           </Reveal>

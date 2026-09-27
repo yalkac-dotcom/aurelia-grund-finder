@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/sections/SectionHeader";
+import { aureliaEditorialFrame, aureliaGoldCard, aureliaGoldRule } from "@/lib/cardStyle";
 import { aureliaCard } from "@/lib/cardStyle";
 
 /** Deutsche Startseiten-Bereiche nach Master-Konzept (nur DE). */
@@ -10,15 +11,16 @@ const HomeDeSections = () => (
     {/* UNTERNEHMENSGESCHICHTE */}
     <section className="section-premium bg-background">
       <div className="container-premium">
-        <Reveal className="mx-auto max-w-3xl border-l-2 border-accent pl-6">
-          <h2 className="font-heading text-[1.6rem] font-semibold leading-tight text-primary md:text-[2rem]">Wer wir sind</h2>
-          <div className="mt-5 space-y-4 text-[15px] leading-[1.85] text-foreground/80">
+        <Reveal className={`mx-auto max-w-4xl ${aureliaEditorialFrame}`}>
+          <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">Wer wir sind</h2>
+          <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
+          <div className="mt-7 space-y-5 text-[15px] leading-[1.85] text-foreground/80">
             <p>Aurelia Grundbesitz ist ein inhabergeführtes Immobilienunternehmen aus Düsseldorf.</p>
             <p>Hinter Aurelia stehen rund 30 Jahre unternehmerische Erfahrung mit Immobilien – darunter Ankäufe aus Zwangsversteigerungen, freihändige Käufe vor einer Versteigerung sowie die Entwicklung und Verwaltung eigener Immobilienbestände.</p>
             <p>Ein großer Teil unserer Arbeit betraf Immobilien mit schwieriger Ausgangslage – zum Beispiel Zwangsversteigerungen oder freihändige Käufe, bevor es überhaupt zur Versteigerung kam.</p>
             <p>Heute kaufen wir ausgewählte Immobilien auf eigene Rechnung, entwickeln unseren eigenen Bestand weiter und entscheiden bei jedem Objekt individuell, ob wir es langfristig halten, renovieren oder später wieder aus unserem Bestand verkaufen.</p>
             <p>Unser Ziel ist nicht, möglichst viele Geschäfte abzuwickeln. Wir möchten Schritt für Schritt einen soliden eigenen Immobilienbestand aufbauen.</p>
-            <p className="font-medium text-primary">Bei uns sprechen Sie nicht mit einem anonymen Portal, sondern mit Menschen, die sich mit Ihrer Immobilie beschäftigen und Entscheidungen selbst treffen.</p>
+            <p className="mt-2 border-t border-accent/25 pt-6 font-heading text-[1.08rem] italic leading-[1.7] text-primary md:text-[1.15rem]">Bei uns sprechen Sie nicht mit einem anonymen Portal, sondern mit Menschen, die sich mit Ihrer Immobilie beschäftigen und Entscheidungen selbst treffen.</p>
           </div>
         </Reveal>
       </div>
@@ -58,10 +60,11 @@ const HomeDeSections = () => (
             { t: "Sie leben in Deutschland oder Europa – Ihre Immobilie ist in der Türkei?", d: "Auch Immobilien in der Türkei prüfen wir für einen möglichen Ankauf auf eigene Rechnung.", to: "/immobilie-anbieten?land=tuerkei" },
           ].map((c, i) => (
             <Reveal key={c.t} delay={i * 0.06}>
-              <div className="h-full border-l-2 border-accent/60 pl-6">
+              <div className={aureliaGoldCard}>
                 <h3 className="font-heading text-[1.08rem] font-semibold leading-snug text-primary">{c.t}</h3>
-                <p className="mt-3 text-[0.9rem] leading-[1.8] text-muted-foreground">{c.d}</p>
-                <Link to={c.to} className="mt-4 inline-flex min-h-[44px] items-center gap-2 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-primary hover:text-primary/80">
+                <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
+                <p className="mt-4 text-[0.9rem] leading-[1.8] text-muted-foreground">{c.d}</p>
+                <Link to={c.to} className="mt-auto pt-5 inline-flex self-start min-h-[44px] items-center gap-2 text-[0.75rem] font-semibold uppercase tracking-[0.12em] text-primary hover:text-primary/80">
                   Immobilie anbieten <ArrowRight size={13} className="text-accent" />
                 </Link>
               </div>
@@ -69,7 +72,7 @@ const HomeDeSections = () => (
           ))}
         </div>
         <Reveal delay={0.12}>
-          <p className="mx-auto mt-8 max-w-3xl text-center text-[0.82rem] italic leading-[1.7] text-muted-foreground">Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, wird im jeweiligen Fall geklärt.</p>
+          <p className="mx-auto mt-12 max-w-3xl border-t border-accent/25 pt-6 text-center text-[0.82rem] italic leading-[1.7] text-muted-foreground">Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, wird im jeweiligen Fall geklärt.</p>
         </Reveal>
       </div>
     </section>

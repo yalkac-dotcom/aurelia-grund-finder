@@ -12,6 +12,8 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { icons3d } from "@/assets/icons3d";
 import { pageExtras } from "@/i18n/pageExtras";
 import { usePageSeo } from "@/hooks/usePageSeo";
+import { aureliaGoldCard, aureliaGoldRule } from "@/lib/cardStyle";
+import { MessagesSquare, FileCheck2, ScanSearch } from "lucide-react";
 import { pageSeo } from "@/i18n/pageSeo";
 
 // Hold-Steps (5) — einzige Icon-Akzente auf der Seite (zentrale Prozessschritte)
@@ -125,13 +127,15 @@ const HowItWorks = () => {
           <div className="container-premium">
             <SectionHeader title={w.principlesTitle} intro={w.principlesIntro} />
             <Reveal delay={0.1}>
-              <div className="grid gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-5 md:gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {w.principles.map((p, i) => (
-                  <div key={i} className="border-l border-accent/40 pl-5">
-                    <h3 className="text-[0.98rem] font-heading font-semibold text-primary leading-snug">
+                  <div key={i} className={aureliaGoldCard}>
+                    {(() => { const Icon = [MessagesSquare, FileCheck2, ScanSearch][i] ?? FileCheck2; return <Icon size={22} strokeWidth={1.5} className="text-primary" aria-hidden="true" />; })()}
+                    <h3 className="mt-4 text-[1.05rem] font-heading font-semibold text-primary leading-snug hyphens-auto break-words">
                       {p.title}
                     </h3>
-                    <p className="mt-2 text-[0.85rem] leading-[1.75] text-muted-foreground">{p.text}</p>
+                    <div className={`mt-3 ${aureliaGoldRule}`} aria-hidden="true" />
+                    <p className="mt-4 text-[0.88rem] leading-[1.8] text-muted-foreground">{p.text}</p>
                   </div>
                 ))}
               </div>

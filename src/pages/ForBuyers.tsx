@@ -15,6 +15,9 @@ import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
 import { aureliaCard } from "@/lib/cardStyle";
 import BuyerInterestForm from "@/components/sections/BuyerInterestForm";
+import { aureliaInfoCard } from "@/lib/cardStyle";
+import InfoCorner from "@/components/sections/InfoCorner";
+import { Info } from "lucide-react";
 import { buyerInterestCopy } from "@/i18n/buyerInterestCopy";
 
 // Features (4) — Direkter Eigentümer, Unterlagen, Preisbasis, Verlässliche Abwicklung (Fotos beibehalten)
@@ -119,7 +122,9 @@ const ForBuyers = () => {
           <div className="container-premium">
             <SectionHeader title={buyerInterestCopy[language].sectionTitle} intro={buyerInterestCopy[language].sectionIntro} />
             <Reveal>
-              <div className="mx-auto mb-10 max-w-5xl border-l-2 border-accent bg-card px-6 py-6 md:px-8">
+              <div className={`mx-auto mb-10 flex max-w-5xl items-start gap-4 ${aureliaInfoCard}`}>
+                <InfoCorner />
+                <Info size={20} strokeWidth={1.6} className="mt-1 shrink-0 text-accent" aria-hidden="true" />
                 <p className="text-[0.94rem] font-medium leading-[1.8] text-primary">
                   {buyerInterestCopy[language].notice}
                 </p>
