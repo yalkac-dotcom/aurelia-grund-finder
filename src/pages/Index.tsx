@@ -1,3 +1,4 @@
+import HomeVideo from "@/components/home/HomeVideo";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
