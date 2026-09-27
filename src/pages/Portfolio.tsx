@@ -35,7 +35,7 @@ const Portfolio = () => {
   return (
     <Layout>
       {/* HERO */}
-      <section id="hero" className="relative flex min-h-[420px] items-center md:h-[70vh] md:min-h-[480px]">
+      <section id="hero" className="relative -mt-16 flex min-h-[420px] items-center md:-mt-20 md:h-[70vh] md:min-h-[480px]">
         <div className="absolute inset-0 overflow-hidden">
           <OptimizedImg
             src={heroSet.src}
