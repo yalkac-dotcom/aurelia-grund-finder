@@ -341,7 +341,7 @@ const TurkeyProperties = () => {
         </section>
 
         {page.paymentHighlight && (
-          <section id="kaufpreiszahlung" className="section-premium section-navy text-white scroll-mt-24">
+          <section id="kaufpreiszahlung" className="section-navy scroll-mt-24 py-10 text-white md:py-12 lg:py-14">
             <div className="container-premium">
               <Reveal>
                 <div className="relative mx-auto max-w-4xl rounded-sm border border-accent/50 px-6 py-8 text-center sm:px-10 md:px-12 md:py-10">

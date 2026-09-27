@@ -15,9 +15,9 @@ const HomeDeSections = ({ m }: { m: HomeMasterCopy }) => (
         <Reveal className={`mx-auto max-w-4xl ${aureliaEditorialFrame}`}>
           <h2 className="font-heading text-[1.7rem] font-semibold leading-tight text-primary md:text-[2.2rem]">{m.whoTitle}</h2>
           <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
-          <div className="mt-7 space-y-5 text-[15px] leading-[1.85] text-foreground/80">
+          <div className="mt-6 space-y-4 text-[15px] leading-[1.85] text-foreground/80">
             {m.whoParagraphs.map((p) => <p key={p}>{p}</p>)}
-            <p className="mt-2 border-t border-accent/25 pt-6 font-heading text-[1.08rem] italic leading-[1.7] text-primary md:text-[1.15rem]">{m.whoClosing}</p>
+            <p className="mt-2 border-t border-accent/25 pt-5 font-heading text-[1.08rem] italic leading-[1.7] text-primary md:text-[1.15rem]">{m.whoClosing}</p>
           </div>
         </Reveal>
       </div>
@@ -25,9 +25,9 @@ const HomeDeSections = ({ m }: { m: HomeMasterCopy }) => (
 
     {/* BESONDERE SITUATIONEN + ZWANGSVERSTEIGERUNG */}
     <section className="section-premium bg-secondary/45">
-      <div className="container-premium grid gap-8 md:grid-cols-2 md:gap-10">
+      <div className="container-premium grid gap-6 md:grid-cols-2 md:gap-8">
         <Reveal>
-          <div className={`h-full p-6 md:p-8 ${aureliaCard}`}>
+          <div className={`h-full p-5 md:p-6 ${aureliaCard}`}>
             <h2 className="font-heading text-[1.35rem] font-semibold leading-snug text-primary">{m.specialTitle}</h2>
             <div className="mt-4 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
               {m.specialParagraphs.map((p) => <p key={p}>{p}</p>)}
@@ -35,7 +35,7 @@ const HomeDeSections = ({ m }: { m: HomeMasterCopy }) => (
           </div>
         </Reveal>
         <Reveal delay={0.06}>
-          <div id="zwangsversteigerung" className={`h-full scroll-mt-24 p-6 md:p-8 ${aureliaCard}`}>
+          <div id="zwangsversteigerung" className={`h-full scroll-mt-24 p-5 md:p-6 ${aureliaCard}`}>
             <h2 className="font-heading text-[1.35rem] font-semibold leading-snug text-primary">{m.foreclosureTitle}</h2>
             <div className="mt-4 space-y-3 text-[0.92rem] leading-[1.8] text-muted-foreground">
               {m.foreclosureParagraphs.map((p) => <p key={p}>{p}</p>)}
