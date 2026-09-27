@@ -419,7 +419,10 @@
 }
 /* Two consecutive sections on the same light background: avoid doubled gap */
 .section-premium.bg-background + .section-premium.bg-background,
-.section-premium.section-cream + .section-premium.section-cream {
+.section-premium.section-cream + .section-premium.section-cream,
+.section-premium.section-warm + .section-premium.section-warm,
+.section-premium.bg-gradient-warm + .section-premium.bg-gradient-warm,
+.section-premium.bg-secondary + .section-premium.bg-secondary {
   padding-top: 0;
 }
 
