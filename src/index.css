@@ -402,14 +402,25 @@
 }
 
 .section-premium {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 @media (min-width: 768px) {
   .section-premium {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
+}
+@media (min-width: 1280px) {
+  .section-premium {
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+  }
+}
+/* Two consecutive sections on the same light background: avoid doubled gap */
+.section-premium.bg-background + .section-premium.bg-background,
+.section-premium.section-cream + .section-premium.section-cream {
+  padding-top: 0;
 }
 
 
