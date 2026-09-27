@@ -341,10 +341,10 @@ const TurkeyProperties = () => {
         </section>
 
         {page.paymentHighlight && (
-          <section id="kaufpreiszahlung" className="section-navy scroll-mt-24 py-4 text-white md:py-5">
+          <section id="kaufpreiszahlung" className="section-navy scroll-mt-24 py-3 text-white md:py-4">
             <div className="container-premium">
               <Reveal>
-                <div className="relative mx-auto max-w-4xl rounded-sm border border-accent/50 px-6 py-4 text-center sm:px-10 md:px-12 md:py-5">
+                <div className="relative mx-auto max-w-4xl rounded-sm border border-accent/50 px-6 py-3.5 text-center sm:px-10 md:px-12 md:py-4">
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-accent">{page.paymentHighlight.kicker}</p>
                   <h2 className="mt-1.5 font-heading text-[1.6rem] font-bold leading-[1.15] md:text-[1.9rem]">{page.paymentHighlight.title}</h2>
                   <div className="mx-auto mt-2 h-[2px] w-14 bg-accent" />
