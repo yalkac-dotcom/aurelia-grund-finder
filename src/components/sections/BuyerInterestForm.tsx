@@ -1,3 +1,4 @@
+import { trackEvent } from "@/lib/analytics";
 import { FormEvent, useState } from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2 } from "lucide-react";
@@ -132,6 +133,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
       });
       if (error || !data?.success) throw error ?? new Error("send failed");
       setSuccess(true);
+      trackEvent("buyer_interest_submit_success", { form: compact ? "portfolio_stock" : "buyer_interest" });
       setText(initialText); setSelMarkets([]); setSelTypes([]); setBudget(""); setUsage(""); setPrivacy(false);
       toast({ title: c.toastOkTitle, description: c.toastOkText });
     } catch (err) {

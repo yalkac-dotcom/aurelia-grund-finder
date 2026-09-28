@@ -135,6 +135,7 @@ const Contact = () => {
 
     trackEvent("form_submit", { form: "contact" });
     trackEvent("generate_lead", { form: "contact" });
+    trackEvent("contact_form_submit_success", { form: "contact" });
     setConfirmationWarning(emailData?.confirmationSent === false);
     setSubmitted(true);
   };
