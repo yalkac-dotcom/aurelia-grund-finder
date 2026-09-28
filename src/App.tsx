@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { installClickTracking } from "@/lib/analytics";
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -45,6 +46,8 @@ const LegacyOwnerRedirect = () => {
   const { search, hash } = useLocation();
   return <Navigate to={`/fuer-eigentuemer${search}${hash}`} replace />;
 };
+
+installClickTracking();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>

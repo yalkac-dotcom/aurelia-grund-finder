@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { Play } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 import Reveal from "@/components/Reveal";
 import videoDe from "@/assets/aurelia-video-de.mp4.asset.json";
 import videoTr from "@/assets/aurelia-video-tr.mp4.asset.json";
@@ -33,6 +34,7 @@ const HomeVideo = ({ language }: { language: string }) => {
   if (!v) return null;
 
   const start = () => {
+    if (!started) trackEvent(language === "tr" ? "video_start_tr" : "video_start_de", { video: `company_video_${language}` });
     setStarted(true);
     const el = ref.current;
     if (el) { el.muted = false; void el.play(); }

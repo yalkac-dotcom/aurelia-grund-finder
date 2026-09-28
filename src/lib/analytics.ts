@@ -91,3 +91,30 @@ export const trackEvent = (
   if (!hasAnalyticsConsent() || typeof window === "undefined" || !window.gtag) return;
   window.gtag("event", name, params);
 };
+
+/**
+ * Global, consent-gated click tracking for key CTAs and contact links.
+ * One delegated listener → exactly one event per click. Only non-personal
+ * data is sent (link type + page path), never phone numbers or addresses.
+ */
+let clickTrackingInstalled = false;
+export const installClickTracking = () => {
+  if (clickTrackingInstalled || typeof document === "undefined") return;
+  clickTrackingInstalled = true;
+  document.addEventListener(
+    "click",
+    (e) => {
+      const a = (e.target as Element | null)?.closest?.("a[href]") as HTMLAnchorElement | null;
+      if (!a) return;
+      const href = a.getAttribute("href") || "";
+      const page_path = window.location.pathname;
+      let name: string | null = null;
+      if (href.startsWith("tel:")) name = "phone_click";
+      else if (href.startsWith("mailto:")) name = "email_click";
+      else if (href.includes("/immobilie-anbieten")) name = "offer_property_click";
+      else if (href.includes("#kaufinteresse")) name = "buyer_interest_click";
+      if (name) trackEvent(name, { page_path });
+    },
+    { capture: true },
+  );
+};
