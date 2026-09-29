@@ -4,6 +4,7 @@ import ScrollToTop from "./ScrollToTop";
 import TrustBar from "./home/TrustBar";
 import CookieConsent from "./CookieConsent";
 import MobileContactBar from "./MobileContactBar";
+import { DesktopWhatsAppButton } from "./WhatsAppContact";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useCanonicalUrl } from "@/hooks/useCanonicalUrl";
 import { useLocation } from "react-router-dom";
@@ -19,7 +20,7 @@ const MOBILE_CONTACT_ROUTES = new Set([
 ]);
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const location = useLocation();
   const showMobileContactBar = MOBILE_CONTACT_ROUTES.has(location.pathname);
   useCanonicalUrl();
@@ -38,6 +39,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <Footer />
       {showMobileContactBar && <div className="h-14 shrink-0 md:hidden" aria-hidden="true" />}
       <ScrollToTop />
+      <DesktopWhatsAppButton language={language} />
       <CookieConsent />
       {showMobileContactBar && <MobileContactBar />}
     </div>
