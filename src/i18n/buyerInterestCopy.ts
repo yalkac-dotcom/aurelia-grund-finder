@@ -72,7 +72,7 @@ export const buyerInterestCopy: Record<Language, BuyerInterestCopy> = {
     budgetOptions: ["250.000 €'ya kadar", "250.000–500.000 €", "500.000 €–1 milyon €", "1–2 milyon €", "2 milyon €'nun üzeri", "açık"],
     usageOptions: ["Kendi kullanımı", "Kiralama / kendi portföyü", "Ticari kullanım", "Geliştirme / proje", "Diğer"],
     languageOptions: ["Almanca", "Türkçe", "İngilizce", "İtalyanca", "İspanyolca", "Fransızca", "Felemenkçe"],
-    privacyBefore: "", privacyLink: "Gizlilik politikasını", privacyAfter: " okudum ve bilgilerimin işlenmesini kabul ediyorum.",
+    privacyBefore: "", privacyLink: "Kişisel Verilerin Korunması", privacyAfter: " metnini okudum ve bilgilerimin işlenmesini kabul ediyorum.",
     errEmail: "Lütfen geçerli bir e-posta adresi girin.", errField: "Lütfen bu alanı kontrol edin.", errRequired: "Lütfen bu zorunlu alanı doldurun.", errMarkets: "Lütfen en az bir pazar seçin.", errPrivacy: "Lütfen gizlilik politikasını onaylayın.",
     success: "Teşekkür ederiz. Satın alma ilginiz kaydedildi. Aurelia kendi portföyünde uygun bir gayrimenkule sahip olur veya satın alırsa sizinle iletişime geçeriz.",
     submit: "İlgimi bağlayıcı olmadan gönder", sending: "Gönderiliyor …",

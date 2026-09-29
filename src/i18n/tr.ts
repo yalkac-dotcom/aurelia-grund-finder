@@ -25,7 +25,7 @@ const tr: Translations = {
     information: "Bilgiler",
     rights: "Tüm hakları saklıdır.",
     imprint: "Yasal Bilgiler",
-    privacy: "Gizlilik Bildirimi",
+    privacy: "Kişisel Verilerin Korunması",
     imageCredits: "Görsel Kaynakları",
     cookieSettings: "Çerez Ayarları",
     disclaimer:
@@ -46,7 +46,7 @@ const tr: Translations = {
     ],
     legalItems: [
       { label: "Künye", path: "/impressum" },
-      { label: "Gizlilik", path: "/datenschutz" },
+      { label: "Kişisel Verilerin Korunması", path: "/datenschutz#kvkk" },
       { label: "Görsel Kaynakları", path: "/bildnachweise" },
       { label: "Sözlük", path: "/immobilien-glossar" },
       { label: "SSS", path: "/faq" },
@@ -699,7 +699,7 @@ const tr: Translations = {
     send: "Talep gönder",
     requiredHint: "Zorunlu alanlar * ile işaretlenmiştir.",
     consentNotice: "Formu göndererek, talebinizin işlenmesi için bilgilerinizin kullanılmasına onay vermiş olursunuz. Daha fazla bilgi için lütfen",
-    consentNoticeLink: "gizlilik politikamıza",
+    consentNoticeLink: "Kişisel Verilerin Korunması",
     subjectRequired: "Lütfen talebinizi seçin.",
     consentCheckbox: "Gizlilik politikasını okudum ve bilgilerimin işlenmesini kabul ediyorum.",
     consentRequired: "Lütfen gizlilik politikasını kabul edin.",

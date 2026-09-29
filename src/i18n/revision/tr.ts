@@ -7,7 +7,7 @@ export const tr: RevisionCopy = {
     brandLine: "Aurelia Grundbesitz GmbH, Düsseldorf merkezli, sahibi tarafından yönetilen bir gayrimenkul şirketidir. Seçilmiş gayrimenkulleri kendi hesabımıza satın alıyor, kendi portföyümüzü oluşturuyor ve bu portföyden gayrimenkul satıyoruz.",
     subline: "En önemli pazarlarımız Almanya ve Türkiye'dir. Ayrıca İtalya, İspanya, Fransa ve Hollanda'daki seçilmiş gayrimenkulleri de değerlendiriyoruz.",
     navItems: nav.map(([label, path]) => ({ label, path })),
-    legalItems: [{ label: "Künye", path: "/impressum" }, { label: "Gizlilik politikası", path: "/datenschutz" }, { label: "Görsel kaynakları", path: "/bildnachweise" }, { label: "Sözlük", path: "/immobilien-glossar" }],
+    legalItems: [{ label: "Künye", path: "/impressum" }, { label: "Kişisel Verilerin Korunması", path: "/datenschutz#kvkk" }, { label: "Görsel kaynakları", path: "/bildnachweise" }, { label: "Sözlük", path: "/immobilien-glossar" }],
   },
   contact: {
     subtitle: "Bizimle konuşun",
