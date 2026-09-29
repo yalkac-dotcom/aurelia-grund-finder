@@ -47,7 +47,8 @@ export const de: PrivacyCopy = {
       ] },
       { title: "5. Kontaktaufnahme und Kontaktformulare", body: [
         "Wenn Sie uns per Kontaktformular, E-Mail oder Telefon kontaktieren, werden Ihre Angaben einschließlich der von Ihnen angegebenen Kontaktdaten zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Dies betrifft insbesondere Kontaktanfragen, Rückruf- und Terminwünsche, Geschäftspartneranfragen und sonstige Anfragen.",
-        "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) bzw. Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung von Anfragen).",
+        "Sie haben auch die Möglichkeit, uns über WhatsApp zu kontaktieren. Wenn Sie den WhatsApp-Link auf unserer Website nutzen, werden Sie zu WhatsApp weitergeleitet und es gelten die Datenschutzbestimmungen von WhatsApp (Meta Platforms Ireland Limited). Dabei können Daten auch in Drittländer (z. B. USA) übermittelt werden.",
+        "Wenn Sie uns über WhatsApp schreiben, verarbeiten wir Ihre Telefonnummer, Ihren Namen und die Nachrichteninhalte zur Bearbeitung Ihrer Anfrage. Die Verarbeitung erfolgt, soweit Ihre Anfrage auf den Abschluss oder die Durchführung eines Vertrags gerichtet ist, auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. In anderen Fällen erfolgt die Verarbeitung auf Grundlage unseres berechtigten Interesses an einer effizienten Kommunikation mit Interessenten und Geschäftspartnern gemäß Art. 6 Abs. 1 lit. f DSGVO. Alternativ erreichen Sie uns jederzeit per Telefon, E-Mail oder Kontaktformular.",
       ] },
       { title: "6. Immobilienanfragen und Kaufinteresse", body: [
         "Personenbezogene Daten können insbesondere verarbeitet werden bei Immobilienangeboten zum möglichen Ankauf durch Aurelia, bei Kaufinteressen an Immobilien aus dem eigenen Aurelia-Bestand sowie bei Anfragen zu Immobilien in der Türkei.",
