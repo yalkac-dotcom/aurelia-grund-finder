@@ -263,6 +263,13 @@ const Header = () => {
                 >
                   {t.footer.privacy}
                 </Link>
+                <Link
+                  to="/bildnachweise"
+                  onClick={() => setMobileOpen(false)}
+                  className="text-white/55 text-[10px] tracking-[0.08em]"
+                >
+                  {t.footer.imageCredits}
+                </Link>
               </div>
             </nav>
           </div>,
