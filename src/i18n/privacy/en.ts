@@ -46,6 +46,8 @@ export const en: PrivacyCopy = {
       { title: "5. Contacting us and contact forms", body: [
         "If you contact us via a contact form, email or phone, your details, including the contact details you provide, will be stored by us for the purpose of handling the enquiry and in case of follow-up questions. This applies in particular to contact enquiries, callback and appointment requests, business partner enquiries and other enquiries.",
         "The legal basis is Art. 6(1)(b) GDPR (pre-contractual measures) or Art. 6(1)(a) GDPR (consent) and Art. 6(1)(f) GDPR (legitimate interest in responding to enquiries).",
+        "You also have the option of contacting us via WhatsApp. If you use the WhatsApp link on our website, you will be redirected to WhatsApp and the privacy terms of WhatsApp (Meta Platforms Ireland Limited) apply. In this context, data may also be transferred to third countries (e.g. the USA).",
+        "If you contact us via WhatsApp, we process your phone number, your name and the message content in order to handle your enquiry. Where your enquiry is directed at the conclusion or performance of a contract, processing is based on Art. 6(1)(b) GDPR. In all other cases, processing is based on our legitimate interest in efficient communication with prospective clients and business partners pursuant to Art. 6(1)(f) GDPR. Alternatively, you can reach us at any time by phone, email or contact form.",
       ] },
       { title: "6. Property enquiries and purchase interest", body: [
         "Personal data may in particular be processed for property offers for a possible purchase by Aurelia, for purchase interest in properties from Aurelia's own portfolio and for enquiries about properties in Turkey.",

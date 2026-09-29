@@ -19,6 +19,7 @@ export const kvkkTr: PrivacyPart = {
     { title: "4. Kişisel Verilerin Toplanma Yöntemi ve Hukuki Sebebi", body: [
       "Kişisel verileriniz internet sitesi formları, e-posta, telefon, tarafınızca yüklenen belgeler ve diğer iletişim kanalları aracılığıyla elektronik veya fiziki yollarla toplanabilir.",
       "Kişisel veriler, uygulanabilir mevzuat kapsamında sözleşmenin kurulması veya ifası, hukuki yükümlülüklerin yerine getirilmesi, meşru menfaatler veya gerekli olduğu durumlarda açık rıza gibi hukuki sebeplere dayanılarak işlenir.",
+      "Ayrıca bize WhatsApp mesaj yoluyla ulaşmanız mümkündür; bu durumda telefon numaranız, adınız ve mesaj içeriğiniz talebinizin değerlendirilmesi amacıyla işlenir ve WhatsApp (Meta) altyapısı üzerinden aktarılabilir.",
     ] },
     { title: "5. Kişisel Verilerin Aktarılması", body: [
       "Kişisel verileriniz, işlemin niteliğine göre ve yalnızca gerekli olduğu ölçüde, teknik hizmet sağlayıcılara ve olası bir gayrimenkul işleminin yürütülmesi için gerekli avukat, noter, mali müşavir, değerleme veya teknik uzmanlar, gayrimenkul alanındaki iş ortakları, yetkili kurum ve kuruluşlar veya diğer gerekli kişilere aktarılabilir.",

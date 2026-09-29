@@ -48,6 +48,8 @@ export const tr: PrivacyCopy = {
       { title: "5. İletişim ve iletişim formları", body: [
         "Bizimle iletişim formu, e-posta veya telefon yoluyla iletişime geçtiğinizde, verdiğiniz iletişim bilgileri dahil bilgileriniz talebinizin işlenmesi ve olası ek sorular için tarafımızca saklanır. Bu özellikle iletişim talepleri, geri arama ve randevu talepleri, iş ortaklığı talepleri ve diğer talepler için geçerlidir.",
         "Hukuki dayanak GDPR md. 6/1 (b) (sözleşme öncesi tedbirler) veya GDPR md. 6/1 (a) (rıza) ile GDPR md. 6/1 (f)’dir (taleplerin yanıtlanmasına ilişkin meşru menfaat).",
+        "WhatsApp üzerinden bizimle iletişim kurmanız da mümkündür. Sitemizdeki WhatsApp bağlantısını kullandığınızda WhatsApp’a yönlendirilirsiniz ve WhatsApp (Meta Platforms Ireland Limited) gizlilik kuralları uygulanır. Bu kapsamda veriler üçüncü ülkelere (ör. ABD) de aktarılabilir.",
+        "Bizimle WhatsApp üzerinden iletişime geçtiğinizde telefon numaranızı, adınızı ve mesaj içeriklerinizi talebinizin değerlendirilmesi amacıyla işleriz. İşleme, talebinizin bir sözleşmenin kurulmasına veya ifasına yönelik olduğu ölçüde GDPR md. 6/1 (b)’ye dayanır. Diğer durumlarda işleme, potansiyel müşteriler ve iş ortaklarıyla verimli iletişim kurma konusundaki meşru menfaatimize dayanarak GDPR md. 6/1 (f) uyarınca yapılır. Dilerseniz bize her zaman telefon, e-posta veya iletişim formu üzerinden de ulaşabilirsiniz.",
       ] },
       { title: "6. Gayrimenkul talepleri ve satın alma ilgisi", body: [
         "Kişisel veriler özellikle Aurelia tarafından olası bir satın alım için sunulan gayrimenkul tekliflerinde, Aurelia’nın kendi portföyündeki gayrimenkullere yönelik satın alma ilgisinde ve Türkiye’deki gayrimenkullere ilişkin taleplerde işlenebilir.",
