@@ -28,7 +28,7 @@ const MobileContactBar = () => {
       </a>
       <Link
         to={`/immobilie-anbieten?lang=${language}`}
-        className="flex min-h-14 flex-1 items-center justify-center bg-accent px-3 pb-[env(safe-area-inset-bottom)] text-center text-[12px] font-semibold uppercase tracking-[0.08em] text-accent-foreground"
+        className="flex min-h-14 flex-[1.25] items-center justify-center whitespace-nowrap bg-accent px-2 pb-[env(safe-area-inset-bottom)] text-center text-[12px] font-semibold uppercase tracking-[0.08em] text-accent-foreground"
       >
         {labels.offerProperty}
       </Link>
