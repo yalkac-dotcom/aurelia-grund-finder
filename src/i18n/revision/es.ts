@@ -139,7 +139,7 @@ export const es: RevisionCopy = {
   },
   faqPage: {
     kicker: "FAQ", title: "Preguntas frecuentes",
-    intro: "Respuestas sobre la compra de inmuebles, nuestra cartera propia e inmuebles en Alemania, Turquía y otros mercados seleccionados.",
+    intro: "Respuestas sobre la compra de inmuebles, nuestra cartera propia e inmuebles en Alemania y Turquía.",
     items: [
       { q: "¿Compra Aurelia inmuebles directamente?", a: "Sí. Aurelia compra inmuebles seleccionados por cuenta propia para su cartera. Si una compra es posible lo revisamos caso por caso." },
       { q: "¿Es Aurelia una agencia inmobiliaria?", a: "No. Aurelia no intermedia inmuebles de terceros ni acepta encargos de búsqueda. Compramos por cuenta propia y vendemos inmuebles de nuestra propia cartera." },

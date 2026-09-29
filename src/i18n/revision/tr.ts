@@ -139,7 +139,7 @@ export const tr: RevisionCopy = {
   },
   faqPage: {
     kicker: "SSS", title: "Sıkça sorulan sorular",
-    intro: "Gayrimenkul alımı, kendi portföyümüz ve Almanya, Türkiye ile diğer seçilmiş pazarlardaki gayrimenkuller hakkında yanıtlar.",
+    intro: "Gayrimenkul alımı, kendi portföyümüz ve Almanya ve Türkiye'deki gayrimenkuller hakkında yanıtlar.",
     items: [
       { q: "Aurelia gayrimenkulleri kendisi mi satın alıyor?", a: "Evet. Aurelia seçilmiş gayrimenkulleri kendi portföyü için kendi hesabına satın alır. Alımın mümkün olup olmadığını her durumda ayrı inceleriz." },
       { q: "Aurelia bir emlakçı mı?", a: "Hayır. Aurelia başkalarına ait gayrimenkullere aracılık etmez ve arama siparişi almaz. Kendi hesabımıza satın alır ve kendi portföyümüzden satarız." },
