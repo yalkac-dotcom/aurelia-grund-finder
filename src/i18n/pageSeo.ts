@@ -27,7 +27,7 @@ export const pageSeo: Record<Language, Record<PageSeoKey, PageSeoEntry>> = {
   de: {
     portfolio: { title: "Unser Bestand – Immobilien aus eigenem Bestand | Aurelia", description: 'Ausgewählte Immobilien, die Aurelia Grundbesitz selbst erworben hat und aus dem eigenen Bestand anbietet – in Deutschland und der Türkei.' },
     owners: { title: "Immobilie direkt verkaufen – Direktankauf | Aurelia Grundbesitz", description: "Immobilie zum Ankauf anbieten: Aurelia kauft auf eigene Rechnung – auch bei drohender Zwangsversteigerung oder schwierigen Situationen. Deutschland und Türkei." },
-    buyers: { title: "Kaufinteresse für Immobilien aus eigenem Bestand | Aurelia", description: "Hinterlegen Sie unverbindlich Ihr Kaufinteresse für Immobilien aus dem eigenen Bestand von Aurelia – Deutschland, Türkei und ausgewählte europäische Märkte." },
+    buyers: { title: "Kaufinteresse für Immobilien aus eigenem Bestand | Aurelia", description: "Hinterlegen Sie unverbindlich Ihr Kaufinteresse für Immobilien aus dem eigenen Bestand von Aurelia in Deutschland und der Türkei." },
     partners: { title: "Geschäftspartner | Aurelia Grundbesitz", description: "Zusammenarbeit mit Rechtsanwälten, Notaren, Architekten, Projektentwicklern und lokalen Partnern bei eigenen Ankäufen und Projekten." },
     howItWorks: { title: "Wie wir arbeiten – Ankauf & eigener Bestand | Aurelia", description: "Einfach erklärt: wie Aurelia Immobilien auf eigene Rechnung kauft, den eigenen Bestand entwickelt und aus diesem Bestand verkauft." },
     services: { title: "Leistungen | Aurelia Grundbesitz", description: "Direkter Immobilienankauf in Deutschland, Immobilien in der Türkei und Verkauf aus eigenem Bestand im Überblick." },

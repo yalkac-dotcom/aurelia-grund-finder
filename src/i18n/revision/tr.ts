@@ -5,7 +5,7 @@ const nav = [["Ana sayfa", "/"], ["Gayrimenkul teklif edin", "/immobilie-anbiete
 export const tr: RevisionCopy = {
   footer: {
     brandLine: "Aurelia Grundbesitz GmbH, Düsseldorf merkezli, sahibi tarafından yönetilen bir gayrimenkul şirketidir. Seçilmiş gayrimenkulleri kendi hesabımıza satın alıyor, kendi portföyümüzü oluşturuyor ve bu portföyden gayrimenkul satıyoruz.",
-    subline: "En önemli pazarlarımız Almanya ve Türkiye'dir. Ayrıca İtalya, İspanya, Fransa ve Hollanda'daki seçilmiş gayrimenkulleri de değerlendiriyoruz.",
+    subline: "Pazarlarımız Almanya ve Türkiye'dir.",
     navItems: nav.map(([label, path]) => ({ label, path })),
     legalItems: [{ label: "Künye", path: "/impressum" }, { label: "Kişisel Verilerin Korunması", path: "/datenschutz#kvkk" }, { label: "Görsel kaynakları", path: "/bildnachweise" }, { label: "Sözlük", path: "/immobilien-glossar" }],
   },
@@ -99,7 +99,7 @@ export const tr: RevisionCopy = {
       { title: "Her gayrimenkulü ayrı değerlendiririz", text: "Klasik konut ve ticari gayrimenkullerin yanı sıra renovasyon gerektiren gayrimenkuller, arsalar veya gelişim potansiyeli olan gayrimenkuller de ilgimizi çekebilir." },
       { title: "Açık iletişim kurarız", text: "İncelememizden sonra anlaşılır bir geri bildirim alırsınız. Bilgi eksikse veya alım mümkün değilse bunu da açıkça söyleriz." },
     ],
-    markets: { title: "Pazarlarımız", text: "Almanya ve Türkiye en önemli pazarlarımızdır. Ayrıca İtalya, İspanya, Fransa ve Hollanda'daki seçilmiş gayrimenkul fırsatlarını da değerlendiriyoruz." },
+    markets: { title: "Pazarlarımız", text: "Aurelia, Almanya ve Türkiye'ye odaklanmaktadır. Almanya'da seçilmiş gayrimenkulleri kendi hesabımıza satın alıyoruz. Türkiye için ayrı bir iş alanımız bulunmaktadır. Web sitemiz, mülk sahipleri ve ilgilenenlerin bilgiye tercih ettikleri dilde ulaşabilmeleri için çok dillidir." },
     standing: {
       headline: "Sahibi tarafından yönetilen. Kişisel. Uzun vadeli.",
       body: [
@@ -148,7 +148,7 @@ export const tr: RevisionCopy = {
       { q: "Yurt dışında yaşıyorsam gayrimenkulümü Aurelia'ya teklif edebilir miyim?", a: "Evet. Nerede yaşadığınız belirleyici değildir. Gayrimenkul, sahibinden farklı bir ülkede bulunabilir." },
       { q: "Türkiye'de yaşıyorum ve Almanya'da bir gayrimenkulüm var. Aurelia'ya teklif edebilir miyim?", a: "Evet. Gayrimenkulü Türkiye'den de olası alım için bize teklif edebilirsiniz. Belgeler ve birçok koordinasyon duruma göre uzaktan hazırlanabilir." },
       { q: "Almanya'da yaşıyorum ve Türkiye'de bir gayrimenkulüm var. Aurelia inceleyebilir mi?", a: "Evet. Türkiye'deki gayrimenkulleri de kendi hesabımıza olası alım için inceleriz. Yerinde hangi adımların gerektiği gayrimenkule ve mülkiyet durumuna bağlıdır." },
-      { q: "Aurelia hangi ülkeleri değerlendiriyor?", a: "Almanya ve Türkiye en önemli pazarlarımızdır. Ayrıca İtalya, İspanya, Fransa ve Hollanda'daki seçilmiş gayrimenkulleri değerlendiririz." },
+      { q: "Aurelia hangi ülkeleri değerlendiriyor?", a: "Aurelia'nın pazarları Almanya ve Türkiye'dir. Web sitemizin diğer dil sürümleri bilgilendirme ve iletişim amacı taşır; başka ülkelerde gayrimenkul alımı yaptığımız anlamına gelmez." },
       { q: "Satış için ilgili ülkeye bizzat gitmem gerekir mi?", a: "Bu duruma bağlıdır. Birçok adım uzaktan hazırlanabilir. Kişisel randevu, vekâletname veya noter işlemlerinin gerekip gerekmediği her durumda ayrıca netleştirilir." },
       { q: "İcra ihalesi yaklaşıyorsa ne olur?", a: "Bize mümkün olduğunca erken ulaşın. Kendi hesabımıza doğrudan alımın mümkün olup olmadığını inceleriz. Satışın mümkün olup olmadığı ve hangi koşullarda olacağı her zaman duruma bağlıdır." },
       { q: "İcra ihalesinden önce satış hâlâ mümkün olabilir mi?", a: "Duruma göre icra ihalesinden önce serbest satış hâlâ mümkün olabilir. Aurelia bu tür gayrimenkullerde uzun yıllara dayanan deneyime sahiptir. Bunun bir garantisi yoktur." },

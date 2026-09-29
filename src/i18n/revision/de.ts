@@ -8,7 +8,7 @@ const nav = [
 export const de: RevisionCopy = {
   footer: {
     brandLine: "Aurelia Grundbesitz GmbH ist ein inhabergeführtes Immobilienunternehmen aus Düsseldorf. Wir kaufen ausgewählte Immobilien auf eigene Rechnung, bauen einen eigenen Bestand auf und verkaufen Immobilien aus diesem Bestand.",
-    subline: "Unsere wichtigsten Märkte sind Deutschland und die Türkei. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden.",
+    subline: "Unsere Märkte sind Deutschland und die Türkei.",
     navItems: nav.map(([label, path]) => ({ label, path })),
     legalItems: [{ label: "Impressum", path: "/impressum" }, { label: "Datenschutz", path: "/datenschutz" }, { label: "Bildnachweise", path: "/bildnachweise" }, { label: "Glossar", path: "/immobilien-glossar" }],
   },
@@ -103,7 +103,7 @@ export const de: RevisionCopy = {
       { title: "Wir betrachten jedes Objekt individuell", text: "Neben klassischen Wohn- und Gewerbeimmobilien können auch renovierungsbedürftige Objekte, Grundstücke oder Immobilien mit Entwicklungspotenzial für uns interessant sein." },
       { title: "Wir kommunizieren klar", text: "Nach unserer Prüfung erhalten Sie eine nachvollziehbare Rückmeldung. Fehlen noch Informationen oder kommt ein Ankauf nicht infrage, sprechen wir auch das offen an." },
     ],
-    markets: { title: "Unsere Märkte", text: "Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilienmöglichkeiten in Italien, Spanien, Frankreich und den Niederlanden." },
+    markets: { title: "Unsere Märkte", text: "Aurelia konzentriert sich auf Deutschland und die Türkei. In Deutschland kaufen wir ausgewählte Immobilien auf eigene Rechnung. Für die Türkei besteht ein eigener Geschäftsbereich. Unsere Website ist mehrsprachig, damit Eigentümer und Interessenten Informationen in ihrer bevorzugten Sprache erhalten können." },
     standing: {
       headline: "Inhabergeführt. Persönlich. Langfristig.",
       body: [
@@ -152,7 +152,7 @@ export const de: RevisionCopy = {
       { q: "Kann ich Aurelia meine Immobilie anbieten, wenn ich im Ausland lebe?", a: "Ja. Wo Sie leben, ist nicht entscheidend. Die Immobilie kann sich in einem anderen Land befinden als ihr Eigentümer." },
       { q: "Ich lebe in der Türkei und besitze eine Immobilie in Deutschland. Kann ich sie Aurelia anbieten?", a: "Ja. Sie können uns die Immobilie auch aus der Türkei zum möglichen Ankauf anbieten. Unterlagen und viele Abstimmungen können je nach Einzelfall aus der Ferne vorbereitet werden." },
       { q: "Ich lebe in Deutschland und besitze eine Immobilie in der Türkei. Kann Aurelia sie prüfen?", a: "Ja. Auch Immobilien in der Türkei prüfen wir für einen möglichen Erwerb auf eigene Rechnung. Welche Schritte vor Ort notwendig sind, hängt vom Objekt und der Eigentumssituation ab." },
-      { q: "Welche Länder prüft Aurelia?", a: "Deutschland und die Türkei sind unsere wichtigsten Märkte. Darüber hinaus prüfen wir ausgewählte Immobilien in Italien, Spanien, Frankreich und den Niederlanden." },
+      { q: "Welche Länder prüft Aurelia?", a: "Deutschland und die Türkei sind die Märkte von Aurelia. Die weiteren Sprachversionen unserer Website dienen der Information und Kommunikation und bedeuten keine Ankaufstätigkeit in anderen Ländern." },
       { q: "Muss ich für einen Verkauf persönlich in das jeweilige Land reisen?", a: "Das hängt vom Einzelfall ab. Viele Schritte können aus der Ferne vorbereitet und abgestimmt werden. Ob persönliche Termine, Vollmachten oder notarielle Schritte erforderlich sind, wird im jeweiligen Fall geklärt." },
       { q: "Was passiert, wenn eine Zwangsversteigerung droht?", a: "Sprechen Sie uns möglichst früh an. Wir prüfen, ob ein direkter Ankauf auf eigene Rechnung möglich ist. Ob und unter welchen Bedingungen ein Verkauf möglich ist, hängt immer vom jeweiligen Fall ab." },
       { q: "Kann ein Verkauf vor einer Zwangsversteigerung noch möglich sein?", a: "Je nach Situation kann vor einer Zwangsversteigerung noch ein freihändiger Verkauf möglich sein. Aurelia verfügt über langjährige Erfahrung mit solchen Immobilien. Eine Garantie dafür gibt es nicht." },
