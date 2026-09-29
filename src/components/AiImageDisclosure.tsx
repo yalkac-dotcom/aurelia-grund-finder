@@ -11,7 +11,7 @@ const labels: Record<Language, Record<AiDisclosureType, string>> = {
   it: { standard: "Visual IA", illustrative: "Visual IA · Illustrativa" },
   es: { standard: "Visual IA", illustrative: "Visual IA · Ilustrativa" },
   fr: { standard: "Visuel IA", illustrative: "Visuel IA · Illustratif" },
-  tr: { standard: "Yapay Zeka", illustrative: "Yapay Zeka · Temsili" },
+  tr: { standard: "Yapay Zekâ Görseli", illustrative: "Yapay Zekâ Görseli · Temsili" },
 };
 
 const AiImageDisclosure = forwardRef<HTMLSpanElement, { type?: AiDisclosureType }>(({ type = "standard" }, ref) => {
