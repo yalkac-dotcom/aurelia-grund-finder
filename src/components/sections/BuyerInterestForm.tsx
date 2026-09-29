@@ -188,7 +188,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
       </div>
       <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground">
         <input type="checkbox" checked={privacy} onChange={(e) => { setPrivacy(e.target.checked); setErrors((er) => ({ ...er, privacy: "" })); }} className="mt-1 !h-4 !w-4 !min-h-0 !min-w-0 shrink-0 accent-primary" />
-        <span>{c.privacyBefore}<Link to="/datenschutz" className="font-semibold text-primary underline">{c.privacyLink}</Link>{c.privacyAfter}</span>
+        <span>{c.privacyBefore}<Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="font-semibold text-primary underline">{c.privacyLink}</Link>{c.privacyAfter}</span>
       </label>
       {errors.privacy && <p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}
       {success && (

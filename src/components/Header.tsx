@@ -248,7 +248,7 @@ const Header = () => {
                   {t.footer.imprint}
                 </Link>
                 <Link
-                  to="/datenschutz"
+                  to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"}
                   onClick={() => setMobileOpen(false)}
                   className="text-white/55 text-[10px] tracking-[0.08em]"
                 >

@@ -306,7 +306,7 @@ const Contact = () => {
                       />
                       <span className="text-[0.85rem] leading-[1.6] text-foreground/85">
                         {t.contact.consentCheckbox} <span className="text-accent">*</span>{" "}
-                        <Link to="/datenschutz" className="text-accent hover:underline">
+                        <Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="text-accent hover:underline">
                           {t.contact.consentNoticeLink}
                         </Link>
                       </span>
