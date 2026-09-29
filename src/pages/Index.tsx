@@ -20,6 +20,7 @@ import HomeDeSections from "@/components/home/HomeDeSections";
 import { aureliaInfoCard } from "@/lib/cardStyle";
 import InfoCorner from "@/components/sections/InfoCorner";
 import portfolioHero1024 from "@/assets/hero-portfolio-1024w.webp";
+import buyerCardImage from "@/assets/AdobeStock_268864480.jpeg.asset.json";
 import { homeMaster } from "@/i18n/homeMaster";
 
 // Robuste, semantische Zuordnung statt Index-Mapping.
@@ -104,7 +105,7 @@ const HomePage = () => {
             <div className="grid gap-6 md:grid-cols-3 md:gap-7">
               {[
                 { ...m.cards[0], to: "/immobilie-anbieten", image: areaAssets.deutschland.image, pos: areaAssets.deutschland.imagePosition },
-                { ...m.cards[1], to: "/fuer-kaeufer#kaufinteresse", image: areaAssets.tuerkei.image, pos: areaAssets.tuerkei.imagePosition },
+                { ...m.cards[1], to: "/fuer-kaeufer#kaufinteresse", image: buyerCardImage.url, pos: areaAssets.tuerkei.imagePosition },
                 { ...m.cards[2], to: "/portfolio", image: portfolioHero1024, pos: "50% 50%" },
               ].map((card, i) => (
                 <Reveal key={card.title} delay={i * 0.06}>
