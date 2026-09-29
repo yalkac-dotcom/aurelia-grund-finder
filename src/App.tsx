@@ -2,13 +2,11 @@ import { lazy, Suspense } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { installClickTracking } from "@/lib/analytics";
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
-import { useLanguage } from "@/i18n/LanguageContext";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import AnalyticsTracker from "./components/AnalyticsTracker";
 import Index from "./pages/Index";
-import ForOwnerInTrouble from "./pages/ForOwnerInTrouble";
 import ForBuyers from "./pages/ForBuyers";
 import ForGeschaftspartner from "./pages/ForGeschaftspartner";
 import HowItWorks from "./pages/HowItWorks";
@@ -35,16 +33,10 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
-// Alte deutsche Seite „Für Eigentümer“ → neue Seite „Immobilie anbieten“ (nur Deutsch)
-const ForOwnerInTroubleDe = () => {
-  const { language } = useLanguage();
-  return language === "de" ? <Navigate to="/immobilie-anbieten" replace /> : <ForOwnerInTrouble />;
-};
-
-// Alte URL /fuer-eigentumer-in-not → neue neutrale URL /fuer-eigentuemer (Query/Hash bleiben erhalten)
+// Alte Eigentümer-URLs → „Immobilie anbieten“ in allen Sprachen (Sprachwahl, Query und Hash bleiben erhalten)
 const LegacyOwnerRedirect = () => {
   const { search, hash } = useLocation();
-  return <Navigate to={`/fuer-eigentuemer${search}${hash}`} replace />;
+  return <Navigate to={`/immobilie-anbieten${search}${hash}`} replace />;
 };
 
 installClickTracking();
@@ -59,7 +51,7 @@ const App = () => (
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/fuer-eigentuemer" element={<ForOwnerInTroubleDe />} />
+              <Route path="/fuer-eigentuemer" element={<LegacyOwnerRedirect />} />
               <Route path="/fuer-eigentumer-in-not" element={<LegacyOwnerRedirect />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />
               <Route path="/fuer-geschaeftspartner" element={<ForGeschaftspartner />} />

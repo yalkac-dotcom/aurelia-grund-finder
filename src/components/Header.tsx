@@ -13,6 +13,15 @@ interface NavItem {
   hash?: string;
 }
 
+const offerLabels: Record<string, string> = {
+  tr: "Gayrimenkul teklif edin",
+  en: "Offer a property",
+  nl: "Vastgoed aanbieden",
+  it: "Offrire un immobile",
+  es: "Ofrecer un inmueble",
+  fr: "Proposer un bien",
+};
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -62,7 +71,7 @@ const Header = () => {
     { label: "Kontakt", path: "/kontakt" },
   ] : [
     { label: t.nav.home, path: "/" },
-    { label: t.nav.ownerInTrouble, path: "/fuer-eigentuemer" },
+    { label: offerLabels[language] ?? t.nav.ownerInTrouble, path: "/immobilie-anbieten" },
     { label: t.nav.buyers, path: "/fuer-kaeufer" },
     { label: t.nav.turkeyProperties, path: "/immobilien-tuerkei" },
     { label: t.nav.partners, path: "/fuer-geschaeftspartner" },
