@@ -139,7 +139,7 @@ export const en: RevisionCopy = {
   },
   faqPage: {
     kicker: "FAQ", title: "Frequently asked questions",
-    intro: "Answers about property acquisition, our own portfolio and properties in Germany, Turkey and other selected markets.",
+    intro: "Answers about property acquisition, our own portfolio and properties in Germany and Turkey.",
     items: [
       { q: "Does Aurelia buy properties itself?", a: "Yes. Aurelia buys selected properties for its own account for its own portfolio. Whether a purchase is possible is reviewed case by case." },
       { q: "Is Aurelia an estate agent?", a: "No. Aurelia does not broker third-party properties and does not take on search mandates. We buy for our own account and sell properties from our own portfolio." },

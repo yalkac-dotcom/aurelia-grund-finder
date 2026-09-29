@@ -139,7 +139,7 @@ export const it: RevisionCopy = {
   },
   faqPage: {
     kicker: "FAQ", title: "Domande frequenti",
-    intro: "Risposte sull'acquisto di immobili, sul nostro patrimonio e sugli immobili in Germania, Turchia e altri mercati selezionati.",
+    intro: "Risposte sull'acquisto di immobili, sul nostro patrimonio e sugli immobili in Germania e Turchia.",
     items: [
       { q: "Aurelia acquista direttamente immobili?", a: "Sì. Aurelia acquista immobili selezionati per conto proprio per il proprio patrimonio. Se un acquisto è possibile lo valutiamo caso per caso." },
       { q: "Aurelia è un'agenzia immobiliare?", a: "No. Aurelia non intermedia immobili di terzi e non accetta incarichi di ricerca. Acquistiamo per conto proprio e vendiamo immobili dal nostro patrimonio." },

@@ -139,7 +139,7 @@ export const fr: RevisionCopy = {
   },
   faqPage: {
     kicker: "FAQ", title: "Questions fréquentes",
-    intro: "Réponses sur l'achat de biens, notre propre patrimoine et les biens en Allemagne, en Turquie et sur d'autres marchés sélectionnés.",
+    intro: "Réponses sur l'achat de biens, notre propre patrimoine et les biens en Allemagne et en Turquie.",
     items: [
       { q: "Aurelia achète-t-elle elle-même des biens ?", a: "Oui. Aurelia achète des biens sélectionnés pour son propre compte et son propre patrimoine. La possibilité d'un achat est examinée au cas par cas." },
       { q: "Aurelia est-elle un agent immobilier ?", a: "Non. Aurelia ne fait pas d'intermédiation de biens de tiers et n'accepte pas de mandats de recherche. Nous achetons pour notre propre compte et vendons des biens de notre propre patrimoine." },

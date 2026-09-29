@@ -143,7 +143,7 @@ export const de: RevisionCopy = {
   },
   faqPage: {
     kicker: "FAQ", title: "Häufige Fragen",
-    intro: "Antworten zum Immobilienankauf, zu unserem eigenen Bestand und zu Immobilien in Deutschland, der Türkei und weiteren ausgewählten Märkten.",
+    intro: "Antworten zum Immobilienankauf, zu unserem eigenen Bestand und zu Immobilien in Deutschland und der Türkei.",
     items: [
       { q: "Kauft Aurelia Immobilien selbst?", a: "Ja. Aurelia kauft ausgewählte Immobilien auf eigene Rechnung für den eigenen Bestand. Ob ein Ankauf möglich ist, prüfen wir im Einzelfall." },
       { q: "Ist Aurelia ein Immobilienmakler?", a: "Nein. Aurelia vermittelt keine fremden Immobilien und übernimmt keine Suchaufträge. Wir kaufen auf eigene Rechnung und verkaufen Immobilien aus unserem eigenen Bestand." },

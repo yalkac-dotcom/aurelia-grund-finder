@@ -139,7 +139,7 @@ export const nl: RevisionCopy = {
   },
   faqPage: {
     kicker: "FAQ", title: "Veelgestelde vragen",
-    intro: "Antwoorden over vastgoedaankoop, onze eigen portefeuille en vastgoed in Duitsland, Turkije en andere geselecteerde markten.",
+    intro: "Antwoorden over vastgoedaankoop, onze eigen portefeuille en vastgoed in Duitsland en Turkije.",
     items: [
       { q: "Koopt Aurelia zelf vastgoed?", a: "Ja. Aurelia koopt geselecteerd vastgoed voor eigen rekening voor de eigen portefeuille. Of een aankoop mogelijk is, beoordelen wij per geval." },
       { q: "Is Aurelia een makelaar?", a: "Nee. Aurelia bemiddelt geen vastgoed van derden en neemt geen zoekopdrachten aan. Wij kopen voor eigen rekening en verkopen vastgoed uit onze eigen portefeuille." },
