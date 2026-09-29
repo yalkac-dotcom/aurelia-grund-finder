@@ -5,7 +5,7 @@ const nav = [["Home", "/"], ["Offer a property", "/immobilie-anbieten"], ["For b
 export const en: RevisionCopy = {
   footer: {
     brandLine: "Aurelia Grundbesitz GmbH is an owner-managed property company based in Düsseldorf. We buy selected properties for our own account, build our own portfolio and sell properties from this portfolio.",
-    subline: "Our most important markets are Germany and Turkey. We also consider selected properties in Italy, Spain, France and the Netherlands.",
+    subline: "Our markets are Germany and Turkey.",
     navItems: nav.map(([label, path]) => ({ label, path })),
     legalItems: [{ label: "Legal notice", path: "/impressum" }, { label: "Privacy policy", path: "/datenschutz" }, { label: "Image credits", path: "/bildnachweise" }, { label: "Glossary", path: "/immobilien-glossar" }],
   },
@@ -99,7 +99,7 @@ export const en: RevisionCopy = {
       { title: "We look at each property individually", text: "Besides standard residential and commercial properties, properties in need of renovation, land or properties with development potential may also interest us." },
       { title: "We communicate clearly", text: "After our review, you receive clear feedback. If information is missing or a purchase is not an option, we say so openly." },
     ],
-    markets: { title: "Our markets", text: "Germany and Turkey are our most important markets. We also consider selected property opportunities in Italy, Spain, France and the Netherlands." },
+    markets: { title: "Our markets", text: "Aurelia focuses on Germany and Turkey. In Germany, we purchase selected properties for our own account. Turkey is covered by a dedicated business area. Our website is multilingual so that owners and interested parties can receive information in their preferred language." },
     standing: {
       headline: "Owner-managed. Personal. Long-term.",
       body: [
@@ -148,7 +148,7 @@ export const en: RevisionCopy = {
       { q: "Can I offer Aurelia my property if I live abroad?", a: "Yes. Where you live is not decisive. The property can be in a different country from its owner." },
       { q: "I live in Turkey and own a property in Germany. Can I offer it to Aurelia?", a: "Yes. You can offer us the property for possible purchase from Turkey. Documents and many arrangements can be prepared remotely, depending on the case." },
       { q: "I live in Germany and own a property in Turkey. Can Aurelia review it?", a: "Yes. We also review properties in Turkey for a possible acquisition for our own account. Which local steps are needed depends on the property and the ownership situation." },
-      { q: "Which countries does Aurelia consider?", a: "Germany and Turkey are our most important markets. We also consider selected properties in Italy, Spain, France and the Netherlands." },
+      { q: "Which countries does Aurelia consider?", a: "Germany and Turkey are Aurelia's markets. The other language versions of our website serve information and communication purposes and do not mean that we acquire properties in other countries." },
       { q: "Do I have to travel to the country in person for a sale?", a: "That depends on the case. Many steps can be prepared and coordinated remotely. Whether personal appointments, powers of attorney or notarial steps are required is clarified in each case." },
       { q: "What happens if a foreclosure auction is imminent?", a: "Contact us as early as possible. We check whether a direct purchase for our own account is possible. Whether and under what conditions a sale is possible always depends on the case." },
       { q: "Can a sale still be possible before a foreclosure auction?", a: "Depending on the situation, a private sale may still be possible before a foreclosure auction. Aurelia has many years of experience with such properties. There is no guarantee." },

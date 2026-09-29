@@ -5,7 +5,7 @@ const nav = [["Inicio", "/"], ["Ofrecer un inmueble", "/immobilie-anbieten"], ["
 export const es: RevisionCopy = {
   footer: {
     brandLine: "Aurelia Grundbesitz GmbH es una empresa inmobiliaria de Düsseldorf dirigida por su propietario. Compramos inmuebles seleccionados por cuenta propia, construimos una cartera propia y vendemos inmuebles de esta cartera.",
-    subline: "Nuestros mercados principales son Alemania y Turquía. Además, estudiamos inmuebles seleccionados en Italia, España, Francia y los Países Bajos.",
+    subline: "Nuestros mercados son Alemania y Turquía.",
     navItems: nav.map(([label, path]) => ({ label, path })),
     legalItems: [{ label: "Aviso legal", path: "/impressum" }, { label: "Privacidad", path: "/datenschutz" }, { label: "Créditos de imágenes", path: "/bildnachweise" }, { label: "Glosario", path: "/immobilien-glossar" }],
   },
@@ -99,7 +99,7 @@ export const es: RevisionCopy = {
       { title: "Estudiamos cada inmueble individualmente", text: "Además de inmuebles residenciales y comerciales clásicos, también pueden interesarnos inmuebles a reformar, terrenos o inmuebles con potencial de desarrollo." },
       { title: "Comunicamos con claridad", text: "Tras nuestra revisión recibe una respuesta comprensible. Si falta información o la compra no es posible, también lo decimos abiertamente." },
     ],
-    markets: { title: "Nuestros mercados", text: "Alemania y Turquía son nuestros mercados principales. Además, estudiamos oportunidades inmobiliarias seleccionadas en Italia, España, Francia y los Países Bajos." },
+    markets: { title: "Nuestros mercados", text: "Aurelia se centra en Alemania y Turquía. En Alemania adquirimos inmuebles seleccionados por cuenta propia. Para Turquía existe un área de negocio propia. Nuestro sitio web es multilingüe para que propietarios e interesados puedan recibir información en su idioma preferido." },
     standing: {
       headline: "Dirigida por su propietario. Personal. A largo plazo.",
       body: [
@@ -148,7 +148,7 @@ export const es: RevisionCopy = {
       { q: "¿Puedo ofrecer mi inmueble a Aurelia si vivo en el extranjero?", a: "Sí. Dónde vive no es determinante. El inmueble puede estar en un país distinto al de su propietario." },
       { q: "Vivo en Turquía y tengo un inmueble en Alemania. ¿Puedo ofrecérselo a Aurelia?", a: "Sí. Puede ofrecernos el inmueble para una posible compra también desde Turquía. Los documentos y muchas gestiones pueden prepararse a distancia, según el caso." },
       { q: "Vivo en Alemania y tengo un inmueble en Turquía. ¿Puede Aurelia revisarlo?", a: "Sí. También revisamos inmuebles en Turquía para una posible compra por cuenta propia. Los pasos necesarios in situ dependen del inmueble y de la situación de propiedad." },
-      { q: "¿Qué países estudia Aurelia?", a: "Alemania y Turquía son nuestros mercados principales. Además, estudiamos inmuebles seleccionados en Italia, España, Francia y los Países Bajos." },
+      { q: "¿Qué países estudia Aurelia?", a: "Alemania y Turquía son los mercados de Aurelia. Las demás versiones lingüísticas de nuestro sitio web sirven para informar y comunicarnos, y no implican actividad de compra en otros países." },
       { q: "¿Tengo que viajar personalmente al país para una venta?", a: "Depende del caso. Muchos pasos pueden prepararse y coordinarse a distancia. Si hacen falta citas personales, poderes o trámites notariales se aclara en cada caso." },
       { q: "¿Qué pasa si hay una subasta judicial inminente?", a: "Contáctenos lo antes posible. Revisamos si es posible una compra directa por cuenta propia. Si una venta es posible y en qué condiciones depende siempre del caso." },
       { q: "¿Puede ser posible una venta antes de una subasta judicial?", a: "Según la situación, antes de una subasta todavía puede ser posible una venta directa. Aurelia tiene muchos años de experiencia con este tipo de inmuebles. No hay garantía." },

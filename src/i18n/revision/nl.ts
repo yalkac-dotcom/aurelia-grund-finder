@@ -5,7 +5,7 @@ const nav = [["Home", "/"], ["Vastgoed aanbieden", "/immobilie-anbieten"], ["Voo
 export const nl: RevisionCopy = {
   footer: {
     brandLine: "Aurelia Grundbesitz GmbH is een door de eigenaar geleid vastgoedbedrijf uit Düsseldorf. Wij kopen geselecteerd vastgoed voor eigen rekening, bouwen een eigen portefeuille op en verkopen vastgoed uit deze portefeuille.",
-    subline: "Onze belangrijkste markten zijn Duitsland en Turkije. Daarnaast bekijken wij geselecteerd vastgoed in Italië, Spanje, Frankrijk en Nederland.",
+    subline: "Onze markten zijn Duitsland en Turkije.",
     navItems: nav.map(([label, path]) => ({ label, path })),
     legalItems: [{ label: "Colofon", path: "/impressum" }, { label: "Privacy", path: "/datenschutz" }, { label: "Beeldverantwoording", path: "/bildnachweise" }, { label: "Woordenlijst", path: "/immobilien-glossar" }],
   },
@@ -99,7 +99,7 @@ export const nl: RevisionCopy = {
       { title: "Wij bekijken elk object individueel", text: "Naast klassiek woon- en bedrijfsvastgoed kunnen ook renovatieobjecten, grond of vastgoed met ontwikkelpotentieel voor ons interessant zijn." },
       { title: "Wij communiceren duidelijk", text: "Na onze beoordeling ontvangt u een navolgbare terugkoppeling. Ontbreekt informatie of is aankoop niet mogelijk, dan zeggen wij dat ook openlijk." },
     ],
-    markets: { title: "Onze markten", text: "Duitsland en Turkije zijn onze belangrijkste markten. Daarnaast bekijken wij geselecteerde vastgoedkansen in Italië, Spanje, Frankrijk en Nederland." },
+    markets: { title: "Onze markten", text: "Aurelia richt zich op Duitsland en Turkije. In Duitsland kopen wij geselecteerd vastgoed voor eigen rekening. Voor Turkije bestaat een apart bedrijfsonderdeel. Onze website is meertalig, zodat eigenaren en geïnteresseerden informatie in hun voorkeurstaal kunnen ontvangen." },
     standing: {
       headline: "Door de eigenaar geleid. Persoonlijk. Langetermijn.",
       body: [
@@ -148,7 +148,7 @@ export const nl: RevisionCopy = {
       { q: "Kan ik Aurelia mijn vastgoed aanbieden als ik in het buitenland woon?", a: "Ja. Waar u woont is niet doorslaggevend. Het vastgoed kan zich in een ander land bevinden dan de eigenaar." },
       { q: "Ik woon in Turkije en bezit vastgoed in Duitsland. Kan ik het Aurelia aanbieden?", a: "Ja. U kunt het vastgoed ook vanuit Turkije ter mogelijke aankoop aanbieden. Documenten en veel afstemming kunnen per geval op afstand worden voorbereid." },
       { q: "Ik woon in Duitsland en bezit vastgoed in Turkije. Kan Aurelia het beoordelen?", a: "Ja. Ook vastgoed in Turkije beoordelen wij voor een mogelijke aankoop voor eigen rekening. Welke stappen ter plaatse nodig zijn, hangt af van het object en de eigendomssituatie." },
-      { q: "Welke landen bekijkt Aurelia?", a: "Duitsland en Turkije zijn onze belangrijkste markten. Daarnaast bekijken wij geselecteerd vastgoed in Italië, Spanje, Frankrijk en Nederland." },
+      { q: "Welke landen bekijkt Aurelia?", a: "Duitsland en Turkije zijn de markten van Aurelia. De overige taalversies van onze website dienen voor informatie en communicatie en betekenen niet dat wij in andere landen vastgoed aankopen." },
       { q: "Moet ik voor een verkoop persoonlijk naar het betreffende land reizen?", a: "Dat hangt van het geval af. Veel stappen kunnen op afstand worden voorbereid. Of persoonlijke afspraken, volmachten of notariële stappen nodig zijn, wordt per geval verduidelijkt." },
       { q: "Wat gebeurt er als een executieveiling dreigt?", a: "Neem zo vroeg mogelijk contact met ons op. Wij beoordelen of een directe aankoop voor eigen rekening mogelijk is. Of en onder welke voorwaarden een verkoop mogelijk is, hangt altijd van het geval af." },
       { q: "Kan een verkoop vóór een executieveiling nog mogelijk zijn?", a: "Afhankelijk van de situatie kan vóór een executieveiling nog een onderhandse verkoop mogelijk zijn. Aurelia heeft jarenlange ervaring met zulk vastgoed. Een garantie is er niet." },

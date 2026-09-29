@@ -5,7 +5,7 @@ const nav = [["Accueil", "/"], ["Proposer un bien", "/immobilie-anbieten"], ["Po
 export const fr: RevisionCopy = {
   footer: {
     brandLine: "Aurelia Grundbesitz GmbH est une société immobilière de Düsseldorf dirigée par son propriétaire. Nous achetons des biens sélectionnés pour notre propre compte, constituons notre propre patrimoine et vendons des biens issus de ce patrimoine.",
-    subline: "Nos principaux marchés sont l'Allemagne et la Turquie. Nous étudions également des biens sélectionnés en Italie, en Espagne, en France et aux Pays-Bas.",
+    subline: "Nos marchés sont l'Allemagne et la Turquie.",
     navItems: nav.map(([label, path]) => ({ label, path })),
     legalItems: [{ label: "Mentions légales", path: "/impressum" }, { label: "Confidentialité", path: "/datenschutz" }, { label: "Crédits photos", path: "/bildnachweise" }, { label: "Glossaire", path: "/immobilien-glossar" }],
   },
@@ -99,7 +99,7 @@ export const fr: RevisionCopy = {
       { title: "Nous étudions chaque bien individuellement", text: "Outre les biens résidentiels et commerciaux classiques, des biens à rénover, des terrains ou des biens à potentiel de développement peuvent aussi nous intéresser." },
       { title: "Nous communiquons clairement", text: "Après notre examen, vous recevez un retour compréhensible. S'il manque des informations ou si un achat n'est pas envisageable, nous le disons ouvertement." },
     ],
-    markets: { title: "Nos marchés", text: "L'Allemagne et la Turquie sont nos principaux marchés. Nous étudions également des opportunités immobilières sélectionnées en Italie, en Espagne, en France et aux Pays-Bas." },
+    markets: { title: "Nos marchés", text: "Aurelia se concentre sur l'Allemagne et la Turquie. En Allemagne, nous acquérons des biens sélectionnés pour notre propre compte. La Turquie fait l'objet d'un secteur d'activité dédié. Notre site est multilingue afin que propriétaires et personnes intéressées puissent recevoir des informations dans la langue de leur choix." },
     standing: {
       headline: "Dirigée par son propriétaire. Personnelle. Sur le long terme.",
       body: [
@@ -148,7 +148,7 @@ export const fr: RevisionCopy = {
       { q: "Puis-je proposer mon bien à Aurelia si je vis à l'étranger ?", a: "Oui. Votre lieu de résidence n'est pas déterminant. Le bien peut se trouver dans un autre pays que son propriétaire." },
       { q: "Je vis en Turquie et possède un bien en Allemagne. Puis-je le proposer à Aurelia ?", a: "Oui. Vous pouvez nous proposer le bien depuis la Turquie pour un éventuel achat. Les documents et de nombreuses démarches peuvent être préparés à distance selon le cas." },
       { q: "Je vis en Allemagne et possède un bien en Turquie. Aurelia peut-elle l'examiner ?", a: "Oui. Nous examinons aussi des biens en Turquie pour une éventuelle acquisition pour notre propre compte. Les démarches nécessaires sur place dépendent du bien et de la situation de propriété." },
-      { q: "Quels pays Aurelia étudie-t-elle ?", a: "L'Allemagne et la Turquie sont nos principaux marchés. Nous étudions également des biens sélectionnés en Italie, en Espagne, en France et aux Pays-Bas." },
+      { q: "Quels pays Aurelia étudie-t-elle ?", a: "L'Allemagne et la Turquie sont les marchés d'Aurelia. Les autres versions linguistiques de notre site servent à l'information et à la communication et ne signifient pas que nous achetons des biens dans d'autres pays." },
       { q: "Dois-je me rendre personnellement dans le pays pour une vente ?", a: "Cela dépend du cas. De nombreuses étapes peuvent être préparées et coordonnées à distance. La nécessité de rendez-vous, de procurations ou d'actes notariés est clarifiée au cas par cas." },
       { q: "Que se passe-t-il si une vente aux enchères judiciaire est imminente ?", a: "Contactez-nous le plus tôt possible. Nous vérifions si un achat direct pour notre propre compte est possible. La possibilité d'une vente et ses conditions dépendent toujours du cas." },
       { q: "Une vente est-elle encore possible avant une vente aux enchères judiciaire ?", a: "Selon la situation, une vente de gré à gré peut encore être possible avant une vente aux enchères. Aurelia a une longue expérience de ce type de biens. Il n'y a aucune garantie." },
