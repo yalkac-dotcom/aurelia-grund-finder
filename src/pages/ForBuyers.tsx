@@ -6,7 +6,6 @@ import PageHero from "@/components/sections/PageHero";
 import SectionHeader from "@/components/sections/SectionHeader";
 import ProofCard from "@/components/sections/ProofCard";
 import ObjectionCard from "@/components/sections/ObjectionCard";
-import FinalCta from "@/components/sections/FinalCta";
 import { heroSets } from "@/assets/heroImages";
 import { cardImages } from "@/assets/cards";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -227,13 +226,6 @@ const ForBuyers = () => {
             <BuyerInterestForm />
           </div>
         </section>
-
-        <FinalCta
-          title={b.finalCtaTitle}
-          text={b.finalCtaText}
-          buttonLabel={b.finalCtaButton}
-          buttonTo="/kontakt"
-        />
       </div>
     </Layout>
   );
