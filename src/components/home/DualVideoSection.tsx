@@ -52,7 +52,7 @@ const VideoCard = ({ clip, playLabel }: { clip: Clip; playLabel: string }) => {
             <video ref={ref} src={clip.src} poster={clip.poster} controls playsInline preload="metadata" controlsList="nodownload" className="block h-full w-full object-cover" aria-label={clip.title} />
           ) : (
             <button type="button" onClick={start} aria-label={`${playLabel}: ${clip.title}`} className="group absolute inset-0 block">
-              <img src={clip.poster} alt="" loading="lazy" decoding="async" className="h-full w-full object-cover" />
+              <img src={clip.poster} alt="" decoding="async" className="h-full w-full object-cover" />
               <span className="absolute inset-0 flex items-center justify-center bg-primary/15 transition-colors group-hover:bg-primary/25">
                 <span className="flex size-14 items-center justify-center rounded-full border border-accent bg-primary/90 shadow-lg transition-transform group-hover:scale-105 md:size-16">
                   <Play className="ml-1 size-6 fill-accent text-accent md:size-7" aria-hidden="true" />
