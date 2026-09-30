@@ -1,4 +1,4 @@
-import type { Language } from "./translations";
+import type { Language } from "./types";
 
 // Kurzfristiger Immobilienverkauf – Deutsch ist Master, übrige Sprachen sinngemäß.
 export interface ShortTermSaleCopy {

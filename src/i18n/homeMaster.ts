@@ -115,7 +115,7 @@ export const homeMaster: Record<Language, HomeMasterCopy> = {
     areasTitle: "Aurelia ile neler yapabilirsiniz",
     areasIntro: "Pazarlarımız Almanya ve Türkiye'dir.",
     cards: [
-      { title: "Gayrimenkul sunun", text: "Bir gayrimenkul satmak mı istiyorsunuz? Aurelia tarafından kendi hesabına doğrudan satın alımın genel olarak mümkün olup olmadığını inceleriz.", cta: "Gayrimenkul sunun" },
+      { title: "Gayrimenkul sunun", text: "Bir gayrimenkul satmak mı istiyorsunuz? İster klasik, ister tadilat ihtiyacı, gelişim potansiyeli veya özel bir başlangıç durumu olsun – Aurelia tarafından kendi hesabına doğrudan satın alımın genel olarak mümkün olup olmadığını inceleriz.", cta: "Gayrimenkul sunun" },
       { title: "Satın alma ilgisi bildirin", text: "Hangi ülkeler, bölgeler ve gayrimenkul türleriyle ilgilendiğinizi bize bildirin. Kendi portföyümüzde uygun bir gayrimenkul mevcut olduğunda sizi bilgilendirebiliriz.", cta: "Satın alma ilgisi bildirin" },
       { title: "Portföyümüz", text: "Aurelia, kendi portföyünden seçilmiş gayrimenkulleri satışa sunar. Portföydeki her gayrimenkul kamuya açık olarak gösterilmez.", cta: "Portföyümüzü görüntüleyin" },
     ],
@@ -179,7 +179,7 @@ export const homeMaster: Record<Language, HomeMasterCopy> = {
     areasTitle: "What you can do with Aurelia",
     areasIntro: "Our markets are Germany and Turkey.",
     cards: [
-      { title: "Offer a property", text: "Would you like to sell a property? We assess whether a direct purchase by Aurelia for its own account is possible in principle.", cta: "Offer a property" },
+      { title: "Offer a property", text: "Would you like to sell a property? Whether conventional, in need of renovation, with development potential or in a special initial situation – we assess whether a direct purchase by Aurelia for its own account is possible in principle.", cta: "Offer a property" },
       { title: "Register purchase interest", text: "Tell us which countries, regions and types of property interest you. If a suitable property from our own portfolio becomes available, we can let you know.", cta: "Register purchase interest" },
       { title: "Our portfolio", text: "Aurelia offers selected properties from its own portfolio for sale. Not every property in our portfolio is shown publicly.", cta: "View our portfolio" },
     ],
@@ -243,7 +243,7 @@ export const homeMaster: Record<Language, HomeMasterCopy> = {
     areasTitle: "Wat u bij Aurelia kunt doen",
     areasIntro: "Onze markten zijn Duitsland en Turkije.",
     cards: [
-      { title: "Vastgoed aanbieden", text: "Wilt u vastgoed verkopen? Wij beoordelen of een rechtstreekse aankoop door Aurelia voor eigen rekening in principe mogelijk is.", cta: "Vastgoed aanbieden" },
+      { title: "Vastgoed aanbieden", text: "Wilt u vastgoed verkopen? Of het nu klassiek is, renovatie nodig heeft, ontwikkelpotentieel biedt of zich in een bijzondere uitgangssituatie bevindt – wij beoordelen of een rechtstreekse aankoop door Aurelia voor eigen rekening in principe mogelijk is.", cta: "Vastgoed aanbieden" },
       { title: "Koopinteresse doorgeven", text: "Laat ons weten welke landen, regio's en soorten vastgoed u interesseren. Wanneer er een passend object uit onze eigen portefeuille beschikbaar is, kunnen wij u informeren.", cta: "Koopinteresse doorgeven" },
       { title: "Onze portefeuille", text: "Aurelia biedt geselecteerd vastgoed uit de eigen portefeuille te koop aan. Niet elk object uit de portefeuille wordt openbaar getoond.", cta: "Onze portefeuille bekijken" },
     ],
@@ -307,7 +307,7 @@ export const homeMaster: Record<Language, HomeMasterCopy> = {
     areasTitle: "Cosa può fare con Aurelia",
     areasIntro: "I nostri mercati sono la Germania e la Turchia.",
     cards: [
-      { title: "Proporre un immobile", text: "Desidera vendere un immobile? Verifichiamo se un acquisto diretto da parte di Aurelia per conto proprio è in linea di principio possibile.", cta: "Proporre un immobile" },
+      { title: "Proporre un immobile", text: "Desidera vendere un immobile? Che sia classico, da ristrutturare, con potenziale di sviluppo o in una situazione iniziale particolare – verifichiamo se un acquisto diretto da parte di Aurelia per conto proprio è in linea di principio possibile.", cta: "Proporre un immobile" },
       { title: "Comunicare interesse all'acquisto", text: "Ci indichi quali Paesi, regioni e tipologie di immobili le interessano. Se si rende disponibile un immobile adatto dal nostro patrimonio, possiamo informarla.", cta: "Comunicare interesse" },
       { title: "Il nostro patrimonio", text: "Aurelia offre in vendita immobili selezionati del proprio patrimonio. Non tutti gli immobili del patrimonio vengono presentati pubblicamente.", cta: "Vedere il nostro patrimonio" },
     ],
@@ -371,7 +371,7 @@ export const homeMaster: Record<Language, HomeMasterCopy> = {
     areasTitle: "Qué puede hacer con Aurelia",
     areasIntro: "Nuestros mercados son Alemania y Turquía.",
     cards: [
-      { title: "Ofrecer un inmueble", text: "¿Desea vender un inmueble? Analizamos si una compra directa por parte de Aurelia por cuenta propia es posible en principio.", cta: "Ofrecer un inmueble" },
+      { title: "Ofrecer un inmueble", text: "¿Desea vender un inmueble? Ya sea convencional, con necesidad de reforma, con potencial de desarrollo o en una situación inicial particular, analizamos si una compra directa por parte de Aurelia por cuenta propia es posible en principio.", cta: "Ofrecer un inmueble" },
       { title: "Comunicar interés de compra", text: "Indíquenos qué países, regiones y tipos de inmueble le interesan. Si hay disponible un inmueble adecuado de nuestra propia cartera, podemos informarle.", cta: "Comunicar interés de compra" },
       { title: "Nuestra cartera", text: "Aurelia ofrece en venta inmuebles seleccionados de su propia cartera. No todos los inmuebles de la cartera se presentan públicamente.", cta: "Ver nuestra cartera" },
     ],
@@ -435,7 +435,7 @@ export const homeMaster: Record<Language, HomeMasterCopy> = {
     areasTitle: "Ce que vous pouvez faire avec Aurelia",
     areasIntro: "Nos marchés sont l'Allemagne et la Turquie.",
     cards: [
-      { title: "Proposer un bien", text: "Vous souhaitez vendre un bien ? Nous examinons si un achat direct par Aurelia pour son propre compte est possible sur le principe.", cta: "Proposer un bien" },
+      { title: "Proposer un bien", text: "Vous souhaitez vendre un bien ? Qu'il soit classique, à rénover, doté d'un potentiel de développement ou dans une situation initiale particulière – nous examinons si un achat direct par Aurelia pour son propre compte est possible sur le principe.", cta: "Proposer un bien" },
       { title: "Faire part d'un intérêt d'achat", text: "Indiquez-nous les pays, régions et types de biens qui vous intéressent. Si un bien adapté de notre propre patrimoine est disponible, nous pouvons vous en informer.", cta: "Faire part d'un intérêt" },
       { title: "Notre patrimoine", text: "Aurelia propose à la vente des biens sélectionnés issus de son propre patrimoine. Tous les biens du patrimoine ne sont pas présentés publiquement.", cta: "Voir notre patrimoine" },
     ],
