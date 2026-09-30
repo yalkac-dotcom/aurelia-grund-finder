@@ -226,7 +226,7 @@ const ForBuyers = () => {
             <BuyerInterestForm />
           </div>
         </section>
-
+      </div>
     </Layout>
   );
 };
