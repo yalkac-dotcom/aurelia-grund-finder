@@ -13,6 +13,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import { usePageSeo } from "@/hooks/usePageSeo";
+import DualVideoSection from "@/components/home/DualVideoSection";
 
 const heroTurkeyProperties = "/heroes/AdobeStock_502929748-1024w.webp";
 const heroTurkeyPropertiesSrcSet = [640, 1024, 1440, 2048]
@@ -452,6 +453,9 @@ const TurkeyProperties = () => {
 
           </div>
         </section>
+
+        {language === "tr" && <DualVideoSection language="tr" />}
+
 
         {page.faq && <section className="section-premium bg-gradient-warm">
           <div className="container-premium">

@@ -1,4 +1,5 @@
 import HomeVideo from "@/components/home/HomeVideo";
+import DualVideoSection from "@/components/home/DualVideoSection";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
@@ -123,7 +124,7 @@ const HomePage = () => {
 
         <HomeDeSections m={m} />
 
-        <HomeVideo language={language} />
+        {language === "de" ? <DualVideoSection language="de" /> : <HomeVideo language={language} />}
 
         {/* TRUST */}
         <section className="section-premium section-navy text-white">
