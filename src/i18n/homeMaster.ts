@@ -51,7 +51,7 @@ export const homeMaster: Record<Language, HomeMasterCopy> = {
     areasTitle: "Was Sie bei Aurelia tun können",
     areasIntro: "Unsere Märkte sind Deutschland und die Türkei.",
     cards: [
-      { title: "Immobilie anbieten", text: "Sie möchten eine Immobilie verkaufen? Wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung grundsätzlich möglich ist.", cta: "Immobilie anbieten" },
+      { title: "Immobilie anbieten", text: "Sie möchten eine Immobilie verkaufen? Ob klassisch, mit Renovierungsbedarf, Entwicklungspotenzial oder in einer besonderen Ausgangssituation – wir prüfen, ob ein direkter Ankauf durch Aurelia auf eigene Rechnung grundsätzlich möglich ist.", cta: "Immobilie anbieten" },
       { title: "Kaufinteresse hinterlegen", text: "Teilen Sie uns mit, welche Länder, Regionen und Immobilienarten für Sie interessant sind. Wenn ein passendes Objekt aus unserem eigenen Bestand verfügbar ist, können wir Sie informieren.", cta: "Kaufinteresse hinterlegen" },
       { title: "Unser Bestand", text: "Aurelia bietet ausgewählte Immobilien aus dem eigenen Bestand zum Verkauf an. Nicht jedes Bestandsobjekt wird öffentlich dargestellt.", cta: "Unseren Bestand ansehen" },
     ],

@@ -68,6 +68,7 @@ const App = () => (
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/immobilien-tuerkei" element={<TurkeyProperties />} />
               <Route path="/immobilie-anbieten" element={<PropertyOffer />} />
+              <Route path="/kurzfristiger-immobilienverkauf" element={<ShortTermSale />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/impressum" element={<Impressum />} />
