@@ -21,7 +21,7 @@ const SETS: Record<"de" | "tr", { title: string; intro: string; play: string; no
     note: "Hinweis: Die Unternehmensvideos wurden mit Unterstützung künstlicher Intelligenz erstellt.",
     clips: [
       { id: "de_kurz", src: deKurz.url, poster: deKurzPoster.url, title: "Aurelia in 1 Minute", text: "Unser Unternehmen, unsere Erfahrung und unsere Arbeitsweise kompakt vorgestellt.", duration: "ca. 1 Minute" },
-      { id: "de_lang", src: deLang.url, poster: deLangPoster.url, title: "Aurelia ausführlich kennenlernen", text: "Ein ausführlicher Einblick in Aurelia Grundbesitz, unsere Erfahrung und unseren Umgang mit komplexen Immobiliensituationen.", duration: "ca. 6 Minuten" },
+      { id: "de_lang", src: deLang.url, poster: deLangPoster.url, title: "Aurelia ausführlich kennenlernen", text: "Ein ausführlicher Einblick in Aurelia Grundbesitz, unsere Erfahrung und unseren Umgang mit komplexen Immobiliensituationen.", duration: "ca. 7:30 Minuten" },
     ],
   },
   tr: {
