@@ -530,7 +530,7 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
-        <DualVideoSection language="tr" />
+        <DualVideoSection language="tr" copyLanguage={language} />
 
         <section className="section-premium bg-background">
           <div className="container-premium">
