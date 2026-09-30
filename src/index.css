@@ -402,19 +402,19 @@
 }
 
 .section-premium {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 @media (min-width: 768px) {
   .section-premium {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
   }
 }
 @media (min-width: 1280px) {
   .section-premium {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 }
 /* Compact vertical rhythm inside content sections (proportions only) */
