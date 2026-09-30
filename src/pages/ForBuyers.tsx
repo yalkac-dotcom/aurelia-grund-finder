@@ -118,22 +118,6 @@ const ForBuyers = () => {
           </div>
         </section>
 
-        <section id="kaufinteresse" className="section-premium bg-background scroll-mt-24">
-          <div className="container-premium">
-            <SectionHeader title={buyerInterestCopy[language].sectionTitle} intro={buyerInterestCopy[language].sectionIntro} />
-            <Reveal>
-              <div className={`mx-auto mb-10 flex max-w-5xl items-start gap-4 ${aureliaInfoCard}`}>
-                <InfoCorner />
-                <Info size={20} strokeWidth={1.6} className="mt-1 shrink-0 text-accent" aria-hidden="true" />
-                <p className="text-[0.94rem] font-medium leading-[1.8] text-primary">
-                  {buyerInterestCopy[language].notice}
-                </p>
-              </div>
-            </Reveal>
-            <BuyerInterestForm />
-          </div>
-        </section>
-
         {/* PORTFOLIO TEASER (Navy) */}
         <section className="section-premium section-navy text-white">
           <div className="container-premium">
@@ -225,6 +209,22 @@ const ForBuyers = () => {
             <p className="text-[0.9rem] leading-[1.7] text-muted-foreground">
               <Link to="/faq" className="text-primary underline-offset-4 hover:underline">{extras.shared.faqPrompt}</Link>
             </p>
+          </div>
+        </section>
+
+        <section id="kaufinteresse" className="section-premium bg-background scroll-mt-24">
+          <div className="container-premium">
+            <SectionHeader title={buyerInterestCopy[language].sectionTitle} intro={buyerInterestCopy[language].sectionIntro} />
+            <Reveal>
+              <div className={`mx-auto mb-10 flex max-w-5xl items-start gap-4 ${aureliaInfoCard}`}>
+                <InfoCorner />
+                <Info size={20} strokeWidth={1.6} className="mt-1 shrink-0 text-accent" aria-hidden="true" />
+                <p className="text-[0.94rem] font-medium leading-[1.8] text-primary">
+                  {buyerInterestCopy[language].notice}
+                </p>
+              </div>
+            </Reveal>
+            <BuyerInterestForm />
           </div>
         </section>
 
