@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 import { Play } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 import Reveal from "@/components/Reveal";
-import videoDe from "@/assets/aurelia-video-de.mp4.asset.json";
+import videoDe from "@/assets/aurelia-video-de-v2.mp4.asset.json";
 import videoTr from "@/assets/aurelia-video-tr.mp4.asset.json";
-import posterDe from "@/assets/aurelia-video-de-poster.jpg.asset.json";
+import posterDe from "@/assets/aurelia-video-de-v2-poster.jpg.asset.json";
 import posterTr from "@/assets/aurelia-video-tr-poster.jpg.asset.json";
 
 // Nur DE und TR erhalten ein Video; alle anderen Sprachen: kein Video.
