@@ -69,8 +69,38 @@ const VideoCard = ({ clip, playLabel }: { clip: Clip; playLabel: string }) => {
   );
 };
 
-const DualVideoSection = ({ language, className = "bg-gradient-warm" }: { language: "de" | "tr"; className?: string }) => {
-  const s = SETS[language];
+type CopyLang = "de" | "tr" | "en" | "nl" | "it" | "es" | "fr";
+type Copy = { title: string; intro: string; play: string; note: string; c: [string, string, string][] };
+
+// Begleittexte für die türkischen Videos auf der Türkei-Seite (Videos bleiben immer türkisch)
+const TR_VIDEO_COPY: Record<CopyLang, Copy> = {
+  de: { title: "Aurelia auf Türkisch kennenlernen", intro: "Zwei Einblicke in Aurelia Grundbesitz – auf Türkisch, kompakt oder ausführlich.", play: "Video abspielen", note: "Hinweis: Die Unternehmensvideos wurden mit Unterstützung künstlicher Intelligenz erstellt.", c: [
+    ["Aurelia in 1 Minute", "Unser Unternehmen, unsere Erfahrung und unsere Arbeitsweise kompakt auf Türkisch vorgestellt.", "ca. 1 Minute"],
+    ["Aurelia ausführlich kennenlernen", "Ein ausführlicher Einblick in Aurelia Grundbesitz, unsere Erfahrung und unsere Arbeitsweise – auf Türkisch.", "ca. 6 Minuten"]] },
+  tr: { title: SETS.tr.title, intro: SETS.tr.intro, play: SETS.tr.play, note: SETS.tr.note, c: SETS.tr.clips.map((x) => [x.title, x.text, x.duration] as [string, string, string]) },
+  en: { title: "Discover Aurelia in Turkish", intro: "Two ways to discover Aurelia Grundbesitz in Turkish – concise or in detail.", play: "Play video", note: "Note: The corporate videos were created with the support of artificial intelligence.", c: [
+    ["Aurelia in 1 Minute", "A concise introduction to our company, our experience and how we work – in Turkish.", "approx. 1 minute"],
+    ["Discover Aurelia in Detail", "A detailed introduction to Aurelia Grundbesitz, our experience and how we work – in Turkish.", "approx. 6 minutes"]] },
+  nl: { title: "Maak kennis met Aurelia in het Turks", intro: "Twee manieren om Aurelia Grundbesitz in het Turks te leren kennen – kort of uitgebreid.", play: "Video afspelen", note: "Opmerking: De bedrijfsvideo's zijn gemaakt met ondersteuning van kunstmatige intelligentie.", c: [
+    ["Aurelia in 1 minuut", "Een korte introductie van ons bedrijf, onze ervaring en onze werkwijze – in het Turks.", "ca. 1 minuut"],
+    ["Uitgebreid kennismaken met Aurelia", "Een uitgebreid inzicht in Aurelia Grundbesitz, onze ervaring en onze werkwijze – in het Turks.", "ca. 6 minuten"]] },
+  it: { title: "Scopri Aurelia in turco", intro: "Due modi per conoscere Aurelia Grundbesitz in turco – in breve o in modo approfondito.", play: "Riproduci video", note: "Nota: I video aziendali sono stati realizzati con il supporto dell'intelligenza artificiale.", c: [
+    ["Aurelia in 1 minuto", "Una breve presentazione della nostra azienda, della nostra esperienza e del nostro modo di lavorare – in turco.", "circa 1 minuto"],
+    ["Scopri Aurelia nel dettaglio", "Una presentazione approfondita di Aurelia Grundbesitz, della nostra esperienza e del nostro modo di lavorare – in turco.", "circa 6 minuti"]] },
+  es: { title: "Conozca Aurelia en turco", intro: "Dos formas de conocer Aurelia Grundbesitz en turco – de manera breve o detallada.", play: "Reproducir vídeo", note: "Nota: Los vídeos corporativos se han creado con el apoyo de inteligencia artificial.", c: [
+    ["Aurelia en 1 minuto", "Una breve presentación de nuestra empresa, nuestra experiencia y nuestra forma de trabajar – en turco.", "aprox. 1 minuto"],
+    ["Conozca Aurelia en detalle", "Una presentación detallada de Aurelia Grundbesitz, nuestra experiencia y nuestra forma de trabajar – en turco.", "aprox. 6 minutos"]] },
+  fr: { title: "Découvrez Aurelia en turc", intro: "Deux façons de découvrir Aurelia Grundbesitz en turc – en version courte ou détaillée.", play: "Lire la vidéo", note: "Remarque : Les vidéos d'entreprise ont été réalisées avec le soutien de l'intelligence artificielle.", c: [
+    ["Aurelia en 1 minute", "Une présentation concise de notre entreprise, de notre expérience et de notre façon de travailler – en turc.", "env. 1 minute"],
+    ["Découvrez Aurelia en détail", "Une présentation détaillée d'Aurelia Grundbesitz, de notre expérience et de notre façon de travailler – en turc.", "env. 6 minutes"]] },
+};
+
+const DualVideoSection = ({ language, copyLanguage, className = "bg-gradient-warm" }: { language: "de" | "tr"; copyLanguage?: CopyLang; className?: string }) => {
+  const base = SETS[language];
+  const cp = language === "tr" && copyLanguage ? TR_VIDEO_COPY[copyLanguage] : null;
+  const s = cp
+    ? { ...base, title: cp.title, intro: cp.intro, play: cp.play, note: cp.note, clips: base.clips.map((clip, i) => ({ ...clip, title: cp.c[i][0], text: cp.c[i][1], duration: cp.c[i][2] })) }
+    : base;
   return (
     <section className={`section-premium ${className}`} aria-labelledby={`dual-video-title-${language}`} data-home-video={language}>
       <div className="container-premium">
