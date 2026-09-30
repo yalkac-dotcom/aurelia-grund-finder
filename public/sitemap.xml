@@ -37,6 +37,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.aureliaestates.de/kurzfristiger-immobilienverkauf</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.aureliaestates.de/kurzfristiger-immobilienverkauf" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.aureliaestates.de/kurzfristiger-immobilienverkauf?lang=en" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.aureliaestates.de/kurzfristiger-immobilienverkauf?lang=nl" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.aureliaestates.de/kurzfristiger-immobilienverkauf?lang=it" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.aureliaestates.de/kurzfristiger-immobilienverkauf?lang=es" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.aureliaestates.de/kurzfristiger-immobilienverkauf?lang=tr" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.aureliaestates.de/kurzfristiger-immobilienverkauf?lang=fr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.aureliaestates.de/kurzfristiger-immobilienverkauf" />
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.aureliaestates.de/immobilien-tuerkei</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.aureliaestates.de/immobilien-tuerkei" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.aureliaestates.de/immobilien-tuerkei?lang=en" />
