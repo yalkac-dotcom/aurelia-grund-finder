@@ -20,7 +20,7 @@ const ShortTermSale = () => {
         </section>
 
         <section className="container-premium pb-10 md:pb-12">
-          <div className="mx-auto grid max-w-5xl gap-5 md:grid-cols-3">
+          <div className="mx-auto grid max-w-5xl gap-5 lg:grid-cols-3">
             {c.points.map((p) => (
               <div key={p.title} className="border-l-2 border-accent bg-card px-6 py-6">
                 <h2 className="font-heading text-xl font-semibold text-primary">{p.title}</h2>
