@@ -26,6 +26,7 @@ const Portfolio = lazy(() => import("./pages/Portfolio"));
 const TurkeyProperties = lazy(() => import("./pages/TurkeyProperties"));
 const PropertyOffer = lazy(() => import("./pages/PropertyOffer"));
 const ShortTermSale = lazy(() => import("./pages/ShortTermSale"));
+const FinancingCalculator = lazy(() => import("./pages/FinancingCalculator"));
 
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Impressum = lazy(() => import("./pages/Impressum"));
@@ -71,6 +72,7 @@ const App = () => (
               <Route path="/immobilie-anbieten" element={<PropertyOffer />} />
               <Route path="/kurzfristiger-immobilienverkauf" element={<ShortTermSale />} />
               <Route path="/kurzfristiger-immobilienverkauf" element={<ShortTermSale />} />
+              <Route path="/finanzierungsrechner" element={<FinancingCalculator />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/kontakt" element={<Contact />} />
               <Route path="/impressum" element={<Impressum />} />
