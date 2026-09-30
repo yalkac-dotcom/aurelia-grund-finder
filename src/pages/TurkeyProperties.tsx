@@ -454,7 +454,6 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
-        {language === "tr" && <DualVideoSection language="tr" />}
 
 
         {page.faq && <section className="section-premium bg-gradient-warm">
@@ -531,6 +530,7 @@ const TurkeyProperties = () => {
           </div>
         </section>
 
+        <DualVideoSection language="tr" />
 
         <section className="section-premium bg-background">
           <div className="container-premium">
