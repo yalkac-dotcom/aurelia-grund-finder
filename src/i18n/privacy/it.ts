@@ -81,6 +81,7 @@ export const it: PrivacyCopy = {
         { ul: [
           "Necessario: memorizzazione della versione linguistica scelta nella memoria locale del browser.",
           "Necessario: Cloudflare può impostare il cookie «__cf_bm» (durata fino a 30 minuti) per riconoscere accessi automatizzati (bot) e proteggere il sito. Non serve per finalità di analisi o marketing. La base giuridica è il § 25, comma 2, n. 2 TDDDG in combinato disposto con l'art. 6, par. 1, lett. f GDPR.",
+          "Necessario: il fornitore di hosting può impostare il cookie «__dpl» (durata circa 7 giorni) per assegnare i visitatori, durante l'erogazione del sito, in modo coerente alla stessa versione di deployment/del sito. Non serve per finalità di analisi, marketing, tracciamento o personalizzazione.",
         ] },
       ] },
       { title: "11. Durata di conservazione", body: [

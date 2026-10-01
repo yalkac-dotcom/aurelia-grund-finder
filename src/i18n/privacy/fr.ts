@@ -81,6 +81,7 @@ export const fr: PrivacyCopy = {
         { ul: [
           "Nécessaire : enregistrement de la version linguistique choisie dans le stockage local de votre navigateur.",
           "Nécessaire : Cloudflare peut déposer le cookie « __cf_bm » (durée de conservation jusqu'à 30 minutes) afin de détecter les accès automatisés (bots) et de protéger le site. Il ne sert ni à l'analyse ni au marketing. La base légale est le § 25, al. 2, n° 2 TDDDG en liaison avec l'art. 6, par. 1, f) RGPD.",
+          "Nécessaire : le fournisseur d'hébergement peut déposer le cookie « __dpl » (durée de conservation d'environ 7 jours) afin d'attribuer de manière cohérente les visiteurs, pendant la mise à disposition du site, à la même version de déploiement/du site. Il ne sert ni à l'analyse, ni au marketing, ni au suivi, ni à la personnalisation.",
         ] },
       ] },
       { title: "11. Durée de conservation", body: [

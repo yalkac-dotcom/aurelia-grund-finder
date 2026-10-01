@@ -81,6 +81,7 @@ export const nl: PrivacyCopy = {
         { ul: [
           "Noodzakelijk: opslag van de door u gekozen taalversie in de lokale opslag van uw browser.",
           "Noodzakelijk: Cloudflare kan de cookie „__cf_bm” plaatsen (bewaartermijn tot 30 minuten) om geautomatiseerde toegang (bots) te herkennen en de website te beschermen. Deze dient niet voor analyse of marketing. Rechtsgrond is § 25 lid 2 nr. 2 TDDDG in samenhang met art. 6 lid 1 sub f AVG.",
+          "Noodzakelijk: de hostingprovider kan de cookie „__dpl” plaatsen (bewaartermijn circa 7 dagen) om bezoekers tijdens het serveren van de website consistent aan dezelfde deployment-/websiteversie toe te wijzen. Deze dient niet voor analyse, marketing, tracking of personalisatie.",
         ] },
       ] },
       { title: "11. Bewaartermijn", body: [

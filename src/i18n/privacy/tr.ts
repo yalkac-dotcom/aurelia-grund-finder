@@ -83,6 +83,7 @@ export const tr: PrivacyCopy = {
         { ul: [
           "Zorunlu: Seçtiğiniz dil sürümünün tarayıcınızın yerel depolamasında saklanması.",
           "Zorunlu: Cloudflare, otomatik erişimleri (botları) tespit etmek ve web sitesini korumak amacıyla „__cf_bm“ çerezini (saklama süresi en fazla 30 dakika) yerleştirebilir. Bu çerez analiz veya pazarlama amacıyla kullanılmaz. Hukuki dayanak, GDPR md. 6/1-f ile bağlantılı olarak TDDDG § 25/2 no. 2'dir.",
+          "Zorunlu: Barındırma sağlayıcısı, web sitesi sunulurken ziyaretçileri tutarlı biçimde aynı dağıtım/site sürümüne atamak amacıyla „__dpl“ çerezini (saklama süresi yaklaşık 7 gün) yerleştirebilir. Bu çerez analiz, pazarlama, takip veya kişiselleştirme amacıyla kullanılmaz.",
         ] },
       ] },
       { title: "11. Saklama süresi", body: [

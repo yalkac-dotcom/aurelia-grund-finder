@@ -83,6 +83,7 @@ export const de: PrivacyCopy = {
         { ul: [
           "Notwendig: Speicherung der von Ihnen gewählten Sprachversion im lokalen Speicher Ihres Browsers.",
           "Notwendig: Cloudflare kann das Cookie „__cf_bm“ setzen (Speicherdauer bis zu 30 Minuten), um automatisierte Zugriffe (Bots) zu erkennen und die Website zu schützen. Es dient nicht der Analyse oder dem Marketing. Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG in Verbindung mit Art. 6 Abs. 1 lit. f DSGVO.",
+          "Notwendig: Der Hosting-Anbieter kann das Cookie „__dpl“ setzen (Speicherdauer etwa 7 Tage), um Besucher während der Bereitstellung der Website konsistent derselben Deployment-/Website-Version zuzuordnen. Es dient nicht der Analyse, dem Marketing, dem Tracking oder der Personalisierung.",
         ] },
       ] },
       { title: "11. Speicherdauer", body: [
