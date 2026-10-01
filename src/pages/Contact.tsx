@@ -14,6 +14,7 @@ import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import FormPrivacyNotice from "@/components/FormPrivacyNotice";
 
 const inputClasses =
   "w-full border-0 border-b border-border bg-transparent px-0 py-3 text-base text-foreground rounded-none transition-colors focus:outline-none focus:ring-0 focus:border-accent placeholder:text-muted-foreground/55";
@@ -65,12 +66,6 @@ const Contact = () => {
       return;
     }
 
-    if (!formData.get("privacy_consent")) {
-      setError(t.contact.consentRequired);
-      const consentInput = form.elements.namedItem("privacy_consent");
-      if (consentInput instanceof HTMLInputElement) consentInput.focus();
-      return;
-    }
 
     const parsedContact = contactSchema.safeParse({
       name: formData.get("name"), email: formData.get("email"), phone,
