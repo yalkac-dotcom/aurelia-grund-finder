@@ -92,7 +92,6 @@ export interface Translations {
     imprint: string;
     privacy: string;
     imageCredits: string;
-    cookieSettings: string;
     disclaimer: string;
     brandLine: string;
     subline: string;
@@ -157,9 +156,6 @@ export interface Translations {
     byAppointment: string;
     closed: string;
     emailOutsideHours: string;
-    cookieAcceptAll: string;
-    cookieNecessaryOnly: string;
-    cookieSettingsBtn: string;
     ourLocation: string;
     address: string;
     country: string;
@@ -169,16 +165,9 @@ export interface Translations {
     scrollTopAria: string;
     heroMeta: string;
     initialAssessmentNote: string;
-    cookieText: string;
-    cookieAccept: string;
-    cookieReject: string;
-    cookieTitle: string;
     submitting: string;
     formError: string;
     skipToContent: string;
-    cookieSaveSelection: string;
-    cookieAnalyticsLabel: string;
-    cookieAnalyticsHint: string;
   };
   index: {
     bulletTitle: string;
@@ -584,10 +573,6 @@ export interface Translations {
     contactFormTitle: string;
     contactFormText: string;
     contactFormLegal: string;
-    consentTitle: string;
-    consentText: string;
-    consentItems: string[];
-    consentNote: string;
     retentionTitle: string;
     retentionText: string;
     rightsTitle: string;
