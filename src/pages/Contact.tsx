@@ -104,34 +104,21 @@ const Contact = () => {
       return;
     }
 
-    // 2) E-Mail-Versand (Benachrichtigung + Bestätigung)
+    // 2) Nur neutrale interne Benachrichtigung – keine personenbezogenen Daten, keine Bestätigungs-E-Mail
     const { data: emailData, error: emailError } = await supabase.functions.invoke(
       "send-contact-email",
-      {
-        body: isTurkeyLocation ? { mode: "turkey_minimal", submission_id: submissionId } : {
-          submission_id: submissionId,
-          name: payload.first_name,
-          email: payload.email,
-          phone: payload.phone ?? undefined,
-          property_type: payload.property_type,
-          subject,
-          message: payload.message,
-          language,
-          form_type: "general_contact",
-          privacy_consent: true,
-        },
-      }
+      { body: { submission_id: submissionId } }
     );
 
     setSubmitting(false);
 
     if (emailError || (emailData && emailData.success === false)) {
-      console.error("Contact form email error:", emailError || emailData);
+      console.error("Contact form notification error");
       setError(t.common.formError);
       return;
     }
 
-    setConfirmationWarning(!isTurkeyLocation && emailData?.confirmationSent === false);
+    setConfirmationWarning(false);
     setSubmitted(true);
   };
 
