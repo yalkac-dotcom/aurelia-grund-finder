@@ -44,10 +44,12 @@ export const de: PrivacyCopy = {
         "Der Provider der Seiten erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch übermittelt. Dies sind:",
         { ul: ["Browsertyp und Browserversion", "verwendetes Betriebssystem", "Referrer-URL", "Hostname des zugreifenden Rechners", "Uhrzeit der Serveranfrage", "IP-Adresse (anonymisiert)"] },
         "Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.",
+        "Für Hosting-, Netzwerk- und Sicherheitsfunktionen – insbesondere die Auslieferung der Website und den Schutz vor missbräuchlichen Zugriffen und Bots – wird über unseren Hosting-Dienstleister der Dienst Cloudflare (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA) eingesetzt. Dabei werden technisch erforderliche Verbindungsdaten, insbesondere die IP-Adresse, verarbeitet. Analyse- oder Marketingzwecke werden damit nicht verfolgt. Eine Verarbeitung in den USA kann nicht ausgeschlossen werden; Cloudflare ist nach dem EU-U.S. Data Privacy Framework zertifiziert. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und stabilen Bereitstellung der Website).",
       ] },
       { title: "5. Kontaktaufnahme und Kontaktformulare", body: [
         "Wenn Sie uns per Kontaktformular, E-Mail oder Telefon kontaktieren, werden Ihre Angaben einschließlich der von Ihnen angegebenen Kontaktdaten zur Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Dies betrifft insbesondere Kontaktanfragen, Rückruf- und Terminwünsche, Geschäftspartneranfragen und sonstige Anfragen.",
         "Sie haben auch die Möglichkeit, uns über WhatsApp zu kontaktieren. Die Nutzung von WhatsApp ist freiwillig und erfolgt auf eigene Initiative. Beim Einsatz von WhatsApp gelten die Datenschutzbestimmungen von WhatsApp (Meta). Dabei können Daten auch in Drittländer (z. B. USA) übermittelt werden. Wenn Sie uns über WhatsApp schreiben, verarbeiten wir Ihre Telefonnummer, Ihren Namen und die Nachrichteninhalte zur Bearbeitung Ihrer Anfrage.",
+        "WhatsApp ist auf unserer Website ausschließlich als einfacher externer Link (wa.me) eingebunden. Es werden keine WhatsApp- oder Meta-Skripte geladen, und vor Ihrem Klick werden keine Daten an WhatsApp oder Meta übertragen. Erst nach Ihrem aktiven Klick werden Sie zu WhatsApp weitergeleitet.",
         "Die Verarbeitung erfolgt, soweit Ihre Anfrage auf den Abschluss oder die Durchführung eines Vertrags gerichtet ist, auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO. In anderen Fällen erfolgt die Verarbeitung auf Grundlage unseres berechtigten Interesses an einer effizienten Kommunikation mit Interessenten und Geschäftspartnern gemäß Art. 6 Abs. 1 lit. f DSGVO.",
         "Alternativ erreichen Sie uns jederzeit per Telefon, E-Mail oder Kontaktformular.",
       ] },
@@ -80,6 +82,7 @@ export const de: PrivacyCopy = {
         "Wir setzen ausschließlich technisch notwendige Speicherungen ein. Analyse-, Marketing- oder Tracking-Dienste werden auf dieser Website nicht eingesetzt.",
         { ul: [
           "Notwendig: Speicherung der von Ihnen gewählten Sprachversion im lokalen Speicher Ihres Browsers.",
+          "Notwendig: Cloudflare kann das Cookie „__cf_bm“ setzen (Speicherdauer bis zu 30 Minuten), um automatisierte Zugriffe (Bots) zu erkennen und die Website zu schützen. Es dient nicht der Analyse oder dem Marketing. Rechtsgrundlage ist § 25 Abs. 2 Nr. 2 TDDDG in Verbindung mit Art. 6 Abs. 1 lit. f DSGVO.",
         ] },
       ] },
       { title: "11. Speicherdauer", body: [

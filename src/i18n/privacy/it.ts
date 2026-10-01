@@ -42,11 +42,13 @@ export const it: PrivacyCopy = {
         "Il provider del sito raccoglie e memorizza automaticamente informazioni nei cosiddetti file di log del server, che il suo browser trasmette automaticamente. Si tratta di:",
         { ul: ["Tipo e versione del browser", "Sistema operativo utilizzato", "URL di provenienza (referrer)", "Nome host del computer di accesso", "Ora della richiesta al server", "Indirizzo IP (anonimizzato)"] },
         "Questi dati non vengono combinati con altre fonti di dati. La base giuridica è l'art. 6, par. 1, lett. f) GDPR.",
+        "Per le funzioni di hosting, rete e sicurezza – in particolare la distribuzione del sito e la protezione da accessi abusivi e bot – viene utilizzato, tramite il nostro fornitore di hosting, il servizio Cloudflare (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA). A tal fine vengono trattati i dati di connessione tecnicamente necessari, in particolare l'indirizzo IP. Non vengono perseguite finalità di analisi o di marketing. Non si può escludere un trattamento negli USA; Cloudflare è certificata ai sensi dell'EU-U.S. Data Privacy Framework. La base giuridica è l'art. 6, par. 1, lett. f GDPR (legittimo interesse a una messa a disposizione sicura e stabile del sito).",
       ] },
       { title: "5. Contatti e moduli di contatto", body: [
         "Se ci contatta tramite modulo di contatto, e-mail o telefono, i suoi dati, compresi i dati di contatto forniti, vengono memorizzati presso di noi per la gestione della richiesta e per eventuali domande successive. Ciò riguarda in particolare richieste di contatto, richieste di richiamata e di appuntamento, richieste di partner commerciali e altre richieste.",
         "La base giuridica è l'art. 6, par. 1, lett. b) GDPR (misure precontrattuali) o l'art. 6, par. 1, lett. a) GDPR (consenso) nonché l'art. 6, par. 1, lett. f) GDPR (legittimo interesse a rispondere alle richieste).",
         "È inoltre possibile contattarci tramite WhatsApp. L'utilizzo di WhatsApp è facoltativo e avviene di propria iniziativa. Se utilizza il link WhatsApp sul nostro sito web, viene reindirizzato a WhatsApp e si applicano le informative sulla privacy di WhatsApp (Meta Platforms Ireland Limited). In questo contesto i dati possono essere trasferiti anche in paesi terzi (ad es. USA).",
+        "WhatsApp è integrato nel nostro sito esclusivamente come semplice link esterno (wa.me). Non vengono caricati script di WhatsApp o Meta e prima del suo clic non vengono trasmessi dati a WhatsApp o Meta. Solo dopo il suo clic attivo viene reindirizzato a WhatsApp.",
         "Se ci contatta tramite WhatsApp, trattiamo il suo numero di telefono, il suo nome e il contenuto dei messaggi per la gestione della sua richiesta. Il trattamento avviene ai sensi dell'art. 6, par. 1, lett. b) GDPR, nella misura in cui la richiesta è diretta alla conclusione o all'esecuzione di un contratto. Negli altri casi il trattamento avviene sulla base del nostro legittimo interesse a una comunicazione efficiente con interessati e partner commerciali ai sensi dell'art. 6, par. 1, lett. f) GDPR. In alternativa può raggiungerci in ogni momento per telefono, e-mail o tramite il modulo di contatto.",
       ] },
       { title: "6. Richieste immobiliari e interesse all'acquisto", body: [
@@ -78,6 +80,7 @@ export const it: PrivacyCopy = {
         "Utilizziamo esclusivamente memorizzazioni tecnicamente necessarie. Su questo sito non vengono utilizzati servizi di analisi, marketing o tracciamento.",
         { ul: [
           "Necessario: memorizzazione della versione linguistica scelta nella memoria locale del browser.",
+          "Necessario: Cloudflare può impostare il cookie «__cf_bm» (durata fino a 30 minuti) per riconoscere accessi automatizzati (bot) e proteggere il sito. Non serve per finalità di analisi o marketing. La base giuridica è il § 25, comma 2, n. 2 TDDDG in combinato disposto con l'art. 6, par. 1, lett. f GDPR.",
         ] },
       ] },
       { title: "11. Durata di conservazione", body: [

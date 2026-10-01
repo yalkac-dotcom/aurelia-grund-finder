@@ -44,11 +44,13 @@ export const tr: PrivacyCopy = {
         "Site sağlayıcısı, tarayıcınızın otomatik olarak ilettiği bilgileri sunucu kayıt dosyalarında (log) otomatik olarak toplar ve saklar. Bunlar:",
         { ul: ["Tarayıcı türü ve sürümü", "Kullanılan işletim sistemi", "Yönlendiren URL (referrer)", "Erişen bilgisayarın ana bilgisayar adı", "Sunucu talebinin saati", "IP adresi (anonimleştirilmiş)"] },
         "Bu veriler başka veri kaynaklarıyla birleştirilmez. Hukuki dayanak GDPR md. 6/1 (f)’dir.",
+        "Barındırma, ağ ve güvenlik işlevleri için – özellikle web sitesinin sunulması ve kötüye kullanım amaçlı erişimlere ve botlara karşı korunması için – barındırma hizmet sağlayıcımız aracılığıyla Cloudflare hizmeti (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, ABD) kullanılmaktadır. Bu kapsamda teknik olarak gerekli bağlantı verileri, özellikle IP adresi işlenir. Analiz veya pazarlama amacı güdülmez. ABD'de işleme ihtimali göz ardı edilemez; Cloudflare, EU-U.S. Data Privacy Framework kapsamında sertifikalıdır. Hukuki dayanak GDPR md. 6/1-f'dir (web sitesinin güvenli ve istikrarlı şekilde sunulmasına ilişkin meşru menfaat).",
       ] },
       { title: "5. İletişim ve iletişim formları", body: [
         "Bizimle iletişim formu, e-posta veya telefon yoluyla iletişime geçtiğinizde, verdiğiniz iletişim bilgileri dahil bilgileriniz talebinizin işlenmesi ve olası ek sorular için tarafımızca saklanır. Bu özellikle iletişim talepleri, geri arama ve randevu talepleri, iş ortaklığı talepleri ve diğer talepler için geçerlidir.",
         "Hukuki dayanak GDPR md. 6/1 (b) (sözleşme öncesi tedbirler) veya GDPR md. 6/1 (a) (rıza) ile GDPR md. 6/1 (f)’dir (taleplerin yanıtlanmasına ilişkin meşru menfaat).",
         "WhatsApp üzerinden bizimle iletişim kurmanız da mümkündür. WhatsApp kullanımı isteğe bağlıdır ve kendi inisiyatifinizle gerçekleşir. Sitemizdeki WhatsApp bağlantısını kullandığınızda WhatsApp’a yönlendirilirsiniz ve WhatsApp (Meta Platforms Ireland Limited) gizlilik kuralları uygulanır. Bu kapsamda veriler üçüncü ülkelere (ör. ABD) de aktarılabilir.",
+        "WhatsApp, web sitemizde yalnızca basit bir harici bağlantı (wa.me) olarak yer almaktadır. WhatsApp veya Meta komut dosyaları yüklenmez ve tıklamanızdan önce WhatsApp'a veya Meta'ya hiçbir veri aktarılmaz. Ancak aktif olarak tıkladıktan sonra WhatsApp'a yönlendirilirsiniz.",
         "Bizimle WhatsApp üzerinden iletişime geçtiğinizde telefon numaranızı, adınızı ve mesaj içeriklerinizi talebinizin değerlendirilmesi amacıyla işleriz. İşleme, talebinizin bir sözleşmenin kurulmasına veya ifasına yönelik olduğu ölçüde GDPR md. 6/1 (b)’ye dayanır. Diğer durumlarda işleme, potansiyel müşteriler ve iş ortaklarıyla verimli iletişim kurma konusundaki meşru menfaatimize dayanarak GDPR md. 6/1 (f) uyarınca yapılır. Dilerseniz bize her zaman telefon, e-posta veya iletişim formu üzerinden de ulaşabilirsiniz.",
       ] },
       { title: "6. Gayrimenkul talepleri ve satın alma ilgisi", body: [
@@ -80,6 +82,7 @@ export const tr: PrivacyCopy = {
         "Yalnızca teknik olarak zorunlu depolamalar kullanıyoruz. Bu web sitesinde analiz, pazarlama veya takip hizmetleri kullanılmamaktadır.",
         { ul: [
           "Zorunlu: Seçtiğiniz dil sürümünün tarayıcınızın yerel depolamasında saklanması.",
+          "Zorunlu: Cloudflare, otomatik erişimleri (botları) tespit etmek ve web sitesini korumak amacıyla „__cf_bm“ çerezini (saklama süresi en fazla 30 dakika) yerleştirebilir. Bu çerez analiz veya pazarlama amacıyla kullanılmaz. Hukuki dayanak, GDPR md. 6/1-f ile bağlantılı olarak TDDDG § 25/2 no. 2'dir.",
         ] },
       ] },
       { title: "11. Saklama süresi", body: [

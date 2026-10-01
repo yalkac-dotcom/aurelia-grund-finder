@@ -42,11 +42,13 @@ export const en: PrivacyCopy = {
         "The website provider automatically collects and stores information in so-called server log files, which your browser transmits automatically. These are:",
         { ul: ["Browser type and version", "Operating system used", "Referrer URL", "Host name of the accessing computer", "Time of the server request", "IP address (anonymised)"] },
         "This data is not combined with other data sources. The legal basis is Art. 6(1)(f) GDPR.",
+        "For hosting, network and security functions – in particular delivering the website and protecting it against abusive access and bots – the Cloudflare service (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA) is used via our hosting provider. Technically necessary connection data, in particular the IP address, is processed for this purpose. It is not used for analytics or marketing purposes. Processing in the USA cannot be ruled out; Cloudflare is certified under the EU-U.S. Data Privacy Framework. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in the secure and stable provision of the website).",
       ] },
       { title: "5. Contacting us and contact forms", body: [
         "If you contact us via a contact form, email or phone, your details, including the contact details you provide, will be stored by us for the purpose of handling the enquiry and in case of follow-up questions. This applies in particular to contact enquiries, callback and appointment requests, business partner enquiries and other enquiries.",
         "The legal basis is Art. 6(1)(b) GDPR (pre-contractual measures) or Art. 6(1)(a) GDPR (consent) and Art. 6(1)(f) GDPR (legitimate interest in responding to enquiries).",
         "You also have the option of contacting us via WhatsApp. Using WhatsApp is voluntary and at your own initiative. If you use the WhatsApp link on our website, you will be redirected to WhatsApp and the privacy terms of WhatsApp (Meta Platforms Ireland Limited) apply. In this context, data may also be transferred to third countries (e.g. the USA).",
+        "WhatsApp is integrated on our website exclusively as a simple external link (wa.me). No WhatsApp or Meta scripts are loaded, and no data is transmitted to WhatsApp or Meta before you click. Only after your active click are you redirected to WhatsApp.",
         "If you contact us via WhatsApp, we process your phone number, your name and the message content in order to handle your enquiry. Where your enquiry is directed at the conclusion or performance of a contract, processing is based on Art. 6(1)(b) GDPR. In all other cases, processing is based on our legitimate interest in efficient communication with prospective clients and business partners pursuant to Art. 6(1)(f) GDPR. Alternatively, you can reach us at any time by phone, email or contact form.",
       ] },
       { title: "6. Property enquiries and purchase interest", body: [
@@ -78,6 +80,7 @@ export const en: PrivacyCopy = {
         "We only use technically necessary storage. No analytics, marketing or tracking services are used on this website.",
         { ul: [
           "Necessary: storage of your chosen language version in your browser's local storage.",
+          "Necessary: Cloudflare may set the cookie “__cf_bm” (storage period up to 30 minutes) to detect automated access (bots) and protect the website. It is not used for analytics or marketing. The legal basis is Section 25(2) no. 2 TDDDG in conjunction with Art. 6(1)(f) GDPR.",
         ] },
       ] },
       { title: "11. Storage period", body: [
