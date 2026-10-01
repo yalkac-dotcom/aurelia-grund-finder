@@ -42,11 +42,13 @@ export const nl: PrivacyCopy = {
         "De provider van de website verzamelt en bewaart automatisch informatie in zogenaamde serverlogbestanden, die uw browser automatisch doorgeeft. Dit zijn:",
         { ul: ["Browsertype en -versie", "Gebruikt besturingssysteem", "Referrer-URL", "Hostnaam van de computer", "Tijdstip van het serververzoek", "IP-adres (geanonimiseerd)"] },
         "Deze gegevens worden niet samengevoegd met andere gegevensbronnen. Rechtsgrond is art. 6 lid 1 sub f AVG.",
+        "Voor hosting-, netwerk- en beveiligingsfuncties – met name het leveren van de website en de bescherming tegen misbruik en bots – wordt via onze hostingdienstverlener de dienst Cloudflare (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, VS) gebruikt. Daarbij worden technisch noodzakelijke verbindingsgegevens, met name het IP-adres, verwerkt. Dit gebeurt niet voor analyse- of marketingdoeleinden. Verwerking in de VS kan niet worden uitgesloten; Cloudflare is gecertificeerd onder het EU-U.S. Data Privacy Framework. Rechtsgrond is art. 6 lid 1 sub f AVG (gerechtvaardigd belang bij een veilige en stabiele beschikbaarstelling van de website).",
       ] },
       { title: "5. Contact en contactformulieren", body: [
         "Wanneer u via een contactformulier, e-mail of telefoon contact met ons opneemt, worden uw gegevens, inclusief de door u opgegeven contactgegevens, bij ons opgeslagen voor de behandeling van de aanvraag en voor eventuele vervolgvragen. Dit betreft met name contactaanvragen, terugbel- en afspraakverzoeken, aanvragen van zakenpartners en overige aanvragen.",
         "Rechtsgrond is art. 6 lid 1 sub b AVG (precontractuele maatregelen) of art. 6 lid 1 sub a AVG (toestemming) en art. 6 lid 1 sub f AVG (gerechtvaardigd belang bij het beantwoorden van aanvragen).",
         "U kunt ons ook via WhatsApp contacteren. Het gebruik van WhatsApp is vrijwillig en gebeurt op eigen initiatief. Als u de WhatsApp-link op onze website gebruikt, wordt u doorgestuurd naar WhatsApp en zijn de privacyvoorwaarden van WhatsApp (Meta Platforms Ireland Limited) van toepassing. Daarbij kunnen gegevens ook naar derde landen (bijv. de VS) worden doorgegeven.",
+        "WhatsApp is op onze website uitsluitend opgenomen als eenvoudige externe link (wa.me). Er worden geen WhatsApp- of Meta-scripts geladen en vóór uw klik worden geen gegevens aan WhatsApp of Meta doorgegeven. Pas na uw actieve klik wordt u naar WhatsApp doorgestuurd.",
         "Als u ons via WhatsApp bericht stuurt, verwerken wij uw telefoonnummer, uw naam en de berichtinhoud voor de behandeling van uw aanvraag. De verwerking vindt plaats op grond van art. 6 lid 1 sub b AVG, voor zover uw aanvraag gericht is op het sluiten of uitvoeren van een overeenkomst. In andere gevallen vindt de verwerking plaats op grond van ons gerechtvaardigd belang bij efficiënte communicatie met geïnteresseerden en zakenpartners, overeenkomstig art. 6 lid 1 sub f AVG. U kunt ons daarnaast altijd telefonisch, per e-mail of via het contactformulier bereiken.",
       ] },
       { title: "6. Vastgoedaanvragen en koopinteresse", body: [
@@ -78,6 +80,7 @@ export const nl: PrivacyCopy = {
         "Wij gebruiken uitsluitend technisch noodzakelijke opslag. Analyse-, marketing- of trackingdiensten worden op deze website niet gebruikt.",
         { ul: [
           "Noodzakelijk: opslag van de door u gekozen taalversie in de lokale opslag van uw browser.",
+          "Noodzakelijk: Cloudflare kan de cookie „__cf_bm” plaatsen (bewaartermijn tot 30 minuten) om geautomatiseerde toegang (bots) te herkennen en de website te beschermen. Deze dient niet voor analyse of marketing. Rechtsgrond is § 25 lid 2 nr. 2 TDDDG in samenhang met art. 6 lid 1 sub f AVG.",
         ] },
       ] },
       { title: "11. Bewaartermijn", body: [

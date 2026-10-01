@@ -42,11 +42,13 @@ export const es: PrivacyCopy = {
         "El proveedor del sitio recopila y almacena automáticamente información en los llamados archivos de registro del servidor, que su navegador transmite automáticamente. Se trata de:",
         { ul: ["Tipo y versión del navegador", "Sistema operativo utilizado", "URL de referencia (referrer)", "Nombre de host del ordenador que accede", "Hora de la solicitud al servidor", "Dirección IP (anonimizada)"] },
         "Estos datos no se combinan con otras fuentes de datos. La base jurídica es el art. 6.1.f) RGPD.",
+        "Para las funciones de alojamiento, red y seguridad – en particular la entrega del sitio web y la protección frente a accesos abusivos y bots – se utiliza, a través de nuestro proveedor de alojamiento, el servicio Cloudflare (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, EE. UU.). Para ello se tratan los datos de conexión técnicamente necesarios, en particular la dirección IP. No se persiguen fines de análisis ni de marketing. No puede excluirse un tratamiento en EE. UU.; Cloudflare está certificada conforme al EU-U.S. Data Privacy Framework. La base jurídica es el art. 6.1.f RGPD (interés legítimo en una puesta a disposición segura y estable del sitio web).",
       ] },
       { title: "5. Contacto y formularios de contacto", body: [
         "Si se pone en contacto con nosotros mediante formulario, correo electrónico o teléfono, sus datos, incluidos los datos de contacto que nos facilite, se almacenarán para tramitar la consulta y para posibles preguntas posteriores. Esto se aplica en particular a consultas de contacto, solicitudes de devolución de llamada y de cita, consultas de socios comerciales y otras consultas.",
         "La base jurídica es el art. 6.1.b) RGPD (medidas precontractuales) o el art. 6.1.a) RGPD (consentimiento), así como el art. 6.1.f) RGPD (interés legítimo en responder a las consultas).",
         "También tiene la posibilidad de contactarnos a través de WhatsApp. El uso de WhatsApp es voluntario y se realiza por iniciativa propia. Si utiliza el enlace de WhatsApp en nuestro sitio web, será redirigido a WhatsApp y se aplicarán las condiciones de privacidad de WhatsApp (Meta Platforms Ireland Limited). En este contexto, los datos también pueden transferirse a terceros países (p. ej., EE. UU.).",
+        "WhatsApp está integrado en nuestro sitio web exclusivamente como un simple enlace externo (wa.me). No se cargan scripts de WhatsApp ni de Meta y, antes de su clic, no se transmite ningún dato a WhatsApp ni a Meta. Solo tras su clic activo se le redirige a WhatsApp.",
         "Si nos escribe por WhatsApp, tratamos su número de teléfono, su nombre y el contenido de los mensajes para tramitar su consulta. El tratamiento se realiza conforme al art. 6.1.b) RGPD en la medida en que su consulta esté dirigida a la celebración o la ejecución de un contrato. En los demás casos, el tratamiento se realiza sobre la base de nuestro interés legítimo en una comunicación eficiente con interesados y socios comerciales, conforme al art. 6.1.f) RGPD. Como alternativa, puede contactarnos en cualquier momento por teléfono, correo electrónico o formulario de contacto.",
       ] },
       { title: "6. Consultas inmobiliarias e interés de compra", body: [
@@ -78,6 +80,7 @@ export const es: PrivacyCopy = {
         "Solo utilizamos almacenamientos técnicamente necesarios. En este sitio no se utilizan servicios de análisis, marketing ni seguimiento.",
         { ul: [
           "Necesario: almacenamiento de la versión de idioma elegida en el almacenamiento local de su navegador.",
+          "Necesario: Cloudflare puede instalar la cookie «__cf_bm» (duración de hasta 30 minutos) para detectar accesos automatizados (bots) y proteger el sitio web. No se utiliza con fines de análisis ni de marketing. La base jurídica es el § 25, apdo. 2, n.º 2 TDDDG en relación con el art. 6.1.f RGPD.",
         ] },
       ] },
       { title: "11. Plazo de conservación", body: [

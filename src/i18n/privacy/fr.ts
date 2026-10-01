@@ -42,11 +42,13 @@ export const fr: PrivacyCopy = {
         "Le fournisseur du site collecte et enregistre automatiquement des informations dans des fichiers journaux du serveur, que votre navigateur transmet automatiquement. Il s'agit de :",
         { ul: ["Type et version du navigateur", "Système d'exploitation utilisé", "URL de provenance (referrer)", "Nom d'hôte de l'ordinateur accédant", "Heure de la requête au serveur", "Adresse IP (anonymisée)"] },
         "Ces données ne sont pas combinées avec d'autres sources de données. La base juridique est l'art. 6, par. 1, point f) RGPD.",
+        "Pour les fonctions d'hébergement, de réseau et de sécurité – notamment la diffusion du site et la protection contre les accès abusifs et les bots – le service Cloudflare (Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, États-Unis) est utilisé par l'intermédiaire de notre hébergeur. Les données de connexion techniquement nécessaires, notamment l'adresse IP, sont traitées à cette fin. Aucune finalité d'analyse ou de marketing n'est poursuivie. Un traitement aux États-Unis ne peut être exclu ; Cloudflare est certifiée au titre de l'EU-U.S. Data Privacy Framework. La base légale est l'art. 6, par. 1, f) RGPD (intérêt légitime à une mise à disposition sûre et stable du site).",
       ] },
       { title: "5. Prise de contact et formulaires de contact", body: [
         "Si vous nous contactez par formulaire, e-mail ou téléphone, vos informations, y compris les coordonnées que vous indiquez, sont enregistrées chez nous aux fins du traitement de la demande et en cas de questions ultérieures. Cela concerne notamment les demandes de contact, les demandes de rappel et de rendez-vous, les demandes de partenaires commerciaux et les autres demandes.",
         "La base juridique est l'art. 6, par. 1, point b) RGPD (mesures précontractuelles) ou l'art. 6, par. 1, point a) RGPD (consentement) ainsi que l'art. 6, par. 1, point f) RGPD (intérêt légitime à répondre aux demandes).",
         "Vous avez également la possibilité de nous contacter via WhatsApp. L'utilisation de WhatsApp est facultative et relève de votre propre initiative. Si vous utilisez le lien WhatsApp sur notre site web, vous êtes redirigé vers WhatsApp et les règles de confidentialité de WhatsApp (Meta Platforms Ireland Limited) s'appliquent. Dans ce contexte, des données peuvent également être transférées vers des pays tiers (p. ex. les États-Unis).",
+        "WhatsApp est intégré sur notre site exclusivement sous la forme d'un simple lien externe (wa.me). Aucun script WhatsApp ou Meta n'est chargé et aucune donnée n'est transmise à WhatsApp ou Meta avant votre clic. Ce n'est qu'après votre clic actif que vous êtes redirigé vers WhatsApp.",
         "Si vous nous écrivez via WhatsApp, nous traitons votre numéro de téléphone, votre nom et le contenu des messages pour le traitement de votre demande. Le traitement est fondé sur l'art. 6, par. 1, point b) RGPD dans la mesure où votre demande vise la conclusion ou l'exécution d'un contrat. Dans les autres cas, le traitement est fondé sur notre intérêt légitime à une communication efficace avec les personnes intéressées et les partenaires commerciaux, conformément à l'art. 6, par. 1, point f) RGPD. Vous pouvez également nous joindre à tout moment par téléphone, e-mail ou via le formulaire de contact.",
       ] },
       { title: "6. Demandes immobilières et intérêt d'achat", body: [
@@ -78,6 +80,7 @@ export const fr: PrivacyCopy = {
         "Nous utilisons exclusivement des stockages techniquement nécessaires. Aucun service d'analyse, de marketing ou de suivi n'est utilisé sur ce site.",
         { ul: [
           "Nécessaire : enregistrement de la version linguistique choisie dans le stockage local de votre navigateur.",
+          "Nécessaire : Cloudflare peut déposer le cookie « __cf_bm » (durée de conservation jusqu'à 30 minutes) afin de détecter les accès automatisés (bots) et de protéger le site. Il ne sert ni à l'analyse ni au marketing. La base légale est le § 25, al. 2, n° 2 TDDDG en liaison avec l'art. 6, par. 1, f) RGPD.",
         ] },
       ] },
       { title: "11. Durée de conservation", body: [
