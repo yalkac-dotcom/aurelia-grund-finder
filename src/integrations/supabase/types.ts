@@ -17,41 +17,56 @@ export type Database = {
       contact_submissions: {
         Row: {
           callback_requested: boolean | null
+          closed_at: string | null
+          country: string | null
           created_at: string
           email: string
           first_name: string
+          form_type: string | null
           id: string
+          last_contact_at: string | null
           last_name: string | null
           message: string
           phone: string | null
           property_type: string | null
           salutation: string | null
+          status: Database["public"]["Enums"]["submission_status"]
           subject: string | null
         }
         Insert: {
           callback_requested?: boolean | null
+          closed_at?: string | null
+          country?: string | null
           created_at?: string
           email: string
           first_name: string
+          form_type?: string | null
           id?: string
+          last_contact_at?: string | null
           last_name?: string | null
           message: string
           phone?: string | null
           property_type?: string | null
           salutation?: string | null
+          status?: Database["public"]["Enums"]["submission_status"]
           subject?: string | null
         }
         Update: {
           callback_requested?: boolean | null
+          closed_at?: string | null
+          country?: string | null
           created_at?: string
           email?: string
           first_name?: string
+          form_type?: string | null
           id?: string
+          last_contact_at?: string | null
           last_name?: string | null
           message?: string
           phone?: string | null
           property_type?: string | null
           salutation?: string | null
+          status?: Database["public"]["Enums"]["submission_status"]
           subject?: string | null
         }
         Relationships: []
@@ -89,15 +104,82 @@ export type Database = {
         }
         Relationships: []
       }
+      submission_files: {
+        Row: {
+          created_at: string
+          file_name: string
+          id: string
+          object_path: string
+          submission_id: string
+        }
+        Insert: {
+          created_at?: string
+          file_name: string
+          id?: string
+          object_path: string
+          submission_id: string
+        }
+        Update: {
+          created_at?: string
+          file_name?: string
+          id?: string
+          object_path?: string
+          submission_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "submission_files_submission_id_fkey"
+            columns: ["submission_id"]
+            isOneToOne: false
+            referencedRelation: "contact_submissions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      user_roles: {
+        Row: {
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
+      submissions_due_for_deletion: {
+        Args: never
+        Returns: {
+          closed_at: string
+          created_at: string
+          due_since: string
+          id: string
+          last_contact_at: string
+        }[]
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin"
+      submission_status: "offen" | "abgeschlossen" | "aufbewahren"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -224,6 +306,9 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin"],
+      submission_status: ["offen", "abgeschlossen", "aufbewahren"],
+    },
   },
 } as const
