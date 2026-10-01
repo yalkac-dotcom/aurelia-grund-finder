@@ -36,7 +36,7 @@ const countryOf = (r: Row) => {
   if (r.country) return r.country;
   const pt = (r.property_type ?? "").match(/^Immobilie in (?:der )?(.+)$/i);
   if (pt) return pt[1];
-  const loc = r.message.match(/befindet sich in:\s*([^\n]+)/i);
+  const loc = r.message.match(/befindet sich in:[ \t]*([^\n]+)/i);
   return loc ? loc[1].trim() : "–";
 };
 const fmt = (d: string | null) => d ? new Intl.DateTimeFormat("de-DE", { dateStyle: "medium", timeStyle: d.length > 10 ? "short" : undefined, timeZone: "Europe/Berlin" }).format(new Date(d)) : "–";
