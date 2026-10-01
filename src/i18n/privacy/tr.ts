@@ -29,7 +29,7 @@ export const tr: PrivacyCopy = {
           "Özel satış durumlarına ilişkin bilgiler", "İstenen satış fiyatı", "Satın alma ilgileri",
           "Tercih edilen pazarlar, bölgeler ve gayrimenkul türleri", "Yüklenen fotoğraflar",
           "Yüklenen PDF, JPG, JPEG ve PNG belgeleri",
-          "Teknik kullanım ve erişim verileri (sunucu kayıt dosyaları ile – yalnızca onay halinde – Google Analytics 4 ve Microsoft Clarity bölümlerine bakınız)",
+          "Teknik kullanım ve erişim verileri (sunucu kayıt dosyaları bölümüne bakınız)",
         ] },
       ] },
       { title: "3. İşlemenin hukuki dayanakları", body: [
@@ -76,55 +76,35 @@ export const tr: PrivacyCopy = {
           "Böyle bir aktarım yalnızca ilgili işlem için gerekli olduğu ölçüde ve geçerli veri koruma şartları sağlandığında gerçekleşir. Uluslararası aktarımlarda [GDPR (md. 44 vd.)](EURLEX) ve – uygulanabilir olduğu ölçüde – [KVKK md. 9](KVKKYD) gereklilikleri dikkate alınır.",
         ] },
       ] },
-      { title: "10. Çerezler, yerel depolama ve onay yönetimi", body: [
-        "Sitemizi ilk ziyaretinizde, onay bildirimi aracılığıyla analiz hizmetlerinin kullanılıp kullanılamayacağına karar verirsiniz. Teknik olarak zorunlu depolamalar ile onaya tabi analiz işlevlerini birbirinden ayırırız.",
+      { title: "10. Çerezler ve yerel depolama", body: [
+        "Yalnızca teknik olarak zorunlu depolamalar kullanıyoruz. Bu web sitesinde analiz, pazarlama veya takip hizmetleri kullanılmamaktadır.",
         { ul: [
-          "Zorunlu: Onay kararınızın tarayıcınızın yerel depolamasında saklanması.",
           "Zorunlu: Seçtiğiniz dil sürümünün tarayıcınızın yerel depolamasında saklanması.",
-          "Onaya tabi: Google Analytics 4 ve Microsoft Clarity yalnızca açık onayınızdan sonra yüklenir ve etkinleştirilir.",
         ] },
-        "Reddetmenin sitenin temel kullanımı açısından hiçbir dezavantajı yoktur. Seçiminizi sitenin alt bölümündeki “Çerez Ayarları” üzerinden istediğiniz zaman değiştirebilir veya geri alabilirsiniz.",
       ] },
-      { title: "11. Google Analytics 4", body: [
-        "Google Analytics 4’ü sitemizin kullanımının istatistiksel analizi ve erişim ölçümü için kullanıyoruz; buna telefon ve e-posta bağlantılarına tıklamalar, önemli form sayfalarının görüntülenmesi, başarıyla gönderilen formlar ve kurumsal videoların başlatılması gibi anonim olaylar da dahildir. Ad, e-posta adresi, telefon numarası veya mesaj gibi form içerikleri Google’a aktarılmaz. İşleme yalnızca açık onayınızdan sonra gerçekleşir. Reklam veya yeniden pazarlama işlevleri kullanılmaz.",
-        "İşlenebilecek veriler:",
-        { ul: ["IP adresi (kısaltılmış)", "Cihaz ve tarayıcı bilgileri", "Ziyaret edilen sayfalar ve sayfa yolu", "Sayfa başlığı", "Yönlendiren kaynak (referrer)", "Çerez veya çevrim içi tanımlayıcı"] },
-        "Bu sitede IP anonimleştirme etkindir; IP adresi bu nedenle kısaltılmış olarak işlenir.",
-        "Hukuki dayanak GDPR md. 6/1 (a)’dır (rıza). Onay, “Çerez Ayarları” üzerinden istediğiniz zaman geleceğe etkili olarak geri alınabilir.",
-        "Sağlayıcı: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, İrlanda.",
-        "Verilerin Avrupa Ekonomik Alanı dışında, özellikle ABD’de işlenmesi bu kapsamda göz ardı edilemez. Ayrıntılar sağlayıcının gizlilik bilgilerinde yer almaktadır:",
-        { ul: ["[Google Gizlilik Politikası](GPRIV)", "[Google Analytics – veri koruma](GA1)", "[Google Analytics – onay (consent)](GA2)"] },
-      ] },
-      { title: "12. Microsoft Clarity", body: [
-        "Microsoft Clarity’yi sitemizin kullanımını analiz etmek, özellikle oturum analizi ve ısı haritaları oluşturmak için kullanıyoruz. İşleme yalnızca açık onayınızdan sonra gerçekleşir.",
-        { ul: ["IP adresi", "Cihaz ve tarayıcı bilgileri", "Sayfa görüntülemeleri", "Fare, kaydırma ve tıklama davranışı", "Çerez veya çevrim içi tanımlayıcılar"] },
-        "Hukuki dayanak GDPR md. 6/1 (a)’dır (rıza). Onay, “Çerez Ayarları” üzerinden istediğiniz zaman geleceğe etkili olarak geri alınabilir; geri alma Microsoft Clarity’ye derhal iletilir.",
-        "Sağlayıcı: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, İrlanda.",
-        "Verilerin Avrupa Ekonomik Alanı dışında, özellikle ABD’de işlenmesi bu kapsamda göz ardı edilemez. [Microsoft Gizlilik Bildirimi](MS)",
-      ] },
-      { title: "13. Saklama süresi", body: [
+      { title: "11. Saklama süresi", body: [
         "Kişisel veriler, saklama amacı ortadan kalktığında silinir. Taleplerde bu, ilgili konu kesin olarak sonuçlandığında ve yasal saklama yükümlülükleri buna engel olmadığında söz konusudur.",
       ] },
-      { title: "14. Veri güvenliği", body: [
+      { title: "12. Veri güvenliği", body: [
         "Bu site üzerinden veri aktarımı şifreli olarak (HTTPS) gerçekleşir. Verilerinizi kayba, kötüye kullanıma ve yetkisiz erişime karşı korumak için uygun teknik ve idari tedbirleri alırız. Ancak internet üzerinden tamamen güvenli bir veri aktarımı garanti edilemez.",
       ] },
-      { title: "15. İlgili kişilerin hakları", body: [
+      { title: "13. İlgili kişilerin hakları", body: [
         "Sizinle ilgili kişisel veriler bakımından aşağıdaki haklara sahipsiniz:",
         { ul: [
           "[GDPR md. 15 – bilgi edinme](EURLEX)", "[GDPR md. 16 – düzeltme](EURLEX)", "[GDPR md. 17 – silme](EURLEX)",
           "[GDPR md. 18 – işlemenin kısıtlanması](EURLEX)", "[GDPR md. 20 – veri taşınabilirliği](EURLEX)", "[GDPR md. 21 – itiraz](EURLEX)",
         ] },
       ] },
-      { title: "16. Onayın geri alınması", body: [
-        "Verdiğiniz onayı istediğiniz zaman geleceğe etkili olarak geri alabilirsiniz (GDPR md. 7/3) – analiz hizmetleri için sitenin alt bölümündeki “Çerez Ayarları” üzerinden, diğer durumlarda {mail} adresine şekil şartı olmaksızın e-posta göndererek. Geri almaya kadar yapılan işlemenin hukuka uygunluğu etkilenmez.",
+      { title: "14. Onayın geri alınması", body: [
+        "Verdiğiniz onayı istediğiniz zaman geleceğe etkili olarak geri alabilirsiniz (GDPR md. 7/3): {mail} adresine şekil şartı olmaksızın e-posta göndererek. Geri almaya kadar yapılan işlemenin hukuka uygunluğu etkilenmez.",
       ] },
-      { title: "17. Şikâyet hakkı", body: [
+      { title: "15. Şikâyet hakkı", body: [
         "Bir veri koruma denetim makamına şikâyette bulunma hakkına sahipsiniz. Bizim için yetkili makam [Kuzey Ren-Vestfalya Veri Koruma ve Bilgi Edinme Özgürlüğü Eyalet Komiserliği’dir (LDI NRW)](LDI).",
       ] },
-      { title: "18. Veri koruma ile ilgili iletişim", body: [
+      { title: "16. Veri koruma ile ilgili iletişim", body: [
         "Veri koruma ile ilgili sorularınız için bize şu adresten ulaşabilirsiniz:\nE-posta: {mail}\nTelefon: {tel}",
       ] },
-      { title: "19. Bu bilgilendirmedeki değişiklikler", body: [
+      { title: "17. Bu bilgilendirmedeki değişiklikler", body: [
         "Hukuki durumun veya sitemizin ya da veri işleme faaliyetlerimizin değişmesi halinde bu bilgilendirmeyi güncelleme hakkımızı saklı tutarız. Burada yayımlanan güncel sürüm geçerlidir. Güncelleme: Eylül 2026.",
       ] },
     ],

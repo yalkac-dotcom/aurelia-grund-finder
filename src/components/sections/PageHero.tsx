@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import OptimizedImg from "@/components/OptimizedImg";
 import AiImageDisclosure, { AiDisclosureType } from "@/components/AiImageDisclosure";
-import { trackEvent } from "@/lib/analytics";
 
 interface PageHeroProps {
   image: { src: string; srcSet: string; sizes: string };
@@ -111,14 +110,6 @@ const PageHero = ({
               <Link
                 to={primaryCta.to}
                 className="btn-primary"
-                onClick={() =>
-                  trackEvent("cta_click", {
-                    cta_type: "primary",
-                    cta_location: "page_hero",
-                    cta_label: primaryCta.label,
-                    cta_target: primaryCta.to,
-                  })
-                }
               >
                 {primaryCta.label}
                 <ArrowRight size={13} className="ml-2 text-accent" />
@@ -128,14 +119,6 @@ const PageHero = ({
               <a
                 href={secondaryCta.href}
                 className="btn-secondary"
-                onClick={() =>
-                  trackEvent("cta_click", {
-                    cta_type: "secondary",
-                    cta_location: "page_hero",
-                    cta_label: secondaryCta.label,
-                    cta_target: secondaryCta.href,
-                  })
-                }
               >
                 {secondaryCta.label}
               </a>

@@ -60,12 +60,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch {}
     document.documentElement.lang = lang;
-    // Fire analytics event (no-op if no consent / not loaded)
-    try {
-      if (typeof window !== "undefined" && typeof window.gtag === "function") {
-        window.gtag("event", "language_change", { language: lang });
-      }
-    } catch {}
   }, []);
 
 

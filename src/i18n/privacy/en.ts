@@ -27,7 +27,7 @@ export const en: PrivacyCopy = {
           "Information on special sale situations", "Desired sale price", "Purchase interests",
           "Preferred markets, regions and property types", "Uploaded photos",
           "Uploaded PDF, JPG, JPEG and PNG documents",
-          "Technical usage and access data (see server log files and – only with consent – Google Analytics 4 and Microsoft Clarity)",
+          "Technical usage and access data (see server log files)",
         ] },
       ] },
       { title: "3. Legal bases for processing", body: [
@@ -74,55 +74,35 @@ export const en: PrivacyCopy = {
           "Such a transfer only takes place to the extent necessary for the respective matter and where the applicable data protection requirements are met. For international transfers, the requirements of the [GDPR (Art. 44 et seq.)](EURLEX) and – where applicable – [Art. 9 KVKK](KVKKYD) are taken into account.",
         ] },
       ] },
-      { title: "10. Cookies, local storage and consent management", body: [
-        "When you first visit our website, you decide via the consent notice whether analytics services may be used. We distinguish between technically necessary storage and analytics functions that require consent.",
+      { title: "10. Cookies and local storage", body: [
+        "We only use technically necessary storage. No analytics, marketing or tracking services are used on this website.",
         { ul: [
-          "Necessary: storage of your consent decision in your browser's local storage.",
           "Necessary: storage of your chosen language version in your browser's local storage.",
-          "Requires consent: Google Analytics 4 and Microsoft Clarity are only loaded and activated after your explicit consent.",
         ] },
-        "Declining has no disadvantages for the basic use of the website. You can change or withdraw your choice at any time via “Cookie settings” in the website footer.",
       ] },
-      { title: "11. Google Analytics 4", body: [
-        "We use Google Analytics 4 for the statistical analysis and reach measurement of the use of our website, including anonymous events such as clicks on phone and email links, views of important form pages, successfully submitted forms and starts of the company videos. Form contents such as names, email addresses, phone numbers or messages are not transmitted to Google. Processing only takes place after your explicit consent. Advertising or remarketing functions are not used.",
-        "The following may be processed:",
-        { ul: ["IP address (truncated)", "Device and browser information", "Pages visited and page path", "Page title", "Referring source (referrer)", "Cookie or online identifier"] },
-        "IP anonymisation is enabled on this website; the IP address is therefore processed in truncated form.",
-        "The legal basis is Art. 6(1)(a) GDPR (consent). Consent can be withdrawn at any time with effect for the future via “Cookie settings”.",
-        "Provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland.",
-        "Processing of data outside the European Economic Area, in particular in the USA, cannot be ruled out. Details can be found in the provider's privacy information:",
-        { ul: ["[Google Privacy Policy](GPRIV)", "[Google Analytics – data protection](GA1)", "[Google Analytics – consent](GA2)"] },
-      ] },
-      { title: "12. Microsoft Clarity", body: [
-        "We use Microsoft Clarity to analyse the use of our website, in particular for session analysis and the creation of heatmaps. Processing only takes place after your explicit consent.",
-        { ul: ["IP address", "Device and browser information", "Page views", "Mouse, scroll and click behaviour", "Cookie or online identifiers"] },
-        "The legal basis is Art. 6(1)(a) GDPR (consent). Consent can be withdrawn at any time with effect for the future via “Cookie settings”; the withdrawal is transmitted to Microsoft Clarity immediately.",
-        "Provider: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland.",
-        "Processing of data outside the European Economic Area, in particular in the USA, cannot be ruled out. [Microsoft Privacy Statement](MS)",
-      ] },
-      { title: "13. Storage period", body: [
+      { title: "11. Storage period", body: [
         "Personal data is deleted as soon as the purpose of storage no longer applies. For enquiries, this is the case when the matter concerned has been conclusively resolved and there are no statutory retention obligations to the contrary.",
       ] },
-      { title: "14. Data security", body: [
+      { title: "12. Data security", body: [
         "Data is transmitted via this website in encrypted form (HTTPS). We take appropriate technical and organisational measures to protect your data against loss, misuse and unauthorised access. However, completely secure data transmission over the internet cannot be guaranteed.",
       ] },
-      { title: "15. Rights of data subjects", body: [
+      { title: "13. Rights of data subjects", body: [
         "You have the following rights with regard to the personal data concerning you:",
         { ul: [
           "[Art. 15 GDPR – access](EURLEX)", "[Art. 16 GDPR – rectification](EURLEX)", "[Art. 17 GDPR – erasure](EURLEX)",
           "[Art. 18 GDPR – restriction of processing](EURLEX)", "[Art. 20 GDPR – data portability](EURLEX)", "[Art. 21 GDPR – objection](EURLEX)",
         ] },
       ] },
-      { title: "16. Withdrawal of consent", body: [
-        "You can withdraw any consent given at any time with effect for the future (Art. 7(3) GDPR) – for analytics services via “Cookie settings” in the footer, otherwise informally by email to {mail}. The lawfulness of processing carried out until the withdrawal remains unaffected.",
+      { title: "14. Withdrawal of consent", body: [
+        "You can withdraw any consent given at any time with effect for the future (Art. 7(3) GDPR) informally by email to {mail}. The lawfulness of processing carried out until the withdrawal remains unaffected.",
       ] },
-      { title: "17. Right to lodge a complaint", body: [
+      { title: "15. Right to lodge a complaint", body: [
         "You have the right to lodge a complaint with a data protection supervisory authority. The authority responsible for us is the [State Commissioner for Data Protection and Freedom of Information of North Rhine-Westphalia (LDI NRW)](LDI).",
       ] },
-      { title: "18. Data protection contact", body: [
+      { title: "16. Data protection contact", body: [
         "If you have any questions about data protection, you can reach us at:\nEmail: {mail}\nPhone: {tel}",
       ] },
-      { title: "19. Changes to this privacy policy", body: [
+      { title: "17. Changes to this privacy policy", body: [
         "We reserve the right to amend this privacy policy if the legal situation or our website or data processing changes. The version published here applies. Last updated: September 2026.",
       ] },
     ],
@@ -160,7 +140,7 @@ export const en: PrivacyCopy = {
         "You also retain the right to apply to the [Turkish Personal Data Protection Authority (KVKK)](KVKK).",
       ] },
       { title: "8. Explicit consent and withdrawal", body: [
-        "You may withdraw consent given for processing based on explicit consent at any time with effect for the future. For analytics services (Google Analytics 4, Microsoft Clarity) you can change your preference via “Cookie settings” in the website footer; in other cases you can write to {mail}.",
+        "You may withdraw consent given for processing based on explicit consent at any time with effect for the future. To do so, you can write to {mail}.",
       ] },
       { title: "9. Applications and contact", body: [
         "Applications:\nAurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf\nGermany",

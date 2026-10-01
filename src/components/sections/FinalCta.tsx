@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import Reveal from "@/components/Reveal";
-import { trackEvent } from "@/lib/analytics";
 
 interface FinalCtaProps {
   title: string;
@@ -27,14 +26,6 @@ const FinalCta = ({ title, text, buttonLabel, buttonTo, secondary }: FinalCtaPro
         <Link
           to={buttonTo}
           className="inline-flex items-center gap-2.5 rounded-sm bg-white px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-primary transition-colors duration-300 hover:bg-white/95"
-          onClick={() =>
-            trackEvent("cta_click", {
-              cta_type: "primary",
-              cta_location: "final_cta",
-              cta_label: buttonLabel,
-              cta_target: buttonTo,
-            })
-          }
         >
           {buttonLabel}
           <ArrowRight size={13} className="text-accent" />

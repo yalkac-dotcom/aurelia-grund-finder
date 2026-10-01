@@ -1,4 +1,3 @@
-import { trackEvent } from "@/lib/analytics";
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeftRight, ArrowRight, CheckCircle2, FileText, Home, Landmark, MapPin, ShieldCheck, Upload } from "lucide-react";
@@ -265,7 +264,6 @@ const TurkeyProperties = () => {
       }
 
       setIsSuccess(true);
-      trackEvent("property_offer_submit_success", { form: "turkey_page", country: "turkey" });
       const wasConfirmationAccepted = functionResult?.customerConfirmationResult?.accepted === true;
       setConfirmationSent(wasConfirmationAccepted);
       setForm(getInitialForm(defaultLanguage));

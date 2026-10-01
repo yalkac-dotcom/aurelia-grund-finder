@@ -8,7 +8,6 @@ import germany768 from "@/assets/how-it-works/germany-768w.webp";
 import turkey1280 from "@/assets/how-it-works/turkey-1280w.webp";
 import turkey768 from "@/assets/how-it-works/turkey-768w.webp";
 import OptimizedImg from "@/components/OptimizedImg";
-import { trackEvent } from "@/lib/analytics";
 
 interface HowItWorksHeroProps {
   kicker: string;
@@ -65,7 +64,6 @@ const HowItWorksHero = ({
           <Link
             to="/kontakt"
             className="btn-primary"
-            onClick={() => trackEvent("cta_click", { cta_type: "primary", cta_location: "page_hero", cta_label: primaryCta, cta_target: "/kontakt" })}
           >
             {primaryCta}
             <ArrowRight size={13} className="ml-2 text-accent" />
@@ -73,7 +71,6 @@ const HowItWorksHero = ({
           <a
             href="#ablauf"
             className="btn-primary"
-            onClick={() => trackEvent("cta_click", { cta_type: "secondary", cta_location: "page_hero", cta_label: secondaryCta, cta_target: "#ablauf" })}
           >
             {secondaryCta}
           </a>

@@ -29,7 +29,7 @@ export const de: PrivacyCopy = {
           "Angaben zu besonderen Verkaufssituationen", "gewünschter Verkaufspreis", "Kaufinteressen",
           "gewünschte Märkte, Regionen und Immobilienarten", "hochgeladene Fotos",
           "hochgeladene PDF-, JPG-, JPEG- und PNG-Dokumente",
-          "technische Nutzungs- und Zugriffsdaten (siehe Server-Log-Dateien sowie – nur nach Einwilligung – Google Analytics 4 und Microsoft Clarity)",
+          "technische Nutzungs- und Zugriffsdaten (siehe Server-Log-Dateien)",
         ] },
       ] },
       { title: "3. Rechtsgrundlagen der Verarbeitung", body: [
@@ -76,55 +76,35 @@ export const de: PrivacyCopy = {
           "Eine solche Übermittlung erfolgt nur, soweit sie für den jeweiligen Vorgang erforderlich ist und die jeweils geltenden datenschutzrechtlichen Voraussetzungen erfüllt sind. Für internationale Übermittlungen werden die Anforderungen der [DSGVO (Art. 44 ff.)](EURLEX) und – soweit anwendbar – [Art. 9 KVKK](KVKKYD) berücksichtigt.",
         ] },
       ] },
-      { title: "10. Cookies, lokaler Speicher und Einwilligungsverwaltung", body: [
-        "Beim ersten Aufruf unserer Website entscheiden Sie über den Einwilligungshinweis, ob Analyse-Dienste eingesetzt werden dürfen. Wir unterscheiden zwischen technisch notwendigen Speicherungen und einwilligungspflichtigen Analysefunktionen.",
+      { title: "10. Cookies und lokaler Speicher", body: [
+        "Wir setzen ausschließlich technisch notwendige Speicherungen ein. Analyse-, Marketing- oder Tracking-Dienste werden auf dieser Website nicht eingesetzt.",
         { ul: [
-          "Notwendig: Speicherung Ihrer Einwilligungsentscheidung im lokalen Speicher Ihres Browsers.",
           "Notwendig: Speicherung der von Ihnen gewählten Sprachversion im lokalen Speicher Ihres Browsers.",
-          "Einwilligungspflichtig: Google Analytics 4 und Microsoft Clarity werden ausschließlich nach Ihrer ausdrücklichen Zustimmung geladen und aktiviert.",
         ] },
-        "Eine Ablehnung hat keine Nachteile für die grundlegende Nutzung der Website. Ihre Auswahl können Sie jederzeit über „Cookie-Einstellungen“ im Fußbereich der Website ändern oder widerrufen.",
       ] },
-      { title: "11. Google Analytics 4", body: [
-        "Wir setzen Google Analytics 4 zur statistischen Analyse und Reichweitenmessung der Nutzung unserer Website ein, einschließlich anonymer Ereignisse wie Klicks auf Telefon- und E-Mail-Links, Aufrufe wichtiger Formularseiten, erfolgreich abgesendete Formulare und Starts der Unternehmensvideos. Formularinhalte wie Namen, E-Mail-Adressen, Telefonnummern oder Nachrichten werden dabei nicht an Google übertragen. Eine Verarbeitung findet ausschließlich nach Ihrer ausdrücklichen Einwilligung statt. Werbe- oder Remarketing-Funktionen werden nicht eingesetzt.",
-        "Verarbeitet werden können:",
-        { ul: ["IP-Adresse (gekürzt)", "Geräte- und Browserinformationen", "aufgerufene Seiten und Seitenpfad", "Seitentitel", "Verweisquelle (Referrer)", "Cookie- bzw. Online-Kennung"] },
-        "Auf dieser Website ist die IP-Anonymisierung aktiviert; die IP-Adresse wird dadurch gekürzt verarbeitet.",
-        "Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die Einwilligung ist jederzeit über „Cookie-Einstellungen“ mit Wirkung für die Zukunft widerrufbar.",
-        "Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.",
-        "Eine Verarbeitung von Daten außerhalb des Europäischen Wirtschaftsraums, insbesondere in den USA, kann dabei nicht ausgeschlossen werden. Einzelheiten enthalten die Datenschutzhinweise des Anbieters:",
-        { ul: ["[Google Datenschutzerklärung](GPRIV)", "[Google Analytics – Datenschutz](GA1)", "[Google Analytics – Einwilligung (Consent)](GA2)"] },
-      ] },
-      { title: "12. Microsoft Clarity", body: [
-        "Wir setzen Microsoft Clarity zur Analyse der Nutzung unserer Website ein, insbesondere zur Sitzungsanalyse und zur Erstellung von Heatmaps. Eine Verarbeitung findet ausschließlich nach Ihrer ausdrücklichen Einwilligung statt.",
-        { ul: ["IP-Adresse", "Geräte- und Browserinformationen", "Seitenaufrufe", "Maus-, Scroll- und Klickverhalten", "Cookie- bzw. Online-Kennungen"] },
-        "Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die Einwilligung ist jederzeit über „Cookie-Einstellungen“ mit Wirkung für die Zukunft widerrufbar; der Widerruf wird unmittelbar an Microsoft Clarity übermittelt.",
-        "Anbieter: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Irland.",
-        "Eine Verarbeitung von Daten außerhalb des Europäischen Wirtschaftsraums, insbesondere in den USA, kann dabei nicht ausgeschlossen werden. [Microsoft Datenschutzerklärung](MS)",
-      ] },
-      { title: "13. Speicherdauer", body: [
+      { title: "11. Speicherdauer", body: [
         "Personenbezogene Daten werden gelöscht, sobald der Zweck der Speicherung entfällt. Bei Anfragen ist dies der Fall, wenn der betreffende Sachverhalt abschließend geklärt ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
       ] },
-      { title: "14. Datensicherheit", body: [
+      { title: "12. Datensicherheit", body: [
         "Die Übertragung von Daten über diese Website erfolgt verschlüsselt (HTTPS). Wir treffen angemessene technische und organisatorische Maßnahmen, um Ihre Daten vor Verlust, Missbrauch und unbefugtem Zugriff zu schützen. Eine vollständig sichere Datenübertragung im Internet kann jedoch nicht garantiert werden.",
       ] },
-      { title: "15. Rechte der betroffenen Personen", body: [
+      { title: "13. Rechte der betroffenen Personen", body: [
         "Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:",
         { ul: [
           "[Art. 15 DSGVO – Auskunft](EURLEX)", "[Art. 16 DSGVO – Berichtigung](EURLEX)", "[Art. 17 DSGVO – Löschung](EURLEX)",
           "[Art. 18 DSGVO – Einschränkung der Verarbeitung](EURLEX)", "[Art. 20 DSGVO – Datenübertragbarkeit](EURLEX)", "[Art. 21 DSGVO – Widerspruch](EURLEX)",
         ] },
       ] },
-      { title: "16. Widerruf von Einwilligungen", body: [
-        "Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO) – für Analyse-Dienste über „Cookie-Einstellungen“ im Fußbereich, im Übrigen formlos per E-Mail an {mail}. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.",
+      { title: "14. Widerruf von Einwilligungen", body: [
+        "Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO) formlos per E-Mail an {mail}. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.",
       ] },
-      { title: "17. Beschwerderecht", body: [
+      { title: "15. Beschwerderecht", body: [
         "Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Zuständig für uns ist die [Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen](LDI).",
       ] },
-      { title: "18. Kontakt zum Datenschutz", body: [
+      { title: "16. Kontakt zum Datenschutz", body: [
         "Bei Fragen zum Datenschutz erreichen Sie uns unter:\nE-Mail: {mail}\nTelefon: {tel}",
       ] },
-      { title: "19. Änderungen dieser Datenschutzerklärung", body: [
+      { title: "17. Änderungen dieser Datenschutzerklärung", body: [
         "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich die Rechtslage oder unsere Website bzw. Datenverarbeitung ändert. Es gilt die jeweils hier veröffentlichte Fassung. Stand: September 2026.",
       ] },
     ],
