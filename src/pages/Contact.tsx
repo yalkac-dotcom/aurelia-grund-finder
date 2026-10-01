@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import { buyerInterestCopy } from "@/i18n/buyerInterestCopy";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { supabase } from "@/integrations/supabase/client";
-import { trackEvent } from "@/lib/analytics";
 import { pageExtras } from "@/i18n/pageExtras";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
@@ -100,7 +99,6 @@ const Contact = () => {
 
     if (dbError) {
       console.error("Contact form DB error:", dbError);
-      trackEvent("form_submit_error", { form: "contact", stage: "db" });
       setSubmitting(false);
       setError(t.common.formError);
       return;
@@ -128,14 +126,10 @@ const Contact = () => {
 
     if (emailError || (emailData && emailData.success === false)) {
       console.error("Contact form email error:", emailError || emailData);
-      trackEvent("form_submit_error", { form: "contact", stage: "email" });
       setError(t.common.formError);
       return;
     }
 
-    trackEvent("form_submit", { form: "contact" });
-    trackEvent("generate_lead", { form: "contact" });
-    trackEvent("contact_form_submit_success", { form: "contact" });
     setConfirmationWarning(emailData?.confirmationSent === false);
     setSubmitted(true);
   };

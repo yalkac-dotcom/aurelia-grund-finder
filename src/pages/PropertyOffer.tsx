@@ -1,4 +1,3 @@
-import { trackEvent } from "@/lib/analytics";
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { CheckCircle2, FileText, Upload } from "lucide-react";
@@ -133,7 +132,7 @@ const PropertyOffer = () => {
       if (insertError) throw insertError;
       const { data, error } = await supabase.functions.invoke("send-contact-email", { body:{ name:`${form.firstName.trim()} ${form.lastName.trim()}`, email:form.email.trim(), phone:form.phone.trim(), property_type:propertyType, subject:form.propertyType, message, language, preferred_language:form.preferredLanguage || language, form_type:country === "turkey" ? "turkey_property" : "germany_property", privacy_consent:true, files:uploaded } });
       if (error || !data?.success || !data?.internalMailResult?.accepted) throw error ?? new Error("Internal email was not accepted");
-      const accepted = data.customerConfirmationResult?.accepted === true; setConfirmationSent(accepted); setSuccess(true); trackEvent("property_offer_submit_success", { form: "property_offer", country }); setFiles([]); setForm({...initialForm, preferredLanguage:c.languages[["de","tr","en","nl","it","es","fr"].indexOf(language)] ?? c.languages[0]}); if(inputRef.current) inputRef.current.value="";
+      const accepted = data.customerConfirmationResult?.accepted === true; setConfirmationSent(accepted); setSuccess(true); setFiles([]); setForm({...initialForm, preferredLanguage:c.languages[["de","tr","en","nl","it","es","fr"].indexOf(language)] ?? c.languages[0]}); if(inputRef.current) inputRef.current.value="";
       toast({title:c.successTitle,description:accepted ? c.successText : c.confirmationWarning});
     } catch (error) { console.error("Property offer submission failed", error); toast({title:c.errorTitle,description:c.errorText,variant:"destructive"}); }
     finally { setSubmitting(false); }

@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { Play } from "lucide-react";
-import { trackEvent } from "@/lib/analytics";
 import Reveal from "@/components/Reveal";
 import deKurz from "@/assets/aurelia-film-de-kurz.mp4.asset.json";
 import deLang from "@/assets/aurelia-film-de-lang.mp4.asset.json";
@@ -40,7 +39,6 @@ const VideoCard = ({ clip, playLabel }: { clip: Clip; playLabel: string }) => {
   const ref = useRef<HTMLVideoElement>(null);
   const [started, setStarted] = useState(false);
   const start = () => {
-    trackEvent(clip.id.startsWith("tr") ? "video_start_tr" : "video_start_de", { video: `company_video_${clip.id}` });
     setStarted(true);
     requestAnimationFrame(() => { const el = ref.current; if (el) { el.muted = false; void el.play(); } });
   };

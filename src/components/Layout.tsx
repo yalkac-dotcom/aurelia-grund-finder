@@ -2,7 +2,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import ScrollToTop from "./ScrollToTop";
 import TrustBar from "./home/TrustBar";
-import CookieConsent from "./CookieConsent";
 import MobileContactBar from "./MobileContactBar";
 import { DesktopWhatsAppButton } from "./WhatsAppContact";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -40,7 +39,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {showMobileContactBar && <div className="h-14 shrink-0 md:hidden" aria-hidden="true" />}
       <ScrollToTop />
       <DesktopWhatsAppButton language={language} />
-      <CookieConsent />
       {showMobileContactBar && <MobileContactBar />}
     </div>
   );

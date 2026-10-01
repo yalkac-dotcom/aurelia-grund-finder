@@ -2,16 +2,8 @@ import { Link } from "react-router-dom";
 import logoImg from "@/assets/aurelia-logo.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const COOKIE_KEY = "aurelia-cookie-consent";
-
 const Footer = () => {
   const { t } = useLanguage();
-
-  const openCookieSettings = () => {
-    localStorage.removeItem(COOKIE_KEY);
-    window.dispatchEvent(new Event("consent-change"));
-    window.dispatchEvent(new Event("open-cookie-consent"));
-  };
 
   const copyright = t.footer.copyright.replace("{year}", String(new Date().getFullYear()));
 
@@ -92,15 +84,6 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-              <li className="pt-1">
-                <button
-                  type="button"
-                  onClick={openCookieSettings}
-                  className="text-white/45 text-[11px] md:text-xs hover:text-accent transition-colors duration-200 text-left"
-                >
-                  {t.footer.cookieSettings}
-                </button>
-              </li>
             </ul>
           </div>
         </div>
