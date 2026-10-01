@@ -5,6 +5,7 @@ import Reveal from "@/components/Reveal";
 import { editorial } from "@/assets/editorial";
 import { ArrowRight, Building2, Check, CircleCheck, Eye, Handshake, Network, Scale, ShieldCheck, Sprout, Target, Users } from "lucide-react";
 import aboutMenschenAsset from "@/assets/about-menschen-haende.jpeg.asset.json";
+import portraitAsset from "@/assets/yasar-alkac-portraet.png.asset.json";
 import { getUnserAnsatz } from "@/i18n/aboutUnserAnsatz";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -144,7 +145,25 @@ const About = () => {
 
         <section className={`${SEC} bg-background`} aria-labelledby="unser-ansatz-title">
           <div className="container-premium">
-          <div className="mx-auto grid max-w-[980px] items-center gap-7 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-12 lg:gap-16">
+          <div className={language === "de" ? "mx-auto grid max-w-[980px] items-start gap-10 md:grid-cols-[minmax(0,7fr)_minmax(0,4fr)] md:gap-12 lg:gap-16" : "mx-auto grid max-w-[980px] items-center gap-7 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-12 lg:gap-16"}>
+            {language === "de" ? (
+              <Reveal delay={0.08} className="md:order-2">
+                <figure className="mx-auto w-full max-w-[260px] md:mx-0">
+                  <div className="rounded-[3px] border border-accent/30 bg-secondary/40 p-1.5">
+                    <img src={portraitAsset.url} alt="Yasar Alkac, Geschäftsführung Aurelia Grundbesitz GmbH" loading="lazy" width={1086} height={1448} className="block h-auto w-full object-contain" />
+                  </div>
+                  <figcaption className="mt-4">
+                    <div className={RULE} aria-hidden="true" />
+                    <p className="font-heading text-[1.1rem] font-semibold leading-snug text-primary">Yasar Alkac</p>
+                    <p className="mt-0.5 text-[11.5px] font-semibold uppercase tracking-[0.1em] text-highlight">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
+                    <div className="mt-3 space-y-2 text-[13px] leading-[1.6] text-foreground/75">
+                      <p>Yasar Alkac ist seit rund 30 Jahren unternehmerisch tätig und verfügt über langjährige Erfahrung im Immobilienbereich. Seine Tätigkeit umfasst insbesondere den Erwerb von Immobilien, freihändige Ankäufe sowie Objekte aus besonderen Ausgangssituationen und Zwangsversteigerungen.</p>
+                      <p>Bei Aurelia verantwortet er die Auswahl und Prüfung von Immobilien sowie die wesentlichen Ankaufsentscheidungen persönlich. Dabei stehen kurze Entscheidungswege, Verbindlichkeit und eine langfristige Entwicklung des eigenen Immobilienbestands im Mittelpunkt.</p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ) : (
             <Reveal>
               <figure className="relative mx-auto w-full max-w-[520px] md:max-w-none">
                 <div className="overflow-hidden rounded-[3px]">
@@ -153,6 +172,7 @@ const About = () => {
                 <span aria-hidden="true" className="absolute -bottom-3 left-4 h-px w-16 bg-accent md:-bottom-4" />
               </figure>
             </Reveal>
+            )}
             <Reveal delay={0.08}>
               <div className="md:border-l md:border-accent/30 md:pl-8 lg:pl-10">
                 <div className={RULE} aria-hidden="true" />
