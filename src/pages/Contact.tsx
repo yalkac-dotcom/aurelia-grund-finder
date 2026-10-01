@@ -290,6 +290,7 @@ const Contact = () => {
                     </div>
                   )}
 
+                  <FormPrivacyNotice language={language} />
                   <div className="pt-1">
                     <Button
                       type="submit"
