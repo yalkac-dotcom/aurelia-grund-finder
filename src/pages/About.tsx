@@ -143,20 +143,23 @@ const About = () => {
           </div>
         </section>
 
-        <section className={`${SEC} bg-background`} aria-labelledby="unser-ansatz-title">
+        <section className="bg-background py-8 md:py-10 lg:py-12" aria-labelledby="unser-ansatz-title">
           <div className="container-premium">
-          <div className={`mx-auto grid max-w-[980px] items-center gap-7 md:gap-12 lg:gap-16 ${language === "de" ? "md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]" : "md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"}`}>
+          <div className={`mx-auto grid max-w-[980px] items-center gap-6 md:gap-8 lg:gap-10 ${language === "de" ? "md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]" : "md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"}`}>
             <Reveal className={language === "de" ? "order-2" : undefined}>
               {language === "de" ? (
-                <div className="md:border-l md:border-accent/30 md:pl-8 lg:pl-10">
-                  <figure className="mx-auto w-full max-w-[235px]">
-                    <div className="rounded-[3px] border border-accent/30 bg-secondary/40 p-1.5">
-                      <img src={portraitAsset.url} alt="Yasar Alkac, Geschäftsführung Aurelia Grundbesitz GmbH" loading="lazy" width={1086} height={1448} className="block h-auto w-full object-contain" />
+                <div className="relative md:pl-7 lg:pl-9">
+                  <span aria-hidden="true" className="absolute left-0 top-1/2 hidden h-14 w-px -translate-y-1/2 bg-accent/25 md:block" />
+                  <figure className="mx-auto w-full max-w-[21rem]">
+                    <div className="w-full max-w-[280px]">
+                      <div className="rounded-[3px] border border-accent/30 bg-secondary/40 p-1.5">
+                        <img src={portraitAsset.url} alt="Yasar Alkac, Geschäftsführung Aurelia Grundbesitz GmbH" loading="lazy" width={1086} height={1448} className="block h-auto w-full object-contain" />
+                      </div>
                     </div>
-                    <figcaption className="mt-3">
+                    <figcaption className="mt-2 px-1.5">
                       <p className="font-heading text-[1rem] font-semibold leading-snug text-primary">Yasar Alkac</p>
-                      <p className="mt-0.5 text-[10.5px] font-semibold uppercase tracking-[0.1em] text-highlight">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
-                      <p className="mt-2 text-[12.5px] leading-[1.6] text-foreground/70">Seit rund 30 Jahren unternehmerisch tätig, bringt Yasar Alkac langjährige Erfahrung im Immobilienbereich in Aurelia ein. Die Prüfung ausgewählter Immobilien und wesentliche Ankaufsentscheidungen begleitet er persönlich.</p>
+                      <p className="mt-0.5 text-[9.5px] font-semibold uppercase tracking-[0.08em] text-highlight">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
+                      <p className="mt-2 text-[12.5px] leading-[1.65] text-foreground/70">Seit rund 30 Jahren unternehmerisch tätig, bringt Yasar Alkac langjährige Erfahrung im Immobilienbereich in Aurelia ein. Die Prüfung ausgewählter Immobilien und wesentliche Ankaufsentscheidungen begleitet er persönlich.</p>
                     </figcaption>
                   </figure>
                 </div>
