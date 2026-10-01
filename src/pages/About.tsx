@@ -163,7 +163,7 @@ const About = () => {
                     <figcaption className="mt-2 px-1.5">
                       <p className="font-heading text-[1rem] font-semibold leading-snug text-primary">Yasar Alkac</p>
                       <p className="mt-0.5 text-[9.5px] font-semibold uppercase tracking-[0.08em] text-highlight">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
-                      <p className="mt-2 text-[12.5px] leading-[1.65] text-foreground/70">„Seit rund 30 Jahren unternehmerisch tätig, verfügt Yasar Alkac über umfassende Erfahrung in der Entwicklung und Führung von Unternehmen. Bei Aurelia verantwortet er insbesondere die Prüfung ausgewählter Immobilien und die wesentlichen Ankaufsentscheidungen.“</p>
+                      <p className="mt-2 text-[12.5px] leading-[1.65] text-foreground/70">Seit rund 30 Jahren unternehmerisch tätig, verfügt Yasar Alkac über umfassende Erfahrung in der Entwicklung und Führung von Unternehmen. Bei Aurelia verantwortet er insbesondere die Prüfung ausgewählter Immobilien und die wesentlichen Ankaufsentscheidungen.</p>
                     </figcaption>
                   </figure>
                 </div>
