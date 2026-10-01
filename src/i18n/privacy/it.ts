@@ -55,11 +55,14 @@ export const it: PrivacyCopy = {
         "I dati personali possono essere trattati in particolare in caso di offerte di immobili per un possibile acquisto da parte di Aurelia, di interesse all'acquisto di immobili del portafoglio proprio di Aurelia e di richieste relative a immobili in Turchia.",
         "Aurelia non intermedia immobili di terzi e non accetta classici incarichi di ricerca. Gli interessati all'acquisto registrano soltanto il loro interesse per immobili eventualmente adatti del nostro portafoglio.",
         "La base giuridica è l'art. 6, par. 1, lett. b) GDPR e – ove prestato – l'art. 6, par. 1, lett. a) GDPR.",
+        "Nel modulo „Proponi un immobile“ può fornire facoltativamente ulteriori informazioni sulla situazione del suo immobile (campo „Situazione particolare“ e descrizione libera). Queste informazioni non sono obbligatorie e servono esclusivamente a valutare la sua richiesta. La preghiamo di non inserire dati sanitari o altre categorie particolari di dati personali ai sensi dell'art. 9 GDPR, salvo che ciò sia necessario per la richiesta.",
       ] },
       { title: "7. Caricamento di foto e documenti", body: [
         "Con le richieste immobiliari gli utenti possono trasmettere foto e documenti (PDF, JPG, JPEG, PNG). Questi documenti possono contenere dati personali.",
         "La preghiamo di trasmettere solo documenti necessari per la gestione della sua richiesta e che è autorizzato a trasmettere. Se i documenti contengono dati personali di terzi, devono essere trasmesse solo le informazioni la cui comunicazione è necessaria per la richiesta concreta e legalmente ammissibile.",
         "I dati vengono trattati per la gestione della richiesta, la valutazione dell'immobile e – ove necessario – la preparazione o l'esecuzione di una possibile operazione immobiliare.",
+        "I file caricati (PDF, JPG, JPEG, PNG; max. 10 MB per file) sono conservati in uno spazio di archiviazione non pubblico del nostro fornitore di servizi tecnici (vedi sezione 8). Non è possibile un accesso pubblico; l'accesso avviene solo nell'ambito della gestione della richiesta.",
+        "L'e-mail di notifica inviata a noi contiene un link di download ai file valido 7 giorni. La scadenza del link non comporta la cancellazione del file conservato; la cancellazione è disciplinata dalla sezione 11.",
       ] },
       { title: "8. Destinatari dei dati personali", body: [
         "A seconda del caso concreto e solo nella misura necessaria, i dati personali possono essere resi accessibili in particolare ai seguenti destinatari:",
@@ -67,6 +70,9 @@ export const it: PrivacyCopy = {
           "Fornitori di servizi IT, hosting e tecnici", "Avvocati", "Notai", "Consulenti fiscali", "Periti",
           "Architetti e tecnici specializzati", "Partner immobiliari o commerciali necessari",
           "Autorità o altri enti, se sussiste un obbligo legale o se ciò è necessario per una transazione concreta",
+        "Database e archiviazione file (Lovable Cloud): I dati trasmessi tramite i nostri moduli sono conservati in un database, i file caricati in uno spazio di archiviazione non pubblico. Lo scopo è la gestione, documentazione e il seguito della sua richiesta. Sito web, database e archiviazione file sono gestiti tramite la piattaforma Lovable Cloud, che opera per nostro conto come fornitore di servizi tecnici e si avvale a tal fine di ulteriori fornitori di infrastruttura. Le richieste conservate non sono consultabili tramite il sito web; vi accediamo solo noi tramite un accesso amministrativo protetto, nonché il fornitore nella misura tecnicamente necessaria. Secondo la configurazione tecnica, database e archiviazione file si trovano in un centro dati nell'UE (Francoforte sul Meno). Non si può escludere un accesso del fornitore o dei suoi subappaltatori da paesi al di fuori dell'UE/SEE, in particolare dagli USA (ad es. per manutenzione o assistenza). La base giuridica è l'art. 6, par. 1, lett. b e f GDPR.",
+        "Invio di e-mail (Resend): Per l'invio delle richieste tramite modulo a noi e delle e-mail di conferma a lei utilizziamo il servizio Resend (Resend, Inc., USA). Vengono trattati i dati inseriti nel modulo (in particolare nome, indirizzo e-mail, numero di telefono, contenuto della richiesta, dati sull'immobile ed eventualmente link di download ai file caricati) e i dati tecnici di invio (ad es. indirizzo del destinatario, momento dell'invio). Resend opera per nostro conto come fornitore di servizi tecnici. È possibile un trattamento negli USA. La base giuridica è l'art. 6, par. 1, lett. b GDPR (gestione della sua richiesta) e l'art. 6, par. 1, lett. f GDPR (legittimo interesse a un invio affidabile delle e-mail).",
+        "I trasferimenti verso paesi terzi al di fuori dell'UE/SEE avvengono solo nel rispetto degli artt. 44 e segg. GDPR, ossia sulla base di una decisione di adeguatezza della Commissione UE (art. 45 GDPR) o di garanzie adeguate come le clausole contrattuali tipo dell'UE (art. 46 GDPR), nella misura in cui siano state concordate con il rispettivo fornitore. Su richiesta a {mail} la informiamo sulla base utilizzata.",
         ] },
       ] },
       { title: "9. Germania e Turchia – trattamento transfrontaliero dei dati", body: [
@@ -86,6 +92,8 @@ export const it: PrivacyCopy = {
       ] },
       { title: "11. Durata di conservazione", body: [
         "I dati personali vengono cancellati non appena viene meno lo scopo della conservazione. Per le richieste ciò avviene quando la questione è stata definitivamente chiarita e non vi si oppongono obblighi legali di conservazione.",
+        "Per le richieste di contatto, di interesse all'acquisto e immobiliari vale: i dati personali e i file caricati vengono cancellati al più tardi 12 mesi dopo la conclusione della richiesta o dopo l'ultimo contatto sostanziale, salvo che siano ancora necessari.",
+        "Sono esclusi i dati necessari più a lungo a causa di un rapporto contrattuale esistente o in fase di avvio, di obblighi legali di conservazione o per l'accertamento, l'esercizio o la difesa di un diritto in sede giudiziaria. Per tali dati valgono i termini di volta in volta necessari o previsti dalla legge.",
       ] },
       { title: "12. Sicurezza dei dati", body: [
         "La trasmissione dei dati tramite questo sito avviene in forma crittografata (HTTPS). Adottiamo misure tecniche e organizzative adeguate per proteggere i suoi dati da perdita, uso improprio e accesso non autorizzato. Tuttavia non è possibile garantire una trasmissione dei dati su Internet completamente sicura.",
@@ -123,6 +131,8 @@ export const it: PrivacyCopy = {
       ] },
       { title: "2. Dati personali trattati", body: [
         "A seconda della sua richiesta possono essere trattati nome e cognome, numero di telefono, indirizzo e-mail, dati di contatto, indirizzo e informazioni sull'ubicazione dell'immobile, tipo e caratteristiche dell'immobile, informazioni sulla proprietà, richiesta di vendita, prezzo di vendita richiesto, interesse all'acquisto, messaggi e spiegazioni nonché foto e documenti da lei caricati.",
+        "I dati trasmessi tramite i moduli del sito sono conservati in un database; foto e documenti caricati (PDF, JPG, JPEG, PNG; max. 10 MB per file) in uno spazio di archiviazione non pubblico. L'e-mail di notifica inviata a noi contiene un link di download ai file valido 7 giorni; la scadenza del link non comporta la cancellazione del file.",
+        "I dati personali e i file caricati relativi a richieste di contatto, di interesse all'acquisto e immobiliari vengono cancellati al più tardi 12 mesi dopo la conclusione della richiesta o dopo l'ultimo contatto sostanziale, salvo che siano ancora necessari a causa di un rapporto contrattuale esistente o in fase di avvio, di obblighi legali di conservazione o per l'accertamento, l'esercizio o la difesa di un diritto.",
       ] },
       { title: "3. Finalità del trattamento", body: [
         "I suoi dati personali possono essere trattati per esaminare la sua offerta immobiliare, valutare un possibile acquisto da parte di Aurelia, valutare il suo interesse all'acquisto, contattarla, rispondere alle sue richieste, preparare ed eseguire una possibile operazione immobiliare, adempiere agli obblighi di legge e gestire il sito in modo sicuro.",
@@ -133,11 +143,13 @@ export const it: PrivacyCopy = {
       ] },
       { title: "5. Trasferimento dei dati personali", body: [
         "A seconda della natura dell'operazione e solo nella misura necessaria, i suoi dati personali possono essere trasferiti a fornitori di servizi tecnici e ad avvocati, notai, consulenti finanziari, periti o esperti tecnici, partner commerciali del settore immobiliare, autorità e istituzioni competenti o altre persone necessarie all'esecuzione di una possibile operazione immobiliare.",
+        "I fornitori di servizi tecnici sono in particolare la piattaforma Lovable Cloud per database e archiviazione file (secondo la configurazione tecnica un centro dati nell'UE, Francoforte sul Meno) e il servizio e-mail Resend (Resend, Inc., USA) per l'invio delle richieste tramite modulo e delle e-mail di conferma.",
       ] },
       { title: "6. Trasferimento dei dati personali all'estero", body: [
         "Poiché Aurelia Grundbesitz GmbH ha sede in Germania, i dati personali inviati ad Aurelia dalla Turchia tramite il sito o altri canali di comunicazione possono essere trattati in Germania.",
         "Ove necessario per operazioni relative a un immobile in Turchia, determinati dati possono essere condivisi con persone o istituzioni competenti in Turchia.",
         "Per il trasferimento di dati all'estero si tiene conto, nella misura applicabile, dell'articolo 9 della KVKK e della normativa pertinente. Ulteriori informazioni: [Trasferimento all'estero (KVKK)](KVKKYD)",
+        "A causa del servizio Resend utilizzato per l'invio delle e-mail, i dati possono essere trattati negli USA; non si può inoltre escludere completamente un accesso da paesi al di fuori dell'UE/SEE da parte del fornitore di Lovable Cloud o dei suoi subappaltatori. Per tali trasferimenti i requisiti dell'articolo 9 KVKK vengono valutati separatamente, ove applicabile.",
       ] },
       { title: "7. I suoi diritti ai sensi della KVKK", body: [
         "Laddove si applichi la KVKK, gli interessati possono, alle condizioni previste dalla legge, sapere se i loro dati personali sono trattati, richiedere informazioni in caso affermativo, conoscere la finalità del trattamento e se i dati sono utilizzati in modo conforme, conoscere i terzi a cui sono stati trasferiti, chiederne la rettifica, la cancellazione o la distruzione se ne ricorrono i presupposti ed esercitare gli altri diritti previsti dalla legge.",

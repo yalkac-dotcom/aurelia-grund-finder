@@ -57,11 +57,14 @@ export const tr: PrivacyCopy = {
         "Kişisel veriler özellikle Aurelia tarafından olası bir satın alım için sunulan gayrimenkul tekliflerinde, Aurelia’nın kendi portföyündeki gayrimenkullere yönelik satın alma ilgisinde ve Türkiye’deki gayrimenkullere ilişkin taleplerde işlenebilir.",
         "Aurelia başkalarına ait gayrimenkullerin aracılığını yapmaz ve klasik arama siparişleri kabul etmez. Alıcı adayları yalnızca kendi portföyümüzdeki olası uygun gayrimenkullere ilişkin ilgilerini bildirir.",
         "Hukuki dayanak GDPR md. 6/1 (b) ve – verilmişse – GDPR md. 6/1 (a)’dır.",
+        "„Gayrimenkul sunun“ formunda gayrimenkulünüzün durumu hakkında isteğe bağlı olarak ek bilgi verebilirsiniz („Özel durum“ alanı ve serbest açıklama). Bu bilgiler zorunlu değildir ve yalnızca talebinizin değerlendirilmesi için kullanılır. Talep için gerekli olmadıkça lütfen buraya sağlık verileri veya GVKT (DSGVO) m. 9 anlamında diğer özel nitelikli kişisel verileri girmeyiniz.",
       ] },
       { title: "7. Fotoğraf ve belge yükleme", body: [
         "Gayrimenkul taleplerinde kullanıcılar fotoğraf ve belge (PDF, JPG, JPEG, PNG) iletebilir. Bu belgeler kişisel veriler içerebilir.",
         "Lütfen yalnızca talebinizin işlenmesi için gerekli olan ve iletmeye yetkili olduğunuz belgeleri gönderin. Belgeler üçüncü kişilere ait kişisel veriler içeriyorsa, yalnızca somut talep için paylaşılması gerekli ve hukuken izin verilen bilgiler iletilmelidir.",
         "Veriler talebin işlenmesi, gayrimenkulün incelenmesi ve – gerekli olduğu ölçüde – olası bir gayrimenkul işleminin hazırlanması veya yürütülmesi amacıyla işlenir.",
+        "Yüklenen dosyalar (PDF, JPG, JPEG, PNG; dosya başına en fazla 10 MB) teknik hizmet sağlayıcımızın herkese açık olmayan bir dosya depolama alanında saklanır (bkz. 8. bölüm). Herkese açık erişim mümkün değildir; erişim yalnızca talebin işlenmesi kapsamında gerçekleşir.",
+        "Bize gönderilen bildirim e-postası, dosyalara 7 gün geçerli bir indirme bağlantısı içerir. Bağlantının süresinin dolması, saklanan dosyanın silindiği anlamına gelmez; silme işlemi 11. bölüme göre yapılır.",
       ] },
       { title: "8. Kişisel verilerin alıcıları", body: [
         "Somut işleme bağlı olarak ve yalnızca gerekli olduğu ölçüde kişisel veriler özellikle aşağıdaki alıcılara açılabilir:",
@@ -69,6 +72,9 @@ export const tr: PrivacyCopy = {
           "BT / barındırma ve teknik hizmet sağlayıcılar", "Avukatlar", "Noterler", "Vergi danışmanları / mali müşavirler", "Değerleme uzmanları",
           "Mimarlar ve teknik uzmanlar", "Gerekli gayrimenkul veya iş ortakları",
           "Yasal bir yükümlülük bulunması veya somut bir işlem için gerekli olması halinde resmi makamlar veya diğer kurumlar",
+        "Veri tabanı ve dosya depolama (Lovable Cloud): Formlarımız aracılığıyla iletilen bilgiler bir veri tabanında, yüklenen dosyalar ise herkese açık olmayan bir dosya depolama alanında saklanır. Amaç, talebinizin işlenmesi, belgelenmesi ve takibidir. İnternet sitesi, veri tabanı ve dosya depolama, bizim adımıza teknik hizmet sağlayıcı olarak faaliyet gösteren ve bu amaçla başka altyapı sağlayıcılarından yararlanan Lovable Cloud platformu üzerinden işletilir. Saklanan taleplere internet sitesi üzerinden erişilemez; erişim yalnızca korumalı bir yönetim girişi üzerinden bize ve teknik olarak gerekli olduğu ölçüde hizmet sağlayıcıya aittir. Teknik yapılandırmaya göre veri tabanı ve dosya depolama AB'de (Frankfurt am Main) bir veri merkezinde bulunmaktadır. Hizmet sağlayıcının veya alt yüklenicilerinin AB/AEA dışındaki ülkelerden, özellikle ABD'den (ör. bakım veya destek amacıyla) erişimi hariç tutulamaz. Hukuki dayanak GVKT (DSGVO) m. 6/1 (b) ve (f) bentleridir.",
+        "E-posta gönderimi (Resend): Form taleplerinin bize ve onay e-postalarının size gönderilmesi için Resend hizmetini (Resend, Inc., ABD) kullanıyoruz. Bu kapsamda formda girilen veriler (özellikle ad, e-posta adresi, telefon numarası, talebin içeriği, gayrimenkul bilgileri ve varsa yüklenen dosyalara ait indirme bağlantıları) ile teknik gönderim verileri (ör. alıcı adresi, gönderim zamanı) işlenir. Resend bizim adımıza teknik hizmet sağlayıcı olarak faaliyet gösterir. Verilerin ABD'de işlenmesi mümkündür. Hukuki dayanak GVKT (DSGVO) m. 6/1 (b) (talebinizin işlenmesi) ve m. 6/1 (f) (güvenilir e-posta gönderimine ilişkin meşru menfaat) bentleridir.",
+        "AB/AEA dışındaki üçüncü ülkelere aktarımlar yalnızca GVKT (DSGVO) m. 44 vd. hükümlerine uygun olarak, yani AB Komisyonu'nun yeterlilik kararı (m. 45) veya ilgili sağlayıcıyla kararlaştırılmış olması halinde AB standart sözleşme maddeleri gibi uygun güvenceler (m. 46) temelinde gerçekleşir. {mail} adresine başvurmanız halinde kullanılan dayanak hakkında sizi bilgilendiririz.",
         ] },
       ] },
       { title: "9. Almanya ve Türkiye – sınır ötesi veri işleme", body: [
@@ -88,6 +94,8 @@ export const tr: PrivacyCopy = {
       ] },
       { title: "11. Saklama süresi", body: [
         "Kişisel veriler, saklama amacı ortadan kalktığında silinir. Taleplerde bu, ilgili konu kesin olarak sonuçlandığında ve yasal saklama yükümlülükleri buna engel olmadığında söz konusudur.",
+        "İletişim, satın alma ilgisi ve gayrimenkul talepleri için geçerli olan kural şudur: Kişisel veriler ve yüklenen dosyalar, başka bir gereklilik bulunmadığı sürece, talebin sonuçlanmasından veya son içeriksel iletişimden en geç 12 ay sonra silinir.",
+        "Mevcut veya kurulması planlanan bir sözleşme ilişkisi, yasal saklama yükümlülükleri ya da hukuki taleplerin ileri sürülmesi, kullanılması veya savunulması nedeniyle daha uzun süre gerekli olan veriler bunun dışındadır. Bu veriler için ilgili gerekli veya yasal süreler geçerlidir.",
       ] },
       { title: "12. Veri güvenliği", body: [
         "Bu site üzerinden veri aktarımı şifreli olarak (HTTPS) gerçekleşir. Verilerinizi kayba, kötüye kullanıma ve yetkisiz erişime karşı korumak için uygun teknik ve idari tedbirleri alırız. Ancak internet üzerinden tamamen güvenli bir veri aktarımı garanti edilemez.",

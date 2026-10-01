@@ -55,11 +55,14 @@ export const en: PrivacyCopy = {
         "Personal data may in particular be processed for property offers for a possible purchase by Aurelia, for purchase interest in properties from Aurelia's own portfolio and for enquiries about properties in Turkey.",
         "Aurelia does not broker third-party properties and does not accept classic property search mandates. Prospective buyers merely register their interest in potentially suitable properties from our own portfolio.",
         "The legal basis is Art. 6(1)(b) GDPR and – where given – Art. 6(1)(a) GDPR.",
+        "In the “Submit a property” form you may voluntarily provide additional information about your property situation (“Special situation” field and free description). This information is optional and is used solely to assess your enquiry. Please do not enter health data or other special categories of personal data within the meaning of Art. 9 GDPR unless this is necessary for the enquiry.",
       ] },
       { title: "7. Uploading photos and documents", body: [
         "With property enquiries, users can submit photos and documents (PDF, JPG, JPEG, PNG). These documents may contain personal data.",
         "Please only submit documents that are necessary for handling your enquiry and that you are entitled to submit. Where documents contain personal data of third parties, only information whose disclosure is necessary for the specific enquiry and legally permissible should be submitted.",
         "The data is processed to handle the enquiry, to assess the property and – where necessary – to prepare or carry out a possible property transaction.",
+        "Uploaded files (PDF, JPG, JPEG, PNG; max. 10 MB per file) are stored in a non-public file storage of our technical service provider (see section 8). Public retrieval is not possible; access takes place only in the course of processing the enquiry.",
+        "The notification e-mail sent to us contains a download link to the files that is valid for 7 days. Expiry of the link does not mean that the stored file is deleted; deletion is governed by section 11.",
       ] },
       { title: "8. Recipients of personal data", body: [
         "Depending on the specific matter and only to the extent necessary, personal data may be made available in particular to the following recipients:",
@@ -67,6 +70,9 @@ export const en: PrivacyCopy = {
           "IT / hosting and technical service providers", "Lawyers", "Notaries", "Tax advisers", "Valuers / surveyors",
           "Architects and technical specialists", "Necessary property or business partners",
           "Authorities or other bodies, where there is a legal obligation or this is necessary for a specific transaction",
+        "Database and file storage (Lovable Cloud): Information submitted via our forms is stored in a database, uploaded files in a non-public file storage. The purpose is to process, document and follow up on your enquiry. The website, database and file storage are operated via the Lovable Cloud platform, which acts as a technical service provider on our behalf and uses further infrastructure providers for this purpose. Stored enquiries cannot be retrieved via the website itself; only we have access via a protected administrative login, and the service provider where technically necessary. According to the technical configuration, the database and file storage are located in a data centre in the EU (Frankfurt am Main). Access by the service provider or its subcontractors from countries outside the EU/EEA, in particular the USA (e.g. for maintenance or support), cannot be ruled out. The legal basis is Art. 6(1)(b) and (f) GDPR.",
+        "E-mail delivery (Resend): To send form enquiries to us and confirmation e-mails to you, we use the Resend service (Resend, Inc., USA). The data entered in the form (in particular name, e-mail address, telephone number, content of the enquiry, property details and, where applicable, download links to uploaded files) and technical delivery data (e.g. recipient address, time of sending) are processed. Resend acts as a technical service provider on our behalf. Processing in the USA is possible. The legal basis is Art. 6(1)(b) GDPR (processing your enquiry) and Art. 6(1)(f) GDPR (legitimate interest in reliable e-mail delivery).",
+        "Transfers to third countries outside the EU/EEA take place only in compliance with Art. 44 et seq. GDPR, i.e. on the basis of an adequacy decision of the EU Commission (Art. 45 GDPR) or appropriate safeguards such as the EU Standard Contractual Clauses (Art. 46 GDPR), insofar as these have been agreed with the respective provider. On request to {mail} we will inform you of the basis used in each case.",
         ] },
       ] },
       { title: "9. Germany and Turkey – cross-border data processing", body: [
@@ -86,6 +92,8 @@ export const en: PrivacyCopy = {
       ] },
       { title: "11. Storage period", body: [
         "Personal data is deleted as soon as the purpose of storage no longer applies. For enquiries, this is the case when the matter concerned has been conclusively resolved and there are no statutory retention obligations to the contrary.",
+        "For contact, purchase-interest and property enquiries: personal data and uploaded files are deleted no later than 12 months after the enquiry has been concluded or after the last substantive contact, unless they are still required.",
+        "Excepted are data that are needed for longer because of an existing or prospective contractual relationship, statutory retention obligations, or for the establishment, exercise or defence of legal claims. For such data, the respectively required or statutory periods apply.",
       ] },
       { title: "12. Data security", body: [
         "Data is transmitted via this website in encrypted form (HTTPS). We take appropriate technical and organisational measures to protect your data against loss, misuse and unauthorised access. However, completely secure data transmission over the internet cannot be guaranteed.",
@@ -123,6 +131,8 @@ export const en: PrivacyCopy = {
       ] },
       { title: "2. Personal data processed", body: [
         "Depending on your enquiry, your first and last name, phone number, email address, contact details, address and location information relating to the property, property type and features, ownership information, sale request, requested sale price, purchase interest, messages and explanations, as well as photos and documents uploaded by you may be processed.",
+        "Information submitted via the website forms is stored in a database; uploaded photos and documents (PDF, JPG, JPEG, PNG; max. 10 MB per file) are stored in a non-public file storage. The notification e-mail sent to us contains a download link to the files valid for 7 days; expiry of the link does not mean the file is deleted.",
+        "Personal data and uploaded files relating to contact, purchase-interest and property enquiries are deleted no later than 12 months after the enquiry has been concluded or after the last substantive contact, unless they are still required due to an existing or prospective contractual relationship, statutory retention obligations or the establishment, exercise or defence of legal claims.",
       ] },
       { title: "3. Purposes of processing", body: [
         "Your personal data may be processed for the purposes of reviewing your property offer, evaluating a possible purchase by Aurelia, evaluating your purchase interest, contacting you, responding to your requests, preparing and carrying out a possible property transaction, fulfilling legal obligations and operating the website securely.",
@@ -133,11 +143,13 @@ export const en: PrivacyCopy = {
       ] },
       { title: "5. Transfer of personal data", body: [
         "Depending on the nature of the transaction and only to the extent necessary, your personal data may be transferred to technical service providers and to lawyers, notaries, financial advisers, valuation or technical experts, business partners in the real estate sector, competent authorities and institutions or other necessary persons required to carry out a possible property transaction.",
+        "Technical service providers include in particular the Lovable Cloud platform for database and file storage (according to the technical configuration, a data centre in the EU, Frankfurt am Main) and the e-mail service Resend (Resend, Inc., USA) for sending form enquiries and confirmation e-mails.",
       ] },
       { title: "6. Transfer of personal data abroad", body: [
         "As Aurelia Grundbesitz GmbH is based in Germany, personal data sent to Aurelia from Turkey via the website or other communication channels may be processed in Germany.",
         "Where necessary for transactions relating to a property in Turkey, certain data may be shared with competent persons or institutions in Turkey.",
         "For transfers of data abroad, Article 9 of the KVKK and other relevant legislation are taken into account to the extent applicable. More information: [Transfer of data abroad (KVKK)](KVKKYD)",
+        "Due to the Resend service used for sending e-mails, data may be processed in the USA; access from outside the EU/EEA by the Lovable Cloud service provider or its subcontractors also cannot be completely ruled out. For these transfers, the requirements of Article 9 KVKK are assessed separately insofar as applicable.",
       ] },
       { title: "7. Your rights under the KVKK", body: [
         "Where the KVKK applies, data subjects may, under the conditions set out in the law, learn whether their personal data is being processed, request information if it has been processed, learn the purpose of processing and whether it is used in accordance with that purpose, learn the third parties to whom it has been transferred, request its rectification, erasure or destruction where the conditions are met, and exercise the other rights provided for in the law.",
