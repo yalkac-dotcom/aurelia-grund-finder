@@ -27,7 +27,7 @@ export const fr: PrivacyCopy = {
           "Informations sur des situations de vente particulières", "Prix de vente souhaité", "Intérêts d'achat",
           "Marchés, régions et types de biens souhaités", "Photos téléchargées",
           "Documents PDF, JPG, JPEG et PNG téléchargés",
-          "Données techniques d'utilisation et d'accès (voir fichiers journaux du serveur et – uniquement avec consentement – Google Analytics 4 et Microsoft Clarity)",
+          "Données techniques d'utilisation et d'accès (voir fichiers journaux du serveur)",
         ] },
       ] },
       { title: "3. Bases juridiques du traitement", body: [
@@ -74,55 +74,35 @@ export const fr: PrivacyCopy = {
           "Un tel transfert n'a lieu que dans la mesure nécessaire à l'opération concernée et lorsque les exigences applicables en matière de protection des données sont remplies. Pour les transferts internationaux, les exigences du [RGPD (art. 44 et suiv.)](EURLEX) et – le cas échéant – de l'[art. 9 KVKK](KVKKYD) sont prises en compte.",
         ] },
       ] },
-      { title: "10. Cookies, stockage local et gestion du consentement", body: [
-        "Lors de votre première visite sur notre site, vous décidez via l'avis de consentement si des services d'analyse peuvent être utilisés. Nous distinguons les stockages techniquement nécessaires des fonctions d'analyse soumises à consentement.",
+      { title: "10. Cookies, stockage local", body: [
+        "Nous utilisons exclusivement des stockages techniquement nécessaires. Aucun service d'analyse, de marketing ou de suivi n'est utilisé sur ce site.",
         { ul: [
-          "Nécessaire : enregistrement de votre choix de consentement dans le stockage local de votre navigateur.",
           "Nécessaire : enregistrement de la version linguistique choisie dans le stockage local de votre navigateur.",
-          "Soumis à consentement : Google Analytics 4 et Microsoft Clarity ne sont chargés et activés qu'après votre consentement exprès.",
         ] },
-        "Un refus n'entraîne aucun inconvénient pour l'utilisation de base du site. Vous pouvez modifier ou retirer votre choix à tout moment via « Paramètres des cookies » en pied de page.",
       ] },
-      { title: "11. Google Analytics 4", body: [
-        "Nous utilisons Google Analytics 4 pour l'analyse statistique et la mesure d'audience de l'utilisation de notre site, y compris des événements anonymes tels que les clics sur les liens téléphone et e-mail, les consultations de pages de formulaires importantes, les formulaires envoyés avec succès et le lancement des vidéos de l'entreprise. Les contenus des formulaires tels que noms, adresses e-mail, numéros de téléphone ou messages ne sont pas transmis à Google. Le traitement n'a lieu qu'après votre consentement exprès. Aucune fonction publicitaire ou de remarketing n'est utilisée.",
-        "Peuvent être traités :",
-        { ul: ["Adresse IP (tronquée)", "Informations sur l'appareil et le navigateur", "Pages consultées et chemin de la page", "Titre de la page", "Source de provenance (referrer)", "Identifiant cookie ou en ligne"] },
-        "L'anonymisation IP est activée sur ce site ; l'adresse IP est donc traitée sous forme tronquée.",
-        "La base juridique est l'art. 6, par. 1, point a) RGPD (consentement). Le consentement peut être retiré à tout moment avec effet pour l'avenir via « Paramètres des cookies ».",
-        "Fournisseur : Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande.",
-        "Un traitement des données en dehors de l'Espace économique européen, notamment aux États-Unis, ne peut être exclu. Les détails figurent dans les informations de confidentialité du fournisseur :",
-        { ul: ["[Règles de confidentialité de Google](GPRIV)", "[Google Analytics – protection des données](GA1)", "[Google Analytics – consentement](GA2)"] },
-      ] },
-      { title: "12. Microsoft Clarity", body: [
-        "Nous utilisons Microsoft Clarity pour analyser l'utilisation de notre site, notamment pour l'analyse des sessions et la création de cartes thermiques. Le traitement n'a lieu qu'après votre consentement exprès.",
-        { ul: ["Adresse IP", "Informations sur l'appareil et le navigateur", "Pages vues", "Comportement de la souris, du défilement et des clics", "Identifiants cookie ou en ligne"] },
-        "La base juridique est l'art. 6, par. 1, point a) RGPD (consentement). Le consentement peut être retiré à tout moment avec effet pour l'avenir via « Paramètres des cookies » ; le retrait est transmis immédiatement à Microsoft Clarity.",
-        "Fournisseur : Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Irlande.",
-        "Un traitement des données en dehors de l'Espace économique européen, notamment aux États-Unis, ne peut être exclu. [Déclaration de confidentialité de Microsoft](MS)",
-      ] },
-      { title: "13. Durée de conservation", body: [
+      { title: "11. Durée de conservation", body: [
         "Les données personnelles sont supprimées dès que la finalité de leur conservation disparaît. Pour les demandes, c'est le cas lorsque l'affaire concernée est définitivement réglée et qu'aucune obligation légale de conservation ne s'y oppose.",
       ] },
-      { title: "14. Sécurité des données", body: [
+      { title: "12. Sécurité des données", body: [
         "La transmission des données via ce site est chiffrée (HTTPS). Nous prenons des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive et l'accès non autorisé. Une transmission de données totalement sécurisée sur Internet ne peut toutefois pas être garantie.",
       ] },
-      { title: "15. Droits des personnes concernées", body: [
+      { title: "13. Droits des personnes concernées", body: [
         "Vous disposez des droits suivants concernant les données personnelles vous concernant :",
         { ul: [
           "[Art. 15 RGPD – accès](EURLEX)", "[Art. 16 RGPD – rectification](EURLEX)", "[Art. 17 RGPD – effacement](EURLEX)",
           "[Art. 18 RGPD – limitation du traitement](EURLEX)", "[Art. 20 RGPD – portabilité des données](EURLEX)", "[Art. 21 RGPD – opposition](EURLEX)",
         ] },
       ] },
-      { title: "16. Retrait du consentement", body: [
-        "Vous pouvez retirer à tout moment un consentement donné avec effet pour l'avenir (art. 7, par. 3, RGPD) – pour les services d'analyse via « Paramètres des cookies » en pied de page, sinon sans formalité par e-mail à {mail}. La licéité du traitement effectué avant le retrait n'en est pas affectée.",
+      { title: "14. Retrait du consentement", body: [
+        "Vous pouvez retirer à tout moment un consentement donné avec effet pour l'avenir (art. 7, par. 3, RGPD) sans formalité par e-mail à {mail}. La licéité du traitement effectué avant le retrait n'en est pas affectée.",
       ] },
-      { title: "17. Droit d'introduire une réclamation", body: [
+      { title: "15. Droit d'introduire une réclamation", body: [
         "Vous avez le droit d'introduire une réclamation auprès d'une autorité de contrôle de la protection des données. L'autorité compétente pour nous est la [Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)](LDI).",
       ] },
-      { title: "18. Contact en matière de protection des données", body: [
+      { title: "16. Contact en matière de protection des données", body: [
         "Pour toute question relative à la protection des données, vous pouvez nous joindre :\nE-mail : {mail}\nTéléphone : {tel}",
       ] },
-      { title: "19. Modifications de la présente politique", body: [
+      { title: "17. Modifications de la présente politique", body: [
         "Nous nous réservons le droit de modifier la présente politique de confidentialité si la situation juridique ou notre site ou nos traitements de données changent. La version publiée ici s'applique. Mise à jour : septembre 2026.",
       ] },
     ],
@@ -160,7 +140,7 @@ export const fr: PrivacyCopy = {
         "Vous conservez en outre le droit de saisir l'[Autorité turque de protection des données personnelles (KVKK)](KVKK).",
       ] },
       { title: "8. Consentement explicite et retrait", body: [
-        "Vous pouvez retirer à tout moment, avec effet pour l'avenir, le consentement donné pour des traitements fondés sur le consentement explicite. Pour les services d'analyse (Google Analytics 4, Microsoft Clarity), vous pouvez modifier votre choix via « Paramètres des cookies » en pied de page ; dans les autres cas, vous pouvez écrire à {mail}.",
+        "Vous pouvez retirer à tout moment, avec effet pour l'avenir, le consentement donné pour des traitements fondés sur le consentement explicite. Pour ce faire, vous pouvez écrire à {mail}.",
       ] },
       { title: "9. Demandes et contact", body: [
         "Demandes :\nAurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf\nAllemagne",

@@ -34,7 +34,7 @@ export const kvkkTr: PrivacyPart = {
       "Ayrıca [Kişisel Verileri Koruma Kurumu](KVKK)’na başvurma hakkınız saklıdır.",
     ] },
     { title: "8. Açık Rıza ve Geri Alma", body: [
-      "Açık rızaya dayanan işlemler için verdiğiniz rızayı dilediğiniz zaman geleceğe etkili olarak geri alabilirsiniz. Analiz hizmetleri (Google Analytics 4, Microsoft Clarity) için tercihinizi sitenin alt bölümündeki “Çerez Ayarları” üzerinden değiştirebilir, diğer durumlarda {mail} adresine yazabilirsiniz.",
+      "Açık rızaya dayanan işlemler için verdiğiniz rızayı dilediğiniz zaman geleceğe etkili olarak geri alabilirsiniz. Bunun için {mail} adresine yazabilirsiniz.",
     ] },
     { title: "9. Başvuru ve İletişim", body: [
       "Başvurular:\nAurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf\nAlmanya",

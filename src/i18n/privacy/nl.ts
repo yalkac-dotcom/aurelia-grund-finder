@@ -27,7 +27,7 @@ export const nl: PrivacyCopy = {
           "Informatie over bijzondere verkoopsituaties", "Gewenste verkoopprijs", "Koopinteresse",
           "Gewenste markten, regio's en vastgoedtypen", "Geüploade foto's",
           "Geüploade PDF-, JPG-, JPEG- en PNG-documenten",
-          "Technische gebruiks- en toegangsgegevens (zie serverlogbestanden en – alleen met toestemming – Google Analytics 4 en Microsoft Clarity)",
+          "Technische gebruiks- en toegangsgegevens (zie serverlogbestanden)",
         ] },
       ] },
       { title: "3. Rechtsgronden voor de verwerking", body: [
@@ -74,55 +74,35 @@ export const nl: PrivacyCopy = {
           "Een dergelijke doorgifte vindt alleen plaats voor zover dit voor de betreffende zaak nodig is en aan de geldende gegevensbeschermingsvereisten is voldaan. Bij internationale doorgiften worden de vereisten van de [AVG (art. 44 e.v.)](EURLEX) en – voor zover van toepassing – [art. 9 KVKK](KVKKYD) in acht genomen.",
         ] },
       ] },
-      { title: "10. Cookies, lokale opslag en toestemmingsbeheer", body: [
-        "Bij uw eerste bezoek aan onze website beslist u via de toestemmingsmelding of analysediensten mogen worden gebruikt. Wij maken onderscheid tussen technisch noodzakelijke opslag en analysefuncties waarvoor toestemming nodig is.",
+      { title: "10. Cookies, lokale opslag", body: [
+        "Wij gebruiken uitsluitend technisch noodzakelijke opslag. Analyse-, marketing- of trackingdiensten worden op deze website niet gebruikt.",
         { ul: [
-          "Noodzakelijk: opslag van uw toestemmingskeuze in de lokale opslag van uw browser.",
           "Noodzakelijk: opslag van de door u gekozen taalversie in de lokale opslag van uw browser.",
-          "Toestemming vereist: Google Analytics 4 en Microsoft Clarity worden uitsluitend na uw uitdrukkelijke toestemming geladen en geactiveerd.",
         ] },
-        "Weigeren heeft geen nadelen voor het basisgebruik van de website. U kunt uw keuze op elk moment wijzigen of intrekken via „Cookie-instellingen” onderaan de website.",
       ] },
-      { title: "11. Google Analytics 4", body: [
-        "Wij gebruiken Google Analytics 4 voor de statistische analyse en bereikmeting van het gebruik van onze website, inclusief anonieme gebeurtenissen zoals klikken op telefoon- en e-maillinks, bezoeken van belangrijke formulierpagina's, succesvol verzonden formulieren en het starten van de bedrijfsvideo's. Formulierinhoud zoals namen, e-mailadressen, telefoonnummers of berichten wordt daarbij niet aan Google doorgegeven. Verwerking vindt uitsluitend plaats na uw uitdrukkelijke toestemming. Reclame- of remarketingfuncties worden niet gebruikt.",
-        "Verwerkt kunnen worden:",
-        { ul: ["IP-adres (ingekort)", "Apparaat- en browserinformatie", "Bezochte pagina's en paginapad", "Paginatitel", "Verwijzende bron (referrer)", "Cookie- of online-ID"] },
-        "Op deze website is IP-anonimisering geactiveerd; het IP-adres wordt daardoor ingekort verwerkt.",
-        "Rechtsgrond is art. 6 lid 1 sub a AVG (toestemming). De toestemming kan op elk moment met werking voor de toekomst worden ingetrokken via „Cookie-instellingen”.",
-        "Aanbieder: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ierland.",
-        "Verwerking van gegevens buiten de Europese Economische Ruimte, met name in de VS, kan daarbij niet worden uitgesloten. Details staan in de privacyinformatie van de aanbieder:",
-        { ul: ["[Privacybeleid van Google](GPRIV)", "[Google Analytics – gegevensbescherming](GA1)", "[Google Analytics – toestemming (consent)](GA2)"] },
-      ] },
-      { title: "12. Microsoft Clarity", body: [
-        "Wij gebruiken Microsoft Clarity voor de analyse van het gebruik van onze website, met name voor sessieanalyse en het maken van heatmaps. Verwerking vindt uitsluitend plaats na uw uitdrukkelijke toestemming.",
-        { ul: ["IP-adres", "Apparaat- en browserinformatie", "Paginaweergaven", "Muis-, scroll- en klikgedrag", "Cookie- of online-ID's"] },
-        "Rechtsgrond is art. 6 lid 1 sub a AVG (toestemming). De toestemming kan op elk moment met werking voor de toekomst worden ingetrokken via „Cookie-instellingen”; de intrekking wordt onmiddellijk aan Microsoft Clarity doorgegeven.",
-        "Aanbieder: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ierland.",
-        "Verwerking van gegevens buiten de Europese Economische Ruimte, met name in de VS, kan daarbij niet worden uitgesloten. [Privacyverklaring van Microsoft](MS)",
-      ] },
-      { title: "13. Bewaartermijn", body: [
+      { title: "11. Bewaartermijn", body: [
         "Persoonsgegevens worden verwijderd zodra het doel van de opslag vervalt. Bij aanvragen is dit het geval wanneer de betreffende zaak definitief is afgehandeld en er geen wettelijke bewaarplichten aan de verwijdering in de weg staan.",
       ] },
-      { title: "14. Gegevensbeveiliging", body: [
+      { title: "12. Gegevensbeveiliging", body: [
         "De overdracht van gegevens via deze website gebeurt versleuteld (HTTPS). Wij nemen passende technische en organisatorische maatregelen om uw gegevens te beschermen tegen verlies, misbruik en onbevoegde toegang. Een volledig veilige gegevensoverdracht via internet kan echter niet worden gegarandeerd.",
       ] },
-      { title: "15. Rechten van betrokkenen", body: [
+      { title: "13. Rechten van betrokkenen", body: [
         "U heeft ten aanzien van uw persoonsgegevens de volgende rechten:",
         { ul: [
           "[Art. 15 AVG – inzage](EURLEX)", "[Art. 16 AVG – rectificatie](EURLEX)", "[Art. 17 AVG – wissing](EURLEX)",
           "[Art. 18 AVG – beperking van de verwerking](EURLEX)", "[Art. 20 AVG – overdraagbaarheid van gegevens](EURLEX)", "[Art. 21 AVG – bezwaar](EURLEX)",
         ] },
       ] },
-      { title: "16. Intrekking van toestemming", body: [
-        "U kunt een gegeven toestemming op elk moment met werking voor de toekomst intrekken (art. 7 lid 3 AVG) – voor analysediensten via „Cookie-instellingen” onderaan de website, verder vormvrij per e-mail aan {mail}. De rechtmatigheid van de verwerking tot aan de intrekking blijft onverlet.",
+      { title: "14. Intrekking van toestemming", body: [
+        "U kunt een gegeven toestemming op elk moment met werking voor de toekomst intrekken (art. 7 lid 3 AVG) vormvrij per e-mail aan {mail}. De rechtmatigheid van de verwerking tot aan de intrekking blijft onverlet.",
       ] },
-      { title: "17. Recht om een klacht in te dienen", body: [
+      { title: "15. Recht om een klacht in te dienen", body: [
         "U heeft het recht een klacht in te dienen bij een toezichthoudende autoriteit voor gegevensbescherming. Voor ons bevoegd is de [Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)](LDI).",
       ] },
-      { title: "18. Contact over gegevensbescherming", body: [
+      { title: "16. Contact over gegevensbescherming", body: [
         "Voor vragen over gegevensbescherming kunt u ons bereiken via:\nE-mail: {mail}\nTelefoon: {tel}",
       ] },
-      { title: "19. Wijzigingen van deze privacyverklaring", body: [
+      { title: "17. Wijzigingen van deze privacyverklaring", body: [
         "Wij behouden ons het recht voor deze privacyverklaring aan te passen wanneer de wetgeving of onze website of gegevensverwerking verandert. De hier gepubliceerde versie is van toepassing. Stand: september 2026.",
       ] },
     ],
@@ -160,7 +140,7 @@ export const nl: PrivacyCopy = {
         "Daarnaast behoudt u het recht om u te wenden tot de [Turkse toezichthouder voor gegevensbescherming (KVKK)](KVKK).",
       ] },
       { title: "8. Uitdrukkelijke toestemming en intrekking", body: [
-        "U kunt toestemming voor verwerkingen die op uitdrukkelijke toestemming berusten op elk moment met werking voor de toekomst intrekken. Voor analysediensten (Google Analytics 4, Microsoft Clarity) kunt u uw keuze wijzigen via „Cookie-instellingen” onderaan de website; in andere gevallen kunt u schrijven naar {mail}.",
+        "U kunt toestemming voor verwerkingen die op uitdrukkelijke toestemming berusten op elk moment met werking voor de toekomst intrekken. Daarvoor kunt u schrijven naar {mail}.",
       ] },
       { title: "9. Verzoeken en contact", body: [
         "Verzoeken:\nAurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf\nDuitsland",

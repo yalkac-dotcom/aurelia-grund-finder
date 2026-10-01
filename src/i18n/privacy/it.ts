@@ -27,7 +27,7 @@ export const it: PrivacyCopy = {
           "Informazioni su situazioni di vendita particolari", "Prezzo di vendita desiderato", "Interessi di acquisto",
           "Mercati, regioni e tipi di immobili desiderati", "Foto caricate",
           "Documenti PDF, JPG, JPEG e PNG caricati",
-          "Dati tecnici di utilizzo e di accesso (vedi file di log del server e – solo previo consenso – Google Analytics 4 e Microsoft Clarity)",
+          "Dati tecnici di utilizzo e di accesso (vedi file di log del server)",
         ] },
       ] },
       { title: "3. Basi giuridiche del trattamento", body: [
@@ -74,55 +74,35 @@ export const it: PrivacyCopy = {
           "Tale trasferimento avviene solo nella misura necessaria per il rispettivo caso e se sono soddisfatti i requisiti di protezione dei dati applicabili. Per i trasferimenti internazionali si tiene conto dei requisiti del [GDPR (artt. 44 e segg.)](EURLEX) e – ove applicabile – dell'[art. 9 KVKK](KVKKYD).",
         ] },
       ] },
-      { title: "10. Cookie, memoria locale e gestione del consenso", body: [
-        "Alla prima visita del nostro sito decide, tramite l'avviso di consenso, se possono essere utilizzati servizi di analisi. Distinguiamo tra memorizzazioni tecnicamente necessarie e funzioni di analisi soggette a consenso.",
+      { title: "10. Cookie, memoria locale", body: [
+        "Utilizziamo esclusivamente memorizzazioni tecnicamente necessarie. Su questo sito non vengono utilizzati servizi di analisi, marketing o tracciamento.",
         { ul: [
-          "Necessario: memorizzazione della sua scelta di consenso nella memoria locale del browser.",
           "Necessario: memorizzazione della versione linguistica scelta nella memoria locale del browser.",
-          "Soggetto a consenso: Google Analytics 4 e Microsoft Clarity vengono caricati e attivati esclusivamente dopo il suo consenso esplicito.",
         ] },
-        "Il rifiuto non comporta svantaggi per l'utilizzo di base del sito. Può modificare o revocare la sua scelta in qualsiasi momento tramite «Impostazioni cookie» nel piè di pagina.",
       ] },
-      { title: "11. Google Analytics 4", body: [
-        "Utilizziamo Google Analytics 4 per l'analisi statistica e la misurazione della portata dell'utilizzo del nostro sito, compresi eventi anonimi come clic su link telefonici ed e-mail, visualizzazioni di pagine di moduli importanti, moduli inviati con successo e avvio dei video aziendali. Contenuti dei moduli come nomi, indirizzi e-mail, numeri di telefono o messaggi non vengono trasmessi a Google. Il trattamento avviene esclusivamente dopo il suo consenso esplicito. Non vengono utilizzate funzioni pubblicitarie o di remarketing.",
-        "Possono essere trattati:",
-        { ul: ["Indirizzo IP (abbreviato)", "Informazioni su dispositivo e browser", "Pagine visitate e percorso della pagina", "Titolo della pagina", "Fonte di provenienza (referrer)", "Identificativo cookie o online"] },
-        "Su questo sito è attivata l'anonimizzazione dell'IP; l'indirizzo IP viene quindi trattato in forma abbreviata.",
-        "La base giuridica è l'art. 6, par. 1, lett. a) GDPR (consenso). Il consenso può essere revocato in qualsiasi momento con effetto per il futuro tramite «Impostazioni cookie».",
-        "Fornitore: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlanda.",
-        "Non si può escludere un trattamento dei dati al di fuori dello Spazio economico europeo, in particolare negli USA. I dettagli sono contenuti nelle informazioni sulla privacy del fornitore:",
-        { ul: ["[Informativa sulla privacy di Google](GPRIV)", "[Google Analytics – protezione dei dati](GA1)", "[Google Analytics – consenso](GA2)"] },
-      ] },
-      { title: "12. Microsoft Clarity", body: [
-        "Utilizziamo Microsoft Clarity per analizzare l'utilizzo del nostro sito, in particolare per l'analisi delle sessioni e la creazione di heatmap. Il trattamento avviene esclusivamente dopo il suo consenso esplicito.",
-        { ul: ["Indirizzo IP", "Informazioni su dispositivo e browser", "Visualizzazioni di pagina", "Comportamento di mouse, scorrimento e clic", "Identificativi cookie o online"] },
-        "La base giuridica è l'art. 6, par. 1, lett. a) GDPR (consenso). Il consenso può essere revocato in qualsiasi momento con effetto per il futuro tramite «Impostazioni cookie»; la revoca viene trasmessa immediatamente a Microsoft Clarity.",
-        "Fornitore: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Irlanda.",
-        "Non si può escludere un trattamento dei dati al di fuori dello Spazio economico europeo, in particolare negli USA. [Informativa sulla privacy di Microsoft](MS)",
-      ] },
-      { title: "13. Durata di conservazione", body: [
+      { title: "11. Durata di conservazione", body: [
         "I dati personali vengono cancellati non appena viene meno lo scopo della conservazione. Per le richieste ciò avviene quando la questione è stata definitivamente chiarita e non vi si oppongono obblighi legali di conservazione.",
       ] },
-      { title: "14. Sicurezza dei dati", body: [
+      { title: "12. Sicurezza dei dati", body: [
         "La trasmissione dei dati tramite questo sito avviene in forma crittografata (HTTPS). Adottiamo misure tecniche e organizzative adeguate per proteggere i suoi dati da perdita, uso improprio e accesso non autorizzato. Tuttavia non è possibile garantire una trasmissione dei dati su Internet completamente sicura.",
       ] },
-      { title: "15. Diritti degli interessati", body: [
+      { title: "13. Diritti degli interessati", body: [
         "Lei ha i seguenti diritti in relazione ai dati personali che la riguardano:",
         { ul: [
           "[Art. 15 GDPR – accesso](EURLEX)", "[Art. 16 GDPR – rettifica](EURLEX)", "[Art. 17 GDPR – cancellazione](EURLEX)",
           "[Art. 18 GDPR – limitazione del trattamento](EURLEX)", "[Art. 20 GDPR – portabilità dei dati](EURLEX)", "[Art. 21 GDPR – opposizione](EURLEX)",
         ] },
       ] },
-      { title: "16. Revoca del consenso", body: [
-        "Può revocare in qualsiasi momento un consenso prestato con effetto per il futuro (art. 7, par. 3, GDPR) – per i servizi di analisi tramite «Impostazioni cookie» nel piè di pagina, negli altri casi senza formalità via e-mail a {mail}. La liceità del trattamento effettuato fino alla revoca resta impregiudicata.",
+      { title: "14. Revoca del consenso", body: [
+        "Può revocare in qualsiasi momento un consenso prestato con effetto per il futuro (art. 7, par. 3, GDPR) senza formalità via e-mail a {mail}. La liceità del trattamento effettuato fino alla revoca resta impregiudicata.",
       ] },
-      { title: "17. Diritto di reclamo", body: [
+      { title: "15. Diritto di reclamo", body: [
         "Ha il diritto di proporre reclamo a un'autorità di controllo per la protezione dei dati. L'autorità competente per noi è la [Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)](LDI).",
       ] },
-      { title: "18. Contatto per la protezione dei dati", body: [
+      { title: "16. Contatto per la protezione dei dati", body: [
         "Per domande sulla protezione dei dati può contattarci a:\nE-mail: {mail}\nTelefono: {tel}",
       ] },
-      { title: "19. Modifiche della presente informativa", body: [
+      { title: "17. Modifiche della presente informativa", body: [
         "Ci riserviamo il diritto di modificare la presente informativa qualora cambino la situazione giuridica o il nostro sito o il trattamento dei dati. Si applica la versione pubblicata qui. Aggiornamento: settembre 2026.",
       ] },
     ],
@@ -160,7 +140,7 @@ export const it: PrivacyCopy = {
         "Resta salvo inoltre il diritto di rivolgersi all'[Autorità turca per la protezione dei dati personali (KVKK)](KVKK).",
       ] },
       { title: "8. Consenso esplicito e revoca", body: [
-        "Può revocare in qualsiasi momento, con effetto per il futuro, il consenso prestato per trattamenti basati sul consenso esplicito. Per i servizi di analisi (Google Analytics 4, Microsoft Clarity) può modificare la sua scelta tramite «Impostazioni cookie» nel piè di pagina; negli altri casi può scrivere a {mail}.",
+        "Può revocare in qualsiasi momento, con effetto per il futuro, il consenso prestato per trattamenti basati sul consenso esplicito. A tal fine può scrivere a {mail}.",
       ] },
       { title: "9. Istanze e contatti", body: [
         "Istanze:\nAurelia Grundbesitz GmbH\nGrevenbroicher Weg 2\n40547 Düsseldorf\nGermania",
