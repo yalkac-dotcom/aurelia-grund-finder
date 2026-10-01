@@ -155,12 +155,12 @@ const About = () => {
                 <div className="relative md:pl-7 lg:pl-9">
                   <span aria-hidden="true" className="absolute left-0 top-1/2 hidden h-14 w-px -translate-y-1/2 bg-accent/25 md:block" />
                   <figure className="mx-auto w-full max-w-[21rem]">
-                    <div className="w-full max-w-[260px] max-sm:mx-auto max-sm:max-w-[200px]">
+                    <div className="w-full max-w-[260px] max-sm:mx-auto max-sm:max-w-[210px]">
                       <div className="rounded-[3px] border border-accent/30 bg-secondary/40 p-1.5">
                         <img src={portraitAsset.url} alt="Yasar Alkac, Geschäftsführung Aurelia Grundbesitz GmbH" loading="lazy" width={1086} height={1448} className="block h-auto w-full object-contain" />
                       </div>
                     </div>
-                    <figcaption className="mt-2 px-1.5 max-sm:mt-3 max-sm:pl-[calc((100%_-_200px)/2)] max-sm:pr-1">
+                    <figcaption className="mt-2 px-1.5 max-sm:mt-3 max-sm:pl-[calc((100%_-_210px)/2)] max-sm:pr-1">
                       <p className="font-heading text-[1rem] font-semibold leading-snug text-primary">Yasar Alkac</p>
                       <p className="mt-0.5 text-[9.5px] font-semibold uppercase tracking-[0.08em] text-highlight">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
                       <p className="mt-2 text-[12.5px] leading-[1.65] text-foreground/70">Seit rund 30 Jahren unternehmerisch tätig, verfügt Yasar Alkac über umfassende Erfahrung in der Entwicklung und Führung von Unternehmen. Bei Aurelia verantwortet er insbesondere die Prüfung ausgewählter Immobilien und die wesentlichen Ankaufsentscheidungen.</p>
