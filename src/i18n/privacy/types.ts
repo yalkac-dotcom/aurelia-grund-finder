@@ -22,10 +22,6 @@ export interface PrivacyCopy {
 export const PRIVACY_URLS: Record<string, string> = {
   EURLEX: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32016R0679",
   BDSG: "https://www.gesetze-im-internet.de/bdsg_2018/",
-  GPRIV: "https://policies.google.com/privacy?hl=de",
-  GA1: "https://support.google.com/analytics/answer/6004245?hl=de",
-  GA2: "https://support.google.com/analytics/answer/14275483?hl=de",
-  MS: "https://privacy.microsoft.com/de-de/privacystatement",
   LDI: "https://www.ldi.nrw.de/",
   KVKK: "https://www.kvkk.gov.tr/",
   KVKKLAW: "https://www.kvkk.gov.tr/Icerik/6649/Personal-Data-Protection-Law",
