@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { editorial } from "@/assets/editorial";
 import { ArrowRight, Building2, Check, CircleCheck, Eye, Handshake, Network, Scale, ShieldCheck, Sprout, Target, Users } from "lucide-react";
 import aboutMenschenAsset from "@/assets/about-menschen-haende.jpeg.asset.json";
-import portraitAsset from "@/assets/yasar-alkac-portraet.png.asset.json";
+import portraitAsset from "@/assets/yasar-alkac-portraet-sauber.png.asset.json";
 import { getUnserAnsatz } from "@/i18n/aboutUnserAnsatz";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -157,7 +157,7 @@ const About = () => {
                   <figure className="mx-auto w-full max-w-[21rem]">
                     <div className="w-full max-w-[260px] max-sm:mx-auto max-sm:max-w-[210px]">
                       <div className="rounded-[3px] border border-accent/30 bg-secondary/40 p-1.5">
-                        <img src={portraitAsset.url} alt="Yasar Alkac, Geschäftsführung Aurelia Grundbesitz GmbH" loading="lazy" width={1086} height={1448} className="block h-auto w-full object-contain" />
+                        <img src={portraitAsset.url} alt="Yasar Alkac, Geschäftsführung Aurelia Grundbesitz GmbH" loading="lazy" width={652} height={709} style={{ aspectRatio: "652 / 709" }} className="block h-auto w-full object-contain" />
                       </div>
                     </div>
                     <figcaption className="mt-2 px-1.5 max-sm:mt-3 max-sm:pl-[calc((100%_-_210px)/2)] max-sm:pr-1">
