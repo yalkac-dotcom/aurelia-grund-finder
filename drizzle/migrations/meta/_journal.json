@@ -8,6 +8,20 @@
       "when": 1790017309347,
       "tag": "0000_turkey_property_document_upload_policies",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1790852661717,
+      "tag": "0001_admin_area_and_retention",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1790852690157,
+      "tag": "0002_backfill_remaining_file_mapping",
+      "breakpoints": true
     }
   ]
 }

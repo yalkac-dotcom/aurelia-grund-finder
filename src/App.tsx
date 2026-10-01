@@ -10,6 +10,8 @@ import ForGeschaftspartner from "./pages/ForGeschaftspartner";
 import HowItWorks from "./pages/HowItWorks";
 
 const About = lazy(() => import("./pages/About"));
+const AdminArea = lazy(() => import("./pages/admin/AdminArea"));
+const AdminPassword = lazy(() => import("./pages/admin/AdminPassword"));
 const Services = lazy(() => import("./pages/Services"));
 const TaxBenefits = lazy(() => import("./pages/TaxBenefits"));
 const AfaPage = lazy(() => import("./pages/tax/AfaPage"));
@@ -48,6 +50,8 @@ const App = () => (
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/verwaltung" element={<AdminArea />} />
+              <Route path="/verwaltung/passwort" element={<AdminPassword />} />
               <Route path="/fuer-eigentuemer" element={<LegacyOwnerRedirect />} />
               <Route path="/fuer-eigentumer-in-not" element={<LegacyOwnerRedirect />} />
               <Route path="/fuer-kaeufer" element={<ForBuyers />} />

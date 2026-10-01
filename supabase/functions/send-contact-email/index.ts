@@ -27,6 +27,7 @@ interface ContactPayload {
   form_type?: "general_contact" | "germany_property" | "turkey_property" | null;
   files?: { name: string; path: string; size: number; type: string }[];
   privacy_consent?: boolean;
+  submission_id?: string | null;
 }
 
 type Locale = "de" | "en" | "nl" | "it" | "es" | "tr" | "fr";
@@ -246,7 +247,6 @@ async function sendEmail(payload: {
     console.log(JSON.stringify({
       event: "email_accepted",
       mailType,
-      recipient: payload.to,
       resendId: messageId,
       providerStatus: primary.status,
     }));
@@ -257,12 +257,50 @@ async function sendEmail(payload: {
     JSON.stringify({
       event: "email_rejected",
       mailType,
-      recipient: payload.to,
       providerStatus: primary.status,
       providerError: primary.data,
     }),
   );
   throw new Error(`Resend error [${primary.status}]: ${JSON.stringify(primary.data)}`);
+}
+
+
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const PATH_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\/[^/]{1,200}$/i;
+
+function serviceHeaders(extra: Record<string, string> = {}) {
+  return { apikey: SUPABASE_SERVICE_ROLE_KEY!, Authorization: `Bearer ${SUPABASE_SERVICE_ROLE_KEY}`, "Content-Type": "application/json", ...extra };
+}
+
+// Lädt eine frisch angelegte Anfrage (max. 15 Minuten alt) – schützt vor Missbrauch fremder IDs.
+async function getRecentSubmission(id: unknown): Promise<{ id: string; form_type: string | null; country: string | null } | null> {
+  if (typeof id !== "string" || !UUID_RE.test(id) || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) return null;
+  const since = new Date(Date.now() - 15 * 60 * 1000).toISOString();
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/contact_submissions?id=eq.${id}&created_at=gte.${encodeURIComponent(since)}&select=id,form_type,country`, { headers: serviceHeaders() });
+  if (!res.ok) return null;
+  const rows = await res.json();
+  return Array.isArray(rows) && rows[0] ? rows[0] : null;
+}
+
+// Ordnet hochgeladene Dateien eindeutig der Anfrage zu (nur existierende Objekte im privaten Speicher).
+async function linkFilesToSubmission(submissionId: string, files: { path: string; name?: string }[] | undefined) {
+  if (!files || files.length === 0) return 0;
+  let linked = 0;
+  for (const file of files.slice(0, 10)) {
+    if (typeof file?.path !== "string" || !PATH_RE.test(file.path)) continue;
+    const [folder, objectName] = file.path.split("/");
+    const list = await fetch(`${SUPABASE_URL}/storage/v1/object/list/${TURKEY_DOCUMENT_BUCKET}`, {
+      method: "POST", headers: serviceHeaders(), body: JSON.stringify({ prefix: folder, limit: 5 }),
+    });
+    const objects = list.ok ? await list.json() : [];
+    if (!Array.isArray(objects) || !objects.some((o: { name?: string }) => o?.name === objectName)) continue;
+    const ins = await fetch(`${SUPABASE_URL}/rest/v1/submission_files?on_conflict=object_path`, {
+      method: "POST", headers: serviceHeaders({ Prefer: "resolution=ignore-duplicates,return=minimal" }),
+      body: JSON.stringify({ submission_id: submissionId, object_path: file.path, file_name: objectName }),
+    });
+    if (ins.ok) linked++;
+  }
+  return linked;
 }
 
 async function createSignedDocumentLinks(files: ContactPayload["files"]): Promise<string[]> {
@@ -298,7 +336,28 @@ Deno.serve(async (req) => {
   }
 
   try {
-    const body = (await req.json()) as ContactPayload;
+    const body = (await req.json()) as ContactPayload & { mode?: string };
+
+    // Türkei-Anfragen: Datenminimierung. Vollständige Anfrage bleibt in Lovable Cloud;
+    // über Resend geht nur eine neutrale Benachrichtigung ohne personenbezogene Inhalte.
+    if (body?.mode === "turkey_minimal") {
+      const submission = await getRecentSubmission(body.submission_id);
+      if (!submission || submission.form_type !== "turkey_property") {
+        return new Response(JSON.stringify({ error: "Invalid submission" }), { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+      }
+      await linkFilesToSubmission(submission.id, body.files);
+      const neutralText = "Eine neue Immobilienanfrage aus der Türkei ist eingegangen. Bitte melden Sie sich im geschützten Verwaltungsbereich an, um die Anfrage zu bearbeiten.";
+      const internalMailResult = await sendEmail({
+        to: [NOTIFY_TO],
+        subject: "Neue Immobilienanfrage – Türkei",
+        html: `<!doctype html><html lang="de"><head><meta charset="utf-8"></head><body style="font-family:Arial,sans-serif;color:#1a2238;"><p style="font-size:15px;line-height:1.7;">${neutralText}</p></body></html>`,
+        text: neutralText,
+      }, "internal");
+      return new Response(JSON.stringify({
+        success: true, internalMailResult,
+        customerConfirmationResult: { accepted: false, skipped: true }, confirmationSent: false,
+      }), { status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" } });
+    }
 
     // Validation
     if (!body?.name || typeof body.name !== "string" || body.name.length > 200) {
@@ -355,6 +414,11 @@ Deno.serve(async (req) => {
         status: 400,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
+    }
+
+    if (body.submission_id) {
+      const submission = await getRecentSubmission(body.submission_id);
+      if (submission) await linkFilesToSubmission(submission.id, body.files);
     }
 
     const documentLinks = await createSignedDocumentLinks(body.files);
@@ -509,7 +573,6 @@ ${body.message}${documentLinksText}`;
       const confirmationError = e instanceof Error ? e.message : "Unknown confirmation error";
       console.error(JSON.stringify({
         event: "customer_confirmation_failed",
-        recipient: body.email,
         locale,
         error: confirmationError,
       }));
@@ -527,7 +590,7 @@ ${body.message}${documentLinksText}`;
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   } catch (error) {
-    console.error("send-contact-email error:", error);
+    console.error("send-contact-email error:", error instanceof Error ? error.message.slice(0, 200) : "unknown");
     const msg = error instanceof Error ? error.message : "Unknown error";
     return new Response(JSON.stringify({ success: false, error: msg }), {
       status: 500,
