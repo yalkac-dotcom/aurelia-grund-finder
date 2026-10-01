@@ -120,13 +120,15 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
     ].filter(Boolean).join("\n").slice(0, 4900);
     const [firstName, ...rest] = text.name.trim().split(/\s+/);
     try {
+      const submissionId = crypto.randomUUID();
       const { error: dbError } = await supabase.from("contact_submissions").insert({
+        id: submissionId, form_type: "buyer_interest",
         first_name: firstName, last_name: rest.join(" ") || "-", email: text.email.trim(), phone: text.phone.trim(),
         property_type: "Kaufinteresse – Bestand", subject: compact ? "Kaufinteresse – Anfrage über: Unser Bestand" : "Kaufinteresse", message, callback_requested: false,
       });
       if (dbError) throw dbError;
       const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: { name: text.name.trim(), email: text.email.trim(), phone: text.phone.trim(), property_type: "Kaufinteresse – Bestand", subject: compact ? "Kaufinteresse – Anfrage über: Unser Bestand" : "Kaufinteresse", message, language, preferred_language: compact ? base.languageOptions[langIndex] : lang, form_type: "general_contact", privacy_consent: true },
+        body: { submission_id: submissionId, name: text.name.trim(), email: text.email.trim(), phone: text.phone.trim(), property_type: "Kaufinteresse – Bestand", subject: compact ? "Kaufinteresse – Anfrage über: Unser Bestand" : "Kaufinteresse", message, language, preferred_language: compact ? base.languageOptions[langIndex] : lang, form_type: "general_contact", privacy_consent: true },
       });
       if (error || !data?.success) throw error ?? new Error("send failed");
       setSuccess(true);

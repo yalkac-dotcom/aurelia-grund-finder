@@ -80,7 +80,12 @@ const Contact = () => {
     setSubmitting(true);
 
     const rawMessage = formData.get("message") as string;
+    const submissionId = crypto.randomUUID();
+    const isTurkeyLocation = propertyLocation === t.contact.propertyLocationOptions?.[1];
     const payload = {
+      id: submissionId,
+      form_type: isTurkeyLocation ? "turkey_property" : "general_contact",
+      country: isTurkeyLocation ? "Türkei" : propertyLocation ? "Deutschland" : null,
       first_name: formData.get("name") as string,
       last_name: "",
       email: formData.get("email") as string,
@@ -103,7 +108,8 @@ const Contact = () => {
     const { data: emailData, error: emailError } = await supabase.functions.invoke(
       "send-contact-email",
       {
-        body: {
+        body: isTurkeyLocation ? { mode: "turkey_minimal", submission_id: submissionId } : {
+          submission_id: submissionId,
           name: payload.first_name,
           email: payload.email,
           phone: payload.phone ?? undefined,
@@ -125,7 +131,7 @@ const Contact = () => {
       return;
     }
 
-    setConfirmationWarning(emailData?.confirmationSent === false);
+    setConfirmationWarning(!isTurkeyLocation && emailData?.confirmationSent === false);
     setSubmitted(true);
   };
 
