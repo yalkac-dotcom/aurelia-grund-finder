@@ -1,5 +1,4 @@
 import { FormEvent, useState } from "react";
-import { Link } from "react-router-dom";
 import { CheckCircle2 } from "lucide-react";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
@@ -72,7 +71,6 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
   const [budget, setBudget] = useState("");
   const [usage, setUsage] = useState("");
   const [lang, setLang] = useState(base.languageOptions[langIndex]);
-  const [privacy, setPrivacy] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -190,7 +188,8 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
           <p>{c.success}</p>
         </div>
       )}
-      <Button type="submit" disabled={submitting} size="lg" className="mt-8 min-h-12 h-auto w-full whitespace-normal rounded-sm px-4 py-3 text-center leading-snug uppercase tracking-[0.1em] sm:w-auto sm:px-8">
+      <FormPrivacyNotice language={language} className="mt-7" />
+      <Button type="submit" disabled={submitting} size="lg" className="mt-4 min-h-12 h-auto w-full whitespace-normal rounded-sm px-4 py-3 text-center leading-snug uppercase tracking-[0.1em] sm:w-auto sm:px-8">
         {submitting ? c.sending : compact ? sc.submit : c.submit}
       </Button>
       <p className="mt-6 max-w-3xl text-[0.8rem] leading-[1.7] text-muted-foreground">

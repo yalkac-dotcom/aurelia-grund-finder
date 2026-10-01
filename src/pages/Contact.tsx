@@ -286,31 +286,6 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="pt-1">
-                    <label htmlFor="privacy_consent" className="flex items-start gap-3 cursor-pointer">
-                      <input
-                        id="privacy_consent"
-                        name="privacy_consent"
-                        type="checkbox"
-                        required
-                        aria-describedby="consent-error"
-                        className="mt-0.5 h-4 w-4 shrink-0 accent-[hsl(var(--accent))]"
-                        onInvalid={(event) => event.currentTarget.setCustomValidity(t.contact.consentRequired)}
-                        onChange={(event) => event.currentTarget.setCustomValidity("")}
-                      />
-                      <span className="text-[0.85rem] leading-[1.6] text-foreground/85">
-                        {t.contact.consentCheckbox} <span className="text-accent">*</span>{" "}
-                        <Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="text-accent hover:underline">
-                          {t.contact.consentNoticeLink}
-                        </Link>
-                      </span>
-                    </label>
-                    {error === t.contact.consentRequired && (
-                      <p id="consent-error" role="alert" className="mt-1.5 text-sm text-destructive">
-                        {t.contact.consentRequired}
-                      </p>
-                    )}
-                  </div>
 
 
                   {error && (
