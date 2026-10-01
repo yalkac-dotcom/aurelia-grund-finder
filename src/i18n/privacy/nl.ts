@@ -55,11 +55,14 @@ export const nl: PrivacyCopy = {
         "Persoonsgegevens kunnen met name worden verwerkt bij vastgoedaanbiedingen voor een mogelijke aankoop door Aurelia, bij koopinteresse in vastgoed uit de eigen portefeuille van Aurelia en bij aanvragen over vastgoed in Turkije.",
         "Aurelia bemiddelt geen vastgoed van derden en neemt geen klassieke zoekopdrachten aan. Kopers laten alleen hun interesse vastleggen in mogelijk passend vastgoed uit de eigen portefeuille.",
         "Rechtsgrond is art. 6 lid 1 sub b AVG en – indien gegeven – art. 6 lid 1 sub a AVG.",
+        "In het formulier „Vastgoed aanbieden“ kunt u vrijwillig aanvullende informatie over de situatie van uw vastgoed geven (veld „Bijzondere situatie“ en vrije beschrijving). Deze gegevens zijn niet verplicht en dienen uitsluitend om uw aanvraag te beoordelen. Vul daar geen gezondheidsgegevens of andere bijzondere categorieën van persoonsgegevens in de zin van art. 9 AVG in, tenzij dit voor de aanvraag noodzakelijk is.",
       ] },
       { title: "7. Uploaden van foto's en documenten", body: [
         "Bij vastgoedaanvragen kunnen gebruikers foto's en documenten (PDF, JPG, JPEG, PNG) meesturen. Deze documenten kunnen persoonsgegevens bevatten.",
         "Stuur alleen documenten mee die nodig zijn voor de behandeling van uw aanvraag en die u gerechtigd bent te verstrekken. Bevatten documenten persoonsgegevens van derden, dan mogen alleen gegevens worden verstrekt waarvan de doorgifte voor de concrete aanvraag noodzakelijk en wettelijk toegestaan is.",
         "De gegevens worden verwerkt voor de behandeling van de aanvraag, de beoordeling van het vastgoed en – voor zover nodig – de voorbereiding of uitvoering van een mogelijke vastgoedtransactie.",
+        "Geüploade bestanden (PDF, JPG, JPEG, PNG; max. 10 MB per bestand) worden opgeslagen in een niet-openbare bestandsopslag van onze technische dienstverlener (zie paragraaf 8). Openbaar opvragen is niet mogelijk; toegang vindt alleen plaats in het kader van de behandeling van de aanvraag.",
+        "De meldings-e-mail aan ons bevat een downloadlink naar de bestanden die 7 dagen geldig is. Het verlopen van de link betekent niet dat het opgeslagen bestand wordt verwijderd; de verwijdering is geregeld in paragraaf 11.",
       ] },
       { title: "8. Ontvangers van persoonsgegevens", body: [
         "Afhankelijk van de concrete situatie en alleen voor zover nodig kunnen persoonsgegevens met name toegankelijk worden gemaakt voor de volgende ontvangers:",
@@ -67,6 +70,9 @@ export const nl: PrivacyCopy = {
           "IT-, hosting- en technische dienstverleners", "Advocaten", "Notarissen", "Belastingadviseurs", "Taxateurs",
           "Architecten en technische deskundigen", "Noodzakelijke vastgoed- of zakenpartners",
           "Overheidsinstanties of andere instellingen, voor zover er een wettelijke verplichting bestaat of dit voor een concrete transactie nodig is",
+        "Database en bestandsopslag (Lovable Cloud): De via onze formulieren verstrekte gegevens worden in een database opgeslagen, geüploade bestanden in een niet-openbare bestandsopslag. Doel is de behandeling, documentatie en opvolging van uw aanvraag. Website, database en bestandsopslag worden beheerd via het platform Lovable Cloud, dat als technische dienstverlener in onze opdracht handelt en daarvoor verdere infrastructuurdienstverleners inzet. Via de website zelf kunnen opgeslagen aanvragen niet worden opgevraagd; alleen wij hebben toegang via een beveiligde beheerderstoegang, evenals de dienstverlener voor zover technisch noodzakelijk. Volgens de technische configuratie bevinden database en bestandsopslag zich in een datacenter in de EU (Frankfurt am Main). Toegang door de dienstverlener of diens onderaannemers vanuit landen buiten de EU/EER, in het bijzonder de VS (bijv. voor onderhoud of ondersteuning), kan niet worden uitgesloten. Rechtsgrond is art. 6 lid 1 onder b en f AVG.",
+        "E-mailverzending (Resend): Voor het verzenden van formulieraanvragen aan ons en bevestigingsmails aan u gebruiken wij de dienst Resend (Resend, Inc., VS). Daarbij worden de in het formulier ingevulde gegevens (met name naam, e-mailadres, telefoonnummer, inhoud van de aanvraag, gegevens over het vastgoed en eventueel downloadlinks naar geüploade bestanden) en technische verzendgegevens (bijv. ontvangeradres, tijdstip van verzending) verwerkt. Resend handelt als technische dienstverlener in onze opdracht. Verwerking in de VS is mogelijk. Rechtsgrond is art. 6 lid 1 onder b AVG (behandeling van uw aanvraag) en art. 6 lid 1 onder f AVG (gerechtvaardigd belang bij betrouwbare e-mailverzending).",
+        "Doorgiften naar derde landen buiten de EU/EER vinden alleen plaats met inachtneming van art. 44 e.v. AVG, dus op basis van een adequaatheidsbesluit van de Europese Commissie (art. 45 AVG) of passende waarborgen zoals de EU-standaardcontractbepalingen (art. 46 AVG), voor zover deze met de betreffende aanbieder zijn overeengekomen. Op verzoek via {mail} informeren wij u over de gebruikte grondslag.",
         ] },
       ] },
       { title: "9. Duitsland en Turkije – grensoverschrijdende gegevensverwerking", body: [
@@ -86,6 +92,8 @@ export const nl: PrivacyCopy = {
       ] },
       { title: "11. Bewaartermijn", body: [
         "Persoonsgegevens worden verwijderd zodra het doel van de opslag vervalt. Bij aanvragen is dit het geval wanneer de betreffende zaak definitief is afgehandeld en er geen wettelijke bewaarplichten aan de verwijdering in de weg staan.",
+        "Voor contact-, koopinteresse- en vastgoedaanvragen geldt: persoonsgegevens en geüploade bestanden worden uiterlijk 12 maanden na afronding van de aanvraag of na het laatste inhoudelijke contact verwijderd, tenzij zij nog nodig zijn.",
+        "Uitgezonderd zijn gegevens die langer nodig zijn vanwege een bestaande of beoogde contractuele relatie, wettelijke bewaarplichten of voor de instelling, uitoefening of verdediging van rechtsvorderingen. Voor deze gegevens gelden de telkens vereiste of wettelijke termijnen.",
       ] },
       { title: "12. Gegevensbeveiliging", body: [
         "De overdracht van gegevens via deze website gebeurt versleuteld (HTTPS). Wij nemen passende technische en organisatorische maatregelen om uw gegevens te beschermen tegen verlies, misbruik en onbevoegde toegang. Een volledig veilige gegevensoverdracht via internet kan echter niet worden gegarandeerd.",
@@ -123,6 +131,8 @@ export const nl: PrivacyCopy = {
       ] },
       { title: "2. Verwerkte persoonsgegevens", body: [
         "Afhankelijk van uw aanvraag kunnen voor- en achternaam, telefoonnummer, e-mailadres, contactgegevens, adres- en locatiegegevens van het vastgoed, type en kenmerken van het vastgoed, eigendomsgegevens, verkoopwens, gevraagde verkoopprijs, koopinteresse, berichten en toelichtingen en door u geüploade foto's en documenten worden verwerkt.",
+        "Via de formulieren van de website verstrekte gegevens worden in een database opgeslagen; geüploade foto's en documenten (PDF, JPG, JPEG, PNG; max. 10 MB per bestand) in een niet-openbare bestandsopslag. De meldings-e-mail aan ons bevat een downloadlink naar de bestanden die 7 dagen geldig is; het verlopen van de link betekent niet dat het bestand wordt verwijderd.",
+        "Persoonsgegevens en geüploade bestanden van contact-, koopinteresse- en vastgoedaanvragen worden uiterlijk 12 maanden na afronding van de aanvraag of na het laatste inhoudelijke contact verwijderd, tenzij zij nog nodig zijn vanwege een bestaande of beoogde contractuele relatie, wettelijke bewaarplichten of de instelling, uitoefening of verdediging van rechtsvorderingen.",
       ] },
       { title: "3. Doeleinden van de verwerking", body: [
         "Uw persoonsgegevens kunnen worden verwerkt voor de beoordeling van uw vastgoedaanbod, de beoordeling van een mogelijke aankoop door Aurelia, de beoordeling van uw koopinteresse, het contact met u, het beantwoorden van uw verzoeken, de voorbereiding en uitvoering van een mogelijke vastgoedtransactie, de nakoming van wettelijke verplichtingen en de veilige exploitatie van de website.",
@@ -133,11 +143,13 @@ export const nl: PrivacyCopy = {
       ] },
       { title: "5. Doorgifte van persoonsgegevens", body: [
         "Afhankelijk van de aard van de transactie en alleen voor zover nodig kunnen uw persoonsgegevens worden doorgegeven aan technische dienstverleners en aan advocaten, notarissen, financieel adviseurs, taxatie- of technische deskundigen, zakenpartners in de vastgoedsector, bevoegde instanties en instellingen of andere noodzakelijke personen die nodig zijn voor de uitvoering van een mogelijke vastgoedtransactie.",
+        "Technische dienstverleners zijn met name het platform Lovable Cloud voor database en bestandsopslag (volgens de technische configuratie een datacenter in de EU, Frankfurt am Main) en de e-maildienst Resend (Resend, Inc., VS) voor het verzenden van formulieraanvragen en bevestigingsmails.",
       ] },
       { title: "6. Doorgifte van persoonsgegevens naar het buitenland", body: [
         "Omdat Aurelia Grundbesitz GmbH in Duitsland is gevestigd, kunnen persoonsgegevens die vanuit Turkije via de website of andere communicatiekanalen aan Aurelia worden gestuurd in Duitsland worden verwerkt.",
         "Indien nodig voor transacties met betrekking tot vastgoed in Turkije kunnen bepaalde gegevens worden gedeeld met bevoegde personen of instellingen in Turkije.",
         "Bij doorgifte naar het buitenland worden artikel 9 van de KVKK en andere relevante wetgeving, voor zover van toepassing, in acht genomen. Meer informatie: [Doorgifte naar het buitenland (KVKK)](KVKKYD)",
+        "Door de voor e-mailverzending gebruikte dienst Resend kunnen gegevens in de VS worden verwerkt; ook toegang vanuit landen buiten de EU/EER door de dienstverlener van Lovable Cloud of diens onderaannemers kan niet volledig worden uitgesloten. Voor deze doorgiften worden de vereisten van artikel 9 KVKK, voor zover van toepassing, afzonderlijk beoordeeld.",
       ] },
       { title: "7. Uw rechten volgens de KVKK", body: [
         "Waar de KVKK van toepassing is, kunnen betrokkenen onder de wettelijke voorwaarden vernemen of hun persoonsgegevens worden verwerkt, informatie opvragen indien dat het geval is, het doel van de verwerking en het doelmatige gebruik vernemen, de derden vernemen aan wie gegevens zijn doorgegeven, rectificatie, wissing of vernietiging verzoeken indien aan de voorwaarden is voldaan, en de overige wettelijke rechten uitoefenen.",

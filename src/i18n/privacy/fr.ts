@@ -55,11 +55,14 @@ export const fr: PrivacyCopy = {
         "Des données personnelles peuvent notamment être traitées lors d'offres de biens en vue d'un éventuel achat par Aurelia, d'un intérêt d'achat pour des biens du portefeuille propre d'Aurelia et de demandes concernant des biens en Turquie.",
         "Aurelia ne fait pas d'intermédiation de biens de tiers et n'accepte pas de mandats de recherche classiques. Les acquéreurs potentiels enregistrent uniquement leur intérêt pour des biens éventuellement adaptés de notre propre portefeuille.",
         "La base juridique est l'art. 6, par. 1, point b) RGPD et – s'il a été donné – l'art. 6, par. 1, point a) RGPD.",
+        "Dans le formulaire « Proposer un bien immobilier », vous pouvez fournir volontairement des informations complémentaires sur la situation de votre bien (champ « Situation particulière » et description libre). Ces informations sont facultatives et servent uniquement à évaluer votre demande. Veuillez ne pas y saisir de données de santé ni d'autres catégories particulières de données personnelles au sens de l'art. 9 RGPD, sauf si cela est nécessaire pour la demande.",
       ] },
       { title: "7. Téléchargement de photos et de documents", body: [
         "Lors de demandes immobilières, les utilisateurs peuvent transmettre des photos et des documents (PDF, JPG, JPEG, PNG). Ces documents peuvent contenir des données personnelles.",
         "Veuillez ne transmettre que les documents nécessaires au traitement de votre demande et que vous êtes autorisé à transmettre. Si des documents contiennent des données personnelles de tiers, seules les informations dont la communication est nécessaire à la demande concrète et juridiquement admissible doivent être transmises.",
         "Les données sont traitées pour le traitement de la demande, l'examen du bien et – si nécessaire – la préparation ou la réalisation d'une éventuelle transaction immobilière.",
+        "Les fichiers téléchargés (PDF, JPG, JPEG, PNG ; 10 Mo maximum par fichier) sont stockés dans un espace de stockage non public de notre prestataire technique (voir section 8). Aucun accès public n'est possible ; l'accès a lieu uniquement dans le cadre du traitement de la demande.",
+        "L'e-mail de notification qui nous est adressé contient un lien de téléchargement vers les fichiers, valable 7 jours. L'expiration du lien n'entraîne pas la suppression du fichier stocké ; la suppression est régie par la section 11.",
       ] },
       { title: "8. Destinataires des données personnelles", body: [
         "Selon le cas concret et uniquement dans la mesure nécessaire, les données personnelles peuvent notamment être rendues accessibles aux destinataires suivants :",
@@ -67,6 +70,9 @@ export const fr: PrivacyCopy = {
           "Prestataires informatiques, d'hébergement et techniques", "Avocats", "Notaires", "Conseillers fiscaux", "Experts en évaluation",
           "Architectes et spécialistes techniques", "Partenaires immobiliers ou commerciaux nécessaires",
           "Autorités ou autres organismes, lorsqu'il existe une obligation légale ou que cela est nécessaire à une transaction concrète",
+        "Base de données et stockage de fichiers (Lovable Cloud) : Les informations transmises via nos formulaires sont stockées dans une base de données, les fichiers téléchargés dans un espace de stockage non public. La finalité est le traitement, la documentation et le suivi de votre demande. Le site web, la base de données et le stockage de fichiers sont exploités via la plateforme Lovable Cloud, qui agit pour notre compte en tant que prestataire technique et fait appel à d'autres prestataires d'infrastructure. Les demandes stockées ne peuvent pas être consultées via le site web lui-même ; seuls nous y avons accès via un accès d'administration protégé, ainsi que le prestataire dans la mesure techniquement nécessaire. Selon la configuration technique, la base de données et le stockage de fichiers se trouvent dans un centre de données dans l'UE (Francfort-sur-le-Main). Un accès du prestataire ou de ses sous-traitants depuis des pays situés hors de l'UE/EEE, notamment les États-Unis (par ex. pour la maintenance ou l'assistance), ne peut être exclu. La base juridique est l'art. 6, par. 1, let. b et f RGPD.",
+        "Envoi d'e-mails (Resend) : Pour l'envoi des demandes de formulaire à notre attention et des e-mails de confirmation à votre attention, nous utilisons le service Resend (Resend, Inc., États-Unis). Sont traitées les données saisies dans le formulaire (notamment nom, adresse e-mail, numéro de téléphone, contenu de la demande, informations sur le bien et, le cas échéant, liens de téléchargement vers les fichiers téléchargés) ainsi que des données techniques d'envoi (par ex. adresse du destinataire, heure d'envoi). Resend agit pour notre compte en tant que prestataire technique. Un traitement aux États-Unis est possible. La base juridique est l'art. 6, par. 1, let. b RGPD (traitement de votre demande) et l'art. 6, par. 1, let. f RGPD (intérêt légitime à un envoi fiable des e-mails).",
+        "Les transferts vers des pays tiers hors de l'UE/EEE n'ont lieu que dans le respect des art. 44 et suivants RGPD, c'est-à-dire sur la base d'une décision d'adéquation de la Commission européenne (art. 45 RGPD) ou de garanties appropriées telles que les clauses contractuelles types de l'UE (art. 46 RGPD), dans la mesure où celles-ci ont été convenues avec le prestataire concerné. Sur demande adressée à {mail}, nous vous informons de la base utilisée.",
         ] },
       ] },
       { title: "9. Allemagne et Turquie – traitement transfrontalier des données", body: [
@@ -86,6 +92,8 @@ export const fr: PrivacyCopy = {
       ] },
       { title: "11. Durée de conservation", body: [
         "Les données personnelles sont supprimées dès que la finalité de leur conservation disparaît. Pour les demandes, c'est le cas lorsque l'affaire concernée est définitivement réglée et qu'aucune obligation légale de conservation ne s'y oppose.",
+        "Pour les demandes de contact, d'intérêt d'achat et immobilières : les données personnelles et les fichiers téléchargés sont supprimés au plus tard 12 mois après la clôture de la demande ou après le dernier contact sur le fond, sauf s'ils restent nécessaires.",
+        "Sont exclues les données nécessaires plus longtemps en raison d'une relation contractuelle existante ou envisagée, d'obligations légales de conservation ou pour la constatation, l'exercice ou la défense de droits en justice. Pour ces données, les délais respectivement nécessaires ou légaux s'appliquent.",
       ] },
       { title: "12. Sécurité des données", body: [
         "La transmission des données via ce site est chiffrée (HTTPS). Nous prenons des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive et l'accès non autorisé. Une transmission de données totalement sécurisée sur Internet ne peut toutefois pas être garantie.",
@@ -123,6 +131,8 @@ export const fr: PrivacyCopy = {
       ] },
       { title: "2. Données personnelles traitées", body: [
         "Selon votre demande, peuvent être traités vos nom et prénom, numéro de téléphone, adresse e-mail, coordonnées, adresse et informations de localisation du bien, type et caractéristiques du bien, informations sur la propriété, demande de vente, prix de vente demandé, intérêt d'achat, messages et explications ainsi que les photos et documents que vous téléchargez.",
+        "Les informations transmises via les formulaires du site sont stockées dans une base de données ; les photos et documents téléchargés (PDF, JPG, JPEG, PNG ; 10 Mo maximum par fichier) dans un espace de stockage non public. L'e-mail de notification qui nous est adressé contient un lien de téléchargement valable 7 jours ; l'expiration du lien n'entraîne pas la suppression du fichier.",
+        "Les données personnelles et fichiers téléchargés relatifs aux demandes de contact, d'intérêt d'achat et immobilières sont supprimés au plus tard 12 mois après la clôture de la demande ou après le dernier contact sur le fond, sauf s'ils restent nécessaires en raison d'une relation contractuelle existante ou envisagée, d'obligations légales de conservation ou de la constatation, de l'exercice ou de la défense de droits.",
       ] },
       { title: "3. Finalités du traitement", body: [
         "Vos données personnelles peuvent être traitées pour examiner votre offre immobilière, évaluer un éventuel achat par Aurelia, évaluer votre intérêt d'achat, vous contacter, répondre à vos demandes, préparer et réaliser une éventuelle transaction immobilière, respecter les obligations légales et exploiter le site en toute sécurité.",
@@ -133,11 +143,13 @@ export const fr: PrivacyCopy = {
       ] },
       { title: "5. Transfert des données personnelles", body: [
         "Selon la nature de l'opération et uniquement dans la mesure nécessaire, vos données personnelles peuvent être transférées à des prestataires techniques ainsi qu'à des avocats, notaires, conseillers financiers, experts en évaluation ou techniques, partenaires commerciaux du secteur immobilier, autorités et institutions compétentes ou autres personnes nécessaires à la réalisation d'une éventuelle transaction immobilière.",
+        "Les prestataires techniques sont notamment la plateforme Lovable Cloud pour la base de données et le stockage de fichiers (selon la configuration technique, un centre de données dans l'UE, Francfort-sur-le-Main) et le service d'e-mail Resend (Resend, Inc., États-Unis) pour l'envoi des demandes de formulaire et des e-mails de confirmation.",
       ] },
       { title: "6. Transfert des données personnelles à l'étranger", body: [
         "Aurelia Grundbesitz GmbH étant établie en Allemagne, les données personnelles envoyées à Aurelia depuis la Turquie via le site ou d'autres canaux de communication peuvent être traitées en Allemagne.",
         "Si cela est nécessaire pour des opérations relatives à un bien en Turquie, certaines données peuvent être partagées avec des personnes ou institutions compétentes en Turquie.",
         "Pour les transferts de données à l'étranger, l'article 9 de la KVKK et la législation pertinente sont pris en compte dans la mesure applicable. Plus d'informations : [Transfert à l'étranger (KVKK)](KVKKYD)",
+        "En raison du service Resend utilisé pour l'envoi des e-mails, des données peuvent être traitées aux États-Unis ; un accès depuis l'extérieur de l'UE/EEE par le prestataire de Lovable Cloud ou ses sous-traitants ne peut pas non plus être totalement exclu. Pour ces transferts, les exigences de l'article 9 KVKK sont évaluées séparément, dans la mesure applicable.",
       ] },
       { title: "7. Vos droits au titre de la KVKK", body: [
         "Lorsque la KVKK s'applique, les personnes concernées peuvent, dans les conditions prévues par la loi, savoir si leurs données personnelles sont traitées, demander des informations le cas échéant, connaître la finalité du traitement et si les données sont utilisées conformément à celle-ci, connaître les tiers auxquels elles ont été transférées, demander leur rectification, leur effacement ou leur destruction si les conditions sont réunies et exercer les autres droits prévus par la loi.",

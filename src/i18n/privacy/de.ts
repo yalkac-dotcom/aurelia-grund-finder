@@ -57,11 +57,14 @@ export const de: PrivacyCopy = {
         "Personenbezogene Daten können insbesondere verarbeitet werden bei Immobilienangeboten zum möglichen Ankauf durch Aurelia, bei Kaufinteressen an Immobilien aus dem eigenen Aurelia-Bestand sowie bei Anfragen zu Immobilien in der Türkei.",
         "Aurelia vermittelt keine fremden Immobilien und übernimmt keine klassischen Suchaufträge. Kaufinteressenten hinterlegen lediglich ihr Interesse an möglicherweise passenden Immobilien aus dem eigenen Bestand.",
         "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO sowie – soweit erteilt – Art. 6 Abs. 1 lit. a DSGVO.",
+        "Im Formular „Immobilie anbieten“ können Sie freiwillig zusätzliche Angaben zu Ihrer Immobiliensituation machen (Feld „Besondere Situation“ sowie freie Beschreibung). Diese Angaben sind keine Pflichtangaben und dienen ausschließlich der Einschätzung Ihrer Anfrage. Bitte tragen Sie dort keine Gesundheitsdaten oder sonstigen besonderen Kategorien personenbezogener Daten im Sinne von Art. 9 DSGVO ein, sofern dies für die Anfrage nicht erforderlich ist.",
       ] },
       { title: "7. Hochladen von Fotos und Dokumenten", body: [
         "Bei Immobilienanfragen können Nutzer Fotos und Dokumente (PDF, JPG, JPEG, PNG) übermitteln. Diese Unterlagen können personenbezogene Daten enthalten.",
         "Bitte übermitteln Sie nur solche Unterlagen, die für die Bearbeitung Ihrer Anfrage erforderlich sind und zu deren Übermittlung Sie berechtigt sind. Soweit Dokumente personenbezogene Daten Dritter enthalten, sollen nur solche Informationen übermittelt werden, deren Weitergabe für die konkrete Anfrage erforderlich und rechtlich zulässig ist.",
         "Die Daten werden zur Bearbeitung der Anfrage, zur Prüfung der Immobilie und – soweit erforderlich – zur Vorbereitung oder Durchführung eines möglichen Immobiliengeschäfts verarbeitet.",
+        "Hochgeladene Dateien (PDF, JPG, JPEG, PNG; maximal 10 MB je Datei) werden in einem nicht öffentlichen Dateispeicher unseres technischen Dienstleisters (siehe Abschnitt 8) abgelegt. Ein öffentlicher Abruf ist nicht möglich; der Zugriff erfolgt nur im Rahmen der Bearbeitung der Anfrage.",
+        "Die Benachrichtigungs-E-Mail an uns enthält einen Download-Link zu den Dateien, der 7 Tage gültig ist. Der Ablauf des Links bedeutet nicht, dass die gespeicherte Datei gelöscht wird; die Löschung richtet sich nach Abschnitt 11.",
       ] },
       { title: "8. Empfänger personenbezogener Daten", body: [
         "Abhängig vom konkreten Vorgang und nur soweit erforderlich können personenbezogene Daten insbesondere folgenden Empfängern zugänglich gemacht werden:",
@@ -69,6 +72,9 @@ export const de: PrivacyCopy = {
           "IT-/Hosting- und technische Dienstleister", "Rechtsanwälte", "Notare", "Steuerberater", "Gutachter",
           "Architekten und technische Fachleute", "erforderliche Immobilien- oder Geschäftspartner",
           "Behörden oder sonstige Stellen, soweit eine gesetzliche Verpflichtung besteht oder dies für eine konkrete Transaktion erforderlich ist",
+        "Datenbank und Dateispeicher (Lovable Cloud): Die über unsere Formulare übermittelten Angaben werden in einer Datenbank, hochgeladene Dateien in einem nicht öffentlichen Dateispeicher gespeichert. Zweck ist die Bearbeitung, Dokumentation und Nachverfolgung Ihrer Anfrage. Betrieben werden Website, Datenbank und Dateispeicher über die Plattform Lovable Cloud, die als technischer Dienstleister in unserem Auftrag tätig wird und hierfür weitere Infrastrukturdienstleister einsetzt. Über die Website selbst können gespeicherte Anfragen nicht abgerufen werden; Zugriff haben nur wir über einen geschützten Verwaltungszugang sowie der Dienstleister, soweit dies technisch erforderlich ist. Nach der technischen Konfiguration befinden sich Datenbank und Dateispeicher in einem Rechenzentrum in der EU (Frankfurt am Main). Ein Zugriff des Dienstleisters oder seiner Unterauftragnehmer aus Ländern außerhalb der EU/des EWR, insbesondere den USA (etwa zu Wartungs- oder Supportzwecken), kann nicht ausgeschlossen werden. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b und lit. f DSGVO.",
+        "E-Mail-Versand (Resend): Für den Versand der Formularanfragen an uns sowie der Bestätigungs-E-Mails an Sie nutzen wir den Dienst Resend (Resend, Inc., USA). Dabei werden die im Formular angegebenen Daten (insbesondere Name, E-Mail-Adresse, Telefonnummer, Inhalt der Anfrage, Angaben zur Immobilie sowie gegebenenfalls Download-Links zu hochgeladenen Dateien) und technische Versanddaten (z. B. Empfängeradresse, Zeitpunkt des Versands) verarbeitet. Resend wird als technischer Dienstleister in unserem Auftrag tätig. Eine Verarbeitung in den USA ist möglich. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Bearbeitung Ihrer Anfrage) sowie Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem zuverlässigen E-Mail-Versand).",
+        "Übermittlungen in Drittländer außerhalb der EU/des EWR erfolgen nur unter Beachtung der Art. 44 ff. DSGVO, also auf Grundlage eines Angemessenheitsbeschlusses der EU-Kommission (Art. 45 DSGVO) oder geeigneter Garantien wie der EU-Standardvertragsklauseln (Art. 46 DSGVO), soweit diese mit dem jeweiligen Anbieter vereinbart sind. Auf Anfrage an {mail} informieren wir Sie über die jeweils genutzte Grundlage.",
         ] },
       ] },
       { title: "9. Deutschland und Türkei – grenzüberschreitende Datenverarbeitung", body: [
@@ -88,6 +94,8 @@ export const de: PrivacyCopy = {
       ] },
       { title: "11. Speicherdauer", body: [
         "Personenbezogene Daten werden gelöscht, sobald der Zweck der Speicherung entfällt. Bei Anfragen ist dies der Fall, wenn der betreffende Sachverhalt abschließend geklärt ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.",
+        "Für Kontakt-, Kaufinteressen- und Immobilienanfragen gilt: Personenbezogene Daten und hochgeladene Dateien werden spätestens 12 Monate nach Abschluss der Anfrage bzw. nach dem letzten inhaltlichen Kontakt gelöscht, sofern keine weitere Erforderlichkeit besteht.",
+        "Ausgenommen sind Daten, die aufgrund eines bestehenden oder angebahnten Vertragsverhältnisses, gesetzlicher Aufbewahrungspflichten oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen länger benötigt werden. Für diese Daten gelten die jeweils erforderlichen bzw. gesetzlichen Fristen.",
       ] },
       { title: "12. Datensicherheit", body: [
         "Die Übertragung von Daten über diese Website erfolgt verschlüsselt (HTTPS). Wir treffen angemessene technische und organisatorische Maßnahmen, um Ihre Daten vor Verlust, Missbrauch und unbefugtem Zugriff zu schützen. Eine vollständig sichere Datenübertragung im Internet kann jedoch nicht garantiert werden.",
