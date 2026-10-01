@@ -74,7 +74,7 @@ export const it: PrivacyCopy = {
           "Tale trasferimento avviene solo nella misura necessaria per il rispettivo caso e se sono soddisfatti i requisiti di protezione dei dati applicabili. Per i trasferimenti internazionali si tiene conto dei requisiti del [GDPR (artt. 44 e segg.)](EURLEX) e – ove applicabile – dell'[art. 9 KVKK](KVKKYD).",
         ] },
       ] },
-      { title: "10. Cookie, memoria locale", body: [
+      { title: "10. Cookie e memoria locale", body: [
         "Utilizziamo esclusivamente memorizzazioni tecnicamente necessarie. Su questo sito non vengono utilizzati servizi di analisi, marketing o tracciamento.",
         { ul: [
           "Necessario: memorizzazione della versione linguistica scelta nella memoria locale del browser.",

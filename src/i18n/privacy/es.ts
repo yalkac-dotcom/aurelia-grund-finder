@@ -74,7 +74,7 @@ export const es: PrivacyCopy = {
           "Dicha transferencia solo se realiza en la medida necesaria para el caso correspondiente y cuando se cumplen los requisitos de protección de datos aplicables. En las transferencias internacionales se tienen en cuenta los requisitos del [RGPD (arts. 44 y ss.)](EURLEX) y – en su caso – del [art. 9 KVKK](KVKKYD).",
         ] },
       ] },
-      { title: "10. Cookies, almacenamiento local", body: [
+      { title: "10. Cookies y almacenamiento local", body: [
         "Solo utilizamos almacenamientos técnicamente necesarios. En este sitio no se utilizan servicios de análisis, marketing ni seguimiento.",
         { ul: [
           "Necesario: almacenamiento de la versión de idioma elegida en el almacenamiento local de su navegador.",

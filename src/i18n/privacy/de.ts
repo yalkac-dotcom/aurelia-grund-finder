@@ -76,7 +76,7 @@ export const de: PrivacyCopy = {
           "Eine solche Übermittlung erfolgt nur, soweit sie für den jeweiligen Vorgang erforderlich ist und die jeweils geltenden datenschutzrechtlichen Voraussetzungen erfüllt sind. Für internationale Übermittlungen werden die Anforderungen der [DSGVO (Art. 44 ff.)](EURLEX) und – soweit anwendbar – [Art. 9 KVKK](KVKKYD) berücksichtigt.",
         ] },
       ] },
-      { title: "10. Cookies, lokaler Speicher", body: [
+      { title: "10. Cookies und lokaler Speicher", body: [
         "Wir setzen ausschließlich technisch notwendige Speicherungen ein. Analyse-, Marketing- oder Tracking-Dienste werden auf dieser Website nicht eingesetzt.",
         { ul: [
           "Notwendig: Speicherung der von Ihnen gewählten Sprachversion im lokalen Speicher Ihres Browsers.",

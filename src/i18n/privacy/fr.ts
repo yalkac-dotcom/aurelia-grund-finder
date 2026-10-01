@@ -74,7 +74,7 @@ export const fr: PrivacyCopy = {
           "Un tel transfert n'a lieu que dans la mesure nécessaire à l'opération concernée et lorsque les exigences applicables en matière de protection des données sont remplies. Pour les transferts internationaux, les exigences du [RGPD (art. 44 et suiv.)](EURLEX) et – le cas échéant – de l'[art. 9 KVKK](KVKKYD) sont prises en compte.",
         ] },
       ] },
-      { title: "10. Cookies, stockage local", body: [
+      { title: "10. Cookies et stockage local", body: [
         "Nous utilisons exclusivement des stockages techniquement nécessaires. Aucun service d'analyse, de marketing ou de suivi n'est utilisé sur ce site.",
         { ul: [
           "Nécessaire : enregistrement de la version linguistique choisie dans le stockage local de votre navigateur.",

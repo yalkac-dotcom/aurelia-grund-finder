@@ -74,7 +74,7 @@ export const en: PrivacyCopy = {
           "Such a transfer only takes place to the extent necessary for the respective matter and where the applicable data protection requirements are met. For international transfers, the requirements of the [GDPR (Art. 44 et seq.)](EURLEX) and – where applicable – [Art. 9 KVKK](KVKKYD) are taken into account.",
         ] },
       ] },
-      { title: "10. Cookies, local storage", body: [
+      { title: "10. Cookies and local storage", body: [
         "We only use technically necessary storage. No analytics, marketing or tracking services are used on this website.",
         { ul: [
           "Necessary: storage of your chosen language version in your browser's local storage.",

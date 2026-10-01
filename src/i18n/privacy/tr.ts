@@ -76,7 +76,7 @@ export const tr: PrivacyCopy = {
           "Böyle bir aktarım yalnızca ilgili işlem için gerekli olduğu ölçüde ve geçerli veri koruma şartları sağlandığında gerçekleşir. Uluslararası aktarımlarda [GDPR (md. 44 vd.)](EURLEX) ve – uygulanabilir olduğu ölçüde – [KVKK md. 9](KVKKYD) gereklilikleri dikkate alınır.",
         ] },
       ] },
-      { title: "10. Çerezler, yerel depolama", body: [
+      { title: "10. Çerezler ve yerel depolama", body: [
         "Yalnızca teknik olarak zorunlu depolamalar kullanıyoruz. Bu web sitesinde analiz, pazarlama veya takip hizmetleri kullanılmamaktadır.",
         { ul: [
           "Zorunlu: Seçtiğiniz dil sürümünün tarayıcınızın yerel depolamasında saklanması.",

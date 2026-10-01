@@ -74,7 +74,7 @@ export const nl: PrivacyCopy = {
           "Een dergelijke doorgifte vindt alleen plaats voor zover dit voor de betreffende zaak nodig is en aan de geldende gegevensbeschermingsvereisten is voldaan. Bij internationale doorgiften worden de vereisten van de [AVG (art. 44 e.v.)](EURLEX) en – voor zover van toepassing – [art. 9 KVKK](KVKKYD) in acht genomen.",
         ] },
       ] },
-      { title: "10. Cookies, lokale opslag", body: [
+      { title: "10. Cookies en lokale opslag", body: [
         "Wij gebruiken uitsluitend technisch noodzakelijke opslag. Analyse-, marketing- of trackingdiensten worden op deze website niet gebruikt.",
         { ul: [
           "Noodzakelijk: opslag van de door u gekozen taalversie in de lokale opslag van uw browser.",
