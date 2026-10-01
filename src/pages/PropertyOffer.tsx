@@ -1,4 +1,5 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import FormPrivacyNotice from "@/components/FormPrivacyNotice";
 import { Link, useSearchParams } from "react-router-dom";
 import { CheckCircle2, FileText, Upload } from "lucide-react";
 import { z } from "zod";
@@ -105,7 +106,7 @@ const PropertyOffer = () => {
     required.forEach(name => { if (!form[name]?.trim()) next[name] = c.requiredError; });
     if (form.yearBuilt && !/^\d{4}$/.test(form.yearBuilt)) next.yearBuilt = c.requiredError;
     if (form.ownerCount && !/^[1-9]\d{0,2}$/.test(form.ownerCount)) next.ownerCount = c.requiredError;
-    if (form.privacy !== "yes") next.privacy = c.requiredError;
+    if (country === "turkey" && form.privacy !== "yes") next.privacy = c.requiredError;
     if (!validFiles(files)) next.files = c.fileError;
     setErrors(next); return Object.keys(next).length === 0;
   };
@@ -160,9 +161,10 @@ const PropertyOffer = () => {
     <label className={`${labelClass} mt-6 block`}>{c.details}<textarea value={form.details} onChange={e=>update("details",e.target.value)} rows={5} maxLength={1800} className={fieldClass(Boolean(errors.details))}/></label>
     <p className="mt-2 text-sm leading-6 text-muted-foreground">{situationHint[language as keyof typeof situationHint] ?? situationHint.en}</p>
     <div className="mt-6"><label className={labelClass}>{c.files}<span className="mt-2 flex cursor-pointer items-center justify-center gap-3 rounded-sm border border-dashed border-accent/60 bg-secondary px-5 py-7 normal-case tracking-normal text-primary"><Upload size={18}/>{files.length ? `${files.length} · ${c.files}` : c.uploadHelp}<input ref={inputRef} type="file" multiple accept=".pdf,.jpg,.jpeg,.png" className="sr-only" onChange={e=>{const next=Array.from(e.target.files??[]);setFiles(validFiles(next)?next:[]);setErrors(current=>({...current,files:validFiles(next)?"":c.fileError}));}}/></span></label>{errors.files&&<p className="mt-2 text-sm text-destructive">{errors.files}</p>}{files.map(file=><p key={`${file.name}-${file.size}`} className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><FileText size={14}/>{file.name}</p>)}</div>
-    <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground"><input type="checkbox" checked={form.privacy==="yes"} onChange={e=>update("privacy",e.target.checked?"yes":"")} className="mt-1 h-4 w-4 accent-primary"/><span>{c.privacy} <Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="font-semibold text-primary underline">{t.footer.privacy}</Link></span></label>{errors.privacy&&<p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}
+    {country==="turkey" && <><label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground"><input type="checkbox" checked={form.privacy==="yes"} onChange={e=>update("privacy",e.target.checked?"yes":"")} className="mt-1 h-4 w-4 accent-primary"/><span>{c.privacy} <Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="font-semibold text-primary underline">{t.footer.privacy}</Link></span></label>{errors.privacy&&<p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}</>}
     {isDe&&<p className="mt-6 border-l-2 border-accent/60 pl-4 text-sm leading-6 text-muted-foreground">Ihre Anfrage dient ausschließlich der Prüfung eines möglichen Erwerbs durch Aurelia Grundbesitz auf eigene Rechnung.</p>}
     {success&&<div className="mt-7 flex gap-3 rounded-sm bg-secondary p-5 text-primary"><CheckCircle2 className="mt-0.5 shrink-0 text-accent"/><p>{confirmationSent?c.successText:c.confirmationWarning}</p></div>}
+    {country!=="turkey"&&<FormPrivacyNotice language={language} className="mt-7"/>}
     <Button type="submit" disabled={submitting} size="lg" className="mt-8 min-h-12 h-auto w-full whitespace-normal rounded-sm px-4 py-3 text-center leading-snug uppercase tracking-[0.1em] sm:w-auto sm:px-8 sm:tracking-[0.12em]">{submitting?c.submitting:c.submit}</Button>
   </form></section>
   <section className="container-premium pb-10 md:pb-12"><div className="mx-auto max-w-5xl border-l-2 border-accent bg-card px-6 py-6 sm:px-8"><p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-accent">{shortTermSaleCopy[language].kicker}</p><h2 className="mt-2 font-heading text-2xl font-semibold text-primary">{shortTermSaleCopy[language].blockQuestion}</h2><p className="mt-2 text-[0.96rem] leading-[1.8] text-muted-foreground">{shortTermSaleCopy[language].blockText}</p><Button asChild variant="outline" className="mt-5 min-h-11 h-auto whitespace-normal rounded-sm px-5 py-2.5 uppercase tracking-[0.1em]"><Link to="/kurzfristiger-immobilienverkauf">{shortTermSaleCopy[language].blockButton}</Link></Button></div></section>

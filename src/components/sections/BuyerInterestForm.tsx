@@ -1,5 +1,4 @@
 import { FormEvent, useState } from "react";
-import { Link } from "react-router-dom";
 import { CheckCircle2 } from "lucide-react";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
@@ -8,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { buyerInterestCopy } from "@/i18n/buyerInterestCopy";
 import { stockRequestCopy } from "@/i18n/stockRequestCopy";
+import FormPrivacyNotice from "@/components/FormPrivacyNotice";
 
 // Kaufinteresse-Formular (alle Sprachen) – Interessenten für den
 // EIGENEN Aurelia-Bestand. Kein Makler-, Vermittlungs- oder Suchauftrag.
@@ -71,7 +71,6 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
   const [budget, setBudget] = useState("");
   const [usage, setUsage] = useState("");
   const [lang, setLang] = useState(base.languageOptions[langIndex]);
-  const [privacy, setPrivacy] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -95,7 +94,6 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
     if (!text.name.trim()) next.name = c.errRequired;
     if (!text.phone.trim()) next.phone = c.errRequired;
     if (!compact && selMarkets.length === 0) next.markets = c.errMarkets;
-    if (!privacy) next.privacy = c.errPrivacy;
     setErrors(next);
     return Object.keys(next).length === 0;
   };
@@ -132,7 +130,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
       });
       if (error || !data?.success) throw error ?? new Error("send failed");
       setSuccess(true);
-      setText(initialText); setSelMarkets([]); setSelTypes([]); setBudget(""); setUsage(""); setPrivacy(false);
+      setText(initialText); setSelMarkets([]); setSelTypes([]); setBudget(""); setUsage("");
       toast({ title: c.toastOkTitle, description: c.toastOkText });
     } catch (err) {
       console.error("Buyer interest submission failed");
@@ -184,18 +182,14 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
         <Select label={c.language} value={lang} options={languages} labels={c.languageOptions} onChange={(v) => setLang(v || base.languageOptions[langIndex])} />
         </>)}
       </div>
-      <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground">
-        <input type="checkbox" checked={privacy} onChange={(e) => { setPrivacy(e.target.checked); setErrors((er) => ({ ...er, privacy: "" })); }} className="mt-1 !h-4 !w-4 !min-h-0 !min-w-0 shrink-0 accent-primary" />
-        <span>{c.privacyBefore}<Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="font-semibold text-primary underline">{c.privacyLink}</Link>{c.privacyAfter}</span>
-      </label>
-      {errors.privacy && <p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}
       {success && (
         <div className="mt-7 flex gap-3 rounded-sm bg-secondary p-5 text-primary">
           <CheckCircle2 className="mt-0.5 shrink-0 text-accent" />
           <p>{c.success}</p>
         </div>
       )}
-      <Button type="submit" disabled={submitting} size="lg" className="mt-8 min-h-12 h-auto w-full whitespace-normal rounded-sm px-4 py-3 text-center leading-snug uppercase tracking-[0.1em] sm:w-auto sm:px-8">
+      <FormPrivacyNotice language={language} className="mt-7" />
+      <Button type="submit" disabled={submitting} size="lg" className="mt-4 min-h-12 h-auto w-full whitespace-normal rounded-sm px-4 py-3 text-center leading-snug uppercase tracking-[0.1em] sm:w-auto sm:px-8">
         {submitting ? c.sending : compact ? sc.submit : c.submit}
       </Button>
       <p className="mt-6 max-w-3xl text-[0.8rem] leading-[1.7] text-muted-foreground">

@@ -14,6 +14,7 @@ import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageSeo } from "@/i18n/pageSeo";
+import FormPrivacyNotice from "@/components/FormPrivacyNotice";
 
 const inputClasses =
   "w-full border-0 border-b border-border bg-transparent px-0 py-3 text-base text-foreground rounded-none transition-colors focus:outline-none focus:ring-0 focus:border-accent placeholder:text-muted-foreground/55";
@@ -65,12 +66,6 @@ const Contact = () => {
       return;
     }
 
-    if (!formData.get("privacy_consent")) {
-      setError(t.contact.consentRequired);
-      const consentInput = form.elements.namedItem("privacy_consent");
-      if (consentInput instanceof HTMLInputElement) consentInput.focus();
-      return;
-    }
 
     const parsedContact = contactSchema.safeParse({
       name: formData.get("name"), email: formData.get("email"), phone,
@@ -286,31 +281,6 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="pt-1">
-                    <label htmlFor="privacy_consent" className="flex items-start gap-3 cursor-pointer">
-                      <input
-                        id="privacy_consent"
-                        name="privacy_consent"
-                        type="checkbox"
-                        required
-                        aria-describedby="consent-error"
-                        className="mt-0.5 h-4 w-4 shrink-0 accent-[hsl(var(--accent))]"
-                        onInvalid={(event) => event.currentTarget.setCustomValidity(t.contact.consentRequired)}
-                        onChange={(event) => event.currentTarget.setCustomValidity("")}
-                      />
-                      <span className="text-[0.85rem] leading-[1.6] text-foreground/85">
-                        {t.contact.consentCheckbox} <span className="text-accent">*</span>{" "}
-                        <Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="text-accent hover:underline">
-                          {t.contact.consentNoticeLink}
-                        </Link>
-                      </span>
-                    </label>
-                    {error === t.contact.consentRequired && (
-                      <p id="consent-error" role="alert" className="mt-1.5 text-sm text-destructive">
-                        {t.contact.consentRequired}
-                      </p>
-                    )}
-                  </div>
 
 
                   {error && (
@@ -320,6 +290,7 @@ const Contact = () => {
                     </div>
                   )}
 
+                  <FormPrivacyNotice language={language} />
                   <div className="pt-1">
                     <Button
                       type="submit"
