@@ -130,7 +130,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
       });
       if (error || !data?.success) throw error ?? new Error("send failed");
       setSuccess(true);
-      setText(initialText); setSelMarkets([]); setSelTypes([]); setBudget(""); setUsage(""); setPrivacy(false);
+      setText(initialText); setSelMarkets([]); setSelTypes([]); setBudget(""); setUsage("");
       toast({ title: c.toastOkTitle, description: c.toastOkText });
     } catch (err) {
       console.error("Buyer interest submission failed");
