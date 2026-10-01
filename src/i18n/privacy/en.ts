@@ -81,6 +81,7 @@ export const en: PrivacyCopy = {
         { ul: [
           "Necessary: storage of your chosen language version in your browser's local storage.",
           "Necessary: Cloudflare may set the cookie “__cf_bm” (storage period up to 30 minutes) to detect automated access (bots) and protect the website. It is not used for analytics or marketing. The legal basis is Section 25(2) no. 2 TDDDG in conjunction with Art. 6(1)(f) GDPR.",
+          "Necessary: the hosting provider may set the cookie “__dpl” (storage period approx. 7 days) to consistently assign visitors to the same deployment/website version while the website is being served. It is not used for analytics, marketing, tracking or personalisation.",
         ] },
       ] },
       { title: "11. Storage period", body: [
