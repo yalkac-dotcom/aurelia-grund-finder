@@ -145,6 +145,10 @@ const About = () => {
 
         <section className="bg-background py-8 md:py-10 lg:py-12" aria-labelledby="unser-ansatz-title">
           <div className="container-premium">
+          <div className={`relative mx-auto ${language === "de" ? "max-w-[1080px] rounded-[3px] border border-accent/30 bg-background px-5 py-7 shadow-[0_35px_70px_-45px_hsl(var(--primary)/0.35)] md:px-10 md:py-10" : ""}`}>
+            {language === "de" && (
+              <div aria-hidden="true" className="pointer-events-none absolute inset-2 hidden rounded-[2px] border border-accent/15 md:block" />
+            )}
           <div className={`mx-auto grid max-w-[980px] items-center gap-6 md:gap-8 lg:gap-10 ${language === "de" ? "md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]" : "md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"}`}>
             <Reveal className={language === "de" ? "order-2" : undefined}>
               {language === "de" ? (
@@ -195,6 +199,7 @@ const About = () => {
                 </div>
               </div>
             </Reveal>
+          </div>
           </div>
           </div>
         </section>
