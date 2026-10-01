@@ -8,6 +8,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { buyerInterestCopy } from "@/i18n/buyerInterestCopy";
 import { stockRequestCopy } from "@/i18n/stockRequestCopy";
+import FormPrivacyNotice from "@/components/FormPrivacyNotice";
 
 // Kaufinteresse-Formular (alle Sprachen) – Interessenten für den
 // EIGENEN Aurelia-Bestand. Kein Makler-, Vermittlungs- oder Suchauftrag.
@@ -95,7 +96,6 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
     if (!text.name.trim()) next.name = c.errRequired;
     if (!text.phone.trim()) next.phone = c.errRequired;
     if (!compact && selMarkets.length === 0) next.markets = c.errMarkets;
-    if (!privacy) next.privacy = c.errPrivacy;
     setErrors(next);
     return Object.keys(next).length === 0;
   };
@@ -184,11 +184,6 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
         <Select label={c.language} value={lang} options={languages} labels={c.languageOptions} onChange={(v) => setLang(v || base.languageOptions[langIndex])} />
         </>)}
       </div>
-      <label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground">
-        <input type="checkbox" checked={privacy} onChange={(e) => { setPrivacy(e.target.checked); setErrors((er) => ({ ...er, privacy: "" })); }} className="mt-1 !h-4 !w-4 !min-h-0 !min-w-0 shrink-0 accent-primary" />
-        <span>{c.privacyBefore}<Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="font-semibold text-primary underline">{c.privacyLink}</Link>{c.privacyAfter}</span>
-      </label>
-      {errors.privacy && <p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}
       {success && (
         <div className="mt-7 flex gap-3 rounded-sm bg-secondary p-5 text-primary">
           <CheckCircle2 className="mt-0.5 shrink-0 text-accent" />
