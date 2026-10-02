@@ -27,6 +27,8 @@ const SMALL = "text-[13px] leading-[1.6] text-foreground/75";
 
 const About = () => {
   const { t, language } = useLanguage();
+  const portraitRole = PORTRAIT_ROLE[language] ?? PORTRAIT_ROLE.de;
+  const portraitAlt = PORTRAIT_ALT[language] ?? PORTRAIT_ALT.de;
   const a = t.aboutV2;
 
   usePageSeo(a.seoTitle, a.seoDescription);
