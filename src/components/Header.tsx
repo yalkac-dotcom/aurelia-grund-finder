@@ -22,15 +22,6 @@ const offerLabels: Record<string, string> = {
   fr: "Proposer un bien",
 };
 
-const portfolioLabels: Record<string, string> = {
-  tr: "Portföyümüz",
-  en: "Our Portfolio",
-  nl: "Ons Portfolio",
-  it: "Il Nostro Portafoglio",
-  es: "Nuestra Cartera",
-  fr: "Notre Portefeuille",
-};
-
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -82,7 +73,6 @@ const Header = () => {
     { label: t.nav.home, path: "/" },
     { label: offerLabels[language] ?? t.nav.ownerInTrouble, path: "/immobilie-anbieten" },
     { label: t.nav.buyers, path: "/fuer-kaeufer" },
-    { label: portfolioLabels[language] ?? "Portföyümüz", path: "/portfolio" },
     { label: t.nav.turkeyProperties, path: "/immobilien-tuerkei" },
     { label: t.nav.partners, path: "/fuer-geschaeftspartner" },
     { label: t.nav.howItWorks, path: "/wie-es-funktioniert" },
