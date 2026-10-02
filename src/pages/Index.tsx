@@ -124,7 +124,7 @@ const HomePage = () => {
 
         <HomeDeSections m={m} />
 
-        {language === "de" ? <DualVideoSection language="de" /> : <HomeVideo language={language} />}
+        {language === "de" ? <DualVideoSection language="de" /> : language === "tr" ? <DualVideoSection language="tr" /> : <HomeVideo language={language} />}
 
         {/* TRUST */}
         <section className="section-premium section-navy text-white">
