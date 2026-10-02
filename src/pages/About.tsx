@@ -5,7 +5,6 @@ import Reveal from "@/components/Reveal";
 import { editorial } from "@/assets/editorial";
 import { ArrowRight, Building2, Check, CircleCheck, Eye, Handshake, Network, Scale, ShieldCheck, Sprout, Target, Users } from "lucide-react";
 import aboutMenschenAsset from "@/assets/about-menschen-haende.jpeg.asset.json";
-import portraitAsset from "@/assets/yasar-alkac-portraet-sauber.png.asset.json";
 import { getUnserAnsatz } from "@/i18n/aboutUnserAnsatz";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -143,41 +142,19 @@ const About = () => {
           </div>
         </section>
 
-        <section className="bg-background pt-8 pb-8 max-sm:pb-20 md:pt-10 md:pb-10 lg:pt-12 lg:pb-12" aria-labelledby="unser-ansatz-title">
+        <section className={`${SEC} bg-background`} aria-labelledby="unser-ansatz-title">
           <div className="container-premium">
-          <div className={`relative mx-auto ${language === "de" ? "max-w-[1080px] rounded-[3px] border border-accent/30 bg-background px-5 py-7 shadow-[0_35px_70px_-45px_hsl(var(--primary)/0.35)] md:px-10 md:py-10" : ""}`}>
-            {language === "de" && (
-              <div aria-hidden="true" className="pointer-events-none absolute inset-2 hidden rounded-[2px] border border-accent/15 md:block" />
-            )}
-          <div className={`mx-auto grid max-w-[980px] items-center gap-6 md:gap-8 lg:gap-10 ${language === "de" ? "md:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]" : "md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]"}`}>
-            <Reveal className={language === "de" ? "order-2" : undefined}>
-              {language === "de" ? (
-                <div className="relative md:pl-7 lg:pl-9">
-                  <span aria-hidden="true" className="absolute left-0 top-1/2 hidden h-14 w-px -translate-y-1/2 bg-accent/25 md:block" />
-                  <figure className="mx-auto w-full max-w-[21rem]">
-                    <div className="w-full max-w-[260px] max-sm:mx-auto max-sm:max-w-[210px]">
-                      <div className="rounded-[3px] border border-accent/30 bg-secondary/40 p-1.5">
-                        <img src={portraitAsset.url} alt="Yasar Alkac, Geschäftsführung Aurelia Grundbesitz GmbH" loading="lazy" width={652} height={709} style={{ aspectRatio: "652 / 709" }} className="block h-auto w-full object-contain" />
-                      </div>
-                    </div>
-                    <figcaption className="mt-2 px-1.5 max-sm:mt-3 max-sm:pl-[calc((100%_-_210px)/2)] max-sm:pr-1">
-                      <p className="font-heading text-[1rem] font-semibold leading-snug text-primary">Yasar Alkac</p>
-                      <p className="mt-0.5 text-[9.5px] font-semibold uppercase tracking-[0.08em] text-highlight">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
-                      <p className="mt-2 text-[12.5px] leading-[1.65] text-foreground/70">Seit rund 30 Jahren unternehmerisch tätig, verfügt Yasar Alkac über umfassende Erfahrung in der Entwicklung und Führung von Unternehmen. Bei Aurelia verantwortet er insbesondere die Prüfung ausgewählter Immobilien und die wesentlichen Ankaufsentscheidungen.</p>
-                    </figcaption>
-                  </figure>
-                </div>
-              ) : (
+          <div className="mx-auto grid max-w-[980px] items-center gap-7 md:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] md:gap-12 lg:gap-16">
+            <Reveal>
               <figure className="relative mx-auto w-full max-w-[520px] md:max-w-none">
                 <div className="overflow-hidden rounded-[3px]">
                   <img src={aboutMenschenAsset.url} alt={ansatz.imageAlt} loading="lazy" className="img-tone aspect-[16/9] w-full object-cover md:aspect-[5/4]" />
                 </div>
                 <span aria-hidden="true" className="absolute -bottom-3 left-4 h-px w-16 bg-accent md:-bottom-4" />
               </figure>
-              )}
             </Reveal>
-            <Reveal delay={0.08} className={language === "de" ? "order-1" : undefined}>
-              <div className={language === "de" ? "" : "md:border-l md:border-accent/30 md:pl-8 lg:pl-10"}>
+            <Reveal delay={0.08}>
+              <div className="md:border-l md:border-accent/30 md:pl-8 lg:pl-10">
                 <div className={RULE} aria-hidden="true" />
                 <h2 id="unser-ansatz-title" className="font-heading text-[1.3rem] font-semibold leading-[1.2] text-primary md:text-[1.55rem]">{ansatz.headline}</h2>
                 <div className="mt-3 max-w-[34rem] space-y-2 text-[14px] leading-[1.65] text-foreground/80">
@@ -199,7 +176,6 @@ const About = () => {
                 </div>
               </div>
             </Reveal>
-          </div>
           </div>
           </div>
         </section>
