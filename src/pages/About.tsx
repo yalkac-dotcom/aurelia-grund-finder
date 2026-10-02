@@ -254,10 +254,10 @@ const PORTRAIT_ROLE: Record<string, string> = {
   de: "Geschäftsführung",
   tr: "Genel Müdür",
   en: "Managing Director",
-  nl: "Directie",
+  nl: "Algemeen Directeur",
   it: "Amministratore",
-  es: "Dirección",
-  fr: "Direction",
+  es: "Director General",
+  fr: "Directeur Général",
 };
 const PORTRAIT_ALT: Record<string, string> = {
   de: "Yasar Alkac, Geschäftsführung der Aurelia Grundbesitz GmbH",
