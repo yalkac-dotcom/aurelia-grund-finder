@@ -132,7 +132,7 @@ const About = () => {
                       </div>
                       <figcaption className="mt-3">
                         <p className="font-heading text-[0.95rem] font-semibold text-primary">Yasar Alkac</p>
-                        <p className="mt-1 text-[10.5px] font-medium uppercase tracking-[0.12em] text-foreground/70">{portraitRole}</p>
+                        <p className="mt-1 text-[10.5px] font-medium uppercase tracking-[0.12em] text-foreground/70">{portraitRole} · <span lang="de">Aurelia Grundbesitz GmbH</span></p>
                       </figcaption>
                       <span aria-hidden="true" className="mt-3 block h-px w-16 bg-accent" />
                     </div>
@@ -251,13 +251,13 @@ const About = () => {
 };
 
 const PORTRAIT_ROLE: Record<string, string> = {
-  de: "Geschäftsführung · Aurelia Grundbesitz GmbH",
-  tr: "Genel Müdür · Aurelia Grundbesitz GmbH",
-  en: "Managing Director · Aurelia Grundbesitz GmbH",
-  nl: "Directie · Aurelia Grundbesitz GmbH",
-  it: "Amministratore · Aurelia Grundbesitz GmbH",
-  es: "Dirección · Aurelia Grundbesitz GmbH",
-  fr: "Direction · Aurelia Grundbesitz GmbH",
+  de: "Geschäftsführung",
+  tr: "Genel Müdür",
+  en: "Managing Director",
+  nl: "Directie",
+  it: "Amministratore",
+  es: "Dirección",
+  fr: "Direction",
 };
 const PORTRAIT_ALT: Record<string, string> = {
   de: "Yasar Alkac, Geschäftsführung der Aurelia Grundbesitz GmbH",
