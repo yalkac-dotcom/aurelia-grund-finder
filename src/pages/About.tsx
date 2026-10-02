@@ -15,6 +15,7 @@ import { aureliaInfoCard, aureliaEditorialFrame, aureliaGoldRule } from "@/lib/c
 import InfoCorner from "@/components/sections/InfoCorner";
 import { MapPin } from "lucide-react";
 import AureliaKompakt from "@/components/sections/AureliaKompakt";
+import yasarPortrait from "@/assets/yasar-alkac-portrait.png";
 
 // Einheitliches Spacing- & Typografie-System für "Über uns"
 const SEC = "section-premium !py-10 md:!py-14 lg:!py-16";
@@ -105,13 +106,46 @@ const About = () => {
 
         <section className={`${SEC} bg-background`}>
           <div className="container-premium">
-          <Reveal className={`max-w-4xl ${aureliaEditorialFrame}`}>
-            <h2 className={`${H2} md:!text-[2rem]`}>{a.standing.headline}</h2>
-            <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
-            <div className={`mt-6 max-w-[46rem] space-y-4 ${BODY}`}>
-              {a.standing.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-            </div>
-          </Reveal>
+          <div className="max-w-4xl">
+            {language === "de" ? (
+              <Reveal className={aureliaEditorialFrame}>
+                <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between md:gap-12">
+                  <div className="max-w-[46rem]">
+                    <h2 className={`${H2} md:!text-[2rem]`}>{a.standing.headline}</h2>
+                    <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
+                    <div className={`mt-6 space-y-4 ${BODY}`}>
+                      {a.standing.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                    </div>
+                  </div>
+                  <figure className="w-[240px] shrink-0">
+                    <div className="overflow-hidden rounded-[3px]">
+                      <img
+                        src={yasarPortrait}
+                        alt="Yasar Alkac, Geschäftsführung der Aurelia Grundbesitz GmbH"
+                        loading="lazy"
+                        width={652}
+                        height={709}
+                        className="h-auto w-[240px]"
+                      />
+                    </div>
+                    <figcaption className="mt-3">
+                      <p className="font-heading text-[0.95rem] font-semibold text-primary">Yasar Alkac</p>
+                      <p className="mt-1 text-[10.5px] font-medium uppercase tracking-[0.12em] text-foreground/70">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
+                    </figcaption>
+                    <span aria-hidden="true" className="mt-3 block h-px w-16 bg-accent" />
+                  </figure>
+                </div>
+              </Reveal>
+            ) : (
+              <Reveal className={`max-w-4xl ${aureliaEditorialFrame}`}>
+                <h2 className={`${H2} md:!text-[2rem]`}>{a.standing.headline}</h2>
+                <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
+                <div className={`mt-6 max-w-[46rem] space-y-4 ${BODY}`}>
+                  {a.standing.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </div>
+              </Reveal>
+            )}
+          </div>
           <div className="mt-8 grid gap-3 md:mt-10 md:grid-cols-2 md:gap-4 xl:grid-cols-3">
             {a.standing.values.map((value, index) => {
               const Icon = valueIcons[index] ?? Eye;
