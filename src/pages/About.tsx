@@ -107,7 +107,6 @@ const About = () => {
         <section className={`${SEC} bg-background`}>
           <div className="container-premium">
           <div className="max-w-4xl">
-            {language === "de" ? (
               <Reveal className={aureliaEditorialFrame}>
                 <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between md:gap-12">
                   <div className="max-w-[46rem]">
@@ -122,7 +121,7 @@ const About = () => {
                       <div className="overflow-hidden rounded-[2px]">
                         <img
                           src={yasarPortrait}
-                          alt="Yasar Alkac, Geschäftsführung der Aurelia Grundbesitz GmbH"
+                          alt={portraitAlt}
                           loading="lazy"
                           width={652}
                           height={709}
@@ -131,22 +130,13 @@ const About = () => {
                       </div>
                       <figcaption className="mt-3">
                         <p className="font-heading text-[0.95rem] font-semibold text-primary">Yasar Alkac</p>
-                        <p className="mt-1 text-[10.5px] font-medium uppercase tracking-[0.12em] text-foreground/70">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
+                        <p className="mt-1 text-[10.5px] font-medium uppercase tracking-[0.12em] text-foreground/70">{portraitRole}</p>
                       </figcaption>
                       <span aria-hidden="true" className="mt-3 block h-px w-16 bg-accent" />
                     </div>
                   </figure>
                 </div>
               </Reveal>
-            ) : (
-              <Reveal className={`max-w-4xl ${aureliaEditorialFrame}`}>
-                <h2 className={`${H2} md:!text-[2rem]`}>{a.standing.headline}</h2>
-                <div className={`mt-4 ${aureliaGoldRule}`} aria-hidden="true" />
-                <div className={`mt-6 max-w-[46rem] space-y-4 ${BODY}`}>
-                  {a.standing.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                </div>
-              </Reveal>
-            )}
           </div>
           <div className="mt-8 grid gap-3 md:mt-10 md:grid-cols-2 md:gap-4 xl:grid-cols-3">
             {a.standing.values.map((value, index) => {
@@ -256,6 +246,25 @@ const About = () => {
       </div>
     </Layout>
   );
+};
+
+const PORTRAIT_ROLE: Record<string, string> = {
+  de: "Geschäftsführung · Aurelia Grundbesitz GmbH",
+  tr: "Genel Müdür · Aurelia Grundbesitz GmbH",
+  en: "Managing Director · Aurelia Grundbesitz GmbH",
+  nl: "Directie · Aurelia Grundbesitz GmbH",
+  it: "Amministratore · Aurelia Grundbesitz GmbH",
+  es: "Dirección · Aurelia Grundbesitz GmbH",
+  fr: "Direction · Aurelia Grundbesitz GmbH",
+};
+const PORTRAIT_ALT: Record<string, string> = {
+  de: "Yasar Alkac, Geschäftsführung der Aurelia Grundbesitz GmbH",
+  tr: "Yasar Alkac, Aurelia Grundbesitz GmbH Genel Müdürü",
+  en: "Yasar Alkac, Managing Director of Aurelia Grundbesitz GmbH",
+  nl: "Yasar Alkac, directie van Aurelia Grundbesitz GmbH",
+  it: "Yasar Alkac, amministratore di Aurelia Grundbesitz GmbH",
+  es: "Yasar Alkac, dirección de Aurelia Grundbesitz GmbH",
+  fr: "Yasar Alkac, direction d'Aurelia Grundbesitz GmbH",
 };
 
 export default About;
