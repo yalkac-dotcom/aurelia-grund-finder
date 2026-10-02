@@ -22,6 +22,15 @@ const offerLabels: Record<string, string> = {
   fr: "Proposer un bien",
 };
 
+const portfolioLabels: Record<string, string> = {
+  tr: "Portföyümüz",
+  en: "Our Portfolio",
+  nl: "Ons Portfolio",
+  it: "Il Nostro Portafoglio",
+  es: "Nuestra Cartera",
+  fr: "Notre Portefeuille",
+};
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
