@@ -165,7 +165,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className={`${SEC} bg-secondary/45`}>
+        <section className={`${SEC} bg-secondary/45 !pt-4 md:!pt-5 lg:!pt-6 !pb-4 md:!pb-5 lg:!pb-6`}>
           <div className="container-premium">
           <Reveal className="max-w-[46rem] border-l-2 border-accent pl-5 md:pl-7">
             <h2 className={H2}>{a.approach.headline}</h2>
