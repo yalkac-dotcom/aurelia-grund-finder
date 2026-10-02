@@ -73,7 +73,7 @@ const Header = () => {
     { label: t.nav.home, path: "/" },
     { label: offerLabels[language] ?? t.nav.ownerInTrouble, path: "/immobilie-anbieten" },
     { label: t.nav.buyers, path: "/fuer-kaeufer" },
-    ...(language === "tr" ? [{ label: "Portföyümüz", path: "/portfolio" }] : []),
+    { label: portfolioLabels[language] ?? "Portföyümüz", path: "/portfolio" },
     { label: t.nav.turkeyProperties, path: "/immobilien-tuerkei" },
     { label: t.nav.partners, path: "/fuer-geschaeftspartner" },
     { label: t.nav.howItWorks, path: "/wie-es-funktioniert" },
