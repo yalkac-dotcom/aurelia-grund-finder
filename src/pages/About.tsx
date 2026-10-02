@@ -117,22 +117,24 @@ const About = () => {
                       {a.standing.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                     </div>
                   </div>
-                  <figure className="w-[240px] shrink-0">
-                    <div className="overflow-hidden rounded-[3px]">
-                      <img
-                        src={yasarPortrait}
-                        alt="Yasar Alkac, Geschäftsführung der Aurelia Grundbesitz GmbH"
-                        loading="lazy"
-                        width={652}
-                        height={709}
-                        className="h-auto w-[240px]"
-                      />
+                  <figure className="w-[266px] shrink-0">
+                    <div className="rounded-[3px] border border-accent/35 p-3">
+                      <div className="overflow-hidden rounded-[2px]">
+                        <img
+                          src={yasarPortrait}
+                          alt="Yasar Alkac, Geschäftsführung der Aurelia Grundbesitz GmbH"
+                          loading="lazy"
+                          width={652}
+                          height={709}
+                          className="h-auto w-[240px]"
+                        />
+                      </div>
+                      <figcaption className="mt-3">
+                        <p className="font-heading text-[0.95rem] font-semibold text-primary">Yasar Alkac</p>
+                        <p className="mt-1 text-[10.5px] font-medium uppercase tracking-[0.12em] text-foreground/70">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
+                      </figcaption>
+                      <span aria-hidden="true" className="mt-3 block h-px w-16 bg-accent" />
                     </div>
-                    <figcaption className="mt-3">
-                      <p className="font-heading text-[0.95rem] font-semibold text-primary">Yasar Alkac</p>
-                      <p className="mt-1 text-[10.5px] font-medium uppercase tracking-[0.12em] text-foreground/70">Geschäftsführung · Aurelia Grundbesitz GmbH</p>
-                    </figcaption>
-                    <span aria-hidden="true" className="mt-3 block h-px w-16 bg-accent" />
                   </figure>
                 </div>
               </Reveal>
