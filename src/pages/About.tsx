@@ -15,6 +15,7 @@ import { aureliaInfoCard, aureliaEditorialFrame, aureliaGoldRule } from "@/lib/c
 import InfoCorner from "@/components/sections/InfoCorner";
 import { MapPin } from "lucide-react";
 import AureliaKompakt from "@/components/sections/AureliaKompakt";
+import yasarPortrait from "@/assets/yasar-alkac-portrait.png";
 
 // Einheitliches Spacing- & Typografie-System für "Über uns"
 const SEC = "section-premium !py-10 md:!py-14 lg:!py-16";
