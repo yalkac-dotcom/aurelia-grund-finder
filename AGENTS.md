@@ -6,3 +6,4 @@
 - Keep ordinary content sections auto-height with compact responsive outer spacing; reserve fixed or minimum heights for intentional hero and functional regions only.
 - Ship no analytics, tracking or consent-banner code; the site only uses technically necessary storage, so no consent management is required.
 - Inquiries are reviewed only in the hidden, noindex `/verwaltung` area (admin role via `user_roles`, signups disabled); forms insert with a client-generated id so files link via `submission_files`; the notification function receives only that id and sends Resend a neutral, content-free notice (no confirmation mails to enquirers) — keeps personal data inside the backend.
+- Keep the temporary coming-soon view behind one switch at the app entry point, preserving all original routes and pages for a reversible reactivation without moving or deleting content.
