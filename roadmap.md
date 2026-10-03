@@ -3,7 +3,7 @@
 # Temporäre Wartungsseite (nur Vorschau)
 - [x] Schlichte Aurelia-Seite mit bestehendem Logo und direkten Kontaktlinks erstellen
 - [x] Alle bisherigen Seiten per umkehrbarem Schalter vorübergehend ausblenden
-- [ ] Desktop- und Smartphone-Ansicht sowie Unterseiten prüfen
+- [x] Desktop- und Smartphone-Ansicht sowie Unterseiten prüfen
 
 - [x] Startseite auf Deutschland + Türkei und zwei klare Einstiege ausrichten
 - [x] Türkei-Bereich als eigenständiges Angebot mit Zielgruppen, Ablauf und Rechtshinweisen stärken

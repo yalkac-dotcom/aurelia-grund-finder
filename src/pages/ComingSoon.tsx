@@ -27,7 +27,7 @@ const ComingSoon = () => {
   return (
     <main className="flex min-h-[100svh] flex-col items-center justify-center bg-background px-6 py-12 text-center text-foreground sm:px-10 sm:py-16">
       <div className="mx-auto flex w-full max-w-4xl flex-col items-center">
-        <div className="relative h-[118px] w-[220px] overflow-hidden sm:h-[150px] sm:w-[280px]" aria-label="Aurelia Grundbesitz">
+        <div className="relative h-[155px] w-[250px] overflow-hidden sm:h-[190px] sm:w-[320px]" aria-label="Aurelia Grundbesitz">
           <img
             src="/aurelia-logo.png"
             alt="Aurelia Grundbesitz"
