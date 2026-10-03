@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const ComingSoon = () => {
   useEffect(() => {
-    document.title = "Aurelia Grundbesitz | Wir sind demnächst wieder für Sie da";
+    document.title = "Aurelia Grundbesitz | Unsere neue Website ist demnächst für Sie da";
 
     const ensureMeta = (name: string, content: string) => {
       let el = document.querySelector<HTMLMetaElement>(`meta[name="${name}"]`);
@@ -16,7 +16,7 @@ const ComingSoon = () => {
     };
 
     const robots = ensureMeta("robots", "noindex, nofollow");
-    const desc = ensureMeta("description", "Aurelia Grundbesitz: Unsere Website wird derzeit überarbeitet. Persönlich erreichen Sie uns weiterhin telefonisch, per E-Mail oder WhatsApp.");
+    const desc = ensureMeta("description", "Aurelia Grundbesitz: Derzeit überarbeiten wir unseren Internetauftritt. Persönlich erreichen Sie uns weiterhin telefonisch, per E-Mail oder WhatsApp.");
 
     return () => {
       robots.setAttribute("content", "index, follow");
@@ -38,11 +38,11 @@ const ComingSoon = () => {
         <div className="mt-10 h-[3px] w-10 bg-accent sm:mt-12" aria-hidden="true" />
 
         <h1 className="mt-9 max-w-2xl text-[2rem] font-semibold leading-[1.25] text-primary sm:mt-10 sm:text-[2.75rem] md:text-[3rem]">
-          Wir sind demnächst wieder für Sie da.
+          Unsere neue Website ist demnächst für Sie da.
         </h1>
 
         <p className="mt-6 text-base leading-[1.8] text-muted-foreground sm:text-lg">
-          Unsere Website wird derzeit überarbeitet.<br />
+          Derzeit überarbeiten wir unseren Internetauftritt.<br />
           Persönlich erreichen Sie uns weiterhin wie gewohnt.
         </p>
 
