@@ -16,7 +16,7 @@ const ComingSoon = () => {
     };
 
     const robots = ensureMeta("robots", "noindex, nofollow");
-    const desc = ensureMeta("description", "Aurelia Grundbesitz: Derzeit überarbeiten wir unseren Internetauftritt. Persönlich erreichen Sie uns weiterhin telefonisch, per E-Mail oder WhatsApp.");
+    const desc = ensureMeta("description", "Aurelia Grundbesitz: Derzeit überarbeiten wir unseren Internetauftritt. Persönlich erreichen Sie uns weiterhin telefonisch oder per E-Mail.");
 
     return () => {
       robots.setAttribute("content", "index, follow");
