@@ -46,7 +46,7 @@ const ComingSoon = () => {
           Persönlich erreichen Sie uns weiterhin wie gewohnt.
         </p>
 
-        <div className="mt-12 grid w-full max-w-3xl gap-8 sm:mt-16 sm:grid-cols-3 sm:gap-5" aria-label="Kontaktmöglichkeiten">
+        <div className="mt-12 grid w-full max-w-3xl gap-8 sm:mt-16 sm:grid-cols-2 sm:gap-5" aria-label="Kontaktmöglichkeiten">
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs font-semibold uppercase text-muted-foreground">Telefon</span>
             <a className="text-base font-medium text-primary underline-offset-4 transition-colors hover:text-highlight focus-visible:underline" href="tel:+4921169583033">+49 211 69583033</a>
@@ -54,10 +54,6 @@ const ComingSoon = () => {
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs font-semibold uppercase text-muted-foreground">E-Mail</span>
             <a className="break-all text-base font-medium text-primary underline-offset-4 transition-colors hover:text-highlight focus-visible:underline" href="mailto:office@aureliaestates.de">office@aureliaestates.de</a>
-          </div>
-          <div className="flex flex-col items-center gap-2">
-            <span className="text-xs font-semibold uppercase text-muted-foreground">WhatsApp</span>
-            <a className="text-base font-medium text-primary underline-offset-4 transition-colors hover:text-highlight focus-visible:underline" href="https://wa.me/491633359152" target="_blank" rel="noopener noreferrer">+49 163 3359152</a>
           </div>
         </div>
 
