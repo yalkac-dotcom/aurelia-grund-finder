@@ -32,7 +32,7 @@ const OfferDeInfoSections = () => {
       </section>
       <section className="section-premium">
         <div className="container-premium">
-          <SectionHeader title={m.residenceTitle} intro={m.residenceIntro} />
+          <SectionHeader title={m.residenceTitle} intro="Auch wenn Sie nicht am Standort der Immobilie leben, können Sie uns das Objekt anbieten. Entscheidend ist, wo sich die Immobilie befindet. Ihren Wohnsitz fragen wir separat ab." />
           <div className="grid gap-6 md:grid-cols-2 md:gap-8">
             {[
               { t: m.residenceCards[0].title, d: m.residenceCards[0].text, to: "/immobilie-anbieten?land=deutschland" },
