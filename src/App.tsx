@@ -8,7 +8,6 @@ import Index from "./pages/Index";
 import ForBuyers from "./pages/ForBuyers";
 import ForGeschaftspartner from "./pages/ForGeschaftspartner";
 import HowItWorks from "./pages/HowItWorks";
-import ComingSoon from "./pages/ComingSoon";
 
 const About = lazy(() => import("./pages/About"));
 const AdminArea = lazy(() => import("./pages/admin/AdminArea"));
@@ -36,17 +35,13 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
-// Temporary preview switch: restore the existing site by setting this to false.
-// All original pages and routes remain below, untouched.
-const SHOW_COMING_SOON = true;
-
 // Alte Eigentümer-URLs → „Immobilie anbieten“ in allen Sprachen (Sprachwahl, Query und Hash bleiben erhalten)
 const LegacyOwnerRedirect = () => {
   const { search, hash } = useLocation();
   return <Navigate to={`/immobilie-anbieten${search}${hash}`} replace />;
 };
 
-const App = () => SHOW_COMING_SOON ? <ComingSoon /> : (
+const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
