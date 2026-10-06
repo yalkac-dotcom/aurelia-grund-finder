@@ -1,5 +1,6 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import FormPrivacyNotice from "@/components/FormPrivacyNotice";
+import OfferDeInfoSections from "@/components/offer/OfferDeInfoSections";
 import { Link, useSearchParams } from "react-router-dom";
 import { CheckCircle2, FileText, Upload } from "lucide-react";
 import { z } from "zod";
