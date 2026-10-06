@@ -163,3 +163,8 @@
 - [x] 11 Footer
 - [x] 12 Konsistenz (familiengeführt etc.), alle Sprachen
 - [x] 13 Test 1440/768/390
+
+# Immobilien anbieten: Abschnittsreihenfolge (Okt 2026, nur DE)
+- [x] Hero, Vertrauensbereich, besondere Situationen, Wohnsitz-Hinweis, dann Fragebogen
+- [x] Texte, Bilder, Felder und Gestaltung unverändert gelassen
+- [x] Desktop 1440, Tablet 768 und Smartphone 390 geprüft; EN/TR unverändert
