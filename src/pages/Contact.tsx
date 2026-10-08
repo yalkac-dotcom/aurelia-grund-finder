@@ -106,7 +106,7 @@ const Contact = () => {
 
     // 2) Nur neutrale interne Benachrichtigung – keine personenbezogenen Daten, keine Bestätigungs-E-Mail
     const { data: emailData, error: emailError } = await supabase.functions.invoke(
-      "send-contact-email",
+      "send-inquiry-notice",
       { body: { submission_id: submissionId } }
     );
 

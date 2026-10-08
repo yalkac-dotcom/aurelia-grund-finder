@@ -142,7 +142,7 @@ const PropertyOffer = () => {
       const submissionId = crypto.randomUUID(); const isTurkey = country === "turkey";
       const { error:insertError } = await supabase.from("contact_submissions").insert({ id:submissionId, form_type:isTurkey ? "turkey_property" : "germany_property", country:countryNameDe[country], first_name:form.firstName.trim(), last_name:form.lastName.trim(), email:form.email.trim(), phone:form.phone.trim(), property_type:propertyType, subject:form.propertyType, message, callback_requested:true });
       if (insertError) throw insertError;
-      const { data, error } = await supabase.functions.invoke("send-contact-email", { body: { submission_id:submissionId, files:uploaded.map(file => ({ path:file.path })) } });
+      const { data, error } = await supabase.functions.invoke("send-inquiry-notice", { body: { submission_id:submissionId, files:uploaded.map(file => ({ path:file.path })) } });
       if (error || !data?.success || !data?.internalMailResult?.accepted) throw error ?? new Error("Internal email was not accepted");
       const accepted = true; setConfirmationSent(accepted); setSuccess(true); setFiles([]); setForm({...initialForm, preferredLanguage:c.languages[["de","tr","en","nl","it","es","fr"].indexOf(language)] ?? c.languages[0]}); if(inputRef.current) inputRef.current.value="";
       toast({title:c.successTitle,description:accepted ? c.successText : c.confirmationWarning});
