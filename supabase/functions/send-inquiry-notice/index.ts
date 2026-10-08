@@ -1,8 +1,7 @@
-// Interne Benachrichtigung „Stufe B“ für alle Formulare.
-// Resend erhält ausschließlich nicht vertrauliche Eckdaten aus einer festen Positivliste
-// sowie einen Direktlink in den geschützten Verwaltungsbereich (Anmeldung erforderlich).
-// NIE enthalten: Namen, E-Mail, Telefon, Straße, Freitexte, Betreff, besondere Situation,
-// Eigentümerstatus/-anzahl, Wohnsitz, Sprache, Dateinamen, Dokumente oder Download-Links.
+// Interne Benachrichtigung für alle Formulare – vollständiger Inhalt.
+// Enthält alle Formularangaben (Kontakt, Objektdaten, Freitext) an office@, Reply-To = Interessent.
+// NIE enthalten: Dokumente, Dateinamen oder Download-Links – nur Anzahl + Link in den
+// geschützten Verwaltungsbereich (Anmeldung erforderlich).
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -24,7 +23,9 @@ const PATH_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\/
 interface Submission {
   id: string; form_type: string | null; created_at: string; message: string;
   property_type: string | null; subject: string | null; country: string | null; callback_requested: boolean | null;
+  salutation: string | null; first_name: string | null; last_name: string | null; email: string | null; phone: string | null;
 }
+const EMAIL_RE = /^[^\s@<>",;]{1,64}@[^\s@<>",;]{1,190}\.[a-z]{2,}$/i;
 
 const json = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { ...corsHeaders, "Content-Type": "application/json" } });
@@ -36,7 +37,7 @@ async function getRecentSubmission(id: unknown): Promise<Submission | null> {
   if (typeof id !== "string" || !UUID_RE.test(id) || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) return null;
   const since = new Date(Date.now() - 15 * 60 * 1000).toISOString();
   const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/contact_submissions?id=eq.${id}&created_at=gte.${encodeURIComponent(since)}&select=id,form_type,created_at,message,property_type,subject,country,callback_requested`,
+    `${SUPABASE_URL}/rest/v1/contact_submissions?id=eq.${id}&created_at=gte.${encodeURIComponent(since)}&select=id,form_type,created_at,message,property_type,subject,country,callback_requested,salutation,first_name,last_name,email,phone`,
     { headers: serviceHeaders() },
   );
   if (!res.ok) return null;
@@ -140,43 +141,65 @@ function buildNotice(s: Submission, files: number): Notice {
   };
 }
 
-function render(n: Notice, link: string) {
-  const footer = "Kontaktdaten, Nachricht und Dokumente sind aus Datenschutzgründen nur im geschützten Verwaltungsbereich einsehbar.";
+const fullName = (s: Submission) =>
+  [s.salutation, s.first_name, s.last_name].map((v) => (v ?? "").trim()).filter(Boolean).join(" ") || "–";
+
+function render(n: Notice, s: Submission, files: number, link: string) {
+  const contact: [string, string][] = [
+    ["Name", fullName(s)],
+    ["Telefon", (s.phone ?? "").trim() || "–"],
+    ["E-Mail", (s.email ?? "").trim() || "–"],
+  ];
+  if (s.subject?.trim()) contact.push(["Betreff", s.subject.trim()]);
+  const message = (s.message ?? "").trim() || "–";
+  const docs = files ? `${files} Datei(en) – nur im geschützten Verwaltungsbereich abrufbar` : "keine";
   const text = [
-    "AURELIA GRUNDBESITZ – Interne Benachrichtigung", "", n.heading, "",
-    ...n.rows.map(([k, v]) => `${k}: ${v}`), "",
-    `Anfrage im Verwaltungsbereich öffnen (Anmeldung erforderlich): ${link}`, "", footer,
+    "AURELIA GRUNDBESITZ – Neue Anfrage", "", n.heading, "",
+    "KONTAKT", ...contact.map(([k, v]) => `${k}: ${v}`), "",
+    "ECKDATEN", ...n.rows.map(([k, v]) => `${k}: ${v}`), "",
+    "ALLE FORMULARANGABEN UND NACHRICHT", message, "",
+    `Dokumente: ${docs}`, `Anfrage im Verwaltungsbereich: ${link}`,
   ].join("\n");
-  const rowsHtml = n.rows.map(([k, v]) =>
-    `<tr><td style="padding:8px 16px 8px 0;color:#5b6478;font-size:14px;white-space:nowrap;vertical-align:top;">${esc(k)}</td><td style="padding:8px 0;color:#1a2238;font-size:14px;font-weight:600;">${esc(v)}</td></tr>`).join("");
+  const table = (rows: [string, string][]) => `<table role="presentation" style="border-collapse:collapse;width:100%;border-top:2px solid #1a2b4c;">${rows.map(([k, v]) =>
+    `<tr><td style="padding:8px 16px 8px 0;color:#5b6478;font-size:14px;white-space:nowrap;vertical-align:top;">${esc(k)}</td><td style="padding:8px 0;color:#1a2238;font-size:14px;font-weight:600;">${esc(v)}</td></tr>`).join("")}</table>`;
+  const h2 = (t: string) => `<h2 style="margin:28px 0 8px;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#1a2b4c;">${esc(t)}</h2>`;
   const html = `<!doctype html><html lang="de"><head><meta charset="utf-8"></head><body style="margin:0;background:#ffffff;font-family:Arial,Helvetica,sans-serif;color:#1a2238;">
-<div style="max-width:560px;margin:0 auto;padding:32px 24px;">
-<p style="margin:0 0 4px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1a2b4c;font-weight:700;">Aurelia Grundbesitz · Interne Benachrichtigung</p>
-<h1 style="margin:0 0 24px;font-size:22px;line-height:1.3;color:#1a2b4c;font-family:Georgia,serif;font-weight:600;">${esc(n.heading)}</h1>
-<table role="presentation" style="border-collapse:collapse;width:100%;border-top:2px solid #1a2b4c;">${rowsHtml}</table>
+<div style="max-width:620px;margin:0 auto;padding:32px 24px;">
+<p style="margin:0 0 4px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1a2b4c;font-weight:700;">Aurelia Grundbesitz · Neue Anfrage</p>
+<h1 style="margin:0 0 8px;font-size:22px;line-height:1.3;color:#1a2b4c;font-family:Georgia,serif;font-weight:600;">${esc(n.heading)}</h1>
+${h2("Kontakt")}${table(contact)}
+${h2("Eckdaten")}${table(n.rows)}
+${h2("Alle Formularangaben und Nachricht")}
+<div style="border-top:2px solid #1a2b4c;padding:12px 0;font-size:14px;line-height:1.6;white-space:pre-wrap;">${esc(message)}</div>
+${h2("Dokumente")}<p style="margin:0;font-size:14px;">${esc(docs)}</p>
 <p style="margin:28px 0 8px;"><a href="${esc(link)}" style="display:inline-block;background:#1a2b4c;color:#ffffff;text-decoration:none;padding:12px 22px;border-radius:2px;font-size:14px;font-weight:600;">Anfrage im Verwaltungsbereich öffnen</a></p>
-<p style="margin:0 0 24px;font-size:12px;color:#5b6478;">Anmeldung erforderlich.</p>
-<p style="margin:0;font-size:12px;line-height:1.6;color:#5b6478;">${esc(footer)}</p>
+<p style="margin:0;font-size:12px;color:#5b6478;">Mit „Antworten“ schreiben Sie direkt an den Interessenten.</p>
 </div></body></html>`;
   return { text, html };
 }
 
-async function send(n: Notice, link: string) {
+async function send(n: Notice, s: Submission, files: number, link: string) {
   const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
   const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
   if (!LOVABLE_API_KEY || !RESEND_API_KEY) throw new Error("Email credentials missing");
-  const { text, html } = render(n, link);
+  const { text, html } = render(n, s, files, link);
+  const replyTo = (s.email ?? "").trim();
+  const name = fullName(s);
+  const subject = `${n.subject}${name !== "–" ? ` – ${name}` : ""}`.replace(/[\r\n]+/g, " ").slice(0, 180);
   const res = await fetch(`${GATEWAY_URL}/emails`, {
     method: "POST",
     headers: { "Content-Type": "application/json", Authorization: `Bearer ${LOVABLE_API_KEY}`, "X-Connection-Api-Key": RESEND_API_KEY },
-    body: JSON.stringify({ from: `${FROM_NAME} <${FROM_EMAIL}>`, to: [NOTIFY_TO], subject: n.subject.slice(0, 180), text, html }),
+    body: JSON.stringify({
+      from: `${FROM_NAME} <${FROM_EMAIL}>`, to: [NOTIFY_TO], subject, text, html,
+      ...(EMAIL_RE.test(replyTo) ? { reply_to: [replyTo] } : {}),
+    }),
   });
   const data = await res.json().catch(() => ({}));
   if (!res.ok || typeof data?.id !== "string") {
     console.error(JSON.stringify({ event: "email_rejected", providerStatus: res.status }));
     throw new Error(`Resend error [${res.status}]`);
   }
-  console.log(JSON.stringify({ event: "email_accepted", mailType: "internal_key_facts", resendId: data.id }));
+  console.log(JSON.stringify({ event: "email_accepted", mailType: "internal_full", resendId: data.id }));
   return { accepted: true as const, id: data.id as string };
 }
 
@@ -187,8 +210,9 @@ Deno.serve(async (req) => {
     const submission = await getRecentSubmission(body?.submission_id);
     if (!submission) return json({ error: "Invalid submission" }, 400);
     await linkFilesToSubmission(submission.id, body?.files);
-    const notice = buildNotice(submission, await countFiles(submission.id));
-    const internalMailResult = await send(notice, `${ADMIN_URL}?anfrage=${submission.id}`);
+    const files = await countFiles(submission.id);
+    const notice = buildNotice(submission, files);
+    const internalMailResult = await send(notice, submission, files, `${ADMIN_URL}?anfrage=${submission.id}`);
     return json({ success: true, internalMailResult, customerConfirmationResult: { accepted: false, skipped: true }, confirmationSent: false });
   } catch (error) {
     console.error("send-inquiry-notice failed:", error instanceof Error ? error.message : "unknown");
