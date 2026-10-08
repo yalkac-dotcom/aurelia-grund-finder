@@ -511,6 +511,9 @@ const nl: Translations = {
     ],
     stepsNote:
       "Het precieze verloop hangt af van het betreffende object en de concrete afspraak.",
+    calcTitle: "Financieringscalculator",
+    calcText: "Bereken vrijblijvend uw verwachte bijkomende aankoopkosten, uw leenbehoefte en uw verwachte maandlast.",
+    calcButton: "Bereken nu uw financiering",
     objectionsTitle: "Wat kopers vaak vragen",
     objectionsIntro: "",
     objections: [

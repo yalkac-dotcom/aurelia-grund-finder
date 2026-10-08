@@ -185,6 +185,30 @@ const ForBuyers = () => {
           </div>
         </section>
 
+        {/* FINANZIERUNGSRECHNER */}
+        <section className="section-premium bg-background">
+          <div className="container-premium">
+            <Reveal>
+              <div className={`mx-auto max-w-3xl px-6 py-10 text-center md:px-12 md:py-12 ${aureliaCard}`}>
+                <div className="mx-auto mb-5 h-[2px] w-10 bg-accent" aria-hidden="true" />
+                <h2 className="mb-4 font-heading font-bold leading-[1.2] text-balance text-[1.625rem] md:text-[2.25rem] text-primary">
+                  {b.calcTitle}
+                </h2>
+                <p className="mx-auto mb-8 max-w-xl text-[0.93rem] leading-[1.85] text-muted-foreground">
+                  {b.calcText}
+                </p>
+                <Link
+                  to="/finanzierungsrechner"
+                  className="inline-flex items-center gap-2.5 rounded-sm bg-primary px-8 py-4 text-[0.72rem] font-semibold uppercase tracking-[0.15em] text-white transition-colors duration-300 hover:bg-primary/90"
+                >
+                  {b.calcButton}
+                  <ArrowRight size={13} />
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         {/* EINWANDE */}
         <section
           className="section-premium"

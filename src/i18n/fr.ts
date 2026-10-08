@@ -543,6 +543,9 @@ const fr: Translations = {
     ],
     stepsNote:
       "Le déroulement exact dépend du bien concerné et de l'accord conclu.",
+    calcTitle: "Simulateur de financement",
+    calcText: "Calculez sans engagement vos frais d'acquisition, votre besoin de prêt et votre mensualité estimée.",
+    calcButton: "Calculez votre financement",
     objectionsTitle: "Ce que les acheteurs demandent souvent",
     objectionsIntro: "",
     objections: [
