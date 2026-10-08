@@ -127,7 +127,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
         property_type: "Kaufinteresse – Bestand", subject: compact ? "Kaufinteresse – Anfrage über: Unser Bestand" : "Kaufinteresse", message, callback_requested: false,
       });
       if (dbError) throw dbError;
-      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+      const { data, error } = await supabase.functions.invoke("send-inquiry-notice", {
         body: { submission_id: submissionId },
       });
       if (error || !data?.success) throw error ?? new Error("send failed");
