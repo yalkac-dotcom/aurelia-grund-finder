@@ -1,5 +1,10 @@
 # Inhaltliche Neustrukturierung
 
+# Immobilie anbieten: gezielter Einleitungs-Feinschliff
+- [x] Doppelte Eigenschaftenzeile entfernen und Übergang zu den Themenkarten straffen
+- [x] Bestehendes Deutschlandbild auf tatsächlichen Lade-/Darstellungsfehler prüfen (lädt unverändert korrekt; Fehler nicht reproduzierbar)
+- [x] Alle sieben Sprachen auf Desktop und Smartphone prüfen; nichts veröffentlichen
+
 - [x] Startseite auf Deutschland + Türkei und zwei klare Einstiege ausrichten
 - [x] Türkei-Bereich als eigenständiges Angebot mit Zielgruppen, Ablauf und Rechtshinweisen stärken
 - [x] Eigentümer-Seite breiter positionieren und gegenseitig mit Türkei verlinken
