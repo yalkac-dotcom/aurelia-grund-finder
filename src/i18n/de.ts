@@ -560,6 +560,9 @@ const de: Translations = {
     ],
     stepsNote:
       "Der genaue Ablauf hängt vom jeweiligen Objekt und der konkreten Vereinbarung ab.",
+    calcTitle: "Finanzierungsrechner",
+    calcText: "Berechnen Sie unverbindlich Ihre voraussichtlichen Kaufnebenkosten, Ihren Finanzierungsbedarf und Ihre monatliche Rate.",
+    calcButton: "Jetzt Finanzierung berechnen",
     objectionsTitle: "Was Käufer häufig fragen",
     objectionsIntro: "",
     objections: [

@@ -510,6 +510,9 @@ const es: Translations = {
     ],
     stepsNote:
       "El proceso exacto depende del inmueble concreto y del acuerdo alcanzado.",
+    calcTitle: "Calculadora de financiación",
+    calcText: "Calcule sin compromiso sus gastos adicionales de compra, su necesidad de préstamo y su cuota mensual estimada.",
+    calcButton: "Calcule ahora su financiación",
     objectionsTitle: "Lo que los compradores suelen preguntar",
     objectionsIntro: "",
     objections: [

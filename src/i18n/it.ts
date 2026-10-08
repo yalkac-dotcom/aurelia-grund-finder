@@ -510,6 +510,9 @@ const it: Translations = {
     ],
     stepsNote:
       "Lo svolgimento esatto dipende dal rispettivo immobile e dall'accordo concreto.",
+    calcTitle: "Calcolatore di finanziamento",
+    calcText: "Calcolate in modo non vincolante i vostri costi accessori di acquisto, il fabbisogno di mutuo e la rata mensile prevista.",
+    calcButton: "Calcolate ora il vostro finanziamento",
     objectionsTitle: "Domande frequenti degli acquirenti",
     objectionsIntro: "",
     objections: [

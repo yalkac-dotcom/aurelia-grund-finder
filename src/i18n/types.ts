@@ -361,6 +361,9 @@ export interface Translations {
     stepsTitle: string;
     steps: { title: string; desc: string }[];
     stepsNote: string;
+    calcTitle: string;
+    calcText: string;
+    calcButton: string;
     objectionsTitle: string;
     objectionsIntro: string;
     objections: { q: string; a: string }[];

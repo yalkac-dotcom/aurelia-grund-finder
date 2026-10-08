@@ -510,6 +510,9 @@ const tr: Translations = {
     ],
     stepsNote:
       "Sürecin tam olarak nasıl ilerleyeceği, ilgili nesneye ve varılan somut anlaşmaya bağlıdır.",
+    calcTitle: "Finansman hesaplayıcı",
+    calcText: "Ek satın alma masraflarınızı, kredi ihtiyacınızı ve tahmini aylık taksitinizi bağlayıcı olmayan şekilde hesaplayın.",
+    calcButton: "Finansmanınızı şimdi hesaplayın",
     objectionsTitle: "Alıcıların sıkça sorduğu sorular",
     objectionsIntro: "",
     objections: [

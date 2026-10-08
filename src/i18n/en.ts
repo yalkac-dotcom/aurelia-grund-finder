@@ -543,6 +543,9 @@ const en: Translations = {
     ],
     stepsNote:
       "The exact process depends on the respective property and the specific agreement.",
+    calcTitle: "Financing calculator",
+    calcText: "Calculate your expected additional purchase costs, your loan requirement and your monthly instalment – without obligation.",
+    calcButton: "Calculate your financing now",
     objectionsTitle: "What buyers often ask",
     objectionsIntro: "",
     objections: [
