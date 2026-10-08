@@ -1,5 +1,6 @@
 import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
+import { useSearchParams } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -124,7 +125,9 @@ const Detail = ({ row, onSaved }: { row: Row; onSaved: () => void }) => {
 const Dashboard = ({ session }: { session: Session }) => {
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
   const [rows, setRows] = useState<Row[]>([]);
-  const [selected, setSelected] = useState<string | null>(null);
+  const [params] = useSearchParams();
+  const linked = params.get("anfrage");
+  const [selected, setSelected] = useState<string | null>(linked && /^[0-9a-f-]{36}$/i.test(linked) ? linked : null);
   const [filter, setFilter] = useState<"alle" | Status>("alle");
   const load = useCallback(async () => {
     const { data } = await supabase.from("contact_submissions")
