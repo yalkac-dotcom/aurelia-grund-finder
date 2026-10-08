@@ -1,8 +1,7 @@
-// Interne Benachrichtigung „Stufe B“ für alle Formulare.
-// Resend erhält ausschließlich nicht vertrauliche Eckdaten aus einer festen Positivliste
-// sowie einen Direktlink in den geschützten Verwaltungsbereich (Anmeldung erforderlich).
-// NIE enthalten: Namen, E-Mail, Telefon, Straße, Freitexte, Betreff, besondere Situation,
-// Eigentümerstatus/-anzahl, Wohnsitz, Sprache, Dateinamen, Dokumente oder Download-Links.
+// Interne Benachrichtigung für alle Formulare – vollständiger Inhalt.
+// Enthält alle Formularangaben (Kontakt, Objektdaten, Freitext) an office@, Reply-To = Interessent.
+// NIE enthalten: Dokumente, Dateinamen oder Download-Links – nur Anzahl + Link in den
+// geschützten Verwaltungsbereich (Anmeldung erforderlich).
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
