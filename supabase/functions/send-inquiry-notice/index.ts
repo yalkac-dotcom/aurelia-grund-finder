@@ -23,7 +23,9 @@ const PATH_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\/
 interface Submission {
   id: string; form_type: string | null; created_at: string; message: string;
   property_type: string | null; subject: string | null; country: string | null; callback_requested: boolean | null;
+  salutation: string | null; first_name: string | null; last_name: string | null; email: string | null; phone: string | null;
 }
+const EMAIL_RE = /^[^\s@<>",;]{1,64}@[^\s@<>",;]{1,190}\.[a-z]{2,}$/i;
 
 const json = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { ...corsHeaders, "Content-Type": "application/json" } });
@@ -35,7 +37,7 @@ async function getRecentSubmission(id: unknown): Promise<Submission | null> {
   if (typeof id !== "string" || !UUID_RE.test(id) || !SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) return null;
   const since = new Date(Date.now() - 15 * 60 * 1000).toISOString();
   const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/contact_submissions?id=eq.${id}&created_at=gte.${encodeURIComponent(since)}&select=id,form_type,created_at,message,property_type,subject,country,callback_requested`,
+    `${SUPABASE_URL}/rest/v1/contact_submissions?id=eq.${id}&created_at=gte.${encodeURIComponent(since)}&select=id,form_type,created_at,message,property_type,subject,country,callback_requested,salutation,first_name,last_name,email,phone`,
     { headers: serviceHeaders() },
   );
   if (!res.ok) return null;
