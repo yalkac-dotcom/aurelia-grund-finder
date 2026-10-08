@@ -10,6 +10,7 @@ export type PropertyOfferCopy = {
   files: string; uploadHelp: string; privacy: string; submit: string; submitting: string;
   successTitle: string; successText: string; confirmationWarning: string; errorTitle: string; errorText: string;
   requiredError: string; emailError: string; fileError: string;
+  purchaseAreaTitle: string; purchaseAreaText: string; purchaseAreaNote: string;
   germanyImageAlt: string; turkeyImageAlt: string;
   propertyTypes: string[]; situations: string[]; ownerStatuses: string[]; languages: string[];
 };
