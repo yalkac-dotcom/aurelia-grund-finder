@@ -1,4 +1,4 @@
-import type { Language } from "@/i18n/translations";
+import type { Language } from "@/i18n/types";
 
 // Sichtbare Zeichenbegrenzung für Freitextfelder. Eingaben werden NIE
 // stillschweigend gekürzt: kein maxLength-Attribut, sondern Zähler + Fehlermeldung,
