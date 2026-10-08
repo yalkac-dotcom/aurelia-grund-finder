@@ -1,3 +1,4 @@
+import { TextLimit, limitCopy } from "@/components/forms/TextLimit";
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import Reveal from "@/components/Reveal";
@@ -23,6 +24,9 @@ const optionalLabel: Record<string, string> = { de: "optional", en: "optional", 
 
 const labelClasses = "block text-xs font-sans uppercase tracking-[0.15em] text-foreground/70 mb-1 font-medium";
 
+// Platz für automatisch vorangestellten Standort/Betreff bleibt unter der Speichergrenze (5000).
+const CONTACT_MESSAGE_MAX = 4500;
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -33,6 +37,7 @@ const Contact = () => {
   usePageSeo(pageSeo[language].contact.title, pageSeo[language].contact.description);
   const contactCopy = pageExtras[language].contact;
 
+  const [messageLength, setMessageLength] = useState(0);
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
@@ -41,16 +46,16 @@ const Contact = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
     const contactSchema = z.object({
-      name: z.string().trim().min(2).max(200),
+      name: z.string().trim().min(2).max(100),
       email: z.string().trim().email().max(254),
-      phone: z.string().trim().max(50),
+      phone: z.string().trim().max(40),
       subject: z.string().trim().min(1).max(120),
       propertyLocation: z.string().trim().max(80),
       propertyType: z.string().trim().max(120),
-      message: z.string().trim().min(1).max(4500),
+      message: z.string().trim().min(1).max(CONTACT_MESSAGE_MAX),
     });
     const phone = String(formData.get("phone") ?? "").trim();
-    const phoneValidation = z.string().trim().min(1).max(50).safeParse(phone);
+    const phoneValidation = z.string().trim().min(1).max(40).safeParse(phone);
     if (!phoneValidation.success) {
       setError(phone ? t.common.formError : buyerInterestCopy[language].errRequired);
       const phoneInput = form.elements.namedItem("phone");
@@ -72,6 +77,11 @@ const Contact = () => {
       subject, propertyLocation: formData.get("property_location") ?? "",
       propertyType: formData.get("property_type") ?? "", message: formData.get("message"),
     });
+    const rawLen = String(formData.get("message") ?? "").trim().length;
+    if (rawLen > CONTACT_MESSAGE_MAX) {
+      setError(limitCopy(language).tooLong(CONTACT_MESSAGE_MAX));
+      return;
+    }
     if (!parsedContact.success) {
       setError(t.common.formError);
       return;
@@ -268,10 +278,11 @@ const Contact = () => {
                       {t.contact.message} <span className="text-accent">*</span>
                     </label>
                     <textarea
-                      id="message" name="message" rows={4} required maxLength={4500}
+                      id="message" name="message" rows={4} required onInput={(e) => setMessageLength(e.currentTarget.value.length)}
                       className={`${inputClasses} min-h-28 resize-none`}
                       placeholder={t.contact.messagePlaceholder}
                     />
+                    <TextLimit length={messageLength} max={CONTACT_MESSAGE_MAX} lang={language} />
                   </div>
 
 

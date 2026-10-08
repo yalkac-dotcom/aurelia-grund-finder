@@ -1,3 +1,4 @@
+import { TextLimit, limitCopy, fitsStorage } from "@/components/forms/TextLimit";
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import FormPrivacyNotice from "@/components/FormPrivacyNotice";
 import OfferDeInfoSections from "@/components/offer/OfferDeInfoSections";
@@ -57,7 +58,8 @@ const countryImagePositions: Record<"germany" | "turkey", string> = {
   turkey: "50% 58%",
 };
 const initialForm: FormState = { firstName:"", lastName:"", phone:"", email:"", location:"", street:"", propertyType:"", area:"", units:"", rooms:"", yearBuilt:"", rented:"", ownerStatus:"", price:"", situation:"", details:"", province:"", district:"", tapu:"", ownerCount:"", ownerResidence:"", preferredLanguage:"", condition:"", privacy:"" };
-const schema = z.object({ firstName:z.string().trim().min(1).max(100), lastName:z.string().trim().min(1).max(100), phone:z.string().trim().min(5).max(50), email:z.string().trim().email().max(254), propertyType:z.string().trim().min(1).max(120) });
+const schema = z.object({ firstName:z.string().trim().min(1).max(100), lastName:z.string().trim().min(1).max(100), phone:z.string().trim().min(5).max(40), email:z.string().trim().email().max(254), propertyType:z.string().trim().min(1).max(120) });
+const DETAILS_MAX = 3000;
 const safeFileName = (name:string) => name.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9._-]/g, "-").replace(/-+/g,"-").slice(0,120);
 
 const labelClass = "text-[0.76rem] font-semibold uppercase tracking-[0.11em] text-primary";
@@ -108,6 +110,8 @@ const PropertyOffer = () => {
     if (form.yearBuilt && !/^\d{4}$/.test(form.yearBuilt)) next.yearBuilt = c.requiredError;
     if (form.ownerCount && !/^[1-9]\d{0,2}$/.test(form.ownerCount)) next.ownerCount = c.requiredError;
     if (country === "turkey" && form.privacy !== "yes") next.privacy = c.requiredError;
+    if (form.details.length > DETAILS_MAX) next.details = limitCopy(language).tooLong(DETAILS_MAX);
+    else if (!fitsStorage(buildMessage(files.map(f => ({ name:f.name, path:"", size:f.size, type:f.type }))))) next.details = limitCopy(language).totalTooLong;
     if (!validFiles(files)) next.files = c.fileError;
     setErrors(next); return Object.keys(next).length === 0;
   };
@@ -133,7 +137,7 @@ const PropertyOffer = () => {
     form.situation && `Besondere Situation: ${form.situation}`, form.ownerResidence && `Wohnsitz Eigentümer: ${form.ownerResidence}`,
     `Bevorzugte Sprache: ${form.preferredLanguage}`, `Dateien: ${uploaded.length ? uploaded.map(file => file.name).join(", ") : "Keine"}`,
     "", "Weitere Informationen:", form.details || "Keine zusätzlichen Angaben."
-  ].filter(Boolean).join("\n").slice(0,4900);
+  ].filter(Boolean).join("\n");
   const submit = async (event:FormEvent) => {
     event.preventDefault(); setSuccess(false); if (!validate()) { toast({title:c.errorTitle,description:c.requiredError,variant:"destructive"}); return; }
     setSubmitting(true);
@@ -163,7 +167,7 @@ const PropertyOffer = () => {
     {country!=="turkey" ? <><Field {...fp("location")} label={c.location} requiredField/><Field {...fp("street")} label={c.street}/></> : <><Field {...fp("province")} label={c.province} requiredField/><Field {...fp("district")} label={c.district}/></>}
     <SelectField {...fp("propertyType")} label={c.propertyType} options={c.propertyTypes} requiredField/><Field {...fp("area")} label={c.area}/>{country!=="turkey"&&<Field {...fp("units")} label={c.units}/>}<Field {...fp("rooms")} label={c.rooms}/>{isDe&&<SelectField {...fp("condition")} label="Zustand" options={conditionsDe}/>}<Field {...fp("yearBuilt")} label={c.yearBuilt}/><SelectField {...fp("rented")} label={c.rented} options={[c.yes,c.no]}/>
     {country!=="turkey" ? <><SelectField {...fp("ownerStatus")} label={c.ownerStatus} options={c.ownerStatuses}/><SelectField {...fp("situation")} label={isDe ? "Besondere Situation" : c.situation} options={isDe ? situationsDe : c.situations}/></> : <><SelectField {...fp("tapu")} label={c.tapu} options={[c.yes,c.no]}/><Field {...fp("ownerCount")} label={c.ownerCount}/>{isDe ? <SelectField {...fp("situation")} label="Besondere Situation" options={situationsDe}/> : <Field {...fp("ownerResidence")} label={c.ownerResidence}/>}<SelectField {...fp("preferredLanguage")} label={c.preferredLanguage} options={c.languages} requiredField/></>}<Field {...fp("price")} label={c.price}/></div>
-    <label className={`${labelClass} mt-6 block`}>{c.details}<textarea value={form.details} onChange={e=>update("details",e.target.value)} rows={5} maxLength={1800} className={fieldClass(Boolean(errors.details))}/></label>
+    <label className={`${labelClass} mt-6 block`}>{c.details}<textarea value={form.details} onChange={e=>update("details",e.target.value)} rows={5} className={fieldClass(Boolean(errors.details) || form.details.length > DETAILS_MAX)} aria-invalid={Boolean(errors.details) || form.details.length > DETAILS_MAX}/><TextLimit length={form.details.length} max={DETAILS_MAX} lang={language} error={errors.details}/></label>
     <p className="mt-2 text-sm leading-6 text-muted-foreground">{situationHint[language as keyof typeof situationHint] ?? situationHint.en}</p>
     <div className="mt-6"><label className={labelClass}>{c.files}<span className="mt-2 flex cursor-pointer items-center justify-center gap-3 rounded-sm border border-dashed border-accent/60 bg-secondary px-5 py-7 normal-case tracking-normal text-primary"><Upload size={18}/>{files.length ? `${files.length} · ${c.files}` : c.uploadHelp}<input ref={inputRef} type="file" multiple accept=".pdf,.jpg,.jpeg,.png" className="sr-only" onChange={e=>{const next=Array.from(e.target.files??[]);setFiles(validFiles(next)?next:[]);setErrors(current=>({...current,files:validFiles(next)?"":c.fileError}));}}/></span></label>{errors.files&&<p className="mt-2 text-sm text-destructive">{errors.files}</p>}{files.map(file=><p key={`${file.name}-${file.size}`} className="mt-2 flex items-center gap-2 text-sm text-muted-foreground"><FileText size={14}/>{file.name}</p>)}</div>
     {country==="turkey" && <><label className="mt-7 flex cursor-pointer items-start gap-3 text-sm leading-6 text-muted-foreground"><input type="checkbox" checked={form.privacy==="yes"} onChange={e=>update("privacy",e.target.checked?"yes":"")} className="mt-1 h-4 w-4 accent-primary"/><span>{c.privacy} <Link to={language === "tr" ? "/datenschutz#kvkk" : "/datenschutz#dsgvo"} className="font-semibold text-primary underline">{t.footer.privacy}</Link></span></label>{errors.privacy&&<p className="mt-1 text-sm text-destructive">{errors.privacy}</p>}</>}

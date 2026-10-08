@@ -154,7 +154,7 @@ function render(n: Notice, s: Submission, files: number, link: string) {
   // Dateinamen bleiben im Verwaltungsbereich: die vom Formular gespeicherte Zeile "Dateien: …" wird in der E-Mail ersetzt.
   const message = (s.message ?? "")
     .split("\n")
-    .map((line) => (/^\s*Dateien\s*:/i.test(line) ? "Dateien: siehe Abschnitt „Dokumente“" : line))
+    .map((line, i, all) => (/^Dateien:/.test(line) && all.findIndex((l) => /^Dateien:/.test(l)) === i ? "Dateien: siehe Abschnitt „Dokumente“" : line))
     .join("\n")
     .trim() || "–";
   const docs = files ? `${files} Datei(en) – nur im geschützten Verwaltungsbereich abrufbar` : "keine";

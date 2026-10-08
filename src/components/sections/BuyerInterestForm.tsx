@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { buyerInterestCopy } from "@/i18n/buyerInterestCopy";
 import { stockRequestCopy } from "@/i18n/stockRequestCopy";
+import { TextLimit, limitCopy, fitsStorage } from "@/components/forms/TextLimit";
 import FormPrivacyNotice from "@/components/FormPrivacyNotice";
 
 // Kaufinteresse-Formular (alle Sprachen) – Interessenten für den
@@ -16,13 +17,14 @@ const labelClass = "text-[0.76rem] font-semibold uppercase tracking-[0.11em] tex
 const fieldClass = (err: boolean) =>
   `mt-2 w-full rounded-sm border bg-background px-4 py-3 text-[0.92rem] normal-case tracking-normal outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 ${err ? "border-destructive" : "border-border"}`;
 
+const WISHES_MAX = 3000;
 const schema = z.object({
-  name: z.string().trim().min(2).max(160),
-  phone: z.string().trim().min(5).max(50),
+  name: z.string().trim().min(2).max(100),
+  phone: z.string().trim().min(5).max(40),
   email: z.string().trim().email().max(254),
   regions: z.string().trim().max(500),
   size: z.string().trim().max(120),
-  wishes: z.string().trim().max(1500),
+  wishes: z.string().trim().max(WISHES_MAX),
   timeframe: z.string().trim().max(120),
 });
 
@@ -84,26 +86,7 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
     setErrors((er) => ({ ...er, [k]: "" }));
   };
 
-  const validate = () => {
-    const next: Record<string, string> = {};
-    const parsed = schema.safeParse(text);
-    if (!parsed.success) parsed.error.issues.forEach((i) => {
-      const k = String(i.path[0]);
-      next[k] = k === "email" ? c.errEmail : c.errField;
-    });
-    if (!text.name.trim()) next.name = c.errRequired;
-    if (!text.phone.trim()) next.phone = c.errRequired;
-    if (!compact && selMarkets.length === 0) next.markets = c.errMarkets;
-    setErrors(next);
-    return Object.keys(next).length === 0;
-  };
-
-  const submit = async (e: FormEvent) => {
-    e.preventDefault();
-    setSuccess(false);
-    if (!validate()) return;
-    setSubmitting(true);
-    const message = [
+  const buildMessage = () => [
       "Kaufinteresse – Immobilien aus dem Aurelia-Bestand",
       compact && "Anfrage über: Unser Bestand",
       !compact && `Märkte: ${selMarkets.join(", ")}`,
@@ -117,7 +100,31 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
       "",
       "Besondere Wünsche:",
       text.wishes || "Keine Angaben.",
-    ].filter(Boolean).join("\n").slice(0, 4900);
+    ].filter(Boolean).join("\n");
+
+  const validate = () => {
+    const next: Record<string, string> = {};
+    const parsed = schema.safeParse(text);
+    if (!parsed.success) parsed.error.issues.forEach((i) => {
+      const k = String(i.path[0]);
+      next[k] = k === "email" ? c.errEmail : c.errField;
+    });
+    if (!text.name.trim()) next.name = c.errRequired;
+    if (!text.phone.trim()) next.phone = c.errRequired;
+    if (!compact && selMarkets.length === 0) next.markets = c.errMarkets;
+    if (text.wishes.length > WISHES_MAX) next.wishes = limitCopy(language).tooLong(WISHES_MAX);
+    else if (text.regions.length > 500) next.regions = limitCopy(language).tooLong(500);
+    else if (!fitsStorage(buildMessage())) next.wishes = limitCopy(language).totalTooLong;
+    setErrors(next);
+    return Object.keys(next).length === 0;
+  };
+
+  const submit = async (e: FormEvent) => {
+    e.preventDefault();
+    setSuccess(false);
+    if (!validate()) return;
+    setSubmitting(true);
+    const message = buildMessage();
     const [firstName, ...rest] = text.name.trim().split(/\s+/);
     try {
       const submissionId = crypto.randomUUID();
@@ -156,19 +163,22 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
         {compact ? (<>
         <ChipGroup legend={sc.types} options={propertyTypes.slice(0, 6)} labels={sc.typeLabels} selected={selTypes} onToggle={toggle(selTypes, setSelTypes, "types")} />
         <label className={`${labelClass} md:col-span-2`}>{sc.region}
-          <input value={text.regions} onChange={upd("regions")} maxLength={500} className={fieldClass(Boolean(errors.regions))} />
+          <input value={text.regions} onChange={upd("regions")} className={fieldClass(Boolean(errors.regions) || text.regions.length > 500)} />
+          <TextLimit length={text.regions.length} max={500} lang={language} error={errors.regions} />
         </label>
         <Select label={c.budget} value={budget} options={budgets} labels={c.budgetOptions} onChange={setBudget} />
         {input("name", c.name, "text", true)}
         {input("email", c.email, "email", true)}
         {input("phone", c.phone, "tel", true)}
         <label className={`${labelClass} md:col-span-2`}>{sc.wishes}
-          <textarea value={text.wishes} onChange={upd("wishes")} rows={4} maxLength={1500} className={fieldClass(false)} />
+          <textarea value={text.wishes} onChange={upd("wishes")} rows={4} className={fieldClass(Boolean(errors.wishes) || text.wishes.length > WISHES_MAX)} />
+          <TextLimit length={text.wishes.length} max={WISHES_MAX} lang={language} error={errors.wishes} />
         </label>
         </>) : (<>
         <ChipGroup legend={c.markets} options={markets} labels={c.marketOptions} selected={selMarkets} onToggle={toggle(selMarkets, setSelMarkets, "markets")} error={errors.markets} />
         <label className={`${labelClass} md:col-span-2`}>{c.regions}
-          <input value={text.regions} onChange={upd("regions")} maxLength={500} className={fieldClass(Boolean(errors.regions))} />
+          <input value={text.regions} onChange={upd("regions")} className={fieldClass(Boolean(errors.regions) || text.regions.length > 500)} />
+          <TextLimit length={text.regions.length} max={500} lang={language} error={errors.regions} />
         </label>
         <ChipGroup legend={c.types} options={propertyTypes} labels={c.typeOptions} selected={selTypes} onToggle={toggle(selTypes, setSelTypes, "types")} />
         <Select label={c.budget} value={budget} options={budgets} labels={c.budgetOptions} onChange={setBudget} />
@@ -176,7 +186,8 @@ const BuyerInterestForm = ({ variant = "full" }: { variant?: "full" | "stock" })
         {input("size", c.size)}
         {input("timeframe", c.timeframe)}
         <label className={`${labelClass} md:col-span-2`}>{c.wishes}
-          <textarea value={text.wishes} onChange={upd("wishes")} rows={4} maxLength={1500} className={fieldClass(false)} />
+          <textarea value={text.wishes} onChange={upd("wishes")} rows={4} className={fieldClass(Boolean(errors.wishes) || text.wishes.length > WISHES_MAX)} />
+          <TextLimit length={text.wishes.length} max={WISHES_MAX} lang={language} error={errors.wishes} />
         </label>
         {input("name", c.name, "text", true)}
         {input("phone", c.phone, "tel", true)}
