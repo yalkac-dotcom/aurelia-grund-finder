@@ -47,7 +47,7 @@ const Contact = () => {
       subject: z.string().trim().min(1).max(120),
       propertyLocation: z.string().trim().max(80),
       propertyType: z.string().trim().max(120),
-      message: z.string().trim().min(1).max(5000),
+      message: z.string().trim().min(1).max(4500),
     });
     const phone = String(formData.get("phone") ?? "").trim();
     const phoneValidation = z.string().trim().min(1).max(50).safeParse(phone);
@@ -268,7 +268,7 @@ const Contact = () => {
                       {t.contact.message} <span className="text-accent">*</span>
                     </label>
                     <textarea
-                      id="message" name="message" rows={4} required
+                      id="message" name="message" rows={4} required maxLength={4500}
                       className={`${inputClasses} min-h-28 resize-none`}
                       placeholder={t.contact.messagePlaceholder}
                     />
