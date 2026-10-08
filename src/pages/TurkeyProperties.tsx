@@ -1,3 +1,4 @@
+import { fitsStorage } from "@/components/forms/TextLimit";
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeftRight, ArrowRight, CheckCircle2, FileText, Home, Landmark, MapPin, ShieldCheck, Upload } from "lucide-react";
@@ -72,8 +73,8 @@ const getInitialForm = (preferredLanguage: string): FormState => ({
 
 const isValidEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length <= 254;
 const turkeyFormSchema = z.object({
-  fullName: z.string().trim().min(2).max(200),
-  phone: z.string().trim().min(5).max(50),
+  fullName: z.string().trim().min(2).max(100),
+  phone: z.string().trim().min(5).max(40),
   email: z.string().trim().email().max(254),
   preferredLanguage: z.string().trim().min(1).max(50),
   ownerLocation: z.string().trim().max(120),
@@ -87,7 +88,7 @@ const turkeyFormSchema = z.object({
   rented: z.string().trim().max(80),
   ownership: z.string().trim().max(80),
   priceExpectation: z.string().trim().max(120),
-  description: z.string().trim().max(1800),
+  description: z.string().trim().max(3000),
   privacy: z.literal(true),
 });
 
@@ -168,6 +169,7 @@ const TurkeyProperties = () => {
       yearBuilt: issueFields.has("yearBuilt"),
       privacy: issueFields.has("privacy"),
       files: !validateFiles(files),
+      description: issueFields.has("description") || !fitsStorage(buildMessage(files.map((f) => ({ name: f.name } as UploadedFileInfo)))),
     };
     setErrors(nextErrors);
     return !Object.values(nextErrors).some(Boolean);
@@ -194,7 +196,7 @@ const TurkeyProperties = () => {
       form.description || "Keine zusätzliche Beschreibung.",
     ].filter(Boolean);
 
-    return lines.join("\n").slice(0, 4900);
+    return lines.join("\n");
   };
 
   const uploadFiles = async () => {
