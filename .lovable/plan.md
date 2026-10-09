@@ -29,7 +29,7 @@ Breite von Themenkarten und Formular.
         können Sie uns das Objekt anbieten. Entscheidend ist,
         wo sich die Immobilie befindet.
 
-        (kompakter Abstand, ca. 48-56 px bis zum Formular)
+        (kompakter Abstand, ca. 28-36 px bis zum Formular)
 
 [ Formular: "Wo befindet sich die Immobilie?"   Deutschland | Türkei ]
 ```
@@ -57,8 +57,8 @@ Markierung der ausgewählten Länderkarte. In diesem Abschnitt kommt nichts Neue
   Übergang nicht gequetscht wirkt.
 - Zwischen Überschrift und Text: eng (ca. 10 px), damit sie zusammengehören.
 - Zwischen Ankaufsgebiet-Text und Wohnsitzhinweis: deutlich, aber klein (ca. 22 px).
-- Bis zur Länderauswahl: rund die Hälfte weniger als heute (etwa 80 px auf
-  48-56 px), ohne die Auswahlkarten selbst anzufassen.
+- Bis zur Länderauswahl: kompakt, rund 28-36 px statt der bisherigen rund 80 px,
+  ohne die Auswahlkarten selbst anzufassen.
 - Keine durchgehende Mindesthöhe, kein Leerraum, der nur aus Abstandsregeln entsteht.
 
 ## Was vollständig unverändert bleibt
