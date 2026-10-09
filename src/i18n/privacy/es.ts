@@ -18,7 +18,7 @@ export const es: PrivacyCopy = {
         "Teléfono: {tel}\nCorreo electrónico: {mail}",
       ] },
       { title: "2. Información general sobre el tratamiento de datos", body: [
-        "Por principio, solo tratamos datos personales en la medida necesaria para ofrecer un sitio web funcional y tramitar sus consultas. El tratamiento se basa en el [Reglamento General de Protección de Datos (RGPD)](EURLEX) y en la [Ley Federal alemana de Protección de Datos (BDSG)](BDSG).",
+        "Por principio, solo tratamos datos personales en la medida necesaria para ofrecer un sitio web funcional y tramitar sus consultas. El tratamiento se basa en el [Reglamento General de Protección de Datos (RGPD)](EURLEX_ES) y en la [Ley Federal alemana de Protección de Datos (BDSG)](BDSG).",
         "Según la consulta, pueden tratarse en particular los siguientes datos:",
         { ul: [
           "Nombre y apellidos", "Número de teléfono", "Dirección de correo electrónico", "Mensajes y otros datos de contacto",
@@ -32,10 +32,10 @@ export const es: PrivacyCopy = {
       ] },
       { title: "3. Bases jurídicas del tratamiento", body: [
         { ul: [
-          "[Art. 6.1.a) RGPD](EURLEX) – consentimiento del interesado",
-          "[Art. 6.1.b) RGPD](EURLEX) – ejecución de un contrato o medidas precontractuales",
-          "[Art. 6.1.c) RGPD](EURLEX) – cumplimiento de obligaciones legales",
-          "[Art. 6.1.f) RGPD](EURLEX) – interés legítimo",
+          "[Art. 6.1.a) RGPD](EURLEX_ES) – consentimiento del interesado",
+          "[Art. 6.1.b) RGPD](EURLEX_ES) – ejecución de un contrato o medidas precontractuales",
+          "[Art. 6.1.c) RGPD](EURLEX_ES) – cumplimiento de obligaciones legales",
+          "[Art. 6.1.f) RGPD](EURLEX_ES) – interés legítimo",
         ] },
       ] },
       { title: "4. Archivos de registro del servidor", body: [
@@ -79,7 +79,7 @@ export const es: PrivacyCopy = {
         { box: [
           "Aurelia Grundbesitz GmbH tiene su sede en Alemania y también tramita consultas sobre inmuebles en Turquía.",
           "En el marco de una consulta concreta o de una transacción inmobiliaria puede ser necesario transferir datos personales entre Alemania y Turquía o hacerlos accesibles allí.",
-          "Dicha transferencia solo se realiza en la medida necesaria para el caso correspondiente y cuando se cumplen los requisitos de protección de datos aplicables. En las transferencias internacionales se tienen en cuenta los requisitos del [RGPD (arts. 44 y ss.)](EURLEX) y – en su caso – del [art. 9 KVKK](KVKKYD).",
+          "Dicha transferencia solo se realiza en la medida necesaria para el caso correspondiente y cuando se cumplen los requisitos de protección de datos aplicables. En las transferencias internacionales se tienen en cuenta los requisitos del [RGPD (arts. 44 y ss.)](EURLEX_ES) y – en su caso – del [art. 9 KVKK](KVKKYD).",
         ] },
       ] },
       { title: "10. Cookies y almacenamiento local", body: [
@@ -101,8 +101,8 @@ export const es: PrivacyCopy = {
       { title: "13. Derechos de los interesados", body: [
         "Usted tiene los siguientes derechos en relación con los datos personales que le conciernen:",
         { ul: [
-          "[Art. 15 RGPD – acceso](EURLEX)", "[Art. 16 RGPD – rectificación](EURLEX)", "[Art. 17 RGPD – supresión](EURLEX)",
-          "[Art. 18 RGPD – limitación del tratamiento](EURLEX)", "[Art. 20 RGPD – portabilidad de los datos](EURLEX)", "[Art. 21 RGPD – oposición](EURLEX)",
+          "[Art. 15 RGPD – acceso](EURLEX_ES)", "[Art. 16 RGPD – rectificación](EURLEX_ES)", "[Art. 17 RGPD – supresión](EURLEX_ES)",
+          "[Art. 18 RGPD – limitación del tratamiento](EURLEX_ES)", "[Art. 20 RGPD – portabilidad de los datos](EURLEX_ES)", "[Art. 21 RGPD – oposición](EURLEX_ES)",
         ] },
       ] },
       { title: "14. Revocación del consentimiento", body: [

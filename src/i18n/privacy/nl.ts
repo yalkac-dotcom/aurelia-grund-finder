@@ -18,7 +18,7 @@ export const nl: PrivacyCopy = {
         "Telefoon: {tel}\nE-mail: {mail}",
       ] },
       { title: "2. Algemeen over de gegevensverwerking", body: [
-        "Wij verwerken persoonsgegevens in beginsel alleen voor zover dit nodig is om een functionerende website aan te bieden en uw aanvragen te behandelen. De verwerking vindt plaats op basis van de [Algemene Verordening Gegevensbescherming (AVG / GDPR)](EURLEX) en de [Duitse federale wet gegevensbescherming (BDSG)](BDSG).",
+        "Wij verwerken persoonsgegevens in beginsel alleen voor zover dit nodig is om een functionerende website aan te bieden en uw aanvragen te behandelen. De verwerking vindt plaats op basis van de [Algemene Verordening Gegevensbescherming (AVG / GDPR)](EURLEX_NL) en de [Duitse federale wet gegevensbescherming (BDSG)](BDSG).",
         "Afhankelijk van de aanvraag kunnen met name de volgende gegevens worden verwerkt:",
         { ul: [
           "Voor- en achternaam", "Telefoonnummer", "E-mailadres", "Berichten en overige contactgegevens",
@@ -32,10 +32,10 @@ export const nl: PrivacyCopy = {
       ] },
       { title: "3. Rechtsgronden voor de verwerking", body: [
         { ul: [
-          "[Art. 6 lid 1 sub a AVG](EURLEX) – toestemming van de betrokkene",
-          "[Art. 6 lid 1 sub b AVG](EURLEX) – uitvoering van een overeenkomst of precontractuele maatregelen",
-          "[Art. 6 lid 1 sub c AVG](EURLEX) – nakoming van wettelijke verplichtingen",
-          "[Art. 6 lid 1 sub f AVG](EURLEX) – gerechtvaardigd belang",
+          "[Art. 6 lid 1 sub a AVG](EURLEX_NL) – toestemming van de betrokkene",
+          "[Art. 6 lid 1 sub b AVG](EURLEX_NL) – uitvoering van een overeenkomst of precontractuele maatregelen",
+          "[Art. 6 lid 1 sub c AVG](EURLEX_NL) – nakoming van wettelijke verplichtingen",
+          "[Art. 6 lid 1 sub f AVG](EURLEX_NL) – gerechtvaardigd belang",
         ] },
       ] },
       { title: "4. Serverlogbestanden", body: [
@@ -79,7 +79,7 @@ export const nl: PrivacyCopy = {
         { box: [
           "Aurelia Grundbesitz GmbH is gevestigd in Duitsland en behandelt ook aanvragen over vastgoed in Turkije.",
           "In het kader van een concrete aanvraag of vastgoedtransactie kan het nodig zijn persoonsgegevens tussen Duitsland en Turkije door te geven of daar toegankelijk te maken.",
-          "Een dergelijke doorgifte vindt alleen plaats voor zover dit voor de betreffende zaak nodig is en aan de geldende gegevensbeschermingsvereisten is voldaan. Bij internationale doorgiften worden de vereisten van de [AVG (art. 44 e.v.)](EURLEX) en – voor zover van toepassing – [art. 9 KVKK](KVKKYD) in acht genomen.",
+          "Een dergelijke doorgifte vindt alleen plaats voor zover dit voor de betreffende zaak nodig is en aan de geldende gegevensbeschermingsvereisten is voldaan. Bij internationale doorgiften worden de vereisten van de [AVG (art. 44 e.v.)](EURLEX_NL) en – voor zover van toepassing – [art. 9 KVKK](KVKKYD) in acht genomen.",
         ] },
       ] },
       { title: "10. Cookies en lokale opslag", body: [
@@ -101,8 +101,8 @@ export const nl: PrivacyCopy = {
       { title: "13. Rechten van betrokkenen", body: [
         "U heeft ten aanzien van uw persoonsgegevens de volgende rechten:",
         { ul: [
-          "[Art. 15 AVG – inzage](EURLEX)", "[Art. 16 AVG – rectificatie](EURLEX)", "[Art. 17 AVG – wissing](EURLEX)",
-          "[Art. 18 AVG – beperking van de verwerking](EURLEX)", "[Art. 20 AVG – overdraagbaarheid van gegevens](EURLEX)", "[Art. 21 AVG – bezwaar](EURLEX)",
+          "[Art. 15 AVG – inzage](EURLEX_NL)", "[Art. 16 AVG – rectificatie](EURLEX_NL)", "[Art. 17 AVG – wissing](EURLEX_NL)",
+          "[Art. 18 AVG – beperking van de verwerking](EURLEX_NL)", "[Art. 20 AVG – overdraagbaarheid van gegevens](EURLEX_NL)", "[Art. 21 AVG – bezwaar](EURLEX_NL)",
         ] },
       ] },
       { title: "14. Intrekking van toestemming", body: [

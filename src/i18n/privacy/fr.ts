@@ -18,7 +18,7 @@ export const fr: PrivacyCopy = {
         "Téléphone : {tel}\nE-mail : {mail}",
       ] },
       { title: "2. Généralités sur le traitement des données", body: [
-        "Nous ne traitons en principe les données personnelles que dans la mesure nécessaire pour fournir un site web fonctionnel et traiter vos demandes. Le traitement repose sur le [Règlement général sur la protection des données (RGPD)](EURLEX) et sur la [loi fédérale allemande sur la protection des données (BDSG)](BDSG).",
+        "Nous ne traitons en principe les données personnelles que dans la mesure nécessaire pour fournir un site web fonctionnel et traiter vos demandes. Le traitement repose sur le [Règlement général sur la protection des données (RGPD)](EURLEX_FR) et sur la [loi fédérale allemande sur la protection des données (BDSG)](BDSG).",
         "Selon la demande, les données suivantes peuvent notamment être traitées :",
         { ul: [
           "Nom et prénom", "Numéro de téléphone", "Adresse e-mail", "Messages et autres coordonnées",
@@ -32,10 +32,10 @@ export const fr: PrivacyCopy = {
       ] },
       { title: "3. Bases juridiques du traitement", body: [
         { ul: [
-          "[Art. 6, par. 1, point a) RGPD](EURLEX) – consentement de la personne concernée",
-          "[Art. 6, par. 1, point b) RGPD](EURLEX) – exécution d'un contrat ou mesures précontractuelles",
-          "[Art. 6, par. 1, point c) RGPD](EURLEX) – respect d'obligations légales",
-          "[Art. 6, par. 1, point f) RGPD](EURLEX) – intérêt légitime",
+          "[Art. 6, par. 1, point a) RGPD](EURLEX_FR) – consentement de la personne concernée",
+          "[Art. 6, par. 1, point b) RGPD](EURLEX_FR) – exécution d'un contrat ou mesures précontractuelles",
+          "[Art. 6, par. 1, point c) RGPD](EURLEX_FR) – respect d'obligations légales",
+          "[Art. 6, par. 1, point f) RGPD](EURLEX_FR) – intérêt légitime",
         ] },
       ] },
       { title: "4. Fichiers journaux du serveur", body: [
@@ -79,7 +79,7 @@ export const fr: PrivacyCopy = {
         { box: [
           "Aurelia Grundbesitz GmbH a son siège en Allemagne et traite également des demandes concernant des biens en Turquie.",
           "Dans le cadre d'une demande concrète ou d'une transaction immobilière, il peut être nécessaire de transférer des données personnelles entre l'Allemagne et la Turquie ou de les y rendre accessibles.",
-          "Un tel transfert n'a lieu que dans la mesure nécessaire à l'opération concernée et lorsque les exigences applicables en matière de protection des données sont remplies. Pour les transferts internationaux, les exigences du [RGPD (art. 44 et suiv.)](EURLEX) et – le cas échéant – de l'[art. 9 KVKK](KVKKYD) sont prises en compte.",
+          "Un tel transfert n'a lieu que dans la mesure nécessaire à l'opération concernée et lorsque les exigences applicables en matière de protection des données sont remplies. Pour les transferts internationaux, les exigences du [RGPD (art. 44 et suiv.)](EURLEX_FR) et – le cas échéant – de l'[art. 9 KVKK](KVKKYD) sont prises en compte.",
         ] },
       ] },
       { title: "10. Cookies et stockage local", body: [
@@ -101,8 +101,8 @@ export const fr: PrivacyCopy = {
       { title: "13. Droits des personnes concernées", body: [
         "Vous disposez des droits suivants concernant les données personnelles vous concernant :",
         { ul: [
-          "[Art. 15 RGPD – accès](EURLEX)", "[Art. 16 RGPD – rectification](EURLEX)", "[Art. 17 RGPD – effacement](EURLEX)",
-          "[Art. 18 RGPD – limitation du traitement](EURLEX)", "[Art. 20 RGPD – portabilité des données](EURLEX)", "[Art. 21 RGPD – opposition](EURLEX)",
+          "[Art. 15 RGPD – accès](EURLEX_FR)", "[Art. 16 RGPD – rectification](EURLEX_FR)", "[Art. 17 RGPD – effacement](EURLEX_FR)",
+          "[Art. 18 RGPD – limitation du traitement](EURLEX_FR)", "[Art. 20 RGPD – portabilité des données](EURLEX_FR)", "[Art. 21 RGPD – opposition](EURLEX_FR)",
         ] },
       ] },
       { title: "14. Retrait du consentement", body: [
