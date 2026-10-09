@@ -183,3 +183,10 @@
 - [x] Abstand Wohnsitzhinweis zur Länderauswahl 28-36 px; Wohnsitzhinweis nur auf Deutsch, keine neuen Übersetzungen
 - [x] Sieben Sprachen bei 1280 und 390 px geprüft; Screenshot der gesamten Sektion gezeigt
 - [x] Nichts veröffentlicht
+
+# Immobilie anbieten: Ankaufsgebiet im gemeinsamen Rahmen (Okt 2026, nur Vorschau)
+- [x] Beide Texte in einem einzigen Rahmen, mittig unter den Themenkarten und über der Länderauswahl
+- [x] Feine goldene Umrandung, dezenter Hintergrund, ausreichender Innenabstand; Überschrift mittig und deutlich sichtbar
+- [x] Keine zusätzlichen Kästen, Linien oder Dekorationen; vorhandene Texte unverändert
+- [x] Sieben Sprachen bei 1280 und 390 px geprüft; Screenshots Desktop und Smartphone erstellt
+- [x] Nichts veröffentlicht
