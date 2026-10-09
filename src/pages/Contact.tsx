@@ -222,7 +222,7 @@ const Contact = () => {
                     <label htmlFor="phone" className={labelClasses}>
                       {t.contact.phone} <span className="text-accent">*</span>
                     </label>
-                    <input id="phone" name="phone" type="tel" required maxLength={50} className={inputClasses} onInvalid={(e) => e.currentTarget.setCustomValidity(buyerInterestCopy[language].errRequired)} onInput={(e) => e.currentTarget.setCustomValidity("")} />
+                    <input id="phone" name="phone" type="tel" required maxLength={40} className={inputClasses} onInvalid={(e) => e.currentTarget.setCustomValidity(buyerInterestCopy[language].errRequired)} onInput={(e) => e.currentTarget.setCustomValidity("")} />
                     </div>
                     <div>
                     <label htmlFor="subject" className={labelClasses}>
