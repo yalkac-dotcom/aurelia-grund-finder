@@ -177,3 +177,9 @@
 - [x] Hero, Vertrauensbereich, besondere Situationen, Wohnsitz-Hinweis, dann Fragebogen
 - [x] Texte, Bilder, Felder und Gestaltung unverändert gelassen
 - [x] Desktop 1440, Tablet 768 und Smartphone 390 geprüft; EN/TR unverändert
+
+# Immobilie anbieten: Zwischenbereich einspaltig (Okt 2026, nur Vorschau)
+- [ ] Themenkarten bis Länderauswahl als ruhiger, einspaltiger Block ohne Kästen, goldene Linien und Doppelspalten
+- [ ] Abstand Wohnsitzhinweis zur Länderauswahl 28-36 px; Wohnsitzhinweis nur auf Deutsch, keine neuen Übersetzungen
+- [ ] Sieben Sprachen bei 1280 und 390 px prüfen; Screenshot der gesamten Sektion zeigen
+- [ ] Nichts veröffentlichen
