@@ -17,7 +17,7 @@ const txt = "text-muted-foreground text-[0.93rem] leading-[1.85]";
 /** Renders inline markup: [label](KEY), {mail}, {tel}, \n */
 const renderInline = (s: string): ReactNode[] => {
   const out: ReactNode[] = [];
-  const re = /\[([^\]]+)\]\(([A-Z0-9]+)\)|\{mail\}|\{tel\}|\n/g;
+  const re = /\[([^\]]+)\]\(([A-Z0-9_]+)\)|\{mail\}|\{tel\}|\n/g;
   let last = 0;
   let m: RegExpExecArray | null;
   let k = 0;
