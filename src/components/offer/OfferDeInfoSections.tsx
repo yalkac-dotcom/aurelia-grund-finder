@@ -7,7 +7,7 @@ const OfferDeInfoSections = () => {
   const m = homeMaster.de;
   return (
     <>
-      <section className="section-premium bg-secondary/45">
+      <section className="section-premium bg-secondary/45 !pb-0">
         <div className="container-premium grid gap-6 md:grid-cols-2 md:gap-8">
           <Reveal>
             <div className={`h-full p-5 md:p-6 ${aureliaCard}`}>
@@ -24,15 +24,6 @@ const OfferDeInfoSections = () => {
                 {m.foreclosureParagraphs.map((p) => <p key={p}>{p}</p>)}
               </div>
             </div>
-          </Reveal>
-        </div>
-      </section>
-      <section className="section-premium">
-        <div className="container-premium">
-          <Reveal>
-            <p className="mx-auto max-w-3xl text-center text-[0.94rem] leading-[1.8] text-muted-foreground">
-              Auch wenn Sie nicht am Standort der Immobilie leben, können Sie uns das Objekt anbieten. Entscheidend ist, wo sich die Immobilie befindet. Ihren Wohnsitz fragen wir separat ab.
-            </p>
           </Reveal>
         </div>
       </section>
