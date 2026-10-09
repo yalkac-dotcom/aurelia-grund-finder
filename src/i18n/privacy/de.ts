@@ -20,7 +20,7 @@ export const de: PrivacyCopy = {
         "Telefon: {tel}\nE-Mail: {mail}",
       ] },
       { title: "2. Allgemeines zur Datenverarbeitung", body: [
-        "Wir verarbeiten personenbezogene Daten grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie zur Bearbeitung Ihrer Anfragen erforderlich ist. Die Verarbeitung erfolgt auf Grundlage der [Datenschutz-Grundverordnung (DSGVO)](EURLEX) und des [Bundesdatenschutzgesetzes (BDSG)](BDSG).",
+        "Wir verarbeiten personenbezogene Daten grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie zur Bearbeitung Ihrer Anfragen erforderlich ist. Die Verarbeitung erfolgt auf Grundlage der [Datenschutz-Grundverordnung (DSGVO)](EURLEX_DE) und des [Bundesdatenschutzgesetzes (BDSG)](BDSG).",
         "Je nach Anfrage können insbesondere folgende Daten verarbeitet werden:",
         { ul: [
           "Vor- und Nachname", "Telefonnummer", "E-Mail-Adresse", "Nachrichten und sonstige Kontaktangaben",
@@ -34,10 +34,10 @@ export const de: PrivacyCopy = {
       ] },
       { title: "3. Rechtsgrundlagen der Verarbeitung", body: [
         { ul: [
-          "[Art. 6 Abs. 1 lit. a DSGVO](EURLEX) – Einwilligung der betroffenen Person",
-          "[Art. 6 Abs. 1 lit. b DSGVO](EURLEX) – Vertragserfüllung oder vorvertragliche Maßnahmen",
-          "[Art. 6 Abs. 1 lit. c DSGVO](EURLEX) – Erfüllung rechtlicher Verpflichtungen",
-          "[Art. 6 Abs. 1 lit. f DSGVO](EURLEX) – berechtigtes Interesse",
+          "[Art. 6 Abs. 1 lit. a DSGVO](EURLEX_DE) – Einwilligung der betroffenen Person",
+          "[Art. 6 Abs. 1 lit. b DSGVO](EURLEX_DE) – Vertragserfüllung oder vorvertragliche Maßnahmen",
+          "[Art. 6 Abs. 1 lit. c DSGVO](EURLEX_DE) – Erfüllung rechtlicher Verpflichtungen",
+          "[Art. 6 Abs. 1 lit. f DSGVO](EURLEX_DE) – berechtigtes Interesse",
         ] },
       ] },
       { title: "4. Server-Log-Dateien", body: [
@@ -81,7 +81,7 @@ export const de: PrivacyCopy = {
         { box: [
           "Aurelia Grundbesitz GmbH hat ihren Sitz in Deutschland und bearbeitet auch Anfragen zu Immobilien in der Türkei.",
           "Im Rahmen einer konkreten Anfrage oder Immobilientransaktion kann es erforderlich sein, personenbezogene Daten zwischen Deutschland und der Türkei zu übermitteln oder dort zugänglich zu machen.",
-          "Eine solche Übermittlung erfolgt nur, soweit sie für den jeweiligen Vorgang erforderlich ist und die jeweils geltenden datenschutzrechtlichen Voraussetzungen erfüllt sind. Für internationale Übermittlungen werden die Anforderungen der [DSGVO (Art. 44 ff.)](EURLEX) und – soweit anwendbar – [Art. 9 KVKK](KVKKYD) berücksichtigt.",
+          "Eine solche Übermittlung erfolgt nur, soweit sie für den jeweiligen Vorgang erforderlich ist und die jeweils geltenden datenschutzrechtlichen Voraussetzungen erfüllt sind. Für internationale Übermittlungen werden die Anforderungen der [DSGVO (Art. 44 ff.)](EURLEX_DE) und – soweit anwendbar – [Art. 9 KVKK](KVKKYD) berücksichtigt.",
         ] },
       ] },
       { title: "10. Cookies und lokaler Speicher", body: [
@@ -103,8 +103,8 @@ export const de: PrivacyCopy = {
       { title: "13. Rechte der betroffenen Personen", body: [
         "Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:",
         { ul: [
-          "[Art. 15 DSGVO – Auskunft](EURLEX)", "[Art. 16 DSGVO – Berichtigung](EURLEX)", "[Art. 17 DSGVO – Löschung](EURLEX)",
-          "[Art. 18 DSGVO – Einschränkung der Verarbeitung](EURLEX)", "[Art. 20 DSGVO – Datenübertragbarkeit](EURLEX)", "[Art. 21 DSGVO – Widerspruch](EURLEX)",
+          "[Art. 15 DSGVO – Auskunft](EURLEX_DE)", "[Art. 16 DSGVO – Berichtigung](EURLEX_DE)", "[Art. 17 DSGVO – Löschung](EURLEX_DE)",
+          "[Art. 18 DSGVO – Einschränkung der Verarbeitung](EURLEX_DE)", "[Art. 20 DSGVO – Datenübertragbarkeit](EURLEX_DE)", "[Art. 21 DSGVO – Widerspruch](EURLEX_DE)",
         ] },
       ] },
       { title: "14. Widerruf von Einwilligungen", body: [

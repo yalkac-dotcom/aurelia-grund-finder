@@ -18,7 +18,7 @@ export const en: PrivacyCopy = {
         "Phone: {tel}\nEmail: {mail}",
       ] },
       { title: "2. General information on data processing", body: [
-        "As a matter of principle, we only process personal data to the extent necessary to provide a functional website and to handle your enquiries. Processing is based on the [General Data Protection Regulation (GDPR)](EURLEX) and the [German Federal Data Protection Act (BDSG)](BDSG).",
+        "As a matter of principle, we only process personal data to the extent necessary to provide a functional website and to handle your enquiries. Processing is based on the [General Data Protection Regulation (GDPR)](EURLEX_EN) and the [German Federal Data Protection Act (BDSG)](BDSG).",
         "Depending on the enquiry, the following data in particular may be processed:",
         { ul: [
           "First and last name", "Phone number", "Email address", "Messages and other contact details",
@@ -32,10 +32,10 @@ export const en: PrivacyCopy = {
       ] },
       { title: "3. Legal bases for processing", body: [
         { ul: [
-          "[Art. 6(1)(a) GDPR](EURLEX) – consent of the data subject",
-          "[Art. 6(1)(b) GDPR](EURLEX) – performance of a contract or pre-contractual measures",
-          "[Art. 6(1)(c) GDPR](EURLEX) – compliance with legal obligations",
-          "[Art. 6(1)(f) GDPR](EURLEX) – legitimate interest",
+          "[Art. 6(1)(a) GDPR](EURLEX_EN) – consent of the data subject",
+          "[Art. 6(1)(b) GDPR](EURLEX_EN) – performance of a contract or pre-contractual measures",
+          "[Art. 6(1)(c) GDPR](EURLEX_EN) – compliance with legal obligations",
+          "[Art. 6(1)(f) GDPR](EURLEX_EN) – legitimate interest",
         ] },
       ] },
       { title: "4. Server log files", body: [
@@ -79,7 +79,7 @@ export const en: PrivacyCopy = {
         { box: [
           "Aurelia Grundbesitz GmbH has its registered office in Germany and also handles enquiries about properties in Turkey.",
           "In the context of a specific enquiry or property transaction, it may be necessary to transfer personal data between Germany and Turkey or to make it accessible there.",
-          "Such a transfer only takes place to the extent necessary for the respective matter and where the applicable data protection requirements are met. For international transfers, the requirements of the [GDPR (Art. 44 et seq.)](EURLEX) and – where applicable – [Art. 9 KVKK](KVKKYD) are taken into account.",
+          "Such a transfer only takes place to the extent necessary for the respective matter and where the applicable data protection requirements are met. For international transfers, the requirements of the [GDPR (Art. 44 et seq.)](EURLEX_EN) and – where applicable – [Art. 9 KVKK](KVKKYD) are taken into account.",
         ] },
       ] },
       { title: "10. Cookies and local storage", body: [
@@ -101,8 +101,8 @@ export const en: PrivacyCopy = {
       { title: "13. Rights of data subjects", body: [
         "You have the following rights with regard to the personal data concerning you:",
         { ul: [
-          "[Art. 15 GDPR – access](EURLEX)", "[Art. 16 GDPR – rectification](EURLEX)", "[Art. 17 GDPR – erasure](EURLEX)",
-          "[Art. 18 GDPR – restriction of processing](EURLEX)", "[Art. 20 GDPR – data portability](EURLEX)", "[Art. 21 GDPR – objection](EURLEX)",
+          "[Art. 15 GDPR – access](EURLEX_EN)", "[Art. 16 GDPR – rectification](EURLEX_EN)", "[Art. 17 GDPR – erasure](EURLEX_EN)",
+          "[Art. 18 GDPR – restriction of processing](EURLEX_EN)", "[Art. 20 GDPR – data portability](EURLEX_EN)", "[Art. 21 GDPR – objection](EURLEX_EN)",
         ] },
       ] },
       { title: "14. Withdrawal of consent", body: [

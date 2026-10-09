@@ -20,7 +20,7 @@ export const tr: PrivacyCopy = {
         "Telefon: {tel}\nE-posta: {mail}",
       ] },
       { title: "2. Veri işlemeye ilişkin genel bilgiler", body: [
-        "Kişisel verileri kural olarak yalnızca işlevsel bir internet sitesi sunmak ve taleplerinizi işleme almak için gerekli olduğu ölçüde işleriz. İşleme, [AB Genel Veri Koruma Tüzüğü (GDPR / DSGVO)](EURLEX) ve [Alman Federal Veri Koruma Kanunu (BDSG)](BDSG) esas alınarak yapılır.",
+        "Kişisel verileri kural olarak yalnızca işlevsel bir internet sitesi sunmak ve taleplerinizi işleme almak için gerekli olduğu ölçüde işleriz. İşleme, [AB Genel Veri Koruma Tüzüğü (GDPR / DSGVO) (Almanca)](EURLEX) ve [Alman Federal Veri Koruma Kanunu (BDSG)](BDSG) esas alınarak yapılır.",
         "Talebe bağlı olarak özellikle aşağıdaki veriler işlenebilir:",
         { ul: [
           "Ad ve soyad", "Telefon numarası", "E-posta adresi", "Mesajlar ve diğer iletişim bilgileri",
@@ -34,10 +34,10 @@ export const tr: PrivacyCopy = {
       ] },
       { title: "3. İşlemenin hukuki dayanakları", body: [
         { ul: [
-          "[GDPR md. 6/1 (a)](EURLEX) – ilgili kişinin rızası",
-          "[GDPR md. 6/1 (b)](EURLEX) – sözleşmenin ifası veya sözleşme öncesi tedbirler",
-          "[GDPR md. 6/1 (c)](EURLEX) – hukuki yükümlülüklerin yerine getirilmesi",
-          "[GDPR md. 6/1 (f)](EURLEX) – meşru menfaat",
+          "[GDPR md. 6/1 (a) (Almanca)](EURLEX) – ilgili kişinin rızası",
+          "[GDPR md. 6/1 (b) (Almanca)](EURLEX) – sözleşmenin ifası veya sözleşme öncesi tedbirler",
+          "[GDPR md. 6/1 (c) (Almanca)](EURLEX) – hukuki yükümlülüklerin yerine getirilmesi",
+          "[GDPR md. 6/1 (f) (Almanca)](EURLEX) – meşru menfaat",
         ] },
       ] },
       { title: "4. Sunucu kayıt dosyaları", body: [
@@ -81,7 +81,7 @@ export const tr: PrivacyCopy = {
         { box: [
           "Aurelia Grundbesitz GmbH’nin merkezi Almanya’dadır ve Türkiye’deki gayrimenkullere ilişkin talepleri de işler.",
           "Somut bir talep veya gayrimenkul işlemi kapsamında kişisel verilerin Almanya ile Türkiye arasında aktarılması veya orada erişilebilir kılınması gerekebilir.",
-          "Böyle bir aktarım yalnızca ilgili işlem için gerekli olduğu ölçüde ve geçerli veri koruma şartları sağlandığında gerçekleşir. Uluslararası aktarımlarda [GDPR (md. 44 vd.)](EURLEX) ve – uygulanabilir olduğu ölçüde – [KVKK md. 9](KVKKYD) gereklilikleri dikkate alınır.",
+          "Böyle bir aktarım yalnızca ilgili işlem için gerekli olduğu ölçüde ve geçerli veri koruma şartları sağlandığında gerçekleşir. Uluslararası aktarımlarda [GDPR (md. 44 vd.) (Almanca)](EURLEX) ve – uygulanabilir olduğu ölçüde – [KVKK md. 9](KVKKYD) gereklilikleri dikkate alınır.",
         ] },
       ] },
       { title: "10. Çerezler ve yerel depolama", body: [
@@ -103,8 +103,8 @@ export const tr: PrivacyCopy = {
       { title: "13. İlgili kişilerin hakları", body: [
         "Sizinle ilgili kişisel veriler bakımından aşağıdaki haklara sahipsiniz:",
         { ul: [
-          "[GDPR md. 15 – bilgi edinme](EURLEX)", "[GDPR md. 16 – düzeltme](EURLEX)", "[GDPR md. 17 – silme](EURLEX)",
-          "[GDPR md. 18 – işlemenin kısıtlanması](EURLEX)", "[GDPR md. 20 – veri taşınabilirliği](EURLEX)", "[GDPR md. 21 – itiraz](EURLEX)",
+          "[GDPR md. 15 – bilgi edinme (Almanca)](EURLEX)", "[GDPR md. 16 – düzeltme (Almanca)](EURLEX)", "[GDPR md. 17 – silme (Almanca)](EURLEX)",
+          "[GDPR md. 18 – işlemenin kısıtlanması (Almanca)](EURLEX)", "[GDPR md. 20 – veri taşınabilirliği (Almanca)](EURLEX)", "[GDPR md. 21 – itiraz (Almanca)](EURLEX)",
         ] },
       ] },
       { title: "14. Onayın geri alınması", body: [

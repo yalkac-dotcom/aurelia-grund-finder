@@ -18,7 +18,7 @@ export const it: PrivacyCopy = {
         "Telefono: {tel}\nE-mail: {mail}",
       ] },
       { title: "2. Informazioni generali sul trattamento dei dati", body: [
-        "Trattiamo i dati personali, in linea di principio, solo nella misura necessaria a fornire un sito web funzionante e a gestire le sue richieste. Il trattamento avviene sulla base del [Regolamento generale sulla protezione dei dati (GDPR)](EURLEX) e della [legge federale tedesca sulla protezione dei dati (BDSG)](BDSG).",
+        "Trattiamo i dati personali, in linea di principio, solo nella misura necessaria a fornire un sito web funzionante e a gestire le sue richieste. Il trattamento avviene sulla base del [Regolamento generale sulla protezione dei dati (GDPR)](EURLEX_IT) e della [legge federale tedesca sulla protezione dei dati (BDSG)](BDSG).",
         "A seconda della richiesta possono essere trattati in particolare i seguenti dati:",
         { ul: [
           "Nome e cognome", "Numero di telefono", "Indirizzo e-mail", "Messaggi e altri dati di contatto",
@@ -32,10 +32,10 @@ export const it: PrivacyCopy = {
       ] },
       { title: "3. Basi giuridiche del trattamento", body: [
         { ul: [
-          "[Art. 6, par. 1, lett. a) GDPR](EURLEX) – consenso dell'interessato",
-          "[Art. 6, par. 1, lett. b) GDPR](EURLEX) – esecuzione di un contratto o misure precontrattuali",
-          "[Art. 6, par. 1, lett. c) GDPR](EURLEX) – adempimento di obblighi legali",
-          "[Art. 6, par. 1, lett. f) GDPR](EURLEX) – legittimo interesse",
+          "[Art. 6, par. 1, lett. a) GDPR](EURLEX_IT) – consenso dell'interessato",
+          "[Art. 6, par. 1, lett. b) GDPR](EURLEX_IT) – esecuzione di un contratto o misure precontrattuali",
+          "[Art. 6, par. 1, lett. c) GDPR](EURLEX_IT) – adempimento di obblighi legali",
+          "[Art. 6, par. 1, lett. f) GDPR](EURLEX_IT) – legittimo interesse",
         ] },
       ] },
       { title: "4. File di log del server", body: [
@@ -79,7 +79,7 @@ export const it: PrivacyCopy = {
         { box: [
           "Aurelia Grundbesitz GmbH ha sede in Germania e gestisce anche richieste relative a immobili in Turchia.",
           "Nell'ambito di una richiesta concreta o di una transazione immobiliare può essere necessario trasferire dati personali tra la Germania e la Turchia o renderli ivi accessibili.",
-          "Tale trasferimento avviene solo nella misura necessaria per il rispettivo caso e se sono soddisfatti i requisiti di protezione dei dati applicabili. Per i trasferimenti internazionali si tiene conto dei requisiti del [GDPR (artt. 44 e segg.)](EURLEX) e – ove applicabile – dell'[art. 9 KVKK](KVKKYD).",
+          "Tale trasferimento avviene solo nella misura necessaria per il rispettivo caso e se sono soddisfatti i requisiti di protezione dei dati applicabili. Per i trasferimenti internazionali si tiene conto dei requisiti del [GDPR (artt. 44 e segg.)](EURLEX_IT) e – ove applicabile – dell'[art. 9 KVKK](KVKKYD).",
         ] },
       ] },
       { title: "10. Cookie e memoria locale", body: [
@@ -101,8 +101,8 @@ export const it: PrivacyCopy = {
       { title: "13. Diritti degli interessati", body: [
         "Lei ha i seguenti diritti in relazione ai dati personali che la riguardano:",
         { ul: [
-          "[Art. 15 GDPR – accesso](EURLEX)", "[Art. 16 GDPR – rettifica](EURLEX)", "[Art. 17 GDPR – cancellazione](EURLEX)",
-          "[Art. 18 GDPR – limitazione del trattamento](EURLEX)", "[Art. 20 GDPR – portabilità dei dati](EURLEX)", "[Art. 21 GDPR – opposizione](EURLEX)",
+          "[Art. 15 GDPR – accesso](EURLEX_IT)", "[Art. 16 GDPR – rettifica](EURLEX_IT)", "[Art. 17 GDPR – cancellazione](EURLEX_IT)",
+          "[Art. 18 GDPR – limitazione del trattamento](EURLEX_IT)", "[Art. 20 GDPR – portabilità dei dati](EURLEX_IT)", "[Art. 21 GDPR – opposizione](EURLEX_IT)",
         ] },
       ] },
       { title: "14. Revoca del consenso", body: [
