@@ -1,5 +1,9 @@
 # Inhaltliche Neustrukturierung
 
+# Immobilie anbieten: Wohnsitz und Ankaufsgebiet (nur Vorschau)
+- [ ] Leerraum reduzieren und bestehende Hinweise gestalterisch zusammenführen; Texte, Bilder und Formular unverändert
+- [ ] Sieben Sprachen auf Desktop und Smartphone prüfen und gesamte betroffene Sektion als Screenshot zeigen
+
 # Immobilie anbieten: gezielter Einleitungs-Feinschliff
 - [x] Doppelte Eigenschaftenzeile entfernen und Übergang zu den Themenkarten straffen
 - [x] Bestehendes Deutschlandbild auf tatsächlichen Lade-/Darstellungsfehler prüfen (lädt unverändert korrekt; Fehler nicht reproduzierbar)
